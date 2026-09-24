@@ -27,6 +27,50 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Institutional interfacing recorded as a domain, with a bounded scope
+
+- `docs/decisions/INSTITUTIONAL_INTERFACING.md`. A domain teaching
+  adversarial claim evaluation and the institutional context that makes it
+  necessary. Zero concepts in the graph, because the graph follows content.
+- **Four moves, not two.** Attack and defend alone produce a model biased
+  toward contradiction, which `CLAUDE.md` records as a failure rather than
+  the target and which the elenchos control is built to detect. Assent and
+  concede are named alongside them. Concede is the load-bearing move.
+- **Two constraints that prevent the domain inverting.** The trigger for
+  attack is absence of support and never competition. Every attack
+  exemplar requires a matched non-attack exemplar of the same surface
+  form, so that the feature the data varies on is support rather than
+  aggression.
+- **Recognition of instrumental justification is taught, performance is
+  not.** The teacher prompt carries the exclusion explicitly, consistent
+  with the recorded finding that this teacher conflates adjacent concepts
+  otherwise.
+
+### Changed. A naming pattern, and two corrections
+
+- **Domains named for an activity exclude what does not serve it. Domains
+  named for a bare field admit everything in the field.** This is why the
+  earlier "Operations" suffix instinct was right about the pattern and
+  wrong about its three targets, none of which is an activity.
+- `civilization_and_society` was proposed, accepted, and then withdrawn in
+  favour of `institutional_interfacing` under that test. The general name
+  would have required exclusion to be performed by hand in every authoring
+  decision.
+- **Correction.** An assessment that level one could not carry this domain
+  was wrong. It confused the institutional practice with the linguistic
+  form. "That is right because" and "that is not true because" carry all
+  four moves, depend on `discourse_marker` in `communication`, and yield
+  the kind of cross-domain prerequisite the foundation domains lack.
+
+### Open
+
+- A claim explicitly declared to rest on faith has no home in the
+  taxonomy. `unsupported` is a rejection class, always rejected, and
+  whether `attributed_position` covers a first person declaration is
+  undocumented. Adding a class is not obviously safe, since the label is
+  also a route past the validator for a claim that simply lacks support.
+
+
 ### Changed. Domain naming assessed, and a correction
 
 - An "Operations" suffix was proposed for the three foundations. **Rejected
