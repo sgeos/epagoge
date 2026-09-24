@@ -234,6 +234,27 @@ not obviously harmless.
 
 **No evidence either way.** Recorded as a risk rather than a finding.
 
+## The ablation corpus is a declared subset
+
+The full manifest describes the eventual production corpus. The corpus for
+the ordering experiment covers **mathematics and failure analysis at full
+depth across all seven levels**, chosen so that the two differ maximally in
+prerequisite depth, which is the hypothesised mechanism.
+
+Mathematics has the deepest and cleanest prerequisite chains available and
+is machine-verifiable, so corpus quality is not a plausible confound.
+Failure analysis is case-based and near-flat in prerequisite structure,
+since one investigated failure rarely depends on another.
+
+**Ordering within a domain is constrained, not free.** Prerequisites and
+supersession give a partial order. The seven levels choose one trajectory
+within the feasible set. The control is a random topological ordering,
+which respects prerequisites while discarding the curriculum trajectory, so
+the comparison is the curriculum against an arbitrary valid ordering rather
+than against an invalid one.
+
+See `../decisions/OPEN_QUESTIONS.md` items twenty and twenty-one.
+
 ## Open questions this scheme raises
 
 Recorded as open questions twenty-one, twenty-two, and twenty-three in

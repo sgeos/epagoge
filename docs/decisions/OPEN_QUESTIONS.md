@@ -662,19 +662,50 @@ magnitude, and later levels absorb most of the budget. See
 **The topic-breadth half is untouched.** Roughly ten areas across two
 spines remains the live concern, and it still gates corpus generation.
 
-**Two things are required and neither exists.**
+**ANSWERED 2026-09-23. The ablation corpus is two domains, not the full
+manifest.**
 
-1. **Explicit proportions in the coverage manifest**, rather than a list.
-   The two-spine structure supplies the principled basis, since the spines
-   can be weighted against each other deliberately.
-2. **A declared ablation subset.** The corpus for the ordering experiment
-   is probably a subset of full coverage rather than the whole manifest,
-   chosen so that depth is sufficient for learning to occur. The full
-   manifest then describes the eventual corpus rather than the experimental
-   one.
+The full manifest describes the eventual production corpus. The
+experimental corpus is a declared subset covering **mathematics and
+failure analysis**, each at full depth across all seven levels.
 
-**This gates corpus generation**, which gates the ablation. It does not
-gate the concept graph or the variance pilot, both of which can proceed.
+### Why mathematics
+
+- **Deepest and cleanest prerequisite chains** of any domain in the
+  manifest, so ordering has its best available chance.
+- **Machine-verifiable content**, so the corpus error rate is near zero and
+  measured rather than sampled, which removes corpus quality as a
+  plausible confound.
+- **A genuine ladder across all seven levels**, from counting to research
+  problems.
+
+A negative result under the most favourable conditions available is close
+to decisive. A positive result is a floor rather than a ceiling.
+
+### Why failure analysis as the contrast
+
+**The contrast varies the hypothesised mechanism, not merely the
+tidiness.** If ordering works by respecting prerequisite structure, the
+informative contrast is a domain whose chains are shallow.
+
+Failure analysis is case-based and narrative rather than derivational, and
+one investigated failure rarely depends on another, so its prerequisite
+structure is near-flat. That is maximum contrast in the mechanism variable.
+Accident reports are authoritative public sources, so corpus quality stays
+high and measurable.
+
+**The strongest possible outcome is a dissociation.** A positive result in
+mathematics paired with a null in failure analysis would be evidence that
+prerequisite depth is the mechanism, which is a better finding than an
+ordering effect alone. It would also explain the inconsistency of the
+published literature, since prior work has not controlled for the
+prerequisite depth of its subject matter.
+
+### What remains
+
+Explicit proportions between the two domains and between the two spines
+within them. This is now a much smaller problem than weighting ten areas
+and no longer gates corpus generation on its own.
 
 ## 21. Levels against the structural difficulty definition
 
@@ -686,14 +717,44 @@ graph plus supersession depth, per `PRE_COMMIT_AUDIT.md` finding three. The
 seven educational levels in `../spec/CURRICULUM_LEVELS.md` are a different
 definition.
 
-**Proposed reconciliation, not yet accepted.** Prerequisite depth remains
-authoritative, because it is checkable and derived from no model. The
-educational level is a coarse label that must be consistent with it.
+**ANSWERED 2026-09-23. They are not competing definitions. One constrains,
+the other chooses.**
 
-**Where they disagree, that is a finding rather than an error.** Conventional
-education teaching a topic out of prerequisite order is a documented
-phenomenon, and the concept graph would surface it. Such disagreements
-should be recorded, not silently resolved in favour of either.
+The earlier proposal in this record, that prerequisite depth be
+authoritative with levels as consistent bins, was **withdrawn as wrong**.
+Prerequisite depth expresses dependency only. It cannot produce the breadth
+hourglass or the abstraction gradient, so binning it into seven levels
+would discard three of the four axes the level scheme carries.
+
+**Prerequisites and supersession are hard constraints.** The concept graph
+yields a partial order. No record may depend on a concept introduced later,
+and no record may precede what it supersedes. Both are mechanically
+checkable and a violation is a rejection.
+
+**The seven levels choose one trajectory within the feasible set.** Many
+total orders satisfy the partial order. The level scheme selects one, using
+breadth, depth, abstraction, and groundedness. That selection is a design
+choice and is not derived.
+
+### Consequence. The flat-order control is a random topological ordering
+
+This question determines what the control is, and the candidates differ in
+what they would establish.
+
+A **free shuffle** violates prerequisites, making the comparison valid
+ordering against invalid ordering. Much of the published literature does
+this. A positive result would establish little, since presenting material
+before its prerequisites is expected to train worse.
+
+A **random topological ordering** respects prerequisites while discarding
+the curriculum trajectory. The comparison becomes the curriculum against an
+arbitrary valid ordering, **which is the claim worth making.**
+
+**Decided. The control is a random topological ordering.** Each seed draws
+a fresh random linear extension of the partial order.
+
+This is recorded in the pre-registration scope, since changing the control
+after results are seen would invalidate the experiment.
 
 ## 22. Whether level one carries signal
 
@@ -755,10 +816,42 @@ in `JACOBIAN_SPACE.md` measures transfer between topics directly, so
 inter-topic mastery is observable in the kernel rather than only inferable
 from downstream behaviour.
 
-**Unresolved.** How transfer edges are identified, whether by hand, by
-structural similarity, or by measured gradient alignment. The last would be
-circular if used to construct the graph the experiment then tests, so it
-can serve as validation but not as construction.
+**ANSWERED 2026-09-23. Transfer edges route through the formal spine.**
+
+A transfer edge exists between two domain concepts **exactly when a formal
+structure exists that both instantiate**, and that structure is itself a
+node in the graph. Conservation laws, feedback and control, optimisation,
+equilibrium, exponential growth, and network structure recur across domains
+because the domains instantiate the same mathematical object.
+
+**The concept graph becomes layered.** Domain concepts connect through
+formal structures rather than directly to one another.
+
+Three properties this has.
+
+- **Checkable rather than asserted.** Whether a concept instantiates a
+  formal structure is verifiable, unlike a claimed resemblance.
+- **Derived from no model**, preserving the property that made the
+  structural difficulty definition acceptable.
+- **It excludes loose metaphor**, which is where false transfer originates.
+  A model that learns that feedback in one domain is the same structure as
+  feedback in another has learned something true. A model that learns
+  softer cross-domain resemblances has learned something that will mislead
+  it.
+
+It also gives the mathematics and logic coverage a **structural role**
+rather than only a subject-matter one, since the formal layer is the
+transfer mechanism.
+
+**Rejected alternatives.** Hand-authoring does not scale and is not
+checkable in the way the rest of the graph is. Measured gradient alignment
+is circular if used to construct the graph the experiment then tests, and
+remains usable as validation only. Dropping transfer edges would abandon
+inter-topic mastery while leaving the cross-domain alignment
+instrumentation measuring something the corpus never deliberately taught.
+
+**Cost.** Formal structures must be enumerated as graph nodes. That work
+overlaps with the mathematics coverage rather than adding to it.
 
 ## Sources consulted 2026-09-23
 

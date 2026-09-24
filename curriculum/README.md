@@ -44,11 +44,16 @@ limits are, where a representation applies, how something is established,
 and how one discovers one was wrong.
 
 **The practice spine is arguably the actual curriculum**, with subject
-content as the substrate it operates on. A record belongs to one spine or
-both, and the two are proportioned against each other deliberately rather
-than by accident of what was easy to generate.
+content as the substrate it operates on. Its members are logic, philosophy
+of science, modelling and simulation, auditing and verification, and
+failure analysis, with mathematics supplying the formal layer through which
+transfer edges route.
 
-Neither axis's contents are reproduced here.
+A record belongs to one spine or both, and the two are proportioned against
+each other deliberately rather than by accident of what was easy to
+generate.
+
+Subject-spine coverage is not enumerated here.
 
 Coverage weighting decides what is written about. It never licenses a claim
 to exceed its evidence.

@@ -25,6 +25,39 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+### Resolved, 2026-09-23. Four open questions closed
+
+**21. Levels against structural difficulty.** They are not competing
+definitions. Prerequisites and supersession are hard checkable constraints
+giving a partial order. The seven levels choose one trajectory within the
+feasible set. The earlier proposal that prerequisite depth be authoritative
+was withdrawn as wrong, since dependency depth cannot express breadth,
+abstraction, or groundedness.
+
+**Consequence.** The flat-order control is a **random topological
+ordering**, respecting prerequisites while discarding the curriculum
+trajectory. A free shuffle would have compared valid ordering against
+invalid ordering, which is close to a tautology and is what much of the
+published literature does.
+
+**24. Transfer edges route through the formal spine.** An edge exists
+between two domain concepts exactly when a formal structure exists that
+both instantiate, and that structure is a node in the graph. Checkable,
+model-free, and it excludes loose metaphor, which is where false transfer
+originates. The graph becomes layered.
+
+**20. The ablation corpus is two domains, not the full manifest.**
+Mathematics for deepest prerequisite chains and machine-verifiable content,
+plus a near-flat-structure contrast domain. The contrast varies the
+hypothesised mechanism rather than merely the tidiness of the subject.
+
+**The strongest available outcome is now a dissociation.** A positive result
+in the deep-structure domain paired with a null in the flat-structure one
+would be evidence that prerequisite depth is the mechanism, which is a
+better finding than an ordering effect alone, and would explain the
+inconsistency of prior work, which has not controlled for the prerequisite
+depth of its subject matter.
+
 ### Changed, 2026-09-23. Enabling material, spiral structure, and quirk
 
 - **Every topic appears at every level, as enabling material.** At low
