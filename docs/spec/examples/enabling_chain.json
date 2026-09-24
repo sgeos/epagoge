@@ -1,0 +1,93 @@
+{
+  "_comment": "Illustrative only. NOT part of the ablation corpus, which is mathematics and failure analysis. This exists to demonstrate why a concrete concept with no immediate use can still earn a place at level one. See docs/spec/ENABLING_CONCEPTS.md.",
+  "nodes": [
+    {
+      "id": "crayon",
+      "name": "crayon",
+      "kind": "domain_concept",
+      "domain": "materials"
+    },
+    {
+      "id": "candle",
+      "name": "candle",
+      "kind": "domain_concept",
+      "domain": "materials"
+    },
+    {
+      "id": "paraffin_wax",
+      "name": "paraffin wax",
+      "kind": "domain_concept",
+      "domain": "materials"
+    },
+    {
+      "id": "hydrocarbon",
+      "name": "hydrocarbon",
+      "kind": "domain_concept",
+      "domain": "materials"
+    },
+    {
+      "id": "phase_of_matter",
+      "name": "phase of matter",
+      "kind": "domain_concept",
+      "domain": "materials"
+    },
+    {
+      "id": "melting",
+      "name": "melting",
+      "kind": "domain_concept",
+      "domain": "materials"
+    },
+    {
+      "id": "combustion",
+      "name": "combustion",
+      "kind": "domain_concept",
+      "domain": "materials"
+    },
+    {
+      "id": "regression_rate",
+      "name": "regression rate",
+      "kind": "domain_concept",
+      "domain": "materials"
+    },
+    {
+      "id": "hybrid_rocket_fuel",
+      "name": "hybrid rocket fuel",
+      "kind": "domain_concept",
+      "domain": "materials"
+    },
+    {
+      "id": "teddy_bear",
+      "name": "teddy bear",
+      "kind": "domain_concept",
+      "domain": "materials"
+    }
+  ],
+  "prerequisites": {
+    "melting": [
+      "phase_of_matter"
+    ],
+    "combustion": [
+      "hydrocarbon"
+    ],
+    "regression_rate": [
+      "combustion",
+      "melting"
+    ],
+    "hybrid_rocket_fuel": [
+      "regression_rate",
+      "paraffin_wax"
+    ]
+  },
+  "instantiates": {},
+  "specialises": {
+    "crayon": [
+      "paraffin_wax"
+    ],
+    "candle": [
+      "paraffin_wax"
+    ],
+    "paraffin_wax": [
+      "hydrocarbon"
+    ]
+  }
+}

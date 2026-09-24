@@ -32,6 +32,7 @@ confined to one domain cannot carry transfer.
 | --- | --- | --- | --- |
 | `prerequisite` | any node | any node | The source cannot be understood before the target |
 | `instantiates` | domain concept | formal structure | The concept is an instance of the structure |
+| `specialises` | domain concept | domain concept | The concept is a concrete instance of the general one |
 
 **Transfer edges are derived, never authored.** Two domain concepts in
 *different* domains are connected by transfer exactly when they instantiate

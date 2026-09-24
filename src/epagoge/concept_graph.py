@@ -70,6 +70,7 @@ class ConceptGraph:
         nodes: Iterable[Node],
         prerequisites: Mapping[str, Iterable[str]],
         instantiates: Mapping[str, Iterable[str]],
+        specialises: Mapping[str, Iterable[str]] | None = None,
     ) -> None:
         self._nodes: dict[str, Node] = {n.id: n for n in nodes}
         self._prerequisites: dict[str, frozenset[str]] = {
@@ -77,6 +78,9 @@ class ConceptGraph:
         }
         self._instantiates: dict[str, frozenset[str]] = {
             k: frozenset(v) for k, v in instantiates.items()
+        }
+        self._specialises: dict[str, frozenset[str]] = {
+            k: frozenset(v) for k, v in (specialises or {}).items()
         }
 
     # -- accessors ---------------------------------------------------------
@@ -91,6 +95,42 @@ class ConceptGraph:
     def structures_of(self, node_id: str) -> frozenset[str]:
         return self._instantiates.get(node_id, frozenset())
 
+    def generalisations_of(self, node_id: str) -> frozenset[str]:
+        """Concepts this one is a concrete instance of."""
+        return self._specialises.get(node_id, frozenset())
+
+    def downstream_reach(self) -> dict[str, int]:
+        """How many concepts each concept eventually unlocks.
+
+        Counts everything transitively reachable by following prerequisite
+        and specialisation edges in reverse, so a concept's reach is the set
+        of things that depend on it however remotely.
+
+        This measures foundational importance: how much rests on a concept.
+        It is **not** the right measure for a concrete anchor, which is a
+        leaf and on which nothing rests. For that see :meth:`anchor_reach`.
+        """
+        dependents: dict[str, set[str]] = defaultdict(set)
+        for node_id in self._nodes:
+            for target in self.prerequisites_of(node_id) | self.generalisations_of(
+                node_id
+            ):
+                if target in self._nodes:
+                    dependents[target].add(node_id)
+
+        out: dict[str, int] = {}
+        for start in self._nodes:
+            seen: set[str] = set()
+            stack = list(dependents[start])
+            while stack:
+                node = stack.pop()
+                if node in seen:
+                    continue
+                seen.add(node)
+                stack.extend(dependents[node] - seen)
+            out[start] = len(seen)
+        return out
+
     # -- validation --------------------------------------------------------
 
     def validate(self) -> list[Violation]:
@@ -100,7 +140,99 @@ class ConceptGraph:
         out.extend(self._check_self_loops())
         out.extend(self._check_kind_rules())
         out.extend(self._check_layering())
+        out.extend(self._check_specialisation())
         out.extend(self._check_acyclic())
+        return out
+
+    def anchor_reach(self) -> dict[str, int]:
+        """What a concept gives concrete access to, through specialisation.
+
+        Follows specialisation edges forward to the abstractions a concept
+        instantiates, then counts everything that rests on those.
+
+        **This is what lets a concrete concept earn a place at level one.**
+        A human curriculum introduces crayons because children use crayons. A
+        model has no such reason. A crayon earns its place only as a cheap
+        concrete anchor for a chain that matters later, and this makes that
+        argument countable.
+
+        The distinction from :meth:`downstream_reach` matters. An anchor is a
+        leaf, so nothing depends on it and its downstream reach is zero. A
+        crayon and a teddy bear are indistinguishable by that measure and are
+        separated by this one.
+        """
+        dependents = self._dependents()
+        out: dict[str, int] = {}
+        for start in self._nodes:
+            # abstractions this concept instantiates, transitively
+            anchored: set[str] = set()
+            stack = [g for g in self.generalisations_of(start) if g in self._nodes]
+            while stack:
+                node = stack.pop()
+                if node in anchored:
+                    continue
+                anchored.add(node)
+                stack.extend(
+                    g for g in self.generalisations_of(node) if g in self._nodes
+                )
+            # and everything that rests on them
+            reached: set[str] = set(anchored)
+            stack = [d for a in anchored for d in dependents[a]]
+            while stack:
+                node = stack.pop()
+                if node in reached:
+                    continue
+                reached.add(node)
+                stack.extend(dependents[node] - reached)
+            reached.discard(start)
+            out[start] = len(reached)
+        return out
+
+    def _dependents(self) -> dict[str, set[str]]:
+        dependents: dict[str, set[str]] = defaultdict(set)
+        for node_id in self._nodes:
+            for target in self.prerequisites_of(node_id) | self.generalisations_of(
+                node_id
+            ):
+                if target in self._nodes:
+                    dependents[target].add(node_id)
+        return dependents
+
+    def _check_specialisation(self) -> list[Violation]:
+        """A specialisation links two domain concepts.
+
+        It never runs into the formal layer, which is what ``instantiates``
+        is for.
+        """
+        out: list[Violation] = []
+        for src, targets in self._specialises.items():
+            node = self._nodes.get(src)
+            if node is not None and node.kind is not NodeKind.DOMAIN_CONCEPT:
+                out.append(
+                    Violation(
+                        "bad-specialises-source", f"{src!r} is not a domain concept"
+                    )
+                )
+            for target in targets:
+                if target == src:
+                    out.append(
+                        Violation("self-loop", f"node {src!r} specialises itself")
+                    )
+                other = self._nodes.get(target)
+                if other is None:
+                    out.append(
+                        Violation(
+                            "unknown-target",
+                            f"specialises {src!r} -> undeclared {target!r}",
+                        )
+                    )
+                elif other.kind is not NodeKind.DOMAIN_CONCEPT:
+                    out.append(
+                        Violation(
+                            "bad-specialises-target",
+                            f"{target!r} is a formal structure, not a general concept",
+                        )
+                    )
         return out
 
     def _check_references(self) -> list[Violation]:
@@ -336,6 +468,7 @@ class ConceptGraph:
             _parse_nodes(body.get("nodes")),
             _parse_edges(body.get("prerequisites"), "prerequisites"),
             _parse_edges(body.get("instantiates"), "instantiates"),
+            _parse_edges(body.get("specialises"), "specialises"),
         )
 
     @classmethod

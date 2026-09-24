@@ -282,3 +282,68 @@ class TestFileLoading(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestSpecialisation(unittest.TestCase):
+    """A concrete concept is an instance of a general one. A third relation."""
+
+    def chain(self) -> ConceptGraph:
+        return ConceptGraph(
+            [concept(x, "materials") for x in ("crayon", "teddy", "wax", "fuel")],
+            {"fuel": ["wax"]},
+            {},
+            {"crayon": ["wax"]},
+        )
+
+    def test_a_specialisation_is_recorded(self) -> None:
+        self.assertEqual(self.chain().generalisations_of("crayon"), frozenset({"wax"}))
+
+    def test_a_sound_chain_validates(self) -> None:
+        self.assertEqual(self.chain().validate(), [])
+
+    def test_specialising_a_formal_structure_is_rejected(self) -> None:
+        g = ConceptGraph([concept("a", "m"), structure("s")], {}, {}, {"a": ["s"]})
+        self.assertIn("bad-specialises-target", codes(g))
+
+    def test_a_formal_structure_may_not_specialise(self) -> None:
+        g = ConceptGraph([structure("s"), concept("a", "m")], {}, {}, {"s": ["a"]})
+        self.assertIn("bad-specialises-source", codes(g))
+
+    def test_specialising_an_undeclared_node_is_rejected(self) -> None:
+        g = ConceptGraph([concept("a", "m")], {}, {}, {"a": ["ghost"]})
+        self.assertIn("unknown-target", codes(g))
+
+    def test_self_specialisation_is_rejected(self) -> None:
+        g = ConceptGraph([concept("a", "m")], {}, {}, {"a": ["a"]})
+        self.assertIn("self-loop", codes(g))
+
+
+class TestReach(unittest.TestCase):
+    def chain(self) -> ConceptGraph:
+        return ConceptGraph(
+            [concept(x, "materials") for x in ("crayon", "teddy", "wax", "fuel")],
+            {"fuel": ["wax"]},
+            {},
+            {"crayon": ["wax"]},
+        )
+
+    def test_downstream_reach_counts_what_rests_on_a_concept(self) -> None:
+        self.assertEqual(self.chain().downstream_reach()["wax"], 2)
+
+    def test_an_anchor_has_no_downstream_reach(self) -> None:
+        reach = self.chain().downstream_reach()
+        self.assertEqual(reach["crayon"], 0)
+        self.assertEqual(reach["teddy"], 0)
+
+    def test_anchor_reach_separates_a_useful_anchor_from_a_useless_one(self) -> None:
+        """The whole point. Downstream reach cannot tell these apart."""
+        anchors = self.chain().anchor_reach()
+        self.assertGreater(anchors["crayon"], 0)
+        self.assertEqual(anchors["teddy"], 0)
+
+    def test_anchor_reach_includes_what_rests_on_the_anchored_concept(self) -> None:
+        # crayon anchors wax, and fuel rests on wax
+        self.assertEqual(self.chain().anchor_reach()["crayon"], 2)
+
+    def test_a_concept_does_not_count_itself(self) -> None:
+        self.assertNotIn(-1, self.chain().anchor_reach().values())

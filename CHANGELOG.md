@@ -27,6 +27,37 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Enabling concepts, and the metric that measures them
+
+- `docs/spec/ENABLING_CONCEPTS.md`, a `specialises` edge type, and two
+  reach metrics.
+- **Level placement is a scheduling problem, not only a dependency one.**
+  Japanese education assigns kanji to grades, and some appear where they do
+  because they must be introduced somewhere and that level had room.
+  Prerequisites say what cannot come before what. They do not say where
+  anything should go among the orderings that satisfy them. Capacity per
+  level and completion by the end are both unmodelled and are recorded as
+  the shape the assignment should take.
+- **A concept with no use at a low level can be an enabling concept for a
+  high one.** A crayon is paraffin wax, paraffin wax is a lightweight
+  hydrocarbon, and paraffin hybrids have flown. Verified: Stanford and
+  Lockheed Martin in 2003 to 4,600 metres, a Stanford student vehicle to
+  2,871 metres in 2004, with regression rates three to four times HTPB.
+- **The divergence from human pedagogy this exposes.** A human curriculum
+  introduces crayons because children use crayons. A model has no life, so a
+  concrete concept earns level one only as the cheapest anchor for a chain
+  that matters later. Selecting by what a child finds familiar would fill
+  level one with objects that anchor nothing.
+- **A correction made while building.** The first metric counted what
+  depends on a concept, which is the wrong direction for an anchor. An
+  anchor is a leaf, so a crayon scored zero alongside a teddy bear.
+  `anchor_reach` follows specialisation forward to the abstractions a
+  concept instantiates and counts what rests on those. In the worked example
+  a crayon anchors six concepts and a teddy bear none.
+- A `specialises` edge is distinct from the two already present. A crayon
+  does not require paraffin wax and shares no formal structure with it. It
+  is one.
+
 ### Added. Per-level vocabulary, with a correction to my own design
 
 - `docs/spec/VOCABULARY.md`, `src/epagoge/vocabulary.py`, and

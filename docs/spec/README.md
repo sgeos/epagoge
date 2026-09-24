@@ -7,6 +7,9 @@ validation contracts.
 
 - `CLAIM_TAXONOMY.md` classifies every record by what it claims and how
   that claim is verified. Specified 2026-09-23.
+- `ENABLING_CONCEPTS.md` records why a concept with no use at a low level
+  can still earn a place there, and why level assignment is a scheduling
+  problem rather than only a dependency one. Recorded 2026-09-24.
 - `VOCABULARY.md` specifies the per-level vocabulary, its ceiling and
   coverage rules, and why it needs three categories rather than two.
   Specified 2026-09-24.
