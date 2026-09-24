@@ -274,97 +274,97 @@
       "id": "household_object",
       "name": "household object",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "physical_world"
     },
     {
       "id": "toy",
       "name": "toy",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "physical_world"
     },
     {
       "id": "physical_property",
       "name": "physical property",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "physical_world"
     },
     {
       "id": "emptiness",
       "name": "emptiness",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "physical_world"
     },
     {
       "id": "spatial_position",
       "name": "spatial position",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "space_and_time"
     },
     {
       "id": "falling",
       "name": "falling",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "physical_world"
     },
     {
       "id": "opening_and_shutting",
       "name": "opening and shutting",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "physical_world"
     },
     {
       "id": "duration",
       "name": "duration",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "space_and_time"
     },
     {
       "id": "sequence",
       "name": "sequence",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "space_and_time"
     },
     {
       "id": "person",
       "name": "person",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "agency"
     },
     {
       "id": "activity",
       "name": "activity",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "agency"
     },
     {
       "id": "change",
       "name": "change",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "physical_world"
     },
     {
       "id": "need",
       "name": "need",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "agency"
     },
     {
-      "id": "manner",
-      "name": "manner",
+      "id": "discourse_marker",
+      "name": "discourse_marker",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "communication"
     },
     {
       "id": "presence",
       "name": "presence",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "physical_world"
     },
     {
       "id": "direction",
       "name": "direction",
       "kind": "domain_concept",
-      "domain": "everyday"
+      "domain": "space_and_time"
     },
     {
       "id": "quantity",

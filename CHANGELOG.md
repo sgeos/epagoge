@@ -27,6 +27,23 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. The everyday domain split into three
+
+- `everyday` was a grab-bag. Split into `physical_world`, `space_and_time`,
+  and `agency`, aligned with clusters the primitive register already has.
+  The register is the level-one foundation, so the domains should not cut
+  across it.
+- **The split earns more than tidiness.** A single foundation hides which
+  foundation each domain rests on. Measured immediately, failure analysis
+  rests on the physical world about two and a half times as heavily as
+  mathematics does, while mathematics leans further on space and time. One
+  bucket would have reported one undifferentiated number.
+- A mis-mapping surfaced. "Therefore" sat under `manner`, which is an
+  inference marker, so it became `discourse_marker` and moved to
+  communication.
+- Independence survives. No cross-domain prerequisites, depth contrast
+  unchanged at 10 against 6.
+
 ### Added. Accounting, and a handoff protocol
 
 - Accounting placed as a measurement discipline rather than applied

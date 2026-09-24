@@ -673,7 +673,7 @@
     },
     {
       "word": "rather",
-      "concept": "manner",
+      "concept": "discourse_marker",
       "level": 6
     },
     {
@@ -798,7 +798,7 @@
     },
     {
       "word": "therefore",
-      "concept": "manner",
+      "concept": "discourse_marker",
       "level": 6
     },
     {
@@ -851,7 +851,7 @@
     },
     {
       "word": "way",
-      "concept": "manner",
+      "concept": "discourse_marker",
       "level": 1
     },
     {

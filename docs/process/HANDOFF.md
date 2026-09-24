@@ -32,9 +32,9 @@ rendered ORDER of this list, not just the next unused number.
    a statement below needs re-reading before it is believed.
 2. The suite reports **192** tests. A lower number means this file predates
    work; a much higher one means it postdates this refresh.
-3. `curriculum/graph/concepts.json` holds **78** nodes and yields **4**
-   derived transfer edges. If transfer edges are 3, the accounting work is
-   absent and this file is stale.
+3. `curriculum/graph/concepts.json` holds **78** nodes across **seven**
+   domains and yields **4** derived transfer edges. If there is a domain
+   named `everyday`, this file predates the 2026-09-24 split and is stale.
 4. Vocabulary completeness is **100 percent**, 138 terms and **0** unmapped.
    A non-zero unmapped count means concepts are missing from the graph, not
    that the words are ordinary.
