@@ -6,9 +6,19 @@ Working practice for this repository.
 
 ## Current practice
 
-- **Run `tools/check.sh` before any commit that touches code.** It runs
-  ruff lint, ruff format, pyright in strict mode, the tests, and seed-graph
-  validation, and exits non-zero on any failure.
+- **Run `tools/check.sh` before any commit.** It gates ruff lint, ruff
+  format, pyright in strict mode, the tests, a coverage floor of 95
+  percent, graph and corpus validation, and the disclosure scan, and exits
+  non-zero on any failure.
+- **Tool versions in the gate are pinned.** A gate resolving `@latest` can
+  pass today and fail tomorrow for reasons unrelated to the code, which is
+  not a property a project about reproducibility should accept in its own
+  process. Bump deliberately and record the bump.
+- **The disclosure scan holds its pattern outside version control.** A
+  tracked list of withheld vocabulary would publish what is being withheld.
+  Absent the pattern the scan skips loudly rather than passing silently,
+  which is why continuous integration enforces the code gate and not the
+  disclosure discipline.
 - Static analysis is configured in `pyproject.toml`. Pyright runs in strict
   mode and ruff carries the security ruleset. Zero warnings is the target
   and is currently met.

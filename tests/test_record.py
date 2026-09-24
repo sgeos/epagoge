@@ -7,7 +7,10 @@ been tested.
 
 from __future__ import annotations
 
+import json
+import tempfile
 import unittest
+from pathlib import Path
 
 from epagoge.concept_graph import ConceptGraph, Node, NodeKind
 from epagoge.record import (
@@ -16,6 +19,7 @@ from epagoge.record import (
     Record,
     Simplification,
     SimplificationKind,
+    load_corpus,
     record_from_json,
     validate_corpus,
     validate_record,
@@ -263,6 +267,76 @@ class TestBoundaryParsing(unittest.TestCase):
         }
         with self.assertRaises(ValueError):
             record_from_json(body)
+
+
+class TestCorpusLoading(unittest.TestCase):
+    def setUp(self) -> None:
+        self._dir = tempfile.TemporaryDirectory()
+        self.addCleanup(self._dir.cleanup)
+
+    def write(self, text: str) -> Path:
+        path = Path(self._dir.name) / "corpus.jsonl"
+        path.write_text(text, encoding="utf-8")
+        return path
+
+    def test_blank_lines_are_skipped(self) -> None:
+        body = json.dumps(
+            {
+                "id": "r",
+                "level": 1,
+                "concepts": ["a"],
+                "claim_class": "empirical",
+                "content": "text",
+                "provenance": {"source_claim": "s"},
+            }
+        )
+        path = self.write(f"\n{body}\n\n")
+        self.assertEqual(len(load_corpus(path)), 1)
+
+    def test_a_bad_line_reports_its_line_number(self) -> None:
+        path = self.write('{"id": 1}\n')
+        with self.assertRaises(ValueError) as ctx:
+            load_corpus(path)
+        self.assertIn(":1:", str(ctx.exception))
+
+    def test_provenance_must_be_an_object(self) -> None:
+        with self.assertRaises(ValueError):
+            record_from_json(
+                {
+                    "id": "r",
+                    "level": 1,
+                    "concepts": ["a"],
+                    "claim_class": "empirical",
+                    "content": "t",
+                    "provenance": "source",
+                }
+            )
+
+    def test_simplification_must_be_an_object(self) -> None:
+        with self.assertRaises(ValueError):
+            record_from_json(
+                {
+                    "id": "r",
+                    "level": 1,
+                    "concepts": ["a"],
+                    "claim_class": "empirical",
+                    "content": "t",
+                    "provenance": {"source_claim": "s"},
+                    "simplification": "none",
+                }
+            )
+
+    def test_concepts_absent_from_the_graph_are_ignored_by_coverage(self) -> None:
+        out = validate_corpus([rec("r", 1, ("ghost",))], graph())
+        self.assertIn("unknown-concept", codes(out))
+        self.assertNotIn("prerequisite-untaught", codes(out))
+
+    def test_a_normative_record_with_a_holder_passes(self) -> None:
+        r = rec(
+            claim_class=ClaimClass.NORMATIVE,
+            provenance=Provenance(position_holder="the operator"),
+        )
+        self.assertEqual(validate_record(r, graph()), [])
 
 
 if __name__ == "__main__":

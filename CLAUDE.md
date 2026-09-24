@@ -12,10 +12,13 @@ stages revisit those concepts at increasing complexity, terminating in
 unmodified scientific literature. The organising spine is the scientific
 method.
 
-**Status**: Skeleton, created 2026-09-23. Nothing is implemented. The goal
-specification is incomplete. Do not write pipeline code until the questions
-in `docs/decisions/OPEN_QUESTIONS.md` have answers, because several of them
-change what the code would have to be.
+**Status**: Under implementation. The concept graph and the corpus record
+schema are specified, implemented, tested, and gated. No corpus has been
+generated and no model has been trained.
+
+**Run `tools/check.sh` before any commit.** It gates lint, formatting,
+strict type checking, tests, a coverage floor, graph and corpus validation,
+and the disclosure scan.
 
 **Engineering classification**: Research project. Claims are provisional
 until measured.

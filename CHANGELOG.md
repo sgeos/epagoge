@@ -27,6 +27,33 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Gate completed, and four gaps closed
+
+Found by checking rather than by recalling.
+
+- **The disclosure scan was enforced by nothing.** `tools/scrub_scan.sh`
+  now runs in the gate. Its pattern lives in `secret/`,
+  because a tracked list of withheld vocabulary would publish the thing
+  being withheld, and absent the pattern it skips loudly rather than
+  passing silently. It is word-anchored, since an unanchored pattern
+  matched `ore` inside `before` on 2026-09-23 and produced noise that
+  would have looked identical to a clean result.
+- **The gate resolved `@latest` and was therefore not reproducible.** Tool
+  versions are pinned. A gate that can fail tomorrow for reasons unrelated
+  to the code is not a property this project should accept in its own
+  process.
+- **No continuous integration existed.** `.github/workflows/check.yml`
+  added, with its one limitation documented rather than left implicit.
+- **Coverage had never been measured.** It was 94 percent. Nine tests were
+  added for the untested paths, raising it to 99, and a floor of 95 is now
+  enforced.
+- The `normative` claim class was never exercised by the sample corpus.
+  Adding a record for it exposed two genuine prerequisite gaps, which the
+  corpus validator caught and which were closed by teaching the missing
+  concepts rather than by deleting the record that revealed them.
+- Status lines in `README.md` and `CLAUDE.md` still said nothing was
+  implemented.
+
 ### Changed. Licensing decided
 
 - **0BSD for software, CC0 1.0 for corpus and documentation.** Supersedes

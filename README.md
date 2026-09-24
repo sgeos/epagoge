@@ -3,8 +3,9 @@
 A graded synthetic corpus and curriculum for training a
 falsification-oriented foundation model.
 
-**Status.** Pre-planning closed 2026-09-23. No corpus has been generated,
-no curriculum stage has been specified, and no model has been trained.
+**Status.** Under implementation. The concept graph and the corpus record
+schema are specified, implemented, tested, and gated. No corpus has been
+generated and no model has been trained.
 
 All nineteen pre-planning questions are resolved, fifteen answered and four
 deferred to the gated follow-on. See

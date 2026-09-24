@@ -10,8 +10,11 @@ that has only been shown valid input has not been tested.
 
 from __future__ import annotations
 
+import json
 import random
+import tempfile
 import unittest
+from pathlib import Path
 
 from epagoge.concept_graph import ConceptGraph, Node, NodeKind
 
@@ -245,6 +248,36 @@ class TestBoundaryParsing(unittest.TestCase):
         g = ConceptGraph.from_json({"nodes": [node]})
         self.assertEqual(g.validate(), [])
         self.assertEqual(g.canonical_order(), ["a"])
+
+
+class TestFileLoading(unittest.TestCase):
+    def test_load_round_trips_through_a_file(self) -> None:
+        payload = {
+            "nodes": [
+                {"id": "a", "name": "a", "kind": "domain_concept", "domain": "m"},
+                {"id": "s", "name": "s", "kind": "formal_structure", "domain": None},
+            ],
+            "prerequisites": {},
+            "instantiates": {"a": ["s"]},
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "g.json"
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            g = ConceptGraph.load(path)
+        self.assertEqual(g.validate(), [])
+        self.assertEqual(g.structures_of("a"), frozenset({"s"}))
+        self.assertEqual(g.structures_of("missing"), frozenset())
+
+    def test_depth_raises_on_a_cycle_rather_than_looping(self) -> None:
+        g = ConceptGraph(
+            [concept("a", "m"), concept("b", "m")], {"a": ["b"], "b": ["a"]}, {}
+        )
+        with self.assertRaises(ValueError):
+            g.prerequisite_depth()
+
+    def test_edges_to_undeclared_nodes_are_skipped_by_depth(self) -> None:
+        g = ConceptGraph([concept("a", "m")], {"a": ["ghost"]}, {})
+        self.assertEqual(g.prerequisite_depth()["a"], 0)
 
 
 if __name__ == "__main__":
