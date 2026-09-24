@@ -636,7 +636,7 @@ follow-on defines an episode. See `../architecture/MODEL_ARCHITECTURE.md`.
 
 This inherits from question one, scope.
 
-## 20. Coverage weighting against the token budget. GATES CORPUS GENERATION
+## 20. Coverage weighting against the token budget. ANSWERED 2026-09-23
 
 Added 2026-09-23.
 
