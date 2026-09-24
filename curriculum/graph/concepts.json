@@ -425,6 +425,48 @@
       "name": "dependence",
       "kind": "domain_concept",
       "domain": "communication"
+    },
+    {
+      "id": "stock_and_flow",
+      "name": "stock and flow",
+      "kind": "domain_concept",
+      "domain": "accounting"
+    },
+    {
+      "id": "ledger",
+      "name": "ledger",
+      "kind": "domain_concept",
+      "domain": "accounting"
+    },
+    {
+      "id": "balance",
+      "name": "balance",
+      "kind": "domain_concept",
+      "domain": "accounting"
+    },
+    {
+      "id": "double_entry",
+      "name": "double entry",
+      "kind": "domain_concept",
+      "domain": "accounting"
+    },
+    {
+      "id": "reconciliation",
+      "name": "reconciliation",
+      "kind": "domain_concept",
+      "domain": "accounting"
+    },
+    {
+      "id": "conservation",
+      "name": "conservation",
+      "kind": "formal_structure",
+      "domain": null
+    },
+    {
+      "id": "error_detecting_code",
+      "name": "error-detecting code",
+      "kind": "formal_structure",
+      "domain": null
     }
   ],
   "prerequisites": {
@@ -584,6 +626,19 @@
     ],
     "algebraic_structure": [
       "addition"
+    ],
+    "ledger": [
+      "stock_and_flow"
+    ],
+    "balance": [
+      "stock_and_flow"
+    ],
+    "double_entry": [
+      "balance",
+      "ledger"
+    ],
+    "reconciliation": [
+      "balance"
     ]
   },
   "instantiates": {
@@ -605,6 +660,15 @@
     ],
     "hazard_rate": [
       "exponential_decay"
+    ],
+    "balance": [
+      "conservation"
+    ],
+    "conservation_of_number": [
+      "conservation"
+    ],
+    "double_entry": [
+      "error_detecting_code"
     ]
   },
   "specialises": {
