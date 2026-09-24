@@ -74,6 +74,51 @@ covering the enabling primitives rather than the formal discipline.
 onto levels. The spine does not enter at a floor level. It appears at every
 level in a form appropriate to that level.
 
+## Training to level one is a pipeline validation
+
+Recorded 2026-09-24, because the framing determines how the result is
+judged.
+
+**A model trained on level one alone will be poor by construction.** One to
+ten million tokens of picture-book content produces something that can say
+things break and count to three. Judged as a model, the result would
+support a wrong conclusion.
+
+**The deliverable is a working loop**, meaning generate, validate,
+tokenise, train, evaluate, with a model as the byproduct that proves the
+loop runs. Framed that way it is valuable whatever the model turns out
+like, and it de-risks everything downstream for a small fraction of the
+eventual cost.
+
+It also makes open question twenty-two answerable almost for free. Train on
+level-one axioms, train on an equal budget of non-curriculum simple text,
+and compare. That is the axiom-seeding question.
+
+### Tokenisation for level one. Byte-level
+
+Vocabulary 256, no dependency, no tokeniser-training step, fully
+reproducible. Level-one content is simple English and the cost is sequence
+length, which does not matter at this scale.
+
+This defers the tokeniser question rather than answering it prematurely,
+and `../architecture/TRAINING_SPINE.md` already treats tokenisation as a
+neutral artifact, so changing it later is contained.
+
+### Sequence
+
+1. Ground the axioms. Done, see `../decisions/PRIMITIVE_REGISTER.md`.
+2. Expand the concept graph to cover level one for both domains.
+3. Generate one hundred records, validate them, **and read them.** If they
+   are bad, everything downstream is bad, and an hour has been spent rather
+   than a million tokens.
+4. Scale generation only once a hundred records survive reading.
+5. Byte-level tokenise, train, evaluate.
+
+**Throughput, not cost, is the binding constraint.** At roughly thirty-five
+tokens per second locally, one million tokens is about eight hours,
+improving several-fold with concurrent requests. Level one is a few hours
+to a couple of days of wall time.
+
 ## Level one seeds civilisational axioms
 
 The first level is not teaching content. It installs **the primitives that

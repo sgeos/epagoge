@@ -11,13 +11,22 @@ makes the description enforceable.
 from __future__ import annotations
 
 import json
-from collections.abc import Iterable, Mapping, Sequence
+from collections.abc import Collection, Iterable, Mapping, Sequence
 from dataclasses import dataclass, field
 from enum import Enum
 from pathlib import Path
 from typing import Final, cast
 
 from epagoge.concept_graph import ConceptGraph, Violation
+
+PRIMITIVE_PREFIX: Final[str] = "primitive:"
+"""Marks a source claim that resolves in the primitive register.
+
+Level one seeds civilisational axioms, which have no citation in the
+ordinary sense. They ground in a hand-authored register instead. The
+grounding rule is unchanged; only the kind of source is new. See
+docs/decisions/PRIMITIVE_REGISTER.md.
+"""
 
 MIN_LEVEL: Final[int] = 1
 MAX_LEVEL: Final[int] = 7
@@ -192,13 +201,21 @@ def _validate_simplification(record: Record) -> list[Violation]:
     return out
 
 
-def validate_corpus(records: Iterable[Record], graph: ConceptGraph) -> list[Violation]:
+def validate_corpus(
+    records: Iterable[Record],
+    graph: ConceptGraph,
+    primitives: Collection[str] | None = None,
+) -> list[Violation]:
     """Check a whole corpus. Returns every violation, never raising.
 
-    Two checks exist only at corpus level and are the reason this function
+    Three checks exist only at corpus level and are the reason this function
     is separate from :func:`validate_record`. Supersession must resolve to a
-    later record, and every prerequisite of a covered concept must already
-    have been taught.
+    later record, every prerequisite of a covered concept must already have
+    been taught, and every primitive cited must be registered.
+
+    ``primitives`` is the register. Passing ``None`` skips that check, which
+    is correct for a corpus that cites no primitives and wrong for one that
+    does, so a corpus citing primitives without a register is reported.
     """
     collected = list(records)
     out: list[Violation] = []
@@ -212,6 +229,64 @@ def validate_corpus(records: Iterable[Record], graph: ConceptGraph) -> list[Viol
 
     out.extend(_validate_supersession(collected, by_id))
     out.extend(_validate_prerequisite_coverage(collected, graph))
+    out.extend(_validate_primitives(collected, primitives))
+    return out
+
+
+def _validate_primitives(
+    records: Sequence[Record], primitives: Collection[str] | None
+) -> list[Violation]:
+    """Every cited primitive must resolve in the register.
+
+    The register is hand-authored and a generator may not extend it. A
+    record citing an unregistered primitive is therefore asserting an axiom
+    nobody reviewed, which is the failure this whole arrangement exists to
+    prevent.
+    """
+    out: list[Violation] = []
+    for record in records:
+        source = record.provenance.source_claim
+        if source is None or not source.startswith(PRIMITIVE_PREFIX):
+            continue
+        name = source[len(PRIMITIVE_PREFIX) :]
+        if primitives is None:
+            out.append(
+                Violation(
+                    "no-register",
+                    f"record {record.id!r} cites primitive {name!r} "
+                    "but no register was supplied",
+                )
+            )
+        elif name not in primitives:
+            out.append(
+                Violation(
+                    "unregistered-primitive",
+                    f"record {record.id!r} cites unregistered primitive {name!r}",
+                )
+            )
+    return out
+
+
+def load_primitives(path: Path) -> dict[str, str]:
+    """Read the primitive register: identifier to grounding observation."""
+    parsed: object = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(parsed, dict):
+        raise ValueError("primitive register must be a JSON object")
+    body = cast(dict[object, object], parsed)
+    entries = body.get("primitives")
+    if not isinstance(entries, list):
+        raise ValueError("register must hold a 'primitives' list")
+    items = cast(list[object], entries)
+    out: dict[str, str] = {}
+    for index, entry in enumerate(items):
+        where = f"primitives[{index}]"
+        if not isinstance(entry, dict):
+            raise ValueError(f"{where}: expected an object")
+        fields = cast(dict[object, object], entry)
+        name = _require_str(fields.get("id"), f"{where}.id")
+        if name in out:
+            raise ValueError(f"{where}: duplicate primitive {name!r}")
+        out[name] = _require_str(fields.get("observation"), f"{where}.observation")
     return out
 
 

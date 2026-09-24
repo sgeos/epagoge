@@ -34,6 +34,9 @@ Decision records, and the open questions that block implementation.
 - `CORPUS_REGENERATION.md` decided. Frozen during the research phase,
   because regeneration by a trained model would make the corpus dependent
   on the treatment and the ablation circular.
+- `PRIMITIVE_REGISTER.md` decided. Level one grounds in a hand-authored
+  register of civilisational axioms rather than in citations. A generator
+  may write records that teach them and may not extend the register.
 - `PRE_COMMIT_AUDIT.md` recorded 2026-09-23. Adversarial audit of the
   design and tracked documentation. Three blocking findings, which gate
   work on the affected components but not the commit.

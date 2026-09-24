@@ -20,6 +20,7 @@ from epagoge.record import (
     Simplification,
     SimplificationKind,
     load_corpus,
+    load_primitives,
     record_from_json,
     validate_corpus,
     validate_record,
@@ -267,6 +268,91 @@ class TestBoundaryParsing(unittest.TestCase):
         }
         with self.assertRaises(ValueError):
             record_from_json(body)
+
+
+class TestPrimitiveRegister(unittest.TestCase):
+    """Level one grounds in a hand-authored register, not in citations.
+
+    The register is where an unsupported assertion does the most damage,
+    since everything above it inherits the error, so the guard that a
+    generator cannot extend it is tested harder than the happy path.
+    """
+
+    def primitive_record(self, name: str) -> Record:
+        return rec(provenance=Provenance(source_claim=f"primitive:{name}"))
+
+    def test_a_registered_primitive_passes(self) -> None:
+        out = validate_corpus(
+            [self.primitive_record("things-break")], graph(), {"things-break"}
+        )
+        self.assertEqual(out, [])
+
+    def test_an_unregistered_primitive_is_rejected(self) -> None:
+        out = validate_corpus(
+            [self.primitive_record("hard-work-brings-success")],
+            graph(),
+            {"things-break"},
+        )
+        self.assertIn("unregistered-primitive", codes(out))
+
+    def test_citing_a_primitive_with_no_register_is_reported(self) -> None:
+        out = validate_corpus([self.primitive_record("things-break")], graph(), None)
+        self.assertIn("no-register", codes(out))
+
+    def test_an_ordinary_source_is_unaffected_by_the_register(self) -> None:
+        out = validate_corpus([rec()], graph(), {"things-break"})
+        self.assertEqual(out, [])
+
+    def test_an_ordinary_source_needs_no_register(self) -> None:
+        self.assertEqual(validate_corpus([rec()], graph(), None), [])
+
+    def test_the_prefix_is_matched_exactly(self) -> None:
+        r = rec(provenance=Provenance(source_claim="primitives:things-break"))
+        self.assertEqual(validate_corpus([r], graph(), None), [])
+
+
+class TestRegisterLoading(unittest.TestCase):
+    def setUp(self) -> None:
+        self._dir = tempfile.TemporaryDirectory()
+        self.addCleanup(self._dir.cleanup)
+
+    def write(self, payload: object) -> Path:
+        path = Path(self._dir.name) / "primitives.json"
+        path.write_text(json.dumps(payload), encoding="utf-8")
+        return path
+
+    def test_a_well_formed_register_loads(self) -> None:
+        path = self.write(
+            {"primitives": [{"id": "a", "observation": "a thing is observed"}]}
+        )
+        self.assertEqual(load_primitives(path), {"a": "a thing is observed"})
+
+    def test_a_register_must_be_an_object(self) -> None:
+        with self.assertRaises(ValueError):
+            load_primitives(self.write([{"id": "a"}]))
+
+    def test_a_register_must_hold_a_list(self) -> None:
+        with self.assertRaises(ValueError):
+            load_primitives(self.write({"primitives": {"id": "a"}}))
+
+    def test_every_entry_needs_a_grounding_observation(self) -> None:
+        with self.assertRaises(ValueError):
+            load_primitives(self.write({"primitives": [{"id": "a"}]}))
+
+    def test_duplicate_identifiers_are_rejected(self) -> None:
+        payload = {
+            "primitives": [
+                {"id": "a", "observation": "one"},
+                {"id": "a", "observation": "two"},
+            ]
+        }
+        with self.assertRaises(ValueError):
+            load_primitives(self.write(payload))
+
+    def test_the_shipped_register_loads_and_every_entry_is_grounded(self) -> None:
+        register = load_primitives(Path("curriculum/primitives.json"))
+        self.assertGreater(len(register), 20)
+        self.assertTrue(all(v.strip() for v in register.values()))
 
 
 class TestCorpusLoading(unittest.TestCase):

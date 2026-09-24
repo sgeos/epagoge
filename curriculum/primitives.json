@@ -1,0 +1,46 @@
+{
+  "_comment": "Hand-authored primitive register. A generator may write records that teach these. It may not add to this file. Admission criteria in docs/decisions/PRIMITIVE_REGISTER.md: directly observable, uncontested, not derivable from other entries, and accompanied by the observation that grounds it.",
+  "primitives": [
+    {"id": "things-fall", "observation": "An unsupported object moves downward."},
+    {"id": "cause-precedes-effect", "observation": "The pushing happens before the moving, never after."},
+    {"id": "contact-moves-things", "observation": "Pushing an object makes it move."},
+    {"id": "things-persist", "observation": "An object placed behind another is found there again."},
+    {"id": "things-change", "observation": "The same object is not identical from one time to another."},
+
+    {"id": "things-break", "observation": "An object can be damaged such that it no longer does what it did."},
+    {"id": "breaking-is-hard-to-undo", "observation": "A broken object is not restored by the reverse of what broke it."},
+    {"id": "things-wear", "observation": "Repeated use changes an object even when nothing breaks."},
+    {"id": "things-have-parts", "observation": "An object can be separated into pieces."},
+    {"id": "a-part-can-stop-the-whole", "observation": "When one piece fails, the assembled object may stop working."},
+
+    {"id": "living-things-die", "observation": "Living things stop living."},
+    {"id": "death-does-not-reverse", "observation": "A dead thing does not resume living."},
+    {"id": "living-things-need-supply", "observation": "Living things require food, water, and air, and fail without them."},
+    {"id": "living-things-grow", "observation": "Living things change in size and form over time."},
+
+    {"id": "things-can-be-counted", "observation": "Distinct objects can be matched one-to-one with number words."},
+    {"id": "counting-order-is-fixed", "observation": "The number words come in the same order every time."},
+    {"id": "quantity-survives-rearrangement", "observation": "Moving objects about does not change how many there are."},
+    {"id": "some-is-fewer-than-all", "observation": "A part of a collection is fewer than the collection."},
+    {"id": "adding-increases", "observation": "Putting more objects with a group makes the count larger."},
+
+    {"id": "others-act", "observation": "Other people and animals move and change things on their own."},
+    {"id": "others-know-differently", "observation": "Another person may not know what you know."},
+    {"id": "others-can-be-asked", "observation": "Asking another person can tell you something you did not know."},
+    {"id": "telling-can-be-wrong", "observation": "What you are told sometimes does not match what you find."},
+
+    {"id": "some-things-harm", "observation": "Contact with some things causes injury."},
+    {"id": "harm-can-be-avoided", "observation": "Acting differently can prevent an injury that would otherwise occur."},
+    {"id": "danger-is-not-always-visible", "observation": "Something can cause injury without appearing different from something that does not."},
+    {"id": "danger-must-be-taught", "observation": "A person who has not been told, and has not been hurt, does not avoid the hazard."},
+
+    {"id": "looking-tells-you", "observation": "Examining a thing reveals what was not known about it."},
+    {"id": "trying-tells-you", "observation": "Acting on a thing reveals what examining it did not."},
+    {"id": "a-claim-can-be-so-or-not", "observation": "What is said about a thing either matches the thing or does not."},
+    {"id": "checking-settles-it", "observation": "Looking again can settle a disagreement about what is so."},
+
+    {"id": "marks-stand-for-things", "observation": "A drawing or a word is used in place of the thing it refers to."},
+    {"id": "the-sign-is-not-the-thing", "observation": "A picture of a cup holds no water."},
+    {"id": "same-again", "observation": "Two things can be alike in a way that matters and unlike in ways that do not."}
+  ]
+}

@@ -27,6 +27,36 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Primitive register, which unblocks level one
+
+- **A problem raised in discussion and never written down until now.**
+  Level one breaks the grounding rule. Every record needs a resolvable
+  source, but level one seeds civilisational axioms, and there is no
+  citation for "things break" or "living things die". A generator facing
+  that has three options and two are bad: fail validation, fabricate a
+  citation, or find an honest home for axioms. Level one is therefore the
+  hardest case for the verification layer rather than the easiest.
+- `docs/decisions/PRIMITIVE_REGISTER.md` and `curriculum/primitives.json`.
+  Level-one records ground in a hand-authored register of thirty-four
+  axioms, each carrying the observation that grounds it, cited through a
+  `primitive:` prefix. **The grounding rule is unchanged**; only the kind of
+  source is new.
+- **The load-bearing rule is that a generator may write records teaching a
+  primitive but may not add to the register.** The register is small and
+  everything above it inherits its errors, so it is hand-authored and
+  reviewed, which puts human attention at the foundation rather than spread
+  thinly across millions of generated records.
+- The guard works as intended. A record citing
+  `primitive:hard-work-brings-success`, a contested normative claim wearing
+  a primitive's clothes, is rejected by name.
+- Training to level one recorded as a pipeline validation rather than a
+  model deliverable, since a model trained on picture-book content will be
+  poor by construction and judging it as a model would support a wrong
+  conclusion.
+- Byte-level tokenisation chosen for level one. No dependency, no
+  tokeniser-training step, and the spine already treats tokenisation as a
+  neutral artifact so changing it later is contained.
+
 ### Added. Training techniques, teacher runtime, and corpus regeneration
 
 - `docs/decisions/TRAINING_TECHNIQUES.md`. Maximal update parametrization,
