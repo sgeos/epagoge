@@ -60,6 +60,17 @@ Required, not annotations added later.
 Terminal-stage material drawn from real literature keeps strict source
 entailment and carries no simplification label.
 
+## Claim classification
+
+Independently of its place in the progression, every record is classified
+by what it claims and how that claim is verified. See
+`../docs/spec/CLAIM_TAXONOMY.md`. The classes are formal, empirical,
+attributed position, conditional result, normative, and unsupported, the
+last of which is always rejected.
+
+A record carries both a curriculum position and a claim class. They are
+independent.
+
 ## Attributed-position records. Added 2026-09-23
 
 A third record type, alongside simplified and terminal-stage records.
@@ -79,6 +90,25 @@ A record asserting a contested interpretive claim as settled fact is
 rejected. Without this rule, coverage of interpretive domains would teach
 the model to assert contested claims confidently, which is the failure this
 project exists to prevent.
+
+## Conditional-result records. Added 2026-09-23
+
+A fourth record type, for computed and simulated results.
+
+A simulated result is a derivation from assumptions, not a measurement. Its
+bearing on the world depends on validation, and the standard distinction
+applies. Verification asks whether the equations were solved correctly.
+Validation asks whether the correct equations were solved.
+
+| Field | Purpose |
+| --- | --- |
+| `assumptions` | What the result is contingent on |
+| `method` | The model or computational method used |
+| `validation_status` | Whether validated, and against what, including the absent case |
+
+A record of the form "the model shows X" without assumptions and
+validation status is rejected. Such phrasing is among the most reliable
+sources of claims that sound empirical and are not.
 
 ## Open constraint
 

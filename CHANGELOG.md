@@ -25,6 +25,31 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+### Added, 2026-09-23. Claim taxonomy and conditional-result records
+
+- `docs/spec/CLAIM_TAXONOMY.md`. Every record is classified into exactly
+  one of formal, empirical, attributed position, conditional result,
+  normative, or unsupported. Classification precedes verification and
+  determines which checks apply.
+- The taxonomy is operational, about verification method, and asserts no
+  metaphysics. A binary between the measurable-and-falsifiable and
+  everything else was considered and withdrawn as too low-fidelity, since
+  its residual category would have contained mathematics, definitions, and
+  normative claims, and since a purely empirical demarcation criterion
+  cannot satisfy itself.
+- **Falsificationism is recorded in the specification as an attributed
+  position, with Duhem and Quine, Lakatos, Kuhn, and Bayesian
+  epistemology attributed alongside it.** It is retained as the worked
+  example because it is the operator's own stated position, applied to the
+  rule rather than exempted from it.
+- **Conditional-result records added as a fourth record type**, carrying
+  assumptions, method, and validation status. A simulated result is a
+  derivation from assumptions rather than a measurement, and a record of
+  the form "the model shows X" without those fields is rejected.
+- Coverage extended. A model's domain of validity is the same object as
+  the record schema's validity scope, so the domain teaches the project's
+  epistemic discipline by example rather than only by assertion.
+
 ### Changed, 2026-09-23. Coverage extended, with two schema consequences
 
 Coverage weighting extended. The manifest is not reproduced here.

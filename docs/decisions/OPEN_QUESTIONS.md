@@ -74,6 +74,13 @@ measured number, the claim that the corpus is verified is itself
 unfalsifiable, which is precisely the failure this project exists to
 oppose. A process is not evidence. The number is.
 
+**Classification precedes verification. Added 2026-09-23.** Every record
+is first classified by `../spec/CLAIM_TAXONOMY.md`, which determines which
+of the layers below apply to it. Formal claims are checked by derivation,
+empirical claims by source and measurement, attributed positions by
+attribution, and conditional results by their assumptions and validation
+status. A record that fits no class is unsupported and rejected.
+
 **The number is per domain, never aggregated. Added 2026-09-23.**
 Verifiability varies enormously across the corpus. Formally verifiable
 material admits machine checking and should audit near zero. Interpretive
