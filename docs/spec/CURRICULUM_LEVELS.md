@@ -57,6 +57,62 @@ from treating topics to posing problems, which matches both the
 terminal-stage design and the deployment need. Groundedness is deferred to
 the end, mirroring how simplification is handled elsewhere in the design.
 
+## Every topic appears at every level, as enabling material
+
+**Nominal coverage of all topics at all levels.** At low levels this means
+covering the enabling primitives rather than the formal discipline.
+
+| Practice domain | Level one form |
+| --- | --- |
+| Failure analysis | Things break. Living things die. Doing X causes Y |
+| Auditing | Check your work. Is that true. Who said so |
+| Logic | If then. All, some, none. Two things cannot both be so |
+| Philosophy of science | How do you know. Let us find out |
+| Modelling | A drawing stands for a thing. A map is not the place |
+
+**This resolves open question twenty-three**, the practice spine's mapping
+onto levels. The spine does not enter at a floor level. It appears at every
+level in a form appropriate to that level.
+
+## Level one seeds civilisational axioms
+
+The first level is not teaching content. It installs **the primitives that
+later content presupposes and never states.**
+
+Human learners acquire many of these from embodiment or from being told.
+That a street is dangerous is not innate knowledge, it is taught. A model
+has no innate anything, so every such primitive must be present in the
+corpus or absent from the model.
+
+This is a better specification than "emergent understanding" and it is the
+operative definition of level one.
+
+**It sharpens open question twenty-two rather than closing it.** Humans
+require explicit instruction on danger. A language model might absorb the
+same thing diffusely from any corpus mentioning streets and danger. The
+question is whether explicit, early, isolated axiom-seeding beats implicit,
+diffuse absorption, which is the curriculum hypothesis restated at the
+axiom level.
+
+## The spiral, and the edge type it requires
+
+Material covered at early levels is repeated and iterated upon with greater
+complexity later. Early levels bootstrap topic mastery and, intendedly,
+inter-topic mastery.
+
+**Vertical repetition is already in the design**, since the supersession
+pointer in the record schema is exactly that relation.
+
+**Horizontal connection is not.** Inter-topic mastery is the recognition
+that a structure in one domain is the same structure in another, which is
+a different relation from supersession. The concept graph therefore
+requires **analogy or transfer edges alongside prerequisite edges.**
+
+**It has an instrument already specified.** Transfer between topics is what
+cross-domain gradient alignment measures, which is in the Jacobian
+instrumentation. Inter-topic mastery is therefore observable in the kernel
+rather than only inferable from downstream behaviour.
+
 ## Corpus construction
 
 **Levels one to six are entirely synthetic and built to purpose**, the
@@ -116,6 +172,55 @@ which is mild evidence for both.
 low-complexity text in the early position would separate whether the effect
 comes from the content of early data or merely from low-complexity data
 arriving first. Recorded as an option because arms are expensive.
+
+## Quirk is accepted, within a declared boundary
+
+The model is expected to be quirky, and low-level synthetic iterations
+especially so. This is accepted.
+
+**It has positive value.** A model distinctly unlike frontier generalists
+is more complementary to them, which serves the positioning in
+`../decisions/COLLABORATIVE_POSITIONING.md`. Uniformity would be
+anti-differentiating.
+
+**The condition is a declared boundary.** Accepted in advance and
+unbounded, quirk absorbs any negative result. The model failed the
+evaluation, but it is quirky. That is the unfalsifiable move this project
+exists to prevent, and it is more dangerous coming from the operator than
+from the model.
+
+| Quirk, accepted | Failure, not accepted |
+| --- | --- |
+| Unusual register | Systematic factual error |
+| Narrow stylistic range | Degenerate repetition |
+| Odd idiom | Mode collapse |
+| Gaps in cultural knowledge | Failure to parse real input |
+
+The boundary belongs in the pre-registration, fixed before results are
+seen, alongside the effect size and the seed count.
+
+## Spin-off artifacts. An option preserved, not a goal pursued
+
+A staged curriculum with labelled simplifications and their corrections is
+structurally a textbook series. Extraction for human readers is therefore
+feasible, and would supply an external quality signal independent of the
+model.
+
+**Two tensions.** It pulls back toward human pedagogy, which the
+built-to-purpose decision deliberately freed the corpus from. Content
+optimised for human engagement carries narrative padding that is probably
+worse training data, and content adequate for training may be unreadably
+repetitive.
+
+**It is also a disclosure channel.** Publishing the curriculum exposes
+topic weighting to any reader, and which topics receive published material
+is itself informative. This interacts with the project's positioning
+discipline and must be a deliberate decision rather than a side effect.
+
+**Posture.** Keep records self-contained and well-formed enough that
+extraction remains cheap. Let no corpus decision be driven by human
+readability. Preserving the option is nearly free. Optimising for it is
+not.
 
 ## Risk. The early corpus may be too clean
 

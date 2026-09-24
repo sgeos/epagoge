@@ -25,6 +25,36 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+### Changed, 2026-09-23. Enabling material, spiral structure, and quirk
+
+- **Every topic appears at every level, as enabling material.** At low
+  levels this is the enabling primitives rather than the formal discipline.
+  Failure analysis at the first level is that things break and living
+  things die. This answers open question twenty-three and unblocks staging
+  of practice-spine content.
+- **Level one seeds civilisational axioms**, meaning the primitives later
+  content presupposes and never states. A human learner is taught that a
+  street is dangerous. A model has no innate anything, so every such
+  primitive is in the corpus or absent from the model. This is a better
+  specification than emergent understanding.
+- Open question twenty-two sharpened rather than closed. Whether explicit,
+  early, isolated axiom-seeding beats implicit, diffuse absorption is the
+  curriculum hypothesis restated at the axiom level.
+- **Open question twenty-four added.** The spiral has a vertical relation,
+  already encoded by the supersession pointer, and a horizontal one that
+  does not exist in the design. Inter-topic mastery needs analogy or
+  transfer edges in the concept graph. Cross-domain gradient alignment
+  already instruments it, so it is observable in the kernel.
+- **Quirk accepted within a declared boundary.** Unbounded, it would absorb
+  any negative result, which is the unfalsifiable move this project exists
+  to prevent and is more dangerous from the operator than from the model.
+  Unusual register and narrow stylistic range are quirk. Systematic error
+  and mode collapse are failures. The boundary goes in the pre-registration.
+- **Spin-off artifacts recorded as an option preserved, not a goal
+  pursued.** Extraction stays cheap, no corpus decision is driven by human
+  readability, and the disclosure implication of publishing curriculum
+  material is recorded as requiring a deliberate decision.
+
 ### Added, 2026-09-23. Seven curriculum levels
 
 - `docs/spec/CURRICULUM_LEVELS.md`. Seven levels from preschool to

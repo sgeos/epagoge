@@ -708,21 +708,57 @@ equivalent of preschool is. It is which low-complexity content best
 initialises this model, and the answer need not resemble material written
 for children.
 
-**The question that remains is empirical.** Does the first level carry
-signal at all, or does a base model acquire those primitives from ordinary
-text regardless? This should be tested rather than assumed, and it is cheap
-to test by ablating the level rather than reasoning about it.
+**SHARPENED 2026-09-23.** Level one's operative definition is now seeding
+civilisational axioms, meaning the primitives that later content
+presupposes and never states. A human learner is taught that a street is
+dangerous. A model has no innate anything, so every such primitive is in
+the corpus or absent from the model.
+
+**The question that remains is empirical and is now precise.** A language
+model might absorb such primitives diffusely from any corpus that mentions
+streets and danger. Does explicit, early, isolated axiom-seeding beat
+implicit, diffuse absorption? That is the curriculum hypothesis restated at
+the axiom level. It is cheap to test by ablating the level rather than
+reasoning about it.
 
 ## 23. Practice-spine mapping onto the levels
 
 Added 2026-09-23. The seven levels were derived for subject matter.
 
-The epistemic-practice spine has no mapping onto them. Formal verification
-and failure analysis are not taught at elementary level, so either the
-practice spine carries its own leveling, or it enters at a floor level and
-runs upward from there.
+**ANSWERED 2026-09-23. Every topic appears at every level, as enabling
+material.**
 
-Unresolved, and it blocks staging any practice-spine content.
+The spine does not enter at a floor level and does not carry separate
+leveling. It appears at every level in a form appropriate to that level.
+Failure analysis at the first level is that things break and living things
+die. Auditing is check your work and is that true. Logic is if-then and
+all-some-none.
+
+See `../spec/CURRICULUM_LEVELS.md`. Staging of practice-spine content is
+unblocked.
+
+## 24. Transfer edges in the concept graph
+
+Added 2026-09-23. The spiral is vertical and horizontal, and only the
+vertical relation exists in the design.
+
+**Vertical repetition is covered.** The supersession pointer in the record
+schema encodes a concept revisited later at greater complexity.
+
+**Horizontal connection is not.** Inter-topic mastery is the recognition
+that a structure in one domain is the same structure in another. That is a
+different relation, and the concept graph requires **analogy or transfer
+edges alongside prerequisite edges** to express it.
+
+**It has an instrument already specified.** Cross-domain gradient alignment
+in `JACOBIAN_SPACE.md` measures transfer between topics directly, so
+inter-topic mastery is observable in the kernel rather than only inferable
+from downstream behaviour.
+
+**Unresolved.** How transfer edges are identified, whether by hand, by
+structural similarity, or by measured gradient alignment. The last would be
+circular if used to construct the graph the experiment then tests, so it
+can serve as validation but not as construction.
 
 ## Sources consulted 2026-09-23
 
