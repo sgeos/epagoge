@@ -23,12 +23,21 @@ introduced.** The level-one record teaching causation never uses the word
 "cause", and children grasp causation long before they say it. Deriving
 equality admitted thirty-three words at levels where nothing used them.
 
-Two rules, both checkable.
+One enforced rule, and one retired.
 
-**Ceiling.** A record at level L uses no term whose level exceeds L.
+**Ceiling, enforced.** A record at level L uses no term whose level
+exceeds L.
 
-**Coverage.** Every term first admitted at level L appears in at least one
-level-L record. Admitting a word is a commitment to teach it.
+**Coverage, retired 2026-09-24.** It required every term admitted at level
+L to appear in some level-L record. That held only while this file was
+**descriptive**, derived to describe the words a sample corpus happened to
+use, where every admitted word was used by construction.
+
+The file is now **prescriptive**. It is authored ahead of the corpus to
+license what may be written, so a licensed word no record has reached yet
+is the expected state. Enforcing the old rule would require a corpus to
+exhaust its lexicon before the lexicon could be written. Utilisation is
+reported instead, as a number rather than as a violation.
 
 Specification in ``docs/spec/VOCABULARY.md``. Standard library only.
 """
@@ -218,15 +227,26 @@ def term_levels(vocabulary: Vocabulary, records: Sequence[Record]) -> dict[str, 
 
 
 def _check_lower_bound(
-    vocabulary: Vocabulary, records: Sequence[Record]
+    vocabulary: Vocabulary,
+    records: Sequence[Record],
+    scheduled: Mapping[str, int] | None = None,
 ) -> list[Violation]:
     """A word may not be introduced before the concept it names is taught.
 
-    This is the graph's only claim on the vocabulary. It bounds a word from
-    below and leaves the placement above that bound to the schedule, which
-    is a distribution problem the graph does not express.
+    ``scheduled`` is the curriculum's concept-to-level assignment. Where it
+    is given it is authoritative, and records only fill in concepts the
+    schedule has not placed.
+
+    **A schedule states where a concept is taught. Records only show where
+    it has been taught so far.** Testing a prescriptive lexicon against the
+    second reports every word whose corpus is not yet written, which is the
+    normal state and not a defect.
     """
-    taught = concept_levels(records)
+    taught = dict(concept_levels(records))
+    for concept, level in (scheduled or {}).items():
+        current = taught.get(concept)
+        if current is None or level < current:
+            taught[concept] = level
     out: list[Violation] = []
     for term in vocabulary.terms:
         concept_level = taught.get(term.concept)
@@ -254,11 +274,21 @@ def validate_vocabulary(
     vocabulary: Vocabulary,
     records: Sequence[Record],
     known_concepts: Mapping[str, object],
+    scheduled: Mapping[str, int] | None = None,
 ) -> list[Violation]:
-    """Check the ceiling rule, the coverage rule, and licensing."""
+    """Check licensing and the ceiling rule.
+
+    ``scheduled`` maps a concept to the level a curriculum schedule places it
+    at. Supplied, it is what the lower-bound rule tests against.
+
+    **The lower bound is a claim about the curriculum, not about whichever
+    records happen to exist.** Measured against records alone, a licensed
+    word fails the moment its lexicon is authored ahead of its corpus, which
+    is the order a prescriptive lexicon requires.
+    """
     out: list[Violation] = []
     out.extend(_check_licensing(vocabulary, known_concepts))
-    out.extend(_check_lower_bound(vocabulary, records))
+    out.extend(_check_lower_bound(vocabulary, records, scheduled))
     levels = term_levels(vocabulary, records)
     out.extend(_check_ceiling(vocabulary, records, levels))
     out.extend(_check_coverage(vocabulary, records, levels))
@@ -339,34 +369,63 @@ def _check_ceiling(
 def _check_coverage(
     vocabulary: Vocabulary, records: Sequence[Record], levels: Mapping[str, int | None]
 ) -> list[Violation]:
-    """Every term admitted at level L must appear in some level-L record.
+    """Retired 2026-09-24. Always returns nothing.
 
-    Admitting a word is a commitment to teach it. A word admitted and never
-    used was never taught, and the level's vocabulary would be a claim the
-    corpus does not support.
+    It required every term admitted at level L to appear in some level-L
+    record, on the reasoning that admitting a word is a commitment to teach
+    it.
+
+    **That reasoning held only while the vocabulary was descriptive.** It was
+    derived to describe the words the sample corpus happened to use, so
+    every admitted word was used by construction and the check could only
+    ever fire on a mistake.
+
+    The vocabulary is now prescriptive. It is authored ahead of the corpus
+    to license what may be written, and a licensed word no record has
+    reached yet is the expected state rather than an error. Enforcing the
+    old rule would require the corpus to exhaust its lexicon before the
+    lexicon could be written, which is the wrong way round.
+
+    Utilisation is still worth knowing and is reported by
+    :func:`utilisation` as a number rather than as a violation, because a
+    corpus using very little of its lexicon means either a thin corpus or a
+    padded lexicon and the number does not say which.
     """
-    used_at: dict[int, set[str]] = {}
+    del vocabulary, records, levels
+    return []
+
+
+@dataclass(frozen=True, slots=True)
+class Utilisation:
+    """How much of the licensed lexicon a corpus actually reaches."""
+
+    level: int
+    admitted: int
+    used: int
+
+    @property
+    def fraction(self) -> float:
+        return self.used / self.admitted if self.admitted else 0.0
+
+
+def utilisation(
+    vocabulary: Vocabulary, records: Sequence[Record], level: int
+) -> Utilisation:
+    """Licensed terms at a level against those a corpus reaches there.
+
+    Reported, never enforced. A low number means the corpus is thin or the
+    lexicon is padded, and it does not distinguish them.
+    """
+    admitted = {t.word for t in vocabulary.terms if t.level <= level}
+    used: set[str] = set()
     for record in records:
-        bucket = used_at.setdefault(record.level, set())
+        if record.level != level:
+            continue
         for token in tokenise(record.content):
             term = vocabulary.lookup(token)
-            if term is not None:
-                bucket.add(term.word)
-
-    out: list[Violation] = []
-    for term in vocabulary.terms:
-        level = levels.get(term.word)
-        if level is None:
-            continue
-        if term.word not in used_at.get(level, set()):
-            out.append(
-                Violation(
-                    "vocabulary-uncovered",
-                    f"term {term.word!r} is admitted at level {level} "
-                    "but never used there",
-                )
-            )
-    return out
+            if term is not None and term.level <= level:
+                used.add(term.word)
+    return Utilisation(level=level, admitted=len(admitted), used=len(used))
 
 
 def load_vocabulary(path: Path) -> Vocabulary:

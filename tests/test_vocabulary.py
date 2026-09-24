@@ -19,6 +19,7 @@ from epagoge.vocabulary import (
     term_levels,
     tokenise,
     unlicensed,
+    utilisation,
     validate_vocabulary,
 )
 
@@ -133,22 +134,49 @@ class TestCeiling(unittest.TestCase):
 
 
 class TestCoverage(unittest.TestCase):
-    def test_a_term_never_used_at_its_level_is_reported(self) -> None:
+    """The coverage rule is retired. These pin that it stays retired.
+
+    It required every admitted term to be used at its level, which held only
+    while the vocabulary was derived from the corpus. A prescriptive lexicon
+    is authored ahead of its corpus, so an unused licensed word is the
+    expected state.
+    """
+
+    def test_an_unused_term_is_no_longer_a_violation(self) -> None:
         records = [
             rec("a", 1, ("counting",), "the thing"),
             rec("b", 3, ("wearing_out",), "you count the thing"),
         ]
-        self.assertIn(
-            "vocabulary-uncovered",
-            codes(validate_vocabulary(vocab(), records, CONCEPTS)),
-        )
-
-    def test_a_term_used_at_its_level_passes(self) -> None:
-        records = [rec("a", 1, ("counting",), "you count the thing")]
         self.assertNotIn(
             "vocabulary-uncovered",
             codes(validate_vocabulary(vocab(), records, CONCEPTS)),
         )
+
+    def test_utilisation_reports_the_number_instead(self) -> None:
+        records = [rec("a", 1, ("counting",), "you count the thing")]
+        result = utilisation(vocab(), records, 1)
+        self.assertGreater(result.admitted, 0)
+        self.assertLessEqual(result.used, result.admitted)
+        self.assertAlmostEqual(result.fraction, result.used / result.admitted)
+
+    def test_utilisation_of_an_empty_level_is_zero_not_an_error(self) -> None:
+        self.assertEqual(utilisation(vocab(), [], 1).fraction, 0.0)
+
+
+class TestLowerBoundAgainstSchedule(unittest.TestCase):
+    def test_a_scheduled_concept_satisfies_the_lower_bound(self) -> None:
+        """A word may be licensed before its corpus is written."""
+        found = validate_vocabulary(vocab(), [], CONCEPTS, {"counting": 1})
+        self.assertNotIn("term-never-introduced", {v.code for v in found})
+
+    def test_without_a_schedule_an_unwritten_concept_still_reports(self) -> None:
+        found = validate_vocabulary(vocab(), [], CONCEPTS)
+        self.assertIn("term-never-introduced", {v.code for v in found})
+
+    def test_the_schedule_wins_where_it_is_earlier_than_the_records(self) -> None:
+        records = [rec("a", 5, ("counting",), "you count the thing")]
+        found = validate_vocabulary(vocab(), records, CONCEPTS, {"counting": 1})
+        self.assertNotIn("term-before-concept", {v.code for v in found})
 
 
 class TestLicensing(unittest.TestCase):
@@ -220,7 +248,12 @@ class TestLoading(unittest.TestCase):
         graph = ConceptGraph.load(Path("curriculum/graph/concepts.json"))
         records = load_corpus(Path("curriculum/graph/sample_corpus.jsonl"))
         v = load_vocabulary(Path("curriculum/vocabulary.json"))
-        self.assertEqual(validate_vocabulary(v, records, graph.nodes), [])
+        from epagoge import schedule as sched
+
+        scheduled: dict[str, int] = {}
+        for path in sorted(Path("curriculum/schedule").glob("level_*.json")):
+            scheduled.update(sched.assignment(sched.load(path)))
+        self.assertEqual(validate_vocabulary(v, records, graph.nodes, scheduled), [])
 
 
 if __name__ == "__main__":

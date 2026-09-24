@@ -27,6 +27,72 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. The lexicon becomes prescriptive. 64 level-one words to 508
+
+- `docs/decisions/LEXICON.md`. 444 terms added, 142 to **586**.
+- **No published list was imported.** The New General Service List is
+  CC BY-SA and the TinyStories dataset is CDLA-Sharing, both share-alike
+  against a corpus intended for CC0. Ogden's 1930 publication is in the
+  United States public domain as of 1 January 2026.
+- **Licensing was not the decisive argument. The project's own rule was.**
+  Every content word must map to a concept, so importing 850 or 2809 words
+  forces either hundreds of speculative concepts into the graph or the
+  abandonment of the coverage invariant.
+- **The standard is adopted as the coverage target and the mappings are
+  authored**, which inverts the usage. The standard tests the graph rather
+  than supplying the lexicon.
+- Ownership resolved by a precedence order over concepts plus an explicit
+  **override table of 25 entries** where precedence got it wrong. A table
+  rather than a reordering, because reordering to fix one case silently
+  moves others.
+
+### Changed. Two vocabulary rules encoded the old descriptive role
+
+- **Coverage retired.** It required every admitted term to appear in a
+  record at its level, which could only fire on a mistake while the
+  vocabulary was derived from the corpus. A prescriptive lexicon is
+  authored ahead of its corpus. `utilisation` reports the number instead,
+  never as a violation, because a low figure means a thin corpus or a
+  padded lexicon and does not say which.
+- **The lower bound now tests against the schedule.** A schedule states
+  where a concept is taught. Records only show where it has been taught so
+  far, so a prescriptive lexicon measured against records fails for every
+  word whose corpus is not yet written.
+
+### Added. Eighteen concepts from a first-grade kanji standard
+
+- `docs/decisions/KANJI_CROSS_REFERENCE.md`. The 80 first-grade kyōiku
+  kanji read from the published standard, not recalled.
+- **Two empty domains now hold content.** `plant`, `animal` and
+  `body_part` are the first concepts in `cybernetic_biological_systems`;
+  `someone_in_charge` and `people_together` the first in
+  `institutional_interfacing`. Graph at 96 nodes, 38 level-one units.
+- **`shape` went to physical interactions, not mathematics.** A circle is
+  geometry and mathematics is frozen by the ablation, so at level one shape
+  is a perceptible property rather than a formal object.
+- **This bends the rule that the graph follows content**, and the
+  justification is that a national curriculum standard is evidence rather
+  than speculation, which is the same class as the primitive register. All
+  eighteen are scheduled at level one in the same change.
+- **The ablation was measured afterwards, not assumed.** Arms unchanged,
+  zero mathematics concepts in the failure arm, internal depth still 10
+  against 6.
+
+### Measured. Acceptance more than doubled on the same fourteen concepts
+
+| | Before | After |
+| --- | --- | --- |
+| Accepted | 16 | **36** |
+| Rejected at the ceiling | 84 | 41 |
+
+- **A third defect found by reading.** Three drafts were accepted while
+  neither capitalised nor terminated, among them "breath lasted long".
+  Every word was admissible and the length rule was satisfied, so nothing
+  else would have caught them. A sentence-shape check was added.
+- **Near-duplicates remain.** Three of the direction drafts were "She
+  moves forward", "It goes forward" and "It moves forward". Exact-match
+  deduplication does not reach them.
+
 ### Added. The generator runs end to end, and its output is not yet usable
 
 - `src/epagoge/prompt.py`, `generators/generate.py`,

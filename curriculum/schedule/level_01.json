@@ -26,13 +26,31 @@
         {
           "id": "r1.where",
           "form": "It is here, not there. It is over that way.",
-          "teaches": ["spatial_position", "direction"]
+          "teaches": [
+            "spatial_position",
+            "direction"
+          ]
         },
         {
           "id": "r1.when",
           "form": "First this, then that. It took a long time.",
-          "teaches": ["sequence", "duration"],
-          "primitives": ["cause-precedes-effect"]
+          "teaches": [
+            "sequence",
+            "duration"
+          ],
+          "primitives": [
+            "cause-precedes-effect"
+          ]
+        },
+        {
+          "id": "r1.cycle",
+          "form": "Day comes, then night, then day again.",
+          "teaches": [
+            "cycle"
+          ],
+          "primitives": [
+            "same-again"
+          ]
         }
       ]
     },
@@ -42,26 +60,122 @@
         {
           "id": "p1.things",
           "form": "The cup is here. The cup is empty. It is still the same cup.",
-          "teaches": ["household_object", "presence", "emptiness"],
-          "primitives": ["things-persist"]
+          "teaches": [
+            "household_object",
+            "presence",
+            "emptiness"
+          ],
+          "primitives": [
+            "things-persist"
+          ]
         },
         {
           "id": "p1.property",
           "form": "This one is red. This one is big. Red is not big.",
-          "teaches": ["physical_property"],
-          "primitives": ["same-again"]
+          "teaches": [
+            "physical_property"
+          ],
+          "primitives": [
+            "same-again"
+          ]
         },
         {
           "id": "p1.change",
           "form": "Let go and it falls. Open it and it is open.",
-          "teaches": ["change", "falling", "opening_and_shutting"],
-          "primitives": ["things-change", "things-fall", "contact-moves-things"]
+          "teaches": [
+            "change",
+            "falling",
+            "opening_and_shutting"
+          ],
+          "primitives": [
+            "things-change",
+            "things-fall",
+            "contact-moves-things"
+          ]
         },
         {
           "id": "p1.stands_for",
           "form": "The toy car is not a car. It stands for one.",
-          "teaches": ["toy"],
-          "primitives": ["marks-stand-for-things", "the-sign-is-not-the-thing"]
+          "teaches": [
+            "toy"
+          ],
+          "primitives": [
+            "marks-stand-for-things",
+            "the-sign-is-not-the-thing"
+          ]
+        },
+        {
+          "id": "p1.inside",
+          "form": "The water is in the cup. Now it is out of the cup.",
+          "teaches": [
+            "inside_and_outside"
+          ],
+          "primitives": [
+            "things-persist"
+          ]
+        },
+        {
+          "id": "p1.motion",
+          "form": "It sits still. You push it and it moves.",
+          "teaches": [
+            "moving_and_still",
+            "force"
+          ],
+          "primitives": [
+            "contact-moves-things"
+          ]
+        },
+        {
+          "id": "p1.stuff",
+          "form": "The cup is made of stone. The stone is round.",
+          "teaches": [
+            "material",
+            "shape"
+          ],
+          "primitives": [
+            "same-again"
+          ]
+        },
+        {
+          "id": "p1.liquid",
+          "form": "Water takes the shape of the cup. The empty cup is full of air.",
+          "teaches": [
+            "liquid",
+            "air"
+          ],
+          "primitives": [
+            "things-change"
+          ]
+        },
+        {
+          "id": "p1.heat",
+          "form": "The stove is hot. The water is cold.",
+          "teaches": [
+            "heat"
+          ],
+          "primitives": [
+            "some-things-harm"
+          ]
+        },
+        {
+          "id": "p1.sound",
+          "form": "The cup falls and you hear it.",
+          "teaches": [
+            "sound"
+          ],
+          "primitives": [
+            "things-change"
+          ]
+        },
+        {
+          "id": "p1.weather",
+          "form": "Rain falls today. The sky was dry before.",
+          "teaches": [
+            "weather"
+          ],
+          "primitives": [
+            "things-change"
+          ]
         }
       ]
     },
@@ -71,20 +185,39 @@
         {
           "id": "m1.compare",
           "form": "These two are the same. That one is different. This pile has more.",
-          "teaches": ["same_and_different", "more_and_fewer"],
-          "primitives": ["same-again", "some-is-fewer-than-all"]
+          "teaches": [
+            "same_and_different",
+            "more_and_fewer"
+          ],
+          "primitives": [
+            "same-again",
+            "some-is-fewer-than-all"
+          ]
         },
         {
           "id": "m1.count",
           "form": "One, two, three. Each thing gets the next number. The order never changes.",
-          "teaches": ["correspondence", "counting", "number_word_order"],
-          "primitives": ["things-can-be-counted", "counting-order-is-fixed"]
+          "teaches": [
+            "correspondence",
+            "counting",
+            "number_word_order"
+          ],
+          "primitives": [
+            "things-can-be-counted",
+            "counting-order-is-fixed"
+          ]
         },
         {
           "id": "m1.logic",
           "form": "If it rains then the ground is wet. All, some, none. It cannot be both so and not so.",
-          "introduces": ["if_then", "all_some_none", "not_both"],
-          "primitives": ["a-claim-can-be-so-or-not"]
+          "introduces": [
+            "if_then",
+            "all_some_none",
+            "not_both"
+          ],
+          "primitives": [
+            "a-claim-can-be-so-or-not"
+          ]
         }
       ]
     },
@@ -94,32 +227,64 @@
         {
           "id": "f1.cause",
           "form": "You pushed it and it moved. The pushing came first.",
-          "teaches": ["cause_and_effect"],
-          "primitives": ["cause-precedes-effect", "contact-moves-things"]
+          "teaches": [
+            "cause_and_effect"
+          ],
+          "primitives": [
+            "cause-precedes-effect",
+            "contact-moves-things"
+          ]
         },
         {
           "id": "f1.break",
           "form": "Things break. Broken is hard to undo. Things wear out from being used.",
-          "teaches": ["things_break", "wearing_out"],
-          "primitives": ["things-break", "breaking-is-hard-to-undo", "things-wear"]
+          "teaches": [
+            "things_break",
+            "wearing_out"
+          ],
+          "primitives": [
+            "things-break",
+            "breaking-is-hard-to-undo",
+            "things-wear"
+          ]
         },
         {
           "id": "f1.alive",
           "form": "Living things die. Dying does not go backwards.",
-          "teaches": ["living_and_not_living", "dying"],
-          "primitives": ["living-things-die", "death-does-not-reverse"]
+          "teaches": [
+            "living_and_not_living",
+            "dying"
+          ],
+          "primitives": [
+            "living-things-die",
+            "death-does-not-reverse"
+          ]
         },
         {
           "id": "f1.danger",
           "form": "Some things hurt you. You cannot always see which. You have to be told.",
-          "teaches": ["danger"],
-          "primitives": ["some-things-harm", "harm-can-be-avoided", "danger-is-not-always-visible", "danger-must-be-taught"]
+          "teaches": [
+            "danger"
+          ],
+          "primitives": [
+            "some-things-harm",
+            "harm-can-be-avoided",
+            "danger-is-not-always-visible",
+            "danger-must-be-taught"
+          ]
         },
         {
           "id": "f1.check",
           "form": "Someone told you. Telling can be wrong. Go and look.",
-          "teaches": ["being_told", "checking"],
-          "primitives": ["telling-can-be-wrong", "checking-settles-it", "looking-tells-you"]
+          "teaches": [
+            "being_told",
+            "checking"
+          ],
+          "primitives": [
+            "telling-can-be-wrong",
+            "checking-settles-it",
+            "looking-tells-you"
+          ]
         }
       ]
     },
@@ -129,8 +294,15 @@
         {
           "id": "a1.person",
           "form": "A person does things. A person wants things.",
-          "teaches": ["person", "activity", "need"],
-          "primitives": ["others-act", "living-things-need-supply"]
+          "teaches": [
+            "person",
+            "activity",
+            "need"
+          ],
+          "primitives": [
+            "others-act",
+            "living-things-need-supply"
+          ]
         }
       ]
     },
@@ -140,13 +312,32 @@
         {
           "id": "c1.know",
           "form": "You looked, so now you know. You tried it, so now you know.",
-          "teaches": ["knowing"],
-          "primitives": ["looking-tells-you", "trying-tells-you"]
+          "teaches": [
+            "knowing"
+          ],
+          "primitives": [
+            "looking-tells-you",
+            "trying-tells-you"
+          ]
         },
         {
           "id": "c1.because",
           "form": "It fell because you let go. First this, so then that.",
-          "teaches": ["discourse_marker"]
+          "teaches": [
+            "discourse_marker"
+          ]
+        },
+        {
+          "id": "c1.name",
+          "form": "The thing has a name. The name is not the thing.",
+          "teaches": [
+            "name",
+            "writing"
+          ],
+          "primitives": [
+            "marks-stand-for-things",
+            "the-sign-is-not-the-thing"
+          ]
         }
       ]
     },
@@ -156,8 +347,13 @@
         {
           "id": "ac1.tally",
           "form": "Make one mark for each one. Count the marks to know how many.",
-          "introduces": ["keeping_count"],
-          "primitives": ["marks-stand-for-things", "things-can-be-counted"]
+          "introduces": [
+            "keeping_count"
+          ],
+          "primitives": [
+            "marks-stand-for-things",
+            "things-can-be-counted"
+          ]
         }
       ]
     },
@@ -167,14 +363,25 @@
         {
           "id": "h1.findout",
           "form": "How do you know. Let us go and find out. Now we have settled it.",
-          "introduces": ["finding_out", "settling_it"],
-          "primitives": ["looking-tells-you", "trying-tells-you", "checking-settles-it"]
+          "introduces": [
+            "finding_out",
+            "settling_it"
+          ],
+          "primitives": [
+            "looking-tells-you",
+            "trying-tells-you",
+            "checking-settles-it"
+          ]
         },
         {
           "id": "h1.before",
           "form": "Nobody knew that once. Someone found it out.",
-          "introduces": ["not_always_known"],
-          "primitives": ["others-know-differently"]
+          "introduces": [
+            "not_always_known"
+          ],
+          "primitives": [
+            "others-know-differently"
+          ]
         }
       ]
     },
@@ -184,14 +391,39 @@
         {
           "id": "i1.reason",
           "form": "That is right because. That is not true because. Why do you say so.",
-          "introduces": ["giving_a_reason", "agreeing", "disagreeing"],
-          "primitives": ["others-can-be-asked", "telling-can-be-wrong"]
+          "introduces": [
+            "giving_a_reason",
+            "agreeing",
+            "disagreeing"
+          ],
+          "primitives": [
+            "others-can-be-asked",
+            "telling-can-be-wrong"
+          ]
         },
         {
           "id": "i1.hold_or_yield",
           "form": "I still say so, and here is why. You are right, I was wrong.",
-          "introduces": ["keeping_your_claim", "changing_your_mind"],
-          "primitives": ["others-know-differently", "a-claim-can-be-so-or-not"]
+          "introduces": [
+            "keeping_your_claim",
+            "changing_your_mind"
+          ],
+          "primitives": [
+            "others-know-differently",
+            "a-claim-can-be-so-or-not"
+          ]
+        },
+        {
+          "id": "i1.people",
+          "form": "Many people are here. One of them says what to do.",
+          "teaches": [
+            "someone_in_charge",
+            "people_together"
+          ],
+          "primitives": [
+            "others-act",
+            "others-can-be-asked"
+          ]
         }
       ]
     },
@@ -201,14 +433,48 @@
         {
           "id": "b1.keeping_going",
           "form": "Living things need food and water to keep going. They grow.",
-          "introduces": ["keeping_going", "needing_supply", "growing"],
-          "primitives": ["living-things-need-supply", "living-things-grow"]
+          "introduces": [
+            "keeping_going",
+            "needing_supply",
+            "growing"
+          ],
+          "primitives": [
+            "living-things-need-supply",
+            "living-things-grow"
+          ]
         },
         {
           "id": "b1.mending",
           "form": "A cut closes up by itself. A broken cup does not.",
-          "introduces": ["mending"],
-          "primitives": ["things-break", "breaking-is-hard-to-undo"]
+          "introduces": [
+            "mending"
+          ],
+          "primitives": [
+            "things-break",
+            "breaking-is-hard-to-undo"
+          ]
+        },
+        {
+          "id": "b1.plants",
+          "form": "A tree is living. It does not walk away.",
+          "teaches": [
+            "plant"
+          ],
+          "primitives": [
+            "living-things-grow"
+          ]
+        },
+        {
+          "id": "b1.animals",
+          "form": "A dog is living and it moves. It has eyes to see with.",
+          "teaches": [
+            "animal",
+            "body_part"
+          ],
+          "primitives": [
+            "living-things-need-supply",
+            "looking-tells-you"
+          ]
         }
       ]
     },
@@ -218,14 +484,24 @@
         {
           "id": "n1.should",
           "form": "You should not run into the street. You should hold the handle.",
-          "introduces": ["should_and_should_not"],
-          "primitives": ["danger-must-be-taught", "harm-can-be-avoided"]
+          "introduces": [
+            "should_and_should_not"
+          ],
+          "primitives": [
+            "danger-must-be-taught",
+            "harm-can-be-avoided"
+          ]
         },
         {
           "id": "n1.two_shoulds",
           "form": "You were told to hurry. You were told to be careful. Both at once.",
-          "introduces": ["two_shoulds_at_once"],
-          "primitives": ["others-act", "danger-is-not-always-visible"]
+          "introduces": [
+            "two_shoulds_at_once"
+          ],
+          "primitives": [
+            "others-act",
+            "danger-is-not-always-visible"
+          ]
         }
       ]
     }

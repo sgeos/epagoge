@@ -12,6 +12,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+from epagoge import schedule as sched
 from epagoge.concept_graph import ConceptGraph
 from epagoge.record import load_corpus, load_primitives, validate_corpus
 from epagoge.vocabulary import completeness, load_vocabulary, validate_vocabulary
@@ -39,7 +40,15 @@ def main(argv: list[str]) -> int:
     violations = validate_corpus(records, graph, primitives)
     vocabulary = load_vocabulary(Path(argv[4])) if len(argv) == 5 else None
     if vocabulary is not None:
-        violations = violations + validate_vocabulary(vocabulary, records, graph.nodes)
+        # Concept levels come from the schedule where one exists. It states
+        # where a concept is taught; records only show where it has been
+        # taught so far, and the lexicon is authored ahead of the corpus.
+        scheduled: dict[str, int] = {}
+        for path in sorted(Path("curriculum/schedule").glob("level_*.json")):
+            scheduled.update(sched.assignment(sched.load(path)))
+        violations = violations + validate_vocabulary(
+            vocabulary, records, graph.nodes, scheduled
+        )
     if violations:
         print(f"{len(violations)} violation(s) in {argv[2]}:", file=sys.stderr)
         for v in violations:

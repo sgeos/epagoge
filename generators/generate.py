@@ -112,6 +112,20 @@ available proxy for being a sentence at all.
 """
 
 
+def well_formed(line: str) -> bool:
+    """Whether a line is shaped like a sentence.
+
+    Three drafts in the second measured batch were accepted while being
+    neither capitalised nor terminated, among them "breath lasted long".
+    Every word was admissible and the length rule was satisfied, so nothing
+    else would have caught them. Shape is not meaning, and this catches only
+    the shape.
+    """
+    if len(line.split()) < MIN_WORDS:
+        return False
+    return line[:1].isupper() and line.rstrip()[-1:] in ".!?"
+
+
 def split_lines(raw: str) -> list[str]:
     """Split a completion into candidate sentences.
 
@@ -190,7 +204,7 @@ def drafts_for(
                         if offending:
                             bad.extend(offending)
                             continue
-                        if len(line.split()) < MIN_WORDS:
+                        if not well_formed(line):
                             tally.fragments += 1
                             continue
                         key = line.rstrip(".").casefold()

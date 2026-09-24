@@ -513,6 +513,114 @@
       "name": "error-detecting code",
       "kind": "formal_structure",
       "domain": null
+    },
+    {
+      "id": "inside_and_outside",
+      "name": "inside and outside",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "moving_and_still",
+      "name": "moving and still",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "force",
+      "name": "force",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "material",
+      "name": "material",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "liquid",
+      "name": "liquid",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "heat",
+      "name": "heat",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "air",
+      "name": "air",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "sound",
+      "name": "sound",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "shape",
+      "name": "shape",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "weather",
+      "name": "weather",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "cycle",
+      "name": "cycle",
+      "kind": "domain_concept",
+      "domain": "record_keeping"
+    },
+    {
+      "id": "plant",
+      "name": "plant",
+      "kind": "domain_concept",
+      "domain": "cybernetic_biological_systems"
+    },
+    {
+      "id": "animal",
+      "name": "animal",
+      "kind": "domain_concept",
+      "domain": "cybernetic_biological_systems"
+    },
+    {
+      "id": "body_part",
+      "name": "body part",
+      "kind": "domain_concept",
+      "domain": "cybernetic_biological_systems"
+    },
+    {
+      "id": "name",
+      "name": "name",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "writing",
+      "name": "writing",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "someone_in_charge",
+      "name": "someone in charge",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "people_together",
+      "name": "people together",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
     }
   ],
   "prerequisites": {
@@ -752,6 +860,63 @@
     ],
     "emptiness": [
       "presence"
+    ],
+    "inside_and_outside": [
+      "presence"
+    ],
+    "moving_and_still": [
+      "change"
+    ],
+    "force": [
+      "moving_and_still"
+    ],
+    "material": [
+      "physical_property"
+    ],
+    "liquid": [
+      "material",
+      "inside_and_outside"
+    ],
+    "heat": [
+      "physical_property"
+    ],
+    "air": [
+      "emptiness"
+    ],
+    "sound": [
+      "change"
+    ],
+    "shape": [
+      "physical_property"
+    ],
+    "weather": [
+      "change"
+    ],
+    "cycle": [
+      "sequence",
+      "duration"
+    ],
+    "plant": [
+      "living_and_not_living"
+    ],
+    "animal": [
+      "living_and_not_living",
+      "moving_and_still"
+    ],
+    "body_part": [
+      "animal"
+    ],
+    "name": [
+      "knowing"
+    ],
+    "writing": [
+      "name"
+    ],
+    "someone_in_charge": [
+      "person"
+    ],
+    "people_together": [
+      "person"
     ]
   },
   "instantiates": {
