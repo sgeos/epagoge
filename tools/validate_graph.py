@@ -56,21 +56,36 @@ def main(argv: list[str]) -> int:
     empty = graph.empty_domains()
     print(f"  awaiting content   {len(empty)} declared domains hold no concept")
 
-    # A foundation nothing rests on is not functioning as a foundation.
-    foundations = {
-        "directed_physical_interactions",
-        "record_keeping",
-        "agentic_operations",
-    }
-    feeds = sum(
-        1
-        for node_id, node in graph.nodes.items()
-        for p in graph.prerequisites_of(node_id)
-        if (q := graph.nodes.get(p)) is not None
-        and q.domain in foundations
-        and node.domain not in foundations
+    # Four connectivity measures, each of which reports a defect as a number
+    # rather than as silence. The earlier "foundation feeds" count was
+    # retired on 2026-09-24: it assumed three named domains were foundations,
+    # which the domain restructure removed, and it was reporting immaturity
+    # in those domains as though it were disconnection.
+    isolated = graph.isolated_concepts()
+    print(f"  isolated concepts  {len(isolated)} carry no edge of any kind")
+    by_domain: dict[str, int] = {}
+    for node_id in isolated:
+        key = graph.nodes[node_id].domain or "<formal>"
+        by_domain[key] = by_domain.get(key, 0) + 1
+    for name, count in sorted(by_domain.items(), key=lambda kv: (-kv[1], kv[0])):
+        print(f"    {name:<32} {count:>2}")
+
+    crossing = graph.cross_domain_prerequisites()
+    print(
+        f"  cross-domain prereq {len(crossing)} prerequisites cross a domain boundary"
     )
-    print(f"  foundation feeds   {feeds} prerequisites run from a foundation outward")
+    for target, source in crossing:
+        t = graph.nodes[target].domain
+        src = graph.nodes[source].domain
+        print(f"    {target} [{t}] <- {source} [{src}]")
+
+    specialisations = sum(len(graph.generalisations_of(n)) for n in graph.nodes)
+    print(f"  specialisations    {specialisations} edges in the specialisation layer")
+
+    inert = graph.inert_structures()
+    print(f"  inert structures   {len(inert)} instantiated fewer than twice")
+    for structure_id in inert:
+        print(f"    {structure_id}")
 
     edges = sorted(graph.transfer_edges())
     print(f"  transfer edges     {len(edges)}")

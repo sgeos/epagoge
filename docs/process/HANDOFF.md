@@ -29,17 +29,18 @@ rendered ORDER of this list, not just the next unused number.
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across nine checks.
    Anything red means a statement below needs re-reading before it is
    believed.
-2. The suite reports **199** tests.
+2. The suite reports **206** tests.
 3. `curriculum/graph/concepts.json` **declares 11 domains** and holds **78**
    nodes, of which **4 domains hold no concept at all** and are awaiting
    content by design. It yields **4** derived transfer edges. A domain
    named `everyday`, `physical_world`, or `communication` means this file
    predates the 2026-09-24 restructure and is stale.
-4. `tools/validate_graph.py` reports **0** foundation feeds, now counted
-   over `directed_physical_interactions`, `record_keeping`, and
-   `agentic_operations`. **That is a known defect, not a target** — see the
-   state below. A non-zero value means someone has begun fixing it and this
-   file is behind.
+4. `tools/validate_graph.py` reports **16** isolated concepts, **0**
+   cross-domain prerequisites, **1** specialisation edge, and **2** inert
+   formal structures. **All four are known defects, not targets** — see the
+   state below. Any improvement means someone has begun fixing them and
+   this file is behind. A `foundation feeds` line means this file predates
+   the 2026-09-24 metric replacement and is stale.
 5. Vocabulary completeness is **100 percent**, 138 terms, **0** unmapped.
 6. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
@@ -81,15 +82,22 @@ is not curriculum.
 
 ### The live defect
 
-**The foundation domains found nothing.** Zero prerequisites run from
-`physical_world`, `space_and_time`, or `agency` into any other domain, and
-only one foundation concept is depended on at all. They carry vocabulary and
-contribute no structure.
+**The graph is sixteen unconnected nodes and one nearly empty layer.**
+Sixteen of seventy-eight concepts carry no edge of any kind. The
+specialisation layer holds **one** edge in the whole graph, which is why
+`anchor_reach` returns zero for seventy-seven nodes. That is a property of
+the layer, not of the concepts, and **a metric reading zero everywhere is
+indistinguishable from one that is not running**.
 
-This was reported twice as the good property "no cross-domain prerequisites"
-before being recognised as disconnection. **The property that matters is
-narrower**: no prerequisite between the two ablation domains, since that is
-what would muddy the contrast. Foundations feeding both is desirable.
+**The old foundation-feed metric was measuring immaturity and reporting it
+as disconnection.** The three domains it watched hold fifteen concepts and
+one prerequisite edge between them. They feed nothing outward because they
+have almost no structure inward. It also missed three isolated concepts
+outside the domains it watched. Retired and replaced on 2026-09-24. Full
+diagnosis in `../decisions/GRAPH_CONNECTIVITY.md`.
+
+**Most of this is unwritten content rather than undrawn edges.** The graph
+follows content, so writing those domains is what connects them.
 
 ### Findings that outlive the session
 
@@ -118,8 +126,15 @@ what would muddy the contrast. Foundations feeding both is desirable.
    authored, capacity and completion are unmodelled, nothing has scheduled
    anything. The largest open design task, and everything downstream waits
    on it.
-2. **Whether to connect the foundations**, and how. The defect above is a
-   design question, not a bug to patch.
+2. **Whether true cross-domain prerequisites get drawn into the ablation
+   domains.** Both are fully self-contained today, which is what makes a
+   two-domain ablation corpus a closed set. Several real prerequisites
+   appear to cross that boundary, including `hazard_rate` needing
+   `rate_of_change`, which is the crossing the design forbids outright.
+   Routing a genuine ordering dependency through the formal layer to keep
+   the domains apart would record something false to protect an
+   experiment. Two ways out are set out in
+   `../decisions/GRAPH_CONNECTIVITY.md` and **neither is chosen**.
 3. **Populating the four empty domains.**
    `history_and_philosophy_of_science`, `institutional_interfacing`,
    `cybernetic_biological_systems`, and `normative_adjudication` are

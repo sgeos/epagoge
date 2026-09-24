@@ -115,6 +115,55 @@ class ConceptGraph:
             n for n, node in self._nodes.items() if node.domain == domain_id
         )
 
+    def isolated_concepts(self) -> list[str]:
+        """Concepts carrying no edge of any kind, in either direction.
+
+        Stronger than an unreached concept. A node here is not merely
+        depended on by nothing, it participates in no relation at all, so it
+        contributes vocabulary and no structure.
+        """
+        touched: set[str] = set()
+        for layer in (self._prerequisites, self._instantiates, self._specialises):
+            for target, sources in layer.items():
+                touched.add(target)
+                touched.update(sources)
+        return sorted(n for n in self._nodes if n not in touched)
+
+    def cross_domain_prerequisites(self) -> list[tuple[str, str]]:
+        """Prerequisite edges whose endpoints sit in different domains.
+
+        Reported because both the presence and the absence of these are
+        claims about the curriculum. Zero asserts that every domain can be
+        taught without any other, which is a strong claim and is more likely
+        to mean the edges have not been drawn.
+        """
+        out: list[tuple[str, str]] = []
+        for target, sources in self._prerequisites.items():
+            t = self._nodes.get(target)
+            for source in sources:
+                s = self._nodes.get(source)
+                if t is None or s is None or s.domain is None or t.domain is None:
+                    continue
+                if s.domain != t.domain:
+                    out.append((target, source))
+        return sorted(out)
+
+    def inert_structures(self) -> list[str]:
+        """Formal structures instantiated fewer than twice.
+
+        A structure needs two instantiations in different domains to yield a
+        transfer edge. One or none makes it declared and load-free.
+        """
+        counts: dict[str, int] = {}
+        for sources in self._instantiates.values():
+            for s in sources:
+                counts[s] = counts.get(s, 0) + 1
+        return sorted(
+            n.id
+            for n in self._nodes.values()
+            if n.kind is NodeKind.FORMAL_STRUCTURE and counts.get(n.id, 0) < 2
+        )
+
     def empty_domains(self) -> list[str]:
         """Declared domains holding no concept.
 

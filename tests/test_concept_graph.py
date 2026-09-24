@@ -431,3 +431,57 @@ class TestDomainRegistry(unittest.TestCase):
                 }
                 with self.assertRaises(ValueError):
                     ConceptGraph.from_json(payload)
+
+
+class TestConnectivityMeasures(unittest.TestCase):
+    """Measures that report a defect as a number rather than as silence.
+
+    Each replaces a way the graph could be wrong while every existing check
+    stayed green. Tested on the absent case as well as the present one,
+    because a measure that only ever reports zero is indistinguishable from
+    one that is not running.
+    """
+
+    def test_isolated_concept_is_reported(self) -> None:
+        g = ConceptGraph(
+            [concept("a", "d"), concept("b", "d"), concept("lonely", "d")],
+            {"b": ["a"]},
+            {},
+        )
+        self.assertEqual(g.isolated_concepts(), ["lonely"])
+
+    def test_a_node_reached_only_as_a_source_is_not_isolated(self) -> None:
+        """Isolation is undirected. Being depended on is participation."""
+        g = ConceptGraph([concept("a", "d"), concept("b", "d")], {"b": ["a"]}, {})
+        self.assertEqual(g.isolated_concepts(), [])
+
+    def test_specialisation_alone_rescues_a_node_from_isolation(self) -> None:
+        g = ConceptGraph([concept("a", "d"), concept("b", "d")], {}, {}, {"b": ["a"]})
+        self.assertEqual(g.isolated_concepts(), [])
+
+    def test_cross_domain_prerequisites_are_reported_with_direction(self) -> None:
+        g = ConceptGraph(
+            [concept("a", "one"), concept("b", "two"), concept("c", "two")],
+            {"b": ["a"], "c": ["b"]},
+            {},
+        )
+        self.assertEqual(g.cross_domain_prerequisites(), [("b", "a")])
+
+    def test_formal_structures_do_not_count_as_a_domain_crossing(self) -> None:
+        """A structure has no domain, so an edge to one crosses nothing."""
+        g = ConceptGraph(
+            [concept("a", "one"), structure("s")], {"a": ["s"]}, {"a": ["s"]}
+        )
+        self.assertEqual(g.cross_domain_prerequisites(), [])
+
+    def test_inert_structure_is_one_instantiated_fewer_than_twice(self) -> None:
+        g = ConceptGraph(
+            [concept("a", "one"), concept("b", "two"), structure("s"), structure("t")],
+            {},
+            {"a": ["s", "t"], "b": ["s"]},
+        )
+        self.assertEqual(g.inert_structures(), ["t"])
+
+    def test_a_structure_nothing_instantiates_is_inert(self) -> None:
+        g = ConceptGraph([concept("a", "one"), structure("s")], {}, {})
+        self.assertEqual(g.inert_structures(), ["s"])

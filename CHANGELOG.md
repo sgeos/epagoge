@@ -27,6 +27,46 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. The foundation-feed metric is retired, and four replace it
+
+- **It was measuring domain immaturity and reporting it as
+  disconnection.** The three domains it watched hold fifteen concepts and
+  one prerequisite edge between all of them. They feed nothing outward
+  because they have almost no structure inward. It also assumed those three
+  were foundations, which the domain restructure removed.
+- It missed three isolated concepts outside the domains it watched.
+- Replaced by isolated concepts, cross-domain prerequisites, specialisation
+  edges, and inert formal structures. Seven new tests, 206 total.
+  `docs/decisions/GRAPH_CONNECTIVITY.md` carries the diagnosis.
+
+### Found. Three defects the old metric could not see
+
+- **Sixteen of seventy-eight concepts carry no edge of any kind.** Six in
+  `directed_physical_interactions`, four in `record_keeping`, three in
+  `agentic_operations`, two in `compressed_communication`, and `quantity`
+  in `mathematics_and_formal_logic`.
+- **The specialisation layer holds one edge in the whole graph.**
+  `anchor_reach` was built to measure that layer and returns zero for
+  seventy-seven of seventy-eight nodes, which is a property of the layer
+  rather than of the concepts. A metric reading zero everywhere is
+  indistinguishable from one that is not running, which is the second
+  appearance of that failure shape in this project.
+- **Two of six formal structures are inert**, instantiated once each, so
+  neither can yield a transfer edge. `error_detecting_code` is the one a
+  `cybernetic_biological_systems` concept would instantiate.
+
+### Open. Whether true prerequisites cross into the ablation domains
+
+- Both ablation domains are fully prerequisite-self-contained, which is
+  what makes a two-domain ablation corpus a closed set.
+- Several real prerequisites appear to cross that boundary. A hazard rate
+  is a rate, and `rate_of_change` is in mathematics while `hazard_rate` is
+  in failure analysis, which is the crossing the design forbids outright.
+- Shared structure across that boundary is already handled honestly by the
+  formal layer. **Routing a genuine ordering dependency through it to keep
+  two domains apart would record something false to protect an
+  experimental design.** Two ways out are recorded and neither is chosen.
+
 ### Changed. Seven domains became eleven, and domains are now declared
 
 - **The naming rule.** A domain named for an activity excludes what does
