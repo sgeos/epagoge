@@ -27,6 +27,41 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Training techniques, teacher runtime, and corpus regeneration
+
+- `docs/decisions/TRAINING_TECHNIQUES.md`. Maximal update parametrization,
+  Muon, warmup-stable-decay, and multi-token prediction adopted. FP8 when
+  the hardware supports it.
+- **Maximal update parametrization is confound removal, not
+  optimisation.** Without it the three scale points have different optimal
+  hyperparameters, so any scale-dependence in the ordering effect could be
+  an artifact of mis-tuning. That lands on the project's own mechanism,
+  which holds that regime position depends on width and learning rate.
+- Multi-head latent attention flagged rather than adopted. It is a low-rank
+  projection, which the Jacobian-space objective bans in the base model, so
+  it must be measured against the effective-rank floor rather than taken on
+  its efficiency merits.
+- **The pilot's variance numbers do not carry over.** Changing optimiser
+  and schedule changes the dynamics, so sigma and rho must be re-measured.
+- **The teacher runs locally, and the reason is disclosure rather than
+  licensing or cost.** Generation prompts encode the coverage manifest, so
+  any hosted interface transmits the withheld artifact. A weight licence
+  also does not govern a hosted endpoint, which carries its own terms.
+  Hosted generation would have cost between fifty cents and five dollars
+  for the whole of level one, so price was never the constraint.
+- `docs/decisions/CORPUS_REGENERATION.md`. **The corpus is frozen during
+  the research phase**, because regeneration by a model trained on it would
+  make the corpus dependent on the treatment and the ablation circular.
+- Downward regeneration has a sound form and an unsound one. The student
+  here is weaker than the teacher, not stronger, so a student rewriting the
+  teacher's work is a novice revising an expert. The sound form separates
+  the roles: the student measures which records helped, by attribution, and
+  the teacher regenerates. Accumulating rather than replacing, since the
+  replace paradigm collapses on even small synthetic contamination.
+- Lateral regeneration introduces no new information and narrows coverage.
+  A verifier makes it survivable as rejection sampling, but it breaks
+  provenance, which is the project's strongest differentiator.
+
 ### Added. Variance pilot, run and measured
 
 - `src/epagoge/variance.py` and `src/epagoge/pilot.py`, with

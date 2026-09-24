@@ -124,6 +124,42 @@ European Union.
 specifically rather than by family, with the licence recorded at the time
 of use.
 
+### Run locally, not through any hosted interface. Added 2026-09-24
+
+Third-party interfaces are excluded for a reason independent of licensing.
+
+**Generation prompts encode the coverage manifest.** A prompt asking for
+level-three material on a named concept transmits that concept, its
+neighbours, and the weighting to whoever operates the endpoint. Any hosted
+interface is therefore a disclosure channel for the artifact the code-name
+convention exists to withhold. This is not a point about any particular
+provider.
+
+**A licence on weights does not govern a hosted interface.** The weight
+licence says what may be done with weights that were downloaded. An
+endpoint carries its own terms, which may prohibit this use whatever the
+weights permit.
+
+Both point the same way. Download permissively licensed weights, run them
+locally, and nothing leaves the machine.
+
+**Selected for this host.** A thirty-billion-parameter sparse instruct
+model with roughly three billion active parameters, Apache 2.0, at four-bit
+quantisation. About 18 GB, which fits the available disk and, tightly, the
+unified memory. Reported at 32 to 43 tokens per second on this
+configuration, with four-bit quantisation preserving roughly 95 to 98
+percent of full-precision quality.
+
+**Throughput is the binding constraint, not cost.** At roughly 35 tokens
+per second one million tokens is about eight hours, improving several-fold
+with concurrent requests. Level one at one to ten million tokens is a few
+hours to a couple of days of wall time.
+
+Cost was never the constraint. The cheapest hosted options run about fifty
+cents per million output tokens, which would have put the entire level-one
+corpus between fifty cents and five dollars. The objection is disclosure,
+not price.
+
 **Not legal advice, and terms change.** The verification above is dated.
 Re-check the specific checkpoint's licence before committing money to
 generation.

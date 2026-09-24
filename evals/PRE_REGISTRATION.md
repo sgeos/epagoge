@@ -76,7 +76,13 @@ would be evidence that prerequisite depth is the mechanism.
 
 ## 5. Scale points
 
-**PROVISIONAL** pending the variance pilot. Roughly 100M, 300M, and 1B
+**PROVISIONAL** pending the variance pilot.
+
+**Maximal update parametrization is required for these points to be
+comparable at all.** Without it each scale has different optimal
+hyperparameters, and any scale-dependence in the ordering effect could be an
+artifact of mis-tuning rather than a property of scale. See
+`../docs/decisions/TRAINING_TECHNIQUES.md`. Roughly 100M, 300M, and 1B
 parameters at Chinchilla-style token ratios. Allocation across points is
 set by measured variance, and the one-billion arm is the obvious candidate
 if the design must be trimmed, since it is the large majority of cost.
@@ -109,6 +115,12 @@ merely underpowered.
 **The number to fix is pending re-measurement**, because the correlation is
 the quantity most likely to move between a synthetic stream at 818,000
 parameters and a real corpus at target scale.
+
+**A second reason to re-measure, added 2026-09-24.** The pilot ran under
+AdamW with cosine decay. `../docs/decisions/TRAINING_TECHNIQUES.md` adopts
+maximal update parametrization, the Muon optimiser, and a
+warmup-stable-decay schedule. Changing the optimiser and schedule changes
+the training dynamics, so sigma and rho do not carry over.
 
 ## 7. Minimum meaningful effect
 

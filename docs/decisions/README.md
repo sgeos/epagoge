@@ -28,6 +28,12 @@ Decision records, and the open questions that block implementation.
   groups. Positioning and interface only. Never a training objective.
 - `LICENSING.md` decided. 0BSD for software, CC0 for corpus and
   documentation, third-party material under `sources/` excluded from both.
+- `TRAINING_TECHNIQUES.md` decided. Maximal update parametrization, Muon,
+  warmup-stable-decay, and multi-token prediction adopted. The first is
+  confound removal rather than optimisation.
+- `CORPUS_REGENERATION.md` decided. Frozen during the research phase,
+  because regeneration by a trained model would make the corpus dependent
+  on the treatment and the ablation circular.
 - `PRE_COMMIT_AUDIT.md` recorded 2026-09-23. Adversarial audit of the
   design and tracked documentation. Three blocking findings, which gate
   work on the affected components but not the commit.
