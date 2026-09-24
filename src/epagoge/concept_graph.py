@@ -12,10 +12,11 @@ from __future__ import annotations
 import json
 import random
 from collections import defaultdict
+from collections.abc import Callable, Iterable, Mapping
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import Final, Iterable, Mapping, Sequence
+from typing import Final, cast
 
 
 class NodeKind(Enum):
@@ -106,11 +107,15 @@ class ConceptGraph:
         out: list[Violation] = []
         for src, targets in (*self._prerequisites.items(), *self._instantiates.items()):
             if src not in self._nodes:
-                out.append(Violation("unknown-source", f"edge from undeclared node {src!r}"))
+                out.append(
+                    Violation("unknown-source", f"edge from undeclared node {src!r}")
+                )
             for t in targets:
                 if t not in self._nodes:
                     out.append(
-                        Violation("unknown-target", f"edge {src!r} -> undeclared node {t!r}")
+                        Violation(
+                            "unknown-target", f"edge {src!r} -> undeclared node {t!r}"
+                        )
                     )
         return out
 
@@ -125,20 +130,35 @@ class ConceptGraph:
         out: list[Violation] = []
         for node in self._nodes.values():
             if node.kind is NodeKind.DOMAIN_CONCEPT and node.domain is None:
-                out.append(Violation("missing-domain", f"domain concept {node.id!r} declares no domain"))
+                out.append(
+                    Violation(
+                        "missing-domain",
+                        f"domain concept {node.id!r} declares no domain",
+                    )
+                )
             if node.kind is NodeKind.FORMAL_STRUCTURE and node.domain is not None:
                 out.append(
-                    Violation("domained-structure", f"formal structure {node.id!r} declares a domain")
+                    Violation(
+                        "domained-structure",
+                        f"formal structure {node.id!r} declares a domain",
+                    )
                 )
         for src, targets in self._instantiates.items():
             s = self._nodes.get(src)
             if s is not None and s.kind is not NodeKind.DOMAIN_CONCEPT:
-                out.append(Violation("bad-instantiates-source", f"{src!r} is not a domain concept"))
+                out.append(
+                    Violation(
+                        "bad-instantiates-source", f"{src!r} is not a domain concept"
+                    )
+                )
             for t in targets:
                 node = self._nodes.get(t)
                 if node is not None and node.kind is not NodeKind.FORMAL_STRUCTURE:
                     out.append(
-                        Violation("bad-instantiates-target", f"{t!r} is not a formal structure")
+                        Violation(
+                            "bad-instantiates-target",
+                            f"{t!r} is not a formal structure",
+                        )
                     )
         return out
 
@@ -165,7 +185,9 @@ class ConceptGraph:
         out: list[Violation] = []
 
         def walk(start: str) -> None:
-            stack: list[tuple[str, list[str]]] = [(start, sorted(self.prerequisites_of(start)))]
+            stack: list[tuple[str, list[str]]] = [
+                (start, sorted(self.prerequisites_of(start)))
+            ]
             colour[start] = 1
             path: list[str] = [start]
             while stack:
@@ -266,11 +288,15 @@ class ConceptGraph:
         purpose is to discard the curriculum trajectory while respecting the
         constraints. See docs/spec/CONCEPT_GRAPH.md.
         """
-        return self._kahn(lambda frontier: rng.choice(sorted(frontier)))
+        # S311: `random` is correct here and a cryptographic generator would be
+        # wrong. The control must be reproducible from a declared seed, which is
+        # precisely the property a CSPRNG does not offer.
+        return self._kahn(lambda frontier: rng.choice(sorted(frontier)))  # noqa: S311
 
-    def _kahn(self, pick: object) -> list[str]:
+    def _kahn(self, pick: Callable[[set[str]], str]) -> list[str]:
         remaining: dict[str, set[str]] = {
-            n: {p for p in self.prerequisites_of(n) if p in self._nodes} for n in self._nodes
+            n: {p for p in self.prerequisites_of(n) if p in self._nodes}
+            for n in self._nodes
         }
         dependents: dict[str, set[str]] = defaultdict(set)
         for node_id, prereqs in remaining.items():
@@ -279,9 +305,8 @@ class ConceptGraph:
 
         frontier: set[str] = {n for n, p in remaining.items() if not p}
         order: list[str] = []
-        chooser = pick  # typed loosely; callers pass a Callable[[set[str]], str]
         while frontier:
-            chosen: str = chooser(frontier)  # type: ignore[operator]
+            chosen = pick(frontier)
             frontier.discard(chosen)
             order.append(chosen)
             for d in sorted(dependents[chosen]):
@@ -295,32 +320,76 @@ class ConceptGraph:
     # -- serialisation -----------------------------------------------------
 
     @classmethod
-    def from_json(cls, payload: Mapping[str, object]) -> ConceptGraph:
-        raw_nodes = payload.get("nodes", [])
-        if not isinstance(raw_nodes, Sequence):
-            raise ValueError("'nodes' must be a list")
-        nodes: list[Node] = []
-        for entry in raw_nodes:
-            if not isinstance(entry, Mapping):
-                raise ValueError("each node must be an object")
-            nodes.append(
-                Node(
-                    id=str(entry["id"]),
-                    name=str(entry["name"]),
-                    kind=NodeKind(str(entry["kind"])),
-                    domain=None if entry.get("domain") is None else str(entry["domain"]),
-                )
-            )
-        prereq = payload.get("prerequisites", {})
-        inst = payload.get("instantiates", {})
-        if not isinstance(prereq, Mapping) or not isinstance(inst, Mapping):
-            raise ValueError("'prerequisites' and 'instantiates' must be objects")
+    def from_json(cls, payload: object) -> ConceptGraph:
+        """Build a graph from parsed JSON, validating types at the boundary.
+
+        A graph file is external input. Every field is checked rather than
+        assumed, and a malformed file raises here rather than producing a
+        graph whose wrongness surfaces later as a confusing result.
+        """
+        if not isinstance(payload, dict):
+            raise ValueError("graph payload must be a JSON object")
+        # Sound by construction: every Python value is an object, so widening
+        # the element types of an already-narrowed dict cannot be wrong.
+        body = cast(dict[object, object], payload)
         return cls(
-            nodes,
-            {str(k): [str(x) for x in v] for k, v in prereq.items()},  # type: ignore[union-attr]
-            {str(k): [str(x) for x in v] for k, v in inst.items()},  # type: ignore[union-attr]
+            _parse_nodes(body.get("nodes")),
+            _parse_edges(body.get("prerequisites"), "prerequisites"),
+            _parse_edges(body.get("instantiates"), "instantiates"),
         )
 
     @classmethod
     def load(cls, path: Path) -> ConceptGraph:
-        return cls.from_json(json.loads(path.read_text(encoding="utf-8")))
+        parsed: object = json.loads(path.read_text(encoding="utf-8"))
+        return cls.from_json(parsed)
+
+
+def _require_str(value: object, where: str) -> str:
+    if not isinstance(value, str):
+        raise ValueError(f"{where}: expected a string, got {type(value).__name__}")
+    return value
+
+
+def _parse_nodes(raw: object) -> list[Node]:
+    if not isinstance(raw, list):
+        raise ValueError("'nodes' must be a list")
+    entries = cast(list[object], raw)
+    out: list[Node] = []
+    for index, entry in enumerate(entries):
+        where = f"nodes[{index}]"
+        if not isinstance(entry, dict):
+            raise ValueError(f"{where}: expected an object")
+        fields = cast(dict[object, object], entry)
+        domain_raw = fields.get("domain")
+        out.append(
+            Node(
+                id=_require_str(fields.get("id"), f"{where}.id"),
+                name=_require_str(fields.get("name"), f"{where}.name"),
+                kind=NodeKind(_require_str(fields.get("kind"), f"{where}.kind")),
+                domain=(
+                    None
+                    if domain_raw is None
+                    else _require_str(domain_raw, f"{where}.domain")
+                ),
+            )
+        )
+    return out
+
+
+def _parse_edges(raw: object, where: str) -> dict[str, list[str]]:
+    if raw is None:
+        return {}
+    if not isinstance(raw, dict):
+        raise ValueError(f"'{where}' must be an object")
+    mapping = cast(dict[object, object], raw)
+    out: dict[str, list[str]] = {}
+    for key, value in mapping.items():
+        source = _require_str(key, f"{where} key")
+        if not isinstance(value, list):
+            raise ValueError(f"{where}[{source!r}]: expected a list")
+        items = cast(list[object], value)
+        out[source] = [
+            _require_str(item, f"{where}[{source!r}][{i}]")
+            for i, item in enumerate(items)
+        ]
+    return out

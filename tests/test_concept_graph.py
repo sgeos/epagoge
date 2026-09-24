@@ -65,7 +65,9 @@ class TestInvariants(unittest.TestCase):
 
     def test_formal_structure_with_domain_is_reported(self) -> None:
         g = ConceptGraph(
-            [Node(id="s", name="s", kind=NodeKind.FORMAL_STRUCTURE, domain="math")], {}, {}
+            [Node(id="s", name="s", kind=NodeKind.FORMAL_STRUCTURE, domain="math")],
+            {},
+            {},
         )
         self.assertIn("domained-structure", codes(g))
 
@@ -121,7 +123,12 @@ class TestTransfer(unittest.TestCase):
 
     def test_no_shared_structure_yields_nothing(self) -> None:
         g = ConceptGraph(
-            [concept("m", "math"), concept("f", "failure"), structure("s"), structure("t")],
+            [
+                concept("m", "math"),
+                concept("f", "failure"),
+                structure("s"),
+                structure("t"),
+            ],
             {},
             {"m": ["s"], "f": ["t"]},
         )
@@ -170,12 +177,74 @@ class TestOrderings(unittest.TestCase):
         seen = {tuple(g.random_linear_extension(random.Random(s))) for s in range(50)}
         self.assertGreater(len(seen), 1)
 
-    def test_ordering_a_cyclic_graph_raises_rather_than_returning_a_wrong_answer(self) -> None:
+    def test_ordering_a_cyclic_graph_raises_rather_than_returning_a_wrong_answer(
+        self,
+    ) -> None:
         g = ConceptGraph(
             [concept("a", "math"), concept("b", "math")], {"a": ["b"], "b": ["a"]}, {}
         )
         with self.assertRaises(ValueError):
             g.canonical_order()
+
+
+class TestBoundaryParsing(unittest.TestCase):
+    """A graph file is external input. These test that it is treated as such.
+
+    Every case here is a malformed file that must raise at the boundary
+    rather than produce a graph whose wrongness surfaces later.
+    """
+
+    def test_payload_must_be_an_object(self) -> None:
+        with self.assertRaises(ValueError):
+            ConceptGraph.from_json([1, 2, 3])
+
+    def test_nodes_must_be_a_list(self) -> None:
+        with self.assertRaises(ValueError):
+            ConceptGraph.from_json({"nodes": {"id": "a"}})
+
+    def test_node_must_be_an_object(self) -> None:
+        with self.assertRaises(ValueError):
+            ConceptGraph.from_json({"nodes": ["a"]})
+
+    def test_node_id_must_be_a_string(self) -> None:
+        with self.assertRaises(ValueError):
+            ConceptGraph.from_json(
+                {"nodes": [{"id": 7, "name": "a", "kind": "domain_concept"}]}
+            )
+
+    def test_unknown_node_kind_is_rejected(self) -> None:
+        with self.assertRaises(ValueError):
+            ConceptGraph.from_json(
+                {"nodes": [{"id": "a", "name": "a", "kind": "nonsense"}]}
+            )
+
+    def test_domain_must_be_a_string_when_present(self) -> None:
+        with self.assertRaises(ValueError):
+            ConceptGraph.from_json(
+                {
+                    "nodes": [
+                        {"id": "a", "name": "a", "kind": "domain_concept", "domain": 3}
+                    ]
+                }
+            )
+
+    def test_edge_map_must_be_an_object(self) -> None:
+        with self.assertRaises(ValueError):
+            ConceptGraph.from_json({"nodes": [], "prerequisites": ["a"]})
+
+    def test_edge_targets_must_be_a_list(self) -> None:
+        with self.assertRaises(ValueError):
+            ConceptGraph.from_json({"nodes": [], "prerequisites": {"a": "b"}})
+
+    def test_edge_target_must_be_a_string(self) -> None:
+        with self.assertRaises(ValueError):
+            ConceptGraph.from_json({"nodes": [], "prerequisites": {"a": [7]}})
+
+    def test_absent_edge_sections_default_to_empty(self) -> None:
+        node = {"id": "a", "name": "a", "kind": "domain_concept", "domain": "m"}
+        g = ConceptGraph.from_json({"nodes": [node]})
+        self.assertEqual(g.validate(), [])
+        self.assertEqual(g.canonical_order(), ["a"])
 
 
 if __name__ == "__main__":

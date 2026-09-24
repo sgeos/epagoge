@@ -33,6 +33,15 @@ src = ["src", "generators", "evals", "tools"]
 # requires annotations, and RET/SIM are readability passes.
 select = ["E", "F", "W", "B", "S", "I", "N", "UP", "ANN", "RET", "SIM", "PTH"]
 
+[tool.ruff.lint.per-file-ignores]
+# S311 flags the standard pseudo-random generator as unsuitable for
+# cryptography. That is correct and irrelevant here. The experimental control
+# must be reproducible from a declared seed, which is precisely the property a
+# cryptographic generator does not offer. Nothing in this project uses random
+# numbers for a security purpose; if that ever changes, this exemption must be
+# narrowed rather than widened.
+"tests/*" = ["S311"]
+
 [tool.pyright]
 # Strict mode is a deliberate compensation for Python's weaker static
 # guarantees relative to the rest of this operator's toolchain. Every

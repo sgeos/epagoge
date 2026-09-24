@@ -42,7 +42,9 @@ def main(argv: list[str]) -> int:
     for d in domains:
         members = [n for n, node in graph.nodes.items() if node.domain == d]
         deepest = max(depth[n] for n in members)
-        print(f"  domain {d:<18} {len(members):>3} concepts, max prerequisite depth {deepest}")
+        label = f"  domain {d:<18}"
+        summary = f"{len(members):>3} concepts, max depth {deepest}"
+        print(f"{label} {summary}")
 
     edges = sorted(graph.transfer_edges())
     print(f"  transfer edges     {len(edges)}")

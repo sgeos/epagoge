@@ -25,6 +25,24 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+### Fixed, 2026-09-23. Static analysis run for the first time
+
+- **The analysis configured since the initial commit had never been
+  executed.** On first run ruff reported eighteen errors and pyright in
+  strict mode reported eighteen. A declared standard that is never checked
+  is not a standard.
+- All thirty-six are fixed. Both tools now report clean.
+- **One fix was substantive rather than cosmetic.** `from_json` read a file
+  from disk, which is external input, and cast rather than validated. It
+  now checks every field and raises at the boundary, which is what the
+  project's own trust-boundary rule requires. Ten tests were added for
+  malformed input, which had none.
+- The pseudo-random exemption is documented rather than silently ignored.
+  The control must be reproducible from a declared seed, which is precisely
+  what a cryptographic generator does not offer.
+- `tools/check.sh` added as a gate. It caught a violation of its own on
+  first run.
+
 ### Added, 2026-09-23. Concept graph. First implementation
 
 - `docs/spec/CONCEPT_GRAPH.md`, `src/epagoge/concept_graph.py`,
