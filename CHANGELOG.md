@@ -27,6 +27,29 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Relation coverage, and two corrections
+
+- **A specialisation asserted in the graph must be taught in the corpus.**
+  Enforced by a new rule. A graph that says a teddy bear is a toy, with no
+  record teaching it, asserts a link the model never reads.
+- **The asymmetry is the part that must be taught.** A teddy bear is a toy
+  and a toy is not necessarily a teddy bear, which is the same structure as
+  a square being a rectangle while a rectangle need not be a square. An edge
+  records the direction. Only content can teach that the converse fails.
+- **Correction. Transfer does occur at level one.** An earlier note held
+  that no level-one transfer edges was right, since transfer requires
+  abstraction. Teddy-bear-is-a-toy and square-is-a-rectangle instantiate the
+  same formal structure, proper class inclusion, which is a cross-domain
+  transfer edge between an everyday concept and a mathematical one. The
+  existing machinery derives it without modification, and this is how
+  children acquire classification.
+- **Correction. The teddy bear was not a useless anchor.** It scored zero
+  only because its edges were not drawn. Teddy bear to toy to proxy model to
+  representation to simulation gives it four, and enters the modelling
+  spine. The general lesson is uncomfortable: a low anchor-reach score may
+  mean a concept is not worth teaching or may mean the graph is incomplete,
+  and the metric cannot tell them apart.
+
 ### Added. Enabling concepts, and the metric that measures them
 
 - `docs/spec/ENABLING_CONCEPTS.md`, a `specialises` edge type, and two

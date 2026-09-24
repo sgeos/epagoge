@@ -91,6 +91,58 @@ from the two edges already present.
 A crayon does not *require* paraffin wax and does not share a formal
 structure with it. It **is** one, and that is a third relation.
 
+## The relation is content, not only structure
+
+**A specialisation asserted in the graph must be taught in the corpus.** A
+graph that says a teddy bear is a toy, with no record teaching it, asserts a
+link the model never reads. The corpus is what the model sees.
+
+Enforced. A record covering both endpoints teaches the relation, and an
+untaught specialisation is a violation. Nothing further is required of the
+record, because a declaration field would let a record claim to teach a
+relation it does not.
+
+### The asymmetry is the part that must be taught
+
+A teddy bear is a toy. **A toy is not necessarily a teddy bear.**
+
+That is the same structure as a square being a rectangle while a rectangle
+need not be a square. One-directional implication is a level-one primitive
+underpinning all later classification, and **it is invisible in an edge that
+merely points.** An edge records the direction. Only content can teach that
+the converse fails.
+
+## A correction. Transfer does occur at level one
+
+An earlier note held that no transfer edges at level one was "exactly right
+pedagogically, since transfer requires abstraction and level one is
+concrete."
+
+**That was wrong.** Teddy-bear-is-a-toy and square-is-a-rectangle
+instantiate the same formal structure, proper class inclusion. That is a
+cross-domain transfer edge between an everyday concept and a mathematical
+one, available at level one, and the existing machinery derives it without
+modification.
+
+It is also how children actually acquire classification, which the earlier
+note managed to reason past.
+
+## A second correction. The teddy bear was not a useless anchor
+
+The worked example used a teddy bear as the concept with no anchor value,
+against a crayon with six.
+
+**It was valueless only because its edges were not drawn.** A teddy bear is
+a toy, a toy is a proxy model of something real, and a proxy model leads to
+representation and simulation. With those edges the teddy bear anchors four
+concepts and enters the modelling spine.
+
+The lesson generalises and is uncomfortable. **A low anchor-reach score may
+mean the concept is not worth teaching, or it may mean the graph is
+incomplete.** The metric cannot distinguish them, and treating a zero as a
+verdict rather than a question would prune concepts for being
+under-described.
+
 ## What remains unresolved
 
 Capacity per level is unmodelled, so nothing prevents a level from being

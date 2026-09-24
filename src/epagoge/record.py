@@ -230,6 +230,50 @@ def validate_corpus(
     out.extend(_validate_supersession(collected, by_id))
     out.extend(_validate_prerequisite_coverage(collected, graph))
     out.extend(_validate_primitives(collected, primitives))
+    out.extend(_validate_relation_coverage(collected, graph))
+    return out
+
+
+def _validate_relation_coverage(
+    records: Sequence[Record], graph: ConceptGraph
+) -> list[Violation]:
+    """A specialisation asserted in the graph must be taught in the corpus.
+
+    **The relation is content, not only structure.** A graph that says a
+    teddy bear is a toy, with no record teaching it, asserts a link the model
+    never sees. The corpus is what the model reads.
+
+    A record covering both endpoints teaches the relation. Nothing further is
+    required of it, because requiring a declaration would let a record claim
+    to teach a relation it does not.
+
+    **The asymmetry is the part that must be taught.** A teddy bear is a toy
+    and a toy is not necessarily a teddy bear, which is the same structure as
+    a square being a rectangle while a rectangle need not be a square. That
+    one-directional implication is a level-one primitive underpinning all
+    later classification, and it is invisible in an edge that merely points.
+    """
+    covered: set[tuple[str, str]] = set()
+    for record in records:
+        concepts = set(record.concepts)
+        for specific in concepts:
+            for general in graph.generalisations_of(specific):
+                if general in concepts:
+                    covered.add((specific, general))
+
+    out: list[Violation] = []
+    for specific in sorted(graph.nodes):
+        for general in sorted(graph.generalisations_of(specific)):
+            if general not in graph.nodes:
+                continue
+            if (specific, general) not in covered:
+                out.append(
+                    Violation(
+                        "relation-untaught",
+                        f"the graph says {specific!r} is a kind of {general!r}, "
+                        "but no record teaches it",
+                    )
+                )
     return out
 
 

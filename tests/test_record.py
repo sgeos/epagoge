@@ -427,3 +427,65 @@ class TestCorpusLoading(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestRelationCoverage(unittest.TestCase):
+    """A specialisation in the graph must be taught somewhere in the corpus.
+
+    The relation is content, not only structure. A graph that says a teddy
+    bear is a toy, with no record teaching it, asserts a link the model never
+    reads.
+    """
+
+    def graph_with_relation(self) -> ConceptGraph:
+        return ConceptGraph(
+            [
+                Node("teddy", "teddy", NodeKind.DOMAIN_CONCEPT, "everyday"),
+                Node("toy", "toy", NodeKind.DOMAIN_CONCEPT, "everyday"),
+            ],
+            {},
+            {},
+            {"teddy": ["toy"]},
+        )
+
+    def test_an_untaught_relation_is_reported(self) -> None:
+        records = [rec("r", 1, ("teddy",)), rec("s", 1, ("toy",))]
+        out = validate_corpus(records, self.graph_with_relation())
+        self.assertIn("relation-untaught", codes(out))
+
+    def test_a_record_covering_both_endpoints_teaches_it(self) -> None:
+        records = [rec("r", 1, ("teddy", "toy"))]
+        out = validate_corpus(records, self.graph_with_relation())
+        self.assertNotIn("relation-untaught", codes(out))
+
+    def test_covering_the_endpoints_separately_is_not_enough(self) -> None:
+        """Two records mentioning each end never state the relation between them."""
+        records = [
+            rec("r", 1, ("teddy",)),
+            rec("s", 2, ("toy",)),
+            rec("t", 3, ("teddy",)),
+        ]
+        out = validate_corpus(records, self.graph_with_relation())
+        self.assertIn("relation-untaught", codes(out))
+
+    def test_a_graph_without_specialisations_passes_vacuously(self) -> None:
+        out = validate_corpus([rec("r", 1, ("a",))], graph())
+        self.assertNotIn("relation-untaught", codes(out))
+
+    def test_the_illustrative_corpus_teaches_its_taxonomy(self) -> None:
+        from epagoge.record import load_corpus
+
+        g = ConceptGraph.load(Path("docs/spec/examples/enabling_chain.json"))
+        records = load_corpus(Path("docs/spec/examples/enabling_corpus.jsonl"))
+        untaught = {
+            v.detail
+            for v in validate_corpus(records, g)
+            if v.code == "relation-untaught"
+        }
+        for pair in (
+            "'teddy_bear' is a kind of 'toy'",
+            "'square' is a kind of 'rectangle'",
+        ):
+            self.assertFalse(
+                any(pair in d for d in untaught), f"{pair} should be taught"
+            )

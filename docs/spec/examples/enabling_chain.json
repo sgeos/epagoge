@@ -1,5 +1,5 @@
 {
-  "_comment": "Illustrative only. NOT part of the ablation corpus, which is mathematics and failure analysis. This exists to demonstrate why a concrete concept with no immediate use can still earn a place at level one. See docs/spec/ENABLING_CONCEPTS.md.",
+  "_comment": "Illustrative only. NOT the ablation corpus. Demonstrates two things: a concrete concept earning its place by anchor reach, and a cross-domain transfer edge at level one through proper class inclusion. See docs/spec/ENABLING_CONCEPTS.md.",
   "nodes": [
     {
       "id": "crayon",
@@ -59,7 +59,55 @@
       "id": "teddy_bear",
       "name": "teddy bear",
       "kind": "domain_concept",
-      "domain": "materials"
+      "domain": "everyday"
+    },
+    {
+      "id": "toy",
+      "name": "toy",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "proxy_model",
+      "name": "proxy model",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "representation",
+      "name": "representation",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "simulation",
+      "name": "simulation",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "square",
+      "name": "square",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "rectangle",
+      "name": "rectangle",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "quadrilateral",
+      "name": "quadrilateral",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "class_inclusion",
+      "name": "proper class inclusion",
+      "kind": "formal_structure",
+      "domain": null
     }
   ],
   "prerequisites": {
@@ -76,9 +124,25 @@
     "hybrid_rocket_fuel": [
       "regression_rate",
       "paraffin_wax"
+    ],
+    "representation": [
+      "proxy_model"
+    ],
+    "simulation": [
+      "representation"
     ]
   },
-  "instantiates": {},
+  "instantiates": {
+    "toy": [
+      "class_inclusion"
+    ],
+    "rectangle": [
+      "class_inclusion"
+    ],
+    "quadrilateral": [
+      "class_inclusion"
+    ]
+  },
   "specialises": {
     "crayon": [
       "paraffin_wax"
@@ -88,6 +152,18 @@
     ],
     "paraffin_wax": [
       "hydrocarbon"
+    ],
+    "teddy_bear": [
+      "toy"
+    ],
+    "toy": [
+      "proxy_model"
+    ],
+    "square": [
+      "rectangle"
+    ],
+    "rectangle": [
+      "quadrilateral"
     ]
   }
 }
