@@ -25,6 +25,33 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+### Added, 2026-09-23. Seven curriculum levels
+
+- `docs/spec/CURRICULUM_LEVELS.md`. Seven levels from preschool to
+  post-graduate, with the developmental rationale for the shape. Narrow and
+  concrete at first because nothing wider can be grasped, an inflection at
+  the third level where broad breadth becomes available, then breadth
+  progressively traded for depth before messy real problems at the end.
+- **The levels bundle four axes**, namely breadth, depth, abstraction, and
+  groundedness. Breadth is an hourglass rather than monotonic. Depth is the
+  only monotonic axis and is named primary so the ordering claim has a
+  stated referent. The confound is documented rather than decomposed, since
+  decomposition would multiply the arms beyond budget.
+- **Levels one to six are synthetic and built to purpose.** Licensing
+  questions therefore apply only to level seven. The developmental analogy
+  motivates the shape of the ladder without dictating its content.
+- **Token distribution is power-law across three to four orders of
+  magnitude**, since early-level material is short. This partially resolves
+  open question twenty along the level axis. The topic-breadth half is
+  untouched.
+- The curriculum hypothesis is consequently a claim about roughly the first
+  one percent of tokens, which is consistent with the kernel-shaping
+  mechanism rather than in tension with it, since shaping requires the
+  correct data first rather than much data.
+- Risk recorded. A purely synthetic early corpus may be too clean, and the
+  early phase is where the kernel is shaped.
+- Open questions twenty-one, twenty-two, and twenty-three added.
+
 ### Changed, 2026-09-23. Two-spine coverage structure
 
 - Coverage now runs along two orthogonal axes, a subject spine and an

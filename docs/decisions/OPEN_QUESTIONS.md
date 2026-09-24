@@ -653,6 +653,15 @@ since it would be consistent with the corpus simply being inadequate at
 that budget. That is the inconclusive outcome question four defines as
 project failure, arrived at by a second route.
 
+**PARTIALLY RESOLVED 2026-09-23, along the level axis only.** The corpus is
+not evenly divided across levels. Early-level material is short, so the
+token distribution is roughly power-law across three to four orders of
+magnitude, and later levels absorb most of the budget. See
+`../spec/CURRICULUM_LEVELS.md`.
+
+**The topic-breadth half is untouched.** Roughly ten areas across two
+spines remains the live concern, and it still gates corpus generation.
+
 **Two things are required and neither exists.**
 
 1. **Explicit proportions in the coverage manifest**, rather than a list.
@@ -666,6 +675,54 @@ project failure, arrived at by a second route.
 
 **This gates corpus generation**, which gates the ablation. It does not
 gate the concept graph or the variance pilot, both of which can proceed.
+
+## 21. Levels against the structural difficulty definition
+
+Added 2026-09-23. Two definitions of difficulty now exist and must be
+reconciled.
+
+Difficulty was defined structurally as prerequisite depth in the concept
+graph plus supersession depth, per `PRE_COMMIT_AUDIT.md` finding three. The
+seven educational levels in `../spec/CURRICULUM_LEVELS.md` are a different
+definition.
+
+**Proposed reconciliation, not yet accepted.** Prerequisite depth remains
+authoritative, because it is checkable and derived from no model. The
+educational level is a coarse label that must be consistent with it.
+
+**Where they disagree, that is a finding rather than an error.** Conventional
+education teaching a topic out of prerequisite order is a documented
+phenomenon, and the concept graph would surface it. Such disagreements
+should be recorded, not silently resolved in favour of either.
+
+## 22. Whether level one carries signal
+
+Added 2026-09-23. The first level may be vacuous for a text corpus.
+
+The concern as originally framed was that preschool learning is largely
+non-linguistic and embodied, so little written material corresponds to it.
+
+**That framing was superseded** by the decision that levels one to six are
+synthetic and built to purpose. The question is not what the text
+equivalent of preschool is. It is which low-complexity content best
+initialises this model, and the answer need not resemble material written
+for children.
+
+**The question that remains is empirical.** Does the first level carry
+signal at all, or does a base model acquire those primitives from ordinary
+text regardless? This should be tested rather than assumed, and it is cheap
+to test by ablating the level rather than reasoning about it.
+
+## 23. Practice-spine mapping onto the levels
+
+Added 2026-09-23. The seven levels were derived for subject matter.
+
+The epistemic-practice spine has no mapping onto them. Formal verification
+and failure analysis are not taught at elementary level, so either the
+practice spine carries its own leveling, or it enters at a floor level and
+runs upward from there.
+
+Unresolved, and it blocks staging any practice-spine content.
 
 ## Sources consulted 2026-09-23
 

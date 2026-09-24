@@ -24,6 +24,13 @@ in `generators/`.
 Coverage weighting is supplied by the coverage manifest, which is an input
 to the generation pipeline.
 
+### Seven levels. Decided 2026-09-23
+
+Complexity levels are specified in `../docs/spec/CURRICULUM_LEVELS.md`.
+Levels one to six are synthetic and built to purpose. Level seven draws on
+real literature. The token distribution across levels is power-law rather
+than uniform.
+
 ### Two spines. Decided 2026-09-23
 
 Coverage runs along two orthogonal axes rather than one.
