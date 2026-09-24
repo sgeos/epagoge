@@ -395,6 +395,11 @@
       "level": 6
     },
     {
+      "word": "die",
+      "concept": "dying",
+      "level": 1
+    },
+    {
       "word": "different",
       "concept": "same_and_different",
       "level": 1
@@ -566,8 +571,18 @@
       "level": 1
     },
     {
+      "word": "letter",
+      "concept": "variable",
+      "level": 3
+    },
+    {
       "word": "little",
       "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "living",
+      "concept": "living_and_not_living",
       "level": 1
     },
     {
@@ -669,6 +684,11 @@
     {
       "word": "produce",
       "concept": "change",
+      "level": 5
+    },
+    {
+      "word": "rate",
+      "concept": "rate_of_change",
       "level": 5
     },
     {

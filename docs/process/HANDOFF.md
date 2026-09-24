@@ -29,20 +29,23 @@ rendered ORDER of this list, not just the next unused number.
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across nine checks.
    Anything red means a statement below needs re-reading before it is
    believed.
-2. The suite reports **206** tests.
+2. The suite reports **210** tests.
 3. `curriculum/graph/concepts.json` **declares 11 domains** and holds **78**
    nodes, of which **4 domains hold no concept at all** and are awaiting
    content by design. It yields **4** derived transfer edges. A domain
    named `everyday`, `physical_world`, or `communication` means this file
    predates the 2026-09-24 restructure and is stale.
-4. `tools/validate_graph.py` reports **16** isolated concepts, **0**
-   cross-domain prerequisites, **1** specialisation edge, and **2** inert
-   formal structures. **All four are known defects, not targets** — see the
-   state below. Any improvement means someone has begun fixing them and
-   this file is behind. A `foundation feeds` line means this file predates
-   the 2026-09-24 metric replacement and is stale.
-5. Vocabulary completeness is **100 percent**, 138 terms, **0** unmapped.
-6. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
+4. `tools/validate_graph.py` reports **0** isolated concepts and **26**
+   cross-domain prerequisites. It also reports **1** specialisation edge and
+   **2** inert formal structures, and **those two remain known defects, not
+   targets**. A `foundation feeds` line means this file predates the
+   2026-09-24 metric replacement and is stale.
+5. Internal depth is **10** for `mathematics_and_formal_logic` and **6** for
+   `failure_analysis`. **Internal, not global.** Global depth now reads 10
+   against 9 and is the wrong quantity for the ablation contrast.
+6. Vocabulary completeness is **100 percent**, 142 terms, **0** unmapped,
+   over **28** sample corpus records.
+7. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
 
 ## What a resuming session should do first
@@ -82,22 +85,22 @@ is not curriculum.
 
 ### The live defect
 
-**The graph is sixteen unconnected nodes and one nearly empty layer.**
-Sixteen of seventy-eight concepts carry no edge of any kind. The
-specialisation layer holds **one** edge in the whole graph, which is why
-`anchor_reach` returns zero for seventy-seven nodes. That is a property of
-the layer, not of the concepts, and **a metric reading zero everywhere is
-indistinguishable from one that is not running**.
+**The specialisation layer holds one edge in the whole graph.**
+`anchor_reach` was built to measure that layer and returns zero for
+seventy-seven of seventy-eight nodes. That is a property of the layer, not
+of the concepts, and **a metric reading zero everywhere is
+indistinguishable from one that is not running**. Left alone deliberately,
+because forcing specialisations onto a thin layer would assert relations
+the content does not support. It fills when content exists.
 
-**The old foundation-feed metric was measuring immaturity and reporting it
-as disconnection.** The three domains it watched hold fifteen concepts and
-one prerequisite edge between them. They feed nothing outward because they
-have almost no structure inward. It also missed three isolated concepts
-outside the domains it watched. Retired and replaced on 2026-09-24. Full
-diagnosis in `../decisions/GRAPH_CONNECTIVITY.md`.
+Two of six formal structures are also inert, instantiated once each, so
+neither yields a transfer edge. `error_detecting_code` is the one a
+`cybernetic_biological_systems` concept would instantiate, so it is a
+prediction rather than a defect.
 
-**Most of this is unwritten content rather than undrawn edges.** The graph
-follows content, so writing those domains is what connects them.
+**Resolved 2026-09-24.** Isolation and cross-domain disconnection are
+fixed. Twenty-six cross-domain prerequisites drawn, zero isolated
+concepts. `../decisions/GRAPH_CONNECTIVITY.md` carries what it cost.
 
 ### Findings that outlive the session
 
@@ -126,15 +129,8 @@ follows content, so writing those domains is what connects them.
    authored, capacity and completion are unmodelled, nothing has scheduled
    anything. The largest open design task, and everything downstream waits
    on it.
-2. **Whether true cross-domain prerequisites get drawn into the ablation
-   domains.** Both are fully self-contained today, which is what makes a
-   two-domain ablation corpus a closed set. Several real prerequisites
-   appear to cross that boundary, including `hazard_rate` needing
-   `rate_of_change`, which is the crossing the design forbids outright.
-   Routing a genuine ordering dependency through the formal layer to keep
-   the domains apart would record something false to protect an
-   experiment. Two ways out are set out in
-   `../decisions/GRAPH_CONNECTIVITY.md` and **neither is chosen**.
+2. **Populating the specialisation layer**, which holds one edge. The
+   defect above is a content problem, not an edge-drawing problem.
 3. **Populating the four empty domains.**
    `history_and_philosophy_of_science`, `institutional_interfacing`,
    `cybernetic_biological_systems`, and `normative_adjudication` are
@@ -159,6 +155,27 @@ re-measuring variance under the intended optimiser.
 **Re-running the variance pilot.** Cheap and unblocked, but useless until
 the trainer uses Muon and warmup-stable-decay, which the pilot harness does
 not.
+
+## The ablation, after the connectivity work
+
+**`hazard_rate` is excluded from the ablation corpus and not from the
+graph.** A hazard rate is a rate, so the edge to `rate_of_change` is true
+and is drawn. It is the **only** failure analysis concept whose closure
+reaches mathematics, and through it twelve mathematics concepts would
+enter the failure analysis arm.
+
+**The distinction, which must not be lost.** The graph records what is
+true. The pre-registration declares what the experiment covers. Excluding a
+concept from an experiment and saying so is ordinary. Omitting a true edge
+from the graph to protect an experiment is not, and was rejected
+explicitly.
+
+**Any new cross-domain edge into failure analysis must be checked for
+whether its closure reaches mathematics**, and the arms recomputed. Cheap
+check, silent failure, which is the combination that gets skipped.
+
+Amendment 2 in `../../evals/PRE_REGISTRATION.md` carries the arms and the
+measured numbers.
 
 ## Disclosure, before any push
 

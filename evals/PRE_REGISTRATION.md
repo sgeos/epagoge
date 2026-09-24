@@ -98,6 +98,64 @@ experiment that is not about argumentation.
 ablations have used and a bespoke domain is harder to place beside them.
 Naming formal logic explicitly limits the cost without removing it.
 
+**Amendment 2, 2026-09-24. The corpus, the excluded concept, and the
+difficulty measure.**
+
+Cross-domain prerequisites were drawn into the graph for the first time.
+Twenty-six of them. The graph previously held none, which asserted that
+every domain is teachable without any other, and that assertion was false
+rather than clean. Recorded in `../docs/decisions/GRAPH_CONNECTIVITY.md`.
+
+**This broke a premise of item four and the measurement is why we know.**
+Global prerequisite depth for failure analysis rose from 6 to 9 against
+mathematics at 10, collapsing the contrast the domain pair was chosen for.
+The cause was traced to exactly one edge.
+
+**Structural difficulty is now measured as within-domain depth.** Global
+depth measures distance from a root, so it rises for every domain sitting
+downstream of a deep one. Once domains are connected it describes where a
+domain sits rather than how it is built. Internal depth is invariant under
+the twenty-seven additions and preserves the contrast the design rests on.
+
+| Domain | Internal depth | Global depth |
+| --- | --- | --- |
+| `mathematics_and_formal_logic` | **10** | 10 |
+| `failure_analysis` | **6** | 9 |
+
+**The corpus is each domain plus its prerequisite closure**, so that each
+arm is a closed set rather than a domain with dangling prerequisites.
+
+**One concept is excluded from the failure analysis arm. `hazard_rate`.**
+
+A hazard rate is a rate, so it genuinely requires `rate_of_change`. The
+edge is drawn in the graph because it is true. But it is the **only**
+failure analysis concept whose closure reaches mathematics, and through it
+alone twelve mathematics concepts entered the failure analysis arm. Leaving
+it in would put a large part of one arm inside the other.
+
+**The distinction this rests on.** The graph records what is true. The
+pre-registration declares what the experiment covers. Excluding a concept
+from an experiment and declaring the exclusion is ordinary. Omitting a true
+edge from the graph to protect the experiment would not be, and was
+explicitly rejected.
+
+**Resulting arms.**
+
+| | Concepts | Own | Mathematics inside it |
+| --- | --- | --- | --- |
+| Mathematics arm | 30 | 26 | n/a |
+| Failure analysis arm | 27 | 19 | **0** |
+
+The arms share three concepts, `change`, `duration`, and `sequence`. These
+are level-one anchors both arms need, and sharing them is desirable rather
+than contamination, since the contrast under test is in what each arm
+builds above its grounding.
+
+**What must be re-measured if any of this changes.** Any new cross-domain
+edge into failure analysis must be checked for whether it reaches
+mathematics, and the arms recomputed. The check is cheap and the failure is
+silent, which is the combination that gets skipped.
+
 Chosen to differ maximally in prerequisite depth, which is the hypothesised
 mechanism. The strongest available outcome is a dissociation, since an
 effect in the deep-structure domain with a null in the flat-structure one

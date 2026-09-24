@@ -485,3 +485,38 @@ class TestConnectivityMeasures(unittest.TestCase):
     def test_a_structure_nothing_instantiates_is_inert(self) -> None:
         g = ConceptGraph([concept("a", "one"), structure("s")], {}, {})
         self.assertEqual(g.inert_structures(), ["s"])
+
+
+class TestWithinDomainDepth(unittest.TestCase):
+    """Internal depth, which is what the ordering ablation contrasts.
+
+    Global depth rises for every domain downstream of a deep one, so once
+    domains are connected it stops describing a domain's own structure.
+    These cases pin the difference.
+    """
+
+    def test_internal_depth_ignores_an_incoming_cross_domain_edge(self) -> None:
+        g = ConceptGraph(
+            [concept("m1", "deep"), concept("m2", "deep"), concept("f1", "flat")],
+            {"m2": ["m1"], "f1": ["m2"]},
+            {},
+        )
+        self.assertEqual(g.prerequisite_depth()["f1"], 2)
+        self.assertEqual(g.within_domain_depth("flat"), 0)
+        self.assertEqual(g.within_domain_depth("deep"), 1)
+
+    def test_internal_depth_counts_only_edges_inside_the_domain(self) -> None:
+        g = ConceptGraph(
+            [concept("a", "d"), concept("b", "d"), concept("x", "other")],
+            {"b": ["a", "x"]},
+            {},
+        )
+        self.assertEqual(g.within_domain_depth("d"), 1)
+
+    def test_a_domain_with_no_concepts_has_zero_depth(self) -> None:
+        g = ConceptGraph([concept("a", "d")], {}, {})
+        self.assertEqual(g.within_domain_depth("absent"), 0)
+
+    def test_a_domain_with_no_internal_edges_has_zero_depth(self) -> None:
+        g = ConceptGraph([concept("a", "d"), concept("b", "d")], {}, {})
+        self.assertEqual(g.within_domain_depth("d"), 0)

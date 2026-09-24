@@ -562,7 +562,8 @@
     ],
     "rate_of_change": [
       "function",
-      "division"
+      "division",
+      "duration"
     ],
     "limit": [
       "function",
@@ -578,7 +579,8 @@
     ],
     "component_and_system": [
       "things_break",
-      "wearing_out"
+      "wearing_out",
+      "household_object"
     ],
     "causal_chain": [
       "cause_and_effect"
@@ -604,12 +606,14 @@
       "root_cause"
     ],
     "hazard_rate": [
-      "failure_mode"
+      "failure_mode",
+      "rate_of_change"
     ],
     "accident_investigation": [
       "root_cause",
       "latent_condition",
-      "checking"
+      "checking",
+      "explanation"
     ],
     "tree": [
       "directed_acyclic_graph"
@@ -624,11 +628,13 @@
       "correspondence"
     ],
     "number_word_order": [
-      "counting"
+      "counting",
+      "sequence"
     ],
     "conservation_of_number": [
       "counting",
-      "correspondence"
+      "correspondence",
+      "change"
     ],
     "grouping": [
       "counting",
@@ -638,7 +644,8 @@
       "living_and_not_living"
     ],
     "wearing_out": [
-      "things_break"
+      "things_break",
+      "duration"
     ],
     "danger": [
       "cause_and_effect"
@@ -662,29 +669,89 @@
       "checking"
     ],
     "explanation": [
-      "knowing"
+      "knowing",
+      "cause_and_effect",
+      "discourse_marker"
     ],
     "reporting": [
       "explanation"
     ],
     "claim_under_test": [
-      "knowing"
+      "knowing",
+      "checking"
     ],
     "algebraic_structure": [
       "addition"
     ],
     "ledger": [
-      "stock_and_flow"
+      "stock_and_flow",
+      "natural_number"
     ],
     "balance": [
-      "stock_and_flow"
+      "stock_and_flow",
+      "more_and_fewer"
     ],
     "double_entry": [
       "balance",
       "ledger"
     ],
     "reconciliation": [
-      "balance"
+      "balance",
+      "checking"
+    ],
+    "physical_property": [
+      "same_and_different"
+    ],
+    "change": [
+      "sequence"
+    ],
+    "falling": [
+      "spatial_position"
+    ],
+    "opening_and_shutting": [
+      "change"
+    ],
+    "duration": [
+      "sequence"
+    ],
+    "direction": [
+      "spatial_position"
+    ],
+    "person": [
+      "living_and_not_living"
+    ],
+    "activity": [
+      "person",
+      "change"
+    ],
+    "need": [
+      "person"
+    ],
+    "knowing": [
+      "person"
+    ],
+    "discourse_marker": [
+      "sequence"
+    ],
+    "dependence": [
+      "component_and_system"
+    ],
+    "quantity": [
+      "physical_property"
+    ],
+    "stock_and_flow": [
+      "quantity",
+      "change"
+    ],
+    "things_break": [
+      "change"
+    ],
+    "being_told": [
+      "knowing",
+      "person"
+    ],
+    "emptiness": [
+      "presence"
     ]
   },
   "instantiates": {

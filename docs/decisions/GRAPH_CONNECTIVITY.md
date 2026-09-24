@@ -54,46 +54,103 @@ transfer edge. `error_detecting_code` is the structure a
 `cybernetic_biological_systems` concept would instantiate, which is an
 argument for that domain and not a defect in this one.
 
-## The open question, which is the operator's
+## Resolved 2026-09-24. Option one, with a correction the measurement forced
 
-**Do true cross-domain prerequisites get drawn into the ablation domains.**
+**Twenty-six cross-domain prerequisites are drawn.** The graph previously
+held none, which asserted that every domain is teachable without any other.
+That assertion was false rather than clean. All sixteen isolated concepts
+now carry edges and the count is zero.
 
-The graph holds zero cross-domain prerequisites, and both ablation domains
-are fully prerequisite-self-contained. That self-containment is what makes
-a two-domain ablation corpus a closed set.
+**Including the edge the ablation design forbade.** A hazard rate is a
+rate, so `hazard_rate` requires `rate_of_change` and the edge is drawn.
+Routing it through the formal layer to keep the domains apart would have
+recorded something false to protect an experiment.
 
-**Several real prerequisites appear to run across that boundary.** A stock
-and flow is change in a quantity over time, and `change` and `quantity`
-live in other domains. A hazard rate is a rate, and `rate_of_change` is in
-mathematics while `hazard_rate` is in failure analysis, which is the one
-crossing the ablation design forbids outright.
+### The correction the measurement forced
 
-Shared *structure* across that boundary is already handled honestly. The
-formal layer carries it, which is why `hazard_rate` and
-`exponential_function` yield a transfer edge without a prerequisite between
-them. That mechanism is correct for shared structure.
+Drawing the edges **broke the premise of the domain pair**, and this was
+not anticipated when the option was recommended.
 
-**It is not correct for a genuine prerequisite.** Routing a real ordering
-dependency through the formal layer to keep two domains apart would be
-recording something false to protect an experimental design, which is the
-failure this project exists to oppose, arriving in the project's own data.
+Global prerequisite depth for failure analysis rose from 6 to 9 against
+mathematics at 10. The pair was chosen to differ maximally in prerequisite
+depth, and a contrast of one is not maximal.
 
-### The two ways out
+**Global depth stopped describing what it was being used for.** It measures
+distance from a root, so once domains are connected it rises for every
+domain downstream of a deep one. It had been serving as a proxy for a
+domain's internal structure, which it only is while the domains are
+disconnected.
 
-**Draw the edges and redefine the ablation corpus as the two domains plus
-their prerequisite closure.** The corpus stays closed, the graph stays
-honest, and the closure pulls in the level-one anchors both domains need
-anyway. The depth contrast must be measured again, and pre-registration
-item four needs a second amendment. Legitimate only while no data exists.
+**Within-domain depth is the quantity the design actually needs**, and it
+is invariant under all twenty-six additions.
 
-**Keep the two domains self-contained and accept that some true
-prerequisites go undrawn.** Cheaper and it protects a fixed design, at the
-cost of a graph that records less than is known.
+| Domain | Internal | Global |
+| --- | --- | --- |
+| `mathematics_and_formal_logic` | **10** | 10 |
+| `failure_analysis` | **6** | 9 |
 
-**Neither is chosen.** Nothing has been drawn either way.
+`validate_graph.py` prints both, because they answer different questions
+and the difference is now load-bearing.
 
-## What is not blocked by that question
+### One concept is excluded from the experiment, not from the graph
 
-The sixteen isolated concepts are mostly isolated because their domains are
-unwritten rather than because of any policy about the ablation. Writing
-those domains is what connects them, and the graph follows content.
+`hazard_rate` is the **only** failure analysis concept whose prerequisite
+closure reaches mathematics, and through it twelve mathematics concepts
+entered the failure analysis arm. It is excluded from the ablation corpus
+and declared in `../../evals/PRE_REGISTRATION.md` amendment 2.
+
+**The graph records what is true. The pre-registration declares what the
+experiment covers.** Excluding a concept from an experiment and saying so
+is ordinary. Omitting a true edge from the graph would not be.
+
+With it excluded the arms share three concepts, `change`, `duration`, and
+`sequence`. Those are level-one anchors both arms need, and sharing them is
+desirable, since the contrast under test is what each arm builds above its
+grounding.
+
+### What must be re-checked
+
+Any new cross-domain edge into failure analysis must be tested for whether
+its closure reaches mathematics. The check is cheap and its failure is
+silent, which is the combination that gets skipped.
+
+### Two proposed edges were wrong, and the corpus is what said so
+
+Thirty edges were drafted. **Two were withdrawn after the corpus validator
+rejected them**, which is the level-assignment mechanism doing the job it
+exists for.
+
+`falling` was given a prerequisite on `direction`. A child sees falling
+well before learning that down is a direction, and the sample corpus
+teaches falling at level one and direction at level three. The edge
+inverted the actual order.
+
+`emptiness` was given a prerequisite on `presence`, which the corpus also
+rejected. **That one was right and the corpus was wrong.** Absence
+presupposes something being there. The sample taught `presence` only at
+level five, so a level-one record was added and the edge restored. The
+distinction matters, since one case was a bad edge and the other was a
+thin corpus, and only running the validator told them apart.
+
+### The cascade the edges caused, which is the mechanism working
+
+Drawing true edges made the sample corpus invalid in four ways. It taught
+`hazard_rate` without any record teaching a rate, and `person` without any
+record teaching that some things are living.
+
+Eight records were added, closing the chain from addition through
+subtraction, multiplication, variable, division, and function to
+`rate_of_change`, plus records for living things and for presence. Four
+vocabulary terms were added and every one is bounded below by where its
+concept is taught.
+
+**This is the graph and the corpus constraining each other in both
+directions**, which is what they are for. The sample corpus grew from
+twenty records to twenty-eight because the graph started asserting more.
+
+## What the specialisation layer still is
+
+**One edge, and unchanged by this work.** `anchor_reach` still returns zero
+for seventy-seven of seventy-eight nodes. Left alone deliberately, because
+forcing specialisations onto a thin layer would produce the same kind of
+assertion the cross-domain absence was. It fills when content exists.

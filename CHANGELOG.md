@@ -27,6 +27,60 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Twenty-six cross-domain prerequisites, and what drawing them cost
+
+- The graph previously held none, which asserted that every domain is
+  teachable without any other. That was false rather than clean. Isolated
+  concepts fell from sixteen to **zero**.
+- **Including the edge the ablation design forbade.** A hazard rate is a
+  rate, so `hazard_rate` requires `rate_of_change`. Routing it through the
+  formal layer to keep the domains apart would have recorded something
+  false to protect an experiment.
+
+### Fixed. Global depth was the wrong measure, and the edges proved it
+
+- Drawing the edges took failure analysis from depth 6 to **9** against
+  mathematics at 10, collapsing the contrast the domain pair was chosen
+  for. This was not anticipated when the option was recommended.
+- **Global depth measures distance from a root**, so once domains are
+  connected it rises for every domain downstream of a deep one. It had been
+  serving as a proxy for internal structure, which it only is while the
+  domains are disconnected.
+- `within_domain_depth` added. Invariant under all twenty-six additions,
+  and the contrast it reports is **10 against 6**. `validate_graph.py`
+  prints both, because the difference is now load-bearing.
+
+### Changed. One concept excluded from the experiment, not from the graph
+
+- `hazard_rate` is the only failure analysis concept whose closure reaches
+  mathematics, and through it twelve mathematics concepts entered the
+  failure analysis arm. Excluded from the ablation corpus in
+  pre-registration amendment 2.
+- **The graph records what is true. The pre-registration declares what the
+  experiment covers.** Excluding a concept from an experiment and saying so
+  is ordinary. Omitting a true edge would not be.
+- Arms are 30 and 27 concepts, sharing only `change`, `duration`, and
+  `sequence`, which are level-one anchors both need.
+
+### Fixed. Two proposed edges were wrong and the corpus is what said so
+
+- Thirty edges were drafted and two withdrawn after the corpus validator
+  rejected them. `falling` does not require `direction`, since a child sees
+  falling before learning that down is a direction.
+- **`emptiness` requiring `presence` was right and the corpus was wrong.**
+  The sample taught presence only at level five. A level-one record was
+  added and the edge restored. Only running the validator distinguished a
+  bad edge from a thin corpus.
+
+### Changed. The sample corpus grew because the graph asserts more
+
+- Twenty records to **twenty-eight**. Eight added, closing the chain from
+  addition through subtraction, multiplication, variable, division, and
+  function to `rate_of_change`, plus records for living things and for
+  presence.
+- Four vocabulary terms added, 138 to **142**, each bounded below by where
+  its concept is taught. Four new tests, 210 total.
+
 ### Changed. The foundation-feed metric is retired, and four replace it
 
 - **It was measuring domain immaturity and reporting it as

@@ -148,6 +148,31 @@ class ConceptGraph:
                     out.append((target, source))
         return sorted(out)
 
+    def within_domain_depth(self, domain_id: str) -> int:
+        """Longest prerequisite path using only edges inside one domain.
+
+        Distinct from :meth:`prerequisite_depth`, which measures distance
+        from a global root and therefore rises for every domain sitting
+        downstream of a deep one. Once domains are connected, global depth
+        stops describing a domain's own structure and starts describing
+        where it sits in the graph. The ordering ablation contrasts internal
+        structure, so it needs this quantity and not that one.
+        """
+        members = self.concepts_in(domain_id)
+        memo: dict[str, int] = {}
+
+        def depth_of(node_id: str) -> int:
+            cached = memo.get(node_id)
+            if cached is not None:
+                return cached
+            memo[node_id] = _ROOT_DEPTH
+            inside = [p for p in self.prerequisites_of(node_id) if p in members]
+            value = 1 + max((depth_of(p) for p in inside), default=-1) if inside else 0
+            memo[node_id] = value
+            return value
+
+        return max((depth_of(n) for n in members), default=_ROOT_DEPTH)
+
     def inert_structures(self) -> list[str]:
         """Formal structures instantiated fewer than twice.
 

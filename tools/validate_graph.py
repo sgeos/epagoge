@@ -47,8 +47,15 @@ def main(argv: list[str]) -> int:
         # is printed anyway, because a gap that is not shown is a gap nobody
         # is accountable for.
         if members:
+            # Two depths, because they answer different questions once the
+            # domains are connected. Global depth measures where a domain
+            # sits in the graph. Internal depth measures its own structure,
+            # and is the quantity the ordering ablation contrasts.
             deepest = max(depth[n] for n in members)
-            summary = f"{len(members):>3} concepts, max depth {deepest}"
+            inside = graph.within_domain_depth(d)
+            summary = (
+                f"{len(members):>3} concepts, depth {inside} internal, {deepest} global"
+            )
         else:
             summary = "  AWAITING CONTENT"
         print(f"  domain {d:<32} {summary}")
