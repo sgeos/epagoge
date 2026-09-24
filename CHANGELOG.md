@@ -25,6 +25,42 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+### Added, 2026-09-23. Concept graph. First implementation
+
+- `docs/spec/CONCEPT_GRAPH.md`, `src/epagoge/concept_graph.py`,
+  `tests/test_concept_graph.py`, `tools/validate_graph.py`, and a seed
+  graph at `curriculum/graph/seed.json`.
+- Standard library only. No dependency is added, so the graph can be
+  validated before any environment question is settled.
+- Six invariants enforced. Reference resolution, acyclicity, no self-loops,
+  instantiation direction and kinds, domain declaration by node kind, and
+  layering, meaning the formal layer may not depend on the domains that
+  instantiate it.
+- **Validation returns every violation rather than raising on the first**,
+  so a graph is audited in one pass.
+- **Prerequisite depth is the longest path, not the shortest.** A concept is
+  reachable only once every prerequisite is satisfied, so its earliest
+  admissible position is governed by its deepest dependency.
+- **Transfer edges are derived, never authored.** Two domain concepts in
+  different domains are connected exactly when they instantiate a common
+  formal structure. Same-domain sharing is ordinary structure, not transfer.
+- The random linear extension is the experimental control. **Documented
+  limitation.** Randomised Kahn does not sample uniformly over linear
+  extensions, since counting them is #P-complete and frontier-uniform
+  selection biases toward orderings that keep the frontier wide. Uniformity
+  is not required for the control, but the bias is recorded rather than
+  left to be discovered.
+- Twenty-two tests, weighted toward negative cases. Every invariant has a
+  test that breaks it, because a validator shown only valid input has not
+  been tested.
+- Seed graph of 33 nodes across two domains and a formal layer. Validates
+  clean. Three transfer edges derived rather than asserted.
+- **Weak empirical support for the question twenty design.** Mathematics
+  reaches prerequisite depth seven in the seed and failure analysis reaches
+  five, which is the contrast the ablation assumes. The mathematics
+  subgraph also has more nodes, so this is directional rather than
+  measured.
+
 ### Resolved, 2026-09-23. Four open questions closed
 
 **21. Levels against structural difficulty.** They are not competing

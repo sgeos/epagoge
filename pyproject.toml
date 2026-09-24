@@ -44,4 +44,4 @@ reportMissingTypeStubs = "warning"
 pythonVersion = "3.12"
 
 [tool.pytest.ini_options]
-testpaths = ["evals", "src"]
+testpaths = ["tests", "evals", "src"]

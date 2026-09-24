@@ -1,0 +1,319 @@
+{
+  "nodes": [
+    {
+      "id": "counting",
+      "name": "counting",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "natural_number",
+      "name": "natural number",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "place_value",
+      "name": "place value",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "addition",
+      "name": "addition",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "subtraction",
+      "name": "subtraction",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "multiplication",
+      "name": "multiplication",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "division",
+      "name": "division",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "factor_tree",
+      "name": "factor tree",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "fraction",
+      "name": "fraction",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "negative_number",
+      "name": "negative number",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "variable",
+      "name": "variable",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "linear_equation",
+      "name": "linear equation",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "function",
+      "name": "function",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "function_composition",
+      "name": "function composition",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "rate_of_change",
+      "name": "rate of change",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "limit",
+      "name": "limit",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "derivative",
+      "name": "derivative",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "exponential_function",
+      "name": "exponential function",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "things_break",
+      "name": "things break",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "cause_and_effect",
+      "name": "cause and effect",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "component_and_system",
+      "name": "component and system",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "causal_chain",
+      "name": "causal chain",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "failure_mode",
+      "name": "failure mode",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "root_cause",
+      "name": "root cause",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "fault_tree",
+      "name": "fault tree",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "fmea",
+      "name": "failure modes and effects analysis",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "latent_condition",
+      "name": "latent condition",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "hazard_rate",
+      "name": "hazard rate",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "accident_investigation",
+      "name": "accident investigation",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "directed_acyclic_graph",
+      "name": "directed acyclic graph",
+      "kind": "formal_structure",
+      "domain": null
+    },
+    {
+      "id": "tree",
+      "name": "tree",
+      "kind": "formal_structure",
+      "domain": null
+    },
+    {
+      "id": "transitive_relation",
+      "name": "transitive relation",
+      "kind": "formal_structure",
+      "domain": null
+    },
+    {
+      "id": "exponential_decay",
+      "name": "exponential decay",
+      "kind": "formal_structure",
+      "domain": null
+    }
+  ],
+  "prerequisites": {
+    "natural_number": [
+      "counting"
+    ],
+    "place_value": [
+      "natural_number"
+    ],
+    "addition": [
+      "natural_number"
+    ],
+    "subtraction": [
+      "addition"
+    ],
+    "multiplication": [
+      "addition"
+    ],
+    "division": [
+      "multiplication",
+      "subtraction"
+    ],
+    "factor_tree": [
+      "multiplication",
+      "division"
+    ],
+    "fraction": [
+      "division"
+    ],
+    "negative_number": [
+      "subtraction"
+    ],
+    "variable": [
+      "addition"
+    ],
+    "linear_equation": [
+      "variable",
+      "subtraction",
+      "division"
+    ],
+    "function": [
+      "variable"
+    ],
+    "function_composition": [
+      "function"
+    ],
+    "rate_of_change": [
+      "function",
+      "division"
+    ],
+    "limit": [
+      "function",
+      "rate_of_change"
+    ],
+    "derivative": [
+      "limit",
+      "rate_of_change"
+    ],
+    "exponential_function": [
+      "function",
+      "multiplication"
+    ],
+    "component_and_system": [
+      "things_break"
+    ],
+    "causal_chain": [
+      "cause_and_effect"
+    ],
+    "failure_mode": [
+      "component_and_system",
+      "cause_and_effect"
+    ],
+    "root_cause": [
+      "causal_chain",
+      "failure_mode"
+    ],
+    "fault_tree": [
+      "failure_mode",
+      "causal_chain"
+    ],
+    "fmea": [
+      "failure_mode",
+      "component_and_system"
+    ],
+    "latent_condition": [
+      "root_cause"
+    ],
+    "hazard_rate": [
+      "failure_mode"
+    ],
+    "accident_investigation": [
+      "root_cause",
+      "latent_condition"
+    ],
+    "tree": [
+      "directed_acyclic_graph"
+    ]
+  },
+  "instantiates": {
+    "factor_tree": [
+      "tree"
+    ],
+    "fault_tree": [
+      "tree",
+      "directed_acyclic_graph"
+    ],
+    "function_composition": [
+      "transitive_relation"
+    ],
+    "causal_chain": [
+      "transitive_relation"
+    ],
+    "exponential_function": [
+      "exponential_decay"
+    ],
+    "hazard_rate": [
+      "exponential_decay"
+    ]
+  }
+}
