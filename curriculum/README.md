@@ -31,6 +31,16 @@ Levels one to six are synthetic and built to purpose. Level seven draws on
 real literature. The token distribution across levels is power-law rather
 than uniform.
 
+### Per-level vocabulary. Decided 2026-09-24
+
+Levels one to six are bounded by a vocabulary; level seven is unrestricted.
+Two rules, both checked. A record uses no word admitted above its level, and
+every word admitted at a level appears somewhere in that level.
+
+Specification in `../docs/spec/VOCABULARY.md`. The catch worth knowing is
+that the check is lexical and not conceptual: a record can pass it while
+teaching the wrong thing.
+
 ### Two spines. Decided 2026-09-23
 
 Coverage runs along two orthogonal axes rather than one.

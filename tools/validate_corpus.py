@@ -4,7 +4,7 @@
 Exits non-zero on any violation, so it is usable as a gate.
 
     PYTHONPATH=src python3 tools/validate_corpus.py \
-        <graph.json> <corpus.jsonl> [primitives.json]
+        <graph.json> <corpus.jsonl> [primitives.json] [vocabulary.json]
 """
 
 from __future__ import annotations
@@ -14,12 +14,14 @@ from pathlib import Path
 
 from epagoge.concept_graph import ConceptGraph
 from epagoge.record import load_corpus, load_primitives, validate_corpus
+from epagoge.vocabulary import load_vocabulary, validate_vocabulary
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) not in (3, 4):
+    if len(argv) not in (3, 4, 5):
         print(
-            f"usage: {argv[0]} <graph.json> <corpus.jsonl> [primitives.json]",
+            f"usage: {argv[0]} <graph.json> <corpus.jsonl> "
+            "[primitives.json] [vocabulary.json]",
             file=sys.stderr,
         )
         return 2
@@ -32,9 +34,12 @@ def main(argv: list[str]) -> int:
             print(f"  [{v.code}] {v.detail}", file=sys.stderr)
         return 1
 
-    primitives = load_primitives(Path(argv[3])) if len(argv) == 4 else None
+    primitives = load_primitives(Path(argv[3])) if len(argv) >= 4 else None
     records = load_corpus(Path(argv[2]))
     violations = validate_corpus(records, graph, primitives)
+    vocabulary = load_vocabulary(Path(argv[4])) if len(argv) == 5 else None
+    if vocabulary is not None:
+        violations = violations + validate_vocabulary(vocabulary, records, graph.nodes)
     if violations:
         print(f"{len(violations)} violation(s) in {argv[2]}:", file=sys.stderr)
         for v in violations:
@@ -57,6 +62,12 @@ def main(argv: list[str]) -> int:
             and r.provenance.source_claim.startswith("primitive:")
         }
         print(f"  primitives   {len(cited)} cited of {len(primitives)} registered")
+    if vocabulary is not None:
+        tiers = sum(len(w) for w in vocabulary.general.values())
+        print(
+            f"  vocabulary   {len(vocabulary.core)} core, {tiers} general, "
+            f"{len(vocabulary.terms)} terms"
+        )
     return 0
 
 

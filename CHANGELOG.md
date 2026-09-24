@@ -27,6 +27,37 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Per-level vocabulary, with a correction to my own design
+
+- `docs/spec/VOCABULARY.md`, `src/epagoge/vocabulary.py`, and
+  `curriculum/vocabulary.json`. Levels one to six are bounded; level seven
+  is unrestricted.
+- **Two rules.** A record uses no word admitted above its level. And every
+  word admitted at a level appears in at least one record at that level,
+  so admitting a word is a commitment to teach it rather than an
+  aspiration.
+- **The strongest reason for this is not simplicity.** It makes level
+  assignment mechanically checkable, which was the design's weakest point.
+  A level was authored with only prerequisite coverage constraining it, so
+  a disagreement about whether a record sat at level three or four had
+  nothing to appeal to.
+- **A correction.** I claimed the vocabulary could be derived wholly from
+  the concept graph. That was wrong, and the validator is what showed it.
+  Most content words name no concept, and forcing a licence on them
+  assigned twenty-four words to levels where they never appeared. General
+  vocabulary is authored in tiers as Basic English and the Dolch lists are.
+  Derivation applies to the technical terms, where drift would do damage.
+- A word qualifies as a derived term only if it is actually used at its
+  concept's level. A word that merely resembles a concept name is ordinary
+  vocabulary.
+- **The limit, stated so it is not over-relied on.** The check is lexical.
+  It would not have caught this morning's wear-versus-break error, since
+  "broken" is unambiguously level-one vocabulary. Vocabulary constrains how
+  simply a thing is said and says nothing about whether it is right.
+- Prior art recorded. TinyStories constrained generation to a roughly
+  fifteen-hundred-word lexicon and produced coherent English from
+  three-million-parameter models.
+
 ### Added. Teacher model pulled, and a generator requirement it revealed
 
 - `qwen3:30b-a3b-instruct-2507-q4_K_M` pulled and verified. Apache 2.0

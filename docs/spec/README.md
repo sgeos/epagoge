@@ -7,6 +7,9 @@ validation contracts.
 
 - `CLAIM_TAXONOMY.md` classifies every record by what it claims and how
   that claim is verified. Specified 2026-09-23.
+- `VOCABULARY.md` specifies the per-level vocabulary, its ceiling and
+  coverage rules, and why it needs three categories rather than two.
+  Specified 2026-09-24.
 - `CURRICULUM_LEVELS.md` specifies the seven complexity levels, the four
   axes they bundle, the corpus construction method, and the token
   distribution across them. Specified 2026-09-23.
