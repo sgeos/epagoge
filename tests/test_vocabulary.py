@@ -42,7 +42,7 @@ def codes(violations: list[object]) -> set[str]:
 def vocab(**kwargs: object) -> Vocabulary:
     defaults: dict[str, object] = {
         "core": frozenset({"the", "a", "you", "it", "is", "and", "when", "gets"}),
-        "terms": (Term("count", "counting", ("counts",)),),
+        "terms": (Term("count", "counting", 1, ("counts",)),),
         "general": {1: frozenset({"thing"}), 5: frozenset({"apparatus"})},
         "exempt": frozenset({"popper"}),
     }
@@ -82,23 +82,36 @@ class TestLookup(unittest.TestCase):
 
 
 class TestDerivation(unittest.TestCase):
-    def test_a_term_takes_the_level_of_its_concept(self) -> None:
+    def test_a_term_reports_its_authored_level(self) -> None:
         records = [rec("a", 3, ("counting",), "you count the thing")]
-        self.assertEqual(term_levels(vocab(), records)["count"], 3)
+        self.assertEqual(term_levels(vocab(), records)["count"], 1)
 
-    def test_a_term_whose_concept_is_never_taught_has_no_level(self) -> None:
+    def test_a_word_may_not_precede_the_concept_it_names(self) -> None:
+        """A concept may be taught before its name, never the reverse."""
+        v = vocab(terms=(Term("count", "counting", 1),))
+        records = [rec("a", 4, ("counting",), "you count the thing")]
+        self.assertIn(
+            "term-before-concept", codes(validate_vocabulary(v, records, CONCEPTS))
+        )
+
+    def test_a_term_whose_concept_is_never_taught_is_reported(self) -> None:
+        v = vocab(terms=(Term("count", "counting", 1),))
         records = [rec("a", 1, ("wearing_out",), "the thing")]
-        self.assertIsNone(term_levels(vocab(), records)["count"])
+        self.assertIn(
+            "term-never-introduced", codes(validate_vocabulary(v, records, CONCEPTS))
+        )
 
 
 class TestCeiling(unittest.TestCase):
     def test_a_term_above_its_level_is_reported(self) -> None:
+        v = vocab(terms=(Term("count", "counting", 5, ("counts",)),))
         records = [
             rec("late", 5, ("counting",), "you count the thing"),
-            rec("early", 1, ("wearing_out",), "you count the thing"),
+            rec("early", 1, ("counting",), "you count the thing"),
         ]
-        out = validate_vocabulary(vocab(), records, CONCEPTS)
-        self.assertIn("vocabulary-ceiling", codes(out))
+        self.assertIn(
+            "vocabulary-ceiling", codes(validate_vocabulary(v, records, CONCEPTS))
+        )
 
     def test_a_general_word_above_its_tier_is_reported(self) -> None:
         records = [rec("a", 1, ("counting",), "you count the apparatus thing")]
@@ -139,7 +152,7 @@ class TestCoverage(unittest.TestCase):
 
 class TestLicensing(unittest.TestCase):
     def test_a_term_naming_an_unknown_concept_is_reported(self) -> None:
-        v = vocab(terms=(Term("count", "no_such_concept"),))
+        v = vocab(terms=(Term("count", "no_such_concept", 1),))
         records = [rec("a", 1, ("counting",), "you count the thing")]
         self.assertIn(
             "unlicensed-term", codes(validate_vocabulary(v, records, CONCEPTS))
@@ -147,7 +160,10 @@ class TestLicensing(unittest.TestCase):
 
     def test_a_form_shared_by_two_terms_is_reported(self) -> None:
         v = vocab(
-            terms=(Term("count", "counting"), Term("tally", "wearing_out", ("count",)))
+            terms=(
+                Term("count", "counting", 1),
+                Term("tally", "wearing_out", 1, ("count",)),
+            )
         )
         records = [rec("a", 1, ("counting", "wearing_out"), "you count the thing")]
         self.assertIn(
@@ -177,7 +193,7 @@ class TestLoading(unittest.TestCase):
             {
                 "core": ["The"],
                 "general": {"2": ["Shoe"]},
-                "terms": [{"word": "Count", "concept": "counting"}],
+                "terms": [{"word": "Count", "concept": "counting", "level": 1}],
                 "exempt": ["Popper"],
             }
         )
@@ -192,7 +208,9 @@ class TestLoading(unittest.TestCase):
 
     def test_a_term_without_a_concept_is_rejected(self) -> None:
         with self.assertRaises(ValueError):
-            load_vocabulary(self.write({"terms": [{"word": "count"}]}))
+            load_vocabulary(
+                self.write({"terms": [{"word": "count", "concept": "counting"}]})
+            )
 
     def test_the_shipped_vocabulary_validates_the_shipped_corpus(self) -> None:
         from epagoge.concept_graph import ConceptGraph
@@ -227,7 +245,7 @@ class TestCompleteness(unittest.TestCase):
 
         done = completeness(vocab())
         self.assertEqual(done.mapped, 1)
-        self.assertEqual(done.unmapped, 2)
+        self.assertEqual(done.unmapped, 2)  # noqa: PLR2004
         self.assertLess(done.fraction, 1.0)
 
     def test_an_empty_vocabulary_is_vacuously_complete(self) -> None:
@@ -235,10 +253,10 @@ class TestCompleteness(unittest.TestCase):
 
         self.assertEqual(completeness(Vocabulary()).fraction, 1.0)
 
-    def test_the_shipped_vocabulary_reports_an_incomplete_graph(self) -> None:
-        """Recorded as a fact about the current state, not as a target."""
+    def test_the_shipped_vocabulary_is_fully_mapped(self) -> None:
+        """Every content word now carries a concept. The tier is empty."""
         from epagoge.vocabulary import completeness, load_vocabulary
 
         done = completeness(load_vocabulary(Path("curriculum/vocabulary.json")))
-        self.assertGreater(done.unmapped, 0)
-        self.assertLess(done.fraction, 0.5)
+        self.assertEqual(done.unmapped, 0)
+        self.assertEqual(done.fraction, 1.0)

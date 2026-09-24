@@ -269,6 +269,162 @@
       "name": "exponential decay",
       "kind": "formal_structure",
       "domain": null
+    },
+    {
+      "id": "household_object",
+      "name": "household object",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "toy",
+      "name": "toy",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "physical_property",
+      "name": "physical property",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "emptiness",
+      "name": "emptiness",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "spatial_position",
+      "name": "spatial position",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "falling",
+      "name": "falling",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "opening_and_shutting",
+      "name": "opening and shutting",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "duration",
+      "name": "duration",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "sequence",
+      "name": "sequence",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "person",
+      "name": "person",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "activity",
+      "name": "activity",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "change",
+      "name": "change",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "need",
+      "name": "need",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "manner",
+      "name": "manner",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "presence",
+      "name": "presence",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "direction",
+      "name": "direction",
+      "kind": "domain_concept",
+      "domain": "everyday"
+    },
+    {
+      "id": "quantity",
+      "name": "quantity",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "algebraic_structure",
+      "name": "algebraic structure",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "failing",
+      "name": "failing",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "accident",
+      "name": "accident",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "investigation_practice",
+      "name": "investigation practice",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "knowing",
+      "name": "knowing",
+      "kind": "domain_concept",
+      "domain": "communication"
+    },
+    {
+      "id": "explanation",
+      "name": "explanation",
+      "kind": "domain_concept",
+      "domain": "communication"
+    },
+    {
+      "id": "reporting",
+      "name": "reporting",
+      "kind": "domain_concept",
+      "domain": "communication"
+    },
+    {
+      "id": "claim_under_test",
+      "name": "claim under test",
+      "kind": "domain_concept",
+      "domain": "communication"
+    },
+    {
+      "id": "dependence",
+      "name": "dependence",
+      "kind": "domain_concept",
+      "domain": "communication"
     }
   ],
   "prerequisites": {
@@ -402,6 +558,32 @@
     "checking": [
       "being_told",
       "cause_and_effect"
+    ],
+    "toy": [
+      "household_object"
+    ],
+    "failing": [
+      "things_break"
+    ],
+    "accident": [
+      "failing",
+      "cause_and_effect"
+    ],
+    "investigation_practice": [
+      "accident",
+      "checking"
+    ],
+    "explanation": [
+      "knowing"
+    ],
+    "reporting": [
+      "explanation"
+    ],
+    "claim_under_test": [
+      "knowing"
+    ],
+    "algebraic_structure": [
+      "addition"
     ]
   },
   "instantiates": {
@@ -423,6 +605,11 @@
     ],
     "hazard_rate": [
       "exponential_decay"
+    ]
+  },
+  "specialises": {
+    "toy": [
+      "household_object"
     ]
   }
 }

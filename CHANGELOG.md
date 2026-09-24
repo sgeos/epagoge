@@ -27,6 +27,33 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. Communication added, vocabulary fully mapped
+
+- **Communication added as a domain**, closing the gap the curriculum
+  coverage test found. Five concepts covering knowing, explanation,
+  reporting, and a claim under test.
+- **All 131 unmapped words now carry a concept.** Completeness moved from
+  8.4 percent to 100. The graph grew from 45 to 71 nodes across four
+  domains, and every record now lists the concepts its words touch, which
+  is what produces the cross-domain links.
+- **The mathematics against failure-analysis depth contrast survives** at 10
+  against 6, which the ablation design depends on.
+- **A third correction to the vocabulary design, and the validator found
+  this one too.** Term levels were derived from the concept. That is wrong,
+  because a concept can be taught before its name is introduced. The
+  level-one causation record never uses the word "cause", and children grasp
+  causation long before they say it. Deriving equality admitted thirty-three
+  words at levels where nothing used them.
+- A term's level is now **authored**, with the graph supplying a lower bound
+  only: a word may not precede the concept it names. Placement above that
+  bound is a scheduling decision, which is what the kanji schedule is.
+- History and accounting recorded as further additions, with accounting
+  earning its place chiefly through a transfer edge, since mass and energy
+  balance in a closed loop is accounting and double-entry bookkeeping is
+  conservation expressed as a procedure.
+- **Drafting a sensible curriculum remains open and non-trivial.** The
+  schedule now has somewhere to live, and nothing has scheduled it.
+
 ### Changed. The unmapped tier is a measure, not a category
 
 - **A correction to a correction.** General vocabulary was introduced as a

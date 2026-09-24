@@ -18,8 +18,8 @@ corpus does not support.
 | Category | Level | Licensed by |
 | --- | --- | --- |
 | **core** | 1 | Nothing. Function words name no concept |
-| **unmapped** | **Authored**, in tiers | Nothing yet. Awaiting a concept |
-| **terms** | **Derived** from the graph | The concept the word names |
+| **unmapped** | Holding pen, should stay empty | Nothing yet. Awaiting a concept |
+| **terms** | **Authored**, bounded below by the graph | The concept the word names |
 
 ### Two corrections, in sequence
 
@@ -27,6 +27,18 @@ corpus does not support.
 from the graph. The validator showed otherwise, since forcing a licence on
 every word assigned twenty-four of them to levels where they never appeared.
 The tiers were introduced in response.
+
+**Third, and it corrects the second.** The level was then derived from the
+concept, on the reasoning that a word's level is where its concept is
+taught. **That was wrong, because a concept can be taught before its name is
+introduced.** The level-one record teaching causation never uses the word
+"cause", and children grasp causation long before they say it. Deriving
+equality admitted thirty-three words at levels where nothing used them.
+
+A word's level is **authored**, and the graph supplies only a lower bound:
+a word may not be introduced before the concept it names is taught. The
+placement above that bound is a scheduling decision, which is what
+`ENABLING_CONCEPTS.md` describes and what the kanji schedule is.
 
 **Second, and it corrects the first.** Those tiers were then described as a
 permanent category, on the model of Basic English and the Dolch lists.

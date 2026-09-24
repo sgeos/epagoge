@@ -1,5 +1,5 @@
 {
-  "_comment": "Three categories. core: function words, level one. general: ordinary content words, level AUTHORED in tiers as Basic English and the Dolch lists do. terms: words naming a graph concept, level DERIVED from where that concept is taught. A word qualifies as a term only if it is used at its concept's level. See docs/spec/VOCABULARY.md.",
+  "_comment": "core: function words, level one. terms: content words licensed by the concept they name, with an AUTHORED level bounded below by where that concept is taught, since a concept may be taught before its name is introduced. See docs/spec/VOCABULARY.md.",
   "core": [
     "a",
     "about",
@@ -170,211 +170,724 @@
     "popper",
     "reason"
   ],
-  "general": {
-    "1": [
-      "agree",
-      "alike",
-      "big",
-      "blocks",
-      "bottom",
-      "broke",
-      "chair",
-      "chairs",
-      "changes",
-      "colour",
-      "crack",
-      "cup",
-      "cups",
-      "day",
-      "door",
-      "drop",
-      "dropping",
-      "empty",
-      "ever",
-      "falling",
-      "falls",
-      "first",
-      "four",
-      "front",
-      "happen",
-      "hot",
-      "know",
-      "learn",
-      "little",
-      "looking",
-      "many",
-      "need",
-      "next",
-      "nothing",
-      "one",
-      "open",
-      "point",
-      "red",
-      "settles",
-      "shoes",
-      "shut",
-      "size",
-      "skip",
-      "small",
-      "someone",
-      "stop",
-      "stove",
-      "thin",
-      "three",
-      "time",
-      "toy",
-      "two",
-      "until",
-      "using",
-      "way",
-      "working",
-      "wrong",
-      "yourself"
-    ],
-    "2": [
-      "adding",
-      "already",
-      "bicycle",
-      "fail",
-      "fails",
-      "forever",
-      "last",
-      "part",
-      "parts",
-      "whole"
-    ],
-    "3": [
-      "backwards",
-      "began",
-      "cause",
-      "causes",
-      "following"
-    ],
-    "4": [
-      "consequences"
-    ],
-    "5": [
-      "accident",
-      "addition",
-      "alone",
-      "binary",
-      "causal",
-      "combine",
-      "correction",
-      "defined",
-      "dormant",
-      "failure",
-      "function",
-      "group",
-      "harmless",
-      "induces",
-      "operation",
-      "present",
-      "prevented",
-      "produce",
-      "reaches",
-      "recursion",
-      "sit",
-      "structure",
-      "successor",
-      "system",
-      "trigger",
-      "years"
-    ],
-    "6": [
-      "account",
-      "accumulating",
-      "assigns",
-      "assumption",
-      "attempting",
-      "avoid",
-      "blameless",
-      "candidate",
-      "constant",
-      "cumulative",
-      "depends",
-      "doing",
-      "explanations",
-      "fault",
-      "fleet",
-      "hours",
-      "identified",
-      "individual",
-      "percent",
-      "popper's",
-      "position",
-      "postmortem",
-      "rather",
-      "refute",
-      "reporting",
-      "should",
-      "simulated",
-      "support",
-      "suppresses",
-      "ten",
-      "therefore"
-    ]
-  },
+  "general": {},
   "terms": [
     {
+      "word": "accident",
+      "concept": "accident",
+      "level": 5
+    },
+    {
+      "word": "account",
+      "concept": "explanation",
+      "level": 6
+    },
+    {
+      "word": "accumulating",
+      "concept": "claim_under_test",
+      "level": 6
+    },
+    {
+      "word": "adding",
+      "concept": "addition",
+      "level": 2
+    },
+    {
+      "word": "addition",
+      "concept": "addition",
+      "level": 5
+    },
+    {
+      "word": "agree",
+      "concept": "checking",
+      "level": 1
+    },
+    {
+      "word": "alike",
+      "concept": "same_and_different",
+      "level": 1
+    },
+    {
+      "word": "alone",
+      "concept": "emptiness",
+      "level": 5
+    },
+    {
+      "word": "already",
+      "concept": "sequence",
+      "level": 2
+    },
+    {
+      "word": "assigns",
+      "concept": "investigation_practice",
+      "level": 6
+    },
+    {
+      "word": "assumption",
+      "concept": "claim_under_test",
+      "level": 6
+    },
+    {
+      "word": "attempting",
+      "concept": "explanation",
+      "level": 6
+    },
+    {
+      "word": "avoid",
+      "concept": "danger",
+      "level": 6
+    },
+    {
+      "word": "backwards",
+      "concept": "direction",
+      "level": 3
+    },
+    {
+      "word": "began",
+      "concept": "sequence",
+      "level": 3
+    },
+    {
+      "word": "bicycle",
+      "concept": "household_object",
+      "level": 2
+    },
+    {
+      "word": "big",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "binary",
+      "concept": "algebraic_structure",
+      "level": 5
+    },
+    {
+      "word": "blameless",
+      "concept": "investigation_practice",
+      "level": 6
+    },
+    {
+      "word": "blocks",
+      "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "bottom",
+      "concept": "spatial_position",
+      "level": 1
+    },
+    {
+      "word": "broke",
+      "concept": "things_break",
+      "level": 1
+    },
+    {
+      "word": "candidate",
+      "concept": "claim_under_test",
+      "level": 6
+    },
+    {
+      "word": "causal",
+      "concept": "cause_and_effect",
+      "level": 5
+    },
+    {
+      "word": "cause",
+      "concept": "cause_and_effect",
+      "level": 5
+    },
+    {
+      "word": "causes",
+      "concept": "cause_and_effect",
+      "level": 3
+    },
+    {
       "word": "chain",
-      "concept": "causal_chain"
+      "concept": "causal_chain",
+      "level": 3
+    },
+    {
+      "word": "chair",
+      "concept": "household_object",
+      "forms": [
+        "chairs"
+      ],
+      "level": 1
+    },
+    {
+      "word": "changes",
+      "concept": "change",
+      "level": 1
+    },
+    {
+      "word": "colour",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "combine",
+      "concept": "change",
+      "level": 5
     },
     {
       "word": "condition",
       "concept": "latent_condition",
       "forms": [
         "conditions"
-      ]
+      ],
+      "level": 5
+    },
+    {
+      "word": "consequences",
+      "concept": "cause_and_effect",
+      "level": 4
+    },
+    {
+      "word": "constant",
+      "concept": "quantity",
+      "level": 6
+    },
+    {
+      "word": "correction",
+      "concept": "investigation_practice",
+      "level": 5
     },
     {
       "word": "count",
       "concept": "counting",
       "forms": [
         "counting"
-      ]
+      ],
+      "level": 1
+    },
+    {
+      "word": "crack",
+      "concept": "things_break",
+      "level": 1
+    },
+    {
+      "word": "cumulative",
+      "concept": "quantity",
+      "level": 6
+    },
+    {
+      "word": "cup",
+      "concept": "household_object",
+      "forms": [
+        "cups"
+      ],
+      "level": 1
+    },
+    {
+      "word": "day",
+      "concept": "duration",
+      "level": 1
+    },
+    {
+      "word": "defined",
+      "concept": "algebraic_structure",
+      "level": 5
+    },
+    {
+      "word": "depends",
+      "concept": "dependence",
+      "level": 6
     },
     {
       "word": "different",
-      "concept": "same_and_different"
+      "concept": "same_and_different",
+      "level": 1
+    },
+    {
+      "word": "doing",
+      "concept": "activity",
+      "level": 6
+    },
+    {
+      "word": "door",
+      "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "dormant",
+      "concept": "presence",
+      "level": 5
+    },
+    {
+      "word": "drop",
+      "concept": "falling",
+      "level": 1
+    },
+    {
+      "word": "dropping",
+      "concept": "falling",
+      "level": 1
+    },
+    {
+      "word": "empty",
+      "concept": "emptiness",
+      "level": 1
+    },
+    {
+      "word": "ever",
+      "concept": "sequence",
+      "level": 1
+    },
+    {
+      "word": "explanations",
+      "concept": "explanation",
+      "level": 6
+    },
+    {
+      "word": "fail",
+      "concept": "failing",
+      "forms": [
+        "fails"
+      ],
+      "level": 2
+    },
+    {
+      "word": "failure",
+      "concept": "failing",
+      "level": 5
+    },
+    {
+      "word": "falls",
+      "concept": "falling",
+      "forms": [
+        "falling"
+      ],
+      "level": 1
+    },
+    {
+      "word": "fault",
+      "concept": "failing",
+      "level": 6
+    },
+    {
+      "word": "first",
+      "concept": "sequence",
+      "level": 1
+    },
+    {
+      "word": "fleet",
+      "concept": "investigation_practice",
+      "level": 6
+    },
+    {
+      "word": "following",
+      "concept": "direction",
+      "level": 3
+    },
+    {
+      "word": "forever",
+      "concept": "duration",
+      "level": 2
+    },
+    {
+      "word": "four",
+      "concept": "number_word_order",
+      "level": 1
+    },
+    {
+      "word": "front",
+      "concept": "spatial_position",
+      "level": 1
+    },
+    {
+      "word": "function",
+      "concept": "algebraic_structure",
+      "level": 5
+    },
+    {
+      "word": "group",
+      "concept": "algebraic_structure",
+      "level": 5
+    },
+    {
+      "word": "happen",
+      "concept": "change",
+      "level": 1
+    },
+    {
+      "word": "harmless",
+      "concept": "danger",
+      "level": 5
     },
     {
       "word": "hazard",
-      "concept": "hazard_rate"
+      "concept": "hazard_rate",
+      "level": 6
+    },
+    {
+      "word": "hot",
+      "concept": "danger",
+      "level": 1
+    },
+    {
+      "word": "hours",
+      "concept": "duration",
+      "level": 6
+    },
+    {
+      "word": "identified",
+      "concept": "checking",
+      "level": 6
+    },
+    {
+      "word": "individual",
+      "concept": "person",
+      "level": 6
+    },
+    {
+      "word": "induces",
+      "concept": "algebraic_structure",
+      "level": 5
     },
     {
       "word": "investigation",
-      "concept": "accident_investigation"
+      "concept": "accident_investigation",
+      "level": 6
+    },
+    {
+      "word": "know",
+      "concept": "being_told",
+      "level": 1
+    },
+    {
+      "word": "last",
+      "concept": "sequence",
+      "level": 2
+    },
+    {
+      "word": "learn",
+      "concept": "being_told",
+      "level": 1
+    },
+    {
+      "word": "little",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "looking",
+      "concept": "checking",
+      "level": 1
+    },
+    {
+      "word": "many",
+      "concept": "more_and_fewer",
+      "level": 1
+    },
+    {
+      "word": "need",
+      "concept": "need",
+      "level": 1
+    },
+    {
+      "word": "next",
+      "concept": "sequence",
+      "level": 1
+    },
+    {
+      "word": "nothing",
+      "concept": "emptiness",
+      "level": 1
     },
     {
       "word": "number",
       "concept": "number_word_order",
       "forms": [
         "numbers"
-      ]
+      ],
+      "level": 1
+    },
+    {
+      "word": "one",
+      "concept": "number_word_order",
+      "level": 1
+    },
+    {
+      "word": "open",
+      "concept": "opening_and_shutting",
+      "level": 1
+    },
+    {
+      "word": "operation",
+      "concept": "algebraic_structure",
+      "level": 5
     },
     {
       "word": "order",
-      "concept": "number_word_order"
+      "concept": "number_word_order",
+      "level": 1
+    },
+    {
+      "word": "part",
+      "concept": "component_and_system",
+      "forms": [
+        "parts"
+      ],
+      "level": 2
+    },
+    {
+      "word": "percent",
+      "concept": "quantity",
+      "level": 6
+    },
+    {
+      "word": "point",
+      "concept": "correspondence",
+      "level": 1
+    },
+    {
+      "word": "popper's",
+      "concept": "claim_under_test",
+      "level": 6
+    },
+    {
+      "word": "position",
+      "concept": "claim_under_test",
+      "level": 6
+    },
+    {
+      "word": "postmortem",
+      "concept": "investigation_practice",
+      "level": 6
+    },
+    {
+      "word": "present",
+      "concept": "presence",
+      "level": 5
+    },
+    {
+      "word": "prevented",
+      "concept": "danger",
+      "level": 5
+    },
+    {
+      "word": "produce",
+      "concept": "change",
+      "level": 5
+    },
+    {
+      "word": "rather",
+      "concept": "manner",
+      "level": 6
+    },
+    {
+      "word": "reaches",
+      "concept": "change",
+      "level": 5
+    },
+    {
+      "word": "recursion",
+      "concept": "algebraic_structure",
+      "level": 5
+    },
+    {
+      "word": "red",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "refute",
+      "concept": "claim_under_test",
+      "level": 6
+    },
+    {
+      "word": "reporting",
+      "concept": "reporting",
+      "level": 6
     },
     {
       "word": "root",
-      "concept": "root_cause"
+      "concept": "root_cause",
+      "level": 5
+    },
+    {
+      "word": "settles",
+      "concept": "checking",
+      "level": 1
+    },
+    {
+      "word": "shoes",
+      "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "should",
+      "concept": "explanation",
+      "level": 6
+    },
+    {
+      "word": "shut",
+      "concept": "opening_and_shutting",
+      "level": 1
+    },
+    {
+      "word": "simulated",
+      "concept": "investigation_practice",
+      "level": 6
+    },
+    {
+      "word": "sit",
+      "concept": "presence",
+      "level": 5
+    },
+    {
+      "word": "size",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "skip",
+      "concept": "change",
+      "level": 1
+    },
+    {
+      "word": "small",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "someone",
+      "concept": "person",
+      "level": 1
+    },
+    {
+      "word": "stop",
+      "concept": "change",
+      "level": 1
+    },
+    {
+      "word": "stove",
+      "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "structure",
+      "concept": "algebraic_structure",
+      "level": 5
+    },
+    {
+      "word": "successor",
+      "concept": "algebraic_structure",
+      "level": 5
+    },
+    {
+      "word": "support",
+      "concept": "reporting",
+      "level": 6
+    },
+    {
+      "word": "suppresses",
+      "concept": "reporting",
+      "level": 6
+    },
+    {
+      "word": "system",
+      "concept": "component_and_system",
+      "level": 5
+    },
+    {
+      "word": "ten",
+      "concept": "quantity",
+      "level": 6
+    },
+    {
+      "word": "therefore",
+      "concept": "manner",
+      "level": 6
+    },
+    {
+      "word": "thin",
+      "concept": "physical_property",
+      "level": 1
     },
     {
       "word": "thing",
       "concept": "things_break",
       "forms": [
         "things"
-      ]
+      ],
+      "level": 1
+    },
+    {
+      "word": "three",
+      "concept": "number_word_order",
+      "level": 1
+    },
+    {
+      "word": "time",
+      "concept": "duration",
+      "level": 1
+    },
+    {
+      "word": "toy",
+      "concept": "toy",
+      "level": 1
+    },
+    {
+      "word": "trigger",
+      "concept": "cause_and_effect",
+      "level": 5
+    },
+    {
+      "word": "two",
+      "concept": "number_word_order",
+      "level": 1
+    },
+    {
+      "word": "until",
+      "concept": "sequence",
+      "level": 1
+    },
+    {
+      "word": "using",
+      "concept": "wearing_out",
+      "level": 1
+    },
+    {
+      "word": "way",
+      "concept": "manner",
+      "level": 1
     },
     {
       "word": "wear",
-      "concept": "wearing_out"
+      "concept": "wearing_out",
+      "level": 1
+    },
+    {
+      "word": "whole",
+      "concept": "component_and_system",
+      "level": 2
     },
     {
       "word": "words",
-      "concept": "number_word_order"
+      "concept": "number_word_order",
+      "level": 1
+    },
+    {
+      "word": "working",
+      "concept": "activity",
+      "level": 1
+    },
+    {
+      "word": "wrong",
+      "concept": "knowing",
+      "level": 1
+    },
+    {
+      "word": "years",
+      "concept": "duration",
+      "level": 5
+    },
+    {
+      "word": "yourself",
+      "concept": "person",
+      "level": 1
     }
   ]
 }

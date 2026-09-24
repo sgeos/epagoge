@@ -13,13 +13,15 @@ genuinely name nothing.
 Its size is therefore a measure of how incomplete the graph is, and it
 should shrink toward zero as concepts are added.
 
-**Terms.** Words that name a graph concept. **Their level is derived**, not
-authored, from the earliest level at which that concept is taught, so the
-technical vocabulary and the curriculum cannot drift apart.
+**Terms.** Words that name a graph concept. **Their level is authored**, and
+the graph supplies a lower bound: a word may not be introduced before the
+concept it names has been taught.
 
-The derivation applies where it matters. An earlier design claimed the whole
-vocabulary could be derived from the graph. That was wrong, and the count of
-uncovered terms is what showed it.
+An earlier design derived the level from the concept instead of bounding it.
+That was wrong, because **a concept can be taught before its name is
+introduced.** The level-one record teaching causation never uses the word
+"cause", and children grasp causation long before they say it. Deriving
+equality admitted thirty-three words at levels where nothing used them.
 
 Two rules, both checkable.
 
@@ -62,6 +64,9 @@ class Term:
 
     word: str
     concept: str
+    level: int
+    """Authored. The graph bounds it from below; it is not derived."""
+
     forms: tuple[str, ...] = ()
 
     def surface_forms(self) -> tuple[str, ...]:
@@ -187,16 +192,43 @@ def concept_levels(records: Sequence[Record]) -> dict[str, int]:
     return out
 
 
-def term_levels(
-    vocabulary: Vocabulary, records: Sequence[Record]
-) -> dict[str, int | None]:
-    """Level of each term, derived from where its licensing concept is taught.
+def term_levels(vocabulary: Vocabulary, records: Sequence[Record]) -> dict[str, int]:
+    """Authored level of each term. ``records`` is unused and kept for callers."""
+    del records
+    return {term.word: term.level for term in vocabulary.terms}
 
-    ``None`` means the licensing concept is never taught, which makes the
-    term unusable rather than universally available.
+
+def _check_lower_bound(
+    vocabulary: Vocabulary, records: Sequence[Record]
+) -> list[Violation]:
+    """A word may not be introduced before the concept it names is taught.
+
+    This is the graph's only claim on the vocabulary. It bounds a word from
+    below and leaves the placement above that bound to the schedule, which
+    is a distribution problem the graph does not express.
     """
     taught = concept_levels(records)
-    return {term.word: taught.get(term.concept) for term in vocabulary.terms}
+    out: list[Violation] = []
+    for term in vocabulary.terms:
+        concept_level = taught.get(term.concept)
+        if concept_level is None:
+            out.append(
+                Violation(
+                    "term-never-introduced",
+                    f"term {term.word!r} names concept {term.concept!r}, "
+                    "which is never taught",
+                )
+            )
+        elif term.level < concept_level:
+            out.append(
+                Violation(
+                    "term-before-concept",
+                    f"term {term.word!r} is admitted at level {term.level} but "
+                    f"its concept {term.concept!r} is not taught until "
+                    f"{concept_level}",
+                )
+            )
+    return out
 
 
 def validate_vocabulary(
@@ -207,6 +239,7 @@ def validate_vocabulary(
     """Check the ceiling rule, the coverage rule, and licensing."""
     out: list[Violation] = []
     out.extend(_check_licensing(vocabulary, known_concepts))
+    out.extend(_check_lower_bound(vocabulary, records))
     levels = term_levels(vocabulary, records)
     out.extend(_check_ceiling(vocabulary, records, levels))
     out.extend(_check_coverage(vocabulary, records, levels))
@@ -273,15 +306,7 @@ def _check_ceiling(
                 )
                 continue
             level = levels.get(term.word)
-            if level is None:
-                out.append(
-                    Violation(
-                        "term-never-introduced",
-                        f"record {record.id!r} uses {token!r}, whose concept "
-                        f"{term.concept!r} is never taught",
-                    )
-                )
-            elif level > record.level:
+            if level is not None and level > record.level:
                 out.append(
                     Violation(
                         "vocabulary-ceiling",
@@ -380,12 +405,16 @@ def _parse_terms(raw: object) -> list[Term]:
         entry = cast(dict[object, object], item)
         word = entry.get("word")
         concept = entry.get("concept")
+        level = entry.get("level")
         if not isinstance(word, str) or not isinstance(concept, str):
             raise ValueError(f"{where}: 'word' and 'concept' must be strings")
+        if not isinstance(level, int) or isinstance(level, bool):
+            raise ValueError(f"{where}: 'level' must be an integer")
         out.append(
             Term(
                 word=word.lower(),
                 concept=concept,
+                level=level,
                 forms=tuple(_str_list(entry.get("forms"), f"{where}.forms")),
             )
         )
