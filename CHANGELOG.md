@@ -27,6 +27,20 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Accounting, and a handoff protocol
+
+- Accounting placed as a measurement discipline rather than applied
+  economics. Five concepts and two formal structures. It had to earn its
+  place by producing a derived transfer edge and did: balance and
+  conservation of number both instantiate conservation.
+- `docs/process/HANDOFF.md`, adapted from the protocol in the operator's
+  Keleusma project. Validity is checked by ancestry and by content, never
+  by a hash match, and the content checks are cheap and independent.
+- The handoff separates what a resuming session should do, what the
+  operator holds, what stays unstarted and why, and the method rules that
+  were expensive to learn. History accumulates below a line and is never
+  edited.
+
 ### Changed. Communication added, vocabulary fully mapped
 
 - **Communication added as a domain**, closing the gap the curriculum

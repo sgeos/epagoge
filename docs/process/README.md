@@ -4,6 +4,14 @@ Working practice for this repository.
 
 **Status.** Minimal.
 
+## Handoff
+
+`HANDOFF.md` is the first thing a resuming session reads. It carries a
+validity check that must be run before anything in it is believed, since a
+handoff that has gone stale is worse than none.
+
+Validate by ancestry and by content, never by a hash match.
+
 ## Current practice
 
 - **Run `tools/check.sh` before any commit.** It gates ruff lint, ruff

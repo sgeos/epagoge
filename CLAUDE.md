@@ -16,6 +16,9 @@ method.
 schema are specified, implemented, tested, and gated. No corpus has been
 generated and no model has been trained.
 
+**Read `docs/process/HANDOFF.md` first, and run its validity check before
+believing anything in it.**
+
 **Run `tools/check.sh` before any commit.** It gates lint, formatting,
 strict type checking, tests, a coverage floor, graph and corpus validation,
 and the disclosure scan.
