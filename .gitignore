@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environment-specific secrets. Follows the convention used by the
+# keleusma repository. The directory exists locally and is never tracked.
+secret/
+
+# Transient scratch files. The directory itself is tracked through its
+# placeholder so that the path exists in a fresh clone.
+tmp/*
+!tmp/.gitkeep
+
+# NOTE ON corpus/ AND sources/
+#
+# These two directories are deliberately NOT ignored. The operator
+# directed on 2026-09-23 that generated corpus data and terminal-stage
+# source literature be tracked in version control rather than excluded.
+#
+# Two consequences are recorded here so that they are not rediscovered
+# later by surprise.
+#
+# 1. Size. The host volume had 57 GiB free of 926 GiB at project
+#    creation. A corpus at pretraining scale will exceed that. Git
+#    Large File Storage is installed on this machine but has NOT been
+#    configured for this repository, so large files currently enter
+#    the object store directly and are not removable without a
+#    history rewrite.
+#
+# 2. Provenance. Because corpus data is tracked, every generated
+#    record is reviewable and attributable through history. That is
+#    the stated benefit of this arrangement.

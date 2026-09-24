@@ -1,0 +1,12 @@
+# Normalise line endings to LF for text files.
+* text=auto eol=lf
+
+# Corpus and source records are newline-delimited JSON. Mark them as
+# text so that diffs remain reviewable, which is the stated reason
+# these directories are tracked rather than ignored.
+*.jsonl text eol=lf
+*.json  text eol=lf
+
+# Auxiliary tooling is not representative of the project's language
+# statistics.
+tools/** linguist-vendored
