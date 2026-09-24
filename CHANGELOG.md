@@ -27,6 +27,52 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. The generator runs end to end, and its output is not yet usable
+
+- `src/epagoge/prompt.py`, `generators/generate.py`,
+  `vocabulary.unlicensed`. Twenty-seven new tests, 257 total.
+- **First measured run. 16 accepted of 100 asked for**, 84 rejected at the
+  vocabulary ceiling across fourteen level-one concepts.
+
+### Fixed. A word list in a prompt is a suggestion until it is checked
+
+- A first run without validation produced **zero of twelve** admissible
+  records, with 29 percent of tokens outside the level-one list.
+- Re-asking with the specific offending words named took that to **ten of
+  ten**. A generic repeat of the constraint produces a generic repeat of
+  the violation.
+
+### Found. The vocabulary is descriptive and is being used prescriptively
+
+- `curriculum/vocabulary.json` was derived to describe the words the sample
+  corpus happens to use. At level one that is 156 function words and **64
+  content words**, and it was never authored as a lexicon a level-one
+  corpus must be writable in.
+- Thirty concepts cannot be taught distinctly in 64 content words. The
+  measured symptom is the teacher returning the same sentence for different
+  concepts because the vocabulary leaves it nowhere else to go.
+- **This is the 84 percent.** It is a design decision for the operator, not
+  a generator defect.
+
+### Found. Exclusions are correct and semantic drift persists anyway
+
+- `duration` correctly excludes `sequence` and the teacher still returned a
+  sequence sentence for it. **Vocabulary is now mechanically enforced.
+  Semantics is not.**
+- That makes the unimplemented verification layer load-bearing rather than
+  optional, on evidence rather than on assumption.
+
+### Fixed. Two defects found by reading the output rather than the metrics
+
+- **A one-word fragment passed every check.** The ceiling asks whether
+  every word is admissible, which a fragment satisfies trivially. The line
+  splitter had stripped any leading run of digits, dots and dashes, eating
+  the first word of a line beginning with a number word. Minimum length
+  added and the splitter now only strips an actual list marker.
+- **The same sentence was written for two concepts.** "The cup is empty"
+  arrived for both `household_object` and `emptiness`, attributing one
+  piece of teaching to two ideas. Deduplicated across a run.
+
 ### Added. The curriculum schedule, level one complete and level two partial
 
 - `src/epagoge/schedule.py`, `curriculum/schedule/level_01.json`,

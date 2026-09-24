@@ -1,0 +1,191 @@
+"""Generation prompts.
+
+Builds the prompt for one teaching target. Pure and dependency-free so that
+what the teacher is asked can be tested without running the teacher.
+
+The shape is set by a finding recorded in ``generators/TEACHER.md``. Asked
+to teach that use wears things out, the model returned sentences about
+things breaking, which is the adjacent concept the graph deliberately
+separates. One negative constraint fixed it. **A prompt therefore carries
+the concept, its grounding, and its nearest graph neighbours as explicit
+exclusions**, and the graph already holds the neighbours so they are
+derived rather than authored.
+"""
+
+from __future__ import annotations
+
+from collections.abc import Mapping, Sequence
+from dataclasses import dataclass
+from typing import Final
+
+from epagoge.concept_graph import ConceptGraph
+
+MAX_EXCLUSIONS: Final[int] = 6
+"""Cap on neighbours named as exclusions.
+
+A long exclusion list dilutes each entry and lengthens the prompt for no
+gain. Six is a guess, not a measurement, and is the number to vary first if
+conflation reappears.
+"""
+
+
+@dataclass(frozen=True, slots=True)
+class Target:
+    """One concept to teach, with everything the prompt needs about it."""
+
+    concept: str
+    name: str
+    domain: str
+    form: str
+    primitives: tuple[tuple[str, str], ...] = ()
+    """Register id and its observation text, in citation order."""
+
+    exclusions: tuple[str, ...] = ()
+    """Neighbour names the content must not drift into."""
+
+
+def neighbours(graph: ConceptGraph, concept: str) -> list[str]:
+    """Concepts near enough to be confused with this one.
+
+    Prerequisites and dependents are included, not only siblings. The
+    recorded conflation was between a concept and its own prerequisite,
+    so excluding only siblings would not have caught it.
+
+    Ordered nearest first, by relation type, then alphabetically so the
+    prompt is stable across runs.
+    """
+    direct = set(graph.prerequisites_of(concept))
+    dependents = {
+        other for other in graph.nodes if concept in graph.prerequisites_of(other)
+    }
+    siblings: set[str] = set()
+    for parent in direct:
+        siblings.update(
+            other
+            for other in graph.nodes
+            if other != concept and parent in graph.prerequisites_of(other)
+        )
+    node = graph.nodes.get(concept)
+    domain = node.domain if node is not None else None
+    ordered: list[str] = []
+    for group in (direct, dependents, siblings):
+        for other in sorted(group):
+            candidate = graph.nodes.get(other)
+            if candidate is None or candidate.domain != domain:
+                continue
+            if other not in ordered and other != concept:
+                ordered.append(other)
+    return ordered[:MAX_EXCLUSIONS]
+
+
+def target_for(
+    graph: ConceptGraph,
+    concept: str,
+    form: str,
+    primitives: Mapping[str, str],
+    cited: Sequence[str] = (),
+) -> Target:
+    """Assemble a target, deriving exclusions from the graph."""
+    node = graph.nodes[concept]
+    if node.domain is None:
+        raise ValueError(f"{concept!r} is a formal structure, not a teachable concept")
+    grounding = tuple((p, primitives[p]) for p in cited if p in primitives)
+    return Target(
+        concept=concept,
+        name=node.name,
+        domain=node.domain,
+        form=form,
+        primitives=grounding,
+        exclusions=tuple(graph.nodes[n].name for n in neighbours(graph, concept)),
+    )
+
+
+def build(target: Target, level: int, words: Sequence[str], count: int = 3) -> str:
+    """Render the prompt.
+
+    ``words`` is the admissible vocabulary at this level. It is supplied in
+    full rather than described, because a described constraint is one the
+    teacher approximates and a listed one is a constraint it can satisfy.
+    """
+    if count < 1:
+        raise ValueError("count must be at least one")
+    if not words:
+        raise ValueError("no admissible vocabulary supplied")
+
+    lines = [
+        f"Write {count} separate sentences for a reading level {level} corpus.",
+        "",
+        "THE HARDEST CONSTRAINT IS THE WORD LIST AT THE BOTTOM.",
+        "Every word you write must appear in it. Measured on a first run,",
+        "29 percent of words fell outside it and no sentence survived.",
+        "",
+        f"TEACH EXACTLY THIS ONE IDEA: {target.name}.",
+        "",
+        # The form belongs to the unit, which may cover several concepts, so
+        # it can name an idea this target's exclusions forbid. Asking for the
+        # voice rather than the content is what keeps the two compatible.
+        "Match the voice and reading level of the next line. Do NOT copy its",
+        "content, which covers more than the one idea above:",
+        f"  {target.form}",
+    ]
+    if target.primitives:
+        # The observations are written for an adult reader and use words the
+        # level does not admit. Saying so stops them being read as a style to
+        # copy, which is one source of the measured vocabulary drift.
+        lines += [
+            "",
+            "Ground each sentence in one of these observations. They are",
+            "written above the reading level on purpose. Take the idea and",
+            "not the wording:",
+        ]
+        lines += [f"  - {text}" for _, text in target.primitives]
+    if target.exclusions:
+        lines += [
+            "",
+            "DO NOT write about any of the following. They are different",
+            "ideas taught separately, and blurring them is the failure this",
+            "prompt exists to prevent:",
+        ]
+        lines += [f"  - {name}" for name in target.exclusions]
+    lines += [
+        "",
+        "Use ONLY these words, in any order and any inflection:",
+        "  " + " ".join(sorted(words)),
+        "",
+        "Rules:",
+        "  - One idea per sentence. No lists, no headings, no numbering.",
+        "  - State what is so. Do not address the reader as a teacher would.",
+        "  - No word outside the list above.",
+        f"  - Output exactly {count} lines and nothing else.",
+    ]
+    return "\n".join(lines)
+
+
+def retry(
+    target: Target,
+    level: int,
+    words: Sequence[str],
+    rejected: Sequence[str],
+    offending: Sequence[str],
+    count: int = 3,
+) -> str:
+    """Re-ask after a rejection, naming the words that caused it.
+
+    A generic repeat of the constraint produces a generic repeat of the
+    violation. Naming the specific words converts the instruction from one
+    the teacher approximates into one it can act on.
+    """
+    lines = [
+        "Your previous answer was rejected. These sentences were not used:",
+    ]
+    lines += [f"  {line}" for line in rejected]
+    lines += [
+        "",
+        "They used these words, which are not in the allowed list:",
+        "  " + " ".join(sorted(set(offending))),
+        "",
+        "Write them again using only allowed words. Say the same things more",
+        "plainly rather than saying different things.",
+        "",
+    ]
+    return "\n".join(lines) + build(target, level, words, count=count)

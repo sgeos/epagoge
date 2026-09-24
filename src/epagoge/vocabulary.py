@@ -181,6 +181,25 @@ def tokenise(text: str) -> list[str]:
     return WORD_RE.findall(text.lower())
 
 
+def unlicensed(vocabulary: Vocabulary, text: str, level: int) -> list[str]:
+    """Tokens in ``text`` that are not admissible at ``level``.
+
+    Empty means the text sits inside the level's vocabulary ceiling. Used at
+    the generation boundary, where teacher output is untrusted and a soft
+    instruction to stay inside a word list has been measured as one the
+    teacher does not reliably follow.
+    """
+    out: list[str] = []
+    for token in tokenise(text):
+        if vocabulary.is_free(token):
+            continue
+        term = vocabulary.lookup(token)
+        if term is not None and term.level <= level:
+            continue
+        out.append(token)
+    return out
+
+
 def concept_levels(records: Sequence[Record]) -> dict[str, int]:
     """Earliest level at which each concept is taught."""
     out: dict[str, int] = {}

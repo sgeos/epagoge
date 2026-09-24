@@ -29,7 +29,7 @@ rendered ORDER of this list, not just the next unused number.
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across ten checks.
    Anything red means a statement below needs re-reading before it is
    believed.
-2. The suite reports **230** tests.
+2. The suite reports **257** tests.
 3. `curriculum/graph/concepts.json` **declares 11 domains** and holds **78**
    nodes, of which **4 domains hold no concept at all** and are awaiting
    content by design. It yields **4** derived transfer edges. A domain
@@ -132,7 +132,15 @@ concepts. `../decisions/GRAPH_CONNECTIVITY.md` carries what it cost.
 
 ## What is YOURS: decisions the operator holds
 
-1. **Levels three to seven of the schedule**, and the decision that gates
+1. **The level-one lexicon.** `curriculum/vocabulary.json` is a
+   **descriptive** artifact, derived to describe the words the sample
+   corpus happens to use, and it is now being used **prescriptively** as
+   the ceiling a generator must write inside. At level one that is 156
+   function words and 64 content words, which is why 84 of 100 drafts were
+   rejected. Author a real lexicon, teach fewer concepts at level one, or
+   accept surface repetition and deduplicate at the concept level. Nothing
+   generates at volume until this is chosen.
+2. **Levels three to seven of the schedule**, and the decision that gates
    them. Level one allocates budget by what must be grounded, which is
    public and true. **Level three onward needs subject weighting, which is
    profile-derived and lives in the coverage manifest**, so scheduling it
@@ -154,11 +162,10 @@ concepts. `../decisions/GRAPH_CONNECTIVITY.md` carries what it cost.
 
 ## What is NOT yours, and why it stays unstarted
 
-**Corpus generation.** **No longer blocked for level one.** The schedule
-exists, the concepts are named, the primitives are cited per unit, and the
-budget is stated. `CURRICULUM_LEVELS.md` gives the sequence, and its step
-three is a hundred records generated, validated, **and read** before
-anything is scaled.
+**Corpus generation at volume.** **Blocked on the level-one lexicon**, not
+on tooling. `generators/generate.py` runs end to end and its first measured
+run accepted **16 of 100**. The cause is recorded in `generators/README.md`
+and is a design decision, not a defect.
 
 **The ablation.** Blocked on the pre-registration, itself blocked on
 re-measuring variance under the intended optimiser.
@@ -232,6 +239,13 @@ must cover history, not the working tree.
   of why the replacement is right.
 - **Never train toward being selected** by other models, and never let quirk
   absorb a negative result. Both are recorded with reasoning.
+- **A constraint stated in a prompt is a suggestion until something checks
+  it.** A word list produced zero admissible records of twelve. The same
+  list, with rejections fed back naming the offending words, produced ten
+  of ten.
+- **Read the output, not only the counts.** The two worst defects in the
+  first real batch were a one-word fragment that passed every check and one
+  sentence written for two different concepts. No metric reported either.
 - Irreversible or outward-facing actions need confirmation. Nothing is
   published; publication needs explicit in-session authorisation.
 

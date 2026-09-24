@@ -18,6 +18,7 @@ from epagoge.vocabulary import (
     load_vocabulary,
     term_levels,
     tokenise,
+    unlicensed,
     validate_vocabulary,
 )
 
@@ -260,3 +261,42 @@ class TestCompleteness(unittest.TestCase):
         done = completeness(load_vocabulary(Path("curriculum/vocabulary.json")))
         self.assertEqual(done.unmapped, 0)
         self.assertEqual(done.fraction, 1.0)
+
+
+class TestUnlicensed(unittest.TestCase):
+    """The ceiling check used at the generation boundary.
+
+    Separate from the corpus validator because it runs on a single line of
+    untrusted teacher output before any record exists around it.
+    """
+
+    def vocabulary(self) -> Vocabulary:
+        return Vocabulary(
+            core=("the", "is"),
+            exempt=("iec",),
+            terms=(
+                Term(word="cup", concept="c", level=1),
+                Term(word="ledger", concept="l", level=5),
+            ),
+        )
+
+    def test_admissible_text_reports_nothing(self) -> None:
+        self.assertEqual(unlicensed(self.vocabulary(), "the cup is", 1), [])
+
+    def test_a_word_above_the_level_is_reported(self) -> None:
+        self.assertEqual(unlicensed(self.vocabulary(), "the ledger is", 1), ["ledger"])
+
+    def test_the_same_word_is_admissible_at_its_own_level(self) -> None:
+        self.assertEqual(unlicensed(self.vocabulary(), "the ledger is", 5), [])
+
+    def test_an_unknown_word_is_reported(self) -> None:
+        self.assertEqual(
+            unlicensed(self.vocabulary(), "the frobnicator is", 1), ["frobnicator"]
+        )
+
+    def test_exempt_words_are_free_at_any_level(self) -> None:
+        self.assertEqual(unlicensed(self.vocabulary(), "iec", 1), [])
+
+    def test_every_offender_is_reported_not_just_the_first(self) -> None:
+        found = unlicensed(self.vocabulary(), "ledger and frobnicator", 1)
+        self.assertEqual(len(found), 3)
