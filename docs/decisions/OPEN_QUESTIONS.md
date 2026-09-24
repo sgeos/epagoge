@@ -143,12 +143,12 @@ weights permit.
 Both point the same way. Download permissively licensed weights, run them
 locally, and nothing leaves the machine.
 
-**Selected for this host.** A thirty-billion-parameter sparse instruct
-model with roughly three billion active parameters, Apache 2.0, at four-bit
-quantisation. About 18 GB, which fits the available disk and, tightly, the
-unified memory. Reported at 32 to 43 tokens per second on this
-configuration, with four-bit quantisation preserving roughly 95 to 98
-percent of full-precision quality.
+**Selected and pulled 2026-09-24.** A thirty-billion-parameter sparse
+instruct model at four-bit quantisation, Apache 2.0 confirmed from the
+shipped licence. 18 GB on disk, 21 GB resident, entirely on GPU. Measured
+warm throughput roughly fifty tokens per second. Text-only rather than the
+vision variant, and instruct rather than thinking. Details and the
+generation budget in `../../generators/TEACHER.md`.
 
 **Throughput is the binding constraint, not cost.** At roughly 35 tokens
 per second one million tokens is about eight hours, improving several-fold

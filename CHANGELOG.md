@@ -27,6 +27,28 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Teacher model pulled, and a generator requirement it revealed
+
+- `qwen3:30b-a3b-instruct-2507-q4_K_M` pulled and verified. Apache 2.0
+  confirmed from the shipped licence, 18 GB on disk, 21 GB resident,
+  entirely on GPU, roughly fifty tokens per second warm.
+- Text-only rather than vision, since corpus generation uses no vision.
+  Instruct rather than thinking, since reasoning traces are wasted tokens.
+- Generation budget revised down. One million tokens is about five and a
+  half hours single-stream rather than eight, so level one is a few hours
+  to a day rather than up to eighty hours.
+- **The first two prompts established a generator requirement.** Asked to
+  teach that repeated use wears things out, the model returned two
+  sentences in three about things breaking and chains snapping, which is
+  sudden failure and a concept the graph deliberately separates from wear.
+  Adding one negative constraint produced three correct sentences in three.
+- **A generation prompt must therefore carry the concept, its grounding
+  primitive and observation, and its nearest graph neighbours as explicit
+  exclusions.** The graph already holds the neighbours, so the exclusions
+  are derived rather than authored. Without this the generator produces
+  fluent text that blurs exactly the distinctions the curriculum exists to
+  draw, while passing schema validation and reading well.
+
 ### Added. Level-one graph coverage, and the review tool
 
 - Concept graph expanded from 33 to 45 nodes with a level-one layer in both
