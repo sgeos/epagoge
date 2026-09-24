@@ -46,6 +46,18 @@ def main(argv: list[str]) -> int:
         summary = f"{len(members):>3} concepts, max depth {deepest}"
         print(f"{label} {summary}")
 
+    # A foundation nothing rests on is not functioning as a foundation.
+    foundations = {"physical_world", "space_and_time", "agency", "society"}
+    feeds = sum(
+        1
+        for node_id, node in graph.nodes.items()
+        for p in graph.prerequisites_of(node_id)
+        if (q := graph.nodes.get(p)) is not None
+        and q.domain in foundations
+        and node.domain not in foundations
+    )
+    print(f"  foundation feeds   {feeds} prerequisites run from a foundation outward")
+
     edges = sorted(graph.transfer_edges())
     print(f"  transfer edges     {len(edges)}")
     for a, b in edges:

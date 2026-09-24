@@ -27,6 +27,28 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. Domain naming assessed, and a correction
+
+- An "Operations" suffix was proposed for the three foundations. **Rejected
+  for all three**, because none of them is an activity. They are subject
+  areas, and the test a domain name must pass is reading as a module at
+  level one *and* at level seven. "Spatiotemporal" fails the low end.
+- **But Operations is a genuinely missing domain**, not a relabelling.
+  Procedure, process, sequencing of work, control of execution.
+  Closed-loop manufacturing is operations and nothing covered it.
+- **Civilization and society added to the manifest**, distinct from agency.
+  Agency is one actor with goals; society is many actors with institutions,
+  norms, and testimony. The primitive register already carries its seeds.
+- Both go in the manifest and neither into the graph, because the graph
+  should follow content rather than precede it.
+- **A correction.** "No cross-domain prerequisites" was reported twice as a
+  good property. It was partly hiding disconnection. Zero prerequisites run
+  from any foundation outward, and only one foundation concept is depended
+  on at all, so the foundations carry vocabulary and contribute no
+  structure. The property that matters is narrower: no prerequisite between
+  the two ablation domains. Foundations feeding both is desirable.
+  `validate_graph.py` now reports the feed count.
+
 ### Changed. The everyday domain split into three
 
 - `everyday` was a grab-bag. Split into `physical_world`, `space_and_time`,
