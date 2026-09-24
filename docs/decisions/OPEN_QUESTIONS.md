@@ -636,6 +636,37 @@ follow-on defines an episode. See `../architecture/MODEL_ARCHITECTURE.md`.
 
 This inherits from question one, scope.
 
+## 20. Coverage weighting against the token budget. GATES CORPUS GENERATION
+
+Added 2026-09-23.
+
+**Breadth has a cost and the corpus is token-limited.** Coverage now spans
+roughly ten major areas across two spines, against an ablation budget on
+the order of two to twenty billion tokens. That is a few hundred million
+tokens per area, and a model of one hundred million to one billion
+parameters cannot learn ten areas well.
+
+**The confound this creates is specific.** An ablation about ordering is
+confounded if the corpus is too thin for anything to be learned in the
+first place. A null result would then be uninformative about ordering,
+since it would be consistent with the corpus simply being inadequate at
+that budget. That is the inconclusive outcome question four defines as
+project failure, arrived at by a second route.
+
+**Two things are required and neither exists.**
+
+1. **Explicit proportions in the coverage manifest**, rather than a list.
+   The two-spine structure supplies the principled basis, since the spines
+   can be weighted against each other deliberately.
+2. **A declared ablation subset.** The corpus for the ordering experiment
+   is probably a subset of full coverage rather than the whole manifest,
+   chosen so that depth is sufficient for learning to occur. The full
+   manifest then describes the eventual corpus rather than the experimental
+   one.
+
+**This gates corpus generation**, which gates the ablation. It does not
+gate the concept graph or the variance pilot, both of which can proceed.
+
 ## Sources consulted 2026-09-23
 
 - The case for 4-bit precision, k-bit inference scaling laws,

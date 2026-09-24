@@ -25,6 +25,26 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+### Changed, 2026-09-23. Two-spine coverage structure
+
+- Coverage now runs along two orthogonal axes, a subject spine and an
+  epistemic-practice spine. The practice spine's members are domains whose
+  content is the discipline itself, teaching how a conclusion follows, what
+  can be known, where a representation applies, how something is
+  established, and how one discovers one was wrong.
+- **The practice spine is arguably the actual curriculum**, with subject
+  content as the substrate it operates on. It also supplies a principled
+  basis for weighting the two axes against each other.
+- Three coverage additions, one of which corrected an omission of mine.
+  Neither axis's contents are reproduced in tracked documentation.
+- **Open question twenty added, gating corpus generation.** Coverage
+  breadth now exceeds what the ablation token budget can support at the
+  chosen model scales. An ordering ablation is confounded if the corpus is
+  too thin for anything to be learned, since a null result would then be
+  uninformative. Explicit proportions and a declared ablation subset are
+  both required and neither exists. The concept graph and the variance
+  pilot are unaffected.
+
 ### Added, 2026-09-23. Claim taxonomy and conditional-result records
 
 - `docs/spec/CLAIM_TAXONOMY.md`. Every record is classified into exactly

@@ -24,6 +24,25 @@ in `generators/`.
 Coverage weighting is supplied by the coverage manifest, which is an input
 to the generation pipeline.
 
+### Two spines. Decided 2026-09-23
+
+Coverage runs along two orthogonal axes rather than one.
+
+**A subject spine**, covering what the model reasons about.
+
+**An epistemic-practice spine**, covering how the model reasons, checks,
+and revises. Its members are domains whose content is the discipline
+itself, teaching how a conclusion follows, what can be known and where the
+limits are, where a representation applies, how something is established,
+and how one discovers one was wrong.
+
+**The practice spine is arguably the actual curriculum**, with subject
+content as the substrate it operates on. A record belongs to one spine or
+both, and the two are proportioned against each other deliberately rather
+than by accident of what was easy to generate.
+
+Neither axis's contents are reproduced here.
+
 Coverage weighting decides what is written about. It never licenses a claim
 to exceed its evidence.
 
