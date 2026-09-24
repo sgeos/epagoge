@@ -19,6 +19,9 @@ cd "$(dirname "$0")/.." || exit 2
 RUFF="ruff@0.16.8"
 PYRIGHT="pyright@1.1.414"
 COVERAGE_FLOOR=95
+# pilot.py needs the optional train extra; exclude it from the floor so the
+# gate runs without a 600 MB dependency. Its tests skip gracefully.
+COVERAGE_OMIT="src/epagoge/pilot.py"
 
 fail=0
 run() {
@@ -30,8 +33,8 @@ run "ruff (lint)"        uvx "$RUFF" check .
 run "ruff (format)"      uvx "$RUFF" format --check .
 run "pyright (strict)"   uvx "$PYRIGHT"
 run "tests"              env PYTHONPATH=src python3 -m unittest discover -s tests
-run "coverage"           env PYTHONPATH=src uvx --with coverage coverage run --source=src -m unittest discover -s tests
-run "coverage floor"     env PYTHONPATH=src uvx --with coverage coverage report --show-missing --fail-under="$COVERAGE_FLOOR"
+run "coverage"           env PYTHONPATH=src uvx --with coverage coverage run --source=src --omit="$COVERAGE_OMIT" -m unittest discover -s tests
+run "coverage floor"     env PYTHONPATH=src uvx --with coverage coverage report --show-missing --omit="$COVERAGE_OMIT" --fail-under="$COVERAGE_FLOOR"
 rm -f .coverage
 run "seed graph"         env PYTHONPATH=src python3 tools/validate_graph.py curriculum/graph/seed.json
 run "sample corpus"      env PYTHONPATH=src python3 tools/validate_corpus.py curriculum/graph/seed.json curriculum/graph/sample_corpus.jsonl

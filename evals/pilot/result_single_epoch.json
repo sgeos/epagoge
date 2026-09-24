@@ -1,0 +1,84 @@
+{
+  "device": "mps",
+  "parameters": 817920,
+  "steps": 2000,
+  "pairs": 8,
+  "mean_loss": 1.8954311202590663,
+  "seed_sd": 0.07501346387893183,
+  "paired_sd": 0.023295322439192655,
+  "correlation": 0.9538752243243195,
+  "mean_difference": 0.016411354765296038,
+  "pairing_gain": 20.73819644318172,
+  "observations": [
+    {
+      "seed": 0,
+      "treatment": 1.870238184928894,
+      "control": 1.860801413655281
+    },
+    {
+      "seed": 1,
+      "treatment": 1.9000164618094761,
+      "control": 1.8963947743177414
+    },
+    {
+      "seed": 2,
+      "treatment": 1.825599804520607,
+      "control": 1.8146748095750809
+    },
+    {
+      "seed": 3,
+      "treatment": 2.0214914878209433,
+      "control": 2.010248194138209
+    },
+    {
+      "seed": 4,
+      "treatment": 1.901823063691457,
+      "control": 1.87008269627889
+    },
+    {
+      "seed": 5,
+      "treatment": 1.793589582045873,
+      "control": 1.7811591227849324
+    },
+    {
+      "seed": 6,
+      "treatment": 1.9205546180407207,
+      "control": 1.9339590072631836
+    },
+    {
+      "seed": 7,
+      "treatment": 1.9957811782757442,
+      "control": 1.930483524998029
+    }
+  ],
+  "requirements": [
+    {
+      "relative": 0.02,
+      "effect": 0.03790862240518133,
+      "paired": 3,
+      "unpaired": 62,
+      "conservative": 5
+    },
+    {
+      "relative": 0.01,
+      "effect": 0.018954311202590664,
+      "paired": 12,
+      "unpaired": 246,
+      "conservative": 19
+    },
+    {
+      "relative": 0.005,
+      "effect": 0.009477155601295332,
+      "paired": 48,
+      "unpaired": 984,
+      "conservative": 73
+    },
+    {
+      "relative": 0.002,
+      "effect": 0.0037908622405181326,
+      "paired": 297,
+      "unpaired": 6147,
+      "conservative": 456
+    }
+  ]
+}

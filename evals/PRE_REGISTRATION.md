@@ -25,19 +25,36 @@ referent. The bundling is a documented confound, not a decomposed one.
 
 ## 2. Primary endpoint
 
-**PENDING** the variance pilot. Final held-out loss is the default
-candidate. The pilot measures its seed-to-seed variance and its paired
-correlation, and a lower-variance endpoint may be substituted if one is
-clearly better. The endpoint is fixed before any ablation run.
+**FIXED 2026-09-24. Final held-out loss.**
+
+The pilot measured its behaviour and found no reason to substitute
+something else. Paired, its standard deviation is 0.0233 against a mean of
+1.895, which is about 1.2 percent.
+
+**Nondeterminism floor.** Identical inputs run twice differed by 0.00075 on
+Metal Performance Shaders. That bounds the smallest resolvable effect on
+that hardware regardless of seed count, and must be re-measured on whatever
+accelerator the ablation uses.
 
 ## 3. Conditions
 
-**FIXED.**
+**FIXED, with a third arm added 2026-09-24.**
 
 | Condition | Ordering |
 | --- | --- |
 | Treatment | The curriculum trajectory across seven levels |
 | Control | A random topological ordering, fresh per seed |
+| **Null arm** | **Two random topological orderings against each other** |
+
+**Why the null arm exists.** The variance pilot found a systematic
+difference between two orderings that should be equivalent, seven of eight
+pairs in one direction, and a diagnostic showed the sign followed the
+ordering rather than the execution position. Marginal at roughly p = 0.04
+and unexplained.
+
+That is the exact shape of a false positive. The null arm measures the
+pipeline's baseline spurious difference, and **the curriculum effect must
+exceed the null arm rather than merely exceeding zero.**
 
 The control respects prerequisites while discarding the trajectory, so the
 comparison is the curriculum against an arbitrary valid ordering rather
@@ -66,13 +83,32 @@ if the design must be trimmed, since it is the large majority of cost.
 
 ## 6. Seed count
 
-**PENDING** the variance pilot, which measures seed variance and paired
-correlation at the smallest scale for roughly seventy dollars of compute.
+**MEASURED 2026-09-24, PROVISIONAL pending re-measurement at target scale.**
 
-The unpaired five-seed design originally specified detected only effects of
-1.77 standard deviations of seed variance, against a literature reporting
-small effects. Pairing is worth between 1.4 and 10 times the seed count
-depending on a correlation nobody has measured.
+The pilot ran at 818,000 parameters on a synthetic stream, single-epoch. See
+`pilot/README.md`.
+
+| Quantity | Measured |
+| --- | --- |
+| Unpaired sigma | 0.0750 |
+| Paired sd | 0.0233 |
+| Correlation rho | 0.9539 |
+| Pairing gain | 20.7x seeds, free |
+
+| Target effect | Paired | Unpaired | Plan with |
+| --- | --- | --- | --- |
+| 2.0% | 3 | 62 | 5 |
+| 1.0% | 12 | 246 | 19 |
+| 0.5% | 48 | 984 | 73 |
+
+**Pairing is vindicated beyond what was estimated.** Twelve paired seeds
+beat two hundred and forty-six unpaired ones. The original five-seed
+unpaired design was off by two orders of magnitude in efficiency, not
+merely underpowered.
+
+**The number to fix is pending re-measurement**, because the correlation is
+the quantity most likely to move between a synthetic stream at 818,000
+parameters and a real corpus at target scale.
 
 ## 7. Minimum meaningful effect
 
@@ -157,8 +193,10 @@ the number is fixed once measurable.
 
 | Item | Unblocked by |
 | --- | --- |
-| 2, 6, 7 | The variance pilot |
-| 5 | The variance pilot, for allocation |
+| 2 | **Done 2026-09-24** |
+| 6 | **Measured 2026-09-24**, provisional pending target scale |
+| 7 | The minimum effect, still to be justified from the literature |
+| 5 | Allocation, once the seed count is final |
 | 9 correction, 10 | Decision, once the endpoint is fixed |
 | 11 ceiling | The first corpus audit |
 | 12 | The first kernel measurements |

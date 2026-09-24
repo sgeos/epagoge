@@ -27,6 +27,41 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Variance pilot, run and measured
+
+- `src/epagoge/variance.py` and `src/epagoge/pilot.py`, with
+  `tools/run_pilot.py`. The analysis is standard library only and verified
+  against closed-form cases and by recovering known parameters from
+  synthetic data. Torch is an optional `train` extra, so the core stays
+  dependency-free.
+- **Measured single-epoch.** Unpaired sigma 0.0750, paired sd 0.0233,
+  correlation 0.954, pairing gain 20.7x seeds at no cost. Twelve paired
+  seeds beat two hundred and forty-six unpaired ones, so the original
+  five-seed unpaired design was off by two orders of magnitude in
+  efficiency rather than merely underpowered.
+- **The first pilot was wrong in an instructive way.** It trained about
+  twenty-three epochs, where ordering effects necessarily wash out, which
+  inflated the correlation from 0.954 to 0.987 and would have understated
+  the required seed count threefold. Both results are retained, because the
+  difference between them is the finding.
+- **Two harness defects found by running it.** A vocabulary of 256 gave a
+  second-order source 65,536 contexts over 200,000 tokens, so nothing was
+  learnable and every ordering produced an identical result. And warmup
+  with no decay left the rate at peak forever, making four thousand steps
+  converge worse than two thousand.
+- **A null arm is added to the ablation.** The pilot found a systematic
+  difference between two orderings that should be equivalent, with the sign
+  following the ordering rather than the execution position, marginal at
+  about p = 0.04 and unexplained. That is the shape of a false positive, so
+  the ablation now compares two random topological orderings against each
+  other, and the curriculum effect must exceed that null rather than merely
+  exceeding zero.
+- **Nondeterminism floor measured.** Identical inputs differed by 0.00075
+  on Metal Performance Shaders, bounding the smallest resolvable effect on
+  that hardware regardless of seed count.
+- Pre-registration items two and six move from pending to fixed and
+  measured. Six items remain pending.
+
 ### Added. Gate completed, and four gaps closed
 
 Found by checking rather than by recalling.

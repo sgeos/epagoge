@@ -13,9 +13,15 @@ authors = [{ name = "Brendan Sechter", email = "sgeos@hotmail.com" }]
 # first dependency. See docs/decisions/PYTHON_VERSION.md.
 requires-python = ">=3.12"
 
-# Intentionally empty. No dependency is added until the interpreter
-# question above is settled and the component that needs it exists.
+# The core stays dependency-free. Everything under src/epagoge/ other than
+# the pilot trainer imports only the standard library, so the concept graph,
+# the record schema, and the variance analysis can be validated in any
+# environment.
 dependencies = []
+
+[project.optional-dependencies]
+# Only the pilot trainer needs these. Install with: uv pip install -e ".[train]"
+train = ["torch==2.14.0", "numpy"]
 
 [build-system]
 requires = ["hatchling"]
@@ -42,8 +48,18 @@ select = ["E", "F", "W", "B", "S", "I", "N", "UP", "ANN", "RET", "SIM", "PTH"]
 # numbers for a security purpose; if that ever changes, this exemption must be
 # narrowed rather than widened.
 "tests/*" = ["S311"]
+# The pilot and its runner draw from a seeded generator throughout, for the
+# same reason: an experiment must be reproducible from a declared seed, which
+# is the property a cryptographic generator does not offer.
+"src/epagoge/pilot.py" = ["S311"]
+"src/epagoge/variance.py" = ["S311"]
+"tools/run_pilot.py" = ["S311"]
 
 [tool.pyright]
+# Resolve optional dependencies from the project environment so that the
+# trainer type-checks without torch being a hard requirement of the gate.
+venvPath = "."
+venv = ".venv"
 # Strict mode is a deliberate compensation for Python's weaker static
 # guarantees relative to the rest of this operator's toolchain. Every
 # boundary that ingests model output is expected to validate through a
