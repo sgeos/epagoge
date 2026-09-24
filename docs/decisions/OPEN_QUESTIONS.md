@@ -50,11 +50,14 @@ rate.**
 
 Four layers, in order of authority.
 
-1. **Source grounding, the floor.** Every record derives from a retrieved
-   passage, and the claim must be entailed by that passage. A record whose
-   citation does not resolve, or whose claim exceeds what the source
-   supports, is rejected. This addresses the fabricated-citation failure
-   directly.
+1. **Source grounding, the floor. AMENDED 2026-09-23.** Terminal-stage
+   material drawn from real literature must be entailed by a retrieved
+   passage. For simplified content entailment is replaced by a declared
+   fidelity relation, since good pedagogy uses known-false models that
+   later stages correct and no entailment rule can be satisfied by content
+   whose purpose is to be superseded. Every record still carries a
+   resolvable source claim, so the fabricated-citation failure remains
+   addressed. See `PRE_COMMIT_AUDIT.md` finding two.
 2. **Executable checks where the domain permits.** Symbolic mathematics,
    code execution, and dimensional and unit analysis. These give hard
    guarantees rather than statistical ones, and should be preferred
@@ -106,8 +109,13 @@ Before any run, declare in writing and commit to the repository.
 
 - The metrics.
 - The minimum effect size that counts as meaningful.
-- The seed count per condition.
+- The seed count per condition, **set from the measured variance pilot**
+  rather than chosen, per `PRE_COMMIT_AUDIT.md` finding one.
 - The control conditions, including the flat-order control.
+- **The concept graph, the difficulty definition, and the curriculum
+  specification**, added 2026-09-23 per finding three. An experiment whose
+  treatment is undefined cannot be pre-registered.
+- The correction procedure for secondary measures, per finding five.
 
 **Success is a conclusive result in either direction. Failure is an
 inconclusive one**, meaning the observed difference falls within
@@ -137,7 +145,14 @@ hypothesis cannot be tested on a model that was already pretrained without
 a curriculum.
 
 **Scale.** Roughly 100 million, 300 million, and one billion parameters, at
-Chinchilla-style token ratios, five seeds per condition at each point.
+Chinchilla-style token ratios.
+
+**PROVISIONAL from 2026-09-23.** The seed count and the allocation across
+these points are set by the variance pilot rather than chosen. The design
+is also **paired**, sharing initialisation and data within a pair so that
+order is the only difference. The original five-seeds-per-condition
+unpaired figure was underpowered by a factor that made the failure outcome
+likely by construction. See `PRE_COMMIT_AUDIT.md` finding one.
 
 **Rationale for a trend rather than a point.** The published ordering
 literature is inconsistent, and scale dependence is a plausible

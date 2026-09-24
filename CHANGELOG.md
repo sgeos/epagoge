@@ -25,6 +25,29 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+### Resolved, 2026-09-23. All three blocking audit findings
+
+1. **Power.** The design is paired, sharing initialisation and data within
+   a pair so order is the only difference, which was a free correction the
+   original specification missed. Seed count and allocation are set by a
+   variance pilot at the smallest scale rather than chosen, converting the
+   central design parameter from assumption to measurement.
+2. **Grounding.** Entailment is retained for terminal-stage literature and
+   replaced for simplified content by a declared fidelity relation carrying
+   the source claim, the simplification kind, the validity scope, and the
+   supersession pointer. Good pedagogy uses known-false models that later
+   stages correct, and no entailment rule can cover content whose purpose
+   is to be superseded.
+3. **Difficulty.** Defined structurally as prerequisite depth in a declared
+   concept graph combined with supersession depth. No model assigns it, so
+   the teacher cannot confound the treatment. The concept graph becomes the
+   main deliverable, ahead of corpus generation.
+
+Consequences. The corpus record schema gains five required fields. The
+pre-registration scope gains the concept graph, the difficulty definition,
+the curriculum specification, and a multiple-comparison correction
+procedure. The three-scale allocation in question five is provisional.
+
 ### Added, 2026-09-23. Pre-commit adversarial audit
 
 - `docs/decisions/PRE_COMMIT_AUDIT.md`. Eleven findings, three blocking.

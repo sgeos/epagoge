@@ -4,9 +4,11 @@
 before the initial commit. Adversarial in intent. Findings are recorded
 whether or not they reflect well on the work.
 
-Three findings are blocking, meaning each invalidates part of the design
-rather than merely weakening it. Work should not proceed on the affected
-components until they are closed.
+Three findings were blocking, meaning each invalidated part of the design
+rather than merely weakening it. **All three were resolved on 2026-09-23**
+and the resolutions are recorded in place beneath each finding. The
+findings are retained rather than deleted, since the reasoning that
+produced them is what justifies the resolutions.
 
 ## Blocking
 
@@ -31,10 +33,48 @@ failure outcome by construction rather than by finding.**
 | 20 | 0.89 sigma |
 | 30 | 0.72 sigma |
 
-**To close.** A power analysis precedes the pre-registration, with the
-assumed effect size stated and justified from the literature rather than
-chosen for affordability. Expect the seed count to rise substantially, and
-expect that to change the budget and probably the scale points.
+### RESOLVED 2026-09-23. Pair the design, pilot the variance, then allocate
+
+**Design error corrected.** The experiment is naturally paired and was
+specified unpaired. Both conditions can share an initialisation and share
+the data, with order as the only difference. Pairing cancels the
+between-seed variance that dominates the unpaired standard error, and it is
+free.
+
+| Seeds per condition | Unpaired | Paired, rho=0.5 | Paired, rho=0.8 | Paired, rho=0.9 |
+| --- | --- | --- | --- | --- |
+| 5 | 1.77 | 1.25 | 0.79 | 0.56 |
+| 30 | 0.72 | 0.51 | 0.32 | 0.23 |
+
+Pairing alone is worth between 1.4 and 10 times the seed count depending on
+the paired correlation, at no additional compute.
+
+**The correlation is unmeasured, and the whole benefit depends on it.**
+
+**Resolution.** Pair the design. Then run a variance pilot at the smallest
+scale, several paired 100M runs at roughly seventy dollars of compute, to
+measure seed variance and paired correlation directly. Set the seed count
+and the allocation across scale points from the measured values. Only then
+pre-register.
+
+This converts the project's central design parameter from an assumption
+into a measurement, which is the methodology the project claims for itself.
+
+**Allocation costs, computed for reference once the pilot returns.**
+
+| Allocation | Ideal | With 2.5x overhead |
+| --- | --- | --- |
+| Original, n=5 at three scales | $3,667 | $9,167 |
+| n=30 at three scales | $22,000 | $55,000 |
+| n=30/30/5 unequal | $5,333 | $13,333 |
+| Drop 1B, n=30 at two scales | $2,000 | $5,000 |
+
+The one-billion arm dominates. Dropping it and running thirty seeds at the
+two cheaper scales is both better powered and cheaper than the design
+originally specified.
+
+**Consequence for question five.** The three-scale allocation recorded
+there is provisional until the pilot returns.
 
 ### 2. Source grounding contradicts the curriculum's defining feature
 
@@ -48,11 +88,45 @@ verbatim.** As written, the floor rule forbids the product.
 This is an incompatibility rather than a tension, and neither record
 acknowledges the other.
 
-**To close.** Decide what grounding means for pedagogical simplification.
-One candidate is entailment at the level of the underlying claim, with
-simplification permitted and the claim traceable to a source even where the
-wording is not. That is weaker and harder to check automatically, and the
-weakening must be recorded rather than assumed.
+### RESOLVED 2026-09-23. Labelled simplification with declared scope
+
+**The problem restated more sharply than the finding first put it.** The
+incompatibility is not that simplified wording differs from source wording.
+Good pedagogy uses **known-false simplifications**, models that are wrong
+at a higher level and useful at a lower one, which later stages correct.
+That is what teaching a concept in stages and revisiting it at increasing
+complexity means. No entailment rule can be satisfied by content whose
+purpose is to be superseded.
+
+**Resolution.** Entailment is replaced, for simplified content, by a
+**declared fidelity relation that is itself auditable.** Each simplified
+record carries.
+
+- A resolvable source claim.
+- The kind of simplification applied, such as omission, idealisation,
+  superseded model, or analogy.
+- The stage range over which it holds.
+- A pointer to the later record that supersedes it.
+
+Terminal-stage material drawn from real literature keeps strict
+entailment. The weakening applies only where it must, and it is recorded
+rather than assumed.
+
+**Why this is an asset rather than a concession.** The corpus becomes one
+in which every simplification states its domain of validity and its
+correction. That is auditable in a way an unlabelled corpus of true
+statements is not, and it is plausibly better training signal for the
+project's stated property, since a model trained on explicitly scoped
+claims sees claims held with scope rather than absolutely.
+
+**It also supplies the revisit criterion** that question one of the
+curriculum specification lists as unspecified. A concept is revisited when
+a later record supersedes an earlier one through the recorded pointer,
+which is a structural fact rather than a judgment.
+
+**Consequence.** The supersession pointer and the simplification label are
+required fields in the corpus record schema. They are not annotations added
+later.
 
 ### 3. The independent variable is undefined
 
@@ -69,9 +143,37 @@ the teacher's unvalidated judgments silently become the treatment. That is
 an uncontrolled confound at the centre of the design, and it is not
 recorded anywhere.
 
-**To close.** Define the difficulty metric operationally, validate it
-independently of the model that will be trained on it, and add both the
-metric and the curriculum specification to the pre-registration scope.
+### RESOLVED 2026-09-23. Structural difficulty from a concept graph
+
+**Difficulty is derived from structure, not from any model's judgment.**
+
+- Declare a concept set.
+- Specify prerequisite relations among concepts.
+- Tag each record with the concepts it uses.
+- Difficulty is prerequisite depth in the concept graph, combined with
+  supersession depth from the finding two resolution.
+
+**The confound is removed rather than measured.** No model assigns
+difficulty, so the teacher's unvalidated judgment cannot become the
+treatment. The assignment is independently checkable by inspecting the
+graph.
+
+**Why this over a reference-model loss.** A reference-model definition is
+cheaper and is standard in the literature, which would have helped
+comparability. But it makes difficulty a property of the reference model
+rather than of the material, and the choice of reference model becomes an
+unexamined parameter of the result. For a project whose claim is about
+ordering, having the ordering defined by a model outside the experiment is
+the wrong kind of dependency.
+
+**Consequence. The concept graph becomes the main new deliverable**, ahead
+of corpus generation, because nothing can be staged until it exists. It is
+also an auditable artifact in its own right, which suits the project's
+provenance goal.
+
+**Pre-registration scope is extended** to include the concept graph, the
+difficulty definition, and the curriculum specification, alongside the
+metrics, effect size, seed count, and controls already listed.
 
 ## Serious
 
