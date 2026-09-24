@@ -1,0 +1,78 @@
+{
+  "level": 2,
+  "token_budget": {
+    "low": 10000000,
+    "high": 100000000,
+    "basis": "docs/spec/CURRICULUM_LEVELS.md token distribution. Order of magnitude from word counts, not a measurement."
+  },
+  "notes": "Partial by design. Only the two ablation domains are scheduled, because the ordering experiment needs those two at depth across all seven levels and nothing else at level two is on the critical path. The other nine domains are scheduled at level two when the experiment has run or when a reason arrives that does not depend on it.",
+  "covers": [
+    "mathematics_and_formal_logic",
+    "failure_analysis"
+  ],
+  "domains": [
+    {
+      "domain": "mathematics_and_formal_logic",
+      "units": [
+        {
+          "id": "m2.number",
+          "form": "Numbers do not run out. Each one has a next one. Ten ones make a ten.",
+          "teaches": ["natural_number", "place_value"],
+          "primitives": ["counting-order-is-fixed"]
+        },
+        {
+          "id": "m2.howmuch",
+          "form": "How much, not just how many. A pile can be big without being many.",
+          "teaches": ["quantity"]
+        },
+        {
+          "id": "m2.grouping",
+          "form": "Put the same ones together. Count the groups.",
+          "teaches": ["grouping"],
+          "primitives": ["same-again"]
+        },
+        {
+          "id": "m2.conservation",
+          "form": "Move them around and there are still the same number.",
+          "teaches": ["conservation_of_number"],
+          "primitives": ["quantity-survives-rearrangement"]
+        },
+        {
+          "id": "m2.addsub",
+          "form": "Adding is counting on. Taking away is counting back.",
+          "teaches": ["addition", "subtraction"],
+          "primitives": ["adding-increases"]
+        }
+      ]
+    },
+    {
+      "domain": "failure_analysis",
+      "units": [
+        {
+          "id": "f2.chain",
+          "form": "This caused that, and that caused the next thing.",
+          "teaches": ["causal_chain"],
+          "primitives": ["cause-precedes-effect"]
+        },
+        {
+          "id": "f2.failing",
+          "form": "It still looks whole but it no longer does its job.",
+          "teaches": ["failing"],
+          "primitives": ["things-break"]
+        },
+        {
+          "id": "f2.parts",
+          "form": "A thing is made of parts. One bad part can stop the whole thing.",
+          "teaches": ["component_and_system"],
+          "primitives": ["things-have-parts", "a-part-can-stop-the-whole"]
+        },
+        {
+          "id": "f2.accident",
+          "form": "Nobody meant it to happen. It happened anyway, and there is a reason.",
+          "teaches": ["accident"],
+          "primitives": ["cause-precedes-effect", "harm-can-be-avoided"]
+        }
+      ]
+    }
+  ]
+}

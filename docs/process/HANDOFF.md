@@ -26,10 +26,10 @@ this refresh. If it does not, this file predates a reset and is stale.
 **Content** — cheap, independent, each verified on 2026-09-24. Check the
 rendered ORDER of this list, not just the next unused number.
 
-1. `./tools/check.sh` reports **ALL CHECKS PASSED** across nine checks.
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** across ten checks.
    Anything red means a statement below needs re-reading before it is
    believed.
-2. The suite reports **210** tests.
+2. The suite reports **230** tests.
 3. `curriculum/graph/concepts.json` **declares 11 domains** and holds **78**
    nodes, of which **4 domains hold no concept at all** and are awaiting
    content by design. It yields **4** derived transfer edges. A domain
@@ -45,7 +45,11 @@ rendered ORDER of this list, not just the next unused number.
    against 9 and is the wrong quantity for the ablation contrast.
 6. Vocabulary completeness is **100 percent**, 142 terms, **0** unmapped,
    over **28** sample corpus records.
-7. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
+7. `curriculum/schedule/` holds **level one across all eleven domains** and
+   **level two across the two ablation domains only**. Level one schedules
+   30 existing concepts and 18 planned. **31 graph concepts remain
+   unscheduled**, which the validator prints.
+8. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
 
 ## What a resuming session should do first
@@ -79,9 +83,12 @@ primitive register of 34 hand-authored axioms. A per-level vocabulary, fully
 mapped. A variance-pilot harness, run. A review tool that is also the
 sampled audit. A teacher model pulled and verified.
 
-**What does not exist.** Any generated corpus, any trained model, any
-curriculum schedule. The 20-record sample corpus exercises every feature and
-is not curriculum.
+**What does not exist.** Any generated corpus and any trained model. The
+28-record sample corpus exercises every feature and is not curriculum.
+
+**The curriculum schedule exists for levels one and two only.** Level one
+is complete across all eleven domains. Level two covers the two ablation
+domains and is partial by design. Levels three to seven are unwritten.
 
 ### The live defect
 
@@ -125,10 +132,12 @@ concepts. `../decisions/GRAPH_CONNECTIVITY.md` carries what it cost.
 
 ## What is YOURS: decisions the operator holds
 
-1. **The curriculum schedule.** Unstarted and non-trivial. Levels are
-   authored, capacity and completion are unmodelled, nothing has scheduled
-   anything. The largest open design task, and everything downstream waits
-   on it.
+1. **Levels three to seven of the schedule**, and the decision that gates
+   them. Level one allocates budget by what must be grounded, which is
+   public and true. **Level three onward needs subject weighting, which is
+   profile-derived and lives in the coverage manifest**, so scheduling it
+   into a tracked artifact is a disclosure decision and not only a design
+   one. Levels one and two did not need it and deliberately do not use it.
 2. **Populating the specialisation layer**, which holds one edge. The
    defect above is a content problem, not an edge-drawing problem.
 3. **Populating the four empty domains.**
@@ -145,9 +154,11 @@ concepts. `../decisions/GRAPH_CONNECTIVITY.md` carries what it cost.
 
 ## What is NOT yours, and why it stays unstarted
 
-**Corpus generation.** Blocked on the curriculum schedule, not on tooling.
-Writing the generator first would encode guesses where changing them is most
-expensive.
+**Corpus generation.** **No longer blocked for level one.** The schedule
+exists, the concepts are named, the primitives are cited per unit, and the
+budget is stated. `CURRICULUM_LEVELS.md` gives the sequence, and its step
+three is a hundred records generated, validated, **and read** before
+anything is scaled.
 
 **The ablation.** Blocked on the pre-registration, itself blocked on
 re-measuring variance under the intended optimiser.

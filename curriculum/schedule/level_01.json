@@ -1,0 +1,233 @@
+{
+  "level": 1,
+  "token_budget": {
+    "low": 1000000,
+    "high": 10000000,
+    "basis": "docs/spec/CURRICULUM_LEVELS.md token distribution. Order of magnitude from word counts, not a measurement."
+  },
+  "notes": "Level one seeds the primitives later content presupposes and never states. Budget share is derived from scheduled concept count rather than from subject weighting, because what must be grounded is not the same question as what the corpus emphasises. Subject weighting arrives at level three, where breadth of topics begins to matter.",
+  "covers": [
+    "mathematics_and_formal_logic",
+    "failure_analysis",
+    "directed_physical_interactions",
+    "compressed_communication",
+    "record_keeping",
+    "agentic_operations",
+    "accounting",
+    "history_and_philosophy_of_science",
+    "institutional_interfacing",
+    "cybernetic_biological_systems",
+    "normative_adjudication"
+  ],
+  "domains": [
+    {
+      "domain": "record_keeping",
+      "units": [
+        {
+          "id": "r1.where",
+          "form": "It is here, not there. It is over that way.",
+          "teaches": ["spatial_position", "direction"]
+        },
+        {
+          "id": "r1.when",
+          "form": "First this, then that. It took a long time.",
+          "teaches": ["sequence", "duration"],
+          "primitives": ["cause-precedes-effect"]
+        }
+      ]
+    },
+    {
+      "domain": "directed_physical_interactions",
+      "units": [
+        {
+          "id": "p1.things",
+          "form": "The cup is here. The cup is empty. It is still the same cup.",
+          "teaches": ["household_object", "presence", "emptiness"],
+          "primitives": ["things-persist"]
+        },
+        {
+          "id": "p1.property",
+          "form": "This one is red. This one is big. Red is not big.",
+          "teaches": ["physical_property"],
+          "primitives": ["same-again"]
+        },
+        {
+          "id": "p1.change",
+          "form": "Let go and it falls. Open it and it is open.",
+          "teaches": ["change", "falling", "opening_and_shutting"],
+          "primitives": ["things-change", "things-fall", "contact-moves-things"]
+        },
+        {
+          "id": "p1.stands_for",
+          "form": "The toy car is not a car. It stands for one.",
+          "teaches": ["toy"],
+          "primitives": ["marks-stand-for-things", "the-sign-is-not-the-thing"]
+        }
+      ]
+    },
+    {
+      "domain": "mathematics_and_formal_logic",
+      "units": [
+        {
+          "id": "m1.compare",
+          "form": "These two are the same. That one is different. This pile has more.",
+          "teaches": ["same_and_different", "more_and_fewer"],
+          "primitives": ["same-again", "some-is-fewer-than-all"]
+        },
+        {
+          "id": "m1.count",
+          "form": "One, two, three. Each thing gets the next number. The order never changes.",
+          "teaches": ["correspondence", "counting", "number_word_order"],
+          "primitives": ["things-can-be-counted", "counting-order-is-fixed"]
+        },
+        {
+          "id": "m1.logic",
+          "form": "If it rains then the ground is wet. All, some, none. It cannot be both so and not so.",
+          "introduces": ["if_then", "all_some_none", "not_both"],
+          "primitives": ["a-claim-can-be-so-or-not"]
+        }
+      ]
+    },
+    {
+      "domain": "failure_analysis",
+      "units": [
+        {
+          "id": "f1.cause",
+          "form": "You pushed it and it moved. The pushing came first.",
+          "teaches": ["cause_and_effect"],
+          "primitives": ["cause-precedes-effect", "contact-moves-things"]
+        },
+        {
+          "id": "f1.break",
+          "form": "Things break. Broken is hard to undo. Things wear out from being used.",
+          "teaches": ["things_break", "wearing_out"],
+          "primitives": ["things-break", "breaking-is-hard-to-undo", "things-wear"]
+        },
+        {
+          "id": "f1.alive",
+          "form": "Living things die. Dying does not go backwards.",
+          "teaches": ["living_and_not_living", "dying"],
+          "primitives": ["living-things-die", "death-does-not-reverse"]
+        },
+        {
+          "id": "f1.danger",
+          "form": "Some things hurt you. You cannot always see which. You have to be told.",
+          "teaches": ["danger"],
+          "primitives": ["some-things-harm", "harm-can-be-avoided", "danger-is-not-always-visible", "danger-must-be-taught"]
+        },
+        {
+          "id": "f1.check",
+          "form": "Someone told you. Telling can be wrong. Go and look.",
+          "teaches": ["being_told", "checking"],
+          "primitives": ["telling-can-be-wrong", "checking-settles-it", "looking-tells-you"]
+        }
+      ]
+    },
+    {
+      "domain": "agentic_operations",
+      "units": [
+        {
+          "id": "a1.person",
+          "form": "A person does things. A person wants things.",
+          "teaches": ["person", "activity", "need"],
+          "primitives": ["others-act", "living-things-need-supply"]
+        }
+      ]
+    },
+    {
+      "domain": "compressed_communication",
+      "units": [
+        {
+          "id": "c1.know",
+          "form": "You looked, so now you know. You tried it, so now you know.",
+          "teaches": ["knowing"],
+          "primitives": ["looking-tells-you", "trying-tells-you"]
+        },
+        {
+          "id": "c1.because",
+          "form": "It fell because you let go. First this, so then that.",
+          "teaches": ["discourse_marker"]
+        }
+      ]
+    },
+    {
+      "domain": "accounting",
+      "units": [
+        {
+          "id": "ac1.tally",
+          "form": "Make one mark for each one. Count the marks to know how many.",
+          "introduces": ["keeping_count"],
+          "primitives": ["marks-stand-for-things", "things-can-be-counted"]
+        }
+      ]
+    },
+    {
+      "domain": "history_and_philosophy_of_science",
+      "units": [
+        {
+          "id": "h1.findout",
+          "form": "How do you know. Let us go and find out. Now we have settled it.",
+          "introduces": ["finding_out", "settling_it"],
+          "primitives": ["looking-tells-you", "trying-tells-you", "checking-settles-it"]
+        },
+        {
+          "id": "h1.before",
+          "form": "Nobody knew that once. Someone found it out.",
+          "introduces": ["not_always_known"],
+          "primitives": ["others-know-differently"]
+        }
+      ]
+    },
+    {
+      "domain": "institutional_interfacing",
+      "units": [
+        {
+          "id": "i1.reason",
+          "form": "That is right because. That is not true because. Why do you say so.",
+          "introduces": ["giving_a_reason", "agreeing", "disagreeing"],
+          "primitives": ["others-can-be-asked", "telling-can-be-wrong"]
+        },
+        {
+          "id": "i1.hold_or_yield",
+          "form": "I still say so, and here is why. You are right, I was wrong.",
+          "introduces": ["keeping_your_claim", "changing_your_mind"],
+          "primitives": ["others-know-differently", "a-claim-can-be-so-or-not"]
+        }
+      ]
+    },
+    {
+      "domain": "cybernetic_biological_systems",
+      "units": [
+        {
+          "id": "b1.keeping_going",
+          "form": "Living things need food and water to keep going. They grow.",
+          "introduces": ["keeping_going", "needing_supply", "growing"],
+          "primitives": ["living-things-need-supply", "living-things-grow"]
+        },
+        {
+          "id": "b1.mending",
+          "form": "A cut closes up by itself. A broken cup does not.",
+          "introduces": ["mending"],
+          "primitives": ["things-break", "breaking-is-hard-to-undo"]
+        }
+      ]
+    },
+    {
+      "domain": "normative_adjudication",
+      "units": [
+        {
+          "id": "n1.should",
+          "form": "You should not run into the street. You should hold the handle.",
+          "introduces": ["should_and_should_not"],
+          "primitives": ["danger-must-be-taught", "harm-can-be-avoided"]
+        },
+        {
+          "id": "n1.two_shoulds",
+          "form": "You were told to hurry. You were told to be careful. Both at once.",
+          "introduces": ["two_shoulds_at_once"],
+          "primitives": ["others-act", "danger-is-not-always-visible"]
+        }
+      ]
+    }
+  ]
+}

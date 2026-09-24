@@ -27,6 +27,46 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. The curriculum schedule, level one complete and level two partial
+
+- `src/epagoge/schedule.py`, `curriculum/schedule/level_01.json`,
+  `curriculum/schedule/level_02.json`, `tools/validate_schedule.py`,
+  `docs/spec/CURRICULUM_SCHEDULE.md`. Twenty-five new tests, 230 total,
+  the module at 100 percent coverage. The gate is now ten checks.
+- **The schedule is where a concept gets its level.** The assignment was
+  previously implicit in whichever records happened to be written, so an
+  ordering mistake could only be found after generating the record that
+  contained it. The same prerequisite rule the corpus validator applies to
+  records is now applied to the plan.
+- **Level one covers all eleven domains.** Twenty-six units, 30 existing
+  concepts and 18 planned, budget 10^6 to 10^7 tokens.
+- **Level two covers only the two ablation domains**, nine units and 11
+  concepts. Partial by design, since the experiment needs those two at
+  depth and nothing else at level two is on the critical path. `covers`
+  makes the gap declared rather than an oversight.
+
+### Added. Teaches against introduces, so a plan can precede its graph
+
+- A unit names concepts that already exist under `teaches` and concepts it
+  will create under `introduces`. The validator checks the first exist and
+  the second do not.
+- **This is what lets a schedule plan ahead without breaking the rule that
+  the graph follows content.** A planned concept is visible as a plan and
+  becomes a node only when a record teaches it. Without the split the
+  choice is between a graph full of concepts no record teaches and a
+  schedule that cannot mention anything new.
+- The four empty domains have level-one content planned this way, eighteen
+  concepts in total, none of them yet in the graph.
+
+### Changed. Budget shares are derived rather than authored
+
+- Computed from scheduled concept count, so there is no share field to
+  drift out of agreement with the units it describes.
+- **Level one allocates by what must be grounded, not by subject
+  weighting**, because what has to be grounded is a different question from
+  what the corpus emphasises. Subject weighting arrives at level three and
+  will need its own decision there.
+
 ### Added. Twenty-six cross-domain prerequisites, and what drawing them cost
 
 - The graph previously held none, which asserted that every domain is

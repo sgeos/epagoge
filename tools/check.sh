@@ -38,6 +38,7 @@ run "coverage floor"     env PYTHONPATH=src uvx --with coverage coverage report 
 rm -f .coverage
 run "seed graph"         env PYTHONPATH=src python3 tools/validate_graph.py curriculum/graph/concepts.json
 run "sample corpus"      env PYTHONPATH=src python3 tools/validate_corpus.py curriculum/graph/concepts.json curriculum/graph/sample_corpus.jsonl curriculum/primitives.json curriculum/vocabulary.json
+run "schedule"           env PYTHONPATH=src python3 tools/validate_schedule.py curriculum/graph/concepts.json curriculum/primitives.json curriculum/schedule/level_01.json curriculum/schedule/level_02.json
 run "disclosure scan"    ./tools/scrub_scan.sh
 
 printf '\n'
