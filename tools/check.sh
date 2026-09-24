@@ -18,6 +18,7 @@ run "ruff (format)"      uvx ruff@latest format --check .
 run "pyright (strict)"   uvx pyright@latest
 run "tests"              env PYTHONPATH=src python3 -m unittest discover -s tests
 run "seed graph"         env PYTHONPATH=src python3 tools/validate_graph.py curriculum/graph/seed.json
+run "sample corpus"      env PYTHONPATH=src python3 tools/validate_corpus.py curriculum/graph/seed.json curriculum/graph/sample_corpus.jsonl
 
 printf '\n'
 if [ "$fail" -eq 0 ]; then echo "ALL CHECKS PASSED"; else echo "CHECKS FAILED"; fi

@@ -95,17 +95,42 @@ This substantially answers question nineteen. The answer to why this does
 not become Galactica is that the residual error rate is measured and
 published rather than asserted. Galactica asserted curation quality.
 
-### Sub-question still open. Teacher model and its licence
+### Teacher model. ANSWERED 2026-09-23, by verification
 
-Not decided. A material constraint was raised and is **unverified**. Most
-frontier model providers prohibit using their outputs to train competing
-models, and this project's premise is generating a training corpus from a
-teacher. Open-weight models generally permit it, though licences vary and
-some restrict using outputs to improve other models.
+**Frontier application programming interfaces are excluded.** Verified
+2026-09-23.
 
-This may decide the teacher question independently of quality preference.
-Verify current terms for each candidate before committing money to
+- Anthropic's commercial terms prohibit using the service to build a
+  competing product or service, "including to train competing AI models."
+  Outputs may train models that do not compete with Anthropic's own.
+- OpenAI's policy explicitly prohibits using its interface to develop
+  competing language models.
+- Enforcement is active rather than theoretical. Anthropic revoked
+  OpenAI's access over exactly this, and the major laboratories share
+  detection signals through the Frontier Model Forum for what they term
+  adversarial distillation.
+
+A language model trained on those outputs is not defensibly non-competing,
+whatever its deployment niche.
+
+**Open weights under permissive licences are the path**, and the licence
+matters more than the openness. Verified 2026-09-23, DeepSeek's current
+checkpoints carry MIT for code and weights, and Qwen's 27B multimodal
+checkpoint is Apache 2.0 while its largest sparse model carries a
+conditional licence. Llama withholds some rights from developers in the
+European Union.
+
+**Decided. Generation uses an MIT or Apache 2.0 checkpoint**, named
+specifically rather than by family, with the licence recorded at the time
+of use.
+
+**Not legal advice, and terms change.** The verification above is dated.
+Re-check the specific checkpoint's licence before committing money to
 generation.
+
+**Sources consulted 2026-09-23.**
+https://support.claude.com/en/articles/12326764-can-i-use-my-outputs-to-train-an-ai-model
+and https://www.terms.law/2025/04/09/navigating-ai-platform-policies-who-owns-ai-generated-content/
 
 ## 3. Scope boundary on applications
 

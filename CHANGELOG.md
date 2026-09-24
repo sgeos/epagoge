@@ -25,6 +25,35 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+### Added, 2026-09-23. Record schema, level mechanism, pre-registration, teacher decided
+
+**Record schema.** `docs/spec/RECORD_SCHEMA.md` and
+`src/epagoge/record.py`. The single authoritative definition, replacing
+fields described across three prose documents. Twelve rules enforced, nine
+per record and three across the corpus. Thirty-six tests, weighted to
+negative cases. A worked sample corpus exercises every claim class and a
+simplification chain, and `tools/validate_corpus.py` gates it.
+
+**The level-assignment mechanism existed only as prose and now exists.**
+Levels are authored rather than derived, because the seven levels carry
+breadth, abstraction, and groundedness that prerequisite depth cannot
+express. Rule twelve keeps an authored level honest. For every concept, the
+earliest level covering it must be no earlier than the earliest level
+covering each prerequisite. Equal levels are permitted, since ordering
+within a level still respects the partial order. There is no scoring
+function and no model judgment.
+
+**Pre-registration opened** at `evals/PRE_REGISTRATION.md`. Fourteen
+sections, ten fixed and eight items pending, each pending item naming what
+unblocks it. A pending item is a value to be measured rather than chosen.
+The document must be complete before the first ablation run.
+
+**Teacher model decided by verification.** Frontier interfaces are
+excluded. Their terms prohibit training competing models, enforcement is
+active, and a language model trained on those outputs is not defensibly
+non-competing. Generation uses a specifically named MIT or Apache 2.0
+checkpoint with the licence recorded at time of use.
+
 ### Fixed, 2026-09-23. Static analysis run for the first time
 
 - **The analysis configured since the initial commit had never been

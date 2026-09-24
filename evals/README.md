@@ -5,6 +5,13 @@ standard has not met that standard.
 
 **Status.** Empty. No suite has been written.
 
+## The pre-registration
+
+`PRE_REGISTRATION.md` is the document that fixes every choice which could
+otherwise be adjusted after results are seen. **It is incomplete and must
+be complete before the first ablation run.** Items are marked fixed or
+pending with the dependency that unblocks them.
+
 ## Required before any training run
 
 A falsification criterion. The project must state in advance what measured
