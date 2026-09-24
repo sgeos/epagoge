@@ -1,6 +1,78 @@
 {
   "nodes": [
     {
+      "id": "same_and_different",
+      "name": "same and different",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "correspondence",
+      "name": "one-to-one correspondence",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "more_and_fewer",
+      "name": "more and fewer",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "number_word_order",
+      "name": "the order of number words",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "conservation_of_number",
+      "name": "number survives rearrangement",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "grouping",
+      "name": "grouping",
+      "kind": "domain_concept",
+      "domain": "mathematics"
+    },
+    {
+      "id": "living_and_not_living",
+      "name": "living and not living",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "dying",
+      "name": "dying",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "wearing_out",
+      "name": "wearing out",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "danger",
+      "name": "danger",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "being_told",
+      "name": "being told",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
+      "id": "checking",
+      "name": "checking",
+      "kind": "domain_concept",
+      "domain": "failure_analysis"
+    },
+    {
       "id": "counting",
       "name": "counting",
       "kind": "domain_concept",
@@ -201,7 +273,8 @@
   ],
   "prerequisites": {
     "natural_number": [
-      "counting"
+      "counting",
+      "number_word_order"
     ],
     "place_value": [
       "natural_number"
@@ -260,14 +333,16 @@
       "multiplication"
     ],
     "component_and_system": [
-      "things_break"
+      "things_break",
+      "wearing_out"
     ],
     "causal_chain": [
       "cause_and_effect"
     ],
     "failure_mode": [
       "component_and_system",
-      "cause_and_effect"
+      "cause_and_effect",
+      "wearing_out"
     ],
     "root_cause": [
       "causal_chain",
@@ -289,10 +364,44 @@
     ],
     "accident_investigation": [
       "root_cause",
-      "latent_condition"
+      "latent_condition",
+      "checking"
     ],
     "tree": [
       "directed_acyclic_graph"
+    ],
+    "correspondence": [
+      "same_and_different"
+    ],
+    "counting": [
+      "correspondence"
+    ],
+    "more_and_fewer": [
+      "correspondence"
+    ],
+    "number_word_order": [
+      "counting"
+    ],
+    "conservation_of_number": [
+      "counting",
+      "correspondence"
+    ],
+    "grouping": [
+      "counting",
+      "same_and_different"
+    ],
+    "dying": [
+      "living_and_not_living"
+    ],
+    "wearing_out": [
+      "things_break"
+    ],
+    "danger": [
+      "cause_and_effect"
+    ],
+    "checking": [
+      "being_told",
+      "cause_and_effect"
     ]
   },
   "instantiates": {

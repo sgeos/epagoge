@@ -8,6 +8,10 @@ dist/
 .venv/
 venv/
 
+# Review verdicts are per-reviewer working state, not a shared artifact.
+# A published audit result is committed deliberately, not by accident.
+evals/review/verdicts.jsonl
+
 # Tooling caches
 .ruff_cache/
 .pytest_cache/

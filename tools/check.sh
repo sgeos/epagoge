@@ -36,8 +36,8 @@ run "tests"              env PYTHONPATH=src python3 -m unittest discover -s test
 run "coverage"           env PYTHONPATH=src uvx --with coverage coverage run --source=src --omit="$COVERAGE_OMIT" -m unittest discover -s tests
 run "coverage floor"     env PYTHONPATH=src uvx --with coverage coverage report --show-missing --omit="$COVERAGE_OMIT" --fail-under="$COVERAGE_FLOOR"
 rm -f .coverage
-run "seed graph"         env PYTHONPATH=src python3 tools/validate_graph.py curriculum/graph/seed.json
-run "sample corpus"      env PYTHONPATH=src python3 tools/validate_corpus.py curriculum/graph/seed.json curriculum/graph/sample_corpus.jsonl curriculum/primitives.json
+run "seed graph"         env PYTHONPATH=src python3 tools/validate_graph.py curriculum/graph/concepts.json
+run "sample corpus"      env PYTHONPATH=src python3 tools/validate_corpus.py curriculum/graph/concepts.json curriculum/graph/sample_corpus.jsonl curriculum/primitives.json
 run "disclosure scan"    ./tools/scrub_scan.sh
 
 printf '\n'

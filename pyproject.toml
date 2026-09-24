@@ -54,6 +54,9 @@ select = ["E", "F", "W", "B", "S", "I", "N", "UP", "ANN", "RET", "SIM", "PTH"]
 "src/epagoge/pilot.py" = ["S311"]
 "src/epagoge/variance.py" = ["S311"]
 "tools/run_pilot.py" = ["S311"]
+# The audit sample must be reproducible from a declared seed so a disputed
+# rate can be re-checked against the same records.
+"src/epagoge/review.py" = ["S311"]
 
 [tool.pyright]
 # Resolve optional dependencies from the project environment so that the

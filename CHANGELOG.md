@@ -27,6 +27,31 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Level-one graph coverage, and the review tool
+
+- Concept graph expanded from 33 to 45 nodes with a level-one layer in both
+  domains. `seed.json` renamed to `concepts.json`, since it is no longer a
+  seed.
+- **The prerequisite-depth contrast sharpened** from 7 against 5 to 10
+  against 6, and the two domains are **independent subgraphs with no
+  cross-domain prerequisites**, so the contrast the ablation rests on is not
+  muddied by shared ancestry.
+- `src/epagoge/review.py` and `tools/review.py`. **This is the sampled
+  expert audit, not only a reading aid.** Its output is the measured
+  residual error rate the quality claim rests on.
+- Three verdicts rather than two. A flag is counted separately and never
+  folded silently into accept or reject.
+- **Rates are per domain and carry Wilson score intervals.** Three
+  rejections in thirty records is ten percent with an interval from 3.5 to
+  25.6 percent, so quoting the point estimate would present as a
+  measurement something the audit did not establish. Even zero rejections
+  in thirty bounds the rate below about eleven percent, not below zero.
+- Where a record cites a primitive, the grounding observation is displayed
+  inline, so a claim can be checked against what grounds it without leaving
+  the screen.
+- Six hand-written level-one records added, teaching the concepts the
+  expanded graph requires. The corpus validator found each gap in turn.
+
 ### Added. Primitive register, which unblocks level one
 
 - **A problem raised in discussion and never written down until now.**
@@ -226,7 +251,7 @@ checkpoint with the licence recorded at time of use.
 
 - `docs/spec/CONCEPT_GRAPH.md`, `src/epagoge/concept_graph.py`,
   `tests/test_concept_graph.py`, `tools/validate_graph.py`, and a seed
-  graph at `curriculum/graph/seed.json`.
+  graph at `curriculum/graph/concepts.json`.
 - Standard library only. No dependency is added, so the graph can be
   validated before any environment question is settled.
 - Six invariants enforced. Reference resolution, acyclicity, no self-loops,
