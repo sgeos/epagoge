@@ -878,6 +878,26 @@ instrumentation measuring something the corpus never deliberately taught.
 **Cost.** Formal structures must be enumerated as graph nodes. That work
 overlaps with the mathematics coverage rather than adding to it.
 
+## 25. Licensing status of terminal-stage derived records
+
+Added 2026-09-24.
+
+The corpus is CC0. Machine-generated content suits that well, since CC0
+does not depend on whether the material is copyrightable, which is
+unsettled for work without human authorship.
+
+**A terminal-stage record that summarises or restates third-party
+literature occupies unclear ground.** It is neither purely
+machine-generated nor a reproduction. Whether such records can be dedicated
+under CC0 is not settled, and a conservative reading is that some cannot.
+
+**To close.** Decide whether terminal-stage records carry a distinct
+licensing status, and if so carry it as a field in the record schema rather
+than leaving it to a reader's inference. A licensing status that must be
+inferred is one that will be got wrong.
+
+See `LICENSING.md`.
+
 ## Sources consulted 2026-09-23
 
 - The case for 4-bit precision, k-bit inference scaling laws,

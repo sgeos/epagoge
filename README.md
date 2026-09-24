@@ -72,6 +72,13 @@ epagoge/
 └── tmp/             Transient scratch files
 ```
 
+## Licensing
+
+Software under `src/`, `tests/`, and `tools/` is 0BSD. The corpus,
+curriculum, concept graph, specifications, and documentation are CC0 1.0.
+Third-party material under `sources/` retains its own terms and is not
+covered by either. See `LICENSE` and `docs/decisions/LICENSING.md`.
+
 ## Toolchain
 
 Python is the primary implementation language and that decision is

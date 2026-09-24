@@ -26,6 +26,8 @@ Decision records, and the open questions that block implementation.
 - `COLLABORATIVE_POSITIONING.md` decided. The model class is positioned as
   the falsifier and verifier specialist for recruitment into multi-agent
   groups. Positioning and interface only. Never a training objective.
+- `LICENSING.md` decided. 0BSD for software, CC0 for corpus and
+  documentation, third-party material under `sources/` excluded from both.
 - `PRE_COMMIT_AUDIT.md` recorded 2026-09-23. Adversarial audit of the
   design and tracked documentation. Three blocking findings, which gate
   work on the affected components but not the commit.

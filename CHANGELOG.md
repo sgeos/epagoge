@@ -25,6 +25,29 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+## 2026-09-24
+
+### Changed. Licensing decided
+
+- **0BSD for software, CC0 1.0 for corpus and documentation.** Supersedes
+  the MIT declaration in `pyproject.toml`, which was an unsurfaced default
+  rather than a decision.
+- The split is not a compromise. Creative Commons recommends against CC0
+  for software because it does not address patent rights, and 0BSD is the
+  software equivalent of the same intent without MIT's notice requirement.
+- **CC0 suits a synthetic corpus for a specific reason.** The copyright
+  status of machine-generated content is unsettled, so the project may hold
+  no rights to license conventionally. CC0 dedicates whatever rights exist
+  with a fallback permissive licence, and therefore does not depend on the
+  answer. A conventional licence would assert a right that may not exist,
+  which is an unsupported claim in a repository meant to suppress them.
+- **`sources/` is excluded from both**, in `LICENSE` itself and not only in
+  the decision record, since a reader checks the licence file. Third-party
+  terms are not the project's to grant.
+- Open question twenty-five added. A terminal-stage record that restates
+  third-party literature is neither purely machine-generated nor a
+  reproduction, and whether it can be CC0 is unresolved.
+
 ### Added, 2026-09-23. Record schema, level mechanism, pre-registration, teacher decided
 
 **Record schema.** `docs/spec/RECORD_SCHEMA.md` and

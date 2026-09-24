@@ -3,7 +3,8 @@ name = "epagoge"
 version = "0.0.0"
 description = "A graded synthetic corpus and curriculum for training a falsification-oriented foundation model."
 readme = "README.md"
-license = { text = "MIT" }
+license = "0BSD"
+license-files = ["LICENSE", "LICENSE-CC0"]
 authors = [{ name = "Brendan Sechter", email = "sgeos@hotmail.com" }]
 
 # UNRESOLVED. The system interpreter is 3.14.7. Machine learning wheel
