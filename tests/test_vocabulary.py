@@ -206,3 +206,39 @@ class TestLoading(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestCompleteness(unittest.TestCase):
+    """The unmapped tier measures the graph, not the words.
+
+    Every content word names something. One with no mapping means the
+    mapping was not identified, or a concept is missing from the graph.
+    """
+
+    def test_a_fully_mapped_vocabulary_is_complete(self) -> None:
+        from epagoge.vocabulary import completeness
+
+        v = vocab(general={})
+        self.assertEqual(completeness(v).fraction, 1.0)
+        self.assertEqual(completeness(v).unmapped, 0)
+
+    def test_unmapped_words_lower_completeness(self) -> None:
+        from epagoge.vocabulary import completeness
+
+        done = completeness(vocab())
+        self.assertEqual(done.mapped, 1)
+        self.assertEqual(done.unmapped, 2)
+        self.assertLess(done.fraction, 1.0)
+
+    def test_an_empty_vocabulary_is_vacuously_complete(self) -> None:
+        from epagoge.vocabulary import completeness
+
+        self.assertEqual(completeness(Vocabulary()).fraction, 1.0)
+
+    def test_the_shipped_vocabulary_reports_an_incomplete_graph(self) -> None:
+        """Recorded as a fact about the current state, not as a target."""
+        from epagoge.vocabulary import completeness, load_vocabulary
+
+        done = completeness(load_vocabulary(Path("curriculum/vocabulary.json")))
+        self.assertGreater(done.unmapped, 0)
+        self.assertLess(done.fraction, 0.5)

@@ -4,9 +4,14 @@ Three categories, because two were not enough.
 
 **Core.** Function words, available from level one, naming no concept.
 
-**General.** Ordinary content words, assigned to a level by hand in tiers,
-as Basic English and the Dolch lists do. Most content words name no graph
-concept, and forcing a licence on them produces a wrong level.
+**General.** Content words not yet mapped to a concept. **This is a holding
+pen for unfinished work, not a permanent category.** A content word names
+something, so a word with no mapping means either the mapping has not been
+identified or a concept is missing from the graph. Only function words
+genuinely name nothing.
+
+Its size is therefore a measure of how incomplete the graph is, and it
+should shrink toward zero as concepts are added.
 
 **Terms.** Words that name a graph concept. **Their level is derived**, not
 authored, from the earliest level at which that concept is taught, so the
@@ -135,6 +140,35 @@ class Vocabulary:
         return (
             token in self.core or token in self.exempt or bool(NUMERAL_RE.match(token))
         )
+
+
+@dataclass(frozen=True, slots=True)
+class Completeness:
+    """How much of the content vocabulary has reached the graph."""
+
+    mapped: int
+    unmapped: int
+
+    @property
+    def total(self) -> int:
+        return self.mapped + self.unmapped
+
+    @property
+    def fraction(self) -> float:
+        return self.mapped / self.total if self.total else 1.0
+
+
+def completeness(vocabulary: Vocabulary) -> Completeness:
+    """Fraction of content words carrying a concept.
+
+    **A low figure is a statement about the graph, not about the words.**
+    Every content word names something. One that maps to nothing means the
+    mapping was not identified, or a concept that belongs in the graph is
+    absent from it. Function words are excluded because they genuinely name
+    nothing.
+    """
+    unmapped = sum(len(words) for words in vocabulary.general.values())
+    return Completeness(mapped=len(vocabulary.terms), unmapped=unmapped)
 
 
 def tokenise(text: str) -> list[str]:

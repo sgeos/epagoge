@@ -132,6 +132,23 @@ rejected. Without this rule, coverage of interpretive domains would teach
 the model to assert contested claims confidently, which is the failure this
 project exists to prevent.
 
+### Fidelity lost to vocabulary is its own kind
+
+`vocabulary_limited` is distinct from `superseded_model`.
+
+A superseded model is **wrong**, and later material corrects it. A
+vocabulary-limited record is **not wrong**; it is as accurate as the
+admitted words allow, and later material makes it more precise.
+
+Saying that things divide until they cannot be divided further is
+vocabulary-limited. Saying that atoms are tiny balls is a superseded model.
+Both are corrected later, for different reasons, and recording which is
+which is what lets a reader tell a simplification from an error.
+
+**The fidelity loss is accepted rather than apologised for.** Explaining a
+concept imprecisely is the exercise, not a failure of it, provided the
+imprecision is labelled and its correction is named.
+
 ## Conditional-result records. Added 2026-09-23
 
 A fourth record type, for computed and simulated results.

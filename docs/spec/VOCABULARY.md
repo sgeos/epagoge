@@ -18,25 +18,30 @@ corpus does not support.
 | Category | Level | Licensed by |
 | --- | --- | --- |
 | **core** | 1 | Nothing. Function words name no concept |
-| **general** | **Authored**, in tiers | Nothing. Ordinary content words |
+| **unmapped** | **Authored**, in tiers | Nothing yet. Awaiting a concept |
 | **terms** | **Derived** from the graph | The concept the word names |
 
-### The correction that produced this
+### Two corrections, in sequence
 
-An earlier design held that the whole vocabulary could be derived from the
-concept graph, with every word licensed by a concept and its level taken
-from where that concept is taught.
+**First.** An earlier design held that the whole vocabulary could be derived
+from the graph. The validator showed otherwise, since forcing a licence on
+every word assigned twenty-four of them to levels where they never appeared.
+The tiers were introduced in response.
 
-**That was wrong, and the validator is what showed it.** Most content words
-name no concept. "Shoe", "crayon", "account", and "attempting" are ordinary
-English, and forcing a licence on them assigned them the level of whatever
-concept they happened to resemble. The result was twenty-four words admitted
-at levels where they never appeared.
+**Second, and it corrects the first.** Those tiers were then described as a
+permanent category, on the model of Basic English and the Dolch lists.
+**That was also wrong.** A content word names something. "Shoe", "crayon",
+"swing", and "cup" each name a concept, and a word that maps to nothing
+means either the mapping was not identified or a concept is missing from the
+graph.
 
-General vocabulary is authored in tiers, exactly as Basic English and the
-Dolch lists are. **Derivation applies where it matters**, to the technical
-terms, so that the curriculum and its vocabulary cannot drift apart at the
-point where drift would do damage.
+**The unmapped tier is therefore a holding pen for unfinished work**, and
+its size is a measure of how incomplete the graph is. Only function words
+genuinely name nothing. `completeness` reports the fraction of content words
+carrying a concept, and it should rise toward one.
+
+At the time of writing it stands at 8.4 percent, with 131 words awaiting a
+concept against 12 that have one.
 
 ### A word qualifies as a term only if it is used at its concept's level
 

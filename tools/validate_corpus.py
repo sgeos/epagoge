@@ -14,7 +14,7 @@ from pathlib import Path
 
 from epagoge.concept_graph import ConceptGraph
 from epagoge.record import load_corpus, load_primitives, validate_corpus
-from epagoge.vocabulary import load_vocabulary, validate_vocabulary
+from epagoge.vocabulary import completeness, load_vocabulary, validate_vocabulary
 
 
 def main(argv: list[str]) -> int:
@@ -63,10 +63,14 @@ def main(argv: list[str]) -> int:
         }
         print(f"  primitives   {len(cited)} cited of {len(primitives)} registered")
     if vocabulary is not None:
-        tiers = sum(len(w) for w in vocabulary.general.values())
+        done = completeness(vocabulary)
         print(
-            f"  vocabulary   {len(vocabulary.core)} core, {tiers} general, "
-            f"{len(vocabulary.terms)} terms"
+            f"  vocabulary   {len(vocabulary.core)} core, "
+            f"{done.unmapped} unmapped, {done.mapped} terms"
+        )
+        print(
+            f"  graph        {done.fraction:.1%} of content words carry a concept; "
+            f"{done.unmapped} await one"
         )
     return 0
 

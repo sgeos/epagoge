@@ -52,6 +52,15 @@ class SimplificationKind(Enum):
     IDEALISATION = "idealisation"
     SUPERSEDED_MODEL = "superseded_model"
     ANALOGY = "analogy"
+    VOCABULARY_LIMITED = "vocabulary_limited"
+    """Accurate as far as the available words allow, and no further.
+
+    Distinct from a superseded model, which is wrong. This record is not
+    wrong; it is imprecise because the words for precision are not yet
+    admitted. Saying that things divide until they cannot be divided further
+    is vocabulary-limited. Saying that atoms are tiny balls is a superseded
+    model. Both are corrected later, for different reasons.
+    """
 
 
 @dataclass(frozen=True, slots=True)

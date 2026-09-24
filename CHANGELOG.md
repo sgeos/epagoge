@@ -27,6 +27,29 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. The unmapped tier is a measure, not a category
+
+- **A correction to a correction.** General vocabulary was introduced as a
+  permanent third category on the model of Basic English. That was wrong. A
+  content word names something, so a word mapping to nothing means the
+  mapping was not identified or a concept is missing from the graph.
+- The tier is a holding pen for unfinished work and its size measures graph
+  incompleteness. `completeness` reports the fraction of content words
+  carrying a concept. **It currently stands at 8.4 percent**, with 131 words
+  awaiting a concept against 12 that have one.
+- **`vocabulary_limited` added as a simplification kind.** Distinct from a
+  superseded model, which is wrong. A vocabulary-limited record is not
+  wrong; it is as accurate as the admitted words allow. Recording which is
+  which lets a reader tell a simplification from an error. The fidelity loss
+  is accepted rather than apologised for, provided it is labelled and its
+  correction named.
+- **A coverage test method recorded.** A manifest derived from a deployment
+  profile can be checked against a real curriculum in the domain, and gaps
+  appear as subjects with no home. Applied once, it found that communication
+  coverage was absent while the stated deployment rationale depends on
+  reporting over a constrained channel, which was an inconsistency rather
+  than merely an omission.
+
 ### Added. Relation coverage, and two corrections
 
 - **A specialisation asserted in the graph must be taught in the corpus.**
