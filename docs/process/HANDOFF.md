@@ -1,11 +1,175 @@
 # Handoff Prompt
 
-**Written 2026-09-24, describing `main` at `71b01ff`.** Session 1 took this
-project from nothing to a validated specification and tooling layer with no
-corpus generated and no model trained. Read this block, run the validity
-check, then stop and wait for the human prompt.
+**Refreshed 2026-09-24, describing `main` at `9ab5190`.** Session 1 took this
+project from nothing to a validated specification and tooling layer. No
+corpus is generated and no model is trained. Read this block, run the
+validity check, then stop and wait for the human prompt.
 
 ---
+
+## Validity
+
+**Branch**: `main`. No other branches, no remote.
+
+**Before writing anything tracked, read `secret/CODE_NAMES.md`.** Hard
+constraint. It holds the disclosure discipline, the banned vocabulary, and
+the scan that enforces them. A tracked document naming the deployment domain
+is a defect regardless of how true it is.
+
+**Validate by ANCESTRY and by CONTENT, never by a hash match.** A check
+requiring `HEAD` to equal a recorded commit claims nothing else ever lands.
+
+**Ancestry**: `main` should contain **`9ab5190`**, the last commit before
+this refresh. If it does not, this file predates a reset and is stale.
+
+**Content** — cheap, independent, each verified on 2026-09-24. Check the
+rendered ORDER of this list, not just the next unused number.
+
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** across nine checks.
+   Anything red means a statement below needs re-reading before it is
+   believed.
+2. The suite reports **192** tests.
+3. `curriculum/graph/concepts.json` holds **78** nodes across **seven**
+   domains and yields **4** derived transfer edges. A domain named
+   `everyday` means this file predates the split and is stale.
+4. `tools/validate_graph.py` reports **0** foundation feeds. **That is a
+   known defect, not a target** — see the state below. A non-zero value
+   means someone has begun fixing it and this file is behind.
+5. Vocabulary completeness is **100 percent**, 138 terms, **0** unmapped.
+6. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
+   commit.
+
+## What a resuming session should do first
+
+1. Run the validity check and report the handoff valid, or
+   invalid-and-stale, on its outcome.
+2. Read `docs/decisions/OPEN_QUESTIONS.md`. Nineteen answered, four
+   deferred, two open. Several answers carry corrections that must not be
+   re-reverted.
+3. Read `evals/PRE_REGISTRATION.md`. **Incomplete by design**, and must be
+   complete before the first ablation run.
+4. **Wait for the human prompt.** Do not begin corpus generation — see what
+   is not yours, below.
+
+## The state
+
+**Green and clean.** Twenty-eight commits, nothing uncommitted, no remote.
+Seven documents in `secret/`, none tracked. Fourteen decision records, seven
+specifications, three architecture documents, 192 tests at 98 percent
+coverage.
+
+**What exists.** A concept graph with prerequisite, instantiation, and
+specialisation edges and two reach metrics. A record schema with twelve
+enforced rules across four record types. A six-class claim taxonomy. A
+primitive register of 34 hand-authored axioms. A per-level vocabulary, fully
+mapped. A variance-pilot harness, run. A review tool that is also the
+sampled audit. A teacher model pulled and verified.
+
+**What does not exist.** Any generated corpus, any trained model, any
+curriculum schedule. The 20-record sample corpus exercises every feature and
+is not curriculum.
+
+### The live defect
+
+**The foundation domains found nothing.** Zero prerequisites run from
+`physical_world`, `space_and_time`, or `agency` into any other domain, and
+only one foundation concept is depended on at all. They carry vocabulary and
+contribute no structure.
+
+This was reported twice as the good property "no cross-domain prerequisites"
+before being recognised as disconnection. **The property that matters is
+narrower**: no prerequisite between the two ablation domains, since that is
+what would muddy the contrast. Foundations feeding both is desirable.
+
+### Findings that outlive the session
+
+- **The variance pilot measured a pairing gain of 20.7x seeds, free.**
+  Twelve paired seeds beat 246 unpaired. **Its numbers do NOT carry over**,
+  because the optimiser and schedule have since changed to Muon with
+  warmup-stable-decay.
+- **The pilot's first run trained 23 epochs**, where ordering effects
+  necessarily wash out, inflating the correlation from 0.954 to 0.987. Both
+  results are kept because the difference is the finding.
+- **An unexplained systematic difference appeared between two orderings that
+  should be equivalent**, sign following the ordering and not the execution
+  position, marginal at about p = 0.04. It is the shape of a false positive
+  and the ablation carries a null arm because of it.
+- **The teacher conflates adjacent concepts unless the prompt excludes
+  them.** Prompts must carry the concept's nearest graph neighbours as
+  explicit exclusions; the graph already holds them.
+- **Maximal update parametrization is confound removal, not optimisation.**
+  Without it the three scale points carry different optimal hyperparameters,
+  so scale-dependence could be a tuning artifact — which lands on this
+  project's own proposed mechanism.
+
+## What is YOURS: decisions the operator holds
+
+1. **The curriculum schedule.** Unstarted and non-trivial. Levels are
+   authored, capacity and completion are unmodelled, nothing has scheduled
+   anything. The largest open design task, and everything downstream waits
+   on it.
+2. **Whether to connect the foundations**, and how. The defect above is a
+   design question, not a bug to patch.
+3. **Whether to soften the conjunction disclosure**,
+   `secret/AUDIT_ADDENDUM.md` finding A. An option for tighter cover is
+   recorded and not applied.
+4. **Operations and society as domains.** Both recorded in the manifest,
+   neither in the graph, because the graph should follow content.
+5. **History as a domain**, recorded and not added.
+6. **Whether multi-head latent attention is admissible.** A low-rank
+   projection, which `JACOBIAN_SPACE.md` bans in the base model. Measure it
+   against the effective-rank floor; do not adopt it on efficiency.
+
+## What is NOT yours, and why it stays unstarted
+
+**Corpus generation.** Blocked on the curriculum schedule, not on tooling.
+Writing the generator first would encode guesses where changing them is most
+expensive.
+
+**The ablation.** Blocked on the pre-registration, itself blocked on
+re-measuring variance under the intended optimiser.
+
+**Re-running the variance pilot.** Cheap and unblocked, but useless until
+the trainer uses Muon and warmup-stable-decay, which the pilot harness does
+not.
+
+## Governing rules that are easy to lose
+
+- **Run `./tools/check.sh` before any commit.** The static analysis sat
+  configured and unexecuted through the initial commit; on first run it
+  failed thirty-six ways.
+- **A scan returning unexpected volume is presumed broken until its pattern
+  is inspected.** An unanchored alternation matched `ore` inside `before`
+  and produced output indistinguishable from a clean result, one minute
+  after the same failure was recorded as a finding.
+- **The vocabulary design was corrected three times, each by running the
+  validator rather than by reasoning.** A concept can be taught before its
+  name is introduced, so a word's level is authored and the graph bounds it
+  from below only.
+- **A metric can hide the thing it appears to measure.** A low anchor-reach
+  score may mean a concept is not worth teaching or that the graph is
+  incomplete. "No cross-domain prerequisites" read as cleanliness and meant
+  disconnection. Prefer a metric that can report a zero as a defect.
+- **Corrections are kept in place, not deleted.** Several records carry a
+  withdrawn claim beside its replacement. Removing one corrupts the record
+  of why the replacement is right.
+- **Never train toward being selected** by other models, and never let quirk
+  absorb a negative result. Both are recorded with reasoning.
+- Irreversible or outward-facing actions need confirmation. Nothing is
+  published; publication needs explicit in-session authorisation.
+
+---
+
+## EVERYTHING BELOW THIS LINE IS ACCUMULATED HISTORY
+
+History records what was true at an increment. It is not stale, and
+rewriting it corrupts the record. New sessions append; they do not edit.
+
+### Superseded live block, written 2026-09-24 at `71b01ff`
+
+Kept for its findings. Its content checks named `78` nodes without the
+domain count, and it predated the `everyday` split and the foundation-feed
+defect.
 
 ## Validity
 
@@ -152,12 +316,6 @@ the pilot harness does not.
   quirk absorb a negative result. Both are recorded with the reasoning.
 - Irreversible or outward-facing actions need confirmation. Nothing is
   published, and publication needs explicit in-session authorisation.
-
----
-
-## EVERYTHING BELOW THIS LINE IS ACCUMULATED HISTORY
-
-History records what was true at an increment. It is not stale, and
 rewriting it corrupts the record. New sessions append; they do not edit.
 
 ### Session 1, 2026-09-23/24
