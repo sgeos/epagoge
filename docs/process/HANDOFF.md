@@ -1,9 +1,10 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-24, describing `main` at `9ab5190`.** Session 1 took this
-project from nothing to a validated specification and tooling layer. No
-corpus is generated and no model is trained. Read this block, run the
-validity check, then stop and wait for the human prompt.
+**Refreshed 2026-09-24, describing `main` at `f7f01ad`.** Session 1 took this
+project from nothing to a validated specification and tooling layer, and
+then restructured the domain set from seven names to eleven. No corpus is
+generated and no model is trained. Read this block, run the validity check,
+then stop and wait for the human prompt.
 
 ---
 
@@ -19,7 +20,7 @@ is a defect regardless of how true it is.
 **Validate by ANCESTRY and by CONTENT, never by a hash match.** A check
 requiring `HEAD` to equal a recorded commit claims nothing else ever lands.
 
-**Ancestry**: `main` should contain **`9ab5190`**, the last commit before
+**Ancestry**: `main` should contain **`f7f01ad`**, the last commit before
 this refresh. If it does not, this file predates a reset and is stale.
 
 **Content** — cheap, independent, each verified on 2026-09-24. Check the
@@ -28,13 +29,17 @@ rendered ORDER of this list, not just the next unused number.
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across nine checks.
    Anything red means a statement below needs re-reading before it is
    believed.
-2. The suite reports **192** tests.
-3. `curriculum/graph/concepts.json` holds **78** nodes across **seven**
-   domains and yields **4** derived transfer edges. A domain named
-   `everyday` means this file predates the split and is stale.
-4. `tools/validate_graph.py` reports **0** foundation feeds. **That is a
-   known defect, not a target** — see the state below. A non-zero value
-   means someone has begun fixing it and this file is behind.
+2. The suite reports **199** tests.
+3. `curriculum/graph/concepts.json` **declares 11 domains** and holds **78**
+   nodes, of which **4 domains hold no concept at all** and are awaiting
+   content by design. It yields **4** derived transfer edges. A domain
+   named `everyday`, `physical_world`, or `communication` means this file
+   predates the 2026-09-24 restructure and is stale.
+4. `tools/validate_graph.py` reports **0** foundation feeds, now counted
+   over `directed_physical_interactions`, `record_keeping`, and
+   `agentic_operations`. **That is a known defect, not a target** — see the
+   state below. A non-zero value means someone has begun fixing it and this
+   file is behind.
 5. Vocabulary completeness is **100 percent**, 138 terms, **0** unmapped.
 6. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
@@ -53,10 +58,15 @@ rendered ORDER of this list, not just the next unused number.
 
 ## The state
 
-**Green and clean.** Twenty-eight commits, nothing uncommitted, no remote.
-Seven documents in `secret/`, none tracked. Fourteen decision records, seven
-specifications, three architecture documents, 192 tests at 98 percent
-coverage.
+**Green and clean.** Thirty-one commits, nothing uncommitted. Seven
+documents in `secret/`, none tracked. Sixteen decision records, seven
+specifications, three architecture documents, 199 tests.
+
+**There is now a remote.** `github.com/sgeos/epagoge`, created empty and
+**private**, with no local `origin` configured and nothing pushed. The
+intended end state is public with everything sensitive quarantined in the
+gitignored `secret/`. **An audit must pass before the first push**, and it
+has not been run. See the disclosure section below.
 
 **What exists.** A concept graph with prerequisite, instantiation, and
 specialisation edges and two reach metrics. A record schema with twelve
@@ -110,15 +120,17 @@ what would muddy the contrast. Foundations feeding both is desirable.
    on it.
 2. **Whether to connect the foundations**, and how. The defect above is a
    design question, not a bug to patch.
-3. **Whether to soften the conjunction disclosure**,
-   `secret/AUDIT_ADDENDUM.md` finding A. An option for tighter cover is
-   recorded and not applied.
-4. **Operations and society as domains.** Both recorded in the manifest,
-   neither in the graph, because the graph should follow content.
-5. **History as a domain**, recorded and not added.
-6. **Whether multi-head latent attention is admissible.** A low-rank
+3. **Populating the four empty domains.**
+   `history_and_philosophy_of_science`, `institutional_interfacing`,
+   `cybernetic_biological_systems`, and `normative_adjudication` are
+   declared and hold nothing. The graph follows content, so they fill when
+   records teach them and not before.
+4. **Whether multi-head latent attention is admissible.** A low-rank
    projection, which `JACOBIAN_SPACE.md` bans in the base model. Measure it
    against the effective-rank floor; do not adopt it on efficiency.
+5. **Five manifest topics still have no home.** Game theory, economics,
+   modelling and simulation, and policy and governance. Game theory is
+   mathematics, and mathematics is frozen until the ablation runs.
 
 ## What is NOT yours, and why it stays unstarted
 
@@ -132,6 +144,28 @@ re-measuring variance under the intended optimiser.
 **Re-running the variance pilot.** Cheap and unblocked, but useless until
 the trainer uses Muon and warmup-stable-decay, which the pilot harness does
 not.
+
+## Disclosure, before any push
+
+**Finding A in `secret/AUDIT_ADDENDUM.md` is ACCEPTED, not softened.** Two
+independent conjunctions, the hardware constraints and now the eleven
+domain names, both point at the same deployment family. That was weighed
+and allowed. The threat model is **unintentionally timed disclosure rather
+than disclosure**, so reading between the lines is acceptable and lay
+readers should see nothing.
+
+**The acceptance is scoped to a quiet public repository.** Discovery
+probability scales with attention, not with content. Any launch post,
+paper, or deliberate promotion re-opens the decision without a file
+changing. Re-read finding A before drawing attention to this work.
+
+**Two gaps in the gate, both currently clean and neither enforced.** The
+disclosure scan reads `git ls-files`, so it never sees an untracked file.
+**Stage first, then gate**, or a new document passes by not being read.
+The scan also never reads commit messages or history at all, and history
+is what a push publishes. Both were scanned by hand on 2026-09-24 over all
+commit messages and all 197 blobs and both were clean. The pre-push audit
+must cover history, not the working tree.
 
 ## Governing rules that are easy to lose
 
@@ -317,6 +351,23 @@ the pilot harness does not.
 - Irreversible or outward-facing actions need confirmation. Nothing is
   published, and publication needs explicit in-session authorisation.
 rewriting it corrupts the record. New sessions append; they do not edit.
+
+### Domain restructure, 2026-09-24, at `f7f01ad`
+
+Seven domains became eleven. Every name that survived is an activity,
+because a domain named for an activity excludes what does not serve it
+while a domain named for a bare field admits everything in the field.
+Mathematics is the deliberate exception and is frozen by the ablation.
+
+Domains are now **declared** in a registry rather than inferred from node
+membership, so that a domain decided upon and not yet written is visible.
+Four are declared and empty.
+
+Thirteen candidate names were withdrawn with reasons, all recorded in
+`../decisions/DOMAIN_SET.md`, because the reasons constrain future
+additions. The sharpest is that four separate candidates for the normative
+domain each pre-committed to where obligations come from, when the conflict
+between sources is the domain's actual subject.
 
 ### Session 1, 2026-09-23/24
 

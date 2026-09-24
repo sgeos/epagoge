@@ -30,8 +30,8 @@ from epagoge.review import (
 def graph() -> ConceptGraph:
     return ConceptGraph(
         [
-            Node("m1", "m1", NodeKind.DOMAIN_CONCEPT, "mathematics"),
-            Node("m2", "m2", NodeKind.DOMAIN_CONCEPT, "mathematics"),
+            Node("m1", "m1", NodeKind.DOMAIN_CONCEPT, "mathematics_and_formal_logic"),
+            Node("m2", "m2", NodeKind.DOMAIN_CONCEPT, "mathematics_and_formal_logic"),
             Node("f1", "f1", NodeKind.DOMAIN_CONCEPT, "failure_analysis"),
         ],
         {},
@@ -91,7 +91,9 @@ class TestWilson(unittest.TestCase):
 
 class TestDomainAttribution(unittest.TestCase):
     def test_a_single_domain_record_is_attributed(self) -> None:
-        self.assertEqual(domain_of(rec("a", ("m1", "m2")), graph()), "mathematics")
+        self.assertEqual(
+            domain_of(rec("a", ("m1", "m2")), graph()), "mathematics_and_formal_logic"
+        )
 
     def test_a_spanning_record_is_reported_as_mixed(self) -> None:
         self.assertEqual(domain_of(rec("a", ("m1", "f1")), graph()), "mixed")
@@ -116,16 +118,18 @@ class TestRates(unittest.TestCase):
         rates = {
             r.domain: r for r in error_rates(self.verdicts(), self.records(), graph())
         }
-        self.assertEqual(set(rates), {"mathematics", "failure_analysis"})
-        self.assertEqual(rates["mathematics"].reviewed, 3)
-        self.assertEqual(rates["mathematics"].rejected, 1)
-        self.assertEqual(rates["mathematics"].flagged, 1)
+        self.assertEqual(
+            set(rates), {"mathematics_and_formal_logic", "failure_analysis"}
+        )
+        self.assertEqual(rates["mathematics_and_formal_logic"].reviewed, 3)
+        self.assertEqual(rates["mathematics_and_formal_logic"].rejected, 1)
+        self.assertEqual(rates["mathematics_and_formal_logic"].flagged, 1)
 
     def test_flags_are_counted_separately_never_as_either(self) -> None:
         rates = {
             r.domain: r for r in error_rates(self.verdicts(), self.records(), graph())
         }
-        maths = rates["mathematics"]
+        maths = rates["mathematics_and_formal_logic"]
         self.assertEqual(maths.rejected + maths.flagged + 1, maths.reviewed)
 
     def test_verdicts_for_unknown_records_are_ignored(self) -> None:

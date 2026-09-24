@@ -69,6 +69,35 @@ data within a pair. Order is the only difference.
 **FIXED.** Mathematics and failure analysis, each at full depth across all
 seven levels.
 
+**Amendment, 2026-09-24.** The mathematics domain is renamed
+`mathematics_and_formal_logic` and will admit formal logic concepts.
+
+Recorded as an amendment rather than as an edit because item four is fixed.
+It is legitimate at this date for one reason only, which is that **no run
+has happened and no data exists**. The same change after the first run
+would not be legitimate and must not be made.
+
+The rename alone changes nothing the design depends on. Domain membership
+is identical, the depth contrast is unchanged at ten against six, and the
+two ablation domains remain free of any prerequisite between them. This was
+checked rather than assumed, and the graph currently holds zero
+cross-domain prerequisites of any kind.
+
+**Admitting formal logic concepts will change membership**, and the depth
+contrast must be measured again at that point rather than carried forward.
+Logic sits below arithmetic and would probably deepen the domain, which
+would widen the contrast rather than narrow it. Probably is not a
+measurement.
+
+**Informal logic is excluded** and belongs to `institutional_interfacing`.
+Argument evaluation and fallacy recognition are not mathematics, and
+pulling them into the treatment arm would put argumentation inside an
+experiment that is not about argumentation.
+
+**A cost is accepted.** Mathematics is a domain other published ordering
+ablations have used and a bespoke domain is harder to place beside them.
+Naming formal logic explicitly limits the cost without removing it.
+
 Chosen to differ maximally in prerequisite depth, which is the hypothesised
 mechanism. The strongest available outcome is a dissociation, since an
 effect in the deep-structure domain with a null in the flat-structure one

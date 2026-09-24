@@ -27,6 +27,73 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. Seven domains became eleven, and domains are now declared
+
+- **The naming rule.** A domain named for an activity excludes what does
+  not serve it. A domain named for a bare field admits everything in the
+  field. Specialisation and activity-naming are the same property rather
+  than two, because an activity has a purpose and a field has an extent.
+- Renamed. `mathematics` to `mathematics_and_formal_logic`,
+  `physical_world` to `directed_physical_interactions`, `space_and_time` to
+  `record_keeping`, `agency` to `agentic_operations`, and `communication`
+  to `compressed_communication`. `failure_analysis` and `accounting` keep
+  their names, which already passed the rule.
+- Added, declared and empty. `history_and_philosophy_of_science`,
+  `institutional_interfacing`, `cybernetic_biological_systems`, and
+  `normative_adjudication`. The graph follows content.
+- `docs/decisions/DOMAIN_SET.md` records all eleven with scope notes, the
+  three boundaries that are not readable from the names, and thirteen
+  withdrawn candidate names with the reason each failed.
+
+### Added. A domain registry, so an empty domain is visible
+
+- `Domain` in `concept_graph.py`, a `domains` list in `concepts.json`, and
+  an `undeclared-domain` violation. Seven new tests, 199 total.
+- **Why declare rather than infer.** A set inferred from node membership
+  cannot distinguish a domain awaiting content from one nobody chose, so
+  the gap is invisible exactly when it most needs to be visible.
+- An empty domain is reported and not rejected, because emptiness is the
+  expected state between deciding on a domain and writing records for it.
+  `validate_graph.py` marks each one and prints the count.
+
+### Changed. Pre-registration amended, and a cost accepted
+
+- Item four amended rather than edited, because it is fixed. Legitimate at
+  this date **only because no run has happened and no data exists**, and
+  not legitimate after the first run.
+- The rename alone changes nothing the design rests on. Membership is
+  identical and the depth contrast is unchanged at ten against six. Checked
+  rather than assumed. The graph holds zero cross-domain prerequisites of
+  any kind, so both ablation domains are fully self-contained.
+- Admitting formal logic concepts will change membership, and the depth
+  contrast must be measured again at that point. Informal logic is excluded
+  and belongs to `institutional_interfacing`.
+- Accepted cost. Mathematics is a domain other published ordering ablations
+  have used, and a bespoke domain is harder to place beside them.
+
+### Fixed. Two gaps in the disclosure gate, found by running it
+
+- **The scan never reads untracked files.** It iterates `git ls-files`, so
+  a new document passes by not being scanned, and the output is
+  indistinguishable from a real pass. Working rule is to stage first and
+  gate second.
+- **The scan never reads commit messages or history**, which is what a push
+  publishes. Both were scanned by hand over all commit messages and all 197
+  blobs in history against the 27 scrub terms. Both clean.
+
+### Security. Finding A accepted rather than softened
+
+- The option for tighter cover is declined. A second conjunction now exists
+  in the eleven domain names, derived from pedagogy by an independent route
+  and arriving at the same family.
+- The threat model is unintentionally timed disclosure rather than
+  disclosure. Reading between the lines is acceptable, lay readers should
+  see nothing, and the posture is non-advertisement rather than
+  concealment.
+- **Scoped to a quiet public repository.** Discovery probability scales
+  with attention rather than content, so any deliberate promotion re-opens
+  the decision without a file changing.
+
 ### Added. Institutional interfacing recorded as a domain, with a bounded scope
 
 - `docs/decisions/INSTITUTIONAL_INTERFACING.md`. A domain teaching

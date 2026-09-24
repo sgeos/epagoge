@@ -55,6 +55,26 @@ on the first, so a graph can be audited in one pass.
 5. A domain concept declares a domain. A formal structure declares none.
 6. A formal structure has no prerequisite on a domain concept. The formal
    layer does not depend on the domains that instantiate it.
+7. Every domain a concept claims appears in the domain registry. Checked
+   only when a registry is present, so that a graph fragment written for a
+   test is not obliged to carry one.
+
+## The domain registry
+
+Domains are **declared** in a `domains` list, not inferred from which
+concepts happen to exist.
+
+Inference cannot represent a domain that has been decided upon and not yet
+written. A domain awaiting content would be indistinguishable from a domain
+nobody chose, which makes the gap invisible exactly when it most needs to be
+visible. `validate_graph.py` therefore reports declared domains holding no
+concept as a count and marks each one in the listing.
+
+**An empty domain is not a violation.** The graph follows content, so
+emptiness is the expected state between deciding on a domain and writing
+records that teach it. It is reported rather than rejected.
+
+The set and its scope notes are in `../decisions/DOMAIN_SET.md`.
 
 ## Prerequisite depth is the longest path
 

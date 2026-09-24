@@ -16,7 +16,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from epagoge.concept_graph import ConceptGraph, Node, NodeKind
+from epagoge.concept_graph import ConceptGraph, Domain, Node, NodeKind
 
 
 def concept(node_id: str, domain: str) -> Node:
@@ -347,3 +347,87 @@ class TestReach(unittest.TestCase):
 
     def test_a_concept_does_not_count_itself(self) -> None:
         self.assertNotIn(-1, self.chain().anchor_reach().values())
+
+
+class TestDomainRegistry(unittest.TestCase):
+    """Domains are declared, not inferred from membership.
+
+    The registry exists so that a domain decided upon but not yet written can
+    be seen. Inference cannot represent that state at all, which is why these
+    cases are about absence rather than about presence.
+    """
+
+    def test_declared_domain_with_no_concepts_is_not_a_violation(self) -> None:
+        g = ConceptGraph(
+            [concept("a", "math")],
+            {},
+            {},
+            domains=[Domain("math", "n"), Domain("later", "awaiting content")],
+        )
+        self.assertEqual(g.validate(), [])
+        self.assertEqual(g.empty_domains(), ["later"])
+
+    def test_undeclared_domain_is_a_violation(self) -> None:
+        g = ConceptGraph(
+            [concept("a", "math"), concept("b", "smuggled")],
+            {},
+            {},
+            domains=[Domain("math", "n")],
+        )
+        self.assertIn("undeclared-domain", codes(g))
+
+    def test_registry_absent_means_the_check_is_skipped(self) -> None:
+        """A test fragment must not be obliged to carry the registry."""
+        g = ConceptGraph([concept("a", "anything")], {}, {})
+        self.assertNotIn("undeclared-domain", codes(g))
+        self.assertEqual(g.empty_domains(), [])
+
+    def test_formal_structures_are_exempt_from_declaration(self) -> None:
+        g = ConceptGraph(
+            [concept("a", "math"), structure("s")],
+            {},
+            {"a": ["s"]},
+            domains=[Domain("math", "n")],
+        )
+        self.assertNotIn("undeclared-domain", codes(g))
+
+    def test_concepts_in_reports_membership(self) -> None:
+        g = ConceptGraph(
+            [concept("a", "math"), concept("b", "math"), concept("c", "other")],
+            {},
+            {},
+            domains=[Domain("math", "n"), Domain("other", "n")],
+        )
+        self.assertEqual(g.concepts_in("math"), frozenset({"a", "b"}))
+        self.assertEqual(g.concepts_in("absent"), frozenset())
+
+    def test_domains_round_trip_through_json(self) -> None:
+        payload = {
+            "domains": [{"id": "math", "note": "quantity and proof"}],
+            "nodes": [
+                {"id": "a", "name": "a", "kind": "domain_concept", "domain": "math"}
+            ],
+            "prerequisites": {},
+            "instantiates": {},
+        }
+        g = ConceptGraph.from_json(payload)
+        self.assertEqual(sorted(g.domains), ["math"])
+        self.assertEqual(g.domains["math"].note, "quantity and proof")
+        self.assertEqual(g.validate(), [])
+
+    def test_malformed_registry_is_rejected_at_the_boundary(self) -> None:
+        for bad in (
+            {"domains": "math"},
+            {"domains": ["math"]},
+            {"domains": [{"id": "math"}]},
+            {"domains": [{"id": 1, "note": "n"}]},
+        ):
+            with self.subTest(bad=bad):
+                payload = {
+                    "nodes": [],
+                    "prerequisites": {},
+                    "instantiates": {},
+                    **bad,
+                }
+                with self.assertRaises(ValueError):
+                    ConceptGraph.from_json(payload)

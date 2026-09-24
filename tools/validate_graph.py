@@ -33,21 +33,35 @@ def main(argv: list[str]) -> int:
         return 1
 
     depth = graph.prerequisite_depth()
-    domains = sorted({n.domain for n in graph.nodes.values() if n.domain is not None})
+    declared = sorted(graph.domains)
+    inferred = sorted({n.domain for n in graph.nodes.values() if n.domain is not None})
     formal = [n for n in graph.nodes.values() if n.domain is None]
 
     print(f"{path}: valid")
     print(f"  nodes              {len(graph.nodes)}")
     print(f"  formal structures  {len(formal)}")
-    for d in domains:
-        members = [n for n, node in graph.nodes.items() if node.domain == d]
-        deepest = max(depth[n] for n in members)
-        label = f"  domain {d:<18}"
-        summary = f"{len(members):>3} concepts, max depth {deepest}"
-        print(f"{label} {summary}")
+    print(f"  domains declared   {len(declared)}")
+    for d in declared or inferred:
+        members = sorted(graph.concepts_in(d))
+        # An empty domain is declared and awaiting content, not a defect. It
+        # is printed anyway, because a gap that is not shown is a gap nobody
+        # is accountable for.
+        if members:
+            deepest = max(depth[n] for n in members)
+            summary = f"{len(members):>3} concepts, max depth {deepest}"
+        else:
+            summary = "  AWAITING CONTENT"
+        print(f"  domain {d:<32} {summary}")
+
+    empty = graph.empty_domains()
+    print(f"  awaiting content   {len(empty)} declared domains hold no concept")
 
     # A foundation nothing rests on is not functioning as a foundation.
-    foundations = {"physical_world", "space_and_time", "agency", "society"}
+    foundations = {
+        "directed_physical_interactions",
+        "record_keeping",
+        "agentic_operations",
+    }
     feeds = sum(
         1
         for node_id, node in graph.nodes.items()

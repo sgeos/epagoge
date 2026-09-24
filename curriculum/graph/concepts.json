@@ -1,40 +1,86 @@
 {
+  "domains": [
+    {
+      "id": "mathematics_and_formal_logic",
+      "note": "Quantity, structure, and proof, with propositional and predicate logic. Informal logic and argumentation belong to institutional_interfacing."
+    },
+    {
+      "id": "failure_analysis",
+      "note": "How systems fail, how a cause is isolated from a correlate, and how failure is anticipated before it occurs."
+    },
+    {
+      "id": "directed_physical_interactions",
+      "note": "How matter behaves and how it is made to behave differently. Undirected phenomena enter as the premises that license an interaction."
+    },
+    {
+      "id": "compressed_communication",
+      "note": "Conveying a claim when the whole of it cannot be conveyed. What may be dropped, what must survive, and saying which was which."
+    },
+    {
+      "id": "record_keeping",
+      "note": "Measurement, reference frames, unit accounting, provenance, accuracy, precision, confidence, and whether a record is still current."
+    },
+    {
+      "id": "agentic_operations",
+      "note": "Goal-directed execution against the world. Procedure, sequencing, and control of work."
+    },
+    {
+      "id": "accounting",
+      "note": "Tracking and reconciliation of flows. Conservation expressed as a procedure."
+    },
+    {
+      "id": "history_and_philosophy_of_science",
+      "note": "How a claim is justified, and how knowledge actually developed as against how it is justified."
+    },
+    {
+      "id": "institutional_interfacing",
+      "note": "Adversarial claim evaluation and the institutional context that makes it necessary. Scope in docs/decisions/INSTITUTIONAL_INTERFACING.md."
+    },
+    {
+      "id": "cybernetic_biological_systems",
+      "note": "Living systems as control systems. Regulation, homeostasis, repair, error correction, and adaptation under damage."
+    },
+    {
+      "id": "normative_adjudication",
+      "note": "Settling between competing obligations. Neutral on where an obligation originates, because the conflict between sources is the subject."
+    }
+  ],
   "nodes": [
     {
       "id": "same_and_different",
       "name": "same and different",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "correspondence",
       "name": "one-to-one correspondence",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "more_and_fewer",
       "name": "more and fewer",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "number_word_order",
       "name": "the order of number words",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "conservation_of_number",
       "name": "number survives rearrangement",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "grouping",
       "name": "grouping",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "living_and_not_living",
@@ -76,109 +122,109 @@
       "id": "counting",
       "name": "counting",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "natural_number",
       "name": "natural number",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "place_value",
       "name": "place value",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "addition",
       "name": "addition",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "subtraction",
       "name": "subtraction",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "multiplication",
       "name": "multiplication",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "division",
       "name": "division",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "factor_tree",
       "name": "factor tree",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "fraction",
       "name": "fraction",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "negative_number",
       "name": "negative number",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "variable",
       "name": "variable",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "linear_equation",
       "name": "linear equation",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "function",
       "name": "function",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "function_composition",
       "name": "function composition",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "rate_of_change",
       "name": "rate of change",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "limit",
       "name": "limit",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "derivative",
       "name": "derivative",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "exponential_function",
       "name": "exponential function",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "things_break",
@@ -274,109 +320,109 @@
       "id": "household_object",
       "name": "household object",
       "kind": "domain_concept",
-      "domain": "physical_world"
+      "domain": "directed_physical_interactions"
     },
     {
       "id": "toy",
       "name": "toy",
       "kind": "domain_concept",
-      "domain": "physical_world"
+      "domain": "directed_physical_interactions"
     },
     {
       "id": "physical_property",
       "name": "physical property",
       "kind": "domain_concept",
-      "domain": "physical_world"
+      "domain": "directed_physical_interactions"
     },
     {
       "id": "emptiness",
       "name": "emptiness",
       "kind": "domain_concept",
-      "domain": "physical_world"
+      "domain": "directed_physical_interactions"
     },
     {
       "id": "spatial_position",
       "name": "spatial position",
       "kind": "domain_concept",
-      "domain": "space_and_time"
+      "domain": "record_keeping"
     },
     {
       "id": "falling",
       "name": "falling",
       "kind": "domain_concept",
-      "domain": "physical_world"
+      "domain": "directed_physical_interactions"
     },
     {
       "id": "opening_and_shutting",
       "name": "opening and shutting",
       "kind": "domain_concept",
-      "domain": "physical_world"
+      "domain": "directed_physical_interactions"
     },
     {
       "id": "duration",
       "name": "duration",
       "kind": "domain_concept",
-      "domain": "space_and_time"
+      "domain": "record_keeping"
     },
     {
       "id": "sequence",
       "name": "sequence",
       "kind": "domain_concept",
-      "domain": "space_and_time"
+      "domain": "record_keeping"
     },
     {
       "id": "person",
       "name": "person",
       "kind": "domain_concept",
-      "domain": "agency"
+      "domain": "agentic_operations"
     },
     {
       "id": "activity",
       "name": "activity",
       "kind": "domain_concept",
-      "domain": "agency"
+      "domain": "agentic_operations"
     },
     {
       "id": "change",
       "name": "change",
       "kind": "domain_concept",
-      "domain": "physical_world"
+      "domain": "directed_physical_interactions"
     },
     {
       "id": "need",
       "name": "need",
       "kind": "domain_concept",
-      "domain": "agency"
+      "domain": "agentic_operations"
     },
     {
       "id": "discourse_marker",
       "name": "discourse_marker",
       "kind": "domain_concept",
-      "domain": "communication"
+      "domain": "compressed_communication"
     },
     {
       "id": "presence",
       "name": "presence",
       "kind": "domain_concept",
-      "domain": "physical_world"
+      "domain": "directed_physical_interactions"
     },
     {
       "id": "direction",
       "name": "direction",
       "kind": "domain_concept",
-      "domain": "space_and_time"
+      "domain": "record_keeping"
     },
     {
       "id": "quantity",
       "name": "quantity",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "algebraic_structure",
       "name": "algebraic structure",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "failing",
@@ -400,31 +446,31 @@
       "id": "knowing",
       "name": "knowing",
       "kind": "domain_concept",
-      "domain": "communication"
+      "domain": "compressed_communication"
     },
     {
       "id": "explanation",
       "name": "explanation",
       "kind": "domain_concept",
-      "domain": "communication"
+      "domain": "compressed_communication"
     },
     {
       "id": "reporting",
       "name": "reporting",
       "kind": "domain_concept",
-      "domain": "communication"
+      "domain": "compressed_communication"
     },
     {
       "id": "claim_under_test",
       "name": "claim under test",
       "kind": "domain_concept",
-      "domain": "communication"
+      "domain": "compressed_communication"
     },
     {
       "id": "dependence",
       "name": "dependence",
       "kind": "domain_concept",
-      "domain": "communication"
+      "domain": "compressed_communication"
     },
     {
       "id": "stock_and_flow",

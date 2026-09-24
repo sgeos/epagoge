@@ -42,6 +42,20 @@ class Node:
 
 
 @dataclass(frozen=True, slots=True)
+class Domain:
+    """A declared subject area.
+
+    Domains are declared rather than inferred from node membership. An
+    inferred set cannot distinguish a domain that holds no concepts yet from
+    one that was never intended, so a domain awaiting content would be
+    invisible exactly when it most needs to be visible.
+    """
+
+    id: str
+    note: str
+
+
+@dataclass(frozen=True, slots=True)
 class Violation:
     """A single invariant breach.
 
@@ -71,8 +85,10 @@ class ConceptGraph:
         prerequisites: Mapping[str, Iterable[str]],
         instantiates: Mapping[str, Iterable[str]],
         specialises: Mapping[str, Iterable[str]] | None = None,
+        domains: Iterable[Domain] | None = None,
     ) -> None:
         self._nodes: dict[str, Node] = {n.id: n for n in nodes}
+        self._domains: dict[str, Domain] = {d.id: d for d in (domains or ())}
         self._prerequisites: dict[str, frozenset[str]] = {
             k: frozenset(v) for k, v in prerequisites.items()
         }
@@ -88,6 +104,25 @@ class ConceptGraph:
     @property
     def nodes(self) -> Mapping[str, Node]:
         return self._nodes
+
+    @property
+    def domains(self) -> Mapping[str, Domain]:
+        """Declared domains, whether or not any concept belongs to one."""
+        return self._domains
+
+    def concepts_in(self, domain_id: str) -> frozenset[str]:
+        return frozenset(
+            n for n, node in self._nodes.items() if node.domain == domain_id
+        )
+
+    def empty_domains(self) -> list[str]:
+        """Declared domains holding no concept.
+
+        Reported rather than rejected. A domain is declared once decided and
+        populated once content exists, so emptiness is an expected interim
+        state that should be visible rather than an error.
+        """
+        return sorted(d for d in self._domains if not self.concepts_in(d))
 
     def prerequisites_of(self, node_id: str) -> frozenset[str]:
         return self._prerequisites.get(node_id, frozenset())
@@ -139,6 +174,7 @@ class ConceptGraph:
         out.extend(self._check_references())
         out.extend(self._check_self_loops())
         out.extend(self._check_kind_rules())
+        out.extend(self._check_domain_declarations())
         out.extend(self._check_layering())
         out.extend(self._check_specialisation())
         out.extend(self._check_acyclic())
@@ -293,6 +329,23 @@ class ConceptGraph:
                         )
                     )
         return out
+
+    def _check_domain_declarations(self) -> list[Violation]:
+        """Every domain a node claims must be declared.
+
+        Skipped entirely when no domain is declared, so that a graph fragment
+        written for a test is not obliged to carry the registry.
+        """
+        if not self._domains:
+            return []
+        return [
+            Violation(
+                "undeclared-domain",
+                f"node {node.id!r} claims undeclared domain {node.domain!r}",
+            )
+            for node in self._nodes.values()
+            if node.domain is not None and node.domain not in self._domains
+        ]
 
     def _check_layering(self) -> list[Violation]:
         """The formal layer does not depend on the domains that instantiate it."""
@@ -469,6 +522,7 @@ class ConceptGraph:
             _parse_edges(body.get("prerequisites"), "prerequisites"),
             _parse_edges(body.get("instantiates"), "instantiates"),
             _parse_edges(body.get("specialises"), "specialises"),
+            _parse_domains(body.get("domains")),
         )
 
     @classmethod
@@ -504,6 +558,27 @@ def _parse_nodes(raw: object) -> list[Node]:
                     if domain_raw is None
                     else _require_str(domain_raw, f"{where}.domain")
                 ),
+            )
+        )
+    return out
+
+
+def _parse_domains(raw: object) -> list[Domain]:
+    if raw is None:
+        return []
+    if not isinstance(raw, list):
+        raise ValueError("'domains' must be a list")
+    entries = cast(list[object], raw)
+    out: list[Domain] = []
+    for index, entry in enumerate(entries):
+        where = f"domains[{index}]"
+        if not isinstance(entry, dict):
+            raise ValueError(f"{where}: expected an object")
+        fields = cast(dict[object, object], entry)
+        out.append(
+            Domain(
+                id=_require_str(fields.get("id"), f"{where}.id"),
+                note=_require_str(fields.get("note"), f"{where}.note"),
             )
         )
     return out

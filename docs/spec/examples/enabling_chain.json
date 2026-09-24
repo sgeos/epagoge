@@ -89,19 +89,19 @@
       "id": "square",
       "name": "square",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "rectangle",
       "name": "rectangle",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "quadrilateral",
       "name": "quadrilateral",
       "kind": "domain_concept",
-      "domain": "mathematics"
+      "domain": "mathematics_and_formal_logic"
     },
     {
       "id": "class_inclusion",
