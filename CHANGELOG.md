@@ -25,6 +25,26 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+### Changed, 2026-09-23. Coverage extended, with two schema consequences
+
+Coverage weighting extended. The manifest is not reproduced here.
+
+- **Attributed-position records added as a third record type.** For
+  interpretive and contested material the verifiable claim is that a named
+  thinker held a position, not that the position is correct. A record
+  asserting a contested claim as settled fact is rejected. Without this,
+  coverage of interpretive domains would teach the model to assert
+  contested claims confidently, which is the failure the project exists to
+  prevent.
+- **The residual error rate is reported per domain and never aggregated.**
+  Verifiability varies enormously across the corpus, and a single number
+  would average a machine-verifiable domain against an interpretive one and
+  conceal both. This also improves the credential in the collaborative
+  positioning record, since a per-domain breakdown is more useful to
+  anything selecting on it.
+- Coverage that raises the machine-verifiable fraction of the corpus is now
+  preferred on verification grounds, independent of subject-matter value.
+
 ### Resolved, 2026-09-23. All three blocking audit findings
 
 1. **Power.** The design is paired, sharing initialisation and data within

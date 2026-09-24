@@ -61,7 +61,9 @@ Four layers, in order of authority.
 2. **Executable checks where the domain permits.** Symbolic mathematics,
    code execution, and dimensional and unit analysis. These give hard
    guarantees rather than statistical ones, and should be preferred
-   wherever a claim can be expressed so as to admit them.
+   wherever a claim can be expressed so as to admit them. Coverage
+   weighting that raises the machine-verifiable fraction of the corpus is
+   preferred on these grounds, independent of subject-matter value.
 3. **Consensus filtering.** Cheap, applied on top, catches blatant errors.
    Known to fail on shared misconceptions, so it is a filter and never a
    standard.
@@ -71,6 +73,16 @@ Four layers, in order of authority.
 measured number, the claim that the corpus is verified is itself
 unfalsifiable, which is precisely the failure this project exists to
 oppose. A process is not evidence. The number is.
+
+**The number is per domain, never aggregated. Added 2026-09-23.**
+Verifiability varies enormously across the corpus. Formally verifiable
+material admits machine checking and should audit near zero. Interpretive
+and contested material admits none. A single aggregate rate would average
+the two and conceal both.
+
+This also matters downstream, since the audited rate is the recruitment
+credential in `COLLABORATIVE_POSITIONING.md`. A per-domain breakdown is
+both more honest and more useful to anything selecting on it.
 
 This substantially answers question nineteen. The answer to why this does
 not become Galactica is that the residual error rate is measured and

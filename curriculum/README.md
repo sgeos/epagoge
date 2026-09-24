@@ -60,6 +60,26 @@ Required, not annotations added later.
 Terminal-stage material drawn from real literature keeps strict source
 entailment and carries no simplification label.
 
+## Attributed-position records. Added 2026-09-23
+
+A third record type, alongside simplified and terminal-stage records.
+
+Some material is **interpretive and contested**, where competing positions
+are not resolvable by citation. For such material the verifiable claim is
+that a named thinker or school held a position, not that the position is
+correct.
+
+| Field | Purpose |
+| --- | --- |
+| `position_holder` | Whose position this is |
+| `position` | What is claimed |
+| `contested_by` | Competing positions, where they exist |
+
+A record asserting a contested interpretive claim as settled fact is
+rejected. Without this rule, coverage of interpretive domains would teach
+the model to assert contested claims confidently, which is the failure this
+project exists to prevent.
+
 ## Open constraint
 
 The number of stages remains unspecified, though it is now derivable from
