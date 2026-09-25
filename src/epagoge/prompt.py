@@ -259,3 +259,32 @@ def book(
         "  - No word outside the list above.",
     ]
     return "\n".join(lines)
+
+
+def reword(text: str, offending: Sequence[str], admissible: Sequence[str]) -> str:
+    """Ask for one sentence again, saying which words cannot be used.
+
+    **A rejected line is not waste.** It is a sentence the teacher wanted to
+    write and could not, so either the words belong in the lexicon or the
+    sentence needs different words. Rewording is the second of those, and
+    naming the offending words is what makes it actionable rather than a
+    generic repeat of the constraint.
+    """
+    if not admissible:
+        raise ValueError("no admissible vocabulary supplied")
+    return "\n".join(
+        [
+            "Write this sentence again using different words.",
+            "",
+            f"  {text}",
+            "",
+            "These words are not allowed and must not appear:",
+            "  " + " ".join(sorted(set(offending))),
+            "",
+            "Use ONLY these words, in any order and any inflection:",
+            "  " + " ".join(sorted(admissible)),
+            "",
+            "Say the same thing more plainly. Output the one sentence and",
+            "nothing else. It must end with a full stop.",
+        ]
+    )

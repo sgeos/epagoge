@@ -16,18 +16,18 @@ from epagoge.book import (
     Definition,
     DefinitionKind,
     definition_coverage,
-    load_books,
+    load_book_dir,
     validate_books,
 )
 from epagoge.concept_graph import ConceptGraph
-from epagoge.record import load_corpus
+from epagoge.record import load_corpus, record_from_json
 from epagoge.vocabulary import load_vocabulary
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) < 6:
+    if len(argv) < 5:
         print(
-            f"usage: {argv[0]} <graph> <vocab> <sched-dir> <books> <corpus>...",
+            f"usage: {argv[0]} <graph> <vocab> <sched-dir> <book-dir> [corpus]...",
             file=sys.stderr,
         )
         return 2
@@ -35,17 +35,19 @@ def main(argv: list[str]) -> int:
     graph = ConceptGraph.load(Path(argv[1]))
     vocabulary = load_vocabulary(Path(argv[2]))
     plans = [sched.load(p) for p in sorted(Path(argv[3]).glob("level_*.json"))]
-    books = load_books(Path(argv[4]))
+    books, book_records = load_book_dir(Path(argv[4]))
 
     levels: dict[str, int] = {}
     words_in: dict[str, int] = {}
     definitions: dict[str, Definition] = {}
+    everything = [record_from_json(r) for r in book_records]
     for path in argv[5:]:
-        for record in load_corpus(Path(path)):
-            levels[record.id] = record.level
-            words_in[record.id] = len(record.content.split())
-            if record.defines is not None:
-                definitions[record.id] = record.defines
+        everything.extend(load_corpus(Path(path)))
+    for record in everything:
+        levels[record.id] = record.level
+        words_in[record.id] = len(record.content.split())
+        if record.defines is not None:
+            definitions[record.id] = record.defines
 
     topics = {u.id for p in plans for d in p.domains for u in d.units}
     violations = validate_books(

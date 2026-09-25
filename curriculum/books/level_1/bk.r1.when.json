@@ -1,0 +1,241 @@
+{
+  "id": "bk.r1.when",
+  "level": 1,
+  "title": "First this, then that",
+  "subject": {
+    "kind": "topic",
+    "target": "r1.when"
+  },
+  "records": [
+    {
+      "id": "r1.when.d00",
+      "level": 1,
+      "concepts": [
+        "sequence",
+        "duration"
+      ],
+      "claim_class": "formal",
+      "content": "First this, then that. It took a long time.",
+      "provenance": {
+        "source_claim": "topic:r1.when"
+      },
+      "defines": {
+        "kind": "topic",
+        "target": "r1.when"
+      }
+    },
+    {
+      "id": "r1.when.d01",
+      "level": 1,
+      "concepts": [
+        "duration"
+      ],
+      "claim_class": "formal",
+      "content": "The time that has not yet come.",
+      "provenance": {
+        "source_claim": "lexicon:future"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "future"
+      }
+    },
+    {
+      "id": "r1.when.d40",
+      "level": 1,
+      "concepts": [
+        "sequence"
+      ],
+      "claim_class": "formal",
+      "content": "To begin something for the first time.",
+      "provenance": {
+        "source_claim": "lexicon:begin"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "begin"
+      }
+    },
+    {
+      "id": "r1.when.d41",
+      "level": 1,
+      "concepts": [
+        "duration"
+      ],
+      "claim_class": "formal",
+      "content": "A day, from midnight to midnight.",
+      "provenance": {
+        "source_claim": "lexicon:day"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "day"
+      }
+    },
+    {
+      "id": "r1.when.d44",
+      "level": 1,
+      "concepts": [
+        "sequence"
+      ],
+      "claim_class": "formal",
+      "content": "To begin something, to do the first thing.",
+      "provenance": {
+        "source_claim": "lexicon:begin"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "begin"
+      }
+    },
+    {
+      "id": "r1.when.d45",
+      "level": 1,
+      "concepts": [
+        "sequence"
+      ],
+      "claim_class": "formal",
+      "content": "At any time in the past, future, or now.",
+      "provenance": {
+        "source_claim": "lexicon:ever"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "ever"
+      }
+    },
+    {
+      "id": "r1.when.d46",
+      "level": 1,
+      "concepts": [
+        "sequence"
+      ],
+      "claim_class": "formal",
+      "content": "To finish something, to end it.",
+      "provenance": {
+        "source_claim": "lexicon:finish"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "finish"
+      }
+    },
+    {
+      "id": "r1.when.s01",
+      "level": 1,
+      "concepts": [
+        "sequence",
+        "duration"
+      ],
+      "claim_class": "empirical",
+      "content": "He gave it warm milk and covered it with a soft cloth.",
+      "provenance": {
+        "source_claim": "primitive:cause-precedes-effect"
+      }
+    },
+    {
+      "id": "r1.when.s02",
+      "level": 1,
+      "concepts": [
+        "sequence",
+        "duration"
+      ],
+      "claim_class": "empirical",
+      "content": "He felt happy, and the day was not yet done.",
+      "provenance": {
+        "source_claim": "primitive:cause-precedes-effect"
+      }
+    },
+    {
+      "id": "r1.when.s03",
+      "level": 1,
+      "concepts": [
+        "sequence",
+        "duration"
+      ],
+      "claim_class": "empirical",
+      "content": "He knew the future would be better, because he had helped.",
+      "provenance": {
+        "source_claim": "primitive:cause-precedes-effect"
+      }
+    },
+    {
+      "id": "r1.when.s42",
+      "level": 1,
+      "concepts": [
+        "sequence",
+        "duration"
+      ],
+      "claim_class": "empirical",
+      "content": "I started building a small boat from bamboo early in the day.",
+      "provenance": {
+        "source_claim": "topic:r1.when"
+      }
+    },
+    {
+      "id": "r1.when.s43",
+      "level": 1,
+      "concepts": [
+        "sequence",
+        "duration"
+      ],
+      "claim_class": "empirical",
+      "content": "I tried it in the water, it floated, so I felt happy.",
+      "provenance": {
+        "source_claim": "topic:r1.when"
+      }
+    },
+    {
+      "id": "r1.when.s47",
+      "level": 1,
+      "concepts": [
+        "sequence",
+        "duration"
+      ],
+      "claim_class": "empirical",
+      "content": "Carlo dug under a log to find the animal.",
+      "provenance": {
+        "source_claim": "topic:r1.when"
+      }
+    },
+    {
+      "id": "r1.when.s48",
+      "level": 1,
+      "concepts": [
+        "sequence",
+        "duration"
+      ],
+      "claim_class": "empirical",
+      "content": "He found the cold, tired animal and took it home.",
+      "provenance": {
+        "source_claim": "topic:r1.when"
+      }
+    },
+    {
+      "id": "r1.when.s49",
+      "level": 1,
+      "concepts": [
+        "sequence",
+        "duration"
+      ],
+      "claim_class": "empirical",
+      "content": "Carlo waited all day for the animal to wake up.",
+      "provenance": {
+        "source_claim": "topic:r1.when"
+      }
+    },
+    {
+      "id": "r1.when.s50",
+      "level": 1,
+      "concepts": [
+        "sequence",
+        "duration"
+      ],
+      "claim_class": "empirical",
+      "content": "When it did, it moved quickly around the room.",
+      "provenance": {
+        "source_claim": "topic:r1.when"
+      }
+    }
+  ]
+}

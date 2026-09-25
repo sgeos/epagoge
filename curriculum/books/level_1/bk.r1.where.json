@@ -1,0 +1,260 @@
+{
+  "id": "bk.r1.where",
+  "level": 1,
+  "title": "It is here, not there",
+  "subject": {
+    "kind": "topic",
+    "target": "r1.where"
+  },
+  "records": [
+    {
+      "id": "r1.where.d00",
+      "level": 1,
+      "concepts": [
+        "spatial_position",
+        "direction"
+      ],
+      "claim_class": "formal",
+      "content": "It is here, not there. It is over that way.",
+      "provenance": {
+        "source_claim": "topic:r1.where"
+      },
+      "defines": {
+        "kind": "topic",
+        "target": "r1.where"
+      }
+    },
+    {
+      "id": "r1.where.d01",
+      "level": 1,
+      "concepts": [
+        "spatial_position"
+      ],
+      "claim_class": "formal",
+      "content": "The word above means higher than something else in space.",
+      "provenance": {
+        "source_claim": "lexicon:above"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "above"
+      }
+    },
+    {
+      "id": "r1.where.d02",
+      "level": 1,
+      "concepts": [
+        "direction"
+      ],
+      "claim_class": "formal",
+      "content": "The word backward means moving in the opposite direction of forward.",
+      "provenance": {
+        "source_claim": "lexicon:backward"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "backward"
+      }
+    },
+    {
+      "id": "r1.where.d03",
+      "level": 1,
+      "concepts": [
+        "spatial_position"
+      ],
+      "claim_class": "formal",
+      "content": "The word behind means at the back of something.",
+      "provenance": {
+        "source_claim": "lexicon:behind"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "behind"
+      }
+    },
+    {
+      "id": "r1.where.d04",
+      "level": 1,
+      "concepts": [
+        "spatial_position"
+      ],
+      "claim_class": "formal",
+      "content": "The word below means lower than something else in space.",
+      "provenance": {
+        "source_claim": "lexicon:below"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "below"
+      }
+    },
+    {
+      "id": "r1.where.d05",
+      "level": 1,
+      "concepts": [
+        "spatial_position"
+      ],
+      "claim_class": "formal",
+      "content": "The word beside means next to something.",
+      "provenance": {
+        "source_claim": "lexicon:beside"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "beside"
+      }
+    },
+    {
+      "id": "r1.where.d06",
+      "level": 1,
+      "concepts": [
+        "direction"
+      ],
+      "claim_class": "formal",
+      "content": "A direction is a way to move or point.",
+      "provenance": {
+        "source_claim": "lexicon:direction"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "direction"
+      }
+    },
+    {
+      "id": "r1.where.d07",
+      "level": 1,
+      "concepts": [
+        "direction"
+      ],
+      "claim_class": "formal",
+      "content": "The word forward means moving toward the front.",
+      "provenance": {
+        "source_claim": "lexicon:forward"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "forward"
+      }
+    },
+    {
+      "id": "r1.where.d37",
+      "level": 1,
+      "concepts": [
+        "direction"
+      ],
+      "claim_class": "formal",
+      "content": "Directions show the way to a place.",
+      "provenance": {
+        "source_claim": "lexicon:directions"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "directions"
+      }
+    },
+    {
+      "id": "r1.where.s01",
+      "level": 1,
+      "concepts": [
+        "spatial_position",
+        "direction"
+      ],
+      "claim_class": "empirical",
+      "content": "The boy walked forward toward the bright light.",
+      "provenance": {
+        "source_claim": "topic:r1.where"
+      }
+    },
+    {
+      "id": "r1.where.s02",
+      "level": 1,
+      "concepts": [
+        "spatial_position",
+        "direction"
+      ],
+      "claim_class": "empirical",
+      "content": "He saw a path that went forward and another that went backward.",
+      "provenance": {
+        "source_claim": "topic:r1.where"
+      }
+    },
+    {
+      "id": "r1.where.s03",
+      "level": 1,
+      "concepts": [
+        "spatial_position",
+        "direction"
+      ],
+      "claim_class": "empirical",
+      "content": "He looked below and saw a blue fish swimming in the water.",
+      "provenance": {
+        "source_claim": "topic:r1.where"
+      }
+    },
+    {
+      "id": "r1.where.s04",
+      "level": 1,
+      "concepts": [
+        "spatial_position",
+        "direction"
+      ],
+      "claim_class": "empirical",
+      "content": "He turned to look behind and saw his dog, waiting beside the path.",
+      "provenance": {
+        "source_claim": "topic:r1.where"
+      }
+    },
+    {
+      "id": "r1.where.s05",
+      "level": 1,
+      "concepts": [
+        "spatial_position",
+        "direction"
+      ],
+      "claim_class": "empirical",
+      "content": "He felt a strong wind from behind and knew he must go forward.",
+      "provenance": {
+        "source_claim": "topic:r1.where"
+      }
+    },
+    {
+      "id": "r1.where.s06",
+      "level": 1,
+      "concepts": [
+        "spatial_position",
+        "direction"
+      ],
+      "claim_class": "empirical",
+      "content": "He reached the end and found a box with a key inside.",
+      "provenance": {
+        "source_claim": "topic:r1.where"
+      }
+    },
+    {
+      "id": "r1.where.s38",
+      "level": 1,
+      "concepts": [
+        "spatial_position",
+        "direction"
+      ],
+      "claim_class": "empirical",
+      "content": "He went forward along the path toward the trees.",
+      "provenance": {
+        "source_claim": "topic:r1.where"
+      }
+    },
+    {
+      "id": "r1.where.s39",
+      "level": 1,
+      "concepts": [
+        "spatial_position",
+        "direction"
+      ],
+      "claim_class": "empirical",
+      "content": "He walked across the path and saw a house next to the water.",
+      "provenance": {
+        "source_claim": "topic:r1.where"
+      }
+    }
+  ]
+}

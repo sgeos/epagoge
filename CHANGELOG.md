@@ -27,6 +27,40 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. A rejected line is input, not waste
+
+- **Operator policy.** Books are edited rather than discarded unless the
+  quality is so poor that inclusion would be unwise.
+- **Rework.** A line rejected for vocabulary is asked again, naming the
+  words it may not use. What survives enters the book.
+- **Withhold.** A book whose subject definition does not survive goes to
+  quarantine whole, with a reason, rather than into the corpus where it
+  would fail the book rules.
+- **Triage.** `tools/triage_quarantine.py` ranks the offending words and
+  says for each whether it is already licensed at a higher level or absent
+  from the lexicon. **A word high on that list and absent is a candidate
+  for addition. One already licensed above the level is working as
+  intended.**
+
+### Changed. A book is one file, in `curriculum/books/level_1/`
+
+- Records inline rather than split across an index and a corpus file.
+  Splitting made a book something a reviewer had to assemble from two
+  places before reading it, **and reading it is the step that decides
+  whether it belongs**.
+- **Five books now in the corpus**, 66 records, 33 definitions, every one
+  between 106 and 173 words. Level-one word definitions at **27 of 760**.
+
+### Fixed. Three defects in my own pipeline, all found by running it
+
+- **Reworked records were created and then dropped**, because nothing added
+  them to the book they came from. A record outside every book is not in
+  the corpus.
+- **Subjects were excluded from rework**, which was exactly backwards. The
+  subject is the one line a book cannot be valid without.
+- **Reworked records carried no concept**, because concepts were threaded
+  into one of three collection points and not the other two.
+
 ### Added. Book generation, and the lexicon grows on evidence
 
 - `generate_books.py` asks for a whole book in one completion. **It works.**

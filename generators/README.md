@@ -197,6 +197,49 @@ rather than an error. One exception was left alone. `part` and `whole`
 belong to `component_and_system`, which the schedule places at level two,
 and moving it would change the very split the ordering ablation tests.
 
+## A rejected line is input, not waste
+
+**Operator policy, 2026-09-24.** Books are edited rather than discarded
+unless the quality is so poor that inclusion would be unwise. A rejected
+line is a sentence the teacher wanted to write and could not, so **either
+the words belong in the lexicon or the sentence needs different words**,
+and a counter cannot tell those apart.
+
+The pipeline is therefore three steps rather than one.
+
+**Rework.** A line rejected for vocabulary is asked again, naming the words
+it may not use. What survives enters the book. This recovered subject
+lines, definitions and story lines that the earlier version dropped.
+
+**Withhold.** A book whose subject definition does not survive is not
+written into the corpus, because a book about a thing that never says what
+the thing is fails the book rules. The whole book goes to quarantine with a
+reason rather than being deleted.
+
+**Triage.** Whatever the rework could not fix is written to a quarantine
+file, and `tools/triage_quarantine.py` ranks the offending words and says,
+for each, whether it is already licensed at some higher level or absent
+from the lexicon entirely. **A word high on that list and absent is a
+candidate for addition. A word already licensed above the level is working
+as intended** and the sentence using it needed rewording.
+
+Books are written one file each into `curriculum/books/level_1/`, records
+inline, so a book is a single artifact a reviewer can read before deciding
+whether it belongs.
+
+### Three defects this exposed in my own pipeline
+
+**Reworked records were created and then dropped**, because nothing added
+them to the book they came from. A record outside every book is not in the
+corpus.
+
+**Subjects were excluded from rework**, which was exactly backwards. The
+subject is the one line a book cannot be valid without.
+
+**Reworked records carried no concept**, because the concepts were threaded
+into one of the three collection points and not the other two. A record
+with no concept now cannot be reworked into the corpus at all.
+
 ## Open constraint
 
 The verification layer that rejects unsupported claims is specified in

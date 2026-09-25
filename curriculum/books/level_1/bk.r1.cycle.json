@@ -1,0 +1,183 @@
+{
+  "id": "bk.r1.cycle",
+  "level": 1,
+  "title": "Day comes, then night, then day again",
+  "subject": {
+    "kind": "topic",
+    "target": "r1.cycle"
+  },
+  "records": [
+    {
+      "id": "r1.cycle.d00",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "formal",
+      "content": "Day comes, then night, then day again.",
+      "provenance": {
+        "source_claim": "topic:r1.cycle"
+      },
+      "defines": {
+        "kind": "topic",
+        "target": "r1.cycle"
+      }
+    },
+    {
+      "id": "r1.cycle.d01",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "formal",
+      "content": "It is a thing that shows time with hands or numbers.",
+      "provenance": {
+        "source_claim": "lexicon:clock"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "clock"
+      }
+    },
+    {
+      "id": "r1.cycle.d02",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "formal",
+      "content": "It is the time after the day and before the night.",
+      "provenance": {
+        "source_claim": "lexicon:evening"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "evening"
+      }
+    },
+    {
+      "id": "r1.cycle.d03",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "formal",
+      "content": "It is the time after the night and before the day.",
+      "provenance": {
+        "source_claim": "lexicon:morning"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "morning"
+      }
+    },
+    {
+      "id": "r1.cycle.d04",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "formal",
+      "content": "It means not at any time, not ever.",
+      "provenance": {
+        "source_claim": "lexicon:never"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "never"
+      }
+    },
+    {
+      "id": "r1.cycle.d05",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "formal",
+      "content": "It is the time when the sun is gone and the sky is dark.",
+      "provenance": {
+        "source_claim": "lexicon:night"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "night"
+      }
+    },
+    {
+      "id": "r1.cycle.d51",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "formal",
+      "content": "The bright thing in the night sky is the moon.",
+      "provenance": {
+        "source_claim": "lexicon:moon"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "moon"
+      }
+    },
+    {
+      "id": "r1.cycle.s01",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "empirical",
+      "content": "The clock showed the time as the day went on.",
+      "provenance": {
+        "source_claim": "primitive:same-again"
+      }
+    },
+    {
+      "id": "r1.cycle.s02",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "empirical",
+      "content": "The moon appeared in the evening when the sky turned blue.",
+      "provenance": {
+        "source_claim": "primitive:same-again"
+      }
+    },
+    {
+      "id": "r1.cycle.s03",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "empirical",
+      "content": "The clock kept time, always moving forward.",
+      "provenance": {
+        "source_claim": "primitive:same-again"
+      }
+    },
+    {
+      "id": "r1.cycle.s04",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "empirical",
+      "content": "The day and night followed each other, always the same.",
+      "provenance": {
+        "source_claim": "primitive:same-again"
+      }
+    },
+    {
+      "id": "r1.cycle.s52",
+      "level": 1,
+      "concepts": [
+        "cycle"
+      ],
+      "claim_class": "empirical",
+      "content": "Night fell after evening, and stars appeared above.",
+      "provenance": {
+        "source_claim": "topic:r1.cycle"
+      }
+    }
+  ]
+}

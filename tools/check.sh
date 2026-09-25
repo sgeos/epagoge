@@ -40,11 +40,19 @@ rm -f .coverage
 # reports every prerequisite the rest of the corpus teaches, so the files are
 # concatenated rather than checked one at a time.
 CORPUS="$(mktemp)"
-cat curriculum/graph/sample_corpus.jsonl curriculum/books/level_01.jsonl > "$CORPUS"
+env PYTHONPATH=src python3 - <<'INLINE' > "$CORPUS"
+import json, pathlib, sys
+sys.path.insert(0, "src")
+from epagoge.book import load_book_dir
+sys.stdout.write(pathlib.Path("curriculum/graph/sample_corpus.jsonl").read_text())
+for _, records in [load_book_dir(pathlib.Path("curriculum/books/level_1"))]:
+    for record in records:
+        print(json.dumps(record))
+INLINE
 run "seed graph"         env PYTHONPATH=src python3 tools/validate_graph.py curriculum/graph/concepts.json
 run "corpus"             env PYTHONPATH=src python3 tools/validate_corpus.py curriculum/graph/concepts.json "$CORPUS" curriculum/primitives.json curriculum/vocabulary.json
 run "schedule"           env PYTHONPATH=src python3 tools/validate_schedule.py curriculum/graph/concepts.json curriculum/primitives.json curriculum/schedule/level_01.json curriculum/schedule/level_02.json
-run "books"              env PYTHONPATH=src python3 tools/validate_books.py curriculum/graph/concepts.json curriculum/vocabulary.json curriculum/schedule curriculum/books/level_01.json "$CORPUS"
+run "books"              env PYTHONPATH=src python3 tools/validate_books.py curriculum/graph/concepts.json curriculum/vocabulary.json curriculum/schedule curriculum/books/level_1
 run "disclosure scan"    ./tools/scrub_scan.sh
 rm -f "$CORPUS"
 

@@ -1,0 +1,212 @@
+{
+  "id": "bk.cup",
+  "level": 1,
+  "title": "The Cup",
+  "subject": {
+    "kind": "domain",
+    "target": "directed_physical_interactions"
+  },
+  "records": [
+    {
+      "id": "bk.cup.d01",
+      "level": 1,
+      "concepts": [
+        "change",
+        "household_object"
+      ],
+      "claim_class": "formal",
+      "content": "Things do what they do. You can make a thing do other things. This book is about that.",
+      "provenance": {
+        "source_claim": "domain:directed_physical_interactions"
+      },
+      "defines": {
+        "kind": "domain",
+        "target": "directed_physical_interactions"
+      }
+    },
+    {
+      "id": "bk.cup.d02",
+      "level": 1,
+      "concepts": [
+        "material",
+        "physical_property"
+      ],
+      "claim_class": "formal",
+      "content": "Stuff is what a thing is made of.",
+      "provenance": {
+        "source_claim": "lexicon:stuff"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "stuff"
+      }
+    },
+    {
+      "id": "bk.cup.d03",
+      "level": 1,
+      "concepts": [
+        "household_object",
+        "liquid"
+      ],
+      "claim_class": "formal",
+      "content": "A cup is a thing you drink from.",
+      "provenance": {
+        "source_claim": "lexicon:cup"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "cup"
+      }
+    },
+    {
+      "id": "bk.cup.d04",
+      "level": 1,
+      "concepts": [
+        "liquid"
+      ],
+      "claim_class": "formal",
+      "content": "Water is a liquid you drink.",
+      "provenance": {
+        "source_claim": "lexicon:water"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "water"
+      }
+    },
+    {
+      "id": "bk.cup.d05",
+      "level": 1,
+      "concepts": [
+        "emptiness",
+        "inside_and_outside"
+      ],
+      "claim_class": "formal",
+      "content": "A thing is empty when there is nothing in it.",
+      "provenance": {
+        "source_claim": "lexicon:empty"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "empty"
+      }
+    },
+    {
+      "id": "bk.cup.d06",
+      "level": 1,
+      "concepts": [
+        "emptiness",
+        "more_and_fewer"
+      ],
+      "claim_class": "formal",
+      "content": "A thing is full when there is no room for more.",
+      "provenance": {
+        "source_claim": "lexicon:full"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "full"
+      }
+    },
+    {
+      "id": "bk.cup.d07",
+      "level": 1,
+      "concepts": [
+        "liquid",
+        "inside_and_outside"
+      ],
+      "claim_class": "formal",
+      "content": "To pour is to make a liquid go from one thing into another.",
+      "provenance": {
+        "source_claim": "lexicon:pour"
+      },
+      "defines": {
+        "kind": "word",
+        "target": "pour"
+      }
+    },
+    {
+      "id": "bk.cup.s01",
+      "level": 1,
+      "concepts": [
+        "household_object",
+        "emptiness"
+      ],
+      "claim_class": "empirical",
+      "content": "The cup is empty. There is nothing in it.",
+      "provenance": {
+        "source_claim": "primitive:things-persist"
+      }
+    },
+    {
+      "id": "bk.cup.s02",
+      "level": 1,
+      "concepts": [
+        "liquid",
+        "emptiness",
+        "change"
+      ],
+      "claim_class": "empirical",
+      "content": "Pour the water in. Now the cup is full.",
+      "provenance": {
+        "source_claim": "primitive:things-change"
+      }
+    },
+    {
+      "id": "bk.cup.s03",
+      "level": 1,
+      "concepts": [
+        "emptiness",
+        "more_and_fewer",
+        "liquid"
+      ],
+      "claim_class": "empirical",
+      "content": "Drink some of it. Now the cup is half full and half empty.",
+      "provenance": {
+        "source_claim": "primitive:some-is-fewer-than-all"
+      }
+    },
+    {
+      "id": "bk.cup.s04",
+      "level": 1,
+      "concepts": [
+        "emptiness",
+        "liquid",
+        "change"
+      ],
+      "claim_class": "empirical",
+      "content": "Drink it all. Now the cup is empty again.",
+      "provenance": {
+        "source_claim": "primitive:things-change"
+      }
+    },
+    {
+      "id": "bk.cup.s05",
+      "level": 1,
+      "concepts": [
+        "liquid",
+        "household_object",
+        "activity"
+      ],
+      "claim_class": "empirical",
+      "content": "Put soap in the water. Wash the cup with it.",
+      "provenance": {
+        "source_claim": "primitive:contact-moves-things"
+      }
+    },
+    {
+      "id": "bk.cup.s06",
+      "level": 1,
+      "concepts": [
+        "liquid",
+        "household_object",
+        "emptiness"
+      ],
+      "claim_class": "empirical",
+      "content": "The soap water goes out into the sink. The cup is empty again.",
+      "provenance": {
+        "source_claim": "primitive:quantity-survives-rearrangement"
+      }
+    }
+  ]
+}

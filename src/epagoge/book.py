@@ -228,6 +228,63 @@ def definition_from_json(raw: object, where: str) -> Definition | None:
     )
 
 
+def book_from_json(payload: object, where: str = "book") -> tuple[Book, list[object]]:
+    """One book and its records, from a single file.
+
+    **A book is one file.** Splitting the ordering from the records made a
+    book something a reviewer had to assemble from two places before they
+    could read it, and reading it is the step that decides whether it enters
+    the corpus.
+    """
+    if not isinstance(payload, dict):
+        raise ValueError(f"{where}: expected an object")
+    fields = cast(dict[object, object], payload)
+    level = fields.get("level")
+    if not isinstance(level, int):
+        raise ValueError(f"{where}.level: expected an integer")
+    raw_subject = fields.get("subject")
+    if not isinstance(raw_subject, dict):
+        raise ValueError(f"{where}.subject: expected an object")
+    subject = cast(dict[object, object], raw_subject)
+    raw_records = fields.get("records")
+    if not isinstance(raw_records, list):
+        raise ValueError(f"{where}.records: expected a list")
+    records = cast(list[object], raw_records)
+    ids: list[str] = []
+    for position, record in enumerate(records):
+        if not isinstance(record, dict):
+            raise ValueError(f"{where}.records[{position}]: expected an object")
+        identifier = cast(dict[object, object], record).get("id")
+        if not isinstance(identifier, str):
+            raise ValueError(f"{where}.records[{position}].id: expected a string")
+        ids.append(identifier)
+    book = Book(
+        id=_require(fields, "id", where),
+        level=level,
+        title=_require(fields, "title", where),
+        subject_kind=DefinitionKind(_require(subject, "kind", where)),
+        subject=_require(subject, "target", where),
+        records=tuple(ids),
+    )
+    return book, records
+
+
+def load_book_dir(path: Path) -> tuple[list[Book], list[object]]:
+    """Every book in a directory, newest ordering last.
+
+    Sorted by filename so a run is reproducible and a diff is readable.
+    """
+    books: list[Book] = []
+    payloads: list[object] = []
+    for file in sorted(path.glob("*.json")):
+        book, records = book_from_json(
+            json.loads(file.read_text(encoding="utf-8")), file.name
+        )
+        books.append(book)
+        payloads.extend(records)
+    return books, payloads
+
+
 def books_from_json(payload: object) -> list[Book]:
     if not isinstance(payload, list):
         raise ValueError("books payload must be a JSON list")
