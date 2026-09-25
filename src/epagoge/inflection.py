@@ -269,6 +269,65 @@ def verb_forms(word: str) -> tuple[str, ...]:
     return tuple(out)
 
 
+IRREGULAR_COMPARISON: Final[dict[str, tuple[str, str]]] = {
+    "good": ("better", "best"),
+    "bad": ("worse", "worst"),
+    "far": ("further", "furthest"),
+    "little": ("less", "least"),
+    "many": ("more", "most"),
+    "much": ("more", "most"),
+}
+"""Adjectives whose comparison is not derivable from the spelling."""
+
+
+def comparative(word: str) -> str:
+    """The ``-er`` form of a gradable adjective.
+
+    **Adjectives had no mechanism at all until 2026-09-25.** A verb takes
+    every inflection from :func:`verb_forms` and a noun its plural from
+    :func:`plural`, both enforced, while ``kinder`` and ``kindest`` were
+    listed by hand. 299 of the 351 level-one terms carrying no part of
+    speech had no comparative, and the teacher was blocked on ``tighter``
+    and ``larger`` in a single round.
+
+    **Only declared adjectives get this.** Whether a word is gradable is
+    not recoverable from spelling: ``dead`` and ``wooden`` are not, and
+    ``beautiful`` compares with more and most rather than a suffix. The
+    part of speech says which, exactly as it does for a noun's plural.
+    """
+    listed = IRREGULAR_COMPARISON.get(word)
+    if listed is not None:
+        return listed[0]
+    return _graded(word, "er", "r")
+
+
+def superlative(word: str) -> str:
+    """The ``-est`` form of a gradable adjective."""
+    listed = IRREGULAR_COMPARISON.get(word)
+    if listed is not None:
+        return listed[1]
+    return _graded(word, "est", "st")
+
+
+def _graded(word: str, suffix: str, after_e: str) -> str:
+    if word.endswith("e"):
+        return word + after_e
+    if word.endswith("y") and len(word) > 1 and _is_consonant(word[-2]):
+        return word[:-1] + "i" + suffix
+    if _doubles_final(word):
+        return word + word[-1] + suffix
+    return word + suffix
+
+
+def comparison(word: str) -> tuple[str, ...]:
+    """Both graded forms, without repeats. Empty where both equal the base."""
+    out: list[str] = []
+    for form in (comparative(word), superlative(word)):
+        if form != word and form not in out:
+            out.append(form)
+    return tuple(out)
+
+
 IRREGULAR_PLURAL: Final[dict[str, str]] = {
     "child": "children",
     "foot": "feet",

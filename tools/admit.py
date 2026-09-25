@@ -30,7 +30,7 @@ import sys
 from pathlib import Path
 from typing import cast
 
-from epagoge.inflection import plural, verb_forms
+from epagoge.inflection import comparison, plural, verb_forms
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -76,7 +76,7 @@ def main(argv: list[str]) -> int:
         if not spec.get("definition"):
             problems.append(f"{word}: no definition")
         for part in spec.get("pos", "").split():
-            if part not in ("verb", "noun"):
+            if part not in ("verb", "noun", "adjective"):
                 problems.append(f"{word}: unknown part of speech {part!r}")
     if problems:
         print(f"{len(problems)} problem(s), nothing written:", file=sys.stderr)
@@ -92,6 +92,8 @@ def main(argv: list[str]) -> int:
             forms.add(plural(word))
         if "verb" in parts:
             forms.update(verb_forms(word))
+        if "adjective" in parts:
+            forms.update(comparison(word))
         forms -= taken
         entry: dict[str, object] = {
             "word": word,

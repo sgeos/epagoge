@@ -679,7 +679,8 @@
       "level": 1,
       "forms": [
         "biggest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "bigger",
@@ -899,7 +900,8 @@
       "forms": [
         "brighter",
         "brightest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "bring",
@@ -1291,7 +1293,7 @@
       "word": "clean",
       "concept": "physical_property",
       "level": 1,
-      "pos": "verb",
+      "pos": "adjective verb",
       "forms": [
         "cleaned",
         "cleaner",
@@ -1393,7 +1395,8 @@
       "forms": [
         "colder",
         "coldest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "colour",
@@ -1470,7 +1473,8 @@
       "forms": [
         "cooler",
         "coolest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "copied",
@@ -1677,7 +1681,8 @@
         "darkened",
         "darker",
         "darkest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "daughter",
@@ -1724,7 +1729,8 @@
       "level": 1,
       "forms": [
         "deepest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "deeper",
@@ -1826,7 +1832,8 @@
       "forms": [
         "dirtier",
         "dirtiest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "disagree",
@@ -2015,7 +2022,7 @@
       "word": "dry",
       "concept": "physical_property",
       "level": 1,
-      "pos": "verb",
+      "pos": "adjective verb",
       "forms": [
         "dried",
         "drier",
@@ -2031,7 +2038,8 @@
       "forms": [
         "duller",
         "dullest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "dust",
@@ -2071,7 +2079,8 @@
       "forms": [
         "easier",
         "easiest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "eat",
@@ -2121,7 +2130,8 @@
       "forms": [
         "emptier",
         "emptiest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "end",
@@ -2254,7 +2264,12 @@
     {
       "word": "fair",
       "concept": "fair_and_unfair",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": [
+        "fairer",
+        "fairest"
+      ]
     },
     {
       "word": "faith",
@@ -2297,8 +2312,11 @@
       "level": 1,
       "forms": [
         "farrer",
-        "farrest"
-      ]
+        "farrest",
+        "further",
+        "furthest"
+      ],
+      "pos": "adjective"
     },
     {
       "word": "fast",
@@ -2307,7 +2325,8 @@
       "forms": [
         "faster",
         "fastest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "fat",
@@ -2654,7 +2673,7 @@
       "word": "full",
       "concept": "emptiness",
       "level": 1,
-      "pos": "noun",
+      "pos": "adjective noun",
       "forms": [
         "fuller",
         "fullest",
@@ -2814,7 +2833,12 @@
     {
       "word": "great",
       "concept": "good_and_bad",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": [
+        "greater",
+        "greatest"
+      ]
     },
     {
       "word": "green",
@@ -2944,7 +2968,8 @@
       "forms": [
         "happier",
         "happiest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "hard",
@@ -2953,7 +2978,8 @@
       "forms": [
         "harder",
         "hardest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "hard",
@@ -3053,7 +3079,8 @@
       "forms": [
         "heavier",
         "heaviest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "help",
@@ -3105,7 +3132,8 @@
       "forms": [
         "higher",
         "highest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "hill",
@@ -3220,7 +3248,8 @@
       "forms": [
         "hotter",
         "hottest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "hours",
@@ -3426,7 +3455,7 @@
       "word": "kind",
       "concept": "good_and_bad",
       "level": 1,
-      "pos": "noun",
+      "pos": "adjective noun",
       "forms": [
         "kinder",
         "kindest",
@@ -3534,7 +3563,8 @@
       "forms": [
         "larger",
         "largest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "last",
@@ -3707,7 +3737,7 @@
       "word": "light",
       "concept": "physical_property",
       "level": 1,
-      "pos": "noun verb",
+      "pos": "adjective noun verb",
       "forms": [
         "lighted",
         "lighter",
@@ -3779,7 +3809,9 @@
     {
       "word": "little",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": []
     },
     {
       "word": "live",
@@ -3824,7 +3856,8 @@
       "level": 1,
       "forms": [
         "longest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "longer",
@@ -3867,7 +3900,8 @@
       "forms": [
         "louder",
         "loudest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "love",
@@ -3887,7 +3921,8 @@
       "forms": [
         "lower",
         "lowest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "magic",
@@ -4298,7 +4333,8 @@
       "forms": [
         "narrower",
         "narrowest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "nasty",
@@ -4313,7 +4349,9 @@
     {
       "word": "near",
       "concept": "close_enough",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": []
     },
     {
       "word": "near",
@@ -4332,7 +4370,12 @@
     {
       "word": "neat",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": [
+        "neater",
+        "neatest"
+      ]
     },
     {
       "word": "need",
@@ -4353,7 +4396,9 @@
     {
       "word": "new",
       "concept": "not_always_known",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": []
     },
     {
       "word": "new",
@@ -4376,7 +4421,8 @@
       "forms": [
         "nicer",
         "nicest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "night",
@@ -4467,7 +4513,9 @@
     {
       "word": "old",
       "concept": "out_of_date",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": []
     },
     {
       "word": "old",
@@ -5066,7 +5114,8 @@
       "forms": [
         "quicker",
         "quickest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "quickly",
@@ -5081,7 +5130,8 @@
         "quieter",
         "quietest",
         "quietly"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "quit",
@@ -5446,7 +5496,9 @@
     {
       "word": "rough",
       "concept": "close_enough",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": []
     },
     {
       "word": "rough",
@@ -5546,12 +5598,18 @@
       "forms": [
         "sadder",
         "saddest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "safe",
       "concept": "danger",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": [
+        "safer",
+        "safest"
+      ]
     },
     {
       "word": "sand",
@@ -5770,7 +5828,8 @@
       "forms": [
         "sharper",
         "sharpest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "shelf",
@@ -5804,7 +5863,12 @@
     {
       "word": "shiny",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": [
+        "shinier",
+        "shiniest"
+      ]
     },
     {
       "word": "shoes",
@@ -5817,7 +5881,8 @@
       "level": 1,
       "forms": [
         "shortest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "shortage",
@@ -6063,7 +6128,8 @@
       "forms": [
         "slower",
         "slowest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "slowly",
@@ -6076,7 +6142,8 @@
       "level": 1,
       "forms": [
         "smallest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "smaller",
@@ -6128,7 +6195,8 @@
       "forms": [
         "smoother",
         "smoothest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "snap",
@@ -6186,7 +6254,8 @@
       "forms": [
         "softer",
         "softest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "solid",
@@ -6614,7 +6683,8 @@
       "forms": [
         "stronger",
         "strongest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "structure",
@@ -6814,7 +6884,8 @@
       "level": 1,
       "forms": [
         "tallest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "taller",
@@ -6942,7 +7013,8 @@
       "forms": [
         "thicker",
         "thickest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "thief",
@@ -6961,7 +7033,8 @@
       "forms": [
         "thinner",
         "thinnest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "thing",
@@ -7050,7 +7123,8 @@
       "forms": [
         "tighter",
         "tightest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "time",
@@ -7068,7 +7142,12 @@
     {
       "word": "tiny",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "pos": "adjective",
+      "forms": [
+        "tinier",
+        "tiniest"
+      ]
     },
     {
       "word": "tip",
@@ -7508,7 +7587,7 @@
         "warming",
         "warms"
       ],
-      "pos": "verb"
+      "pos": "adjective verb"
     },
     {
       "word": "wash",
@@ -7573,7 +7652,8 @@
       "forms": [
         "weaker",
         "weakest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "wear",
@@ -7638,7 +7718,8 @@
       "forms": [
         "wetter",
         "wettest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "wheel",
@@ -7686,7 +7767,8 @@
       "forms": [
         "wider",
         "widest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "win",
@@ -7878,7 +7960,8 @@
       "forms": [
         "younger",
         "youngest"
-      ]
+      ],
+      "pos": "adjective"
     },
     {
       "word": "yours",

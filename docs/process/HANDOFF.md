@@ -1,12 +1,181 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-25, describing `main` at `20c19ae`.** Session 2
-completed the reference material for levels one and two, closed the loop
-from corpus to trained model, and calibrated every level to a grade. Read
+**Refreshed 2026-09-25, describing `main` at `3dfd4d9`.** Session 3
+completed the level-one corpus at ninety-two of ninety-two units, found
+and closed two silent defects in the measurement harness, and established
+that the training endpoint fixes the sign of the ordering result. Read
 this block, run the validity check, then stop and wait for the human
 prompt.
 
 ---
+
+## Validity
+
+**Branch**: `main`, pushed to `origin`, `github.com/sgeos/epagoge`,
+private. **CI is green** and must be checked, not assumed.
+
+**Before writing anything tracked, read the disclosure discipline
+`CLAUDE.md` points to.** Hard constraint.
+
+**Validate by ANCESTRY and by CONTENT, never by a hash match.**
+
+**Run the gate, read its exit code, then stop before committing.**
+
+**Ancestry**: `main` should contain **`c0cf2c4`**, which completed the
+level-one corpus. If it does not, this file predates a reset.
+
+**Content** — each verified on 2026-09-25.
+
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **fifteen**
+   checks and **exits 0**. The books check now enforces `--spreads 16`.
+2. The suite reports **455** tests.
+3. `curriculum/vocabulary.json` holds **958 senses over 925 words**, of
+   which **842** are at level one. **177** core, **37** ostensive, a seed
+   of **255**, and **84** substitutions.
+4. **Both dictionaries are complete and self-hosting**, 805 of 805 at
+   level one, closure 100 percent, nothing blocked and no cycles.
+5. `curriculum/thesaurus.json` holds **922** entries, 195 with an antonym
+   and 132 with a synonym.
+6. `curriculum/books/level_1/` holds **171** books.
+   **Every schedule unit has a book and every book is at sixteen
+   spreads.** Many units hold two, some three.
+7. `evals/pilot/level_1.json` records eight paired seeds over the whole
+   corpus, and `evals/pilot/LEVEL_ONE_VARIANCE.md` says what it does and
+   does not settle.
+8. `git ls-files secret | wc -l` reports **0**, and history is clean.
+
+## What a resuming session should do first
+
+1. Run the validity check and report the handoff valid or stale.
+2. **Check CI.** A green local gate does not mean a green remote one.
+3. Read `docs/process/CURRENT_BRIEF.md`.
+4. Read **`evals/pilot/LEVEL_ONE_VARIANCE.md` before quoting any number
+   from `level_1.json`.**
+5. **Wait for the human prompt.**
+
+## The state
+
+**Reference material and the level-one corpus are done. The corpus is not
+big enough to run an experiment on.**
+
+| Goal | State |
+| --- | --- |
+| Level-one dictionary and closure | **Done.** 805 of 805 |
+| Thesaurus | **Done.** 922 entries |
+| Missing words | **Done, and continuous** via `tools/admit.py` |
+| Level-one corpus | **Done.** 92 of 92 units, every book at 16 spreads |
+| Train a level-one model | **Done.** The result decides nothing, by design |
+| Level-two dictionary and thesaurus | **Done** |
+| Level-two ablation | **Blocked on corpus scale and on item 10** |
+
+### The live defect is size
+
+**44,505 tokens against a level-one budget of 10^6 to 10^7**, a factor of
+22 to 220 short. `CORPUS_SCALE.md` asks for twelve to six hundred books
+per topic and the corpus holds one or two. **800 steps at batch eight
+over 345 chunks is about eighteen passes**, so repetition still dominates
+and an ordering signal has eighteen chances to wash out.
+
+`generate_books.py --variants N` writes an Nth book per unit. That is
+ordinary generation work and needs no decision from anyone.
+
+## Findings that outlive the session
+
+- **The endpoint picks the sign.** Same corpus, same arms, same seeds:
+  at 800 steps the curriculum arm is worse in 8 seeds of 8, paired t
+  +8.35; at 1,600 it is better in 7 of 8, t -3.17. **Both would pass a
+  naive paired test.** Pre-registration item 10 is load-bearing, not
+  bureaucratic, and anyone reporting an ordering effect from this
+  repository must say what endpoint produced it.
+- **The pilot transfers.** rho 0.9574 on real text against 0.9539
+  synthetic, pairing gain 22.8x against 20.7x.
+- **Two harness defects were silent.** The chunker discarded three
+  quarters of the corpus by dropping every book's tail, and the ordering
+  covered 13 books of 146 because a cycle made `linear_extension` return
+  early without saying so. **A tool that returns less than it was asked
+  for must say so.**
+- **A word a book defines is not a concept the book teaches.** Conflating
+  them manufactured 24 cycles between unrelated books.
+- **The generation-time check was weaker than the tokeniser** and let
+  eleven forms into books that the lexicon did not carry. `unlicensed` is
+  exact by default now.
+- **Where an inflected form is also a word, the word carries it and the
+  base stops listing it.** `clear`/`clearing`, `think`/`thought`,
+  `live`/`life`/`living`.
+- **Four inflected forms were filed as headwords**: `depends`,
+  `reporting`, `settles`, `allowed`. Each blocked every form but the one
+  filed. An audit finds roughly fifteen more, mostly above level two.
+- **Nothing compares a derived form against English.** The doubling check
+  closes one narrow class. `admit`, `spend`, `quit`, `hang`, `swing`,
+  `bend` and `spread` each needed a hand-written entry.
+- **Adjectives had no comparative mechanism until 2026-09-25.** A verb
+  took every inflection and a noun its plural, both enforced, while
+  `kinder` was hand-listed. `adjective` is now a part of speech, 58
+  level-one adjectives are declared, and `missing-comparison` gates them.
+  It is declared rather than inferred, because `dead` does not grade and
+  `beautiful` compares with more and most.
+- **`substitutions` is half of triage** and was unused for two sessions.
+  It now carries the contractions, the register drift, and `color` for
+  `colour`.
+- **A generated book can break closure**, because a definition in a book
+  is canonical where the dictionary has none.
+- **The teacher leaks prompt vocabulary** into its answers: `sequence`,
+  `referring`, `reflexive`, `verb`. Not fixed.
+
+## What is YOURS: decisions the operator holds
+
+1. **The endpoint and estimator, item 10.** Now the highest-value
+   decision in the repository, because it fixes the sign of any ordering
+   result.
+2. **The minimum meaningful effect, item 7**, justified from the
+   literature rather than chosen for affordability.
+3. **The `m1.compare` cycle resolution.** I moved `correspondence` into
+   `m1.compare`. Moving `more_and_fewer` into `m1.count` also works, and
+   a third unit for `same_and_different` alone is the most faithful and
+   takes the level to 93 units.
+4. **Levels three to seven of the schedule.**
+5. **Concept complexity per level.** Level one now measures depth 8 and
+   the graph reaches 10. The number moved because concepts were added,
+   which is evidence the metric tracks the graph rather than the level.
+6. **Whether level one can reach level two.**
+7. **Whether a mature version behaves distinctly enough.** `evals/` still
+   has nothing measuring **unrequested action**.
+8. **Whether a definition needs its own claim class.**
+9. **Whether multi-head latent attention is admissible.**
+
+## What is NOT yours
+
+**Publishing.** The repository is private and audited clean. Discovery
+scales with attention, so a launch post reopens the decision without a
+file changing.
+
+## Governing rules that are easy to lose
+
+- **Run the gate, read the exit code, stop, then commit.**
+- **Check CI separately.** The local gate is not the gate.
+- **A tool that returns less than it was asked for must say so.** Two
+  silent truncations cost a session's worth of measurement.
+- **Read the output, not only the counts.**
+- **Verify a new check by making it fail.**
+- **Check a tool's remove path apart from its add path.**
+- **Corrections are kept in place, not deleted.** A wrong claim in a
+  pushed commit message is corrected in the next one, not amended away.
+- **A heuristic needs two pieces of evidence.**
+- **No magic numbers in tests.** Tie an assertion to the lexicon.
+- **Never `git checkout` to undo without checking what else is
+  uncommitted.**
+- **Elegance is not evidence.**
+- Irreversible or outward-facing actions need confirmation.
+
+---
+
+## EVERYTHING BELOW THIS LINE IS ACCUMULATED HISTORY
+
+### Superseded 2026-09-25, end of session two
+
+Replaced rather than deleted. It described a corpus of 49 books with
+12 short of the standard and 43 units that could not be authored at
+all, and every one of those numbers moved within a day.
 
 ## Validity
 
@@ -165,9 +334,6 @@ changing.
   signatures a step and that is a consequence, not a reason.
 - Irreversible or outward-facing actions need confirmation.
 
----
-
-## EVERYTHING BELOW THIS LINE IS ACCUMULATED HISTORY
 
 ### Superseded live block, written 2026-09-25 mid-session
 

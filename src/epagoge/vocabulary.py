@@ -52,7 +52,7 @@ from pathlib import Path
 from typing import Final, cast
 
 from epagoge.concept_graph import Violation
-from epagoge.inflection import doubling_is_ambiguous, plural, verb_forms
+from epagoge.inflection import comparison, doubling_is_ambiguous, plural, verb_forms
 from epagoge.record import Record
 
 WORD_RE: Final[re.Pattern[str]] = re.compile(r"[a-z]+(?:'[a-z]+)?")
@@ -80,7 +80,7 @@ class Term:
     forms: tuple[str, ...] = ()
 
     pos: str = ""
-    """Parts of speech, space separated. ``verb``, ``noun``, or both.
+    """Parts of speech, space separated. ``verb``, ``noun``, ``adjective``.
 
     **A word can be several.** `answer`, `lock` and `brush` are each a noun
     and a verb, and the enforcement differs, since a verb owes its
@@ -501,6 +501,7 @@ def validate_vocabulary(
     out.extend(_check_inflections(vocabulary))
     out.extend(_check_doubling(vocabulary))
     out.extend(_check_plurals(vocabulary))
+    out.extend(_check_comparison(vocabulary))
     out.extend(_check_ostensive(vocabulary))
     levels = term_levels(vocabulary, records)
     out.extend(_check_ceiling(vocabulary, records, levels))
@@ -768,6 +769,33 @@ def _check_inflections(vocabulary: Vocabulary) -> list[Violation]:
     return out
 
 
+def _check_comparison(vocabulary: Vocabulary) -> list[Violation]:
+    """Every graded form of a declared adjective must be admissible.
+
+    The same rule as verb inflections and noun plurals, for the same
+    reason: a word admitted in one form sends a generator reaching for one
+    that is not there. Declared rather than inferred, because gradability
+    is not recoverable from spelling.
+    """
+    out: list[Violation] = []
+    for term in vocabulary.terms:
+        if "adjective" not in term.pos.split():
+            continue
+        for form in comparison(term.word):
+            if form in vocabulary.core:
+                continue
+            if any(sense.level <= term.level for sense in vocabulary.senses(form)):
+                continue
+            out.append(
+                Violation(
+                    "missing-comparison",
+                    f"adjective {term.word!r} is admitted at level {term.level} "
+                    f"and its form {form!r} is not admissible there",
+                )
+            )
+    return out
+
+
 def _check_doubling(vocabulary: Vocabulary) -> list[Violation]:
     """A verb whose doubling cannot be derived must be classified by hand.
 
@@ -874,9 +902,10 @@ def _parse_pos(raw: object, where: str) -> str:
         raise ValueError(f"{where}.pos: expected a string")
     parts = raw.split()
     for part in parts:
-        if part not in ("verb", "noun"):
+        if part not in ("verb", "noun", "adjective"):
             raise ValueError(
-                f"{where}.pos: only 'verb' and 'noun' are recognised, got {part!r}"
+                f"{where}.pos: only 'verb', 'noun' and 'adjective' are "
+                f"recognised, got {part!r}"
             )
     if len(set(parts)) != len(parts):
         raise ValueError(f"{where}.pos: repeated part of speech in {raw!r}")

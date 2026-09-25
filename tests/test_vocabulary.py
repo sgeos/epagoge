@@ -16,6 +16,7 @@ from epagoge.record import ClaimClass, Provenance, Record
 from epagoge.vocabulary import (
     Term,
     Vocabulary,
+    _check_comparison,
     load_vocabulary,
     term_levels,
     tokenise,
@@ -519,7 +520,7 @@ class TestVerbInflection(unittest.TestCase):
                                 "word": "cup",
                                 "concept": "c",
                                 "level": 1,
-                                "pos": "adjective",
+                                "pos": "adverb",
                             }
                         ],
                     }
@@ -723,7 +724,7 @@ class TestNounPlurals(unittest.TestCase):
                                 "word": "cup",
                                 "concept": "c",
                                 "level": 1,
-                                "pos": "noun adjective",
+                                "pos": "noun adverb",
                             }
                         ],
                     }
@@ -754,3 +755,57 @@ class TestNounPlurals(unittest.TestCase):
             )
             with self.assertRaises(ValueError):
                 load_vocabulary(path)
+
+
+class TestAdjectiveComparison(unittest.TestCase):
+    """A declared adjective owes its graded forms, like a verb owes its
+    inflections and a noun its plural.
+
+    Gradability is declared rather than inferred: `dead` and `wooden` do
+    not grade and `beautiful` compares with more and most, and no rule
+    over spelling separates those from `tight`.
+    """
+
+    def test_a_declared_adjective_missing_its_forms_is_a_violation(self) -> None:
+        vocabulary = Vocabulary(
+            terms=(
+                Term(
+                    word="tight", concept="physical_property", level=1, pos="adjective"
+                ),
+            )
+        )
+        codes = {v.code for v in _check_comparison(vocabulary)}
+        self.assertEqual(codes, {"missing-comparison"})
+
+    def test_listed_forms_satisfy_the_check(self) -> None:
+        vocabulary = Vocabulary(
+            terms=(
+                Term(
+                    word="tight",
+                    concept="physical_property",
+                    level=1,
+                    pos="adjective",
+                    forms=("tighter", "tightest"),
+                ),
+            )
+        )
+        self.assertEqual(_check_comparison(vocabulary), [])
+
+    def test_a_form_another_term_carries_is_accepted(self) -> None:
+        """The rule for a collision is that the word carries the form."""
+        vocabulary = Vocabulary(
+            terms=(
+                Term(word="big", concept="physical_property", level=1, pos="adjective"),
+                Term(word="bigger", concept="measuring", level=1),
+                Term(word="biggest", concept="measuring", level=1),
+            )
+        )
+        self.assertEqual(_check_comparison(vocabulary), [])
+
+    def test_an_undeclared_word_is_not_checked(self) -> None:
+        vocabulary = Vocabulary(terms=(Term(word="dead", concept="dying", level=1),))
+        self.assertEqual(_check_comparison(vocabulary), [])
+
+    def test_the_shipped_lexicon_has_no_missing_comparison(self) -> None:
+        vocabulary = load_vocabulary(Path("curriculum/vocabulary.json"))
+        self.assertEqual(_check_comparison(vocabulary), [])
