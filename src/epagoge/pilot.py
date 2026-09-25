@@ -79,7 +79,14 @@ class TinyTransformer(nn.Module):
             norm_first=True,
             dropout=0.0,
         )
-        self.blocks = nn.TransformerEncoder(layer, num_layers=config.n_layers)
+        # **Nested tensors are switched off rather than left to warn.**
+        # They do nothing when `norm_first` is set, and torch says so on
+        # every construction, which put two lines of warning above every
+        # answer the model gave. A warning nobody can act on trains people
+        # to ignore warnings.
+        self.blocks = nn.TransformerEncoder(
+            layer, num_layers=config.n_layers, enable_nested_tensor=False
+        )
         self.norm = nn.LayerNorm(config.d_model)
         self.head = nn.Linear(config.d_model, config.vocab_size, bias=False)
 
