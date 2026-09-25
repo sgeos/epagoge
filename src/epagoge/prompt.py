@@ -340,6 +340,130 @@ def book(
     return "\n".join(lines)
 
 
+def fill_spread(
+    subject_form: str,
+    before: str,
+    text: str,
+    after: str,
+    level: int,
+    admissible: Sequence[str],
+    words: int,
+) -> str:
+    """Ask for more of one spread, without rewriting what is there.
+
+    **A level-one spread was ten words where the standard is fifty.**
+    Measured 2026-09-25 over 227 books: median 164 words a book against a
+    band of 320 to 1,280, and every book below it. Filling the spreads
+    that exist multiplies the corpus by five without a new book, and
+    without the repetition that more books about the same units produces.
+
+    The spreads either side are shown so the addition belongs where it
+    lands. The existing sentence is shown and is not to be repeated,
+    because the cheapest wrong answer is to say it again slightly
+    differently.
+    """
+    if not admissible:
+        raise ValueError("no admissible vocabulary supplied")
+    if words < 1:
+        raise ValueError("a spread needs at least one word")
+
+    lines = [
+        f"Add to one page of a book for a reading level {level} corpus.",
+        "",
+        "THE HARDEST CONSTRAINT IS THE WORD LIST AT THE BOTTOM.",
+        "Every word you write must appear in it.",
+        "",
+        f"The book is about: {subject_form}",
+        "",
+    ]
+    if before.strip():
+        lines += ["The page before says:", f"  {before.strip()}", ""]
+    lines += ["This page says:", f"  {text.strip()}", ""]
+    if after.strip():
+        lines += ["The page after says:", f"  {after.strip()}", ""]
+    lines += [
+        f"Write about {words} more words for THIS page, carrying on from",
+        "what it already says. Do not repeat it and do not write the page",
+        "after.",
+        "",
+        "Use ONLY these words, in any order and any inflection:",
+        "  " + " ".join(sorted(admissible)),
+        "",
+        "Rules:",
+        "  - One sentence per line. No headings, no numbering.",
+        "  - State what is so. Do not address the reader as a teacher would.",
+        "  - Every sentence ends with a full stop and starts with a capital.",
+        "  - No word outside the list above.",
+    ]
+    return "\n".join(lines)
+
+
+def module_spread(
+    topic: str,
+    topic_form: str,
+    heading: str,
+    preceding: str,
+    level: int,
+    admissible: Sequence[str],
+    words: int = 250,
+) -> str:
+    """Prompt for one spread of a textbook module.
+
+    **A level-two spread is a passage, not a sentence under a picture.** A
+    level-one book runs to about two hundred and twenty words in total and
+    a level-two module to about sixteen thousand, so one module is seventy
+    picture books of text and the unit of generation has to change with it.
+    Asking for a whole module in one completion is not available: the
+    teacher timed out at twenty-eight sentences.
+
+    So a module is asked for a spread at a time, and ``preceding`` carries
+    what came before, because the failure that sentence-at-a-time prompting
+    produced at level one was disconnection, and a passage that does not
+    follow from the last one is the same failure at a larger size.
+    """
+    if not admissible:
+        raise ValueError("no admissible vocabulary supplied")
+    if words < 1:
+        raise ValueError("a spread needs at least one word")
+
+    lines = [
+        f"Write one spread of a textbook module for a reading level {level}",
+        "corpus. The reader is entering fourth grade.",
+        "",
+        "THE HARDEST CONSTRAINT IS THE WORD LIST AT THE BOTTOM.",
+        "Every word you write must appear in it.",
+        "",
+        f"The module is about: {topic_form}",
+        f"This spread is about: {heading}",
+        "",
+    ]
+    if preceding.strip():
+        lines += [
+            "The spread before this one said:",
+            "",
+            preceding.strip(),
+            "",
+            "Carry on from there. Do not repeat it.",
+            "",
+        ]
+    lines += [
+        f"Write about {words} words of connected prose, in several",
+        "sentences. It is a passage a child reads, not a list and not a",
+        "lesson plan.",
+        "",
+        "Use ONLY these words, in any order and any inflection:",
+        "  " + " ".join(sorted(admissible)),
+        "",
+        "Rules:",
+        "  - No headings, no numbering, no bullet points, no blank lines.",
+        "  - State what is so. Do not address the reader as a teacher would.",
+        "  - Every sentence ends with a full stop and starts with a capital.",
+        "  - No word outside the list above.",
+        f"  - Output the passage for {topic} and nothing else.",
+    ]
+    return "\n".join(lines)
+
+
 def reword(text: str, offending: Sequence[str], admissible: Sequence[str]) -> str:
     """Ask for one sentence again, saying which words cannot be used.
 

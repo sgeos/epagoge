@@ -5,42 +5,162 @@
     "high": 100000000,
     "basis": "docs/spec/CURRICULUM_LEVELS.md token distribution. Order of magnitude from word counts, not a measurement."
   },
-  "notes": "Partial by design. Only the two ablation domains are scheduled, because the ordering experiment needs those two at depth across all seven levels and nothing else at level two is on the critical path. The other nine domains are scheduled at level two when the experiment has run or when a reason arrives that does not depend on it.",
+  "notes": "Level two is textbook modules of sixty-four spreads at about two hundred and fifty words a spread, so about sixteen thousand words each, for a reader entering fourth grade. Seven of the eleven domains have no concept left to teach, because level one teaches every one they hold, so their modules revisit what the picture books introduced at greater length and complexity. That is the curriculum's shape rather than a shortfall. Multiple modules per topic are expected and this holds one or a few each.",
   "covers": [
+    "accounting",
+    "agentic_operations",
+    "compressed_communication",
+    "cybernetic_biological_systems",
+    "directed_physical_interactions",
+    "failure_analysis",
+    "history_and_philosophy_of_science",
+    "institutional_interfacing",
     "mathematics_and_formal_logic",
-    "failure_analysis"
+    "normative_adjudication",
+    "record_keeping"
   ],
   "domains": [
     {
-      "domain": "mathematics_and_formal_logic",
+      "domain": "accounting",
       "units": [
         {
-          "id": "m2.number",
-          "form": "Numbers do not run out. Each one has a next one. Ten ones make a ten.",
+          "id": "ac2.ledger",
+          "form": "Keeping the count, and the book it is kept in.",
           "teaches": [
-            "natural_number",
-            "place_value"
+            "ledger"
           ],
-          "primitives": [
-            "counting-order-is-fixed"
+          "revisits": [
+            "keeping_count",
+            "having"
           ]
         },
         {
-          "id": "m2.howmuch",
-          "form": "How much, not just how many. A pile can be big without being many.",
+          "id": "ac2.balance",
+          "form": "Balance, and what it means for two sides to agree.",
           "teaches": [
-            "quantity"
+            "balance",
+            "reconciliation"
+          ],
+          "revisits": [
+            "same_amount",
+            "exchange"
           ]
         },
         {
-          "id": "m2.addsub",
-          "form": "Adding is counting on. Taking away is counting back.",
+          "id": "ac2.flow",
+          "form": "What comes in and what goes out.",
           "teaches": [
-            "addition",
-            "subtraction"
+            "stock_and_flow"
           ],
-          "primitives": [
-            "adding-increases"
+          "revisits": [
+            "using_up"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "agentic_operations",
+      "units": [
+        {
+          "id": "a2.plan",
+          "form": "Making a plan, and doing it in order.",
+          "revisits": [
+            "plan",
+            "goal",
+            "doing_in_order"
+          ]
+        },
+        {
+          "id": "a2.mistake",
+          "form": "Mistakes, and what to do when you find one.",
+          "revisits": [
+            "mistake",
+            "finished_or_not",
+            "only_what_was_asked"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "compressed_communication",
+      "units": [
+        {
+          "id": "c2.explain",
+          "form": "Explaining a thing, and what an explanation owes.",
+          "teaches": [
+            "explanation"
+          ],
+          "revisits": [
+            "giving_a_reason",
+            "knowing"
+          ]
+        },
+        {
+          "id": "c2.claim",
+          "form": "A claim, and what it would take to test it.",
+          "teaches": [
+            "claim_under_test"
+          ],
+          "revisits": [
+            "saying_what_you_saw",
+            "leaving_out"
+          ]
+        },
+        {
+          "id": "c2.report",
+          "form": "Reporting what happened, and what gets left out.",
+          "teaches": [
+            "reporting"
+          ],
+          "revisits": [
+            "saying_what_you_did",
+            "close_enough"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "cybernetic_biological_systems",
+      "units": [
+        {
+          "id": "b2.keeping_going",
+          "form": "Staying alive, and what that takes.",
+          "revisits": [
+            "keeping_going",
+            "needing_supply",
+            "growing"
+          ]
+        },
+        {
+          "id": "b2.mending",
+          "form": "Mending, and what mends itself.",
+          "revisits": [
+            "mending",
+            "being_hurt",
+            "tending"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "directed_physical_interactions",
+      "units": [
+        {
+          "id": "p2.force",
+          "form": "Pushes and pulls, and what they do to a thing.",
+          "revisits": [
+            "force",
+            "moving_and_still",
+            "falling"
+          ]
+        },
+        {
+          "id": "p2.matter",
+          "form": "What things are made of, and how they change.",
+          "revisits": [
+            "material",
+            "change",
+            "heat"
           ]
         }
       ]
@@ -50,23 +170,169 @@
       "units": [
         {
           "id": "f2.failing",
-          "form": "It still looks whole but it no longer does its job.",
+          "form": "Things that stop working, and how they got that way.",
           "teaches": [
             "failing"
           ],
-          "primitives": [
-            "things-break"
+          "revisits": [
+            "things_break",
+            "wearing_out"
           ]
         },
         {
           "id": "f2.accident",
-          "form": "Nobody meant it to happen. It happened anyway, and there is a reason.",
+          "form": "Accidents, and the chain that leads to one.",
           "teaches": [
             "accident"
           ],
-          "primitives": [
-            "cause-precedes-effect",
-            "harm-can-be-avoided"
+          "revisits": [
+            "causal_chain",
+            "danger"
+          ]
+        },
+        {
+          "id": "f2.checking",
+          "form": "Checking a thing, and what checking can and cannot show.",
+          "revisits": [
+            "checking",
+            "being_told"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "history_and_philosophy_of_science",
+      "units": [
+        {
+          "id": "h2.findout",
+          "form": "Finding out, and settling a question.",
+          "revisits": [
+            "finding_out",
+            "settling_it",
+            "guess"
+          ]
+        },
+        {
+          "id": "h2.wrong",
+          "form": "Being wrong, and how anyone ever discovers it.",
+          "revisits": [
+            "being_wrong",
+            "resting_on_a_guess",
+            "changing_your_mind"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "institutional_interfacing",
+      "units": [
+        {
+          "id": "i2.reason",
+          "form": "Giving reasons, agreeing and disagreeing.",
+          "revisits": [
+            "giving_a_reason",
+            "agreeing",
+            "disagreeing"
+          ]
+        },
+        {
+          "id": "i2.rule",
+          "form": "Rules, and who decides what is allowed.",
+          "revisits": [
+            "rule",
+            "someone_in_charge",
+            "judged_by_another"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "mathematics_and_formal_logic",
+      "units": [
+        {
+          "id": "m2.number",
+          "form": "Numbers past ten, and how the places carry them.",
+          "teaches": [
+            "natural_number",
+            "place_value"
+          ]
+        },
+        {
+          "id": "m2.addsub",
+          "form": "Putting together and taking away, and why they undo each other.",
+          "teaches": [
+            "addition",
+            "subtraction"
+          ],
+          "revisits": [
+            "counting",
+            "more_and_fewer"
+          ]
+        },
+        {
+          "id": "m2.howmuch",
+          "form": "How much there is, and how we say it.",
+          "teaches": [
+            "quantity"
+          ],
+          "revisits": [
+            "measuring",
+            "same_amount"
+          ]
+        },
+        {
+          "id": "m2.logic",
+          "form": "If this then that, and what follows from what.",
+          "revisits": [
+            "if_then",
+            "all_some_none",
+            "not_both"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "normative_adjudication",
+      "units": [
+        {
+          "id": "n2.should",
+          "form": "Should and should not, and two shoulds at once.",
+          "revisits": [
+            "should_and_should_not",
+            "two_shoulds_at_once",
+            "right_reason"
+          ]
+        },
+        {
+          "id": "n2.fair",
+          "form": "Fair and unfair, promises, and choosing.",
+          "revisits": [
+            "fair_and_unfair",
+            "promise",
+            "choosing"
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "record_keeping",
+      "units": [
+        {
+          "id": "r2.measure",
+          "form": "Measuring, and what a unit is for.",
+          "revisits": [
+            "measuring",
+            "unit",
+            "how_sure"
+          ]
+        },
+        {
+          "id": "r2.record",
+          "form": "Keeping a record, and knowing when it went out of date.",
+          "revisits": [
+            "written_record",
+            "out_of_date",
+            "who_said_it"
           ]
         }
       ]

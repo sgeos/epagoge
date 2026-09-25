@@ -96,28 +96,77 @@ spreads of story, which is why `MAX_DEFINED` is capped well below that.
 """
 
 MAX_WORDS: Final[int] = 1000
-"""Hard cap on a level-one book.
+"""Superseded 2026-09-25. The former hard cap on a level-one book.
 
 Operator figure, 2026-09-24. A level-one book runs from about a hundred
 words to about eight hundred, and does not pass a thousand. Below the
 typical range is not an error, since a book about one narrow thing is
 allowed to be short. Above the cap it is no longer a picture book.
+
+**This is the level-one figure and :func:`max_words` is the general
+one.** A level-two module is sixty-four spreads at about two hundred and
+fifty words a spread, so sixteen thousand words, and the level-one cap
+would refuse every one of them.
 """
 
+WORDS_PER_SPREAD: Final[dict[int, tuple[int, int]]] = {
+    1: (50, 30),
+    2: (250, 50),
+    3: (500, 100),
+    4: (500, 100),
+}
+"""Words on a spread, by level, as a nominal figure and a tolerance.
+
+**Operator figures, 2026-09-25.** Level one carries fifty words to the
+spread, give or take thirty. Level two carries two hundred and fifty,
+which is a page of a hundred and twenty-five twice over. **Levels three
+and above carry five hundred**, which is two hundred and fifty to the
+page and the standard English typesetting metric.
+
+So a level-one book runs to about eight hundred words, a level-two module
+to sixteen thousand, level three to fifty-six thousand, and level four to
+eighty thousand.
+
+**One table, in one unit.** Words per page and a separate typical-words
+band both said this and would have drifted from it. Every band the project
+had recorded falls out of this table exactly, which is the check that it
+is the same quantity and not a new one.
+
+**The jump from level one is still the largest in the scheme**, a factor
+of twenty in the artifact. A spread stops being a sentence under a picture
+and becomes a passage, which is a different thing to generate as well as a
+different thing to read.
+"""
+
+
+def max_words(level: int) -> int | None:
+    """The hard cap on a book at this level, or None where none is settled.
+
+    Derived from the binding and the density where both are known, so
+    changing either changes this. A quarter is allowed over the nominal
+    figure, because the cap exists to catch a book that is the wrong kind
+    of artifact rather than one that ran long.
+
+    **None rather than the level-one figure.** Levels three and four have a
+    page count and no words-to-the-page number, and applying a picture
+    book's thousand-word cap to a two-hundred-and-twenty-four spread book
+    would refuse every one of them. A cap nobody has set is reported as
+    absent, not invented.
+    """
+    band = typical_words(level)
+    if band is None:
+        return None
+    return band[1] * 5 // 4
+
+
 TYPICAL_WORDS: Final[tuple[int, int]] = (100, 800)
-"""Reported, never enforced. The level-one band."""
+"""Superseded 2026-09-25 by :data:`WORDS_PER_SPREAD`.
 
-WORDS_PER_PAGE: Final[dict[int, tuple[int, int]]] = {2: (100, 150)}
-"""Words on a page, by level, for the levels whose density is settled.
-
-**Operator figure for level two, 2026-09-25.** About a hundred and
-twenty-five words to the page, give or take twenty-five, so a spread
-carries two hundred to three hundred. Level one is not in this table
-because its band was set directly as :data:`TYPICAL_WORDS` and a picture
-book's density is dominated by the picture.
-
-A level-two book is sixty-four spreads, so this puts it between twelve
-thousand eight hundred and nineteen thousand two hundred words.
+Kept because it is the figure the level-one corpus was written to, and
+every book in it sits inside this band and below the new one. The operator
+set fifty words a spread, give or take thirty, which makes a level-one
+book three hundred and twenty to one thousand two hundred and eighty words
+rather than one hundred to eight hundred.
 """
 
 
@@ -155,18 +204,21 @@ def typical_words(level: int) -> tuple[int, int] | None:
     band it generalises, because a book about one narrow thing is allowed
     to be short.
 
-    **None where the density is not settled.** Levels three upward have a
-    page count and no words-to-the-page figure, and reporting the level-one
-    band for them would be a made-up number presented as a standard.
+    **None where the density is not settled.** Levels five and above are
+    papers rather than books, so a spread count measures nothing and
+    reporting the level-one band for them would be a made-up number
+    presented as a standard.
+
+    Derived from one table rather than two. An earlier version kept words
+    per page beside words per spread, which is the same quantity in two
+    units, and they would have drifted.
     """
-    if level == 1:
-        return TYPICAL_WORDS
     spreads = SPREADS_BY_LEVEL.get(level)
-    band = WORDS_PER_PAGE.get(level)
+    band = WORDS_PER_SPREAD.get(level)
     if spreads is None or band is None:
         return None
-    pages = spreads * 2
-    return (band[0] * pages, band[1] * pages)
+    nominal, tolerance = band
+    return (spreads * (nominal - tolerance), spreads * (nominal + tolerance))
 
 
 @dataclass(frozen=True, slots=True)
@@ -536,12 +588,13 @@ def validate_books(
 
         if word_counts is not None:
             total = sum(word_counts.get(r, 0) for r in book.records)
-            if total > MAX_WORDS:
+            cap = max_words(book.level)
+            if cap is not None and total > cap:
                 out.append(
                     Violation(
                         "book-too-long",
                         f"book {book.id!r} runs to {total} words, over the"
-                        f" {MAX_WORDS} cap",
+                        f" {cap} cap for level {book.level}",
                     )
                 )
 

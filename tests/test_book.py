@@ -29,11 +29,13 @@ from epagoge.book import (
     linear_extension,
     load_book_dir,
     load_books,
+    max_words,
     normalise_definition,
     parse_book,
     random_linear_extension,
     render_book,
     topological_orders_exist,
+    typical_words,
     validate_books,
     word_definitions,
 )
@@ -599,3 +601,42 @@ class TestNormaliseDefinition(unittest.TestCase):
             normalise_definition("what a McTaggart series is"),
             "What a McTaggart series is.",
         )
+
+
+class TestBookSize(unittest.TestCase):
+    """Length figures follow from the binding and the density.
+
+    Two tables for one quantity drift, so words per spread is stored and
+    words per page is arithmetic. A level with no settled density reports
+    nothing rather than inheriting the picture book's figures.
+    """
+
+    def test_level_one_is_fifty_words_a_spread(self) -> None:
+        self.assertEqual(typical_words(1), (320, 1280))
+
+    def test_level_two_is_sixty_four_spreads_of_two_hundred_and_fifty(self) -> None:
+        self.assertEqual(typical_words(2), (12800, 19200))
+
+    def test_levels_three_and_four_take_five_hundred_a_spread(self) -> None:
+        self.assertEqual(typical_words(3), (44800, 67200))
+        self.assertEqual(typical_words(4), (64000, 96000))
+
+    def test_a_level_with_no_density_reports_none(self) -> None:
+        self.assertIsNone(typical_words(5))
+        self.assertIsNone(max_words(5))
+
+    def test_the_cap_allows_a_quarter_over_the_band(self) -> None:
+        """The band says typical and the cap says still this kind of book,
+        so the cap sits above the band rather than on it."""
+        band = typical_words(2)
+        self.assertIsNotNone(band)
+        self.assertEqual(max_words(2), (band or (0, 0))[1] * 5 // 4)
+
+    def test_the_picture_book_cap_is_not_inherited(self) -> None:
+        """A thousand-word cap on a 112-spread book would refuse all of
+        them, which is how the level-aware figure came to be needed."""
+        self.assertEqual(max_words(1), 1600)
+        for level in (2, 3, 4):
+            cap = max_words(level)
+            self.assertIsNotNone(cap)
+            self.assertGreater(cap or 0, 1000)

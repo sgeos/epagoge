@@ -24,6 +24,10 @@
       "concept": "accident"
     },
     {
+      "word": "account",
+      "concept": "reporting"
+    },
+    {
       "word": "add",
       "concept": "addition"
     },
@@ -204,6 +208,10 @@
     {
       "word": "baked",
       "concept": "raw_and_made"
+    },
+    {
+      "word": "balance",
+      "concept": "balance"
     },
     {
       "word": "ball",
@@ -614,6 +622,10 @@
     {
       "word": "circle",
       "concept": "shape"
+    },
+    {
+      "word": "claim",
+      "concept": "claim_under_test"
     },
     {
       "word": "clap",
@@ -1156,6 +1168,10 @@
     {
       "word": "explain",
       "concept": "giving_a_reason"
+    },
+    {
+      "word": "explanation",
+      "concept": "explanation"
     },
     {
       "word": "extra",
@@ -2034,6 +2050,10 @@
     {
       "word": "least",
       "concept": "more_and_fewer"
+    },
+    {
+      "word": "ledger",
+      "concept": "ledger"
     },
     {
       "word": "left",
@@ -3036,6 +3056,10 @@
       "concept": "conservation_of_number"
     },
     {
+      "word": "reconcile",
+      "concept": "reconciliation"
+    },
+    {
       "word": "record",
       "concept": "written_record",
       "synonyms": [
@@ -3788,6 +3812,10 @@
     {
       "word": "stick",
       "concept": "material"
+    },
+    {
+      "word": "stock",
+      "concept": "stock_and_flow"
     },
     {
       "word": "stone",

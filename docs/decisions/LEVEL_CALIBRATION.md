@@ -86,17 +86,38 @@ twenty-five words to the page, give or take twenty-five, so a spread
 carries two hundred to three hundred and a sixty-four spread book runs
 between **12,800 and 19,200 words**.
 
-| Level | Words per page | Words per book |
-| --- | --- | --- |
-| 1 | not stated; picture-dominated | 100 to 800 |
-| 2 | **100 to 150** | **12,800 to 19,200** |
-| 3 and 4 | **not settled** | **not settled** |
+| Level | Words per spread | Words per book |
+| --- | --- | --- | --- |
+| 1 | **50 plus or minus 30** | **800**, band 320 to 1,280 |
+| 2 | **250 plus or minus 50** | **16,000**, band 12,800 to 19,200 |
+| 3 | **500 plus or minus 100** | **56,000**, band 44,800 to 67,200 |
+| 4 | **500 plus or minus 100** | **80,000**, band 64,000 to 96,000 |
+
+Words per spread is the only length figure stored. Words per page is half
+of it and words per book is the binding times it, so both are arithmetic:
+a second table in a second unit for one quantity is a table that drifts.
+
+**The level-one figure supersedes a band of 100 to 800 words a book.**
+
+### Measured against it, the level-one corpus is a fifth of its length
+
+**Measured 2026-09-25**: 227 content books, median **164 words**, which is
+**10.2 words a spread against a target of 50**. **Every one of the 227 is
+below the band.**
+
+The corpus holds 37,207 words and would hold **181,600 at the standard**,
+a factor of 4.9 **without a single new book**. That is the cheapest corpus
+growth available and it was invisible until the figure existed: the books
+were written to sixteen spreads and nobody had said how long a spread is.
+
+**Operator figure for levels three and above, 2026-09-25:** five hundred
+words to the spread, being two hundred and fifty to the page, which is the
+standard English typesetting metric.
 
 Level one was fixed as a word count directly rather than as a density,
-because a picture book's page is mostly picture. Levels three and four
-have a page count from the binding and no density, and `typical_words`
-reports nothing for them rather than reporting the level-one band, since a
-made-up figure presented as a standard is worse than a gap.
+because a picture book's page is mostly picture. Levels five and above are
+papers rather than books, so a spread count measures nothing there and
+`typical_words` reports none.
 
 **The level-two figure is a range that spans fifty per cent**, which is
 wide enough that it will not by itself catch a book of the wrong shape. It
@@ -118,11 +139,15 @@ level to level four, then opens.
 
 | Level | Controlled lexicon |
 | --- | --- |
-| 1 | 738, measured |
-| 2 | about 2,000 |
-| 3 | about 4,000 |
-| 4 | about 8,000 |
+| 1 | 845, measured |
+| 2 | **about 10,000**, operator figure 2026-09-25 |
+| 3 | not set |
+| 4 | not set |
 | 5 and up | **open** |
+
+The earlier proposal of about 2,000 at level two was mine and was not the
+operator's. It also roughly doubled per level, which the operator figure
+does not: ten thousand is **twelve times** level one, not double.
 
 **The lexicon is prescriptive while the material is authored and becomes
 descriptive when the material is real literature.** That is why it opens
@@ -159,3 +184,25 @@ built to it.** Level two holds a dictionary and a thesaurus and no books.
 candidate metric, level one now measures eight, and no target says whether
 eight is right. The number moved because concepts were added, which is
 evidence that the metric tracks the graph rather than the level.
+
+## The level-two lexicon is far short of its own target
+
+**Measured 2026-09-25.** Level two admits **871 words against level one's
+845**, which is **twenty-six more**. The operator figure is about ten
+thousand, so the level-two lexicon is at **nine per cent** of its target
+and needs some nine thousand words admitted.
+
+**This is the binding constraint on level-two modules**, in the same way
+corpus size is the binding constraint on the level-one model. A module is
+sixty-four spreads of connected fourth-grade prose, and a lexicon that is
+three per cent larger than a kindergarten one cannot carry it. The teacher
+is refused on ordinary fourth-grade words and the module is written in
+picture-book vocabulary at seventy times the length.
+
+**Backporting made this worse and was still right.** Moving `ten`,
+`group`, `pile`, `set`, `unchanged` and `knock` down to level one was
+correct, and each one narrowed the gap between the levels from the other
+side.
+
+The work is an admissions pass against level two of the same kind that
+built level one, and it is not a decision anyone has to make first.

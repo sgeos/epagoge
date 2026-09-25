@@ -225,8 +225,8 @@
     },
     {
       "word": "account",
-      "concept": "explanation",
-      "level": 6
+      "concept": "reporting",
+      "level": 2
     },
     {
       "word": "accumulating",
@@ -504,6 +504,17 @@
       "word": "baked",
       "concept": "raw_and_made",
       "level": 1
+    },
+    {
+      "word": "balance",
+      "concept": "balance",
+      "level": 2,
+      "pos": "noun verb",
+      "forms": [
+        "balanced",
+        "balances",
+        "balancing"
+      ]
     },
     {
       "word": "ball",
@@ -1263,6 +1274,17 @@
       "pos": "noun",
       "forms": [
         "circles"
+      ]
+    },
+    {
+      "word": "claim",
+      "concept": "claim_under_test",
+      "level": 2,
+      "pos": "noun verb",
+      "forms": [
+        "claimed",
+        "claiming",
+        "claims"
       ]
     },
     {
@@ -2212,9 +2234,13 @@
       ]
     },
     {
-      "word": "explanations",
+      "word": "explanation",
       "concept": "explanation",
-      "level": 6
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "explanations"
+      ]
     },
     {
       "word": "extra",
@@ -3647,6 +3673,15 @@
       "word": "least",
       "concept": "more_and_fewer",
       "level": 1
+    },
+    {
+      "word": "ledger",
+      "concept": "ledger",
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "ledgers"
+      ]
     },
     {
       "word": "leg",
@@ -5224,6 +5259,17 @@
       ]
     },
     {
+      "word": "reconcile",
+      "concept": "reconciliation",
+      "level": 2,
+      "pos": "verb",
+      "forms": [
+        "reconciled",
+        "reconciles",
+        "reconciling"
+      ]
+    },
+    {
       "word": "record",
       "concept": "written_record",
       "level": 1,
@@ -6566,6 +6612,15 @@
         "sticking",
         "sticks",
         "stuck"
+      ]
+    },
+    {
+      "word": "stock",
+      "concept": "stock_and_flow",
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "stocks"
       ]
     },
     {

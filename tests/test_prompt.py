@@ -249,3 +249,41 @@ class TestSubstitutionsInPrompts(unittest.TestCase):
     def test_the_admissible_list_still_appears_before_the_table(self) -> None:
         text = prompts.definitions(self.WORDS, 1, ["a", "body"], self.TABLE)
         self.assertLess(text.index("Use ONLY these words"), text.index("NOT allowed"))
+
+
+class TestModuleSpread(unittest.TestCase):
+    """A level-two spread is a passage, and the prompt has to say so."""
+
+    WORDS = ("cup", "water", "the", "is")
+
+    def test_it_names_the_word_budget(self) -> None:
+        text = prompts.module_spread(
+            "m2.number", "counting", "tens", "", 2, self.WORDS, 250
+        )
+        self.assertIn("250", text)
+
+    def test_it_carries_the_preceding_spread(self) -> None:
+        text = prompts.module_spread(
+            "m2.number", "counting", "tens", "The cup is water.", 2, self.WORDS
+        )
+        self.assertIn("The cup is water.", text)
+        self.assertIn("Carry on from there", text)
+
+    def test_the_first_spread_has_nothing_to_carry(self) -> None:
+        text = prompts.module_spread("m2.number", "counting", "tens", "", 2, self.WORDS)
+        self.assertNotIn("Carry on from there", text)
+
+    def test_every_admissible_word_is_offered(self) -> None:
+        text = prompts.module_spread("m2.number", "counting", "tens", "", 2, self.WORDS)
+        for word in self.WORDS:
+            self.assertIn(word, text)
+
+    def test_an_empty_vocabulary_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            _ = prompts.module_spread("m2.number", "counting", "tens", "", 2, ())
+
+    def test_a_spread_of_no_words_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            _ = prompts.module_spread(
+                "m2.number", "counting", "tens", "", 2, self.WORDS, 0
+            )
