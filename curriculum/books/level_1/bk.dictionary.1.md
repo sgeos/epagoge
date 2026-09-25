@@ -16,18 +16,16 @@
     "dict.1.drink": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drink"}, "defines": {"kind": "word", "target": "drink"}},
     "dict.1.lacking": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lacking"}, "defines": {"kind": "word", "target": "lacking"}},
     "dict.1.liquid": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:liquid"}, "defines": {"kind": "word", "target": "liquid"}},
-    "dict.1.means": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:means"}, "defines": {"kind": "word", "target": "means"}},
     "dict.1.bright": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bright"}, "defines": {"kind": "word", "target": "bright"}},
     "dict.1.container": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:container"}, "defines": {"kind": "word", "target": "container"}},
     "dict.1.enough": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:enough"}, "defines": {"kind": "word", "target": "enough"}},
-    "dict.1.hands": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hands"}, "defines": {"kind": "word", "target": "hands"}},
+    "dict.1.hand": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hands"}, "defines": {"kind": "word", "target": "hand"}},
     "dict.1.higher": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:higher"}, "defines": {"kind": "word", "target": "higher"}},
     "dict.1.lower": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lower"}, "defines": {"kind": "word", "target": "lower"}},
     "dict.1.midnight": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:midnight"}, "defines": {"kind": "word", "target": "midnight"}},
     "dict.1.edge": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:edge"}, "defines": {"kind": "word", "target": "edge"}},
     "dict.1.holds": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:holds"}, "defines": {"kind": "word", "target": "holds"}},
     "dict.1.mouth": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mouth"}, "defines": {"kind": "word", "target": "mouth"}},
-    "dict.1.believes": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:believes"}, "defines": {"kind": "word", "target": "believes"}},
     "dict.1.call": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:call"}, "defines": {"kind": "word", "target": "call"}},
     "dict.1.flow": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:flow"}, "defines": {"kind": "word", "target": "flow"}},
     "dict.1.animal": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:animal"}, "defines": {"kind": "word", "target": "animal"}},
@@ -63,7 +61,7 @@ Not the same as another.
 Not bright; lacking light.
 
 [dict.1.front]
-The side of something that faces forward.
+The front of a thing is the side that goes first when it moves.
 
 [dict.1.else]
 Other than this one.
@@ -72,16 +70,13 @@ Other than this one.
 Same in some way.
 
 [dict.1.drink]
-Take liquid into the mouth.
+To drink is to take water or other liquid into your mouth.
 
 [dict.1.lacking]
 Not enough of something.
 
 [dict.1.liquid]
-Flows and takes shape of container.
-
-[dict.1.means]
-Name for something.
+A liquid is what water is, and it can move into any shape.
 
 [dict.1.bright]
 Bright means light and not dark.
@@ -92,14 +87,14 @@ Container holds things inside and has space outside.
 [dict.1.enough]
 Enough means as much as needed.
 
-[dict.1.hands]
+[dict.1.hand]
 Hands are at the end of arms and can touch.
 
 [dict.1.higher]
-Higher means above something smaller.
+Higher is more above than another thing.
 
 [dict.1.lower]
-Lower means below something bigger.
+Lower is more below than another thing.
 
 [dict.1.midnight]
 Midnight is the middle of the night.
@@ -113,14 +108,11 @@ Believes something to be true.
 [dict.1.mouth]
 The opening in the face used for eating and speaking.
 
-[dict.1.believes]
-Thinks something is true or real.
-
 [dict.1.call]
 A sound made by a person or animal.
 
 [dict.1.flow]
-To move like water or liquid.
+To flow is to move the way water moves.
 
 [dict.1.animal]
 An animal is a living thing that moves and eats.
@@ -162,10 +154,10 @@ The first number in counting.
 To say numbers in order to know how many.
 
 [dict.1.open]
-Not closed; able to be entered or seen through.
+Open is when a thing has a way in or a way out.
 
 [dict.1.closed]
-Shut, not open.
+Closed is not open.
 
 [dict.1.enter]
 To go inside something.

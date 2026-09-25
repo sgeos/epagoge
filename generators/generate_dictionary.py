@@ -70,7 +70,7 @@ def main(argv: list[str]) -> int:
     # The seed is what needs no definition. Function words name nothing;
     # ostensive words name something that cannot be said without
     # circularity and are taught by the books instead.
-    seed = set(vocabulary.core) | set(vocabulary.exempt) | set(vocabulary.ostensive)
+    seed = set(vocabulary.seed_words())
     # **One entry per sense.** A word with a noun and a verb sense needs
     # two definitions, which is what a dictionary has always done.
     senses: list[tuple[str, str]] = sorted(

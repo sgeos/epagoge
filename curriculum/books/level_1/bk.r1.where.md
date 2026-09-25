@@ -16,7 +16,6 @@
     "r1.where.d05": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:beside"}, "defines": {"kind": "word", "target": "beside"}},
     "r1.where.d06": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:direction"}, "defines": {"kind": "word", "target": "direction"}},
     "r1.where.d07": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forward"}, "defines": {"kind": "word", "target": "forward"}},
-    "r1.where.d37": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:directions"}, "defines": {"kind": "word", "target": "directions"}},
     "r1.where.s01": {"concepts": ["spatial_position", "direction"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.where"}},
     "r1.where.s02": {"concepts": ["spatial_position", "direction"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.where"}},
     "r1.where.s03": {"concepts": ["spatial_position", "direction"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.where"}},
@@ -33,16 +32,16 @@
 It is here, not there. It is over that way.
 
 [r1.where.d01]
-The word above means higher than something else in space.
+Above is over a thing and not under it.
 
 [r1.where.d02]
-The word backward means moving in the opposite direction of forward.
+Backward is not forward.
 
 [r1.where.d03]
 The word behind means at the back of something.
 
 [r1.where.d04]
-The word below means lower than something else in space.
+Below is under a thing and not over it.
 
 [r1.where.d05]
 The word beside means next to something.
@@ -51,10 +50,7 @@ The word beside means next to something.
 A direction is a way to move or point.
 
 [r1.where.d07]
-The word forward means moving toward the front.
-
-[r1.where.d37]
-Directions show the way to a place.
+Forward is toward the front.
 
 [r1.where.s01]
 The boy walked forward toward the bright light.

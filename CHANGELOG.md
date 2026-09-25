@@ -27,6 +27,39 @@ Versioning.
 
 ## 2026-09-24
 
+### Fixed. The level-one dictionary is self-hosting
+
+- **Closure is 100 percent.** 126 definitions, 126 grounded, frontier 0,
+  blocked 0, cycles 0. Grounded was **1** when the session began.
+- **Two defects in the closure itself.** The seed was tested against the
+  surface token rather than the resolved headword, so **every inflection
+  of a seed word looked undefined** and `arm` was reported on the frontier
+  while sitting in the ostensive set. And a seed word carrying a
+  definition was made to earn its ground rather than having it.
+- **All forms of an ostensive word are ostensive.** `eye` was seed while
+  `eyes` was a term of its own, so `eyes` resolved to itself and put
+  `face` on the frontier for want of a plural.
+- **54 plurals were held as separate terms sharing their singular's
+  concept**, merged into forms. The same defect as the stranded verb
+  inflections, in nouns. **A merge takes the lower of the two levels**,
+  found when `causes` at level three merged into `cause` at level five and
+  broke a level-three record.
+- **Authored in waves and checked, never trusted.** Thirty seed
+  definitions, then 27 frontier words, then the last two. Each wave was
+  validated against the closure before being written, and drafts were
+  rejected by that check rather than by review.
+- **Six cycles broken**, each by grounding one member on the seed.
+  `alive`/`dead`/`living`, `open`/`closed`, `above`/`higher`,
+  `below`/`lower`, `backward`/`forward`/`front`, and
+  `cup`/`drink`/`flow`/`liquid`.
+- **Coverage is the remaining work, not closure.** 126 of 764 level-one
+  words, 16.5 percent. **Self-hosting is a property of what is defined and
+  it now holds.**
+- **A mistake worth recording.** A repair guard omitted the
+  `defines.kind` test and dropped four domain and topic definitions before
+  the gate caught it. Restoring from git also reverted two authored waves,
+  which had to be redone.
+
 ### Changed. The thesaurus covers every sense, and both become reference material
 
 - **Operator direction.** The dictionary and thesaurus are analysis tools

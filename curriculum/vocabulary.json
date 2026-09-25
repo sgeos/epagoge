@@ -202,12 +202,10 @@
     {
       "word": "accident",
       "concept": "accident",
-      "level": 5
-    },
-    {
-      "word": "accidents",
-      "concept": "accident",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "accidents"
+      ]
     },
     {
       "word": "account",
@@ -283,12 +281,10 @@
     {
       "word": "amount",
       "concept": "quantity",
-      "level": 2
-    },
-    {
-      "word": "amounts",
-      "concept": "quantity",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "amounts"
+      ]
     },
     {
       "word": "angry",
@@ -339,7 +335,10 @@
     {
       "word": "arm",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "arms"
+      ]
     },
     {
       "word": "ask",
@@ -403,12 +402,10 @@
     {
       "word": "backward",
       "concept": "direction",
-      "level": 1
-    },
-    {
-      "word": "backwards",
-      "concept": "direction",
-      "level": 3
+      "level": 1,
+      "forms": [
+        "backwards"
+      ]
     },
     {
       "word": "bad",
@@ -509,16 +506,12 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "believes",
         "believing"
       ]
     },
     {
       "word": "believed",
-      "concept": "opinion",
-      "level": 1
-    },
-    {
-      "word": "believes",
       "concept": "opinion",
       "level": 1
     },
@@ -534,13 +527,9 @@
       "pos": "verb",
       "forms": [
         "belonged",
-        "belonging"
+        "belonging",
+        "belongs"
       ]
-    },
-    {
-      "word": "belongs",
-      "concept": "having",
-      "level": 1
     },
     {
       "word": "below",
@@ -632,7 +621,10 @@
     {
       "word": "body",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "bodies"
+      ]
     },
     {
       "word": "book",
@@ -842,6 +834,7 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "cares",
         "caring"
       ]
     },
@@ -853,11 +846,6 @@
     {
       "word": "careful",
       "concept": "danger",
-      "level": 1
-    },
-    {
-      "word": "cares",
-      "concept": "tending",
       "level": 1
     },
     {
@@ -915,7 +903,10 @@
     {
       "word": "cause",
       "concept": "cause_and_effect",
-      "level": 5
+      "level": 3,
+      "forms": [
+        "causes"
+      ]
     },
     {
       "word": "caused",
@@ -923,19 +914,12 @@
       "level": 1
     },
     {
-      "word": "causes",
-      "concept": "cause_and_effect",
-      "level": 3
-    },
-    {
       "word": "chain",
       "concept": "causal_chain",
-      "level": 3
-    },
-    {
-      "word": "chains",
-      "concept": "causal_chain",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "chains"
+      ]
     },
     {
       "word": "chair",
@@ -952,13 +936,9 @@
       "pos": "verb",
       "forms": [
         "changed",
+        "changes",
         "changing"
       ]
-    },
-    {
-      "word": "changes",
-      "concept": "change",
-      "level": 1
     },
     {
       "word": "charge",
@@ -1004,12 +984,10 @@
     {
       "word": "child",
       "concept": "person",
-      "level": 1
-    },
-    {
-      "word": "children",
-      "concept": "person",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "children"
+      ]
     },
     {
       "word": "circle",
@@ -1085,12 +1063,10 @@
     {
       "word": "column",
       "concept": "place_value",
-      "level": 2
-    },
-    {
-      "word": "columns",
-      "concept": "place_value",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "columns"
+      ]
     },
     {
       "word": "combine",
@@ -1401,22 +1377,18 @@
     {
       "word": "digit",
       "concept": "place_value",
-      "level": 2
-    },
-    {
-      "word": "digits",
-      "concept": "place_value",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "digits"
+      ]
     },
     {
       "word": "direction",
       "concept": "direction",
-      "level": 1
-    },
-    {
-      "word": "directions",
-      "concept": "direction",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "directions"
+      ]
     },
     {
       "word": "dirt",
@@ -1581,16 +1553,14 @@
     {
       "word": "ear",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "ears"
+      ]
     },
     {
       "word": "early",
       "concept": "duration",
-      "level": 1
-    },
-    {
-      "word": "ears",
-      "concept": "body_part",
       "level": 1
     },
     {
@@ -1704,12 +1674,10 @@
     {
       "word": "eye",
       "concept": "body_part",
-      "level": 1
-    },
-    {
-      "word": "eyes",
-      "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "eyes"
+      ]
     },
     {
       "word": "face",
@@ -1740,16 +1708,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "fallen"
+        "fallen",
+        "falling",
+        "falls"
       ]
-    },
-    {
-      "word": "falls",
-      "concept": "falling",
-      "forms": [
-        "falling"
-      ],
-      "level": 1
     },
     {
       "word": "false",
@@ -1797,13 +1759,9 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "feeding"
+        "feeding",
+        "feeds"
       ]
-    },
-    {
-      "word": "feeds",
-      "concept": "tending",
-      "level": 1
     },
     {
       "word": "feel",
@@ -1811,18 +1769,9 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "feeling"
+        "feeling",
+        "feels"
       ]
-    },
-    {
-      "word": "feels",
-      "concept": "feeling",
-      "level": 1
-    },
-    {
-      "word": "feet",
-      "concept": "body_part",
-      "level": 1
     },
     {
       "word": "fell",
@@ -1999,7 +1948,10 @@
     {
       "word": "foot",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "feet"
+      ]
     },
     {
       "word": "force",
@@ -2186,15 +2138,13 @@
     {
       "word": "group",
       "concept": "grouping",
-      "level": 5
+      "level": 2,
+      "forms": [
+        "groups"
+      ]
     },
     {
       "word": "grouped",
-      "concept": "grouping",
-      "level": 2
-    },
-    {
-      "word": "groups",
       "concept": "grouping",
       "level": 2
     },
@@ -2233,12 +2183,10 @@
     {
       "word": "hand",
       "concept": "body_part",
-      "level": 1
-    },
-    {
-      "word": "hands",
-      "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "hands"
+      ]
     },
     {
       "word": "happen",
@@ -2246,16 +2194,12 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "happening"
+        "happening",
+        "happens"
       ]
     },
     {
       "word": "happened",
-      "concept": "change",
-      "level": 1
-    },
-    {
-      "word": "happens",
       "concept": "change",
       "level": 1
     },
@@ -2304,7 +2248,10 @@
     {
       "word": "head",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "heads"
+      ]
     },
     {
       "word": "hear",
@@ -2569,12 +2516,10 @@
     {
       "word": "job",
       "concept": "way_of_doing",
-      "level": 1
-    },
-    {
-      "word": "jobs",
-      "concept": "way_of_doing",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "jobs"
+      ]
     },
     {
       "word": "join",
@@ -2758,7 +2703,10 @@
     {
       "word": "leg",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "legs"
+      ]
     },
     {
       "word": "less",
@@ -2849,7 +2797,10 @@
     {
       "word": "list",
       "concept": "written_record",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "lists"
+      ]
     },
     {
       "word": "listen",
@@ -2861,11 +2812,6 @@
         "listening",
         "listens"
       ]
-    },
-    {
-      "word": "lists",
-      "concept": "written_record",
-      "level": 1
     },
     {
       "word": "little",
@@ -3029,16 +2975,14 @@
       "word": "mean",
       "concept": "name",
       "level": 1,
-      "pos": "verb"
+      "pos": "verb",
+      "forms": [
+        "means"
+      ]
     },
     {
       "word": "meaning",
       "concept": "standing_for",
-      "level": 1
-    },
-    {
-      "word": "means",
-      "concept": "name",
       "level": 1
     },
     {
@@ -3106,12 +3050,10 @@
     {
       "word": "method",
       "concept": "way_of_doing",
-      "level": 1
-    },
-    {
-      "word": "methods",
-      "concept": "way_of_doing",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "methods"
+      ]
     },
     {
       "word": "middle",
@@ -3156,12 +3098,10 @@
     {
       "word": "minute",
       "concept": "duration",
-      "level": 1
-    },
-    {
-      "word": "minutes",
-      "concept": "duration",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "minutes"
+      ]
     },
     {
       "word": "mishap",
@@ -3216,7 +3156,10 @@
     {
       "word": "mouth",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "mouths"
+      ]
     },
     {
       "word": "move",
@@ -3256,12 +3199,10 @@
     {
       "word": "nail",
       "concept": "metal",
-      "level": 1
-    },
-    {
-      "word": "nails",
-      "concept": "metal",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "nails"
+      ]
     },
     {
       "word": "name",
@@ -3367,7 +3308,10 @@
     {
       "word": "nose",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "noses"
+      ]
     },
     {
       "word": "note",
@@ -3376,13 +3320,9 @@
       "pos": "verb",
       "forms": [
         "noted",
+        "notes",
         "noting"
       ]
-    },
-    {
-      "word": "notes",
-      "concept": "written_record",
-      "level": 1
     },
     {
       "word": "nothing",
@@ -3446,12 +3386,10 @@
     {
       "word": "opposite",
       "concept": "standing_for",
-      "level": 1
-    },
-    {
-      "word": "opposites",
-      "concept": "standing_for",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "opposites"
+      ]
     },
     {
       "word": "order",
@@ -3493,16 +3431,12 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "owning"
+        "owning",
+        "owns"
       ]
     },
     {
       "word": "owned",
-      "concept": "having",
-      "level": 1
-    },
-    {
-      "word": "owns",
       "concept": "having",
       "level": 1
     },
@@ -3562,12 +3496,10 @@
     {
       "word": "path",
       "concept": "direction",
-      "level": 1
-    },
-    {
-      "word": "paths",
-      "concept": "direction",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "paths"
+      ]
     },
     {
       "word": "patted",
@@ -3590,11 +3522,6 @@
       "level": 1
     },
     {
-      "word": "people",
-      "concept": "person",
-      "level": 1
-    },
-    {
       "word": "percent",
       "concept": "quantity",
       "level": 6
@@ -3607,7 +3534,10 @@
     {
       "word": "person",
       "concept": "person",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "people"
+      ]
     },
     {
       "word": "phrase",
@@ -3627,12 +3557,10 @@
     {
       "word": "pile",
       "concept": "grouping",
-      "level": 2
-    },
-    {
-      "word": "piles",
-      "concept": "grouping",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "piles"
+      ]
     },
     {
       "word": "place",
@@ -3840,12 +3768,10 @@
     {
       "word": "question",
       "concept": "asking",
-      "level": 1
-    },
-    {
-      "word": "questions",
-      "concept": "asking",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "questions"
+      ]
     },
     {
       "word": "quick",
@@ -3949,13 +3875,9 @@
       "pos": "verb",
       "forms": [
         "recorded",
-        "recording"
+        "recording",
+        "records"
       ]
-    },
-    {
-      "word": "records",
-      "concept": "written_record",
-      "level": 1
     },
     {
       "word": "recursion",
@@ -4042,13 +3964,9 @@
       "pos": "verb",
       "forms": [
         "represented",
-        "representing"
+        "representing",
+        "represents"
       ]
-    },
-    {
-      "word": "represents",
-      "concept": "standing_for",
-      "level": 1
     },
     {
       "word": "request",
@@ -4178,17 +4096,13 @@
       "pos": "verb",
       "forms": [
         "ruled",
+        "rules",
         "ruling"
       ]
     },
     {
       "word": "ruler",
       "concept": "measuring",
-      "level": 1
-    },
-    {
-      "word": "rules",
-      "concept": "someone_in_charge",
       "level": 1
     },
     {
@@ -4299,12 +4213,10 @@
     {
       "word": "sentence",
       "concept": "sentence",
-      "level": 1
-    },
-    {
-      "word": "sentences",
-      "concept": "sentence",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "sentences"
+      ]
     },
     {
       "word": "separate",
@@ -4495,13 +4407,9 @@
       "pos": "verb",
       "forms": [
         "signed",
-        "signing"
+        "signing",
+        "signs"
       ]
-    },
-    {
-      "word": "signs",
-      "concept": "standing_for",
-      "level": 1
     },
     {
       "word": "silver",
@@ -4730,13 +4638,9 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "speaking"
+        "speaking",
+        "speaks"
       ]
-    },
-    {
-      "word": "speaks",
-      "concept": "sentence",
-      "level": 1
     },
     {
       "word": "speed",
@@ -4836,12 +4740,10 @@
     {
       "word": "star",
       "concept": "weather",
-      "level": 1
-    },
-    {
-      "word": "stars",
-      "concept": "weather",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "stars"
+      ]
     },
     {
       "word": "start",
@@ -4894,13 +4796,9 @@
       "pos": "verb",
       "forms": [
         "stepped",
-        "stepping"
+        "stepping",
+        "steps"
       ]
-    },
-    {
-      "word": "steps",
-      "concept": "way_of_doing",
-      "level": 1
     },
     {
       "word": "stick",
@@ -4909,13 +4807,9 @@
       "pos": "verb",
       "forms": [
         "sticking",
+        "sticks",
         "stuck"
       ]
-    },
-    {
-      "word": "sticks",
-      "concept": "material",
-      "level": 1
     },
     {
       "word": "stone",
@@ -5094,12 +4988,10 @@
     {
       "word": "symbol",
       "concept": "standing_for",
-      "level": 1
-    },
-    {
-      "word": "symbols",
-      "concept": "standing_for",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "symbols"
+      ]
     },
     {
       "word": "system",
@@ -5159,12 +5051,10 @@
     {
       "word": "task",
       "concept": "way_of_doing",
-      "level": 1
-    },
-    {
-      "word": "tasks",
-      "concept": "way_of_doing",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "tasks"
+      ]
     },
     {
       "word": "teacher",
@@ -5193,16 +5083,12 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "tending"
+        "tending",
+        "tends"
       ]
     },
     {
       "word": "tended",
-      "concept": "tending",
-      "level": 1
-    },
-    {
-      "word": "tends",
       "concept": "tending",
       "level": 1
     },
@@ -5214,12 +5100,10 @@
     {
       "word": "term",
       "concept": "word",
-      "level": 1
-    },
-    {
-      "word": "terms",
-      "concept": "word",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "terms"
+      ]
     },
     {
       "word": "test",
@@ -5373,12 +5257,10 @@
     {
       "word": "tool",
       "concept": "way_of_doing",
-      "level": 1
-    },
-    {
-      "word": "tools",
-      "concept": "way_of_doing",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "tools"
+      ]
     },
     {
       "word": "top",
@@ -5396,6 +5278,7 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "touches",
         "touching"
       ]
     },
@@ -5405,19 +5288,12 @@
       "level": 1
     },
     {
-      "word": "touches",
-      "concept": "touching",
-      "level": 1
-    },
-    {
       "word": "toward",
       "concept": "direction",
-      "level": 1
-    },
-    {
-      "word": "towards",
-      "concept": "direction",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "towards"
+      ]
     },
     {
       "word": "town",
@@ -5452,12 +5328,10 @@
     {
       "word": "tree",
       "concept": "plant",
-      "level": 1
-    },
-    {
-      "word": "trees",
-      "concept": "plant",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "trees"
+      ]
     },
     {
       "word": "trick",
@@ -5659,12 +5533,10 @@
     {
       "word": "view",
       "concept": "opinion",
-      "level": 1
-    },
-    {
-      "word": "views",
-      "concept": "opinion",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "views"
+      ]
     },
     {
       "word": "village",
@@ -5902,12 +5774,10 @@
     {
       "word": "word",
       "concept": "word",
-      "level": 1
-    },
-    {
-      "word": "words",
-      "concept": "word",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "words"
+      ]
     },
     {
       "word": "work",

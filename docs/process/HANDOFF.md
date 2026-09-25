@@ -36,7 +36,7 @@ rendered ORDER of this list, not just the next unused number.
 
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twelve**
    checks, and **exits 0**.
-2. The suite reports **399** tests.
+2. The suite reports **403** tests.
 3. `curriculum/graph/concepts.json` declares **11** domains and holds
    **117** nodes, with **1** domain still empty, **0** isolated concepts,
    **50** cross-domain prerequisites, **9** specialisation edges and **6**
@@ -48,16 +48,19 @@ rendered ORDER of this list, not just the next unused number.
    concepts and **51** planned. Level two covers the two ablation domains
    only and holds **8** units, having given `component_and_system` to
    level one so that `part` could be licensed by the concept it names.
-6. `curriculum/vocabulary.json` holds **926** entries over **920 distinct
-   words**, since a word may carry several senses. **809** words are at
-   level one, **173** core, **202** senses marked `pos: verb`, and there is
-   a **33**-entry substitution table.
+6. `curriculum/vocabulary.json` holds **872** senses over **865 distinct
+   words**, **764** of them at level one, **173** core, a **33**-word
+   **ostensive** set, and a **33**-entry substitution table. The seed, the
+   words needing no definition, is **230** including every form of an
+   ostensive word.
 7. `curriculum/thesaurus.json` holds **834** entries, one per level-one
    sense plus **18** core words, covering all **815** admitted senses.
    **195** carry an antonym and none yet carries a synonym. Coverage is
    enforced, so a new sense fails the gate until an entry exists.
-8. `curriculum/books/level_1/` holds **6** books. The dictionary reports
-   **80 of 809** words defined, of which **3** are grounded.
+8. `curriculum/books/level_1/` holds **7** books. The dictionary defines
+   **126 of 764** level-one words, and **the closure is 100 percent**.
+   Frontier 0, blocked 0, cycles 0. **Self-hosting is achieved for what is
+   defined. Coverage is 16.5 percent and is the remaining work.**
 9. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
 10. **History is clean, not only `HEAD`.** Every blob and every commit
@@ -102,7 +105,11 @@ shape anyway** — the budget wants 12 to 600 books per topic.
 
 ### The live defect
 
-**The lexicon does not yet define itself.** Forty-nine words carry a
+**Coverage, not closure.** The lexicon now defines itself for every word
+it defines. What remains is that it defines only 126 of 764.
+
+Superseded, kept because the reasoning is still the record of how it was
+solved. **The lexicon did not define itself.** Forty-nine words carry a
 definition and **one of them is grounded**. Forty-eight rest on something
 that does not bottom out, and forty-seven words are used in definitions and
 never defined.

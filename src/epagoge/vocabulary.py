@@ -242,6 +242,25 @@ class Vocabulary:
                         return undoubled
         return None
 
+    def seed_words(self) -> frozenset[str]:
+        """Everything available without a definition, forms included.
+
+        **If a word is ostensive then all of its forms are.** `eye` sat in
+        the ostensive set while `eyes` was a term of its own, so `eyes`
+        resolved to itself, missed the seed, and put `face` on the frontier
+        for want of a plural. The same shape as the verb inflection gap,
+        arriving in the seed.
+        """
+        out = set(self.core) | set(self.exempt)
+        for word in self.ostensive:
+            out.add(word)
+            for sense in self.senses(word):
+                out.update(sense.surface_forms())
+            for term in self.terms:
+                if term.word == word:
+                    out.update(term.surface_forms())
+        return frozenset(out)
+
     def is_free(self, token: str) -> bool:
         """Whether a token is usable at any level without licensing."""
         return (

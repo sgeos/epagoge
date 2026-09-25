@@ -240,18 +240,27 @@ def dictionary_closure(
     the seed, is the word itself, or is already grounded. Iterated to a
     fixed point, and whatever remains is either undefined or in a cycle.
     """
+    known = set(seed)
     uses: dict[str, set[str]] = {}
     for word, text in definitions.items():
         needed: set[str] = set()
         for token in tokenise(text):
-            if token in seed:
-                continue
             head = resolve(token) or token
+            # **Resolve before testing the seed.** `arms` is not itself in
+            # the seed and `arm` is, so testing the surface form alone put
+            # every inflection of a seed word on the frontier. Found on
+            # 2026-09-25 with `arm` reported as undefined while sitting in
+            # the ostensive set.
+            if token in known or head in known:
+                continue
             if head != word:
                 needed.add(head)
         uses[word] = needed
 
-    grounded: set[str] = set()
+    # **A seed word reduces to the seed trivially**, whether or not a
+    # definition has also been written for it. Without this a defined seed
+    # word was evaluated as though it still had to earn its ground.
+    grounded: set[str] = {word for word in uses if word in known}
     changed = True
     while changed:
         changed = False

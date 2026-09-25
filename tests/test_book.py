@@ -447,3 +447,37 @@ class AccumulatingIntoABook(unittest.TestCase):
         existing = self.records("a")
         extend_records(existing, self.records("b"))
         self.assertEqual(len(existing), 1)
+
+
+class SeedWordsAndTheirInflections(unittest.TestCase):
+    """Two defects in the closure itself, found on 2026-09-25.
+
+    `arm` sat in the ostensive seed and was reported on the frontier,
+    because the seed was tested against the surface token rather than the
+    resolved headword, so every inflection of a seed word looked undefined.
+    """
+
+    def closure(self, definitions: dict[str, str], seed: set[str]) -> Closure:
+        def resolve(token: str) -> str | None:
+            return token[:-1] if token.endswith("s") and len(token) > 2 else token
+
+        return dictionary_closure(definitions, seed, str.split, resolve)
+
+    def test_an_inflection_of_a_seed_word_is_not_undefined(self) -> None:
+        got = self.closure({"hug": "two arms"}, {"two"} | {"arm"})
+        self.assertEqual(got.undefined, ())
+        self.assertIn("hug", got.grounded)
+
+    def test_the_surface_form_alone_still_counts(self) -> None:
+        got = self.closure({"hug": "two arm"}, {"two", "arm"})
+        self.assertIn("hug", got.grounded)
+
+    def test_a_seed_word_with_a_definition_is_grounded(self) -> None:
+        """It reduces to the seed trivially, definition or not."""
+        got = self.closure({"arm": "a ghost thing"}, {"arm"})
+        self.assertIn("arm", got.grounded)
+
+    def test_a_non_seed_word_still_has_to_earn_it(self) -> None:
+        got = self.closure({"cup": "a ghost thing"}, {"a"})
+        self.assertNotIn("cup", got.grounded)
+        self.assertEqual(set(got.undefined), {"ghost", "thing"})
