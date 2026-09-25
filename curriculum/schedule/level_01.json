@@ -51,6 +51,28 @@
           "primitives": [
             "same-again"
           ]
+        },
+        {
+          "id": "r1.measure",
+          "form": "This one is longer than that one. Hold them together to see.",
+          "teaches": [
+            "measuring"
+          ],
+          "primitives": [
+            "same-again",
+            "looking-tells-you"
+          ]
+        },
+        {
+          "id": "r1.written",
+          "form": "Make a mark so you know later. The mark stays after you forget.",
+          "teaches": [
+            "written_record"
+          ],
+          "primitives": [
+            "marks-stand-for-things",
+            "the-sign-is-not-the-thing"
+          ]
         }
       ]
     },
@@ -200,6 +222,19 @@
           ],
           "primitives": [
             "things-change"
+          ]
+        },
+        {
+          "id": "p1.metal",
+          "form": "The key is metal. Metal is one of the things a thing can be made of.",
+          "teaches": [
+            "metal"
+          ],
+          "revisits": [
+            "material"
+          ],
+          "primitives": [
+            "same-again"
           ]
         }
       ]
@@ -571,6 +606,17 @@
           ],
           "revisits": [
             "living_and_not_living"
+          ]
+        },
+        {
+          "id": "b1.tending",
+          "form": "Add water and the plant keeps living. Give it none and it dies.",
+          "teaches": [
+            "tending"
+          ],
+          "primitives": [
+            "living-things-need-supply",
+            "living-things-die"
           ]
         }
       ]

@@ -115,29 +115,75 @@ a claim class with no level-one concept behind it until now.
 Agentic operations went from three concepts to seven, which is the thinnest
 domain in the set becoming merely small.
 
-### Considered and not added
+### Third pass, 2026-09-24. Declined was the wrong bucket
 
-Recorded because the reasons are the same reasons a third pass should not
-re-raise them.
+**Method correction.** The second pass sorted senses into covered and
+declined, and put eight into declined on the grounds that they belong at a
+later level. **Belonging at a later level is not a reason to drop a
+concept. It is a level assignment.**
 
-**Already covered.** 十 complete by `enough`. 百 and 千 as many by
-`more_and_fewer`. 上 and 下 as rank by `someone_in_charge`. 山 as heap by
-`grouping`. 口 as entrance by `opening_and_shutting`. 手 as skill by
-`can_and_cannot`. 見 as visible by `presence`. 校 as proofread by
-`checking`. 玉 as egg by `animal`. 白 as blank by `emptiness` and as
-confess by `being_told`. 先 as tip and destination by `direction` and
-`sequence`. 目 as ordinal by `number_word_order`. 青 as unripe by the
-planned `growing`. 本 as true by the planned `not_both`.
+The standing decision in `../spec/CURRICULUM_LEVELS.md` is that every topic
+appears at every level as enabling material. A concept assigned to level
+three therefore obliges a level-one concept that enables it. Metal at level
+one is what makes lead and alloy possible at level three, and dropping
+metal because alloy is not level one gets the direction backwards.
 
-**Belongs at a later level.** 足 as addition, which is level two
-mathematics. 空 as in vain, 天 as innate, 名 as reputation, 円 as
-harmonious, 正 as exactly, 文 as culture, 赤 as complete. All abstract or
-figurative, none of them level one.
+**There is also room.** TinyStories ran on roughly fifteen hundred words.
+Level one here licenses 508 content words. The constraint that produced the
+84 percent rejection is gone and has not been replaced by a tighter one.
 
-**Deliberately declined.** 田 as cultivation. It is a real concept and it
-overlaps the planned `mending` and `keeping_going` in cybernetic biological
-systems closely enough that adding it now would prejudge how those are
-scoped.
+**The three buckets, restated.** A sense is covered by an existing concept,
+or it is assigned to a level and owes a level-one enabling concept, or it
+is not a concept at all.
+
+### Wrongly deferred, now at level one
+
+| Concept | Domain | From | Why level one |
+| --- | --- | --- | --- |
+| `tending` | cybernetic biological systems | 田 as cultivation | Adding water to a plant is a preschool act |
+| `measuring` | record keeping | 正 as exactly | Holding two things together to see which is longer |
+| `written_record` | record keeping | 文, 字, 名 | A mark you keep so you know later |
+| `metal` | physical interactions | 金 | The category 銅, 銀 and 鉛 are members of |
+
+**Record keeping was the worst of it.** Its scope names measurement,
+reference frames, unit accounting, provenance, accuracy, precision,
+confidence and currency, and it held five concepts, all of them spatial or
+temporal. It had **no measurement concept at all**, and the domain named
+for keeping records had no concept of a record. Seven now.
+
+`metal` also carries the specialisation your example describes. It is a
+kind of material the way copper, silver and lead are kinds of metal, so the
+one glyph supplies the category, a member, and the relation between them.
+
+### Assigned to a later level, with their level-one enabling concept
+
+Not scheduled, because level two currently covers only the two ablation
+domains. Recorded so the assignment is not lost.
+
+| Sense | Level | Enabled at level one by |
+| --- | --- | --- |
+| 足 as addition | 2 | already scheduled at level two |
+| 正 as precision | 2 | `measuring` |
+| 空 as futility | 3 | `activity` and `change`, doing something and nothing changing |
+| 名 as reputation | 3 | `name`, `opinion`, `being_told` |
+| 文 as culture | 4 | `people_together` |
+| 円 as harmonious | 4 | `physical_property`, smoothness |
+
+### Covered by concepts already present
+
+十 complete by `enough`. 百 and 千 as many by `more_and_fewer`. 上 and 下 as
+rank by `someone_in_charge`. 山 as heap by `grouping`. 口 as entrance by
+`opening_and_shutting`. 手 as skill by `can_and_cannot`. 見 as visible by
+`presence`. 校 as proofread by `checking`. 玉 as egg by `animal`. 白 as
+blank by `emptiness` and as confess by `being_told`. 先 as tip and
+destination by `direction` and `sequence`. 目 as ordinal by
+`number_word_order`. 青 as unripe by the planned `growing`. 本 as true by
+the planned `not_both`. 天 as innate by `raw_and_made`.
+
+### Not a concept
+
+赤 as an intensifier, meaning utterly or completely. It modifies and names
+nothing.
 
 ## Correction, 2026-09-24. The evidence is weaker than this record claimed
 

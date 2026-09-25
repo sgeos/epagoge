@@ -27,6 +27,50 @@ Versioning.
 
 ## 2026-09-24
 
+### Corrected. Declined was the wrong bucket for a later-level concept
+
+- The second pass put eight senses into declined because they belong at a
+  later level. **Belonging at a later level is a level assignment, not a
+  reason to drop a concept.**
+- The standing decision is that every topic appears at every level as
+  enabling material, so a concept at level three **obliges** a level-one
+  concept that enables it. Metal at level one is what makes lead and alloy
+  possible at level three.
+- **There is also room.** TinyStories ran on roughly fifteen hundred words
+  and level one here licenses 508. The constraint that produced the 84
+  percent rejection is gone.
+- **Three buckets, restated.** Covered by an existing concept, or assigned
+  to a level and owing a level-one enabler, or not a concept at all.
+
+### Added. Four concepts the deferral logic had dropped
+
+- `tending` in cybernetic biological systems, from 田. Adding water to a
+  plant is a preschool act, and deferring it was simply wrong.
+- `measuring` and `written_record` in record keeping, from 正 and from 文,
+  字, 名.
+- `metal` in physical interactions, from 金, specialising `material` the
+  way 銅, 銀 and 鉛 specialise it. **One glyph supplying a category, a
+  member, and the relation between them.**
+
+### Found. Record keeping had no measurement and no record
+
+- Its scope names measurement, reference frames, unit accounting,
+  provenance, accuracy, precision, confidence and currency. It held five
+  concepts, **all of them spatial or temporal**.
+- The domain named for keeping records had no concept of a record. Seven
+  concepts now. Graph at **107 nodes**, level one at 49 units.
+
+### Added. Six later-level assignments recorded with their enablers
+
+- Not scheduled, because level two currently covers only the two ablation
+  domains. Recorded so the assignment survives.
+- 正 as precision at level two, enabled by `measuring`. 空 as futility at
+  level three, enabled by `activity` and `change`. 名 as reputation at
+  level three, enabled by `name`, `opinion` and `being_told`. 文 as culture
+  and 円 as harmonious at level four.
+- One sense is genuinely not a concept. 赤 as an intensifier modifies and
+  names nothing.
+
 ### Added. Seven more concepts from a second pass over the eighty kanji
 
 - The first pass treated each character as carrying one sense or two, and
