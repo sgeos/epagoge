@@ -6,7 +6,14 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      # **The whole history, because one check is derived from it.**
+      # word_provenance rebuilds when each word entered the lexicon by
+      # walking every revision of it. The default single-commit checkout
+      # leaves that check unable to answer, and it reported 141 words as
+      # stale that had simply left the lexicon.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: astral-sh/setup-uv@v5
       - uses: actions/setup-python@v5
         with:

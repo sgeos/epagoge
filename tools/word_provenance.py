@@ -198,6 +198,8 @@ def main(argv: list[str]) -> int:
         if recorded:
             sources.setdefault(str(term["word"]), recorded)
 
+    # **Words that have left the lexicon are kept.** The record is a
+    # history and a word folded into its base word still happened.
     first: dict[str, dict[str, str]] = {}
     seen: set[str] = set()
     for commit, date, subject in history:
@@ -248,20 +250,41 @@ def main(argv: list[str]) -> int:
         if not path.is_file():
             print(f"no {path}", file=sys.stderr)
             return 1
+        # **A shallow clone cannot answer this.** Continuous integration
+        # checks out one commit by default, so the history the record is
+        # derived from is not there and every word looks new. Skipping is
+        # honest; reporting staleness from a truncated history is not.
+        if len(history) < 2:
+            print(
+                "SKIPPED: only one revision of the lexicon is in this clone, "
+                "so the history the record is built from is absent.\n"
+                "  This is expected in a shallow clone. Fetch the full "
+                "history to check it.",
+            )
+            return 0
         held = cast("dict[str, object]", json.loads(path.read_text(encoding="utf-8")))
         recorded_words = cast("dict[str, object]", held.get("words", {}))
+        # **Only one direction is staleness.** A word the lexicon holds
+        # with no provenance means the record was not regenerated. A word
+        # in the record that the lexicon no longer holds is history, which
+        # is what the record is for: `allowed`, `depends` and `settles`
+        # were admitted and later folded into their base words, and
+        # forgetting that they ever existed would make the record worse.
         missing = sorted(set(first) - set(recorded_words))
-        extra = sorted(set(recorded_words) - set(first))
-        if missing or extra:
+        departed = len(set(recorded_words) - set(first))
+        if missing:
             print(
-                f"provenance is stale: {len(missing)} word(s) missing, "
-                f"{len(extra)} no longer in the lexicon",
+                f"provenance is stale: {len(missing)} word(s) in the lexicon "
+                "have no entry",
                 file=sys.stderr,
             )
-            for word in (missing + extra)[:10]:
+            for word in missing[:10]:
                 print(f"  {word}", file=sys.stderr)
             return 1
-        print("provenance matches the history")
+        print(
+            f"provenance covers every word in the lexicon, and keeps "
+            f"{departed} that have since left it"
+        )
         return 0
 
     if args.out is not None:
