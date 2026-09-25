@@ -37,16 +37,12 @@ of one corpus rather than two corpora.
 narrative is the reason a book exists. Shuffling inside one would destroy
 the thing the ordering hypothesis is about while claiming to test it.
 
-## Two questions this raises and does not answer
+## One question answered, one still open
 
-**Should the derived stream be tracked?** `CORPUS_TRACKING.md` records an
-operator decision to track `corpus/`, taken when that directory was going
-to hold the authored records. It no longer does. The rationale was
-reviewability and attribution through history, and the books now provide
-both. A derived stream adds bytes without adding auditability, since it can
-be rebuilt, and the same decision records a size risk of roughly 40 GB at
-ten billion tokens. **The premise of that decision has changed and the
-decision is the operator's.**
+**ANSWERED 2026-09-24. The derived stream is ignored**, for the same reason
+a build directory is. `CORPUS_TRACKING.md` carries the amendment. The
+directory stays in the tree by a `.gitkeep`, and `sources/` remains tracked
+because acquired literature cannot be rebuilt.
 
 **Does the ablation order books or records?** `evals/PRE_REGISTRATION.md`
 speaks of a curriculum trajectory against a random topological ordering,

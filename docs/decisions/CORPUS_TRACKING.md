@@ -40,6 +40,31 @@ raises redistribution questions that have not been examined. Because the
 directory is tracked, a licensing error enters history rather than staying
 local. See `sources/README.md`.
 
+## AMENDED 2026-09-24. The derived stream is ignored
+
+**`corpus/` is now ignored for the same reason a build directory is.**
+
+The original direction is not reversed. It was taken when `corpus/` was
+going to hold the authored records, and the benefit it bought was that
+every generated record is reviewable and attributable through history.
+**That benefit is unchanged. It is now bought by the books.**
+
+`curriculum/books/level_N/*.md` holds the authored prose and its
+annotation, and is tracked. A stream under `corpus/` is rebuilt from those
+books by `../../tools/build_corpus.py` under a chosen ordering. Tracking a
+file that can be regenerated adds bytes without adding auditability, and
+the same ordering argument means there is not one stream but one per
+ordering.
+
+`sources/` remains tracked. Terminal-stage literature is acquired rather
+than derived and cannot be rebuilt.
+
+**This removes most of the size exposure recorded above**, since the
+derived stream is the large artifact and the books are the small one. The
+Large File Storage question narrows to `sources/` alone.
+
+The directory is kept in the tree by a `.gitkeep`.
+
 ## Open follow-up
 
 Whether to configure Git Large File Storage, and whether `sources/` should

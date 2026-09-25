@@ -1,41 +1,36 @@
 # corpus/
 
-Generated corpus data, partitioned by curriculum stage.
+**Derived. Do not edit and do not track.** Everything here is rebuilt from
+`../curriculum/books/` by `../tools/build_corpus.py`.
 
-**Status.** Empty. No record has been generated.
+The directory is ignored for the same reason a build directory is, and kept
+in the tree by a `.gitkeep`. `../docs/decisions/CORPUS_ARTIFACTS.md` has
+the reasoning and `../docs/decisions/CORPUS_TRACKING.md` carries the
+amendment to the original direction.
 
-## Tracked in version control
+**Status.** One stream built, `level_1.jsonl`, five documents and 681
+words, from the five books at level one.
 
-This directory is deliberately not ignored, by operator decision of
-2026-09-23. Every generated record is therefore reviewable and
-attributable through history, which is the stated benefit.
+## What is here, and what is not
 
-Two consequences follow and are recorded so they are not rediscovered by
-surprise.
+One JSON object per line, one per **book**, carrying the book identifier,
+its level, and its text. Nothing else.
 
-**Size.** The host volume had 57 GiB free of 926 GiB at project creation.
-Using the common approximation of roughly four bytes per token for English
-text, a corpus of ten billion tokens occupies on the order of 40 GB as
-plain text before any tokenized representation. A corpus at pretraining
-scale will not fit. This is an estimate, not a measurement.
+**The annotation is deliberately absent.** A stream containing the block
+markers that books use would teach a model to emit them. Concepts, claim
+classes, provenance and definitions live in the books, where a reviewer and
+the validators can reach them and the trainer cannot.
 
-**Irreversibility.** Git Large File Storage is installed on this machine
-but is not configured for this repository. Large files therefore enter the
-object store directly, and removing them later requires a history rewrite.
-Configuring Large File Storage is easiest before the first large commit and
-progressively harder afterward.
+## One stream per ordering
 
-## Format
+`build_corpus.py` takes an ordering, so the same books yield a different
+stream under a different one. **The ablation's treatment and control are
+two builds of one corpus rather than two corpora.**
 
-Undecided. Newline-delimited JSON is the natural authoring format because
-it is diffable and greppable, which is what tracking the corpus is for.
-Parquet is the natural format for a compiled corpus handed to a data
-loader. These are not mutually exclusive, and the pair has not yet been
-specified.
+A book is one document and its internal order is never shuffled, because
+the narrative is the reason a book exists.
 
-## Record provenance
+## Provenance is not lost by not tracking this
 
-Every record should carry the generator, the teacher model and version, the
-curriculum stage, the source it was derived from where one exists, and the
-validation verdict that admitted it. A record without provenance cannot be
-audited, and an unauditable corpus defeats the purpose of tracking it.
+Every record is reviewable and attributable through the book that holds it,
+which is tracked. What is not tracked is a file that can be rebuilt.

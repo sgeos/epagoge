@@ -27,6 +27,22 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. The derived stream is ignored, like a build directory
+
+- **Operator decision.** `corpus/*` ignored, kept in the tree by a
+  `.gitkeep`, with `README.md` still tracked.
+- **The original direction is not reversed.** It was taken when `corpus/`
+  was going to hold the authored records, and the benefit it bought was
+  that every generated record is reviewable and attributable through
+  history. **That benefit is unchanged. It is now bought by the books.**
+- `sources/` remains tracked. Terminal-stage literature is acquired rather
+  than derived and cannot be rebuilt.
+- **This removes most of the recorded size exposure**, since the derived
+  stream is the large artifact and the books are the small one. The Large
+  File Storage question narrows to `sources/` alone.
+- `CORPUS_TRACKING.md` amended in place rather than rewritten, and
+  `CORPUS_ARTIFACTS.md` marks its first open question answered.
+
 ### Added. Three artifacts, three readers
 
 - `docs/decisions/CORPUS_ARTIFACTS.md` and `tools/build_corpus.py`. The

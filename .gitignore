@@ -30,9 +30,19 @@ tmp/*
 
 # NOTE ON corpus/ AND sources/
 #
-# These two directories are deliberately NOT ignored. The operator
-# directed on 2026-09-23 that generated corpus data and terminal-stage
-# source literature be tracked in version control rather than excluded.
+# AMENDED 2026-09-24. corpus/ now holds DERIVED output and is ignored
+# for the same reason a build directory is. The books under
+# curriculum/books/ are the authored artifact, and a stream under
+# corpus/ is rebuilt from them by tools/build_corpus.py under a chosen
+# ordering. Tracking it would add bytes without adding auditability.
+#
+# The original 2026-09-23 direction was that generated corpus data be
+# tracked, and it was taken when corpus/ was going to hold the authored
+# records. It no longer does. The benefit that direction bought is
+# unchanged and is now bought by the books instead.
+#
+# sources/ is NOT ignored. Terminal-stage literature is acquired rather
+# than derived and cannot be rebuilt.
 #
 # Two consequences are recorded here so that they are not rediscovered
 # later by surprise.
@@ -40,10 +50,12 @@ tmp/*
 # 1. Size. The host volume had 57 GiB free of 926 GiB at project
 #    creation. A corpus at pretraining scale will exceed that. Git
 #    Large File Storage is installed on this machine but has NOT been
-#    configured for this repository, so large files currently enter
-#    the object store directly and are not removable without a
-#    history rewrite.
+#    configured for this repository. This amendment removes most of
+#    that exposure, since the derived stream is the large artifact.
 #
-# 2. Provenance. Because corpus data is tracked, every generated
-#    record is reviewable and attributable through history. That is
-#    the stated benefit of this arrangement.
+# 2. Provenance. Every record is still reviewable and attributable
+#    through history, through the book that holds it.
+
+corpus/*
+!corpus/.gitkeep
+!corpus/README.md
