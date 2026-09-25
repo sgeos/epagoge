@@ -72,7 +72,7 @@
       ]
     },
     {
-      "word": "allowed",
+      "word": "allow",
       "concept": "allowed_or_not"
     },
     {
@@ -624,6 +624,10 @@
     {
       "word": "clear",
       "concept": "physical_property"
+    },
+    {
+      "word": "clearing",
+      "concept": "emptiness"
     },
     {
       "word": "clever",
@@ -2665,6 +2669,10 @@
       "concept": "correspondence"
     },
     {
+      "word": "palm",
+      "concept": "body_part"
+    },
+    {
       "word": "pan",
       "concept": "household_object"
     },
@@ -2837,6 +2845,10 @@
     {
       "word": "promise",
       "concept": "promise"
+    },
+    {
+      "word": "proof",
+      "concept": "settling_it"
     },
     {
       "word": "proper",
@@ -3574,6 +3586,10 @@
       ]
     },
     {
+      "word": "special",
+      "concept": "same_and_different"
+    },
+    {
       "word": "speed",
       "concept": "moving_and_still"
     },
@@ -3989,6 +4005,10 @@
       "antonyms": [
         "untie"
       ]
+    },
+    {
+      "word": "tight",
+      "concept": "physical_property"
     },
     {
       "word": "time",

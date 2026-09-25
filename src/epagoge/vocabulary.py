@@ -302,9 +302,38 @@ def completeness(vocabulary: Vocabulary) -> Completeness:
     return Completeness(mapped=len(vocabulary.terms), unmapped=unmapped)
 
 
+TYPOGRAPHIC: Final[dict[int, str]] = str.maketrans(
+    {
+        "\u2018": "'",
+        "\u2019": "'",
+        "\u201a": "'",
+        "\u201c": '"',
+        "\u201d": '"',
+        "\u2013": "-",
+        "\u2014": "-",
+        "\u2026": "...",
+        "\u00a0": " ",
+    }
+)
+"""Typographic punctuation folded to the ASCII the word pattern matches.
+
+**A curly apostrophe cost four good sentences in one round.** The teacher
+writes `stone\u2019s`, the pattern only knows `'`, so the word split into
+`stone` and a bare `s`, and the line was rejected for a word outside the
+level that was never a word. Folding is done once here and used by both
+this module and the tokeniser, so the two cannot disagree about what a
+word is.
+"""
+
+
+def fold_typography(text: str) -> str:
+    """Replace typographic punctuation with its ASCII equivalent."""
+    return text.translate(TYPOGRAPHIC)
+
+
 def tokenise(text: str) -> list[str]:
     """Lowercased word forms. Punctuation and digits are handled separately."""
-    return WORD_RE.findall(text.lower())
+    return WORD_RE.findall(fold_typography(text).lower())
 
 
 def unlicensed(vocabulary: Vocabulary, text: str, level: int) -> list[str]:

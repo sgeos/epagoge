@@ -19,7 +19,7 @@ import re
 from dataclasses import dataclass, field
 from typing import Final
 
-from epagoge.vocabulary import Vocabulary
+from epagoge.vocabulary import Vocabulary, fold_typography
 
 WORD_RE: Final[re.Pattern[str]] = re.compile(
     r"[a-z]+(?:'(?!s\b)[a-z]+)*|'s\b|[0-9]+|[.,!?;:]"
@@ -54,7 +54,9 @@ class Tokeniser:
 
     def encode(self, text: str) -> list[int]:
         unk = self.ids[UNK]
-        return [self.ids.get(t, unk) for t in WORD_RE.findall(text.lower())]
+        return [
+            self.ids.get(t, unk) for t in WORD_RE.findall(fold_typography(text).lower())
+        ]
 
     def decode(self, tokens: list[int]) -> str:
         return " ".join(
@@ -63,7 +65,11 @@ class Tokeniser:
 
     def unknown(self, text: str) -> list[str]:
         """Tokens the lexicon does not carry. Should be empty for a valid corpus."""
-        return [t for t in WORD_RE.findall(text.lower()) if t not in self.ids]
+        return [
+            t
+            for t in WORD_RE.findall(fold_typography(text).lower())
+            if t not in self.ids
+        ]
 
 
 def build(vocabulary: Vocabulary, level: int) -> Tokeniser:

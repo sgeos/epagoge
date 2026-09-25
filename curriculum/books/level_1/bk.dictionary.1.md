@@ -51,7 +51,7 @@
     "dict.1.ask": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ask"}, "defines": {"kind": "word", "target": "ask"}},
     "dict.1.asleep": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:asleep"}, "defines": {"kind": "word", "target": "asleep"}},
     "dict.1.always": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:always"}, "defines": {"kind": "word", "target": "always"}},
-    "dict.1.allowed": {"concepts": ["allowed_or_not"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:allowed"}, "defines": {"kind": "word", "target": "allowed"}},
+    "dict.1.allow": {"concepts": ["allowed_or_not"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:allow"}, "defines": {"kind": "word", "target": "allow"}},
     "dict.1.appear": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:appear"}, "defines": {"kind": "word", "target": "appear"}},
     "dict.1.check": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:check"}, "defines": {"kind": "word", "target": "check"}},
     "dict.1.happen": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:happen"}, "defines": {"kind": "word", "target": "happen"}},
@@ -317,8 +317,8 @@ Living and not living at the same time.
 [dict.1.always]
 Happens over and over.
 
-[dict.1.allowed]
-Able to do something.
+[dict.1.allow]
+To let someone do a thing.
 
 [dict.1.appear]
 Come into view.

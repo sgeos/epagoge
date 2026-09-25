@@ -11,6 +11,7 @@
     "along",
     "also",
     "am",
+    "among",
     "an",
     "and",
     "another",
@@ -170,6 +171,7 @@
     "why",
     "will",
     "with",
+    "without",
     "would",
     "yes",
     "yet",
@@ -299,9 +301,15 @@
       "level": 1
     },
     {
-      "word": "allowed",
+      "word": "allow",
       "concept": "allowed_or_not",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "allowed",
+        "allowing",
+        "allows"
+      ]
     },
     {
       "word": "alone",
@@ -1272,6 +1280,15 @@
       "level": 1
     },
     {
+      "word": "clearing",
+      "concept": "emptiness",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "clearings"
+      ]
+    },
+    {
       "word": "clever",
       "concept": "being_told",
       "level": 1
@@ -2145,9 +2162,11 @@
       "word": "face",
       "concept": "body_part",
       "level": 1,
-      "pos": "noun",
+      "pos": "noun verb",
       "forms": [
-        "faces"
+        "faced",
+        "faces",
+        "facing"
       ]
     },
     {
@@ -4444,6 +4463,15 @@
       ]
     },
     {
+      "word": "palm",
+      "concept": "body_part",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "palms"
+      ]
+    },
+    {
       "word": "pan",
       "concept": "household_object",
       "level": 1,
@@ -4803,6 +4831,15 @@
         "promised",
         "promises",
         "promising"
+      ]
+    },
+    {
+      "word": "proof",
+      "concept": "settling_it",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "proofs"
       ]
     },
     {
@@ -6036,6 +6073,11 @@
       ]
     },
     {
+      "word": "special",
+      "concept": "same_and_different",
+      "level": 1
+    },
+    {
       "word": "speed",
       "concept": "moving_and_still",
       "level": 1
@@ -6745,6 +6787,11 @@
         "ties",
         "tying"
       ]
+    },
+    {
+      "word": "tight",
+      "concept": "physical_property",
+      "level": 1
     },
     {
       "word": "time",
@@ -7565,26 +7612,38 @@
     "ancient": "very old",
     "anymore": "now",
     "area": "space",
+    "aside": "to one side",
     "attention": "looking",
     "available": "there to use",
+    "beneath": "under",
+    "beside": "next to",
     "beyond": "past",
+    "can't": "cannot",
     "cause": "makes",
     "causing": "making",
     "center": "middle",
     "connects": "joins",
     "corresponds": "goes with",
+    "damaged": "broken",
+    "didn't": "did not",
+    "don't": "do not",
     "duration": "how long",
     "during": "when",
     "especially": "most of all",
     "event": "thing that happens",
+    "evidence": "what shows it",
+    "faintly": "a little",
     "fake": "not real",
     "final": "last",
     "form": "shape",
+    "golden": "yellow",
     "great": "big",
     "greater": "more",
     "human": "person",
     "imagined": "pretend",
     "information": "what is known",
+    "isn't": "is not",
+    "it's": "it is",
     "item": "thing",
     "length": "how long",
     "location": "place",
@@ -7593,15 +7652,24 @@
     "parchment": "paper",
     "position": "place",
     "present": "here",
+    "realized": "knew",
+    "rely": "depend on",
     "sequence": "order",
     "similar": "like",
     "single": "one",
     "specific": "that one",
     "sunlight": "light from the sun",
+    "that's": "that is",
+    "there's": "there is",
+    "they're": "they are",
     "thickness": "how thick",
     "though": "but",
     "unknown": "not known",
-    "windowsill": "the edge of the window"
+    "unseen": "not seen",
+    "wasn't": "was not",
+    "windowsill": "the edge of the window",
+    "won't": "will not",
+    "you're": "you are"
   },
   "ostensive": [
     "air",

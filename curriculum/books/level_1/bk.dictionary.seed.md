@@ -576,7 +576,12 @@
     "dict.1.blink": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blink"}, "defines": {"kind": "word", "target": "blink"}},
     "dict.1.soak": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:soak"}, "defines": {"kind": "word", "target": "soak"}},
     "dict.1.magic": {"concepts": ["real_and_pretend"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:magic"}, "defines": {"kind": "word", "target": "magic"}},
-    "dict.1.nearby": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nearby"}, "defines": {"kind": "word", "target": "nearby"}}
+    "dict.1.nearby": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nearby"}, "defines": {"kind": "word", "target": "nearby"}},
+    "dict.1.tight": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tight"}, "defines": {"kind": "word", "target": "tight"}},
+    "dict.1.proof": {"concepts": ["settling_it"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:proof"}, "defines": {"kind": "word", "target": "proof"}},
+    "dict.1.special": {"concepts": ["same_and_different"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:special"}, "defines": {"kind": "word", "target": "special"}},
+    "dict.1.palm": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:palm"}, "defines": {"kind": "word", "target": "palm"}},
+    "dict.1.clearing": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:clearing"}, "defines": {"kind": "word", "target": "clearing"}}
   }
 }
 ---
@@ -2287,3 +2292,18 @@ Something that seems real but cannot happen.
 
 [dict.1.nearby]
 Close to here.
+
+[dict.1.tight]
+Held close and hard to move.
+
+[dict.1.proof]
+What shows that a thing is true.
+
+[dict.1.special]
+Not like the others.
+
+[dict.1.palm]
+The inside of your hand.
+
+[dict.1.clearing]
+An open space among the trees.
