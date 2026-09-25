@@ -16,6 +16,20 @@
       ]
     },
     {
+      "word": "accident",
+      "concept": "accident",
+      "synonyms": [
+        "mishap"
+      ]
+    },
+    {
+      "word": "add",
+      "concept": "addition",
+      "antonyms": [
+        "subtract"
+      ]
+    },
+    {
       "word": "afraid",
       "concept": "feeling",
       "synonyms": [
@@ -56,10 +70,21 @@
       "concept": "someone_in_charge"
     },
     {
+      "word": "already",
+      "concept": "sequence"
+    },
+    {
       "word": "always",
       "concept": "cycle",
       "antonyms": [
         "never"
+      ]
+    },
+    {
+      "word": "amount",
+      "concept": "quantity",
+      "synonyms": [
+        "quantity"
       ]
     },
     {
@@ -253,6 +278,10 @@
       ]
     },
     {
+      "word": "bicycle",
+      "concept": "household_object"
+    },
+    {
       "word": "big",
       "concept": "physical_property",
       "antonyms": [
@@ -415,6 +444,13 @@
       "concept": "raw_and_made"
     },
     {
+      "word": "bunch",
+      "concept": "grouping",
+      "synonyms": [
+        "group"
+      ]
+    },
+    {
       "word": "burn",
       "concept": "heat"
     },
@@ -479,6 +515,10 @@
     {
       "word": "cause",
       "concept": "cause_and_effect"
+    },
+    {
+      "word": "chain",
+      "concept": "causal_chain"
     },
     {
       "word": "chair",
@@ -580,6 +620,10 @@
       "concept": "physical_property"
     },
     {
+      "word": "column",
+      "concept": "place_value"
+    },
+    {
       "word": "come",
       "concept": "",
       "antonyms": [
@@ -657,6 +701,10 @@
     {
       "word": "crack",
       "concept": "things_break"
+    },
+    {
+      "word": "crash",
+      "concept": "accident"
     },
     {
       "word": "cross",
@@ -762,6 +810,10 @@
     {
       "word": "dig",
       "concept": "activity"
+    },
+    {
+      "word": "digit",
+      "concept": "place_value"
     },
     {
       "word": "direction",
@@ -904,6 +956,10 @@
       "concept": "same_and_different"
     },
     {
+      "word": "eleven",
+      "concept": "natural_number"
+    },
+    {
       "word": "else",
       "concept": "self_and_other"
     },
@@ -989,6 +1045,10 @@
       "concept": "body_part"
     },
     {
+      "word": "fail",
+      "concept": "failing"
+    },
+    {
       "word": "fair",
       "concept": "good_and_bad",
       "antonyms": [
@@ -1064,6 +1124,10 @@
       "synonyms": [
         "little"
       ]
+    },
+    {
+      "word": "fifty",
+      "concept": "natural_number"
     },
     {
       "word": "fill",
@@ -1169,6 +1233,10 @@
       "concept": "plant"
     },
     {
+      "word": "forever",
+      "concept": "duration"
+    },
+    {
       "word": "forget",
       "concept": "knowing",
       "antonyms": [
@@ -1178,6 +1246,10 @@
     {
       "word": "fork",
       "concept": "household_object"
+    },
+    {
+      "word": "forty",
+      "concept": "natural_number"
     },
     {
       "word": "forward",
@@ -1330,6 +1402,14 @@
     {
       "word": "ground",
       "concept": "material"
+    },
+    {
+      "word": "group",
+      "concept": "grouping",
+      "synonyms": [
+        "bunch",
+        "pile"
+      ]
     },
     {
       "word": "grow",
@@ -1537,6 +1617,10 @@
       "concept": "number_word_order"
     },
     {
+      "word": "hundred",
+      "concept": "place_value"
+    },
+    {
       "word": "hungry",
       "concept": "need"
     },
@@ -1660,6 +1744,10 @@
       "concept": "household_object"
     },
     {
+      "word": "knock",
+      "concept": "causal_chain"
+    },
+    {
       "word": "know",
       "concept": "being_told"
     },
@@ -1707,6 +1795,10 @@
       "antonyms": [
         "cry"
       ]
+    },
+    {
+      "word": "lead",
+      "concept": "causal_chain"
     },
     {
       "word": "leader",
@@ -2017,8 +2109,19 @@
       "concept": "having"
     },
     {
+      "word": "minus",
+      "concept": "subtraction"
+    },
+    {
       "word": "minute",
       "concept": "duration"
+    },
+    {
+      "word": "mishap",
+      "concept": "accident",
+      "synonyms": [
+        "accident"
+      ]
     },
     {
       "word": "missing",
@@ -2270,6 +2373,10 @@
       "concept": "number_word_order"
     },
     {
+      "word": "ones",
+      "concept": "place_value"
+    },
+    {
       "word": "open",
       "concept": "opening_and_shutting",
       "antonyms": [
@@ -2415,6 +2522,13 @@
       "concept": "things_break"
     },
     {
+      "word": "pile",
+      "concept": "grouping",
+      "synonyms": [
+        "group"
+      ]
+    },
+    {
       "word": "place",
       "concept": "spatial_position"
     },
@@ -2519,6 +2633,13 @@
       ]
     },
     {
+      "word": "quantity",
+      "concept": "quantity",
+      "synonyms": [
+        "amount"
+      ]
+    },
+    {
       "word": "queen",
       "concept": "someone_in_charge",
       "antonyms": [
@@ -2593,6 +2714,10 @@
       ]
     },
     {
+      "word": "rearrange",
+      "concept": "conservation_of_number"
+    },
+    {
       "word": "record",
       "concept": "written_record",
       "synonyms": [
@@ -2615,6 +2740,13 @@
       "concept": "knowing",
       "antonyms": [
         "forget"
+      ]
+    },
+    {
+      "word": "remove",
+      "concept": "subtraction",
+      "synonyms": [
+        "subtract"
       ]
     },
     {
@@ -2843,6 +2975,10 @@
     {
       "word": "set",
       "concept": "correspondence"
+    },
+    {
+      "word": "set",
+      "concept": "grouping"
     },
     {
       "word": "settles",
@@ -3309,6 +3445,16 @@
       "concept": "material"
     },
     {
+      "word": "subtract",
+      "concept": "subtraction",
+      "synonyms": [
+        "remove"
+      ],
+      "antonyms": [
+        "add"
+      ]
+    },
+    {
       "word": "sun",
       "concept": "cycle",
       "antonyms": [
@@ -3350,6 +3496,10 @@
       "concept": "standing_for"
     },
     {
+      "word": "system",
+      "concept": "component_and_system"
+    },
+    {
       "word": "table",
       "concept": "household_object"
     },
@@ -3359,6 +3509,10 @@
       "antonyms": [
         "give"
       ]
+    },
+    {
+      "word": "taken",
+      "concept": "subtraction"
     },
     {
       "word": "tale",
@@ -3418,8 +3572,16 @@
       ]
     },
     {
+      "word": "ten",
+      "concept": "quantity"
+    },
+    {
       "word": "tend",
       "concept": "tending"
+    },
+    {
+      "word": "tens",
+      "concept": "place_value"
     },
     {
       "word": "term",
@@ -3483,6 +3645,10 @@
     {
       "word": "thirsty",
       "concept": "need"
+    },
+    {
+      "word": "thirty",
+      "concept": "natural_number"
     },
     {
       "word": "thousand",
@@ -3624,6 +3790,14 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "twelve",
+      "concept": "natural_number"
+    },
+    {
+      "word": "twenty",
+      "concept": "natural_number"
+    },
+    {
       "word": "twice",
       "concept": "cycle"
     },
@@ -3637,6 +3811,10 @@
       "antonyms": [
         "able"
       ]
+    },
+    {
+      "word": "unchanged",
+      "concept": "conservation_of_number"
     },
     {
       "word": "uncle",

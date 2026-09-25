@@ -33,6 +33,17 @@ def main(argv: list[str]) -> int:
     seed = set(vocabulary.seed_words())
     books, records = load_book_dir(Path(argv[2]))
     definitions = word_definitions(books, [cast(dict[str, object], r) for r in records])
+    # **Level two builds on a closed level one.** Earlier levels count as
+    # already grounded, or every level above the first starts from nothing.
+    for lower in range(1, level):
+        earlier = Path(argv[2]).parent / f"level_{lower}"
+        if not earlier.exists():
+            continue
+        past_books, past_records = load_book_dir(earlier)
+        inherited = word_definitions(
+            past_books, [cast(dict[str, object], r) for r in past_records]
+        )
+        definitions = {**inherited, **definitions}
 
     def resolve(token: str) -> str | None:
         found = vocabulary.lookup(token)

@@ -54,7 +54,11 @@ run "corpus"             env PYTHONPATH=src python3 tools/validate_corpus.py cur
 run "schedule"           env PYTHONPATH=src python3 tools/validate_schedule.py curriculum/graph/concepts.json curriculum/primitives.json curriculum/schedule/level_01.json curriculum/schedule/level_02.json
 run "books"              env PYTHONPATH=src python3 tools/validate_books.py curriculum/graph/concepts.json curriculum/vocabulary.json curriculum/schedule curriculum/books/level_1
 run "closure"            env PYTHONPATH=src python3 tools/validate_closure.py curriculum/vocabulary.json curriculum/books/level_1 1
+run "closure L2"         env PYTHONPATH=src python3 tools/validate_closure.py curriculum/vocabulary.json curriculum/books/level_2 2
+
 run "thesaurus"          env PYTHONPATH=src python3 tools/validate_thesaurus.py curriculum/thesaurus.json curriculum/vocabulary.json 1
+run "thesaurus L2"       env PYTHONPATH=src python3 tools/validate_thesaurus.py curriculum/thesaurus.json curriculum/vocabulary.json 2
+
 run "disclosure scan"    ./tools/scrub_scan.sh
 rm -f "$CORPUS"
 

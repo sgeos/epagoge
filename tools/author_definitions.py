@@ -21,7 +21,13 @@ import sys
 from pathlib import Path
 from typing import cast
 
-from epagoge.book import dictionary_closure, parse_book, render_book
+from epagoge.book import (
+    dictionary_closure,
+    load_book_dir,
+    parse_book,
+    render_book,
+    word_definitions,
+)
 from epagoge.vocabulary import load_vocabulary, tokenise, unlicensed
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -41,6 +47,10 @@ def main(argv: list[str]) -> int:
     seed = set(vocabulary.seed_words())
     headwords = {term.word for term in vocabulary.terms}
     book_dir = ROOT / f"curriculum/books/level_{args.level}"
+    # **Level two builds on a closed level one.** Definitions from earlier
+    # levels are already grounded, so the closure check has to see them or
+    # every level above the first starts from nothing.
+    lower_dirs = [ROOT / f"curriculum/books/level_{n}" for n in range(1, args.level)]
 
     def resolve(token: str) -> str | None:
         found = vocabulary.lookup(token)
@@ -55,6 +65,14 @@ def main(argv: list[str]) -> int:
             defines = cast(dict[str, object], entry.get("defines") or {})
             if defines.get("kind") == "word":
                 current[str(defines["target"])] = str(entry["content"])
+    inherited: dict[str, str] = {}
+    for lower in lower_dirs:
+        if not lower.exists():
+            continue
+        books, records = load_book_dir(lower)
+        inherited.update(
+            word_definitions(books, [cast(dict[str, object], r) for r in records])
+        )
 
     problems: list[str] = []
     for word, text in drafts.items():
@@ -64,7 +82,7 @@ def main(argv: list[str]) -> int:
         if outside:
             problems.append(f"{word}: outside level {args.level}: {' '.join(outside)}")
 
-    trial = dict(current)
+    trial = {**inherited, **current}
     trial.update(drafts)
     closure = dictionary_closure(trial, seed, tokenise, resolve)
     for word in drafts:

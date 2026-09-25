@@ -170,3 +170,49 @@ class TestShipped(unittest.TestCase):
         self.assertIsNotNone(judgement)
         self.assertIn("left", direction.antonyms)  # type: ignore[union-attr]
         self.assertIn("wrong", judgement.antonyms)  # type: ignore[union-attr]
+
+
+class TestLevelScope(unittest.TestCase):
+    """An entry above the level is out of scope, not in breach.
+
+    Validating at level one asks whether the level-one thesaurus is sound.
+    A level-two entry naming a level-two word is correct, and judging it at
+    level one reported seventeen false violations.
+    """
+
+    def vocab2(self) -> Vocabulary:
+        return Vocabulary(
+            terms=(
+                Term(word="hot", concept="c", level=1),
+                Term(word="add", concept="m", level=2),
+                Term(word="subtract", concept="m", level=2),
+            )
+        )
+
+    def test_a_higher_level_entry_is_not_judged(self) -> None:
+        t = Thesaurus(
+            (
+                Entry("hot", "c"),
+                Entry("add", "m", ("subtract",)),
+                Entry("subtract", "m", ("add",)),
+            )
+        )
+        self.assertEqual(validate(t, self.vocab2(), 1), [])
+
+    def test_the_same_pair_passes_at_its_own_level(self) -> None:
+        t = Thesaurus(
+            (
+                Entry("hot", "c"),
+                Entry("add", "m", ("subtract",)),
+                Entry("subtract", "m", ("add",)),
+            )
+        )
+        self.assertEqual(validate(t, self.vocab2(), 2), [])
+
+    def test_a_level_one_entry_naming_a_level_two_word_still_fails(self) -> None:
+        t = Thesaurus(
+            (Entry("hot", "c", ("add",)), Entry("add", "m"), Entry("subtract", "m"))
+        )
+        self.assertIn(
+            "missing-antonym", [x.code for x in validate(t, self.vocab2(), 1)]
+        )

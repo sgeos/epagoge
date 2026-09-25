@@ -80,6 +80,12 @@ def validate(
     }
 
     for entry in thesaurus.entries:
+        # **An entry above the level is out of scope, not in breach.**
+        # Validating at level one asks whether the level-one thesaurus is
+        # sound. A level-two entry naming a level-two word is correct and
+        # judging it here reported seventeen false violations.
+        if entry.concept != "" and not admissible_at(vocabulary, entry.word, level):
+            continue
         if entry.sense in seen:
             out.append(
                 Violation(
@@ -139,6 +145,8 @@ def validate(
     # function word carries no concept and so has no entry to hold the
     # other half.
     for entry in thesaurus.entries:
+        if entry.concept != "" and not admissible_at(vocabulary, entry.word, level):
+            continue
         for other in entry.antonyms:
             if other in licensed and entry.word not in thesaurus.antonyms_of(other):
                 out.append(

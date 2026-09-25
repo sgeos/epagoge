@@ -219,9 +219,15 @@
       "level": 6
     },
     {
-      "word": "adding",
+      "word": "add",
       "concept": "addition",
-      "level": 2
+      "level": 2,
+      "pos": "verb",
+      "forms": [
+        "added",
+        "adding",
+        "adds"
+      ]
     },
     {
       "word": "addition",
@@ -1138,7 +1144,12 @@
     {
       "word": "cloth",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "clothes",
+        "cloths"
+      ],
+      "pos": "noun"
     },
     {
       "word": "cloud",
@@ -2947,6 +2958,17 @@
       ]
     },
     {
+      "word": "lead",
+      "concept": "causal_chain",
+      "level": 2,
+      "pos": "verb",
+      "forms": [
+        "leading",
+        "leads",
+        "led"
+      ]
+    },
+    {
       "word": "leader",
       "concept": "someone_in_charge",
       "level": 1,
@@ -2954,16 +2976,6 @@
       "forms": [
         "leaders"
       ]
-    },
-    {
-      "word": "leading",
-      "concept": "causal_chain",
-      "level": 2
-    },
-    {
-      "word": "leads",
-      "concept": "causal_chain",
-      "level": 2
     },
     {
       "word": "leaf",
@@ -2990,11 +3002,6 @@
       "word": "least",
       "concept": "more_and_fewer",
       "level": 1
-    },
-    {
-      "word": "led",
-      "concept": "causal_chain",
-      "level": 2
     },
     {
       "word": "leg",
@@ -5624,7 +5631,7 @@
     {
       "word": "ten",
       "concept": "quantity",
-      "level": 6
+      "level": 2
     },
     {
       "word": "tend",
