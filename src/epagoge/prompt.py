@@ -340,6 +340,71 @@ def book(
     return "\n".join(lines)
 
 
+def question_book(
+    subject: str,
+    subject_form: str,
+    words: Mapping[str, str],
+    level: int,
+    admissible: Sequence[str],
+    pairs: int = 10,
+) -> str:
+    """Prompt for a picture book that asks and answers.
+
+    **The corpus could not teach a model to answer because it never showed
+    one being answered.** One question mark in 4,419 level-one records and
+    no question with an answer after it. A model reproduces the forms it
+    was shown, so a corpus that only ever states produces a model that
+    only ever continues.
+
+    Operator direction 2026-09-25: the question-and-answer picture book is
+    a real form and a rich one for reinforcing a concept, because the
+    question names the thing and the answer says it again in other words.
+
+    Each spread is one exchange, because a spread is a page turn and the
+    turn is where the answer lands.
+    """
+    if not admissible:
+        raise ValueError("no admissible vocabulary supplied")
+    if pairs < 1:
+        raise ValueError("a question book needs at least one exchange")
+
+    lines = [
+        f"Write a question-and-answer picture book for a reading level {level} corpus.",
+        "",
+        "THE HARDEST CONSTRAINT IS THE WORD LIST AT THE BOTTOM.",
+        "Every word you write must appear in it.",
+        "",
+        f"The book is about: {subject_form}",
+        "",
+        "Write these lines, in this order and in this exact format:",
+        "",
+        "SUBJECT: <one sentence saying what the book is about>",
+        "WORD <word>: <what that word means>",
+        "ASK: <a question> | <its answer>",
+        "",
+        "One SUBJECT line. Then one WORD line for each of these words:",
+    ]
+    lines += [f"  {word}" for word in sorted(words)]
+    lines += [
+        "",
+        f"Then {pairs} ASK lines. Each is a question, then a vertical bar,",
+        "then the answer to that question.",
+        "",
+        "Rules for the ASK lines:",
+        "  - The question ends with a question mark.",
+        "  - The answer is a full sentence ending with a full stop, and it",
+        "    answers the question rather than changing the subject.",
+        "  - The answer says the thing again in other words, because that",
+        "    is what makes the book teach rather than test.",
+        "  - Later questions build on earlier answers.",
+        "  - No word outside the list below.",
+        "",
+        "Use ONLY these words, in any order and any inflection:",
+        "  " + " ".join(sorted(admissible)),
+    ]
+    return "\n".join(lines)
+
+
 def fill_spread(
     subject_form: str,
     before: str,

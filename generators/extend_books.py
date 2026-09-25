@@ -60,6 +60,12 @@ def main(argv: list[str]) -> int:
         if done >= args.limit:
             break
         book, records = parse_book(path.read_text(encoding="utf-8"), path.name)
+        # **A question book is topped up in its own form or not at all.**
+        # Appending a story line to one would leave a book that asks seven
+        # times and then narrates, which is neither form and teaches
+        # neither. generate_question_books.py fills these.
+        if book.form and book.form != "narrative":
+            continue
         short = SPREADS - len(book.records)
         entries = [cast(dict[str, object], r) for r in records]
         if short < 0:

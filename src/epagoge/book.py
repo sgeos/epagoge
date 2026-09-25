@@ -79,6 +79,19 @@ class Book:
     teaches: str = ""
     """What a reader is meant to come away with, in ordinary English."""
 
+    form: str = ""
+    """How the book is written: ``narrative``, ``question``, ``reference``.
+
+    **A form is what a reader learns to do, not only what they learn.**
+    Measured 2026-09-25, the level-one corpus held one question mark in
+    4,419 records and no instance of a question being answered, so a model
+    trained on it continued a question instead of answering. A corpus that
+    only ever states cannot teach anything else.
+
+    Empty where unrecorded, which is every book written before the field
+    existed. Those are narrative and the field does not claim it for them.
+    """
+
     author: str = ""
     """Who wrote it. A person, or the teacher model and its operator."""
 
@@ -755,6 +768,7 @@ def book_from_json(payload: object, where: str = "book") -> tuple[Book, list[obj
         records=tuple(ids),
         about=_optional(fields, "about", where),
         teaches=_optional(fields, "teaches", where),
+        form=_optional(fields, "form", where),
         author=_optional(fields, "author", where),
         licence=_optional(fields, "licence", where),
         first_published=_optional(fields, "first_published", where),
@@ -826,6 +840,7 @@ def book_head(book: Book) -> dict[str, object]:
     # Omitted rather than written empty, so a book that has never been
     # described does not carry two blank fields pretending otherwise.
     for key, value in (
+        ("form", book.form),
         ("author", book.author),
         ("licence", book.licence),
         ("first_published", book.first_published),
