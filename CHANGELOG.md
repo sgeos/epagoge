@@ -27,6 +27,46 @@ Versioning.
 
 ## 2026-09-24
 
+### Corrected. Mainland China does name its characters, and the comparison was wrong
+
+- `CHARACTER_STANDARDS.md` said mainland China fixes how many and not
+  which. **Wrong, and challenged rather than caught by a check.**
+- The 2022 standard carries two appendices. **《识字、写字教学基本字表》 at
+  300 characters** and **《义务教育语文课程常用字表》 at 3500** in two
+  tables. The 1600 and 800 counts are targets drawn against named lists.
+- **The right comparator is Japan's 80 against mainland's 300**, both named
+  national first-level lists. The earlier comparison set a per-grade list
+  against a two-year-band target, which is not a like comparison.
+
+### Found. The mainland basic table is selected on a generative criterion
+
+- Its 300 are chosen as simple in form, high in frequency, and **mostly
+  usable as structural components of other characters**. Learn these and
+  the rest decompose. Japan's list is not stated on that basis.
+- **We already measure the analogue and have never used it to select.**
+  `downstream_reach` counts how many concepts depend on a given one, which
+  is what "serves as a structural component" means here. Level one was
+  selected on concreteness and prerequisite depth. Downstream reach belongs
+  in that selection too, and the metric already exists and is tested.
+
+### Found. Taiwan has no codified first-level list
+
+- 常用國字標準字體表, 1982, fixes **4808** standard forms.
+  國小學童常用字詞調查報告書, 2000, reports frequency over elementary
+  readers with **5021** characters.
+- Standard forms and frequency data, and no base set. **A de facto
+  convergence across publishers is plausible and was not verified.**
+
+### Untested, with the obstacle named
+
+- Whether Japan's 80 are mostly present in mainland's 300 was not run. The
+  300-character list could not be extracted from any source reached, and a
+  raw intersection would undercount because shinjitai and simplified forms
+  diverge for several of the 80.
+- Whether the 61-character overlap study normalised across simplified and
+  traditional is not stated in what was read. If it did not, that figure
+  understates agreement.
+
 ### Added. Comparative analysis of three character standards
 
 - `docs/decisions/CHARACTER_STANDARDS.md`. Epistemic status marked

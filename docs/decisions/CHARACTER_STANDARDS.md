@@ -14,7 +14,7 @@ and is not established.
 | | Japan | Taiwan | Mainland China |
 | --- | --- | --- | --- |
 | Codified unit | grade | publisher's grade | two-grade band |
-| The standard fixes | **which characters**, by name | **neither** | **how many**, not which |
+| The standard fixes | **which characters**, by name | **neither** | **which and how many**, see correction |
 | First level, read | **80** | **670** cumulative | **1600** across grades 1 and 2 |
 | First level, write | previous grade's list | **547** | **800** |
 | First volume | not applicable | ~94 *derived* | ~300 *derived* |
@@ -29,6 +29,71 @@ Derived. A published comparison of mainland and Taiwan first-grade first
 volumes reports 61 characters in common, 20.33 percent of one and 64.89
 percent of the other. Those percentages imply volumes of roughly 300 and
 94.
+
+## Correction, 2026-09-24. Mainland China does name its characters
+
+**The table above said mainland China fixes how many and not which. That
+was wrong**, and it was challenged rather than caught by a check.
+
+The 2022 standard carries two character-table appendices.
+
+**《识字、写字教学基本字表》, 300 characters.** Selected as simple in
+form, high in frequency, and **mostly usable as structural components of
+other characters**. Drawn from the common-character table, and designated
+as important content for the first segment of primary textbooks.
+
+**《义务教育语文课程常用字表》, 3500 characters** in two tables.
+
+So the 1600 and 800 counts are targets drawn against named lists, not
+counts floating free of one.
+
+### This changes the right comparator
+
+**Japan's 80 should be set against mainland's 300, not against 1600.** Both
+are named, national, first-level lists intended for the opening stage of
+schooling. The earlier comparison put a per-grade list against a
+two-year-band target, which is not a like comparison.
+
+### The selection criterion is the finding, and it is different in kind
+
+Mainland's 300 are chosen partly for **composing into other characters**.
+That is a generative criterion. Learn these and the rest decompose.
+
+Japan's list is not stated on that basis. Taiwan's ministry states no basis
+because it names no list.
+
+**We already measure the analogue and have never used it to select.**
+`downstream_reach` counts how many concepts depend on a given one, which is
+exactly "serves as a structural component of others". Level one was
+selected on concreteness and prerequisite depth. The mainland basic table
+is an argument that downstream reach belongs in that selection too, and it
+is a cheap change because the metric exists and is tested.
+
+### What Taiwan actually has
+
+Two artifacts, neither of them a first-level list. The 常用國字標準字體表
+of 1982 fixes **4808** standard character forms. The 國小學童常用字詞調查
+報告書 of 2000 reports frequency over elementary readers with **5021**
+characters in its frequency table.
+
+So Taiwan has standard forms and frequency data and no codified base set.
+**A de facto convergence across publishers is plausible and was not
+verified.** Nothing found establishes one.
+
+### Untested, with the obstacle named
+
+**Whether Japan's 80 are mostly present in mainland's 300** is the obvious
+next check and was not run. The obstacle is not the idea, it is that the
+300-character list could not be extracted from any source reached, and that
+a raw intersection would undercount badly because Japanese shinjitai and
+mainland simplified forms diverge for several of the 80. 気 against 气, 円
+against 圆, 糸 against 丝, 貝 against 贝, 車 against 车. A normalisation
+table is needed before the number would mean anything.
+
+**A related caveat on the 61-character overlap cited above.** That
+comparison is between simplified and traditional textbooks, and whether the
+study normalised across scripts is not stated in what was read. If it did
+not, the figure understates agreement.
 
 ## Every one of them separates recognising from producing. Three ways
 
