@@ -1,5 +1,7 @@
 # Epagoge
 
+[![check](https://github.com/sgeos/epagoge/actions/workflows/check.yml/badge.svg)](https://github.com/sgeos/epagoge/actions/workflows/check.yml)
+
 A graded synthetic corpus and curriculum for training a
 falsification-oriented foundation model.
 

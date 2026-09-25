@@ -2,6 +2,16 @@ name: check
 
 on: [push, pull_request]
 
+# The gate only reads the tree. Nothing here needs a writable token, and a
+# public repository is where an over-scoped one costs something.
+permissions:
+  contents: read
+
+# A superseded run tells nobody anything, and the gate is not cheap.
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -11,11 +21,18 @@ jobs:
       # walking every revision of it. The default single-commit checkout
       # leaves that check unable to answer, and it reported 141 words as
       # stale that had simply left the lexicon.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: astral-sh/setup-uv@v5
-      - uses: actions/setup-python@v5
+      # There is no lockfile, so the cache has to be keyed on the only file
+      # that states a dependency. Left unset it matches nothing, and a cache
+      # that never invalidates serves a stale environment after a dependency
+      # changes, which is the silent-partial-coverage failure in another
+      # costume.
+      - uses: astral-sh/setup-uv@v10
+        with:
+          cache-dependency-glob: pyproject.toml
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       # pyright resolves optional dependencies from `.venv`, so the gate
