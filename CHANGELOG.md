@@ -27,6 +27,42 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Comparative analysis of three character standards
+
+- `docs/decisions/CHARACTER_STANDARDS.md`. Epistemic status marked
+  throughout as verified, derived, or inferred.
+- **All three separate recognising from producing, by three mechanisms.**
+  Japan by a one-year lag over one list, reading the current grade and
+  writing the previous one. Mainland China by subset, 1600 against 800.
+  Taiwan by near-parity, 670 against 547. No region asks a beginner to
+  produce everything it asks them to recognise.
+- **Japan's eighty is a writing-system fact, not a pedagogical one.**
+  Japanese writes anything unknown in kana permanently, so 80 characters
+  plus a syllabary reads fluently. Chinese has no such fallback, since
+  zhuyin and pinyin are withdrawn after being taught.
+- **So 80 is not a claim that a six-year-old holds eighty concepts.**
+  Taiwan at 670 and mainland at roughly 800 a year describe the same child.
+
+### Found. Our vocabulary ceiling is stricter than any of the three
+
+- A record at level L may use no word licensed above L, which is a
+  production ceiling applied to every word. All three human curricula admit
+  a wider recognition set than production set.
+- **Whether it transfers is genuinely open.** Under next-token prediction
+  every token is both read and produced, so the human split does not carry
+  over mechanically. Recorded as an option, not a recommendation.
+- Possibly implicated in the 41 drafts still rejected at the ceiling in the
+  last measured run. **Not tested.**
+
+### Found. Forty-eight level-one concepts is probably low
+
+- The two standards that cannot lean on a syllabary put a first-grader
+  nearer 600 to 800 characters. Characters are not concepts and the ratio
+  is not one to one, but the current figure sits below all three
+  comparators rather than between them. Inferred.
+- This supports the lexicon expansion from 64 words to 508 rather than
+  arguing it went too far.
+
 ### Corrected. A national standard encodes more convention than claimed
 
 - `KANJI_CROSS_REFERENCE.md` justified adding concepts ahead of records by
