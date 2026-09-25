@@ -27,6 +27,37 @@ the lexicon and records that, writing `curriculum/provenance.json`.
 Today that is 1 against 1,068. The ratio will improve going forward and
 will never be repaired backwards.
 
+## The admission criterion, reconstructed
+
+**Operator direction 2026-09-25: make a best effort, and it is acceptable
+that it is not clean.** Every word now carries a criterion, recovered from
+the commit that introduced it.
+
+| Criterion | Words | What it means |
+| --- | --- | --- |
+| `prescriptive` | 444 | Authored as a foundational lexicon before any corpus existed |
+| `lexicalisation` | 271 | Admitted so a scheduled concept has a word naming it |
+| `mapping` | 138 | Given a concept and a level when the vocabulary was mapped |
+| `corpus` | 87 | Blocked a book round and triage judged it suitable |
+| `teacher` | 64 | The teacher reached for it and was refused |
+| `inflection` | 27 | A form of an admitted word, or a correction to one |
+| `operator` | 19 | Admitted on direction, as a word the level plainly needs |
+| `thesaurus` | 18 | Named as a synonym or antonym of an admitted word |
+| `scan` | 1 | Proposed by a frequency scan and admitted on judgement |
+
+**It is right about the pass and cannot be right about every word in a
+pass.** The criterion is the reason the commit gives for its batch,
+applied to each word in it.
+
+**The largest group is the least precise, and deliberately so.** Declaring
+all 444 words of the prescriptive pass admitted on one criterion explains
+any single one of them only loosely. Bootstrapping a closed lexicon does
+not decompose into per-word reasons: the words were chosen together,
+against each other, and against what the dictionary needed in order to
+close at all. That is part of why it is a hard problem, and a
+reconstruction that claimed more would be a worse record than one that
+says this.
+
 ## What the reconstruction actually shows
 
 Four commits account for most of the lexicon: 444 words from the
