@@ -62,6 +62,10 @@ run "closure L2"         env PYTHONPATH=src python3 tools/validate_closure.py cu
 run "thesaurus"          env PYTHONPATH=src python3 tools/validate_thesaurus.py curriculum/thesaurus.json curriculum/vocabulary.json 1
 run "thesaurus L2"       env PYTHONPATH=src python3 tools/validate_thesaurus.py curriculum/thesaurus.json curriculum/vocabulary.json 2
 
+# A dictionary in authoring order is a list. Checked rather than trusted,
+# because the ordering is a property of files a generator rewrites.
+run "dictionary order"   env PYTHONPATH=src python3 tools/sort_dictionary.py --check curriculum/books/level_1 curriculum/books/level_2
+
 run "disclosure scan"    ./tools/scrub_scan.sh
 rm -f "$CORPUS"
 

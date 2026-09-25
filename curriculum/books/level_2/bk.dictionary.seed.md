@@ -38,12 +38,12 @@
     "dict.2.subtract": {"concepts": ["subtraction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:subtract"}, "defines": {"kind": "word", "target": "subtract"}},
     "dict.2.system": {"concepts": ["component_and_system"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:system"}, "defines": {"kind": "word", "target": "system"}},
     "dict.2.taken": {"concepts": ["subtraction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:taken"}, "defines": {"kind": "word", "target": "taken"}},
+    "dict.2.ten": {"concepts": ["quantity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ten"}, "defines": {"kind": "word", "target": "ten"}},
     "dict.2.tens": {"concepts": ["place_value"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tens"}, "defines": {"kind": "word", "target": "tens"}},
     "dict.2.thirty": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thirty"}, "defines": {"kind": "word", "target": "thirty"}},
     "dict.2.twelve": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:twelve"}, "defines": {"kind": "word", "target": "twelve"}},
     "dict.2.twenty": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:twenty"}, "defines": {"kind": "word", "target": "twenty"}},
-    "dict.2.unchanged": {"concepts": ["conservation_of_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unchanged"}, "defines": {"kind": "word", "target": "unchanged"}},
-    "dict.2.ten": {"concepts": ["quantity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ten"}, "defines": {"kind": "word", "target": "ten"}}
+    "dict.2.unchanged": {"concepts": ["conservation_of_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unchanged"}, "defines": {"kind": "word", "target": "unchanged"}}
   }
 }
 ---
@@ -138,6 +138,9 @@ A system is many parts that work together as one thing.
 [dict.2.taken]
 Taken is when a thing has been moved away from where it was.
 
+[dict.2.ten]
+Ten is one more than nine.
+
 [dict.2.tens]
 Tens are the digits that show how many groups of ten there are.
 
@@ -152,6 +155,3 @@ Twenty is two tens.
 
 [dict.2.unchanged]
 Unchanged means still the same as before.
-
-[dict.2.ten]
-Ten is one more than nine.

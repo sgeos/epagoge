@@ -4,14 +4,24 @@ Judge against the repository tree. **Ordering is explicitly not a
 completion criterion.** Any sequence of steps leaving the tree in the
 state below is complete. No branch, process or commit-shape requirement.
 
-**A null or negative measurement satisfies this. A positive result is not
+**A measurement that falls short satisfies this. A good result is not
 required and must not be manufactured.**
 
-## Level-one corpus
+## A model can be interacted with
+
+- A tool in the tree loads trained weights and answers a prompt, and
+  refuses rather than inventing weights when none exist.
+- Its output for at least one prompt is recorded in the tree.
+- The record states the held-out loss or perplexity of the model that
+  produced it, so the reader can tell how much to trust what they see.
+
+## The corpus is growing and sound
 
 - Every unit in `curriculum/schedule/level_01.json` has at least one book
-  in `curriculum/books/level_1/`.
-- Every book in that directory holds exactly sixteen spreads.
+  in `curriculum/books/level_1/`, and every book there holds exactly
+  sixteen spreads.
+- The corpus is **larger in tokens than the 45,547 measured on
+  2026-09-25**, and the tree records the current figure.
 - `tools/validate_books.py` exits 0 with the spread standard enforced.
 
 ## Reference material stays sound, levels one and two
@@ -23,43 +33,32 @@ required and must not be manufactured.**
 - Every sense admitted at that level has a thesaurus entry, and
   `tools/validate_thesaurus.py` exits 0 at both levels.
 - `ostensive` in `curriculum/vocabulary.json` holds at most 60 words.
-  Closure bought by enlarging the seed does not count.
 
-## Variance is measured on the level-one corpus
+## The limit on model quality is named with evidence
 
-- A paired multi-seed run over the level-one corpus is recorded in the
-  tree, with its seeds, the corpus size in tokens and its per-seed losses.
-- The record reports the unpaired spread, the paired spread and their
-  correlation, and states how each compares with the synthetic-stream
-  figures of 0.0750, 0.0233 and 0.9539.
-- The record states whether the corpus was large enough for the comparison
-  to be meaningful, and if it was not, says what quantity has to change.
-- `evals/PRE_REGISTRATION.md` reflects what this settles, and any item it
-  does not settle still names the dependency that would.
-
-## A trained model exists
-
-- A training run over the level-one corpus has completed, and the tree
-  records the corpus size, the configuration and the final loss.
-- The record states plainly whether the corpus was large enough for the
-  result to mean anything.
+- The tree records a measurement separating undertrained from
+  out-of-corpus, reporting training and held-out loss for more than one
+  configuration.
+- The tree records what corpus size would be needed for a better model,
+  with the measurements it was derived from and the reasons it may be
+  wrong.
 
 ## Gate and repository
 
 - `./tools/check.sh` exits 0.
 - The working tree is clean and `main` matches `origin/main`.
 - Continuous integration is green on the head commit.
-- `git ls-files secret` reports 0.
+- `git ls-files secret` reports 0, and no model weights are tracked.
 
 ## Records
 
-- `docs/process/HANDOFF.md` states the coverage, closure, corpus,
-  training and variance figures, and those match what the tools report.
+- `docs/process/HANDOFF.md` states the current corpus, closure and model
+  figures, and those match what the tools report.
 - Any goal left undone is named, with what blocks it.
 
 ## Out of scope
 
 The level-two ablation, schedules for levels three and above, and a
-concept-complexity target per level are **not** required. The ablation
-depends on a minimum detectable effect justified from the literature and
-on an endpoint decision, neither of which is settled.
+concept-complexity target per level are **not** required. Reaching a
+corpus of 10^6 tokens is **not** required, because at the observed rate
+it is many times longer than a session.

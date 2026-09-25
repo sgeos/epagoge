@@ -91,6 +91,23 @@ evidence, and the decision rule.
 The interpreter is resolved at `>=3.12`, with Python 3.14 verified as
 usable. See `docs/decisions/PYTHON_VERSION.md`.
 
+## Running anything
+
+The package must be installed into the environment before a tool will
+import it. **Every tool in `tools/` was unrunnable as its own docstring
+described it** until 2026-09-25, because they were developed with
+`PYTHONPATH=src` exported in the shell and nothing said so.
+
+    uv venv
+    uv pip install -e ".[train]"
+
+The `train` extra pulls PyTorch and is needed only by the tools that
+train or sample. Without it the rest still run and the gate still passes,
+because its tests skip when the extra is absent.
+
+    ./tools/check.sh
+    .venv/bin/python tools/talk.py --level 1 --prompt "the cup is"
+
 ## Verification posture
 
 The central claim of this project, that difficulty-graded ordering improves

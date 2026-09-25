@@ -1,121 +1,86 @@
-# Current brief. Finish the level-one corpus, then measure the trainer
+# Current brief. A level-one model worth talking to
 
-**Rewritten 2026-09-25**, third revision of the day, after every
-level-one book reached the spread standard and the fifty-one missing
-graph concepts were authored. Delete when `COMPLETION_CONDITION.md` is
-met.
+**Rewritten 2026-09-25** after operator direction changed the goal: a
+level-one model that external parties can satisfactorily interact with,
+with poor performance read as a combination of a training problem and a
+corpus problem. Delete when `COMPLETION_CONDITION.md` is met.
 
 ## Where the seven goals stand
 
-| # | Goal | State | Real blocker |
-| --- | --- | --- | --- |
-| 1 | Dictionary coverage and closure | **Done.** 732 of 732 at level one, 766 of 766 at level two, closure 100 percent | — |
-| 2 | Thesaurus, synonyms and antonyms | **Done.** 849 entries, 194 antonyms, 132 synonyms | — |
-| 3 | Missing words added to both | **Done, and continuous** through `tools/admit.py` | — |
-| 4 | Full level-one corpus draft | **Done. 92 of 92 units, every book at sixteen spreads** | — |
-| 5 | Train a level-one model | **Done, and the result is a null that means nothing.** Eight paired seeds on the real corpus | Corpus scale, for a result that means anything |
-| 6 | Level-two dictionary and thesaurus | **Done** | — |
-| 7 | Level-two ablation | Blocked, and now measurably so | **Corpus scale**, plus decisions not mine |
+| # | Goal | State |
+| --- | --- | --- |
+| 1 | Level-one dictionary and closure | **Done.** Closure 100 percent |
+| 2 | Thesaurus | **Done** |
+| 3 | Missing words | **Done, and continuous** |
+| 4 | Level-one corpus draft | **Done.** 92 of 92 units, every book at 16 spreads |
+| 5 | Train a level-one model | **Done**, and it can now be talked to |
+| 6 | Level-two dictionary and thesaurus | **Done** |
+| 7 | Level-two ablation | **Blocked** on corpus scale and on item 10 |
+
+## The goal now, and the measurement that prices it
+
+**A model external parties can satisfactorily interact with.** Three
+measurements say what that costs and they agree.
+
+**It is a corpus problem, not a training problem, and that is measured
+rather than argued.** Sweeping steps against width separates the two,
+because a model short of training shows a small gap between training and
+held-out loss while a model short of data shows a widening one. Every row
+widened. At width 256 and 3,200 steps the model reaches a training loss
+of 0.040 and a held-out loss of 7.794 against ln(2253) = 7.72 for
+uniform: it memorises 45,000 tokens perfectly and predicts held-out text
+worse than chance.
+
+**The best reachable figure on this corpus is perplexity 133**, at width
+256 and four hundred steps. That is what the samples sound like.
+
+**Held-out loss falls linearly in the logarithm of corpus size**, about
+0.29 nats a doubling, measured over four fractions. Extrapolated, 10^6
+tokens gives perplexity near 35 and 10^7 near 13. See
+`../../evals/pilot/LEVEL_ONE_SCALING.md`, including why the
+extrapolation is both optimistic and pessimistic.
 
 ## What I recommend pursuing, and what I do not
 
-**A. Done.** All ninety-two units have a book at sixteen spreads.
+**A. Corpus volume, and nothing else comes close.** `--variants N` writes
+an Nth book per unit at about twenty-five books a round. 10^6 tokens is
+roughly fifty books a unit against the two or three that exist, so this
+is many sessions of work and every round moves the number.
 
-**A2, which replaces it: more books per unit.** Twelve per topic is the
-low end of `CORPUS_SCALE.md` and is where an ordering comparison stops
-being degenerate. Ordinary generation work at eleven times the volume
-already done, needing no decision from anyone.
+**B. Keep the gate green and closure intact while it grows.** Each round
+triages its quarantine: suitable words through `tools/admit.py`,
+unsuitable ones into `substitutions`.
 
-**B. Closure, coverage and the gate hold the whole way.** The corpus and
-the lexicon grow together. A word the teacher reaches for is evidence, and
-`tools/admit.py` is the path for the suitable ones.
+**C. Re-measure rather than trust the curve.** The scaling fit is
+extrapolated over 2.3 orders of magnitude from 0.9. Re-run
+`diagnose_level.py --fractions` when the corpus has doubled, and correct
+the record if it bends.
 
-**C. Re-measure variance on the real corpus.** **The variance pilot has
-already run**, on 2026-09-24, and the sentence in
-`evals/PRE_REGISTRATION.md` calling it the single largest unblocker that
-depends on nothing predates that run. What is outstanding is narrower and
-`evals/pilot/README.md` names it: the measured sigma of 0.0750, paired
-standard deviation of 0.0233 and correlation of 0.9539 come from **a
-synthetic second-order Markov stream at 818,000 parameters**, and the
-correlation is the number most likely to move on natural language. Once
-item A lands there is a real corpus to re-measure on, and the seed count
-in item 6 stays provisional until that happens.
+**D. Training work, and it is second order.** Early stopping on held-out
+loss, and dropout and weight decay are both at their defaults and
+untuned. Worth doing when the corpus is large enough that the tuning
+means something. **Not worth doing now**, because none of it turns
+perplexity 133 into a model anyone wants to talk to.
 
-**D. Audit the corpus.** Item 11's acceptance ceiling is pending the first
-audit, and an audit needs a corpus. A sampled per-domain error rate is
-reportable without any decision the operator has not made, and the ceiling
-itself stays open.
-
-**E. Not recommended, and these are the operator's.** The minimum
-detectable effect for item 7 needs justifying from the literature. The
-endpoint decision for items 9 and 10 follows from it. Schedules for levels
-three through seven, and a concept-complexity target per level, are design
-work. **The ablation itself is not attemptable** until those land, and
-attempting it would produce a number with no threshold to judge it
-against.
-
-**A caution on item 6 that item C does not remove.** The pilot ran under
-AdamW with cosine decay, and `docs/decisions/TRAINING_TECHNIQUES.md`
-adopts maximal update parametrization, Muon and warmup-stable-decay.
-Changing the optimiser changes the dynamics, so sigma and rho will not
-carry over even after a re-measurement on real text. Implementing those
-three is a larger piece of work and is a candidate, not a promise.
+**E. Not recommended, and these are the operator's.** The endpoint and
+estimator for item 10, which fixes the sign of any ordering result. The
+minimum meaningful effect for item 7. Schedules above level two. The
+ablation itself, which is not attemptable until those land.
 
 ## How a book round goes
 
-Generate a bounded chunk, top it up, then gate. Never a whole level in one
-pass.
+Generate a bounded chunk, top it up, then gate.
 
-1. `generators/generate_books.py --limit 8`. Runs are additive and skip
-   units that already have a book. Each book is written as soon as it is
-   built, because holding a run's output to the end once lost ten books to
-   one timeout.
-2. `generators/extend_books.py` until nothing more can be added. A book
-   below sixteen spreads is unfinished, not wrong, and its existing lines
-   are already true and admissible.
-3. **Triage what is left.** Each rejected line names the words that
-   blocked it. Suitable words go through `tools/admit.py`, which derives
-   the forms, writes the definition through the closure check and syncs
-   the thesaurus, all or nothing. Unsuitable words mean rephrasing.
-4. **A book the teacher cannot finish is finished by hand.** Two books
-   resisted six attempts each because the teacher had settled into a
-   treasure-hunt vocabulary the level does not hold. Six spreads were
-   authored directly. The operator's rule is to edit the story, not reject
-   it, and that applies to me as much as to the generator.
+1. `generators/generate_books.py --limit 25 --variants N`. Runs are
+   additive and skip units already holding N books. Each book is written
+   as soon as it is built.
+2. `generators/extend_books.py` until nothing more can be added. It tops
+   up a short book and trims a long one from the end.
+3. **Triage the quarantine.** Both generators write one, and the reject
+   names the words that blocked it.
+4. **A book the teacher cannot finish is finished by hand.** The operator
+   rule is to edit the story, not reject it.
 5. Gate, read the exit code, stop, then commit.
-
-**The gate now enforces `--spreads 16`.** A freshly generated book is
-short until it is topped up, so a chunk is not committable until its books
-are at the standard. That is the intended shape: the gate refuses an
-unfinished corpus.
-
-## The sequencing claim, corrected by measurement
-
-**I claimed one book per unit was the minimum orderable set an ablation
-could use. It is not, and now there is a number.** The completed draft is
-**7,998 tokens**, which is fifty-three training chunks. At batch eight
-that is seven batches, so an 800-step run cycles them about a hundred and
-fourteen times and the ordering stops mattering after the first pass.
-Measured 2026-09-25: rho 0.9993, paired standard deviation 0.00344, and a
-requirement table claiming one seed per arm. All artifact. See
-`../../evals/pilot/LEVEL_ONE_VARIANCE.md`.
-
-**The binding constraint is corpus scale.** 7,998 tokens against a
-level-one budget of 10^6 to 10^7 is a factor of 125 to 1,250 short.
-`CORPUS_SCALE.md` asks for twelve to six hundred books per topic and the
-corpus holds one, so the draft is about a twelfth of the low end.
-
-A draft is one book per unit and that target is met. **Say which is meant
-whenever reporting**, because conflating a draft with a trainable corpus
-overstates the project by a factor of twelve at the very least.
-
-## What done means for 5 and 7
-
-**A run that completes and reports honestly.** The corpus will be far
-below the scale at which an ordering effect could be detected, and the
-published literature already reports such effects as weak and
-inconsistent at full scale. **Expect a null. Record it as a null.** The
-pre-registered threshold decides, not the sign of the difference.
 
 ## Wrong turns, every one already made once
 
