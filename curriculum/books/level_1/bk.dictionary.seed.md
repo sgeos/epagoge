@@ -65,7 +65,24 @@
     "dict.1.want": {"concepts": ["need"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:want"}, "defines": {"kind": "word", "target": "want"}},
     "dict.1.word": {"concepts": ["word"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:word"}, "defines": {"kind": "word", "target": "word"}},
     "dict.1.believe": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:believe"}, "defines": {"kind": "word", "target": "believe"}},
-    "dict.1.mean": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mean"}, "defines": {"kind": "word", "target": "mean"}}
+    "dict.1.mean": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mean"}, "defines": {"kind": "word", "target": "mean"}},
+    "dict.1.family": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:family"}, "defines": {"kind": "word", "target": "family"}},
+    "dict.1.feel": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:feel"}, "defines": {"kind": "word", "target": "feel"}},
+    "dict.1.help": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:help"}, "defines": {"kind": "word", "target": "help"}},
+    "dict.1.hit": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hit"}, "defines": {"kind": "word", "target": "hit"}},
+    "dict.1.metal": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:metal"}, "defines": {"kind": "word", "target": "metal"}},
+    "dict.1.plant": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plant"}, "defines": {"kind": "word", "target": "plant"}},
+    "dict.1.rope": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rope"}, "defines": {"kind": "word", "target": "rope"}},
+    "dict.1.sister": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sister"}, "defines": {"kind": "word", "target": "sister"}},
+    "dict.1.tall": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tall"}, "defines": {"kind": "word", "target": "tall"}},
+    "dict.1.tree": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tree"}, "defines": {"kind": "word", "target": "tree"}},
+    "dict.1.use": {"concepts": ["wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:use"}, "defines": {"kind": "word", "target": "use"}},
+    "dict.1.whole": {"concepts": ["component_and_system"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:whole"}, "defines": {"kind": "word", "target": "whole"}},
+    "dict.1.wood": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wood"}, "defines": {"kind": "word", "target": "wood"}},
+    "dict.1.work": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:work"}, "defines": {"kind": "word", "target": "work"}},
+    "dict.1.working": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:working"}, "defines": {"kind": "word", "target": "working"}},
+    "dict.1.young": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:young"}, "defines": {"kind": "word", "target": "young"}},
+    "dict.1.done": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:done"}, "defines": {"kind": "word", "target": "done"}}
   }
 }
 ---
@@ -243,3 +260,54 @@ To believe is to think that what someone says is true.
 
 [dict.1.mean]
 To mean is to say what a word or a thing is about.
+
+[dict.1.family]
+A family is the people you live with.
+
+[dict.1.feel]
+To feel is to know something inside you.
+
+[dict.1.help]
+To help is to do a thing with someone so they can do it.
+
+[dict.1.hit]
+To hit is to make one thing go onto another thing.
+
+[dict.1.metal]
+Metal is stuff that is bright and cold to touch.
+
+[dict.1.plant]
+A plant is a living thing that does not move and grows in the ground.
+
+[dict.1.rope]
+A rope is a long thin thing made to hold things.
+
+[dict.1.sister]
+A sister is a girl in your family.
+
+[dict.1.tall]
+Tall is when a thing goes up a long way.
+
+[dict.1.tree]
+A tree is a big plant that goes up over your head.
+
+[dict.1.use]
+To use a thing is to take it and make it do something.
+
+[dict.1.whole]
+The whole of a thing is all of it.
+
+[dict.1.wood]
+Wood is the stuff a tree is made of.
+
+[dict.1.work]
+Work is what you do to make something happen.
+
+[dict.1.working]
+Working is when someone does work.
+
+[dict.1.young]
+Young is when a living thing has not been for a long time.
+
+[dict.1.done]
+Done is when a thing has been made or finished.

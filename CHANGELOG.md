@@ -27,6 +27,34 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Coverage to 27 percent, with closure held at 100
+
+- **Closure is now a gate check.** `tools/validate_closure.py` fails when
+  anything stops reducing, so **a commit cannot leave the dictionary
+  un-self-hosted**. Coverage is reported and deliberately not enforced,
+  since an incomplete level is unfinished rather than broken.
+- **Ground-first does not scale on its own.** It requires every word in a
+  definition to be grounded already, and at 126 of 764 almost any natural
+  definition reaches past that. Measured at 1, 1, 0, 5, 0 per batch.
+- **The loop that works is bulk then close.** Generate accepting blocked
+  definitions, then define the frontier, and the blocked ground in a
+  cascade. **Blocked is a legitimate intermediate state**, and the gate is
+  what stops it being committed.
+- **Acceptance doubled to 22.6 percent**, 65 kept of 288, against 11
+  percent before the seed and kernel existed.
+- **Four person words added to the ostensive set.** `man` and `woman`
+  arrived as a frontier pair definable only as not-the-other, which is the
+  circularity the ostensive test exists for, and `boy` and `girl` came
+  with them. Thirty-seven ostensive words, seed 234.
+- **Six more cycles broken**, each by grounding one member.
+  `good`/`bad`/`happy`/`afraid`, `mother`/`father`/`parent`/`aunt`,
+  `heat`/`warm`/`baked`, `hard`/`soft`/`press`/`push`/`force` and the
+  rest.
+- **Two assumptions caught by the check rather than by review.** `doing`
+  is a level-six term, and `done` is not core. Both were assumed and both
+  were wrong, and neither reached a file.
+- **208 of 764 words, closure 100 percent.**
+
 ### Fixed. The level-one dictionary is self-hosting
 
 - **Closure is 100 percent.** 126 definitions, 126 grounded, frontier 0,

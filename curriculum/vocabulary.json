@@ -5917,6 +5917,7 @@
     "black",
     "blue",
     "body",
+    "boy",
     "brown",
     "cold",
     "dark",
@@ -5925,6 +5926,7 @@
     "eye",
     "food",
     "foot",
+    "girl",
     "green",
     "grey",
     "ground",
@@ -5933,6 +5935,7 @@
     "hot",
     "leg",
     "loud",
+    "man",
     "mouth",
     "nose",
     "one",
@@ -5943,6 +5946,7 @@
     "water",
     "wet",
     "white",
+    "woman",
     "yellow"
   ]
 }

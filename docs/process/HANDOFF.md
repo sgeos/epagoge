@@ -34,8 +34,10 @@ file predates a reset and is stale.
 **Content** — cheap, independent, each verified on 2026-09-24. Check the
 rendered ORDER of this list, not just the next unused number.
 
-1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twelve**
-   checks, and **exits 0**.
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **fourteen**
+   checks, and **exits 0**. One of them is `validate_closure.py`, which
+   **fails if any definition stops reducing**, so a commit cannot leave the
+   dictionary un-self-hosted.
 2. The suite reports **403** tests.
 3. `curriculum/graph/concepts.json` declares **11** domains and holds
    **117** nodes, with **1** domain still empty, **0** isolated concepts,
@@ -58,9 +60,9 @@ rendered ORDER of this list, not just the next unused number.
    **195** carry an antonym and none yet carries a synonym. Coverage is
    enforced, so a new sense fails the gate until an entry exists.
 8. `curriculum/books/level_1/` holds **7** books. The dictionary defines
-   **126 of 764** level-one words, and **the closure is 100 percent**.
-   Frontier 0, blocked 0, cycles 0. **Self-hosting is achieved for what is
-   defined. Coverage is 16.5 percent and is the remaining work.**
+   **208 of 764** level-one words, **27.2 percent**, and **the closure is
+   100 percent**. Frontier 0, blocked 0, cycles 0. The **37**-word
+   ostensive set plus forms gives a seed of **234**.
 9. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
 10. **History is clean, not only `HEAD`.** Every blob and every commit

@@ -49,7 +49,72 @@
     "dict.1.know": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:know"}, "defines": {"kind": "word", "target": "know"}},
     "dict.1.opposite": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:opposite"}, "defines": {"kind": "word", "target": "opposite"}},
     "dict.1.gone": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gone"}, "defines": {"kind": "word", "target": "gone"}},
-    "dict.1.past": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:past"}, "defines": {"kind": "word", "target": "past"}}
+    "dict.1.past": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:past"}, "defines": {"kind": "word", "target": "past"}},
+    "dict.1.agree": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:agree"}, "defines": {"kind": "word", "target": "agree"}},
+    "dict.1.answer": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:answer"}, "defines": {"kind": "word", "target": "answer"}},
+    "dict.1.answered": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:answered"}, "defines": {"kind": "word", "target": "answered"}},
+    "dict.1.ask": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ask"}, "defines": {"kind": "word", "target": "ask"}},
+    "dict.1.asked": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:asked"}, "defines": {"kind": "word", "target": "asked"}},
+    "dict.1.asking": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:asking"}, "defines": {"kind": "word", "target": "asking"}},
+    "dict.1.asleep": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:asleep"}, "defines": {"kind": "word", "target": "asleep"}},
+    "dict.1.always": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:always"}, "defines": {"kind": "word", "target": "always"}},
+    "dict.1.allowed": {"concepts": ["someone_in_charge"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:allowed"}, "defines": {"kind": "word", "target": "allowed"}},
+    "dict.1.appear": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:appear"}, "defines": {"kind": "word", "target": "appear"}},
+    "dict.1.check": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:check"}, "defines": {"kind": "word", "target": "check"}},
+    "dict.1.happen": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:happen"}, "defines": {"kind": "word", "target": "happen"}},
+    "dict.1.happened": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:happened"}, "defines": {"kind": "word", "target": "happened"}},
+    "dict.1.reply": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:reply"}, "defines": {"kind": "word", "target": "reply"}},
+    "dict.1.afraid": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:afraid"}, "defines": {"kind": "word", "target": "afraid"}},
+    "dict.1.angry": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:angry"}, "defines": {"kind": "word", "target": "angry"}},
+    "dict.1.awake": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:awake"}, "defines": {"kind": "word", "target": "awake"}},
+    "dict.1.baby": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:baby"}, "defines": {"kind": "word", "target": "baby"}},
+    "dict.1.badly": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:badly"}, "defines": {"kind": "word", "target": "badly"}},
+    "dict.1.bag": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bag"}, "defines": {"kind": "word", "target": "bag"}},
+    "dict.1.change": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:change"}, "defines": {"kind": "word", "target": "change"}},
+    "dict.1.question": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:question"}, "defines": {"kind": "word", "target": "question"}},
+    "dict.1.right": {"concepts": ["being_told", "direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:right"}, "defines": {"kind": "word", "target": "right"}},
+    "dict.1.view": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:view"}, "defines": {"kind": "word", "target": "view"}},
+    "dict.1.aunt": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:aunt"}, "defines": {"kind": "word", "target": "aunt"}},
+    "dict.1.baked": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:baked"}, "defines": {"kind": "word", "target": "baked"}},
+    "dict.1.ball": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ball"}, "defines": {"kind": "word", "target": "ball"}},
+    "dict.1.carry": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:carry"}, "defines": {"kind": "word", "target": "carry"}},
+    "dict.1.opinion": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:opinion"}, "defines": {"kind": "word", "target": "opinion"}},
+    "dict.1.parent": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:parent"}, "defines": {"kind": "word", "target": "parent"}},
+    "dict.1.father": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:father"}, "defines": {"kind": "word", "target": "father"}},
+    "dict.1.mother": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mother"}, "defines": {"kind": "word", "target": "mother"}},
+    "dict.1.oven": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:oven"}, "defines": {"kind": "word", "target": "oven"}},
+    "dict.1.roll": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:roll"}, "defines": {"kind": "word", "target": "roll"}},
+    "dict.1.round": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:round"}, "defines": {"kind": "word", "target": "round"}},
+    "dict.1.bad": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bad"}, "defines": {"kind": "word", "target": "bad"}},
+    "dict.1.box": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:box"}, "defines": {"kind": "word", "target": "box"}},
+    "dict.1.corner": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:corner"}, "defines": {"kind": "word", "target": "corner"}},
+    "dict.1.heat": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:heat"}, "defines": {"kind": "word", "target": "heat"}},
+    "dict.1.turn": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:turn"}, "defines": {"kind": "word", "target": "turn"}},
+    "dict.1.often": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:often"}, "defines": {"kind": "word", "target": "often"}},
+    "dict.1.bamboo": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bamboo"}, "defines": {"kind": "word", "target": "bamboo"}},
+    "dict.1.bang": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bang"}, "defines": {"kind": "word", "target": "bang"}},
+    "dict.1.basket": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:basket"}, "defines": {"kind": "word", "target": "basket"}},
+    "dict.1.meet": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meet"}, "defines": {"kind": "word", "target": "meet"}},
+    "dict.1.warm": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:warm"}, "defines": {"kind": "word", "target": "warm"}},
+    "dict.1.stick": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stick"}, "defines": {"kind": "word", "target": "stick"}},
+    "dict.1.grow": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grow"}, "defines": {"kind": "word", "target": "grow"}},
+    "dict.1.hold": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hold"}, "defines": {"kind": "word", "target": "hold"}},
+    "dict.1.piece": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:piece"}, "defines": {"kind": "word", "target": "piece"}},
+    "dict.1.broken": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:broken"}, "defines": {"kind": "word", "target": "broken"}},
+    "dict.1.hard": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hard"}, "defines": {"kind": "word", "target": "hard"}},
+    "dict.1.together": {"concepts": ["correspondence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:together"}, "defines": {"kind": "word", "target": "together"}},
+    "dict.1.close": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:close"}, "defines": {"kind": "word", "target": "close"}},
+    "dict.1.join": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:join"}, "defines": {"kind": "word", "target": "join"}},
+    "dict.1.others": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:others"}, "defines": {"kind": "word", "target": "others"}},
+    "dict.1.good": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:good"}, "defines": {"kind": "word", "target": "good"}},
+    "dict.1.happy": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:happy"}, "defines": {"kind": "word", "target": "happy"}},
+    "dict.1.soft": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:soft"}, "defines": {"kind": "word", "target": "soft"}},
+    "dict.1.easy": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:easy"}, "defines": {"kind": "word", "target": "easy"}},
+    "dict.1.press": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:press"}, "defines": {"kind": "word", "target": "press"}},
+    "dict.1.force": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:force"}, "defines": {"kind": "word", "target": "force"}},
+    "dict.1.push": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:push"}, "defines": {"kind": "word", "target": "push"}},
+    "dict.1.rock": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rock"}, "defines": {"kind": "word", "target": "rock"}},
+    "dict.1.stone": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stone"}, "defines": {"kind": "word", "target": "stone"}}
   }
 }
 ---
@@ -179,3 +244,198 @@ Not here now.
 
 [dict.1.past]
 The time before now, or a direction behind.
+
+[dict.1.agree]
+Checking that something is true.
+
+[dict.1.answer]
+An answer is what you say when someone asks you.
+
+[dict.1.answered]
+Answered is when the answer was said.
+
+[dict.1.ask]
+To ask is to say a thing to someone so they will tell you something.
+
+[dict.1.asked]
+Asked is when the asking happened before.
+
+[dict.1.asking]
+Asking is when someone asks.
+
+[dict.1.asleep]
+Living and not living at the same time.
+
+[dict.1.always]
+Happens over and over.
+
+[dict.1.allowed]
+Able to do something.
+
+[dict.1.appear]
+Come into view.
+
+[dict.1.check]
+Look to see if something is right.
+
+[dict.1.happen]
+Change that comes.
+
+[dict.1.happened]
+Change that came before.
+
+[dict.1.reply]
+A reply is an answer.
+
+[dict.1.afraid]
+Afraid is the feeling you have when you think something bad will happen.
+
+[dict.1.angry]
+Feeling that something is not right.
+
+[dict.1.awake]
+Living and not asleep.
+
+[dict.1.baby]
+Small person who is young.
+
+[dict.1.badly]
+Badly is when a thing is made in a bad way.
+
+[dict.1.bag]
+Container to carry things.
+
+[dict.1.change]
+To make different.
+
+[dict.1.question]
+A question is what you ask.
+
+[dict.1.right]
+Being told what to do.
+
+[dict.1.view]
+Opinion about something.
+
+[dict.1.aunt]
+An aunt is the sister of your mother or your father.
+
+[dict.1.baked]
+Baked is when food was made hot so you can eat it.
+
+[dict.1.ball]
+A ball is a round thing you can roll.
+
+[dict.1.carry]
+To move something from one place to another.
+
+[dict.1.opinion]
+What someone thinks about something.
+
+[dict.1.parent]
+A parent is your mother or your father.
+
+[dict.1.father]
+A father is the man who made you with your mother.
+
+[dict.1.mother]
+A mother is the woman whose body you came from.
+
+[dict.1.oven]
+A box that makes food hot.
+
+[dict.1.roll]
+To move by turning over and over.
+
+[dict.1.round]
+Round is the shape of a thing with no corners.
+
+[dict.1.bad]
+Bad is not good.
+
+[dict.1.box]
+A container with sides and a top.
+
+[dict.1.corner]
+A corner is a place where two sides come together.
+
+[dict.1.heat]
+Heat is what makes a thing hot.
+
+[dict.1.turn]
+To move around or change direction.
+
+[dict.1.often]
+Happens many times.
+
+[dict.1.bamboo]
+Bamboo is a tall plant with a long thin body that is like wood.
+
+[dict.1.bang]
+A bang is a loud sound when one thing hits another thing.
+
+[dict.1.basket]
+A container made of sticks or rope for holding things.
+
+[dict.1.meet]
+To meet is to come together with someone.
+
+[dict.1.warm]
+Warm is a little hot.
+
+[dict.1.stick]
+A thin piece of wood that comes from a tree.
+
+[dict.1.grow]
+To change from small to big.
+
+[dict.1.hold]
+To keep something in place with the hands.
+
+[dict.1.piece]
+A small part of something broken.
+
+[dict.1.broken]
+Something that is not whole or not working right.
+
+[dict.1.hard]
+Hard is when a thing does not change its shape when you put your hand on it.
+
+[dict.1.together]
+Together is when things are near one another.
+
+[dict.1.close]
+To shut something that opens.
+
+[dict.1.join]
+To join is to put things together.
+
+[dict.1.others]
+People who are not you.
+
+[dict.1.good]
+Good is when a thing is the way you want it to be.
+
+[dict.1.happy]
+Happy is the feeling you have when things are good.
+
+[dict.1.soft]
+Soft is not hard.
+
+[dict.1.easy]
+Something that does not need much work.
+
+[dict.1.press]
+To press is to put your hand onto a thing and make it go down.
+
+[dict.1.force]
+Force is what makes a thing move or change its shape.
+
+[dict.1.push]
+To push is to press a thing so it moves away from you.
+
+[dict.1.rock]
+A rock is a hard thing from the ground.
+
+[dict.1.stone]
+A stone is a small rock.
