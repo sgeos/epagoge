@@ -64,6 +64,17 @@ class Book:
     records: tuple[str, ...] = ()
 
 
+SPREADS_BY_LEVEL: Final[dict[int, int]] = {1: 16, 2: 32, 3: 112}
+"""Spreads per book, by level, from the binding.
+
+A book is bound in signatures of sixteen pages, so every level's page
+count is a multiple of sixteen and a book that misses it cannot be
+published without someone else padding or cutting it. Thirty-two pages at
+level one, sixty-four at level two, two hundred and twenty-four at level
+three, which is the operator's 225 landing almost exactly on fourteen
+signatures. See `docs/decisions/BOOK_FORMATS.md`.
+"""
+
 SPREADS: Final[int] = 16
 """Records per book, one per spread, giving a 32-page picture book.
 
