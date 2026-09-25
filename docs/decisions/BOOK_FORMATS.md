@@ -38,6 +38,28 @@ level-three number falls out rather than being imposed.
 Levels four and up are not set here. They are a disclosure decision for the
 same reason the schedule above level two is.
 
+## Level two rests on an assumption, and it is not the operator's
+
+**Elementary in the United States usually means kindergarten through
+grade five**, which is about six years, from a child sounding out words to
+one reading chapter books unaided. That is the widest band in the
+seven-level scheme by a long way. Districts also run kindergarten through
+six and kindergarten through eight, so the boundary is not uniform.
+
+**Sixty-four pages suits the bottom of that band and is too short for the
+top.** An early chapter book and a fifth-grade novel are not the same
+artifact.
+
+The figure is recorded on the reading that **level two means early
+elementary**, roughly grades one and two, because the level-two vocabulary
+already in the tree is `eleven`, `twelve`, `add`, `subtract`, `digit`,
+`column` and place value, which sits at the bottom of the band. That is an
+inference from the repository and not an instruction, and it is the thing
+to revisit first if level two later has to reach a fifth-grade reader.
+
+**The alternative is that seven levels are too few**, since one level would
+otherwise carry six school years while level three carries three.
+
 ## Words per page, and what is not known
 
 **Unmeasured. These are estimates and are marked as such** rather than
