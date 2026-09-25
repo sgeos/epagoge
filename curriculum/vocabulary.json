@@ -293,6 +293,11 @@
       "level": 1
     },
     {
+      "word": "anything",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
       "word": "appear",
       "concept": "presence",
       "level": 1
@@ -876,6 +881,11 @@
       "level": 1
     },
     {
+      "word": "cloudy",
+      "concept": "weather",
+      "level": 1
+    },
+    {
       "word": "cold",
       "concept": "heat",
       "level": 1
@@ -1090,6 +1100,11 @@
       "level": 1
     },
     {
+      "word": "deep",
+      "concept": "spatial_position",
+      "level": 1
+    },
+    {
       "word": "deeper",
       "concept": "measuring",
       "level": 1
@@ -1125,6 +1140,11 @@
       "level": 1
     },
     {
+      "word": "dig",
+      "concept": "activity",
+      "level": 1
+    },
+    {
       "word": "digit",
       "concept": "place_value",
       "level": 2
@@ -1135,6 +1155,21 @@
       "level": 2
     },
     {
+      "word": "direction",
+      "concept": "direction",
+      "level": 1
+    },
+    {
+      "word": "directions",
+      "concept": "direction",
+      "level": 1
+    },
+    {
+      "word": "dirt",
+      "concept": "material",
+      "level": 1
+    },
+    {
       "word": "dirty",
       "concept": "physical_property",
       "level": 1
@@ -1142,6 +1177,11 @@
     {
       "word": "dish",
       "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "distance",
+      "concept": "spatial_position",
       "level": 1
     },
     {
@@ -1225,8 +1265,18 @@
       "level": 1
     },
     {
+      "word": "dug",
+      "concept": "activity",
+      "level": 1
+    },
+    {
       "word": "dull",
       "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "dust",
+      "concept": "material",
       "level": 1
     },
     {
@@ -1312,6 +1362,11 @@
     {
       "word": "everyone",
       "concept": "person",
+      "level": 1
+    },
+    {
+      "word": "everything",
+      "concept": "standing_for",
       "level": 1
     },
     {
@@ -1616,6 +1671,11 @@
       "level": 5
     },
     {
+      "word": "future",
+      "concept": "duration",
+      "level": 1
+    },
+    {
       "word": "game",
       "concept": "toy",
       "level": 1
@@ -1648,6 +1708,16 @@
     {
       "word": "glass",
       "concept": "material",
+      "level": 1
+    },
+    {
+      "word": "glue",
+      "concept": "activity",
+      "level": 1
+    },
+    {
+      "word": "glued",
+      "concept": "activity",
       "level": 1
     },
     {
@@ -1826,6 +1896,16 @@
       "level": 1
     },
     {
+      "word": "high",
+      "concept": "spatial_position",
+      "level": 1
+    },
+    {
+      "word": "higher",
+      "concept": "spatial_position",
+      "level": 1
+    },
+    {
       "word": "him",
       "concept": "person",
       "level": 1
@@ -1833,6 +1913,11 @@
     {
       "word": "himself",
       "concept": "self_and_other",
+      "level": 1
+    },
+    {
+      "word": "his",
+      "concept": "person",
       "level": 1
     },
     {
@@ -1898,6 +1983,11 @@
     {
       "word": "hungry",
       "concept": "need",
+      "level": 1
+    },
+    {
+      "word": "hurry",
+      "concept": "moving_and_still",
       "level": 1
     },
     {
@@ -1968,6 +2058,16 @@
     {
       "word": "jar",
       "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "job",
+      "concept": "way_of_doing",
+      "level": 1
+    },
+    {
+      "word": "jobs",
+      "concept": "way_of_doing",
       "level": 1
     },
     {
@@ -2056,6 +2156,11 @@
       "level": 1
     },
     {
+      "word": "later",
+      "concept": "duration",
+      "level": 1
+    },
+    {
       "word": "leader",
       "concept": "someone_in_charge",
       "level": 1
@@ -2111,6 +2216,11 @@
       "level": 1
     },
     {
+      "word": "level",
+      "concept": "spatial_position",
+      "level": 1
+    },
+    {
       "word": "lid",
       "concept": "household_object",
       "level": 1
@@ -2118,6 +2228,11 @@
     {
       "word": "lift",
       "concept": "force",
+      "level": 1
+    },
+    {
+      "word": "lifted",
+      "concept": "activity",
       "level": 1
     },
     {
@@ -2198,6 +2313,16 @@
     {
       "word": "loud",
       "concept": "sound",
+      "level": 1
+    },
+    {
+      "word": "low",
+      "concept": "spatial_position",
+      "level": 1
+    },
+    {
+      "word": "lower",
+      "concept": "spatial_position",
       "level": 1
     },
     {
@@ -2316,6 +2441,11 @@
       "level": 1
     },
     {
+      "word": "midnight",
+      "concept": "duration",
+      "level": 1
+    },
+    {
       "word": "milk",
       "concept": "liquid",
       "level": 1
@@ -2339,6 +2469,16 @@
       "word": "minus",
       "concept": "subtraction",
       "level": 2
+    },
+    {
+      "word": "minute",
+      "concept": "duration",
+      "level": 1
+    },
+    {
+      "word": "minutes",
+      "concept": "duration",
+      "level": 1
     },
     {
       "word": "mishap",
@@ -2516,6 +2656,11 @@
       "level": 1
     },
     {
+      "word": "noon",
+      "concept": "duration",
+      "level": 1
+    },
+    {
       "word": "nose",
       "concept": "body_part",
       "level": 1
@@ -2584,6 +2729,16 @@
       "level": 1
     },
     {
+      "word": "opposite",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
+      "word": "opposites",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
       "word": "order",
       "concept": "number_word_order",
       "level": 1
@@ -2616,6 +2771,11 @@
     {
       "word": "owns",
       "concept": "having",
+      "level": 1
+    },
+    {
+      "word": "pace",
+      "concept": "moving_and_still",
       "level": 1
     },
     {
@@ -2662,6 +2822,16 @@
       "level": 1
     },
     {
+      "word": "path",
+      "concept": "direction",
+      "level": 1
+    },
+    {
+      "word": "paths",
+      "concept": "direction",
+      "level": 1
+    },
+    {
       "word": "patted",
       "concept": "touching",
       "level": 1
@@ -2685,6 +2855,11 @@
       "word": "percent",
       "concept": "quantity",
       "level": 6
+    },
+    {
+      "word": "period",
+      "concept": "duration",
+      "level": 1
     },
     {
       "word": "person",
@@ -2822,6 +2997,16 @@
       "level": 5
     },
     {
+      "word": "proper",
+      "concept": "way_of_doing",
+      "level": 1
+    },
+    {
+      "word": "properly",
+      "concept": "way_of_doing",
+      "level": 1
+    },
+    {
       "word": "prove",
       "concept": "checking",
       "level": 1
@@ -2854,6 +3039,11 @@
     {
       "word": "quick",
       "concept": "duration",
+      "level": 1
+    },
+    {
+      "word": "quickly",
+      "concept": "moving_and_still",
       "level": 1
     },
     {
@@ -2904,6 +3094,11 @@
     {
       "word": "read",
       "concept": "writing",
+      "level": 1
+    },
+    {
+      "word": "ready",
+      "concept": "way_of_doing",
       "level": 1
     },
     {
@@ -3082,6 +3277,11 @@
       "level": 1
     },
     {
+      "word": "rush",
+      "concept": "moving_and_still",
+      "level": 1
+    },
+    {
       "word": "rust",
       "concept": "metal",
       "level": 1
@@ -3179,6 +3379,11 @@
     {
       "word": "shake",
       "concept": "moving_and_still",
+      "level": 1
+    },
+    {
+      "word": "shallow",
+      "concept": "spatial_position",
       "level": 1
     },
     {
@@ -3337,6 +3542,11 @@
       "level": 1
     },
     {
+      "word": "slowly",
+      "concept": "moving_and_still",
+      "level": 1
+    },
+    {
       "word": "small",
       "concept": "physical_property",
       "level": 1
@@ -3392,6 +3602,11 @@
       "level": 1
     },
     {
+      "word": "something",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
       "word": "sometimes",
       "concept": "cycle",
       "level": 1
@@ -3434,6 +3649,11 @@
     {
       "word": "speaks",
       "concept": "sentence",
+      "level": 1
+    },
+    {
+      "word": "speed",
+      "concept": "moving_and_still",
       "level": 1
     },
     {
@@ -3502,6 +3722,16 @@
       "level": 1
     },
     {
+      "word": "star",
+      "concept": "weather",
+      "level": 1
+    },
+    {
+      "word": "stars",
+      "concept": "weather",
+      "level": 1
+    },
+    {
       "word": "start",
       "concept": "sequence",
       "level": 1
@@ -3532,6 +3762,16 @@
       "level": 1
     },
     {
+      "word": "stick",
+      "concept": "material",
+      "level": 1
+    },
+    {
+      "word": "sticks",
+      "concept": "material",
+      "level": 1
+    },
+    {
       "word": "stone",
       "concept": "material",
       "level": 1
@@ -3559,6 +3799,11 @@
     {
       "word": "straight",
       "concept": "shape",
+      "level": 1
+    },
+    {
+      "word": "straw",
+      "concept": "material",
       "level": 1
     },
     {
@@ -3612,6 +3857,11 @@
       "level": 1
     },
     {
+      "word": "sunny",
+      "concept": "weather",
+      "level": 1
+    },
+    {
       "word": "support",
       "concept": "reporting",
       "level": 6
@@ -3659,7 +3909,7 @@
     {
       "word": "system",
       "concept": "component_and_system",
-      "level": 5
+      "level": 2
     },
     {
       "word": "table",
@@ -3699,6 +3949,16 @@
     {
       "word": "tally",
       "concept": "written_record",
+      "level": 1
+    },
+    {
+      "word": "task",
+      "concept": "way_of_doing",
+      "level": 1
+    },
+    {
+      "word": "tasks",
+      "concept": "way_of_doing",
       "level": 1
     },
     {
@@ -3820,6 +4080,16 @@
       "level": 1
     },
     {
+      "word": "tie",
+      "concept": "activity",
+      "level": 1
+    },
+    {
+      "word": "tied",
+      "concept": "activity",
+      "level": 1
+    },
+    {
       "word": "time",
       "concept": "duration",
       "level": 1
@@ -3891,6 +4161,11 @@
     },
     {
       "word": "toward",
+      "concept": "direction",
+      "level": 1
+    },
+    {
+      "word": "towards",
       "concept": "direction",
       "level": 1
     },
@@ -4212,6 +4487,11 @@
     {
       "word": "wood",
       "concept": "plant",
+      "level": 1
+    },
+    {
+      "word": "wooden",
+      "concept": "material",
       "level": 1
     },
     {

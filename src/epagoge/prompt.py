@@ -198,3 +198,64 @@ def retry(
         "",
     ]
     return "\n".join(lines) + build(target, level, words, count=count)
+
+
+BOOK_FORMAT: Final[str] = """SUBJECT: <one sentence saying what this book is about>
+WORD <word>: <one sentence saying what that word means>
+STORY: <one sentence>"""
+
+
+def book(
+    subject: str,
+    subject_form: str,
+    words: Mapping[str, str],
+    level: int,
+    admissible: Sequence[str],
+    sentences: int = 10,
+) -> str:
+    """Prompt for a whole book in one completion.
+
+    **Sentence-at-a-time prompting produced true, admissible, lifeless
+    records**, among them three near-identical lines for one concept.
+    Nothing connected one sentence to the next, so the teacher had no reason
+    to vary them. Asking for the whole book is what supplies that reason.
+
+    ``words`` maps each word to be defined to the concept that licenses it,
+    so the teacher is told what the word is for and not only that it exists.
+    """
+    if not admissible:
+        raise ValueError("no admissible vocabulary supplied")
+    if sentences < 1:
+        raise ValueError("a book needs at least one story sentence")
+
+    lines = [
+        f"Write a short book for a reading level {level} corpus.",
+        "",
+        "THE HARDEST CONSTRAINT IS THE WORD LIST AT THE BOTTOM.",
+        "Every word you write must appear in it.",
+        "",
+        f"The book is about: {subject_form}",
+        "",
+        "Write these lines, in this order and in this exact format:",
+        "",
+        BOOK_FORMAT,
+        "",
+        "One SUBJECT line. Then one WORD line for each of these words:",
+    ]
+    lines += [f"  {word}" for word in sorted(words)]
+    lines += [
+        "",
+        f"Then {sentences} STORY lines that tell one story, in order, using",
+        "those words. **The story must be one thing happening, not a list of",
+        "separate facts.** Each sentence follows from the one before it.",
+        "",
+        "Use ONLY these words, in any order and any inflection:",
+        "  " + " ".join(sorted(admissible)),
+        "",
+        "Rules:",
+        "  - One idea per line. No headings, no numbering, no blank lines.",
+        "  - State what is so. Do not address the reader as a teacher would.",
+        "  - A definition says what the word means, using the other words.",
+        "  - No word outside the list above.",
+    ]
+    return "\n".join(lines)

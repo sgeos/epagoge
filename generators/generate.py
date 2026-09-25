@@ -22,7 +22,7 @@ import sys
 from collections.abc import Iterator
 from dataclasses import dataclass
 from pathlib import Path
-from typing import cast
+from typing import Final, cast
 
 from epagoge import prompt as prompts
 from epagoge import schedule as sched
@@ -146,6 +146,52 @@ def split_lines(raw: str) -> list[str]:
     return out
 
 
+CSI_RE: Final[re.Pattern[str]] = re.compile(r"\x1b\[([0-9;]*)([A-Za-z])")
+"""Terminal control sequences the runtime emits while streaming.
+
+It rewrites each line as it wraps, emitting partial text, then a cursor-back
+and an erase, then the corrected text. **Stripping the escape codes alone is
+not enough**, because the partial text they were there to erase survives.
+The first attempt did exactly that and left fragments like `someth` and `fl`
+in the output, which were then counted as words outside the vocabulary.
+
+So the two codes that matter are replayed rather than removed. `CSI n D`
+moves the cursor back n places and `CSI K` erases to the end of the line,
+and together they mean delete the last n characters.
+"""
+
+
+def strip_terminal_control(raw: str) -> str:
+    """Replay cursor-back and erase, and rejoin the line they wrapped.
+
+    The observed sequence is a partial word, `CSI n D`, `CSI K`, a newline,
+    and then the word again in full. So the effect is delete the last n
+    characters **and join to the next line**, because the newline is the
+    wrap that the rewrite exists to undo rather than a real line break.
+
+    The first attempt stripped the escape codes and left the partial word.
+    The second replayed the delete and left the newline, which truncated
+    every wrapped sentence and cost it its full stop. Setting a wide
+    terminal does not help; the runtime wraps regardless.
+    """
+    out: list[str] = []
+    position = 0
+    for match in CSI_RE.finditer(raw):
+        if match.start() < position:
+            continue
+        out.append(raw[position : match.start()])
+        position = match.end()
+        count, final = match.group(1), match.group(2)
+        if final == "D":
+            back = int(count) if count else 1
+            text = "".join(out)
+            out = [text[:-back] if back <= len(text) else ""]
+        elif final == "K" and raw[position : position + 1] == "\n":
+            position += 1
+    out.append(raw[position:])
+    return "".join(out)
+
+
 def ask(text: str, *, timeout: int) -> str:
     """Run one completion. Raises on a non-zero exit so failure is loud."""
     done = subprocess.run(  # noqa: S603
@@ -156,7 +202,7 @@ def ask(text: str, *, timeout: int) -> str:
         timeout=timeout,
         check=True,
     )
-    return done.stdout.strip()
+    return strip_terminal_control(done.stdout).strip()
 
 
 def drafts_for(

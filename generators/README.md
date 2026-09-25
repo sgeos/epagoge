@@ -146,6 +146,57 @@ rather than proof of it.
 The recorded wearing-out case still holds. `wearing_out` still excludes
 `things_break`, which is its prerequisite.
 
+## Book generation, 2026-09-24
+
+`generate_books.py` asks for a whole book in one completion. Sentence-at-a-
+time prompting produced true, admissible, lifeless records, because nothing
+connected one sentence to the next and the teacher had no reason to vary
+them.
+
+**It works.** A first book came back with a subject definition, seven word
+definitions and nineteen story lines, 236 words, inside the hundred to
+eight hundred range an operator gave for a level-one book. The story has
+continuity, and its last line returns to the subject definition unprompted.
+
+### Three defects found by reading the output
+
+**The terminal control codes, which had been corrupting every long
+completion.** The runtime rewrites each line as it wraps, emitting a
+partial word, a cursor-back, an erase, a newline, and then the word again
+in full. Three attempts were needed to handle it. Stripping the escape
+codes left the partial word, so fragments like `someth` and `fl` were
+counted as words outside the vocabulary. Replaying the delete left the
+newline, which truncated every wrapped sentence and cost it its full stop,
+so 29 of 40 rejections were "not a sentence". The sequence is now replayed
+whole, delete and join. **Setting a wide terminal does not help. The
+runtime wraps regardless.**
+
+Every earlier batch was checked for escape bytes and none carried any,
+because short lines never wrap. Rejection counts in those runs may still
+have been inflated by longer completions that were never inspected.
+
+**The retry discarded good output.** It took the later answer wholesale, so
+a worse second attempt replaced a better first one and a book that had
+seven usable records came back with two. Definitions now accumulate across
+attempts.
+
+**Merging accumulated two different stories.** Definitions stand alone and
+may be merged. A story is a sequence and may not. The merged version had a
+boy find a book and then, with no transition, look forward to a game. The
+longest single attempt is kept.
+
+### What the teacher reaches for and cannot use
+
+Eight book prompts produced 110 distinct words outside the ceiling.
+`something` led at fifteen occurrences and was simply absent. Fifty-eight
+words were added on that evidence, including `direction` itself, which was
+a concept whose own name was not in the lexicon.
+
+**The lexicon is not frozen**, so a word the teacher needs is evidence
+rather than an error. One exception was left alone. `part` and `whole`
+belong to `component_and_system`, which the schedule places at level two,
+and moving it would change the very split the ordering ablation tests.
+
 ## Open constraint
 
 The verification layer that rejects unsupported claims is specified in

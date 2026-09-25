@@ -147,6 +147,13 @@ class Vocabulary:
                     return found
                 if suffix in ("es", "ed", "ing") and self._by_form.get(stem + "e"):
                     return self._by_form[stem + "e"]
+                # A doubled final consonant, as in stopped from stop. Narrow
+                # enough not to conflate distinct words, and it was failing
+                # on every regular past tense of a short verb.
+                if len(stem) > 2 and stem[-1] == stem[-2] and stem[-1] not in "aeiou":
+                    undoubled = self._by_form.get(stem[:-1])
+                    if undoubled is not None:
+                        return undoubled
         return None
 
     def is_free(self, token: str) -> bool:

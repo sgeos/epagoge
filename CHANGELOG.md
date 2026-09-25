@@ -27,6 +27,52 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Book generation, and the lexicon grows on evidence
+
+- `generate_books.py` asks for a whole book in one completion. **It works.**
+  A first book returned a subject definition, seven word definitions and
+  nineteen story lines, **236 words**, inside the operator's hundred to
+  eight hundred range, with continuity across the story and a last line
+  that returns to the subject definition unprompted.
+- **A book length cap.** `MAX_WORDS` at 1000, with 100 to 800 reported as
+  typical and never enforced. Operator figure.
+- Eight book prompts produced **110 distinct words outside the ceiling**,
+  led by `something` at fifteen occurrences. **58 added on that evidence**,
+  including `direction`, a concept whose own name was not in the lexicon.
+  Terms **821 to 877**, level one **704 to 762**.
+- One exception left alone. `part` and `whole` belong to
+  `component_and_system`, which the schedule places at level two, and
+  moving it would change the very split the ordering ablation tests.
+
+### Fixed. Terminal control codes had been corrupting every long completion
+
+- The runtime rewrites each line as it wraps, emitting a partial word, a
+  cursor-back, an erase, a newline, then the word again in full.
+- **Three attempts to handle it.** Stripping the escapes left the partial
+  word, so fragments like `someth` and `fl` were counted as vocabulary
+  violations. Replaying the delete left the newline, which truncated every
+  wrapped sentence and cost it its full stop, making 29 of 40 rejections
+  "not a sentence". The sequence is now replayed whole.
+- **A wide terminal does not help.** The runtime wraps regardless.
+- Every earlier batch was checked and none carried an escape byte, because
+  short lines never wrap. **Rejection counts in those runs may still have
+  been inflated** by longer completions never inspected.
+
+### Fixed. Two defects in my own retry loop
+
+- **It discarded good output**, taking the later answer wholesale, so a
+  worse second attempt replaced a better first and a book with seven usable
+  records came back with two. Definitions now accumulate.
+- **Accumulating stitched two different stories together.** Definitions
+  stand alone and may be merged. A story is a sequence and may not. The
+  merged version had a boy find a book and then, with no transition, look
+  forward to a game. The longest single attempt is kept.
+
+### Fixed. The stemmer failed on every doubled-consonant past tense
+
+- `stopped` stripped to `stopp` and matched nothing. Narrowly extended to
+  undouble a final consonant, which does not conflate distinct words.
+
 ### Added. Books, and definitions written in the level's own vocabulary
 
 - `src/epagoge/book.py`, `tools/validate_books.py`, `docs/spec/BOOKS.md`,

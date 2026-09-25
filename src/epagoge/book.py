@@ -23,7 +23,7 @@ from collections.abc import Collection, Iterable, Mapping, Sequence
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import cast
+from typing import Final, cast
 
 from epagoge.concept_graph import Violation
 
@@ -60,6 +60,19 @@ class Book:
     subject_kind: DefinitionKind
     subject: str
     records: tuple[str, ...] = ()
+
+
+MAX_WORDS: Final[int] = 1000
+"""Hard cap on a level-one book.
+
+Operator figure, 2026-09-24. A level-one book runs from about a hundred
+words to about eight hundred, and does not pass a thousand. Below the
+typical range is not an error, since a book about one narrow thing is
+allowed to be short. Above the cap it is no longer a picture book.
+"""
+
+TYPICAL_WORDS: Final[tuple[int, int]] = (100, 800)
+"""Reported, never enforced."""
 
 
 @dataclass(frozen=True, slots=True)
@@ -99,6 +112,7 @@ def validate_books(
     known_words: Collection[str],
     known_domains: Collection[str],
     known_topics: Collection[str],
+    word_counts: Mapping[str, int] | None = None,
 ) -> list[Violation]:
     """Return every breach. Empty means the books are sound."""
     out: list[Violation] = []
@@ -165,6 +179,17 @@ def validate_books(
                     f" {book.subject!r} and no record in it defines that",
                 )
             )
+
+        if word_counts is not None:
+            total = sum(word_counts.get(r, 0) for r in book.records)
+            if total > MAX_WORDS:
+                out.append(
+                    Violation(
+                        "book-too-long",
+                        f"book {book.id!r} runs to {total} words, over the"
+                        f" {MAX_WORDS} cap",
+                    )
+                )
 
         # Definition before use. A word defined after the story that uses it
         # is a glossary at the back, which is not what this ordering is for.

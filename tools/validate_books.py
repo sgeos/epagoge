@@ -12,6 +12,7 @@ from pathlib import Path
 
 from epagoge import schedule as sched
 from epagoge.book import (
+    TYPICAL_WORDS,
     Definition,
     DefinitionKind,
     definition_coverage,
@@ -37,10 +38,12 @@ def main(argv: list[str]) -> int:
     books = load_books(Path(argv[4]))
 
     levels: dict[str, int] = {}
+    words_in: dict[str, int] = {}
     definitions: dict[str, Definition] = {}
     for path in argv[5:]:
         for record in load_corpus(Path(path)):
             levels[record.id] = record.level
+            words_in[record.id] = len(record.content.split())
             if record.defines is not None:
                 definitions[record.id] = record.defines
 
@@ -63,6 +66,11 @@ def main(argv: list[str]) -> int:
     print(f"  books              {len(books)}")
     print(f"  records in books   {sum(len(b.records) for b in books)}")
     print(f"  definitions        {len(definitions)}")
+    for b in books:
+        total = sum(words_in.get(r, 0) for r in b.records)
+        low, high = TYPICAL_WORDS
+        tag = "" if low <= total <= high else "  outside the typical range"
+        print(f"    {b.id:<16} {total:>5} words{tag}")
 
     # Coverage is reported and never gated. A word with no definition is not
     # a defect in an unfinished corpus and is one in a finished level.
