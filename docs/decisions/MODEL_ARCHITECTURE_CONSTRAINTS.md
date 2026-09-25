@@ -105,8 +105,8 @@ tested would be optimising the wrong thing.
 
 ## The deployment target, answered 2026-09-23
 
-The target is a **constrained embedded accelerator** as described in the
-operational profile. This answers the question
+The target is a **constrained embedded accelerator**, described under
+the code-name convention and not restated here. This answers the question
 this record previously left open, and changes the second activity rather
 than removing it.
 

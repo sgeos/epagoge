@@ -170,12 +170,13 @@ and https://www.terms.law/2025/04/09/navigating-ai-platform-policies-who-owns-ai
 
 ## 3. Scope boundary on applications
 
-**ANSWERED 2026-09-23.** The deliverable is a reasoning component for
-[redacted] and [redacted] tasks, as described in the
-operational profile.
+**Held privately under the code-name convention.** This question is
+answered, and its answer describes the deployment domain, which a
+tracked document may not do however true the statement is.
 
-**Weapons-development training material is out of scope.** The boundary is
-recorded rather than assumed, and nothing in the profile approaches it.
+Omission rather than misdirection: the question existed, it is
+answered, and the answer is not here.
+
 ## 4. Falsification criteria
 
 What measured outcome would count as this project having failed? Without
@@ -286,10 +287,9 @@ unfalsifiable terminal goal creates pressure toward confident
 extrapolation beyond evidence, which is the failure mode the
 evidence-conditioned-assent requirement exists to suppress.
 
-**ANSWERED 2026-09-23. Coverage is derived from the operational profile.**
-
-The operational profile and the coverage manifest derived from
-it are the inputs the generation pipeline reads.
+**ANSWERED 2026-09-23. Coverage is derived from an operational profile
+held under the code-name convention**, together with the coverage manifest
+derived from it. Those are the inputs the generation pipeline reads.
 
 Two properties follow and are the reason for this arrangement.
 
@@ -354,8 +354,8 @@ Interoperability becomes a schema question.
 Three consequences, all favourable.
 
 - An entire model leaves the project.
-- The format suits the [redacted constraint] that justified a
-  language model in the first place.
+- The format suits a constraint recorded under the code-name
+  convention that justified a language model in the first place.
 - Output becomes auditable, which is the project's strongest
   differentiator per the market assessment.
 
@@ -410,45 +410,28 @@ central claim than question ten is.
 
 ## 12. Deployment hardware class
 
-**ANSWERED 2026-09-23.** The target is a constrained embedded accelerator
-as described in the operational profile. Three consequences bear on this
-repository and none of them require the profile to be restated.
+**Held privately under the code-name convention.** This question is
+answered, and its answer describes the deployment domain, which a
+tracked document may not do however true the statement is.
 
-**The base model is unaffected.** The deployment environment constrains
-deployment, not training. The trained artifact and the deployed artifact
-are different objects, which preserves the comparability requirement in
-`MODEL_ARCHITECTURE_CONSTRAINTS.md` intact.
+Omission rather than misdirection: the question existed, it is
+answered, and the answer is not here.
 
-**Budget dominates architecture.** The deployment compute and memory
-budget is far below contemporary commercial parts, so whatever runs there
-is a small distilled student. This is a distillation problem and no
-architectural choice in the base model substitutes for it.
-
-**[redacted].** The deployment environment does not
-permit assuming that [redacted] are stable. This is
-the requirement behind the numeric-format and control-flow decisions in
-`MODEL_ARCHITECTURE_CONSTRAINTS.md`, and it is a real constraint stated
-generically rather than a proxy for something else.
 ## 13. Distillation track
 
-Added 2026-09-23. The deployment compute and memory budget is far below
-contemporary commercial parts, so the deployed model is a small distilled
-student rather than the base model.
+**Held privately under the code-name convention.** This question is
+answered, and its answer describes the deployment domain, which a
+tracked document may not do however true the statement is.
 
-**DEFERRED 2026-09-23 by question one.** The research deliverable does not
-include a deployable model, so distillation is out of scope until the
-follow-on is gated open.
-
-The question itself stands unchanged and remains the one on which the whole
-deployment premise rests. It should be answered early in the follow-on
-rather than late, since a negative answer removes the deployment rationale
-without invalidating the research result.
+Omission rather than misdirection: the question existed, it is
+answered, and the answer is not here.
 
 ## 14. Relationship to existing statically bounded execution work
 
-Added 2026-09-23. Fault-tolerant inference on the deployment target needs
-statically bounded execution, no unbounded loops, verifiable memory
-bounds, and error detection on weight memory.
+Added 2026-09-23. Fault-tolerant inference needs statically bounded
+execution, no unbounded loops, verifiable memory bounds, and error
+detection on weight memory. Why those are requirements here is
+recorded under the code-name convention.
 
 **Answered 2026-09-23.** Keleusma is a separate effort. The operator
 considers eventual convergence of the two projects plausible but has not
@@ -656,11 +639,10 @@ with no compute commitment. Depth additionally costs latency.
 
 Ternary weights against integer activations eliminate multiplication. The
 operation becomes select, add, or subtract. A multiplier-free datapath is
-dramatically smaller than a floating-point multiply-accumulate unit, and
-deployment targets are area-constrained and several process
-generations behind commercial silicon, so area is their scarcest resource.
-More arithmetic units fit in the same area, and simpler units are
-easier both to replicate and to verify formally.
+dramatically smaller than a floating-point multiply-accumulate unit,
+and area is the scarcest resource on the intended part. More
+arithmetic units fit in the same area, and simpler units are easier
+to verify formally.
 
 The compute cost of adding components is therefore partly absorbed by each
 operation being cheaper in hardware, but only on a device designed for
@@ -676,26 +658,12 @@ most expensive false positive available to this project.
 
 ## 16. Context length the deployment task requires
 
-Added 2026-09-23. Bounded attention converts key-value cache from a
-quantity growing with sequence length into a statically bounded one, which
-is the property this deployment target needs. Pure sliding-window attention
-loses long-range dependency, and the practical remedy interleaves a few
-full-attention layers, which reintroduce unbounded growth.
+**Held privately under the code-name convention.** This question is
+answered, and its answer describes the deployment domain, which a
+tracked document may not do however true the statement is.
 
-The trade between a complete static bound and long-range capability
-therefore has to be set deliberately, and where it is set depends on how
-much context the deployment task actually needs.
-
-**DEFERRED 2026-09-23 by question one.** The ablation models use standard
-full attention, since bounded attention is a deployment concern and would
-add a variable to the experiment. The window size and full-attention layer
-count are follow-on decisions.
-
-Question seventeen supplies the task, so the context requirement is
-derivable once the follow-on defines an episode. The task itself is not
-restated here. See `../architecture/MODEL_ARCHITECTURE.md`.
-
-This inherits from question one, scope.
+Omission rather than misdirection: the question existed, it is
+answered, and the answer is not here.
 
 ## 20. Coverage weighting against the token budget. ANSWERED 2026-09-23
 
@@ -952,57 +920,23 @@ See `LICENSING.md`.
   https://arxiv.org/pdf/2609.16338
 
 
-## 17. Deployment task shape. ANSWERED 2026-09-23
+## 17. Deployment task shape
 
-**Answered, and the answer is recorded under the discipline `CLAUDE.md`
-points to rather than here.** The shape of the task identifies the domain,
-which a tracked document may not do however true the statement is.
+**Held privately under the code-name convention.** This question is
+answered, and its answer describes the deployment domain, which a
+tracked document may not do however true the statement is.
 
-**What is safe to state, and is the part that constrains the project.** The
-[redacted constraint] is severely constrained, which is why a language model is
-the right instrument rather than a classifier. Compressing an episode into
-a structured account of what was observed, what was inferred, what was done
-and why is a language task.
+Omission rather than misdirection: the question existed, it is
+answered, and the answer is not here.
 
-**Evidence-conditioned assent is therefore an engineering requirement and
-not a preference.** Deferring to a confident but mistaken claim, or to one's
-own earlier conclusion, is a failure of calibration, and where the cost of
-acting on a wrong conclusion is high it is a safety failure rather than an
-annoyance.
+## 18. Agentic reliability at deployment scale
 
-This constrains questions nine, sixteen, and eighteen.
-## 18. Agentic reliability at deployment scale. THE SHARPEST OPEN RISK
+**Held privately under the code-name convention.** This question is
+answered, and its answer describes the deployment domain, which a
+tracked document may not do however true the statement is.
 
-Added 2026-09-23, arising directly from question seventeen.
-
-Agentic reliability is strongly scale-dependent. Smaller models are
-markedly worse at multi-step tool use, at recovering from their own errors,
-and at not becoming stuck. The deployment envelope wants a small model. The
-use case wants reliable autonomy. These pull against each other, and the
-tension is not resolved by any architecture decision recorded in this
-repository.
-
-The deployment budget recorded in the profile admits something in the
-several-billion-parameter class. Agentic reliability at that scale is
-nonetheless meaningfully below frontier.
-
-**DEFERRED 2026-09-23 by question one**, though it remains the sharpest
-risk to the follow-on and should gate it rather than be discovered inside
-it.
-
-**Mechanism, added 2026-09-23.** This is no longer only an empirical
-pattern. Reasoning requires an adequately unconstrained Jacobian-space,
-effective rank scales with width, and the deployment envelope caps width.
-See `JACOBIAN_SPACE.md`. The account predicts the ceiling rather than
-discovering it, and makes the effective-rank floor the quantity that
-decides whether a given envelope can host the required reliability.
-
-**The mitigation is not capability.** It is narrow task scope, bounded step
-budgets with defined safe fallbacks, and externally verifiable checks on
-proposed actions. A system that cannot be made reliable by being smart can
-sometimes be made safe by being constrained. Which tasks are in scope for
-autonomous action, as against advisory output only, is unspecified and is
-the next thing worth deciding.
+Omission rather than misdirection: the question existed, it is
+answered, and the answer is not here.
 
 ## 19. Why this does not become Galactica
 

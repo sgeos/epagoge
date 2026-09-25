@@ -8,8 +8,14 @@ in the tree by a `.gitkeep`. `../docs/decisions/CORPUS_ARTIFACTS.md` has
 the reasoning and `../docs/decisions/CORPUS_TRACKING.md` carries the
 amendment to the original direction.
 
-**Status.** One stream built, `level_1.jsonl`, five documents and 681
-words, from the five books at level one.
+**Status.** Empty, and the directory is gitignored so nothing here is
+published. A built stream lived here and was removed on 2026-09-25: it
+held seven documents from a level-one corpus of five books, and the
+corpus now holds 246. A stale artifact in the directory a reader looks
+in first answers the question wrongly rather than not answering it.
+
+**The corpus lives in `../curriculum/books/`.** `tools/build_corpus.py`
+builds a stream from it when a training run wants one.
 
 ## What is here, and what is not
 

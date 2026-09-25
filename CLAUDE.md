@@ -12,9 +12,9 @@ stages revisit those concepts at increasing complexity, terminating in
 unmodified scientific literature. The organising spine is the scientific
 method.
 
-**Status**: Under implementation. The concept graph and the corpus record
-schema are specified, implemented, tested, and gated. No corpus has been
-generated and no model has been trained.
+**Status**: Under implementation. Level one is drafted at 246 books and
+a model has been trained on it and can be prompted. Levels two and above
+are specified and barely written.
 
 **Read `docs/process/HANDOFF.md` first, and run its validity check before
 believing anything in it.**

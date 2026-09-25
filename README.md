@@ -3,9 +3,19 @@
 A graded synthetic corpus and curriculum for training a
 falsification-oriented foundation model.
 
-**Status.** Under implementation. The concept graph and the corpus record
-schema are specified, implemented, tested, and gated. No corpus has been
-generated and no model has been trained.
+**Status.** Under implementation. Level one is drafted: 246 books over
+95 scheduled units, a self-hosting lexicon of 845 words, and a model
+trained on it that can be prompted. Levels two and above are specified
+and barely written. The measured limit on model quality is corpus size,
+recorded in `evals/pilot/`.
+
+**The corpus is machine-generated.** Every book was written by a local
+instance of `qwen3:30b-a3b-instruct-2507-q4_K_M`, Apache 2.0, against a
+closed vocabulary, and every line was checked against that vocabulary
+before entering the corpus. Rejected lines were rewritten or the words
+were admitted deliberately; nothing was absorbed unchecked. Some passages
+were written by hand where the model could not meet the constraint, and
+the commits say which.
 
 All nineteen pre-planning questions are resolved, fifteen answered and four
 deferred to the gated follow-on. See
@@ -15,9 +25,11 @@ deferred to the gated follow-on. See
 pre-registered ordering ablation at three scale points from random
 initialisation. A deployable model is a follow-on gated on that result.
 
-**Next artifact** is the pre-registration document, which must fix the
-metrics, the meaningful effect size, the seed count, and the corpus
-error-rate ceiling before any run.
+**The pre-registration exists** at `evals/PRE_REGISTRATION.md` and has
+open items, the sharpest being the training endpoint. Holding everything
+else fixed and changing only the step count moved the ordering result
+from one sign to the other, so no ordering claim from this repository
+means anything until that is fixed in advance.
 
 ## Why evidence-conditioned assent is an engineering requirement
 

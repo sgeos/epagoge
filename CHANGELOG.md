@@ -2682,7 +2682,7 @@ attention and context length, and agentic reliability at deployment scale.
   distinctness assessed at the close of pre-planning.
 - Deployment use case recorded as answered. An agentic model with vision
   and instrument data access, reasoning autonomously and reporting over a
-  [redacted constraint].
+  constraint recorded under the code-name convention.
 - Open question nineteen added. An explicit answer is required for why this
   does not repeat Galactica, which failed on this project's exact claimed
   differentiator.
