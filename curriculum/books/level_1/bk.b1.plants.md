@@ -20,7 +20,10 @@
     "b1.plants.x09": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "b1.plants.x10": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "b1.plants.x11": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "b1.plants.x12": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "b1.plants.x12": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "b1.plants.x13": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "b1.plants.x14": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "b1.plants.x15": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +66,12 @@ She looks up at the tree and smiles, her hands holding a small blue balloon.
 
 [b1.plants.x12]
 The bird flies away, but the tree stays still.
+
+[b1.plants.x13]
+The child reaches up with both hands, trying to catch it, but it floats away.
+
+[b1.plants.x14]
+The tree stands still, its branches holding the sky like a promise.
+
+[b1.plants.x15]
+She lets go of the string and the balloon floats away into the bright blue sky.

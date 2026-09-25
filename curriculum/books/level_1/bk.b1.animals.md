@@ -21,7 +21,8 @@
     "b1.animals.s05": {"concepts": ["animal", "body_part"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-need-supply"}},
     "b1.animals.s06": {"concepts": ["animal", "body_part"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-need-supply"}},
     "b1.animals.s07": {"concepts": ["animal", "body_part"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-need-supply"}},
-    "b1.animals.x13": {"concepts": ["animal", "body_part"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "b1.animals.x13": {"concepts": ["animal", "body_part"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "b1.animals.x14": {"concepts": ["animal", "body_part"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +68,6 @@ The dog closed its eyes and slept under the warm sun.
 
 [b1.animals.x13]
 A bird flew above the blue bowl and landed on the edge.
+
+[b1.animals.x14]
+The dog opened its eyes and sniffed the air, then stood up to follow the sound.

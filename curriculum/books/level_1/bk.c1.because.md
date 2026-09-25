@@ -22,7 +22,8 @@
     "c1.because.x11": {"concepts": ["discourse_marker"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "c1.because.x12": {"concepts": ["discourse_marker"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "c1.because.x13": {"concepts": ["discourse_marker"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "c1.because.x14": {"concepts": ["discourse_marker"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "c1.because.x14": {"concepts": ["discourse_marker"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.because.x15": {"concepts": ["discourse_marker"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ Later, you saw a bird fly where the balloon had gone.
 
 [c1.because.x14]
 You smiled, thinking it might have helped the bird feel alive again.
+
+[c1.because.x15]
+The bird flew lower, as if it knew you were watching.

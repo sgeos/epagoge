@@ -21,7 +21,9 @@
     "ac1.having.s05": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "ac1.having.s06": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "ac1.having.s07": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
-    "ac1.having.x13": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "ac1.having.x13": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "ac1.having.x14": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "ac1.having.x15": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ My sister says I am clever because I found two cups and know which is mine.
 
 [ac1.having.x13]
 I showed my sister the cup I made, and she smiled because it was bright and strong.
+
+[ac1.having.x14]
+I placed my cup next to hers on the shelf, and we both smiled.
+
+[ac1.having.x15]
+I placed my cup beside hers on the shelf, side by side, like two friends sharing the same space.

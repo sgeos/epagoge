@@ -10,7 +10,7 @@ items. Delete when `COMPLETION_CONDITION.md` is met.
 | 1 | Dictionary coverage and closure | **Done. 661 of 661, closure 100%** | — |
 | 2 | Thesaurus, synonyms and antonyms | **Done. 194 antonyms, 132 synonyms over 749 entries** | — |
 | 3 | Missing words added to both | **Done, and now continuous.** `tools/admit.py` pulls words the corpus asks for | — |
-| 4 | Full level-one corpus draft | **48 books of 92 units, none at 16 spreads** | None. Generation |
+| 4 | Full level-one corpus draft | **46 of 49 teachable units; 21 of 47 books at 16 spreads** | Generation, plus 3 withheld units |
 | 5 | Train a level-one model | `epagoge.pilot` has the model, loop, device and paired orderings; torch 2.14 and MPS verified | **Item 4.** The corpus is about 2,200 words and cannot train anything |
 | 6 | Level-two dictionary and thesaurus | **Done. 721 of 721, closure 100%** | — |
 | 7 | Level-two ablation | Pre-registration has pending items | Items 4 and 5 |
@@ -66,6 +66,17 @@ is unfinished and its existing lines are already true and admissible.
 Enable it once the corpus complies. A check that is wired and never run is
 the failure this project has recorded twice.
 
+## Only 49 of the 92 units can have a book
+
+**43 units carry only `introduces`**, naming a concept the graph does not
+hold, so the generator cannot derive its neighbours and skips it. Covering
+them means authoring 51 graph concepts with prerequisite edges and domain
+assignments, which is design work and is the operator's.
+
+Saying "48 of 92" implied the gap was generation throughput. **It is a
+graph question, and the completion condition now scopes to units that can
+actually have a book.**
+
 ## Wrong turns, every one already made once
 
 - **The gate must gate.** A commit ran after `GATE=1` was printed in the
@@ -87,6 +98,19 @@ the failure this project has recorded twice.
 - **No magic numbers in tests.** An assertion of more than 800 thesaurus
   entries went stale the moment inflections were merged. Tie to the
   lexicon.
+- **Check a tool's remove path, not only its add path.** `sync_thesaurus`
+  keyed both on the level it was given, so syncing at level one deleted
+  every level-two entry, and `admit.py` calls it after every admission.
+  Two tools this session had a remove path the add path concealed.
+- **Do not describe a property the tree does not have yet.** Said twice:
+  once of incremental writes, once of an assumption I had not recorded.
+  Both were caught by checking rather than by remembering.
+- **The local gate is not the gate.** CI was red for an entire session
+  because pyright resolves optional dependencies from a virtual
+  environment that exists locally and not on a runner.
+- **The disclosure scan checks vocabulary, not description.** A section
+  identified the deployment domain using entirely ordinary words. There is
+  no automated answer to that class.
 - **Never `git checkout` to undo without checking what else is
   uncommitted.** It cost two authored waves.
 - **A long generation run must write as it goes.** Books were written only

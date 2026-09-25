@@ -20,7 +20,9 @@
     "c1.sentence.s07": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "c1.sentence.s08": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "c1.sentence.x11": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "c1.sentence.x12": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "c1.sentence.x12": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.sentence.x13": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.sentence.x14": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +65,9 @@ They both sat down to rest and talk about what to build next.
 
 [c1.sentence.x12]
 The brother laughed and said he could help her build a bigger one.
+
+[c1.sentence.x13]
+The brother found a broken bottle and used it to fix the boat's side.
+
+[c1.sentence.x14]
+They both laughed and promised to build a bigger boat next week.

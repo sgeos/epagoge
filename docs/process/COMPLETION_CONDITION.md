@@ -25,9 +25,10 @@ result is not required and must not be manufactured.**
 
 ## Level-one corpus
 
-- **Every unit in `curriculum/schedule/level_01.json` has at least one
-  book** in `curriculum/books/level_1/` teaching a concept that unit
-  names.
+- **Every unit whose `teaches` list is non-empty has at least one book**
+  in `curriculum/books/level_1/`. Units that only `introduce` a concept
+  are out of scope: the concept is not in the graph, so no book can teach
+  it, and putting it there is authored design rather than generation.
 - **Every book holds exactly sixteen spreads**, which is the thirty-two
   page trade standard, and the gate enforces that rather than reporting it.
 - `tools/validate_books.py` exits 0.

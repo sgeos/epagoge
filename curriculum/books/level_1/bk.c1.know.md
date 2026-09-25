@@ -21,7 +21,9 @@
     "c1.know.s06": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}},
     "c1.know.s07": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}},
     "c1.know.s08": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}},
-    "c1.know.x13": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "c1.know.x13": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.know.x14": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.know.x15": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ I did not cheat, I did not lie, I did not hide, so I felt good, and stayed alive
 
 [c1.know.x13]
 I placed the key in the lock, turned it once, and stepped into a room filled with light, where everyone was waiting to hear my story.
+
+[c1.know.x14]
+I stepped forward, the light growing brighter, and saw a long table with names written in gold.
+
+[c1.know.x15]
+Everyone turned to me, and I knew my story was the one they had been waiting to hear.

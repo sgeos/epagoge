@@ -20,7 +20,8 @@
     "c1.name.x09": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "c1.name.x10": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "c1.name.x11": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "c1.name.x12": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "c1.name.x12": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.name.x13": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +64,6 @@ He carried the book home, wondering what it could mean.
 
 [c1.name.x12]
 He found a small stone shaped like the mark and carried it in his pocket.
+
+[c1.name.x13]
+He held the stone close, feeling its sharp edges like a secret.
