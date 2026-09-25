@@ -391,3 +391,45 @@ class TestLexicalisation(unittest.TestCase):
             self.vocabulary(), [], {"vessel": object(), "bare": object()}, {"bare": 1}
         )
         self.assertIn("concept-unlexicalised", {v.code for v in found})
+
+
+class TestSubstitutionParsing(unittest.TestCase):
+    """The table is a record of a triage decision, so it is validated."""
+
+    def setUp(self) -> None:
+        self._dir = tempfile.TemporaryDirectory()
+        self.addCleanup(self._dir.cleanup)
+
+    def write(self, payload: object) -> Path:
+        path = Path(self._dir.name) / "v.json"
+        path.write_text(json.dumps(payload), encoding="utf-8")
+        return path
+
+    def test_substitutions_load(self) -> None:
+        got = load_vocabulary(
+            self.write({"core": ["a"], "terms": [], "substitutions": {"x": "y"}})
+        )
+        self.assertEqual(dict(got.substitutions), {"x": "y"})
+
+    def test_absent_substitutions_give_an_empty_table(self) -> None:
+        got = load_vocabulary(self.write({"core": ["a"], "terms": []}))
+        self.assertEqual(dict(got.substitutions), {})
+
+    def test_a_non_object_table_is_rejected(self) -> None:
+        with self.assertRaises(ValueError):
+            load_vocabulary(
+                self.write({"core": ["a"], "terms": [], "substitutions": ["x"]})
+            )
+
+    def test_an_empty_replacement_is_rejected(self) -> None:
+        """A banned word with no replacement is a ban, not a substitution."""
+        with self.assertRaises(ValueError):
+            load_vocabulary(
+                self.write({"core": ["a"], "terms": [], "substitutions": {"x": "  "}})
+            )
+
+    def test_a_non_string_replacement_is_rejected(self) -> None:
+        with self.assertRaises(ValueError):
+            load_vocabulary(
+                self.write({"core": ["a"], "terms": [], "substitutions": {"x": 3}})
+            )

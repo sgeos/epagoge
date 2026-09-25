@@ -27,6 +27,43 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. A substitution table, and a correction about which metric matters
+
+- **The operator's triage procedure had three branches and only two were
+  implemented.** Nothing executed "rephrase using available words". The
+  retry named each banned word and the teacher reached for it again,
+  because avoid this is harder to act on than write that.
+- **`substitutions` in `curriculum/vocabulary.json`**, 33 entries, every
+  one a measured blocker and nothing speculative. Validated by the loader,
+  rendered by the prompt as `location -> write "place"`. It lives in the
+  lexicon because **it is the record of the triage**, an entry meaning the
+  word failed the kindergarten test and was judged expressible.
+- **Forty inflections of already-admitted words were missing**, so `have`,
+  `has` and `had` were core while `having` was not. Seventeen to core,
+  twenty-six to term forms. `yes` was absent while `no` was core.
+- **Six words admitted on the kindergarten test**, each with a level-one
+  concept and a precedent word already mapped to it. `last` was lowered to
+  level one and needed no schedule change, since `sequence` is already
+  taught there.
+- **I was measuring the wrong thing and said so too early.** Acceptance
+  stayed flat at 11 percent, so the table was called a third failure.
+  **Closure moved for the first time**, grounded 1 to 3 and the frontier 50
+  to 46, after being flat or growing across three previous runs.
+- **The mechanism.** Substitutions push definitions toward core words and
+  core is seed, so an accepted definition grounds rather than merely
+  existing. **Acceptance counts what survives. Closure counts what the
+  lexicon can stand on.**
+- **A constraint expressed as a 780-word allow-list may not be enforceable
+  by prompting at all.** The recorded precedent, zero of twelve becoming
+  ten of ten, came from records about one concept where the needed
+  vocabulary is narrow. Definitions of abstract words are the opposite
+  case.
+- **Three judgement calls held back** rather than decided. `part` blocks
+  more targets than anything else and its concept sits in an ablation
+  domain at level two. `ground` and `swallow` pass the kindergarten test
+  and have no concept that fits without forcing, which by this project's
+  own rule is evidence of a missing concept.
+
 ### Measured. The dictionary is blocked by the lexicon, not by the generator
 
 - **A latent defect was fixed first.** The generator rendered the

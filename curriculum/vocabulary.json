@@ -4788,5 +4788,40 @@
       "concept": "counting",
       "level": 1
     }
-  ]
+  ],
+  "substitutions": {
+    "amount": "how much",
+    "anymore": "now",
+    "area": "space",
+    "available": "there to use",
+    "beyond": "past",
+    "cause": "makes",
+    "causing": "making",
+    "center": "middle",
+    "connects": "joins",
+    "corresponds": "goes with",
+    "duration": "how long",
+    "during": "when",
+    "event": "thing that happens",
+    "fake": "not real",
+    "final": "last",
+    "form": "shape",
+    "great": "big",
+    "greater": "more",
+    "human": "person",
+    "imagined": "pretend",
+    "information": "what is known",
+    "item": "thing",
+    "length": "how long",
+    "location": "place",
+    "object": "thing",
+    "position": "place",
+    "present": "here",
+    "sequence": "order",
+    "similar": "like",
+    "single": "one",
+    "specific": "that one",
+    "thickness": "how thick",
+    "unknown": "not known"
+  }
 }

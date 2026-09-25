@@ -98,6 +98,22 @@ class Vocabulary:
     exempt: frozenset[str] = frozenset()
     """Proper nouns, units, and anything else outside the level system."""
 
+    substitutions: Mapping[str, str] = field(default_factory=dict[str, str])
+    """Words deliberately NOT admitted, and what to write instead.
+
+    **Naming a banned word is not the same as supplying the replacement.**
+    Measured on 2026-09-25, the generator's retry named each offending word
+    and the teacher reached for it again. The words doing the blocking were
+    overwhelmingly ones with an ordinary substitute already in the lexicon,
+    `location` for `place` and `amount` for `how much`, so the failure was
+    not that the level cannot express the idea.
+
+    This is also the record of a triage decision. A word here was judged
+    outside what a child in kindergarten knows AND expressible with what is
+    already admitted, which is the operator's second branch. A word that
+    passes the first branch is admitted as a term instead.
+    """
+
     # The generic alias is the factory so that the element types are known.
     # A bare ``dict`` leaves them unknown under strict checking.
     _by_form: dict[str, Term] = field(
@@ -499,7 +515,23 @@ def load_vocabulary(path: Path) -> Vocabulary:
         terms=tuple(_parse_terms(body.get("terms"))),
         general=_parse_general(body.get("general")),
         exempt=frozenset(_str_list(body.get("exempt"), "exempt")),
+        substitutions=_parse_substitutions(body.get("substitutions")),
     )
+
+
+def _parse_substitutions(raw: object) -> dict[str, str]:
+    if raw is None:
+        return {}
+    if not isinstance(raw, dict):
+        raise ValueError("'substitutions' must be an object")
+    out: dict[str, str] = {}
+    for key, value in cast(dict[object, object], raw).items():
+        if not isinstance(key, str) or not isinstance(value, str):
+            raise ValueError("substitutions must map a string to a string")
+        if not value.strip():
+            raise ValueError(f"substitution for {key!r} is empty")
+        out[key] = value
+    return out
 
 
 def _parse_general(raw: object) -> dict[int, frozenset[str]]:

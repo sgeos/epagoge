@@ -47,9 +47,11 @@ rendered ORDER of this list, not just the next unused number.
 5. `curriculum/schedule/level_01.json` holds **91** units, **69** existing
    concepts and **51** planned. Level two covers the two ablation domains
    only.
-6. `curriculum/vocabulary.json` holds **890** terms, **773** at level one.
+6. `curriculum/vocabulary.json` holds **896** terms, **780** at level one,
+   **173** core, and a **33**-entry substitution table.
 7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
-   **64 of 773** words defined, of which **1** is grounded.
+   **80 of 780** words defined, of which **3** are grounded, with **46** on
+   the frontier.
 8. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
 9. **History is clean, not only `HEAD`.** Every blob and every commit
@@ -117,10 +119,22 @@ level-two word. See `../decisions/LEXICON.md`, which carries the
 measurement and the two remedies, **neither applied**, since both change
 the lexicon's selection principle.
 
-**Retry was added and is not the fix.** Feeding the offending words back
-nearly doubled per-word acceptance, from 8.3 to 14.6 percent, and **cost
-more model calls than it saved**, going from 1.00 to 0.58 definitions per
-call. It is kept for its diagnostics, which produced the finding above.
+**Acceptance is the wrong metric and chasing it wasted two
+interventions.** Retry and a widened lexicon both moved acceptance and
+neither moved closure. **The substitution table did the reverse**, leaving
+acceptance flat at 11 percent while taking grounded from 1 to 3 and the
+frontier from 50 to 46, **the first movement in either across four runs**.
+
+| Run | defined | grounded | frontier | acceptance |
+| --- | --- | --- | --- | --- |
+| baseline | 49 | 1 | 47 | 8.3% |
+| retry | 64 | 1 | 49 | 14.6% |
+| lexicon widened | 72 | 1 | 50 | 11% |
+| **substitutions** | **80** | **3** | **46** | 11% |
+
+**Substitutions push definitions toward core words, and core is seed**, so
+what is accepted grounds instead of merely existing. Read closure, not
+acceptance.
 
 ## Findings that outlive the session
 

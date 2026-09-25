@@ -44,7 +44,23 @@
     "dict.1.nothing": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nothing"}, "defines": {"kind": "word", "target": "nothing"}},
     "dict.1.number": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:number"}, "defines": {"kind": "word", "target": "number"}},
     "dict.1.anything": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:anything"}, "defines": {"kind": "word", "target": "anything"}},
-    "dict.1.many": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:many"}, "defines": {"kind": "word", "target": "many"}}
+    "dict.1.many": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:many"}, "defines": {"kind": "word", "target": "many"}},
+    "dict.1.next": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:next"}, "defines": {"kind": "word", "target": "next"}},
+    "dict.1.one": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:one"}, "defines": {"kind": "word", "target": "one"}},
+    "dict.1.count": {"concepts": ["counting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:count"}, "defines": {"kind": "word", "target": "count"}},
+    "dict.1.much": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:much"}, "defines": {"kind": "word", "target": "much"}},
+    "dict.1.open": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:open"}, "defines": {"kind": "word", "target": "open"}},
+    "dict.1.closed": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:closed"}, "defines": {"kind": "word", "target": "closed"}},
+    "dict.1.enter": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:enter"}, "defines": {"kind": "word", "target": "enter"}},
+    "dict.1.longer": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:longer"}, "defines": {"kind": "word", "target": "longer"}},
+    "dict.1.large": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:large"}, "defines": {"kind": "word", "target": "large"}},
+    "dict.1.know": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:know"}, "defines": {"kind": "word", "target": "know"}},
+    "dict.1.opposite": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:opposite"}, "defines": {"kind": "word", "target": "opposite"}},
+    "dict.1.little": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:little"}, "defines": {"kind": "word", "target": "little"}},
+    "dict.1.order": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:order"}, "defines": {"kind": "word", "target": "order"}},
+    "dict.1.gone": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gone"}, "defines": {"kind": "word", "target": "gone"}},
+    "dict.1.long": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:long"}, "defines": {"kind": "word", "target": "long"}},
+    "dict.1.past": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:past"}, "defines": {"kind": "word", "target": "past"}}
   }
 }
 ---
@@ -159,3 +175,51 @@ Anything means any thing at all.
 
 [dict.1.many]
 Many means a large number of things or people.
+
+[dict.1.next]
+Coming after something else in order.
+
+[dict.1.one]
+The first number in counting.
+
+[dict.1.count]
+To say numbers in order to know how many.
+
+[dict.1.much]
+A lot of something, more than little.
+
+[dict.1.open]
+Not closed; able to be entered or seen through.
+
+[dict.1.closed]
+Shut, not open.
+
+[dict.1.enter]
+To go inside something.
+
+[dict.1.longer]
+More long than something else.
+
+[dict.1.large]
+More big than small in size.
+
+[dict.1.know]
+To have what is known.
+
+[dict.1.opposite]
+The thing that is not the same, or stands at the other side.
+
+[dict.1.little]
+Small in size.
+
+[dict.1.order]
+The way things come one after another.
+
+[dict.1.gone]
+Not here now.
+
+[dict.1.long]
+Having more distance from one end to the other.
+
+[dict.1.past]
+The time before now, or a direction behind.

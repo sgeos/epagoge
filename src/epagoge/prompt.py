@@ -206,6 +206,7 @@ def definitions_retry(
     admissible: Sequence[str],
     rejected: Sequence[str],
     offending: Sequence[str],
+    substitutions: Mapping[str, str] | None = None,
 ) -> str:
     """Re-ask for definitions, naming the words that caused the rejection.
 
@@ -235,7 +236,7 @@ def definitions_retry(
         "that stays inside the list beats an exact one that does not.",
         "",
     ]
-    return "\n".join(lines) + definitions(words, level, admissible)
+    return "\n".join(lines) + definitions(words, level, admissible, substitutions)
 
 
 BOOK_FORMAT: Final[str] = """SUBJECT: <one sentence saying what this book is about>
@@ -332,6 +333,7 @@ def definitions(
     words: Mapping[str, str],
     level: int,
     admissible: Sequence[str],
+    substitutions: Mapping[str, str] | None = None,
 ) -> str:
     """Prompt for a batch of dictionary entries.
 
@@ -370,6 +372,22 @@ def definitions(
         "",
         "Use ONLY these words, in any order and any inflection:",
         "  " + " ".join(sorted(admissible)),
+    ]
+    if substitutions:
+        # **Naming a banned word is not supplying the replacement.** The
+        # retry named every offending word and the teacher reached for it
+        # again, and those words overwhelmingly had an ordinary substitute
+        # already admitted. An instruction to avoid something is harder to
+        # act on than one that says what to write instead.
+        lines += [
+            "",
+            "These words are NOT allowed. Write the replacement instead:",
+        ]
+        lines += [
+            f'  {banned}  ->  write "{instead}"'
+            for banned, instead in sorted(substitutions.items())
+        ]
+    lines += [
         "",
         "Rules:",
         "  - Say what the word means. Do not give an example instead.",

@@ -112,10 +112,17 @@ def main(argv: list[str]) -> int:
             # That happens when the teacher omitted words rather than
             # defining them badly, which the rejection list cannot express.
             if attempt == 0 or not rejected:
-                question = prompts.definitions(batch_words, args.level, admissible)
+                question = prompts.definitions(
+                    batch_words, args.level, admissible, vocabulary.substitutions
+                )
             else:
                 question = prompts.definitions_retry(
-                    batch_words, args.level, admissible, rejected, offending
+                    batch_words,
+                    args.level,
+                    admissible,
+                    rejected,
+                    offending,
+                    vocabulary.substitutions,
                 )
             raw = ask(question, timeout=args.timeout)
             rejected, offending = [], []

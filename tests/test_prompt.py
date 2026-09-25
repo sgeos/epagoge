@@ -204,3 +204,40 @@ class TestDefinitionsRetry(unittest.TestCase):
     def test_an_empty_word_set_is_still_rejected_by_the_inner_prompt(self) -> None:
         with self.assertRaises(ValueError):
             prompts.definitions_retry({}, 1, ["a"], ["bad"], ["nope"])
+
+
+class TestSubstitutionsInPrompts(unittest.TestCase):
+    """Naming a banned word is not the same as supplying the replacement.
+
+    The retry named every offending word and the teacher reached for it
+    again. The blockers overwhelmingly had an ordinary substitute already
+    admitted, so the instruction had to say what to write, not what to
+    avoid.
+    """
+
+    WORDS = {"arm": "body_part"}
+    TABLE = {"part": "piece", "location": "place"}
+
+    def test_the_replacement_is_shown_not_just_the_ban(self) -> None:
+        text = prompts.definitions(self.WORDS, 1, ["a", "body"], self.TABLE)
+        self.assertIn('part  ->  write "piece"', text)
+        self.assertIn('location  ->  write "place"', text)
+
+    def test_the_block_is_absent_when_there_is_no_table(self) -> None:
+        text = prompts.definitions(self.WORDS, 1, ["a", "body"])
+        self.assertNotIn("NOT allowed", text)
+
+    def test_an_empty_table_adds_nothing(self) -> None:
+        text = prompts.definitions(self.WORDS, 1, ["a", "body"], {})
+        self.assertNotIn("NOT allowed", text)
+
+    def test_the_retry_carries_the_table_through(self) -> None:
+        text = prompts.definitions_retry(
+            self.WORDS, 1, ["a", "body"], ["arm: a limb."], ["limb"], self.TABLE
+        )
+        self.assertIn('part  ->  write "piece"', text)
+        self.assertIn("limb", text)
+
+    def test_the_admissible_list_still_appears_before_the_table(self) -> None:
+        text = prompts.definitions(self.WORDS, 1, ["a", "body"], self.TABLE)
+        self.assertLess(text.index("Use ONLY these words"), text.index("NOT allowed"))
