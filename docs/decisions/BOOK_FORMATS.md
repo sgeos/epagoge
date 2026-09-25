@@ -1,5 +1,14 @@
 # Book length per level, and the binding that fixes it
 
+**Superseded in part, 2026-09-25, by `LEVEL_CALIBRATION.md`.** The reading
+of level two recorded below, as early elementary at sixty-four pages, is
+wrong. The operator's calibration puts level two at the end of fourth
+grade, which is one hundred and sixty pages. The binding argument survives
+unchanged and is why every figure is a multiple of sixteen.
+
+Kept rather than deleted, because the reasoning that produced the wrong
+answer is the record of how the right one was reached.
+
 **Recorded 2026-09-25.** Operator direction supplied trade page counts for
 sixth-grade material. This records them, and corrects where they belong.
 

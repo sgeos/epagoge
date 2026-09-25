@@ -64,7 +64,7 @@ class Book:
     records: tuple[str, ...] = ()
 
 
-SPREADS_BY_LEVEL: Final[dict[int, int]] = {1: 16, 2: 32, 3: 112}
+SPREADS_BY_LEVEL: Final[dict[int, int]] = {1: 16, 2: 80, 3: 112, 4: 160}
 """Spreads per book, by level, from the binding.
 
 A book is bound in signatures of sixteen pages, so every level's page
