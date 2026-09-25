@@ -19,8 +19,9 @@ property the lexicon was not authored for and may not have.
 from __future__ import annotations
 
 import json
+import random
 import re
-from collections.abc import Collection, Iterable, Mapping, Sequence
+from collections.abc import Callable, Collection, Iterable, Mapping, Sequence
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
@@ -104,6 +105,85 @@ def definition_coverage(
         defined=frozenset(defined & wanted),
         undefined=tuple(sorted(wanted - defined)),
     )
+
+
+def book_prerequisites(
+    books: Sequence[Book],
+    teaches: Mapping[str, Collection[str]],
+    prerequisites: Mapping[str, Collection[str]],
+) -> dict[str, set[str]]:
+    """Which books must precede which.
+
+    Book B depends on book A when B teaches a concept whose prerequisite is
+    taught in A and not in B. **The ordering ablation orders books**, so the
+    topological constraint lives here rather than between concepts, and a
+    control arm that ignores it is not a curriculum at all.
+
+    ``teaches`` maps a book to the concepts its records cover.
+    ``prerequisites`` is the concept graph's own relation.
+    """
+    owner: dict[str, str] = {}
+    for book in books:
+        for concept in teaches.get(book.id, ()):
+            owner.setdefault(concept, book.id)
+
+    out: dict[str, set[str]] = {b.id: set() for b in books}
+    for book in books:
+        covered = set(teaches.get(book.id, ()))
+        for concept in covered:
+            for need in prerequisites.get(concept, ()):
+                if need in covered:
+                    continue
+                source = owner.get(need)
+                if source is not None and source != book.id:
+                    out[book.id].add(source)
+    return out
+
+
+def topological_orders_exist(deps: Mapping[str, Collection[str]]) -> bool:
+    """Whether the book dependency graph is acyclic."""
+    return len(linear_extension(deps, lambda ready: min(ready))) == len(deps)
+
+
+def linear_extension(
+    deps: Mapping[str, Collection[str]],
+    pick: Callable[[set[str]], str],
+) -> list[str]:
+    """One ordering respecting every dependency. ``pick`` chooses among ties.
+
+    Returns a short list when the graph is cyclic, which the caller checks
+    rather than this raising, so a cycle is reported with the rest of the
+    violations instead of stopping the run.
+    """
+    remaining = {node: set(parents) for node, parents in deps.items()}
+    dependents: dict[str, set[str]] = {node: set() for node in deps}
+    for node, parents in remaining.items():
+        for parent in parents:
+            dependents.setdefault(parent, set()).add(node)
+    ready = {node for node, parents in remaining.items() if not parents}
+    order: list[str] = []
+    while ready:
+        chosen = pick(ready)
+        ready.discard(chosen)
+        order.append(chosen)
+        for child in sorted(dependents.get(chosen, ())):
+            remaining[child].discard(chosen)
+            if not remaining[child]:
+                ready.add(child)
+    return order
+
+
+def random_linear_extension(
+    deps: Mapping[str, Collection[str]], rng: random.Random
+) -> list[str]:
+    """A uniformly random choice among ready books at each step.
+
+    **Not a random permutation.** A permutation can put a book teaching
+    counting before the book teaching same and different, which is not a
+    curriculum in any ordering and would make the control arm weaker than
+    the design asks for rather than merely different.
+    """
+    return linear_extension(deps, lambda ready: rng.choice(sorted(ready)))
 
 
 def validate_books(

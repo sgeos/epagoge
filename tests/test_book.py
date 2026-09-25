@@ -9,6 +9,7 @@ that never says what the thing is leaves the reader to infer it.
 from __future__ import annotations
 
 import json
+import random
 import tempfile
 import unittest
 from pathlib import Path
@@ -18,13 +19,17 @@ from epagoge.book import (
     Book,
     Definition,
     DefinitionKind,
+    book_prerequisites,
     books_from_json,
     definition_coverage,
     definition_from_json,
+    linear_extension,
     load_book_dir,
     load_books,
     parse_book,
+    random_linear_extension,
     render_book,
+    topological_orders_exist,
     validate_books,
 )
 
@@ -282,3 +287,59 @@ class TestMarkdownFormat(unittest.TestCase):
         books, records = load_book_dir(Path("curriculum/books/level_1"))
         self.assertTrue(books)
         self.assertTrue(records)
+
+
+class TestBookOrdering(unittest.TestCase):
+    """The ablation orders books, so the topological constraint lives here.
+
+    A control arm that ignores it is not a curriculum in any ordering, so it
+    would be weaker than the design asks for rather than merely different.
+    """
+
+    def books(self) -> list[Book]:
+        return [book(id=name, records=()) for name in ("early", "late", "loose")]
+
+    TEACHES = {"early": {"a"}, "late": {"b"}, "loose": {"z"}}
+    PREREQ = {"a": set[str](), "b": {"a"}, "z": set[str]()}
+
+    def deps(self) -> dict[str, set[str]]:
+        return book_prerequisites(self.books(), self.TEACHES, self.PREREQ)
+
+    def test_a_book_depends_on_the_book_teaching_its_prerequisite(self) -> None:
+        self.assertEqual(self.deps()["late"], {"early"})
+
+    def test_an_unconstrained_book_depends_on_nothing(self) -> None:
+        self.assertEqual(self.deps()["loose"], set())
+
+    def test_a_prerequisite_taught_in_the_same_book_is_not_a_dependency(self) -> None:
+        one = [book(id="both", records=())]
+        found = book_prerequisites(one, {"both": {"a", "b"}}, self.PREREQ)
+        self.assertEqual(found["both"], set())
+
+    def test_every_extension_respects_the_dependency(self) -> None:
+        deps = self.deps()
+        for seed in range(12):
+            order = random_linear_extension(deps, random.Random(seed))
+            self.assertEqual(len(order), 3)
+            self.assertLess(order.index("early"), order.index("late"))
+
+    def test_extensions_actually_differ_across_seeds(self) -> None:
+        """A control that always returns the same order is not a control."""
+        deps = self.deps()
+        seen = {
+            tuple(random_linear_extension(deps, random.Random(s))) for s in range(20)
+        }
+        self.assertGreater(len(seen), 1)
+
+    def test_a_deterministic_extension_is_reproducible(self) -> None:
+        deps = self.deps()
+        first = linear_extension(deps, min)
+        self.assertEqual(first, linear_extension(deps, min))
+
+    def test_a_cycle_is_reported_rather_than_raised(self) -> None:
+        cyclic = {"a": {"b"}, "b": {"a"}}
+        self.assertFalse(topological_orders_exist(cyclic))
+        self.assertEqual(linear_extension(cyclic, min), [])
+
+    def test_an_acyclic_graph_reports_orderable(self) -> None:
+        self.assertTrue(topological_orders_exist(self.deps()))

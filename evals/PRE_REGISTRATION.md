@@ -151,6 +151,51 @@ are level-one anchors both arms need, and sharing them is desirable rather
 than contamination, since the contrast under test is in what each arm
 builds above its grounding.
 
+**Amendment 3, 2026-09-24. The ablation orders books.**
+
+Operator decision. The unit of ordering is the **book**, not the record.
+
+**A book's internal order is never shuffled.** The narrative is the reason a
+book exists. Shuffling inside one would destroy the thing the ordering
+hypothesis is about while claiming to test it.
+
+**The topological constraint therefore holds between books.** Book B
+depends on book A when B teaches a concept whose prerequisite is taught in
+A and not in B. `book_prerequisites` derives that relation from the concept
+graph, and both arms are linear extensions of it.
+
+| Arm | Ordering |
+| --- | --- |
+| Treatment | **Derived**, shallowest ready book first, by prerequisite depth |
+| Control | A **random linear extension**, fresh per seed |
+
+**The treatment arm is derived and not authored.** Taking it from the file
+order gave an alphabetical sequence that broke two book dependencies, which
+is not a curriculum in any ordering and would have been the treatment arm of
+an experiment about ordering. The build refuses an order that breaks a
+dependency.
+
+**The control is a random linear extension and not a random permutation.** A
+permutation can put a book teaching counting before the book teaching same
+and different, which is not a curriculum under any reading. That control
+would be weaker than this design asks for rather than merely different.
+
+### A risk this creates, unmeasured
+
+**The orderable set is much smaller than it was.** With records as the unit
+there are very many valid orderings. With books there are far fewer, and
+with heavily constrained books fewer still. At five books, three of them
+constrained, the control arm has almost no room to vary.
+
+Level one is scheduled at 83 topics, so the full set is larger. **It is
+still smaller by orders of magnitude than the record-level set the seed
+count was estimated against.** Whether the treatment and control arms
+remain distinguishable at that granularity has not been measured, and the
+variance pilot did not test it because books did not exist when it ran.
+
+**This is the sharpest open risk to the design** and it follows from a
+decision that is otherwise clearly right.
+
 **What must be re-measured if any of this changes.** Any new cross-domain
 edge into failure analysis must be checked for whether it reaches
 mathematics, and the arms recomputed. The check is cheap and the failure is

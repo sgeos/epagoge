@@ -27,6 +27,42 @@ Versioning.
 
 ## 2026-09-24
 
+### Decided. The ablation orders books, and the topological constraint moves
+
+- Operator decision, recorded as **pre-registration amendment 3**.
+- **A book's internal order is never shuffled.** The narrative is the
+  reason a book exists, and shuffling inside one would destroy the thing
+  the ordering hypothesis is about while claiming to test it.
+- `book_prerequisites` derives book-level dependencies from the concept
+  graph. Book B depends on A when B teaches a concept whose prerequisite is
+  taught in A and not in B. Eight new tests, **313 total**.
+
+### Fixed. The treatment arm was alphabetical, which is not a curriculum
+
+- The build took its order off the filenames, and **the check written the
+  same hour caught that this broke two book dependencies.** `bk.cup` needed
+  `bk.r1.when` and came first.
+- **The treatment arm is now derived**, shallowest ready book first by
+  prerequisite depth, which is the difficulty-graded ordering the
+  hypothesis is about. The build refuses an order that breaks a dependency.
+- **The control is a random linear extension, not a random permutation.** A
+  permutation can put a book teaching counting before the one teaching same
+  and different, which is not a curriculum under any reading, and would
+  make the control weaker than the design asks for rather than different.
+
+### Open. The orderable set is much smaller, and that is a risk
+
+- With records as the unit there are very many valid orderings. With books
+  there are far fewer. **At five books, three of them constrained, the
+  control arm has almost no room to vary.**
+- Level one is scheduled at 83 topics, so the real set is larger, and
+  **still smaller by orders of magnitude than the record-level set the seed
+  count was estimated against.**
+- Whether the arms remain distinguishable at that granularity **has not
+  been measured**, and the variance pilot could not have tested it because
+  books did not exist when it ran. **This is the sharpest open risk to the
+  design** and it follows from a decision that is otherwise clearly right.
+
 ### Changed. The derived stream is ignored, like a build directory
 
 - **Operator decision.** `corpus/*` ignored, kept in the tree by a

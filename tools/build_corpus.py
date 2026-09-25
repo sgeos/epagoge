@@ -23,15 +23,26 @@ import sys
 from pathlib import Path
 from typing import cast
 
-from epagoge.book import load_book_dir
+from epagoge.book import (
+    book_prerequisites,
+    linear_extension,
+    load_book_dir,
+    random_linear_extension,
+)
+from epagoge.concept_graph import ConceptGraph
 
 
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("books", type=Path)
     parser.add_argument("out", type=Path)
-    parser.add_argument("--order", choices=("authored", "shuffled"), default="authored")
+    parser.add_argument(
+        "--order", choices=("curriculum", "topological"), default="curriculum"
+    )
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument(
+        "--graph", type=Path, default=Path("curriculum/graph/concepts.json")
+    )
     args = parser.parse_args(argv[1:])
 
     books, records = load_book_dir(args.books)
@@ -43,9 +54,49 @@ def main(argv: list[str]) -> int:
     # A book is one document. Its internal order is not shuffled, because the
     # narrative is the reason a book exists, and shuffling inside one would
     # destroy the thing the ordering hypothesis is about.
-    order = list(books)
-    if args.order == "shuffled":
-        random.Random(args.seed).shuffle(order)
+    graph = ConceptGraph.load(args.graph)
+    teaches = {
+        b.id: {
+            c
+            for i in b.records
+            if i in by_id
+            for c in cast(list[str], by_id[i].get("concepts", []))
+        }
+        for b in books
+    }
+    prerequisites = {n: set(graph.prerequisites_of(n)) for n in graph.nodes}
+    deps = book_prerequisites(books, teaches, prerequisites)
+
+    by_book = {b.id: b for b in books}
+    if args.order == "topological":
+        # A random linear extension, not a random permutation. A permutation
+        # can put a book teaching counting before the one teaching same and
+        # different, which is not a curriculum in any ordering.
+        names = random_linear_extension(deps, random.Random(args.seed))
+    else:
+        # **The curriculum arm is derived, not authored.** Taking the order
+        # off the filenames gave an alphabetical sequence that broke two
+        # book dependencies, which is not a curriculum and would have been
+        # the treatment arm of an experiment about ordering.
+        #
+        # Shallowest first among the books that are ready, which is the
+        # difficulty-graded ordering the hypothesis is about.
+        depth = graph.prerequisite_depth()
+
+        def shallowest(ready: set[str]) -> str:
+            return min(
+                ready,
+                key=lambda name: (
+                    max((depth[c] for c in teaches[name] if c in depth), default=0),
+                    name,
+                ),
+            )
+
+        names = linear_extension(deps, shallowest)
+    if len(names) != len(deps):
+        print("book dependencies are cyclic", file=sys.stderr)
+        return 1
+    order = [by_book[n] for n in names if n in by_book]
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     words = 0
@@ -59,8 +110,10 @@ def main(argv: list[str]) -> int:
                 json.dumps({"id": book.id, "level": book.level, "text": text}) + "\n"
             )
 
+    constrained = sum(1 for v in deps.values() if v)
     print(f"{args.out}: {len(order)} documents, {words} words, order {args.order}")
-    if args.order == "shuffled":
+    print(f"  {constrained} of {len(deps)} books are constrained by another")
+    if args.order == "topological":
         print(f"  seed {args.seed}")
     return 0
 

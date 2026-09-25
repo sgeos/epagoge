@@ -37,17 +37,15 @@ of one corpus rather than two corpora.
 narrative is the reason a book exists. Shuffling inside one would destroy
 the thing the ordering hypothesis is about while claiming to test it.
 
-## One question answered, one still open
+## Both questions now answered, and one created
 
 **ANSWERED 2026-09-24. The derived stream is ignored**, for the same reason
 a build directory is. `CORPUS_TRACKING.md` carries the amendment. The
 directory stays in the tree by a `.gitkeep`, and `sources/` remains tracked
 because acquired literature cannot be rebuilt.
 
-**Does the ablation order books or records?** `evals/PRE_REGISTRATION.md`
-speaks of a curriculum trajectory against a random topological ordering,
-written before books existed. If the unit is the record, a shuffle breaks
-every book apart. If it is the book, the orderable set is much smaller and
-the topological constraint applies between books rather than between
-concepts. **The pre-registration does not say, and it must before the
-ablation runs.**
+**ANSWERED 2026-09-24. The ablation orders books.** Pre-registration
+amendment 3 carries it, along with the risk it creates. The orderable set
+is smaller by orders of magnitude than the record-level set the seed count
+was estimated against, and whether the arms stay distinguishable at that
+granularity has not been measured.
