@@ -952,6 +952,24 @@
   "specialises": {
     "toy": [
       "household_object"
+    ],
+    "plant": [
+      "living_and_not_living"
+    ],
+    "animal": [
+      "living_and_not_living"
+    ],
+    "liquid": [
+      "material"
+    ],
+    "air": [
+      "material"
+    ],
+    "heat": [
+      "physical_property"
+    ],
+    "shape": [
+      "physical_property"
     ]
   }
 }

@@ -228,3 +228,121 @@ class TestParsing(unittest.TestCase):
         for payload in bad:
             with self.subTest(payload=payload), self.assertRaises(ValueError):
                 sched.from_json(payload)
+
+
+class TestRevisits(unittest.TestCase):
+    """A unit touching a concept it does not introduce.
+
+    Needed for two things at once. The spiral curriculum requires a concept
+    to reappear, and `teaches` is first introduction only. And a graph
+    relation is taught by material naming both of its ends, where the
+    general end was introduced somewhere else.
+    """
+
+    def relation_graph(self) -> ConceptGraph:
+        return ConceptGraph(
+            [concept("plant", "bio"), concept("alive", "bio"), concept("x", "bio")],
+            {},
+            {},
+            {"plant": ["alive"]},
+            domains=[Domain("bio", "n")],
+        )
+
+    def test_a_unit_covers_a_relation_by_revisiting_the_general_end(self) -> None:
+        g = self.relation_graph()
+        s = sched.Schedule(
+            level=1,
+            budget=sched.TokenBudget(10, 100, "t"),
+            covers=("bio",),
+            domains=(
+                sched.DomainPlan(
+                    "bio",
+                    (
+                        sched.Unit("u0", "f", teaches=("alive",)),
+                        sched.Unit("u1", "f", teaches=("plant",), revisits=("alive",)),
+                    ),
+                ),
+            ),
+        )
+        self.assertEqual(sched.covered_relations(s, g), {("plant", "alive")})
+        self.assertEqual(sched.validate(s, g, PRIMITIVES), [])
+
+    def test_a_relation_split_across_units_is_not_covered(self) -> None:
+        """Naming both ends in one unit is the point. Separately is not."""
+        g = self.relation_graph()
+        s = sched.Schedule(
+            level=1,
+            budget=sched.TokenBudget(10, 100, "t"),
+            covers=("bio",),
+            domains=(
+                sched.DomainPlan(
+                    "bio",
+                    (
+                        sched.Unit("u0", "f", teaches=("alive",)),
+                        sched.Unit("u1", "f", teaches=("plant",)),
+                    ),
+                ),
+            ),
+        )
+        self.assertEqual(sched.covered_relations(s, g), set())
+
+    def test_revisiting_an_absent_concept_is_a_violation(self) -> None:
+        s = plan(
+            domains=(
+                sched.DomainPlan(
+                    "one", (sched.Unit("u", "f", teaches=("a",), revisits=("ghost",)),)
+                ),
+            )
+        )
+        self.assertIn("unknown-concept", codes(s))
+
+    def test_revisiting_its_own_concept_is_a_violation(self) -> None:
+        s = plan(
+            domains=(
+                sched.DomainPlan(
+                    "one", (sched.Unit("u", "f", teaches=("a",), revisits=("a",)),)
+                ),
+            )
+        )
+        self.assertIn("revisits-own-concept", codes(s))
+
+    def test_revisiting_an_unscheduled_concept_is_a_violation(self) -> None:
+        s = plan(
+            domains=(
+                sched.DomainPlan(
+                    "one", (sched.Unit("u", "f", teaches=("a",), revisits=("b",)),)
+                ),
+            )
+        )
+        self.assertIn("revisit-unscheduled", codes(s))
+
+    def test_revisiting_a_concept_from_an_earlier_level_is_accepted(self) -> None:
+        s = plan(
+            level=2,
+            domains=(
+                sched.DomainPlan(
+                    "one", (sched.Unit("u", "f", teaches=("a",), revisits=("b",)),)
+                ),
+            ),
+        )
+        self.assertNotIn("revisit-unscheduled", codes(s, {"b": 1}))
+
+    def test_revisits_round_trip_through_json(self) -> None:
+        payload = {
+            "level": 1,
+            "token_budget": {"low": 10, "high": 100, "basis": "b"},
+            "covers": ["one"],
+            "domains": [
+                {
+                    "domain": "one",
+                    "units": [
+                        {"id": "u", "form": "f", "teaches": ["b"], "revisits": ["a"]}
+                    ],
+                }
+            ],
+        }
+        self.assertEqual(sched.from_json(payload).domains[0].units[0].revisits, ("a",))
+
+    def test_domain_plan_reports_its_revisits(self) -> None:
+        p = sched.DomainPlan("d", (sched.Unit("u", "f", revisits=("a", "b")),))
+        self.assertEqual(p.revisits(), frozenset({"a", "b"}))

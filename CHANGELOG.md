@@ -27,6 +27,56 @@ Versioning.
 
 ## 2026-09-24
 
+### Corrected. Japan's list is compositional too. The contrast was wrong
+
+- The comparison framed composition as a criterion mainland China states
+  and Japan does not. **That distinction matters far less than the shared
+  fact underneath it.**
+- 木 is the radical in 林 and 森, where the rest of each character is 木
+  again. 柏 and 椰 are kinds of tree and carry 木. 日, 水, 火, 口, 手, 目,
+  人, 石, 竹, 糸, 貝 and 虫 are high-yield radicals and all are in the
+  eighty.
+- **Composition is a structural advantage the writing system encodes**, so
+  a designer selecting on simplicity and frequency selects on
+  compositionality whether they intend to or not. Radicals are by
+  construction the simple frequent base forms. Mainland states the
+  criterion; Japan's script enforces it.
+
+### Found. The radical relation is three relations, and we model one
+
+- **Aggregation.** 木 to 林 to 森 is one tree, woods, forest. Not kind-of at
+  all. Maps onto `grouping`, not specialisation.
+- **Specialisation.** 木 plus a phonetic gives 柏, 椰, 松, 梅. This is what
+  `specialises` expresses.
+- **Etymological derivation.** 本 is a tree marked at its base, giving
+  origin then book. Aids memory, carries no concept relation, maps to
+  nothing and should not be forced into anything.
+
+### Changed. The specialisation layer is the radical relation, written out
+
+- **English orthography supplies none of this.** Tree, forest, oak and palm
+  share nothing on the page. The graph is where we put explicitly what the
+  script encodes for free.
+- That layer held **one** edge, which makes it the most under-built
+  structure in the project rather than a minor gap, and `anchor_reach` was
+  measuring an empty layer.
+- Six taxonomic edges written. Seven total, and anchor reach is non-zero
+  for seven concepts instead of one. **A start, not a fix.** The layer
+  needs authoring against content rather than filling to move a metric.
+
+### Added. `revisits` on a schedule unit, and relation coverage from the schedule
+
+- `teaches` is first introduction only, so a schedule could not say a unit
+  returns to a concept. **The spiral curriculum requires exactly that.**
+- It is also what lets a unit teach a **relation**, since a graph edge is
+  taught by material naming both of its ends and the general end was
+  introduced elsewhere.
+- `covered_relations` reports the pairs a schedule covers, and the corpus
+  validator accepts them. **Third time this pattern has appeared.** A
+  schedule states intent, records show progress, and a rule written against
+  records alone fires on everything not yet written.
+- Eleven new tests, 269 total.
+
 ### Corrected. Mainland China does name its characters, and the comparison was wrong
 
 - `CHARACTER_STANDARDS.md` said mainland China fixes how many and not

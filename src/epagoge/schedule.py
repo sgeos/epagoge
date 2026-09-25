@@ -37,6 +37,18 @@ class Unit:
     form: str
     teaches: tuple[str, ...] = ()
     introduces: tuple[str, ...] = ()
+    revisits: tuple[str, ...] = ()
+    """Concepts this unit touches without introducing.
+
+    The spiral curriculum requires a concept to reappear at rising
+    complexity, and `teaches` is first introduction only, so without this
+    field a schedule cannot say that a unit returns to something.
+
+    It is also what lets a unit teach a **relation**. A graph edge saying a
+    plant is a kind of living thing is taught by material covering both
+    ends, and the general end was introduced elsewhere.
+    """
+
     primitives: tuple[str, ...] = ()
 
 
@@ -47,6 +59,9 @@ class DomainPlan:
 
     def teaches(self) -> frozenset[str]:
         return frozenset(c for u in self.units for c in u.teaches)
+
+    def revisits(self) -> frozenset[str]:
+        return frozenset(c for u in self.units for c in u.revisits)
 
     def introduces(self) -> frozenset[str]:
         return frozenset(c for u in self.units for c in u.introduces)
@@ -99,6 +114,24 @@ class Schedule:
         if total == 0:
             return {k: 0.0 for k in counts}
         return {k: v / total for k, v in counts.items()}
+
+
+def covered_relations(schedule: Schedule, graph: ConceptGraph) -> set[tuple[str, str]]:
+    """Specialisation pairs a unit covers at both ends.
+
+    A relation is taught by material that names the specific concept and the
+    general one together. Which unit does so is what the schedule decides,
+    and the corpus validator checks the same property over records.
+    """
+    out: set[tuple[str, str]] = set()
+    for plan in schedule.domains:
+        for unit in plan.units:
+            names = {*unit.teaches, *unit.revisits, *unit.introduces}
+            for specific in names:
+                for general in graph.generalisations_of(specific):
+                    if general in names:
+                        out.add((specific, general))
+    return out
 
 
 def validate(
@@ -169,6 +202,21 @@ def validate(
                             f" under {plan.domain!r}",
                         )
                     )
+            for concept in unit.revisits:
+                if concept not in graph.nodes:
+                    out.append(
+                        Violation(
+                            "unknown-concept",
+                            f"{unit.id!r} revisits absent {concept!r}",
+                        )
+                    )
+                if concept in unit.teaches:
+                    out.append(
+                        Violation(
+                            "revisits-own-concept",
+                            f"{unit.id!r} revisits {concept!r}, which it also teaches",
+                        )
+                    )
             for concept in unit.introduces:
                 if concept in graph.nodes:
                     out.append(
@@ -188,6 +236,18 @@ def validate(
 
     for plan in schedule.domains:
         for unit in plan.units:
+            for concept in unit.revisits:
+                if concept in seen or (
+                    concept in prior and prior[concept] <= schedule.level
+                ):
+                    continue
+                out.append(
+                    Violation(
+                        "revisit-unscheduled",
+                        f"{unit.id!r} revisits {concept!r}, which is scheduled"
+                        " neither here nor earlier",
+                    )
+                )
             for concept in unit.teaches:
                 for need in sorted(graph.prerequisites_of(concept)):
                     if need in seen or graph.nodes[need].domain is None:
@@ -277,6 +337,9 @@ def from_json(payload: object) -> Schedule:
                     ),
                     introduces=_str_tuple(
                         unit_fields.get("introduces"), f"{unit_where}.introduces"
+                    ),
+                    revisits=_str_tuple(
+                        unit_fields.get("revisits"), f"{unit_where}.revisits"
                     ),
                     primitives=_str_tuple(
                         unit_fields.get("primitives"), f"{unit_where}.primitives"

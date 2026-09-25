@@ -214,6 +214,7 @@ def validate_corpus(
     records: Iterable[Record],
     graph: ConceptGraph,
     primitives: Collection[str] | None = None,
+    scheduled_relations: Collection[tuple[str, str]] | None = None,
 ) -> list[Violation]:
     """Check a whole corpus. Returns every violation, never raising.
 
@@ -239,12 +240,14 @@ def validate_corpus(
     out.extend(_validate_supersession(collected, by_id))
     out.extend(_validate_prerequisite_coverage(collected, graph))
     out.extend(_validate_primitives(collected, primitives))
-    out.extend(_validate_relation_coverage(collected, graph))
+    out.extend(_validate_relation_coverage(collected, graph, scheduled_relations))
     return out
 
 
 def _validate_relation_coverage(
-    records: Sequence[Record], graph: ConceptGraph
+    records: Sequence[Record],
+    graph: ConceptGraph,
+    scheduled: Collection[tuple[str, str]] | None = None,
 ) -> list[Violation]:
     """A specialisation asserted in the graph must be taught in the corpus.
 
@@ -256,13 +259,18 @@ def _validate_relation_coverage(
     required of it, because requiring a declaration would let a record claim
     to teach a relation it does not.
 
+    ``scheduled`` is the set of pairs a curriculum schedule covers. A
+    relation scheduled to be taught is not a defect in a corpus that has not
+    reached it yet, which is the same distinction the vocabulary lower bound
+    draws between what a schedule states and what records show so far.
+
     **The asymmetry is the part that must be taught.** A teddy bear is a toy
     and a toy is not necessarily a teddy bear, which is the same structure as
     a square being a rectangle while a rectangle need not be a square. That
     one-directional implication is a level-one primitive underpinning all
     later classification, and it is invisible in an edge that merely points.
     """
-    covered: set[tuple[str, str]] = set()
+    covered: set[tuple[str, str]] = set(scheduled or ())
     for record in records:
         concepts = set(record.concepts)
         for specific in concepts:

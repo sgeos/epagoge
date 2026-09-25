@@ -54,13 +54,63 @@ are named, national, first-level lists intended for the opening stage of
 schooling. The earlier comparison put a per-grade list against a
 two-year-band target, which is not a like comparison.
 
-### The selection criterion is the finding, and it is different in kind
+### The selection criterion is the finding, and it is not the contrast I drew
 
 Mainland's 300 are chosen partly for **composing into other characters**.
 That is a generative criterion. Learn these and the rest decompose.
 
-Japan's list is not stated on that basis. Taiwan's ministry states no basis
-because it names no list.
+**Second correction, same day. I framed this as mainland stating a
+criterion Japan does not, which is a distinction that matters far less
+than the shared fact underneath it.**
+
+Japan's grade-one list is compositional in exactly the same way whether or
+not the ministry says so. 木 is the radical in 林 and 森, where the rest of
+each character is 木 again. 柏 and 椰 are kinds of tree and carry 木. 日, 水,
+火, 口, 手, 目, 人, 石, 竹, 糸, 貝 and 虫 are all high-yield radicals, and
+they are in the eighty.
+
+**Composition is a structural advantage the writing system encodes, so a
+designer selecting on simplicity and frequency selects on compositionality
+whether they intend to or not.** Radicals are by construction the simple,
+frequent base forms. Mainland's standard states the criterion; Japan's
+script enforces it.
+
+### The radical relation is at least three different relations
+
+Worth separating, because only one of them is a concept relation.
+
+**Aggregation.** 木 to 林 to 森 is one tree, then woods, then forest. Not a
+kind-of relation at all. The same element repeated, denoting quantity,
+which maps onto `grouping` rather than onto specialisation.
+
+**Specialisation.** 木 plus a phonetic gives 柏, 椰, 松, 梅. These are kinds
+of tree, and this is the relation `specialises` expresses.
+
+**Etymological derivation.** 本 is a tree with a mark at its base, giving
+origin, and then book. A learner does not infer that a book is a kind of
+tree. This aids memory and carries no concept relation, so it maps to
+nothing in the graph and should not be forced into one.
+
+### What this costs us, and what the graph is for
+
+**English orthography supplies none of it.** Tree, forest, oak and palm
+share nothing on the page. A CJK learner reads a semantic field off the
+glyph; an English learner reads nothing off it.
+
+**The concept graph is where we have to put explicitly what the script
+encodes for free**, and the specialisation layer is the part that
+corresponds to the radical relation. That layer held **one** edge, which
+made it the most under-built structure in the project rather than a minor
+gap, and `anchor_reach` was measuring an empty layer.
+
+Six taxonomic edges were written in the same change. Plant and animal as
+kinds of living thing, liquid and air as kinds of material, heat and shape
+as kinds of physical property. Seven edges now, and anchor reach is
+non-zero for seven concepts instead of one.
+
+**This is a start and not a fix.** The layer needs authoring against
+content rather than filling to make a metric move, which is the mistake
+this record would otherwise be recommending.
 
 **We already measure the analogue and have never used it to select.**
 `downstream_reach` counts how many concepts depend on a given one, which is

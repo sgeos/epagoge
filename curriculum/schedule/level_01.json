@@ -102,6 +102,9 @@
           "primitives": [
             "marks-stand-for-things",
             "the-sign-is-not-the-thing"
+          ],
+          "revisits": [
+            "household_object"
           ]
         },
         {
@@ -134,6 +137,9 @@
           ],
           "primitives": [
             "same-again"
+          ],
+          "revisits": [
+            "physical_property"
           ]
         },
         {
@@ -145,6 +151,9 @@
           ],
           "primitives": [
             "things-change"
+          ],
+          "revisits": [
+            "material"
           ]
         },
         {
@@ -155,6 +164,9 @@
           ],
           "primitives": [
             "some-things-harm"
+          ],
+          "revisits": [
+            "physical_property"
           ]
         },
         {
@@ -462,6 +474,9 @@
           ],
           "primitives": [
             "living-things-grow"
+          ],
+          "revisits": [
+            "living_and_not_living"
           ]
         },
         {
@@ -474,6 +489,9 @@
           "primitives": [
             "living-things-need-supply",
             "looking-tells-you"
+          ],
+          "revisits": [
+            "living_and_not_living"
           ]
         }
       ]

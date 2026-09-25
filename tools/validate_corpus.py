@@ -35,17 +35,21 @@ def main(argv: list[str]) -> int:
             print(f"  [{v.code}] {v.detail}", file=sys.stderr)
         return 1
 
+    # The schedule states where a concept is taught and which relations are
+    # to be taught together. Records only show what has been written so far,
+    # and both the lexicon and the graph are authored ahead of the corpus.
+    scheduled: dict[str, int] = {}
+    relations: set[tuple[str, str]] = set()
+    for path in sorted(Path("curriculum/schedule").glob("level_*.json")):
+        plan = sched.load(path)
+        scheduled.update(sched.assignment(plan))
+        relations |= sched.covered_relations(plan, graph)
+
     primitives = load_primitives(Path(argv[3])) if len(argv) >= 4 else None
     records = load_corpus(Path(argv[2]))
-    violations = validate_corpus(records, graph, primitives)
+    violations = validate_corpus(records, graph, primitives, relations)
     vocabulary = load_vocabulary(Path(argv[4])) if len(argv) == 5 else None
     if vocabulary is not None:
-        # Concept levels come from the schedule where one exists. It states
-        # where a concept is taught; records only show where it has been
-        # taught so far, and the lexicon is authored ahead of the corpus.
-        scheduled: dict[str, int] = {}
-        for path in sorted(Path("curriculum/schedule").glob("level_*.json")):
-            scheduled.update(sched.assignment(sched.load(path)))
         violations = violations + validate_vocabulary(
             vocabulary, records, graph.nodes, scheduled
         )
