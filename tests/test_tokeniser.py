@@ -13,7 +13,7 @@ import unittest
 from pathlib import Path
 
 from epagoge.book import load_book_dir
-from epagoge.tokeniser import UNK, build
+from epagoge.tokeniser import UNK, WORD_RE, build
 from epagoge.vocabulary import Term, Vocabulary, load_vocabulary
 
 
@@ -80,3 +80,29 @@ class TestShippedCorpus(unittest.TestCase):
         _books, records = load_book_dir(Path("curriculum/books/level_1"))
         text = " ".join(str(r["content"]) for r in records)  # type: ignore[index]
         self.assertEqual(sorted(set(t.unknown(text))), [])
+
+
+class TestPossessives(unittest.TestCase):
+    """A possessive is grammar, not vocabulary.
+
+    Matched as part of the word, `boat's` became a token the lexicon could
+    never hold, and admitting it would have meant admitting the possessive
+    of every noun.
+    """
+
+    def test_a_possessive_is_split_from_its_noun(self) -> None:
+        self.assertEqual(
+            WORD_RE.findall("the boat's sail"), ["the", "boat", "'s", "sail"]
+        )
+
+    def test_a_contraction_stays_whole(self) -> None:
+        """Its clitic is not `s`, so the rule leaves it alone."""
+        self.assertEqual(WORD_RE.findall("don't go"), ["don't", "go"])
+
+    def test_a_plural_is_not_mistaken_for_a_possessive(self) -> None:
+        self.assertEqual(WORD_RE.findall("faces and eyes"), ["faces", "and", "eyes"])
+
+    def test_the_possessive_token_is_in_the_vocabulary(self) -> None:
+        t = build(vocab("cup", "water"), 1)
+        self.assertIn("'s", t.ids)
+        self.assertEqual(t.unknown("the cup's water"), [])

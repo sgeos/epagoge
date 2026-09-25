@@ -1918,7 +1918,11 @@
     {
       "word": "face",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "faces"
+      ]
     },
     {
       "word": "fail",

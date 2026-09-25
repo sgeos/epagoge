@@ -21,13 +21,24 @@ from typing import Final
 
 from epagoge.vocabulary import Vocabulary
 
-WORD_RE: Final[re.Pattern[str]] = re.compile(r"[a-z']+|[0-9]+|[.,!?;:]")
-"""Words, numerals, and the punctuation the corpus actually uses."""
+WORD_RE: Final[re.Pattern[str]] = re.compile(
+    r"[a-z]+(?:'(?!s\b)[a-z]+)*|'s\b|[0-9]+|[.,!?;:]"
+)
+"""Words, numerals, and the punctuation the corpus actually uses.
+
+**A possessive is grammar, not vocabulary.** Matched as part of the word,
+`boat's` became a token the lexicon could never hold, and admitting it
+would have meant admitting the possessive of every noun. The trailing
+`'s` is split off and carried as its own token, while a contraction such
+as `don't` stays whole because its clitic is not `s`.
+"""
+
+POSSESSIVE: Final[str] = "'s"
 
 PAD: Final[str] = "<pad>"
 UNK: Final[str] = "<unk>"
 BOOK: Final[str] = "<book>"
-SPECIALS: Final[tuple[str, ...]] = (PAD, UNK, BOOK)
+SPECIALS: Final[tuple[str, ...]] = (PAD, UNK, BOOK, POSSESSIVE)
 
 
 @dataclass(frozen=True, slots=True)
