@@ -610,3 +610,34 @@ class TestSenses(unittest.TestCase):
         v = load_vocabulary(Path("curriculum/vocabulary.json"))
         self.assertGreater(len(v.terms), len(v.words()))
         self.assertGreaterEqual(len(v.senses("set")), 2)
+
+
+class TestTermLevelsAcrossSenses(unittest.TestCase):
+    """A word is admissible as soon as any of its senses is.
+
+    `set` is a verb at level one and a noun at level two. A dict
+    comprehension took whichever came last, so a level-one record using it
+    failed the ceiling on the strength of a sense it was not using.
+    """
+
+    def test_the_earliest_sense_wins(self) -> None:
+        v = Vocabulary(
+            terms=(
+                Term(word="set", concept="activity", level=1),
+                Term(word="set", concept="grouping", level=2),
+            )
+        )
+        self.assertEqual(term_levels(v, [])["set"], 1)
+
+    def test_order_within_the_lexicon_does_not_matter(self) -> None:
+        v = Vocabulary(
+            terms=(
+                Term(word="set", concept="grouping", level=2),
+                Term(word="set", concept="activity", level=1),
+            )
+        )
+        self.assertEqual(term_levels(v, [])["set"], 1)
+
+    def test_a_single_sense_is_unchanged(self) -> None:
+        v = Vocabulary(terms=(Term(word="cup", concept="household_object", level=1),))
+        self.assertEqual(term_levels(v, [])["cup"], 1)

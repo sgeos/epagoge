@@ -361,9 +361,21 @@ def concept_levels(records: Sequence[Record]) -> dict[str, int]:
 
 
 def term_levels(vocabulary: Vocabulary, records: Sequence[Record]) -> dict[str, int]:
-    """Authored level of each term. ``records`` is unused and kept for callers."""
+    """Earliest authored level of each word. ``records`` is kept for callers.
+
+    **A word is admissible as soon as any of its senses is**, which is the
+    rule ``lookup`` already follows. A plain dict comprehension took
+    whichever sense came last, so `set` read as level two on the strength
+    of its noun sense while its verb sense sat at level one, and a
+    level-one record using it failed the ceiling.
+    """
     del records
-    return {term.word: term.level for term in vocabulary.terms}
+    out: dict[str, int] = {}
+    for term in vocabulary.terms:
+        seen = out.get(term.word)
+        if seen is None or term.level < seen:
+            out[term.word] = term.level
+    return out
 
 
 def _check_lower_bound(

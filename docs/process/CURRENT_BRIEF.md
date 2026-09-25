@@ -1,62 +1,68 @@
-# Current brief. Finish level one's reference material
+# Current brief. Level one end to end, then level two
 
-**Written 2026-09-25 for self-directed work.** Delete when the completion
-condition in `COMPLETION_CONDITION.md` is met.
+**Rewritten 2026-09-25** after the operator expanded the goal set to seven
+items. Delete when `COMPLETION_CONDITION.md` is met.
 
-## The goals, and why these two
+## The seven, with what each actually depends on
 
-**One. Define every level-one word that is not in the seed.** 306 of 765
-are defined and closure is 100 percent. The remaining 427 are the stated
-priority, the applied proof that the lexicon is closed, and they need no
-operator input.
+| # | Goal | State | Real blocker |
+| --- | --- | --- | --- |
+| 1 | Dictionary coverage and closure | 481 of 698, closure 100% | None. Authoring |
+| 2 | Thesaurus, synonyms and antonyms | 194 antonyms, 0 synonyms | None. Authoring |
+| 3 | Missing words added to both | No method yet | None. Derive from what definitions had to work around |
+| 4 | Full level-one corpus draft | **5 content books of 92 units** | None, at draft scale |
+| 5 | Train a level-one model | Trainer exists, torch 2.14 and MPS work | **Item 4.** The corpus is about 2,200 words and cannot train anything |
+| 6 | Level-two dictionary and thesaurus | Level two holds 49 terms | Item 1, and a level-two lexicon |
+| 7 | Level-two ablation | Pre-registration has pending items | Items 4 and 5 |
 
-**Two. Author synonym sets in the thesaurus.** The operator asked for
-them and ranked them below the dictionary. 835 entries carry zero
-synonyms. The structure and the check already exist.
+## The sequencing claim, and it is the load-bearing one
 
-**Explicitly not in scope.** The ablation needs a pre-registration that
-needs a variance measurement nobody has run. Levels three and up need
-profile-derived subject weighting, which the handoff records as a
-disclosure decision. Publishing is the operator's. None of these can move
-without input, so none belongs in a loop.
+**Item 4 is the gate on everything downstream.** The corpus is 2,200
+words. Nothing trains on that and no ordering is detectable in it.
 
-## How the work goes
+One book per schedule unit is roughly 92 books and 40,000 words. That is
+both what "full draft" reasonably means and **the minimum orderable set an
+ablation can use**, since the ablation orders books and five is not a set.
 
-Draft against the available vocabulary, which is the seed plus everything
-already grounded. **Validate mechanically before writing anything.** Three
-drafts were rejected by the closure check this session and none reached a
-file. Patch cycles by grounding one member on the seed and letting the
-rest keep referring to it.
+**It is not the token budget.** `CORPUS_SCALE.md` wants 12 to 600 books
+per topic, so 1,923 at the low end. A draft is one per unit. Say which is
+meant whenever reporting, because conflating them overstates the project.
 
-## Wrong turns, all of them made once already
+## What done means for 5 and 7
 
-- **Do not run large generation passes.** Measured: acceptance fell 22.6,
-  16.4, then 6.0 percent. A 480-request pass yielded 29 definitions while
-  20 authored ones closed the round. The generator is worth using only on
-  concrete nouns.
-- **Do not read acceptance as progress.** Read closure. Two interventions
-  raised acceptance and moved closure not at all; the one that looked like
-  a third failure was the only one that worked.
-- **Do not grow the ostensive seed to make closure easy.** It went 33 to
-  37 once and has held at 37 for two rounds. **A large enough seed closes
-  any lexicon**, so the claim is only as strong as the seed is small. Add
-  a word only when it cannot be defined except as not-its-opposite.
-- **Do not assume a word is core.** `done`, `taken` and `doing` were each
-  assumed and each wrong. Look it up.
-- **A heuristic needs two pieces of evidence.** Scanning for verbs on a
-  single inflection read `a`, `i` and `it` as verbs and wrote six nonsense
-  words into core.
+**A run that completes and reports honestly.** The corpus will be far
+below the scale at which an ordering effect could be detected, and the
+published literature already reports such effects as weak and
+inconsistent at full scale. **Expect a null. Record it as a null.** A
+result that is not there must not be manufactured, and the pre-registered
+threshold is what decides, not the sign of the difference.
+
+## Wrong turns, every one already made once
+
+- **The gate must gate.** A commit ran after `GATE=1` was printed in the
+  same invocation. Reading the exit code is not enough if the commit runs
+  regardless. Run the gate, stop, then commit.
+- **Do not run large generation passes for definitions.** Acceptance fell
+  22.6, 16.4, then 6.0 percent. Authoring yields about a hundred a round
+  against twenty-nine for a forty-batch pass.
+- **Read closure, not acceptance.** Two interventions raised acceptance
+  and moved closure not at all.
+- **Do not grow the ostensive seed to make closure easy.** 33 to 37 once,
+  held at 37 for four rounds. A large enough seed closes any lexicon.
+- **Do not assume a word is core.** `done`, `taken`, `doing` were each
+  assumed and each wrong.
+- **A heuristic needs two pieces of evidence.** One inflection read `a`,
+  `i` and `it` as verbs and wrote six nonsense words into core.
 - **A guard over records must test `defines.kind`.** Omitting it dropped
   four domain and topic definitions.
-- **Never `git checkout` to undo a mistake without checking what else is
-  uncommitted.** Doing so cost two authored waves that had to be redone.
-- **Run the gate bare and read its exit code.** Piping it takes the exit
-  status of the pipe.
-- **Commit only closed states.** The closure check is a gate, so this is
-  enforced rather than remembered.
+- **No magic numbers in tests.** An assertion of more than 800 thesaurus
+  entries went stale the moment inflections were merged. Tie to the
+  lexicon.
+- **Never `git checkout` to undo without checking what else is
+  uncommitted.** It cost two authored waves.
 
-## Watch this number
+## Watch these two numbers
 
-**The size of the ostensive set**, reported by the closure tool as the
-seed. If a round needs several new ostensive words to close, say so
-rather than absorbing it.
+**The ostensive seed size**, and **books against schedule units**. The
+first guards the self-hosting claim. The second is the honest measure of
+how much corpus exists.

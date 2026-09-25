@@ -286,7 +286,192 @@
     "dict.1.sometimes": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sometimes"}, "defines": {"kind": "word", "target": "sometimes"}},
     "dict.1.seven": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:seven"}, "defines": {"kind": "word", "target": "seven"}},
     "dict.1.eight": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:eight"}, "defines": {"kind": "word", "target": "eight"}},
-    "dict.1.nine": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nine"}, "defines": {"kind": "word", "target": "nine"}}
+    "dict.1.nine": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nine"}, "defines": {"kind": "word", "target": "nine"}},
+    "dict.1.cause": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cause"}, "defines": {"kind": "word", "target": "cause"}},
+    "dict.1.contact": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:contact"}, "defines": {"kind": "word", "target": "contact"}},
+    "dict.1.cooked": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cooked"}, "defines": {"kind": "word", "target": "cooked"}},
+    "dict.1.uncle": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:uncle"}, "defines": {"kind": "word", "target": "uncle"}},
+    "dict.1.cousin": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cousin"}, "defines": {"kind": "word", "target": "cousin"}},
+    "dict.1.cross": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cross"}, "defines": {"kind": "word", "target": "cross"}},
+    "dict.1.diary": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:diary"}, "defines": {"kind": "word", "target": "diary"}},
+    "dict.1.distance": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:distance"}, "defines": {"kind": "word", "target": "distance"}},
+    "dict.1.drain": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drain"}, "defines": {"kind": "word", "target": "drain"}},
+    "dict.1.either": {"concepts": ["same_and_different"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:either"}, "defines": {"kind": "word", "target": "either"}},
+    "dict.1.follow": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:follow"}, "defines": {"kind": "word", "target": "follow"}},
+    "dict.1.following": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:following"}, "defines": {"kind": "word", "target": "following"}},
+    "dict.1.freeze": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:freeze"}, "defines": {"kind": "word", "target": "freeze"}},
+    "dict.1.gap": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gap"}, "defines": {"kind": "word", "target": "gap"}},
+    "dict.1.given": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:given"}, "defines": {"kind": "word", "target": "given"}},
+    "dict.1.grown": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grown"}, "defines": {"kind": "word", "target": "grown"}},
+    "dict.1.however": {"concepts": ["discourse_marker"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:however"}, "defines": {"kind": "word", "target": "however"}},
+    "dict.1.hundred": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hundred"}, "defines": {"kind": "word", "target": "hundred"}},
+    "dict.1.hurry": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hurry"}, "defines": {"kind": "word", "target": "hurry"}},
+    "dict.1.impossible": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:impossible"}, "defines": {"kind": "word", "target": "impossible"}},
+    "dict.1.instead": {"concepts": ["discourse_marker"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:instead"}, "defines": {"kind": "word", "target": "instead"}},
+    "dict.1.kind": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:kind"}, "defines": {"kind": "word", "target": "kind"}},
+    "dict.1.king": {"concepts": ["someone_in_charge"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:king"}, "defines": {"kind": "word", "target": "king"}},
+    "dict.1.knew": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:knew"}, "defines": {"kind": "word", "target": "knew"}},
+    "dict.1.lack": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lack"}, "defines": {"kind": "word", "target": "lack"}},
+    "dict.1.lasted": {"concepts": ["wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lasted"}, "defines": {"kind": "word", "target": "lasted"}},
+    "dict.1.laugh": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:laugh"}, "defines": {"kind": "word", "target": "laugh"}},
+    "dict.1.leader": {"concepts": ["someone_in_charge"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:leader"}, "defines": {"kind": "word", "target": "leader"}},
+    "dict.1.learned": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:learned"}, "defines": {"kind": "word", "target": "learned"}},
+    "dict.1.least": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:least"}, "defines": {"kind": "word", "target": "least"}},
+    "dict.1.less": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:less"}, "defines": {"kind": "word", "target": "less"}},
+    "dict.1.level": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:level"}, "defines": {"kind": "word", "target": "level"}},
+    "dict.1.liar": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:liar"}, "defines": {"kind": "word", "target": "liar"}},
+    "dict.1.lie": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lie"}, "defines": {"kind": "word", "target": "lie"}},
+    "dict.1.lift": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lift"}, "defines": {"kind": "word", "target": "lift"}},
+    "dict.1.lifted": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lifted"}, "defines": {"kind": "word", "target": "lifted"}},
+    "dict.1.listen": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:listen"}, "defines": {"kind": "word", "target": "listen"}},
+    "dict.1.looking": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:looking"}, "defines": {"kind": "word", "target": "looking"}},
+    "dict.1.lose": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lose"}, "defines": {"kind": "word", "target": "lose"}},
+    "dict.1.lost": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lost"}, "defines": {"kind": "word", "target": "lost"}},
+    "dict.1.lot": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lot"}, "defines": {"kind": "word", "target": "lot"}},
+    "dict.1.love": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:love"}, "defines": {"kind": "word", "target": "love"}},
+    "dict.1.manage": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:manage"}, "defines": {"kind": "word", "target": "manage"}},
+    "dict.1.manner": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:manner"}, "defines": {"kind": "word", "target": "manner"}},
+    "dict.1.match": {"concepts": ["correspondence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:match"}, "defines": {"kind": "word", "target": "match"}},
+    "dict.1.meant": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meant"}, "defines": {"kind": "word", "target": "meant"}},
+    "dict.1.melt": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:melt"}, "defines": {"kind": "word", "target": "melt"}},
+    "dict.1.mend": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mend"}, "defines": {"kind": "word", "target": "mend"}},
+    "dict.1.method": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:method"}, "defines": {"kind": "word", "target": "method"}},
+    "dict.1.missing": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:missing"}, "defines": {"kind": "word", "target": "missing"}},
+    "dict.1.mood": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mood"}, "defines": {"kind": "word", "target": "mood"}},
+    "dict.1.wide": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wide"}, "defines": {"kind": "word", "target": "wide"}},
+    "dict.1.narrow": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:narrow"}, "defines": {"kind": "word", "target": "narrow"}},
+    "dict.1.nasty": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nasty"}, "defines": {"kind": "word", "target": "nasty"}},
+    "dict.1.natural": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:natural"}, "defines": {"kind": "word", "target": "natural"}},
+    "dict.1.nice": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nice"}, "defines": {"kind": "word", "target": "nice"}},
+    "dict.1.old": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:old"}, "defines": {"kind": "word", "target": "old"}},
+    "dict.1.own": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:own"}, "defines": {"kind": "word", "target": "own"}},
+    "dict.1.pace": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pace"}, "defines": {"kind": "word", "target": "pace"}},
+    "dict.1.pair": {"concepts": ["correspondence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pair"}, "defines": {"kind": "word", "target": "pair"}},
+    "dict.1.path": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:path"}, "defines": {"kind": "word", "target": "path"}},
+    "dict.1.patted": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:patted"}, "defines": {"kind": "word", "target": "patted"}},
+    "dict.1.pay": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pay"}, "defines": {"kind": "word", "target": "pay"}},
+    "dict.1.period": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:period"}, "defines": {"kind": "word", "target": "period"}},
+    "dict.1.phrase": {"concepts": ["sentence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:phrase"}, "defines": {"kind": "word", "target": "phrase"}},
+    "dict.1.plenty": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plenty"}, "defines": {"kind": "word", "target": "plenty"}},
+    "dict.1.poor": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:poor"}, "defines": {"kind": "word", "target": "poor"}},
+    "dict.1.pressed": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pressed"}, "defines": {"kind": "word", "target": "pressed"}},
+    "dict.1.pretend": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pretend"}, "defines": {"kind": "word", "target": "pretend"}},
+    "dict.1.proper": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:proper"}, "defines": {"kind": "word", "target": "proper"}},
+    "dict.1.prove": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:prove"}, "defines": {"kind": "word", "target": "prove"}},
+    "dict.1.pull": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pull"}, "defines": {"kind": "word", "target": "pull"}},
+    "dict.1.queen": {"concepts": ["someone_in_charge"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:queen"}, "defines": {"kind": "word", "target": "queen"}},
+    "dict.1.quick": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:quick"}, "defines": {"kind": "word", "target": "quick"}},
+    "dict.1.quickly": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:quickly"}, "defines": {"kind": "word", "target": "quickly"}},
+    "dict.1.quiet": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:quiet"}, "defines": {"kind": "word", "target": "quiet"}},
+    "dict.1.raise": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:raise"}, "defines": {"kind": "word", "target": "raise"}},
+    "dict.1.raw": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:raw"}, "defines": {"kind": "word", "target": "raw"}},
+    "dict.1.reach": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:reach"}, "defines": {"kind": "word", "target": "reach"}},
+    "dict.1.reaches": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:reaches"}, "defines": {"kind": "word", "target": "reaches"}},
+    "dict.1.ready": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ready"}, "defines": {"kind": "word", "target": "ready"}},
+    "dict.1.record": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:record"}, "defines": {"kind": "word", "target": "record"}},
+    "dict.1.remain": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:remain"}, "defines": {"kind": "word", "target": "remain"}},
+    "dict.1.remember": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:remember"}, "defines": {"kind": "word", "target": "remember"}},
+    "dict.1.repeat": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:repeat"}, "defines": {"kind": "word", "target": "repeat"}},
+    "dict.1.represent": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:represent"}, "defines": {"kind": "word", "target": "represent"}},
+    "dict.1.request": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:request"}, "defines": {"kind": "word", "target": "request"}},
+    "dict.1.rich": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rich"}, "defines": {"kind": "word", "target": "rich"}},
+    "dict.1.ring": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ring"}, "defines": {"kind": "word", "target": "ring"}},
+    "dict.1.rise": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rise"}, "defines": {"kind": "word", "target": "rise"}},
+    "dict.1.smooth": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:smooth"}, "defines": {"kind": "word", "target": "smooth"}},
+    "dict.1.rough": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rough"}, "defines": {"kind": "word", "target": "rough"}},
+    "dict.1.rub": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rub"}, "defines": {"kind": "word", "target": "rub"}},
+    "dict.1.rule": {"concepts": ["someone_in_charge"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rule"}, "defines": {"kind": "word", "target": "rule"}},
+    "dict.1.run": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:run"}, "defines": {"kind": "word", "target": "run"}},
+    "dict.1.rush": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rush"}, "defines": {"kind": "word", "target": "rush"}},
+    "dict.1.rust": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rust"}, "defines": {"kind": "word", "target": "rust"}},
+    "dict.1.sad": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sad"}, "defines": {"kind": "word", "target": "sad"}},
+    "dict.1.safe": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:safe"}, "defines": {"kind": "word", "target": "safe"}},
+    "dict.1.scared": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:scared"}, "defines": {"kind": "word", "target": "scared"}},
+    "dict.1.secret": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:secret"}, "defines": {"kind": "word", "target": "secret"}},
+    "dict.1.seemed": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:seemed"}, "defines": {"kind": "word", "target": "seemed"}},
+    "dict.1.seems": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:seems"}, "defines": {"kind": "word", "target": "seems"}},
+    "dict.1.sell": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sell"}, "defines": {"kind": "word", "target": "sell"}},
+    "dict.1.sentence": {"concepts": ["sentence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sentence"}, "defines": {"kind": "word", "target": "sentence"}},
+    "dict.1.separate": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:separate"}, "defines": {"kind": "word", "target": "separate"}},
+    "dict.1.set": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:set"}, "defines": {"kind": "word", "target": "set"}},
+    "dict.1.settles": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:settles"}, "defines": {"kind": "word", "target": "settles"}},
+    "dict.1.shake": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shake"}, "defines": {"kind": "word", "target": "shake"}},
+    "dict.1.shallow": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shallow"}, "defines": {"kind": "word", "target": "shallow"}},
+    "dict.1.share": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:share"}, "defines": {"kind": "word", "target": "share"}},
+    "dict.1.short": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:short"}, "defines": {"kind": "word", "target": "short"}},
+    "dict.1.shortage": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shortage"}, "defines": {"kind": "word", "target": "shortage"}},
+    "dict.1.shorter": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shorter"}, "defines": {"kind": "word", "target": "shorter"}},
+    "dict.1.shoulder": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shoulder"}, "defines": {"kind": "word", "target": "shoulder"}},
+    "dict.1.shown": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shown"}, "defines": {"kind": "word", "target": "shown"}},
+    "dict.1.shrink": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shrink"}, "defines": {"kind": "word", "target": "shrink"}},
+    "dict.1.sign": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sign"}, "defines": {"kind": "word", "target": "sign"}},
+    "dict.1.sink": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sink"}, "defines": {"kind": "word", "target": "sink"}},
+    "dict.1.skip": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:skip"}, "defines": {"kind": "word", "target": "skip"}},
+    "dict.1.slide": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:slide"}, "defines": {"kind": "word", "target": "slide"}},
+    "dict.1.slow": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:slow"}, "defines": {"kind": "word", "target": "slow"}},
+    "dict.1.slowly": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:slowly"}, "defines": {"kind": "word", "target": "slowly"}},
+    "dict.1.smash": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:smash"}, "defines": {"kind": "word", "target": "smash"}},
+    "dict.1.smell": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:smell"}, "defines": {"kind": "word", "target": "smell"}},
+    "dict.1.snap": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:snap"}, "defines": {"kind": "word", "target": "snap"}},
+    "dict.1.spare": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spare"}, "defines": {"kind": "word", "target": "spare"}},
+    "dict.1.speed": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:speed"}, "defines": {"kind": "word", "target": "speed"}},
+    "dict.1.spell": {"concepts": ["word"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spell"}, "defines": {"kind": "word", "target": "spell"}},
+    "dict.1.spill": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spill"}, "defines": {"kind": "word", "target": "spill"}},
+    "dict.1.spot": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spot"}, "defines": {"kind": "word", "target": "spot"}},
+    "dict.1.squeeze": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:squeeze"}, "defines": {"kind": "word", "target": "squeeze"}},
+    "dict.1.stand": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stand"}, "defines": {"kind": "word", "target": "stand"}},
+    "dict.1.stay": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stay"}, "defines": {"kind": "word", "target": "stay"}},
+    "dict.1.steal": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:steal"}, "defines": {"kind": "word", "target": "steal"}},
+    "dict.1.stranger": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stranger"}, "defines": {"kind": "word", "target": "stranger"}},
+    "dict.1.stroke": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stroke"}, "defines": {"kind": "word", "target": "stroke"}},
+    "dict.1.strong": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:strong"}, "defines": {"kind": "word", "target": "strong"}},
+    "dict.1.sunny": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sunny"}, "defines": {"kind": "word", "target": "sunny"}},
+    "dict.1.suppose": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:suppose"}, "defines": {"kind": "word", "target": "suppose"}},
+    "dict.1.sure": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sure"}, "defines": {"kind": "word", "target": "sure"}},
+    "dict.1.swallow": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:swallow"}, "defines": {"kind": "word", "target": "swallow"}},
+    "dict.1.swap": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:swap"}, "defines": {"kind": "word", "target": "swap"}},
+    "dict.1.swim": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:swim"}, "defines": {"kind": "word", "target": "swim"}},
+    "dict.1.talk": {"concepts": ["sentence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:talk"}, "defines": {"kind": "word", "target": "talk"}},
+    "dict.1.taller": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:taller"}, "defines": {"kind": "word", "target": "taller"}},
+    "dict.1.tally": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tally"}, "defines": {"kind": "word", "target": "tally"}},
+    "dict.1.tear": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tear"}, "defines": {"kind": "word", "target": "tear"}},
+    "dict.1.term": {"concepts": ["word"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:term"}, "defines": {"kind": "word", "target": "term"}},
+    "dict.1.test": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:test"}, "defines": {"kind": "word", "target": "test"}},
+    "dict.1.thick": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thick"}, "defines": {"kind": "word", "target": "thick"}},
+    "dict.1.thirsty": {"concepts": ["need"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thirsty"}, "defines": {"kind": "word", "target": "thirsty"}},
+    "dict.1.thousand": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thousand"}, "defines": {"kind": "word", "target": "thousand"}},
+    "dict.1.throw": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:throw"}, "defines": {"kind": "word", "target": "throw"}},
+    "dict.1.tie": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tie"}, "defines": {"kind": "word", "target": "tie"}},
+    "dict.1.tip": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tip"}, "defines": {"kind": "word", "target": "tip"}},
+    "dict.1.weak": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:weak"}, "defines": {"kind": "word", "target": "weak"}},
+    "dict.1.tired": {"concepts": ["wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tired"}, "defines": {"kind": "word", "target": "tired"}},
+    "dict.1.trade": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:trade"}, "defines": {"kind": "word", "target": "trade"}},
+    "dict.1.trick": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:trick"}, "defines": {"kind": "word", "target": "trick"}},
+    "dict.1.trust": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:trust"}, "defines": {"kind": "word", "target": "trust"}},
+    "dict.1.try": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:try"}, "defines": {"kind": "word", "target": "try"}},
+    "dict.1.tumble": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tumble"}, "defines": {"kind": "word", "target": "tumble"}},
+    "dict.1.unable": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unable"}, "defines": {"kind": "word", "target": "unable"}},
+    "dict.1.uncover": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:uncover"}, "defines": {"kind": "word", "target": "uncover"}},
+    "dict.1.unfair": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unfair"}, "defines": {"kind": "word", "target": "unfair"}},
+    "dict.1.unkind": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unkind"}, "defines": {"kind": "word", "target": "unkind"}},
+    "dict.1.unlike": {"concepts": ["same_and_different"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unlike"}, "defines": {"kind": "word", "target": "unlike"}},
+    "dict.1.unlock": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unlock"}, "defines": {"kind": "word", "target": "unlock"}},
+    "dict.1.unsafe": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unsafe"}, "defines": {"kind": "word", "target": "unsafe"}},
+    "dict.1.untie": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:untie"}, "defines": {"kind": "word", "target": "untie"}},
+    "dict.1.upset": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:upset"}, "defines": {"kind": "word", "target": "upset"}},
+    "dict.1.wait": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wait"}, "defines": {"kind": "word", "target": "wait"}},
+    "dict.1.wake": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wake"}, "defines": {"kind": "word", "target": "wake"}},
+    "dict.1.walk": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:walk"}, "defines": {"kind": "word", "target": "walk"}},
+    "dict.1.wash": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wash"}, "defines": {"kind": "word", "target": "wash"}},
+    "dict.1.weigh": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:weigh"}, "defines": {"kind": "word", "target": "weigh"}},
+    "dict.1.well": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:well"}, "defines": {"kind": "word", "target": "well"}},
+    "dict.1.while": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:while"}, "defines": {"kind": "word", "target": "while"}},
+    "dict.1.win": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:win"}, "defines": {"kind": "word", "target": "win"}},
+    "dict.1.wonder": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wonder"}, "defines": {"kind": "word", "target": "wonder"}},
+    "dict.1.wooden": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wooden"}, "defines": {"kind": "word", "target": "wooden"}},
+    "dict.1.worse": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:worse"}, "defines": {"kind": "word", "target": "worse"}},
+    "dict.1.worst": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:worst"}, "defines": {"kind": "word", "target": "worst"}},
+    "dict.1.wrong": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wrong"}, "defines": {"kind": "word", "target": "wrong"}}
   }
 }
 ---
@@ -1127,3 +1312,558 @@ Eight is one more than seven.
 
 [dict.1.nine]
 Nine is one more than eight.
+
+[dict.1.cause]
+A cause is what makes a thing happen.
+
+[dict.1.contact]
+Contact is when two things touch.
+
+[dict.1.cooked]
+Cooked is when food has been made hot so you can eat it.
+
+[dict.1.uncle]
+An uncle is the brother of your mother or father.
+
+[dict.1.cousin]
+A cousin is a child of your aunt or uncle.
+
+[dict.1.cross]
+To cross is to go from one side to another side.
+
+[dict.1.diary]
+A diary is a book where you write what happened each day.
+
+[dict.1.distance]
+Distance is how far one thing is from another thing.
+
+[dict.1.drain]
+To drain is to let a liquid go away.
+
+[dict.1.either]
+Either means one or the other.
+
+[dict.1.follow]
+To follow is to go after someone or something.
+
+[dict.1.following]
+Following is when someone goes after another.
+
+[dict.1.freeze]
+To freeze is to make water very cold so it becomes hard.
+
+[dict.1.gap]
+A gap is a space between two things.
+
+[dict.1.given]
+Given is when someone has put a thing into the hands of another.
+
+[dict.1.grown]
+Grown is when a living thing has become big.
+
+[dict.1.however]
+However means but at the same time.
+
+[dict.1.hundred]
+A hundred is a number that is much more than nine.
+
+[dict.1.hurry]
+To hurry is to do a thing fast.
+
+[dict.1.impossible]
+Impossible is when a thing cannot be.
+
+[dict.1.instead]
+Instead means in place of another thing.
+
+[dict.1.kind]
+A kind is many things that are alike.
+
+[dict.1.king]
+A king is a man who is over all the people of a land.
+
+[dict.1.knew]
+Knew is when someone had a thing in mind before.
+
+[dict.1.lack]
+To lack is to not have a thing you need.
+
+[dict.1.lasted]
+Lasted is when a thing went on for a time.
+
+[dict.1.laugh]
+To laugh is to make a happy sound.
+
+[dict.1.leader]
+A leader is a person who is over others and says what to do.
+
+[dict.1.learned]
+Learned is when someone has got to know a thing.
+
+[dict.1.least]
+Least is the most small of all.
+
+[dict.1.less]
+Less is not as much.
+
+[dict.1.level]
+Level is when a thing is flat and no side is higher.
+
+[dict.1.liar]
+A liar is a person who says what is not true.
+
+[dict.1.lie]
+To lie is to say what is not true.
+
+[dict.1.lift]
+To lift is to make a thing go up.
+
+[dict.1.lifted]
+Lifted is when a thing was made to go up.
+
+[dict.1.listen]
+To listen is to try to hear.
+
+[dict.1.looking]
+Looking is when someone is using the eyes to see.
+
+[dict.1.lose]
+To lose is to not have a thing any more.
+
+[dict.1.lost]
+Lost is when a thing cannot be found.
+
+[dict.1.lot]
+A lot is many or much.
+
+[dict.1.love]
+To love is to feel very good about someone or something.
+
+[dict.1.manage]
+To manage is to do a thing that is hard.
+
+[dict.1.manner]
+A manner is the way someone does a thing.
+
+[dict.1.match]
+To match is to be the same as another thing.
+
+[dict.1.meant]
+Meant is what a word or a person was about.
+
+[dict.1.melt]
+To melt is to make a hard thing become a liquid with heat.
+
+[dict.1.mend]
+To mend is to make a broken thing work again.
+
+[dict.1.method]
+A method is a way of doing a thing.
+
+[dict.1.missing]
+Missing is when a thing is not where it was.
+
+[dict.1.mood]
+A mood is the way someone feels.
+
+[dict.1.wide]
+Wide is when a thing is big from one side to the other side.
+
+[dict.1.narrow]
+Narrow is when a thing is not wide.
+
+[dict.1.nasty]
+Nasty is very bad.
+
+[dict.1.natural]
+Natural is when a thing was not made by people.
+
+[dict.1.nice]
+Nice is good.
+
+[dict.1.old]
+Old is when a thing has been for a long time.
+
+[dict.1.own]
+To own is to have a thing that is yours.
+
+[dict.1.pace]
+A pace is how fast a thing moves.
+
+[dict.1.pair]
+A pair is two things that go together.
+
+[dict.1.path]
+A path is a way you go from one place to another.
+
+[dict.1.patted]
+Patted is when someone put a hand on a thing many times.
+
+[dict.1.pay]
+To pay is to give something to get a thing.
+
+[dict.1.period]
+A period is a time from one moment to another.
+
+[dict.1.phrase]
+A phrase is a few words that go together.
+
+[dict.1.plenty]
+Plenty is more than enough.
+
+[dict.1.poor]
+Poor is when someone does not have much.
+
+[dict.1.pressed]
+Pressed is when a hand was put on a thing to make it go down.
+
+[dict.1.pretend]
+To pretend is to do as if a thing is real when it is not.
+
+[dict.1.proper]
+Proper is the right way.
+
+[dict.1.prove]
+To prove is to show that a thing is true.
+
+[dict.1.pull]
+To pull is to make a thing come to you.
+
+[dict.1.queen]
+A queen is a woman who is over all the people of a land.
+
+[dict.1.quick]
+Quick is fast.
+
+[dict.1.quickly]
+Quickly is in a small time.
+
+[dict.1.quiet]
+Quiet is when there is little sound.
+
+[dict.1.raise]
+To raise is to make a thing go up.
+
+[dict.1.raw]
+Raw is when food has not been made hot.
+
+[dict.1.reach]
+To reach is to put your hand out to get a thing.
+
+[dict.1.reaches]
+Reaches is when a hand goes out to a thing.
+
+[dict.1.ready]
+Ready is when a thing can be used now.
+
+[dict.1.record]
+A record is words you keep so you know what happened.
+
+[dict.1.remain]
+To remain is to stay in a place.
+
+[dict.1.remember]
+To remember is to keep a thing in your mind.
+
+[dict.1.repeat]
+To repeat is to do or say a thing again.
+
+[dict.1.represent]
+To represent is to stand for another thing.
+
+[dict.1.request]
+A request is when someone asks for a thing.
+
+[dict.1.rich]
+Rich is when someone has much.
+
+[dict.1.ring]
+A ring is a round thing with a hole in the middle.
+
+[dict.1.rise]
+To rise is to go up.
+
+[dict.1.smooth]
+Smooth is when a side of a thing has no high or low parts.
+
+[dict.1.rough]
+Rough is when a side of a thing is not smooth.
+
+[dict.1.rub]
+To rub is to move a thing on another thing many times.
+
+[dict.1.rule]
+A rule is what someone says you must do.
+
+[dict.1.run]
+To run is to move on your feet very fast.
+
+[dict.1.rush]
+To rush is to go very fast.
+
+[dict.1.rust]
+Rust is the red brown stuff that comes on iron when it is wet.
+
+[dict.1.sad]
+Sad is the feeling when things are not good.
+
+[dict.1.safe]
+Safe is when nothing can hurt you.
+
+[dict.1.scared]
+Scared is afraid.
+
+[dict.1.secret]
+A secret is a thing you do not tell others.
+
+[dict.1.seemed]
+Seemed is when a thing looked one way.
+
+[dict.1.seems]
+Seems is when a thing looks one way but may not be so.
+
+[dict.1.sell]
+To sell is to give a thing to get something.
+
+[dict.1.sentence]
+A sentence is words that say one whole thing.
+
+[dict.1.separate]
+To separate is to make things not be together.
+
+[dict.1.set]
+A set is many things that go together.
+
+[dict.1.settles]
+Settles is when a thing comes down and stays.
+
+[dict.1.shake]
+To shake is to move a thing fast one way and then the other.
+
+[dict.1.shallow]
+Shallow is not deep.
+
+[dict.1.share]
+To share is to give some of a thing to another.
+
+[dict.1.short]
+Short is not long.
+
+[dict.1.shortage]
+A shortage is when there is not enough.
+
+[dict.1.shorter]
+Shorter is more short than another thing.
+
+[dict.1.shoulder]
+Your shoulder is the part of your body where your arm meets your body.
+
+[dict.1.shown]
+Shown is when a thing was let to be seen.
+
+[dict.1.shrink]
+To shrink is to become small.
+
+[dict.1.sign]
+A sign is a mark that stands for a thing.
+
+[dict.1.sink]
+To sink is to go down in water.
+
+[dict.1.skip]
+To skip is to go over a thing and not do it.
+
+[dict.1.slide]
+To slide is to move on a smooth side of a thing.
+
+[dict.1.slow]
+Slow is not fast.
+
+[dict.1.slowly]
+Slowly is in a long time.
+
+[dict.1.smash]
+To smash is to hit a thing so it breaks into many parts.
+
+[dict.1.smell]
+To smell is to get a thing with your nose.
+
+[dict.1.snap]
+To snap is to break a thing fast with a loud sound.
+
+[dict.1.spare]
+Spare is extra.
+
+[dict.1.speed]
+Speed is how fast a thing moves.
+
+[dict.1.spell]
+To spell is to say the letters of a word.
+
+[dict.1.spill]
+To spill is to let a liquid go out of a thing.
+
+[dict.1.spot]
+A spot is a small round mark.
+
+[dict.1.squeeze]
+To squeeze is to press a thing from two sides.
+
+[dict.1.stand]
+To stand is to be up on your feet.
+
+[dict.1.stay]
+To stay is to be in a place and not go.
+
+[dict.1.steal]
+To steal is to take a thing that is not yours.
+
+[dict.1.stranger]
+A stranger is a person you do not know.
+
+[dict.1.stroke]
+To stroke is to move your hand on a thing many times.
+
+[dict.1.strong]
+Strong is when a thing or a person has much force.
+
+[dict.1.sunny]
+Sunny is when the sun is bright in the sky.
+
+[dict.1.suppose]
+To suppose is to think a thing may be true.
+
+[dict.1.sure]
+Sure is when you know a thing is true.
+
+[dict.1.swallow]
+To swallow is to make food go down from your mouth.
+
+[dict.1.swap]
+To swap is to give a thing and get another thing.
+
+[dict.1.swim]
+To swim is to move in water.
+
+[dict.1.talk]
+To talk is to say words to someone.
+
+[dict.1.taller]
+Taller is more tall than another.
+
+[dict.1.tally]
+A tally is a count you keep with marks.
+
+[dict.1.tear]
+To tear is to pull a thing so it comes into parts.
+
+[dict.1.term]
+A term is a word for a thing.
+
+[dict.1.test]
+To test is to try a thing to see if it works.
+
+[dict.1.thick]
+Thick is not thin.
+
+[dict.1.thirsty]
+Thirsty is when your body wants water.
+
+[dict.1.thousand]
+A thousand is a number that is much more than a hundred.
+
+[dict.1.throw]
+To throw is to make a thing go through the air with your hand.
+
+[dict.1.tie]
+To tie is to put a rope around a thing to hold it.
+
+[dict.1.tip]
+A tip is the small end of a thing.
+
+[dict.1.weak]
+Weak is not strong.
+
+[dict.1.tired]
+Tired is when your body has done much work and is weak.
+
+[dict.1.trade]
+To trade is to give a thing and get another thing.
+
+[dict.1.trick]
+A trick is a way to make someone think a thing that is not true.
+
+[dict.1.trust]
+To trust is to think that someone says what is true.
+
+[dict.1.try]
+To try is to do a thing to see if you can.
+
+[dict.1.tumble]
+To tumble is to fall and turn over.
+
+[dict.1.unable]
+Unable is when someone cannot do a thing.
+
+[dict.1.uncover]
+To uncover is to take the lid off a thing.
+
+[dict.1.unfair]
+Unfair is not fair.
+
+[dict.1.unkind]
+Unkind is not kind.
+
+[dict.1.unlike]
+Unlike is not like.
+
+[dict.1.unlock]
+To unlock is to open a lock.
+
+[dict.1.unsafe]
+Unsafe is not safe.
+
+[dict.1.untie]
+To untie is to take a rope off a thing.
+
+[dict.1.upset]
+Upset is when someone feels bad about a thing.
+
+[dict.1.wait]
+To wait is to stay until a thing happens.
+
+[dict.1.wake]
+To wake is to become awake.
+
+[dict.1.walk]
+To walk is to move on your feet.
+
+[dict.1.wash]
+To wash is to make a thing clean with water.
+
+[dict.1.weigh]
+To weigh is to find how heavy a thing is.
+
+[dict.1.well]
+Well is in a good way.
+
+[dict.1.while]
+A while is a time.
+
+[dict.1.win]
+To win is to be the one who does best in a game.
+
+[dict.1.wonder]
+To wonder is to think about a thing you do not know.
+
+[dict.1.wooden]
+Wooden is when a thing is made of wood.
+
+[dict.1.worse]
+Worse is more bad.
+
+[dict.1.worst]
+Worst is the most bad of all.
+
+[dict.1.wrong]
+Wrong is not right.
