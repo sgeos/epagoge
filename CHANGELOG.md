@@ -27,6 +27,31 @@ Versioning.
 
 ## 2026-09-24
 
+### Measured. Generation crossed over at 40 percent coverage
+
+- **306 of 765 words, closure 100 percent.** Seed unchanged at 235 for a
+  second round.
+- **Acceptance collapsed to 6.0 percent**, 29 of 480, after 22.6 and 16.4
+  in the two previous rounds. **A 40-batch pass now yields less than the
+  authoring that closes it.**
+
+  | Round | Generated | Authored | Coverage |
+  | --- | --- | --- | --- |
+  | Kernel | 0 | 30 | 16.5% |
+  | First bulk | 65 | 29 | 27.2% |
+  | Second bulk | 59 | 27 | 35.7% |
+  | **Third bulk** | **29** | **20** | **40.0%** |
+
+- **Acceptance rate has stopped being a useful metric.** The generator is
+  re-attempting words it already failed on, so a falling rate no longer
+  distinguishes a struggling model from a harder question. **Authored
+  versus generated per round is what the remaining work costs.**
+- **The recommendation is to stop large passes.** The remaining 459 words
+  are abstract or circular, which is the authoring case, and the generator
+  should be pointed only at concrete nouns.
+- Five cycles broken, including `broom`/`clean`/`dirty`/`job`/`task`/`tool`
+  and `careful`/`danger`/`hurt`/`pain`.
+
 ### Added. Coverage to 35.7 percent, closure held
 
 - **273 of 765 words, closure 100 percent.** A 30-batch pass added 59,

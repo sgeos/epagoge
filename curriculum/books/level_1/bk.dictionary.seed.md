@@ -88,7 +88,11 @@
     "dict.1.glass": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:glass"}, "defines": {"kind": "word", "target": "glass"}},
     "dict.1.named": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:named"}, "defines": {"kind": "word", "target": "named"}},
     "dict.1.paper": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:paper"}, "defines": {"kind": "word", "target": "paper"}},
-    "dict.1.plastic": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plastic"}, "defines": {"kind": "word", "target": "plastic"}}
+    "dict.1.plastic": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plastic"}, "defines": {"kind": "word", "target": "plastic"}},
+    "dict.1.cheat": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cheat"}, "defines": {"kind": "word", "target": "cheat"}},
+    "dict.1.dirt": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dirt"}, "defines": {"kind": "word", "target": "dirt"}},
+    "dict.1.doing": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:doing"}, "defines": {"kind": "word", "target": "doing"}},
+    "dict.1.shaped": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shaped"}, "defines": {"kind": "word", "target": "shaped"}}
   }
 }
 ---
@@ -335,3 +339,15 @@ Paper is thin flat stuff made from wood.
 
 [dict.1.plastic]
 Plastic is stuff that is made by people and is not wood or metal.
+
+[dict.1.cheat]
+To cheat is to do a game in a way that is not right.
+
+[dict.1.dirt]
+Dirt is the stuff the ground is made of.
+
+[dict.1.doing]
+Doing is when someone does a thing.
+
+[dict.1.shaped]
+Shaped is when a thing has been made into a shape.

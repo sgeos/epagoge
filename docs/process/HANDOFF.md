@@ -60,9 +60,16 @@ rendered ORDER of this list, not just the next unused number.
    **195** carry an antonym and none yet carries a synonym. Coverage is
    enforced, so a new sense fails the gate until an entry exists.
 8. `curriculum/books/level_1/` holds **7** books. The dictionary defines
-   **273 of 765** level-one words, **35.7 percent**, and **the closure is
+   **306 of 765** level-one words, **40.0 percent**, and **the closure is
    100 percent**. Frontier 0, blocked 0, cycles 0. The **37**-word
-   ostensive set plus forms gives a seed of **235**.
+   ostensive set plus forms gives a seed of **235**, unchanged for two
+   rounds.
+
+   **Generation has crossed over.** Acceptance fell 22.6, 16.4, then
+   **6.0 percent**, and the last pass of 480 requests yielded 29 while 20
+   authored definitions closed the round. **Large generation passes are no
+   longer worth their wall time.** Author in bulk and use the generator
+   only on concrete nouns.
 9. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
 10. **History is clean, not only `HEAD`.** Every blob and every commit

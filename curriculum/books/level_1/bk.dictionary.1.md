@@ -173,7 +173,36 @@
     "dict.1.stop": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stop"}, "defines": {"kind": "word", "target": "stop"}},
     "dict.1.burn": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:burn"}, "defines": {"kind": "word", "target": "burn"}},
     "dict.1.until": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:until"}, "defines": {"kind": "word", "target": "until"}},
-    "dict.1.called": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:called"}, "defines": {"kind": "word", "target": "called"}}
+    "dict.1.called": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:called"}, "defines": {"kind": "word", "target": "called"}},
+    "dict.1.cannot": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cannot"}, "defines": {"kind": "word", "target": "cannot"}},
+    "dict.1.cared": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cared"}, "defines": {"kind": "word", "target": "cared"}},
+    "dict.1.carve": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:carve"}, "defines": {"kind": "word", "target": "carve"}},
+    "dict.1.carved": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:carved"}, "defines": {"kind": "word", "target": "carved"}},
+    "dict.1.careful": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:careful"}, "defines": {"kind": "word", "target": "careful"}},
+    "dict.1.cart": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cart"}, "defines": {"kind": "word", "target": "cart"}},
+    "dict.1.wheel": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wheel"}, "defines": {"kind": "word", "target": "wheel"}},
+    "dict.1.watch": {"concepts": ["danger", "measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:watch"}, "defines": {"kind": "word", "target": "watch"}},
+    "dict.1.cut": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cut"}, "defines": {"kind": "word", "target": "cut"}},
+    "dict.1.tool": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tool"}, "defines": {"kind": "word", "target": "tool"}},
+    "dict.1.job": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:job"}, "defines": {"kind": "word", "target": "job"}},
+    "dict.1.task": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:task"}, "defines": {"kind": "word", "target": "task"}},
+    "dict.1.car": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:car"}, "defines": {"kind": "word", "target": "car"}},
+    "dict.1.catch": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:catch"}, "defines": {"kind": "word", "target": "catch"}},
+    "dict.1.broom": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:broom"}, "defines": {"kind": "word", "target": "broom"}},
+    "dict.1.fall": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fall"}, "defines": {"kind": "word", "target": "fall"}},
+    "dict.1.brother": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:brother"}, "defines": {"kind": "word", "target": "brother"}},
+    "dict.1.clean": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:clean"}, "defines": {"kind": "word", "target": "clean"}},
+    "dict.1.cover": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cover"}, "defines": {"kind": "word", "target": "cover"}},
+    "dict.1.dirty": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dirty"}, "defines": {"kind": "word", "target": "dirty"}},
+    "dict.1.hide": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hide"}, "defines": {"kind": "word", "target": "hide"}},
+    "dict.1.caused": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:caused"}, "defines": {"kind": "word", "target": "caused"}},
+    "dict.1.danger": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:danger"}, "defines": {"kind": "word", "target": "danger"}},
+    "dict.1.hurt": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hurt"}, "defines": {"kind": "word", "target": "hurt"}},
+    "dict.1.pain": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pain"}, "defines": {"kind": "word", "target": "pain"}},
+    "dict.1.floor": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:floor"}, "defines": {"kind": "word", "target": "floor"}},
+    "dict.1.cheater": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cheater"}, "defines": {"kind": "word", "target": "cheater"}},
+    "dict.1.child": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:child"}, "defines": {"kind": "word", "target": "child"}},
+    "dict.1.circle": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:circle"}, "defines": {"kind": "word", "target": "circle"}}
   }
 }
 ---
@@ -675,3 +704,90 @@ Up to the time when something happens.
 
 [dict.1.called]
 Named something with a word.
+
+[dict.1.cannot]
+Not able to do something.
+
+[dict.1.cared]
+Took care of someone or something.
+
+[dict.1.carve]
+To carve is to cut wood or stone to make a shape.
+
+[dict.1.carved]
+Carved is when someone has carved a thing.
+
+[dict.1.careful]
+Careful is when someone thinks about danger before doing a thing.
+
+[dict.1.cart]
+A cart is a box with wheels that can move things.
+
+[dict.1.wheel]
+A wheel is a round thing that turns so a thing can move.
+
+[dict.1.watch]
+A thing that shows time.
+
+[dict.1.cut]
+To cut is to make a thing come into two parts with something sharp.
+
+[dict.1.tool]
+A tool is a thing you use to do work.
+
+[dict.1.job]
+A job is work someone has to do.
+
+[dict.1.task]
+A task is a job someone was asked to do.
+
+[dict.1.car]
+A car is a big thing with wheels that people go in.
+
+[dict.1.catch]
+To stop something from falling or moving.
+
+[dict.1.broom]
+A broom is a tool you use to make a place clean.
+
+[dict.1.fall]
+Move down from above.
+
+[dict.1.brother]
+A boy who has the same parents as another boy.
+
+[dict.1.clean]
+Clean is not dirty.
+
+[dict.1.cover]
+Shut or hide something.
+
+[dict.1.dirty]
+Dirty is when a thing has dirt on it.
+
+[dict.1.hide]
+To not be seen or appear.
+
+[dict.1.caused]
+Made something happen.
+
+[dict.1.danger]
+Danger is when a thing may hurt you.
+
+[dict.1.hurt]
+Hurt is when a part of your body does not feel good.
+
+[dict.1.pain]
+Pain is what you feel when you are hurt.
+
+[dict.1.floor]
+The bottom part of a room.
+
+[dict.1.cheater]
+A person who cheats.
+
+[dict.1.child]
+A young person.
+
+[dict.1.circle]
+A round shape with no start or end.
