@@ -69,9 +69,10 @@ rendered ORDER of this list, not just the next unused number.
 
 ## The state
 
-**Green and clean.** Seventy commits, nothing uncommitted. Eight
+**Green and clean.** Seventy-three commits, nothing uncommitted. Eight
 documents in `secret/`, none tracked, and **no path under it has ever been
-added in any commit**. Twenty-five decision records, 328 tests.
+added in any commit**. **Twenty-five decision records beside their
+`README.md`**, which the previous count conflated, 328 tests.
 
 **What exists.** A concept graph of 117 nodes across 11 domains, declared
 rather than inferred. A curriculum schedule for levels one and two. A
@@ -251,6 +252,11 @@ launch post reopens the decision without a file changing.
 blobs and every commit message scanned against the pattern, no hit,
 pattern self-tested against a planted term first. No `secret/` path ever
 added.
+
+**The remote was deleted and recreated, and the removal was verified
+against the API rather than assumed.** The pre-scrub `HEAD` returns 422 no
+commit found, and a blob that carried the phrase returns 404. A
+force-push would have left both reachable.
 
 **The previous audit was accurate when it ran and wrong by the time it was
 believed.** It reported history clean, then the euphemism was added to the
