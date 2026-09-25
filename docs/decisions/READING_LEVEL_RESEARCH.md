@@ -122,3 +122,46 @@ argue with rather than nothing.
   <https://www.marykole.com/childrens-book-length>
 - Kidlit, manuscript length by category.
   <https://kidlit.com/manuscript-length/>
+
+## An existing fourth-grade word list as a basis for level two
+
+**Operator suggestion 2026-09-25**, and it is the right instinct: any
+fourth-grade list will eclipse this project's level-one lexicon, which is
+845 words of largely foundational concepts.
+
+**The licence is the problem, and it is not a small one.** This repository
+is CC0.
+
+| List | Size | Fit | Licence |
+| --- | --- | --- | --- |
+| **Dale-Chall** | 3,000 | **Exact.** Words fourth-graders reliably understood | **Unclear.** Published 1948, revised 1995, and no open licence was found |
+| **New General Service List** | 2,801 | General high-frequency English, not age-targeted | **CC BY-SA 4.0**, commercial use allowed |
+| Ogden's Basic English | 850 | Too small and not age-targeted | 1930, and the author died in 1957 |
+
+**Dale-Chall is the right list and cannot be used without settling its
+licence.** It is the only one of the three built by asking fourth-graders
+which words they knew, which is exactly the question.
+
+**The NGSL is licensed and share-alike, which conflicts with CC0.**
+Redistributing it, or a list derived from it, would oblige this corpus to
+carry CC BY-SA. That is a real conflict and not a formality.
+
+### The distinction that may resolve it, and it is not mine to draw
+
+Consulting a list to decide **which English words to define in our own
+words** is not the same act as redistributing the list. The output would
+be this project's own definitions of common English words, and which words
+are common is arguably fact rather than expression.
+
+**That is a legal judgement and the operator holds it.** It is recorded
+here because the engineering is blocked on it either way: nine thousand
+words have to come from somewhere, and the three candidates are an
+unlicensed list, a share-alike list, and building one from a
+public-domain children's corpus.
+
+**The third option deserves naming**, because it is the one that fits the
+thesis. A frequency list derived from public-domain children's literature
+would be CC0-safe and better targeted than a general English list. It
+would also be uncurated, which is the property this project exists to
+reject, so it would be a starting point for judgement rather than an
+answer.

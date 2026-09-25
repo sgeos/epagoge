@@ -36,8 +36,12 @@ import json
 import random
 import sys
 import time
+from collections.abc import Mapping
 from pathlib import Path
 from typing import cast
+
+import torch
+from torch import Tensor
 
 from epagoge import schedule as sched
 from epagoge.book import (
@@ -50,6 +54,7 @@ from epagoge.concept_graph import ConceptGraph
 from epagoge.pilot import (
     ModelConfig,
     TrainConfig,
+    WarmStart,
     chunk,
     format_seconds,
     is_finite,
@@ -131,6 +136,16 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--held-out", type=float, default=0.15)
     parser.add_argument("--device", type=str, default=None)
+    # **Level N starts from the level N minus one model.** Each level is a
+    # continuation rather than a fresh run, so a level-two model inherits
+    # what level one learned about the words they share. The vocabulary
+    # grows between levels, so the rows are matched by word.
+    parser.add_argument(
+        "--from-level",
+        type=int,
+        default=None,
+        help="warm start from this level's weights",
+    )
     parser.add_argument("--out", type=Path, default=ROOT / "evals/pilot/level_1.json")
     args = parser.parse_args(argv[1:])
 
@@ -214,6 +229,33 @@ def main(argv: list[str]) -> int:
         f"{parameter_count(model_config)} parameters"
     )
 
+    # Loaded once, because every arm and every seed starts from the same
+    # earlier model. Reloading per run would be the same weights at more
+    # cost, and a difference between arms that came from the checkpoint
+    # rather than the ordering would invalidate the pair.
+    warm: WarmStart | None = None
+    if args.from_level is not None:
+        weights = ROOT / f"evals/pilot/level_{args.from_level}.pt"
+        if not weights.is_file():
+            print(
+                f"no weights at {weights}; train level {args.from_level} first",
+                file=sys.stderr,
+            )
+            return 1
+        earlier = build(vocabulary, args.from_level)
+        warm = WarmStart(
+            state=cast(
+                "Mapping[str, Tensor]",
+                torch.load(weights, map_location=device),  # pyright: ignore[reportUnknownMemberType]
+            ),
+            older=list(earlier.words),
+            newer=list(tokeniser.words),
+        )
+        print(
+            f"warm start from level {args.from_level}, "
+            f"{earlier.size} words into {tokeniser.size}"
+        )
+
     results: list[dict[str, object]] = []
     started = time.time()
     for seed in range(args.seeds):
@@ -228,6 +270,7 @@ def main(argv: list[str]) -> int:
                 seed,
                 device,
                 pad_id=pad_id,
+                warm_from=warm,
             )
             row[arm] = loss
             print(f"  seed {seed} {arm:12} held-out loss {loss:.4f}")

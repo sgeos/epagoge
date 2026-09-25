@@ -53,25 +53,25 @@ She can reach the cup on the table, but not lift it.
 Unable means not able to do something.
 
 [a1.can.v2.s01]
-She tries to lift the cup. She can lift the cup.
+She tries to lift the cup. She can lift the cup. She lifts it above her head. The cup is bright and blue. She feels strong and alive. No one else can do this. She walks ahead with the cup. The floor is smooth and clean. She does not fall or slip.
 
 [a1.can.v2.x09]
-She lifts the cup again and places it on the table.
+She lifts the cup again and places it on the table. The table is smooth and clean. She feels strong and alive. The cup is bright and blue. She does not feel afraid. She stands tall and sure. Her arm is able to lift the cup again. She places it gently, no noise.
 
 [a1.can.v2.x10]
-She tries to reach the cup above the shelf, but her arm is too short.
+She tries to reach the cup above the shelf, but her arm is too short. The shelf is high, above her head, out of her reach. She wonders if she can find something to stand on. The floor is clean, but nothing helps her reach. She steps back, thinking hard, trying to find a way.
 
 [a1.can.v2.x11]
-The cup slips, but she catches it before it falls.
+The cup slips, but she catches it before it falls. She lifts the cup above her head. The cup is heavy, but she is strong. She feels the weight, but does not let go. The cup stays steady, not slipping again. She breathes deep, calm and alive. She holds the cup above the shelf.
 
 [a1.can.v2.x12]
-She places the cup on the floor and sits beside it.
+She places the cup on the floor and sits beside it. The cup feels solid, not light or empty. She watches the steam rise from the cup, thin and bright. She does not move, not even to blink. She thinks about the weight, not the lift. She remembers how it felt above her head.
 
 [a1.can.v2.x13]
-She lifts the cup again, this time with both hands.
+She lifts the cup again, this time with both hands. The cup feels heavy, not light or empty. She does not look away, not even to blink. The steam rises above the cup, thin and bright. She feels the weight, not the lift. She remembers how it felt above her head.
 
 [a1.can.v2.x14]
-The cup stays on the table, but her arms feel strong.
+The cup stays on the table, but her arms feel strong. She feels the weight, not the lift. She remembers the steam, bright above the cup. The cup is full, not empty, not light. She knows it is real, not a dream or a trick. Her arms are strong, not because of magic, but because she stayed.
 
 [a1.can.v2.x15]
-She smiles, knowing she can do it, even if not the whole table.
+She smiles, knowing she can do it, even if not the whole table. She lifts the cup, steady and sure, above the table. Her arm feels strong, not weak, not tired, not afraid. The cup is full, not empty, not light, not broken. She knows it is real, not a dream, not a trick, not a lie.

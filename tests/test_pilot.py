@@ -17,11 +17,13 @@ try:
         ModelConfig,
         TinyTransformer,
         TrainConfig,
+        WarmStart,
         chunk,
         orderings,
         sample,
         select_device,
         synthetic_stream,
+        warm_start,
     )
 
     HAVE_TORCH = True
@@ -199,3 +201,68 @@ class TestSampling(unittest.TestCase):
     def test_a_negative_count_is_refused(self) -> None:
         with self.assertRaises(ValueError):
             _ = sample(self.model(), [1], -1, select_device("cpu"))
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestWarmStart(unittest.TestCase):
+    """Level N starts from the level N minus one model.
+
+    The vocabulary grows between levels, so a row is matched by the word
+    it stands for rather than by its position. A word in both lexicons
+    keeps what it learned, a new word keeps its fresh initialisation, and
+    a departed word is dropped.
+    """
+
+    def build(self, vocab: int) -> TinyTransformer:
+        return TinyTransformer(
+            ModelConfig(vocab_size=vocab, d_model=8, n_layers=1, seq_len=4)
+        )
+
+    def test_a_shared_word_keeps_its_vector(self) -> None:
+        import torch
+
+        older = ["<pad>", "cup", "water"]
+        newer = ["<pad>", "air", "cup", "water"]
+        source = self.build(len(older))
+        target = self.build(len(newer))
+        kept = warm_start(target, source.state_dict(), older, newer)
+        self.assertEqual(kept, 3)
+        self.assertTrue(
+            torch.equal(
+                target.state_dict()["token.weight"][2],
+                source.state_dict()["token.weight"][1],
+            )
+        )
+
+    def test_a_new_word_keeps_its_fresh_row(self) -> None:
+        import torch
+
+        older = ["<pad>", "cup"]
+        newer = ["<pad>", "cup", "air"]
+        target = self.build(len(newer))
+        fresh = target.state_dict()["token.weight"][2].clone()
+        _ = warm_start(target, self.build(len(older)).state_dict(), older, newer)
+        self.assertTrue(torch.equal(target.state_dict()["token.weight"][2], fresh))
+
+    def test_a_departed_word_is_dropped_without_error(self) -> None:
+        older = ["<pad>", "cup", "gone"]
+        newer = ["<pad>", "cup"]
+        target = self.build(len(newer))
+        kept = warm_start(target, self.build(len(older)).state_dict(), older, newer)
+        self.assertEqual(kept, 2)
+
+    def test_a_differently_shaped_body_is_refused(self) -> None:
+        """A checkpoint from a wider model is a mistake, not a warm start."""
+        older = ["<pad>", "cup"]
+        wide = TinyTransformer(
+            ModelConfig(vocab_size=2, d_model=16, n_layers=1, seq_len=4)
+        )
+        with self.assertRaises(ValueError):
+            _ = warm_start(self.build(2), wide.state_dict(), older, older)
+
+    def test_the_dataclass_carries_both_vocabularies(self) -> None:
+        older = ["<pad>", "cup"]
+        newer = ["<pad>", "cup", "air"]
+        warm = WarmStart(state={}, older=older, newer=newer)
+        self.assertEqual(list(warm.older), older)
+        self.assertEqual(list(warm.newer), newer)

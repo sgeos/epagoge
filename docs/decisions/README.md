@@ -62,6 +62,11 @@ Decision records, and the open questions that block implementation.
   level seven a transition from an idealised synthetic corpus to real
   material. Different shapes, different failure modes, different
   definitions of done.
+- `CORPUS_THESIS.md` recorded 2026-09-25, operator statement. Garbage in
+  produces garbage out; the project rejects volume as the universal
+  answer. Also records that level N training starts from the level N minus
+  one model, so the level-one model is an initialisation rather than a
+  demonstration.
 
 ## Convention
 

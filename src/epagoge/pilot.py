@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import math
 import random
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from typing import Final
 
@@ -177,6 +178,7 @@ def train_once(
     init_seed: int,
     device: torch.device,
     pad_id: int | None = None,
+    warm_from: WarmStart | None = None,
 ) -> float:
     """Train one model and return its held-out loss.
 
@@ -199,6 +201,7 @@ def train_once(
         init_seed,
         device,
         pad_id,
+        warm_from=warm_from,
     )
     return loss
 
@@ -234,6 +237,7 @@ def train_model(
     init_seed: int,
     device: torch.device,
     pad_id: int | None = None,
+    warm_from: WarmStart | None = None,
 ) -> tuple[TinyTransformer, float]:
     """Train one model and return it with its held-out loss.
 
@@ -250,6 +254,7 @@ def train_model(
         init_seed,
         device,
         pad_id,
+        warm_from=warm_from,
     )
     return result.model, result.held_out_loss
 
@@ -264,12 +269,20 @@ def train_diagnostic(
     device: torch.device,
     pad_id: int | None = None,
     curve_every: int = 100,
+    warm_from: WarmStart | None = None,
 ) -> TrainResult:
-    """Train one model and return it with training and held-out loss."""
+    """Train one model and return it with training and held-out loss.
+
+    ``warm_from`` initialises the model from an earlier level before any
+    step is taken, which is what makes level N a continuation of level N
+    minus one rather than a fresh run.
+    """
     # torch ships incomplete stubs for these two calls. The suppression is a
     # gap in the framework's typing, not a weakening of this module's.
     torch.manual_seed(init_seed)  # pyright: ignore[reportUnknownMemberType]
     model = TinyTransformer(model_config).to(device)
+    if warm_from is not None:
+        _ = warm_start(model, warm_from.state, warm_from.older, warm_from.newer)
     optimiser = torch.optim.AdamW(model.parameters(), lr=train_config.learning_rate)
     # **Padding is excluded from the loss.** A padded tail chunk is there to
     # keep the text, not to be predicted, and a model rewarded for emitting
@@ -328,6 +341,93 @@ def train_diagnostic(
         train_loss=train_total / max(len(batches[: train_config.eval_batches]), 1),
         curve=tuple(curve),
     )
+
+
+@dataclass(frozen=True, slots=True)
+class WarmStart:
+    """An earlier level's weights, with both vocabularies to map between.
+
+    Both word lists are carried because the mapping is by word and neither
+    list can be recovered from the other or from the checkpoint. Passing
+    them separately from the state is what lets one loaded checkpoint
+    serve every arm and every seed of a run.
+    """
+
+    state: Mapping[str, Tensor]
+    older: Sequence[str]
+    """The word list the checkpoint was trained with, in token order."""
+
+    newer: Sequence[str]
+    """The word list this run uses, in token order."""
+
+
+VOCABULARY_TENSORS: Final[tuple[str, ...]] = ("token.weight", "head.weight")
+"""The parameters whose first axis is the vocabulary.
+
+Named rather than inferred from shape, because a model whose width happens
+to equal its vocabulary size would have every tensor match.
+"""
+
+
+def warm_start(
+    model: TinyTransformer,
+    state: Mapping[str, Tensor],
+    older: Sequence[str],
+    newer: Sequence[str],
+) -> int:
+    """Initialise ``model`` from a smaller level's weights. Returns rows kept.
+
+    **Level N starts from the level N minus one model**, which is the
+    project's training design and not an optimisation. Each level is a
+    continuation of the last rather than a fresh run, so a level-two model
+    inherits what level one learned about the words they share.
+
+    **The vocabulary grows between levels**, so the embedding and the
+    output head grow with it and the rows cannot simply be copied. A row
+    is matched by the word it stands for: a word in both lexicons keeps
+    its learned vector, a word new at this level keeps the fresh
+    initialisation it was given, and a word that has left is dropped.
+
+    Every other parameter is copied outright, since nothing else is
+    indexed by the vocabulary.
+    """
+    target = model.state_dict()
+    index = {word: position for position, word in enumerate(newer)}
+    kept = 0
+    merged: dict[str, Tensor] = {}
+    for name, tensor in target.items():
+        source = state.get(name)
+        if source is None:
+            merged[name] = tensor
+            continue
+        if name not in VOCABULARY_TENSORS:
+            if source.shape != tensor.shape:
+                raise ValueError(
+                    f"{name}: checkpoint is {tuple(source.shape)} and the model "
+                    f"is {tuple(tensor.shape)}; the two were not built alike"
+                )
+            merged[name] = source.clone()
+            continue
+        # **The width must match even where the height may not.** Only the
+        # vocabulary axis grows between levels; a different model width is
+        # a checkpoint from another experiment, and copying rows into it
+        # raises deep in torch rather than here.
+        if source.shape[1:] != tensor.shape[1:]:
+            raise ValueError(
+                f"{name}: checkpoint rows are {tuple(source.shape[1:])} and the "
+                f"model's are {tuple(tensor.shape[1:])}; only the vocabulary "
+                "may differ between levels"
+            )
+        grown = tensor.clone()
+        for position, word in enumerate(older):
+            destination = index.get(word)
+            if destination is None or position >= source.shape[0]:
+                continue
+            grown[destination] = source[position]
+            kept += 1
+        merged[name] = grown
+    _ = model.load_state_dict(merged)
+    return kept // max(len(VOCABULARY_TENSORS), 1)
 
 
 def sample(

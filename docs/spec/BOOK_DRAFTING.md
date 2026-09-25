@@ -77,9 +77,14 @@ apply.** They are prose for a curator and are not text a model trains on.
   *for*, which sixteen spreads in eight hundred words often cannot say for
   themselves.
 
-Write both as though for a parent who has read nothing else. Name the
-concepts plainly, including any the book teaches by showing rather than
-stating. Say what a reader is assumed to know already.
+**Write them as back-cover copy.** The title goes on the front, `about`
+and `teaches` go on the back, and between them they are what a parent
+picking the book off a shelf has to go on. That fixes the register and
+the length: a short paragraph each, accurate, and readable by someone who
+has never heard of this project.
+
+Name the concepts plainly, including any the book teaches by showing
+rather than stating. Say what a reader is assumed to know already.
 
 `tools/validate_books.py --describe` reports every book missing either.
 
