@@ -12,10 +12,12 @@ then stop and wait for the human prompt.
 
 **Branch**: `main`. No other branches, no remote.
 
-**Before writing anything tracked, read `secret/CODE_NAMES.md`.** Hard
-constraint. It holds the disclosure discipline, the banned vocabulary, and
-the scan that enforces them. A tracked document naming the deployment domain
-is a defect regardless of how true it is.
+**Before writing anything tracked, read the disclosure discipline
+`CLAUDE.md` points to.** Hard constraint. It holds the banned vocabulary and
+the scan that enforces it. A tracked document naming the deployment domain
+is a defect regardless of how true it is. **`CLAUDE.md` is deliberately the
+one tracked place that names it**, so this file points there rather than
+naming it twice.
 
 **Validate by ANCESTRY and by CONTENT, never by a hash match.** A check
 requiring `HEAD` to equal a recorded commit claims nothing else ever lands.
@@ -197,7 +199,7 @@ measured numbers.
 
 ## Disclosure, before any push
 
-**Finding A in `secret/AUDIT_ADDENDUM.md` is ACCEPTED, not softened.** Two
+**Finding A of the internal pre-commit audit is ACCEPTED, not softened.** Two
 independent conjunctions, the hardware constraints and now the eleven
 domain names, both point at the same deployment family. That was weighed
 and allowed. The threat model is **unintentionally timed disclosure rather
@@ -271,10 +273,9 @@ defect.
 
 **Branch**: `main`. There are no other branches and no remote.
 
-**Before writing anything tracked, read `secret/CODE_NAMES.md`.** Hard
-constraint. It holds the disclosure discipline, the banned vocabulary, and
-the scan that enforces them. A tracked document that names the deployment
-domain is a defect regardless of how true it is.
+**Before writing anything tracked, read the disclosure discipline
+`CLAUDE.md` points to.** Hard constraint. A tracked document that names the
+deployment domain is a defect regardless of how true it is.
 
 **Validate by ANCESTRY and by CONTENT, never by a hash match.** A check
 requiring `HEAD` to equal a recorded commit claims nothing else ever lands.
@@ -363,11 +364,11 @@ exercises every feature; it is not curriculum.
 1. **The curriculum schedule.** Non-trivial and unstarted. Levels are
    authored, capacity per level and completion by the end are unmodelled,
    and nothing has scheduled anything. This is the largest open design task.
-2. **Whether to soften the conjunction disclosure.** `secret/AUDIT_ADDENDUM.md`
-   finding A. Each tracked constraint is innocuous; their conjunction
+2. **Whether to soften the conjunction disclosure.** Finding A of the
+   internal pre-commit audit. Each tracked constraint is innocuous; their conjunction
    narrows the domain. An option for tighter cover is recorded and not
    applied.
-3. **`secret/TOPIC_MANIFEST.md` has never been reviewed by the operator.**
+3. **The coverage manifest has never been reviewed by the operator.**
    It was derived by an agent and drives corpus generation.
 4. **History as a domain**, recorded as a further addition and not added.
 5. **Whether multi-head latent attention is admissible.** It is a low-rank

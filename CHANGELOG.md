@@ -27,6 +27,38 @@ Versioning.
 
 ## 2026-09-24
 
+### Fixed. A pre-push audit found the disclosure scan enforcing one rule of three
+
+- **The scan covered banned vocabulary only.** The code-name discipline
+  has two further rules and **both were violated in tracked files**, which
+  is this project's signature failure arriving in its own process for the
+  fourth time.
+- **A tracked document may not cite a file under `secret/` by name.**
+  `HANDOFF.md` named the coverage manifest and the internal audit addendum
+  directly. Replaced with the code name and a neutral description.
+  `CLAUDE.md` is deliberately the one tracked place that names the
+  code-name file, so the handoff now points there rather than naming it
+  twice.
+- **The euphemism the discipline bans survived in `CHANGELOG.md`**, in an
+  entry describing the very correction that banned it. Reworded. A
+  matter-of-fact citation of a neutrally named document is unremarkable
+  and a euphemism about withheld material announces itself.
+- Both rules are now checked. The filename rule is in `scrub_scan.sh`,
+  where its pattern names no file. **The euphemism is a term in the
+  untracked pattern file**, so that the banned phrase is not itself
+  published by the thing that bans it.
+- **Both new checks were verified by making them fail**, rather than by
+  observing them pass.
+
+### Audited. Clean on everything else
+
+- 57 commits, tree clean, gate green by exit code across eleven checks.
+- **Every commit message and all 361 blobs in history** scanned against the
+  pattern. No hit. **No path under `secret/` has ever been added**, in any
+  commit.
+- Pack at 3.3 MB, largest object a 107 KiB changelog. The size risk the
+  corpus-tracking decision recorded does not apply to what is tracked.
+
 ### Decided. The ablation orders books, and the topological constraint moves
 
 - Operator decision, recorded as **pre-registration amendment 3**.
@@ -1447,10 +1479,9 @@ Versioning.
 Found by checking rather than by recalling.
 
 - **The disclosure scan was enforced by nothing.** `tools/scrub_scan.sh`
-  now runs in the gate. Its pattern lives in `secret/`,
-  because a tracked list of withheld vocabulary would publish the thing
-  being withheld, and absent the pattern it skips loudly rather than
-  passing silently. It is word-anchored, since an unanchored pattern
+  now runs in the gate. Its pattern lives in `secret/`, because a tracked
+  list of withheld vocabulary would publish the thing being withheld, and
+  absent the pattern it skips loudly rather than passing silently. It is word-anchored, since an unanchored pattern
   matched `ore` inside `before` on 2026-09-23 and produced noise that
   would have looked identical to a clean result.
 - **The gate resolved `@latest` and was therefore not reproducible.** Tool

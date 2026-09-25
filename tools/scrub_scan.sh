@@ -39,5 +39,20 @@ if [ -n "$hits" ]; then
 fi
 
 count=$(grep -vcE '^\s*(#|$)' "$PATTERN_FILE")
+# The pattern file covers banned vocabulary. Two further rules in the
+# code-name discipline were enforced by nothing until a pre-push audit found
+# both violated: a tracked document may not cite a file under secret/ by
+# name, and CLAUDE.md is the one exception because the rule has to be
+# enforceable somewhere. The euphemism the discipline also bans is a term in
+# the pattern file, so that the banned phrase is not itself published here.
+cited=$(git ls-files -z \
+  | xargs -0 grep -IlnE "secret/[A-Z_]+\\.md" 2>/dev/null \
+  | grep -vx 'CLAUDE.md' || true)
+if [ -n "$cited" ]; then
+  echo "disclosure scan: FAILED. these tracked files name a file under secret/:" >&2
+  echo "$cited" >&2
+  exit 1
+fi
+
 echo "disclosure scan: clean ($count terms checked over $(git ls-files | wc -l | tr -d ' ') tracked files)"
 exit 0
