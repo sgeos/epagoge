@@ -53,8 +53,16 @@ third-party literature obtained under terms the project did not set. A
 licence file that appeared to cover it would be asserting a grant the
 project has no standing to make.
 
-This is recorded in `LICENSE` itself rather than only here, because a
-reader checks the licence file and not the decision record.
+This is recorded in `LICENSING.md` at the top level rather than only
+here, because a reader checks the licence before the decision record.
+
+**Amended 2026-09-25.** The carve-out and the scope map used to live in
+`LICENSE` itself. Automated licence detection reads that file and matches
+it against known licence texts, and a preamble in front of the text
+defeats the match, so the repository reported its licence as `Other`.
+`LICENSE` and `LICENSE-CC0` now hold bare licence text and `LICENSING.md`
+holds the scope. The trade is one more file against a licence a tool can
+read.
 
 ## Unresolved
 

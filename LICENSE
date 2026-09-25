@@ -1,21 +1,3 @@
-Epagoge is released under two licences, by scope.
-
-  Software  ..........  0BSD  (this file, below)
-  Everything else  ...  CC0 1.0 Universal  (LICENSE-CC0)
-
-"Software" means source code, tests, and tooling, which is everything under
-src/, tests/, and tools/.
-
-"Everything else" means the corpus, the curriculum, the concept graph, the
-specifications, and the documentation, which is everything under corpus/,
-curriculum/, docs/, evals/, generators/, and the top-level documents.
-
-THIRD-PARTY MATERIAL IS NOT COVERED BY EITHER. Material under sources/ is
-third party and retains the terms under which it was obtained. Those terms
-are not the project's to grant. See sources/README.md.
-
---------------------------------------------------------------------------
-
 BSD Zero Clause License
 
 Copyright (c) 2026 Brendan Sechter

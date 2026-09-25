@@ -86,10 +86,17 @@ epagoge/
 
 ## Licensing
 
-Software under `src/`, `tests/`, and `tools/` is 0BSD. The corpus,
-curriculum, concept graph, specifications, and documentation are CC0 1.0.
-Third-party material under `sources/` retains its own terms and is not
-covered by either. See `LICENSE` and `docs/decisions/LICENSING.md`.
+**Software is 0BSD. Everything else is CC0 1.0 Universal.** Software means
+`src/`, `tests/`, `tools/`, and `generators/`. Everything else means the
+corpus, the curriculum, the concept graph, the specifications, the
+evaluations, and the documentation.
+
+Third-party material under `sources/` retains its own terms and is covered
+by neither, because those terms are not this project's to grant.
+
+`LICENSE` and `LICENSE-CC0` hold the licence texts. `LICENSING.md` says
+which applies where, and `docs/decisions/LICENSING.md` says why the split
+exists.
 
 ## Toolchain
 

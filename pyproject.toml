@@ -4,7 +4,7 @@ version = "0.0.0"
 description = "A graded synthetic corpus and curriculum for training a falsification-oriented foundation model."
 readme = "README.md"
 license = "0BSD"
-license-files = ["LICENSE", "LICENSE-CC0"]
+license-files = ["LICENSE", "LICENSE-CC0", "LICENSING.md"]
 authors = [{ name = "Brendan Sechter", email = "sgeos@hotmail.com" }]
 
 # UNRESOLVED. The system interpreter is 3.14.7. Machine learning wheel
