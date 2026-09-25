@@ -143,9 +143,20 @@ pre-registered threshold decides, not the sign of the difference.
   and `quit` inflected to `admited`, `spended` and `quited`, the same
   class as the seven nonsense words found earlier. The doubling check
   closes one narrow class of this and the gap is otherwise open.
-- **The corpus validator is more permissive than the lexicon**, because it
-  accepts a word by stripping suffixes. Exact tokenisation is the stronger
-  check and has now found a real missing form six times.
+- **The corpus validator was more permissive than the lexicon, and is not
+  any more.** It accepted a word by stripping suffixes, so `ended` passed
+  on the strength of `end` and reached a book in a form the lexicon does
+  not carry. Eleven real gaps were found that way, every one of them after
+  the word was already written: `rains`, `stared`, `warmed`, `clearing`,
+  `facing`, `cleared`, `lighting`, `thoughts`, `ended`, `lived` and
+  `winding`. `unlicensed` is exact by default as of 2026-09-25 and asks
+  the question the tokeniser asks. The permissive reading survives behind
+  `exact=False`, for the case it was right for, which is whether a reader
+  would know a word rather than whether the corpus may contain it.
+- **Where an inflected form is also a word, the word carries it and the
+  base stops listing it.** `clear` and `clearing`, `think` and `thought`,
+  `live` against `life` and `living`. Otherwise one form belongs to two
+  terms and the lexicon refuses the tree.
 - **Do not run large generation passes for definitions.** Acceptance fell
   22.6, 16.4, then 6.0 percent. Authoring yields about a hundred a round.
   **Stories are different**: story acceptance runs near fifty percent, so

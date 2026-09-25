@@ -224,6 +224,18 @@ def main(argv: list[str]) -> int:
         action="store_true",
         help="write units that already have a book, instead of skipping them",
     )
+    # **A unit takes more than one book.** Measured 2026-09-25, the draft at
+    # one book per unit is 7,998 tokens, which cycles seven batches a hundred
+    # times in an 800-step run and makes an ordering comparison degenerate.
+    # `CORPUS_SCALE.md` asks for twelve to six hundred books per topic, so
+    # the draft is about a twelfth of the low end and the quantity that has
+    # to move is books per unit.
+    parser.add_argument(
+        "--variants",
+        type=int,
+        default=1,
+        help="books to hold per unit; units already at this many are skipped",
+    )
     args = parser.parse_args(argv[1:])
 
     plan = sched.load(ROOT / f"curriculum/schedule/level_{args.level:02d}.json")
@@ -240,6 +252,28 @@ def main(argv: list[str]) -> int:
     # passes, and a generator that always writes the first `limit` units
     # rewrites the same books every time.
     already = {path.stem for path in args.out.glob("bk.*.md")}
+
+    def variant_of(unit_id: str) -> tuple[str, str] | None:
+        """The book id and record prefix for this unit's next book.
+
+        The first book of a unit keeps the bare id, so nothing already
+        written moves. Later ones take a `.vN` suffix, which also keeps
+        their record ids distinct, since a record belongs to one book and
+        the validator refuses a repeat.
+        """
+        held = sum(
+            1
+            for n in range(1, args.variants + 1)
+            for name in [f"bk.{unit_id}" if n == 1 else f"bk.{unit_id}.v{n}"]
+            if name in already
+        )
+        if held >= args.variants:
+            return None
+        nth = held + 1
+        if nth == 1:
+            return f"bk.{unit_id}", unit_id
+        return f"bk.{unit_id}.v{nth}", f"{unit_id}.v{nth}"
+
     written = 0
     for domain in plan.domains:
         for unit in domain.units:
@@ -247,8 +281,12 @@ def main(argv: list[str]) -> int:
                 break
             if not unit.teaches:
                 continue
-            if not args.rewrite and f"bk.{unit.id}" in already:
+            naming = variant_of(unit.id)
+            if naming is None and not args.rewrite:
                 continue
+            if naming is None:
+                naming = (f"bk.{unit.id}", unit.id)
+            book_id, slug = naming
             defined = words_for(vocabulary, unit.teaches, args.level)
             if not defined:
                 continue
@@ -354,7 +392,7 @@ def main(argv: list[str]) -> int:
 
             ids: list[str] = []
             if subject and keep(subject, vocabulary, args.level, tally):
-                rid = f"{unit.id}.d00"
+                rid = f"{slug}.d00"
                 records.append(
                     {
                         "id": rid,
@@ -373,7 +411,7 @@ def main(argv: list[str]) -> int:
                     text_, vocabulary, args.level, tally
                 ):
                     continue
-                rid = f"{unit.id}.d{n:02d}"
+                rid = f"{slug}.d{n:02d}"
                 records.append(
                     {
                         "id": rid,
@@ -396,7 +434,7 @@ def main(argv: list[str]) -> int:
             for n, text_ in enumerate(story, start=1):
                 if not keep(text_, vocabulary, args.level, tally):
                     continue
-                rid = f"{unit.id}.s{n:02d}"
+                rid = f"{slug}.s{n:02d}"
                 records.append(
                     {
                         "id": rid,
@@ -416,7 +454,7 @@ def main(argv: list[str]) -> int:
             if ids:
                 books.append(
                     {
-                        "id": f"bk.{unit.id}",
+                        "id": book_id,
                         "level": args.level,
                         "title": unit.form.split(".")[0],
                         "subject": {"kind": "topic", "target": unit.id},
@@ -428,6 +466,7 @@ def main(argv: list[str]) -> int:
                 # books until the end meant a single failure lost all of
                 # them. The rework pass below improves some of these and
                 # rewrites them; this copy is what survives a crash.
+                already.add(book_id)
                 write_books([books[-1]], {r["id"]: r for r in records}, [], args.out)
         if written >= args.limit:
             break

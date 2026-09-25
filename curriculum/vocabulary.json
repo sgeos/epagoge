@@ -276,6 +276,11 @@
       ]
     },
     {
+      "word": "ahead",
+      "concept": "direction",
+      "level": 1
+    },
+    {
       "word": "aim",
       "concept": "goal",
       "level": 1,
@@ -2094,9 +2099,11 @@
       "concept": "sequence",
       "level": 1,
       "forms": [
+        "ended",
+        "ending",
         "ends"
       ],
-      "pos": "noun"
+      "pos": "noun verb"
     },
     {
       "word": "enemy",
@@ -2773,6 +2780,11 @@
     {
       "word": "grass",
       "concept": "plant",
+      "level": 1
+    },
+    {
+      "word": "great",
+      "concept": "good_and_bad",
       "level": 1
     },
     {
@@ -3576,6 +3588,15 @@
       ]
     },
     {
+      "word": "length",
+      "concept": "measuring",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "lengths"
+      ]
+    },
+    {
       "word": "less",
       "concept": "more_and_fewer",
       "level": 1
@@ -3723,11 +3744,19 @@
       "level": 1
     },
     {
+      "word": "live",
+      "concept": "living_and_not_living",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "lived"
+      ]
+    },
+    {
       "word": "living",
       "concept": "living_and_not_living",
       "level": 1,
       "forms": [
-        "live",
         "lives"
       ]
     },
@@ -5219,6 +5248,17 @@
       "word": "rest",
       "concept": "resting_on_a_guess",
       "level": 1
+    },
+    {
+      "word": "return",
+      "concept": "moving_and_still",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "returned",
+        "returning",
+        "returns"
+      ]
     },
     {
       "word": "rich",
@@ -7535,6 +7575,11 @@
       "level": 1
     },
     {
+      "word": "winding",
+      "concept": "shape",
+      "level": 1
+    },
+    {
       "word": "window",
       "concept": "household_object",
       "level": 1,
@@ -7751,6 +7796,7 @@
     "especially": "most of all",
     "event": "thing that happens",
     "evidence": "what shows it",
+    "expected": "thought it would happen",
     "faintly": "a little",
     "fake": "not real",
     "final": "last",
@@ -7794,6 +7840,7 @@
     "thickness": "how thick",
     "unknown": "not known",
     "unseen": "not seen",
+    "usual": "what happens most times",
     "wasn't": "was not",
     "windowsill": "the edge of the window",
     "won't": "will not",

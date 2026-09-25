@@ -594,7 +594,13 @@
     "dict.1.alone": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alone"}, "defines": {"kind": "word", "target": "alone"}},
     "dict.1.desk": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:desk"}, "defines": {"kind": "word", "target": "desk"}},
     "dict.1.neat": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:neat"}, "defines": {"kind": "word", "target": "neat"}},
-    "dict.1.thought": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thought"}, "defines": {"kind": "word", "target": "thought"}}
+    "dict.1.thought": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thought"}, "defines": {"kind": "word", "target": "thought"}},
+    "dict.1.length": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:length"}, "defines": {"kind": "word", "target": "length"}},
+    "dict.1.ahead": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ahead"}, "defines": {"kind": "word", "target": "ahead"}},
+    "dict.1.great": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:great"}, "defines": {"kind": "word", "target": "great"}},
+    "dict.1.return": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:return"}, "defines": {"kind": "word", "target": "return"}},
+    "dict.1.live": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:live"}, "defines": {"kind": "word", "target": "live"}},
+    "dict.1.winding": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:winding"}, "defines": {"kind": "word", "target": "winding"}}
   }
 }
 ---
@@ -2359,3 +2365,21 @@ Put in order, with each thing in its place.
 
 [dict.1.thought]
 Something you think.
+
+[dict.1.length]
+How long a thing is.
+
+[dict.1.ahead]
+In front of you, along the way you are going.
+
+[dict.1.great]
+Very good, or very big.
+
+[dict.1.return]
+To go back to where you were.
+
+[dict.1.live]
+To be alive.
+
+[dict.1.winding]
+Going this way and that, not straight.

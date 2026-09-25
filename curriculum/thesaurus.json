@@ -53,6 +53,10 @@
       ]
     },
     {
+      "word": "ahead",
+      "concept": "direction"
+    },
+    {
       "word": "aim",
       "concept": "goal"
     },
@@ -1536,6 +1540,10 @@
       "concept": "plant"
     },
     {
+      "word": "great",
+      "concept": "good_and_bad"
+    },
+    {
       "word": "green",
       "concept": "physical_property"
     },
@@ -2023,6 +2031,10 @@
       "concept": "body_part"
     },
     {
+      "word": "length",
+      "concept": "measuring"
+    },
+    {
       "word": "less",
       "concept": "more_and_fewer",
       "antonyms": [
@@ -2117,6 +2129,13 @@
       "synonyms": [
         "few",
         "small"
+      ]
+    },
+    {
+      "word": "live",
+      "concept": "living_and_not_living",
+      "antonyms": [
+        "die"
       ]
     },
     {
@@ -3055,6 +3074,10 @@
     {
       "word": "rest",
       "concept": "resting_on_a_guess"
+    },
+    {
+      "word": "return",
+      "concept": "moving_and_still"
     },
     {
       "word": "rich",
@@ -4469,6 +4492,10 @@
     {
       "word": "wind",
       "concept": "air"
+    },
+    {
+      "word": "winding",
+      "concept": "shape"
     },
     {
       "word": "window",

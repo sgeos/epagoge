@@ -336,17 +336,39 @@ def tokenise(text: str) -> list[str]:
     return WORD_RE.findall(fold_typography(text).lower())
 
 
-def unlicensed(vocabulary: Vocabulary, text: str, level: int) -> list[str]:
+def unlicensed(
+    vocabulary: Vocabulary, text: str, level: int, *, exact: bool = True
+) -> list[str]:
     """Tokens in ``text`` that are not admissible at ``level``.
 
     Empty means the text sits inside the level's vocabulary ceiling. Used at
     the generation boundary, where teacher output is untrusted and a soft
     instruction to stay inside a word list has been measured as one the
     teacher does not reliably follow.
+
+    **``exact`` is the default and it is the stricter reading.** Without it
+    a token resolves through :meth:`Vocabulary.lookup`, which strips
+    suffixes, so ``ended`` passes on the strength of ``end`` and reaches a
+    book in a form the lexicon does not carry. The tokeniser then finds it,
+    but only after it is written: ``rains``, ``stared``, ``warmed``,
+    ``clearing``, ``facing``, ``cleared``, ``lighting``, ``thoughts``,
+    ``ended``, ``lived`` and ``winding`` were each found that way, eleven
+    real gaps discovered downstream of the check meant to prevent them.
+
+    Exact matching asks the question the tokeniser asks: is this surface
+    form carried by some sense admitted at this level. Pass ``exact=False``
+    for the older, permissive reading, which remains right where the
+    question is whether a reader would know the word rather than whether
+    the corpus may contain it.
     """
     out: list[str] = []
     for token in tokenise(text):
         if vocabulary.is_free(token):
+            continue
+        if exact:
+            if any(sense.level <= level for sense in vocabulary.senses(token)):
+                continue
+            out.append(token)
             continue
         term = vocabulary.lookup(token)
         if term is not None and term.level <= level:
