@@ -200,10 +200,18 @@ def main(argv: list[str]) -> int:
     )
     train_config = TrainConfig(steps=args.steps, batch_size=args.batch_size)
     device = select_device(args.device)
-    tokens = sum(len(c) for c in chunks)
+    # **Two different numbers, and the difference is not small.** A chunk
+    # holds seq_len + 1 ids so that inputs and targets can be offset, and a
+    # tail chunk is padded, so summing chunk lengths counts every boundary
+    # token twice and every pad once. Reported as 44,505 on 2026-09-25 for
+    # a corpus of 35,438, which overstated it by a quarter and fed a
+    # published shortfall figure.
+    chunk_ids = sum(len(c) for c in chunks)
+    tokens = sum(len(tokeniser.encode(text.get(b, ""))) for b in curriculum)
     print(
         f"device {device}, vocab {tokeniser.size}, {len(chunks)} chunks, "
-        f"{tokens} tokens, {parameter_count(model_config)} parameters"
+        f"{tokens} corpus tokens, {chunk_ids} chunk ids including padding, "
+        f"{parameter_count(model_config)} parameters"
     )
 
     results: list[dict[str, object]] = []
@@ -291,6 +299,7 @@ def main(argv: list[str]) -> int:
         "level": args.level,
         "chunks": len(chunks),
         "tokens": tokens,
+        "chunk_ids": chunk_ids,
         "vocab_size": tokeniser.size,
         "parameters": parameter_count(model_config),
         "steps": args.steps,

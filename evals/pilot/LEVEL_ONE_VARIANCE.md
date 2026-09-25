@@ -1,8 +1,15 @@
 # Variance and ordering on the level-one corpus
 
-**Measured 2026-09-25**, eight paired seeds over 146 books, 44,505 tokens,
-1,382,912 parameters, Metal Performance Shaders. Raw numbers in
-`level_1.json`.
+**Measured 2026-09-25**, eight paired seeds over 146 books, **35,438
+tokens**, 1,382,912 parameters, Metal Performance Shaders. Raw numbers in
+`level_1.json`, which has since been overwritten by a larger run.
+
+**A corrected figure.** An earlier version of this file said 44,505
+tokens. That was the sum of chunk lengths, and a chunk holds `seq_len + 1`
+ids so inputs and targets can be offset, with a padded tail, so it counts
+every boundary token twice and every pad once. The corpus was 35,438
+tokens and the overstatement was a quarter. `train_level.py` now reports
+both numbers under separate names.
 
 ## Two harness defects found first, and both were silent
 
@@ -39,7 +46,7 @@ and 0.9936 are withdrawn.
 | Quantity | Synthetic stream | Level-one corpus |
 | --- | --- | --- |
 | Parameters | 818,000 | 1,382,912 |
-| Corpus | second-order Markov | 44,505 tokens, 345 chunks |
+| Corpus | second-order Markov | 35,438 tokens, 345 chunks |
 | Mean held-out loss | 1.895 | 4.460 |
 | Unpaired sigma | 0.0750 | 0.0142 |
 | Paired sd | 0.0233 | 0.00421 |
@@ -89,8 +96,9 @@ counts, so it cannot be fixed until the endpoint is. Neither run used
 maximal update parametrization, Muon or warmup-stable-decay, which
 `../../docs/decisions/TRAINING_TECHNIQUES.md` adopts.
 
-**Corpus scale remains short.** 44,505 tokens against a level-one budget
-of 10^6 to 10^7 is a factor of 22 to 220. Eight hundred steps at batch
+**Corpus scale remains short.** 35,438 tokens against a level-one budget
+of 10^6 to 10^7 is a factor of **28 to 282**, not the 22 to 220 an earlier
+version of this file gave from the inflated count. Eight hundred steps at batch
 eight over 345 chunks is about eighteen passes through the corpus, so
 repetition still dominates and an ordering signal has eighteen chances to
 wash out. The direction of travel is right: the draft was 7,998 tokens

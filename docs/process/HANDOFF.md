@@ -36,7 +36,8 @@ level-one corpus. If it does not, this file predates a reset.
    level one, closure 100 percent, nothing blocked and no cycles.
 5. `curriculum/thesaurus.json` holds **922** entries, 195 with an antonym
    and 132 with a synonym.
-6. `curriculum/books/level_1/` holds **171** books.
+6. `curriculum/books/level_1/` holds **171** books over **39,900**
+   tokens.
    **Every schedule unit has a book and every book is at sixteen
    spreads.** Many units hold two, some three.
 7. `evals/pilot/level_1.json` records eight paired seeds over the whole
@@ -70,8 +71,8 @@ big enough to run an experiment on.**
 
 ### The live defect is size
 
-**44,505 tokens against a level-one budget of 10^6 to 10^7**, a factor of
-22 to 220 short. `CORPUS_SCALE.md` asks for twelve to six hundred books
+**39,900 tokens against a level-one budget of 10^6 to 10^7**, a factor of
+25 to 250 short. `CORPUS_SCALE.md` asks for twelve to six hundred books
 per topic and the corpus holds one or two. **800 steps at batch eight
 over 345 chunks is about eighteen passes**, so repetition still dominates
 and an ordering signal has eighteen chances to wash out.

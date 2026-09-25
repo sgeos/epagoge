@@ -1,98 +1,99 @@
 {
   "level": 1,
-  "chunks": 345,
-  "tokens": 44505,
-  "vocab_size": 2239,
-  "parameters": 1382912,
+  "chunks": 395,
+  "tokens": 39900,
+  "chunk_ids": 50955,
+  "vocab_size": 2253,
+  "parameters": 1386496,
   "steps": 800,
   "seeds": 8,
   "device": "mps",
-  "elapsed": "2m34s",
+  "elapsed": "2m40s",
   "results": [
     {
       "seed": 0,
-      "curriculum": 4.483769814173381,
-      "topological": 4.465191761652629,
-      "difference": 0.018578052520751953
+      "curriculum": 4.433762073516846,
+      "topological": 4.408953121730259,
+      "difference": 0.024808951786586597
     },
     {
       "seed": 1,
-      "curriculum": 4.474887530008952,
-      "topological": 4.457930485407512,
-      "difference": 0.01695704460144043
+      "curriculum": 4.44249507359096,
+      "topological": 4.424657821655273,
+      "difference": 0.017837251935686638
     },
     {
       "seed": 2,
-      "curriculum": 4.452856381734212,
-      "topological": 4.439698219299316,
-      "difference": 0.013158162434895537
+      "curriculum": 4.406205177307129,
+      "topological": 4.391333852495466,
+      "difference": 0.0148713248116632
     },
     {
       "seed": 3,
-      "curriculum": 4.485739469528198,
-      "topological": 4.477567672729492,
-      "difference": 0.008171796798706055
+      "curriculum": 4.456643921988351,
+      "topological": 4.427218641553607,
+      "difference": 0.029425280434744572
     },
     {
       "seed": 4,
-      "curriculum": 4.465905507405599,
-      "topological": 4.454821189244588,
-      "difference": 0.011084318161010742
+      "curriculum": 4.423354148864746,
+      "topological": 4.408424309321812,
+      "difference": 0.014929839542934253
     },
     {
       "seed": 5,
-      "curriculum": 4.469404776891072,
-      "topological": 4.456792910893758,
-      "difference": 0.012611865997314453
+      "curriculum": 4.429091044834682,
+      "topological": 4.407254014696393,
+      "difference": 0.02183703013828886
     },
     {
       "seed": 6,
-      "curriculum": 4.447829405466716,
-      "topological": 4.434600273768107,
-      "difference": 0.013229131698608398
+      "curriculum": 4.452163015093122,
+      "topological": 4.428405693599156,
+      "difference": 0.023757321493966366
     },
     {
       "seed": 7,
-      "curriculum": 4.452123959859212,
-      "topological": 4.446383635203044,
-      "difference": 0.005740324656168028
+      "curriculum": 4.426415988377163,
+      "topological": 4.405222688402448,
+      "difference": 0.02119329997471464
     }
   ],
   "variance": {
     "pairs": 8,
-    "mean_loss": 4.460343937079112,
-    "seed_sd": 0.01422350655967974,
-    "paired_sd": 0.004212031609340147,
-    "correlation": 0.957417681444208,
-    "mean_difference": 0.01244133710861195,
-    "pairing_gain": 22.806576967661158,
+    "mean_loss": 4.423225036689214,
+    "seed_sd": 0.014776377561519442,
+    "paired_sd": 0.005045369214813303,
+    "correlation": 0.9679587687009502,
+    "mean_difference": 0.02108253751482314,
+    "pairing_gain": 17.154578390633617,
     "requirements": [
       {
         "relative": 0.02,
-        "effect": 0.08920687874158224,
+        "effect": 0.08846450073378428,
         "paired": 1,
         "unpaired": 1
       },
       {
         "relative": 0.01,
-        "effect": 0.04460343937079112,
+        "effect": 0.04423225036689214,
         "paired": 1,
         "unpaired": 2
       },
       {
         "relative": 0.005,
-        "effect": 0.02230171968539556,
+        "effect": 0.02211612518344607,
         "paired": 1,
-        "unpaired": 7
+        "unpaired": 8
       },
       {
         "relative": 0.002,
-        "effect": 0.008920687874158225,
-        "paired": 2,
-        "unpaired": 40
+        "effect": 0.008846450073378427,
+        "paired": 3,
+        "unpaired": 44
       }
     ],
-    "detectable_at_20_paired_seeds": 0.0026386419406055467,
+    "detectable_at_20_paired_seeds": 0.0031606891996074186,
     "synthetic_pilot": {
       "seed_sd": 0.075,
       "paired_sd": 0.0233,
