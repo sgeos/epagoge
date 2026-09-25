@@ -1015,7 +1015,10 @@
     {
       "word": "cloud",
       "concept": "weather",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "clouds"
+      ]
     },
     {
       "word": "cloudy",
@@ -1123,7 +1126,10 @@
     {
       "word": "corner",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "corners"
+      ]
     },
     {
       "word": "correction",
@@ -1265,7 +1271,10 @@
     {
       "word": "day",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "days"
+      ]
     },
     {
       "word": "dead",
@@ -2382,7 +2391,10 @@
     {
       "word": "idea",
       "concept": "knowing",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "ideas"
+      ]
     },
     {
       "word": "identified",
@@ -2652,7 +2664,10 @@
     {
       "word": "letter",
       "concept": "letter",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "letters"
+      ]
     },
     {
       "word": "level",
@@ -3044,7 +3059,10 @@
     {
       "word": "month",
       "concept": "cycle",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "months"
+      ]
     },
     {
       "word": "mood",
@@ -3354,7 +3372,10 @@
     {
       "word": "page",
       "concept": "writing",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "pages"
+      ]
     },
     {
       "word": "pain",
@@ -3379,7 +3400,10 @@
     {
       "word": "parent",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "parents"
+      ]
     },
     {
       "word": "part",
@@ -4307,7 +4331,10 @@
     {
       "word": "side",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "sides"
+      ]
     },
     {
       "word": "sign",
@@ -5113,7 +5140,10 @@
     {
       "word": "time",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "times"
+      ]
     },
     {
       "word": "tin",
@@ -5550,7 +5580,10 @@
     {
       "word": "week",
       "concept": "cycle",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "weeks"
+      ]
     },
     {
       "word": "weigh",
@@ -5576,7 +5609,10 @@
     {
       "word": "wheel",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "wheels"
+      ]
     },
     {
       "word": "while",

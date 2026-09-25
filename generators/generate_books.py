@@ -153,6 +153,11 @@ def main(argv: list[str]) -> int:
     parser.add_argument(
         "--quarantine", type=Path, default=ROOT / "tmp/quarantine.jsonl"
     )
+    parser.add_argument(
+        "--rewrite",
+        action="store_true",
+        help="write units that already have a book, instead of skipping them",
+    )
     args = parser.parse_args(argv[1:])
 
     plan = sched.load(ROOT / f"curriculum/schedule/level_{args.level:02d}.json")
@@ -165,12 +170,18 @@ def main(argv: list[str]) -> int:
     records: list[dict[str, object]] = []
 
     quarantine: list[Reject] = []
+    # **Runs are additive by default.** Filling ninety-two units takes many
+    # passes, and a generator that always writes the first `limit` units
+    # rewrites the same books every time.
+    already = {path.stem for path in args.out.glob("bk.*.md")}
     written = 0
     for domain in plan.domains:
         for unit in domain.units:
             if written >= args.limit:
                 break
             if not unit.teaches:
+                continue
+            if not args.rewrite and f"bk.{unit.id}" in already:
                 continue
             defined = words_for(vocabulary, unit.teaches, args.level)
             if not defined:
