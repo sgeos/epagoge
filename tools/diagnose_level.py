@@ -1,0 +1,165 @@
+#!/usr/bin/env python3
+"""Say whether a level's model is undertrained or out of corpus.
+
+**Held-out loss alone cannot tell those apart, and they call for opposite
+work.** A model that has not converged wants more steps or more capacity.
+A model that has memorised its corpus wants more corpus. The gap between
+training and held-out loss separates them, so this sweeps a grid and
+reports both.
+
+Reading it: a small gap with both losses high means undertrained or under
+capacity, and more steps or a bigger model should move it. A large gap
+means the corpus is the limit and no amount of training will help.
+
+    .venv/bin/python tools/diagnose_level.py --level 1
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+import time
+from pathlib import Path
+
+from epagoge import schedule as sched
+from epagoge.concept_graph import ConceptGraph
+from epagoge.pilot import (
+    ModelConfig,
+    TrainConfig,
+    chunk,
+    format_seconds,
+    parameter_count,
+    select_device,
+    train_diagnostic,
+)
+from epagoge.tokeniser import PAD, build
+from epagoge.vocabulary import load_vocabulary
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from train_level import book_order  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
+
+
+def main(argv: list[str]) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--level", type=int, default=1)
+    parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--seq-len", type=int, default=128)
+    parser.add_argument("--batch-size", type=int, default=8)
+    parser.add_argument("--steps", type=int, nargs="+", default=[400, 800, 1600, 3200])
+    parser.add_argument(
+        "--width",
+        type=int,
+        nargs="+",
+        default=[128, 256],
+        help="d_model values to sweep",
+    )
+    parser.add_argument("--layers", type=int, nargs="+", default=[4])
+    parser.add_argument("--device", type=str, default=None)
+    parser.add_argument(
+        "--out", type=Path, default=ROOT / "evals/pilot/level_1_diagnosis.json"
+    )
+    args = parser.parse_args(argv[1:])
+
+    vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
+    tokeniser = build(vocabulary, args.level)
+    graph = ConceptGraph.load(ROOT / "curriculum/graph/concepts.json")
+    plan = sched.load(ROOT / f"curriculum/schedule/level_{args.level:02d}.json")
+
+    pad_id = tokeniser.ids[PAD]
+    ordered, text = book_order(args.level, graph, 0, "curriculum", plan)
+    if len(ordered) != len(text):
+        print("the book ordering is short; see train_level.py", file=sys.stderr)
+        return 1
+
+    chunks: list[list[int]] = []
+    for book_id in ordered:
+        chunks.extend(
+            chunk(tokeniser.encode(text.get(book_id, "")), args.seq_len, pad_id)
+        )
+    held = max(1, len(chunks) // 8)
+    train_ids = list(range(len(chunks) - held))
+    held_out = chunks[-held:]
+    device = select_device(args.device)
+    tokens = sum(len(tokeniser.encode(text.get(b, ""))) for b in ordered)
+
+    print(
+        f"device {device}, vocab {tokeniser.size}, {len(chunks)} chunks, "
+        f"{tokens} corpus tokens, {len(held_out)} held out"
+    )
+    print(
+        f"{'width':>6} {'layers':>7} {'steps':>6} {'params':>10} "
+        f"{'train':>7} {'held':>7} {'gap':>7}"
+    )
+
+    rows: list[dict[str, object]] = []
+    started = time.time()
+    for width in args.width:
+        for layers in args.layers:
+            for steps in args.steps:
+                config = ModelConfig(
+                    vocab_size=tokeniser.size,
+                    d_model=width,
+                    n_layers=layers,
+                    seq_len=args.seq_len,
+                )
+                result = train_diagnostic(
+                    chunks,
+                    train_ids,
+                    held_out,
+                    config,
+                    TrainConfig(steps=steps, batch_size=args.batch_size),
+                    args.seed,
+                    device,
+                    pad_id,
+                )
+                params = parameter_count(config)
+                print(
+                    f"{width:>6} {layers:>7} {steps:>6} {params:>10} "
+                    f"{result.train_loss:>7.3f} {result.held_out_loss:>7.3f} "
+                    f"{result.gap:>7.3f}"
+                )
+                rows.append(
+                    {
+                        "d_model": width,
+                        "layers": layers,
+                        "steps": steps,
+                        "parameters": params,
+                        "train_loss": result.train_loss,
+                        "held_out_loss": result.held_out_loss,
+                        "gap": result.gap,
+                        "curve": [list(p) for p in result.curve],
+                    }
+                )
+
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(
+        json.dumps(
+            {
+                "level": args.level,
+                "corpus_tokens": tokens,
+                "chunks": len(chunks),
+                "held_out_chunks": len(held_out),
+                "vocab_size": tokeniser.size,
+                "seed": args.seed,
+                "device": str(device),
+                "elapsed": format_seconds(time.time() - started),
+                "runs": rows,
+                "note": (
+                    "A small gap with both losses high means undertrained or "
+                    "under capacity. A large gap means the corpus is the limit."
+                ),
+            },
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    print(f"\nwrote {args.out}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv))

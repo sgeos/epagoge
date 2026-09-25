@@ -15,9 +15,12 @@ import unittest
 try:
     from epagoge.pilot import (
         ModelConfig,
+        TinyTransformer,
         TrainConfig,
         chunk,
         orderings,
+        sample,
+        select_device,
         synthetic_stream,
     )
 
@@ -148,3 +151,51 @@ class TestPaddedChunking(unittest.TestCase):
 
     def test_a_stream_too_short_to_predict_yields_nothing(self) -> None:
         self.assertEqual(chunk([7], 128, pad=0), [])
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestSampling(unittest.TestCase):
+    """Sampling exists so that something other than a loss can be read.
+
+    An untrained model is enough to test the contract. What it says is
+    noise, and that is the point: these check the shape of the call, not
+    the quality of the text.
+    """
+
+    def model(self) -> TinyTransformer:
+        return TinyTransformer(
+            ModelConfig(vocab_size=32, d_model=16, n_layers=1, seq_len=8)
+        ).to(select_device("cpu"))
+
+    def test_it_returns_the_requested_count(self) -> None:
+        out = sample(self.model(), [1], 5, select_device("cpu"), seq_len=8)
+        self.assertEqual(len(out), 5)
+
+    def test_the_prompt_is_not_returned(self) -> None:
+        out = sample(self.model(), [1, 2, 3], 4, select_device("cpu"), seq_len=8)
+        self.assertEqual(len(out), 4)
+
+    def test_one_seed_gives_one_answer(self) -> None:
+        model = self.model()
+        first = sample(model, [1], 6, select_device("cpu"), seed=7, seq_len=8)
+        second = sample(model, [1], 6, select_device("cpu"), seed=7, seq_len=8)
+        self.assertEqual(first, second)
+
+    def test_a_context_longer_than_the_window_is_truncated(self) -> None:
+        """The positional embedding is only seq_len long, so a longer
+        prompt must not reach the model."""
+        out = sample(self.model(), list(range(20)), 3, select_device("cpu"), seq_len=8)
+        self.assertEqual(len(out), 3)
+
+    def test_zero_tokens_is_an_empty_answer(self) -> None:
+        self.assertEqual(
+            sample(self.model(), [1], 0, select_device("cpu"), seq_len=8), []
+        )
+
+    def test_a_non_positive_temperature_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            _ = sample(self.model(), [1], 1, select_device("cpu"), temperature=0.0)
+
+    def test_a_negative_count_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            _ = sample(self.model(), [1], -1, select_device("cpu"))

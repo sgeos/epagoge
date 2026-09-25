@@ -184,7 +184,88 @@ def train_once(
     ``chunks`` but differing in ``order`` are a pair.
 
     ``pad_id`` is excluded from the loss where the chunks carry padding.
+
+    **The model is discarded.** That is right for the ablation, which
+    compares two orderings by one number, and wrong as the only thing the
+    project can do with a trained model. :func:`train_model` returns it for
+    the cases where something other than a loss is wanted.
     """
+    _model, loss = train_model(
+        chunks,
+        order,
+        held_out,
+        model_config,
+        train_config,
+        init_seed,
+        device,
+        pad_id,
+    )
+    return loss
+
+
+@dataclass(frozen=True, slots=True)
+class TrainResult:
+    """A trained model and enough numbers to say what is wrong with it.
+
+    **Held-out loss alone cannot separate undertrained from overfitted**,
+    and those call for opposite work: one wants more steps or more
+    capacity, the other wants more corpus. The gap between training and
+    held-out loss separates them, so both are returned.
+    """
+
+    model: TinyTransformer
+    held_out_loss: float
+    train_loss: float
+    curve: tuple[tuple[int, float], ...]
+    """Step and mean training loss over the preceding window."""
+
+    @property
+    def gap(self) -> float:
+        """Held-out minus training. Large means the corpus is the limit."""
+        return self.held_out_loss - self.train_loss
+
+
+def train_model(
+    chunks: list[list[int]],
+    order: list[int],
+    held_out: list[list[int]],
+    model_config: ModelConfig,
+    train_config: TrainConfig,
+    init_seed: int,
+    device: torch.device,
+    pad_id: int | None = None,
+) -> tuple[TinyTransformer, float]:
+    """Train one model and return it with its held-out loss.
+
+    **Held-out loss cannot distinguish a model that learned the language
+    from one that learned which words are common.** Sampling can, which is
+    why the model is available here rather than only its score.
+    """
+    result = train_diagnostic(
+        chunks,
+        order,
+        held_out,
+        model_config,
+        train_config,
+        init_seed,
+        device,
+        pad_id,
+    )
+    return result.model, result.held_out_loss
+
+
+def train_diagnostic(
+    chunks: list[list[int]],
+    order: list[int],
+    held_out: list[list[int]],
+    model_config: ModelConfig,
+    train_config: TrainConfig,
+    init_seed: int,
+    device: torch.device,
+    pad_id: int | None = None,
+    curve_every: int = 100,
+) -> TrainResult:
+    """Train one model and return it with training and held-out loss."""
     # torch ships incomplete stubs for these two calls. The suppression is a
     # gap in the framework's typing, not a weakening of this module's.
     torch.manual_seed(init_seed)  # pyright: ignore[reportUnknownMemberType]
@@ -201,6 +282,8 @@ def train_once(
 
     batches = _batches(chunks, order, train_config.batch_size, device)
     model.train()
+    curve: list[tuple[int, float]] = []
+    window: list[float] = []
     for step in range(train_config.steps):
         inputs, targets = batches[step % len(batches)]
         for group in optimiser.param_groups:
@@ -211,6 +294,10 @@ def train_once(
         loss.backward()
         _ = nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         optimiser.step()  # pyright: ignore[reportUnknownMemberType]
+        window.append(loss.item())
+        if curve_every > 0 and (step + 1) % curve_every == 0:
+            curve.append((step + 1, sum(window) / len(window)))
+            window = []
 
     model.eval()
     order_eval = list(range(len(held_out)))
@@ -224,7 +311,66 @@ def train_once(
             total += loss_fn(
                 logits.reshape(-1, model_config.vocab_size), targets.reshape(-1)
             ).item()
-    return total / max(len(eval_batches), 1)
+    # **Training loss is measured in eval mode over the same batches**, not
+    # taken from the last step of the loop. A running figure is dominated
+    # by whichever batch happened to come last and by dropout, and it is
+    # the gap that this number exists to make meaningful.
+    train_total = 0.0
+    with torch.no_grad():
+        for inputs, targets in batches[: train_config.eval_batches]:
+            logits = model(inputs)
+            train_total += loss_fn(
+                logits.reshape(-1, model_config.vocab_size), targets.reshape(-1)
+            ).item()
+    return TrainResult(
+        model=model,
+        held_out_loss=total / max(len(eval_batches), 1),
+        train_loss=train_total / max(len(batches[: train_config.eval_batches]), 1),
+        curve=tuple(curve),
+    )
+
+
+def sample(
+    model: TinyTransformer,
+    prompt: list[int],
+    count: int,
+    device: torch.device,
+    *,
+    seed: int = 0,
+    temperature: float = 1.0,
+    top_k: int = 0,
+    seq_len: int = 128,
+) -> list[int]:
+    """Continue ``prompt`` for ``count`` tokens, sampling from the model.
+
+    Seeded, because a sample nobody can reproduce is an anecdote. The
+    context is truncated to the training sequence length, since the
+    positional embedding is only that long.
+
+    ``top_k`` of zero samples from the full distribution. Truncating it
+    flatters the model by hiding the tail it puts mass on, so the default
+    does not.
+    """
+    if temperature <= 0.0:
+        raise ValueError(f"temperature must be positive, got {temperature}")
+    if count < 0:
+        raise ValueError(f"count must not be negative, got {count}")
+    generator = torch.Generator(device="cpu")
+    _ = generator.manual_seed(seed)
+    model.eval()
+    out = list(prompt)
+    with torch.no_grad():
+        for _ in range(count):
+            window = out[-seq_len:]
+            block = torch.tensor([window], dtype=torch.long, device=device)
+            logits = model(block)[0, -1] / temperature
+            if top_k > 0:
+                cut = torch.topk(logits, min(top_k, logits.numel())).values[-1]
+                logits = logits.masked_fill(logits < cut, float("-inf"))
+            probabilities = torch.softmax(logits, dim=-1).to("cpu")
+            nxt = int(torch.multinomial(probabilities, 1, generator=generator).item())
+            out.append(nxt)
+    return out[len(prompt) :]
 
 
 def select_device(preference: str | None = None) -> torch.device:

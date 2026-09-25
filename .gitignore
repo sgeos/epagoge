@@ -59,3 +59,8 @@ tmp/*
 corpus/*
 !corpus/.gitkeep
 !corpus/README.md
+
+# Trained weights. Reproducible from the corpus and a seed, and a
+# checkpoint tracked without Large File Storage is a repository that
+# grows by a megabyte every run.
+evals/pilot/*.pt
