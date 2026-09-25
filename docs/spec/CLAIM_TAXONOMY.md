@@ -16,7 +16,24 @@ truth exist.
 | Attributed position | Attribution to a named holder | Presented as settled rather than as a position |
 | Conditional result | Stated assumptions plus validation status | Assumptions or validation status are absent |
 | Normative | Attribution to a holder, or excluded | Presented as a finding |
+| Declared faith | A stated reason evidence is unavailable, and inheritance by anything derived | Either is missing |
 | Unsupported | Nothing. Always rejected | Always |
+
+## Declared faith, added 2026-09-24
+
+**Held where checking is not available, and said so.** Distinct from
+unsupported, which is always rejected, and distinct from a guess, which is
+checkable and not yet checked.
+
+Two conditions, and the second is what stops the class laundering a claim
+that merely lacks support. It states why evidence is unavailable, and
+**anything derived from it must be a conditional result naming it among its
+assumptions**.
+
+The class was left open for most of a day with the objection that a label
+for declared faith is a route past the validator. `../decisions/FAITH_CLASS.md`
+has the worked example that answered it, and the error it describes is not
+holding an unverified premise but letting the conclusions stop carrying it.
 
 ## Why a binary would not serve
 

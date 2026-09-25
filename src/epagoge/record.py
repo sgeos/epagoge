@@ -42,6 +42,16 @@ class ClaimClass(Enum):
     ATTRIBUTED_POSITION = "attributed_position"
     CONDITIONAL_RESULT = "conditional_result"
     NORMATIVE = "normative"
+    DECLARED_FAITH = "declared_faith"
+    """Held where checking is not available, and said so.
+
+    **Distinct from unsupported, which is always rejected.** A declared
+    faith claim is admitted on two conditions, and the second is what stops
+    it laundering a claim that merely lacks support. It states why evidence
+    is unavailable, and anything derived from it carries it as an
+    assumption. See docs/decisions/FAITH_CLASS.md.
+    """
+
     UNSUPPORTED = "unsupported"
 
 
@@ -80,6 +90,13 @@ class Provenance:
     assumptions: tuple[str, ...] = ()
     method: str | None = None
     validation_status: str | None = None
+    why_unavailable: str | None = None
+    """Why checking is not available. Required of a declared faith claim.
+
+    A declaration without one is indistinguishable from laziness, which is
+    the failure that kept this class out of the taxonomy until a worked
+    example arrived.
+    """
 
 
 @dataclass(frozen=True, slots=True)
@@ -121,6 +138,7 @@ _REQUIRED_BY_CLASS: Final[Mapping[ClaimClass, tuple[str, ...]]] = {
     ClaimClass.ATTRIBUTED_POSITION: ("position_holder",),
     ClaimClass.CONDITIONAL_RESULT: ("assumptions", "method", "validation_status"),
     ClaimClass.NORMATIVE: ("position_holder",),
+    ClaimClass.DECLARED_FAITH: ("why_unavailable",),
 }
 
 
@@ -249,6 +267,7 @@ def validate_corpus(
     out.extend(_validate_primitives(collected, primitives))
     out.extend(_validate_relation_coverage(collected, graph, scheduled_relations))
     out.extend(_validate_prerequisite_coverage(collected, graph, scheduled_levels))
+    out.extend(_validate_faith_inheritance(collected))
     return out
 
 
@@ -299,6 +318,44 @@ def _validate_relation_coverage(
                         "but no record teaches it",
                     )
                 )
+    return out
+
+
+def _validate_faith_inheritance(records: Sequence[Record]) -> list[Violation]:
+    """Anything derived from a declared faith claim carries it.
+
+    **This is the rule the class exists for.** A premise held without
+    evidence is sometimes necessary and sometimes correct. The failure is
+    not holding it, it is letting the conclusions drawn from it stop
+    carrying it, so that by the third step nothing is labelled as resting
+    on something unchecked.
+
+    So a record whose source is a declared faith claim must itself be a
+    conditional result, and must name that source among its assumptions.
+    """
+    faith = {r.id for r in records if r.claim_class is ClaimClass.DECLARED_FAITH}
+    out: list[Violation] = []
+    for record in records:
+        source = record.provenance.source_claim
+        if source is None or source not in faith:
+            continue
+        where = f"record {record.id!r}"
+        if record.claim_class is not ClaimClass.CONDITIONAL_RESULT:
+            out.append(
+                Violation(
+                    "faith-not-inherited",
+                    f"{where} rests on declared faith {source!r} and is class"
+                    f" {record.claim_class.value}, not a conditional result",
+                )
+            )
+        if source not in record.provenance.assumptions:
+            out.append(
+                Violation(
+                    "faith-unstated",
+                    f"{where} rests on declared faith {source!r} without"
+                    " naming it among its assumptions",
+                )
+            )
     return out
 
 
@@ -524,6 +581,9 @@ def _parse_provenance(raw: object) -> Provenance:
             else tuple(_require_str_list(assumptions, "provenance.assumptions"))
         ),
         method=_optional_str(body.get("method"), "provenance.method"),
+        why_unavailable=_optional_str(
+            body.get("why_unavailable"), "provenance.why_unavailable"
+        ),
         validation_status=_optional_str(
             body.get("validation_status"), "provenance.validation_status"
         ),

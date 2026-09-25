@@ -786,6 +786,28 @@
             "a-claim-can-be-so-or-not",
             "checking-settles-it"
           ]
+        },
+        {
+          "id": "h1.faith",
+          "form": "Someone may be watching. You cannot tell. Do your work as though.",
+          "introduces": [
+            "taking_on_faith"
+          ],
+          "primitives": [
+            "a-claim-can-be-so-or-not",
+            "looking-tells-you"
+          ]
+        },
+        {
+          "id": "h1.resting",
+          "form": "You did not check the first thing. So you have not checked the next one either.",
+          "introduces": [
+            "resting_on_a_guess"
+          ],
+          "primitives": [
+            "checking-settles-it",
+            "telling-can-be-wrong"
+          ]
         }
       ]
     },
@@ -1023,6 +1045,17 @@
           "primitives": [
             "some-is-fewer-than-all",
             "others-act"
+          ]
+        },
+        {
+          "id": "n1.keep_trying",
+          "form": "It looks like it cannot be done. You try again while you still can.",
+          "introduces": [
+            "keep_trying_or_stop"
+          ],
+          "primitives": [
+            "trying-tells-you",
+            "harm-can-be-avoided"
           ]
         }
       ]

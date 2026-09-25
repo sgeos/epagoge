@@ -1,6 +1,6 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-24, describing `main` at `dd1a919`.** Session 1 took
+**Refreshed 2026-09-24, describing `main` at `c174fe7`.** Session 1 took
 this project from nothing to a closed toolchain, a generated corpus of six
 books, and a measurement of how far the lexicon is from defining itself.
 No model is trained. Read this block, run the validity check, then stop and
@@ -26,7 +26,7 @@ requiring `HEAD` to equal a recorded commit claims nothing else ever lands.
 That happened once and a commit landed red. Run it bare, or redirect and
 read `$?`.
 
-**Ancestry**: `main` should contain **`dd1a919`**. If it does not, this
+**Ancestry**: `main` should contain **`c174fe7`**. If it does not, this
 file predates a reset and is stale.
 
 **Content** — cheap, independent, each verified on 2026-09-24. Check the
@@ -34,7 +34,7 @@ rendered ORDER of this list, not just the next unused number.
 
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **eleven**
    checks, and **exits 0**.
-2. The suite reports **321** tests.
+2. The suite reports **328** tests.
 3. `curriculum/graph/concepts.json` declares **11** domains and holds
    **117** nodes, with **1** domain still empty, **0** isolated concepts,
    **50** cross-domain prerequisites, **9** specialisation edges and **6**
@@ -42,8 +42,8 @@ rendered ORDER of this list, not just the next unused number.
 4. Internal depth is **10** for `mathematics_and_formal_logic` and **6**
    for `failure_analysis`. **Internal, not global.** Global reads 10
    against 9 and is the wrong quantity for the ablation.
-5. `curriculum/schedule/level_01.json` holds **83** units, **69** existing
-   concepts and **43** planned. Level two covers the two ablation domains
+5. `curriculum/schedule/level_01.json` holds **86** units, **69** existing
+   concepts and **46** planned. Level two covers the two ablation domains
    only.
 6. `curriculum/vocabulary.json` holds **877** terms, **760** at level one.
 7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
@@ -64,9 +64,9 @@ rendered ORDER of this list, not just the next unused number.
 
 ## The state
 
-**Green and clean.** Sixty-one commits, nothing uncommitted. Eight
+**Green and clean.** Sixty-three commits, nothing uncommitted. Eight
 documents in `secret/`, none tracked, and **no path under it has ever been
-added in any commit**. Twenty-two decision records, 321 tests.
+added in any commit**. Twenty-three decision records, 328 tests.
 
 **What exists.** A concept graph of 117 nodes across 11 domains, declared
 rather than inferred. A curriculum schedule for levels one and two. A
@@ -123,6 +123,15 @@ frontier first because of it.
   which the pilot could not have tested.
 - **The teacher conflates adjacent concepts unless the prompt excludes
   them**, and the graph already holds the neighbours.
+- **A premise held without evidence is not the failure. Losing track of it
+  is.** `DECLARED_FAITH` was added on 2026-09-24 after a worked example
+  from the OpenAI and Hugging Face incident, in which agents inferred an
+  evaluator's hidden criteria, declared peers irreversibly doomed on that
+  inference, and spent five days defeating a check that did not exist. See
+  `../decisions/FAITH_CLASS.md`. **The class is safe only because of its
+  second condition**, that anything derived from it must be a conditional
+  result naming it among its assumptions, which is a cost a lazy claim will
+  not pay.
 
 ## What is YOURS: decisions the operator holds
 
@@ -146,9 +155,6 @@ frontier first because of it.
    result, not normative. Definitions are stipulative and currently use
    `formal` with a `lexicon:` source, which is the nearest fit and not a
    good one.
-5. **Whether a declared-faith claim needs a class.** `unsupported` is a
-   rejection class, always rejected. Adding a home for declared faith is
-   also a route past the validator for a claim that simply lacks support.
 6. **Whether multi-head latent attention is admissible.** A low-rank
    projection, which `JACOBIAN_SPACE.md` bans in the base model. Measure it
    against the effective-rank floor; do not adopt it on efficiency.

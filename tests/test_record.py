@@ -489,3 +489,83 @@ class TestRelationCoverage(unittest.TestCase):
             self.assertFalse(
                 any(pair in d for d in untaught), f"{pair} should be taught"
             )
+
+
+class TestDeclaredFaith(unittest.TestCase):
+    """A premise held where checking is not available, and said so.
+
+    Kept out of the taxonomy until a worked example arrived, because a
+    label for declared faith is also a route past the validator for a claim
+    that merely lacks support. Two conditions make it safe, and the second
+    is the one that costs a lazy claim more than it wants to pay.
+    """
+
+    def faith(self, **over: object) -> Record:
+        prov = Provenance(why_unavailable="nobody can look inside")
+        base: dict[str, object] = {
+            "id": "f",
+            "level": 3,
+            "concepts": ("a",),
+            "claim_class": ClaimClass.DECLARED_FAITH,
+            "content": "Someone may be watching.",
+            "provenance": prov,
+        }
+        base.update(over)
+        return Record(**base)  # pyright: ignore[reportArgumentType]
+
+    def derived(self, **over: object) -> Record:
+        base: dict[str, object] = {
+            "id": "d",
+            "level": 3,
+            "concepts": ("a",),
+            "claim_class": ClaimClass.CONDITIONAL_RESULT,
+            "content": "So the work is checked.",
+            "provenance": Provenance(
+                source_claim="f",
+                assumptions=("f",),
+                method="reasoning",
+                validation_status="unvalidated",
+            ),
+        }
+        base.update(over)
+        return Record(**base)  # pyright: ignore[reportArgumentType]
+
+    def test_a_faith_claim_needs_a_reason_evidence_is_unavailable(self) -> None:
+        bare = self.faith(provenance=Provenance())
+        codes = {v.code for v in validate_record(bare, graph())}
+        self.assertIn("missing-provenance", codes)
+
+    def test_a_faith_claim_with_its_reason_is_admitted(self) -> None:
+        self.assertEqual(validate_record(self.faith(), graph()), [])
+
+    def test_it_is_not_rejected_the_way_unsupported_is(self) -> None:
+        codes = {v.code for v in validate_record(self.faith(), graph())}
+        self.assertNotIn("unsupported", codes)
+
+    def test_a_derived_claim_must_be_conditional(self) -> None:
+        """The failure was not holding the premise. It was the conclusions
+        drawn from it no longer carrying it."""
+        bad = self.derived(claim_class=ClaimClass.EMPIRICAL)
+        found = validate_corpus([self.faith(), bad], graph())
+        self.assertIn("faith-not-inherited", {v.code for v in found})
+
+    def test_a_derived_claim_must_name_it_among_its_assumptions(self) -> None:
+        bad = self.derived(
+            provenance=Provenance(
+                source_claim="f",
+                assumptions=("something else",),
+                method="reasoning",
+                validation_status="unvalidated",
+            )
+        )
+        found = validate_corpus([self.faith(), bad], graph())
+        self.assertIn("faith-unstated", {v.code for v in found})
+
+    def test_a_properly_inherited_claim_passes(self) -> None:
+        found = validate_corpus([self.faith(), self.derived()], graph())
+        self.assertEqual([v.code for v in found], [])
+
+    def test_a_claim_resting_on_something_else_is_untouched(self) -> None:
+        other = self.derived(provenance=Provenance(source_claim="elsewhere"))
+        found = validate_corpus([self.faith(), other], graph())
+        self.assertNotIn("faith-not-inherited", {v.code for v in found})
