@@ -1,11 +1,15 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-25, describing `main` at `f6d8c74`.** Session 4 took
+**Refreshed 2026-09-25, describing `main` at `ff1dcc8`.** Session 4 took
 the operator's framing of the project as three problems, completed and
 then lengthened the level-one corpus, made a checkpoint carry its own
-vocabulary, and added the question-and-answer book because the corpus
-could not teach a model to answer. Read this block, run the validity
-check, then stop and wait for the human prompt.
+vocabulary, added the question-and-answer book because the corpus could
+not teach a model to answer, and prepared the repository to be public.
+Read this block, run the validity check, then stop and wait for the human
+prompt.
+
+**The history has been rewritten twice and the remote has not been
+recreated yet.** Both are recorded below under what is outstanding.
 
 ---
 
@@ -23,8 +27,13 @@ derived from git history and the runner clones one commit.
 
 **Run the gate, read its exit code, then stop before committing.**
 
-**Ancestry**: `main` should contain **`c0cf2c4`**, which completed the
-level-one corpus. If it does not, this file predates a reset.
+**Ancestry cannot be checked by commit identity.** Every hash in this
+repository changed on 2026-09-25 when the history was rewritten twice,
+first to remove deployment vocabulary and then to remove the project's
+former name. **Check by content instead**: the first commit's `README.md`
+begins `# Epagoge`, and `git log --all --format='%B' | grep -ic <the
+former name>` returns 0. The former name is recorded once, under the
+discipline `CLAUDE.md` points to, and nowhere else.
 
 **Content** — each verified on 2026-09-25.
 
@@ -43,7 +52,9 @@ level-one corpus. If it does not, this file predates a reset.
    sixteen spreads, and **17 are question-and-answer books**.
 7. `curriculum/provenance.json` gives every word a first commit and a
    reconstructed admission criterion.
-8. `git ls-files secret | wc -l` reports **0**, and history is clean.
+8. `git ls-files secret | wc -l` reports **0**, and history is clean of
+   both the deployment vocabulary and the former project name, verified
+   by grepping every commit rather than only `HEAD`.
 
 ## What a resuming session should do first
 
@@ -141,11 +152,34 @@ admissions.
 8. **Whether a parked book should leave the repository.** `exclude/` is
    gitignored as asked, so moving a tracked book there removes it.
 
+## Outstanding: the repository is not yet public
+
+**Audited for publication on 2026-09-25 and not published.** What was
+done, and what was not.
+
+**Done.** Six open questions that described the deployment domain moved
+to `secret/`, each leaving a stub saying it exists and is answered
+privately. The same class of statement was removed wherever else it
+appeared. Thirteen literals were scrubbed from every commit in history,
+verified at zero occurrences. The teacher model is attributed in the
+README. Two false status lines were corrected. A stale corpus stream was
+removed. The project was renamed and the former name scrubbed from
+content, paths and commit messages.
+
+**Not done, and it is the operator's to perform.** Deleting
+`sgeos/paideia` on GitHub and creating `sgeos/epagoge` as a public
+repository. The remote in `.git/config` still points at the old URL and
+the rewritten history has not been pushed anywhere.
+
+**The old objects remain fetchable by hash** on the old remote until
+GitHub collects them. Nobody has ever held those hashes and the
+repository has only ever been private, so deleting it rather than
+force-pushing is what makes that certain.
+
 ## What is NOT yours
 
-**Publishing.** The repository is private and audited clean. Discovery
-scales with attention, so a launch post reopens the decision without a
-file changing.
+**Publishing.** Discovery scales with attention, so a launch post reopens
+the decision without a file changing.
 
 ## Governing rules that are easy to lose
 
@@ -164,6 +198,14 @@ file changing.
   measurement.** One reported 100 percent and would have for an untrained
   model.
 - **Read the output, not only the counts.**
+- **`git-filter-repo --replace-text` has no comment syntax.** Every line
+  is a literal. A commented file was run on 2026-09-25 and its bare `#`
+  replaced every `#` in every file in history, corrupting every Python
+  source and every Markdown heading. **Take a mirror clone first**; that
+  is what made it a detour rather than the end of the project.
+- **A rewrite that changes content must be checked against commit
+  messages too.** Rewriting the name left one message describing a rename
+  that no longer existed and asserting the opposite of the truth.
 - **No magic numbers in tests.** Tie an assertion to the lexicon.
 - **Never `git checkout` to undo without checking what else is
   uncommitted.**
