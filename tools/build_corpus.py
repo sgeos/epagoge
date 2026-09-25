@@ -30,6 +30,7 @@ from epagoge.book import (
     random_linear_extension,
 )
 from epagoge.concept_graph import ConceptGraph
+from epagoge.thesaurus import load as load_thesaurus
 
 
 def main(argv: list[str]) -> int:
@@ -47,6 +48,10 @@ def main(argv: list[str]) -> int:
         "--vocabulary", type=Path, default=Path("curriculum/vocabulary.json")
     )
     parser.add_argument("--no-dictionary", action="store_true")
+    parser.add_argument(
+        "--thesaurus", type=Path, default=Path("curriculum/thesaurus.json")
+    )
+    parser.add_argument("--no-thesaurus", action="store_true")
     args = parser.parse_args(argv[1:])
 
     all_books, records = load_book_dir(args.books)
@@ -133,6 +138,38 @@ def main(argv: list[str]) -> int:
             if definition.get("kind") == "word":
                 defined[str(definition["target"])] = str(entry["content"])
         level = order[0].level if order else 1
+
+        # **The thesaurus is reference material too.** It is an analysis
+        # tool while the lexicon is being authored and a level-one
+        # reference afterwards, which is the same dual role the dictionary
+        # has. Only entries carrying a relation are emitted, since an entry
+        # recording that a noun opposes nothing teaches a reader nothing.
+        thesaurus_lines: list[str] = []
+        if not args.no_thesaurus and args.thesaurus.exists():
+            seen_pairs: set[tuple[str, str]] = set()
+            for entry in load_thesaurus(args.thesaurus).entries:
+                for other in entry.antonyms:
+                    key = tuple(sorted((entry.word, other)))
+                    if key in seen_pairs:
+                        continue
+                    seen_pairs.add((key[0], key[1]))
+                    thesaurus_lines.append(f"{key[0]} and {key[1]} are opposites.")
+                for other in entry.synonyms:
+                    key = tuple(sorted((entry.word, other)))
+                    if key in seen_pairs:
+                        continue
+                    seen_pairs.add((key[0], key[1]))
+                    thesaurus_lines.append(f"{key[0]} and {key[1]} mean the same.")
+        if thesaurus_lines:
+            text = "\n".join(sorted(thesaurus_lines))
+            words += len(text.split())
+            handle.write(
+                json.dumps(
+                    {"id": f"thesaurus.level_{level}", "level": level, "text": text}
+                )
+                + "\n"
+            )
+
         if not args.no_dictionary and defined:
             text = "\n".join(f"{w}: {defined[w]}" for w in sorted(defined))
             words += len(text.split())
@@ -152,12 +189,17 @@ def main(argv: list[str]) -> int:
         )
         if cast(int, t["level"]) <= level
     }
-    total = len(order) + (0 if args.no_dictionary or not defined else 1)
+    total = (
+        len(order)
+        + (0 if args.no_dictionary or not defined else 1)
+        + (1 if thesaurus_lines else 0)
+    )
     print(f"{args.out}: {total} documents, {words} words, order {args.order}")
     print(
         f"  dictionary: {len(defined)} of {len(wanted)} level-{level} words defined"
         f"  {len(defined) / len(wanted) * 100:.1f}%"
     )
+    print(f"  thesaurus:  {len(thesaurus_lines)} relations")
     print(f"  {constrained} of {len(deps)} books are constrained by another")
     if args.order == "topological":
         print(f"  seed {args.seed}")

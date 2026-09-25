@@ -36,7 +36,7 @@ rendered ORDER of this list, not just the next unused number.
 
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twelve**
    checks, and **exits 0**.
-2. The suite reports **392** tests.
+2. The suite reports **399** tests.
 3. `curriculum/graph/concepts.json` declares **11** domains and holds
    **117** nodes, with **1** domain still empty, **0** isolated concepts,
    **50** cross-domain prerequisites, **9** specialisation edges and **6**
@@ -52,8 +52,10 @@ rendered ORDER of this list, not just the next unused number.
    words**, since a word may carry several senses. **809** words are at
    level one, **173** core, **202** senses marked `pos: verb`, and there is
    a **33**-entry substitution table.
-7. `curriculum/thesaurus.json` holds **101** antonym pairs over **194**
-   words, every pair complete at level one.
+7. `curriculum/thesaurus.json` holds **834** entries, one per level-one
+   sense plus **18** core words, covering all **815** admitted senses.
+   **195** carry an antonym and none yet carries a synonym. Coverage is
+   enforced, so a new sense fails the gate until an entry exists.
 8. `curriculum/books/level_1/` holds **6** books. The dictionary reports
    **80 of 809** words defined, of which **3** are grounded.
 9. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not

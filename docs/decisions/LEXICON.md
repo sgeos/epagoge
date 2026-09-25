@@ -214,6 +214,63 @@ word to concept, **which was silently dropping one of every pair**. The
 generator batches by sense and the prompt shows the concept beside each,
 so the teacher is asked for the sense rather than for the word.
 
+## The dictionary and thesaurus are reference material, 2026-09-25
+
+**Operator direction.** Both are lexicon analysis tools during authoring
+and **level-one reference material afterwards**. The second role is what
+sets the requirements, and it is stricter than the first.
+
+| Requirement | Follows from |
+| --- | --- |
+| The dictionary defines every word in words the level admits | Self-hosting. Already enforced at the generator boundary |
+| The thesaurus covers **every dictionary sense** | Reference material with holes is not reference material |
+| Both are written in level-one words | A reader at level one has nothing else |
+
+### Antonymy belongs to a sense
+
+The thesaurus was a flat list of word pairs, which cannot hold `right`,
+since it opposes `left` as a direction and `wrong` as a judgement. **This
+is the same failure the lexicon had**, where one concept per word could
+not hold `set`, and it was found the same way, by a case rather than by
+reasoning.
+
+It is now one entry per lexicon sense. 834 entries covering all 815
+level-one senses.
+
+### Coverage is required, an antonym is not
+
+**A sense with no entry is a sense nobody has looked at**, so an uncovered
+sense fails the gate. **An entry with no antonym is not a failure**,
+because most nouns oppose nothing and requiring one would invent
+oppositions to satisfy a check.
+
+### A core word may hold an entry with no concept
+
+`up` against `down`, `yes` against `no`, `here` against `there`. These
+name nothing, so they have no sense and no concept, and **dropping them
+would make the reference material worse in order to serve the analysis
+tool**. Eighteen core words carry an entry.
+
+### Antonymy is symmetric, between licensed words
+
+If one names the other, the other must name it back. The rule is confined
+to licensed terms, since a core word has no entry obliged to exist.
+
+### What is emitted
+
+`build_corpus.py` writes the thesaurus after the dictionary, as sentences
+in the level's own vocabulary. **Only entries carrying a relation are
+emitted**, since a line recording that a noun opposes nothing teaches a
+reader nothing. 101 relations, phrased with `opposite` and `mean the
+same`, both already admitted.
+
+### Still open
+
+**No synonyms are recorded.** The structure holds them and the check
+enforces their reachability, and nothing has been authored. Synonym sets
+are the larger half of a thesaurus and are authoring work rather than
+analysis.
+
 ## What is not claimed
 
 The lexicon has not been checked word by word against Ogden's 850. The

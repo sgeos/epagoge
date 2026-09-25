@@ -27,6 +27,34 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. The thesaurus covers every sense, and both become reference material
+
+- **Operator direction.** The dictionary and thesaurus are analysis tools
+  while the lexicon is authored and **level-one reference material
+  afterwards**, and the second role sets the requirements.
+- **Antonymy belongs to a sense.** A flat list of word pairs cannot hold
+  `right`, which opposes `left` as a direction and `wrong` as a
+  judgement. **The same failure the lexicon had with `set`**, found the
+  same way, by a case rather than by reasoning.
+- **834 entries, one per level-one sense**, covering all 815 admitted
+  senses. **Coverage is enforced**, so a new sense fails the gate until
+  someone has looked at it.
+- **An entry with no antonym is deliberately not a failure**, because most
+  nouns oppose nothing and requiring one would invent oppositions to
+  satisfy a check.
+- **Eighteen core words carry an entry with no concept.** `up` against
+  `down`, `yes` against `no`. They name nothing, and dropping them would
+  make the reference material worse to serve the analysis tool.
+- **Antonymy is symmetric between licensed words**, and not against core
+  words, which have no entry obliged to exist.
+- **`build_corpus.py` emits the thesaurus** after the dictionary, as
+  sentences in the level's own vocabulary. 101 relations. Only entries
+  carrying a relation are emitted.
+- **All four new checks verified by making them fail.** 399 tests.
+- **No synonyms are recorded.** The structure holds them and the check
+  enforces their reachability. Authoring them is the larger half of a
+  thesaurus and has not been done.
+
 ### Changed. A word may carry several senses
 
 - **Operator correction.** A dictionary gives more than one definition and

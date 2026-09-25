@@ -1,409 +1,3933 @@
 {
-  "_comment": "Antonym pairs for the level-one lexicon. An antonym is licensed by the same concept as its partner, because a pair names one dimension. A pair with one end admissible and the other not is a gate failure. See docs/decisions/LEXICON.md.",
-  "antonyms": [
-    [
-      "able",
-      "unable"
-    ],
-    [
-      "above",
-      "below"
-    ],
-    [
-      "agree",
-      "disagree"
-    ],
-    [
-      "alive",
-      "dead"
-    ],
-    [
-      "always",
-      "never"
-    ],
-    [
-      "ask",
-      "answer"
-    ],
-    [
-      "aunt",
-      "uncle"
-    ],
-    [
-      "awake",
-      "asleep"
-    ],
-    [
-      "before",
-      "after"
-    ],
-    [
-      "begin",
-      "end"
-    ],
-    [
-      "best",
-      "worst"
-    ],
-    [
-      "better",
-      "worse"
-    ],
-    [
-      "big",
-      "small"
-    ],
-    [
-      "boy",
-      "girl"
-    ],
-    [
-      "brother",
-      "sister"
-    ],
-    [
-      "build",
-      "break"
-    ],
-    [
-      "buy",
-      "sell"
-    ],
-    [
-      "clean",
-      "dirty"
-    ],
-    [
-      "come",
-      "go"
-    ],
-    [
-      "cover",
-      "uncover"
-    ],
-    [
-      "dark",
-      "bright"
-    ],
-    [
-      "day",
-      "night"
-    ],
-    [
-      "deep",
-      "shallow"
-    ],
-    [
-      "early",
-      "late"
-    ],
-    [
-      "easy",
-      "hard"
-    ],
-    [
-      "everyone",
-      "nobody"
-    ],
-    [
-      "everything",
-      "nothing"
-    ],
-    [
-      "fair",
-      "unfair"
-    ],
-    [
-      "fast",
-      "slow"
-    ],
-    [
-      "fat",
-      "thin"
-    ],
-    [
-      "fill",
-      "empty"
-    ],
-    [
-      "first",
-      "last"
-    ],
-    [
-      "float",
-      "sink"
-    ],
-    [
-      "friend",
-      "enemy"
-    ],
-    [
-      "front",
-      "back"
-    ],
-    [
-      "full",
-      "empty"
-    ],
-    [
-      "give",
-      "take"
-    ],
-    [
-      "good",
-      "bad"
-    ],
-    [
-      "grandma",
-      "grandpa"
-    ],
-    [
-      "grow",
-      "shrink"
-    ],
-    [
-      "happy",
-      "sad"
-    ],
-    [
-      "hard",
-      "soft"
-    ],
-    [
-      "heavy",
-      "light"
-    ],
-    [
-      "help",
-      "harm"
-    ],
-    [
-      "here",
-      "there"
-    ],
-    [
-      "high",
-      "low"
-    ],
-    [
-      "hot",
-      "cold"
-    ],
-    [
-      "inside",
-      "outside"
-    ],
-    [
-      "join",
-      "separate"
-    ],
-    [
-      "kind",
-      "unkind"
-    ],
-    [
-      "king",
-      "queen"
-    ],
-    [
-      "laugh",
-      "cry"
-    ],
-    [
-      "left",
-      "right"
-    ],
-    [
-      "like",
-      "unlike"
-    ],
-    [
-      "live",
-      "die"
-    ],
-    [
-      "lock",
-      "unlock"
-    ],
-    [
-      "long",
-      "short"
-    ],
-    [
-      "loud",
-      "quiet"
-    ],
-    [
-      "love",
-      "hate"
-    ],
-    [
-      "man",
-      "woman"
-    ],
-    [
-      "many",
-      "few"
-    ],
-    [
-      "more",
-      "less"
-    ],
-    [
-      "morning",
-      "evening"
-    ],
-    [
-      "mother",
-      "father"
-    ],
-    [
-      "near",
-      "far"
-    ],
-    [
-      "noisy",
-      "quiet"
-    ],
-    [
-      "old",
-      "new"
-    ],
-    [
-      "old",
-      "young"
-    ],
-    [
-      "open",
-      "shut"
-    ],
-    [
-      "over",
-      "under"
-    ],
-    [
-      "possible",
-      "impossible"
-    ],
-    [
-      "push",
-      "pull"
-    ],
-    [
-      "raw",
-      "cooked"
-    ],
-    [
-      "real",
-      "pretend"
-    ],
-    [
-      "remember",
-      "forget"
-    ],
-    [
-      "rich",
-      "poor"
-    ],
-    [
-      "right",
-      "wrong"
-    ],
-    [
-      "rise",
-      "fall"
-    ],
-    [
-      "rough",
-      "smooth"
-    ],
-    [
-      "safe",
-      "unsafe"
-    ],
-    [
-      "same",
-      "different"
-    ],
-    [
-      "sharp",
-      "dull"
-    ],
-    [
-      "son",
-      "daughter"
-    ],
-    [
-      "start",
-      "stop"
-    ],
-    [
-      "straight",
-      "curved"
-    ],
-    [
-      "strong",
-      "weak"
-    ],
-    [
-      "sun",
-      "moon"
-    ],
-    [
-      "tall",
-      "short"
-    ],
-    [
-      "thick",
-      "thin"
-    ],
-    [
-      "tie",
-      "untie"
-    ],
-    [
-      "today",
-      "tomorrow"
-    ],
-    [
-      "today",
-      "yesterday"
-    ],
-    [
-      "top",
-      "bottom"
-    ],
-    [
-      "true",
-      "false"
-    ],
-    [
-      "up",
-      "down"
-    ],
-    [
-      "wake",
-      "sleep"
-    ],
-    [
-      "warm",
-      "cool"
-    ],
-    [
-      "wet",
-      "dry"
-    ],
-    [
-      "wide",
-      "narrow"
-    ],
-    [
-      "win",
-      "lose"
-    ],
-    [
-      "yes",
-      "no"
-    ]
+  "_comment": "One entry per lexicon sense. Antonymy belongs to a sense, not to a word: right opposes left as a direction and wrong as a judgement. A core function word may appear with an empty concept, since it names nothing but up against down is still a pair a level-one reader wants. An uncovered sense is a violation; an entry with no antonym is not, because most nouns oppose nothing. This is an analysis tool during authoring and level-one reference material afterwards. See docs/decisions/LEXICON.md.",
+  "senses": [
+    {
+      "word": "able",
+      "concept": "can_and_cannot",
+      "antonyms": [
+        "unable"
+      ]
+    },
+    {
+      "word": "above",
+      "concept": "spatial_position",
+      "antonyms": [
+        "below"
+      ]
+    },
+    {
+      "word": "afraid",
+      "concept": "feeling"
+    },
+    {
+      "word": "after",
+      "concept": "",
+      "antonyms": [
+        "before"
+      ]
+    },
+    {
+      "word": "agree",
+      "concept": "checking",
+      "antonyms": [
+        "disagree"
+      ]
+    },
+    {
+      "word": "air",
+      "concept": "air"
+    },
+    {
+      "word": "alike",
+      "concept": "same_and_different"
+    },
+    {
+      "word": "alive",
+      "concept": "living_and_not_living",
+      "antonyms": [
+        "dead"
+      ]
+    },
+    {
+      "word": "allowed",
+      "concept": "someone_in_charge"
+    },
+    {
+      "word": "always",
+      "concept": "cycle",
+      "antonyms": [
+        "never"
+      ]
+    },
+    {
+      "word": "angry",
+      "concept": "feeling"
+    },
+    {
+      "word": "animal",
+      "concept": "animal"
+    },
+    {
+      "word": "answer",
+      "concept": "asking",
+      "antonyms": [
+        "ask"
+      ]
+    },
+    {
+      "word": "answered",
+      "concept": "asking"
+    },
+    {
+      "word": "anyone",
+      "concept": "person"
+    },
+    {
+      "word": "anything",
+      "concept": "standing_for"
+    },
+    {
+      "word": "appear",
+      "concept": "presence"
+    },
+    {
+      "word": "arm",
+      "concept": "body_part"
+    },
+    {
+      "word": "ask",
+      "concept": "asking",
+      "antonyms": [
+        "answer"
+      ]
+    },
+    {
+      "word": "asked",
+      "concept": "asking"
+    },
+    {
+      "word": "asking",
+      "concept": "asking"
+    },
+    {
+      "word": "asleep",
+      "concept": "living_and_not_living",
+      "antonyms": [
+        "awake"
+      ]
+    },
+    {
+      "word": "aunt",
+      "concept": "family",
+      "antonyms": [
+        "uncle"
+      ]
+    },
+    {
+      "word": "awake",
+      "concept": "living_and_not_living",
+      "antonyms": [
+        "asleep"
+      ]
+    },
+    {
+      "word": "baby",
+      "concept": "person"
+    },
+    {
+      "word": "back",
+      "concept": "",
+      "antonyms": [
+        "front"
+      ]
+    },
+    {
+      "word": "backward",
+      "concept": "direction"
+    },
+    {
+      "word": "bad",
+      "concept": "good_and_bad",
+      "antonyms": [
+        "good"
+      ]
+    },
+    {
+      "word": "badly",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "bag",
+      "concept": "household_object"
+    },
+    {
+      "word": "baked",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "ball",
+      "concept": "shape"
+    },
+    {
+      "word": "bamboo",
+      "concept": "plant"
+    },
+    {
+      "word": "bang",
+      "concept": "sound"
+    },
+    {
+      "word": "basket",
+      "concept": "household_object"
+    },
+    {
+      "word": "bear",
+      "concept": "toy"
+    },
+    {
+      "word": "because",
+      "concept": "cause_and_effect"
+    },
+    {
+      "word": "become",
+      "concept": "change"
+    },
+    {
+      "word": "bed",
+      "concept": "household_object"
+    },
+    {
+      "word": "before",
+      "concept": "",
+      "antonyms": [
+        "after"
+      ]
+    },
+    {
+      "word": "began",
+      "concept": "sequence"
+    },
+    {
+      "word": "begin",
+      "concept": "sequence",
+      "antonyms": [
+        "end"
+      ]
+    },
+    {
+      "word": "behind",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "believe",
+      "concept": "opinion"
+    },
+    {
+      "word": "believed",
+      "concept": "opinion"
+    },
+    {
+      "word": "believes",
+      "concept": "opinion"
+    },
+    {
+      "word": "bell",
+      "concept": "household_object"
+    },
+    {
+      "word": "belong",
+      "concept": "having"
+    },
+    {
+      "word": "belongs",
+      "concept": "having"
+    },
+    {
+      "word": "below",
+      "concept": "spatial_position",
+      "antonyms": [
+        "above"
+      ]
+    },
+    {
+      "word": "beside",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "best",
+      "concept": "good_and_bad",
+      "antonyms": [
+        "worst"
+      ]
+    },
+    {
+      "word": "better",
+      "concept": "good_and_bad",
+      "antonyms": [
+        "worse"
+      ]
+    },
+    {
+      "word": "big",
+      "concept": "physical_property",
+      "antonyms": [
+        "small"
+      ]
+    },
+    {
+      "word": "bigger",
+      "concept": "measuring"
+    },
+    {
+      "word": "bird",
+      "concept": "animal"
+    },
+    {
+      "word": "black",
+      "concept": "physical_property"
+    },
+    {
+      "word": "block",
+      "concept": "toy"
+    },
+    {
+      "word": "blocks",
+      "concept": "household_object"
+    },
+    {
+      "word": "blow",
+      "concept": "air"
+    },
+    {
+      "word": "blue",
+      "concept": "physical_property"
+    },
+    {
+      "word": "boat",
+      "concept": "household_object"
+    },
+    {
+      "word": "body",
+      "concept": "body_part"
+    },
+    {
+      "word": "book",
+      "concept": "writing"
+    },
+    {
+      "word": "boss",
+      "concept": "someone_in_charge"
+    },
+    {
+      "word": "bottle",
+      "concept": "household_object"
+    },
+    {
+      "word": "bottom",
+      "concept": "spatial_position",
+      "antonyms": [
+        "top"
+      ]
+    },
+    {
+      "word": "bought",
+      "concept": "exchange"
+    },
+    {
+      "word": "bowl",
+      "concept": "household_object"
+    },
+    {
+      "word": "box",
+      "concept": "household_object"
+    },
+    {
+      "word": "boy",
+      "concept": "person",
+      "antonyms": [
+        "girl"
+      ]
+    },
+    {
+      "word": "branch",
+      "concept": "plant"
+    },
+    {
+      "word": "break",
+      "concept": "things_break",
+      "antonyms": [
+        "build"
+      ]
+    },
+    {
+      "word": "breath",
+      "concept": "air"
+    },
+    {
+      "word": "breathe",
+      "concept": "living_and_not_living"
+    },
+    {
+      "word": "bright",
+      "concept": "physical_property",
+      "antonyms": [
+        "dark"
+      ]
+    },
+    {
+      "word": "broke",
+      "concept": "things_break"
+    },
+    {
+      "word": "broken",
+      "concept": "things_break"
+    },
+    {
+      "word": "broom",
+      "concept": "household_object"
+    },
+    {
+      "word": "brother",
+      "concept": "family",
+      "antonyms": [
+        "sister"
+      ]
+    },
+    {
+      "word": "brown",
+      "concept": "physical_property"
+    },
+    {
+      "word": "brush",
+      "concept": "household_object"
+    },
+    {
+      "word": "bubble",
+      "concept": "air"
+    },
+    {
+      "word": "bug",
+      "concept": "animal"
+    },
+    {
+      "word": "build",
+      "concept": "activity",
+      "antonyms": [
+        "break"
+      ]
+    },
+    {
+      "word": "builds",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "built",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "burn",
+      "concept": "heat"
+    },
+    {
+      "word": "buy",
+      "concept": "exchange",
+      "antonyms": [
+        "sell"
+      ]
+    },
+    {
+      "word": "call",
+      "concept": "sound"
+    },
+    {
+      "word": "called",
+      "concept": "name"
+    },
+    {
+      "word": "calm",
+      "concept": "feeling"
+    },
+    {
+      "word": "cannot",
+      "concept": "can_and_cannot"
+    },
+    {
+      "word": "car",
+      "concept": "household_object"
+    },
+    {
+      "word": "care",
+      "concept": "tending"
+    },
+    {
+      "word": "cared",
+      "concept": "tending"
+    },
+    {
+      "word": "careful",
+      "concept": "danger"
+    },
+    {
+      "word": "cares",
+      "concept": "tending"
+    },
+    {
+      "word": "carry",
+      "concept": "activity"
+    },
+    {
+      "word": "cart",
+      "concept": "household_object"
+    },
+    {
+      "word": "carve",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "carved",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "cat",
+      "concept": "animal"
+    },
+    {
+      "word": "catch",
+      "concept": "force"
+    },
+    {
+      "word": "caused",
+      "concept": "cause_and_effect"
+    },
+    {
+      "word": "chair",
+      "concept": "household_object"
+    },
+    {
+      "word": "change",
+      "concept": "change"
+    },
+    {
+      "word": "changes",
+      "concept": "change"
+    },
+    {
+      "word": "charge",
+      "concept": "someone_in_charge"
+    },
+    {
+      "word": "cheat",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "cheater",
+      "concept": "person"
+    },
+    {
+      "word": "check",
+      "concept": "checking"
+    },
+    {
+      "word": "child",
+      "concept": "person"
+    },
+    {
+      "word": "children",
+      "concept": "person"
+    },
+    {
+      "word": "circle",
+      "concept": "shape"
+    },
+    {
+      "word": "class",
+      "concept": "people_together"
+    },
+    {
+      "word": "clay",
+      "concept": "material"
+    },
+    {
+      "word": "clean",
+      "concept": "physical_property",
+      "antonyms": [
+        "dirty"
+      ]
+    },
+    {
+      "word": "clock",
+      "concept": "cycle"
+    },
+    {
+      "word": "close",
+      "concept": "opening_and_shutting"
+    },
+    {
+      "word": "closed",
+      "concept": "opening_and_shutting"
+    },
+    {
+      "word": "cloth",
+      "concept": "material"
+    },
+    {
+      "word": "cloud",
+      "concept": "weather"
+    },
+    {
+      "word": "cloudy",
+      "concept": "weather"
+    },
+    {
+      "word": "cold",
+      "concept": "heat",
+      "antonyms": [
+        "hot"
+      ]
+    },
+    {
+      "word": "colour",
+      "concept": "physical_property"
+    },
+    {
+      "word": "come",
+      "concept": "",
+      "antonyms": [
+        "go"
+      ]
+    },
+    {
+      "word": "compare",
+      "concept": "measuring"
+    },
+    {
+      "word": "compared",
+      "concept": "measuring"
+    },
+    {
+      "word": "contact",
+      "concept": "touching"
+    },
+    {
+      "word": "container",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "cooked",
+      "concept": "raw_and_made",
+      "antonyms": [
+        "raw"
+      ]
+    },
+    {
+      "word": "cool",
+      "concept": "heat",
+      "antonyms": [
+        "warm"
+      ]
+    },
+    {
+      "word": "copied",
+      "concept": "written_record"
+    },
+    {
+      "word": "copper",
+      "concept": "metal"
+    },
+    {
+      "word": "copy",
+      "concept": "toy"
+    },
+    {
+      "word": "corner",
+      "concept": "shape"
+    },
+    {
+      "word": "cost",
+      "concept": "exchange"
+    },
+    {
+      "word": "count",
+      "concept": "counting"
+    },
+    {
+      "word": "counted",
+      "concept": "counting"
+    },
+    {
+      "word": "cousin",
+      "concept": "family"
+    },
+    {
+      "word": "cover",
+      "concept": "opening_and_shutting",
+      "antonyms": [
+        "uncover"
+      ]
+    },
+    {
+      "word": "cow",
+      "concept": "animal"
+    },
+    {
+      "word": "crack",
+      "concept": "things_break"
+    },
+    {
+      "word": "cracked",
+      "concept": "things_break"
+    },
+    {
+      "word": "cross",
+      "concept": "feeling"
+    },
+    {
+      "word": "cry",
+      "concept": "feeling",
+      "antonyms": [
+        "laugh"
+      ]
+    },
+    {
+      "word": "cup",
+      "concept": "household_object"
+    },
+    {
+      "word": "curved",
+      "concept": "shape",
+      "antonyms": [
+        "straight"
+      ]
+    },
+    {
+      "word": "cut",
+      "concept": "danger"
+    },
+    {
+      "word": "dad",
+      "concept": "family"
+    },
+    {
+      "word": "danger",
+      "concept": "danger"
+    },
+    {
+      "word": "dark",
+      "concept": "physical_property",
+      "antonyms": [
+        "bright"
+      ]
+    },
+    {
+      "word": "daughter",
+      "concept": "family",
+      "antonyms": [
+        "son"
+      ]
+    },
+    {
+      "word": "day",
+      "concept": "duration",
+      "antonyms": [
+        "night"
+      ]
+    },
+    {
+      "word": "dead",
+      "concept": "dying",
+      "antonyms": [
+        "alive"
+      ]
+    },
+    {
+      "word": "death",
+      "concept": "dying"
+    },
+    {
+      "word": "deep",
+      "concept": "spatial_position",
+      "antonyms": [
+        "shallow"
+      ]
+    },
+    {
+      "word": "deeper",
+      "concept": "measuring"
+    },
+    {
+      "word": "diary",
+      "concept": "written_record"
+    },
+    {
+      "word": "die",
+      "concept": "dying",
+      "antonyms": [
+        "live"
+      ]
+    },
+    {
+      "word": "died",
+      "concept": "dying"
+    },
+    {
+      "word": "different",
+      "concept": "same_and_different",
+      "antonyms": [
+        "same"
+      ]
+    },
+    {
+      "word": "dig",
+      "concept": "activity"
+    },
+    {
+      "word": "direction",
+      "concept": "direction"
+    },
+    {
+      "word": "directions",
+      "concept": "direction"
+    },
+    {
+      "word": "dirt",
+      "concept": "material"
+    },
+    {
+      "word": "dirty",
+      "concept": "physical_property",
+      "antonyms": [
+        "clean"
+      ]
+    },
+    {
+      "word": "disagree",
+      "concept": "checking",
+      "antonyms": [
+        "agree"
+      ]
+    },
+    {
+      "word": "dish",
+      "concept": "household_object"
+    },
+    {
+      "word": "distance",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "dog",
+      "concept": "animal"
+    },
+    {
+      "word": "doll",
+      "concept": "toy"
+    },
+    {
+      "word": "done",
+      "concept": "activity"
+    },
+    {
+      "word": "door",
+      "concept": "household_object"
+    },
+    {
+      "word": "down",
+      "concept": "",
+      "antonyms": [
+        "up"
+      ]
+    },
+    {
+      "word": "drain",
+      "concept": "emptiness"
+    },
+    {
+      "word": "drank",
+      "concept": "liquid"
+    },
+    {
+      "word": "draw",
+      "concept": "writing"
+    },
+    {
+      "word": "drew",
+      "concept": "writing"
+    },
+    {
+      "word": "drink",
+      "concept": "living_and_not_living"
+    },
+    {
+      "word": "drip",
+      "concept": "liquid"
+    },
+    {
+      "word": "drop",
+      "concept": "falling"
+    },
+    {
+      "word": "dropped",
+      "concept": "falling"
+    },
+    {
+      "word": "dropping",
+      "concept": "falling"
+    },
+    {
+      "word": "dry",
+      "concept": "physical_property",
+      "antonyms": [
+        "wet"
+      ]
+    },
+    {
+      "word": "dug",
+      "concept": "activity"
+    },
+    {
+      "word": "dull",
+      "concept": "physical_property",
+      "antonyms": [
+        "sharp"
+      ]
+    },
+    {
+      "word": "dust",
+      "concept": "material"
+    },
+    {
+      "word": "ear",
+      "concept": "body_part"
+    },
+    {
+      "word": "early",
+      "concept": "duration",
+      "antonyms": [
+        "late"
+      ]
+    },
+    {
+      "word": "ears",
+      "concept": "body_part"
+    },
+    {
+      "word": "easy",
+      "concept": "physical_property",
+      "antonyms": [
+        "hard"
+      ]
+    },
+    {
+      "word": "eat",
+      "concept": "living_and_not_living"
+    },
+    {
+      "word": "edge",
+      "concept": "shape"
+    },
+    {
+      "word": "eight",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "either",
+      "concept": "same_and_different"
+    },
+    {
+      "word": "else",
+      "concept": "self_and_other"
+    },
+    {
+      "word": "empty",
+      "concept": "emptiness",
+      "antonyms": [
+        "fill",
+        "full"
+      ]
+    },
+    {
+      "word": "end",
+      "concept": "sequence",
+      "antonyms": [
+        "begin"
+      ]
+    },
+    {
+      "word": "enemy",
+      "concept": "person",
+      "antonyms": [
+        "friend"
+      ]
+    },
+    {
+      "word": "enough",
+      "concept": "enough"
+    },
+    {
+      "word": "enter",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "equal",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "evening",
+      "concept": "cycle",
+      "antonyms": [
+        "morning"
+      ]
+    },
+    {
+      "word": "ever",
+      "concept": "sequence"
+    },
+    {
+      "word": "everyone",
+      "concept": "person",
+      "antonyms": [
+        "nobody"
+      ]
+    },
+    {
+      "word": "everything",
+      "concept": "standing_for",
+      "antonyms": [
+        "nothing"
+      ]
+    },
+    {
+      "word": "extra",
+      "concept": "enough"
+    },
+    {
+      "word": "eye",
+      "concept": "body_part"
+    },
+    {
+      "word": "eyes",
+      "concept": "body_part"
+    },
+    {
+      "word": "face",
+      "concept": "body_part"
+    },
+    {
+      "word": "fair",
+      "concept": "good_and_bad",
+      "antonyms": [
+        "unfair"
+      ]
+    },
+    {
+      "word": "fall",
+      "concept": "falling",
+      "antonyms": [
+        "rise"
+      ]
+    },
+    {
+      "word": "falls",
+      "concept": "falling"
+    },
+    {
+      "word": "false",
+      "concept": "being_told",
+      "antonyms": [
+        "true"
+      ]
+    },
+    {
+      "word": "family",
+      "concept": "family"
+    },
+    {
+      "word": "far",
+      "concept": "spatial_position",
+      "antonyms": [
+        "near"
+      ]
+    },
+    {
+      "word": "fast",
+      "concept": "duration",
+      "antonyms": [
+        "slow"
+      ]
+    },
+    {
+      "word": "fat",
+      "concept": "physical_property",
+      "antonyms": [
+        "thin"
+      ]
+    },
+    {
+      "word": "father",
+      "concept": "person",
+      "antonyms": [
+        "mother"
+      ]
+    },
+    {
+      "word": "fed",
+      "concept": "tending"
+    },
+    {
+      "word": "feed",
+      "concept": "tending"
+    },
+    {
+      "word": "feeds",
+      "concept": "tending"
+    },
+    {
+      "word": "feel",
+      "concept": "feeling"
+    },
+    {
+      "word": "feels",
+      "concept": "feeling"
+    },
+    {
+      "word": "feet",
+      "concept": "body_part"
+    },
+    {
+      "word": "fell",
+      "concept": "falling"
+    },
+    {
+      "word": "felt",
+      "concept": "feeling"
+    },
+    {
+      "word": "few",
+      "concept": "more_and_fewer",
+      "antonyms": [
+        "many"
+      ]
+    },
+    {
+      "word": "fewer",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "fill",
+      "concept": "emptiness",
+      "antonyms": [
+        "empty"
+      ]
+    },
+    {
+      "word": "filled",
+      "concept": "enough"
+    },
+    {
+      "word": "finger",
+      "concept": "body_part"
+    },
+    {
+      "word": "finish",
+      "concept": "sequence"
+    },
+    {
+      "word": "fire",
+      "concept": "heat"
+    },
+    {
+      "word": "first",
+      "concept": "sequence",
+      "antonyms": [
+        "last"
+      ]
+    },
+    {
+      "word": "fish",
+      "concept": "animal"
+    },
+    {
+      "word": "fit",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "five",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "fix",
+      "concept": "things_break"
+    },
+    {
+      "word": "flat",
+      "concept": "shape"
+    },
+    {
+      "word": "float",
+      "concept": "moving_and_still",
+      "antonyms": [
+        "sink"
+      ]
+    },
+    {
+      "word": "floor",
+      "concept": "household_object"
+    },
+    {
+      "word": "flow",
+      "concept": "liquid"
+    },
+    {
+      "word": "flower",
+      "concept": "plant"
+    },
+    {
+      "word": "fly",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "follow",
+      "concept": "sequence"
+    },
+    {
+      "word": "following",
+      "concept": "direction"
+    },
+    {
+      "word": "food",
+      "concept": "need"
+    },
+    {
+      "word": "foot",
+      "concept": "body_part"
+    },
+    {
+      "word": "force",
+      "concept": "force"
+    },
+    {
+      "word": "forest",
+      "concept": "plant"
+    },
+    {
+      "word": "forget",
+      "concept": "knowing",
+      "antonyms": [
+        "remember"
+      ]
+    },
+    {
+      "word": "fork",
+      "concept": "household_object"
+    },
+    {
+      "word": "forward",
+      "concept": "direction"
+    },
+    {
+      "word": "four",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "freeze",
+      "concept": "heat"
+    },
+    {
+      "word": "friend",
+      "concept": "person",
+      "antonyms": [
+        "enemy"
+      ]
+    },
+    {
+      "word": "front",
+      "concept": "spatial_position",
+      "antonyms": [
+        "back"
+      ]
+    },
+    {
+      "word": "full",
+      "concept": "emptiness",
+      "antonyms": [
+        "empty"
+      ]
+    },
+    {
+      "word": "future",
+      "concept": "duration"
+    },
+    {
+      "word": "game",
+      "concept": "toy"
+    },
+    {
+      "word": "gap",
+      "concept": "emptiness"
+    },
+    {
+      "word": "garden",
+      "concept": "plant"
+    },
+    {
+      "word": "girl",
+      "concept": "person",
+      "antonyms": [
+        "boy"
+      ]
+    },
+    {
+      "word": "give",
+      "concept": "",
+      "antonyms": [
+        "take"
+      ]
+    },
+    {
+      "word": "given",
+      "concept": "exchange"
+    },
+    {
+      "word": "glad",
+      "concept": "feeling"
+    },
+    {
+      "word": "glass",
+      "concept": "material"
+    },
+    {
+      "word": "glue",
+      "concept": "activity"
+    },
+    {
+      "word": "glued",
+      "concept": "activity"
+    },
+    {
+      "word": "go",
+      "concept": "",
+      "antonyms": [
+        "come"
+      ]
+    },
+    {
+      "word": "gold",
+      "concept": "material"
+    },
+    {
+      "word": "gone",
+      "concept": "presence"
+    },
+    {
+      "word": "good",
+      "concept": "good_and_bad",
+      "antonyms": [
+        "bad"
+      ]
+    },
+    {
+      "word": "grandma",
+      "concept": "family",
+      "antonyms": [
+        "grandpa"
+      ]
+    },
+    {
+      "word": "grandpa",
+      "concept": "family",
+      "antonyms": [
+        "grandma"
+      ]
+    },
+    {
+      "word": "grass",
+      "concept": "plant"
+    },
+    {
+      "word": "green",
+      "concept": "physical_property"
+    },
+    {
+      "word": "grey",
+      "concept": "physical_property"
+    },
+    {
+      "word": "ground",
+      "concept": "material"
+    },
+    {
+      "word": "grow",
+      "concept": "change",
+      "antonyms": [
+        "shrink"
+      ]
+    },
+    {
+      "word": "grown",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "guess",
+      "concept": "knowing"
+    },
+    {
+      "word": "half",
+      "concept": "emptiness"
+    },
+    {
+      "word": "hand",
+      "concept": "body_part"
+    },
+    {
+      "word": "hands",
+      "concept": "body_part"
+    },
+    {
+      "word": "happen",
+      "concept": "change"
+    },
+    {
+      "word": "happened",
+      "concept": "change"
+    },
+    {
+      "word": "happens",
+      "concept": "change"
+    },
+    {
+      "word": "happy",
+      "concept": "feeling",
+      "antonyms": [
+        "sad"
+      ]
+    },
+    {
+      "word": "hard",
+      "concept": "physical_property",
+      "antonyms": [
+        "easy",
+        "soft"
+      ]
+    },
+    {
+      "word": "harm",
+      "concept": "danger",
+      "antonyms": [
+        "help"
+      ]
+    },
+    {
+      "word": "hate",
+      "concept": "feeling",
+      "antonyms": [
+        "love"
+      ]
+    },
+    {
+      "word": "head",
+      "concept": "body_part"
+    },
+    {
+      "word": "hear",
+      "concept": "body_part"
+    },
+    {
+      "word": "heard",
+      "concept": "sound"
+    },
+    {
+      "word": "heat",
+      "concept": "heat"
+    },
+    {
+      "word": "heavy",
+      "concept": "physical_property",
+      "antonyms": [
+        "light"
+      ]
+    },
+    {
+      "word": "help",
+      "concept": "activity",
+      "antonyms": [
+        "harm"
+      ]
+    },
+    {
+      "word": "her",
+      "concept": "person"
+    },
+    {
+      "word": "here",
+      "concept": "",
+      "antonyms": [
+        "there"
+      ]
+    },
+    {
+      "word": "hers",
+      "concept": "having"
+    },
+    {
+      "word": "herself",
+      "concept": "self_and_other"
+    },
+    {
+      "word": "hide",
+      "concept": "presence"
+    },
+    {
+      "word": "high",
+      "concept": "spatial_position",
+      "antonyms": [
+        "low"
+      ]
+    },
+    {
+      "word": "higher",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "him",
+      "concept": "person"
+    },
+    {
+      "word": "himself",
+      "concept": "self_and_other"
+    },
+    {
+      "word": "his",
+      "concept": "person"
+    },
+    {
+      "word": "hit",
+      "concept": "force"
+    },
+    {
+      "word": "hold",
+      "concept": "force"
+    },
+    {
+      "word": "holds",
+      "concept": "opinion"
+    },
+    {
+      "word": "hole",
+      "concept": "emptiness"
+    },
+    {
+      "word": "home",
+      "concept": "people_together"
+    },
+    {
+      "word": "honest",
+      "concept": "being_told"
+    },
+    {
+      "word": "horse",
+      "concept": "animal"
+    },
+    {
+      "word": "hot",
+      "concept": "danger",
+      "antonyms": [
+        "cold"
+      ]
+    },
+    {
+      "word": "house",
+      "concept": "household_object"
+    },
+    {
+      "word": "however",
+      "concept": "discourse_marker"
+    },
+    {
+      "word": "hundred",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "hungry",
+      "concept": "need"
+    },
+    {
+      "word": "hurry",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "hurt",
+      "concept": "danger"
+    },
+    {
+      "word": "ice",
+      "concept": "material"
+    },
+    {
+      "word": "idea",
+      "concept": "knowing"
+    },
+    {
+      "word": "impossible",
+      "concept": "can_and_cannot",
+      "antonyms": [
+        "possible"
+      ]
+    },
+    {
+      "word": "insect",
+      "concept": "animal"
+    },
+    {
+      "word": "inside",
+      "concept": "inside_and_outside",
+      "antonyms": [
+        "outside"
+      ]
+    },
+    {
+      "word": "instead",
+      "concept": "discourse_marker"
+    },
+    {
+      "word": "iron",
+      "concept": "metal"
+    },
+    {
+      "word": "itself",
+      "concept": "self_and_other"
+    },
+    {
+      "word": "jar",
+      "concept": "household_object"
+    },
+    {
+      "word": "job",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "jobs",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "join",
+      "concept": "people_together",
+      "antonyms": [
+        "separate"
+      ]
+    },
+    {
+      "word": "juice",
+      "concept": "liquid"
+    },
+    {
+      "word": "key",
+      "concept": "household_object"
+    },
+    {
+      "word": "kind",
+      "concept": "good_and_bad",
+      "antonyms": [
+        "unkind"
+      ]
+    },
+    {
+      "word": "kind",
+      "concept": "same_and_different"
+    },
+    {
+      "word": "king",
+      "concept": "someone_in_charge",
+      "antonyms": [
+        "queen"
+      ]
+    },
+    {
+      "word": "knew",
+      "concept": "knowing"
+    },
+    {
+      "word": "knife",
+      "concept": "household_object"
+    },
+    {
+      "word": "know",
+      "concept": "being_told"
+    },
+    {
+      "word": "lack",
+      "concept": "enough"
+    },
+    {
+      "word": "lacking",
+      "concept": "enough"
+    },
+    {
+      "word": "lamp",
+      "concept": "household_object"
+    },
+    {
+      "word": "land",
+      "concept": "falling"
+    },
+    {
+      "word": "large",
+      "concept": "physical_property"
+    },
+    {
+      "word": "last",
+      "concept": "sequence",
+      "antonyms": [
+        "first"
+      ]
+    },
+    {
+      "word": "lasted",
+      "concept": "wearing_out"
+    },
+    {
+      "word": "late",
+      "concept": "duration",
+      "antonyms": [
+        "early"
+      ]
+    },
+    {
+      "word": "later",
+      "concept": "duration"
+    },
+    {
+      "word": "laugh",
+      "concept": "feeling",
+      "antonyms": [
+        "cry"
+      ]
+    },
+    {
+      "word": "leader",
+      "concept": "someone_in_charge"
+    },
+    {
+      "word": "leaf",
+      "concept": "plant"
+    },
+    {
+      "word": "learn",
+      "concept": "being_told"
+    },
+    {
+      "word": "learned",
+      "concept": "knowing"
+    },
+    {
+      "word": "least",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "left",
+      "concept": "",
+      "antonyms": [
+        "right"
+      ]
+    },
+    {
+      "word": "leg",
+      "concept": "body_part"
+    },
+    {
+      "word": "less",
+      "concept": "more_and_fewer",
+      "antonyms": [
+        "more"
+      ]
+    },
+    {
+      "word": "letter",
+      "concept": "letter"
+    },
+    {
+      "word": "level",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "liar",
+      "concept": "person"
+    },
+    {
+      "word": "lid",
+      "concept": "household_object"
+    },
+    {
+      "word": "lie",
+      "concept": "being_told"
+    },
+    {
+      "word": "lift",
+      "concept": "force"
+    },
+    {
+      "word": "lifted",
+      "concept": "activity"
+    },
+    {
+      "word": "light",
+      "concept": "physical_property",
+      "antonyms": [
+        "heavy"
+      ]
+    },
+    {
+      "word": "like",
+      "concept": "feeling"
+    },
+    {
+      "word": "like",
+      "concept": "same_and_different",
+      "antonyms": [
+        "unlike"
+      ]
+    },
+    {
+      "word": "line",
+      "concept": "shape"
+    },
+    {
+      "word": "liquid",
+      "concept": "liquid"
+    },
+    {
+      "word": "list",
+      "concept": "written_record"
+    },
+    {
+      "word": "listen",
+      "concept": "sound"
+    },
+    {
+      "word": "lists",
+      "concept": "written_record"
+    },
+    {
+      "word": "little",
+      "concept": "physical_property"
+    },
+    {
+      "word": "live",
+      "concept": "living_and_not_living",
+      "antonyms": [
+        "die"
+      ]
+    },
+    {
+      "word": "living",
+      "concept": "living_and_not_living"
+    },
+    {
+      "word": "lock",
+      "concept": "opening_and_shutting",
+      "antonyms": [
+        "unlock"
+      ]
+    },
+    {
+      "word": "log",
+      "concept": "written_record"
+    },
+    {
+      "word": "long",
+      "concept": "shape",
+      "antonyms": [
+        "short"
+      ]
+    },
+    {
+      "word": "longer",
+      "concept": "measuring"
+    },
+    {
+      "word": "looking",
+      "concept": "checking"
+    },
+    {
+      "word": "lose",
+      "concept": "toy",
+      "antonyms": [
+        "win"
+      ]
+    },
+    {
+      "word": "lost",
+      "concept": "presence"
+    },
+    {
+      "word": "lot",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "loud",
+      "concept": "sound",
+      "antonyms": [
+        "quiet"
+      ]
+    },
+    {
+      "word": "love",
+      "concept": "feeling",
+      "antonyms": [
+        "hate"
+      ]
+    },
+    {
+      "word": "low",
+      "concept": "spatial_position",
+      "antonyms": [
+        "high"
+      ]
+    },
+    {
+      "word": "lower",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "man",
+      "concept": "person",
+      "antonyms": [
+        "woman"
+      ]
+    },
+    {
+      "word": "manage",
+      "concept": "can_and_cannot"
+    },
+    {
+      "word": "managed",
+      "concept": "can_and_cannot"
+    },
+    {
+      "word": "manner",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "many",
+      "concept": "more_and_fewer",
+      "antonyms": [
+        "few"
+      ]
+    },
+    {
+      "word": "mark",
+      "concept": "name"
+    },
+    {
+      "word": "mat",
+      "concept": "household_object"
+    },
+    {
+      "word": "match",
+      "concept": "correspondence"
+    },
+    {
+      "word": "me",
+      "concept": "person"
+    },
+    {
+      "word": "mean",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "mean",
+      "concept": "name"
+    },
+    {
+      "word": "meaning",
+      "concept": "standing_for"
+    },
+    {
+      "word": "means",
+      "concept": "name"
+    },
+    {
+      "word": "meant",
+      "concept": "standing_for"
+    },
+    {
+      "word": "measure",
+      "concept": "measuring"
+    },
+    {
+      "word": "measured",
+      "concept": "measuring"
+    },
+    {
+      "word": "measuring",
+      "concept": "measuring"
+    },
+    {
+      "word": "meet",
+      "concept": "people_together"
+    },
+    {
+      "word": "melt",
+      "concept": "heat"
+    },
+    {
+      "word": "mend",
+      "concept": "things_break"
+    },
+    {
+      "word": "metal",
+      "concept": "metal"
+    },
+    {
+      "word": "method",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "methods",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "middle",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "midnight",
+      "concept": "duration"
+    },
+    {
+      "word": "milk",
+      "concept": "liquid"
+    },
+    {
+      "word": "mind",
+      "concept": "tending"
+    },
+    {
+      "word": "minded",
+      "concept": "tending"
+    },
+    {
+      "word": "mine",
+      "concept": "having"
+    },
+    {
+      "word": "minute",
+      "concept": "duration"
+    },
+    {
+      "word": "minutes",
+      "concept": "duration"
+    },
+    {
+      "word": "missing",
+      "concept": "presence"
+    },
+    {
+      "word": "model",
+      "concept": "toy"
+    },
+    {
+      "word": "moment",
+      "concept": "duration"
+    },
+    {
+      "word": "month",
+      "concept": "cycle"
+    },
+    {
+      "word": "mood",
+      "concept": "feeling"
+    },
+    {
+      "word": "moon",
+      "concept": "cycle",
+      "antonyms": [
+        "sun"
+      ]
+    },
+    {
+      "word": "more",
+      "concept": "",
+      "antonyms": [
+        "less"
+      ]
+    },
+    {
+      "word": "morning",
+      "concept": "cycle",
+      "antonyms": [
+        "evening"
+      ]
+    },
+    {
+      "word": "mother",
+      "concept": "person",
+      "antonyms": [
+        "father"
+      ]
+    },
+    {
+      "word": "mouse",
+      "concept": "animal"
+    },
+    {
+      "word": "mouth",
+      "concept": "body_part"
+    },
+    {
+      "word": "move",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "moved",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "much",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "mud",
+      "concept": "material"
+    },
+    {
+      "word": "mum",
+      "concept": "family"
+    },
+    {
+      "word": "myself",
+      "concept": "self_and_other"
+    },
+    {
+      "word": "nail",
+      "concept": "metal"
+    },
+    {
+      "word": "nails",
+      "concept": "metal"
+    },
+    {
+      "word": "name",
+      "concept": "name"
+    },
+    {
+      "word": "named",
+      "concept": "name"
+    },
+    {
+      "word": "narrow",
+      "concept": "physical_property",
+      "antonyms": [
+        "wide"
+      ]
+    },
+    {
+      "word": "nasty",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "natural",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "near",
+      "concept": "spatial_position",
+      "antonyms": [
+        "far"
+      ]
+    },
+    {
+      "word": "need",
+      "concept": "need"
+    },
+    {
+      "word": "never",
+      "concept": "cycle",
+      "antonyms": [
+        "always"
+      ]
+    },
+    {
+      "word": "new",
+      "concept": "physical_property",
+      "antonyms": [
+        "old"
+      ]
+    },
+    {
+      "word": "next",
+      "concept": "sequence"
+    },
+    {
+      "word": "nice",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "night",
+      "concept": "cycle",
+      "antonyms": [
+        "day"
+      ]
+    },
+    {
+      "word": "nine",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "no",
+      "concept": "",
+      "antonyms": [
+        "yes"
+      ]
+    },
+    {
+      "word": "nobody",
+      "concept": "person",
+      "antonyms": [
+        "everyone"
+      ]
+    },
+    {
+      "word": "noise",
+      "concept": "sound"
+    },
+    {
+      "word": "noisy",
+      "concept": "sound",
+      "antonyms": [
+        "quiet"
+      ]
+    },
+    {
+      "word": "none",
+      "concept": "counting"
+    },
+    {
+      "word": "noon",
+      "concept": "duration"
+    },
+    {
+      "word": "nose",
+      "concept": "body_part"
+    },
+    {
+      "word": "note",
+      "concept": "written_record"
+    },
+    {
+      "word": "notes",
+      "concept": "written_record"
+    },
+    {
+      "word": "nothing",
+      "concept": "emptiness",
+      "antonyms": [
+        "everything"
+      ]
+    },
+    {
+      "word": "number",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "nurse",
+      "concept": "tending"
+    },
+    {
+      "word": "often",
+      "concept": "cycle"
+    },
+    {
+      "word": "old",
+      "concept": "physical_property",
+      "antonyms": [
+        "new",
+        "young"
+      ]
+    },
+    {
+      "word": "one",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "open",
+      "concept": "opening_and_shutting",
+      "antonyms": [
+        "shut"
+      ]
+    },
+    {
+      "word": "opinion",
+      "concept": "opinion"
+    },
+    {
+      "word": "opposite",
+      "concept": "standing_for"
+    },
+    {
+      "word": "opposites",
+      "concept": "standing_for"
+    },
+    {
+      "word": "order",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "others",
+      "concept": "self_and_other"
+    },
+    {
+      "word": "ours",
+      "concept": "having"
+    },
+    {
+      "word": "outside",
+      "concept": "inside_and_outside",
+      "antonyms": [
+        "inside"
+      ]
+    },
+    {
+      "word": "oven",
+      "concept": "household_object"
+    },
+    {
+      "word": "over",
+      "concept": "",
+      "antonyms": [
+        "under"
+      ]
+    },
+    {
+      "word": "own",
+      "concept": "having"
+    },
+    {
+      "word": "owned",
+      "concept": "having"
+    },
+    {
+      "word": "owns",
+      "concept": "having"
+    },
+    {
+      "word": "pace",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "page",
+      "concept": "writing"
+    },
+    {
+      "word": "paid",
+      "concept": "exchange"
+    },
+    {
+      "word": "pain",
+      "concept": "danger"
+    },
+    {
+      "word": "pair",
+      "concept": "correspondence"
+    },
+    {
+      "word": "pan",
+      "concept": "household_object"
+    },
+    {
+      "word": "paper",
+      "concept": "material"
+    },
+    {
+      "word": "parent",
+      "concept": "family"
+    },
+    {
+      "word": "part",
+      "concept": "component_and_system"
+    },
+    {
+      "word": "past",
+      "concept": "direction"
+    },
+    {
+      "word": "path",
+      "concept": "direction"
+    },
+    {
+      "word": "paths",
+      "concept": "direction"
+    },
+    {
+      "word": "patted",
+      "concept": "touching"
+    },
+    {
+      "word": "pay",
+      "concept": "exchange"
+    },
+    {
+      "word": "pen",
+      "concept": "writing"
+    },
+    {
+      "word": "people",
+      "concept": "person"
+    },
+    {
+      "word": "period",
+      "concept": "duration"
+    },
+    {
+      "word": "person",
+      "concept": "person"
+    },
+    {
+      "word": "phrase",
+      "concept": "sentence"
+    },
+    {
+      "word": "picture",
+      "concept": "toy"
+    },
+    {
+      "word": "piece",
+      "concept": "things_break"
+    },
+    {
+      "word": "place",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "plant",
+      "concept": "plant"
+    },
+    {
+      "word": "plastic",
+      "concept": "material"
+    },
+    {
+      "word": "plate",
+      "concept": "household_object"
+    },
+    {
+      "word": "play",
+      "concept": "toy"
+    },
+    {
+      "word": "plenty",
+      "concept": "enough"
+    },
+    {
+      "word": "pocket",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "point",
+      "concept": "correspondence"
+    },
+    {
+      "word": "poor",
+      "concept": "having",
+      "antonyms": [
+        "rich"
+      ]
+    },
+    {
+      "word": "possible",
+      "concept": "can_and_cannot",
+      "antonyms": [
+        "impossible"
+      ]
+    },
+    {
+      "word": "pot",
+      "concept": "household_object"
+    },
+    {
+      "word": "pour",
+      "concept": "liquid"
+    },
+    {
+      "word": "poured",
+      "concept": "liquid"
+    },
+    {
+      "word": "press",
+      "concept": "force"
+    },
+    {
+      "word": "pressed",
+      "concept": "touching"
+    },
+    {
+      "word": "pretend",
+      "concept": "toy",
+      "antonyms": [
+        "real"
+      ]
+    },
+    {
+      "word": "proper",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "properly",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "prove",
+      "concept": "checking"
+    },
+    {
+      "word": "pull",
+      "concept": "force",
+      "antonyms": [
+        "push"
+      ]
+    },
+    {
+      "word": "push",
+      "concept": "force",
+      "antonyms": [
+        "pull"
+      ]
+    },
+    {
+      "word": "queen",
+      "concept": "someone_in_charge",
+      "antonyms": [
+        "king"
+      ]
+    },
+    {
+      "word": "question",
+      "concept": "asking"
+    },
+    {
+      "word": "questions",
+      "concept": "asking"
+    },
+    {
+      "word": "quick",
+      "concept": "duration"
+    },
+    {
+      "word": "quickly",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "quiet",
+      "concept": "sound",
+      "antonyms": [
+        "loud",
+        "noisy"
+      ]
+    },
+    {
+      "word": "rain",
+      "concept": "weather"
+    },
+    {
+      "word": "raise",
+      "concept": "falling"
+    },
+    {
+      "word": "raw",
+      "concept": "raw_and_made",
+      "antonyms": [
+        "cooked"
+      ]
+    },
+    {
+      "word": "reach",
+      "concept": "can_and_cannot"
+    },
+    {
+      "word": "reached",
+      "concept": "can_and_cannot"
+    },
+    {
+      "word": "reaches",
+      "concept": "change"
+    },
+    {
+      "word": "read",
+      "concept": "writing"
+    },
+    {
+      "word": "ready",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "real",
+      "concept": "presence",
+      "antonyms": [
+        "pretend"
+      ]
+    },
+    {
+      "word": "record",
+      "concept": "written_record"
+    },
+    {
+      "word": "records",
+      "concept": "written_record"
+    },
+    {
+      "word": "red",
+      "concept": "physical_property"
+    },
+    {
+      "word": "remain",
+      "concept": "presence"
+    },
+    {
+      "word": "remember",
+      "concept": "knowing",
+      "antonyms": [
+        "forget"
+      ]
+    },
+    {
+      "word": "repeat",
+      "concept": "cycle"
+    },
+    {
+      "word": "replied",
+      "concept": "asking"
+    },
+    {
+      "word": "reply",
+      "concept": "asking"
+    },
+    {
+      "word": "represent",
+      "concept": "standing_for"
+    },
+    {
+      "word": "represents",
+      "concept": "standing_for"
+    },
+    {
+      "word": "request",
+      "concept": "asking"
+    },
+    {
+      "word": "rest",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "rich",
+      "concept": "having",
+      "antonyms": [
+        "poor"
+      ]
+    },
+    {
+      "word": "right",
+      "concept": "being_told",
+      "antonyms": [
+        "wrong"
+      ]
+    },
+    {
+      "word": "right",
+      "concept": "direction",
+      "antonyms": [
+        "left"
+      ]
+    },
+    {
+      "word": "ring",
+      "concept": "sound"
+    },
+    {
+      "word": "rise",
+      "concept": "falling",
+      "antonyms": [
+        "fall"
+      ]
+    },
+    {
+      "word": "rock",
+      "concept": "material"
+    },
+    {
+      "word": "roll",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "roof",
+      "concept": "household_object"
+    },
+    {
+      "word": "room",
+      "concept": "household_object"
+    },
+    {
+      "word": "rope",
+      "concept": "material"
+    },
+    {
+      "word": "rough",
+      "concept": "physical_property",
+      "antonyms": [
+        "smooth"
+      ]
+    },
+    {
+      "word": "round",
+      "concept": "shape"
+    },
+    {
+      "word": "rub",
+      "concept": "touching"
+    },
+    {
+      "word": "rubbed",
+      "concept": "touching"
+    },
+    {
+      "word": "rule",
+      "concept": "someone_in_charge"
+    },
+    {
+      "word": "ruler",
+      "concept": "measuring"
+    },
+    {
+      "word": "rules",
+      "concept": "someone_in_charge"
+    },
+    {
+      "word": "run",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "rush",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "rust",
+      "concept": "metal"
+    },
+    {
+      "word": "rusted",
+      "concept": "metal"
+    },
+    {
+      "word": "sad",
+      "concept": "feeling",
+      "antonyms": [
+        "happy"
+      ]
+    },
+    {
+      "word": "safe",
+      "concept": "danger",
+      "antonyms": [
+        "unsafe"
+      ]
+    },
+    {
+      "word": "same",
+      "concept": "",
+      "antonyms": [
+        "different"
+      ]
+    },
+    {
+      "word": "sand",
+      "concept": "material"
+    },
+    {
+      "word": "scared",
+      "concept": "feeling"
+    },
+    {
+      "word": "school",
+      "concept": "people_together"
+    },
+    {
+      "word": "second",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "secret",
+      "concept": "knowing"
+    },
+    {
+      "word": "seed",
+      "concept": "plant"
+    },
+    {
+      "word": "seemed",
+      "concept": "opinion"
+    },
+    {
+      "word": "seems",
+      "concept": "opinion"
+    },
+    {
+      "word": "self",
+      "concept": "self_and_other"
+    },
+    {
+      "word": "sell",
+      "concept": "exchange",
+      "antonyms": [
+        "buy"
+      ]
+    },
+    {
+      "word": "sentence",
+      "concept": "sentence"
+    },
+    {
+      "word": "sentences",
+      "concept": "sentence"
+    },
+    {
+      "word": "separate",
+      "concept": "people_together",
+      "antonyms": [
+        "join"
+      ]
+    },
+    {
+      "word": "set",
+      "concept": "activity"
+    },
+    {
+      "word": "set",
+      "concept": "correspondence"
+    },
+    {
+      "word": "settles",
+      "concept": "checking"
+    },
+    {
+      "word": "seven",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "shake",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "shallow",
+      "concept": "spatial_position",
+      "antonyms": [
+        "deep"
+      ]
+    },
+    {
+      "word": "shape",
+      "concept": "shape"
+    },
+    {
+      "word": "shaped",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "share",
+      "concept": "people_together"
+    },
+    {
+      "word": "sharp",
+      "concept": "physical_property",
+      "antonyms": [
+        "dull"
+      ]
+    },
+    {
+      "word": "shelf",
+      "concept": "household_object"
+    },
+    {
+      "word": "shell",
+      "concept": "animal"
+    },
+    {
+      "word": "shoes",
+      "concept": "household_object"
+    },
+    {
+      "word": "short",
+      "concept": "physical_property",
+      "antonyms": [
+        "long",
+        "tall"
+      ]
+    },
+    {
+      "word": "shortage",
+      "concept": "enough"
+    },
+    {
+      "word": "shorter",
+      "concept": "measuring"
+    },
+    {
+      "word": "shoulder",
+      "concept": "body_part"
+    },
+    {
+      "word": "show",
+      "concept": "checking"
+    },
+    {
+      "word": "shown",
+      "concept": "standing_for"
+    },
+    {
+      "word": "shrink",
+      "concept": "change",
+      "antonyms": [
+        "grow"
+      ]
+    },
+    {
+      "word": "shut",
+      "concept": "opening_and_shutting",
+      "antonyms": [
+        "open"
+      ]
+    },
+    {
+      "word": "sick",
+      "concept": "danger"
+    },
+    {
+      "word": "side",
+      "concept": "shape"
+    },
+    {
+      "word": "sign",
+      "concept": "standing_for"
+    },
+    {
+      "word": "signs",
+      "concept": "standing_for"
+    },
+    {
+      "word": "silver",
+      "concept": "metal"
+    },
+    {
+      "word": "sing",
+      "concept": "sound"
+    },
+    {
+      "word": "sink",
+      "concept": "household_object",
+      "antonyms": [
+        "float"
+      ]
+    },
+    {
+      "word": "sister",
+      "concept": "family",
+      "antonyms": [
+        "brother"
+      ]
+    },
+    {
+      "word": "six",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "size",
+      "concept": "physical_property"
+    },
+    {
+      "word": "skip",
+      "concept": "change"
+    },
+    {
+      "word": "sky",
+      "concept": "weather"
+    },
+    {
+      "word": "sleep",
+      "concept": "living_and_not_living",
+      "antonyms": [
+        "wake"
+      ]
+    },
+    {
+      "word": "slide",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "slow",
+      "concept": "duration",
+      "antonyms": [
+        "fast"
+      ]
+    },
+    {
+      "word": "slowly",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "small",
+      "concept": "physical_property",
+      "antonyms": [
+        "big"
+      ]
+    },
+    {
+      "word": "smaller",
+      "concept": "measuring"
+    },
+    {
+      "word": "smash",
+      "concept": "things_break"
+    },
+    {
+      "word": "smell",
+      "concept": "air"
+    },
+    {
+      "word": "smooth",
+      "concept": "physical_property",
+      "antonyms": [
+        "rough"
+      ]
+    },
+    {
+      "word": "snap",
+      "concept": "things_break"
+    },
+    {
+      "word": "snow",
+      "concept": "weather"
+    },
+    {
+      "word": "soap",
+      "concept": "liquid"
+    },
+    {
+      "word": "soft",
+      "concept": "physical_property",
+      "antonyms": [
+        "hard"
+      ]
+    },
+    {
+      "word": "sold",
+      "concept": "exchange"
+    },
+    {
+      "word": "someone",
+      "concept": "person"
+    },
+    {
+      "word": "something",
+      "concept": "standing_for"
+    },
+    {
+      "word": "sometimes",
+      "concept": "cycle"
+    },
+    {
+      "word": "son",
+      "concept": "family",
+      "antonyms": [
+        "daughter"
+      ]
+    },
+    {
+      "word": "song",
+      "concept": "sound"
+    },
+    {
+      "word": "soon",
+      "concept": "duration"
+    },
+    {
+      "word": "sound",
+      "concept": "sound"
+    },
+    {
+      "word": "space",
+      "concept": "emptiness"
+    },
+    {
+      "word": "spare",
+      "concept": "enough"
+    },
+    {
+      "word": "speak",
+      "concept": "sentence"
+    },
+    {
+      "word": "speaks",
+      "concept": "sentence"
+    },
+    {
+      "word": "speed",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "spell",
+      "concept": "word"
+    },
+    {
+      "word": "spelled",
+      "concept": "word"
+    },
+    {
+      "word": "spelling",
+      "concept": "word"
+    },
+    {
+      "word": "spill",
+      "concept": "liquid"
+    },
+    {
+      "word": "spilled",
+      "concept": "liquid"
+    },
+    {
+      "word": "spoke",
+      "concept": "sentence"
+    },
+    {
+      "word": "spoken",
+      "concept": "sentence"
+    },
+    {
+      "word": "spoon",
+      "concept": "household_object"
+    },
+    {
+      "word": "spot",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "square",
+      "concept": "shape"
+    },
+    {
+      "word": "squeeze",
+      "concept": "force"
+    },
+    {
+      "word": "stair",
+      "concept": "household_object"
+    },
+    {
+      "word": "stand",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "stands",
+      "concept": "standing_for"
+    },
+    {
+      "word": "star",
+      "concept": "weather"
+    },
+    {
+      "word": "stars",
+      "concept": "weather"
+    },
+    {
+      "word": "start",
+      "concept": "sequence",
+      "antonyms": [
+        "stop"
+      ]
+    },
+    {
+      "word": "stay",
+      "concept": "presence"
+    },
+    {
+      "word": "steal",
+      "concept": "having"
+    },
+    {
+      "word": "steam",
+      "concept": "heat"
+    },
+    {
+      "word": "steel",
+      "concept": "metal"
+    },
+    {
+      "word": "step",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "steps",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "stick",
+      "concept": "material"
+    },
+    {
+      "word": "sticks",
+      "concept": "material"
+    },
+    {
+      "word": "stone",
+      "concept": "material"
+    },
+    {
+      "word": "stop",
+      "concept": "change",
+      "antonyms": [
+        "start"
+      ]
+    },
+    {
+      "word": "storm",
+      "concept": "weather"
+    },
+    {
+      "word": "story",
+      "concept": "writing"
+    },
+    {
+      "word": "stove",
+      "concept": "household_object"
+    },
+    {
+      "word": "straight",
+      "concept": "shape",
+      "antonyms": [
+        "curved"
+      ]
+    },
+    {
+      "word": "stranger",
+      "concept": "person"
+    },
+    {
+      "word": "straw",
+      "concept": "material"
+    },
+    {
+      "word": "street",
+      "concept": "household_object"
+    },
+    {
+      "word": "string",
+      "concept": "material"
+    },
+    {
+      "word": "stroke",
+      "concept": "touching"
+    },
+    {
+      "word": "strong",
+      "concept": "force",
+      "antonyms": [
+        "weak"
+      ]
+    },
+    {
+      "word": "stuff",
+      "concept": "material"
+    },
+    {
+      "word": "sun",
+      "concept": "cycle",
+      "antonyms": [
+        "moon"
+      ]
+    },
+    {
+      "word": "sunny",
+      "concept": "weather"
+    },
+    {
+      "word": "suppose",
+      "concept": "opinion"
+    },
+    {
+      "word": "sure",
+      "concept": "knowing"
+    },
+    {
+      "word": "swallow",
+      "concept": "living_and_not_living"
+    },
+    {
+      "word": "swap",
+      "concept": "exchange"
+    },
+    {
+      "word": "swapped",
+      "concept": "exchange"
+    },
+    {
+      "word": "swim",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "symbol",
+      "concept": "standing_for"
+    },
+    {
+      "word": "symbols",
+      "concept": "standing_for"
+    },
+    {
+      "word": "table",
+      "concept": "household_object"
+    },
+    {
+      "word": "take",
+      "concept": "",
+      "antonyms": [
+        "give"
+      ]
+    },
+    {
+      "word": "talk",
+      "concept": "sentence"
+    },
+    {
+      "word": "talked",
+      "concept": "sentence"
+    },
+    {
+      "word": "talking",
+      "concept": "sentence"
+    },
+    {
+      "word": "tall",
+      "concept": "physical_property",
+      "antonyms": [
+        "short"
+      ]
+    },
+    {
+      "word": "taller",
+      "concept": "measuring"
+    },
+    {
+      "word": "tally",
+      "concept": "written_record"
+    },
+    {
+      "word": "task",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "tasks",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "teacher",
+      "concept": "someone_in_charge"
+    },
+    {
+      "word": "tear",
+      "concept": "things_break"
+    },
+    {
+      "word": "tend",
+      "concept": "tending"
+    },
+    {
+      "word": "tended",
+      "concept": "tending"
+    },
+    {
+      "word": "tends",
+      "concept": "tending"
+    },
+    {
+      "word": "term",
+      "concept": "word"
+    },
+    {
+      "word": "terms",
+      "concept": "word"
+    },
+    {
+      "word": "test",
+      "concept": "checking"
+    },
+    {
+      "word": "theirs",
+      "concept": "having"
+    },
+    {
+      "word": "there",
+      "concept": "",
+      "antonyms": [
+        "here"
+      ]
+    },
+    {
+      "word": "thick",
+      "concept": "physical_property",
+      "antonyms": [
+        "thin"
+      ]
+    },
+    {
+      "word": "thief",
+      "concept": "person"
+    },
+    {
+      "word": "thin",
+      "concept": "physical_property",
+      "antonyms": [
+        "fat",
+        "thick"
+      ]
+    },
+    {
+      "word": "thing",
+      "concept": "things_break"
+    },
+    {
+      "word": "think",
+      "concept": "knowing"
+    },
+    {
+      "word": "third",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "thirsty",
+      "concept": "need"
+    },
+    {
+      "word": "thought",
+      "concept": "knowing"
+    },
+    {
+      "word": "thousand",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "three",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "throw",
+      "concept": "force"
+    },
+    {
+      "word": "tie",
+      "concept": "activity",
+      "antonyms": [
+        "untie"
+      ]
+    },
+    {
+      "word": "tied",
+      "concept": "activity"
+    },
+    {
+      "word": "time",
+      "concept": "duration"
+    },
+    {
+      "word": "tin",
+      "concept": "metal"
+    },
+    {
+      "word": "tip",
+      "concept": "falling"
+    },
+    {
+      "word": "tired",
+      "concept": "wearing_out"
+    },
+    {
+      "word": "today",
+      "concept": "weather",
+      "antonyms": [
+        "tomorrow",
+        "yesterday"
+      ]
+    },
+    {
+      "word": "together",
+      "concept": "correspondence"
+    },
+    {
+      "word": "tomorrow",
+      "concept": "weather",
+      "antonyms": [
+        "today"
+      ]
+    },
+    {
+      "word": "tool",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "tools",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "top",
+      "concept": "spatial_position",
+      "antonyms": [
+        "bottom"
+      ]
+    },
+    {
+      "word": "torn",
+      "concept": "things_break"
+    },
+    {
+      "word": "touch",
+      "concept": "touching"
+    },
+    {
+      "word": "touched",
+      "concept": "touching"
+    },
+    {
+      "word": "touches",
+      "concept": "touching"
+    },
+    {
+      "word": "toward",
+      "concept": "direction"
+    },
+    {
+      "word": "towards",
+      "concept": "direction"
+    },
+    {
+      "word": "town",
+      "concept": "people_together"
+    },
+    {
+      "word": "toy",
+      "concept": "toy"
+    },
+    {
+      "word": "trade",
+      "concept": "exchange"
+    },
+    {
+      "word": "traded",
+      "concept": "exchange"
+    },
+    {
+      "word": "tray",
+      "concept": "household_object"
+    },
+    {
+      "word": "tree",
+      "concept": "plant"
+    },
+    {
+      "word": "trees",
+      "concept": "plant"
+    },
+    {
+      "word": "trick",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "tried",
+      "concept": "checking"
+    },
+    {
+      "word": "true",
+      "concept": "being_told",
+      "antonyms": [
+        "false"
+      ]
+    },
+    {
+      "word": "trust",
+      "concept": "opinion"
+    },
+    {
+      "word": "try",
+      "concept": "checking"
+    },
+    {
+      "word": "tumble",
+      "concept": "falling"
+    },
+    {
+      "word": "turn",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "twice",
+      "concept": "cycle"
+    },
+    {
+      "word": "two",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "unable",
+      "concept": "can_and_cannot",
+      "antonyms": [
+        "able"
+      ]
+    },
+    {
+      "word": "uncle",
+      "concept": "family",
+      "antonyms": [
+        "aunt"
+      ]
+    },
+    {
+      "word": "uncover",
+      "concept": "opening_and_shutting",
+      "antonyms": [
+        "cover"
+      ]
+    },
+    {
+      "word": "under",
+      "concept": "",
+      "antonyms": [
+        "over"
+      ]
+    },
+    {
+      "word": "understand",
+      "concept": "knowing"
+    },
+    {
+      "word": "unfair",
+      "concept": "good_and_bad",
+      "antonyms": [
+        "fair"
+      ]
+    },
+    {
+      "word": "unkind",
+      "concept": "good_and_bad",
+      "antonyms": [
+        "kind"
+      ]
+    },
+    {
+      "word": "unlike",
+      "concept": "same_and_different",
+      "antonyms": [
+        "like"
+      ]
+    },
+    {
+      "word": "unlock",
+      "concept": "opening_and_shutting",
+      "antonyms": [
+        "lock"
+      ]
+    },
+    {
+      "word": "unsafe",
+      "concept": "danger",
+      "antonyms": [
+        "safe"
+      ]
+    },
+    {
+      "word": "untie",
+      "concept": "activity",
+      "antonyms": [
+        "tie"
+      ]
+    },
+    {
+      "word": "until",
+      "concept": "sequence"
+    },
+    {
+      "word": "up",
+      "concept": "",
+      "antonyms": [
+        "down"
+      ]
+    },
+    {
+      "word": "upset",
+      "concept": "feeling"
+    },
+    {
+      "word": "use",
+      "concept": "wearing_out"
+    },
+    {
+      "word": "used",
+      "concept": "wearing_out"
+    },
+    {
+      "word": "using",
+      "concept": "wearing_out"
+    },
+    {
+      "word": "view",
+      "concept": "opinion"
+    },
+    {
+      "word": "views",
+      "concept": "opinion"
+    },
+    {
+      "word": "village",
+      "concept": "people_together"
+    },
+    {
+      "word": "voice",
+      "concept": "sound"
+    },
+    {
+      "word": "wait",
+      "concept": "duration"
+    },
+    {
+      "word": "wake",
+      "concept": "living_and_not_living",
+      "antonyms": [
+        "sleep"
+      ]
+    },
+    {
+      "word": "walk",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "wall",
+      "concept": "household_object"
+    },
+    {
+      "word": "want",
+      "concept": "need"
+    },
+    {
+      "word": "warm",
+      "concept": "heat",
+      "antonyms": [
+        "cool"
+      ]
+    },
+    {
+      "word": "wash",
+      "concept": "liquid"
+    },
+    {
+      "word": "watch",
+      "concept": "danger"
+    },
+    {
+      "word": "watch",
+      "concept": "measuring"
+    },
+    {
+      "word": "water",
+      "concept": "liquid"
+    },
+    {
+      "word": "way",
+      "concept": "discourse_marker"
+    },
+    {
+      "word": "weak",
+      "concept": "force",
+      "antonyms": [
+        "strong"
+      ]
+    },
+    {
+      "word": "wear",
+      "concept": "wearing_out"
+    },
+    {
+      "word": "weather",
+      "concept": "weather"
+    },
+    {
+      "word": "week",
+      "concept": "cycle"
+    },
+    {
+      "word": "weigh",
+      "concept": "measuring"
+    },
+    {
+      "word": "weighed",
+      "concept": "measuring"
+    },
+    {
+      "word": "well",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "wet",
+      "concept": "physical_property",
+      "antonyms": [
+        "dry"
+      ]
+    },
+    {
+      "word": "wheel",
+      "concept": "household_object"
+    },
+    {
+      "word": "while",
+      "concept": "duration"
+    },
+    {
+      "word": "white",
+      "concept": "physical_property"
+    },
+    {
+      "word": "whole",
+      "concept": "component_and_system"
+    },
+    {
+      "word": "wide",
+      "concept": "physical_property",
+      "antonyms": [
+        "narrow"
+      ]
+    },
+    {
+      "word": "win",
+      "concept": "toy",
+      "antonyms": [
+        "lose"
+      ]
+    },
+    {
+      "word": "wind",
+      "concept": "air"
+    },
+    {
+      "word": "window",
+      "concept": "household_object"
+    },
+    {
+      "word": "wire",
+      "concept": "metal"
+    },
+    {
+      "word": "woman",
+      "concept": "person",
+      "antonyms": [
+        "man"
+      ]
+    },
+    {
+      "word": "wonder",
+      "concept": "knowing"
+    },
+    {
+      "word": "wood",
+      "concept": "plant"
+    },
+    {
+      "word": "wooden",
+      "concept": "material"
+    },
+    {
+      "word": "word",
+      "concept": "word"
+    },
+    {
+      "word": "words",
+      "concept": "word"
+    },
+    {
+      "word": "work",
+      "concept": "activity"
+    },
+    {
+      "word": "working",
+      "concept": "activity"
+    },
+    {
+      "word": "worn",
+      "concept": "wearing_out"
+    },
+    {
+      "word": "worse",
+      "concept": "good_and_bad",
+      "antonyms": [
+        "better"
+      ]
+    },
+    {
+      "word": "worst",
+      "concept": "good_and_bad",
+      "antonyms": [
+        "best"
+      ]
+    },
+    {
+      "word": "write",
+      "concept": "writing"
+    },
+    {
+      "word": "written",
+      "concept": "writing"
+    },
+    {
+      "word": "wrong",
+      "concept": "knowing",
+      "antonyms": [
+        "right"
+      ]
+    },
+    {
+      "word": "wrote",
+      "concept": "writing"
+    },
+    {
+      "word": "year",
+      "concept": "cycle"
+    },
+    {
+      "word": "yellow",
+      "concept": "physical_property"
+    },
+    {
+      "word": "yes",
+      "concept": "",
+      "antonyms": [
+        "no"
+      ]
+    },
+    {
+      "word": "yesterday",
+      "concept": "weather",
+      "antonyms": [
+        "today"
+      ]
+    },
+    {
+      "word": "young",
+      "concept": "physical_property",
+      "antonyms": [
+        "old"
+      ]
+    },
+    {
+      "word": "yours",
+      "concept": "having"
+    },
+    {
+      "word": "yourself",
+      "concept": "self_and_other"
+    },
+    {
+      "word": "zero",
+      "concept": "counting"
+    }
   ]
 }

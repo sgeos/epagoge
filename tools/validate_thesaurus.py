@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Check that no antonym has been admitted without its opposite.
+"""Check the thesaurus covers every sense and names reachable words.
+
+**Two roles.** During authoring this finds words admitted without their
+opposite. Afterwards it is level-one reference material beside the
+dictionary, which is why coverage is required and why every word it names
+must itself be admissible at the level.
 
 Exits non-zero on any violation, so it is usable as a gate.
 
@@ -12,7 +17,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from epagoge.thesaurus import admissible_at, load, validate
+from epagoge.thesaurus import load, validate
 from epagoge.vocabulary import load_vocabulary
 
 
@@ -29,17 +34,22 @@ def main(argv: list[str]) -> int:
     violations = validate(thesaurus, vocabulary, level)
     if violations:
         print(f"{len(violations)} violation(s) in {argv[1]}:", file=sys.stderr)
-        for v in violations:
+        for v in violations[:20]:
             print(f"  [{v.code}] {v.detail}", file=sys.stderr)
+        if len(violations) > 20:
+            print(f"  ... and {len(violations) - 20} more", file=sys.stderr)
         return 1
 
-    reachable = sum(
-        1 for pair in thesaurus.antonyms if admissible_at(vocabulary, pair[0], level)
-    )
+    opposed = sum(1 for e in thesaurus.entries if e.antonyms)
+    paired = sum(1 for e in thesaurus.entries if e.synonyms)
+    senses = sum(1 for t in vocabulary.terms if t.level <= level)
     print(f"{argv[1]}: valid")
-    print(f"  pairs        {len(thesaurus.antonyms)}")
-    print(f"  words        {len(thesaurus.words())}")
-    print(f"  at level {level}    {reachable} pairs with both ends reachable")
+    print(
+        f"  entries      {len(thesaurus.entries)} over {len(thesaurus.words())} words"
+    )
+    print(f"  covering     {senses} senses admitted at level {level}")
+    print(f"  antonyms     {opposed} entries carry one")
+    print(f"  synonyms     {paired} entries carry one")
     return 0
 
 
