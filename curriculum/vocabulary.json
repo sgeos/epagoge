@@ -825,6 +825,15 @@
       ]
     },
     {
+      "word": "breeze",
+      "concept": "weather",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "breezes"
+      ]
+    },
+    {
       "word": "bridge",
       "concept": "way_of_doing",
       "level": 1,
@@ -1812,6 +1821,17 @@
       ]
     },
     {
+      "word": "dream",
+      "concept": "real_and_pretend",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "dreamed",
+        "dreaming",
+        "dreams"
+      ]
+    },
+    {
       "word": "drift",
       "concept": "moving_and_still",
       "level": 1,
@@ -2693,6 +2713,17 @@
       "pos": "verb"
     },
     {
+      "word": "hang",
+      "concept": "spatial_position",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "hanging",
+        "hangs",
+        "hung"
+      ]
+    },
+    {
       "word": "happen",
       "concept": "change",
       "level": 1,
@@ -2951,6 +2982,15 @@
       "word": "honest",
       "concept": "saying_what_you_saw",
       "level": 1
+    },
+    {
+      "word": "hook",
+      "concept": "household_object",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "hooks"
+      ]
     },
     {
       "word": "horse",
@@ -4715,7 +4755,13 @@
     {
       "word": "rain",
       "concept": "weather",
-      "level": 1
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "rained",
+        "raining",
+        "rains"
+      ]
     },
     {
       "word": "raise",
@@ -5685,7 +5731,13 @@
     {
       "word": "snow",
       "concept": "weather",
-      "level": 1
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "snowed",
+        "snowing",
+        "snows"
+      ]
     },
     {
       "word": "soap",
@@ -6197,6 +6249,17 @@
         "swimming",
         "swims",
         "swum"
+      ]
+    },
+    {
+      "word": "swing",
+      "concept": "moving_and_still",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "swinging",
+        "swings",
+        "swung"
       ]
     },
     {

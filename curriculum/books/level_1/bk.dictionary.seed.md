@@ -542,7 +542,12 @@
     "dict.1.heal": {"concepts": ["mending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:heal"}, "defines": {"kind": "word", "target": "heal"}},
     "dict.1.sore": {"concepts": ["being_hurt"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sore"}, "defines": {"kind": "word", "target": "sore"}},
     "dict.1.exactly": {"concepts": ["only_what_was_asked"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:exactly"}, "defines": {"kind": "word", "target": "exactly"}},
-    "dict.1.stare": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stare"}, "defines": {"kind": "word", "target": "stare"}}
+    "dict.1.stare": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stare"}, "defines": {"kind": "word", "target": "stare"}},
+    "dict.1.hang": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hang"}, "defines": {"kind": "word", "target": "hang"}},
+    "dict.1.hook": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hook"}, "defines": {"kind": "word", "target": "hook"}},
+    "dict.1.swing": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:swing"}, "defines": {"kind": "word", "target": "swing"}},
+    "dict.1.dream": {"concepts": ["real_and_pretend"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dream"}, "defines": {"kind": "word", "target": "dream"}},
+    "dict.1.breeze": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breeze"}, "defines": {"kind": "word", "target": "breeze"}}
   }
 }
 ---
@@ -2151,3 +2156,18 @@ With nothing more and nothing less.
 
 [dict.1.stare]
 To look hard at something for a long time.
+
+[dict.1.hang]
+To be held up from above.
+
+[dict.1.hook]
+A piece of metal you hang a thing on.
+
+[dict.1.swing]
+To move this way and that way while hanging.
+
+[dict.1.dream]
+What you see in your sleep.
+
+[dict.1.breeze]
+A light wind.

@@ -403,6 +403,10 @@
       "concept": "keeping_going"
     },
     {
+      "word": "breeze",
+      "concept": "weather"
+    },
+    {
       "word": "bridge",
       "concept": "way_of_doing"
     },
@@ -934,6 +938,10 @@
     {
       "word": "draw",
       "concept": "writing"
+    },
+    {
+      "word": "dream",
+      "concept": "real_and_pretend"
     },
     {
       "word": "drift",
@@ -1515,6 +1523,10 @@
       "concept": "body_part"
     },
     {
+      "word": "hang",
+      "concept": "spatial_position"
+    },
+    {
       "word": "happen",
       "concept": "change"
     },
@@ -1681,6 +1693,10 @@
     {
       "word": "honest",
       "concept": "saying_what_you_saw"
+    },
+    {
+      "word": "hook",
+      "concept": "household_object"
     },
     {
       "word": "horse",
@@ -3691,6 +3707,10 @@
     },
     {
       "word": "swim",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "swing",
       "concept": "moving_and_still"
     },
     {

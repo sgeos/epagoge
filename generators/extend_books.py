@@ -1,9 +1,18 @@
 #!/usr/bin/env python3
-"""Top up short books to the spread standard, without regenerating them.
+"""Bring books to the spread standard, without regenerating them.
 
-**A book below the standard is unfinished, not wrong.** Regenerating it
-would throw away lines that are already true and admissible, so this asks
-the teacher only for the spreads that are missing and appends what passes.
+**A book off the standard is unfinished, not wrong.** Regenerating it
+would throw away lines that are already true and admissible, so a short
+book is asked for only the spreads it is missing and a long one is cut
+back to sixteen from the end.
+
+**A long book was possible from the first generation run and went
+unnoticed until the gate enforced the count.** The book prompt asks for
+twice the story it needs, because about half is rejected on vocabulary,
+and a run where little was rejected produced books of eighteen,
+twenty-five and twenty-eight spreads. Trimming takes story lines from the
+end, never the subject statement and never a definition, because those
+are what the book shape exists to put first.
 
     PYTHONPATH=src:generators python3 generators/extend_books.py --limit 5
 """
@@ -43,9 +52,31 @@ def main(argv: list[str]) -> int:
             break
         book, records = parse_book(path.read_text(encoding="utf-8"), path.name)
         short = SPREADS - len(book.records)
-        if short <= 0:
-            continue
         entries = [cast(dict[str, object], r) for r in records]
+        if short < 0:
+            keep_first = sum(1 for e in entries if e.get("defines") is not None)
+            if keep_first > SPREADS:
+                print(
+                    f"  {book.id}: {keep_first} definitions, cannot trim to {SPREADS}",
+                    file=sys.stderr,
+                )
+                continue
+            trimmed = entries[:SPREADS]
+            head_now = {
+                "id": book.id,
+                "level": book.level,
+                "title": book.title,
+                "subject": {"kind": book.subject_kind.value, "target": book.subject},
+            }
+            path.write_text(render_book(head_now, trimmed), encoding="utf-8")
+            print(
+                f"  {book.id}: {len(entries)} spreads, trimmed to {SPREADS}",
+                file=sys.stderr,
+            )
+            done += 1
+            continue
+        if short == 0:
+            continue
         existing = "\n".join(str(r["content"]) for r in entries)
         print(
             f"  {book.id}: {len(book.records)} spreads, needs {short}", file=sys.stderr

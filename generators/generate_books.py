@@ -358,6 +358,11 @@ def main(argv: list[str]) -> int:
                 ids.append(rid)
                 tally.words += 1
             ground = unit.primitives[0] if unit.primitives else None
+            # **Cap the story at what the signature holds.** The prompt asks
+            # for twice what is needed because about half is rejected, and a
+            # run where little was rejected wrote books of twenty-eight
+            # spreads. The count is exact, not a floor.
+            story = story[: max(0, SPREADS - len(ids))]
             for n, text_ in enumerate(story, start=1):
                 if not keep(text_, vocabulary, args.level, tally):
                     continue
