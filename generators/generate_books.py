@@ -142,6 +142,53 @@ def keep(
     return False
 
 
+def write_books(
+    books: list[dict[str, object]],
+    by_id: dict[object, dict[str, object]],
+    still_bad: list[Reject],
+    out: Path,
+) -> int:
+    """Write each finished book, and report how many were withheld.
+
+    A book whose subject definition did not survive is withheld, since the
+    book shape exists to say what the book is about before saying anything
+    else.
+    """
+    withheld = 0
+    for entry in books:
+        ids = cast(list[str], entry["records"])
+        subject_target = cast(dict[str, object], entry["subject"])["target"]
+        has_subject = any(
+            cast(dict[str, object], by_id[i].get("defines", {})).get("target")
+            == subject_target
+            for i in ids
+            if i in by_id
+        )
+        if not has_subject:
+            withheld += 1
+            still_bad.append(
+                Reject(
+                    book=str(entry["id"]),
+                    slot="book",
+                    text=f"{len(ids)} records, no subject definition survived",
+                    offending=(),
+                    reason="book withheld",
+                )
+            )
+            continue
+        head = {
+            "id": entry["id"],
+            "level": entry["level"],
+            "title": entry["title"],
+            "subject": entry["subject"],
+        }
+        path = out / f"{entry['id']}.md"
+        path.write_text(
+            render_book(head, [by_id[i] for i in ids if i in by_id]), encoding="utf-8"
+        )
+    return withheld
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--level", type=int, default=1)
@@ -327,6 +374,9 @@ def main(argv: list[str]) -> int:
                 ids.append(rid)
                 tally.story += 1
             if ids:
+                # **Written as soon as it is complete.** Holding a run's
+                # books until the end meant one slow completion lost all
+                # of them, which happened.
                 books.append(
                     {
                         "id": f"bk.{unit.id}",
@@ -405,38 +455,7 @@ def main(argv: list[str]) -> int:
             still_bad.append(reject)
 
     args.out.mkdir(parents=True, exist_ok=True)
-    withheld = 0
-    for entry in books:
-        ids = cast(list[str], entry["records"])
-        subject_target = cast(dict[str, object], entry["subject"])["target"]
-        has_subject = any(
-            cast(dict[str, object], by_id[i].get("defines", {})).get("target")
-            == subject_target
-            for i in ids
-            if i in by_id
-        )
-        if not has_subject:
-            withheld += 1
-            still_bad.append(
-                Reject(
-                    book=str(entry["id"]),
-                    slot="book",
-                    text=f"{len(ids)} records, no subject definition survived",
-                    offending=(),
-                    reason="book withheld",
-                )
-            )
-            continue
-        head = {
-            "id": entry["id"],
-            "level": entry["level"],
-            "title": entry["title"],
-            "subject": entry["subject"],
-        }
-        path = args.out / f"{entry['id']}.md"
-        path.write_text(
-            render_book(head, [by_id[i] for i in ids if i in by_id]), encoding="utf-8"
-        )
+    withheld = write_books(books, by_id, still_bad, args.out)
 
     args.quarantine.parent.mkdir(parents=True, exist_ok=True)
     with args.quarantine.open("w", encoding="utf-8") as handle:

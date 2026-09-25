@@ -162,6 +162,10 @@
       "concept": "shape"
     },
     {
+      "word": "balloon",
+      "concept": "toy"
+    },
+    {
       "word": "bamboo",
       "concept": "plant"
     },
@@ -269,6 +273,10 @@
     {
       "word": "black",
       "concept": "physical_property"
+    },
+    {
+      "word": "blanket",
+      "concept": "household_object"
     },
     {
       "word": "block",
@@ -1205,6 +1213,14 @@
       ]
     },
     {
+      "word": "fun",
+      "concept": "feeling"
+    },
+    {
+      "word": "fur",
+      "concept": "body_part"
+    },
+    {
       "word": "future",
       "concept": "duration"
     },
@@ -1335,6 +1351,10 @@
       ]
     },
     {
+      "word": "hair",
+      "concept": "body_part"
+    },
+    {
       "word": "half",
       "concept": "emptiness"
     },
@@ -1446,6 +1466,10 @@
       "antonyms": [
         "low"
       ]
+    },
+    {
+      "word": "hill",
+      "concept": "spatial_position"
     },
     {
       "word": "him",
@@ -2313,6 +2337,10 @@
       ]
     },
     {
+      "word": "paint",
+      "concept": "material"
+    },
+    {
       "word": "pair",
       "concept": "correspondence"
     },
@@ -2757,6 +2785,10 @@
       "synonyms": [
         "afraid"
       ]
+    },
+    {
+      "word": "scary",
+      "concept": "feeling"
     },
     {
       "word": "school",
@@ -3917,7 +3949,7 @@
       "concept": "cycle"
     },
     {
-      "word": "years",
+      "word": "year",
       "concept": "duration"
     },
     {

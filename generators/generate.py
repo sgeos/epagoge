@@ -193,15 +193,29 @@ def strip_terminal_control(raw: str) -> str:
 
 
 def ask(text: str, *, timeout: int) -> str:
-    """Run one completion. Raises on a non-zero exit so failure is loud."""
-    done = subprocess.run(  # noqa: S603
-        [teacher_binary(), "run", MODEL],
-        input=text,
-        capture_output=True,
-        text=True,
-        timeout=timeout,
-        check=True,
-    )
+    """Run one completion. Loud on failure, but never fatal to a long run.
+
+    **A raised timeout killed a ten-book chunk and lost all of it**, since
+    books are written at the end. One slow completion is an ordinary event
+    over a run of ninety, so it returns empty and the caller treats it as
+    an unusable answer, which is what it is. A non-zero exit still raises,
+    because that means the teacher is misconfigured rather than slow.
+    """
+    try:
+        done = subprocess.run(  # noqa: S603
+            [teacher_binary(), "run", MODEL],
+            input=text,
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+            check=True,
+        )
+    except subprocess.TimeoutExpired:
+        print(
+            f"  teacher timed out after {timeout}s, treating as empty",
+            file=sys.stderr,
+        )
+        return ""
     return strip_terminal_control(done.stdout).strip()
 
 

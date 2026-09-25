@@ -436,6 +436,15 @@
       ]
     },
     {
+      "word": "balloon",
+      "concept": "toy",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "balloons"
+      ]
+    },
+    {
       "word": "bamboo",
       "concept": "plant",
       "level": 1
@@ -600,6 +609,15 @@
       "word": "blameless",
       "concept": "investigation_practice",
       "level": 6
+    },
+    {
+      "word": "blanket",
+      "concept": "household_object",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "blankets"
+      ]
     },
     {
       "word": "block",
@@ -2167,9 +2185,27 @@
       ]
     },
     {
+      "word": "fun",
+      "concept": "feeling",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "funs"
+      ]
+    },
+    {
       "word": "function",
       "concept": "algebraic_structure",
       "level": 5
+    },
+    {
+      "word": "fur",
+      "concept": "body_part",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "furs"
+      ]
     },
     {
       "word": "future",
@@ -2336,6 +2372,15 @@
       ]
     },
     {
+      "word": "hair",
+      "concept": "body_part",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "hairs"
+      ]
+    },
+    {
       "word": "half",
       "concept": "emptiness",
       "level": 1
@@ -2484,6 +2529,15 @@
       "level": 1,
       "forms": [
         "higher"
+      ]
+    },
+    {
+      "word": "hill",
+      "concept": "spatial_position",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "hills"
       ]
     },
     {
@@ -3740,6 +3794,17 @@
       "level": 1
     },
     {
+      "word": "paint",
+      "concept": "material",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "painted",
+        "painting",
+        "paints"
+      ]
+    },
+    {
       "word": "pair",
       "concept": "correspondence",
       "level": 1,
@@ -4514,6 +4579,11 @@
     },
     {
       "word": "scared",
+      "concept": "feeling",
+      "level": 1
+    },
+    {
+      "word": "scary",
       "concept": "feeling",
       "level": 1
     },
@@ -6330,9 +6400,12 @@
       "pos": "noun"
     },
     {
-      "word": "years",
+      "word": "year",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "years"
+      ]
     },
     {
       "word": "yell",

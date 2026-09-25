@@ -489,7 +489,15 @@
     "dict.1.rug": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rug"}, "defines": {"kind": "word", "target": "rug"}},
     "dict.1.tale": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tale"}, "defines": {"kind": "word", "target": "tale"}},
     "dict.1.drag": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drag"}, "defines": {"kind": "word", "target": "drag"}},
-    "dict.1.weary": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:weary"}, "defines": {"kind": "word", "target": "weary"}}
+    "dict.1.weary": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:weary"}, "defines": {"kind": "word", "target": "weary"}},
+    "dict.1.balloon": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:balloon"}, "defines": {"kind": "word", "target": "balloon"}},
+    "dict.1.blanket": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blanket"}, "defines": {"kind": "word", "target": "blanket"}},
+    "dict.1.fur": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fur"}, "defines": {"kind": "word", "target": "fur"}},
+    "dict.1.scary": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:scary"}, "defines": {"kind": "word", "target": "scary"}},
+    "dict.1.fun": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fun"}, "defines": {"kind": "word", "target": "fun"}},
+    "dict.1.paint": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:paint"}, "defines": {"kind": "word", "target": "paint"}},
+    "dict.1.hill": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hill"}, "defines": {"kind": "word", "target": "hill"}},
+    "dict.1.hair": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hair"}, "defines": {"kind": "word", "target": "hair"}}
   }
 }
 ---
@@ -1939,3 +1947,27 @@ To drag is to pull a thing on the ground.
 
 [dict.1.weary]
 Weary is tired.
+
+[dict.1.balloon]
+A balloon is a bag of thin stuff that you fill with air to play with.
+
+[dict.1.blanket]
+A blanket is a big piece of cloth you put over your body to keep warm.
+
+[dict.1.fur]
+Fur is the soft hair that is on some animals.
+
+[dict.1.scary]
+Scary is when a thing makes you afraid.
+
+[dict.1.fun]
+Fun is the good feeling you get when you play.
+
+[dict.1.paint]
+Paint is wet stuff of a colour that you put on a thing.
+
+[dict.1.hill]
+A hill is ground that goes up high.
+
+[dict.1.hair]
+Hair is the very thin long stuff that grows on your head.
