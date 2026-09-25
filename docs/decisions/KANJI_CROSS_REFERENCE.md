@@ -71,6 +71,74 @@ All eighteen are scheduled at level one in the same change, so the gap
 between a concept existing and a record teaching it is a schedule entry
 rather than an open question.
 
+## Second pass, 2026-09-24. Seven more concepts, from polysemy
+
+The first pass treated each character as carrying one sense or two. **Kanji
+were grafted onto an existing language**, so a character carries
+Chinese-derived readings and native Japanese words mapped on afterwards,
+and one character can name several unrelated things. Chinese characters map
+more cleanly, having never been grafted. The first pass therefore
+undercounted.
+
+### 生 is the outlier
+
+Eleven senses at least. Living, birth, life, raw, fresh, to grow, to
+sprout, to produce, pure, and the readings inside 学生 and 先生. It is the
+clearest case of one glyph carrying an unrelated set, and it alone supplies
+concepts to three different domains, being `living_and_not_living` in
+failure analysis, `growing` in cybernetic biological systems, and
+`raw_and_made` in physical interactions.
+
+気, 本, 手 and the 上 and 下 pair are the next most loaded.
+
+### Added
+
+| Concept | Domain | From |
+| --- | --- | --- |
+| `enough` | agentic operations | 足 as suffice, 十 as complete |
+| `can_and_cannot` | agentic operations | 力 as ability |
+| `way_of_doing` | agentic operations | 手 as means, 手段 |
+| `feeling` | agentic operations | 気 as mood and mind |
+| `raw_and_made` | physical interactions | 生 as raw |
+| `exchange` | accounting | 貝 as currency, 円 and 金 as money |
+| `opinion` | institutional interfacing | 見 as view, 意見 |
+
+**Sufficiency and capability are the two that matter most.** Whether there
+is enough of something for what it is needed for, and whether an action is
+within what the actor can do, were not expressible in the graph at all.
+Both are load-bearing for anything operating to a resource budget with a
+fixed set of effectors.
+
+**`opinion` closes a gap in the claim taxonomy.** `ATTRIBUTED_POSITION` is
+a claim class with no level-one concept behind it until now.
+
+Agentic operations went from three concepts to seven, which is the thinnest
+domain in the set becoming merely small.
+
+### Considered and not added
+
+Recorded because the reasons are the same reasons a third pass should not
+re-raise them.
+
+**Already covered.** 十 complete by `enough`. 百 and 千 as many by
+`more_and_fewer`. 上 and 下 as rank by `someone_in_charge`. 山 as heap by
+`grouping`. 口 as entrance by `opening_and_shutting`. 手 as skill by
+`can_and_cannot`. 見 as visible by `presence`. 校 as proofread by
+`checking`. 玉 as egg by `animal`. 白 as blank by `emptiness` and as
+confess by `being_told`. 先 as tip and destination by `direction` and
+`sequence`. 目 as ordinal by `number_word_order`. 青 as unripe by the
+planned `growing`. 本 as true by the planned `not_both`.
+
+**Belongs at a later level.** 足 as addition, which is level two
+mathematics. 空 as in vain, 天 as innate, 名 as reputation, 円 as
+harmonious, 正 as exactly, 文 as culture, 赤 as complete. All abstract or
+figurative, none of them level one.
+
+**Deliberately declined.** 田 as cultivation. It is a real concept and it
+overlaps the planned `mending` and `keeping_going` in cybernetic biological
+systems closely enough that adding it now would prejudge how those are
+scoped.
+
 ## Correction, 2026-09-24. The evidence is weaker than this record claimed
 
 Two further standards were checked after the eighteen concepts were added.

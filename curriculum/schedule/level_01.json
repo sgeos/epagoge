@@ -188,6 +188,19 @@
           "primitives": [
             "things-change"
           ]
+        },
+        {
+          "id": "p1.raw",
+          "form": "The wood was a tree. The chair was made from the wood.",
+          "teaches": [
+            "raw_and_made"
+          ],
+          "revisits": [
+            "material"
+          ],
+          "primitives": [
+            "things-change"
+          ]
         }
       ]
     },
@@ -315,6 +328,50 @@
             "others-act",
             "living-things-need-supply"
           ]
+        },
+        {
+          "id": "a1.enough",
+          "form": "There is enough water for one plant. There is not enough for two.",
+          "teaches": [
+            "enough"
+          ],
+          "primitives": [
+            "living-things-need-supply",
+            "some-is-fewer-than-all"
+          ]
+        },
+        {
+          "id": "a1.how",
+          "form": "You open the box with your hands. That is one way. A stick is another way.",
+          "teaches": [
+            "way_of_doing"
+          ],
+          "primitives": [
+            "contact-moves-things",
+            "trying-tells-you"
+          ]
+        },
+        {
+          "id": "a1.can",
+          "form": "She can lift the cup. She cannot lift the table.",
+          "teaches": [
+            "can_and_cannot"
+          ],
+          "primitives": [
+            "others-act",
+            "trying-tells-you"
+          ]
+        },
+        {
+          "id": "a1.feel",
+          "form": "He wants the toy. He is tired. You cannot see it from outside.",
+          "teaches": [
+            "feeling"
+          ],
+          "primitives": [
+            "others-act",
+            "others-know-differently"
+          ]
         }
       ]
     },
@@ -365,6 +422,17 @@
           "primitives": [
             "marks-stand-for-things",
             "things-can-be-counted"
+          ]
+        },
+        {
+          "id": "ac1.exchange",
+          "form": "You give the shell and you get the cup. Now she has the shell.",
+          "teaches": [
+            "exchange"
+          ],
+          "primitives": [
+            "marks-stand-for-things",
+            "others-act"
           ]
         }
       ]
@@ -435,6 +503,17 @@
           "primitives": [
             "others-act",
             "others-can-be-asked"
+          ]
+        },
+        {
+          "id": "i1.opinion",
+          "form": "She says it is best. He says another is best. Both are saying what they hold.",
+          "teaches": [
+            "opinion"
+          ],
+          "primitives": [
+            "others-know-differently",
+            "telling-can-be-wrong"
           ]
         }
       ]

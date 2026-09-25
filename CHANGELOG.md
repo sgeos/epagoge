@@ -27,6 +27,44 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Seven more concepts from a second pass over the eighty kanji
+
+- The first pass treated each character as carrying one sense or two, and
+  **kanji polysemy means that undercounted**. Graph at **103 nodes**, level
+  one at 45 units and 55 existing concepts.
+- `enough` and `can_and_cannot` in agentic operations, from 足 as suffice
+  and 力 as ability. **Whether there is enough of something for what it is
+  needed for, and whether an action is within what the actor can do, were
+  not expressible in the graph at all.** Both are load-bearing for anything
+  operating to a resource budget with a fixed set of effectors.
+- `way_of_doing` and `feeling` in agentic operations, from 手段 and 気.
+  That domain goes from three concepts to seven.
+- `raw_and_made` in physical interactions, from 生 as raw.
+- `exchange` in accounting, from 貝 as currency and 円 and 金 as money.
+- `opinion` in institutional interfacing, from 意見. **This closes a gap in
+  the claim taxonomy**, since `ATTRIBUTED_POSITION` had no level-one
+  concept behind it.
+
+### Found. 生 is the outlier, and it spans three domains alone
+
+- Eleven senses at least. Living, birth, life, raw, fresh, to grow, to
+  sprout, to produce, pure, and the readings inside 学生 and 先生.
+- **One glyph supplying concepts to three domains**, being
+  `living_and_not_living` in failure analysis, `growing` in cybernetic
+  biological systems, and `raw_and_made` in physical interactions.
+- 気, 本, 手 and the 上 and 下 pair are the next most loaded.
+
+### Recorded. Thirty senses considered and declined, with reasons
+
+- Kept so a third pass does not re-raise them. Twenty already covered by
+  existing concepts, eight belong at a later level as abstract or
+  figurative, and 田 as cultivation was declined deliberately because it
+  overlaps the planned `mending` and `keeping_going` closely enough that
+  adding it now would prejudge their scope.
+- **The ablation was measured afterwards and is unchanged.** Arms 30 and
+  27, zero mathematics concepts in the failure arm, internal depth 10
+  against 6.
+
 ### Corrected. 本 does carry a concept relation, and we already model it
 
 - The record called the tree-to-book chain etymology carrying no concept

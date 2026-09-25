@@ -621,6 +621,48 @@
       "name": "people together",
       "kind": "domain_concept",
       "domain": "institutional_interfacing"
+    },
+    {
+      "id": "enough",
+      "name": "enough",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "can_and_cannot",
+      "name": "can and cannot",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "way_of_doing",
+      "name": "way of doing",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "feeling",
+      "name": "feeling",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "raw_and_made",
+      "name": "raw and made",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "exchange",
+      "name": "exchange",
+      "kind": "domain_concept",
+      "domain": "accounting"
+    },
+    {
+      "id": "opinion",
+      "name": "opinion",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
     }
   ],
   "prerequisites": {
@@ -916,6 +958,32 @@
       "person"
     ],
     "people_together": [
+      "person"
+    ],
+    "enough": [
+      "need",
+      "more_and_fewer"
+    ],
+    "can_and_cannot": [
+      "activity",
+      "force"
+    ],
+    "way_of_doing": [
+      "activity"
+    ],
+    "feeling": [
+      "person"
+    ],
+    "raw_and_made": [
+      "material",
+      "change"
+    ],
+    "exchange": [
+      "person",
+      "household_object"
+    ],
+    "opinion": [
+      "knowing",
       "person"
     ]
   },
