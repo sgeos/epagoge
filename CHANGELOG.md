@@ -27,6 +27,47 @@ Versioning.
 
 ## 2026-09-24
 
+### Corrected. 本 does carry a concept relation, and we already model it
+
+- The record called the tree-to-book chain etymology carrying no concept
+  relation. **Wrong.** Root is the pivot, root is a concept, and the chain
+  through it is semantic. English performs the identical extension, which
+  is why `root_cause` is called that.
+- **The relation type we lacked turns out to be one we already model.** A
+  plant branches, which is where the mathematical object got its name.
+  `plant` now instantiates the `tree` formal structure, yielding transfer
+  edges to `fault_tree` and `factor_tree` through the structure the
+  character encodes. **Transfer edges four to six.**
+- So the formal layer carries metaphorical extension and the specialisation
+  layer carries kind-of. Two mechanisms for two relations the radical
+  system conflates into one glyph.
+
+### Corrected. One of the two stated obstacles was not an obstacle
+
+- Shinjitai and simplified are the same character for this purpose, 気
+  standing to 气 as colour stands to color. **No normalisation table is
+  needed** and the pairs listed as divergences are not divergences.
+- The remaining obstacle is real. The 300-character list could not be
+  extracted from any source reached, so the intersection test is one
+  successful fetch away from runnable.
+
+### Found. Kanji carry more concepts than Chinese characters, less cleanly
+
+- Kanji were grafted onto an existing language, so a character carries both
+  Chinese-derived readings and native words mapped on afterwards. Chinese
+  characters map more cleanly, having never been grafted.
+- **So the eighteen concepts extracted from the eighty undercount.** A
+  second pass found five senses taken too narrowly. 足 as foot and not
+  **enough**. 力 as force and not **capability**. 生 as living and not
+  **raw**. 気 as air and not **feeling**. 円 as circle and not **money**.
+- **Sufficiency and capability matter most and are deployment-shaped.**
+  Whether there is enough of something for what it is needed for, and
+  whether an action is within what the actor can do, are not expressible in
+  the graph as it stands.
+- 金 is the compact illustration. One glyph carrying a category, a member
+  of that category, and the specialisation relation generating 銅, 銀, 鉛.
+- **Recorded, not acted on.** Five concepts is a design pass.
+
 ### Corrected. Japan's list is compositional too. The contrast was wrong
 
 - The comparison framed composition as a criterion mainland China states

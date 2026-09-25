@@ -947,6 +947,9 @@
     ],
     "double_entry": [
       "error_detecting_code"
+    ],
+    "plant": [
+      "tree"
     ]
   },
   "specialises": {

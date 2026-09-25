@@ -86,10 +86,25 @@ which maps onto `grouping` rather than onto specialisation.
 **Specialisation.** 木 plus a phonetic gives 柏, 椰, 松, 梅. These are kinds
 of tree, and this is the relation `specialises` expresses.
 
-**Etymological derivation.** 本 is a tree with a mark at its base, giving
-origin, and then book. A learner does not infer that a book is a kind of
-tree. This aids memory and carries no concept relation, so it maps to
-nothing in the graph and should not be forced into one.
+**Extension through a shared structure.** 本 is a tree with a mark at its
+base, giving root, then origin, then the original text, then book.
+
+**Corrected the same day. This record first called that etymology carrying
+no concept relation. Wrong.** Root is the pivot and it is a concept, and
+the chain through it is semantic rather than accidental. English performs
+the identical extension, which is why `root_cause` is called that, and the
+graph already holds the concept.
+
+**The relation type we lacked turns out to be one we already model.** A
+plant branches, which is where the mathematical object got its name. `tree`
+is already a formal structure, already instantiated by `factor_tree` and
+`fault_tree`. Adding `plant` to it yields transfer edges from a living
+thing to a fault tree and to a factor tree, through the same structure the
+character encodes. Transfer edges went from four to six.
+
+**So the formal layer is what carries metaphorical extension**, and the
+specialisation layer carries kind-of. Two different mechanisms for two
+different relations the radical system conflates into one glyph.
 
 ### What this costs us, and what the graph is for
 
@@ -133,12 +148,14 @@ verified.** Nothing found establishes one.
 ### Untested, with the obstacle named
 
 **Whether Japan's 80 are mostly present in mainland's 300** is the obvious
-next check and was not run. The obstacle is not the idea, it is that the
-300-character list could not be extracted from any source reached, and that
-a raw intersection would undercount badly because Japanese shinjitai and
-mainland simplified forms diverge for several of the 80. 気 against 气, 円
-against 圆, 糸 against 丝, 貝 against 贝, 車 against 车. A normalisation
-table is needed before the number would mean anything.
+next check and was not run. **One of the two obstacles I named is not an
+obstacle.** Shinjitai and simplified forms are the same character for this
+purpose, 気 standing to 气 as colour stands to color, so no normalisation
+table is needed and the divergent pairs are not divergences at all.
+
+The remaining obstacle is real and unresolved. **The 300-character list
+could not be extracted from any source reached.** The check is one fetch
+away from being runnable and the fetch has not succeeded.
 
 **A related caveat on the 61-character overlap cited above.** That
 comparison is between simplified and traditional textbooks, and whether the
@@ -213,6 +230,41 @@ which characters. Mainland fixes how many. Taiwan fixes neither. We fix
 which concepts, which words, and at which level. That is justified, because
 the ordering ablation cannot test an ordering nobody wrote down, but it is
 worth knowing that no national curriculum constrains itself this tightly.
+
+## Japanese characters carry more concepts than Chinese ones, and less cleanly
+
+Kanji were grafted onto an existing language, so a character carries both
+Chinese-derived readings and native Japanese words mapped onto it
+afterwards. One character therefore maps to several concepts, sometimes
+unrelated ones. Chinese characters map more cleanly, having never been
+grafted.
+
+**This means the eighteen concepts extracted from the eighty undercount
+what those characters encode**, and the extraction treated each character
+as carrying one sense or two.
+
+Concepts visible in the eighty that were not extracted, from a second pass:
+
+| Character | Sense taken | Sense missed |
+| --- | --- | --- |
+| 足 | foot, as a body part | **enough**, sufficiency against a need |
+| 力 | force | **can and cannot**, capability |
+| 生 | living | **raw**, unprocessed against made |
+| 気 | air | **feeling**, an internal state |
+| 円 | shape, a circle | **money**, value |
+
+**Sufficiency and capability are the two that matter most here**, and both
+are deployment-shaped. Whether there is enough of something for what it is
+needed for, and whether an action is within what the actor can do, are not
+expressible in the graph as it stands.
+
+The same polysemy also explains 金, which is both metal as a category and
+gold as a member of it, while serving as the radical generating 銅, 銀 and
+鉛. One glyph carrying a category, a member of that category, and the
+specialisation relation between them.
+
+**Recorded, not acted on.** Five concepts is a design pass, not a
+correction.
 
 ## What this does not establish
 
