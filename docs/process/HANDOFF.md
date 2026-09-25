@@ -1,6 +1,6 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-25, describing `main` at `ff1dcc8`.** Session 4 took
+**Refreshed 2026-09-25, describing `main` at `46e444a`.** Session 4 took
 the operator's framing of the project as three problems, completed and
 then lengthened the level-one corpus, made a checkpoint carry its own
 vocabulary, added the question-and-answer book because the corpus could
@@ -8,15 +8,16 @@ not teach a model to answer, and prepared the repository to be public.
 Read this block, run the validity check, then stop and wait for the human
 prompt.
 
-**The history has been rewritten twice and the remote has not been
-recreated yet.** Both are recorded below under what is outstanding.
+**The history has been rewritten twice and every hash in it is new.**
+The repository was then recreated public at those rewritten commits.
+Both are recorded below under publication.
 
 ---
 
 ## Validity
 
 **Branch**: `main`, pushed to `origin`, `github.com/sgeos/epagoge`,
-private. **CI is green and must be checked, not assumed.** It was red on
+public. **CI is green and must be checked, not assumed.** It was red on
 the previous head while the local gate passed, because one check is
 derived from git history and the runner clones one commit.
 
@@ -152,10 +153,10 @@ admissions.
 8. **Whether a parked book should leave the repository.** `exclude/` is
    gitignored as asked, so moving a tracked book there removes it.
 
-## Outstanding: the repository is not yet public
+## Publication
 
-**Audited for publication on 2026-09-25 and not published.** What was
-done, and what was not.
+**Audited on 2026-09-25 and published the same day.** What the audit
+changed, and what remains binding.
 
 **Done.** Six open questions that described the deployment domain moved
 to `secret/`, each leaving a stub saying it exists and is answered
@@ -166,15 +167,14 @@ README. Two false status lines were corrected. A stale corpus stream was
 removed. The project was renamed and the former name scrubbed from
 content, paths and commit messages.
 
-**Not done, and it is the operator's to perform.** Deleting
-`sgeos/paideia` on GitHub and creating `sgeos/epagoge` as a public
-repository. The remote in `.git/config` still points at the old URL and
-the rewritten history has not been pushed anywhere.
+**The repository was recreated, not force-pushed.** Deleting the earlier
+remote is what makes its objects unreachable; a force push would have
+left them fetchable by hash. That remote was private for its whole life
+and no hash from it was ever held by anyone but the operator.
 
-**The old objects remain fetchable by hash** on the old remote until
-GitHub collects them. Nobody has ever held those hashes and the
-repository has only ever been private, so deleting it rather than
-force-pushing is what makes that certain.
+**The scrub binds only what was tracked when it ran.** Everything written
+from here on is subject to the same discipline, and the disclosure scan
+in the gate is what enforces it rather than anyone's memory.
 
 ## What is NOT yours
 
