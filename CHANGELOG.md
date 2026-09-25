@@ -27,6 +27,43 @@ Versioning.
 
 ## 2026-09-24
 
+### Found. Two domains were missing the thing they are named for
+
+- Every one of the eleven scope notes read against the concepts its domain
+  holds, prompted by record keeping having held no record.
+- **Compressed communication had no concept of omission.** The domain is
+  named for conveying a claim when the whole of it cannot be conveyed, and
+  nothing in it named the part that gets dropped. Every concept it held was
+  about the conveying.
+- **Agentic operations had no goal.** A domain named for goal-directed
+  execution, holding a person, an activity, a need, a capability, a method,
+  a feeling and a sufficiency, and no target state to execute toward.
+- **Why three passes missed it.** Each asked whether a candidate concept
+  was already covered. None asked whether a domain's declared scope was.
+
+### Added. Two nodes and ten plans, from the scope review
+
+- `word` and `letter` as nodes, from 文 and 字, attested the way the other
+  kanji-derived concepts are. **`name` now specialises `word`** the way
+  `metal` specialises `material`. Graph at **109 nodes**, nine
+  specialisation edges.
+- `leaving_out`, `goal`, `doing_in_order`, `finished_or_not`, `how_sure`,
+  `out_of_date`, `same_amount`, `joining_and_separating`, `promise`,
+  `fair_and_unfair` and `guess` as plans.
+- **Plans rather than nodes**, because they come from my reading of a scope
+  note rather than from an external standard, which is weaker evidence.
+  Level one now 61 units, 61 existing concepts and 29 planned.
+- `letter` as a word was licensed by `variable`, from a level-three algebra
+  record. The glyph sense is the level-one one and is what the word names
+  first, so it was remapped.
+
+### Recorded. The scope review is not automatable and is not scheduled
+
+- It requires reading prose against identifiers. No check will catch the
+  next instance, and the next instance will look exactly like these three
+  did, invisible until someone reads a scope note and a concept list side
+  by side.
+
 ### Corrected. Declined was the wrong bucket for a later-level concept
 
 - The second pass put eight senses into declined because they belong at a

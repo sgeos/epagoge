@@ -154,6 +154,61 @@ which matters because the conflict between sources is the domain's
 substance. The mandate says one thing, the function implies another, the
 chain of authority is unreachable, and something must be decided.
 
+## Scope review, 2026-09-24. Every domain read against its own scope note
+
+Prompted by finding that `record_keeping`, whose scope names measurement
+and provenance and currency, held five concepts that were all spatial or
+temporal. **That gap survived three passes because each pass asked whether
+a candidate concept was already covered, and none asked whether a domain's
+declared scope was.**
+
+Each of the eleven scope notes was read against the concepts its domain
+holds. Two domains were missing the thing they are named for.
+
+| Domain | Scope element with no level-one concept | Added |
+| --- | --- | --- |
+| `compressed_communication` | **leaving something out** | `leaving_out`, and `word` and `letter` |
+| `agentic_operations` | **a goal**, procedure, completion | `goal`, `doing_in_order`, `finished_or_not` |
+| `record_keeping` | confidence, currency | `how_sure`, `out_of_date` |
+| `accounting` | conservation, named in the scope | `same_amount` |
+| `normative_adjudication` | obligation from one's own word, fairness | `promise`, `fair_and_unfair` |
+| `history_and_philosophy_of_science` | a claim held before it is checked | `guess` |
+| `directed_physical_interactions` | joining and separating | `joining_and_separating` |
+| `cybernetic_biological_systems` | adequate | none |
+| `institutional_interfacing` | adequate | none |
+| `failure_analysis`, `mathematics_and_formal_logic` | frozen, not reviewed for additions | none |
+
+### The two worth naming
+
+**Compressed communication had no concept of omission.** The domain is
+named for conveying a claim when the whole of it cannot be conveyed, and
+nothing in it named the part that gets dropped. Every concept it held was
+about the conveying.
+
+**Agentic operations had no goal.** A domain named for goal-directed
+execution, holding a person, an activity, a need, a capability, a method, a
+feeling and a sufficiency, and no target state to execute toward.
+
+Both are the same failure as record keeping having no record.
+
+### What went in as a node and what went in as a plan
+
+`word` and `letter` are nodes, because 文 and 字 attest them the way the
+other kanji-derived concepts are attested, and `name` now specialises
+`word` the way `metal` specialises `material`.
+
+**Everything else went in as `introduces`.** Those concepts are derived
+from my reading of a scope note rather than from an external standard,
+which is weaker evidence, and the graph follows content. They become nodes
+when records teach them.
+
+### This review is not automatable and is not scheduled
+
+It requires reading prose against identifiers. No check will catch the next
+instance of it, and the next instance will look exactly like these three
+did, which is to say invisible until someone reads the scope note and the
+concept list side by side.
+
 ## Known gaps in the set
 
 Stated so they are not discovered later as omissions.

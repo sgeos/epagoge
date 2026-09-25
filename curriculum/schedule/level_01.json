@@ -73,6 +73,28 @@
             "marks-stand-for-things",
             "the-sign-is-not-the-thing"
           ]
+        },
+        {
+          "id": "r1.sure",
+          "form": "I know the cup is here. I think the spoon is here. They are not the same.",
+          "introduces": [
+            "how_sure"
+          ],
+          "primitives": [
+            "looking-tells-you",
+            "a-claim-can-be-so-or-not"
+          ]
+        },
+        {
+          "id": "r1.stale",
+          "form": "The mark said the cup was full. That was before. It is empty now.",
+          "introduces": [
+            "out_of_date"
+          ],
+          "primitives": [
+            "things-change",
+            "marks-stand-for-things"
+          ]
         }
       ]
     },
@@ -235,6 +257,17 @@
           ],
           "primitives": [
             "same-again"
+          ]
+        },
+        {
+          "id": "p1.join",
+          "form": "Put the lid on the pot. Take the lid off the pot.",
+          "introduces": [
+            "joining_and_separating"
+          ],
+          "primitives": [
+            "contact-moves-things",
+            "things-have-parts"
           ]
         }
       ]
@@ -407,6 +440,36 @@
             "others-act",
             "others-know-differently"
           ]
+        },
+        {
+          "id": "a1.goal",
+          "form": "She wants the cup on the table. That is what she is working toward.",
+          "introduces": [
+            "goal"
+          ],
+          "primitives": [
+            "others-act"
+          ]
+        },
+        {
+          "id": "a1.order",
+          "form": "Open the box first. Then take out the cup. Not the other way.",
+          "introduces": [
+            "doing_in_order"
+          ],
+          "primitives": [
+            "cause-precedes-effect"
+          ]
+        },
+        {
+          "id": "a1.done",
+          "form": "The cup is on the table now. The job is done.",
+          "introduces": [
+            "finished_or_not"
+          ],
+          "primitives": [
+            "others-act"
+          ]
         }
       ]
     },
@@ -442,6 +505,31 @@
             "marks-stand-for-things",
             "the-sign-is-not-the-thing"
           ]
+        },
+        {
+          "id": "c1.word",
+          "form": "A word is a thing you say. A name is a word for one thing.",
+          "teaches": [
+            "word",
+            "letter"
+          ],
+          "revisits": [
+            "name"
+          ],
+          "primitives": [
+            "marks-stand-for-things",
+            "the-sign-is-not-the-thing"
+          ]
+        },
+        {
+          "id": "c1.leaving_out",
+          "form": "I told you the cup fell. I did not tell you where it fell.",
+          "introduces": [
+            "leaving_out"
+          ],
+          "primitives": [
+            "telling-can-be-wrong"
+          ]
         }
       ]
     },
@@ -468,6 +556,16 @@
           "primitives": [
             "marks-stand-for-things",
             "others-act"
+          ]
+        },
+        {
+          "id": "ac1.same_amount",
+          "form": "Pour the water into the bowl. There is still as much water.",
+          "introduces": [
+            "same_amount"
+          ],
+          "primitives": [
+            "quantity-survives-rearrangement"
           ]
         }
       ]
@@ -496,6 +594,17 @@
           ],
           "primitives": [
             "others-know-differently"
+          ]
+        },
+        {
+          "id": "h1.guess",
+          "form": "Maybe it is in the box. We do not know yet. Let us look.",
+          "introduces": [
+            "guess"
+          ],
+          "primitives": [
+            "a-claim-can-be-so-or-not",
+            "looking-tells-you"
           ]
         }
       ]
@@ -644,6 +753,28 @@
           "primitives": [
             "others-act",
             "danger-is-not-always-visible"
+          ]
+        },
+        {
+          "id": "n1.fair",
+          "form": "She got two and he got one. He says that is not fair.",
+          "introduces": [
+            "fair_and_unfair"
+          ],
+          "primitives": [
+            "others-act",
+            "some-is-fewer-than-all"
+          ]
+        },
+        {
+          "id": "n1.promise",
+          "form": "You said you would. Now you have to, because you said so.",
+          "introduces": [
+            "promise"
+          ],
+          "primitives": [
+            "telling-can-be-wrong",
+            "others-can-be-asked"
           ]
         }
       ]

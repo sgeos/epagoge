@@ -687,6 +687,18 @@
       "name": "metal",
       "kind": "domain_concept",
       "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "word",
+      "name": "word",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "letter",
+      "name": "letter",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
     }
   ],
   "prerequisites": {
@@ -1025,6 +1037,14 @@
     ],
     "metal": [
       "material"
+    ],
+    "word": [
+      "sound",
+      "name"
+    ],
+    "letter": [
+      "writing",
+      "word"
     ]
   },
   "instantiates": {
@@ -1084,6 +1104,9 @@
     ],
     "metal": [
       "material"
+    ],
+    "name": [
+      "word"
     ]
   }
 }

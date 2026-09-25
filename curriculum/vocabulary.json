@@ -1662,8 +1662,8 @@
     },
     {
       "word": "letter",
-      "concept": "variable",
-      "level": 3
+      "concept": "letter",
+      "level": 1
     },
     {
       "word": "lid",
