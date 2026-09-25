@@ -154,6 +154,79 @@ which matters because the conflict between sources is the domain's
 substance. The mandate says one thing, the function implies another, the
 chain of authority is unreachable, and something must be decided.
 
+## Plain descriptions, and the axiomatic vocabulary each one implies
+
+**Recorded 2026-09-24.** The scope notes in `concepts.json` are written for
+a reader who already knows the project. These are written for one who does
+not, deliberately in the vocabulary the domain itself teaches, and each was
+then read for the irreducible terms it rests on.
+
+**Why write them at all.** A scope note lists what a domain covers. A plain
+description forces the question of what the domain cannot be described
+without, and that is a different question with different answers. Two
+registered primitives turned out to have no concept anywhere in the graph.
+
+| Domain | What it is | Axiomatic terms |
+| --- | --- | --- |
+| mathematics and formal logic | What must be so, given what you started from | same, different, one, many, all, some, none, and, or, not, if, then, more, less, count, order |
+| failure analysis | How a working thing stops working, which of the things that happened made it stop, and how you see it coming | work, stop, break, wear, cause, before, after, check, tell, part, whole, harm |
+| directed physical interactions | How stuff behaves on its own, and how you make it behave otherwise | thing, stuff, here, in, out, **touch**, move, still, push, hot, wet, hard, full, empty, open, made of |
+| compressed communication | Getting a claim from one place to another when there is no room for all of it, and saying what was dropped | say, tell, ask, word, name, **stand for**, know, show, leave out, short, again, true |
+| record keeping | Writing down what was so, so that later you can tell what was so, and knowing how far to trust it | mark, write, when, where, how much, **unit**, sure, was, now, changed, **who said** |
+| agentic operations | Wanting something to be so, working out how, doing it, and telling whether it worked | want, need, do, try, can, cannot, first, then, done, way, enough, me, you |
+| accounting | Keeping track of how much there is, where it went, and checking that two counts agree | how much, have, give, get, **used up**, left, gone, count, mark, agree, mine |
+| history and philosophy of science | How you come to know a thing, how you tell whether you really know it, and how what people knew changed | know, find out, look, try, guess, **wrong**, before, now, settled, why |
+| institutional interfacing | Dealing with people who have their own reasons, deciding whether what they say holds up, and expecting the same of yourself | say, hold, agree, disagree, why, because, rule, in charge, together, family, ask |
+| cybernetic biological systems | Living things keeping themselves going, and what they do when something goes wrong with them | living, dead, eat, drink, grow, **hurt**, heal, rest, need, inside |
+| normative adjudication | Working out what ought to be done when more than one thing ought to be done | should, must, **may**, good, bad, fair, promise, told to, instead, **choose** |
+
+Bold marks a term the description could not be written without and which had
+no concept behind it.
+
+### Two registered primitives had no concept at all
+
+**`contact-moves-things`** is in the primitive register and nothing in the
+graph named contact. Physical interaction cannot be described without
+touching, and every directed interaction in the domain presupposes it.
+`touching` added.
+
+**`marks-stand-for-things` and `the-sign-is-not-the-thing`** are both
+registered, and the graph held `name` for labelling and `toy` for a proxy
+object and nothing for the relation itself. `standing_for` added.
+
+**These two are nodes. The other seven are plans.** A registered primitive
+with no concept is a demonstrable gap, since the register is hand-authored
+and reviewed. A term I could not write a description without is my
+judgement about my own prose.
+
+### Seven more the descriptions exposed
+
+| Concept | Domain | Why the description needed it |
+| --- | --- | --- |
+| `who_said_it` | record keeping | Provenance is named in the scope and had no concept |
+| `unit` | record keeping | Three means nothing without three of what |
+| `using_up` | accounting | Flows are the domain's subject and nothing at level one named one |
+| `being_wrong` | history and philosophy of science | **The falsification seed.** Believing a thing and finding it is not so |
+| `being_hurt` | cybernetic biological systems | A cup breaks and stays broken. A cut closes. The domain is named for that difference |
+| `allowed_or_not` | normative adjudication | Permission is not obligation and both words are simple |
+| `choosing` | normative adjudication | **The adjudication act itself**, which the domain is named for and did not name |
+
+**`being_wrong` is the one that should not have been missing.** This
+project is falsification-oriented, the evaluation suite is named for
+Socratic refutation, and the graph had no concept for believing something
+and finding out it is not so.
+
+**`choosing` is the second.** A domain named for settling between competing
+obligations, with no concept for taking one and leaving the other.
+
+### Frozen domains were read and not changed
+
+Mathematics and failure analysis were described and their axiomatic terms
+listed. Both are adequately covered and neither may gain concepts before
+the ablation runs, so nothing was added. The mathematics gaps worth noting
+are conjunction and disjunction, partly reached by the planned
+`all_some_none`.
+
 ## Scope review, 2026-09-24. Every domain read against its own scope note
 
 Prompted by finding that `record_keeping`, whose scope names measurement

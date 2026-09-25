@@ -735,6 +735,18 @@
       "name": "good and bad",
       "kind": "domain_concept",
       "domain": "normative_adjudication"
+    },
+    {
+      "id": "touching",
+      "name": "touching",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "standing_for",
+      "name": "standing for",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
     }
   ],
   "prerequisites": {
@@ -1103,6 +1115,13 @@
     "good_and_bad": [
       "feeling",
       "need"
+    ],
+    "touching": [
+      "presence",
+      "spatial_position"
+    ],
+    "standing_for": [
+      "word"
     ]
   },
   "instantiates": {

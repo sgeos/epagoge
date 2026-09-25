@@ -95,6 +95,28 @@
             "things-change",
             "marks-stand-for-things"
           ]
+        },
+        {
+          "id": "r1.who",
+          "form": "She said the cup was full. Write down that it was her who said it.",
+          "introduces": [
+            "who_said_it"
+          ],
+          "primitives": [
+            "telling-can-be-wrong",
+            "marks-stand-for-things"
+          ]
+        },
+        {
+          "id": "r1.unit",
+          "form": "Three cups of water. You have to say cups, or three means nothing.",
+          "introduces": [
+            "unit"
+          ],
+          "primitives": [
+            "things-can-be-counted",
+            "same-again"
+          ]
         }
       ]
     },
@@ -268,6 +290,16 @@
           "primitives": [
             "contact-moves-things",
             "things-have-parts"
+          ]
+        },
+        {
+          "id": "p1.touch",
+          "form": "Your hand is on the cup. Nothing moves until something touches it.",
+          "teaches": [
+            "touching"
+          ],
+          "primitives": [
+            "contact-moves-things"
           ]
         }
       ]
@@ -634,6 +666,17 @@
           "primitives": [
             "marks-stand-for-things"
           ]
+        },
+        {
+          "id": "c1.stands_for",
+          "form": "The mark on the paper stands for the cup. The mark is not the cup.",
+          "teaches": [
+            "standing_for"
+          ],
+          "primitives": [
+            "marks-stand-for-things",
+            "the-sign-is-not-the-thing"
+          ]
         }
       ]
     },
@@ -682,6 +725,17 @@
             "marks-stand-for-things",
             "others-act"
           ]
+        },
+        {
+          "id": "ac1.using_up",
+          "form": "There was water. You drank some. Now there is less.",
+          "introduces": [
+            "using_up"
+          ],
+          "primitives": [
+            "quantity-survives-rearrangement",
+            "some-is-fewer-than-all"
+          ]
         }
       ]
     },
@@ -720,6 +774,17 @@
           "primitives": [
             "a-claim-can-be-so-or-not",
             "looking-tells-you"
+          ]
+        },
+        {
+          "id": "h1.wrong",
+          "form": "She thought it was in the box. She looked. It was not.",
+          "introduces": [
+            "being_wrong"
+          ],
+          "primitives": [
+            "a-claim-can-be-so-or-not",
+            "checking-settles-it"
           ]
         }
       ]
@@ -866,6 +931,17 @@
             "living-things-need-supply",
             "living-things-die"
           ]
+        },
+        {
+          "id": "b1.hurt",
+          "form": "The cup broke and stayed broken. The cut on her hand closed up.",
+          "introduces": [
+            "being_hurt"
+          ],
+          "primitives": [
+            "things-break",
+            "breaking-is-hard-to-undo"
+          ]
         }
       ]
     },
@@ -925,6 +1001,28 @@
           "primitives": [
             "some-things-harm",
             "harm-can-be-avoided"
+          ]
+        },
+        {
+          "id": "n1.allowed",
+          "form": "You may have one. You must not have both.",
+          "introduces": [
+            "allowed_or_not"
+          ],
+          "primitives": [
+            "danger-must-be-taught",
+            "others-act"
+          ]
+        },
+        {
+          "id": "n1.choosing",
+          "form": "You cannot have both. Take one and leave the other.",
+          "introduces": [
+            "choosing"
+          ],
+          "primitives": [
+            "some-is-fewer-than-all",
+            "others-act"
           ]
         }
       ]

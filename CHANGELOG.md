@@ -27,6 +27,55 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. A plain description of each domain, and nine concepts from them
+
+- Each of the eleven written for a reader who does not know the project,
+  in the vocabulary the domain itself teaches, then read for the
+  irreducible terms it rests on. In `docs/decisions/DOMAIN_SET.md`.
+- **A scope note lists what a domain covers. A description forces the
+  question of what the domain cannot be described without**, which is a
+  different question with different answers.
+
+### Found. Two registered primitives had no concept anywhere
+
+- **`contact-moves-things`** is in the register and nothing in the graph
+  named contact. Physical interaction cannot be described without touching
+  and every directed interaction presupposes it. `touching` added.
+- **`marks-stand-for-things` and `the-sign-is-not-the-thing`** are both
+  registered, and the graph held `name` for labelling and `toy` for a proxy
+  object and nothing for the relation. `standing_for` added.
+- **These two are nodes, the other seven are plans.** A registered
+  primitive with no concept is a demonstrable gap, since the register is
+  hand-authored and reviewed. A term I could not write a description
+  without is my judgement about my own prose.
+
+### Found. Two absences that should not have been there
+
+- **`being_wrong`.** This project is falsification-oriented, the evaluation
+  suite is named for Socratic refutation, and the graph had no concept for
+  believing a thing and finding out it is not so.
+- **`choosing`.** A domain named for settling between competing
+  obligations, with no concept for taking one and leaving the other.
+
+### Added. Seven plans the descriptions exposed
+
+- `who_said_it` and `unit` in record keeping. Provenance was named in the
+  scope with no concept, and three means nothing without three of what.
+- `using_up` in accounting, since flows are the domain's subject and
+  nothing at level one named one.
+- `being_hurt` in cybernetic biological systems. A cup breaks and stays
+  broken, a cut closes, and the domain is named for that difference.
+- `allowed_or_not` and `choosing` in normative adjudication.
+- Graph at **117 nodes**, level one at **83 units, 69 existing concepts and
+  43 planned**.
+
+### Frozen domains read and not changed
+
+- Mathematics and failure analysis were described and their axiomatic terms
+  listed. Both adequate, neither may gain concepts before the ablation
+  runs. The mathematics gap worth noting is conjunction and disjunction,
+  partly reached by the planned `all_some_none`.
+
 ### Added. Six concepts from the mainland first-grade list, one predicted
 
 - The People's Education Press first-grade first-volume character list
