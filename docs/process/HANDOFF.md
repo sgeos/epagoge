@@ -1,6 +1,6 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-24, describing `main` at `c174fe7`.** Session 1 took
+**Refreshed 2026-09-24, describing `main` at `57ead6d`.** Session 1 took
 this project from nothing to a closed toolchain, a generated corpus of six
 books, and a measurement of how far the lexicon is from defining itself.
 No model is trained. Read this block, run the validity check, then stop and
@@ -10,9 +10,11 @@ wait for the human prompt.
 
 ## Validity
 
-**Branch**: `main`. No other branches. **A remote exists**,
-`github.com/sgeos/epagoge`, empty and **private**, with no local `origin`
-and nothing pushed.
+**Branch**: `main`. No other branches. **`origin` is
+`git@github.com:sgeos/epagoge.git`, private, and `main` is pushed to it.**
+The repository was **deleted and recreated on 2026-09-24** after a history
+rewrite, because a force-push leaves unreferenced objects fetchable by
+hash.
 
 **Before writing anything tracked, read the disclosure discipline
 `CLAUDE.md` points to.** Hard constraint. `CLAUDE.md` is deliberately the
@@ -26,7 +28,7 @@ requiring `HEAD` to equal a recorded commit claims nothing else ever lands.
 That happened once and a commit landed red. Run it bare, or redirect and
 read `$?`.
 
-**Ancestry**: `main` should contain **`c174fe7`**. If it does not, this
+**Ancestry**: `main` should contain **`57ead6d`**. If it does not, this
 file predates a reset and is stale.
 
 **Content** — cheap, independent, each verified on 2026-09-24. Check the
@@ -50,6 +52,9 @@ rendered ORDER of this list, not just the next unused number.
    **49 of 760** words defined, of which **1** is grounded.
 8. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
+9. **History is clean, not only `HEAD`.** Every blob and every commit
+   message scanned against the pattern reports **0** hits. `scrub_scan.sh`
+   covers `git ls-files` only and cannot see history.
 
 ## What a resuming session should do first
 
@@ -64,7 +69,7 @@ rendered ORDER of this list, not just the next unused number.
 
 ## The state
 
-**Green and clean.** Sixty-three commits, nothing uncommitted. Eight
+**Green and clean.** Seventy commits, nothing uncommitted. Eight
 documents in `secret/`, none tracked, and **no path under it has ever been
 added in any commit**. Twenty-five decision records, 328 tests.
 
@@ -242,18 +247,34 @@ launch post reopens the decision without a file changing.
 
 ## Disclosure, before any push
 
-**Audited 2026-09-24 and clean.** All 61 commit messages and all blobs in
-history scanned against the pattern, no hit. No `secret/` path ever added.
+**Re-audited 2026-09-24 after a history rewrite, and clean.** All 415
+blobs and every commit message scanned against the pattern, no hit,
+pattern self-tested against a planted term first. No `secret/` path ever
+added.
 
-**Two rules were being enforced by nothing** until that audit, and both
-were violated. A tracked document may not cite a file under `secret/` by
-name, and the euphemism the discipline bans survived in the changelog.
+**The previous audit was accurate when it ran and wrong by the time it was
+believed.** It reported history clean, then the euphemism was added to the
+pattern in that same commit. **Forty-four commits carried the phrase in
+`CHANGELOG.md`** while `HEAD` read clean and the gate passed, because
+`scrub_scan.sh` scans `git ls-files` and cannot see history. Scrubbed with
+`git-filter-repo`; the `HEAD` tree hash did not change.
+
+**Two rules had been enforced by nothing** until the original audit, and
+both were violated. A tracked document may not cite a file under `secret/`
+by name, and the euphemism the discipline bans survived in the changelog.
 Both are checked now, and both checks were verified by making them fail.
 
 ## Governing rules that are easy to lose
 
 - **Run `./tools/check.sh` before any commit, bare, and read its exit
   code.**
+- **Adding a term to the pattern does not re-audit history.** The
+  tracked-file scan sees `HEAD` only. After changing the pattern, re-run
+  the blob-and-message scan over all history, and re-run it before any
+  push whose commit count has moved since the last audit.
+- **Rewrite history before a push, never after.** A force-push leaves
+  unreferenced objects fetchable by hash, so the only clean remedy
+  afterwards is deleting and recreating the remote.
 - **A scan returning unexpected volume is presumed broken until its pattern
   is inspected.** An unanchored alternation matched `ore` inside `before`
   one minute after the same failure was recorded as a finding.
@@ -278,9 +299,9 @@ Both are checked now, and both checks were verified by making them fail.
 History records what was true at an increment. It is not stale, and
 rewriting it corrupts the record. New sessions append; they do not edit.
 
-### Session 1 continued, 2026-09-24, `9ab5190` to `dd1a919`
+### Session 1 continued, 2026-09-24, `6d8cce7` to `5fe15b6`
 
-The previous live block described `f7f01ad` and went stale in almost every
+The previous live block described `b7e3c00` and went stale in almost every
 number. It is not reproduced, because what it recorded as the live defect —
 foundation domains feeding nothing — was resolved, and its content checks
 named seven domains where there are now eleven. `CHANGELOG.md` carries the
@@ -297,7 +318,7 @@ Three external character standards were cross-referenced and one prediction
 was tested and held. Four scope reviews of the project's own domains found
 two that were missing the thing they are named for.
 
-### Superseded live block, written 2026-09-24 at `71b01ff`
+### Superseded live block, written 2026-09-24 at `eb04d6a`
 
 Kept for its findings. Its content checks named `78` nodes without the
 domain count, and it predated the `everyday` split and the foundation-feed
@@ -314,7 +335,7 @@ deployment domain is a defect regardless of how true it is.
 **Validate by ANCESTRY and by CONTENT, never by a hash match.** A check
 requiring `HEAD` to equal a recorded commit claims nothing else ever lands.
 
-**Ancestry**: `main` should contain **`71b01ff`** (accounting added), the
+**Ancestry**: `main` should contain **`eb04d6a`** (accounting added), the
 last commit before this was written. If it does not, this file predates a
 reset and is stale.
 
@@ -449,7 +470,7 @@ the pilot harness does not.
   published, and publication needs explicit in-session authorisation.
 rewriting it corrupts the record. New sessions append; they do not edit.
 
-### Domain restructure, 2026-09-24, at `f7f01ad`
+### Domain restructure, 2026-09-24, at `b7e3c00`
 
 Seven domains became eleven. Every name that survived is an activity,
 because a domain named for an activity excludes what does not serve it

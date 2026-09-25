@@ -27,6 +27,33 @@ Versioning.
 
 ## 2026-09-24
 
+### Fixed. History carried a banned term for 44 commits after the rule was added
+
+- **The audit that reported history clean ran before the rule existed.**
+  The euphemism became a term in the pattern file in the same commit whose
+  message reports all 361 blobs scanned with no hit. That scan was accurate
+  when it ran and was never re-run afterwards, so **44 commits kept the
+  phrase in `CHANGELOG.md`** while `HEAD` read clean and the gate passed.
+- **Adding a term to the pattern does not retroactively re-audit history.**
+  Nothing forces the re-run, and `scrub_scan.sh` cannot see history by
+  construction, since it scans `git ls-files`. Recorded as a governing rule.
+- **Found by re-running the audit because the commit count had moved**, 61
+  at the recorded audit against 69 now, rather than by suspecting the
+  result. The 41 hits were first presumed to be a broken pattern, per the
+  standing rule, and the pattern was self-tested before they were believed.
+- **Scrubbed with `git-filter-repo`.** One literal substitution, to the
+  wording `HEAD` already carried. Every commit from the first affected one
+  onward was rewritten. **The `HEAD` tree hash is unchanged at `45c5bb1`**,
+  so no working content moved and the gate result still describes the same
+  tree.
+- **Re-audited after the rewrite.** All 415 blobs and every commit message,
+  zero hits, pattern self-tested against a planted term first. The five
+  commit hashes cited in `HANDOFF.md` were remapped from the rewrite's
+  commit map.
+- **Doing this before the first public push was the cheap moment.** A
+  force-push leaves unreferenced objects fetchable by hash, so the private
+  remote was deleted and recreated rather than force-pushed.
+
 ### Recorded. Four caveats on the faith and scoring thread
 
 - **The load-bearing assumption is one the project already doubts.**
