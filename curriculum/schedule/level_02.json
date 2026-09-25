@@ -65,18 +65,26 @@
           "id": "a2.plan",
           "form": "Making a plan, and doing it in order.",
           "revisits": [
-            "plan",
+            "doing_in_order",
+            "feeling",
             "goal",
-            "doing_in_order"
+            "need",
+            "person",
+            "plan",
+            "way_of_doing"
           ]
         },
         {
           "id": "a2.mistake",
           "form": "Mistakes, and what to do when you find one.",
           "revisits": [
-            "mistake",
+            "activity",
+            "can_and_cannot",
+            "enough",
             "finished_or_not",
-            "only_what_was_asked"
+            "mistake",
+            "only_what_was_asked",
+            "self_and_other"
           ]
         }
       ]
@@ -91,8 +99,12 @@
             "explanation"
           ],
           "revisits": [
+            "discourse_marker",
             "giving_a_reason",
-            "knowing"
+            "knowing",
+            "real_and_pretend",
+            "sentence",
+            "word"
           ]
         },
         {
@@ -102,8 +114,12 @@
             "claim_under_test"
           ],
           "revisits": [
+            "leaving_out",
+            "letter",
+            "name",
             "saying_what_you_saw",
-            "leaving_out"
+            "standing_for",
+            "story"
           ]
         },
         {
@@ -113,8 +129,11 @@
             "reporting"
           ],
           "revisits": [
+            "asking",
+            "close_enough",
+            "more_to_learn",
             "saying_what_you_did",
-            "close_enough"
+            "writing"
           ]
         }
       ]
@@ -126,17 +145,20 @@
           "id": "b2.keeping_going",
           "form": "Staying alive, and what that takes.",
           "revisits": [
+            "body_part",
+            "growing",
             "keeping_going",
             "needing_supply",
-            "growing"
+            "plant"
           ]
         },
         {
           "id": "b2.mending",
           "form": "Mending, and what mends itself.",
           "revisits": [
-            "mending",
+            "animal",
             "being_hurt",
+            "mending",
             "tending"
           ]
         }
@@ -149,18 +171,34 @@
           "id": "p2.force",
           "form": "Pushes and pulls, and what they do to a thing.",
           "revisits": [
+            "emptiness",
+            "falling",
             "force",
+            "household_object",
+            "inside_and_outside",
+            "joining_and_separating",
+            "liquid",
             "moving_and_still",
-            "falling"
+            "opening_and_shutting",
+            "raw_and_made",
+            "sound"
           ]
         },
         {
           "id": "p2.matter",
           "form": "What things are made of, and how they change.",
           "revisits": [
-            "material",
+            "air",
             "change",
-            "heat"
+            "heat",
+            "material",
+            "metal",
+            "physical_property",
+            "presence",
+            "shape",
+            "touching",
+            "toy",
+            "weather"
           ]
         }
       ]
@@ -175,6 +213,8 @@
             "failing"
           ],
           "revisits": [
+            "cause_and_effect",
+            "component_and_system",
             "things_break",
             "wearing_out"
           ]
@@ -187,15 +227,17 @@
           ],
           "revisits": [
             "causal_chain",
-            "danger"
+            "danger",
+            "living_and_not_living"
           ]
         },
         {
           "id": "f2.checking",
           "form": "Checking a thing, and what checking can and cannot show.",
           "revisits": [
+            "being_told",
             "checking",
-            "being_told"
+            "dying"
           ]
         }
       ]
@@ -208,8 +250,9 @@
           "form": "Finding out, and settling a question.",
           "revisits": [
             "finding_out",
-            "settling_it",
-            "guess"
+            "guess",
+            "not_always_known",
+            "settling_it"
           ]
         },
         {
@@ -217,8 +260,9 @@
           "form": "Being wrong, and how anyone ever discovers it.",
           "revisits": [
             "being_wrong",
+            "changing_your_mind",
             "resting_on_a_guess",
-            "changing_your_mind"
+            "taking_on_faith"
           ]
         }
       ]
@@ -230,18 +274,22 @@
           "id": "i2.reason",
           "form": "Giving reasons, agreeing and disagreeing.",
           "revisits": [
-            "giving_a_reason",
             "agreeing",
-            "disagreeing"
+            "disagreeing",
+            "giving_a_reason",
+            "keeping_your_claim",
+            "opinion"
           ]
         },
         {
           "id": "i2.rule",
           "form": "Rules, and who decides what is allowed.",
           "revisits": [
+            "family",
+            "judged_by_another",
+            "people_together",
             "rule",
-            "someone_in_charge",
-            "judged_by_another"
+            "someone_in_charge"
           ]
         }
       ]
@@ -255,6 +303,10 @@
           "teaches": [
             "natural_number",
             "place_value"
+          ],
+          "revisits": [
+            "grouping",
+            "same_and_different"
           ]
         },
         {
@@ -265,6 +317,7 @@
             "subtraction"
           ],
           "revisits": [
+            "correspondence",
             "counting",
             "more_and_fewer"
           ]
@@ -277,6 +330,7 @@
           ],
           "revisits": [
             "measuring",
+            "number_word_order",
             "same_amount"
           ]
         },
@@ -284,8 +338,9 @@
           "id": "m2.logic",
           "form": "If this then that, and what follows from what.",
           "revisits": [
-            "if_then",
             "all_some_none",
+            "conservation_of_number",
+            "if_then",
             "not_both"
           ]
         }
@@ -298,18 +353,21 @@
           "id": "n2.should",
           "form": "Should and should not, and two shoulds at once.",
           "revisits": [
+            "good_and_bad",
+            "keep_trying_or_stop",
+            "right_reason",
             "should_and_should_not",
-            "two_shoulds_at_once",
-            "right_reason"
+            "two_shoulds_at_once"
           ]
         },
         {
           "id": "n2.fair",
           "form": "Fair and unfair, promises, and choosing.",
           "revisits": [
+            "allowed_or_not",
+            "choosing",
             "fair_and_unfair",
-            "promise",
-            "choosing"
+            "promise"
           ]
         }
       ]
@@ -321,18 +379,23 @@
           "id": "r2.measure",
           "form": "Measuring, and what a unit is for.",
           "revisits": [
+            "cycle",
+            "how_sure",
             "measuring",
-            "unit",
-            "how_sure"
+            "sequence",
+            "spatial_position",
+            "unit"
           ]
         },
         {
           "id": "r2.record",
           "form": "Keeping a record, and knowing when it went out of date.",
           "revisits": [
-            "written_record",
+            "direction",
+            "duration",
             "out_of_date",
-            "who_said_it"
+            "who_said_it",
+            "written_record"
           ]
         }
       ]

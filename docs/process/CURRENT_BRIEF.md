@@ -1,85 +1,72 @@
-# Current brief. A level-one model worth talking to
+# Current brief. Three problems, and only one of them is mine
 
-**Rewritten 2026-09-25** after operator direction changed the goal: a
-level-one model that external parties can satisfactorily interact with,
-with poor performance read as a combination of a training problem and a
-corpus problem. Delete when `COMPLETION_CONDITION.md` is met.
+**Rewritten 2026-09-25** after the operator framed the project as three
+problems rather than one. Delete when `COMPLETION_CONDITION.md` is met.
 
-## Where the seven goals stand
+## The framing, and what it does to the work
 
-| # | Goal | State |
-| --- | --- | --- |
-| 1 | Level-one dictionary and closure | **Done.** Closure 100 percent |
-| 2 | Thesaurus | **Done** |
-| 3 | Missing words | **Done, and continuous** |
-| 4 | Level-one corpus draft | **Done.** 92 of 92 units, every book at 16 spreads |
-| 5 | Train a level-one model | **Done**, and it can now be talked to |
-| 6 | Level-two dictionary and thesaurus | **Done** |
-| 7 | Level-two ablation | **Blocked** on corpus scale and on item 10 |
+`../decisions/THREE_PROBLEMS.md` has it in full. In short:
 
-## The goal now, and the measurement that prices it
+**Level one is a bootstrapping problem** and it is solved in its
+essentials. The lexicon closes, every unit has a book, the model trains
+and can be talked to. What remains is volume and length, which is
+mechanical.
 
-**A model external parties can satisfactorily interact with.** Three
-measurements say what that costs and they agree.
+**Levels two to six are a scheduling problem.** Allocation over a partial
+order: every concept and word slotted into a level and revisited at
+increasing complexity. Measured 2026-09-25: **24 concepts no schedule
+teaches, 68 taught once and never revisited**, and schedules for two of
+seven levels.
 
-**It is a corpus problem, not a training problem, and that is measured
-rather than argued.** Sweeping steps against width separates the two,
-because a model short of training shows a small gap between training and
-held-out loss while a model short of data shows a widening one. Every row
-widened. At width 256 and 3,200 steps the model reaches a training loss
-of 0.040 and a held-out loss of 7.794 against ln(2253) = 7.72 for
-uniform: it memorises 45,000 tokens perfectly and predicts held-out text
-worse than chance.
+**Level seven is a transition problem** from an idealised synthetic corpus
+to real material. `sources/` is empty, its licensing constraint is
+recorded and unexamined, and nothing measures performance on a problem
+nobody wrote for the model. It has not started.
 
-**The best reachable figure on this corpus is perplexity 133**, at width
-256 and four hundred steps. That is what the samples sound like.
+## What I recommend pursuing
 
-**Held-out loss falls linearly in the logarithm of corpus size**, about
-0.29 nats a doubling, measured over four fractions. Extrapolated, 10^6
-tokens gives perplexity near 35 and 10^7 near 13. See
-`../../evals/pilot/LEVEL_ONE_SCALING.md`, including why the
-extrapolation is both optimistic and pessimistic.
+**A. Level-one length.** The corpus is 37,207 words against 181,600 at the
+operator's fifty-words-a-spread standard, and every one of 227 content
+books is below the band. `fill_spreads.py` lengthens what exists rather
+than adding books, which also avoids the repetition that more books about
+the same units produces. **A factor of five without a new book.**
 
-## What I recommend pursuing, and what I do not
+**B. The revisit gap, where it is mechanical.** Half the concepts appear
+once, which is the curriculum's own claim going unhonoured. Deciding
+*which* level a concept should be revisited at is design. Recording that a
+level-two module revisits the level-one concepts its own domain already
+teaches is not, and it closes a large part of the gap without a judgement
+per concept.
 
-**A. Corpus volume, and nothing else comes close.** `--variants N` writes
-an Nth book per unit at about twenty-five books a round. 10^6 tokens is
-roughly fifty books a unit against the two or three that exist, so this
-is many sessions of work and every round moves the number.
+**C. `about` and `teaches` for books.** Written in unrestricted English for
+a curator, so nothing is rejected on vocabulary and the teacher cannot
+fail the way it fails on corpus prose. Zero of 229 books carry them.
 
-**B. Keep the gate green and closure intact while it grows.** Each round
-triages its quarantine: suitable words through `tools/admit.py`,
-unsuitable ones into `substitutions`.
+**D. Not mine.** Schedules for levels three to seven. Anything under
+`sources/`, including the licensing question. The allocation that takes
+the level-two lexicon from 871 words to ten thousand, which is a schedule
+nobody has written rather than a backlog of admissions. The endpoint and
+estimator for pre-registration item 10, which fixes the sign of any
+ordering result.
 
-**C. Re-measure rather than trust the curve.** The scaling fit is
-extrapolated over 2.3 orders of magnitude from 0.9. Re-run
-`diagnose_level.py --fractions` when the corpus has doubled, and correct
-the record if it bends.
+## What the framing corrected in my own priorities
 
-**D. Training work, and it is second order.** Early stopping on held-out
-loss, and dropout and weight decay are both at their defaults and
-untuned. Worth doing when the corpus is large enough that the tuning
-means something. **Not worth doing now**, because none of it turns
-perplexity 133 into a model anyone wants to talk to.
+**I had been treating corpus volume as the universal answer.** It is the
+binding constraint on the level-one MVP and was measured to be. It is not
+binding at levels two to six, where coverage and consistency are, and a
+large corpus with unscheduled concepts would not be progress.
 
-**E. Not recommended, and these are the operator's.** The endpoint and
-estimator for item 10, which fixes the sign of any ordering result. The
-minimum meaningful effect for item 7. Schedules above level two. The
-ablation itself, which is not attemptable until those land.
+**I had been treating the level-two lexicon as a backlog.** Admitting
+words a round at a time from whatever blocked a generator will not produce
+ten thousand of them.
 
-## How a book round goes
+## How a round goes
 
-Generate a bounded chunk, top it up, then gate.
-
-1. `generators/generate_books.py --limit 25 --variants N`. Runs are
-   additive and skip units already holding N books. Each book is written
-   as soon as it is built.
-2. `generators/extend_books.py` until nothing more can be added. It tops
-   up a short book and trims a long one from the end.
-3. **Triage the quarantine.** Both generators write one, and the reject
-   names the words that blocked it.
-4. **A book the teacher cannot finish is finished by hand.** The operator
-   rule is to edit the story, not reject it.
+1. Generate or fill a bounded chunk. Runs are additive.
+2. Bring every book to its exact spread count.
+3. Triage the quarantine: suitable words through `tools/admit.py`,
+   unsuitable ones into `substitutions`.
+4. A book the teacher cannot finish is finished by hand.
 5. Gate, read the exit code, stop, then commit.
 
 ## Wrong turns, every one already made once

@@ -7,41 +7,43 @@ state below is complete. No branch, process or commit-shape requirement.
 **A measurement that falls short satisfies this. A good result is not
 required and must not be manufactured.**
 
-## A model can be interacted with
-
-- A tool in the tree loads trained weights and answers a prompt, and
-  refuses rather than inventing weights when none exist.
-- Its output for at least one prompt is recorded in the tree.
-- The record states the held-out loss or perplexity of the model that
-  produced it, so the reader can tell how much to trust what they see.
-
-## The corpus is growing and sound
+## Level one, the bootstrapping problem
 
 - Every unit in `curriculum/schedule/level_01.json` has at least one book
   in `curriculum/books/level_1/`, and every book there holds exactly
   sixteen spreads.
-- The corpus is **larger in tokens than the 45,547 measured on
+- The corpus is **larger in words than the 37,207 measured on
   2026-09-25**, and the tree records the current figure.
-- `tools/validate_books.py` exits 0 with the spread standard enforced.
+- A tool loads trained weights and answers a prompt, refusing rather than
+  inventing weights when none exist, and its output for at least one
+  prompt is recorded with the loss of the model that produced it.
 
-## Reference material stays sound, levels one and two
+## Levels two to six, the scheduling problem
 
-- Every word admitted at that level and not in the seed has a definition
+- The tree reports, by name and not as a percentage, every concept no
+  schedule teaches and every concept taught once and never revisited.
+- **The count of concepts taught once and never revisited is lower than
+  the 68 measured on 2026-09-25**, or the tree records why it is not.
+- Every level-two module names concepts it teaches or revisits, and no
+  scheduled concept lacks a word at its level.
+
+## Reference material stays sound
+
+- Every word admitted at a level and not in the seed has a definition
   record under `curriculum/books/level_<n>/`.
-- `tools/validate_closure.py` reports closure 100 percent at both levels,
-  with nothing on the frontier, nothing blocked and no cycles.
-- Every sense admitted at that level has a thesaurus entry, and
+- `tools/validate_closure.py` reports closure 100 percent at levels one
+  and two, with nothing on the frontier, nothing blocked and no cycles.
+- Every sense admitted at a level has a thesaurus entry, and
   `tools/validate_thesaurus.py` exits 0 at both levels.
 - `ostensive` in `curriculum/vocabulary.json` holds at most 60 words.
+- Every dictionary book is in alphabetical order.
 
-## The limit on model quality is named with evidence
+## What a curator can see
 
-- The tree records a measurement separating undertrained from
-  out-of-corpus, reporting training and held-out loss for more than one
-  configuration.
-- The tree records what corpus size would be needed for a better model,
-  with the measurements it was derived from and the reasons it may be
-  wrong.
+- More books carry both `about` and `teaches` than the zero measured on
+  2026-09-25, and `tools/validate_books.py --describe` reports how many
+  still do not.
+- A specification for drafting a book at each level exists in the tree.
 
 ## Gate and repository
 
@@ -52,13 +54,14 @@ required and must not be manufactured.**
 
 ## Records
 
-- `docs/process/HANDOFF.md` states the current corpus, closure and model
-  figures, and those match what the tools report.
+- `docs/process/HANDOFF.md` states the current corpus, closure, coverage
+  and model figures, and those match what the tools report.
 - Any goal left undone is named, with what blocks it.
 
 ## Out of scope
 
-The level-two ablation, schedules for levels three and above, and a
-concept-complexity target per level are **not** required. Reaching a
-corpus of 10^6 tokens is **not** required, because at the observed rate
-it is many times longer than a session.
+Schedules for levels three and above, anything under `sources/`, the
+level-two lexicon reaching ten thousand words, and the level-two ablation
+are **not** required. The first three are design the operator holds or
+work longer than a session; the ablation additionally depends on an
+endpoint nobody has fixed.
