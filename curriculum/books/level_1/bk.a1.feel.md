@@ -18,7 +18,9 @@
     "a1.feel.s05": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.feel.s06": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.feel.s07": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
-    "a1.feel.s08": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}}
+    "a1.feel.s08": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.feel.x11": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.feel.x12": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -55,3 +57,9 @@ He goes to bed, lies down, and sleeps, because he is too tired to play more.
 
 [a1.feel.s08]
 The toy stays in his room, safe and quiet, where no one can see it from outside.
+
+[a1.feel.x11]
+He wakes up to the sound of birds outside his window.
+
+[a1.feel.x12]
+He wakes up to the sound of birds singing outside his window.

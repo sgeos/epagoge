@@ -1096,6 +1096,17 @@
       ]
     },
     {
+      "word": "clap",
+      "concept": "sound",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "clapped",
+        "clapping",
+        "claps"
+      ]
+    },
+    {
       "word": "class",
       "concept": "people_together",
       "level": 1,
@@ -1137,6 +1148,7 @@
       "pos": "verb",
       "forms": [
         "closed",
+        "closer",
         "closes",
         "closing"
       ]
@@ -1419,7 +1431,11 @@
     {
       "word": "dark",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "darkened",
+        "darker"
+      ]
     },
     {
       "word": "daughter",
@@ -4135,6 +4151,17 @@
       "level": 5
     },
     {
+      "word": "promise",
+      "concept": "being_told",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "promised",
+        "promises",
+        "promising"
+      ]
+    },
+    {
       "word": "proper",
       "concept": "way_of_doing",
       "level": 1,
@@ -4211,7 +4238,11 @@
     {
       "word": "quiet",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "quieter",
+        "quietly"
+      ]
     },
     {
       "word": "rain",
@@ -4790,6 +4821,17 @@
       ]
     },
     {
+      "word": "shine",
+      "concept": "physical_property",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "shined",
+        "shines",
+        "shining"
+      ]
+    },
+    {
       "word": "shoes",
       "concept": "household_object",
       "level": 1
@@ -4945,7 +4987,13 @@
     {
       "word": "sit",
       "concept": "presence",
-      "level": 5
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "sat",
+        "sits",
+        "sitting"
+      ]
     },
     {
       "word": "six",
@@ -5044,6 +5092,17 @@
         "smelled",
         "smelling",
         "smells"
+      ]
+    },
+    {
+      "word": "smile",
+      "concept": "feeling",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "smiled",
+        "smiles",
+        "smiling"
       ]
     },
     {
@@ -6317,7 +6376,8 @@
       "forms": [
         "winned",
         "winning",
-        "wins"
+        "wins",
+        "won"
       ]
     },
     {
@@ -6415,6 +6475,15 @@
       "word": "wrong",
       "concept": "knowing",
       "level": 1
+    },
+    {
+      "word": "yard",
+      "concept": "spatial_position",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "yards"
+      ]
     },
     {
       "word": "year",

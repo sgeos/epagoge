@@ -17,17 +17,11 @@
     },
     {
       "word": "accident",
-      "concept": "accident",
-      "synonyms": [
-        "mishap"
-      ]
+      "concept": "accident"
     },
     {
       "word": "add",
-      "concept": "addition",
-      "antonyms": [
-        "subtract"
-      ]
+      "concept": "addition"
     },
     {
       "word": "afraid",
@@ -82,10 +76,7 @@
     },
     {
       "word": "amount",
-      "concept": "quantity",
-      "synonyms": [
-        "quantity"
-      ]
+      "concept": "quantity"
     },
     {
       "word": "angry",
@@ -445,10 +436,7 @@
     },
     {
       "word": "bunch",
-      "concept": "grouping",
-      "synonyms": [
-        "group"
-      ]
+      "concept": "grouping"
     },
     {
       "word": "burn",
@@ -558,6 +546,10 @@
     {
       "word": "circle",
       "concept": "shape"
+    },
+    {
+      "word": "clap",
+      "concept": "sound"
     },
     {
       "word": "class",
@@ -1405,11 +1397,7 @@
     },
     {
       "word": "group",
-      "concept": "grouping",
-      "synonyms": [
-        "bunch",
-        "pile"
-      ]
+      "concept": "grouping"
     },
     {
       "word": "grow",
@@ -2118,10 +2106,7 @@
     },
     {
       "word": "mishap",
-      "concept": "accident",
-      "synonyms": [
-        "accident"
-      ]
+      "concept": "accident"
     },
     {
       "word": "missing",
@@ -2523,10 +2508,7 @@
     },
     {
       "word": "pile",
-      "concept": "grouping",
-      "synonyms": [
-        "group"
-      ]
+      "concept": "grouping"
     },
     {
       "word": "place",
@@ -2605,6 +2587,10 @@
       ]
     },
     {
+      "word": "promise",
+      "concept": "being_told"
+    },
+    {
       "word": "proper",
       "concept": "way_of_doing"
     },
@@ -2634,10 +2620,7 @@
     },
     {
       "word": "quantity",
-      "concept": "quantity",
-      "synonyms": [
-        "amount"
-      ]
+      "concept": "quantity"
     },
     {
       "word": "queen",
@@ -2744,10 +2727,7 @@
     },
     {
       "word": "remove",
-      "concept": "subtraction",
-      "synonyms": [
-        "subtract"
-      ]
+      "concept": "subtraction"
     },
     {
       "word": "repeat",
@@ -3027,6 +3007,10 @@
       "concept": "animal"
     },
     {
+      "word": "shine",
+      "concept": "physical_property"
+    },
+    {
       "word": "shoes",
       "concept": "household_object"
     },
@@ -3126,6 +3110,10 @@
       ]
     },
     {
+      "word": "sit",
+      "concept": "presence"
+    },
+    {
       "word": "six",
       "concept": "number_word_order"
     },
@@ -3197,6 +3185,10 @@
     {
       "word": "smell",
       "concept": "air"
+    },
+    {
+      "word": "smile",
+      "concept": "feeling"
     },
     {
       "word": "smooth",
@@ -3446,13 +3438,7 @@
     },
     {
       "word": "subtract",
-      "concept": "subtraction",
-      "synonyms": [
-        "remove"
-      ],
-      "antonyms": [
-        "add"
-      ]
+      "concept": "subtraction"
     },
     {
       "word": "sun",
@@ -4121,6 +4107,10 @@
       "antonyms": [
         "right"
       ]
+    },
+    {
+      "word": "yard",
+      "concept": "spatial_position"
     },
     {
       "word": "year",

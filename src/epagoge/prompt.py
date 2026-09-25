@@ -244,6 +244,46 @@ WORD <word>: <one sentence saying what that word means>
 STORY: <one sentence>"""
 
 
+def continue_story(
+    title: str,
+    existing: str,
+    count: int,
+    level: int,
+    admissible: Sequence[str],
+) -> str:
+    """Ask for the spreads a short book is missing.
+
+    **A book below the standard is unfinished, not wrong.** Regenerating
+    it would discard lines that are already true and admissible, so the
+    teacher is shown what exists and asked only for the rest.
+    """
+    if count < 1:
+        raise ValueError(f"count must be positive, got {count}")
+    if not admissible:
+        raise ValueError("no admissible vocabulary supplied")
+    lines = [
+        f"Here is the start of a picture book for a reader at level {level}.",
+        "",
+        f"TITLE: {title}",
+        "",
+        existing,
+        "",
+        f"Write {count} more sentences that carry the same story forward.",
+        "One sentence per line, nothing else. No numbering.",
+        "",
+        "Use ONLY these words, in any order and any inflection:",
+        "  " + " ".join(sorted(admissible)),
+        "",
+        "Rules:",
+        "  - Each sentence is one page of the book, so it must stand alone",
+        "    and also follow from the one before.",
+        "  - Say what happens. Do not explain what a word means.",
+        "  - Do not repeat a sentence that is already above.",
+        "  - Every line ends with a full stop.",
+    ]
+    return "\n".join(lines)
+
+
 def book(
     subject: str,
     subject_form: str,

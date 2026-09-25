@@ -19,7 +19,10 @@
     "a1.enough.s04": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-need-supply"}},
     "a1.enough.s05": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-need-supply"}},
     "a1.enough.s06": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-need-supply"}},
-    "a1.enough.s07": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-need-supply"}}
+    "a1.enough.s07": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-need-supply"}},
+    "a1.enough.x12": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.enough.x13": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.enough.x14": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -59,3 +62,12 @@ The child knew a shortage would harm the second plant.
 
 [a1.enough.s07]
 The child learned that extra water could not help both, so only one could live.
+
+[a1.enough.x12]
+The child looked up at the sky, wondering if rain would come to help both plants.
+
+[a1.enough.x13]
+The child reached into the pocket and pulled out a small seed, thinking of how it might grow if given water.
+
+[a1.enough.x14]
+The child carried the empty cup back to the house to fill it again.

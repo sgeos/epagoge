@@ -58,13 +58,18 @@ def main(argv: list[str]) -> int:
 
     paths = sorted(book_dir.glob("*.md"))
     parsed = {p: parse_book(p.read_text(encoding="utf-8"), p.name) for p in paths}
-    current: dict[str, str] = {}
-    for _book, records in parsed.values():
-        for record in records:
-            entry = cast(dict[str, object], record)
-            defines = cast(dict[str, object], entry.get("defines") or {})
-            if defines.get("kind") == "word":
-                current[str(defines["target"])] = str(entry["content"])
+    # **Canonical, not whichever record was read last.** Built by
+    # assignment order this took the book-embedded definition over the
+    # dictionary one, and the book versions are frequently ungrounded, so
+    # `shape`, `house` and `bright` all read as ungrounded while the
+    # dictionary defines them perfectly well.
+    all_books = [book for book, _records in parsed.values()]
+    all_records = [
+        cast(dict[str, object], r)
+        for _book, records in parsed.values()
+        for r in records
+    ]
+    current = word_definitions(all_books, all_records)
     inherited: dict[str, str] = {}
     for lower in lower_dirs:
         if not lower.exists():

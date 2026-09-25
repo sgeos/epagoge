@@ -64,6 +64,26 @@ class Book:
     records: tuple[str, ...] = ()
 
 
+SPREADS: Final[int] = 16
+"""Records per book, one per spread, giving a 32-page picture book.
+
+**Operator standard, 2026-09-25, and it is a publishing constraint rather
+than a stylistic one.** A picture book is bound in a signature, so its
+page count is a multiple of sixteen and thirty-two pages is the trade
+standard. Sixteen spreads is what that leaves, and a book that does not
+meet it cannot be physically published without being padded or cut by
+someone else.
+
+Before this, books ran from one story line to twelve and five of
+forty-six had a single line, which is not a book. The count is exact
+rather than a floor, because a signature does not accept a book that is
+nearly the right length.
+
+The subject statement takes one spread, each defined word takes one, and
+the story takes the rest. A book defining eight words therefore has seven
+spreads of story, which is why `MAX_DEFINED` is capped well below that.
+"""
+
 MAX_WORDS: Final[int] = 1000
 """Hard cap on a level-one book.
 
@@ -354,10 +374,26 @@ def validate_books(
     known_domains: Collection[str],
     known_topics: Collection[str],
     word_counts: Mapping[str, int] | None = None,
+    spreads: int | None = None,
 ) -> list[Violation]:
-    """Return every breach. Empty means the books are sound."""
+    """Return every breach. Empty means the books are sound.
+
+    ``spreads`` enforces the page standard when given. It is a parameter
+    rather than a constant because a board book and a picture book bind to
+    different signatures, so the number is a property of the edition and
+    not of the validator.
+    """
     out: list[Violation] = []
     seen: dict[str, str] = {}
+    for book in books:
+        if spreads is not None and len(book.records) != spreads:
+            out.append(
+                Violation(
+                    "wrong-length",
+                    f"book {book.id!r} has {len(book.records)} spreads and a "
+                    f"publishable book has {spreads}",
+                )
+            )
     targets = {
         DefinitionKind.WORD: set(known_words),
         DefinitionKind.DOMAIN: set(known_domains),

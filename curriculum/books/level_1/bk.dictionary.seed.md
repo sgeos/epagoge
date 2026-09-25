@@ -497,7 +497,13 @@
     "dict.1.fun": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fun"}, "defines": {"kind": "word", "target": "fun"}},
     "dict.1.paint": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:paint"}, "defines": {"kind": "word", "target": "paint"}},
     "dict.1.hill": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hill"}, "defines": {"kind": "word", "target": "hill"}},
-    "dict.1.hair": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hair"}, "defines": {"kind": "word", "target": "hair"}}
+    "dict.1.hair": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hair"}, "defines": {"kind": "word", "target": "hair"}},
+    "dict.1.smile": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:smile"}, "defines": {"kind": "word", "target": "smile"}},
+    "dict.1.clap": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:clap"}, "defines": {"kind": "word", "target": "clap"}},
+    "dict.1.yard": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yard"}, "defines": {"kind": "word", "target": "yard"}},
+    "dict.1.shine": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shine"}, "defines": {"kind": "word", "target": "shine"}},
+    "dict.1.promise": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:promise"}, "defines": {"kind": "word", "target": "promise"}},
+    "dict.1.sit": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sit"}, "defines": {"kind": "word", "target": "sit"}}
   }
 }
 ---
@@ -1971,3 +1977,21 @@ A hill is ground that goes up high.
 
 [dict.1.hair]
 Hair is the very thin long stuff that grows on your head.
+
+[dict.1.smile]
+A smile is the happy shape your mouth makes when you feel good.
+
+[dict.1.clap]
+To clap is to hit your hands together to make a sound.
+
+[dict.1.yard]
+A yard is the open ground near a house.
+
+[dict.1.shine]
+To shine is to give out bright light.
+
+[dict.1.promise]
+A promise is when you tell someone you will do a thing, and then you do it.
+
+[dict.1.sit]
+To sit is to rest your body on a thing.
