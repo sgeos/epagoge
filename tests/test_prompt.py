@@ -46,8 +46,14 @@ class TestNeighbours(unittest.TestCase):
         """The recorded conflation was with a prerequisite, not a sibling."""
         self.assertIn("breaks", prompts.neighbours(graph(), "wears"))
 
-    def test_a_dependent_is_an_exclusion(self) -> None:
-        self.assertIn("parts", prompts.neighbours(graph(), "wears"))
+    def test_a_dependent_is_not_an_exclusion(self) -> None:
+        """A general concept is taught through its instances.
+
+        Excluding dependents starved the hub concepts. Material, change and
+        sound produced nothing at all in a measured run while carrying five
+        or six exclusions each.
+        """
+        self.assertNotIn("parts", prompts.neighbours(graph(), "wears"))
 
     def test_a_sibling_sharing_a_prerequisite_is_an_exclusion(self) -> None:
         self.assertIn("snaps", prompts.neighbours(graph(), "wears"))
@@ -66,6 +72,13 @@ class TestNeighbours(unittest.TestCase):
             {},
         )
         self.assertEqual(len(prompts.neighbours(g, "c0")), prompts.MAX_EXCLUSIONS)
+
+    def test_a_root_concept_has_no_exclusions(self) -> None:
+        """Nothing above it to be confused with, so nothing is withheld."""
+        g = ConceptGraph(
+            [concept("root", "d"), concept("leaf", "d")], {"leaf": ["root"]}, {}
+        )
+        self.assertEqual(prompts.neighbours(g, "root"), [])
 
     def test_the_order_is_stable(self) -> None:
         g = graph()

@@ -47,17 +47,26 @@ class Target:
 def neighbours(graph: ConceptGraph, concept: str) -> list[str]:
     """Concepts near enough to be confused with this one.
 
-    Prerequisites and dependents are included, not only siblings. The
-    recorded conflation was between a concept and its own prerequisite,
-    so excluding only siblings would not have caught it.
+    **Prerequisites and siblings only. Not dependents.**
 
-    Ordered nearest first, by relation type, then alphabetically so the
-    prompt is stable across runs.
+    The recorded conflation was between a concept and its own prerequisite,
+    where a record aimed at wearing out taught things breaking instead, so
+    prerequisites must be excluded. Siblings sharing a prerequisite are
+    coordinate concepts and are confusable for the same reason.
+
+    **Dependents were excluded too and that was wrong.** It was added on
+    reasoning rather than on evidence, and the evidence arrived later. A
+    dependent is built on the target, so using it to illustrate the target
+    is correct teaching rather than drift. Excluding them starved the
+    general concepts, because **a general concept is taught through its
+    instances and its instances are exactly its dependents**. Material,
+    change and sound produced nothing at all in a measured run, each
+    carrying five or six exclusions, while concepts carrying one produced
+    everything asked of them.
+
+    Ordered nearest first, then alphabetically, so the prompt is stable.
     """
     direct = set(graph.prerequisites_of(concept))
-    dependents = {
-        other for other in graph.nodes if concept in graph.prerequisites_of(other)
-    }
     siblings: set[str] = set()
     for parent in direct:
         siblings.update(
@@ -68,7 +77,7 @@ def neighbours(graph: ConceptGraph, concept: str) -> list[str]:
     node = graph.nodes.get(concept)
     domain = node.domain if node is not None else None
     ordered: list[str] = []
-    for group in (direct, dependents, siblings):
+    for group in (direct, siblings):
         for other in sorted(group):
             candidate = graph.nodes.get(other)
             if candidate is None or candidate.domain != domain:

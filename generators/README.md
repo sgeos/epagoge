@@ -105,6 +105,47 @@ one piece of teaching to two ideas, which is the conflation the exclusions
 exist to prevent, arriving as duplication rather than as drift. Deduplicated
 across the run.
 
+## Measured runs
+
+| Run | Level-one words | Exclusions | Concepts | Accepted | Rejected | Produced nothing |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1, no retry loop | 675 | prerequisites, dependents, siblings | 14 | 16 | 84 | — |
+| 2, retry added | 675 | prerequisites, dependents, siblings | 14 | 36 | 41 | 0 |
+| 3, lexicon expanded | 870 | prerequisites, dependents, siblings | 24 | 57 | 74 | **3** |
+| 4, exclusions corrected | 870 | prerequisites, siblings | 24 | **61** | **59** | **1** |
+
+## Excluding dependents starved the general concepts
+
+**Run three produced nothing at all for `change`, `material` and `sound`**,
+which were the three concepts carrying the longest exclusion lists at five,
+six and five. Every concept carrying one exclusion produced everything
+asked of it.
+
+**A general concept is taught through its instances, and its instances are
+exactly its dependents.** `material` was forbidden from mentioning metal,
+liquid, heat or shape, which leaves almost nothing a material can be said
+to be. `change` was forbidden from mentioning anything that changes.
+
+Dependents were added to the exclusion list on reasoning rather than on
+evidence, with the argument that the recorded conflation was between a
+concept and its prerequisite so siblings alone would not have caught it.
+That argument was right about prerequisites and wrong to generalise.
+
+**Prerequisites and siblings are excluded. Dependents are not.** A
+prerequisite is prior knowledge a record may teach instead of its target,
+which is the recorded failure. A sibling is coordinate and confusable. A
+dependent is built on the target, so using it to illustrate the target is
+teaching rather than drift.
+
+**Run four confirms it.** `change` and `material` recovered. `sound` did
+not, and `sound` is the one concept still carrying five exclusions, because
+its prerequisite `change` has many other dependents which are therefore its
+siblings. That is one datum and it is consistent with the count hypothesis
+rather than proof of it.
+
+The recorded wearing-out case still holds. `wearing_out` still excludes
+`things_break`, which is its prerequisite.
+
 ## Open constraint
 
 The verification layer that rejects unsupported claims is specified in
