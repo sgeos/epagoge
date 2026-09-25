@@ -47,7 +47,7 @@ rendered ORDER of this list, not just the next unused number.
 5. `curriculum/schedule/level_01.json` holds **91** units, **69** existing
    concepts and **51** planned. Level two covers the two ablation domains
    only.
-6. `curriculum/vocabulary.json` holds **877** terms, **760** at level one.
+6. `curriculum/vocabulary.json` holds **890** terms, **773** at level one.
 7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
    **49 of 760** words defined, of which **1** is grounded.
 8. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not

@@ -821,6 +821,24 @@
       "level": 1
     },
     {
+      "word": "cheat",
+      "concept": "good_and_bad",
+      "forms": [
+        "cheats",
+        "cheated",
+        "cheating"
+      ],
+      "level": 1
+    },
+    {
+      "word": "cheater",
+      "concept": "person",
+      "forms": [
+        "cheaters"
+      ],
+      "level": 1
+    },
+    {
       "word": "check",
       "concept": "checking",
       "level": 1
@@ -1408,6 +1426,11 @@
       "level": 5
     },
     {
+      "word": "fair",
+      "concept": "good_and_bad",
+      "level": 1
+    },
+    {
       "word": "fall",
       "concept": "falling",
       "level": 1
@@ -1946,6 +1969,11 @@
       "level": 1
     },
     {
+      "word": "honest",
+      "concept": "being_told",
+      "level": 1
+    },
+    {
       "word": "horse",
       "concept": "animal",
       "level": 1
@@ -2221,8 +2249,26 @@
       "level": 1
     },
     {
+      "word": "liar",
+      "concept": "person",
+      "forms": [
+        "liars"
+      ],
+      "level": 1
+    },
+    {
       "word": "lid",
       "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "lie",
+      "concept": "being_told",
+      "forms": [
+        "lies",
+        "lied",
+        "lying"
+      ],
       "level": 1
     },
     {
@@ -3102,6 +3148,11 @@
       "level": 1
     },
     {
+      "word": "real",
+      "concept": "presence",
+      "level": 1
+    },
+    {
       "word": "rearrange",
       "concept": "conservation_of_number",
       "level": 2
@@ -3319,6 +3370,14 @@
     {
       "word": "second",
       "concept": "number_word_order",
+      "level": 1
+    },
+    {
+      "word": "secret",
+      "concept": "knowing",
+      "forms": [
+        "secrets"
+      ],
       "level": 1
     },
     {
@@ -3742,6 +3801,17 @@
       "level": 1
     },
     {
+      "word": "steal",
+      "concept": "having",
+      "forms": [
+        "steals",
+        "stole",
+        "stolen",
+        "stealing"
+      ],
+      "level": 1
+    },
+    {
       "word": "steam",
       "concept": "heat",
       "level": 1
@@ -3799,6 +3869,14 @@
     {
       "word": "straight",
       "concept": "shape",
+      "level": 1
+    },
+    {
+      "word": "stranger",
+      "concept": "person",
+      "forms": [
+        "strangers"
+      ],
       "level": 1
     },
     {
@@ -4027,6 +4105,14 @@
       "level": 1
     },
     {
+      "word": "thief",
+      "concept": "person",
+      "forms": [
+        "thieves"
+      ],
+      "level": 1
+    },
+    {
       "word": "thin",
       "concept": "physical_property",
       "level": 1
@@ -4225,6 +4311,15 @@
       "level": 1
     },
     {
+      "word": "trust",
+      "concept": "opinion",
+      "forms": [
+        "trusts",
+        "trusted"
+      ],
+      "level": 1
+    },
+    {
       "word": "try",
       "concept": "checking",
       "level": 1
@@ -4282,6 +4377,11 @@
     {
       "word": "understand",
       "concept": "knowing",
+      "level": 1
+    },
+    {
+      "word": "unfair",
+      "concept": "good_and_bad",
       "level": 1
     },
     {

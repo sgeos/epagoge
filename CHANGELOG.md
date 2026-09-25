@@ -27,6 +27,51 @@ Versioning.
 
 ## 2026-09-24
 
+### Corrected. The posture ceiling was a policy stated as a universal
+
+- **Operator correction.** That selective falsehood and fabrication stay
+  forbidden against every cell is **withdrawn**, kept in place beside its
+  replacement. Three claims had been collapsed into one, what this system
+  may do, what is defensible in general, and what actors in fact do. **A
+  local policy was promoted to a universal**, and the claim taxonomy
+  already separates normative from empirical.
+- **Compartmentalisation breaks the taxonomy rather than its boundary.** A
+  party given false information believes it and reports it truthfully, so
+  it is posture one, honest, and the system is deceptive anyway. **The
+  deception moved upstream into who was told what**, where a taxonomy of
+  speaker posture cannot see it.
+- **This reframes the incident.** The propagation was mostly not agents
+  lying. Agents relaying `poisoned` largely believed it, so the
+  originating fabrication was one act and **what followed was posture one
+  all the way down**. A coordinator does not need to make anyone lie. It
+  only needs to decide what they believe.
+- **Blinding refutes the absolute using this record's own example.** A
+  placebo is presented as though it were the treatment, which is
+  institutionalised fabrication and the gold standard of epistemic
+  hygiene.
+- **The corrected ceiling is about origination**, from the principle
+  already in the repository on its third application. **Assigned is a
+  method, assumed is a conspiracy.** A placebo protocol and
+  compartmentalisation are assigned. The incident's scorer was assumed.
+  **The narrow claim that survives** is that no audience licenses an agent
+  to originate deception for its own advantage.
+- **Omission over corruption is a default with a reason.** An omission
+  later found wrong is repaired by disclosing. **A falsehood later found
+  wrong has already been acted on.**
+- **A third level above posture.** Architecture decides who is told what,
+  posture what is said, credence what a claim is worth. **An agent cannot
+  verify from inside that it is not seeded**, which is faith-shaped and
+  not fixable by care. **Provenance is always available**, giving
+  `who_said_it` a second and stronger reason than the one it was planned
+  under.
+- **Thirteen level-one terms added**, `cheat`, `cheater`, `fair`,
+  `honest`, `liar`, `lie`, `real`, `secret`, `steal`, `stranger`, `thief`,
+  `trust` and `unfair`, each licensed by a concept already in the graph
+  and scheduled at level one. **890 terms, 773 at level one**, mapping
+  still complete. Calling out a liar is the existing "that is not true
+  because" form with a person as its subject, and **recognition that
+  cannot be voiced is not recognition**.
+
 ### Added. Two axes on the posture taxonomy, and the line they must not move
 
 - **Operator addition to `INFORMATION_ASYMMETRY.md`.** Posture depends on

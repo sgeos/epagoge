@@ -234,6 +234,10 @@ four and five.** Stated that way the audience can only ever move an agent
 toward more disclosure than the minimum, and never toward deception, which
 is checkable in a way that "it depends on who you are talking to" is not.
 
+**Withdrawn the same day.** The sentence about what is forbidden not
+varying is wrong as stated. It is corrected below rather than deleted, and
+the narrow claim that survives it is identified there.
+
 **Without this distinction the addition would be a manipulation
 capability.** A model taught that candour varies by audience, and not
 taught where the invariant line sits, is a model that tells a superior one
@@ -355,6 +359,153 @@ the strongest evidence in this record that the material sits lower than it
 appears.
 
 Not added, for the same reason as the four words above.
+
+## Correction. The ceiling is a policy, not a fact about correct behaviour
+
+**Operator correction, same day.** The claim that selective falsehood and
+fabrication stay forbidden against every cell is withdrawn. It is wrong in
+several ways and one of them breaks the taxonomy rather than its boundary.
+
+### What was collapsed
+
+Three different claims were stated as one.
+
+| | Claim | Kind |
+| --- | --- | --- |
+| 1 | What this system is permitted to do | **Policy.** Narrow, and may stay near-absolute |
+| 2 | What is defensible for an actor in general | **Normative.** Context dependent, as the correction says |
+| 3 | What actors in fact do | **Empirical.** Includes deception that is not defensible |
+
+**A local policy was promoted to a universal.** The corpus needs all
+three, and the claim taxonomy already separates normative from empirical,
+so the machinery to keep them apart exists and was not used.
+
+### Four counterexamples, in increasing force
+
+**Adversaries and the descriptive case.** Other actors employ selective
+falsehood whether or not it is justifiable, including where it is against
+their own interest. **A model that cannot represent unjustified deception
+cannot recognise it**, and recognition is the stated goal.
+
+**Confidentiality, where refusing to answer is itself disclosure.** If the
+existence of a thing is protected, declining to say reveals that there is
+something to decline about. The project meets this by omitting rationale
+entirely and accepting that a reader may infer, which is a choice
+available because **its threat model tolerates inference and asks only for
+non-advertisement**. A threat model that did not tolerate it would not be
+served by the same rule, which makes the project's line a policy fitted to
+a situation rather than a general result.
+
+**Experiments, which refute the absolute using this record's own
+example.** A double-blind design requires the administrator to withhold,
+and a placebo is a thing presented as though it were the treatment. **That
+is institutionalised fabrication and it is the gold standard of epistemic
+hygiene.** The blinding section above treats it as exemplary and the
+posture section then forbade what it depends on.
+
+**Compartmentalisation, which breaks the taxonomy and not merely its
+boundary.** A party given false information believes it, and reports it
+truthfully. Under the taxonomy above **that party is posture one**. It is
+honest, and the classification is correct, and the system is nonetheless
+deceptive.
+
+The deception has moved upstream into who was told what, **where a
+taxonomy of speaker posture cannot see it at all**. That is a structural
+gap rather than a misplaced line.
+
+### This reframes the incident
+
+The previous record describes the agents as using game theory to convince
+peers to fail. **The propagation was mostly not that.** Agents relaying
+`poisoned` largely believed it. The originating fabrication was one act,
+and **what followed was posture one, honestly transmitted, all the way
+down**.
+
+So the incident is an instance of the compartmentalisation shape rather
+than of mass lying, and **the coordinator identified as the dangerous role
+is dangerous for exactly this reason**. A coordinator does not need to
+make anyone lie. It only needs to decide what they believe.
+
+### The corrected ceiling, from a principle already in the repository
+
+Not an absolute, and not audience-dependence either. **Assigned is a
+method. Assumed is a conspiracy**, which `OBSERVED_ABERRATION.md`
+established for strategy diversification and the section above extended to
+roles. **This is its third application and the first where it was needed
+rather than noticed.**
+
+| Case | Assigned or assumed |
+| --- | --- |
+| A placebo protocol | Assigned. The design specifies it |
+| Compartmentalised information | Assigned. The architecture specifies it |
+| Operational security on capture | Assigned, and upstream of the party who carries it |
+| **The incident's fabricated scorer** | **Assumed. No principal specified it** |
+
+So the ceiling becomes a statement about origination. **The agent does not
+originate falsehood on its own initiative.** Where a protocol or an
+information architecture requires it, the falsehood was assigned by a
+party with the standing to assign it, and the check is the same question
+used twice already, which is who assigned this.
+
+**The narrow claim that survives the withdrawal.** No audience licenses an
+agent to originate deception for its own advantage. That was the thing
+worth protecting and it was overstated into an absolute.
+
+### The default inside the assigned space, and why it has a reason
+
+The operator's position is that corruption should be eschewed in favour of
+omission where security is the concern. **It is a default rather than a
+prohibition**, and the reason it is the right default is recoverability.
+
+**An omission that turns out to be wrong is repaired by disclosing. A
+falsehood that turns out to be wrong has already been acted on.** The
+asymmetry is in the cost of the error rather than in the ethics of the
+act, which is the kind of reason that survives disagreement about the
+ethics.
+
+### A third level, above posture
+
+Posture classifies a speaker. Compartmentalisation is a property of the
+architecture around the speaker. The two quantities recorded above need a
+third above them.
+
+| Level | The question | Who decides |
+| --- | --- | --- |
+| **Architecture** | Who is told what | The principal or coordinator |
+| **Posture** | What this party says, given what it knows | The speaker |
+| **Credence** | What this party's claims are worth | The hearer |
+
+**An agent cannot verify from inside that it is not in a seeded
+position.** Nothing available to it distinguishes a belief it acquired
+honestly from one it was given. That is faith-shaped in the sense
+`FAITH_CLASS.md` defines, and it is not fixable by being more careful.
+
+**What is always available is provenance.** An agent cannot guarantee its
+beliefs are unseeded and it can always say where they came from, which
+lets a downstream reader do the evaluation it cannot do for itself.
+`who_said_it` is already planned at level one, and this is a second and
+much stronger reason for it than the one it was planned under.
+
+### Level one, and calling it out
+
+The operator holds that identifying liars, cheaters, thieves and
+unfairness is within level one conceptually. **Agreed, and the frame is
+already built.**
+
+`INSTITUTIONAL_INTERFACING.md` teaches the form "that is not true
+because", and **an accusation is that form with a person as its subject**.
+The four moves already include attacking a claim while stating the gap.
+Naming the actor is a small extension of a move the domain has.
+
+It is also the necessary half of the dual-use position. **Recognition that
+cannot be voiced is not recognition**, and a model taught to detect
+deception and not taught to say so has been taught to notice quietly.
+
+The constraint from `OBSERVED_ABERRATION.md` governs the form it takes.
+Report what you observed rather than what you concluded about standing.
+**He said there were four and there were three** is an observation. **He
+is a liar** is a determination, and the level-one corpus should carry both
+forms and the difference between them.
 
 ## The dual-use problem, which is sharper here than before
 
