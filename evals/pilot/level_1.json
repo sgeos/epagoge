@@ -1,0 +1,20 @@
+{
+  "level": 1,
+  "chunks": 59,
+  "tokens": 7611,
+  "vocab_size": 1772,
+  "parameters": 1263360,
+  "steps": 20,
+  "seeds": 1,
+  "device": "mps",
+  "elapsed": "13.1s",
+  "results": [
+    {
+      "seed": 0,
+      "curriculum": 7.383670091629028,
+      "topological": 7.3835108280181885,
+      "difference": 0.00015926361083984375
+    }
+  ],
+  "note": "Held-out loss per arm per seed. This decides nothing. The pre-registered threshold does, and at this corpus size the arms are expected to be indistinguishable."
+}

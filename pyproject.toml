@@ -52,6 +52,9 @@ select = ["E", "F", "W", "B", "S", "I", "N", "UP", "ANN", "RET", "SIM", "PTH"]
 # same reason: an experiment must be reproducible from a declared seed, which
 # is the property a cryptographic generator does not offer.
 "src/epagoge/pilot.py" = ["S311"]
+# The ordering arms of the ablation are drawn from a declared seed, for
+# the same reason. A run that cannot be reproduced measures nothing.
+"tools/train_level.py" = ["S311"]
 "src/epagoge/variance.py" = ["S311"]
 "tools/run_pilot.py" = ["S311"]
 # The corpus builder shuffles book order for the ablation's control arm,

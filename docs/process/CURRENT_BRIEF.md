@@ -8,9 +8,9 @@ items. Delete when `COMPLETION_CONDITION.md` is met.
 | # | Goal | State | Real blocker |
 | --- | --- | --- | --- |
 | 1 | Dictionary coverage and closure | **Done. 661 of 661, closure 100%** | — |
-| 2 | Thesaurus, synonyms and antonyms | 194 antonyms, 0 synonyms | None. Authoring |
-| 3 | Missing words added to both | No method yet | None. Derive from what definitions had to work around |
-| 4 | Full level-one corpus draft | **5 content books of 92 units** | None, at draft scale |
+| 2 | Thesaurus, synonyms and antonyms | **Done. 194 antonyms, 132 synonyms over 749 entries** | — |
+| 3 | Missing words added to both | **Done, and now continuous.** `tools/admit.py` pulls words the corpus asks for | — |
+| 4 | Full level-one corpus draft | **12 books of 92 units** | None. Generation, running |
 | 5 | Train a level-one model | `epagoge.pilot` has the model, loop, device and paired orderings; torch 2.14 and MPS verified | **Item 4.** The corpus is about 2,200 words and cannot train anything |
 | 6 | Level-two dictionary and thesaurus | Level two holds 49 terms | Item 1, and a level-two lexicon |
 | 7 | Level-two ablation | Pre-registration has pending items | Items 4 and 5 |
@@ -37,6 +37,20 @@ inconsistent at full scale. **Expect a null. Record it as a null.** A
 result that is not there must not be manufactured, and the pre-registered
 threshold is what decides, not the sign of the difference.
 
+## How a book round goes now
+
+Generate, then triage the quarantine rather than discard it. Each rejected
+line names the words that blocked it. **A word the teacher reached for is
+evidence, not an error.** Suitable words go through `tools/admit.py`,
+which derives the plural or the inflections, writes the definition through
+the closure check, and syncs the thesaurus, all or nothing. Unsuitable
+words are rephrased instead.
+
+**The suitability judgement is mine each round and deliberately not
+automated.** That is the same triage the operator gave for the lexicon,
+and putting a model in charge of it would grow the lexicon by whatever the
+model finds convenient.
+
 ## Wrong turns, every one already made once
 
 - **The gate must gate.** A commit ran after `GATE=1` was printed in the
@@ -60,6 +74,22 @@ threshold is what decides, not the sign of the difference.
   lexicon.
 - **Never `git checkout` to undo without checking what else is
   uncommitted.** It cost two authored waves.
+- **A long generation run must write as it goes.** Books were written only
+  at the end, so one teacher timeout killed a ten-book chunk and lost
+  every one of them. Chunking gave checkpointing between chunks and none
+  within one.
+- **A timeout is not a failure worth raising on.** Over ninety books it is
+  an ordinary event. Return empty and let the caller treat it as an
+  unusable answer. A non-zero exit still raises, because that is
+  misconfiguration rather than slowness.
+- **A tool that writes two artifacts must write both or neither.**
+  `admit.py` wrote the lexicon, then found a definition bad, and left
+  words admitted with nothing defining them, which is the state the
+  closure gate exists to forbid.
+- **The corpus validator is more permissive than the lexicon.** It accepts
+  a word by stripping suffixes, so `clouds` passes on the strength of
+  `cloud`. Exact tokenisation is the stricter check and it found twelve
+  plurals nothing else had.
 
 ## Watch these two numbers
 
