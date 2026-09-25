@@ -468,6 +468,45 @@ BLOCK_RE: Final[re.Pattern[str]] = re.compile(r"^\[([^\]\n]+)\]\s*$", re.MULTILI
 FRONT_MATTER = "---"
 
 
+def records_in(
+    book: Book, records: Sequence[Mapping[str, object]]
+) -> list[Mapping[str, object]]:
+    """The records belonging to one book, in the book's own order.
+
+    ``load_book_dir`` returns every record in the directory flat, so a
+    caller rewriting a single book has to select its own back out.
+    """
+    by_id = {str(r["id"]): r for r in records}
+    return [by_id[i] for i in book.records if i in by_id]
+
+
+def extend_records(
+    existing: Sequence[Mapping[str, object]], new: Sequence[Mapping[str, object]]
+) -> list[Mapping[str, object]]:
+    """Existing records, then the new ones whose id is not already present.
+
+    **A generator that re-renders a book from its own run alone destroys
+    what earlier runs put there.** ``generate_dictionary.py`` filtered its
+    new records against the ids already in the book and then wrote the file
+    from that filtered list, which would have replaced twenty-two
+    accumulated definitions with whatever the next run happened to produce.
+
+    Found by reading the write path before running it rather than by losing
+    the definitions, so the failure is recorded as latent rather than as an
+    incident. The accumulate-and-deduplicate rule lives here so a test can
+    reach it, since the generators are outside the coverage source.
+    """
+    out = list(existing)
+    have = {str(r["id"]) for r in out}
+    for record in new:
+        identifier = str(record["id"])
+        if identifier in have:
+            continue
+        have.add(identifier)
+        out.append(record)
+    return out
+
+
 def render_book(
     payload: Mapping[str, object], records: Sequence[Mapping[str, object]]
 ) -> str:

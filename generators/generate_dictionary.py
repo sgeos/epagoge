@@ -18,13 +18,20 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from collections.abc import Mapping
 from pathlib import Path
 from typing import cast
 
 from generate import ask, well_formed
 from generate_books import admissible_words
 from epagoge import prompt as prompts
-from epagoge.book import dictionary_closure, load_book_dir, render_book
+from epagoge.book import (
+    dictionary_closure,
+    extend_records,
+    load_book_dir,
+    records_in,
+    render_book,
+)
 from epagoge.vocabulary import load_vocabulary, tokenise, unlicensed
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -117,18 +124,31 @@ def main(argv: list[str]) -> int:
         print(f"  kept {kept} of {len(todo)}", file=sys.stderr)
 
     if written:
+        # **Accumulate, never replace.** This previously rendered the file
+        # from the current run's records alone, having first filtered out
+        # the ids already present, so a second run would have deleted every
+        # definition an earlier run left here. Caught by reading the write
+        # path rather than by losing them.
+        book_id = f"bk.dictionary.{args.level}"
+        path = book_dir / f"{book_id}.md"
+        existing: list[Mapping[str, object]] = []
+        if path.exists():
+            old_books, old_records = load_book_dir(book_dir)
+            flat = [cast(Mapping[str, object], r) for r in old_records]
+            for candidate in old_books:
+                if candidate.id == book_id:
+                    existing = records_in(candidate, flat)
+        merged = extend_records(
+            existing, [cast(Mapping[str, object], r) for r in written]
+        )
+        subject = cast(Mapping[str, object], merged[0]["defines"])
         head = {
-            "id": f"bk.dictionary.{args.level}",
+            "id": book_id,
             "level": args.level,
             "title": f"Words at level {args.level}",
-            "subject": {"kind": "word", "target": str(written[0]["defines"]["target"])},  # type: ignore[index]
+            "subject": {"kind": "word", "target": str(subject["target"])},
         }
-        path = book_dir / f"bk.dictionary.{args.level}.md"
-        if path.exists():
-            _, old = load_book_dir(book_dir)
-            have = {str(cast(dict[str, object], r)["id"]) for r in old}
-            written = [r for r in written if str(r["id"]) not in have]
-        path.write_text(render_book(head, written), encoding="utf-8")
+        path.write_text(render_book(head, merged), encoding="utf-8")
 
     closure = dictionary_closure(defined, seed, tokenise, resolve)
     print(

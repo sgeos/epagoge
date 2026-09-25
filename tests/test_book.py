@@ -25,6 +25,7 @@ from epagoge.book import (
     definition_coverage,
     definition_from_json,
     dictionary_closure,
+    extend_records,
     linear_extension,
     load_book_dir,
     load_books,
@@ -402,3 +403,47 @@ class TestDictionaryClosure(unittest.TestCase):
     def test_the_fraction_counts_only_defined_words(self) -> None:
         got = cast(Closure, self.closure({"a1": "the is", "b1": "the ghost"}))
         self.assertAlmostEqual(got.fraction, 0.5)
+
+
+class AccumulatingIntoABook(unittest.TestCase):
+    """A rewrite must not drop what earlier runs wrote.
+
+    The dictionary generator filtered its new records against the ids
+    already in the book and then rendered the file from that filtered list,
+    so a second run would have replaced every accumulated definition. These
+    fail against that behaviour rather than merely passing against the fix.
+    """
+
+    def records(self, *ids: str) -> list[dict[str, object]]:
+        return [{"id": i, "content": f"the {i}", "level": 1} for i in ids]
+
+    def test_existing_records_survive_a_run_that_adds_none(self) -> None:
+        existing = self.records("a", "b")
+        got = extend_records(existing, [])
+        self.assertEqual([str(r["id"]) for r in got], ["a", "b"])
+
+    def test_existing_records_survive_a_run_that_adds_some(self) -> None:
+        got = extend_records(self.records("a", "b"), self.records("c"))
+        self.assertEqual([str(r["id"]) for r in got], ["a", "b", "c"])
+
+    def test_the_result_is_never_the_new_records_alone(self) -> None:
+        """The exact shape of the defect, named so it cannot come back."""
+        new = self.records("c")
+        got = extend_records(self.records("a", "b"), new)
+        self.assertNotEqual([str(r["id"]) for r in got], [str(r["id"]) for r in new])
+
+    def test_a_repeated_id_is_not_duplicated_and_keeps_the_original(self) -> None:
+        existing = self.records("a")
+        new = [{"id": "a", "content": "rewritten", "level": 1}]
+        got = extend_records(existing, new)
+        self.assertEqual(len(got), 1)
+        self.assertEqual(str(got[0]["content"]), "the a")
+
+    def test_new_records_repeating_each_other_collapse(self) -> None:
+        got = extend_records([], self.records("a", "a", "b"))
+        self.assertEqual([str(r["id"]) for r in got], ["a", "b"])
+
+    def test_the_inputs_are_not_mutated(self) -> None:
+        existing = self.records("a")
+        extend_records(existing, self.records("b"))
+        self.assertEqual(len(existing), 1)
