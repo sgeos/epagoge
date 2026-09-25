@@ -492,6 +492,17 @@
             "others-act",
             "checking-settles-it"
           ]
+        },
+        {
+          "id": "a1.self",
+          "form": "I want the cup. She wants the cup. I am not her.",
+          "teaches": [
+            "self_and_other"
+          ],
+          "primitives": [
+            "others-act",
+            "others-know-differently"
+          ]
         }
       ]
     },
@@ -599,6 +610,30 @@
             "telling-can-be-wrong",
             "marks-stand-for-things"
           ]
+        },
+        {
+          "id": "c1.asking",
+          "form": "You do not know. So you ask. Then she tells you.",
+          "teaches": [
+            "asking"
+          ],
+          "primitives": [
+            "others-can-be-asked",
+            "telling-can-be-wrong"
+          ]
+        },
+        {
+          "id": "c1.sentence",
+          "form": "Put words together and you have said a thing.",
+          "teaches": [
+            "sentence"
+          ],
+          "revisits": [
+            "word"
+          ],
+          "primitives": [
+            "marks-stand-for-things"
+          ]
         }
       ]
     },
@@ -635,6 +670,17 @@
           ],
           "primitives": [
             "quantity-survives-rearrangement"
+          ]
+        },
+        {
+          "id": "ac1.having",
+          "form": "The cup is mine. That one is hers. Now I have two.",
+          "teaches": [
+            "having"
+          ],
+          "primitives": [
+            "marks-stand-for-things",
+            "others-act"
           ]
         }
       ]
@@ -737,6 +783,19 @@
           ],
           "primitives": [
             "danger-must-be-taught",
+            "others-act"
+          ]
+        },
+        {
+          "id": "i1.family",
+          "form": "That is her mother. She is the child. They are one family.",
+          "teaches": [
+            "family"
+          ],
+          "revisits": [
+            "people_together"
+          ],
+          "primitives": [
             "others-act"
           ]
         }
@@ -855,6 +914,17 @@
           "primitives": [
             "telling-can-be-wrong",
             "others-can-be-asked"
+          ]
+        },
+        {
+          "id": "n1.good_bad",
+          "form": "Warm water is good. The hot stove is bad. You want one and not the other.",
+          "teaches": [
+            "good_and_bad"
+          ],
+          "primitives": [
+            "some-things-harm",
+            "harm-can-be-avoided"
           ]
         }
       ]

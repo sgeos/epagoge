@@ -185,6 +185,76 @@ the planned `not_both`. 天 as innate by `raw_and_made`.
 赤 as an intensifier, meaning utterly or completely. It modifies and names
 nothing.
 
+## Mainland cross-reference, 2026-09-24. Six concepts, one of them predicted
+
+The first-grade first-volume character list of the People's Education Press
+unified textbook was obtained and read. Roughly a hundred entries, eleven
+of which are pinyin letters rather than characters.
+
+**Evidence class.** This is a textbook implementing the ministry standard,
+not the ministry appendix itself, so it is slightly weaker than the
+Japanese per-grade table. It is still national in scale and independent of
+the Japanese selection, which is what makes a divergence informative.
+
+### The divergence that was predicted
+
+**妈, 爸, 奶, 妹 and 家.** Mother, father, grandmother, younger sister, and
+home-or-family. Japanese grade one has 人, 子, 女 and 男 and puts 父, 母,
+兄, 弟, 姉 and 妹 later.
+
+`CHARACTER_STANDARDS.md` recorded a hypothesis that if the Chinese first
+volume introduced family terms earlier it would point at a concept the
+graph lacks, which is **who someone is to someone else**, distinct from
+`person` and from `people_together`. It does, and the concept is added as
+`family`.
+
+The hypothesis was recorded before the list was obtained. That is the only
+prediction in this line of work that has been tested.
+
+### Added
+
+| Concept | Domain | From |
+| --- | --- | --- |
+| `family` | institutional interfacing | 妈 爸 奶 妹 家 |
+| `self_and_other` | agentic operations | 己 自 我 你 |
+| `having` | accounting | 有 的 |
+| `asking` | compressed communication | 问 |
+| `sentence` | compressed communication | 句 |
+| `good_and_bad` | normative adjudication | 好 |
+
+**`self_and_other` is the one with the most weight here.** An agent
+reasoning about what it can do, what it was told, and what another party
+holds, needs the distinction between itself and everything else, and
+`person` covered only the other side of it.
+
+**`asking` had its primitive and no concept.** The register carries
+others-can-be-asked, and `being_told` covered receiving while nothing
+covered requesting.
+
+**`sentence` completes a chain the writing system makes visible.** Letter
+to word to sentence is aggregation, the same relation as 木 to 林 to 森,
+which the graph does not model as an edge type. Recorded, not fixed.
+
+`normative_adjudication` and `institutional_interfacing` both gain their
+first or second node from this pass, leaving one domain empty.
+
+### Confirmations rather than additions
+
+The mainland list independently attests several concepts added here on
+other grounds. 尺 as a ruler attests `measuring`. 心 as heart and mind
+attests `feeling`. 可 attests `can_and_cannot`. 果 as both fruit and result
+attests the `plant` and `cause_and_effect` pair. 词 and 字 attest `word`
+and `letter`.
+
+### Taiwan was not usable
+
+Only one lesson's characters were obtained, being 呼, 白, 雲, 前, 游, 噴,
+柱, 試, 吸, 氣, 用, 力, 擠, 哇, 又, 第 and 功. Every one of them maps to a
+concept already present. **A single lesson is not a sample** and no
+conclusion is drawn from it. The Taiwan first-volume list remains
+unobtained, and the mainland-against-Taiwan divergence analysis remains
+unrun.
+
 ## Correction, 2026-09-24. The evidence is weaker than this record claimed
 
 Two further standards were checked after the eighteen concepts were added.

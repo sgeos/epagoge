@@ -699,6 +699,42 @@
       "name": "letter",
       "kind": "domain_concept",
       "domain": "compressed_communication"
+    },
+    {
+      "id": "family",
+      "name": "family",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "self_and_other",
+      "name": "self and other",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "having",
+      "name": "having",
+      "kind": "domain_concept",
+      "domain": "accounting"
+    },
+    {
+      "id": "asking",
+      "name": "asking",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "sentence",
+      "name": "sentence",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "good_and_bad",
+      "name": "good and bad",
+      "kind": "domain_concept",
+      "domain": "normative_adjudication"
     }
   ],
   "prerequisites": {
@@ -1045,6 +1081,28 @@
     "letter": [
       "writing",
       "word"
+    ],
+    "family": [
+      "person",
+      "people_together"
+    ],
+    "self_and_other": [
+      "person"
+    ],
+    "having": [
+      "person",
+      "household_object"
+    ],
+    "asking": [
+      "word",
+      "knowing"
+    ],
+    "sentence": [
+      "word"
+    ],
+    "good_and_bad": [
+      "feeling",
+      "need"
     ]
   },
   "instantiates": {

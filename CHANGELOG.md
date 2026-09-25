@@ -27,6 +27,48 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Six concepts from the mainland first-grade list, one predicted
+
+- The People's Education Press first-grade first-volume character list
+  obtained and read. A textbook implementing the ministry standard rather
+  than the appendix itself, so slightly weaker evidence than the Japanese
+  per-grade table, and still national in scale and independently selected.
+- **The predicted divergence is real.** 妈, 爸, 奶, 妹 and 家 against
+  Japanese grade one, which has 人, 子, 女 and 男 and defers the family
+  terms. `CHARACTER_STANDARDS.md` recorded the hypothesis that this would
+  point at **who someone is to someone else**, before the list was
+  obtained. `family` added. **The only tested prediction in this line of
+  work.**
+- `self_and_other` in agentic operations, from 己 自 我 你. **The one with
+  the most weight.** An agent reasoning about what it can do, what it was
+  told, and what another party holds needs the distinction, and `person`
+  covered only the other side.
+- `asking` in compressed communication, from 问. **Its primitive was
+  already in the register**, being others-can-be-asked, while `being_told`
+  covered receiving and nothing covered requesting.
+- `having` in accounting from 有, `sentence` in compressed communication
+  from 句, `good_and_bad` in normative adjudication from 好.
+- Graph at **115 nodes**, level one at 74 units. **One domain still empty.**
+
+### Found. The list confirms five concepts added on other grounds
+
+- 尺 as a ruler attests `measuring`. 心 as heart and mind attests
+  `feeling`. 可 attests `can_and_cannot`. 果 as both fruit and result
+  attests the `plant` and `cause_and_effect` pair. 词 and 字 attest `word`
+  and `letter`.
+
+### Found. Letter to word to sentence is aggregation, which we do not model
+
+- The same relation as 木 to 林 to 森, one tree then woods then forest. Not
+  specialisation and not instantiation. **Recorded, not fixed.**
+
+### Taiwan was not usable
+
+- One lesson's characters obtained. Every one maps to a concept already
+  present. **A single lesson is not a sample** and no conclusion is drawn.
+  The first-volume list remains unobtained and the divergence analysis
+  against the mainland remains unrun.
+
 ### Corrected. Simple word, not simple concept, is the level-one test
 
 - The selection rule had been applied to abstractness. **It belongs to the
