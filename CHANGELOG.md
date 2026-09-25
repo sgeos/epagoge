@@ -27,6 +27,27 @@ Versioning.
 
 ## 2026-09-24
 
+### Corrected. A national standard encodes more convention than claimed
+
+- `KANJI_CROSS_REFERENCE.md` justified adding concepts ahead of records by
+  calling a national curriculum standard "evidence rather than
+  speculation". Two further standards were checked and that claim is
+  weaker than it was written.
+- **Three regions solve the same problem three ways.** Japan fixes which
+  characters, per grade, by name. Mainland China fixes how many, per
+  two-grade band, not which. Taiwan fixes neither and leaves selection to
+  publishers.
+- **Mainland and Taiwan first-grade first volumes share 61 characters**,
+  20.33 percent of one and 64.89 percent of the other, implying volumes of
+  roughly 300 and 94. Two curricula for the same language at the same
+  grade agree on a fifth of one list.
+- **Character selection is not concept selection**, which is the
+  distinction the original record should have drawn. Concept-level
+  agreement is very probably much higher and **has not been measured**.
+- The eighteen concepts stand, on the weaker claim "attested by one
+  standard and plausible under the others". Taiwan at roughly 94 characters
+  is the better comparator for any repeat.
+
 ### Changed. The lexicon becomes prescriptive. 64 level-one words to 508
 
 - `docs/decisions/LEXICON.md`. 444 terms added, 142 to **586**.

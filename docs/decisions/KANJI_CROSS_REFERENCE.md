@@ -71,6 +71,51 @@ All eighteen are scheduled at level one in the same change, so the gap
 between a concept existing and a record teaching it is a schedule entry
 rather than an open question.
 
+## Correction, 2026-09-24. The evidence is weaker than this record claimed
+
+Two further standards were checked after the eighteen concepts were added.
+
+**Three regions solve the same problem three different ways.**
+
+| Region | What the national standard fixes | Grade one |
+| --- | --- | --- |
+| Japan | **Which characters**, per grade, by name | 80 |
+| Mainland China | **How many**, per two-grade band, not which | 1600 recognised across grades one and two |
+| Taiwan | **Neither.** Competencies only, publishers choose | 670 in one publisher's grade one |
+
+**The finding that matters.** A published comparison of mainland and
+Taiwan first-grade first-volume textbooks reports **61 characters in
+common**, being 20.33 percent of the mainland volume and 64.89 percent of
+the Taiwan one. Those percentages imply volumes of roughly 300 and 94
+characters, which is arithmetic on the published figures rather than a
+stated result.
+
+**Two curricula for the same language at the same grade agree on a fifth
+of one list.** This record claimed that a national curriculum standard is
+"evidence rather than speculation". That claim is weaker than it was
+written. A large part of what such a standard encodes is local convention.
+
+**It is not as weak as the number first suggests, and the reason is a
+distinction this record should have drawn.** Character selection is not
+concept selection. Two curricula can choose different characters that carry
+the same concept, and a script where one morpheme is one character makes
+selection sensitive to writing-system decisions that have nothing to do
+with what a six-year-old should hold. The concept-level agreement is very
+probably much higher than twenty percent. **It has not been measured, and
+nothing here should be read as though it had.**
+
+**What follows for the eighteen.** They stand. Every one of them is a
+concept two of the three regions would recognise, and none rests on a
+character choice peculiar to Japanese. But the justification is now
+"attested by one national standard and plausible under the others" rather
+than "attested, therefore not speculative", and a future addition on the
+same basis should carry the weaker claim.
+
+**Taiwan is the better comparator for any repeat**, at roughly 94
+characters in the first volume against Japan's 80 for the year. Mainland
+grade one at roughly 300, inside a band of 1600, is a different kind of
+artifact and yields far less per character.
+
 ## Verified, and checked afterwards
 
 The 80 characters were read from the published standard rather than
