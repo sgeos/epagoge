@@ -11,6 +11,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from epagoge.inflection import verb_forms
 from epagoge.record import ClaimClass, Provenance, Record
 from epagoge.vocabulary import (
     Term,
@@ -433,3 +434,97 @@ class TestSubstitutionParsing(unittest.TestCase):
             load_vocabulary(
                 self.write({"core": ["a"], "terms": [], "substitutions": {"x": 3}})
             )
+
+
+class TestVerbInflection(unittest.TestCase):
+    """Operator direction: every verb carries every inflection.
+
+    A verb admitted in one form is a trap, because a generator constrained
+    to the level reaches for an inflection that is not there. Forty such
+    gaps were found by reading what a generator was blocked by, which is an
+    expensive way to discover a missing plural.
+    """
+
+    def test_regular_verbs(self) -> None:
+        self.assertEqual(verb_forms("walk"), ("walks", "walked", "walking"))
+
+    def test_a_consonant_before_y_gives_ies_and_ied(self) -> None:
+        self.assertEqual(verb_forms("carry"), ("carries", "carried", "carrying"))
+
+    def test_a_vowel_before_y_keeps_the_y(self) -> None:
+        self.assertEqual(verb_forms("play"), ("plays", "played", "playing"))
+
+    def test_a_sibilant_takes_es(self) -> None:
+        self.assertEqual(verb_forms("push")[0], "pushes")
+        self.assertEqual(verb_forms("mix")[0], "mixes")
+
+    def test_a_single_syllable_consonant_vowel_consonant_doubles(self) -> None:
+        self.assertEqual(verb_forms("stop"), ("stops", "stopped", "stopping"))
+
+    def test_w_x_and_y_never_double(self) -> None:
+        """`allow`, not `show`, because show is in the irregular table."""
+        self.assertEqual(verb_forms("allow"), ("allows", "allowed", "allowing"))
+        self.assertEqual(verb_forms("play"), ("plays", "played", "playing"))
+
+    def test_a_longer_word_does_not_double(self) -> None:
+        """Approximated by syllable count, since stress is not in spelling."""
+        self.assertEqual(verb_forms("visit"), ("visits", "visited", "visiting"))
+
+    def test_a_final_e_is_dropped_for_ing_and_kept_for_d(self) -> None:
+        self.assertEqual(verb_forms("move"), ("moves", "moved", "moving"))
+
+    def test_ie_becomes_ying(self) -> None:
+        self.assertEqual(verb_forms("tie"), ("ties", "tied", "tying"))
+
+    def test_ee_keeps_both_letters(self) -> None:
+        self.assertEqual(verb_forms("free"), ("frees", "freed", "freeing"))
+
+    def test_irregular_verbs_come_from_the_table(self) -> None:
+        self.assertEqual(verb_forms("eat"), ("eats", "ate", "eaten", "eating"))
+        self.assertEqual(verb_forms("go"), ("goes", "went", "gone", "going"))
+
+    def test_be_and_have_are_special_in_the_present(self) -> None:
+        self.assertEqual(verb_forms("be")[0], "is")
+        self.assertEqual(verb_forms("have")[0], "has")
+
+    def test_a_past_equal_to_the_participle_is_not_repeated(self) -> None:
+        self.assertEqual(verb_forms("buy"), ("buys", "bought", "buying"))
+
+    def test_a_form_equal_to_the_base_is_dropped(self) -> None:
+        """`cut` is its own past, so it must not appear as an inflection."""
+        self.assertNotIn("cut", verb_forms("cut"))
+
+    def test_the_shipped_lexicon_has_no_missing_inflection(self) -> None:
+        v = load_vocabulary(Path("curriculum/vocabulary.json"))
+        verbs = [t for t in v.terms if t.pos == "verb"]
+        self.assertGreater(len(verbs), 100)
+        missing = [
+            (t.word, f)
+            for t in verbs
+            for f in verb_forms(t.word)
+            if f not in v.core
+            and not (v.lookup(f) is not None and v.lookup(f).level <= t.level)  # type: ignore[union-attr]
+        ]
+        self.assertEqual(missing, [])
+
+    def test_an_unknown_part_of_speech_is_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "v.json"
+            path.write_text(
+                json.dumps(
+                    {
+                        "core": ["a"],
+                        "terms": [
+                            {
+                                "word": "cup",
+                                "concept": "c",
+                                "level": 1,
+                                "pos": "noun",
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaises(ValueError):
+                load_vocabulary(path)

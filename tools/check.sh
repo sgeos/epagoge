@@ -53,6 +53,7 @@ run "seed graph"         env PYTHONPATH=src python3 tools/validate_graph.py curr
 run "corpus"             env PYTHONPATH=src python3 tools/validate_corpus.py curriculum/graph/concepts.json "$CORPUS" curriculum/primitives.json curriculum/vocabulary.json
 run "schedule"           env PYTHONPATH=src python3 tools/validate_schedule.py curriculum/graph/concepts.json curriculum/primitives.json curriculum/schedule/level_01.json curriculum/schedule/level_02.json
 run "books"              env PYTHONPATH=src python3 tools/validate_books.py curriculum/graph/concepts.json curriculum/vocabulary.json curriculum/schedule curriculum/books/level_1
+run "thesaurus"          env PYTHONPATH=src python3 tools/validate_thesaurus.py curriculum/thesaurus.json curriculum/vocabulary.json 1
 run "disclosure scan"    ./tools/scrub_scan.sh
 rm -f "$CORPUS"
 

@@ -52,6 +52,7 @@ from pathlib import Path
 from typing import Final, cast
 
 from epagoge.concept_graph import Violation
+from epagoge.inflection import verb_forms
 from epagoge.record import Record
 
 WORD_RE: Final[re.Pattern[str]] = re.compile(r"[a-z]+(?:'[a-z]+)?")
@@ -77,6 +78,15 @@ class Term:
     """Authored. The graph bounds it from below; it is not derived."""
 
     forms: tuple[str, ...] = ()
+
+    pos: str = ""
+    """Part of speech. Only ``verb`` is acted on, and it is enforced.
+
+    A verb admitted in one form is a trap, since the generator is
+    constrained to admissible words and will reach for an inflection that
+    is not there. Marking a term a verb obliges every inflection of it to
+    be admissible at the same level, which ``_check_inflections`` checks.
+    """
 
     def surface_forms(self) -> tuple[str, ...]:
         return (self.word, *self.forms)
@@ -341,6 +351,7 @@ def validate_vocabulary(
     out.extend(_check_licensing(vocabulary, known_concepts))
     out.extend(_check_lower_bound(vocabulary, records, scheduled))
     out.extend(_check_lexicalisation(vocabulary, known_concepts, scheduled))
+    out.extend(_check_inflections(vocabulary))
     levels = term_levels(vocabulary, records)
     out.extend(_check_ceiling(vocabulary, records, levels))
     out.extend(_check_coverage(vocabulary, records, levels))
@@ -519,6 +530,33 @@ def load_vocabulary(path: Path) -> Vocabulary:
     )
 
 
+def _check_inflections(vocabulary: Vocabulary) -> list[Violation]:
+    """Every inflection of a verb must be admissible at the verb's level.
+
+    **Standard procedure, not a repair.** Where the inflection lives does
+    not matter. It may be a form of the same term, a term of its own, or a
+    core function word. What matters is that a generator constrained to
+    the level can reach it.
+    """
+    out: list[Violation] = []
+    for term in vocabulary.terms:
+        if term.pos != "verb":
+            continue
+        for form in verb_forms(term.word):
+            found = vocabulary.lookup(form)
+            reachable = found is not None and found.level <= term.level
+            if form in vocabulary.core or reachable:
+                continue
+            out.append(
+                Violation(
+                    "missing-inflection",
+                    f"verb {term.word!r} is admitted at level {term.level} and "
+                    f"its form {form!r} is not admissible there",
+                )
+            )
+    return out
+
+
 def _parse_substitutions(raw: object) -> dict[str, str]:
     if raw is None:
         return {}
@@ -587,6 +625,17 @@ def _parse_terms(raw: object) -> list[Term]:
                 concept=concept,
                 level=level,
                 forms=tuple(_str_list(entry.get("forms"), f"{where}.forms")),
+                pos=_parse_pos(entry.get("pos"), where),
             )
         )
     return out
+
+
+def _parse_pos(raw: object, where: str) -> str:
+    if raw is None:
+        return ""
+    if not isinstance(raw, str):
+        raise ValueError(f"{where}.pos: expected a string")
+    if raw not in ("", "verb"):
+        raise ValueError(f"{where}.pos: only 'verb' is recognised, got {raw!r}")
+    return raw

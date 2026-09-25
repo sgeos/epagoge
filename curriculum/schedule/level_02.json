@@ -17,31 +17,51 @@
         {
           "id": "m2.number",
           "form": "Numbers do not run out. Each one has a next one. Ten ones make a ten.",
-          "teaches": ["natural_number", "place_value"],
-          "primitives": ["counting-order-is-fixed"]
+          "teaches": [
+            "natural_number",
+            "place_value"
+          ],
+          "primitives": [
+            "counting-order-is-fixed"
+          ]
         },
         {
           "id": "m2.howmuch",
           "form": "How much, not just how many. A pile can be big without being many.",
-          "teaches": ["quantity"]
+          "teaches": [
+            "quantity"
+          ]
         },
         {
           "id": "m2.grouping",
           "form": "Put the same ones together. Count the groups.",
-          "teaches": ["grouping"],
-          "primitives": ["same-again"]
+          "teaches": [
+            "grouping"
+          ],
+          "primitives": [
+            "same-again"
+          ]
         },
         {
           "id": "m2.conservation",
           "form": "Move them around and there are still the same number.",
-          "teaches": ["conservation_of_number"],
-          "primitives": ["quantity-survives-rearrangement"]
+          "teaches": [
+            "conservation_of_number"
+          ],
+          "primitives": [
+            "quantity-survives-rearrangement"
+          ]
         },
         {
           "id": "m2.addsub",
           "form": "Adding is counting on. Taking away is counting back.",
-          "teaches": ["addition", "subtraction"],
-          "primitives": ["adding-increases"]
+          "teaches": [
+            "addition",
+            "subtraction"
+          ],
+          "primitives": [
+            "adding-increases"
+          ]
         }
       ]
     },
@@ -51,26 +71,33 @@
         {
           "id": "f2.chain",
           "form": "This caused that, and that caused the next thing.",
-          "teaches": ["causal_chain"],
-          "primitives": ["cause-precedes-effect"]
+          "teaches": [
+            "causal_chain"
+          ],
+          "primitives": [
+            "cause-precedes-effect"
+          ]
         },
         {
           "id": "f2.failing",
           "form": "It still looks whole but it no longer does its job.",
-          "teaches": ["failing"],
-          "primitives": ["things-break"]
-        },
-        {
-          "id": "f2.parts",
-          "form": "A thing is made of parts. One bad part can stop the whole thing.",
-          "teaches": ["component_and_system"],
-          "primitives": ["things-have-parts", "a-part-can-stop-the-whole"]
+          "teaches": [
+            "failing"
+          ],
+          "primitives": [
+            "things-break"
+          ]
         },
         {
           "id": "f2.accident",
           "form": "Nobody meant it to happen. It happened anyway, and there is a reason.",
-          "teaches": ["accident"],
-          "primitives": ["cause-precedes-effect", "harm-can-be-avoided"]
+          "teaches": [
+            "accident"
+          ],
+          "primitives": [
+            "cause-precedes-effect",
+            "harm-can-be-avoided"
+          ]
         }
       ]
     }

@@ -237,7 +237,13 @@
     {
       "word": "agree",
       "concept": "checking",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "agreed",
+        "agreeing",
+        "agrees"
+      ]
     },
     {
       "word": "air",
@@ -297,7 +303,12 @@
     {
       "word": "answer",
       "concept": "asking",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "answering",
+        "answers"
+      ]
     },
     {
       "word": "answered",
@@ -317,7 +328,13 @@
     {
       "word": "appear",
       "concept": "presence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "appeared",
+        "appearing",
+        "appears"
+      ]
     },
     {
       "word": "arm",
@@ -330,7 +347,8 @@
       "level": 1,
       "forms": [
         "asks"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "asked",
@@ -340,6 +358,11 @@
     {
       "word": "asking",
       "concept": "asking",
+      "level": 1
+    },
+    {
+      "word": "asleep",
+      "concept": "living_and_not_living",
       "level": 1
     },
     {
@@ -366,6 +389,11 @@
       "word": "avoid",
       "concept": "danger",
       "level": 6
+    },
+    {
+      "word": "awake",
+      "concept": "living_and_not_living",
+      "level": 1
     },
     {
       "word": "baby",
@@ -415,7 +443,13 @@
     {
       "word": "bang",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "banged",
+        "banging",
+        "bangs"
+      ]
     },
     {
       "word": "basket",
@@ -435,7 +469,13 @@
     {
       "word": "become",
       "concept": "change",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "became",
+        "becomes",
+        "becoming"
+      ]
     },
     {
       "word": "bed",
@@ -445,7 +485,7 @@
     {
       "word": "began",
       "concept": "sequence",
-      "level": 3
+      "level": 1
     },
     {
       "word": "begin",
@@ -455,7 +495,8 @@
         "beginning",
         "begins",
         "begun"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "behind",
@@ -465,7 +506,11 @@
     {
       "word": "believe",
       "concept": "opinion",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "believing"
+      ]
     },
     {
       "word": "believed",
@@ -485,7 +530,12 @@
     {
       "word": "belong",
       "concept": "having",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "belonged",
+        "belonging"
+      ]
     },
     {
       "word": "belongs",
@@ -560,7 +610,14 @@
     {
       "word": "blow",
       "concept": "air",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "blew",
+        "blowing",
+        "blown",
+        "blows"
+      ]
     },
     {
       "word": "blue",
@@ -625,7 +682,12 @@
     {
       "word": "break",
       "concept": "things_break",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "breaking",
+        "breaks"
+      ]
     },
     {
       "word": "breath",
@@ -635,7 +697,13 @@
     {
       "word": "breathe",
       "concept": "living_and_not_living",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "breathed",
+        "breathes",
+        "breathing"
+      ]
     },
     {
       "word": "bright",
@@ -670,7 +738,13 @@
     {
       "word": "brush",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "brushed",
+        "brushes",
+        "brushing"
+      ]
     },
     {
       "word": "bubble",
@@ -685,7 +759,11 @@
     {
       "word": "build",
       "concept": "activity",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "building"
+      ]
     },
     {
       "word": "builds",
@@ -705,12 +783,23 @@
     {
       "word": "burn",
       "concept": "heat",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "burned",
+        "burning",
+        "burns"
+      ]
     },
     {
       "word": "buy",
       "concept": "exchange",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "buying",
+        "buys"
+      ]
     },
     {
       "word": "call",
@@ -719,7 +808,8 @@
       "forms": [
         "calling",
         "calls"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "called",
@@ -749,7 +839,11 @@
     {
       "word": "care",
       "concept": "tending",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "caring"
+      ]
     },
     {
       "word": "cared",
@@ -769,7 +863,13 @@
     {
       "word": "carry",
       "concept": "activity",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "carried",
+        "carries",
+        "carrying"
+      ]
     },
     {
       "word": "cart",
@@ -779,7 +879,12 @@
     {
       "word": "carve",
       "concept": "raw_and_made",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "carves",
+        "carving"
+      ]
     },
     {
       "word": "carved",
@@ -794,7 +899,13 @@
     {
       "word": "catch",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "catches",
+        "catching",
+        "caught"
+      ]
     },
     {
       "word": "causal",
@@ -837,7 +948,12 @@
     {
       "word": "change",
       "concept": "change",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "changed",
+        "changing"
+      ]
     },
     {
       "word": "changes",
@@ -847,7 +963,13 @@
     {
       "word": "charge",
       "concept": "someone_in_charge",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "charged",
+        "charges",
+        "charging"
+      ]
     },
     {
       "word": "cheat",
@@ -857,7 +979,8 @@
         "cheated",
         "cheating"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "verb"
     },
     {
       "word": "cheater",
@@ -870,7 +993,13 @@
     {
       "word": "check",
       "concept": "checking",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "checked",
+        "checking",
+        "checks"
+      ]
     },
     {
       "word": "child",
@@ -900,7 +1029,13 @@
     {
       "word": "clean",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "cleaned",
+        "cleaning",
+        "cleans"
+      ]
     },
     {
       "word": "clock",
@@ -910,7 +1045,12 @@
     {
       "word": "close",
       "concept": "opening_and_shutting",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "closes",
+        "closing"
+      ]
     },
     {
       "word": "closed",
@@ -960,7 +1100,12 @@
     {
       "word": "compare",
       "concept": "measuring",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "compares",
+        "comparing"
+      ]
     },
     {
       "word": "compared",
@@ -988,7 +1133,13 @@
     {
       "word": "contact",
       "concept": "touching",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "contacted",
+        "contacting",
+        "contacts"
+      ]
     },
     {
       "word": "container",
@@ -1018,7 +1169,12 @@
     {
       "word": "copy",
       "concept": "toy",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "copies",
+        "copying"
+      ]
     },
     {
       "word": "corner",
@@ -1033,15 +1189,23 @@
     {
       "word": "cost",
       "concept": "exchange",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "costed",
+        "costing",
+        "costs"
+      ]
     },
     {
       "word": "count",
       "concept": "counting",
       "forms": [
-        "counting"
+        "counting",
+        "counts"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "verb"
     },
     {
       "word": "counted",
@@ -1056,7 +1220,13 @@
     {
       "word": "cover",
       "concept": "opening_and_shutting",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "covered",
+        "covering",
+        "covers"
+      ]
     },
     {
       "word": "cow",
@@ -1066,7 +1236,12 @@
     {
       "word": "crack",
       "concept": "things_break",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "cracking",
+        "cracks"
+      ]
     },
     {
       "word": "cracked",
@@ -1086,7 +1261,24 @@
     {
       "word": "cross",
       "concept": "feeling",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "crossed",
+        "crosses",
+        "crossing"
+      ]
+    },
+    {
+      "word": "cry",
+      "concept": "feeling",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "cried",
+        "cries",
+        "crying"
+      ]
     },
     {
       "word": "cumulative",
@@ -1109,7 +1301,12 @@
     {
       "word": "cut",
       "concept": "danger",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "cuts",
+        "cutting"
+      ]
     },
     {
       "word": "dad",
@@ -1174,7 +1371,12 @@
     {
       "word": "die",
       "concept": "dying",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "dies",
+        "dying"
+      ]
     },
     {
       "word": "died",
@@ -1189,7 +1391,12 @@
     {
       "word": "dig",
       "concept": "activity",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "digging",
+        "digs"
+      ]
     },
     {
       "word": "digit",
@@ -1220,6 +1427,17 @@
       "word": "dirty",
       "concept": "physical_property",
       "level": 1
+    },
+    {
+      "word": "disagree",
+      "concept": "checking",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "disagreed",
+        "disagreeing",
+        "disagrees"
+      ]
     },
     {
       "word": "dish",
@@ -1264,7 +1482,13 @@
     {
       "word": "drain",
       "concept": "emptiness",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "drained",
+        "draining",
+        "drains"
+      ]
     },
     {
       "word": "drank",
@@ -1274,7 +1498,13 @@
     {
       "word": "draw",
       "concept": "writing",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "drawing",
+        "drawn",
+        "draws"
+      ]
     },
     {
       "word": "drew",
@@ -1284,17 +1514,33 @@
     {
       "word": "drink",
       "concept": "living_and_not_living",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "drinking",
+        "drinks",
+        "drunk"
+      ]
     },
     {
       "word": "drip",
       "concept": "liquid",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "dripped",
+        "dripping",
+        "drips"
+      ]
     },
     {
       "word": "drop",
       "concept": "falling",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "drops"
+      ]
     },
     {
       "word": "dropped",
@@ -1309,7 +1555,13 @@
     {
       "word": "dry",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "dried",
+        "dries",
+        "drying"
+      ]
     },
     {
       "word": "dug",
@@ -1342,6 +1594,11 @@
       "level": 1
     },
     {
+      "word": "easy",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
       "word": "eat",
       "concept": "living_and_not_living",
       "level": 1,
@@ -1350,7 +1607,8 @@
         "eaten",
         "eating",
         "eats"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "edge",
@@ -1388,6 +1646,11 @@
       "level": 1
     },
     {
+      "word": "enemy",
+      "concept": "person",
+      "level": 1
+    },
+    {
       "word": "enough",
       "concept": "enough",
       "level": 1
@@ -1395,7 +1658,13 @@
     {
       "word": "enter",
       "concept": "inside_and_outside",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "entered",
+        "entering",
+        "enters"
+      ]
     },
     {
       "word": "equal",
@@ -1468,7 +1737,11 @@
     {
       "word": "fall",
       "concept": "falling",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "fallen"
+      ]
     },
     {
       "word": "falls",
@@ -1476,6 +1749,11 @@
       "forms": [
         "falling"
       ],
+      "level": 1
+    },
+    {
+      "word": "false",
+      "concept": "being_told",
       "level": 1
     },
     {
@@ -1491,6 +1769,11 @@
     {
       "word": "fast",
       "concept": "duration",
+      "level": 1
+    },
+    {
+      "word": "fat",
+      "concept": "physical_property",
       "level": 1
     },
     {
@@ -1511,7 +1794,11 @@
     {
       "word": "feed",
       "concept": "tending",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "feeding"
+      ]
     },
     {
       "word": "feeds",
@@ -1521,7 +1808,11 @@
     {
       "word": "feel",
       "concept": "feeling",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "feeling"
+      ]
     },
     {
       "word": "feels",
@@ -1561,7 +1852,12 @@
     {
       "word": "fill",
       "concept": "emptiness",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "filling",
+        "fills"
+      ]
     },
     {
       "word": "filled",
@@ -1576,7 +1872,13 @@
     {
       "word": "finish",
       "concept": "sequence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "finished",
+        "finishes",
+        "finishing"
+      ]
     },
     {
       "word": "fire",
@@ -1596,7 +1898,13 @@
     {
       "word": "fit",
       "concept": "inside_and_outside",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "fits",
+        "fitted",
+        "fitting"
+      ]
     },
     {
       "word": "five",
@@ -1606,7 +1914,13 @@
     {
       "word": "fix",
       "concept": "things_break",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "fixed",
+        "fixes",
+        "fixing"
+      ]
     },
     {
       "word": "flat",
@@ -1621,7 +1935,13 @@
     {
       "word": "float",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "floated",
+        "floating",
+        "floats"
+      ]
     },
     {
       "word": "floor",
@@ -1631,7 +1951,13 @@
     {
       "word": "flow",
       "concept": "liquid",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "flowed",
+        "flowing",
+        "flows"
+      ]
     },
     {
       "word": "flower",
@@ -1641,17 +1967,29 @@
     {
       "word": "fly",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "flew",
+        "flies",
+        "flown",
+        "flying"
+      ]
     },
     {
       "word": "follow",
       "concept": "sequence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "followed",
+        "follows"
+      ]
     },
     {
       "word": "following",
       "concept": "direction",
-      "level": 3
+      "level": 1
     },
     {
       "word": "food",
@@ -1681,7 +2019,14 @@
     {
       "word": "forget",
       "concept": "knowing",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "forgets",
+        "forgetting",
+        "forgot",
+        "forgotten"
+      ]
     },
     {
       "word": "fork",
@@ -1706,7 +2051,14 @@
     {
       "word": "freeze",
       "concept": "heat",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "freezes",
+        "freezing",
+        "froze",
+        "frozen"
+      ]
     },
     {
       "word": "friend",
@@ -1771,7 +2123,12 @@
     {
       "word": "glue",
       "concept": "activity",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "glues",
+        "gluing"
+      ]
     },
     {
       "word": "glued",
@@ -1819,6 +2176,14 @@
       "level": 1
     },
     {
+      "word": "ground",
+      "concept": "material",
+      "forms": [
+        "grounds"
+      ],
+      "level": 1
+    },
+    {
       "word": "group",
       "concept": "grouping",
       "level": 5
@@ -1836,7 +2201,13 @@
     {
       "word": "grow",
       "concept": "change",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "grew",
+        "growing",
+        "grows"
+      ]
     },
     {
       "word": "grown",
@@ -1846,7 +2217,13 @@
     {
       "word": "guess",
       "concept": "knowing",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "guessed",
+        "guesses",
+        "guessing"
+      ]
     },
     {
       "word": "half",
@@ -1866,7 +2243,11 @@
     {
       "word": "happen",
       "concept": "change",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "happening"
+      ]
     },
     {
       "word": "happened",
@@ -1891,12 +2272,29 @@
     {
       "word": "harm",
       "concept": "danger",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "harmed",
+        "harming",
+        "harms"
+      ]
     },
     {
       "word": "harmless",
       "concept": "danger",
       "level": 5
+    },
+    {
+      "word": "hate",
+      "concept": "feeling",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "hated",
+        "hates",
+        "hating"
+      ]
     },
     {
       "word": "hazard",
@@ -1911,7 +2309,12 @@
     {
       "word": "hear",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "hearing",
+        "hears"
+      ]
     },
     {
       "word": "heard",
@@ -1921,7 +2324,13 @@
     {
       "word": "heat",
       "concept": "heat",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "heated",
+        "heating",
+        "heats"
+      ]
     },
     {
       "word": "heavy",
@@ -1931,7 +2340,13 @@
     {
       "word": "help",
       "concept": "activity",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "helped",
+        "helping",
+        "helps"
+      ]
     },
     {
       "word": "her",
@@ -1951,7 +2366,14 @@
     {
       "word": "hide",
       "concept": "presence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "hid",
+        "hidden",
+        "hides",
+        "hiding"
+      ]
     },
     {
       "word": "high",
@@ -1981,12 +2403,22 @@
     {
       "word": "hit",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "hits",
+        "hitting"
+      ]
     },
     {
       "word": "hold",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "held",
+        "holding"
+      ]
     },
     {
       "word": "holds",
@@ -2051,12 +2483,23 @@
     {
       "word": "hurry",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "hurried",
+        "hurries",
+        "hurrying"
+      ]
     },
     {
       "word": "hurt",
       "concept": "danger",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "hurting",
+        "hurts"
+      ]
     },
     {
       "word": "ice",
@@ -2136,7 +2579,13 @@
     {
       "word": "join",
       "concept": "people_together",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "joined",
+        "joining",
+        "joins"
+      ]
     },
     {
       "word": "juice",
@@ -2181,12 +2630,18 @@
         "knowing",
         "known",
         "knows"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "lack",
       "concept": "enough",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "lacked",
+        "lacks"
+      ]
     },
     {
       "word": "lacking",
@@ -2201,7 +2656,13 @@
     {
       "word": "land",
       "concept": "falling",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "landed",
+        "landing",
+        "lands"
+      ]
     },
     {
       "word": "large",
@@ -2211,7 +2672,12 @@
     {
       "word": "last",
       "concept": "sequence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "lasting",
+        "lasts"
+      ]
     },
     {
       "word": "lasted",
@@ -2227,6 +2693,17 @@
       "word": "later",
       "concept": "duration",
       "level": 1
+    },
+    {
+      "word": "laugh",
+      "concept": "feeling",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "laughed",
+        "laughing",
+        "laughs"
+      ]
     },
     {
       "word": "leader",
@@ -2251,7 +2728,12 @@
     {
       "word": "learn",
       "concept": "being_told",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "learning",
+        "learns"
+      ]
     },
     {
       "word": "learned",
@@ -2309,12 +2791,18 @@
         "lied",
         "lying"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "verb"
     },
     {
       "word": "lift",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "lifting",
+        "lifts"
+      ]
     },
     {
       "word": "lifted",
@@ -2329,7 +2817,13 @@
     {
       "word": "like",
       "concept": "same_and_different",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "liked",
+        "likes",
+        "liking"
+      ]
     },
     {
       "word": "line",
@@ -2349,7 +2843,13 @@
     {
       "word": "listen",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "listened",
+        "listening",
+        "listens"
+      ]
     },
     {
       "word": "lists",
@@ -2373,7 +2873,13 @@
     {
       "word": "lock",
       "concept": "opening_and_shutting",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "locked",
+        "locking",
+        "locks"
+      ]
     },
     {
       "word": "log",
@@ -2396,6 +2902,16 @@
       "level": 1
     },
     {
+      "word": "lose",
+      "concept": "toy",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "loses",
+        "losing"
+      ]
+    },
+    {
       "word": "lost",
       "concept": "presence",
       "level": 1
@@ -2409,6 +2925,17 @@
       "word": "loud",
       "concept": "sound",
       "level": 1
+    },
+    {
+      "word": "love",
+      "concept": "feeling",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "loved",
+        "loves",
+        "loving"
+      ]
     },
     {
       "word": "low",
@@ -2428,7 +2955,12 @@
     {
       "word": "manage",
       "concept": "can_and_cannot",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "manages",
+        "managing"
+      ]
     },
     {
       "word": "managed",
@@ -2448,7 +2980,13 @@
     {
       "word": "mark",
       "concept": "name",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "marked",
+        "marking",
+        "marks"
+      ]
     },
     {
       "word": "mat",
@@ -2458,7 +2996,13 @@
     {
       "word": "match",
       "concept": "correspondence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "matched",
+        "matches",
+        "matching"
+      ]
     },
     {
       "word": "me",
@@ -2468,7 +3012,8 @@
     {
       "word": "mean",
       "concept": "name",
-      "level": 1
+      "level": 1,
+      "pos": "verb"
     },
     {
       "word": "meaning",
@@ -2488,7 +3033,11 @@
     {
       "word": "measure",
       "concept": "measuring",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "measures"
+      ]
     },
     {
       "word": "measured",
@@ -2503,17 +3052,35 @@
     {
       "word": "meet",
       "concept": "people_together",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "meeting",
+        "meets",
+        "met"
+      ]
     },
     {
       "word": "melt",
       "concept": "heat",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "melted",
+        "melting",
+        "melts"
+      ]
     },
     {
       "word": "mend",
       "concept": "things_break",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "mended",
+        "mending",
+        "mends"
+      ]
     },
     {
       "word": "metal",
@@ -2548,7 +3115,12 @@
     {
       "word": "mind",
       "concept": "tending",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "minding",
+        "minds"
+      ]
     },
     {
       "word": "minded",
@@ -2633,7 +3205,12 @@
     {
       "word": "move",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "moves",
+        "moving"
+      ]
     },
     {
       "word": "moved",
@@ -2673,7 +3250,12 @@
     {
       "word": "name",
       "concept": "name",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "names",
+        "naming"
+      ]
     },
     {
       "word": "named",
@@ -2703,7 +3285,13 @@
     {
       "word": "need",
       "concept": "need",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "needed",
+        "needing",
+        "needs"
+      ]
     },
     {
       "word": "never",
@@ -2746,6 +3334,11 @@
       "level": 1
     },
     {
+      "word": "noisy",
+      "concept": "sound",
+      "level": 1
+    },
+    {
       "word": "none",
       "concept": "counting",
       "level": 1
@@ -2763,7 +3356,12 @@
     {
       "word": "note",
       "concept": "written_record",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "noted",
+        "noting"
+      ]
     },
     {
       "word": "notes",
@@ -2811,7 +3409,13 @@
     {
       "word": "open",
       "concept": "opening_and_shutting",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "opened",
+        "opening",
+        "opens"
+      ]
     },
     {
       "word": "operation",
@@ -2836,7 +3440,13 @@
     {
       "word": "order",
       "concept": "number_word_order",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "ordered",
+        "ordering",
+        "orders"
+      ]
     },
     {
       "word": "others",
@@ -2864,7 +3474,11 @@
     {
       "word": "own",
       "concept": "having",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "owning"
+      ]
     },
     {
       "word": "owned",
@@ -2922,7 +3536,7 @@
       "forms": [
         "parts"
       ],
-      "level": 2
+      "level": 1
     },
     {
       "word": "past",
@@ -2947,7 +3561,12 @@
     {
       "word": "pay",
       "concept": "exchange",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "paying",
+        "pays"
+      ]
     },
     {
       "word": "pen",
@@ -3002,12 +3621,24 @@
     {
       "word": "place",
       "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "placed",
+        "places",
+        "placing"
+      ]
     },
     {
       "word": "plant",
       "concept": "plant",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "planted",
+        "planting",
+        "plants"
+      ]
     },
     {
       "word": "plastic",
@@ -3022,7 +3653,13 @@
     {
       "word": "play",
       "concept": "toy",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "played",
+        "playing",
+        "plays"
+      ]
     },
     {
       "word": "plenty",
@@ -3037,6 +3674,17 @@
     {
       "word": "point",
       "concept": "correspondence",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "pointed",
+        "pointing",
+        "points"
+      ]
+    },
+    {
+      "word": "poor",
+      "concept": "having",
       "level": 1
     },
     {
@@ -3067,7 +3715,12 @@
     {
       "word": "pour",
       "concept": "liquid",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "pouring",
+        "pours"
+      ]
     },
     {
       "word": "poured",
@@ -3082,7 +3735,12 @@
     {
       "word": "press",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "presses",
+        "pressing"
+      ]
     },
     {
       "word": "pressed",
@@ -3092,7 +3750,13 @@
     {
       "word": "pretend",
       "concept": "toy",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "pretended",
+        "pretending",
+        "pretends"
+      ]
     },
     {
       "word": "prevented",
@@ -3117,22 +3781,45 @@
     {
       "word": "prove",
       "concept": "checking",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "proved",
+        "proves",
+        "proving"
+      ]
     },
     {
       "word": "pull",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "pulled",
+        "pulling",
+        "pulls"
+      ]
     },
     {
       "word": "push",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "pushed",
+        "pushes",
+        "pushing"
+      ]
     },
     {
       "word": "quantity",
       "concept": "quantity",
       "level": 2
+    },
+    {
+      "word": "queen",
+      "concept": "someone_in_charge",
+      "level": 1
     },
     {
       "word": "question",
@@ -3167,7 +3854,13 @@
     {
       "word": "raise",
       "concept": "falling",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "raised",
+        "raises",
+        "raising"
+      ]
     },
     {
       "word": "rate",
@@ -3187,7 +3880,11 @@
     {
       "word": "reach",
       "concept": "can_and_cannot",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "reaching"
+      ]
     },
     {
       "word": "reached",
@@ -3197,12 +3894,17 @@
     {
       "word": "reaches",
       "concept": "change",
-      "level": 5
+      "level": 1
     },
     {
       "word": "read",
       "concept": "writing",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "reading",
+        "reads"
+      ]
     },
     {
       "word": "ready",
@@ -3227,7 +3929,12 @@
     {
       "word": "record",
       "concept": "written_record",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "recorded",
+        "recording"
+      ]
     },
     {
       "word": "records",
@@ -3252,12 +3959,24 @@
     {
       "word": "remain",
       "concept": "presence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "remained",
+        "remaining",
+        "remains"
+      ]
     },
     {
       "word": "remember",
       "concept": "knowing",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "remembered",
+        "remembering",
+        "remembers"
+      ]
     },
     {
       "word": "remove",
@@ -3272,7 +3991,13 @@
     {
       "word": "repeat",
       "concept": "cycle",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "repeated",
+        "repeating",
+        "repeats"
+      ]
     },
     {
       "word": "replied",
@@ -3282,7 +4007,12 @@
     {
       "word": "reply",
       "concept": "asking",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "replies",
+        "replying"
+      ]
     },
     {
       "word": "reporting",
@@ -3292,7 +4022,12 @@
     {
       "word": "represent",
       "concept": "standing_for",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "represented",
+        "representing"
+      ]
     },
     {
       "word": "represents",
@@ -3302,11 +4037,28 @@
     {
       "word": "request",
       "concept": "asking",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "requested",
+        "requesting",
+        "requests"
+      ]
     },
     {
       "word": "rest",
       "concept": "moving_and_still",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "rested",
+        "resting",
+        "rests"
+      ]
+    },
+    {
+      "word": "rich",
+      "concept": "having",
       "level": 1
     },
     {
@@ -3317,7 +4069,25 @@
     {
       "word": "ring",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "rang",
+        "ringing",
+        "rings",
+        "rung"
+      ]
+    },
+    {
+      "word": "rise",
+      "concept": "falling",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "rised",
+        "rises",
+        "rising"
+      ]
     },
     {
       "word": "rock",
@@ -3327,7 +4097,13 @@
     {
       "word": "roll",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "rolled",
+        "rolling",
+        "rolls"
+      ]
     },
     {
       "word": "roof",
@@ -3362,7 +4138,12 @@
     {
       "word": "rub",
       "concept": "touching",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "rubbing",
+        "rubs"
+      ]
     },
     {
       "word": "rubbed",
@@ -3372,7 +4153,12 @@
     {
       "word": "rule",
       "concept": "someone_in_charge",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "ruled",
+        "ruling"
+      ]
     },
     {
       "word": "ruler",
@@ -3392,17 +4178,29 @@
         "ran",
         "running",
         "runs"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "rush",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "rushed",
+        "rushes",
+        "rushing"
+      ]
     },
     {
       "word": "rust",
       "concept": "metal",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "rusting",
+        "rusts"
+      ]
     },
     {
       "word": "rusted",
@@ -3470,7 +4268,12 @@
     {
       "word": "sell",
       "concept": "exchange",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "selling",
+        "sells"
+      ]
     },
     {
       "word": "sentence",
@@ -3481,6 +4284,17 @@
       "word": "sentences",
       "concept": "sentence",
       "level": 1
+    },
+    {
+      "word": "separate",
+      "concept": "people_together",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "separated",
+        "separates",
+        "separating"
+      ]
     },
     {
       "word": "set",
@@ -3505,7 +4319,14 @@
     {
       "word": "shake",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "shaken",
+        "shakes",
+        "shaking",
+        "shook"
+      ]
     },
     {
       "word": "shallow",
@@ -3515,7 +4336,12 @@
     {
       "word": "shape",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "shapes",
+        "shaping"
+      ]
     },
     {
       "word": "shaped",
@@ -3525,7 +4351,13 @@
     {
       "word": "share",
       "concept": "people_together",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "shared",
+        "shares",
+        "sharing"
+      ]
     },
     {
       "word": "sharp",
@@ -3578,7 +4410,13 @@
     {
       "word": "show",
       "concept": "checking",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "showed",
+        "showing",
+        "shows"
+      ]
     },
     {
       "word": "shown",
@@ -3586,9 +4424,25 @@
       "level": 1
     },
     {
+      "word": "shrink",
+      "concept": "change",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "shrinked",
+        "shrinking",
+        "shrinks"
+      ]
+    },
+    {
       "word": "shut",
       "concept": "opening_and_shutting",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "shuts",
+        "shutting"
+      ]
     },
     {
       "word": "sick",
@@ -3603,7 +4457,12 @@
     {
       "word": "sign",
       "concept": "standing_for",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "signed",
+        "signing"
+      ]
     },
     {
       "word": "signs",
@@ -3623,12 +4482,26 @@
     {
       "word": "sing",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "sang",
+        "singing",
+        "sings",
+        "sung"
+      ]
     },
     {
       "word": "sink",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "sank",
+        "sinking",
+        "sinks",
+        "sunk"
+      ]
     },
     {
       "word": "sister",
@@ -3653,7 +4526,13 @@
     {
       "word": "skip",
       "concept": "change",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "skipped",
+        "skipping",
+        "skips"
+      ]
     },
     {
       "word": "sky",
@@ -3663,12 +4542,24 @@
     {
       "word": "sleep",
       "concept": "living_and_not_living",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "sleeping",
+        "sleeps",
+        "slept"
+      ]
     },
     {
       "word": "slide",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "slided",
+        "slides",
+        "sliding"
+      ]
     },
     {
       "word": "slow",
@@ -3693,12 +4584,24 @@
     {
       "word": "smash",
       "concept": "things_break",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "smashed",
+        "smashes",
+        "smashing"
+      ]
     },
     {
       "word": "smell",
       "concept": "air",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "smelled",
+        "smelling",
+        "smells"
+      ]
     },
     {
       "word": "smooth",
@@ -3708,7 +4611,13 @@
     {
       "word": "snap",
       "concept": "things_break",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "snapped",
+        "snapping",
+        "snaps"
+      ]
     },
     {
       "word": "snow",
@@ -3763,7 +4672,13 @@
     {
       "word": "sound",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "sounded",
+        "sounding",
+        "sounds"
+      ]
     },
     {
       "word": "space",
@@ -3778,7 +4693,11 @@
     {
       "word": "speak",
       "concept": "sentence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "speaking"
+      ]
     },
     {
       "word": "speaks",
@@ -3793,7 +4712,11 @@
     {
       "word": "spell",
       "concept": "word",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "spells"
+      ]
     },
     {
       "word": "spelled",
@@ -3808,7 +4731,12 @@
     {
       "word": "spill",
       "concept": "liquid",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "spilling",
+        "spills"
+      ]
     },
     {
       "word": "spilled",
@@ -3834,9 +4762,12 @@
       "word": "spot",
       "concept": "spatial_position",
       "forms": [
-        "spots"
+        "spots",
+        "spotted",
+        "spotting"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "verb"
     },
     {
       "word": "square",
@@ -3856,7 +4787,12 @@
     {
       "word": "stand",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "standing",
+        "stood"
+      ]
     },
     {
       "word": "stands",
@@ -3876,12 +4812,24 @@
     {
       "word": "start",
       "concept": "sequence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "started",
+        "starting",
+        "starts"
+      ]
     },
     {
       "word": "stay",
       "concept": "presence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "stayed",
+        "staying",
+        "stays"
+      ]
     },
     {
       "word": "steal",
@@ -3892,7 +4840,8 @@
         "stolen",
         "stealing"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "verb"
     },
     {
       "word": "steam",
@@ -3907,7 +4856,12 @@
     {
       "word": "step",
       "concept": "way_of_doing",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "stepped",
+        "stepping"
+      ]
     },
     {
       "word": "steps",
@@ -3917,7 +4871,12 @@
     {
       "word": "stick",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "sticking",
+        "stuck"
+      ]
     },
     {
       "word": "sticks",
@@ -3932,7 +4891,13 @@
     {
       "word": "stop",
       "concept": "change",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "stopped",
+        "stopping",
+        "stops"
+      ]
     },
     {
       "word": "storm",
@@ -3980,7 +4945,13 @@
     {
       "word": "stroke",
       "concept": "touching",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "stroked",
+        "strokes",
+        "stroking"
+      ]
     },
     {
       "word": "strong",
@@ -4030,7 +5001,13 @@
     {
       "word": "suppose",
       "concept": "opinion",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "supposed",
+        "supposes",
+        "supposing"
+      ]
     },
     {
       "word": "suppresses",
@@ -4043,9 +5020,25 @@
       "level": 1
     },
     {
+      "word": "swallow",
+      "concept": "living_and_not_living",
+      "forms": [
+        "swallows",
+        "swallowed",
+        "swallowing"
+      ],
+      "level": 1,
+      "pos": "verb"
+    },
+    {
       "word": "swap",
       "concept": "exchange",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "swapping",
+        "swaps"
+      ]
     },
     {
       "word": "swapped",
@@ -4055,7 +5048,14 @@
     {
       "word": "swim",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "swam",
+        "swimming",
+        "swims",
+        "swum"
+      ]
     },
     {
       "word": "symbol",
@@ -4085,7 +5085,11 @@
     {
       "word": "talk",
       "concept": "sentence",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "talks"
+      ]
     },
     {
       "word": "talked",
@@ -4110,7 +5114,13 @@
     {
       "word": "tally",
       "concept": "written_record",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "tallied",
+        "tallies",
+        "tallying"
+      ]
     },
     {
       "word": "task",
@@ -4130,7 +5140,13 @@
     {
       "word": "tear",
       "concept": "things_break",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "tearing",
+        "tears",
+        "tore"
+      ]
     },
     {
       "word": "ten",
@@ -4140,7 +5156,11 @@
     {
       "word": "tend",
       "concept": "tending",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "tending"
+      ]
     },
     {
       "word": "tended",
@@ -4170,7 +5190,13 @@
     {
       "word": "test",
       "concept": "checking",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "tested",
+        "testing",
+        "tests"
+      ]
     },
     {
       "word": "theirs",
@@ -4215,7 +5241,8 @@
       "forms": [
         "thinking",
         "thinks"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "third",
@@ -4250,12 +5277,24 @@
     {
       "word": "throw",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "threw",
+        "throwing",
+        "thrown",
+        "throws"
+      ]
     },
     {
       "word": "tie",
       "concept": "activity",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "ties",
+        "tying"
+      ]
     },
     {
       "word": "tied",
@@ -4320,7 +5359,11 @@
     {
       "word": "touch",
       "concept": "touching",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "touching"
+      ]
     },
     {
       "word": "touched",
@@ -4355,7 +5398,12 @@
     {
       "word": "trade",
       "concept": "exchange",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "trades",
+        "trading"
+      ]
     },
     {
       "word": "traded",
@@ -4380,7 +5428,13 @@
     {
       "word": "trick",
       "concept": "way_of_doing",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "tricked",
+        "tricking",
+        "tricks"
+      ]
     },
     {
       "word": "tried",
@@ -4401,25 +5455,44 @@
       "word": "trust",
       "concept": "opinion",
       "forms": [
-        "trusts",
-        "trusted"
+        "trusted",
+        "trusting",
+        "trusts"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "verb"
     },
     {
       "word": "try",
       "concept": "checking",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "tries",
+        "trying"
+      ]
     },
     {
       "word": "tumble",
       "concept": "falling",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "tumbled",
+        "tumbles",
+        "tumbling"
+      ]
     },
     {
       "word": "turn",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "turned",
+        "turning",
+        "turns"
+      ]
     },
     {
       "word": "twelve",
@@ -4459,12 +5532,24 @@
     {
       "word": "uncover",
       "concept": "opening_and_shutting",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "uncovered",
+        "uncovering",
+        "uncovers"
+      ]
     },
     {
       "word": "understand",
       "concept": "knowing",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "understanding",
+        "understands",
+        "understood"
+      ]
     },
     {
       "word": "unfair",
@@ -4484,7 +5569,29 @@
     {
       "word": "unlock",
       "concept": "opening_and_shutting",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "unlocked",
+        "unlocking",
+        "unlocks"
+      ]
+    },
+    {
+      "word": "unsafe",
+      "concept": "danger",
       "level": 1
+    },
+    {
+      "word": "untie",
+      "concept": "activity",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "untied",
+        "unties",
+        "untying"
+      ]
     },
     {
       "word": "until",
@@ -4502,7 +5609,8 @@
       "level": 1,
       "forms": [
         "uses"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "used",
@@ -4537,17 +5645,36 @@
     {
       "word": "wait",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "waited",
+        "waiting",
+        "waits"
+      ]
     },
     {
       "word": "wake",
       "concept": "living_and_not_living",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "wakes",
+        "waking",
+        "woke",
+        "woken"
+      ]
     },
     {
       "word": "walk",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "walked",
+        "walking",
+        "walks"
+      ]
     },
     {
       "word": "wall",
@@ -4562,7 +5689,8 @@
         "wanted",
         "wanting",
         "wants"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "warm",
@@ -4572,12 +5700,24 @@
     {
       "word": "wash",
       "concept": "liquid",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "washed",
+        "washes",
+        "washing"
+      ]
     },
     {
       "word": "watch",
       "concept": "danger",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "watched",
+        "watches",
+        "watching"
+      ]
     },
     {
       "word": "water",
@@ -4597,7 +5737,13 @@
     {
       "word": "wear",
       "concept": "wearing_out",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "wearing",
+        "wears",
+        "wore"
+      ]
     },
     {
       "word": "weather",
@@ -4612,7 +5758,12 @@
     {
       "word": "weigh",
       "concept": "measuring",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "weighing",
+        "weighs"
+      ]
     },
     {
       "word": "weighed",
@@ -4647,12 +5798,23 @@
     {
       "word": "whole",
       "concept": "component_and_system",
-      "level": 2
+      "level": 1
     },
     {
       "word": "wide",
       "concept": "physical_property",
       "level": 1
+    },
+    {
+      "word": "win",
+      "concept": "toy",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "winned",
+        "winning",
+        "wins"
+      ]
     },
     {
       "word": "wind",
@@ -4677,7 +5839,13 @@
     {
       "word": "wonder",
       "concept": "knowing",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "wondered",
+        "wondering",
+        "wonders"
+      ]
     },
     {
       "word": "wood",
@@ -4706,7 +5874,8 @@
       "forms": [
         "worked",
         "works"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "working",
@@ -4731,7 +5900,12 @@
     {
       "word": "write",
       "concept": "writing",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "writes",
+        "writing"
+      ]
     },
     {
       "word": "written",

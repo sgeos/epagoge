@@ -34,9 +34,9 @@ file predates a reset and is stale.
 **Content** — cheap, independent, each verified on 2026-09-24. Check the
 rendered ORDER of this list, not just the next unused number.
 
-1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **eleven**
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twelve**
    checks, and **exits 0**.
-2. The suite reports **328** tests.
+2. The suite reports **382** tests.
 3. `curriculum/graph/concepts.json` declares **11** domains and holds
    **117** nodes, with **1** domain still empty, **0** isolated concepts,
    **50** cross-domain prerequisites, **9** specialisation edges and **6**
@@ -44,17 +44,20 @@ rendered ORDER of this list, not just the next unused number.
 4. Internal depth is **10** for `mathematics_and_formal_logic` and **6**
    for `failure_analysis`. **Internal, not global.** Global reads 10
    against 9 and is the wrong quantity for the ablation.
-5. `curriculum/schedule/level_01.json` holds **91** units, **69** existing
+5. `curriculum/schedule/level_01.json` holds **92** units, **70** existing
    concepts and **51** planned. Level two covers the two ablation domains
-   only.
-6. `curriculum/vocabulary.json` holds **896** terms, **780** at level one,
-   **173** core, and a **33**-entry substitution table.
-7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
-   **80 of 780** words defined, of which **3** are grounded, with **46** on
-   the frontier.
-8. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
+   only and holds **8** units, having given `component_and_system` to
+   level one so that `part` could be licensed by the concept it names.
+6. `curriculum/vocabulary.json` holds **920** terms, **809** at level one,
+   **173** core, **201** marked `pos: verb`, and a **33**-entry
+   substitution table.
+7. `curriculum/thesaurus.json` holds **101** antonym pairs over **194**
+   words, every pair complete at level one.
+8. `curriculum/books/level_1/` holds **6** books. The dictionary reports
+   **80 of 809** words defined, of which **3** are grounded.
+9. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
-9. **History is clean, not only `HEAD`.** Every blob and every commit
+10. **History is clean, not only `HEAD`.** Every blob and every commit
    message scanned against the pattern reports **0** hits. `scrub_scan.sh`
    covers `git ls-files` only and cannot see history.
 

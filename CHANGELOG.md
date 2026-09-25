@@ -27,6 +27,48 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Verb inflection as standard procedure, and a level-one thesaurus
+
+- **`part`, `ground` and `swallow` admitted**, closing the three judgement
+  calls. `component_and_system` moved from level two to level one so that
+  `part` is licensed by **the concept it actually names** rather than by
+  the `piece` stretch. All three of its prerequisites were already at
+  level one, so nothing else moved. `whole` came with it.
+- **`ground` to `material`**, beside `dirt`, `rock` and `sand`, which is
+  the operator's physical-environment reading. **`swallow` to
+  `living_and_not_living`**, beside `eat` and `drink`. The operator read
+  it as cybernetic biology and **that domain holds only four concepts and
+  none covers ingestion**, while the eating concepts sit in failure
+  analysis. Recorded as a domain question rather than forced.
+- **`src/epagoge/inflection.py`.** Every inflection of every verb, with an
+  irregular table of 77 entries and orthography for doubling, e-dropping
+  and y-to-ies. **201 terms marked `pos: verb`, 448 inflections added.**
+- **`missing-inflection` is now a gate failure.** A verb admitted in one
+  form is a trap, since a generator constrained to the level reaches for a
+  form that is not there. Standard procedure rather than repair.
+- **Four inflections of level-one verbs were stranded above their base**,
+  `began` and `following` at level three and `reaches` at level five,
+  found by the new check rather than by a wasted batch.
+- **The check surfaced genuine polysemy.** `set` at level one is the noun
+  under `correspondence` and its plural `sets` is under `grouping` at
+  level two. **One word, two parts of speech, and the one-word-one-concept
+  rule cannot express it.** The verb marking was withdrawn.
+- **`curriculum/thesaurus.json`, 101 antonym pairs**, with
+  `src/epagoge/thesaurus.py` and a twelfth gate check. **An antonym is
+  licensed by the same concept as its partner**, because a pair names one
+  dimension.
+- **Nineteen antonyms were missing and no existing check could see it.**
+  The lexicon held `true` without `false`, `king` without `queen`, `safe`
+  without `unsafe`, `fall` without `rise`, and **`agree` without
+  `disagree` while the curriculum plans a concept named for agreeing and
+  disagreeing**. Twenty-two words admitted. A missing word is not there to
+  be checked, which is why completeness of the words present says nothing.
+- **A pair with neither end present is not a violation**, since the
+  dimension may belong to a later level and erroring would force words in
+  by the back door.
+- **Both new checks verified by making them fail**, and 382 tests with
+  both new modules at 100 percent coverage.
+
 ### Added. A substitution table, and a correction about which metric matters
 
 - **The operator's triage procedure had three branches and only two were

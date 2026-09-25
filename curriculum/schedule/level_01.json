@@ -410,6 +410,13 @@
             "checking-settles-it",
             "looking-tells-you"
           ]
+        },
+        {
+          "id": "f1.parts",
+          "form": "A thing is made of parts. One bad part can stop the whole thing.",
+          "teaches": [
+            "component_and_system"
+          ]
         }
       ]
     },
