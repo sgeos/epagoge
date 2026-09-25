@@ -1,12 +1,180 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-25.** Session 2 completed the level-one reference
-material and closed the loop from corpus to trained model. Read this
-block, run the validity check, then stop and wait for the human prompt.
+**Refreshed 2026-09-25, describing `main` at `20c19ae`.** Session 2
+completed the reference material for levels one and two, closed the loop
+from corpus to trained model, and calibrated every level to a grade. Read
+this block, run the validity check, then stop and wait for the human
+prompt.
 
 ---
 
 ## Validity
+
+**Branch**: `main`, pushed to `origin`, `github.com/sgeos/epagoge`,
+private. **CI is green** and must be checked, not assumed. It was red for
+an entire session because the local gate and the remote gate did not test
+the same thing.
+
+**Before writing anything tracked, read the disclosure discipline
+`CLAUDE.md` points to.** Hard constraint.
+
+**Validate by ANCESTRY and by CONTENT, never by a hash match.**
+
+**Run the gate, read its exit code, then stop before committing.** A
+commit landed on a red gate three times in session 2, every time because
+the gate and the commit were chained in one invocation. Reading the exit
+code is not the control. Not issuing the commit is the control.
+
+**Ancestry**: `main` should contain **`ebcc1d9`**, which completed the
+level-one dictionary. If it does not, this file predates a reset.
+
+**Content** — each verified on 2026-09-25.
+
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **fifteen**
+   checks and **exits 0**.
+2. The suite reports **439** tests.
+3. `curriculum/vocabulary.json` holds **836 senses over 827 words**, of
+   which **738** are at level one. **174** core, **37** ostensive, a seed
+   of **252**. **232** nouns and **231** verbs carry a part of speech, and
+   every one carries its plural or its inflections, enforced.
+4. **Both dictionaries are complete and self-hosting.** Level one reports
+   **701 of 701** words defined at **100 percent closure**; level two
+   **735 of 735**. Nothing on the frontier, nothing blocked, no cycles.
+5. `curriculum/thesaurus.json` holds **799** entries covering every sense
+   at both levels, **194** with an antonym and **132** with a synonym.
+6. `curriculum/books/level_1/` holds **49** books, **47** of them content.
+   **35 are at the sixteen-spread standard** and 12 are short.
+7. `tools/train_level.py` runs on `mps` and writes `evals/pilot/`. **The
+   corpus-to-model loop is closed.**
+8. `git ls-files secret | wc -l` reports **0**, and history is clean, not
+   only `HEAD`.
+
+## What a resuming session should do first
+
+1. Run the validity check and report the handoff valid or stale.
+2. **Check CI.** A green local gate does not mean a green remote one.
+3. Read `docs/process/CURRENT_BRIEF.md`, which carries the goals, their
+   real blockers, and every wrong turn already made once.
+4. Read `docs/decisions/LEVEL_CALIBRATION.md`, which fixes what each level
+   is for.
+5. **Wait for the human prompt.**
+
+## The state
+
+**Reference material is done. The corpus is not.**
+
+| Goal | State |
+| --- | --- |
+| Level-one dictionary and closure | **Done.** 701 of 701 |
+| Thesaurus, synonyms and antonyms | **Done.** 799 entries, both levels |
+| Missing words | **Done, and continuous** via `tools/admit.py` |
+| **Level-one corpus** | **35 of 47 books at standard. See below** |
+| Train a level-one model | Pipeline closed; blocked on the corpus |
+| Level-two dictionary and thesaurus | **Done.** 735 of 735 |
+| Level-two ablation | Blocked on the corpus and on training |
+
+### The live defect, and it is smaller than it looks
+
+**Only 49 of the 92 level-one units can have a book at all.** The other 43
+carry only `introduces`, naming a concept the graph does not hold, so the
+generator cannot derive its neighbours and skips them. **46 of the 49 have
+books.**
+
+Covering the rest means **authoring 51 graph concepts** with prerequisite
+edges and domain assignments. That is design work and it is the operator's.
+Saying "48 of 92" implied a generation shortfall. It is a graph question.
+
+**Three teachable units are still withheld**, and **12 books are short of
+sixteen spreads**, needing 23 in total. **`check.sh` does not yet pass
+`--spreads`**, and must once the corpus complies. A check that is wired
+and never run is a failure this project has recorded three times.
+
+## Findings that outlive the session
+
+- **The corpus validator is more permissive than the lexicon**, since it
+  accepts a word by stripping suffixes. Exact tokenisation is the stronger
+  check and found a real missing form four times.
+- **Seven nonsense words were admissible vocabulary for several commits.**
+  `rised`, `choosed`, `costed`, `shined`, `shrinked`, `slided`, `winned`,
+  each from the regular past rule applied to an irregular verb absent from
+  the table. **No check compares a derived form against English.**
+- **A word the teacher reached for is evidence, not an error.** Over twenty
+  words entered through `admit.py` from what generation was blocked by.
+- **Check a tool's remove path separately from its add path.** Two tools
+  were quietly destructive in a way their add path concealed. The
+  dictionary generator replaced instead of accumulating, and
+  `sync_thesaurus` deleted every level-two entry when run at level one.
+- **A commit message asserting a property the tree lacks is worse than the
+  missing property.** Said twice, of incremental writes and of an
+  assumption I had not recorded.
+- **Read closure, not acceptance.** Two interventions raised acceptance and
+  moved closure not at all.
+- **Generation crossed over for definitions and not for stories.**
+  Definition acceptance fell 22.6, 16.4, then 6.0 percent while authoring
+  yielded about a hundred a round. Story acceptance runs near 50 percent.
+- **The bootstrap needed a seed written in something else.** A dictionary
+  restricted to function words accepted nothing in twenty-four attempts.
+  **37 ostensive words**, unchanged for many rounds, which is the number
+  guarding the self-hosting claim, since a large enough seed closes any
+  lexicon.
+- **The disclosure scan checks vocabulary, not description.** A section
+  identified the deployment domain using entirely ordinary words. There is
+  no automated answer to that class.
+- **A completion condition that cannot be satisfied is worse than none.**
+  One required a book for units that can never have one.
+
+## What is YOURS: decisions the operator holds
+
+1. **The 51 graph concepts** that would unblock 43 level-one units.
+2. **Levels three to seven of the schedule**, which need profile-derived
+   subject weighting and are therefore a disclosure decision.
+3. **Whether level one can reach level two.** Both carry a four-year step,
+   and level one has the smallest token budget in the scheme, so the corpus
+   grows least where the reader grows fastest.
+4. **Concept complexity per level.** Depth is the candidate metric, level
+   one measures 5 and the graph reaches 10, and no target is set.
+5. **Whether a mature version behaves distinctly enough.** `evals/` still
+   has nothing measuring **unrequested action**.
+6. **Whether the arms stay distinguishable when books are the unit.** Now
+   testable and still the sharpest open risk.
+7. **Whether a definition needs its own claim class.**
+8. **Whether multi-head latent attention is admissible.**
+
+## What is NOT yours
+
+**Publishing.** The repository is private and audited clean. Discovery
+scales with attention, so a launch post reopens the decision without a file
+changing.
+
+## Governing rules that are easy to lose
+
+- **Run the gate, read the exit code, stop, then commit.**
+- **Check CI separately.** The local gate is not the gate.
+- **Read the output, not only the counts.** Reading the books found a real
+  defect and a measurement error of mine in the same pass.
+- **Verify a new check by making it fail.**
+- **Corrections are kept in place, not deleted.** `BOOK_FORMATS.md` is
+  marked superseded in part rather than removed.
+- **A heuristic needs two pieces of evidence.** One inflection read `a`,
+  `i` and `it` as verbs and wrote six nonsense words into core.
+- **A guard over records must test `defines.kind`.**
+- **No magic numbers in tests.** Tie an assertion to the lexicon.
+- **Never `git checkout` to undo without checking what else is
+  uncommitted.** It cost two authored waves.
+- **Elegance is not evidence.** The level page counts rise by exactly six
+  signatures a step and that is a consequence, not a reason.
+- Irreversible or outward-facing actions need confirmation.
+
+---
+
+## EVERYTHING BELOW THIS LINE IS ACCUMULATED HISTORY
+
+### Superseded live block, written 2026-09-25 mid-session
+
+Kept for its findings. Its counts named seven books and 208 defined words
+and went stale within the hour. What it recorded as the live defect, that
+the corpus was a fraction of its schedule, was true and was stated with
+the wrong denominator.
 
 **Branch**: `main`, pushed to `origin`, `git@github.com:sgeos/epagoge.git`,
 private. The repository was deleted and recreated after a history rewrite,
@@ -144,9 +312,6 @@ file changing.
   uncommitted.** It cost two authored waves.
 - Irreversible or outward-facing actions need confirmation.
 
----
-
-## EVERYTHING BELOW THIS LINE IS ACCUMULATED HISTORY
 
 History records what was true at an increment. It is not stale, and
 rewriting it corrupts the record. New sessions append; they do not edit.
