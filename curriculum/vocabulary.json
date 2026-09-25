@@ -2403,8 +2403,11 @@
       "concept": "body_part",
       "level": 1,
       "forms": [
+        "handed",
+        "handing",
         "hands"
-      ]
+      ],
+      "pos": "verb"
     },
     {
       "word": "happen",
