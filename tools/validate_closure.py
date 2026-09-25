@@ -45,16 +45,32 @@ def main(argv: list[str]) -> int:
         return found.word if found is not None else None
 
     closure = dictionary_closure(definitions, seed, tokenise, resolve)
-    wanted = {term.word for term in vocabulary.terms if term.level <= level}
+    # **Seed words need no definition, so they do not belong in the
+    # denominator.** Counting them made full coverage unreachable by
+    # construction, since the dictionary is never going to define `red`.
+    wanted = {
+        term.word
+        for term in vocabulary.terms
+        if term.level <= level and term.word not in seed
+    }
     ungrounded = len(definitions) - len(closure.grounded)
 
     print(f"{argv[2]}: dictionary at level {level}")
+    # Some definitions target a seed word, which is allowed and is not
+    # coverage. The figure is the share of words that NEED one and have one.
+    covered = wanted & set(definitions)
+    extra = len(definitions) - len(covered)
     print(
-        f"  defined      {len(definitions)} of {len(wanted)} words"
-        f"  {len(definitions) / len(wanted) * 100:.1f}% coverage"
+        f"  defined      {len(covered)} of {len(wanted)} words needing one"
+        f"  {len(covered) / len(wanted) * 100:.1f}% coverage"
     )
+    if extra:
+        print(f"  also         {extra} definition(s) of seed words, not counted")
     print(f"  grounded     {len(closure.grounded)}  closure {closure.fraction:.1%}")
-    print(f"  seed         {len(seed)} words need no definition")
+    print(f"  seed         {len(seed)} words need no definition and are excluded")
+    outstanding = sorted(wanted - set(definitions))
+    if outstanding:
+        print(f"  undefined    {len(outstanding)}: {' '.join(outstanding[:15])}")
 
     if not (closure.undefined or closure.blocked or closure.cycles):
         print("  self-hosting  yes")
