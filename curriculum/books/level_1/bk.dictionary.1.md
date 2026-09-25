@@ -29,7 +29,22 @@
     "dict.1.edge": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:edge"}, "defines": {"kind": "word", "target": "edge"}},
     "dict.1.holds": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:holds"}, "defines": {"kind": "word", "target": "holds"}},
     "dict.1.mouth": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mouth"}, "defines": {"kind": "word", "target": "mouth"}},
-    "dict.1.name": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:name"}, "defines": {"kind": "word", "target": "name"}}
+    "dict.1.name": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:name"}, "defines": {"kind": "word", "target": "name"}},
+    "dict.1.believes": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:believes"}, "defines": {"kind": "word", "target": "believes"}},
+    "dict.1.call": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:call"}, "defines": {"kind": "word", "target": "call"}},
+    "dict.1.flow": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:flow"}, "defines": {"kind": "word", "target": "flow"}},
+    "dict.1.animal": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:animal"}, "defines": {"kind": "word", "target": "animal"}},
+    "dict.1.living": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:living"}, "defines": {"kind": "word", "target": "living"}},
+    "dict.1.alive": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alive"}, "defines": {"kind": "word", "target": "alive"}},
+    "dict.1.dead": {"concepts": ["dying"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dead"}, "defines": {"kind": "word", "target": "dead"}},
+    "dict.1.light": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:light"}, "defines": {"kind": "word", "target": "light"}},
+    "dict.1.need": {"concepts": ["need"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:need"}, "defines": {"kind": "word", "target": "need"}},
+    "dict.1.able": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:able"}, "defines": {"kind": "word", "target": "able"}},
+    "dict.1.like": {"concepts": ["same_and_different"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:like"}, "defines": {"kind": "word", "target": "like"}},
+    "dict.1.nothing": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nothing"}, "defines": {"kind": "word", "target": "nothing"}},
+    "dict.1.number": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:number"}, "defines": {"kind": "word", "target": "number"}},
+    "dict.1.anything": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:anything"}, "defines": {"kind": "word", "target": "anything"}},
+    "dict.1.many": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:many"}, "defines": {"kind": "word", "target": "many"}}
   }
 }
 ---
@@ -99,3 +114,48 @@ The opening in the face used for eating and speaking.
 
 [dict.1.name]
 A word used to call a person or thing.
+
+[dict.1.believes]
+Thinks something is true or real.
+
+[dict.1.call]
+A sound made by a person or animal.
+
+[dict.1.flow]
+To move like water or liquid.
+
+[dict.1.animal]
+An animal is a living thing that moves and eats.
+
+[dict.1.living]
+Being alive; not dead.
+
+[dict.1.alive]
+Being living and not dead.
+
+[dict.1.dead]
+Not alive; no longer living.
+
+[dict.1.light]
+A thing that makes it possible to see in the dark.
+
+[dict.1.need]
+To want something to be able to do something.
+
+[dict.1.able]
+Can do something or not do something.
+
+[dict.1.like]
+Same as or different from something else.
+
+[dict.1.nothing]
+Not anything at all.
+
+[dict.1.number]
+A word or symbol that shows how many.
+
+[dict.1.anything]
+Anything means any thing at all.
+
+[dict.1.many]
+Many means a large number of things or people.

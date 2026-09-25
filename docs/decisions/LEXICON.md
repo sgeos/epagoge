@@ -89,6 +89,69 @@ introduced before the concept it names is taught. That is right, and
 has been taught so far.** Measured against records, a prescriptive lexicon
 fails for every word whose corpus is not yet written.
 
+## The gap analysis, run for the first time on 2026-09-24
+
+The section above describes testing the graph against a published standard
+and records that it had not been run. **It has now been run from the other
+end**, driven by what the dictionary generator actually failed on rather
+than by a word list, which is the better method and was not the one
+planned.
+
+### What the dictionary was blocked by
+
+Two runs produced fifteen definitions from 144 word-requests. **Every
+rejection classified was the same cause**, a definition reaching outside
+the level's vocabulary, and the offending words were not a long tail. The
+same handful recurred in every batch. `amount`, `part`, `last`,
+`position`, `present`, `center`, `length`, `location`.
+
+Checked against the 56 words a dictionary definition runs on.
+
+| | Count | Examples |
+| --- | --- | --- |
+| Available at level one | **37** | `piece`, `kind`, `way`, `thing`, `place`, `side`, `end`, `middle`, `shape`, `same` |
+| Present but **above** level one | **5** | `part` L2, `amount` L2, `last` L2, `group` L5, `position` L6 |
+| **Absent from the lexicon** | **14** | `bit`, `sort`, `type`, `center`, `form`, `surface`, `area`, `length`, `width`, `location`, `similar`, `act`, `event`, `state` |
+
+### The finding
+
+**The lexicon was selected by what a preschooler knows. A self-hosting
+dictionary needs what you write definitions with.** Those are different
+criteria. The overlap is large and **the gap is exactly what blocks
+closure**.
+
+There is no level-one way to say what an arm is without `part`. Three of
+the twelve words in the first classified batch wanted that one word.
+
+**This is the first concrete evidence on whether the lexicon is closable**,
+and it is more tractable than that question sounded, because the missing
+set is small, stable, and identifiable by running the generator rather than
+by judgement.
+
+### The two classes need different remedies
+
+**Above level one** is a curriculum question, not a lexicon one. A word may
+not be introduced before the concept it names is taught, so promoting
+`part` means scheduling `component_and_system` at level one. That is a
+schedule change with consequences for the ablation domains.
+
+**Absent entirely** is the signal the section above already describes,
+meaning either the mapping was not identified or a concept is missing.
+Several look licensable against concepts the graph already holds, and
+`state` and `event` do not.
+
+**Neither is applied here.** Both change the lexicon's selection principle
+rather than repairing an error in it.
+
+### A caution on the obvious fix
+
+Adding the blockers will unblock these definitions and **will produce a new
+blocker list**, since the added words then need defining themselves. The
+question the next run answers is whether that list is shorter than this
+one. **If it is not, the lexicon is not closable by addition** and the
+answer is a smaller defining subset rather than a larger lexicon, which is
+what a controlled defining vocabulary is.
+
 ## What is not claimed
 
 The lexicon has not been checked word by word against Ogden's 850. The

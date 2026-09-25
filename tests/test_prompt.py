@@ -160,3 +160,47 @@ class TestRetry(unittest.TestCase):
         text = prompts.retry(t, 1, WORDS, ["bad"], ["nope"])
         self.assertIn("DO NOT write about", text)
         self.assertIn("breaks", text)
+
+
+class TestDefinitionsRetry(unittest.TestCase):
+    """The dictionary generator asked once and kept what survived.
+
+    Measured at eight admissible definitions from ninety-six requests, with
+    four of the last five batches producing none. The remedy was already
+    measured on the record generator and was simply absent here.
+    """
+
+    WORDS = {"cup": "household_object", "water": "liquid"}
+
+    def prompt(self, rejected: list[str], offending: list[str]) -> str:
+        return prompts.definitions_retry(
+            self.WORDS, 1, ["a", "the", "thing"], rejected, offending
+        )
+
+    def test_it_names_the_offending_words(self) -> None:
+        text = self.prompt(["cup: a vessel."], ["vessel", "swallow"])
+        self.assertIn("vessel", text)
+        self.assertIn("swallow", text)
+
+    def test_it_shows_the_rejected_entries_back(self) -> None:
+        self.assertIn("cup: a vessel.", self.prompt(["cup: a vessel."], ["vessel"]))
+
+    def test_it_still_carries_the_full_definitions_prompt(self) -> None:
+        text = self.prompt(["bad"], ["nope"])
+        self.assertIn("cup", text)
+        self.assertIn("water", text)
+        self.assertIn("WORD <word>:", text)
+
+    def test_it_says_the_words_are_not_allowed_rather_than_merely_listing_them(
+        self,
+    ) -> None:
+        """A generic repeat of the constraint produces a generic repeat."""
+        self.assertIn("NOT in the allowed list", self.prompt(["bad"], ["nope"]))
+
+    def test_offending_words_are_deduplicated_and_sorted(self) -> None:
+        text = self.prompt(["bad"], ["part", "arm", "part"])
+        self.assertIn("arm part", text)
+
+    def test_an_empty_word_set_is_still_rejected_by_the_inner_prompt(self) -> None:
+        with self.assertRaises(ValueError):
+            prompts.definitions_retry({}, 1, ["a"], ["bad"], ["nope"])

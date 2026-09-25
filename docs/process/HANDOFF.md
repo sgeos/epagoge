@@ -49,7 +49,7 @@ rendered ORDER of this list, not just the next unused number.
    only.
 6. `curriculum/vocabulary.json` holds **890** terms, **773** at level one.
 7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
-   **49 of 760** words defined, of which **1** is grounded.
+   **64 of 773** words defined, of which **1** is grounded.
 8. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
 9. **History is clean, not only `HEAD`.** Every blob and every commit
@@ -103,11 +103,24 @@ never defined.
 two builds on a closed lexicon. Level one has only the function words under
 it, and those name nothing.
 
-**The frontier grows before it shrinks.** Eight batches took definitions
-from 27 to 49 and the frontier from 38 to 47, because defining a word
-introduces the words its definition used. That is the shape of the problem,
-not a fault in the approach, and `generate_dictionary.py` works the
-frontier first because of it.
+**The cause is now measured, and it is not what was assumed.** The
+frontier was described as growing before it shrinks because a definition
+introduces the words it used. **That is true in general and was not what
+happened.** Two runs on 2026-09-24 added fifteen definitions from 144
+requests and moved **grounded not at all**, staying at 1, with the frontier
+ending where it started at 49.
+
+**The lexicon lacks its own metalanguage.** Of the 56 words a definition
+runs on, 37 are at level one, 5 are present above it, and 14 are absent.
+There is no level-one way to say what an arm is without `part`, which is a
+level-two word. See `../decisions/LEXICON.md`, which carries the
+measurement and the two remedies, **neither applied**, since both change
+the lexicon's selection principle.
+
+**Retry was added and is not the fix.** Feeding the offending words back
+nearly doubled per-word acceptance, from 8.3 to 14.6 percent, and **cost
+more model calls than it saved**, going from 1.00 to 0.58 definitions per
+call. It is kept for its diagnostics, which produced the finding above.
 
 ## Findings that outlive the session
 

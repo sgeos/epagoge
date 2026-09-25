@@ -200,6 +200,44 @@ def retry(
     return "\n".join(lines) + build(target, level, words, count=count)
 
 
+def definitions_retry(
+    words: Mapping[str, str],
+    level: int,
+    admissible: Sequence[str],
+    rejected: Sequence[str],
+    offending: Sequence[str],
+) -> str:
+    """Re-ask for definitions, naming the words that caused the rejection.
+
+    **The dictionary generator asked once and kept what survived.** Measured
+    on 2026-09-24 that produced eight admissible definitions from ninety-six
+    requests, and four of the last five batches produced none at all. Every
+    rejection in the batch that was classified was the same cause, a
+    definition reaching outside the level's lexicon.
+
+    The project already measured the remedy on the record generator, where
+    a word list gave zero admissible records of twelve and the same list
+    with the offending words named gave ten of ten. The finding is that a
+    constraint stated in a prompt is a suggestion until something checks it
+    and says what failed.
+    """
+    lines = [
+        "Your previous answer was rejected. These entries were not used:",
+    ]
+    lines += [f"  {line}" for line in rejected]
+    lines += [
+        "",
+        "They used these words, which are NOT in the allowed list:",
+        "  " + " ".join(sorted(set(offending))),
+        "",
+        "Write them again without those words. Say the same thing more",
+        "plainly rather than saying a different thing. A shorter definition",
+        "that stays inside the list beats an exact one that does not.",
+        "",
+    ]
+    return "\n".join(lines) + definitions(words, level, admissible)
+
+
 BOOK_FORMAT: Final[str] = """SUBJECT: <one sentence saying what this book is about>
 WORD <word>: <one sentence saying what that word means>
 STORY: <one sentence>"""

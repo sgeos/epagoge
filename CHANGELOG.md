@@ -27,6 +27,39 @@ Versioning.
 
 ## 2026-09-24
 
+### Measured. The dictionary is blocked by the lexicon, not by the generator
+
+- **A latent defect was fixed first.** The generator rendered the
+  dictionary book from its own run alone, so a second invocation would
+  have deleted the 22 accumulated definitions. Caught by reading the write
+  path. `extend_records` and `records_in` in `epagoge.book`, six tests,
+  **five of which fail against the old behaviour**. Verified in production
+  afterwards, 22 records becoming 37.
+- **Two runs, 144 word-requests, 15 definitions.** Defined 49 to 64.
+  **Grounded did not move, staying at 1, and the frontier ended where it
+  started at 49.** Adding definitions is not closing a lexicon and the
+  project's own metric says so.
+- **Every classified rejection had one cause**, a definition reaching
+  outside the level's vocabulary, and the blockers recur rather than
+  forming a tail. `amount`, `part`, `last`, `position`, `present`,
+  `center`, `length`, `location`.
+- **The lexicon lacks its own metalanguage.** Of the 56 words a definition
+  runs on, **37 are at level one, 5 are present above it, and 14 are
+  absent**. The lexicon was selected by what a preschooler knows. A
+  self-hosting dictionary needs what you write definitions with. **The gap
+  is exactly what blocks closure.**
+- **The gap analysis `LEXICON.md` planned has now been run from the other
+  end**, driven by generator failures rather than by a published word
+  list, which is the better method and was not the one planned.
+- **Retry was added and is honestly not the fix.** Per-word acceptance
+  nearly doubled, 8.3 to 14.6 percent, and **per model call it got worse**,
+  1.00 to 0.58. Kept for the `blocked by` diagnostics that produced the
+  finding.
+- **Neither remedy applied.** Promoting `part` means scheduling
+  `component_and_system` at level one, which touches the ablation domains.
+  The absent words need concepts. Both change the lexicon's selection
+  principle rather than repairing an error in it.
+
 ### Corrected. The posture ceiling was a policy stated as a universal
 
 - **Operator correction.** That selective falsehood and fabrication stay

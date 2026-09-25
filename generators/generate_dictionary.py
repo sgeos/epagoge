@@ -56,6 +56,7 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--batches", type=int, default=2)
     parser.add_argument("--size", type=int, default=12, help="words per batch")
     parser.add_argument("--timeout", type=int, default=600)
+    parser.add_argument("--attempts", type=int, default=3)
     args = parser.parse_args(argv[1:])
 
     book_dir = ROOT / f"curriculum/books/level_{args.level}"
@@ -92,36 +93,73 @@ def main(argv: list[str]) -> int:
             f"batch {batch + 1}: {len(todo)} words, {len(frontier)} on the frontier",
             file=sys.stderr,
         )
-        raw = ask(
-            prompts.definitions(
-                {w: concept_of[w] for w in todo}, args.level, admissible
-            ),
-            timeout=args.timeout,
-        )
+        # **Ask again, naming what failed.** Asking once and keeping what
+        # survived gave eight admissible definitions from ninety-six
+        # requests on 2026-09-24, with four of the last five batches giving
+        # none. Every rejection in the batch that was classified was the
+        # same cause, a definition reaching outside the level's lexicon.
+        # The record generator already had this and the dictionary did not.
+        outstanding = list(todo)
+        rejected: list[str] = []
+        offending: list[str] = []
         kept = 0
-        for line in raw.splitlines():
-            match = ENTRY_RE.match(line.strip())
-            if match is None:
-                continue
-            word, text = match.group(1), as_sentence(match.group(2).strip())
-            if word not in todo or word in defined:
-                continue
-            if not well_formed(text) or unlicensed(vocabulary, text, args.level):
-                continue
-            defined[word] = text
-            written.append(
-                {
-                    "id": f"dict.{args.level}.{word}",
-                    "level": args.level,
-                    "concepts": [concept_of[word]],
-                    "claim_class": "formal",
-                    "content": text,
-                    "provenance": {"source_claim": f"lexicon:{word}"},
-                    "defines": {"kind": "word", "target": word},
-                }
+        attempt = 0
+        for attempt in range(max(args.attempts, 1)):
+            if not outstanding:
+                break
+            batch_words = {w: concept_of[w] for w in outstanding}
+            # A retry with nothing to show back is just the same ask again.
+            # That happens when the teacher omitted words rather than
+            # defining them badly, which the rejection list cannot express.
+            if attempt == 0 or not rejected:
+                question = prompts.definitions(batch_words, args.level, admissible)
+            else:
+                question = prompts.definitions_retry(
+                    batch_words, args.level, admissible, rejected, offending
+                )
+            raw = ask(question, timeout=args.timeout)
+            rejected, offending = [], []
+            for line in raw.splitlines():
+                match = ENTRY_RE.match(line.strip())
+                if match is None:
+                    continue
+                word, text = match.group(1), as_sentence(match.group(2).strip())
+                if word not in outstanding or word in defined:
+                    continue
+                if not well_formed(text):
+                    rejected.append(f"{word}: {text}")
+                    continue
+                outside = unlicensed(vocabulary, text, args.level)
+                if outside:
+                    rejected.append(f"{word}: {text}")
+                    offending.extend(outside)
+                    continue
+                defined[word] = text
+                outstanding.remove(word)
+                written.append(
+                    {
+                        "id": f"dict.{args.level}.{word}",
+                        "level": args.level,
+                        "concepts": [concept_of[word]],
+                        "claim_class": "formal",
+                        "content": text,
+                        "provenance": {"source_claim": f"lexicon:{word}"},
+                        "defines": {"kind": "word", "target": word},
+                    }
+                )
+                kept += 1
+        print(
+            f"  kept {kept} of {len(todo)} after {attempt + 1} attempt(s),"
+            f" {len(outstanding)} unresolved",
+            file=sys.stderr,
+        )
+        if offending:
+            # The words a level cannot define itself without are the
+            # evidence for whether the lexicon is closable at all.
+            print(
+                f"  blocked by: {' '.join(sorted(set(offending))[:12])}",
+                file=sys.stderr,
             )
-            kept += 1
-        print(f"  kept {kept} of {len(todo)}", file=sys.stderr)
 
     if written:
         # **Accumulate, never replace.** This previously rendered the file
