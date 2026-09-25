@@ -14,13 +14,21 @@ import argparse
 import json
 import re
 import sys
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from pathlib import Path
 from typing import cast
 
 from epagoge import prompt as prompts
 from epagoge import schedule as sched
-from epagoge.book import SPREADS, normalise_definition, render_book
+from epagoge.book import (
+    SPREADS,
+    Book,
+    DefinitionKind,
+    book_head,
+    normalise_definition,
+    parse_book,
+    render_book,
+)
 from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
 from generate import ask, well_formed
 
@@ -195,15 +203,32 @@ def write_books(
                 )
             )
             continue
-        head = {
-            "id": entry["id"],
-            "level": entry["level"],
-            "title": entry["title"],
-            "subject": entry["subject"],
-        }
+        # **A REGENERATED BOOK KEEPS WHAT IT ALREADY SAID ABOUT ITSELF.**
+        # This built the front matter from four fields, so regenerating a
+        # book that already existed erased its form and all six metadata
+        # fields without a word. The corpus is complete at ninety-five of
+        # ninety-five units, so every id this writes is an id that already
+        # has a file. Third instance of the field-enumeration defect found
+        # on 2026-09-25; `book_head` is the only thing that should ever
+        # decide which fields a book carries.
         path = out / f"{entry['id']}.md"
+        subject = cast(dict[str, object], entry["subject"])
+        records_now = tuple(i for i in ids if i in by_id)
+        if path.exists():
+            existing, _ = parse_book(path.read_text(encoding="utf-8"), path.name)
+            book = replace(existing, records=records_now)
+        else:
+            book = Book(
+                id=str(entry["id"]),
+                level=int(cast(int, entry["level"])),
+                title=str(entry["title"]),
+                subject_kind=DefinitionKind(str(subject["kind"])),
+                subject=str(subject["target"]),
+                records=records_now,
+            )
         path.write_text(
-            render_book(head, [by_id[i] for i in ids if i in by_id]), encoding="utf-8"
+            render_book(book_head(book), [by_id[i] for i in records_now]),
+            encoding="utf-8",
         )
     return withheld
 

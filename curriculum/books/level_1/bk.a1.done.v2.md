@@ -53,7 +53,7 @@ The sun shines through the window. The light touches the cup. It lies still on t
 The light touches the cup. The cup is on the table now. The cup feels warm. The table is still. No one moves near. The air is calm. The cup is bright and clean. It holds no more water. It is not afraid. The table is made of wood. The cup is small and round.
 
 [a1.done.v2.x06]
-The cup is warm.
+The cup is warm. The air above is still. No one moves near. The table is made of wood. The cup feels bright and clean. It holds no more water. It is not afraid. The light shines straight on it. It looks small, alone, and cold. The room is quiet.
 
 [a1.done.v2.x07]
 The cup holds nothing. It sits on the table, still and quiet. The air above is clear, no dust, no shadow. The cup is empty, not even a drop of water. No one touches it, no hand comes near. The light from the window shines straight on it. It looks small, alone, and cold.
