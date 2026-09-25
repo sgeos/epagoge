@@ -72,6 +72,10 @@ Decision records, and the open questions that block implementation.
   scan public-domain and CC0 sources, accept the frequent in bulk, inspect
   the per-source long tail. Frequency is per source rather than pooled,
   and provenance is recorded at admission.
+- `POST_FACTO_ANALYSIS.md` recorded 2026-09-25. What the project keeps so
+  that "why is this word here" can be answered later. Most of the lexicon
+  predates any such field, so its provenance is reconstructed from git
+  history and labelled as reconstructed rather than invented.
 
 ## Convention
 

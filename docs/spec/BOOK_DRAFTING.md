@@ -88,6 +88,24 @@ rather than stating. Say what a reader is assumed to know already.
 
 `tools/validate_books.py --describe` reports every book missing either.
 
+## Holding a book out of a run
+
+Each level directory has an `exclude/` subdirectory. **A book moved there
+is kept and not trained on**: the loader reads the level directory and
+does not descend, so an excluded book is invisible to every generator,
+validator and training run while keeping its history.
+
+It exists for two cases. A book may be sound and still wrong for a
+particular corpus, off-register or redundant with a better one, and
+deleting it destroys the work and the reason. And the corpus is CC0 and
+meant to be used, so outside submissions are expected: a submitted book
+can land there, be read, and move up into the level once it passes.
+**Nothing is trained on because it arrived.**
+
+**A book that is wrong should be fixed or deleted rather than parked**,
+and the commit that moves one should say why, because neither the
+directory nor the file can.
+
 ## What a book must not do
 
 - **Address the reader as a teacher.** State what is so.

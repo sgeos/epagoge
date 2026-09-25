@@ -36,6 +36,11 @@ run "tests"              env PYTHONPATH=src python3 -m unittest discover -s test
 # **Reported, never gated.** Every unused word is a judgement: a module
 # should use it, a module should be drafted for it, or admitting it was a
 # mistake. A gate cannot make that call and should not pretend to.
+# **Regenerated, then compared.** A provenance record that drifts from the
+# lexicon is worse than none, because it reads as evidence. The check is
+# that the file on disk is what the history produces.
+run "provenance"         env PYTHONPATH=src python3 tools/word_provenance.py --check
+
 run "unused words"       env PYTHONPATH=src python3 tools/unused_words.py --level 1 --top 0
 
 run "coverage"           env PYTHONPATH=src uvx --with coverage coverage run --source=src --omit="$COVERAGE_OMIT" -m unittest discover -s tests
