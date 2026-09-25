@@ -57,6 +57,11 @@ Decision records, and the open questions that block implementation.
 - `BACKPORT.md` recorded 2026-09-25. Backporting level-two concepts into
   level-one picture books. Three of four blockers were lexicon defects
   rather than conceptual barriers.
+- `THREE_PROBLEMS.md` recorded 2026-09-25, operator framing. Level one is
+  a bootstrapping problem, levels two to six a scheduling problem, and
+  level seven a transition from an idealised synthetic corpus to real
+  material. Different shapes, different failure modes, different
+  definitions of done.
 
 ## Convention
 
