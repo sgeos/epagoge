@@ -20,6 +20,7 @@ from epagoge.book import (
     Closure,
     Definition,
     DefinitionKind,
+    book_head,
     book_prerequisites,
     books_from_json,
     definition_coverage,
@@ -640,3 +641,60 @@ class TestBookSize(unittest.TestCase):
             cap = max_words(level)
             self.assertIsNotNone(cap)
             self.assertGreater(cap or 0, 1000)
+
+
+class TestBookHead(unittest.TestCase):
+    """One front-matter builder, so a new field reaches every writer.
+
+    Each tool that rewrites a book used to build this by hand and listed
+    the fields that existed when it was written, so adding a field would
+    have erased it from any book a rewriter touched.
+    """
+
+    def book(self, **extra: str) -> Book:
+        return Book(
+            id="bk.t",
+            level=1,
+            title="A title",
+            subject_kind=DefinitionKind.TOPIC,
+            subject="t1.thing",
+            records=("t1.thing.d00",),
+            **extra,
+        )
+
+    def test_it_carries_the_identifying_fields(self) -> None:
+        head = book_head(self.book())
+        self.assertEqual(head["id"], "bk.t")
+        self.assertEqual(head["level"], 1)
+        self.assertEqual(head["title"], "A title")
+        self.assertEqual(head["subject"], {"kind": "topic", "target": "t1.thing"})
+
+    def test_an_undescribed_book_carries_neither_field(self) -> None:
+        head = book_head(self.book())
+        self.assertNotIn("about", head)
+        self.assertNotIn("teaches", head)
+
+    def test_a_described_book_keeps_both(self) -> None:
+        head = book_head(self.book(about="What it is.", teaches="What it does."))
+        self.assertEqual(head["about"], "What it is.")
+        self.assertEqual(head["teaches"], "What it does.")
+
+    def test_a_round_trip_through_render_and_parse_keeps_them(self) -> None:
+        """The property that matters: a rewriter must not lose them."""
+        original = self.book(about="What it is.", teaches="What it does.")
+        text = render_book(
+            book_head(original),
+            [
+                {
+                    "id": "t1.thing.d00",
+                    "level": 1,
+                    "concepts": ["change"],
+                    "claim_class": "formal",
+                    "content": "A thing.",
+                    "provenance": {"source_claim": "topic:t1.thing"},
+                }
+            ],
+        )
+        again, _ = parse_book(text, "bk.t.md")
+        self.assertEqual(again.about, "What it is.")
+        self.assertEqual(again.teaches, "What it does.")

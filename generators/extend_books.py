@@ -28,7 +28,7 @@ from typing import cast
 from generate import ask
 from generate_books import Reject, Tally, admissible_words, keep
 from epagoge import prompt as prompts
-from epagoge.book import SPREADS, parse_book, render_book
+from epagoge.book import SPREADS, book_head, parse_book, render_book
 from epagoge.vocabulary import load_vocabulary
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -71,12 +71,7 @@ def main(argv: list[str]) -> int:
                 )
                 continue
             trimmed = entries[:SPREADS]
-            head_now = {
-                "id": book.id,
-                "level": book.level,
-                "title": book.title,
-                "subject": {"kind": book.subject_kind.value, "target": book.subject},
-            }
+            head_now = book_head(book)
             path.write_text(render_book(head_now, trimmed), encoding="utf-8")
             print(
                 f"  {book.id}: {len(entries)} spreads, trimmed to {SPREADS}",
@@ -135,12 +130,7 @@ def main(argv: list[str]) -> int:
                     "provenance": {"source_claim": "primitive:things-change"},
                 }
             )
-        head = {
-            "id": book.id,
-            "level": book.level,
-            "title": book.title,
-            "subject": {"kind": book.subject_kind.value, "target": book.subject},
-        }
+        head = book_head(book)
         path.write_text(render_book(head, entries), encoding="utf-8")
         print(f"    added {len(added)}, now {len(entries)}", file=sys.stderr)
         done += 1

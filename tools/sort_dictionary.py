@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 from typing import cast
 
-from epagoge.book import parse_book, render_book
+from epagoge.book import book_head, parse_book, render_book
 
 
 def sort_book(path: Path, *, write: bool = True) -> int:
@@ -44,12 +44,7 @@ def sort_book(path: Path, *, write: bool = True) -> int:
     moved = sum(1 for a, b in zip(entries, ordered, strict=True) if a is not b)
     if not moved or not write:
         return moved
-    head = {
-        "id": book.id,
-        "level": book.level,
-        "title": book.title,
-        "subject": {"kind": book.subject_kind.value, "target": book.subject},
-    }
+    head = book_head(book)
     path.write_text(render_book(head, ordered), encoding="utf-8")
     return moved
 

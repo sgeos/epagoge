@@ -44,34 +44,34 @@ A shortage of water means there is not enough for two plants to live.
 There is no spare water, so no second plant can grow.
 
 [a1.enough.s01]
-The child filled a cup with water and carried it to the garden.
+The child filled a cup with water and carried it to the garden. The child placed the cup on the ground near the plant. The plant looked weak, its leaves thin and dry. The child knew the plant must live. The sun above burned bright and gold. The child stayed, watching, waiting.
 
 [a1.enough.s02]
-The plant grew tall and green, its leaves bright and strong.
+The plant grew tall and green, its leaves bright and strong. The sun above burned bright and gold. The child stayed, watching, waiting. The plant seemed alive, able to grow. The air felt warm, full of life. The child felt calm, not afraid. It was not alone, not forgotten. The sky above stayed clear, no cloud.
 
 [a1.enough.s03]
-The child saw another plant, small and weak, with dry leaves.
+The child saw another plant, small and weak, with dry leaves. It looked afraid, as if it could not grow. The air above felt still, no breeze to help. The child felt a strong need to help, to care. The water was not enough for both, yet one must live.
 
 [a1.enough.s04]
-The child felt a lack of water for both plants.
+The child felt a lack of water for both plants. The air above stayed still, no breeze to help. The small plant looked afraid, its leaves dry and weak. The child could not help both, only one could live. The water was not enough to fill both needs. The child thought about which one should stay alive.
 
 [a1.enough.s05]
-There was not enough water to fill both plants’ needs.
+There was not enough water to fill both plants’ needs. The small plant looked alive but weak. The larger plant seemed able to grow again. The child knew a shortage would harm the second plant. The water was not enough to keep both alive. The air above stayed still. The child could not help both.
 
 [a1.enough.s06]
-The child knew a shortage would harm the second plant.
+The child knew a shortage would harm the second plant. The child sat alone, thinking hard about the plant. The larger plant seemed able to grow again, if given care. The child knew the water was not enough to keep both alive. The air above stayed still, no breeze to help.
 
 [a1.enough.s07]
-The child learned that extra water could not help both, so only one could live.
+The child learned that extra water could not help both, so only one could live. No breeze came to help the plant alive. The child thought about what could be done. The plant might grow again if cared for. The child knew the water was not enough for both. The child could not ask for more.
 
 [a1.enough.x12]
-The child looked up at the sky, wondering if rain would come to help both plants.
+The child looked up at the sky, wondering if rain would come to help both plants. The clouds above looked dark and heavy, full of water. The child felt afraid the rain might not come in time. The plants needed water more than anything else. The child thought about how the water could be shared.
 
 [a1.enough.x13]
-The child reached into the pocket and pulled out a small seed, thinking of how it might grow if given water.
+The child reached into the pocket and pulled out a small seed, thinking of how it might grow if given water. The child looked at the seed, wondering if it could grow with just a little water. The seed felt small and alone, like a tiny life waiting to begin.
 
 [a1.enough.x14]
-The child carried the empty cup back to the house to fill it again.
+The child carried the empty cup back to the house to fill it again. The cup felt light and cold in the hand. The sky above was bright and clear. The child thought of the plant, alone in the garden. Water was not easy to find. The child knew it was not enough to wait.
 
 [a1.enough.x15]
-The child sat on the warm ground, watching the plant as if waiting for a sign.
+The child sat on the warm ground, watching the plant as if waiting for a sign. The air above felt still, heavy with heat. The child felt small, not able to help, not able to fix anything. The plant needed water, but the cup was empty. No one else was near, no one to ask, no one to answer.

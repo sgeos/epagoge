@@ -28,7 +28,7 @@ from typing import cast
 from generate import ask, split_lines, well_formed
 from generate_books import Tally, admissible_words
 from epagoge import prompt as prompts
-from epagoge.book import WORDS_PER_SPREAD, parse_book, render_book
+from epagoge.book import WORDS_PER_SPREAD, book_head, parse_book, render_book
 from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -143,12 +143,7 @@ def main(argv: list[str]) -> int:
         if not grew:
             print("    nothing usable", file=sys.stderr)
             continue
-        head = {
-            "id": book.id,
-            "level": book.level,
-            "title": book.title,
-            "subject": {"kind": book.subject_kind.value, "target": book.subject},
-        }
+        head = book_head(book)
         path.write_text(render_book(head, entries), encoding="utf-8")
         total = sum(len(str(e["content"]).split()) for e in entries)
         print(f"    grew {grew} spread(s), book now {total} words", file=sys.stderr)

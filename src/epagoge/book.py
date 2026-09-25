@@ -769,6 +769,32 @@ def extend_records(
     return out
 
 
+def book_head(book: Book) -> dict[str, object]:
+    """The front matter of a book, for handing back to :func:`render_book`.
+
+    **Every tool that rewrites a book was rebuilding this by hand**, and
+    each hand-built copy listed the fields that existed when it was
+    written. Adding `about` and `teaches` would therefore have erased them
+    from any book a rewriter touched, silently, which is the shape of
+    failure this project has found four times in other places.
+
+    One function, so a new field reaches every writer at once.
+    """
+    head: dict[str, object] = {
+        "id": book.id,
+        "level": book.level,
+        "title": book.title,
+        "subject": {"kind": book.subject_kind.value, "target": book.subject},
+    }
+    # Omitted rather than written empty, so a book that has never been
+    # described does not carry two blank fields pretending otherwise.
+    if book.about:
+        head["about"] = book.about
+    if book.teaches:
+        head["teaches"] = book.teaches
+    return head
+
+
 def render_book(
     payload: Mapping[str, object], records: Sequence[Mapping[str, object]]
 ) -> str:
