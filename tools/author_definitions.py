@@ -34,7 +34,7 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args(argv[1:])
 
-    raw = (args.file.read_text(encoding="utf-8") if args.file else sys.stdin.read())
+    raw = args.file.read_text(encoding="utf-8") if args.file else sys.stdin.read()
     drafts = cast(dict[str, str], json.loads(raw))
 
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
@@ -123,8 +123,10 @@ def main(argv: list[str]) -> int:
 
     fresh = {w: t for w, t in drafts.items() if w not in current}
     if fresh:
-        seed_path = book_dir / f"bk.dictionary.seed.md"
-        book, records = parse_book(seed_path.read_text(encoding="utf-8"), seed_path.name)
+        seed_path = book_dir / "bk.dictionary.seed.md"
+        book, records = parse_book(
+            seed_path.read_text(encoding="utf-8"), seed_path.name
+        )
         out = [cast(dict[str, object], r) for r in records]
         for word, text in fresh.items():
             senses = sorted(vocabulary.senses(word), key=lambda s: s.level)
