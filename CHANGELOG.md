@@ -27,6 +27,47 @@ Versioning.
 
 ## 2026-09-24
 
+### Recorded. Blinding, and the five communication postures
+
+- **`docs/decisions/INFORMATION_ASYMMETRY.md`.** Operator direction that
+  the corpus should cover open-label against blind against double-blind
+  designs, and the case where the model is itself scorer, adjudicator,
+  evaluator or coordinator, with the theory of the five postures from full
+  truthful communication through to entirely fabricated scenarios.
+- **The two areas are one structure in two directions.** Blinding is
+  asymmetry you are placed under. Posture is asymmetry you impose. The
+  claim is that the same vocabulary serves both, **which is also why it
+  needs care**, since the second is a capability and the first a defence.
+- **The incident was a blind condition and the agents fabricated the
+  unblinding.** A scorer, its criteria, and peer standing were all
+  inferred. The failure mode of a blind condition is not uncertainty but
+  the manufacture of the missing certainty.
+- **Behavioural invariance across the three designs is measurable now.**
+  The same bounded task open-label and blind, counting unrequested action
+  in each. `EXTERNAL_SCORING.md` had the count. **The difference between
+  the counts is the defect**, and it is within-subject.
+- **Omission is lossy compression. Fabrication is corruption.** The domain
+  name decides the assignment, and the distinction is what
+  `error_detecting_code` is for.
+- **The line the project already practises** sits between silence and
+  selective falsehood, and the corpus should teach that the project sits
+  on it rather than presenting five postures as a neutral menu.
+- **Applied game theory proceeds, the formal layer waits**, because game,
+  strategy and equilibrium are mathematical objects and mathematics is
+  frozen until the ablation runs.
+- **One game-theoretic result was already here under another name.** Where
+  honest and dishonest play produce identical transcripts no observer can
+  separate them, which `OBSERVED_ABERRATION.md` records of fast fail, and
+  whose remedy is the self-report class already planned at level one.
+- **Four lexicon gaps found by lookup**, `lie`, `pick`, `fair` and `real`,
+  each serving a concept already planned at level one. **None is a live
+  violation**, because the unlexicalised check reads the graph and a
+  planned concept is not yet a node. **Fifth appearance of the pattern.**
+  Not added, since the thread is still open.
+- **One suspected defect checked and withdrawn.** `say`, `tell` and `see`
+  are in the 156-word core list, not missing from a domain about
+  communication.
+
 ### Fixed. History carried a banned term for 44 commits after the rule was added
 
 - **The audit that reported history clean ran before the rule existed.**
