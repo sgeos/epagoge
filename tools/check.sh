@@ -33,6 +33,11 @@ run "ruff (lint)"        uvx "$RUFF" check .
 run "ruff (format)"      uvx "$RUFF" format --check .
 run "pyright (strict)"   uvx "$PYRIGHT"
 run "tests"              env PYTHONPATH=src python3 -m unittest discover -s tests
+# **Reported, never gated.** Every unused word is a judgement: a module
+# should use it, a module should be drafted for it, or admitting it was a
+# mistake. A gate cannot make that call and should not pretend to.
+run "unused words"       env PYTHONPATH=src python3 tools/unused_words.py --level 1 --top 0
+
 run "coverage"           env PYTHONPATH=src uvx --with coverage coverage run --source=src --omit="$COVERAGE_OMIT" -m unittest discover -s tests
 run "coverage floor"     env PYTHONPATH=src uvx --with coverage coverage report --show-missing --omit="$COVERAGE_OMIT" --fail-under="$COVERAGE_FLOOR"
 rm -f .coverage

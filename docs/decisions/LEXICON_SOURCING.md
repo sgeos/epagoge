@@ -87,3 +87,47 @@ do.
 **What counts as frequent.** The threshold is a parameter with a default
 of five and no measurement behind it. It should be set from what the first
 real scan looks like rather than guessed now.
+
+## Every admitted form must be used, and level one does not manage it
+
+**Operator invariant 2026-09-25.** Every word in a level's lexicon must
+appear in that level's corpus, and that means every surface form: all
+inflections, singular and plural. A corpus using `run` and never `ran` has
+not used what the lexicon claims.
+
+**Measured, and the suspicion was right.** Level one admits **2,051
+surface forms and uses 1,355**. **696 are never used, a third of the
+lexicon**, and thirteen headwords appear in no form at all: `aim`, `boss`,
+`cheater`, `depend`, `fact`, `forbidden`, `hook`, `insect`, `judge`,
+`palm`, `scab`, `special`, `ten`.
+
+**Most of the gap is inflections rather than words.** Six bases have all
+four of their forms unused, and the common shape is a verb whose base
+appears and whose past and participle do not. That is the same asymmetry
+the project found from the other side, when seven nonsense past tenses
+were admissible for several commits: **inflections are admitted
+automatically and used only if a writer happens to need them.**
+
+`tools/unused_words.py` reports it and the gate runs it. **It never
+fails**, because each unused word is one of three things and no checker
+can tell which.
+
+## What an unused word means, and why it is a judgement each time
+
+1. **An existing module should include it.**
+2. **A module should be drafted that includes it.**
+3. **Admitting it was a mistake and it should be culled.**
+
+**Archaism is not a reason to cull.** A historical account needs the words
+of its period to tell it accurately, so an archaic word may be exactly
+right somewhere in the curriculum. What archaism implies is that a word is
+not needed *now*, which is a question about **which level it belongs at**
+rather than whether it belongs at all.
+
+**And that placement may be arbitrary.** A word that has to exist
+somewhere and has no natural home gets one chosen for it. Recording that
+the choice was arbitrary is worth more than pretending it was derived.
+
+**The order of work matters here.** This list is most useful after a
+level's corpus is drafted rather than during. Culling from a half-written
+corpus removes words the unwritten half would have used.
