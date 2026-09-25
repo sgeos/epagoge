@@ -27,6 +27,24 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. A book is Markdown, not JSON
+
+- **The ratio said so.** A level-one book of 173 words occupied **260
+  lines** of JSON structure. The same book is now 81 lines with the prose
+  readable at the bottom.
+- **Reading the corpus is the step that decides whether generation
+  continues**, per the recorded sequence. A format that obstructs reading
+  obstructs the one check nothing automates.
+- **The argument that settles it is the level, not the ratio.** A
+  level-five record is a paragraph and a level-seven one draws on real
+  literature. Neither survives being escaped into a JSON string field, and
+  choosing a format for the level we happen to be writing is how a decision
+  becomes expensive later.
+- Front matter between `---` lines with one compact line per record
+  annotation, then prose in blocks marked by record identifier. **Blocks
+  are marked, not positional**, because positional matching is silent when
+  an insertion shifts everything by one. Ten new tests, **305 total**.
+
 ### Changed. A rejected line is input, not waste
 
 - **Operator policy.** Books are edited rather than discarded unless the

@@ -40,6 +40,55 @@ That ordering is the whole point. A definition with nothing following it is
 a glossary. A story with no definitions in front of it assumes vocabulary
 the reader does not have.
 
+## A book is a Markdown file, not JSON
+
+**Changed 2026-09-24, on the ratio.** A level-one book of 173 words
+occupied **260 lines** of JSON structure. The same book is now 81 lines
+with the prose readable at the bottom.
+
+**The project's own sequence makes reading the corpus the step that decides
+whether generation continues.** `CURRICULUM_LEVELS.md` step three is a
+hundred records generated, validated, and read, and if they are bad
+everything downstream is bad. A format that obstructs reading obstructs the
+one check nothing automates.
+
+It also gets worse with level, which is the argument that settles it rather
+than the ratio. A level-five record is a paragraph. A level-seven one draws
+on real literature. Neither survives being escaped into a JSON string
+field, and choosing the format for the level we happen to be writing is how
+a decision becomes expensive later.
+
+### The shape
+
+Front matter between `---` lines, holding the book and one compact line per
+record annotation. Then the prose, in blocks marked by the record
+identifier.
+
+```
+---
+{
+  "id": "bk.cup",
+  "level": 1,
+  "title": "The Cup",
+  "subject": {"kind": "domain", "target": "directed_physical_interactions"},
+  "records": {
+    "bk.cup.d01": {"concepts": ["change"], "claim_class": "formal", ...}
+  }
+}
+---
+
+[bk.cup.d01]
+Things do what they do. You can make a thing do other things.
+```
+
+**Blocks are marked, not positional.** Positional matching is silent when
+an insertion shifts everything by one, which is the failure shape this
+project keeps finding in its own checks. A block with no annotation, an
+annotation with no block, and a repeated identifier are all rejected.
+
+A block runs to the next marker, so a multi-paragraph record needs nothing
+special.
+
 ## Definitions live on records, not on books
 
 A book is an ordering of records. A definition belongs to the sentence that

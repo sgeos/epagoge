@@ -21,6 +21,7 @@ from typing import cast
 from generate import ask, well_formed
 from epagoge import prompt as prompts
 from epagoge import schedule as sched
+from epagoge.book import render_book
 from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -415,15 +416,16 @@ def main(argv: list[str]) -> int:
                 )
             )
             continue
-        payload = {
+        head = {
             "id": entry["id"],
             "level": entry["level"],
             "title": entry["title"],
             "subject": entry["subject"],
-            "records": [by_id[i] for i in ids if i in by_id],
         }
-        path = args.out / f"{entry['id']}.json"
-        path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+        path = args.out / f"{entry['id']}.md"
+        path.write_text(
+            render_book(head, [by_id[i] for i in ids if i in by_id]), encoding="utf-8"
+        )
 
     args.quarantine.parent.mkdir(parents=True, exist_ok=True)
     with args.quarantine.open("w", encoding="utf-8") as handle:

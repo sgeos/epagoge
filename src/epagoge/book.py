@@ -19,6 +19,7 @@ property the lexicon was not authored for and may not have.
 from __future__ import annotations
 
 import json
+import re
 from collections.abc import Collection, Iterable, Mapping, Sequence
 from dataclasses import dataclass
 from enum import Enum
@@ -269,6 +270,104 @@ def book_from_json(payload: object, where: str = "book") -> tuple[Book, list[obj
     return book, records
 
 
+BLOCK_RE: Final[re.Pattern[str]] = re.compile(r"^\[([^\]\n]+)\]\s*$", re.MULTILINE)
+FRONT_MATTER = "---"
+
+
+def render_book(
+    payload: Mapping[str, object], records: Sequence[Mapping[str, object]]
+) -> str:
+    """A book as prose with its annotation above it.
+
+    **JSON was the wrong format and the ratio said so.** A level-one book of
+    173 words occupied 260 lines of structure, and the project's own
+    sequence makes reading the corpus the step that decides whether
+    generation continues. A format that obstructs reading obstructs the one
+    check nothing automates.
+
+    It gets worse with level. A level-five record is a paragraph and a
+    level-seven one draws on real literature, neither of which survives
+    being escaped into a string field.
+    """
+    # One line per record annotation. Pretty-printing the whole block put
+    # 190 lines of structure above 137 words of prose, which is the problem
+    # this format exists to fix rather than a smaller version of it.
+    head = {k: v for k, v in payload.items() if k != "records"}
+    annotations = ",\n".join(
+        "    "
+        + json.dumps(str(r["id"]))
+        + ": "
+        + json.dumps(
+            {k: v for k, v in r.items() if k not in ("id", "content", "level")}
+        )
+        for r in records
+    )
+    front = (
+        json.dumps(head, indent=2)[:-2].rstrip().rstrip(",")
+        + ',\n  "records": {\n'
+        + annotations
+        + "\n  }\n}"
+    )
+    body = "\n\n".join(f"[{r['id']}]\n{r['content']}" for r in records)
+    return f"{FRONT_MATTER}\n{front}\n{FRONT_MATTER}\n\n{body}\n"
+
+
+def parse_book(text: str, where: str = "book") -> tuple[Book, list[object]]:
+    """Read a book file back. Front matter, then id-marked blocks.
+
+    Blocks are marked rather than positional. Positional matching is silent
+    when an insertion shifts everything by one, which is the failure shape
+    this project keeps finding in its own checks.
+    """
+    if not text.startswith(FRONT_MATTER):
+        raise ValueError(f"{where}: no front matter")
+    _, _, rest = text.partition(FRONT_MATTER)
+    raw_head, sep, raw_body = rest.partition(f"\n{FRONT_MATTER}")
+    if not sep:
+        raise ValueError(f"{where}: front matter is not closed")
+    head = json.loads(raw_head)
+    if not isinstance(head, dict):
+        raise ValueError(f"{where}: front matter must be an object")
+    fields = cast(dict[str, object], head)
+    annotations = fields.pop("records", {})
+    if not isinstance(annotations, dict):
+        raise ValueError(f"{where}.records: expected an object")
+    notes = cast(dict[str, object], annotations)
+
+    blocks: dict[str, str] = {}
+    order: list[str] = []
+    matches = list(BLOCK_RE.finditer(raw_body))
+    for index, match in enumerate(matches):
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(raw_body)
+        identifier = match.group(1).strip()
+        if identifier in blocks:
+            raise ValueError(f"{where}: block {identifier!r} repeats")
+        blocks[identifier] = raw_body[match.end() : end].strip()
+        order.append(identifier)
+
+    missing = sorted(set(notes) - set(blocks))
+    extra = sorted(set(blocks) - set(notes))
+    if missing:
+        raise ValueError(f"{where}: annotated but no block: {' '.join(missing)}")
+    if extra:
+        raise ValueError(f"{where}: block but no annotation: {' '.join(extra)}")
+
+    level = fields.get("level")
+    if not isinstance(level, int):
+        raise ValueError(f"{where}.level: expected an integer")
+    records: list[object] = [
+        {
+            "id": identifier,
+            "level": level,
+            "content": blocks[identifier],
+            **cast(dict[str, object], notes[identifier]),
+        }
+        for identifier in order
+    ]
+    fields["records"] = records
+    return book_from_json(fields, where)
+
+
 def load_book_dir(path: Path) -> tuple[list[Book], list[object]]:
     """Every book in a directory, newest ordering last.
 
@@ -276,10 +375,8 @@ def load_book_dir(path: Path) -> tuple[list[Book], list[object]]:
     """
     books: list[Book] = []
     payloads: list[object] = []
-    for file in sorted(path.glob("*.json")):
-        book, records = book_from_json(
-            json.loads(file.read_text(encoding="utf-8")), file.name
-        )
+    for file in sorted(path.glob("*.md")):
+        book, records = parse_book(file.read_text(encoding="utf-8"), file.name)
         books.append(book)
         payloads.extend(records)
     return books, payloads

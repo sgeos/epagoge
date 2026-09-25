@@ -12,6 +12,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from typing import cast
 
 from epagoge.book import (
     Book,
@@ -20,7 +21,10 @@ from epagoge.book import (
     books_from_json,
     definition_coverage,
     definition_from_json,
+    load_book_dir,
     load_books,
+    parse_book,
+    render_book,
     validate_books,
 )
 
@@ -196,3 +200,85 @@ class TestParsing(unittest.TestCase):
         for raw in ("word", {"kind": "word"}, {"kind": "nope", "target": "c"}):
             with self.subTest(raw=raw), self.assertRaises(ValueError):
                 definition_from_json(raw, "where")
+
+
+class TestMarkdownFormat(unittest.TestCase):
+    """Prose with its annotation above it, rather than prose inside JSON.
+
+    A level-one book of 173 words occupied 260 lines of JSON structure, and
+    the project's own sequence makes reading the corpus the step that
+    decides whether generation continues.
+    """
+
+    def head(self) -> dict[str, object]:
+        return {
+            "id": "bk",
+            "level": 1,
+            "title": "T",
+            "subject": {"kind": "domain", "target": "physics"},
+        }
+
+    def records(self) -> list[dict[str, object]]:
+        return [
+            {"id": "bk.r1", "level": 1, "content": "One.", "concepts": ["a"]},
+            {
+                "id": "bk.r2",
+                "level": 1,
+                "content": "Two.\n\nStill two.",
+                "concepts": ["b"],
+            },
+        ]
+
+    def test_a_book_round_trips(self) -> None:
+        text = render_book(self.head(), self.records())
+        got, records = parse_book(text)
+        self.assertEqual(got.id, "bk")
+        self.assertEqual(got.records, ("bk.r1", "bk.r2"))
+        self.assertEqual(cast(dict[str, object], records[0])["concepts"], ["a"])
+
+    def test_a_multi_paragraph_record_survives(self) -> None:
+        """A level-five record is a paragraph and a level-seven one is more."""
+        _, records = parse_book(render_book(self.head(), self.records()))
+        self.assertEqual(
+            cast(dict[str, object], records[1])["content"], "Two.\n\nStill two."
+        )
+
+    def test_the_prose_is_not_escaped(self) -> None:
+        text = render_book(self.head(), self.records())
+        self.assertIn("\n[bk.r1]\nOne.", text)
+
+    def test_missing_front_matter_is_rejected(self) -> None:
+        with self.assertRaises(ValueError):
+            parse_book("[bk.r1]\nOne.\n")
+
+    def test_unclosed_front_matter_is_rejected(self) -> None:
+        with self.assertRaises(ValueError):
+            parse_book('---\n{"id": "bk"}\n')
+
+    def test_a_block_with_no_annotation_is_rejected(self) -> None:
+        text = render_book(self.head(), self.records()) + "\n[bk.r3]\nThree.\n"
+        with self.assertRaises(ValueError):
+            parse_book(text)
+
+    def test_an_annotation_with_no_block_is_rejected(self) -> None:
+        text = render_book(self.head(), self.records())
+        text = text.replace("[bk.r2]\nTwo.\n\nStill two.\n", "")
+        with self.assertRaises(ValueError):
+            parse_book(text)
+
+    def test_a_repeated_block_is_rejected(self) -> None:
+        """Blocks are marked rather than positional, so a repeat is not
+        silently the second one winning."""
+        text = render_book(self.head(), self.records()) + "\n[bk.r1]\nAgain.\n"
+        with self.assertRaises(ValueError):
+            parse_book(text)
+
+    def test_malformed_front_matter_is_rejected(self) -> None:
+        for bad in ('---\n"a string"\n---\n\n', '---\n{"id":"b","level":"1"}\n---\n\n'):
+            with self.subTest(bad=bad), self.assertRaises(ValueError):
+                parse_book(bad)
+
+    def test_the_shipped_books_load(self) -> None:
+        books, records = load_book_dir(Path("curriculum/books/level_1"))
+        self.assertTrue(books)
+        self.assertTrue(records)
