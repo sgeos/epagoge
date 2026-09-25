@@ -547,7 +547,15 @@
     "dict.1.hook": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hook"}, "defines": {"kind": "word", "target": "hook"}},
     "dict.1.swing": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:swing"}, "defines": {"kind": "word", "target": "swing"}},
     "dict.1.dream": {"concepts": ["real_and_pretend"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dream"}, "defines": {"kind": "word", "target": "dream"}},
-    "dict.1.breeze": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breeze"}, "defines": {"kind": "word", "target": "breeze"}}
+    "dict.1.breeze": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breeze"}, "defines": {"kind": "word", "target": "breeze"}},
+    "dict.1.group": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:group"}, "defines": {"kind": "word", "target": "group"}},
+    "dict.1.pile": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pile"}, "defines": {"kind": "word", "target": "pile"}},
+    "dict.1.butterfly": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:butterfly"}, "defines": {"kind": "word", "target": "butterfly"}},
+    "dict.1.wing": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wing"}, "defines": {"kind": "word", "target": "wing"}},
+    "dict.1.curtain": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:curtain"}, "defines": {"kind": "word", "target": "curtain"}},
+    "dict.1.river": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:river"}, "defines": {"kind": "word", "target": "river"}},
+    "dict.1.steady": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:steady"}, "defines": {"kind": "word", "target": "steady"}},
+    "dict.1.pink": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pink"}, "defines": {"kind": "word", "target": "pink"}}
   }
 }
 ---
@@ -772,7 +780,7 @@ Work is what you do to make something happen.
 Young is when a living thing has not been for a long time.
 
 [dict.1.done]
-Done is when a thing has been made or finished.
+Done means there is nothing left to do.
 
 [dict.1.flat]
 Flat is when a thing has no part that goes up or down.
@@ -2171,3 +2179,27 @@ What you see in your sleep.
 
 [dict.1.breeze]
 A light wind.
+
+[dict.1.group]
+Some things or people together.
+
+[dict.1.pile]
+Many things put one on top of another.
+
+[dict.1.butterfly]
+A small animal with big wings that flies.
+
+[dict.1.wing]
+The part of an animal that it flies with.
+
+[dict.1.curtain]
+A cloth you hang over a window.
+
+[dict.1.river]
+Water that flows a long way over the ground.
+
+[dict.1.steady]
+Not moving and not changing.
+
+[dict.1.pink]
+A colour like light red.

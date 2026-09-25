@@ -9,9 +9,22 @@ ordering is a permutation of the same chunk set. That is what makes a
 paired comparison meaningful, and it is the design the variance pilot
 established.
 
-A run reports held-out loss per arm per seed. **It does not decide
-anything.** The pre-registered threshold does that, and at this corpus
-size the honest expectation is that the arms are indistinguishable.
+A run reports held-out loss per arm per seed, and the same variance
+statistics the pilot reports. **It does not decide anything.** The
+pre-registered threshold does that, and at this corpus size the honest
+expectation is that the arms are indistinguishable.
+
+**Why the statistics are here and not only in the pilot.** The pilot
+measured an unpaired sigma of 0.0750, a paired standard deviation of
+0.0233 and a correlation of 0.9539, on a synthetic second-order Markov
+stream at 818,000 parameters. `evals/pilot/README.md` says plainly that
+the correlation is the number most likely to move on real text, and item
+6 of the pre-registration stays provisional until it is re-measured on
+the corpus. Computing the same quantities here is what makes the two runs
+comparable. It does not make them equivalent: the optimiser and schedule
+are still AdamW with cosine decay, and `TRAINING_TECHNIQUES.md` adopts
+maximal update parametrization, Muon and warmup-stable-decay, none of
+which is implemented.
 
     .venv/bin/python tools/train_level.py --level 1 --seeds 4 --steps 600
 """
@@ -44,6 +57,13 @@ from epagoge.pilot import (
     train_once,
 )
 from epagoge.tokeniser import build
+from epagoge.variance import (
+    MIN_OBSERVATIONS,
+    PairedObservation,
+    detectable_effect,
+    estimate,
+    required_seeds,
+)
 from epagoge.vocabulary import load_vocabulary
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -192,6 +212,62 @@ def main(argv: list[str]) -> int:
             )
         results.append(row)
 
+    # **Paired, and only over seeds where both arms finished.** A run that
+    # diverged carries no information about variance and averaging it in
+    # would understate the spread rather than report a failure.
+    observations = [
+        PairedObservation(
+            seed=cast(int, row["seed"]),
+            treatment=cast(float, row["curriculum"]),
+            control=cast(float, row["topological"]),
+        )
+        for row in results
+        if "difference" in row
+    ]
+    variance: dict[str, object] | None = None
+    if len(observations) >= MIN_OBSERVATIONS:
+        est = estimate(observations)
+        mean_loss = sum((o.treatment + o.control) / 2 for o in observations) / len(
+            observations
+        )
+        rows: list[dict[str, float | int]] = []
+        for relative in (0.02, 0.01, 0.005, 0.002):
+            effect = relative * mean_loss
+            rows.append(
+                {
+                    "relative": relative,
+                    "effect": effect,
+                    "paired": required_seeds(est.paired_sd, effect, paired=True),
+                    "unpaired": required_seeds(est.seed_sd, effect, paired=False),
+                }
+            )
+        variance = {
+            "pairs": est.n,
+            "mean_loss": mean_loss,
+            "seed_sd": est.seed_sd,
+            "paired_sd": est.paired_sd,
+            "correlation": est.correlation,
+            "mean_difference": est.mean_difference,
+            "pairing_gain": est.pairing_gain,
+            "requirements": rows,
+            "detectable_at_20_paired_seeds": detectable_effect(est.paired_sd, 20),
+            "synthetic_pilot": {
+                "seed_sd": 0.0750,
+                "paired_sd": 0.0233,
+                "correlation": 0.9539,
+                "source": "evals/pilot/result_single_epoch.json",
+            },
+        }
+        print(
+            f"  seed sd {est.seed_sd:.6f}  paired sd {est.paired_sd:.6f}  "
+            f"rho {est.correlation:.4f}  gain {est.pairing_gain:.1f}x"
+        )
+    else:
+        print(
+            f"  {len(observations)} usable pair(s); variance needs {MIN_OBSERVATIONS}",
+            file=sys.stderr,
+        )
+
     payload = {
         "level": args.level,
         "chunks": len(chunks),
@@ -203,6 +279,7 @@ def main(argv: list[str]) -> int:
         "device": str(device),
         "elapsed": format_seconds(time.time() - started),
         "results": results,
+        "variance": variance,
         "note": (
             "Held-out loss per arm per seed. This decides nothing. The "
             "pre-registered threshold does, and at this corpus size the arms "

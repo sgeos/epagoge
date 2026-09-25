@@ -946,6 +946,15 @@
       ]
     },
     {
+      "word": "butterfly",
+      "concept": "animal",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "butterflies"
+      ]
+    },
+    {
       "word": "buy",
       "concept": "exchange",
       "level": 1,
@@ -1512,6 +1521,15 @@
       "word": "cup",
       "concept": "unit",
       "level": 1
+    },
+    {
+      "word": "curtain",
+      "concept": "household_object",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "curtains"
+      ]
     },
     {
       "word": "curved",
@@ -2657,6 +2675,17 @@
       "level": 2,
       "forms": [
         "grouped",
+        "groups"
+      ]
+    },
+    {
+      "word": "group",
+      "concept": "people_together",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "grouped",
+        "grouping",
         "groups"
       ]
     },
@@ -4460,6 +4489,22 @@
       ]
     },
     {
+      "word": "pile",
+      "concept": "more_and_fewer",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "piled",
+        "piles",
+        "piling"
+      ]
+    },
+    {
+      "word": "pink",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
       "word": "place",
       "concept": "spatial_position",
       "level": 1,
@@ -5010,6 +5055,15 @@
         "rises",
         "rising",
         "rose"
+      ]
+    },
+    {
+      "word": "river",
+      "concept": "liquid",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "rivers"
       ]
     },
     {
@@ -5972,6 +6026,11 @@
         "staying",
         "stays"
       ]
+    },
+    {
+      "word": "steady",
+      "concept": "moving_and_still",
+      "level": 1
     },
     {
       "word": "steal",
@@ -7139,6 +7198,15 @@
       "pos": "noun",
       "forms": [
         "windows"
+      ]
+    },
+    {
+      "word": "wing",
+      "concept": "body_part",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "wings"
       ]
     },
     {

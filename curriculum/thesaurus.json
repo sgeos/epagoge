@@ -475,6 +475,10 @@
       "concept": "heat"
     },
     {
+      "word": "butterfly",
+      "concept": "animal"
+    },
+    {
       "word": "buy",
       "concept": "exchange",
       "antonyms": [
@@ -752,6 +756,10 @@
     {
       "word": "cup",
       "concept": "unit"
+    },
+    {
+      "word": "curtain",
+      "concept": "household_object"
     },
     {
       "word": "curved",
@@ -1490,6 +1498,10 @@
     {
       "word": "group",
       "concept": "grouping"
+    },
+    {
+      "word": "group",
+      "concept": "people_together"
     },
     {
       "word": "grow",
@@ -2683,6 +2695,14 @@
       "concept": "grouping"
     },
     {
+      "word": "pile",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "pink",
+      "concept": "physical_property"
+    },
+    {
       "word": "place",
       "concept": "spatial_position"
     },
@@ -2982,6 +3002,10 @@
       "antonyms": [
         "fall"
       ]
+    },
+    {
+      "word": "river",
+      "concept": "liquid"
     },
     {
       "word": "road",
@@ -3553,6 +3577,10 @@
       "synonyms": [
         "remain"
       ]
+    },
+    {
+      "word": "steady",
+      "concept": "moving_and_still"
     },
     {
       "word": "steal",
@@ -4297,6 +4325,10 @@
     {
       "word": "window",
       "concept": "household_object"
+    },
+    {
+      "word": "wing",
+      "concept": "body_part"
     },
     {
       "word": "wire",

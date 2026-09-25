@@ -47,7 +47,7 @@ To begin something, to do the first thing.
 At any time in the past, future, or now.
 
 [r1.when.d46]
-To finish something, to end it.
+To come to the end of something.
 
 [r1.when.s01]
 He gave it warm milk and covered it with a soft cloth.
