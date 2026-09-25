@@ -27,6 +27,18 @@ Versioning.
 
 ## 2026-09-24
 
+### Fixed. The first dictionary book made the book graph cyclic
+
+- **A dictionary book is a reference, not a step in the curriculum.** It
+  spans every concept it defines, so it depends on almost every other book
+  while almost every other book supplies a word it defines.
+- The corpus build failed outright the moment one existed, which is the
+  right behaviour and was found by running the build for the handoff
+  rather than by a check.
+- Excluded from the ordering and emitted last, **which is where a
+  consolidation belongs anyway** and is what the dictionary decision
+  already said.
+
 ### Added. The dictionary is the bootstrap, and it is now measured
 
 - **Operator framing.** The dictionary is the applied proof that the

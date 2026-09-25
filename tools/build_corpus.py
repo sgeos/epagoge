@@ -49,7 +49,15 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--no-dictionary", action="store_true")
     args = parser.parse_args(argv[1:])
 
-    books, records = load_book_dir(args.books)
+    all_books, records = load_book_dir(args.books)
+    # **A dictionary book is a reference, not a step in the curriculum.** It
+    # spans every concept it defines, so it depends on almost every other
+    # book while almost every other book supplies a word it defines, which
+    # made the dependency graph cyclic the moment one existed. It is
+    # excluded from the ordering and emitted last, which is where a
+    # consolidation belongs anyway.
+    books = [b for b in all_books if not b.id.startswith("bk.dictionary.")]
+    reference = [b for b in all_books if b.id.startswith("bk.dictionary.")]
     by_id = {
         str(cast(dict[str, object], r)["id"]): cast(dict[str, object], r)
         for r in records
@@ -100,7 +108,7 @@ def main(argv: list[str]) -> int:
     if len(names) != len(deps):
         print("book dependencies are cyclic", file=sys.stderr)
         return 1
-    order = [by_book[n] for n in names if n in by_book]
+    order = [by_book[n] for n in names if n in by_book] + reference
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     words = 0
