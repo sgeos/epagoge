@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use Epagoge in academic work, please cite it as below."
+title: "Epagoge"
+abstract: >
+  A graded synthetic corpus and curriculum for training a
+  falsification-oriented foundation model. The corpus is generated and
+  curated rather than scraped, and is written to a closed, self-hosting
+  vocabulary in which every defined word reduces to a seed of words that
+  are learned by being shown rather than defined. It is ordered as a
+  difficulty-graded curriculum whose early levels present simplified
+  concepts and whose later levels revisit them at increasing complexity.
+  That such ordering improves pretraining is the hypothesis under test
+  rather than a claim of the work.
+authors:
+  - family-names: "Sechter"
+    given-names: "Brendan"
+    email: "sgeos@hotmail.com"
+url: "https://github.com/sgeos/epagoge"
+repository-code: "https://github.com/sgeos/epagoge"
+# Both, because the tree holds both. LICENSING.md says which applies
+# where. The corpus is the artifact an academic would cite.
+license:
+  - "CC0-1.0"
+  - "0BSD"
+type: dataset
+keywords:
+  - "synthetic-data"
+  - "pretraining"
+  - "curriculum-learning"
+  - "corpus"
+  - "controlled-vocabulary"
+  - "language-model"
+  - "cc0"

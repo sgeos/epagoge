@@ -1,16 +1,22 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-25, describing `main` at `46e444a`.** Session 4 took
-the operator's framing of the project as three problems, completed and
-then lengthened the level-one corpus, made a checkpoint carry its own
-vocabulary, added the question-and-answer book because the corpus could
-not teach a model to answer, and prepared the repository to be public.
-Read this block, run the validity check, then stop and wait for the human
-prompt.
+**Refreshed 2026-09-25, describing the tree at the commit that carries
+this refresh.** Session 4 took the operator's framing of the project as
+three problems, completed and then lengthened the level-one corpus, made a
+checkpoint carry its own vocabulary, added the question-and-answer book
+because the corpus could not teach a model to answer, published the
+repository, and reviewed the operator's `keleusma` repository for practice
+worth adopting. Read this block, run the validity check, then stop and
+wait for the human prompt.
 
-**The history has been rewritten twice and every hash in it is new.**
-The repository was then recreated public at those rewritten commits.
-Both are recorded below under publication.
+**NO COMMIT HASH IS STAMPED HERE, deliberately.** A stamp naming the
+commit that contains it is impossible, and one naming the parent is off by
+one the moment anything else lands. Every hash in this repository changed
+once already. **Validate by ancestry and by content**, which the next
+section gives in a form that does not depend on any hash.
+
+**The history was rewritten twice and the repository was then recreated
+public at those rewritten commits.** Recorded below under publication.
 
 ---
 
@@ -38,8 +44,8 @@ discipline `CLAUDE.md` points to, and nowhere else.
 
 **Content** — each verified on 2026-09-25.
 
-1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **nineteen**
-   checks and **exits 0**.
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twenty**
+   checks and **exits 0**, in about nine seconds.
 2. The suite reports **483** tests.
 3. `curriculum/vocabulary.json` holds **961 senses over 928 words**, of
    which **845** are at level one and **879** at level two. **178** core,
@@ -49,13 +55,25 @@ discipline `CLAUDE.md` points to, and nowhere else.
 5. `curriculum/thesaurus.json` holds **927** entries, 195 with an antonym
    and 132 with a synonym.
 6. `curriculum/books/level_1/` holds **246** books over **4,691**
-   records and **55,510 words**. Every unit has a book, every book is at
-   sixteen spreads, and **17 are question-and-answer books**.
+   records and **55,510 words**. Every unit has a book and **17 are
+   question-and-answer books**. **244 of the 246 are at sixteen spreads**;
+   the two that are not are `bk.dictionary.1` at 176 records and
+   `bk.dictionary.seed` at 611, which are reference books rather than
+   picture books and which the validator exempts by design. This item read
+   "every book is at sixteen spreads" until 2026-09-25, which anyone
+   checking it would have found false.
 7. `curriculum/provenance.json` gives every word a first commit and a
    reconstructed admission criterion.
 8. `git ls-files secret | wc -l` reports **0**, and history is clean of
    both the deployment vocabulary and the former project name, verified
    by grepping every commit rather than only `HEAD`.
+9. `tools/check_references.py` reports **no unresolved references** over
+   the tracked documents, with `CHANGELOG.md` exempt.
+
+**Two numbers in the closure output look like a contradiction and are
+not.** It reports 808 defined of 808 needing one, and 825 grounded. The
+difference is 17 definitions of seed words, which are written but are not
+counted against the requirement because a seed word needs no definition.
 
 ## What a resuming session should do first
 
@@ -64,7 +82,10 @@ discipline `CLAUDE.md` points to, and nowhere else.
    that has now happened twice for two different reasons.
 3. Read `docs/decisions/THREE_PROBLEMS.md`, which says what kind of
    problem each level is.
-4. Read `docs/process/CURRENT_BRIEF.md`.
+4. Read `docs/process/PROCESS_STRATEGY.md` for durable practice, then
+   `docs/process/CURRENT_BRIEF.md` for what is live. The split is new as
+   of 2026-09-25 and exists because a lesson filed in a document marked
+   for deletion is deleted with it.
 5. **Read `evals/pilot/LEVEL_ONE_*.md` before quoting any number from
    `level_1.json`.**
 6. **Wait for the human prompt.**
@@ -74,19 +95,29 @@ discipline `CLAUDE.md` points to, and nowhere else.
 | Goal | State |
 | --- | --- |
 | Level-one reference material | **Done.** 808 of 808, closure 100 percent |
-| Level-one corpus | **Complete and a fifth of its length.** See below |
+| Level-one corpus | **Complete and a quarter of its length.** See below |
+| Level-one book metadata | **None of it written.** Zero of 246 books |
 | Train a level-one model | **Done.** Interactive through `tools/talk.py` |
-| Level-two reference material | **Done**, and its lexicon is at 9 percent of target |
+| Level-two reference material | **Done**, lexicon at 9 percent of target |
 | Level-two corpus | **One module of 27 scheduled** |
 | Level-two ablation | **Blocked** on corpus scale and on an endpoint |
 
-### Three live defects, all measured
+### Four live defects, all measured
 
-**The corpus is a fifth of its own length standard.** The operator set
-fifty words a spread, give or take thirty. The corpus averages **14.2**.
-It holds 55,510 words and would hold about 181,600 at the standard,
-**without a single new book**. `generators/fill_spreads.py` does this and
-is the cheapest corpus growth available.
+**The corpus is a quarter of its own length standard.** The operator set
+fifty words a spread, give or take thirty. Remeasured 2026-09-25:
+**229 of the 244 sixteen-spread content books are below the band**, 15 are
+inside it and none is above. Those 244 hold 48,634 words against 195,200
+at the standard, **without a single new book**.
+`generators/fill_spreads.py` does this and is the cheapest corpus growth
+available.
+
+**No book carries any of its metadata.** Zero of 246 have `about`,
+`teaches`, `author`, `licence`, `first_published` or `published`. The
+fields are on `Book`, `book_head` writes them, and
+`generators/describe_books.py` exists. **The capability was built and
+never applied**, which is this project's own rule about unblocking not
+being authoring. It is item C of the current brief and it has not moved.
 
 **A third of the level-one lexicon is never used.** 2,051 surface forms
 admitted, 1,363 used, **688 never**, and 11 headwords absent in every
@@ -176,10 +207,27 @@ and no hash from it was ever held by anyone but the operator.
 from here on is subject to the same discipline, and the disclosure scan
 in the gate is what enforces it rather than anyone's memory.
 
+**The public surface, set 2026-09-25 and verifiable with `gh repo view`.**
+Description and six topics set. Licence detected as `0BSD`, which required
+reducing `LICENSE` and `LICENSE-CC0` to bare licence text and moving the
+scope map to `LICENSING.md`; a preamble in front of the text defeats the
+detector. Wiki and projects off, issues on. A build badge in the README.
+`CONTRIBUTING.md`, `CITATION.cff`, `llms.txt`, a pull-request template and
+three issue templates.
+
+**A ruleset named `main` is active with no bypass actors.** It blocks
+deletion, blocks non-fast-forward pushes and requires linear history.
+**It binds the owner too**, so another history rewrite means disabling it
+in settings first. That is deliberate and it will surprise anyone who has
+forgotten it. Required status checks were **not** enabled: under rulesets
+that applies to direct pushes as well as pull requests, and since checks
+run only after a push lands it would force every change through a pull
+request.
+
 ## What is NOT yours
 
-**Publishing.** Discovery scales with attention, so a launch post reopens
-the decision without a file changing.
+**Announcing.** The repository is public; discovery is not. A launch post
+reopens the decision without a file changing, and it is the operator's.
 
 ## Governing rules that are easy to lose
 
@@ -209,7 +257,21 @@ the decision without a file changing.
 - **No magic numbers in tests.** Tie an assertion to the lexicon.
 - **Never `git checkout` to undo without checking what else is
   uncommitted.**
-- Irreversible or outward-facing actions need confirmation.
+- **A workflow that triggers on push must not group its concurrency by
+  ref.** With `cancel-in-progress`, a second push to `main` cancels the
+  first commit's run and leaves that commit with no verdict. Key a branch
+  run by `github.run_id`, which cannot collide. Committed in the wrong
+  form on 2026-09-25 and caught by reviewing the reference repository.
+- **`astral-sh/setup-uv` publishes no floating major tag past v7** while
+  its current release is v10, so it is pinned exactly and the other two
+  actions are not. The asymmetry is in the workflow file.
+- **A guard that has not been shown able to fail is not a guard.** Show a
+  new check failing against a deliberately broken input before trusting
+  it.
+- **A by-name exception list inside a checker is the defect the checker
+  exists to catch.** Ask `git check-ignore`, not a list.
+- Irreversible or outward-facing actions need confirmation. A prior
+  authorisation does not extend to the next one.
 
 ---
 

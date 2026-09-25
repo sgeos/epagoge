@@ -1,0 +1,46 @@
+# Epagoge
+
+> Epagoge is a graded synthetic corpus and curriculum for training a falsification-oriented foundation model. The corpus is generated and curated rather than scraped, and is written to a closed, self-hosting vocabulary in which every defined word reduces to a seed of words learned by being shown rather than defined.
+
+The project's thesis is that a corpus is a designed artifact rather than a quantity, and that quality of input bounds quality of output. That difficulty-graded ordering improves pretraining is the hypothesis under test, not a premise. A flat-order control is required before any observed gain can be attributed to ordering rather than to data quality.
+
+The curriculum runs from level one to level seven and is three different problems. Level one is a bootstrapping problem, levels two to six are a scheduling problem, and level seven is a transition from an idealised synthetic corpus to real material. Work that solves one does not transfer to the others.
+
+When generating code or text that consumes or extends Epagoge, read the agent onboarding file and the three-problems record first, then confirm details in the specifications. Any figure quoted from this repository should be re-measured rather than trusted, because the tree moves.
+
+## Start Here
+
+- [AGENTS.md](https://github.com/sgeos/epagoge/blob/main/AGENTS.md): Agent onboarding for any model.
+- [CLAUDE.md](https://github.com/sgeos/epagoge/blob/main/CLAUDE.md): Authoritative project context, conventions, and standing obligations.
+- [README](https://github.com/sgeos/epagoge/blob/main/README.md): Project overview and quick start.
+- [CONTRIBUTING](https://github.com/sgeos/epagoge/blob/main/CONTRIBUTING.md): What makes a corpus contribution acceptable.
+- [LICENSING](https://github.com/sgeos/epagoge/blob/main/LICENSING.md): Which licence applies to which part of the tree.
+
+## The Framing
+
+- [Three Problems](https://github.com/sgeos/epagoge/blob/main/docs/decisions/THREE_PROBLEMS.md): Why the seven levels are three problems with different definitions of done.
+- [Corpus Thesis](https://github.com/sgeos/epagoge/blob/main/docs/decisions/CORPUS_THESIS.md): Why volume is rejected as the universal answer.
+- [Reading Level Research](https://github.com/sgeos/epagoge/blob/main/docs/decisions/READING_LEVEL_RESEARCH.md): Lexicon sizes, spread counts, and words per spread, per level.
+- [Lexicon Sourcing](https://github.com/sgeos/epagoge/blob/main/docs/decisions/LEXICON_SOURCING.md): Where words come from and what provenance is required.
+
+## Specifications
+
+- [Curriculum Levels](https://github.com/sgeos/epagoge/blob/main/docs/spec/CURRICULUM_LEVELS.md): What each level is and how the genre changes.
+- [Book Drafting](https://github.com/sgeos/epagoge/blob/main/docs/spec/BOOK_DRAFTING.md): Signature binding, spread counts, and word bands per level.
+- [Books](https://github.com/sgeos/epagoge/blob/main/docs/spec/BOOKS.md): Book forms and file shape.
+- [Record Schema](https://github.com/sgeos/epagoge/blob/main/docs/spec/RECORD_SCHEMA.md): The unit of corpus content.
+- [Vocabulary](https://github.com/sgeos/epagoge/blob/main/docs/spec/VOCABULARY.md): The sense-keyed lexicon and the self-hosting property.
+- [Concept Graph](https://github.com/sgeos/epagoge/blob/main/docs/spec/CONCEPT_GRAPH.md): Prerequisites and the partial order over concepts.
+- [Claim Taxonomy](https://github.com/sgeos/epagoge/blob/main/docs/spec/CLAIM_TAXONOMY.md): How a record's epistemic status is marked.
+
+## Process
+
+- [Handoff](https://github.com/sgeos/epagoge/blob/main/docs/process/HANDOFF.md): The resume prompt, with a validity check to run before believing it.
+- [Process Strategy](https://github.com/sgeos/epagoge/blob/main/docs/process/PROCESS_STRATEGY.md): Verification posture, autonomy boundaries, and the failure modes this project keeps producing.
+- [Open Questions](https://github.com/sgeos/epagoge/blob/main/docs/decisions/OPEN_QUESTIONS.md): What is undecided, including the pre-registration items that fix the sign of any ordering result.
+
+## Optional
+
+- [Architecture](https://github.com/sgeos/epagoge/blob/main/docs/architecture/README.md): The training spine and model architecture.
+- [Evaluations](https://github.com/sgeos/epagoge/blob/main/evals/README.md): The pilot measurements and the anti-sycophancy suite.
+- [Changelog](https://github.com/sgeos/epagoge/blob/main/CHANGELOG.md): The full record, including what was wrong and when it was corrected.

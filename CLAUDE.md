@@ -104,6 +104,10 @@ epagoge/
 ├── CLAUDE.md          # This file
 ├── AGENTS.md          # Agent-agnostic pointer to this file
 ├── README.md
+├── CONTRIBUTING.md    # What makes a contribution acceptable
+├── LICENSING.md       # Which licence applies to which part of the tree
+├── CITATION.cff       # Citation metadata
+├── llms.txt           # Machine entry point
 ├── CHANGELOG.md
 ├── pyproject.toml     # Package metadata, ruff, pyright, pytest config
 ├── src/epagoge/       # Importable library shared by all stages
@@ -111,7 +115,7 @@ epagoge/
 ├── generators/        # Corpus synthesis pipeline
 ├── evals/             # Evaluation suites
 │   └── elenchos/      # Anti-sycophancy and calibration probes
-├── corpus/            # Generated corpus data, TRACKED in version control
+├── corpus/            # Derived stream, IGNORED and rebuilt from the books
 ├── sources/           # Terminal-stage literature, TRACKED
 ├── docs/
 │   ├── architecture/  # How the pipeline is built
@@ -152,7 +156,20 @@ run requires rented NVIDIA hardware.
 
 ## Corpus tracking
 
-`corpus/` and `sources/` are deliberately tracked rather than ignored, by
-operator decision of 2026-09-23. Git Large File Storage is installed on
-this machine but is **not** configured for this repository. Consequences
-are recorded in `.gitignore` and `docs/decisions/CORPUS_TRACKING.md`.
+**`sources/` is tracked. `corpus/` is not, as of the amendment of
+2026-09-24.** The original decision of 2026-09-23 tracked both, and it was
+taken while `corpus/` was going to hold the authored records. It no longer
+does: the books under `curriculum/books/` are the authored artifact, and a
+stream under `corpus/` is rebuilt from them by `tools/build_corpus.py`
+under a chosen ordering. What tracking bought is now bought by the books.
+`sources/` stays tracked because terminal-stage literature is acquired
+rather than derived and cannot be rebuilt.
+
+**This file said both were tracked until 2026-09-25**, which is the same
+class of defect the project records elsewhere: a decision was amended in
+`.gitignore` and the amendment did not reach the document an agent reads
+first.
+
+Git Large File Storage is installed on this machine but is **not**
+configured for this repository. Consequences are recorded in `.gitignore`
+and `docs/decisions/CORPUS_TRACKING.md`.

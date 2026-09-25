@@ -19,7 +19,7 @@ It is also the artifact a generator reads. It is data, not prose.
 
 ## Shape
 
-A level is one file. `curriculum/schedule/level_NN.json`.
+A level is one file. `curriculum/schedule/level_<N>.json`.
 
 ```
 level          the level this file schedules

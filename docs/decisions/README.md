@@ -6,7 +6,9 @@ Decision records, and the open questions that block implementation.
 
 - `LANGUAGE_CHOICE.md` decided. Python primary, Rust deferred to measured
   bottlenecks, PyTorch as the training framework.
-- `CORPUS_TRACKING.md` decided. `corpus/` and `sources/` tracked.
+- `CORPUS_TRACKING.md` decided, then amended 2026-09-24. `sources/` is
+  tracked. `corpus/` is not, since it became a derived stream rebuilt
+  from the books rather than the authored artifact.
 - `PYTHON_VERSION.md` decided. Resolved by measurement on 2026-09-23.
   Python 3.14 is usable and the floor stays at 3.12.
 - `PORTABLE_TRAINING_SPINE.md` decided. The framework is confined to the
@@ -26,6 +28,9 @@ Decision records, and the open questions that block implementation.
 - `COLLABORATIVE_POSITIONING.md` decided. The model class is positioned as
   the falsifier and verifier specialist for recruitment into multi-agent
   groups. Positioning and interface only. Never a training objective.
+- `PROCESS_REVIEW.md` decided. What was taken from the reference
+  repository's process and what was rejected, with grounds. The durable
+  outcome is `../process/PROCESS_STRATEGY.md`.
 - `LICENSING.md` decided. 0BSD for software, CC0 for corpus and
   documentation, third-party material under `sources/` excluded from both.
 - `TRAINING_TECHNIQUES.md` decided. Maximal update parametrization, Muon,

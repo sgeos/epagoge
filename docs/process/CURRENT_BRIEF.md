@@ -1,7 +1,14 @@
 # Current brief. Three problems, and only one of them is mine
 
 **Rewritten 2026-09-25** after the operator framed the project as three
-problems rather than one. Delete when `COMPLETION_CONDITION.md` is met.
+problems rather than one, and **remeasured later the same day**. Delete
+when `COMPLETION_CONDITION.md` is met.
+
+**The durable half of this document has moved.** Failure classes,
+verification posture and autonomy boundaries now live in
+`PROCESS_STRATEGY.md`, because a lesson filed in a document marked for
+deletion is deleted with it. The wrong turns below stay here as the
+specific record; the classes they belong to are in the strategy.
 
 ## The framing, and what it does to the work
 
@@ -15,8 +22,8 @@ mechanical.
 **Levels two to six are a scheduling problem.** Allocation over a partial
 order: every concept and word slotted into a level and revisited at
 increasing complexity. Measured 2026-09-25: **24 concepts no schedule
-teaches, 68 taught once and never revisited**, and schedules for two of
-seven levels.
+teaches, 14 taught once and never revisited**, and schedules for two of
+seven levels. The revisit gap was 68 when this document was first written.
 
 **Level seven is a transition problem** from an idealised synthetic corpus
 to real material. `sources/` is empty, its licensing constraint is
@@ -25,14 +32,17 @@ nobody wrote for the model. It has not started.
 
 ## What I recommend pursuing
 
-**A. Level-one length.** The corpus is 37,207 words against 181,600 at the
-operator's fifty-words-a-spread standard, and every one of 227 content
-books is below the band. `fill_spreads.py` lengthens what exists rather
-than adding books, which also avoids the repetition that more books about
-the same units produces. **A factor of five without a new book.**
+**A. Level-one length.** Remeasured 2026-09-25: the corpus is 55,510 words,
+of which 48,634 sit in the 244 sixteen-spread content books, against
+195,200 at the operator's fifty-words-a-spread standard. **229 of those 244
+are below the band** and 15 are inside it; none is above.
+`fill_spreads.py` lengthens what exists rather than adding books, which
+also avoids the repetition that more books about the same units produces.
+**A factor of four without a new book.**
 
-**B. The revisit gap, where it is mechanical.** Half the concepts appear
-once, which is the curriculum's own claim going unhonoured. Deciding
+**B. The revisit gap, where it is mechanical.** Down from 68 concepts to
+14, so this is now the smaller half of the scheduling problem. Each one
+left is the curriculum's own claim going unhonoured. Deciding
 *which* level a concept should be revisited at is design. Recording that a
 level-two module revisits the level-one concepts its own domain already
 teaches is not, and it closes a large part of the gap without a judgement
@@ -40,11 +50,16 @@ per concept.
 
 **C. `about` and `teaches` for books.** Written in unrestricted English for
 a curator, so nothing is rejected on vocabulary and the teacher cannot
-fail the way it fails on corpus prose. Zero of 229 books carry them.
+fail the way it fails on corpus prose. **Zero of 246 books carry them, and
+zero carry `author`, `licence`, `first_published` or `published` either.**
+The fields exist on `Book`, `book_head` writes them, and
+`generators/describe_books.py` exists. The capability was built and never
+applied, which is this project's own rule about unblocking not being
+authoring, in its purest form.
 
 **D. Not mine.** Schedules for levels three to seven. Anything under
 `sources/`, including the licensing question. The allocation that takes
-the level-two lexicon from 871 words to ten thousand, which is a schedule
+the level-two lexicon from 879 words to ten thousand, which is a schedule
 nobody has written rather than a backlog of admissions. The endpoint and
 estimator for pre-registration item 10, which fixes the sign of any
 ordering result.

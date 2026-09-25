@@ -7,9 +7,24 @@ on: [push, pull_request]
 permissions:
   contents: read
 
-# A superseded run tells nobody anything, and the gate is not cheap.
+# Supersede an in-flight run when a PULL REQUEST is pushed again, and leave
+# branch runs alone.
+#
+# The obvious form, `group: <workflow>-${{ github.ref }}` with
+# cancel-in-progress, is wrong here and was committed in that form earlier
+# today. This workflow triggers on push as well as pull_request, so keying on
+# the ref also groups branch runs, and a second push to main then CANCELS the
+# first commit's run. That commit is left with no verdict of its own, which
+# matters because the resume protocol requires checking CI rather than assuming
+# it, and a cancelled run is not a green one.
+#
+# Keying a branch run by its own run id means it can never collide, so branch
+# runs neither cancel each other nor queue behind each other.
+#
+# Taken from the keleusma repository, which recorded the same defect after
+# losing verification runs to it.
 concurrency:
-  group: check-${{ github.ref }}
+  group: check-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
   cancel-in-progress: true
 
 jobs:

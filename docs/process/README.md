@@ -2,7 +2,16 @@
 
 Working practice for this repository.
 
-**Status.** Minimal.
+| Document | What it holds |
+| --- | --- |
+| `HANDOFF.md` | The resume prompt, with a validity check to run before believing it |
+| `PROCESS_STRATEGY.md` | Durable practice. Verification posture, failure classes, autonomy boundaries |
+| `CURRENT_BRIEF.md` | The live brief. Deleted when `COMPLETION_CONDITION.md` is met |
+| `COMPLETION_CONDITION.md` | The end state the current brief is working toward |
+
+**The split between the last two and `PROCESS_STRATEGY.md` is the point.**
+A failure mode recorded in a document marked for deletion is deleted with
+it. Anything that outlives the current brief belongs in the strategy.
 
 ## Handoff
 

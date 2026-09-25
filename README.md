@@ -84,6 +84,15 @@ epagoge/
 └── tmp/             Transient scratch files
 ```
 
+## Contributing
+
+Books, lexicon entries, tooling, evaluations, and corrections are all in
+scope. `CONTRIBUTING.md` says what makes a corpus contribution acceptable,
+and the four properties the gate checks mechanically.
+
+`CITATION.cff` carries the citation metadata. `llms.txt` is the machine
+entry point.
+
 ## Licensing
 
 **Software is 0BSD. Everything else is CC0 1.0 Universal.** Software means
