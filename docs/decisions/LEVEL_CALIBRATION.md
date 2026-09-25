@@ -27,20 +27,34 @@ short.
 Counting cumulative years of formal education completed at each level's
 target, the ladder is even where it can be.
 
-| Level two at | Gaps in school years | Standard deviation |
-| --- | --- | --- |
-| Entering fifth grade | 5, 3, 4, 3, 4, 2 | 0.96 |
-| **Entering fourth grade** | **4, 4, 4**, 3, 4, 2 | **0.76** |
+| Level | Target | Years completed | Gap |
+| --- | --- | --- | --- |
+| 1 | Entering kindergarten | 0 | — |
+| 2 | Entering fourth grade | 4 | 4 |
+| 3 | Entering eighth grade | 8 | 4 |
+| 4 | Entering twelfth grade | 12 | 4 |
+| 5 | Entering university senior year | 16 | 4 |
+| 6 | All but dissertation | about 20 | about 4 |
+| 7 | Post-graduate in practice | about 24 | about 4 |
 
-Walking level two back one year makes the first three steps identical and
-removes the outlier. **The remaining unevenness is at the far end**, where
-university senior to all-but-dissertation to practice compresses, and no
-page count or lexicon target depends on it.
+**Four years at every step.** Kindergarten through twelfth grade is
+thirteen years of schooling, so entering twelfth grade is twelve completed
+and finishing high school is thirteen. Three university years on top of
+that is sixteen, which is why level four to level five is four years and
+not three.
 
-Level one still has the smallest token budget while carrying a four-year
-step, so the corpus grows least where the reader grows fastest. That is
-unchanged by the walk-back and remains the first thing to revisit if level
-two proves unreachable from level one.
+**An earlier version of this record said fifteen and was wrong.** The
+arithmetic error made the ladder look uneven where it is not.
+
+**Levels six and seven are approximate.** Their boundaries are defined by
+candidacy and by practice rather than by enrolment, so the gaps are about
+four rather than exactly four. No page count or lexicon target depends on
+that stretch, since above level four the unit is a paper.
+
+Level one carries the same four-year step as every other on the smallest
+token budget in the scheme, so the corpus grows least where the reader
+grows fastest. That is the first thing to revisit if level two proves
+unreachable from level one.
 
 ## Three axes, and what is measured
 
