@@ -17,12 +17,14 @@ from typing import cast
 
 from epagoge.book import (
     Book,
+    Closure,
     Definition,
     DefinitionKind,
     book_prerequisites,
     books_from_json,
     definition_coverage,
     definition_from_json,
+    dictionary_closure,
     linear_extension,
     load_book_dir,
     load_books,
@@ -343,3 +345,60 @@ class TestBookOrdering(unittest.TestCase):
 
     def test_an_acyclic_graph_reports_orderable(self) -> None:
         self.assertTrue(topological_orders_exist(self.deps()))
+
+
+class TestDictionaryClosure(unittest.TestCase):
+    """The self-hosting check. A lexicon that defines itself, or does not.
+
+    A dictionary in which every word is defined in terms of other words can
+    still be vacuous. A compiler written in its own language needs a seed
+    compiler written in something else, and the seed here is the function
+    words, which name nothing.
+    """
+
+    SEED = {"a", "the", "is", "not"}
+
+    def closure(self, definitions: dict[str, str]) -> object:
+        return dictionary_closure(
+            definitions,
+            self.SEED,
+            lambda t: t.lower().replace(".", "").split(),
+            lambda t: t,
+        )
+
+    def test_a_definition_using_only_seed_words_is_grounded(self) -> None:
+        got = cast(Closure, self.closure({"cup": "a the is not"}))
+        self.assertEqual(got.grounded, frozenset({"cup"}))
+
+    def test_a_word_may_appear_in_its_own_definition(self) -> None:
+        got = cast(Closure, self.closure({"cup": "a cup is not the"}))
+        self.assertIn("cup", got.grounded)
+
+    def test_grounding_chains(self) -> None:
+        got = cast(Closure, self.closure({"a1": "the is", "b1": "a1 is"}))
+        self.assertEqual(got.grounded, frozenset({"a1", "b1"}))
+
+    def test_a_word_resting_on_an_undefined_word_is_blocked_not_cyclic(self) -> None:
+        """An earlier version called this a cycle. It is stuck, not circular,
+        and the two need different fixes."""
+        got = cast(Closure, self.closure({"cup": "the ghost"}))
+        self.assertEqual(got.undefined, ("ghost",))
+        self.assertEqual(got.blocked, ("cup",))
+        self.assertEqual(got.cycles, ())
+
+    def test_a_real_cycle_is_reported_as_one(self) -> None:
+        got = cast(Closure, self.closure({"x1": "the y1", "y1": "the x1"}))
+        self.assertEqual(got.cycles, (("x1", "y1"),))
+        self.assertEqual(got.blocked, ())
+
+    def test_a_chain_onto_a_cycle_is_blocked_by_it(self) -> None:
+        defs = {"x1": "the y1", "y1": "the x1", "z1": "the x1"}
+        got = cast(Closure, self.closure(defs))
+        self.assertIn(("x1", "y1"), got.cycles)
+
+    def test_an_empty_dictionary_is_vacuously_complete(self) -> None:
+        self.assertEqual(cast(Closure, self.closure({})).fraction, 1.0)
+
+    def test_the_fraction_counts_only_defined_words(self) -> None:
+        got = cast(Closure, self.closure({"a1": "the is", "b1": "the ghost"}))
+        self.assertAlmostEqual(got.fraction, 0.5)

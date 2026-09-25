@@ -186,6 +186,120 @@ def random_linear_extension(
     return linear_extension(deps, lambda ready: rng.choice(sorted(ready)))
 
 
+@dataclass(frozen=True, slots=True)
+class Closure:
+    """Whether a level's dictionary actually defines itself.
+
+    **This is the self-hosting problem.** A dictionary in which every word
+    is defined in terms of other words can still be vacuous, if those words
+    are defined in terms of the first. A compiler written in its own
+    language needs a seed compiler written in something else, and a level's
+    lexicon needs words that are shown rather than said.
+
+    The seed here is the function words, which name nothing, and the
+    exemptions. Everything else has to reduce to them.
+    """
+
+    grounded: frozenset[str]
+    undefined: tuple[str, ...]
+    """Used in some definition and never defined."""
+
+    blocked: tuple[str, ...]
+    """Defined, but resting on something that is not grounded."""
+
+    cycles: tuple[tuple[str, ...], ...]
+    """Groups that genuinely define each other and reduce to nothing else.
+
+    Distinguished from merely blocked, which an earlier version conflated
+    with a cycle and so reported three cycles where there were none. A word
+    waiting on a word that is waiting on an undefined word is stuck, not
+    circular, and the two need different fixes.
+    """
+
+    @property
+    def fraction(self) -> float:
+        total = (
+            len(self.grounded) + len(self.undefined) + sum(len(c) for c in self.cycles)
+        )
+        return len(self.grounded) / total if total else 1.0
+
+
+def dictionary_closure(
+    definitions: Mapping[str, str],
+    seed: Collection[str],
+    tokenise: Callable[[str], list[str]],
+    resolve: Callable[[str], str | None],
+) -> Closure:
+    """Which defined words reduce to the seed, and which do not.
+
+    ``resolve`` maps a surface form to its headword, so that a definition
+    using "cups" grounds on "cup". ``seed`` is the set of words available
+    without definition.
+
+    A word grounds when every content word in its definition is either in
+    the seed, is the word itself, or is already grounded. Iterated to a
+    fixed point, and whatever remains is either undefined or in a cycle.
+    """
+    uses: dict[str, set[str]] = {}
+    for word, text in definitions.items():
+        needed: set[str] = set()
+        for token in tokenise(text):
+            if token in seed:
+                continue
+            head = resolve(token) or token
+            if head != word:
+                needed.add(head)
+        uses[word] = needed
+
+    grounded: set[str] = set()
+    changed = True
+    while changed:
+        changed = False
+        for word, needed in uses.items():
+            if word not in grounded and needed <= grounded:
+                grounded.add(word)
+                changed = True
+
+    stuck = {w: n - grounded for w, n in uses.items() if w not in grounded}
+    undefined = sorted({n for needs in stuck.values() for n in needs if n not in uses})
+
+    # A word is cyclic only when every path out of it returns to the group.
+    # A word waiting on a word that is waiting on something undefined is
+    # blocked instead, and conflating the two reported cycles that were not.
+    reaches_undefined: set[str] = set()
+    changed = True
+    while changed:
+        changed = False
+        for word, needs in stuck.items():
+            if word in reaches_undefined:
+                continue
+            if any(n not in uses or n in reaches_undefined for n in needs):
+                reaches_undefined.add(word)
+                changed = True
+
+    cycles: list[tuple[str, ...]] = []
+    remaining = set(stuck) - reaches_undefined
+    while remaining:
+        start = min(remaining)
+        component = {start}
+        frontier = [start]
+        while frontier:
+            current = frontier.pop()
+            for nxt in stuck.get(current, ()):
+                if nxt in remaining and nxt not in component:
+                    component.add(nxt)
+                    frontier.append(nxt)
+        cycles.append(tuple(sorted(component)))
+        remaining -= component
+
+    return Closure(
+        grounded=frozenset(grounded),
+        undefined=tuple(undefined),
+        blocked=tuple(sorted(reaches_undefined)),
+        cycles=tuple(cycles),
+    )
+
+
 def validate_books(
     books: Sequence[Book],
     record_levels: Mapping[str, int],

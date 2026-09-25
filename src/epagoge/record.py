@@ -222,6 +222,7 @@ def validate_corpus(
     graph: ConceptGraph,
     primitives: Collection[str] | None = None,
     scheduled_relations: Collection[tuple[str, str]] | None = None,
+    scheduled_levels: Mapping[str, int] | None = None,
 ) -> list[Violation]:
     """Check a whole corpus. Returns every violation, never raising.
 
@@ -245,9 +246,9 @@ def validate_corpus(
         out.extend(validate_record(record, graph))
 
     out.extend(_validate_supersession(collected, by_id))
-    out.extend(_validate_prerequisite_coverage(collected, graph))
     out.extend(_validate_primitives(collected, primitives))
     out.extend(_validate_relation_coverage(collected, graph, scheduled_relations))
+    out.extend(_validate_prerequisite_coverage(collected, graph, scheduled_levels))
     return out
 
 
@@ -386,14 +387,29 @@ def _validate_supersession(
 
 
 def _validate_prerequisite_coverage(
-    records: Sequence[Record], graph: ConceptGraph
+    records: Sequence[Record],
+    graph: ConceptGraph,
+    scheduled: Mapping[str, int] | None = None,
 ) -> list[Violation]:
     """A concept may not be taught before its prerequisites have been.
 
-    This is the mechanism that ties record levels to the concept graph. A
-    level is authored rather than derived, and this check is what keeps an
-    authored level honest.
+    This is the mechanism that ties record levels to the concept graph.
+
+    ``scheduled`` is the curriculum's concept-to-level assignment, and where
+    it is given it counts as a prerequisite having a level. **This is the
+    fourth rule here to need that distinction**, after the vocabulary lower
+    bound, the vocabulary coverage rule and relation coverage. A schedule
+    states where a concept is taught. Records only show where it has been
+    taught so far, and a rule written against records alone fires on
+    everything not yet written.
+
+    **The ordering claim is not weakened.** The schedule validator enforces
+    the same relation over the plan, and it enforces it more strictly,
+    since a schedule cannot place a concept before its prerequisite at all.
+    What this stops doing is reporting an unwritten corpus as a
+    mis-ordered one.
     """
+    placed = dict(scheduled or {})
     earliest: dict[str, int] = {}
     for record in records:
         for concept in record.concepts:
@@ -406,7 +422,7 @@ def _validate_prerequisite_coverage(
         if concept not in graph.nodes:
             continue
         for prerequisite in sorted(graph.prerequisites_of(concept)):
-            taught = earliest.get(prerequisite)
+            taught = earliest.get(prerequisite, placed.get(prerequisite))
             if taught is None:
                 out.append(
                     Violation(

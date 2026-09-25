@@ -53,6 +53,35 @@ single-stream wall time**, improving several-fold under concurrency. That
 agrees with the earlier estimate of a few hours to a couple of days, which
 was made before any book existed.
 
+## The dictionary is the bootstrap, and level one is the hard one
+
+**Operator framing, 2026-09-24.** The dictionary is the applied proof that
+the lexicon is closed, and **level one is hardest for the same reason a
+self-hosting compiler is**. A compiler written in its own language needs a
+seed written in something else. Level two builds on a lexicon that is
+already closed. Level one has only the function words under it, which name
+nothing, so it has to define itself.
+
+`dictionary_closure` measures it. A word is grounded when every content
+word in its definition is in the seed or is itself grounded, iterated to a
+fixed point.
+
+| | First measurement | After eight batches |
+| --- | --- | --- |
+| Defined | 27 of 760 | **49 of 760** |
+| **Grounded** | **0** | **1** |
+| Blocked, resting on something ungrounded | 27 | 48 |
+| Frontier, used and never defined | 38 | **47** |
+
+**The frontier grew while the dictionary grew.** Defining a word introduces
+the words its definition used, so the frontier expands before it contracts.
+That is the shape of the problem rather than a fault in the approach, and
+it is why the generator works the frontier first.
+
+**One word is grounded**, `different`, whose definition reaches only
+function words. Everything else rests on something that does not yet
+bottom out.
+
 ## What this does not establish
 
 The mean book length is from five books, four of them written by the same

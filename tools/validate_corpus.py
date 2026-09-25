@@ -47,7 +47,7 @@ def main(argv: list[str]) -> int:
 
     primitives = load_primitives(Path(argv[3])) if len(argv) >= 4 else None
     records = load_corpus(Path(argv[2]))
-    violations = validate_corpus(records, graph, primitives, relations)
+    violations = validate_corpus(records, graph, primitives, relations, scheduled)
     vocabulary = load_vocabulary(Path(argv[4])) if len(argv) == 5 else None
     if vocabulary is not None:
         violations = violations + validate_vocabulary(

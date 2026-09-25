@@ -27,6 +27,52 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. The dictionary is the bootstrap, and it is now measured
+
+- **Operator framing.** The dictionary is the applied proof that the
+  lexicon is closed, and **level one is hardest for the same reason a
+  self-hosting compiler is.** Level two builds on a closed lexicon. Level
+  one has only the function words under it, which name nothing.
+- `dictionary_closure` measures it. A word grounds when every content word
+  in its definition is in the seed or is itself grounded.
+- `generators/generate_dictionary.py` works **the frontier first**, since a
+  word other definitions lean on with nothing under it is what keeps the
+  lexicon from reducing.
+
+| | Before | After eight batches |
+| --- | --- | --- |
+| Defined | 27 of 760 | **49 of 760** |
+| **Grounded** | **0** | **1** |
+| Frontier | 38 | **47** |
+
+- **The frontier grew while the dictionary grew.** Defining a word
+  introduces the words its definition used. That is the shape of the
+  problem, not a fault in the approach.
+
+### Fixed. Six batches kept nothing because of my own regex
+
+- The teacher was asked for `WORD cup: ...` and returned `cup: ...`, which
+  is the better format and what a dictionary looks like. **The prefix was
+  required, so every line of six consecutive batches was discarded while
+  the definitions themselves were fine.**
+
+### Fixed. Blocked was being reported as cyclic
+
+- A word waiting on a word that waits on something undefined is **stuck,
+  not circular**, and the two need different fixes. Three cycles were
+  reported where there were none. After the correction: **48 blocked, 0
+  cyclic.** Eight new tests, **321 total**.
+
+### Changed. Prerequisite coverage is the fourth rule to go schedule-aware
+
+- After the vocabulary lower bound, vocabulary coverage and relation
+  coverage. **A schedule states where a concept is taught. Records only
+  show where it has been taught so far**, and a rule written against
+  records alone fires on everything not yet written.
+- **The ordering claim is not weakened.** The schedule validator enforces
+  the same relation over the plan and enforces it more strictly, since a
+  schedule cannot place a concept before its prerequisite at all.
+
 ### Added. Each level carries a dictionary, and it is derived
 
 - **Operator decision.** Every word definition already lives inside the

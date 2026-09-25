@@ -288,3 +288,55 @@ def reword(text: str, offending: Sequence[str], admissible: Sequence[str]) -> st
             "nothing else. It must end with a full stop.",
         ]
     )
+
+
+def definitions(
+    words: Mapping[str, str],
+    level: int,
+    admissible: Sequence[str],
+) -> str:
+    """Prompt for a batch of dictionary entries.
+
+    **This is the self-hosting case.** Each definition must be written in
+    the same vocabulary it belongs to, so the level's lexicon has to define
+    itself the way a compiler written in its own language has to compile
+    itself.
+
+    Batched because related words define each other more consistently when
+    the teacher sees them together, and because one call per word would
+    spend the whole budget on prompt overhead.
+    """
+    if not words:
+        raise ValueError("no words to define")
+    if not admissible:
+        raise ValueError("no admissible vocabulary supplied")
+    lines = [
+        f"Write a dictionary entry for each of these words, at reading level {level}.",
+        "",
+        "THE HARDEST CONSTRAINT IS THE WORD LIST AT THE BOTTOM.",
+        "Every word you write must appear in it. **This is a dictionary that",
+        "explains its own words using its own words**, so a definition that",
+        "reaches outside the list defeats the purpose of writing it.",
+        "",
+        "Write one line per word, in this exact format:",
+        "",
+        "WORD <word>: <one sentence saying what that word means>",
+        "",
+        "The words, with the idea each one names:",
+    ]
+    lines += [
+        f"  {word}  ({concept.replace('_', ' ')})"
+        for word, concept in sorted(words.items())
+    ]
+    lines += [
+        "",
+        "Use ONLY these words, in any order and any inflection:",
+        "  " + " ".join(sorted(admissible)),
+        "",
+        "Rules:",
+        "  - Say what the word means. Do not give an example instead.",
+        "  - A word may appear in its own definition, as in a dictionary.",
+        "  - Prefer simpler words even where a longer one would be exact.",
+        "  - Every line ends with a full stop. No other output.",
+    ]
+    return "\n".join(lines)
