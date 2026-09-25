@@ -222,6 +222,11 @@ must cover history, not the working tree.
 - **Run `./tools/check.sh` before any commit.** The static analysis sat
   configured and unexecuted through the initial commit; on first run it
   failed thirty-six ways.
+- **Never pipe the gate into anything before testing its result.**
+  `./tools/check.sh | tail -2 && git commit` takes the exit status of
+  `tail`, which always succeeds, so the commit runs whatever the gate said.
+  That happened once on 2026-09-24 and a commit landed on a red gate. Run
+  it bare, or redirect to a file and read `$?`.
 - **A scan returning unexpected volume is presumed broken until its pattern
   is inspected.** An unanchored alternation matched `ore` inside `before`
   and produced output indistinguishable from a clean result, one minute

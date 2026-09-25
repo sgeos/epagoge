@@ -27,6 +27,36 @@ Versioning.
 
 ## 2026-09-24
 
+### Fixed. Excluding dependents had starved the general concepts
+
+- Re-ran generation against the expanded lexicon. **Accepted 36 to 57**
+  over 24 concepts rather than 14, and **three produced nothing at all**.
+- Those three were `change`, `material` and `sound`, carrying five, six and
+  five exclusions. **Every concept carrying one exclusion produced
+  everything asked of it.**
+- **A general concept is taught through its instances, and its instances
+  are exactly its dependents.** `material` was forbidden from mentioning
+  metal, liquid, heat or shape. `change` was forbidden from mentioning
+  anything that changes.
+- Dependents had been added on reasoning rather than evidence. **That
+  argument was right about prerequisites and wrong to generalise.**
+  Prerequisites and siblings are excluded now. Dependents are not.
+- **Run four confirms it.** Accepted **61** against 57, rejected **59**
+  against 74, with `change` and `material` recovering. `sound` did not and
+  is the one concept still carrying five exclusions. One datum consistent
+  with the count hypothesis, not proof of it.
+- The recorded wearing-out case still holds.
+
+### Fixed. A piped gate masked its own exit code, and a commit landed red
+
+- `./tools/check.sh | tail -2 && git commit` takes the exit status of
+  `tail`, which always succeeds. **The commit ran on a red gate.**
+- Caught immediately, fixed, and the commit amended. **This is the project's
+  own recorded failure class**, a verification whose result is not actually
+  tested, arriving in the process rather than in the code.
+- Standing rule added to the handoff. Run the gate bare, or redirect and
+  read the status.
+
 ### Added. A check for concepts with no word, and 235 terms to satisfy it
 
 - `concept-unlexicalised` fires when a concept the schedule places at level
