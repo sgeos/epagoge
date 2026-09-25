@@ -1,13 +1,183 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-25, describing `main` at `3dfd4d9`.** Session 3
-completed the level-one corpus at ninety-two of ninety-two units, found
-and closed two silent defects in the measurement harness, and established
-that the training endpoint fixes the sign of the ordering result. Read
-this block, run the validity check, then stop and wait for the human
-prompt.
+**Refreshed 2026-09-25, describing `main` at `f6d8c74`.** Session 4 took
+the operator's framing of the project as three problems, completed and
+then lengthened the level-one corpus, made a checkpoint carry its own
+vocabulary, and added the question-and-answer book because the corpus
+could not teach a model to answer. Read this block, run the validity
+check, then stop and wait for the human prompt.
 
 ---
+
+## Validity
+
+**Branch**: `main`, pushed to `origin`, `github.com/sgeos/epagoge`,
+private. **CI is green and must be checked, not assumed.** It was red on
+the previous head while the local gate passed, because one check is
+derived from git history and the runner clones one commit.
+
+**Before writing anything tracked, read the disclosure discipline
+`CLAUDE.md` points to.** Hard constraint.
+
+**Validate by ANCESTRY and by CONTENT, never by a hash match.**
+
+**Run the gate, read its exit code, then stop before committing.**
+
+**Ancestry**: `main` should contain **`c0cf2c4`**, which completed the
+level-one corpus. If it does not, this file predates a reset.
+
+**Content** — each verified on 2026-09-25.
+
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **nineteen**
+   checks and **exits 0**.
+2. The suite reports **483** tests.
+3. `curriculum/vocabulary.json` holds **961 senses over 928 words**, of
+   which **845** are at level one and **879** at level two. **178** core,
+   **37** ostensive, a seed of **257**, and **84** substitutions.
+4. **Both dictionaries are complete and self-hosting**, 808 of 808 at
+   level one, closure 100 percent, nothing blocked and no cycles.
+5. `curriculum/thesaurus.json` holds **927** entries, 195 with an antonym
+   and 132 with a synonym.
+6. `curriculum/books/level_1/` holds **246** books over **4,691**
+   records and **55,510 words**. Every unit has a book, every book is at
+   sixteen spreads, and **17 are question-and-answer books**.
+7. `curriculum/provenance.json` gives every word a first commit and a
+   reconstructed admission criterion.
+8. `git ls-files secret | wc -l` reports **0**, and history is clean.
+
+## What a resuming session should do first
+
+1. Run the validity check and report the handoff valid or stale.
+2. **Check CI.** A green local gate does not mean a green remote one, and
+   that has now happened twice for two different reasons.
+3. Read `docs/decisions/THREE_PROBLEMS.md`, which says what kind of
+   problem each level is.
+4. Read `docs/process/CURRENT_BRIEF.md`.
+5. **Read `evals/pilot/LEVEL_ONE_*.md` before quoting any number from
+   `level_1.json`.**
+6. **Wait for the human prompt.**
+
+## The state
+
+| Goal | State |
+| --- | --- |
+| Level-one reference material | **Done.** 808 of 808, closure 100 percent |
+| Level-one corpus | **Complete and a fifth of its length.** See below |
+| Train a level-one model | **Done.** Interactive through `tools/talk.py` |
+| Level-two reference material | **Done**, and its lexicon is at 9 percent of target |
+| Level-two corpus | **One module of 27 scheduled** |
+| Level-two ablation | **Blocked** on corpus scale and on an endpoint |
+
+### Three live defects, all measured
+
+**The corpus is a fifth of its own length standard.** The operator set
+fifty words a spread, give or take thirty. The corpus averages **14.2**.
+It holds 55,510 words and would hold about 181,600 at the standard,
+**without a single new book**. `generators/fill_spreads.py` does this and
+is the cheapest corpus growth available.
+
+**A third of the level-one lexicon is never used.** 2,051 surface forms
+admitted, 1,363 used, **688 never**, and 11 headwords absent in every
+form. Mostly inflections, which are admitted automatically and used only
+if a writer happens to need them. Each one is a judgement: a module
+should use it, a module should be drafted for it, or admitting it was a
+mistake.
+
+**The level-two lexicon holds 879 words against a target of about
+10,000.** That is a schedule nobody has written, not a backlog of
+admissions.
+
+## Findings that outlive the session
+
+- **The endpoint picks the sign.** Same corpus, arms and seeds: at 800
+  steps the curriculum arm is worse in 8 of 8, paired t +8.35; at 1,600
+  it is better in 7 of 8, t −3.17. **Both would pass a naive test.**
+  Anyone reporting an ordering effect from here must say what endpoint
+  produced it.
+- **The model is limited by corpus, not training.** At width 256 and
+  3,200 steps it reaches training loss 0.040 and held-out 7.794 against
+  ln(2253) = 7.72 for uniform: it memorises the corpus and predicts
+  unseen text worse than chance. Best reachable is perplexity **133**.
+- **Held-out loss falls about 0.29 nats per corpus doubling**, putting
+  10^6 tokens near perplexity 35. Extrapolated over 2.3 orders of
+  magnitude from 0.9, and optimistic and pessimistic for reasons the
+  record names.
+- **A model reproduces only the forms it was shown.** The corpus held one
+  question mark in 4,419 records and no question with an answer, so the
+  model continued a question instead of answering. Scale does not touch
+  this. 17 question books now exist.
+- **Silent partial coverage is this project's characteristic failure.**
+  A book ordering covering 13 of 146, a chunker keeping a quarter of the
+  corpus, a generator skipping seven domains, nine front-matter builders
+  that would have erased a new field. **A tool that returns less than it
+  was asked for must say so.**
+- **The generation-time check was weaker than the tokeniser** and let
+  eleven forms into books the lexicon did not carry. `unlicensed` is
+  exact by default now.
+- **Seven inflected forms were filed as headwords**: `depends`,
+  `reporting`, `settles`, `allowed`, `ones`, `tens`, `explanations`.
+  Each blocked every form but the one filed.
+- **Nothing compares a derived form against English.** The doubling
+  check closes one narrow class; seven verbs needed hand-written entries.
+- **A word list extracted from a text is not the text**, which is what
+  makes a licensed source usable for vocabulary and not for prose.
+
+## What is YOURS: decisions the operator holds
+
+1. **The endpoint and estimator, item 10.** It fixes the sign of any
+   ordering result this project publishes.
+2. **Whether consulting Dale-Chall and the NGSL is compatible with CC0.**
+   Both are in `tmp/lists/` and neither is committed. Nine thousand words
+   wait on this.
+3. **Schedules for levels three to seven.** None exist.
+4. **The minimum meaningful effect, item 7**, justified from the
+   literature.
+5. **`sources/` and level seven.** Empty, licensing unexamined, and
+   nothing in `evals/` measures a real task.
+6. **Whether level-one's 1,280-word upper bound is right**, since it
+   exceeds the picture-book convention of 1,000.
+7. **Whether the `m1.compare` cycle resolution was the right one.** Two
+   alternatives are named in the commit; one adds a 93rd unit.
+8. **Whether a parked book should leave the repository.** `exclude/` is
+   gitignored as asked, so moving a tracked book there removes it.
+
+## What is NOT yours
+
+**Publishing.** The repository is private and audited clean. Discovery
+scales with attention, so a launch post reopens the decision without a
+file changing.
+
+## Governing rules that are easy to lose
+
+- **Run the gate, read the exit code, stop, then commit.**
+- **Check CI separately.** Twice red while the local gate was green: once
+  for a missing virtual environment, once for a shallow clone.
+- **A tool that returns less than it was asked for must say so.**
+- **A check whose answer depends on the shape of the checkout must say
+  which shape it needs.**
+- **Finishing beats starting.** A fill run that spends its limit on new
+  books leaves the short ones short.
+- **Corrections are kept in place.** A wrong claim in a pushed commit is
+  corrected in the next one, not amended away.
+- **Check a tool's remove path apart from its add path.**
+- **A metric that agrees with you whatever happens is not a
+  measurement.** One reported 100 percent and would have for an untrained
+  model.
+- **Read the output, not only the counts.**
+- **No magic numbers in tests.** Tie an assertion to the lexicon.
+- **Never `git checkout` to undo without checking what else is
+  uncommitted.**
+- Irreversible or outward-facing actions need confirmation.
+
+---
+
+## EVERYTHING BELOW THIS LINE IS ACCUMULATED HISTORY
+
+### Superseded 2026-09-25, end of session three
+
+Replaced rather than deleted. It described 171 books and a corpus of
+39,900 tokens, and said the live defect was size. The defect was size
+and also length, form and lexicon utilisation, none of which it saw.
 
 ## Validity
 
@@ -168,9 +338,6 @@ file changing.
 - **Elegance is not evidence.**
 - Irreversible or outward-facing actions need confirmation.
 
----
-
-## EVERYTHING BELOW THIS LINE IS ACCUMULATED HISTORY
 
 ### Superseded 2026-09-25, end of session two
 
