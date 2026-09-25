@@ -17,6 +17,7 @@ from enum import Enum
 from pathlib import Path
 from typing import Final, cast
 
+from epagoge.book import Definition, definition_from_json
 from epagoge.concept_graph import ConceptGraph, Violation
 
 PRIMITIVE_PREFIX: Final[str] = "primitive:"
@@ -106,6 +107,12 @@ class Record:
     content: str
     provenance: Provenance = field(default_factory=Provenance)
     simplification: Simplification = field(default_factory=Simplification)
+    defines: Definition | None = None
+    """What this record says the meaning of, if anything.
+
+    Carried here rather than on the book, because a book is an ordering of
+    records and a definition belongs to the sentence that makes it.
+    """
 
 
 _REQUIRED_BY_CLASS: Final[Mapping[ClaimClass, tuple[str, ...]]] = {
@@ -439,6 +446,7 @@ def record_from_json(payload: object) -> Record:
         content=_require_str(body.get("content"), "record.content"),
         provenance=prov,
         simplification=simp,
+        defines=definition_from_json(body.get("defines"), "record.defines"),
     )
 
 

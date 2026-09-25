@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bk.cup",
+    "level": 1,
+    "title": "The Cup",
+    "subject": {
+      "kind": "domain",
+      "target": "directed_physical_interactions"
+    },
+    "records": [
+      "bk.cup.d01",
+      "bk.cup.d02",
+      "bk.cup.d03",
+      "bk.cup.d04",
+      "bk.cup.d05",
+      "bk.cup.d06",
+      "bk.cup.d07",
+      "bk.cup.s01",
+      "bk.cup.s02",
+      "bk.cup.s03",
+      "bk.cup.s04",
+      "bk.cup.s05",
+      "bk.cup.s06"
+    ]
+  }
+]

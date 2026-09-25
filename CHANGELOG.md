@@ -27,6 +27,51 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Books, and definitions written in the level's own vocabulary
+
+- `src/epagoge/book.py`, `tools/validate_books.py`, `docs/spec/BOOKS.md`,
+  `curriculum/books/`. Eighteen new tests, **295 total**, gate now eleven
+  checks.
+- **Three parts in order.** The subject is defined, then the words are
+  defined, then a story uses them. A definition with nothing following it
+  is a glossary. A story with no definitions in front of it assumes
+  vocabulary the reader does not have.
+- **Definitions live on records, not on books.** A book is an ordering of
+  records and a definition belongs to the sentence that makes it. A record
+  carries an optional `defines` naming a word, a domain, or a topic, where
+  a topic is a schedule unit.
+- Two rules are about ordering. **A book must define its own subject**,
+  because a book about a thing that never says what the thing is leaves the
+  reader to infer it. And **no definition may follow the material that uses
+  it**, which is a glossary at the back.
+- One demonstration book, `The Cup`, thirteen records, seven definitions,
+  hand-written in level-one vocabulary.
+
+### Recorded. Two gaps the books work exposed and did not close
+
+- **The lexicon was never tested for definitional closure.** Every
+  definition is written in its own level's vocabulary, which at level one
+  means seven hundred words defining themselves. Ogden's Basic English was
+  designed for that and selected its 850 accordingly. **This lexicon was
+  authored concept by concept.** Some words may not be definable in the
+  rest. Untested.
+- **A definition is not one of the six claim classes.** Not formal by
+  proof, not empirical, not an attributed position, not a conditional
+  result, not normative. Definitions are stipulative. The first book uses
+  `formal` with a `lexicon:` source, which is the nearest fit and not a
+  good one.
+
+### Measured. The scale of what remains
+
+| At level one | Defined |
+| --- | --- |
+| Words | **6 of 704** |
+| Domains | **1 of 11** |
+| Topics | **0 of 83** |
+
+- Coverage is reported and gated on nothing. A word with no definition is
+  not a defect in an unfinished corpus and is one in a finished level.
+
 ### Fixed. Excluding dependents had starved the general concepts
 
 - Re-ran generation against the expanded lexicon. **Accepted 36 to 57**

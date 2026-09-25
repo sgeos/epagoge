@@ -36,10 +36,17 @@ run "tests"              env PYTHONPATH=src python3 -m unittest discover -s test
 run "coverage"           env PYTHONPATH=src uvx --with coverage coverage run --source=src --omit="$COVERAGE_OMIT" -m unittest discover -s tests
 run "coverage floor"     env PYTHONPATH=src uvx --with coverage coverage report --show-missing --omit="$COVERAGE_OMIT" --fail-under="$COVERAGE_FLOOR"
 rm -f .coverage
+# The corpus rules run over every record together. A book validated alone
+# reports every prerequisite the rest of the corpus teaches, so the files are
+# concatenated rather than checked one at a time.
+CORPUS="$(mktemp)"
+cat curriculum/graph/sample_corpus.jsonl curriculum/books/level_01.jsonl > "$CORPUS"
 run "seed graph"         env PYTHONPATH=src python3 tools/validate_graph.py curriculum/graph/concepts.json
-run "sample corpus"      env PYTHONPATH=src python3 tools/validate_corpus.py curriculum/graph/concepts.json curriculum/graph/sample_corpus.jsonl curriculum/primitives.json curriculum/vocabulary.json
+run "corpus"             env PYTHONPATH=src python3 tools/validate_corpus.py curriculum/graph/concepts.json "$CORPUS" curriculum/primitives.json curriculum/vocabulary.json
 run "schedule"           env PYTHONPATH=src python3 tools/validate_schedule.py curriculum/graph/concepts.json curriculum/primitives.json curriculum/schedule/level_01.json curriculum/schedule/level_02.json
+run "books"              env PYTHONPATH=src python3 tools/validate_books.py curriculum/graph/concepts.json curriculum/vocabulary.json curriculum/schedule curriculum/books/level_01.json "$CORPUS"
 run "disclosure scan"    ./tools/scrub_scan.sh
+rm -f "$CORPUS"
 
 printf '\n'
 if [ "$fail" -eq 0 ]; then echo "ALL CHECKS PASSED"; else echo "CHECKS FAILED"; fi
