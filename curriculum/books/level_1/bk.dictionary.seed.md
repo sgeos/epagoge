@@ -80,13 +80,11 @@
     "dict.1.whole": {"concepts": ["component_and_system"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:whole"}, "defines": {"kind": "word", "target": "whole"}},
     "dict.1.wood": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wood"}, "defines": {"kind": "word", "target": "wood"}},
     "dict.1.work": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:work"}, "defines": {"kind": "word", "target": "work"}},
-    "dict.1.working": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:working"}, "defines": {"kind": "word", "target": "working"}},
     "dict.1.young": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:young"}, "defines": {"kind": "word", "target": "young"}},
     "dict.1.done": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:done"}, "defines": {"kind": "word", "target": "done"}},
     "dict.1.flat": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:flat"}, "defines": {"kind": "word", "target": "flat"}},
     "dict.1.game": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:game"}, "defines": {"kind": "word", "target": "game"}},
     "dict.1.glass": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:glass"}, "defines": {"kind": "word", "target": "glass"}},
-    "dict.1.named": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:named"}, "defines": {"kind": "word", "target": "named"}},
     "dict.1.paper": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:paper"}, "defines": {"kind": "word", "target": "paper"}},
     "dict.1.plastic": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plastic"}, "defines": {"kind": "word", "target": "plastic"}},
     "dict.1.cheat": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cheat"}, "defines": {"kind": "word", "target": "cheat"}},
@@ -96,7 +94,6 @@
     "dict.1.belong": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:belong"}, "defines": {"kind": "word", "target": "belong"}},
     "dict.1.brush": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:brush"}, "defines": {"kind": "word", "target": "brush"}},
     "dict.1.buy": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:buy"}, "defines": {"kind": "word", "target": "buy"}},
-    "dict.1.bought": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bought"}, "defines": {"kind": "word", "target": "bought"}},
     "dict.1.calm": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:calm"}, "defines": {"kind": "word", "target": "calm"}},
     "dict.1.cat": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cat"}, "defines": {"kind": "word", "target": "cat"}},
     "dict.1.chair": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:chair"}, "defines": {"kind": "word", "target": "chair"}},
@@ -112,7 +109,6 @@
     "dict.1.cost": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cost"}, "defines": {"kind": "word", "target": "cost"}},
     "dict.1.cow": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cow"}, "defines": {"kind": "word", "target": "cow"}},
     "dict.1.crack": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:crack"}, "defines": {"kind": "word", "target": "crack"}},
-    "dict.1.cracked": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cracked"}, "defines": {"kind": "word", "target": "cracked"}},
     "dict.1.cry": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cry"}, "defines": {"kind": "word", "target": "cry"}},
     "dict.1.curved": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:curved"}, "defines": {"kind": "word", "target": "curved"}},
     "dict.1.dad": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dad"}, "defines": {"kind": "word", "target": "dad"}},
@@ -121,7 +117,6 @@
     "dict.1.deep": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:deep"}, "defines": {"kind": "word", "target": "deep"}},
     "dict.1.deeper": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:deeper"}, "defines": {"kind": "word", "target": "deeper"}},
     "dict.1.die": {"concepts": ["dying"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:die"}, "defines": {"kind": "word", "target": "die"}},
-    "dict.1.died": {"concepts": ["dying"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:died"}, "defines": {"kind": "word", "target": "died"}},
     "dict.1.dig": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dig"}, "defines": {"kind": "word", "target": "dig"}},
     "dict.1.disagree": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:disagree"}, "defines": {"kind": "word", "target": "disagree"}},
     "dict.1.dish": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dish"}, "defines": {"kind": "word", "target": "dish"}},
@@ -130,10 +125,8 @@
     "dict.1.door": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:door"}, "defines": {"kind": "word", "target": "door"}},
     "dict.1.drank": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drank"}, "defines": {"kind": "word", "target": "drank"}},
     "dict.1.draw": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:draw"}, "defines": {"kind": "word", "target": "draw"}},
-    "dict.1.drew": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drew"}, "defines": {"kind": "word", "target": "drew"}},
     "dict.1.drip": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drip"}, "defines": {"kind": "word", "target": "drip"}},
     "dict.1.drop": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drop"}, "defines": {"kind": "word", "target": "drop"}},
-    "dict.1.dropped": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dropped"}, "defines": {"kind": "word", "target": "dropped"}},
     "dict.1.dull": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dull"}, "defines": {"kind": "word", "target": "dull"}},
     "dict.1.dust": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dust"}, "defines": {"kind": "word", "target": "dust"}},
     "dict.1.early": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:early"}, "defines": {"kind": "word", "target": "early"}},
@@ -146,7 +139,6 @@
     "dict.1.fast": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fast"}, "defines": {"kind": "word", "target": "fast"}},
     "dict.1.fat": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fat"}, "defines": {"kind": "word", "target": "fat"}},
     "dict.1.feed": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:feed"}, "defines": {"kind": "word", "target": "feed"}},
-    "dict.1.fed": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fed"}, "defines": {"kind": "word", "target": "fed"}},
     "dict.1.fill": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fill"}, "defines": {"kind": "word", "target": "fill"}},
     "dict.1.filled": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:filled"}, "defines": {"kind": "word", "target": "filled"}},
     "dict.1.finger": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:finger"}, "defines": {"kind": "word", "target": "finger"}},
@@ -160,7 +152,6 @@
     "dict.1.garden": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:garden"}, "defines": {"kind": "word", "target": "garden"}},
     "dict.1.glad": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:glad"}, "defines": {"kind": "word", "target": "glad"}},
     "dict.1.glue": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:glue"}, "defines": {"kind": "word", "target": "glue"}},
-    "dict.1.glued": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:glued"}, "defines": {"kind": "word", "target": "glued"}},
     "dict.1.gold": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gold"}, "defines": {"kind": "word", "target": "gold"}},
     "dict.1.grandma": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grandma"}, "defines": {"kind": "word", "target": "grandma"}},
     "dict.1.grandpa": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grandpa"}, "defines": {"kind": "word", "target": "grandpa"}},
@@ -180,7 +171,9 @@
     "dict.1.house": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:house"}, "defines": {"kind": "word", "target": "house"}},
     "dict.1.hungry": {"concepts": ["need"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hungry"}, "defines": {"kind": "word", "target": "hungry"}},
     "dict.1.ice": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ice"}, "defines": {"kind": "word", "target": "ice"}},
-    "dict.1.colour": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:colour"}, "defines": {"kind": "word", "target": "colour"}}
+    "dict.1.colour": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:colour"}, "defines": {"kind": "word", "target": "colour"}},
+    "dict.1.low": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:low"}, "defines": {"kind": "word", "target": "low"}},
+    "dict.1.wear": {"concepts": ["wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wear"}, "defines": {"kind": "word", "target": "wear"}}
   }
 }
 ---
@@ -401,9 +394,6 @@ Wood is the stuff a tree is made of.
 [dict.1.work]
 Work is what you do to make something happen.
 
-[dict.1.working]
-Working is when someone does work.
-
 [dict.1.young]
 Young is when a living thing has not been for a long time.
 
@@ -418,9 +408,6 @@ A game is a thing people do together that they want to do.
 
 [dict.1.glass]
 Glass is hard stuff you can see through.
-
-[dict.1.named]
-Named is when someone has said the name of a thing.
 
 [dict.1.paper]
 Paper is thin flat stuff made from wood.
@@ -448,9 +435,6 @@ A brush is a tool with many thin parts that you use to make a thing clean.
 
 [dict.1.buy]
 To buy is to give something to get a thing.
-
-[dict.1.bought]
-Bought is when someone gave something to get a thing.
 
 [dict.1.calm]
 Calm is when a thing is still and there is no loud sound.
@@ -497,9 +481,6 @@ A cow is a big animal that people keep for food.
 [dict.1.crack]
 A crack is a thin long open part in a hard thing.
 
-[dict.1.cracked]
-Cracked is when a thing has a crack in it.
-
 [dict.1.cry]
 To cry is to make a sound and let water come from your eyes when you feel bad.
 
@@ -523,9 +504,6 @@ Deeper is more deep than another thing.
 
 [dict.1.die]
 To die is to be alive and then be dead.
-
-[dict.1.died]
-Died is when a living thing became dead.
 
 [dict.1.dig]
 To dig is to take ground away with your hands.
@@ -551,17 +529,11 @@ Drank is when someone took water into the mouth before.
 [dict.1.draw]
 To draw is to make the shape of a thing so others can see it.
 
-[dict.1.drew]
-Drew is when someone made the shape of a thing before.
-
 [dict.1.drip]
 To drip is when small parts of a liquid go down one after another.
 
 [dict.1.drop]
 To drop is to let a thing go down.
-
-[dict.1.dropped]
-Dropped is when someone let a thing go down.
 
 [dict.1.dull]
 Dull is not sharp.
@@ -598,9 +570,6 @@ Fat is when a body is big around.
 
 [dict.1.feed]
 To feed is to give food to a living thing.
-
-[dict.1.fed]
-Fed is when someone has made a living thing eat.
 
 [dict.1.fill]
 To fill is to put things in a thing so there is no space.
@@ -640,9 +609,6 @@ Glad is happy.
 
 [dict.1.glue]
 Glue is wet stuff you use to make two things hold together.
-
-[dict.1.glued]
-Glued is when two things have been made to hold together with glue.
 
 [dict.1.gold]
 Gold is a metal that has a yellow colour.
@@ -703,3 +669,9 @@ Ice is water that is very cold and hard.
 
 [dict.1.colour]
 A colour is what makes red not the same as blue.
+
+[dict.1.low]
+Low is when a thing is near the ground.
+
+[dict.1.wear]
+To wear is to have cloth on your body.

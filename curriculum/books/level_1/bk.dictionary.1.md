@@ -14,14 +14,11 @@
     "dict.1.else": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:else"}, "defines": {"kind": "word", "target": "else"}},
     "dict.1.alike": {"concepts": ["same_and_different"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alike"}, "defines": {"kind": "word", "target": "alike"}},
     "dict.1.drink": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drink"}, "defines": {"kind": "word", "target": "drink"}},
-    "dict.1.lacking": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lacking"}, "defines": {"kind": "word", "target": "lacking"}},
     "dict.1.liquid": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:liquid"}, "defines": {"kind": "word", "target": "liquid"}},
     "dict.1.bright": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bright"}, "defines": {"kind": "word", "target": "bright"}},
     "dict.1.container": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:container"}, "defines": {"kind": "word", "target": "container"}},
     "dict.1.enough": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:enough"}, "defines": {"kind": "word", "target": "enough"}},
     "dict.1.hand": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hands"}, "defines": {"kind": "word", "target": "hand"}},
-    "dict.1.higher": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:higher"}, "defines": {"kind": "word", "target": "higher"}},
-    "dict.1.lower": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lower"}, "defines": {"kind": "word", "target": "lower"}},
     "dict.1.midnight": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:midnight"}, "defines": {"kind": "word", "target": "midnight"}},
     "dict.1.edge": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:edge"}, "defines": {"kind": "word", "target": "edge"}},
     "dict.1.holds": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:holds"}, "defines": {"kind": "word", "target": "holds"}},
@@ -42,7 +39,6 @@
     "dict.1.one": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:one"}, "defines": {"kind": "word", "target": "one"}},
     "dict.1.count": {"concepts": ["counting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:count"}, "defines": {"kind": "word", "target": "count"}},
     "dict.1.open": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:open"}, "defines": {"kind": "word", "target": "open"}},
-    "dict.1.closed": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:closed"}, "defines": {"kind": "word", "target": "closed"}},
     "dict.1.enter": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:enter"}, "defines": {"kind": "word", "target": "enter"}},
     "dict.1.longer": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:longer"}, "defines": {"kind": "word", "target": "longer"}},
     "dict.1.large": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:large"}, "defines": {"kind": "word", "target": "large"}},
@@ -52,23 +48,18 @@
     "dict.1.past": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:past"}, "defines": {"kind": "word", "target": "past"}},
     "dict.1.agree": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:agree"}, "defines": {"kind": "word", "target": "agree"}},
     "dict.1.answer": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:answer"}, "defines": {"kind": "word", "target": "answer"}},
-    "dict.1.answered": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:answered"}, "defines": {"kind": "word", "target": "answered"}},
     "dict.1.ask": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ask"}, "defines": {"kind": "word", "target": "ask"}},
-    "dict.1.asked": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:asked"}, "defines": {"kind": "word", "target": "asked"}},
-    "dict.1.asking": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:asking"}, "defines": {"kind": "word", "target": "asking"}},
     "dict.1.asleep": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:asleep"}, "defines": {"kind": "word", "target": "asleep"}},
     "dict.1.always": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:always"}, "defines": {"kind": "word", "target": "always"}},
     "dict.1.allowed": {"concepts": ["someone_in_charge"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:allowed"}, "defines": {"kind": "word", "target": "allowed"}},
     "dict.1.appear": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:appear"}, "defines": {"kind": "word", "target": "appear"}},
     "dict.1.check": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:check"}, "defines": {"kind": "word", "target": "check"}},
     "dict.1.happen": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:happen"}, "defines": {"kind": "word", "target": "happen"}},
-    "dict.1.happened": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:happened"}, "defines": {"kind": "word", "target": "happened"}},
     "dict.1.reply": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:reply"}, "defines": {"kind": "word", "target": "reply"}},
     "dict.1.afraid": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:afraid"}, "defines": {"kind": "word", "target": "afraid"}},
     "dict.1.angry": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:angry"}, "defines": {"kind": "word", "target": "angry"}},
     "dict.1.awake": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:awake"}, "defines": {"kind": "word", "target": "awake"}},
     "dict.1.baby": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:baby"}, "defines": {"kind": "word", "target": "baby"}},
-    "dict.1.badly": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:badly"}, "defines": {"kind": "word", "target": "badly"}},
     "dict.1.bag": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bag"}, "defines": {"kind": "word", "target": "bag"}},
     "dict.1.change": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:change"}, "defines": {"kind": "word", "target": "change"}},
     "dict.1.question": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:question"}, "defines": {"kind": "word", "target": "question"}},
@@ -100,7 +91,6 @@
     "dict.1.grow": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grow"}, "defines": {"kind": "word", "target": "grow"}},
     "dict.1.hold": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hold"}, "defines": {"kind": "word", "target": "hold"}},
     "dict.1.piece": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:piece"}, "defines": {"kind": "word", "target": "piece"}},
-    "dict.1.broken": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:broken"}, "defines": {"kind": "word", "target": "broken"}},
     "dict.1.hard": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hard"}, "defines": {"kind": "word", "target": "hard"}},
     "dict.1.together": {"concepts": ["correspondence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:together"}, "defines": {"kind": "word", "target": "together"}},
     "dict.1.close": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:close"}, "defines": {"kind": "word", "target": "close"}},
@@ -119,14 +109,11 @@
     "dict.1.because": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:because"}, "defines": {"kind": "word", "target": "because"}},
     "dict.1.become": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:become"}, "defines": {"kind": "word", "target": "become"}},
     "dict.1.bed": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bed"}, "defines": {"kind": "word", "target": "bed"}},
-    "dict.1.began": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:began"}, "defines": {"kind": "word", "target": "began"}},
-    "dict.1.believed": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:believed"}, "defines": {"kind": "word", "target": "believed"}},
     "dict.1.bell": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bell"}, "defines": {"kind": "word", "target": "bell"}},
     "dict.1.bird": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bird"}, "defines": {"kind": "word", "target": "bird"}},
     "dict.1.block": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:block"}, "defines": {"kind": "word", "target": "block"}},
     "dict.1.blow": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blow"}, "defines": {"kind": "word", "target": "blow"}},
     "dict.1.start": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:start"}, "defines": {"kind": "word", "target": "start"}},
-    "dict.1.thought": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thought"}, "defines": {"kind": "word", "target": "thought"}},
     "dict.1.better": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:better"}, "defines": {"kind": "word", "target": "better"}},
     "dict.1.boat": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:boat"}, "defines": {"kind": "word", "target": "boat"}},
     "dict.1.book": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:book"}, "defines": {"kind": "word", "target": "book"}},
@@ -154,7 +141,6 @@
     "dict.1.float": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:float"}, "defines": {"kind": "word", "target": "float"}},
     "dict.1.page": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:page"}, "defines": {"kind": "word", "target": "page"}},
     "dict.1.rest": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rest"}, "defines": {"kind": "word", "target": "rest"}},
-    "dict.1.used": {"concepts": ["wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:used"}, "defines": {"kind": "word", "target": "used"}},
     "dict.1.bowl": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bowl"}, "defines": {"kind": "word", "target": "bowl"}},
     "dict.1.branch": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:branch"}, "defines": {"kind": "word", "target": "branch"}},
     "dict.1.four": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:four"}, "defines": {"kind": "word", "target": "four"}},
@@ -162,9 +148,7 @@
     "dict.1.breath": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breath"}, "defines": {"kind": "word", "target": "breath"}},
     "dict.1.breathe": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breathe"}, "defines": {"kind": "word", "target": "breathe"}},
     "dict.1.play": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:play"}, "defines": {"kind": "word", "target": "play"}},
-    "dict.1.worn": {"concepts": ["wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:worn"}, "defines": {"kind": "word", "target": "worn"}},
     "dict.1.new": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:new"}, "defines": {"kind": "word", "target": "new"}},
-    "dict.1.broke": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:broke"}, "defines": {"kind": "word", "target": "broke"}},
     "dict.1.fix": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fix"}, "defines": {"kind": "word", "target": "fix"}},
     "dict.1.bubble": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bubble"}, "defines": {"kind": "word", "target": "bubble"}},
     "dict.1.bug": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bug"}, "defines": {"kind": "word", "target": "bug"}},
@@ -175,9 +159,7 @@
     "dict.1.until": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:until"}, "defines": {"kind": "word", "target": "until"}},
     "dict.1.called": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:called"}, "defines": {"kind": "word", "target": "called"}},
     "dict.1.cannot": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cannot"}, "defines": {"kind": "word", "target": "cannot"}},
-    "dict.1.cared": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cared"}, "defines": {"kind": "word", "target": "cared"}},
     "dict.1.carve": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:carve"}, "defines": {"kind": "word", "target": "carve"}},
-    "dict.1.carved": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:carved"}, "defines": {"kind": "word", "target": "carved"}},
     "dict.1.careful": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:careful"}, "defines": {"kind": "word", "target": "careful"}},
     "dict.1.cart": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cart"}, "defines": {"kind": "word", "target": "cart"}},
     "dict.1.wheel": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wheel"}, "defines": {"kind": "word", "target": "wheel"}},
@@ -195,7 +177,6 @@
     "dict.1.cover": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cover"}, "defines": {"kind": "word", "target": "cover"}},
     "dict.1.dirty": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dirty"}, "defines": {"kind": "word", "target": "dirty"}},
     "dict.1.hide": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hide"}, "defines": {"kind": "word", "target": "hide"}},
-    "dict.1.caused": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:caused"}, "defines": {"kind": "word", "target": "caused"}},
     "dict.1.danger": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:danger"}, "defines": {"kind": "word", "target": "danger"}},
     "dict.1.hurt": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hurt"}, "defines": {"kind": "word", "target": "hurt"}},
     "dict.1.pain": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pain"}, "defines": {"kind": "word", "target": "pain"}},
@@ -225,9 +206,6 @@ Same in some way.
 [dict.1.drink]
 To drink is to take water or other liquid into your mouth.
 
-[dict.1.lacking]
-Not enough of something.
-
 [dict.1.liquid]
 A liquid is what water is, and it can move into any shape.
 
@@ -242,12 +220,6 @@ Enough means as much as needed.
 
 [dict.1.hand]
 Hands are at the end of arms and can touch.
-
-[dict.1.higher]
-Higher is more above than another thing.
-
-[dict.1.lower]
-Lower is more below than another thing.
 
 [dict.1.midnight]
 Midnight is the middle of the night.
@@ -309,9 +281,6 @@ To say numbers in order to know how many.
 [dict.1.open]
 Open is when a thing has a way in or a way out.
 
-[dict.1.closed]
-Closed is not open.
-
 [dict.1.enter]
 To go inside something.
 
@@ -339,17 +308,8 @@ Checking that something is true.
 [dict.1.answer]
 An answer is what you say when someone asks you.
 
-[dict.1.answered]
-Answered is when the answer was said.
-
 [dict.1.ask]
 To ask is to say a thing to someone so they will tell you something.
-
-[dict.1.asked]
-Asked is when the asking happened before.
-
-[dict.1.asking]
-Asking is when someone asks.
 
 [dict.1.asleep]
 Living and not living at the same time.
@@ -369,9 +329,6 @@ Look to see if something is right.
 [dict.1.happen]
 Change that comes.
 
-[dict.1.happened]
-Change that came before.
-
 [dict.1.reply]
 A reply is an answer.
 
@@ -386,9 +343,6 @@ Living and not asleep.
 
 [dict.1.baby]
 Small person who is young.
-
-[dict.1.badly]
-Badly is when a thing is made in a bad way.
 
 [dict.1.bag]
 Container to carry things.
@@ -483,9 +437,6 @@ To keep something in place with the hands.
 [dict.1.piece]
 A small part of something broken.
 
-[dict.1.broken]
-Something that is not whole or not working right.
-
 [dict.1.hard]
 Hard is when a thing does not change its shape when you put your hand on it.
 
@@ -540,12 +491,6 @@ Change into something different.
 [dict.1.bed]
 A place to sleep.
 
-[dict.1.began]
-Started at the first time.
-
-[dict.1.believed]
-Believed is when someone thought a thing was true.
-
 [dict.1.bell]
 A thing that makes a sound when hit.
 
@@ -560,9 +505,6 @@ Move air from mouth.
 
 [dict.1.start]
 Beginning of an order.
-
-[dict.1.thought]
-A thought is an idea you had.
 
 [dict.1.better]
 More good than before or than another.
@@ -645,9 +587,6 @@ A page is one side of a piece of paper.
 [dict.1.rest]
 To stop moving and be still.
 
-[dict.1.used]
-Used is when someone has had a thing and made it do work before.
-
 [dict.1.bowl]
 A round container for food.
 
@@ -669,14 +608,8 @@ Take air into the body and let it out.
 [dict.1.play]
 To play is to do a game.
 
-[dict.1.worn]
-Worn is when a thing has been used for a long time and is not new.
-
 [dict.1.new]
 New is when a thing has just been made.
-
-[dict.1.broke]
-Broke is when a thing does not work now because a part of it is not right.
 
 [dict.1.fix]
 To fix a thing is to make it work again.
@@ -708,14 +641,8 @@ Named something with a word.
 [dict.1.cannot]
 Not able to do something.
 
-[dict.1.cared]
-Took care of someone or something.
-
 [dict.1.carve]
 To carve is to cut wood or stone to make a shape.
-
-[dict.1.carved]
-Carved is when someone has carved a thing.
 
 [dict.1.careful]
 Careful is when someone thinks about danger before doing a thing.
@@ -767,9 +694,6 @@ Dirty is when a thing has dirt on it.
 
 [dict.1.hide]
 To not be seen or appear.
-
-[dict.1.caused]
-Made something happen.
 
 [dict.1.danger]
 Danger is when a thing may hurt you.

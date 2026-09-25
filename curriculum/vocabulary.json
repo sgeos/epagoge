@@ -303,14 +303,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "answered",
         "answering",
         "answers"
       ]
-    },
-    {
-      "word": "answered",
-      "concept": "asking",
-      "level": 1
     },
     {
       "word": "anyone",
@@ -346,19 +342,11 @@
       "concept": "asking",
       "level": 1,
       "forms": [
+        "asked",
+        "asking",
         "asks"
       ],
       "pos": "verb"
-    },
-    {
-      "word": "asked",
-      "concept": "asking",
-      "level": 1
-    },
-    {
-      "word": "asking",
-      "concept": "asking",
-      "level": 1
     },
     {
       "word": "asleep",
@@ -411,12 +399,10 @@
     {
       "word": "bad",
       "concept": "good_and_bad",
-      "level": 1
-    },
-    {
-      "word": "badly",
-      "concept": "good_and_bad",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "badly"
+      ]
     },
     {
       "word": "bag",
@@ -481,15 +467,11 @@
       "level": 1
     },
     {
-      "word": "began",
-      "concept": "sequence",
-      "level": 1
-    },
-    {
       "word": "begin",
       "concept": "sequence",
       "level": 1,
       "forms": [
+        "began",
         "beginning",
         "begins",
         "begun"
@@ -507,14 +489,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "believed",
         "believes",
         "believing"
       ]
-    },
-    {
-      "word": "believed",
-      "concept": "opinion",
-      "level": 1
     },
     {
       "word": "bell",
@@ -648,11 +626,6 @@
       "level": 1
     },
     {
-      "word": "bought",
-      "concept": "exchange",
-      "level": 1
-    },
-    {
       "word": "bowl",
       "concept": "household_object",
       "level": 1
@@ -679,7 +652,9 @@
       "pos": "verb",
       "forms": [
         "breaking",
-        "breaks"
+        "breaks",
+        "broke",
+        "broken"
       ]
     },
     {
@@ -701,16 +676,6 @@
     {
       "word": "bright",
       "concept": "physical_property",
-      "level": 1
-    },
-    {
-      "word": "broke",
-      "concept": "things_break",
-      "level": 1
-    },
-    {
-      "word": "broken",
-      "concept": "things_break",
       "level": 1
     },
     {
@@ -790,6 +755,7 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "bought",
         "buying",
         "buys"
       ]
@@ -835,14 +801,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "cared",
         "cares",
         "caring"
       ]
-    },
-    {
-      "word": "cared",
-      "concept": "tending",
-      "level": 1
     },
     {
       "word": "careful",
@@ -871,14 +833,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "carved",
         "carves",
         "carving"
       ]
-    },
-    {
-      "word": "carved",
-      "concept": "raw_and_made",
-      "level": 1
     },
     {
       "word": "cat",
@@ -904,15 +862,11 @@
     {
       "word": "cause",
       "concept": "cause_and_effect",
-      "level": 3,
+      "level": 1,
       "forms": [
+        "caused",
         "causes"
       ]
-    },
-    {
-      "word": "caused",
-      "concept": "cause_and_effect",
-      "level": 1
     },
     {
       "word": "chain",
@@ -1027,14 +981,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "closed",
         "closes",
         "closing"
       ]
-    },
-    {
-      "word": "closed",
-      "concept": "opening_and_shutting",
-      "level": 1
     },
     {
       "word": "cloth",
@@ -1080,14 +1030,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "compared",
         "compares",
         "comparing"
       ]
-    },
-    {
-      "word": "compared",
-      "concept": "measuring",
-      "level": 1
     },
     {
       "word": "condition",
@@ -1178,16 +1124,12 @@
       "word": "count",
       "concept": "counting",
       "forms": [
+        "counted",
         "counting",
         "counts"
       ],
       "level": 1,
       "pos": "verb"
-    },
-    {
-      "word": "counted",
-      "concept": "counting",
-      "level": 1
     },
     {
       "word": "cousin",
@@ -1216,24 +1158,18 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "cracked",
         "cracking",
         "cracks"
       ]
     },
     {
-      "word": "cracked",
-      "concept": "things_break",
-      "level": 1
-    },
-    {
       "word": "crash",
       "concept": "accident",
-      "level": 2
-    },
-    {
-      "word": "crashed",
-      "concept": "accident",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "crashed"
+      ]
     },
     {
       "word": "cross",
@@ -1351,14 +1287,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "died",
         "dies",
         "dying"
       ]
-    },
-    {
-      "word": "died",
-      "concept": "dying",
-      "level": 1
     },
     {
       "word": "different",
@@ -1372,7 +1304,8 @@
       "pos": "verb",
       "forms": [
         "digging",
-        "digs"
+        "digs",
+        "dug"
       ]
     },
     {
@@ -1476,13 +1409,9 @@
       "forms": [
         "drawing",
         "drawn",
-        "draws"
+        "draws",
+        "drew"
       ]
-    },
-    {
-      "word": "drew",
-      "concept": "writing",
-      "level": 1
     },
     {
       "word": "drink",
@@ -1512,18 +1441,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "dropped",
+        "dropping",
         "drops"
       ]
-    },
-    {
-      "word": "dropped",
-      "concept": "falling",
-      "level": 1
-    },
-    {
-      "word": "dropping",
-      "concept": "falling",
-      "level": 1
     },
     {
       "word": "dry",
@@ -1535,11 +1456,6 @@
         "dries",
         "drying"
       ]
-    },
-    {
-      "word": "dug",
-      "concept": "activity",
-      "level": 1
     },
     {
       "word": "dull",
@@ -1711,7 +1627,8 @@
       "forms": [
         "fallen",
         "falling",
-        "falls"
+        "falls",
+        "fell"
       ]
     },
     {
@@ -1750,16 +1667,12 @@
       "level": 6
     },
     {
-      "word": "fed",
-      "concept": "tending",
-      "level": 1
-    },
-    {
       "word": "feed",
       "concept": "tending",
       "level": 1,
       "pos": "verb",
       "forms": [
+        "fed",
         "feeding",
         "feeds"
       ]
@@ -1771,28 +1684,17 @@
       "pos": "verb",
       "forms": [
         "feeling",
-        "feels"
+        "feels",
+        "felt"
       ]
-    },
-    {
-      "word": "fell",
-      "concept": "falling",
-      "level": 1
-    },
-    {
-      "word": "felt",
-      "concept": "feeling",
-      "level": 1
     },
     {
       "word": "few",
       "concept": "more_and_fewer",
-      "level": 1
-    },
-    {
-      "word": "fewer",
-      "concept": "more_and_fewer",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "fewer"
+      ]
     },
     {
       "word": "fifty",
@@ -2079,14 +1981,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "glued",
         "glues",
         "gluing"
       ]
-    },
-    {
-      "word": "glued",
-      "concept": "activity",
-      "level": 1
     },
     {
       "word": "gold",
@@ -2141,13 +2039,9 @@
       "concept": "grouping",
       "level": 2,
       "forms": [
+        "grouped",
         "groups"
       ]
-    },
-    {
-      "word": "grouped",
-      "concept": "grouping",
-      "level": 2
     },
     {
       "word": "grow",
@@ -2195,14 +2089,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "happened",
         "happening",
         "happens"
       ]
-    },
-    {
-      "word": "happened",
-      "concept": "change",
-      "level": 1
     },
     {
       "word": "happy",
@@ -2326,12 +2216,10 @@
     {
       "word": "high",
       "concept": "spatial_position",
-      "level": 1
-    },
-    {
-      "word": "higher",
-      "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "higher"
+      ]
     },
     {
       "word": "him",
@@ -2591,13 +2479,9 @@
       "pos": "verb",
       "forms": [
         "lacked",
+        "lacking",
         "lacks"
       ]
-    },
-    {
-      "word": "lacking",
-      "concept": "enough",
-      "level": 1
     },
     {
       "word": "lamp",
@@ -2638,12 +2522,10 @@
     {
       "word": "late",
       "concept": "duration",
-      "level": 1
-    },
-    {
-      "word": "later",
-      "concept": "duration",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "later"
+      ]
     },
     {
       "word": "laugh",
@@ -2898,12 +2780,10 @@
     {
       "word": "low",
       "concept": "spatial_position",
-      "level": 1
-    },
-    {
-      "word": "lower",
-      "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "lower"
+      ]
     },
     {
       "word": "man",
@@ -2916,14 +2796,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "managed",
         "manages",
         "managing"
       ]
-    },
-    {
-      "word": "managed",
-      "concept": "can_and_cannot",
-      "level": 1
     },
     {
       "word": "manner",
@@ -2997,18 +2873,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "measures"
+        "measured",
+        "measures",
+        "measuring"
       ]
-    },
-    {
-      "word": "measured",
-      "concept": "measuring",
-      "level": 1
-    },
-    {
-      "word": "measuring",
-      "concept": "measuring",
-      "level": 1
     },
     {
       "word": "meet",
@@ -3077,14 +2945,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "minded",
         "minding",
         "minds"
       ]
-    },
-    {
-      "word": "minded",
-      "concept": "tending",
-      "level": 1
     },
     {
       "word": "mine",
@@ -3168,14 +3032,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "moved",
         "moves",
         "moving"
       ]
-    },
-    {
-      "word": "moved",
-      "concept": "moving_and_still",
-      "level": 1
     },
     {
       "word": "much",
@@ -3211,14 +3071,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "named",
         "names",
         "naming"
       ]
-    },
-    {
-      "word": "named",
-      "concept": "name",
-      "level": 1
     },
     {
       "word": "narrow",
@@ -3432,14 +3288,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "owned",
         "owning",
         "owns"
       ]
-    },
-    {
-      "word": "owned",
-      "concept": "having",
-      "level": 1
     },
     {
       "word": "pace",
@@ -3449,11 +3301,6 @@
     {
       "word": "page",
       "concept": "writing",
-      "level": 1
-    },
-    {
-      "word": "paid",
-      "concept": "exchange",
       "level": 1
     },
     {
@@ -3513,6 +3360,7 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "paid",
         "paying",
         "pays"
       ]
@@ -3663,14 +3511,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "poured",
         "pouring",
         "pours"
       ]
-    },
-    {
-      "word": "poured",
-      "concept": "liquid",
-      "level": 1
     },
     {
       "word": "present",
@@ -3716,12 +3560,10 @@
     {
       "word": "proper",
       "concept": "way_of_doing",
-      "level": 1
-    },
-    {
-      "word": "properly",
-      "concept": "way_of_doing",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "properly"
+      ]
     },
     {
       "word": "prove",
@@ -3826,13 +3668,9 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "reached",
         "reaching"
       ]
-    },
-    {
-      "word": "reached",
-      "concept": "can_and_cannot",
-      "level": 1
     },
     {
       "word": "reaches",
@@ -3862,12 +3700,10 @@
     {
       "word": "rearrange",
       "concept": "conservation_of_number",
-      "level": 2
-    },
-    {
-      "word": "rearranged",
-      "concept": "conservation_of_number",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "rearranged"
+      ]
     },
     {
       "word": "record",
@@ -3920,12 +3756,10 @@
     {
       "word": "remove",
       "concept": "subtraction",
-      "level": 2
-    },
-    {
-      "word": "removed",
-      "concept": "subtraction",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "removed"
+      ]
     },
     {
       "word": "repeat",
@@ -3939,16 +3773,12 @@
       ]
     },
     {
-      "word": "replied",
-      "concept": "asking",
-      "level": 1
-    },
-    {
       "word": "reply",
       "concept": "asking",
       "level": 1,
       "pos": "verb",
       "forms": [
+        "replied",
         "replies",
         "replying"
       ]
@@ -4081,14 +3911,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "rubbed",
         "rubbing",
         "rubs"
       ]
-    },
-    {
-      "word": "rubbed",
-      "concept": "touching",
-      "level": 1
     },
     {
       "word": "rule",
@@ -4134,14 +3960,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "rusted",
         "rusting",
         "rusts"
       ]
-    },
-    {
-      "word": "rusted",
-      "concept": "metal",
-      "level": 1
     },
     {
       "word": "sad",
@@ -4208,7 +4030,8 @@
       "pos": "verb",
       "forms": [
         "selling",
-        "sells"
+        "sells",
+        "sold"
       ]
     },
     {
@@ -4578,11 +4401,6 @@
       "level": 1
     },
     {
-      "word": "sold",
-      "concept": "exchange",
-      "level": 1
-    },
-    {
       "word": "someone",
       "concept": "person",
       "level": 1
@@ -4640,7 +4458,9 @@
       "pos": "verb",
       "forms": [
         "speaking",
-        "speaks"
+        "speaks",
+        "spoke",
+        "spoken"
       ]
     },
     {
@@ -4654,18 +4474,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "spelled",
+        "spelling",
         "spells"
       ]
-    },
-    {
-      "word": "spelled",
-      "concept": "word",
-      "level": 1
-    },
-    {
-      "word": "spelling",
-      "concept": "word",
-      "level": 1
     },
     {
       "word": "spill",
@@ -4673,24 +4485,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "spilled",
         "spilling",
         "spills"
       ]
-    },
-    {
-      "word": "spilled",
-      "concept": "liquid",
-      "level": 1
-    },
-    {
-      "word": "spoke",
-      "concept": "sentence",
-      "level": 1
-    },
-    {
-      "word": "spoken",
-      "concept": "sentence",
-      "level": 1
     },
     {
       "word": "spoon",
@@ -4900,12 +4698,10 @@
     {
       "word": "subtract",
       "concept": "subtraction",
-      "level": 2
-    },
-    {
-      "word": "subtracted",
-      "concept": "subtraction",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "subtracted"
+      ]
     },
     {
       "word": "successor",
@@ -4965,14 +4761,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "swapped",
         "swapping",
         "swaps"
       ]
-    },
-    {
-      "word": "swapped",
-      "concept": "exchange",
-      "level": 1
     },
     {
       "word": "swim",
@@ -5015,18 +4807,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "talked",
+        "talking",
         "talks"
       ]
-    },
-    {
-      "word": "talked",
-      "concept": "sentence",
-      "level": 1
-    },
-    {
-      "word": "talking",
-      "concept": "sentence",
-      "level": 1
     },
     {
       "word": "tall",
@@ -5070,7 +4854,8 @@
       "forms": [
         "tearing",
         "tears",
-        "tore"
+        "tore",
+        "torn"
       ]
     },
     {
@@ -5084,14 +4869,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "tended",
         "tending",
         "tends"
       ]
-    },
-    {
-      "word": "tended",
-      "concept": "tending",
-      "level": 1
     },
     {
       "word": "tens",
@@ -5159,7 +4940,8 @@
       "level": 1,
       "forms": [
         "thinking",
-        "thinks"
+        "thinks",
+        "thought"
       ],
       "pos": "verb"
     },
@@ -5177,11 +4959,6 @@
       "word": "thirty",
       "concept": "natural_number",
       "level": 2
-    },
-    {
-      "word": "thought",
-      "concept": "knowing",
-      "level": 1
     },
     {
       "word": "thousand",
@@ -5211,14 +4988,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "tied",
         "ties",
         "tying"
       ]
-    },
-    {
-      "word": "tied",
-      "concept": "activity",
-      "level": 1
     },
     {
       "word": "time",
@@ -5269,24 +5042,15 @@
       "level": 1
     },
     {
-      "word": "torn",
-      "concept": "things_break",
-      "level": 1
-    },
-    {
       "word": "touch",
       "concept": "touching",
       "level": 1,
       "pos": "verb",
       "forms": [
+        "touched",
         "touches",
         "touching"
       ]
-    },
-    {
-      "word": "touched",
-      "concept": "touching",
-      "level": 1
     },
     {
       "word": "toward",
@@ -5312,14 +5076,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "traded",
         "trades",
         "trading"
       ]
-    },
-    {
-      "word": "traded",
-      "concept": "exchange",
-      "level": 1
     },
     {
       "word": "tray",
@@ -5344,11 +5104,6 @@
         "tricking",
         "tricks"
       ]
-    },
-    {
-      "word": "tried",
-      "concept": "checking",
-      "level": 1
     },
     {
       "word": "trigger",
@@ -5377,6 +5132,7 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "tried",
         "tries",
         "trying"
       ]
@@ -5517,19 +5273,11 @@
       "concept": "wearing_out",
       "level": 1,
       "forms": [
-        "uses"
+        "used",
+        "uses",
+        "using"
       ],
       "pos": "verb"
-    },
-    {
-      "word": "used",
-      "concept": "wearing_out",
-      "level": 1
-    },
-    {
-      "word": "using",
-      "concept": "wearing_out",
-      "level": 1
     },
     {
       "word": "view",
@@ -5657,7 +5405,8 @@
       "forms": [
         "wearing",
         "wears",
-        "wore"
+        "wore",
+        "worn"
       ]
     },
     {
@@ -5676,14 +5425,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "weighed",
         "weighing",
         "weighs"
       ]
-    },
-    {
-      "word": "weighed",
-      "concept": "measuring",
-      "level": 1
     },
     {
       "word": "well",
@@ -5786,19 +5531,10 @@
       "level": 1,
       "forms": [
         "worked",
+        "working",
         "works"
       ],
       "pos": "verb"
-    },
-    {
-      "word": "working",
-      "concept": "activity",
-      "level": 1
-    },
-    {
-      "word": "worn",
-      "concept": "wearing_out",
-      "level": 1
     },
     {
       "word": "worse",
@@ -5817,22 +5553,14 @@
       "pos": "verb",
       "forms": [
         "writes",
-        "writing"
+        "writing",
+        "written",
+        "wrote"
       ]
-    },
-    {
-      "word": "written",
-      "concept": "writing",
-      "level": 1
     },
     {
       "word": "wrong",
       "concept": "knowing",
-      "level": 1
-    },
-    {
-      "word": "wrote",
-      "concept": "writing",
       "level": 1
     },
     {

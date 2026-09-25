@@ -75,10 +75,6 @@
       ]
     },
     {
-      "word": "answered",
-      "concept": "asking"
-    },
-    {
       "word": "anyone",
       "concept": "person"
     },
@@ -100,14 +96,6 @@
       "antonyms": [
         "answer"
       ]
-    },
-    {
-      "word": "asked",
-      "concept": "asking"
-    },
-    {
-      "word": "asking",
-      "concept": "asking"
     },
     {
       "word": "asleep",
@@ -151,10 +139,6 @@
       "antonyms": [
         "good"
       ]
-    },
-    {
-      "word": "badly",
-      "concept": "good_and_bad"
     },
     {
       "word": "bag",
@@ -204,10 +188,6 @@
       ]
     },
     {
-      "word": "began",
-      "concept": "sequence"
-    },
-    {
       "word": "begin",
       "concept": "sequence",
       "antonyms": [
@@ -223,23 +203,11 @@
       "concept": "opinion"
     },
     {
-      "word": "believed",
-      "concept": "opinion"
-    },
-    {
-      "word": "believes",
-      "concept": "opinion"
-    },
-    {
       "word": "bell",
       "concept": "household_object"
     },
     {
       "word": "belong",
-      "concept": "having"
-    },
-    {
-      "word": "belongs",
       "concept": "having"
     },
     {
@@ -330,10 +298,6 @@
       ]
     },
     {
-      "word": "bought",
-      "concept": "exchange"
-    },
-    {
       "word": "bowl",
       "concept": "household_object"
     },
@@ -373,14 +337,6 @@
       "antonyms": [
         "dark"
       ]
-    },
-    {
-      "word": "broke",
-      "concept": "things_break"
-    },
-    {
-      "word": "broken",
-      "concept": "things_break"
     },
     {
       "word": "broom",
@@ -460,16 +416,8 @@
       "concept": "tending"
     },
     {
-      "word": "cared",
-      "concept": "tending"
-    },
-    {
       "word": "careful",
       "concept": "danger"
-    },
-    {
-      "word": "cares",
-      "concept": "tending"
     },
     {
       "word": "carry",
@@ -484,10 +432,6 @@
       "concept": "raw_and_made"
     },
     {
-      "word": "carved",
-      "concept": "raw_and_made"
-    },
-    {
       "word": "cat",
       "concept": "animal"
     },
@@ -496,7 +440,7 @@
       "concept": "force"
     },
     {
-      "word": "caused",
+      "word": "cause",
       "concept": "cause_and_effect"
     },
     {
@@ -505,10 +449,6 @@
     },
     {
       "word": "change",
-      "concept": "change"
-    },
-    {
-      "word": "changes",
       "concept": "change"
     },
     {
@@ -529,10 +469,6 @@
     },
     {
       "word": "child",
-      "concept": "person"
-    },
-    {
-      "word": "children",
       "concept": "person"
     },
     {
@@ -560,10 +496,6 @@
     },
     {
       "word": "close",
-      "concept": "opening_and_shutting"
-    },
-    {
-      "word": "closed",
       "concept": "opening_and_shutting"
     },
     {
@@ -598,10 +530,6 @@
     },
     {
       "word": "compare",
-      "concept": "measuring"
-    },
-    {
-      "word": "compared",
       "concept": "measuring"
     },
     {
@@ -651,10 +579,6 @@
       "concept": "counting"
     },
     {
-      "word": "counted",
-      "concept": "counting"
-    },
-    {
       "word": "cousin",
       "concept": "family"
     },
@@ -671,10 +595,6 @@
     },
     {
       "word": "crack",
-      "concept": "things_break"
-    },
-    {
-      "word": "cracked",
       "concept": "things_break"
     },
     {
@@ -766,10 +686,6 @@
       ]
     },
     {
-      "word": "died",
-      "concept": "dying"
-    },
-    {
       "word": "different",
       "concept": "same_and_different",
       "antonyms": [
@@ -782,10 +698,6 @@
     },
     {
       "word": "direction",
-      "concept": "direction"
-    },
-    {
-      "word": "directions",
       "concept": "direction"
     },
     {
@@ -854,10 +766,6 @@
       "concept": "writing"
     },
     {
-      "word": "drew",
-      "concept": "writing"
-    },
-    {
       "word": "drink",
       "concept": "living_and_not_living"
     },
@@ -870,23 +778,11 @@
       "concept": "falling"
     },
     {
-      "word": "dropped",
-      "concept": "falling"
-    },
-    {
-      "word": "dropping",
-      "concept": "falling"
-    },
-    {
       "word": "dry",
       "concept": "physical_property",
       "antonyms": [
         "wet"
       ]
-    },
-    {
-      "word": "dug",
-      "concept": "activity"
     },
     {
       "word": "dull",
@@ -909,10 +805,6 @@
       "antonyms": [
         "late"
       ]
-    },
-    {
-      "word": "ears",
-      "concept": "body_part"
     },
     {
       "word": "easy",
@@ -1009,10 +901,6 @@
       "concept": "body_part"
     },
     {
-      "word": "eyes",
-      "concept": "body_part"
-    },
-    {
       "word": "face",
       "concept": "body_part"
     },
@@ -1029,10 +917,6 @@
       "antonyms": [
         "rise"
       ]
-    },
-    {
-      "word": "falls",
-      "concept": "falling"
     },
     {
       "word": "false",
@@ -1074,35 +958,11 @@
       ]
     },
     {
-      "word": "fed",
-      "concept": "tending"
-    },
-    {
       "word": "feed",
       "concept": "tending"
     },
     {
-      "word": "feeds",
-      "concept": "tending"
-    },
-    {
       "word": "feel",
-      "concept": "feeling"
-    },
-    {
-      "word": "feels",
-      "concept": "feeling"
-    },
-    {
-      "word": "feet",
-      "concept": "body_part"
-    },
-    {
-      "word": "fell",
-      "concept": "falling"
-    },
-    {
-      "word": "felt",
       "concept": "feeling"
     },
     {
@@ -1111,10 +971,6 @@
       "antonyms": [
         "many"
       ]
-    },
-    {
-      "word": "fewer",
-      "concept": "more_and_fewer"
     },
     {
       "word": "fill",
@@ -1304,10 +1160,6 @@
       "concept": "activity"
     },
     {
-      "word": "glued",
-      "concept": "activity"
-    },
-    {
       "word": "go",
       "concept": "",
       "antonyms": [
@@ -1383,19 +1235,7 @@
       "concept": "body_part"
     },
     {
-      "word": "hands",
-      "concept": "body_part"
-    },
-    {
       "word": "happen",
-      "concept": "change"
-    },
-    {
-      "word": "happened",
-      "concept": "change"
-    },
-    {
-      "word": "happens",
       "concept": "change"
     },
     {
@@ -1486,10 +1326,6 @@
       "antonyms": [
         "low"
       ]
-    },
-    {
-      "word": "higher",
-      "concept": "spatial_position"
     },
     {
       "word": "him",
@@ -1609,10 +1445,6 @@
       "concept": "way_of_doing"
     },
     {
-      "word": "jobs",
-      "concept": "way_of_doing"
-    },
-    {
       "word": "join",
       "concept": "people_together",
       "antonyms": [
@@ -1662,10 +1494,6 @@
       "concept": "enough"
     },
     {
-      "word": "lacking",
-      "concept": "enough"
-    },
-    {
       "word": "lamp",
       "concept": "household_object"
     },
@@ -1694,10 +1522,6 @@
       "antonyms": [
         "early"
       ]
-    },
-    {
-      "word": "later",
-      "concept": "duration"
     },
     {
       "word": "laugh",
@@ -1807,19 +1631,8 @@
       "concept": "sound"
     },
     {
-      "word": "lists",
-      "concept": "written_record"
-    },
-    {
       "word": "little",
       "concept": "physical_property"
-    },
-    {
-      "word": "live",
-      "concept": "living_and_not_living",
-      "antonyms": [
-        "die"
-      ]
     },
     {
       "word": "living",
@@ -1888,10 +1701,6 @@
       ]
     },
     {
-      "word": "lower",
-      "concept": "spatial_position"
-    },
-    {
       "word": "man",
       "concept": "person",
       "antonyms": [
@@ -1900,10 +1709,6 @@
     },
     {
       "word": "manage",
-      "concept": "can_and_cannot"
-    },
-    {
-      "word": "managed",
       "concept": "can_and_cannot"
     },
     {
@@ -1946,23 +1751,11 @@
       "concept": "standing_for"
     },
     {
-      "word": "means",
-      "concept": "name"
-    },
-    {
       "word": "meant",
       "concept": "standing_for"
     },
     {
       "word": "measure",
-      "concept": "measuring"
-    },
-    {
-      "word": "measured",
-      "concept": "measuring"
-    },
-    {
-      "word": "measuring",
       "concept": "measuring"
     },
     {
@@ -1986,10 +1779,6 @@
       "concept": "way_of_doing"
     },
     {
-      "word": "methods",
-      "concept": "way_of_doing"
-    },
-    {
       "word": "middle",
       "concept": "spatial_position"
     },
@@ -2006,19 +1795,11 @@
       "concept": "tending"
     },
     {
-      "word": "minded",
-      "concept": "tending"
-    },
-    {
       "word": "mine",
       "concept": "having"
     },
     {
       "word": "minute",
-      "concept": "duration"
-    },
-    {
-      "word": "minutes",
       "concept": "duration"
     },
     {
@@ -2082,10 +1863,6 @@
       "concept": "moving_and_still"
     },
     {
-      "word": "moved",
-      "concept": "moving_and_still"
-    },
-    {
       "word": "much",
       "concept": "more_and_fewer"
     },
@@ -2106,15 +1883,7 @@
       "concept": "metal"
     },
     {
-      "word": "nails",
-      "concept": "metal"
-    },
-    {
       "word": "name",
-      "concept": "name"
-    },
-    {
-      "word": "named",
       "concept": "name"
     },
     {
@@ -2218,10 +1987,6 @@
       "concept": "written_record"
     },
     {
-      "word": "notes",
-      "concept": "written_record"
-    },
-    {
       "word": "nothing",
       "concept": "emptiness",
       "antonyms": [
@@ -2268,10 +2033,6 @@
       "concept": "standing_for"
     },
     {
-      "word": "opposites",
-      "concept": "standing_for"
-    },
-    {
       "word": "order",
       "concept": "number_word_order"
     },
@@ -2306,24 +2067,12 @@
       "concept": "having"
     },
     {
-      "word": "owned",
-      "concept": "having"
-    },
-    {
-      "word": "owns",
-      "concept": "having"
-    },
-    {
       "word": "pace",
       "concept": "moving_and_still"
     },
     {
       "word": "page",
       "concept": "writing"
-    },
-    {
-      "word": "paid",
-      "concept": "exchange"
     },
     {
       "word": "pain",
@@ -2358,10 +2107,6 @@
       "concept": "direction"
     },
     {
-      "word": "paths",
-      "concept": "direction"
-    },
-    {
       "word": "patted",
       "concept": "touching"
     },
@@ -2372,10 +2117,6 @@
     {
       "word": "pen",
       "concept": "writing"
-    },
-    {
-      "word": "people",
-      "concept": "person"
     },
     {
       "word": "period",
@@ -2452,10 +2193,6 @@
       "concept": "liquid"
     },
     {
-      "word": "poured",
-      "concept": "liquid"
-    },
-    {
       "word": "press",
       "concept": "force"
     },
@@ -2472,10 +2209,6 @@
     },
     {
       "word": "proper",
-      "concept": "way_of_doing"
-    },
-    {
-      "word": "properly",
       "concept": "way_of_doing"
     },
     {
@@ -2505,10 +2238,6 @@
     },
     {
       "word": "question",
-      "concept": "asking"
-    },
-    {
-      "word": "questions",
       "concept": "asking"
     },
     {
@@ -2547,10 +2276,6 @@
       "concept": "can_and_cannot"
     },
     {
-      "word": "reached",
-      "concept": "can_and_cannot"
-    },
-    {
       "word": "reaches",
       "concept": "change"
     },
@@ -2574,10 +2299,6 @@
       "concept": "written_record"
     },
     {
-      "word": "records",
-      "concept": "written_record"
-    },
-    {
       "word": "red",
       "concept": "physical_property"
     },
@@ -2597,19 +2318,11 @@
       "concept": "cycle"
     },
     {
-      "word": "replied",
-      "concept": "asking"
-    },
-    {
       "word": "reply",
       "concept": "asking"
     },
     {
       "word": "represent",
-      "concept": "standing_for"
-    },
-    {
-      "word": "represents",
       "concept": "standing_for"
     },
     {
@@ -2688,20 +2401,12 @@
       "concept": "touching"
     },
     {
-      "word": "rubbed",
-      "concept": "touching"
-    },
-    {
       "word": "rule",
       "concept": "someone_in_charge"
     },
     {
       "word": "ruler",
       "concept": "measuring"
-    },
-    {
-      "word": "rules",
-      "concept": "someone_in_charge"
     },
     {
       "word": "run",
@@ -2713,10 +2418,6 @@
     },
     {
       "word": "rust",
-      "concept": "metal"
-    },
-    {
-      "word": "rusted",
       "concept": "metal"
     },
     {
@@ -2785,10 +2486,6 @@
     },
     {
       "word": "sentence",
-      "concept": "sentence"
-    },
-    {
-      "word": "sentences",
       "concept": "sentence"
     },
     {
@@ -2911,10 +2608,6 @@
       "concept": "standing_for"
     },
     {
-      "word": "signs",
-      "concept": "standing_for"
-    },
-    {
       "word": "silver",
       "concept": "metal"
     },
@@ -3020,10 +2713,6 @@
       ]
     },
     {
-      "word": "sold",
-      "concept": "exchange"
-    },
-    {
       "word": "someone",
       "concept": "person"
     },
@@ -3067,10 +2756,6 @@
       "concept": "sentence"
     },
     {
-      "word": "speaks",
-      "concept": "sentence"
-    },
-    {
       "word": "speed",
       "concept": "moving_and_still"
     },
@@ -3079,28 +2764,8 @@
       "concept": "word"
     },
     {
-      "word": "spelled",
-      "concept": "word"
-    },
-    {
-      "word": "spelling",
-      "concept": "word"
-    },
-    {
       "word": "spill",
       "concept": "liquid"
-    },
-    {
-      "word": "spilled",
-      "concept": "liquid"
-    },
-    {
-      "word": "spoke",
-      "concept": "sentence"
-    },
-    {
-      "word": "spoken",
-      "concept": "sentence"
     },
     {
       "word": "spoon",
@@ -3135,10 +2800,6 @@
       "concept": "weather"
     },
     {
-      "word": "stars",
-      "concept": "weather"
-    },
-    {
       "word": "start",
       "concept": "sequence",
       "antonyms": [
@@ -3166,15 +2827,7 @@
       "concept": "way_of_doing"
     },
     {
-      "word": "steps",
-      "concept": "way_of_doing"
-    },
-    {
       "word": "stick",
-      "concept": "material"
-    },
-    {
-      "word": "sticks",
       "concept": "material"
     },
     {
@@ -3266,19 +2919,11 @@
       "concept": "exchange"
     },
     {
-      "word": "swapped",
-      "concept": "exchange"
-    },
-    {
       "word": "swim",
       "concept": "moving_and_still"
     },
     {
       "word": "symbol",
-      "concept": "standing_for"
-    },
-    {
-      "word": "symbols",
       "concept": "standing_for"
     },
     {
@@ -3294,14 +2939,6 @@
     },
     {
       "word": "talk",
-      "concept": "sentence"
-    },
-    {
-      "word": "talked",
-      "concept": "sentence"
-    },
-    {
-      "word": "talking",
       "concept": "sentence"
     },
     {
@@ -3324,10 +2961,6 @@
       "concept": "way_of_doing"
     },
     {
-      "word": "tasks",
-      "concept": "way_of_doing"
-    },
-    {
       "word": "teacher",
       "concept": "someone_in_charge"
     },
@@ -3340,19 +2973,7 @@
       "concept": "tending"
     },
     {
-      "word": "tended",
-      "concept": "tending"
-    },
-    {
-      "word": "tends",
-      "concept": "tending"
-    },
-    {
       "word": "term",
-      "concept": "word"
-    },
-    {
-      "word": "terms",
       "concept": "word"
     },
     {
@@ -3406,10 +3027,6 @@
       "concept": "need"
     },
     {
-      "word": "thought",
-      "concept": "knowing"
-    },
-    {
       "word": "thousand",
       "concept": "number_word_order"
     },
@@ -3427,10 +3044,6 @@
       "antonyms": [
         "untie"
       ]
-    },
-    {
-      "word": "tied",
-      "concept": "activity"
     },
     {
       "word": "time",
@@ -3472,10 +3085,6 @@
       "concept": "way_of_doing"
     },
     {
-      "word": "tools",
-      "concept": "way_of_doing"
-    },
-    {
       "word": "top",
       "concept": "spatial_position",
       "antonyms": [
@@ -3483,27 +3092,11 @@
       ]
     },
     {
-      "word": "torn",
-      "concept": "things_break"
-    },
-    {
       "word": "touch",
       "concept": "touching"
     },
     {
-      "word": "touched",
-      "concept": "touching"
-    },
-    {
-      "word": "touches",
-      "concept": "touching"
-    },
-    {
       "word": "toward",
-      "concept": "direction"
-    },
-    {
-      "word": "towards",
       "concept": "direction"
     },
     {
@@ -3519,10 +3112,6 @@
       "concept": "exchange"
     },
     {
-      "word": "traded",
-      "concept": "exchange"
-    },
-    {
       "word": "tray",
       "concept": "household_object"
     },
@@ -3531,16 +3120,8 @@
       "concept": "plant"
     },
     {
-      "word": "trees",
-      "concept": "plant"
-    },
-    {
       "word": "trick",
       "concept": "way_of_doing"
-    },
-    {
-      "word": "tried",
-      "concept": "checking"
     },
     {
       "word": "true",
@@ -3667,19 +3248,7 @@
       "concept": "wearing_out"
     },
     {
-      "word": "used",
-      "concept": "wearing_out"
-    },
-    {
-      "word": "using",
-      "concept": "wearing_out"
-    },
-    {
       "word": "view",
-      "concept": "opinion"
-    },
-    {
-      "word": "views",
       "concept": "opinion"
     },
     {
@@ -3764,10 +3333,6 @@
       "concept": "measuring"
     },
     {
-      "word": "weighed",
-      "concept": "measuring"
-    },
-    {
       "word": "well",
       "concept": "good_and_bad"
     },
@@ -3844,20 +3409,8 @@
       "concept": "word"
     },
     {
-      "word": "words",
-      "concept": "word"
-    },
-    {
       "word": "work",
       "concept": "activity"
-    },
-    {
-      "word": "working",
-      "concept": "activity"
-    },
-    {
-      "word": "worn",
-      "concept": "wearing_out"
     },
     {
       "word": "worse",
@@ -3878,19 +3431,11 @@
       "concept": "writing"
     },
     {
-      "word": "written",
-      "concept": "writing"
-    },
-    {
       "word": "wrong",
       "concept": "knowing",
       "antonyms": [
         "right"
       ]
-    },
-    {
-      "word": "wrote",
-      "concept": "writing"
     },
     {
       "word": "year",

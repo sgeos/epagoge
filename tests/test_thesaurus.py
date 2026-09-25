@@ -156,7 +156,10 @@ class TestShipped(unittest.TestCase):
         t = load(Path("curriculum/thesaurus.json"))
         v = load_vocabulary(Path("curriculum/vocabulary.json"))
         self.assertEqual(validate(t, v, 1), [])
-        self.assertGreater(len(t.entries), 800)
+        # Tied to the lexicon rather than to a number. A magic 800 went
+        # stale the moment inflections were merged into their bases.
+        senses = sum(1 for term in v.terms if term.level <= 1)
+        self.assertGreaterEqual(len(t.entries), senses)
 
     def test_right_opposes_a_different_word_in_each_sense(self) -> None:
         """The case that forced the restructure."""
