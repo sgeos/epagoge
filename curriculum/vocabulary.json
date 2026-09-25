@@ -295,13 +295,17 @@
     {
       "word": "animal",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "animals"
+      ]
     },
     {
       "word": "answer",
       "concept": "asking",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "answered",
         "answering",
@@ -371,7 +375,11 @@
     {
       "word": "aunt",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "aunts"
+      ]
     },
     {
       "word": "avoid",
@@ -407,7 +415,11 @@
     {
       "word": "bag",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "bags"
+      ]
     },
     {
       "word": "baked",
@@ -417,7 +429,11 @@
     {
       "word": "ball",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "balls"
+      ]
     },
     {
       "word": "bamboo",
@@ -428,7 +444,7 @@
       "word": "bang",
       "concept": "sound",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "banged",
         "banging",
@@ -438,12 +454,20 @@
     {
       "word": "basket",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "baskets"
+      ]
     },
     {
       "word": "bear",
       "concept": "toy",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "bears"
+      ]
     },
     {
       "word": "because",
@@ -464,7 +488,11 @@
     {
       "word": "bed",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "beds"
+      ]
     },
     {
       "word": "begin",
@@ -497,7 +525,11 @@
     {
       "word": "bell",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "bells"
+      ]
     },
     {
       "word": "belong",
@@ -553,7 +585,11 @@
     {
       "word": "bird",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "birds"
+      ]
     },
     {
       "word": "black",
@@ -568,7 +604,8 @@
     {
       "word": "block",
       "concept": "toy",
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "blocks",
@@ -595,7 +632,11 @@
     {
       "word": "boat",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "boats"
+      ]
     },
     {
       "word": "body",
@@ -608,7 +649,11 @@
     {
       "word": "book",
       "concept": "writing",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "books"
+      ]
     },
     {
       "word": "boss",
@@ -618,7 +663,11 @@
     {
       "word": "bottle",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "bottles"
+      ]
     },
     {
       "word": "bottom",
@@ -628,12 +677,20 @@
     {
       "word": "bowl",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "bowls"
+      ]
     },
     {
       "word": "box",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "boxes"
+      ]
     },
     {
       "word": "boy",
@@ -643,7 +700,11 @@
     {
       "word": "branch",
       "concept": "plant",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "branches"
+      ]
     },
     {
       "word": "break",
@@ -686,12 +747,20 @@
     {
       "word": "broom",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "brooms"
+      ]
     },
     {
       "word": "brother",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "brothers"
+      ]
     },
     {
       "word": "brown",
@@ -702,7 +771,7 @@
       "word": "brush",
       "concept": "household_object",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "brushed",
         "brushes",
@@ -712,12 +781,20 @@
     {
       "word": "bubble",
       "concept": "air",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "bubbles"
+      ]
     },
     {
       "word": "bug",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "bugs"
+      ]
     },
     {
       "word": "build",
@@ -773,7 +850,7 @@
         "calling",
         "calls"
       ],
-      "pos": "verb"
+      "pos": "noun verb"
     },
     {
       "word": "called",
@@ -798,7 +875,11 @@
     {
       "word": "car",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "cars"
+      ]
     },
     {
       "word": "care",
@@ -830,7 +911,11 @@
     {
       "word": "cart",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "carts"
+      ]
     },
     {
       "word": "carve",
@@ -846,7 +931,11 @@
     {
       "word": "cat",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "cats"
+      ]
     },
     {
       "word": "catch",
@@ -871,7 +960,8 @@
       "forms": [
         "caused",
         "causes"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "chain",
@@ -887,7 +977,8 @@
       "forms": [
         "chairs"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "change",
@@ -904,7 +995,7 @@
       "word": "charge",
       "concept": "someone_in_charge",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "charged",
         "charges",
@@ -928,7 +1019,8 @@
       "forms": [
         "cheaters"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "check",
@@ -947,7 +1039,8 @@
       "level": 1,
       "forms": [
         "children"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "choose",
@@ -963,12 +1056,20 @@
     {
       "word": "circle",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "circles"
+      ]
     },
     {
       "word": "class",
       "concept": "people_together",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "classes"
+      ]
     },
     {
       "word": "clay",
@@ -1018,7 +1119,8 @@
       "level": 1,
       "forms": [
         "clouds"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "cloudy",
@@ -1106,7 +1208,11 @@
     {
       "word": "copied",
       "concept": "written_record",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "copieds"
+      ]
     },
     {
       "word": "copper",
@@ -1129,7 +1235,8 @@
       "level": 1,
       "forms": [
         "corners"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "correction",
@@ -1161,7 +1268,11 @@
     {
       "word": "cousin",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "cousins"
+      ]
     },
     {
       "word": "cover",
@@ -1177,13 +1288,17 @@
     {
       "word": "cow",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "cows"
+      ]
     },
     {
       "word": "crack",
       "concept": "things_break",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "cracked",
         "cracking",
@@ -1231,7 +1346,8 @@
       "forms": [
         "cups"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "curved",
@@ -1251,7 +1367,11 @@
     {
       "word": "dad",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "dads"
+      ]
     },
     {
       "word": "danger",
@@ -1266,7 +1386,11 @@
     {
       "word": "daughter",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "daughters"
+      ]
     },
     {
       "word": "day",
@@ -1274,7 +1398,8 @@
       "level": 1,
       "forms": [
         "days"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "dead",
@@ -1309,7 +1434,11 @@
     {
       "word": "diary",
       "concept": "written_record",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "diaries"
+      ]
     },
     {
       "word": "die",
@@ -1352,7 +1481,8 @@
       "level": 1,
       "forms": [
         "directions"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "dirt",
@@ -1378,7 +1508,11 @@
     {
       "word": "dish",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "dishes"
+      ]
     },
     {
       "word": "distance",
@@ -1388,7 +1522,11 @@
     {
       "word": "dog",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "dogs"
+      ]
     },
     {
       "word": "doing",
@@ -1398,7 +1536,11 @@
     {
       "word": "doll",
       "concept": "toy",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "dolls"
+      ]
     },
     {
       "word": "done",
@@ -1408,7 +1550,11 @@
     {
       "word": "door",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "doors"
+      ]
     },
     {
       "word": "dormant",
@@ -1430,7 +1576,7 @@
       "word": "drain",
       "concept": "emptiness",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "drained",
         "draining",
@@ -1541,7 +1687,11 @@
     {
       "word": "edge",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "edges"
+      ]
     },
     {
       "word": "eight",
@@ -1576,7 +1726,11 @@
     {
       "word": "enemy",
       "concept": "person",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "enemies"
+      ]
     },
     {
       "word": "enough",
@@ -1680,7 +1834,11 @@
     {
       "word": "family",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "families"
+      ]
     },
     {
       "word": "far",
@@ -1700,7 +1858,11 @@
     {
       "word": "father",
       "concept": "person",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "fathers"
+      ]
     },
     {
       "word": "fault",
@@ -1760,7 +1922,11 @@
     {
       "word": "finger",
       "concept": "body_part",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "fingers"
+      ]
     },
     {
       "word": "finish",
@@ -1786,7 +1952,8 @@
     {
       "word": "fish",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "fit",
@@ -1802,7 +1969,11 @@
     {
       "word": "five",
       "concept": "number_word_order",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "fives"
+      ]
     },
     {
       "word": "fix",
@@ -1855,7 +2026,11 @@
     {
       "word": "flower",
       "concept": "plant",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "flowers"
+      ]
     },
     {
       "word": "fly",
@@ -1905,7 +2080,11 @@
     {
       "word": "forest",
       "concept": "plant",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "forests"
+      ]
     },
     {
       "word": "forever",
@@ -1927,7 +2106,11 @@
     {
       "word": "fork",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "forks"
+      ]
     },
     {
       "word": "forty",
@@ -1942,7 +2125,11 @@
     {
       "word": "four",
       "concept": "number_word_order",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "fours"
+      ]
     },
     {
       "word": "freeze",
@@ -1959,7 +2146,11 @@
     {
       "word": "friend",
       "concept": "person",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "friends"
+      ]
     },
     {
       "word": "front",
@@ -1969,7 +2160,11 @@
     {
       "word": "full",
       "concept": "emptiness",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "fulls"
+      ]
     },
     {
       "word": "function",
@@ -1984,22 +2179,38 @@
     {
       "word": "game",
       "concept": "toy",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "games"
+      ]
     },
     {
       "word": "gap",
       "concept": "emptiness",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "gaps"
+      ]
     },
     {
       "word": "garden",
       "concept": "plant",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "gardens"
+      ]
     },
     {
       "word": "gift",
       "concept": "having",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "gifts"
+      ]
     },
     {
       "word": "girl",
@@ -2050,12 +2261,20 @@
     {
       "word": "grandma",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "grandmas"
+      ]
     },
     {
       "word": "grandpa",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "grandpas"
+      ]
     },
     {
       "word": "grass",
@@ -2310,12 +2529,20 @@
     {
       "word": "hole",
       "concept": "emptiness",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "holes"
+      ]
     },
     {
       "word": "home",
       "concept": "people_together",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "homes"
+      ]
     },
     {
       "word": "honest",
@@ -2325,7 +2552,11 @@
     {
       "word": "horse",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "horses"
+      ]
     },
     {
       "word": "hot",
@@ -2340,7 +2571,11 @@
     {
       "word": "house",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "houses"
+      ]
     },
     {
       "word": "however",
@@ -2350,12 +2585,19 @@
     {
       "word": "hundred",
       "concept": "number_word_order",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "hundreds"
+      ]
     },
     {
-      "word": "hundreds",
+      "word": "hundred",
       "concept": "place_value",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "hundreds"
+      ]
     },
     {
       "word": "hungry",
@@ -2394,7 +2636,8 @@
       "level": 1,
       "forms": [
         "ideas"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "identified",
@@ -2424,7 +2667,11 @@
     {
       "word": "insect",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "insects"
+      ]
     },
     {
       "word": "inside",
@@ -2454,7 +2701,11 @@
     {
       "word": "jar",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "jars"
+      ]
     },
     {
       "word": "job",
@@ -2462,7 +2713,8 @@
       "level": 1,
       "forms": [
         "jobs"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "join",
@@ -2494,22 +2746,35 @@
     {
       "word": "key",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "keys"
+      ]
     },
     {
       "word": "kind",
       "concept": "good_and_bad",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "kinds"
+      ]
     },
     {
       "word": "kind",
       "concept": "same_and_different",
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "king",
       "concept": "someone_in_charge",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "kings"
+      ]
     },
     {
       "word": "knew",
@@ -2519,7 +2784,11 @@
     {
       "word": "knife",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "knives"
+      ]
     },
     {
       "word": "knock",
@@ -2551,7 +2820,11 @@
     {
       "word": "lamp",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "lamps"
+      ]
     },
     {
       "word": "land",
@@ -2606,7 +2879,11 @@
     {
       "word": "leader",
       "concept": "someone_in_charge",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "leaders"
+      ]
     },
     {
       "word": "leading",
@@ -2621,7 +2898,8 @@
     {
       "word": "leaf",
       "concept": "plant",
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "learn",
@@ -2667,7 +2945,8 @@
       "level": 1,
       "forms": [
         "letters"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "level",
@@ -2680,12 +2959,17 @@
       "forms": [
         "liars"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "lid",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "lids"
+      ]
     },
     {
       "word": "lie",
@@ -2716,7 +3000,11 @@
     {
       "word": "light",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "lights"
+      ]
     },
     {
       "word": "like",
@@ -2738,12 +3026,20 @@
     {
       "word": "line",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "lines"
+      ]
     },
     {
       "word": "liquid",
       "concept": "liquid",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "liquids"
+      ]
     },
     {
       "word": "list",
@@ -2751,7 +3047,8 @@
       "level": 1,
       "forms": [
         "lists"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "listen",
@@ -2782,7 +3079,7 @@
       "word": "lock",
       "concept": "opening_and_shutting",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "locked",
         "locking",
@@ -2792,7 +3089,11 @@
     {
       "word": "log",
       "concept": "written_record",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "logs"
+      ]
     },
     {
       "word": "long",
@@ -2827,7 +3128,11 @@
     {
       "word": "lot",
       "concept": "more_and_fewer",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "lots"
+      ]
     },
     {
       "word": "loud",
@@ -2872,7 +3177,11 @@
     {
       "word": "manner",
       "concept": "way_of_doing",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "manners"
+      ]
     },
     {
       "word": "many",
@@ -2883,7 +3192,7 @@
       "word": "mark",
       "concept": "name",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "marked",
         "marking",
@@ -2893,7 +3202,11 @@
     {
       "word": "mat",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "mats"
+      ]
     },
     {
       "word": "match",
@@ -2914,7 +3227,8 @@
     {
       "word": "mean",
       "concept": "good_and_bad",
-      "level": 1
+      "level": 1,
+      "pos": "verb"
     },
     {
       "word": "mean",
@@ -2990,7 +3304,8 @@
       "level": 1,
       "forms": [
         "methods"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "middle",
@@ -3034,7 +3349,8 @@
       "level": 1,
       "forms": [
         "minutes"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "mishap",
@@ -3049,12 +3365,20 @@
     {
       "word": "model",
       "concept": "toy",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "models"
+      ]
     },
     {
       "word": "moment",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "moments"
+      ]
     },
     {
       "word": "month",
@@ -3062,12 +3386,17 @@
       "level": 1,
       "forms": [
         "months"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "mood",
       "concept": "feeling",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "moods"
+      ]
     },
     {
       "word": "moon",
@@ -3082,12 +3411,20 @@
     {
       "word": "mother",
       "concept": "person",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "mothers"
+      ]
     },
     {
       "word": "mouse",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "mice"
+      ]
     },
     {
       "word": "mouth",
@@ -3121,7 +3458,11 @@
     {
       "word": "mum",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "mums"
+      ]
     },
     {
       "word": "myself",
@@ -3134,13 +3475,14 @@
       "level": 1,
       "forms": [
         "nails"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "name",
       "concept": "name",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "named",
         "names",
@@ -3216,7 +3558,11 @@
     {
       "word": "noise",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "noises"
+      ]
     },
     {
       "word": "noisy",
@@ -3245,7 +3591,7 @@
       "word": "note",
       "concept": "written_record",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "noted",
         "notes",
@@ -3263,12 +3609,17 @@
       "forms": [
         "numbers"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "nurse",
       "concept": "tending",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "nurses"
+      ]
     },
     {
       "word": "often",
@@ -3351,7 +3702,8 @@
       "forms": [
         "ovens"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "own",
@@ -3367,7 +3719,11 @@
     {
       "word": "pace",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "paces"
+      ]
     },
     {
       "word": "page",
@@ -3375,7 +3731,8 @@
       "level": 1,
       "forms": [
         "pages"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "pain",
@@ -3385,12 +3742,20 @@
     {
       "word": "pair",
       "concept": "correspondence",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "pairs"
+      ]
     },
     {
       "word": "pan",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "pans"
+      ]
     },
     {
       "word": "paper",
@@ -3403,7 +3768,8 @@
       "level": 1,
       "forms": [
         "parents"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "part",
@@ -3411,7 +3777,8 @@
       "forms": [
         "parts"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "past",
@@ -3424,7 +3791,8 @@
       "level": 1,
       "forms": [
         "paths"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "patted",
@@ -3445,7 +3813,11 @@
     {
       "word": "pen",
       "concept": "writing",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "pens"
+      ]
     },
     {
       "word": "percent",
@@ -3455,7 +3827,11 @@
     {
       "word": "period",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "periods"
+      ]
     },
     {
       "word": "person",
@@ -3463,12 +3839,17 @@
       "level": 1,
       "forms": [
         "people"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "phrase",
       "concept": "sentence",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "phrases"
+      ]
     },
     {
       "word": "pick",
@@ -3484,12 +3865,20 @@
     {
       "word": "picture",
       "concept": "toy",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "pictures"
+      ]
     },
     {
       "word": "piece",
       "concept": "things_break",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "pieces"
+      ]
     },
     {
       "word": "pile",
@@ -3503,7 +3892,7 @@
       "word": "place",
       "concept": "spatial_position",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "placed",
         "places",
@@ -3514,7 +3903,7 @@
       "word": "plant",
       "concept": "plant",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "planted",
         "planting",
@@ -3529,7 +3918,11 @@
     {
       "word": "plate",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "plates"
+      ]
     },
     {
       "word": "play",
@@ -3550,13 +3943,17 @@
     {
       "word": "pocket",
       "concept": "inside_and_outside",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "pockets"
+      ]
     },
     {
       "word": "point",
       "concept": "correspondence",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "pointed",
         "pointing",
@@ -3591,7 +3988,11 @@
     {
       "word": "pot",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "pots"
+      ]
     },
     {
       "word": "pour",
@@ -3694,7 +4095,11 @@
     {
       "word": "queen",
       "concept": "someone_in_charge",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "queens"
+      ]
     },
     {
       "word": "question",
@@ -3702,7 +4107,8 @@
       "level": 1,
       "forms": [
         "questions"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "quick",
@@ -3797,7 +4203,7 @@
       "word": "record",
       "concept": "written_record",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "recorded",
         "recording",
@@ -3864,7 +4270,7 @@
       "word": "reply",
       "concept": "asking",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "replied",
         "replies",
@@ -3891,7 +4297,7 @@
       "word": "request",
       "concept": "asking",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "requested",
         "requesting",
@@ -3928,7 +4334,7 @@
       "word": "ring",
       "concept": "sound",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "rang",
         "ringing",
@@ -3950,12 +4356,20 @@
     {
       "word": "road",
       "concept": "direction",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "roads"
+      ]
     },
     {
       "word": "rock",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "rocks"
+      ]
     },
     {
       "word": "roll",
@@ -3971,12 +4385,20 @@
     {
       "word": "roof",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "roofs"
+      ]
     },
     {
       "word": "room",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "rooms"
+      ]
     },
     {
       "word": "root",
@@ -3986,7 +4408,11 @@
     {
       "word": "rope",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "ropes"
+      ]
     },
     {
       "word": "rough",
@@ -4012,13 +4438,17 @@
     {
       "word": "rug",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "rugs"
+      ]
     },
     {
       "word": "rule",
       "concept": "someone_in_charge",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "ruled",
         "rules",
@@ -4028,7 +4458,11 @@
     {
       "word": "ruler",
       "concept": "measuring",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "rulers"
+      ]
     },
     {
       "word": "run",
@@ -4086,7 +4520,11 @@
     {
       "word": "school",
       "concept": "people_together",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "schools"
+      ]
     },
     {
       "word": "second",
@@ -4099,12 +4537,17 @@
       "forms": [
         "secrets"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "seed",
       "concept": "plant",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "seeds"
+      ]
     },
     {
       "word": "seemed",
@@ -4138,7 +4581,8 @@
       "level": 1,
       "forms": [
         "sentences"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "separate",
@@ -4155,7 +4599,7 @@
       "word": "set",
       "concept": "activity",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "sets",
         "setting"
@@ -4164,7 +4608,8 @@
     {
       "word": "set",
       "concept": "correspondence",
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "set",
@@ -4172,7 +4617,8 @@
       "level": 2,
       "forms": [
         "sets"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "settles",
@@ -4235,12 +4681,20 @@
     {
       "word": "shelf",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "shelves"
+      ]
     },
     {
       "word": "shell",
       "concept": "animal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "shells"
+      ]
     },
     {
       "word": "shoes",
@@ -4255,7 +4709,11 @@
     {
       "word": "shortage",
       "concept": "enough",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "shortages"
+      ]
     },
     {
       "word": "shorter",
@@ -4334,13 +4792,14 @@
       "level": 1,
       "forms": [
         "sides"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "sign",
       "concept": "standing_for",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "signed",
         "signing",
@@ -4384,7 +4843,11 @@
     {
       "word": "sister",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "sisters"
+      ]
     },
     {
       "word": "sit",
@@ -4394,7 +4857,11 @@
     {
       "word": "six",
       "concept": "number_word_order",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "sixes"
+      ]
     },
     {
       "word": "size",
@@ -4535,12 +5002,20 @@
     {
       "word": "son",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "sons"
+      ]
     },
     {
       "word": "song",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "songs"
+      ]
     },
     {
       "word": "soon",
@@ -4551,7 +5026,7 @@
       "word": "sound",
       "concept": "sound",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "sounded",
         "sounding",
@@ -4610,7 +5085,11 @@
     {
       "word": "spoon",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "spoons"
+      ]
     },
     {
       "word": "spot",
@@ -4621,22 +5100,36 @@
         "spotting"
       ],
       "level": 1,
-      "pos": "verb"
+      "pos": "noun verb"
     },
     {
       "word": "square",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "squares"
+      ]
     },
     {
       "word": "squeeze",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "squeezed",
+        "squeezes",
+        "squeezing"
+      ]
     },
     {
       "word": "stair",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "stairs"
+      ]
     },
     {
       "word": "stand",
@@ -4659,7 +5152,8 @@
       "level": 1,
       "forms": [
         "stars"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "start",
@@ -4709,7 +5203,7 @@
       "word": "step",
       "concept": "way_of_doing",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "stepped",
         "stepping",
@@ -4720,7 +5214,7 @@
       "word": "stick",
       "concept": "material",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "sticking",
         "sticks",
@@ -4730,7 +5224,11 @@
     {
       "word": "stone",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "stones"
+      ]
     },
     {
       "word": "stop",
@@ -4746,17 +5244,29 @@
     {
       "word": "storm",
       "concept": "weather",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "storms"
+      ]
     },
     {
       "word": "story",
       "concept": "writing",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "stories"
+      ]
     },
     {
       "word": "stove",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "stoves"
+      ]
     },
     {
       "word": "straight",
@@ -4769,7 +5279,8 @@
       "forms": [
         "strangers"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "straw",
@@ -4779,12 +5290,20 @@
     {
       "word": "street",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "streets"
+      ]
     },
     {
       "word": "string",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "strings"
+      ]
     },
     {
       "word": "stroke",
@@ -4912,7 +5431,8 @@
       "level": 1,
       "forms": [
         "symbols"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "system",
@@ -4922,7 +5442,11 @@
     {
       "word": "table",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "tables"
+      ]
     },
     {
       "word": "taken",
@@ -4932,7 +5456,11 @@
     {
       "word": "tale",
       "concept": "writing",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "tales"
+      ]
     },
     {
       "word": "talk",
@@ -4959,7 +5487,7 @@
       "word": "tally",
       "concept": "written_record",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "tallied",
         "tallies",
@@ -4972,7 +5500,8 @@
       "level": 1,
       "forms": [
         "tasks"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "teach",
@@ -4988,7 +5517,11 @@
     {
       "word": "teacher",
       "concept": "someone_in_charge",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "teachers"
+      ]
     },
     {
       "word": "tear",
@@ -5029,7 +5562,8 @@
       "level": 1,
       "forms": [
         "terms"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "test",
@@ -5061,9 +5595,11 @@
       "word": "thief",
       "concept": "person",
       "forms": [
+        "thiefs",
         "thieves"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "thin",
@@ -5076,7 +5612,8 @@
       "forms": [
         "things"
       ],
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "think",
@@ -5107,7 +5644,11 @@
     {
       "word": "thousand",
       "concept": "number_word_order",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "thousands"
+      ]
     },
     {
       "word": "three",
@@ -5153,7 +5694,11 @@
     {
       "word": "tip",
       "concept": "falling",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "tips"
+      ]
     },
     {
       "word": "tired",
@@ -5181,7 +5726,8 @@
       "level": 1,
       "forms": [
         "tools"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "top",
@@ -5221,12 +5767,20 @@
     {
       "word": "town",
       "concept": "people_together",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "towns"
+      ]
     },
     {
       "word": "toy",
       "concept": "toy",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "toys"
+      ]
     },
     {
       "word": "trade",
@@ -5242,7 +5796,11 @@
     {
       "word": "tray",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "trays"
+      ]
     },
     {
       "word": "tree",
@@ -5250,13 +5808,14 @@
       "level": 1,
       "forms": [
         "trees"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "trick",
       "concept": "way_of_doing",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "tricked",
         "tricking",
@@ -5350,7 +5909,11 @@
     {
       "word": "uncle",
       "concept": "family",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "uncles"
+      ]
     },
     {
       "word": "uncover",
@@ -5448,7 +6011,11 @@
     {
       "word": "village",
       "concept": "people_together",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "villages"
+      ]
     },
     {
       "word": "voice",
@@ -5492,7 +6059,11 @@
     {
       "word": "wall",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "walls"
+      ]
     },
     {
       "word": "want",
@@ -5525,7 +6096,7 @@
       "word": "watch",
       "concept": "danger",
       "level": 1,
-      "pos": "verb",
+      "pos": "noun verb",
       "forms": [
         "watched",
         "watches",
@@ -5538,7 +6109,8 @@
       "level": 1,
       "forms": [
         "watches"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "water",
@@ -5548,7 +6120,11 @@
     {
       "word": "way",
       "concept": "discourse_marker",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "ways"
+      ]
     },
     {
       "word": "weak",
@@ -5583,7 +6159,8 @@
       "level": 1,
       "forms": [
         "weeks"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "weigh",
@@ -5612,12 +6189,17 @@
       "level": 1,
       "forms": [
         "wheels"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "while",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "whiles"
+      ]
     },
     {
       "word": "white",
@@ -5653,12 +6235,20 @@
     {
       "word": "window",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "windows"
+      ]
     },
     {
       "word": "wire",
       "concept": "metal",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "wires"
+      ]
     },
     {
       "word": "woman",
@@ -5692,7 +6282,8 @@
       "level": 1,
       "forms": [
         "words"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "work",
@@ -5735,12 +6326,13 @@
     {
       "word": "year",
       "concept": "cycle",
-      "level": 1
+      "level": 1,
+      "pos": "noun"
     },
     {
       "word": "years",
       "concept": "duration",
-      "level": 5
+      "level": 1
     },
     {
       "word": "yell",

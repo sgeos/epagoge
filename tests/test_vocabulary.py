@@ -519,7 +519,7 @@ class TestVerbInflection(unittest.TestCase):
                                 "word": "cup",
                                 "concept": "c",
                                 "level": 1,
-                                "pos": "noun",
+                                "pos": "adjective",
                             }
                         ],
                     }
@@ -641,3 +641,116 @@ class TestTermLevelsAcrossSenses(unittest.TestCase):
     def test_a_single_sense_is_unchanged(self) -> None:
         v = Vocabulary(terms=(Term(word="cup", concept="household_object", level=1),))
         self.assertEqual(term_levels(v, [])["cup"], 1)
+
+
+class TestNounPlurals(unittest.TestCase):
+    """A noun admitted without its plural is the same trap as a verb
+    admitted without its participle. Twelve such plurals were already in
+    use by the corpus and only exact tokenisation found them, because the
+    validator accepts a word by stripping suffixes.
+    """
+
+    def vocab(self, *terms: Term) -> Vocabulary:
+        return Vocabulary(core=frozenset({"the"}), terms=terms)
+
+    def check(self, v: Vocabulary) -> list[str]:
+        return [
+            x.code
+            for x in validate_vocabulary(v, [], {"c": 1})
+            if x.code == "missing-plural"
+        ]
+
+    def test_a_noun_with_its_plural_passes(self) -> None:
+        v = self.vocab(
+            Term(word="cup", concept="c", level=1, forms=("cups",), pos="noun")
+        )
+        self.assertEqual(self.check(v), [])
+
+    def test_a_noun_without_its_plural_fails(self) -> None:
+        v = self.vocab(Term(word="cup", concept="c", level=1, pos="noun"))
+        self.assertEqual(self.check(v), ["missing-plural"])
+
+    def test_an_unmarked_word_is_not_checked(self) -> None:
+        self.assertEqual(
+            self.check(self.vocab(Term(word="cup", concept="c", level=1))), []
+        )
+
+    def test_a_plural_supplied_by_another_term_counts(self) -> None:
+        v = self.vocab(
+            Term(word="cup", concept="c", level=1, pos="noun"),
+            Term(word="cups", concept="c2", level=1),
+        )
+        self.assertEqual(self.check(v), [])
+
+    def test_a_plural_only_admitted_later_does_not_count(self) -> None:
+        v = self.vocab(
+            Term(word="cup", concept="c", level=1, pos="noun"),
+            Term(word="cups", concept="c2", level=2),
+        )
+        self.assertEqual(self.check(v), ["missing-plural"])
+
+    def test_an_unchanging_plural_needs_nothing(self) -> None:
+        """`fish` is its own plural, which is a fact and not a gap."""
+        v = self.vocab(Term(word="fish", concept="c", level=1, pos="noun"))
+        self.assertEqual(self.check(v), [])
+
+    def test_a_word_may_be_both_noun_and_verb(self) -> None:
+        v = self.vocab(
+            Term(
+                word="lock",
+                concept="c",
+                level=1,
+                pos="noun verb",
+                forms=("locks", "locked", "locking"),
+            )
+        )
+        codes = {
+            x.code
+            for x in validate_vocabulary(v, [], {"c": 1})
+            if x.code in ("missing-plural", "missing-inflection")
+        }
+        self.assertEqual(codes, set())
+
+    def test_an_unknown_part_of_speech_is_still_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "v.json"
+            path.write_text(
+                json.dumps(
+                    {
+                        "core": ["a"],
+                        "terms": [
+                            {
+                                "word": "cup",
+                                "concept": "c",
+                                "level": 1,
+                                "pos": "noun adjective",
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaises(ValueError):
+                load_vocabulary(path)
+
+    def test_a_repeated_part_of_speech_is_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "v.json"
+            path.write_text(
+                json.dumps(
+                    {
+                        "core": ["a"],
+                        "terms": [
+                            {
+                                "word": "cup",
+                                "concept": "c",
+                                "level": 1,
+                                "pos": "noun noun",
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaises(ValueError):
+                load_vocabulary(path)

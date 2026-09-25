@@ -52,7 +52,7 @@ from pathlib import Path
 from typing import Final, cast
 
 from epagoge.concept_graph import Violation
-from epagoge.inflection import verb_forms
+from epagoge.inflection import plural, verb_forms
 from epagoge.record import Record
 
 WORD_RE: Final[re.Pattern[str]] = re.compile(r"[a-z]+(?:'[a-z]+)?")
@@ -80,7 +80,12 @@ class Term:
     forms: tuple[str, ...] = ()
 
     pos: str = ""
-    """Part of speech. Only ``verb`` is acted on, and it is enforced.
+    """Parts of speech, space separated. ``verb``, ``noun``, or both.
+
+    **A word can be several.** `answer`, `lock` and `brush` are each a noun
+    and a verb, and the enforcement differs, since a verb owes its
+    inflections and a noun owes its plural. Twenty-eight such words were
+    found by reading how their own dictionary entries begin.
 
     A verb admitted in one form is a trap, since the generator is
     constrained to admissible words and will reach for an inflection that
@@ -443,6 +448,7 @@ def validate_vocabulary(
     out.extend(_check_lower_bound(vocabulary, records, scheduled))
     out.extend(_check_lexicalisation(vocabulary, known_concepts, scheduled))
     out.extend(_check_inflections(vocabulary))
+    out.extend(_check_plurals(vocabulary))
     out.extend(_check_ostensive(vocabulary))
     levels = term_levels(vocabulary, records)
     out.extend(_check_ceiling(vocabulary, records, levels))
@@ -640,6 +646,32 @@ def load_vocabulary(path: Path) -> Vocabulary:
     )
 
 
+def _check_plurals(vocabulary: Vocabulary) -> list[Violation]:
+    """Every noun must have its plural admissible at the noun's level.
+
+    The same rule as verb inflections, and it exists for the same reason.
+    A noun admitted without its plural sends a generator reaching for a
+    form that is not there.
+    """
+    out: list[Violation] = []
+    for term in vocabulary.terms:
+        if "noun" not in term.pos.split():
+            continue
+        form = plural(term.word)
+        if form == term.word or form in vocabulary.core:
+            continue
+        if any(sense.level <= term.level for sense in vocabulary.senses(form)):
+            continue
+        out.append(
+            Violation(
+                "missing-plural",
+                f"noun {term.word!r} is admitted at level {term.level} and its "
+                f"plural {form!r} is not admissible there",
+            )
+        )
+    return out
+
+
 def _check_ostensive(vocabulary: Vocabulary) -> list[Violation]:
     """An ostensive word must still be a term the corpus teaches.
 
@@ -666,7 +698,7 @@ def _check_inflections(vocabulary: Vocabulary) -> list[Violation]:
     """
     out: list[Violation] = []
     for term in vocabulary.terms:
-        if term.pos != "verb":
+        if "verb" not in term.pos.split():
             continue
         for form in verb_forms(term.word):
             reachable = any(
@@ -763,6 +795,12 @@ def _parse_pos(raw: object, where: str) -> str:
         return ""
     if not isinstance(raw, str):
         raise ValueError(f"{where}.pos: expected a string")
-    if raw not in ("", "verb"):
-        raise ValueError(f"{where}.pos: only 'verb' is recognised, got {raw!r}")
-    return raw
+    parts = raw.split()
+    for part in parts:
+        if part not in ("verb", "noun"):
+            raise ValueError(
+                f"{where}.pos: only 'verb' and 'noun' are recognised, got {part!r}"
+            )
+    if len(set(parts)) != len(parts):
+        raise ValueError(f"{where}.pos: repeated part of speech in {raw!r}")
+    return " ".join(parts)

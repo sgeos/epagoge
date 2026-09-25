@@ -200,3 +200,47 @@ def verb_forms(word: str) -> tuple[str, ...]:
         if form != word and form not in out:
             out.append(form)
     return tuple(out)
+
+
+IRREGULAR_PLURAL: Final[dict[str, str]] = {
+    "child": "children",
+    "foot": "feet",
+    "tooth": "teeth",
+    "man": "men",
+    "woman": "women",
+    "mouse": "mice",
+    "goose": "geese",
+    "person": "people",
+    "leaf": "leaves",
+    "shelf": "shelves",
+    "knife": "knives",
+    "life": "lives",
+    "wife": "wives",
+    "loaf": "loaves",
+    "half": "halves",
+    "self": "selves",
+    "fish": "fish",
+    "sheep": "sheep",
+    "deer": "deer",
+}
+"""Plurals not derivable from spelling. A word mapping to itself has no
+distinct plural, which is a fact about the word and not a gap."""
+
+
+def plural(word: str) -> str:
+    """The plural of a noun.
+
+    **A noun admitted without its plural is the same trap as a verb
+    admitted without its participle.** Twelve plurals the corpus was
+    already using were missing from the lexicon on 2026-09-25 and only
+    exact tokenisation found them, because the corpus validator accepts a
+    word by stripping suffixes and so never noticed.
+    """
+    listed = IRREGULAR_PLURAL.get(word)
+    if listed is not None:
+        return listed
+    if word.endswith("y") and len(word) > 1 and _is_consonant(word[-2]):
+        return word[:-1] + "ies"
+    if word.endswith(("s", "x", "z", "ch", "sh")):
+        return word + "es"
+    return word + "s"
