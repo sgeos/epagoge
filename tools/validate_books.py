@@ -27,6 +27,9 @@ from epagoge.vocabulary import load_vocabulary
 def main(argv: list[str]) -> int:
     spreads: int | None = None
     argv = list(argv)
+    describe = "--describe" in argv
+    if describe:
+        argv.remove("--describe")
     if "--spreads" in argv:
         at = argv.index("--spreads")
         spreads = int(argv[at + 1])
@@ -34,7 +37,8 @@ def main(argv: list[str]) -> int:
 
     if len(argv) < 5:
         print(
-            f"usage: {argv[0]} <graph> <vocab> <sched-dir> <book-dir> [corpus]...",
+            f"usage: {argv[0]} [--describe] [--spreads N] "
+            "<graph> <vocab> <sched-dir> <book-dir> [corpus]...",
             file=sys.stderr,
         )
         return 2
@@ -65,6 +69,7 @@ def main(argv: list[str]) -> int:
         set(graph.domains),
         topics,
         spreads=spreads,
+        describe=describe,
     )
     if violations:
         print(f"{argv[4]}: {len(violations)} violation(s)", file=sys.stderr)

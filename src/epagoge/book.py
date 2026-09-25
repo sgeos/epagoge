@@ -54,7 +54,18 @@ class Definition:
 
 @dataclass(frozen=True, slots=True)
 class Book:
-    """An ordered run of records with one subject."""
+    """An ordered run of records with one subject.
+
+    ``about`` and ``teaches`` are **written for a person, not for the
+    corpus**, and are the one place in a book where the level's vocabulary
+    ceiling does not apply.
+
+    **The corpus is CC0 and is meant to be used.** A parent choosing books
+    for a child, or anyone curating a training corpus, has to know what a
+    book is about and what it is for, and cannot be asked to infer that
+    from sixteen spreads written in eight hundred words. Neither field is
+    part of the text a model trains on.
+    """
 
     id: str
     level: int
@@ -62,6 +73,11 @@ class Book:
     subject_kind: DefinitionKind
     subject: str
     records: tuple[str, ...] = ()
+    about: str = ""
+    """What the book is about, in ordinary unrestricted English."""
+
+    teaches: str = ""
+    """What a reader is meant to come away with, in ordinary English."""
 
 
 SPREADS_BY_LEVEL: Final[dict[int, int]] = {1: 16, 2: 64, 3: 112, 4: 160}
@@ -499,8 +515,13 @@ def validate_books(
     known_topics: Collection[str],
     word_counts: Mapping[str, int] | None = None,
     spreads: int | None = None,
+    describe: bool = False,
 ) -> list[Violation]:
     """Return every breach. Empty means the books are sound.
+
+    ``describe`` requires every book to say what it is about and what it
+    teaches, for the curator rather than the reader. Off by default because
+    every book in the corpus predates the fields.
 
     ``spreads`` enforces the page standard when given. It is a parameter
     rather than a constant because a board book and a picture book bind to
@@ -539,6 +560,19 @@ def validate_books(
                 )
             )
 
+    for book in books:
+        # **Reported, not enforced, until the corpus carries them.** Every
+        # book predates these fields, so refusing a book without them would
+        # refuse the whole corpus. The count is what makes the gap visible.
+        if describe and not (book.about.strip() and book.teaches.strip()):
+            out.append(
+                Violation(
+                    "undescribed-book",
+                    f"book {book.id!r} does not say what it is about or what"
+                    " it teaches, which a curator needs and a reader of the"
+                    " text cannot recover",
+                )
+            )
     for book in books:
         if not book.records:
             out.append(Violation("empty-book", f"book {book.id!r} holds no record"))
@@ -616,6 +650,20 @@ def validate_books(
     return out
 
 
+def _optional(fields: Mapping[object, object], key: str, where: str) -> str:
+    """A string field that may be absent, but may not be the wrong type.
+
+    Absent is allowed because the corpus predates these fields. A number
+    or a list where prose belongs is a mistake and is refused.
+    """
+    value = fields.get(key)
+    if value is None:
+        return ""
+    if not isinstance(value, str):
+        raise ValueError(f"{where}.{key}: expected a string")
+    return value
+
+
 def _require(fields: Mapping[object, object], key: str, where: str) -> str:
     value = fields.get(key)
     if not isinstance(value, str):
@@ -672,6 +720,8 @@ def book_from_json(payload: object, where: str = "book") -> tuple[Book, list[obj
         subject_kind=DefinitionKind(_require(subject, "kind", where)),
         subject=_require(subject, "target", where),
         records=tuple(ids),
+        about=_optional(fields, "about", where),
+        teaches=_optional(fields, "teaches", where),
     )
     return book, records
 

@@ -137,13 +137,25 @@ figures of 738 and 772 predate that work.
 **Proposed, and not measured**: the controlled lexicon roughly doubles per
 level to level four, then opens.
 
-| Level | Controlled lexicon |
-| --- | --- |
-| 1 | 845, measured |
-| 2 | **about 10,000**, operator figure 2026-09-25 |
-| 3 | not set |
-| 4 | not set |
-| 5 and up | **open** |
+| Level | Controlled lexicon | Basis |
+| --- | --- | --- |
+| 1 | 845, measured | what the corpus needed to close |
+| 2 | **about 10,000** | operator figure, consistent with Biemiller |
+| 3 | **about 25,000** | extrapolated past Biemiller's range |
+| 4 | **about 40,000** | the lower adult estimate |
+| 5 and up | **open** | real literature consults no word list |
+
+**Researched 2026-09-25**, with sources and caveats in
+`READING_LEVEL_RESEARCH.md`. Biemiller and Slonim put an average reader at
+about 6,000 root words at the end of grade 2 and 10,000 at the end of
+grade 6, so entering fourth grade interpolates to about 7,000 root words.
+This project counts forms rather than roots, so the operator's ten
+thousand and Biemiller's seven thousand are the same claim in different
+units.
+
+**Adult estimates disagree by a factor of twelve**, from 16,785 lemmas to
+200,000 words for comparable populations, so rows three and four are the
+weakest here and are placed to be argued with.
 
 The earlier proposal of about 2,000 at level two was mine and was not the
 operator's. It also roughly doubled per level, which the operator figure

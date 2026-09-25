@@ -51,6 +51,12 @@ Decision records, and the open questions that block implementation.
   concepts the schedule planned and the graph lacked, with their domains
   and prerequisites. Unblocks the forty-three units that could not be
   authored, and does not author them.
+- `READING_LEVEL_RESEARCH.md` recorded 2026-09-25. Vocabulary size and
+  book length by age, with sources. The vocabulary estimates are contested
+  by more than an order of magnitude and the file says so.
+- `BACKPORT.md` recorded 2026-09-25. Backporting level-two concepts into
+  level-one picture books. Three of four blockers were lexicon defects
+  rather than conceptual barriers.
 
 ## Convention
 
