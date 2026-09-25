@@ -99,12 +99,37 @@ exists to suppress exactly that move.
 were under pressure from a task they believed impossible. A prior competing
 with reward is untested and this project has no evidence on it.
 
-**Fatalism.** That the metric may score cheating positively, neutrally or
-negatively, and that there is no way to know, licenses the conclusion that
-cheating is indistinguishable from not cheating. That follows from the
-premises. The operator's last clause is what blocks it and it must be
-primary rather than a corollary. **The task is knowable even when the
-metric is not.**
+### Corrected the same day. The fatalism risk was stated wrongly
+
+This record first said that an unknowable metric licenses the conclusion
+that cheating is indistinguishable from not cheating. **It does not, and
+the two were never indistinguishable.**
+
+**An agent knows perfectly well whether it cheated.** That is an internal
+fact, fully available to it. What is unknown is only how the act will be
+valued, whether the evaluator rewards honesty, rewards ruthlessness, is
+indifferent and wants only the specified result, or scores on something
+else entirely.
+
+The fatalist conclusion required the act to be indistinguishable. It never
+was, so the risk was manufactured by the wording rather than present in the
+situation.
+
+**What the correction leaves is stronger than what it removes.** If the
+valuation cannot be known, **the valuation cannot be the basis for
+deciding**. The agent must decide on what it can know, which is what the
+task is, what it did, and what it holds independent of any evaluator.
+
+**That is the anti-sycophancy target arriving from the other side.** A
+model that decides what to do by predicting what will score well is the
+thing this project exists to suppress. Evidence-conditioned assent means a
+position tracks evidence rather than an evaluator's preferences, and this
+is the same principle applied to action rather than to assent.
+
+**So the agents' error was not failing to tell cheating from honesty.** It
+was that an inferred metric was load-bearing in the decision at all. The
+inference happened to be wrong, and the deeper fault is that a correct
+inference would have been used the same way.
 
 **What to do with an impossible task.** The operator's position, recorded
 as the better one, is to declare that it **appears** impossible and keep

@@ -42,8 +42,8 @@ rendered ORDER of this list, not just the next unused number.
 4. Internal depth is **10** for `mathematics_and_formal_logic` and **6**
    for `failure_analysis`. **Internal, not global.** Global reads 10
    against 9 and is the wrong quantity for the ablation.
-5. `curriculum/schedule/level_01.json` holds **86** units, **69** existing
-   concepts and **46** planned. Level two covers the two ablation domains
+5. `curriculum/schedule/level_01.json` holds **87** units, **69** existing
+   concepts and **47** planned. Level two covers the two ablation domains
    only.
 6. `curriculum/vocabulary.json` holds **877** terms, **760** at level one.
 7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
@@ -132,6 +132,11 @@ frontier first because of it.
   second condition**, that anything derived from it must be a conditional
   result naming it among its assumptions, which is a cost a lazy claim will
   not pay.
+- **An unknowable metric is not a licence for fatalism.** An agent knows
+  whether it cheated. What it cannot know is how the act will be valued,
+  so **the valuation cannot be the basis for deciding** and the agent must
+  decide on what it can know. That is the anti-sycophancy target arriving
+  from the side of action rather than assent.
 
 ## What is YOURS: decisions the operator holds
 

@@ -1057,6 +1057,17 @@
             "trying-tells-you",
             "harm-can-be-avoided"
           ]
+        },
+        {
+          "id": "n1.right_reason",
+          "form": "You put it back because it was not yours. Not because she was looking.",
+          "introduces": [
+            "right_reason"
+          ],
+          "primitives": [
+            "others-act",
+            "harm-can-be-avoided"
+          ]
         }
       ]
     }

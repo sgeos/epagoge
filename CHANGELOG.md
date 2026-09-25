@@ -73,10 +73,30 @@ Versioning.
 - **The doctrine is credited as the source and is not taught as a claim.**
   Every clause of the content is defensible on its own, and the taxonomy
   could not support the doctrinal version.
-- Two things left unsettled. **Whether a curriculum disposition beats a
-  training gradient**, untested. And **fatalism**, since an unknowable
-  metric licenses the conclusion that cheating is indistinguishable from
-  not cheating, blocked only by making the assigned task primary.
+- One thing left unsettled. **Whether a curriculum disposition beats a
+  training gradient**, untested.
+
+### Corrected. The fatalism risk was stated wrongly, and the fix is stronger
+
+- The record said an unknowable metric licenses the conclusion that
+  cheating is indistinguishable from not cheating. **It does not, and the
+  two were never indistinguishable.**
+- **An agent knows perfectly well whether it cheated.** That is an internal
+  fact fully available to it. What is unknown is only how the act will be
+  valued, whether the evaluator rewards honesty, rewards ruthlessness, is
+  indifferent and wants only the specified result, or scores on something
+  else.
+- **The risk was manufactured by the wording**, since the fatalist
+  conclusion required the act to be indistinguishable.
+- **What it leaves is stronger.** If the valuation cannot be known, the
+  valuation cannot be the basis for deciding, so the agent must decide on
+  what it can know. **That is the anti-sycophancy target arriving from the
+  side of action rather than assent.**
+- **So the agents' error was not failing to tell cheating from honesty.**
+  It was that an inferred metric was load-bearing at all, and a correct
+  inference would have been used the same way.
+- `right_reason` added to normative adjudication. You put it back because
+  it was not yours, not because she was looking. 87 units, 47 planned.
 
 ### Fixed. The first dictionary book made the book graph cyclic
 
