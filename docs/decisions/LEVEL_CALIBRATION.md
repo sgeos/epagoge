@@ -9,7 +9,7 @@ enter** once that level is complete, which is sharper than naming a band.
 | Level | Ready to enter | Material |
 | --- | --- | --- |
 | 1 | Kindergarten | Picture books |
-| 2 | Fifth grade | Books and textbooks |
+| 2 | Fourth grade | Books and textbooks |
 | 3 | Eighth grade | Books, textbooks, references |
 | 4 | Twelfth grade | Books, textbooks, references |
 | 5 | University senior year | Books, textbooks, academic papers |
@@ -18,19 +18,28 @@ enter** once that level is complete, which is sharper than naming a band.
 
 **This corrects the earlier reading.** `BOOK_FORMATS.md` took level two as
 early elementary, roughly grades one and two, from the level-two
-vocabulary already in the tree. The operator's mapping puts it five school
-years later, at the end of fourth grade, which makes the sixty-four page
-figure recorded there **too short by a wide margin**.
+vocabulary already in the tree. The operator's mapping puts it at the end
+of third grade, which makes the sixty-four page figure recorded there too
+short.
 
-### The first step is the longest
+### The spacing, measured
 
-Level one to level two spans five school years. Every later step spans
-three or four. **Level one is also the smallest budget**, so the corpus
-grows least exactly where the reader grows most, and the level-two lexicon
-has to carry that jump.
+Counting cumulative years of formal education completed at each level's
+target, the ladder is even where it can be.
 
-Whether that is a defect in the ladder or a fact about how reading
-develops is not settled here. It is the first thing to revisit if level
+| Level two at | Gaps in school years | Standard deviation |
+| --- | --- | --- |
+| Entering fifth grade | 5, 3, 4, 3, 4, 2 | 0.96 |
+| **Entering fourth grade** | **4, 4, 4**, 3, 4, 2 | **0.76** |
+
+Walking level two back one year makes the first three steps identical and
+removes the outlier. **The remaining unevenness is at the far end**, where
+university senior to all-but-dissertation to practice compresses, and no
+page count or lexicon target depends on it.
+
+Level one still has the smallest token budget while carrying a four-year
+step, so the corpus grows least where the reader grows fastest. That is
+unchanged by the walk-back and remains the first thing to revisit if level
 two proves unreachable from level one.
 
 ## Three axes, and what is measured
@@ -44,10 +53,17 @@ is bound in signatures of sixteen pages.
 | Level | Tokens | Pages | Signatures |
 | --- | --- | --- | --- |
 | 1 | 10^6 to 10^7 | **32** | 2 |
-| 2 | 10^7 to 10^8 | **160** | 10 |
+| 2 | 10^7 to 10^8 | **128** | 8 |
 | 3 | 10^8 | **224** | 14 |
 | 4 | 10^8 to 10^9 | **320** | 20 |
 | 5 to 7 | 10^9 and up | **not a book count** | — |
+
+**The four page counts rise by ninety-six, which is six signatures, at
+every step.** That regularity was not designed and is not the reason for
+any of them. One hundred and twenty-eight pages is an ordinary length for
+an early chapter book at the end of third grade, which is why it was
+chosen, and the evenness is a consequence worth noting and not evidence
+for anything.
 
 **Above level four the unit stops being a book.** A paper is eight to
 twenty pages and a monograph is bound to no standard length, so a spread
@@ -94,7 +110,7 @@ the graph is too small above level two for a target to mean anything yet.
 
 ## What this does not settle
 
-**The level-two page count changes from 64 to 160 and nothing has been
+**The level-two page count changes from 64 to 128 and nothing has been
 built to it.** Level two holds a dictionary and no books.
 
 **The 43 level-one units that only introduce a concept are unaffected.**
