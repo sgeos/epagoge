@@ -63,7 +63,14 @@ def main(argv: list[str]) -> int:
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
     admissible = admissible_words(vocabulary, args.level)
     seed = set(vocabulary.core) | set(vocabulary.exempt)
-    concept_of = {t.word: t.concept for t in vocabulary.terms if t.level <= args.level}
+    # **One entry per sense.** A word with a noun and a verb sense needs
+    # two definitions, which is what a dictionary has always done.
+    senses: list[tuple[str, str]] = sorted(
+        {(t.word, t.concept) for t in vocabulary.terms if t.level <= args.level}
+    )
+    concept_of: dict[str, list[str]] = {}
+    for word, concept in senses:
+        concept_of.setdefault(word, []).append(concept)
 
     _, records = load_book_dir(book_dir)
     defined: dict[str, str] = {}
@@ -107,7 +114,7 @@ def main(argv: list[str]) -> int:
         for attempt in range(max(args.attempts, 1)):
             if not outstanding:
                 break
-            batch_words = {w: concept_of[w] for w in outstanding}
+            batch_words = [(w, c) for w in outstanding for c in concept_of[w]]
             # A retry with nothing to show back is just the same ask again.
             # That happens when the teacher omitted words rather than
             # defining them badly, which the rejection list cannot express.
@@ -147,7 +154,7 @@ def main(argv: list[str]) -> int:
                     {
                         "id": f"dict.{args.level}.{word}",
                         "level": args.level,
-                        "concepts": [concept_of[word]],
+                        "concepts": list(concept_of[word]),
                         "claim_class": "formal",
                         "content": text,
                         "provenance": {"source_claim": f"lexicon:{word}"},
@@ -197,7 +204,8 @@ def main(argv: list[str]) -> int:
 
     closure = dictionary_closure(defined, seed, tokenise, resolve)
     print(
-        f"defined {len(defined)} of {len(concept_of)}"
+        f"defined {len(defined)} of {len(concept_of)} words"
+        f" across {len(senses)} senses"
         f" | grounded {len(closure.grounded)}"
         f" | undefined-but-used {len(closure.undefined)}"
         f" | cycles {len(closure.cycles)}",

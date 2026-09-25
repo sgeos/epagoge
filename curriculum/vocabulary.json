@@ -2603,6 +2603,11 @@
       "level": 1
     },
     {
+      "word": "kind",
+      "concept": "same_and_different",
+      "level": 1
+    },
+    {
       "word": "king",
       "concept": "someone_in_charge",
       "level": 1
@@ -2816,6 +2821,12 @@
     },
     {
       "word": "like",
+      "concept": "feeling",
+      "level": 1,
+      "pos": "verb"
+    },
+    {
+      "word": "like",
       "concept": "same_and_different",
       "level": 1,
       "pos": "verb",
@@ -3007,6 +3018,11 @@
     {
       "word": "me",
       "concept": "person",
+      "level": 1
+    },
+    {
+      "word": "mean",
+      "concept": "good_and_bad",
       "level": 1
     },
     {
@@ -4063,6 +4079,11 @@
     },
     {
       "word": "right",
+      "concept": "being_told",
+      "level": 1
+    },
+    {
+      "word": "right",
       "concept": "direction",
       "level": 1
     },
@@ -4298,13 +4319,26 @@
     },
     {
       "word": "set",
+      "concept": "activity",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "sets",
+        "setting"
+      ]
+    },
+    {
+      "word": "set",
       "concept": "correspondence",
       "level": 1
     },
     {
-      "word": "sets",
+      "word": "set",
       "concept": "grouping",
-      "level": 2
+      "level": 2,
+      "forms": [
+        "sets"
+      ]
     },
     {
       "word": "settles",
@@ -5717,6 +5751,14 @@
         "watched",
         "watches",
         "watching"
+      ]
+    },
+    {
+      "word": "watch",
+      "concept": "measuring",
+      "level": 1,
+      "forms": [
+        "watches"
       ]
     },
     {

@@ -27,6 +27,36 @@ Versioning.
 
 ## 2026-09-24
 
+### Changed. A word may carry several senses
+
+- **Operator correction.** A dictionary gives more than one definition and
+  a level-one preschool dictionary cannot avoid it. The model held one
+  concept per word, so admitting a word silently asserted it meant one
+  thing.
+- **The inflection check had already found it.** `set` is the noun under
+  `correspondence` and its plural `sets` is the noun under `grouping`,
+  while the verb demands `sets` as its third person. The verb marking was
+  withdrawn at the time and is now restored properly.
+- **Three rules.** A form shared by two senses of one word is ordinary,
+  since `sets` is both the plural and the third person. **A form shared by
+  two different words is still rejected**, because nothing could then
+  decide which concept the token carries. Admissibility asks whether **any**
+  sense is reachable.
+- **Only admitted senses are listed, and the absence of a sense is a
+  statement.** `ground` is also the past of `grind` and `swallow` is also a
+  bird. Neither is level-one material, so neither is listed. **A
+  completeness rule over senses would drag in exactly what the level
+  excludes.**
+- **Six senses added**, each a second sense of a word already admitted and
+  each missing in a way that mattered. `kind` as a kind of thing, which
+  **definitions need**. `right` as correct, which **the four moves need**.
+  Also the verb `set`, `like` as to enjoy, `mean` as unkind, and `watch`
+  as the thing that tells the time.
+- **The dictionary now writes one entry per sense.**
+  `prompt.definitions` took a mapping from word to concept, **which
+  silently dropped one of every pair**, and now takes a sequence of senses.
+- 392 tests. `926` entries over `920` distinct words.
+
 ### Added. Verb inflection as standard procedure, and a level-one thesaurus
 
 - **`part`, `ground` and `swallow` admitted**, closing the three judgement

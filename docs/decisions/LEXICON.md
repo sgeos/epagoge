@@ -152,6 +152,68 @@ one. **If it is not, the lexicon is not closable by addition** and the
 answer is a smaller defining subset rather than a larger lexicon, which is
 what a controlled defining vocabulary is.
 
+## One word, several senses, recorded 2026-09-25
+
+**Operator correction.** A dictionary gives more than one definition, and
+a level-one preschool dictionary cannot avoid it either. The model held
+**one concept per word**, so admitting a word silently asserted that it
+meant one thing.
+
+### The inflection check found it before the argument did
+
+Marking verbs exposed `set`, which is the noun under `correspondence` at
+level one and whose plural `sets` is the noun under `grouping` at level
+two, while the verb demands `sets` as its third person. **One word, two
+parts of speech, and the rule could not hold both.** The verb marking was
+withdrawn at the time. It has now been restored properly.
+
+### What changed
+
+A word may carry several senses, each with its own concept, level and part
+of speech. Three rules follow.
+
+- **A form shared by two senses of one word is ordinary.** `sets` is the
+  plural of the noun and the third person of the verb.
+- **A form shared by two different words is still rejected**, because
+  nothing can then decide which concept the token carries. `saw` as the
+  tool and `saw` as the past of `see` would be that case.
+- **Admissibility asks whether any sense is reachable.** A generator at a
+  level can use a form as soon as one of its senses is admitted, which is
+  why `lookup` returns the earliest and `senses` returns all of them.
+
+### Only admitted senses are listed, and that is the point
+
+**The absence of a sense is a statement.** `ground` is the earth and it is
+also the past of `grind`. `swallow` is an action and it is also a bird.
+Neither second sense is level-one material, so neither is listed, and the
+lexicon thereby says so.
+
+That is a better answer than a completeness rule would give, because
+**completeness over senses would drag in exactly the material the level
+excludes.** The operator's phrasing is the test worth keeping. Grinding
+swallows is probably not a level-one concept.
+
+### Six senses added
+
+Each is a second sense of a word already admitted, and each was missing in
+a way that mattered.
+
+| Word | Held | Added | Why it mattered |
+| --- | --- | --- | --- |
+| `set` | the noun | the verb, to put down | The case that forced this |
+| `kind` | being kind | a kind of thing | **Definitions need it**, as in a kind of container |
+| `right` | the direction | correct | **The four moves need it**, as in that is right because |
+| `like` | resembling | to enjoy | Ordinary preschool sense, absent |
+| `mean` | to signify | unkind | Ordinary preschool sense, absent |
+| `watch` | to look | the thing telling time | Ordinary preschool sense, absent |
+
+### The dictionary now writes one entry per sense
+
+`prompt.definitions` takes a sequence of senses rather than a mapping from
+word to concept, **which was silently dropping one of every pair**. The
+generator batches by sense and the prompt shows the concept beside each,
+so the teacher is asked for the sense rather than for the word.
+
 ## What is not claimed
 
 The lexicon has not been checked word by word against Ogden's 850. The

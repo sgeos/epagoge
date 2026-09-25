@@ -126,19 +126,36 @@ class Vocabulary:
 
     # The generic alias is the factory so that the element types are known.
     # A bare ``dict`` leaves them unknown under strict checking.
-    _by_form: dict[str, Term] = field(
-        default_factory=dict[str, Term], repr=False, compare=False
+    _by_form: dict[str, tuple[Term, ...]] = field(
+        default_factory=dict[str, tuple[Term, ...]], repr=False, compare=False
     )
+    """Form to every sense carrying it.
+
+    **A word has senses and a dictionary gives more than one definition.**
+    `set` is a noun and a verb, `swallow` is an action and a bird, and
+    `ground` is the earth and the past of grind. The model held one concept
+    per word, so admitting a word silently asserted that it meant one
+    thing, and the inflection check exposed this on 2026-09-25 by demanding
+    a verb form of a noun.
+
+    **Only admitted senses are listed.** A word's absent senses are absent
+    on purpose, which is how the lexicon says that the bird and the
+    grinding are not level-one material.
+    """
     _general_level: dict[str, int] = field(
         default_factory=dict[str, int], repr=False, compare=False
     )
 
     def __post_init__(self) -> None:
-        index: dict[str, Term] = {}
+        index: dict[str, list[Term]] = {}
         for term in self.terms:
             for form in term.surface_forms():
-                index[form] = term
-        object.__setattr__(self, "_by_form", index)
+                index.setdefault(form, []).append(term)
+        object.__setattr__(
+            self,
+            "_by_form",
+            {form: tuple(senses) for form, senses in index.items()},
+        )
         tiers: dict[str, int] = {}
         for level, words in self.general.items():
             for word in words:
@@ -160,24 +177,47 @@ class Vocabulary:
                         return found
         return None
 
+    def senses(self, token: str) -> tuple[Term, ...]:
+        """Every admitted sense carrying ``token``, exactly as written."""
+        return self._by_form.get(token, ())
+
+    def words(self) -> frozenset[str]:
+        """Distinct base words, which is smaller than the number of senses."""
+        return frozenset(term.word for term in self.terms)
+
+    @staticmethod
+    def _earliest(senses: tuple[Term, ...]) -> Term | None:
+        """The sense admitted soonest.
+
+        Admissibility asks whether a generator at a level can reach the
+        form, and it can as soon as any one of its senses is admitted.
+        """
+        return min(senses, key=lambda term: term.level) if senses else None
+
     def lookup(self, token: str) -> Term | None:
-        """Resolve a surface form to its term, trying crude suffix stripping."""
-        direct = self._by_form.get(token)
+        """Resolve a surface form, trying crude suffix stripping.
+
+        Returns the earliest-admitted sense. Callers wanting all of them,
+        such as a dictionary writing one entry per sense, use ``senses``.
+        """
+        direct = self._earliest(self._by_form.get(token, ()))
         if direct is not None:
             return direct
         for suffix in _SUFFIXES:
             if token.endswith(suffix) and len(token) > len(suffix) + 1:
                 stem = token[: -len(suffix)]
-                found = self._by_form.get(stem)
+                found = self._earliest(self._by_form.get(stem, ()))
                 if found is not None:
                     return found
-                if suffix in ("es", "ed", "ing") and self._by_form.get(stem + "e"):
-                    return self._by_form[stem + "e"]
+                if suffix in ("es", "ed", "ing"):
+                    with_e = self._earliest(self._by_form.get(stem + "e", ()))
+                    if with_e is not None:
+                        return with_e
                 # A doubled final consonant, as in stopped from stop. Narrow
                 # enough not to conflate distinct words, and it was failing
                 # on every regular past tense of a short verb.
                 if len(stem) > 2 and stem[-1] == stem[-2] and stem[-1] not in "aeiou":
-                    undoubled = self._by_form.get(stem[:-1])
+                    undoubled = self._earliest(self._by_form.get(stem[:-1], ()))
                     if undoubled is not None:
                         return undoubled
         return None
@@ -387,8 +427,17 @@ def _check_licensing(
     vocabulary: Vocabulary, known_concepts: Mapping[str, object]
 ) -> list[Violation]:
     out: list[Violation] = []
-    seen: set[str] = set()
+    seen: dict[str, str] = {}
+    pairs: set[tuple[str, str]] = set()
     for term in vocabulary.terms:
+        if (term.word, term.concept) in pairs:
+            out.append(
+                Violation(
+                    "duplicate-sense",
+                    f"{term.word!r} is listed twice under {term.concept!r}",
+                )
+            )
+        pairs.add((term.word, term.concept))
         if term.concept not in known_concepts:
             out.append(
                 Violation(
@@ -398,11 +447,19 @@ def _check_licensing(
                 )
             )
         for form in term.surface_forms():
-            if form in seen:
+            # **A form shared by two senses of one word is ordinary.** `sets`
+            # is the plural of the noun and the third person of the verb.
+            # A form shared by two DIFFERENT words is not, because nothing
+            # can then decide which concept the token carries.
+            clash = seen.get(form)
+            if clash is not None and clash != term.word:
                 out.append(
-                    Violation("duplicate-form", f"form {form!r} maps to two terms")
+                    Violation(
+                        "duplicate-form",
+                        f"form {form!r} belongs to {clash!r} and {term.word!r}",
+                    )
                 )
-            seen.add(form)
+            seen[form] = term.word
             if form in vocabulary.core:
                 out.append(
                     Violation(
@@ -543,8 +600,9 @@ def _check_inflections(vocabulary: Vocabulary) -> list[Violation]:
         if term.pos != "verb":
             continue
         for form in verb_forms(term.word):
-            found = vocabulary.lookup(form)
-            reachable = found is not None and found.level <= term.level
+            reachable = any(
+                sense.level <= term.level for sense in vocabulary.senses(form)
+            )
             if form in vocabulary.core or reachable:
                 continue
             out.append(

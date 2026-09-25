@@ -528,3 +528,85 @@ class TestVerbInflection(unittest.TestCase):
             )
             with self.assertRaises(ValueError):
                 load_vocabulary(path)
+
+
+class TestSenses(unittest.TestCase):
+    """A word has senses and a dictionary gives more than one definition.
+
+    `set` is a noun and a verb, `swallow` is an action and a bird, and
+    `ground` is the earth and the past of grind. The model held one concept
+    per word, so admitting a word silently asserted it meant one thing.
+    Only admitted senses are listed, which is how the lexicon says the bird
+    and the grinding are not level-one material.
+    """
+
+    def vocab(self, *terms: Term) -> Vocabulary:
+        return Vocabulary(core=frozenset({"the"}), terms=terms)
+
+    def test_two_senses_of_one_word_are_allowed(self) -> None:
+        v = self.vocab(
+            Term(word="set", concept="grouping", level=1),
+            Term(word="set", concept="activity", level=1, pos="verb"),
+        )
+        got = validate_vocabulary(v, [], {"grouping": 1, "activity": 1})
+        self.assertEqual([x.code for x in got if x.code == "duplicate-form"], [])
+
+    def test_a_form_shared_by_two_different_words_is_rejected(self) -> None:
+        """Nothing can decide which concept the token carries."""
+        v = self.vocab(
+            Term(word="saw", concept="tool", level=1),
+            Term(word="see", concept="knowing", level=1, forms=("saw",)),
+        )
+        got = validate_vocabulary(v, [], {"tool": 1, "knowing": 1})
+        self.assertIn("duplicate-form", [x.code for x in got])
+
+    def test_the_same_word_and_concept_twice_is_rejected(self) -> None:
+        v = self.vocab(
+            Term(word="set", concept="grouping", level=1),
+            Term(word="set", concept="grouping", level=2),
+        )
+        got = validate_vocabulary(v, [], {"grouping": 1})
+        self.assertIn("duplicate-sense", [x.code for x in got])
+
+    def test_senses_returns_every_sense(self) -> None:
+        v = self.vocab(
+            Term(word="set", concept="grouping", level=2),
+            Term(word="set", concept="activity", level=1),
+        )
+        self.assertEqual({t.concept for t in v.senses("set")}, {"grouping", "activity"})
+
+    def test_lookup_returns_the_earliest_admitted_sense(self) -> None:
+        v = self.vocab(
+            Term(word="set", concept="grouping", level=2),
+            Term(word="set", concept="activity", level=1),
+        )
+        found = v.lookup("set")
+        self.assertIsNotNone(found)
+        self.assertEqual(found.level, 1)  # type: ignore[union-attr]
+
+    def test_senses_of_an_absent_word_is_empty(self) -> None:
+        self.assertEqual(self.vocab().senses("nothing"), ())
+
+    def test_words_counts_bases_not_senses(self) -> None:
+        v = self.vocab(
+            Term(word="set", concept="grouping", level=1),
+            Term(word="set", concept="activity", level=1),
+        )
+        self.assertEqual(len(v.terms), 2)
+        self.assertEqual(v.words(), frozenset({"set"}))
+
+    def test_an_inflection_is_satisfied_by_any_sense(self) -> None:
+        """The verb needs `sets`; the noun sense supplying it is enough."""
+        v = self.vocab(
+            Term(word="set", concept="grouping", level=1, forms=("sets",)),
+            Term(
+                word="set", concept="activity", level=1, pos="verb", forms=("setting",)
+            ),
+        )
+        got = validate_vocabulary(v, [], {"grouping": 1, "activity": 1})
+        self.assertEqual([x.code for x in got if x.code == "missing-inflection"], [])
+
+    def test_the_shipped_lexicon_carries_multi_sense_words(self) -> None:
+        v = load_vocabulary(Path("curriculum/vocabulary.json"))
+        self.assertGreater(len(v.terms), len(v.words()))
+        self.assertGreaterEqual(len(v.senses("set")), 2)

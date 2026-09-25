@@ -36,7 +36,7 @@ rendered ORDER of this list, not just the next unused number.
 
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twelve**
    checks, and **exits 0**.
-2. The suite reports **382** tests.
+2. The suite reports **392** tests.
 3. `curriculum/graph/concepts.json` declares **11** domains and holds
    **117** nodes, with **1** domain still empty, **0** isolated concepts,
    **50** cross-domain prerequisites, **9** specialisation edges and **6**
@@ -48,9 +48,10 @@ rendered ORDER of this list, not just the next unused number.
    concepts and **51** planned. Level two covers the two ablation domains
    only and holds **8** units, having given `component_and_system` to
    level one so that `part` could be licensed by the concept it names.
-6. `curriculum/vocabulary.json` holds **920** terms, **809** at level one,
-   **173** core, **201** marked `pos: verb`, and a **33**-entry
-   substitution table.
+6. `curriculum/vocabulary.json` holds **926** entries over **920 distinct
+   words**, since a word may carry several senses. **809** words are at
+   level one, **173** core, **202** senses marked `pos: verb`, and there is
+   a **33**-entry substitution table.
 7. `curriculum/thesaurus.json` holds **101** antonym pairs over **194**
    words, every pair complete at level one.
 8. `curriculum/books/level_1/` holds **6** books. The dictionary reports

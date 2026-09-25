@@ -170,7 +170,7 @@ class TestDefinitionsRetry(unittest.TestCase):
     measured on the record generator and was simply absent here.
     """
 
-    WORDS = {"cup": "household_object", "water": "liquid"}
+    WORDS = [("cup", "household_object"), ("water", "liquid")]
 
     def prompt(self, rejected: list[str], offending: list[str]) -> str:
         return prompts.definitions_retry(
@@ -203,7 +203,15 @@ class TestDefinitionsRetry(unittest.TestCase):
 
     def test_an_empty_word_set_is_still_rejected_by_the_inner_prompt(self) -> None:
         with self.assertRaises(ValueError):
-            prompts.definitions_retry({}, 1, ["a"], ["bad"], ["nope"])
+            prompts.definitions_retry([], 1, ["a"], ["bad"], ["nope"])
+
+    def test_two_senses_of_one_word_each_get_a_line(self) -> None:
+        """A dictionary gives more than one definition."""
+        text = prompts.definitions(
+            [("set", "grouping"), ("set", "activity")], 1, ["a", "the"]
+        )
+        self.assertIn("set  (grouping)", text)
+        self.assertIn("set  (activity)", text)
 
 
 class TestSubstitutionsInPrompts(unittest.TestCase):
@@ -215,7 +223,7 @@ class TestSubstitutionsInPrompts(unittest.TestCase):
     avoid.
     """
 
-    WORDS = {"arm": "body_part"}
+    WORDS = [("arm", "body_part")]
     TABLE = {"part": "piece", "location": "place"}
 
     def test_the_replacement_is_shown_not_just_the_ban(self) -> None:

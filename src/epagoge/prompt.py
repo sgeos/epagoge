@@ -201,7 +201,7 @@ def retry(
 
 
 def definitions_retry(
-    words: Mapping[str, str],
+    words: Sequence[tuple[str, str]],
     level: int,
     admissible: Sequence[str],
     rejected: Sequence[str],
@@ -330,7 +330,7 @@ def reword(text: str, offending: Sequence[str], admissible: Sequence[str]) -> st
 
 
 def definitions(
-    words: Mapping[str, str],
+    words: Sequence[tuple[str, str]],
     level: int,
     admissible: Sequence[str],
     substitutions: Mapping[str, str] | None = None,
@@ -364,9 +364,11 @@ def definitions(
         "",
         "The words, with the idea each one names:",
     ]
+    # **One line per sense, not per word.** A word with two senses needs
+    # two entries, as any dictionary has, and collapsing them to a mapping
+    # silently dropped one.
     lines += [
-        f"  {word}  ({concept.replace('_', ' ')})"
-        for word, concept in sorted(words.items())
+        f"  {word}  ({concept.replace('_', ' ')})" for word, concept in sorted(words)
     ]
     lines += [
         "",
