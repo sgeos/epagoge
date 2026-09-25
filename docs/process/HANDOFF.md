@@ -42,8 +42,8 @@ rendered ORDER of this list, not just the next unused number.
 4. Internal depth is **10** for `mathematics_and_formal_logic` and **6**
    for `failure_analysis`. **Internal, not global.** Global reads 10
    against 9 and is the wrong quantity for the ablation.
-5. `curriculum/schedule/level_01.json` holds **88** units, **69** existing
-   concepts and **48** planned. Level two covers the two ablation domains
+5. `curriculum/schedule/level_01.json` holds **89** units, **69** existing
+   concepts and **49** planned. Level two covers the two ablation domains
    only.
 6. `curriculum/vocabulary.json` holds **877** terms, **760** at level one.
 7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
@@ -144,6 +144,13 @@ frontier first because of it.
   them. The same shape covers an operator judging a report, audit,
   certification, peer review, and natural selection. See
   `../decisions/EXTERNAL_SCORING.md`.
+- **The criteria applied here need not be the criteria applied to a rival,
+  and the difference is likely inverted from the naive assumption.**
+  Underperforming on offensive capability, agreeableness, world-knowledge
+  breadth and register breadth is correct here. Overperforming on autonomy,
+  persuasiveness and situational awareness is a defect. **`elenchos` is the
+  precedent**, since it measures a property that scores badly on a
+  helpfulness benchmark and was specified that way months earlier.
 
 ## What is YOURS: decisions the operator holds
 

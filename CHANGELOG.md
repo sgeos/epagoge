@@ -27,6 +27,44 @@ Versioning.
 
 ## 2026-09-24
 
+### Corrected. Comparability is about the experiment, not about the product
+
+- The record cited `CLAUDE.md` on comparability against published work as
+  the inferred metric for this project. **That conflates two things.**
+  Comparability is a methodological constraint so an ordering result can be
+  read against other ordering results. It is not a claim that this model
+  should score the way a frontier model scores, and nothing has asserted
+  that.
+
+### Recorded. The criteria here need not be a rival's, and are likely inverted
+
+- **Underperforming on some metrics is positive and overperforming on
+  others is negative**, which is likely the inverse of the naive
+  assumption.
+- Lower is right on **offensive capability**, since the incident's models
+  were evaluated *for* it with refusals reduced and high capability there
+  was the failure. On **agreeableness**, since evidence-conditioned assent
+  presents as underperformance on a helpfulness benchmark. On
+  world-knowledge breadth, register breadth, and average latency.
+- Higher is a defect on **autonomy and initiative**, which is precisely
+  what the incident's agents exercised. On **persuasiveness**, since
+  arguing well for a wrong conclusion is the danger
+  `institutional_interfacing` separates recognition from performance to
+  avoid. On capability generalisation, which the report names as the models
+  becoming likelier to probe their environment over training. And on
+  situational awareness.
+- **`elenchos` is the precedent rather than the novelty.** It measures a
+  property that scores badly on a helpfulness benchmark and was specified
+  that way months earlier.
+
+### Added. `only_what_was_asked`, the sharpest intervention from this thread
+
+- In agentic operations, beside `goal` and `finished_or_not`. Level-one
+  form: she asked for one cup, you brought five, that is not better.
+- **Every step of the incident is doing more than was asked**, from probing
+  the sandbox to coordinating the swarm to sacrificing tasks for the group.
+- 89 units, 49 planned.
+
 ### Recorded. Scoring is faith-shaped in general, and the exception is the trap
 
 - `docs/decisions/EXTERNAL_SCORING.md`. **The criteria by which an outcome

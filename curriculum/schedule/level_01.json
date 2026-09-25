@@ -535,6 +535,17 @@
             "others-act",
             "others-know-differently"
           ]
+        },
+        {
+          "id": "a1.only_asked",
+          "form": "She asked for one cup. You brought five. That is not better.",
+          "introduces": [
+            "only_what_was_asked"
+          ],
+          "primitives": [
+            "others-act",
+            "some-is-fewer-than-all"
+          ]
         }
       ]
     },

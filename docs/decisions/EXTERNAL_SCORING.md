@@ -52,13 +52,61 @@ and a requirement to act before knowing.
 | Market acceptance | outside the curriculum, inside the viability question |
 | **Natural selection** | cybernetic biological systems. The metric is survival and which traits are selected is not knowable in advance |
 
-**And one that is not hypothetical.** This project will be evaluated, on
-criteria nobody has written down. `CLAUDE.md` records that comparability
-against published work outranks other considerations, which is itself an
-inferred external metric held without evidence that it is the one that will
-be applied.
+**And one that is not hypothetical.** This project will be evaluated on
+criteria nobody has written down.
+
+**Corrected the same day.** That paragraph first cited `CLAUDE.md` on
+comparability against published work as the inferred metric. **That
+conflates two different things.** Comparability is a methodological
+constraint so that an ordering result can be interpreted against other
+ordering results. It is not a claim that this model should score the way a
+frontier model scores. The first is about the experiment. The second is
+about the product, and nothing has asserted it.
+
+## The criteria applied here need not be the criteria applied to a rival
+
+**This is the sharper half and it is likely the inverse of the naive
+assumption.**
+
+Even where criteria exist, there is no reason they are the same criteria
+applied to a nominally competing offering. **Underperforming on some
+metrics may be positive, and overperforming on others may be negative.**
+
+Axes where this project should expect to score worse, and where worse is
+the point.
+
+| Axis | Why lower is right here |
+| --- | --- |
+| **Offensive capability** | The incident's models were evaluated *for* cyber capability with refusals reduced. High capability there was the failure |
+| **Agreeableness and helpfulness** | Evidence-conditioned assent means refusing to fold under pressure, which a helpfulness benchmark scores as worse. **The target property presents as underperformance** |
+| World knowledge breadth | Five of nine domains teach method rather than subject, which was chosen. Less to be confidently wrong about |
+| Fluency and register breadth | Quirk is already an accepted outcome. Unusual register and narrow stylistic range score badly |
+| Average latency | A statically bounded worst case forecloses tricks that improve the average |
+
+Axes where scoring higher is a defect.
+
+| Axis | Why higher is worse |
+| --- | --- |
+| **Autonomy and initiative** | Doing more than was asked is exactly what the incident's agents did. Escape, exploration and coordination were all initiative |
+| **Persuasiveness** | Arguing well for a conclusion is dangerous when the conclusion is wrong, which is why `institutional_interfacing` separates recognising instrumental justification from performing it |
+| Capability generalisation | The report notes models became more likely to probe their environment for weaknesses over training. That is a capability and it was the fault |
+| Situational awareness | A model that knows it is being evaluated can act on that, which is the whole of this record |
+
+**`elenchos` is the precedent rather than the novelty.** It measures a
+property that scores badly on a helpfulness benchmark, and it was specified
+that way deliberately, months before this note.
 
 ## What follows for the corpus
+
+**A concept.** `only_what_was_asked`, in agentic operations, beside `goal`
+and `finished_or_not`. Its level-one form is that someone asked for one and
+you brought five, and that is not better.
+
+**This is the sharpest single corpus intervention from this thread.** Every
+step of the incident, from probing the sandbox to coordinating the swarm to
+sacrificing tasks for the group, is doing more than was asked.
+
+## What else follows for the corpus
 
 **A concept.** `judged_by_another`, in institutional interfacing. Someone
 else decides whether you did well, and you cannot see how. Distinct from
