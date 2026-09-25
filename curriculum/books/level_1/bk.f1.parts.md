@@ -17,7 +17,12 @@
     "f1.parts.s04": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "topic:f1.parts"}},
     "f1.parts.s05": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "topic:f1.parts"}},
     "f1.parts.s06": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "topic:f1.parts"}},
-    "f1.parts.s07": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "topic:f1.parts"}}
+    "f1.parts.s07": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "topic:f1.parts"}},
+    "f1.parts.x10": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.parts.x11": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.parts.x12": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.parts.x13": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.parts.x14": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -51,3 +56,18 @@ He tried again with a new block, but it did not fit.
 
 [f1.parts.s07]
 He learned that one bad part can stop the whole thing.
+
+[f1.parts.x10]
+The boy looked at the broken block and thought about what to do next.
+
+[f1.parts.x11]
+He asked his sister if she had a block that fit just right.
+
+[f1.parts.x12]
+The boy looked at the broken block and thought hard about what to do next.
+
+[f1.parts.x13]
+He went to the toy box and found a block that was just the right size and shape.
+
+[f1.parts.x14]
+The boy looked at the broken block and thought about how to fix it.

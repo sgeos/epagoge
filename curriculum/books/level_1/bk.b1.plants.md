@@ -15,7 +15,12 @@
     "b1.plants.s02": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-grow"}},
     "b1.plants.s03": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-grow"}},
     "b1.plants.s04": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-grow"}},
-    "b1.plants.s05": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-grow"}}
+    "b1.plants.s05": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-grow"}},
+    "b1.plants.x08": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "b1.plants.x09": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "b1.plants.x10": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "b1.plants.x11": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "b1.plants.x12": {"concepts": ["plant"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -43,3 +48,18 @@ A bird lands on the branch and sings a song about the day.
 
 [b1.plants.s05]
 The tree is alive, and it does not go away.
+
+[b1.plants.x08]
+A small child runs across the grass, laughing and holding a red balloon.
+
+[b1.plants.x09]
+The balloon floats higher, tied to a string the child cannot reach.
+
+[b1.plants.x10]
+The child stops and looks up, eyes wide with wonder.
+
+[b1.plants.x11]
+She looks up at the tree and smiles, her hands holding a small blue balloon.
+
+[b1.plants.x12]
+The bird flies away, but the tree stays still.

@@ -20,7 +20,10 @@
     "a1.self.s08": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.self.s09": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.self.s10": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
-    "a1.self.s11": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}}
+    "a1.self.s11": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.x13": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.self.x14": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.self.x15": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +66,12 @@ I let her have it, because I am kind.
 
 [a1.self.s11]
 I feel happy, and I know I did right.
+
+[a1.self.x13]
+She smiles at me, and I smile back.
+
+[a1.self.x14]
+We sit together, sharing the cup, warm and full.
+
+[a1.self.x15]
+The sun sets, and we go to bed, happy and calm.

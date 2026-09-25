@@ -15,7 +15,12 @@
     "r1.measure.s02": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "r1.measure.s03": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "r1.measure.s04": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
-    "r1.measure.s05": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}}
+    "r1.measure.s05": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
+    "r1.measure.x08": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "r1.measure.x09": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "r1.measure.x10": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "r1.measure.x11": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "r1.measure.x12": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -43,3 +48,18 @@ I measured both sticks with the string and saw that one was measured longer than
 
 [r1.measure.s05]
 I measured the sticks again and saw that the longer one was not just longer but also better for building.
+
+[r1.measure.x08]
+I held the longer bamboo stick and placed it next to the shorter one.
+
+[r1.measure.x09]
+The longer stick stood above the shorter one, pointing toward the sky.
+
+[r1.measure.x10]
+I held the longer bamboo stick and used it to reach the high branch.
+
+[r1.measure.x11]
+I used the stick to push the ball across the grass to my friend.
+
+[r1.measure.x12]
+I tied the stick to the rope so it could lift the heavy box.

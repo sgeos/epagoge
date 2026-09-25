@@ -18,7 +18,9 @@
     "i1.family.s04": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "i1.family.s05": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "i1.family.s06": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
-    "i1.family.s07": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}}
+    "i1.family.s07": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "i1.family.x11": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.family.x12": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -55,3 +57,9 @@ The child fell asleep. Her mother covered her with a blanket.
 
 [i1.family.s07]
 The family stayed together. They were safe and loved.
+
+[i1.family.x11]
+Her brother came in, holding a red balloon he had found outside.
+
+[i1.family.x12]
+Her brother laughed, holding a balloon that floated above the table.

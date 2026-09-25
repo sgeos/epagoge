@@ -16,7 +16,9 @@
     "i1.people.s03": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "i1.people.s04": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "i1.people.s05": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
-    "i1.people.s06": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}}
+    "i1.people.s06": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "i1.people.x09": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.people.x10": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -47,3 +49,9 @@ The water flows below, so they must be careful.
 
 [i1.people.s06]
 No one is afraid; they work together.
+
+[i1.people.x09]
+A bird flies above, watching them build.
+
+[i1.people.x10]
+The water below flows fast, but they stay calm and strong.

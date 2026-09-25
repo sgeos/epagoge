@@ -588,7 +588,10 @@
     {
       "word": "big",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "biggest"
+      ]
     },
     {
       "word": "bigger",
@@ -762,9 +765,22 @@
       ]
     },
     {
+      "word": "bridge",
+      "concept": "way_of_doing",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "bridges"
+      ]
+    },
+    {
       "word": "bright",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "brighter",
+        "brightest"
+      ]
     },
     {
       "word": "broad",
@@ -809,9 +825,11 @@
       "word": "bubble",
       "concept": "air",
       "level": 1,
-      "pos": "noun",
+      "pos": "noun verb",
       "forms": [
-        "bubbles"
+        "bubbled",
+        "bubbles",
+        "bubbling"
       ]
     },
     {
@@ -1127,6 +1145,8 @@
       "pos": "verb",
       "forms": [
         "cleaned",
+        "cleaner",
+        "cleanest",
         "cleaning",
         "cleans"
       ]
@@ -1150,6 +1170,7 @@
         "closed",
         "closer",
         "closes",
+        "closest",
         "closing"
       ]
     },
@@ -1180,7 +1201,11 @@
     {
       "word": "cold",
       "concept": "heat",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "colder",
+        "coldest"
+      ]
     },
     {
       "word": "colour",
@@ -1253,7 +1278,11 @@
     {
       "word": "cool",
       "concept": "heat",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "cooler",
+        "coolest"
+      ]
     },
     {
       "word": "copied",
@@ -1434,7 +1463,8 @@
       "level": 1,
       "forms": [
         "darkened",
-        "darker"
+        "darker",
+        "darkest"
       ]
     },
     {
@@ -1468,7 +1498,10 @@
     {
       "word": "deep",
       "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "deepest"
+      ]
     },
     {
       "word": "deeper",
@@ -1546,7 +1579,11 @@
     {
       "word": "dirty",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "dirtier",
+        "dirtiest"
+      ]
     },
     {
       "word": "disagree",
@@ -1694,14 +1731,20 @@
       "pos": "verb",
       "forms": [
         "dried",
+        "drier",
         "dries",
+        "driest",
         "drying"
       ]
     },
     {
       "word": "dull",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "duller",
+        "dullest"
+      ]
     },
     {
       "word": "dust",
@@ -1719,12 +1762,20 @@
     {
       "word": "early",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "earlier",
+        "earliest"
+      ]
     },
     {
       "word": "easy",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "easier",
+        "easiest"
+      ]
     },
     {
       "word": "eat",
@@ -1770,7 +1821,11 @@
     {
       "word": "empty",
       "concept": "emptiness",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "emptier",
+        "emptiest"
+      ]
     },
     {
       "word": "end",
@@ -1901,12 +1956,20 @@
     {
       "word": "far",
       "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "farrer",
+        "farrest"
+      ]
     },
     {
       "word": "fast",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "faster",
+        "fastest"
+      ]
     },
     {
       "word": "fat",
@@ -2047,7 +2110,11 @@
     {
       "word": "flat",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "flatter",
+        "flattest"
+      ]
     },
     {
       "word": "fleet",
@@ -2221,6 +2288,8 @@
       "level": 1,
       "pos": "noun",
       "forms": [
+        "fuller",
+        "fullest",
         "fulls"
       ]
     },
@@ -2450,12 +2519,20 @@
     {
       "word": "happy",
       "concept": "feeling",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "happier",
+        "happiest"
+      ]
     },
     {
       "word": "hard",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "harder",
+        "hardest"
+      ]
     },
     {
       "word": "harm",
@@ -2526,7 +2603,11 @@
     {
       "word": "heavy",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "heavier",
+        "heaviest"
+      ]
     },
     {
       "word": "help",
@@ -2571,7 +2652,8 @@
       "concept": "spatial_position",
       "level": 1,
       "forms": [
-        "higher"
+        "higher",
+        "highest"
       ]
     },
     {
@@ -2597,6 +2679,17 @@
       "word": "his",
       "concept": "person",
       "level": 1
+    },
+    {
+      "word": "hiss",
+      "concept": "sound",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "hissed",
+        "hisses",
+        "hissing"
+      ]
     },
     {
       "word": "hit",
@@ -2658,7 +2751,11 @@
     {
       "word": "hot",
       "concept": "danger",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "hotter",
+        "hottest"
+      ]
     },
     {
       "word": "hours",
@@ -2855,6 +2952,8 @@
       "level": 1,
       "pos": "noun",
       "forms": [
+        "kinder",
+        "kindest",
         "kinds"
       ]
     },
@@ -2871,6 +2970,15 @@
       "pos": "noun",
       "forms": [
         "kings"
+      ]
+    },
+    {
+      "word": "kitchen",
+      "concept": "household_object",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "kitchens"
       ]
     },
     {
@@ -2959,7 +3067,8 @@
       "concept": "duration",
       "level": 1,
       "forms": [
-        "later"
+        "later",
+        "latest"
       ]
     },
     {
@@ -3096,6 +3205,8 @@
       "level": 1,
       "pos": "noun",
       "forms": [
+        "lighter",
+        "lightest",
         "lights"
       ]
     },
@@ -3191,7 +3302,10 @@
     {
       "word": "long",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "longest"
+      ]
     },
     {
       "word": "longer",
@@ -3230,7 +3344,11 @@
     {
       "word": "loud",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "louder",
+        "loudest"
+      ]
     },
     {
       "word": "love",
@@ -3248,7 +3366,8 @@
       "concept": "spatial_position",
       "level": 1,
       "forms": [
-        "lower"
+        "lower",
+        "lowest"
       ]
     },
     {
@@ -3280,6 +3399,15 @@
       "word": "many",
       "concept": "more_and_fewer",
       "level": 1
+    },
+    {
+      "word": "map",
+      "concept": "standing_for",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "maps"
+      ]
     },
     {
       "word": "mark",
@@ -3585,7 +3713,11 @@
     {
       "word": "narrow",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "narrower",
+        "narrowest"
+      ]
     },
     {
       "word": "nasty",
@@ -3600,7 +3732,11 @@
     {
       "word": "near",
       "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "nearer",
+        "nearest"
+      ]
     },
     {
       "word": "need",
@@ -3621,7 +3757,11 @@
     {
       "word": "new",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "newer",
+        "newest"
+      ]
     },
     {
       "word": "next",
@@ -3631,7 +3771,11 @@
     {
       "word": "nice",
       "concept": "good_and_bad",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "nicer",
+        "nicest"
+      ]
     },
     {
       "word": "night",
@@ -3722,7 +3866,11 @@
     {
       "word": "old",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "older",
+        "oldest"
+      ]
     },
     {
       "word": "one",
@@ -4067,7 +4215,11 @@
     {
       "word": "poor",
       "concept": "having",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "poorer",
+        "poorest"
+      ]
     },
     {
       "word": "popper's",
@@ -4228,7 +4380,11 @@
     {
       "word": "quick",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "quicker",
+        "quickest"
+      ]
     },
     {
       "word": "quickly",
@@ -4241,6 +4397,7 @@
       "level": 1,
       "forms": [
         "quieter",
+        "quietest",
         "quietly"
       ]
     },
@@ -4437,7 +4594,11 @@
     {
       "word": "rich",
       "concept": "having",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "richer",
+        "richest"
+      ]
     },
     {
       "word": "right",
@@ -4536,12 +4697,20 @@
     {
       "word": "rough",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "rougher",
+        "roughest"
+      ]
     },
     {
       "word": "round",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "rounder",
+        "roundest"
+      ]
     },
     {
       "word": "rub",
@@ -4619,7 +4788,11 @@
     {
       "word": "sad",
       "concept": "feeling",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "sadder",
+        "saddest"
+      ]
     },
     {
       "word": "safe",
@@ -4769,7 +4942,11 @@
     {
       "word": "shallow",
       "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "shallower",
+        "shallowest"
+      ]
     },
     {
       "word": "shape",
@@ -4800,7 +4977,11 @@
     {
       "word": "sharp",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "sharper",
+        "sharpest"
+      ]
     },
     {
       "word": "shelf",
@@ -4839,7 +5020,10 @@
     {
       "word": "short",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "shortest"
+      ]
     },
     {
       "word": "shortage",
@@ -5050,7 +5234,11 @@
     {
       "word": "slow",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "slower",
+        "slowest"
+      ]
     },
     {
       "word": "slowly",
@@ -5060,7 +5248,10 @@
     {
       "word": "small",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "smallest"
+      ]
     },
     {
       "word": "smaller",
@@ -5108,7 +5299,11 @@
     {
       "word": "smooth",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "smoother",
+        "smoothest"
+      ]
     },
     {
       "word": "snap",
@@ -5119,6 +5314,17 @@
         "snapped",
         "snapping",
         "snaps"
+      ]
+    },
+    {
+      "word": "sniff",
+      "concept": "body_part",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "sniffed",
+        "sniffing",
+        "sniffs"
       ]
     },
     {
@@ -5134,7 +5340,11 @@
     {
       "word": "soft",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "softer",
+        "softest"
+      ]
     },
     {
       "word": "someone",
@@ -5344,7 +5554,13 @@
     {
       "word": "steam",
       "concept": "heat",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "steamed",
+        "steaming",
+        "steams"
+      ]
     },
     {
       "word": "steel",
@@ -5423,7 +5639,11 @@
     {
       "word": "straight",
       "concept": "shape",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "straighter",
+        "straightest"
+      ]
     },
     {
       "word": "stranger",
@@ -5471,7 +5691,11 @@
     {
       "word": "strong",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "stronger",
+        "strongest"
+      ]
     },
     {
       "word": "structure",
@@ -5628,7 +5852,10 @@
     {
       "word": "tall",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "tallest"
+      ]
     },
     {
       "word": "taller",
@@ -5741,7 +5968,11 @@
     {
       "word": "thick",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "thicker",
+        "thickest"
+      ]
     },
     {
       "word": "thief",
@@ -5756,7 +5987,11 @@
     {
       "word": "thin",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "thinner",
+        "thinnest"
+      ]
     },
     {
       "word": "thing",
@@ -5847,8 +6082,10 @@
       "word": "tip",
       "concept": "falling",
       "level": 1,
-      "pos": "noun",
+      "pos": "noun verb",
       "forms": [
+        "tipped",
+        "tipping",
         "tips"
       ]
     },
@@ -6231,7 +6468,11 @@
     {
       "word": "warm",
       "concept": "heat",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "warmer",
+        "warmest"
+      ]
     },
     {
       "word": "wash",
@@ -6281,7 +6522,11 @@
     {
       "word": "weak",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "weaker",
+        "weakest"
+      ]
     },
     {
       "word": "wear",
@@ -6333,7 +6578,11 @@
     {
       "word": "wet",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "wetter",
+        "wettest"
+      ]
     },
     {
       "word": "wheel",
@@ -6366,7 +6615,11 @@
     {
       "word": "wide",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "wider",
+        "widest"
+      ]
     },
     {
       "word": "win",
@@ -6523,7 +6776,11 @@
     {
       "word": "young",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "younger",
+        "youngest"
+      ]
     },
     {
       "word": "yours",

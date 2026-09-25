@@ -22,7 +22,8 @@
     "p1.stands_for.s05": {"concepts": ["toy"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "p1.stands_for.s06": {"concepts": ["toy"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "p1.stands_for.s07": {"concepts": ["toy"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
-    "p1.stands_for.s30": {"concepts": ["toy"], "claim_class": "empirical", "provenance": {"source_claim": "topic:p1.stands_for"}}
+    "p1.stands_for.s30": {"concepts": ["toy"], "claim_class": "empirical", "provenance": {"source_claim": "topic:p1.stands_for"}},
+    "p1.stands_for.x15": {"concepts": ["toy"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ The block car lost its place in the game, but Carlo still liked it.
 
 [p1.stands_for.s30]
 Carlo played a game where the block car moved through the garden.
+
+[p1.stands_for.x15]
+The block car rolled over a stick, then stopped near a flower.

@@ -19,7 +19,8 @@
     "r1.cycle.s02": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "r1.cycle.s03": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "r1.cycle.s04": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
-    "r1.cycle.s52": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.cycle"}}
+    "r1.cycle.s52": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.cycle"}},
+    "r1.cycle.x12": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -59,3 +60,6 @@ The day and night followed each other, always the same.
 
 [r1.cycle.s52]
 Night fell after evening, and stars appeared above.
+
+[r1.cycle.x12]
+Day came again, bright and warm, with birds singing in the trees.

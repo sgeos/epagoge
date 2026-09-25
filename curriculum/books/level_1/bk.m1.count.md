@@ -19,7 +19,11 @@
     "m1.count.s04": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-can-be-counted"}},
     "m1.count.s05": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-can-be-counted"}},
     "m1.count.s06": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-can-be-counted"}},
-    "m1.count.s07": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-can-be-counted"}}
+    "m1.count.s07": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-can-be-counted"}},
+    "m1.count.x12": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "m1.count.x13": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "m1.count.x14": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "m1.count.x15": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -59,3 +63,15 @@ The door is closed, but the key can unlock it and let someone in.
 
 [m1.count.s07]
 The story ends with a number, and the last word is zero, showing nothing remains.
+
+[m1.count.x12]
+He turned the wooden block over and saw a number painted on its side, eight.
+
+[m1.count.x13]
+The boy found a small red ball and rolled it across the grass.
+
+[m1.count.x14]
+He counted each step as he walked back to the house, one, two, three, four.
+
+[m1.count.x15]
+The door opened, and inside, the clock showed it was time to go to bed.

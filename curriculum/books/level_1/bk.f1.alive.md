@@ -18,7 +18,11 @@
     "f1.alive.s01": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-die"}},
     "f1.alive.s02": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-die"}},
     "f1.alive.s03": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-die"}},
-    "f1.alive.s04": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-die"}}
+    "f1.alive.s04": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-die"}},
+    "f1.alive.x11": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.alive.x12": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.alive.x13": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.alive.x14": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -55,3 +59,15 @@ It was dead, and death had come.
 
 [f1.alive.s04]
 It did not die again, and it would not become alive.
+
+[f1.alive.x11]
+The child walked across the grass to the old tree where the bird had once sung.
+
+[f1.alive.x12]
+No one answered when the child called out, and the wind carried no sound.
+
+[f1.alive.x13]
+The child sat by the tree and placed a small stone on the ground, as if it were a gift.
+
+[f1.alive.x14]
+The stone stayed there, quiet and still, just like the bird that would never fly again.

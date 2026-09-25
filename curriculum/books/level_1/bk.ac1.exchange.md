@@ -19,7 +19,11 @@
     "ac1.exchange.s06": {"concepts": ["exchange"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "ac1.exchange.s07": {"concepts": ["exchange"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "ac1.exchange.s08": {"concepts": ["exchange"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
-    "ac1.exchange.s09": {"concepts": ["exchange"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}}
+    "ac1.exchange.s09": {"concepts": ["exchange"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
+    "ac1.exchange.x12": {"concepts": ["exchange"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "ac1.exchange.x13": {"concepts": ["exchange"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "ac1.exchange.x14": {"concepts": ["exchange"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "ac1.exchange.x15": {"concepts": ["exchange"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -59,3 +63,15 @@ Now she has the shell and keeps it safe.
 
 [ac1.exchange.s09]
 The cup is gone, but she remembers the trade.
+
+[ac1.exchange.x12]
+She placed the cup on the shelf where the sun could shine on it.
+
+[ac1.exchange.x13]
+Every morning she looked at it and smiled, remembering the trade.
+
+[ac1.exchange.x14]
+She placed the cup on the shelf where it could be seen.
+
+[ac1.exchange.x15]
+The next morning, she found the shell back in her hand, warm and bright.

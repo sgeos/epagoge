@@ -16,7 +16,11 @@
     "c1.name.s03": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "c1.name.s04": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "c1.name.s05": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
-    "c1.name.s06": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}}
+    "c1.name.s06": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
+    "c1.name.x09": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.name.x10": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.name.x11": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.name.x12": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -47,3 +51,15 @@ He closed the book and kept it on the shelf, knowing the thing had a name, but t
 
 [c1.name.s06]
 The story was true, and he remembered it always.
+
+[c1.name.x09]
+The book had a picture of a star on the cover, bright and sharp.
+
+[c1.name.x10]
+He opened it and saw a mark that looked like a circle with a line above it.
+
+[c1.name.x11]
+He carried the book home, wondering what it could mean.
+
+[c1.name.x12]
+He found a small stone shaped like the mark and carried it in his pocket.

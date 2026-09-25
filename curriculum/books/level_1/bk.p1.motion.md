@@ -16,7 +16,12 @@
     "p1.motion.d42": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hit"}, "defines": {"kind": "word", "target": "hit"}},
     "p1.motion.d43": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:catch"}, "defines": {"kind": "word", "target": "catch"}},
     "p1.motion.d44": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hit"}, "defines": {"kind": "word", "target": "hit"}},
-    "p1.motion.s01": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}}
+    "p1.motion.s01": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
+    "p1.motion.x09": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.motion.x10": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.motion.x11": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.motion.x12": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.motion.x13": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -47,3 +52,18 @@ Hit something hard.
 
 [p1.motion.s01]
 It sits still on the ground.
+
+[p1.motion.x09]
+You push it and it moves across the dirt.
+
+[p1.motion.x10]
+A strong push or pull makes the cart roll forward.
+
+[p1.motion.x11]
+You pull the rope and the cart moves again.
+
+[p1.motion.x12]
+You catch them before they hit the ground.
+
+[p1.motion.x13]
+You push it and it moves across the grass.

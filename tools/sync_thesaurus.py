@@ -33,11 +33,16 @@ def main(argv: list[str]) -> int:
     payload = cast(dict[str, object], json.loads(path.read_text(encoding="utf-8")))
     entries = cast(list[dict[str, object]], payload["senses"])
 
-    senses = {
+    # **Add for this level, remove only what the lexicon no longer holds
+    # at any level.** Keyed on the level for both, syncing at level one
+    # deleted every level-two entry, because a level-two sense is not a
+    # level-one sense and looked stale.
+    wanted = {
         (term.word, term.concept)
         for term in vocabulary.terms
         if term.level <= args.level
     }
+    senses = {(term.word, term.concept) for term in vocabulary.terms}
     core = set(vocabulary.core)
 
     kept: list[dict[str, object]] = []
@@ -56,15 +61,14 @@ def main(argv: list[str]) -> int:
             removed.append(f"{word} under {concept}")
 
     covered = {(str(e["word"]), str(e["concept"])) for e in kept}
-    added = [s for s in sorted(senses) if s not in covered]
+    added = [s for s in sorted(wanted) if s not in covered]
     for word, concept in added:
         kept.append({"word": word, "concept": concept})
 
     # A relation may name a word that is no longer admissible at this level.
     admissible = set(core) | set(vocabulary.exempt)
     for term in vocabulary.terms:
-        if term.level <= args.level:
-            admissible.update(term.surface_forms())
+        admissible.update(term.surface_forms())
     stale = 0
     for entry in kept:
         for field in ("antonyms", "synonyms"):

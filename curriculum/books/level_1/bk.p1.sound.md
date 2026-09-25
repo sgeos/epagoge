@@ -20,7 +20,10 @@
     "p1.sound.s06": {"concepts": ["sound"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.sound.s07": {"concepts": ["sound"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.sound.s08": {"concepts": ["sound"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "p1.sound.s09": {"concepts": ["sound"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.sound.s09": {"concepts": ["sound"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.sound.x13": {"concepts": ["sound"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.sound.x14": {"concepts": ["sound"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.sound.x15": {"concepts": ["sound"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +66,12 @@ He said he was asleep and did not hear anything.
 
 [p1.sound.s09]
 I knew the cup had fallen and the noise was gone.
+
+[p1.sound.x13]
+I placed the cup back on the table, careful to sit it near the edge.
+
+[p1.sound.x14]
+I looked out the window and saw a bird fly across the sky, as if it knew the noise too.
+
+[p1.sound.x15]
+I held the warm cup and wondered if it had fallen on its own.

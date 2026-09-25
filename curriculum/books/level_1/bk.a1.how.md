@@ -20,7 +20,10 @@
     "a1.how.s05": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
     "a1.how.s06": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
     "a1.how.s07": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
-    "a1.how.s08": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}}
+    "a1.how.s08": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
+    "a1.how.x13": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.how.x14": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.how.x15": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +66,12 @@ This time, you move slowly, step by step, and the box stays safe.
 
 [a1.how.s08]
 You feel glad and know you did the job right.
+
+[a1.how.x13]
+You carry the box across the yard, step by step, careful not to drop it.
+
+[a1.how.x14]
+The sun shines bright above, and you feel strong, able to finish the task.
+
+[a1.how.x15]
+You place the stick beside the box, ready to carry it across the yard.

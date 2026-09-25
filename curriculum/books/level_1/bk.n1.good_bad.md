@@ -20,7 +20,10 @@
     "n1.good_bad.s05": {"concepts": ["good_and_bad"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:some-things-harm"}},
     "n1.good_bad.s06": {"concepts": ["good_and_bad"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:some-things-harm"}},
     "n1.good_bad.s07": {"concepts": ["good_and_bad"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:some-things-harm"}},
-    "n1.good_bad.s08": {"concepts": ["good_and_bad"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:some-things-harm"}}
+    "n1.good_bad.s08": {"concepts": ["good_and_bad"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:some-things-harm"}},
+    "n1.good_bad.x13": {"concepts": ["good_and_bad"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "n1.good_bad.x14": {"concepts": ["good_and_bad"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "n1.good_bad.x15": {"concepts": ["good_and_bad"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +66,12 @@ A good idea is to wear warm clothes.
 
 [n1.good_bad.s08]
 You must be careful and stay safe from harm.
+
+[n1.good_bad.x13]
+Warm water helps you feel better after being cold.
+
+[n1.good_bad.x14]
+The blanket keeps you safe and warm when the night is long.
+
+[n1.good_bad.x15]
+You can stay safe by listening to your parents and staying away from danger.

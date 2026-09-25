@@ -21,7 +21,9 @@
     "a1.can.s04": {"concepts": ["can_and_cannot"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.can.s05": {"concepts": ["can_and_cannot"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.can.s06": {"concepts": ["can_and_cannot"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
-    "a1.can.s07": {"concepts": ["can_and_cannot"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}}
+    "a1.can.s07": {"concepts": ["can_and_cannot"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.can.x14": {"concepts": ["can_and_cannot"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.can.x15": {"concepts": ["can_and_cannot"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ It is possible to move the chair instead.
 
 [a1.can.s07]
 She finds a way to get help and moves the table.
+
+[a1.can.x14]
+She uses a rope to pull the table closer.
+
+[a1.can.x15]
+The table moves just enough for her to reach the cup.

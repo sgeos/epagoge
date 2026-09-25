@@ -22,7 +22,8 @@
     "r1.written.s08": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "r1.written.s09": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "r1.written.s42": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.written"}},
-    "r1.written.s43": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.written"}}
+    "r1.written.s43": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.written"}},
+    "r1.written.x15": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ He used a tally to count how many times his dog made noise.
 
 [r1.written.s43]
 He counted how many times he laughed that day.
+
+[r1.written.x15]
+He found the box under the bed and opened it to see the marks, the list, and the note all still there.

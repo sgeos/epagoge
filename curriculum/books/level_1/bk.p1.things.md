@@ -23,9 +23,7 @@
     "p1.things.s05": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}},
     "p1.things.s06": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}},
     "p1.things.s07": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}},
-    "p1.things.s08": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}},
-    "p1.things.s09": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}},
-    "p1.things.s10": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}}
+    "p1.things.s08": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}}
   }
 }
 ---
@@ -77,9 +75,3 @@ The cup was not broken.
 
 [p1.things.s08]
 The cup was not filled.
-
-[p1.things.s09]
-The cup was not moved.
-
-[p1.things.s10]
-The cup was still the same cup.

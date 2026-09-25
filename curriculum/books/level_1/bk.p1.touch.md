@@ -17,7 +17,9 @@
     "p1.touch.s05": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
     "p1.touch.s06": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
     "p1.touch.s07": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
-    "p1.touch.s08": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}}
+    "p1.touch.s08": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
+    "p1.touch.x10": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.touch.x11": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -51,3 +53,9 @@ The cup falls, but no one catches it.
 
 [p1.touch.s08]
 It lands on the floor, quiet and still, like a stone.
+
+[p1.touch.x10]
+The child watches, wondering if the cup can ever be whole again.
+
+[p1.touch.x11]
+Later, the child draws a picture of the cup, smiling, and places it on the wall.

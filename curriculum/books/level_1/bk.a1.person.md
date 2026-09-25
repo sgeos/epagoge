@@ -22,7 +22,8 @@
     "a1.person.s06": {"concepts": ["person", "activity", "need"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.person.s07": {"concepts": ["person", "activity", "need"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.person.s08": {"concepts": ["person", "activity", "need"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
-    "a1.person.x14": {"concepts": ["person", "activity", "need"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "a1.person.x14": {"concepts": ["person", "activity", "need"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.person.x15": {"concepts": ["person", "activity", "need"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ He gives the food to his baby sister.
 
 [a1.person.x14]
 The boy walks to the garden again to plant more seeds.
+
+[a1.person.x15]
+He watches the sun move across the sky, feeling the warm light on his face.

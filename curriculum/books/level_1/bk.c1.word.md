@@ -18,7 +18,12 @@
     "c1.word.s04": {"concepts": ["word", "letter"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "c1.word.s05": {"concepts": ["word", "letter"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "c1.word.s06": {"concepts": ["word", "letter"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
-    "c1.word.s07": {"concepts": ["word", "letter"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}}
+    "c1.word.s07": {"concepts": ["word", "letter"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
+    "c1.word.x11": {"concepts": ["word", "letter"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.word.x12": {"concepts": ["word", "letter"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.word.x13": {"concepts": ["word", "letter"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.word.x14": {"concepts": ["word", "letter"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.word.x15": {"concepts": ["word", "letter"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -55,3 +60,18 @@ The child knew the word and could use it again.
 
 [c1.word.s07]
 The word was a name for a thing that moves through the air.
+
+[c1.word.x11]
+The child opened the book again and found a new word about something that flies.
+
+[c1.word.x12]
+The child placed the book back on the shelf, smiling, knowing the word was alive.
+
+[c1.word.x13]
+The child opened the book again and found a new word about something that swims.
+
+[c1.word.x14]
+The word made the child think of a fish moving through the water.
+
+[c1.word.x15]
+The child opened the book again and saw the word written in bright blue letters.

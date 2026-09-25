@@ -18,7 +18,9 @@
     "c1.sentence.s05": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "c1.sentence.s06": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "c1.sentence.s07": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
-    "c1.sentence.s08": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}}
+    "c1.sentence.s08": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
+    "c1.sentence.x11": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.sentence.x12": {"concepts": ["sentence"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -55,3 +57,9 @@ The boat floated in the water.
 
 [c1.sentence.s08]
 Her brother came and helped her move it.
+
+[c1.sentence.x11]
+They both sat down to rest and talk about what to build next.
+
+[c1.sentence.x12]
+The brother laughed and said he could help her build a bigger one.

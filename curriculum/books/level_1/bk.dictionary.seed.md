@@ -503,7 +503,12 @@
     "dict.1.yard": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yard"}, "defines": {"kind": "word", "target": "yard"}},
     "dict.1.shine": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shine"}, "defines": {"kind": "word", "target": "shine"}},
     "dict.1.promise": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:promise"}, "defines": {"kind": "word", "target": "promise"}},
-    "dict.1.sit": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sit"}, "defines": {"kind": "word", "target": "sit"}}
+    "dict.1.sit": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sit"}, "defines": {"kind": "word", "target": "sit"}},
+    "dict.1.bridge": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bridge"}, "defines": {"kind": "word", "target": "bridge"}},
+    "dict.1.sniff": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sniff"}, "defines": {"kind": "word", "target": "sniff"}},
+    "dict.1.map": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:map"}, "defines": {"kind": "word", "target": "map"}},
+    "dict.1.kitchen": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:kitchen"}, "defines": {"kind": "word", "target": "kitchen"}},
+    "dict.1.hiss": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hiss"}, "defines": {"kind": "word", "target": "hiss"}}
   }
 }
 ---
@@ -1995,3 +2000,18 @@ A promise is when you tell someone you will do a thing, and then you do it.
 
 [dict.1.sit]
 To sit is to rest your body on a thing.
+
+[dict.1.bridge]
+A bridge is a way made over water so you can go across.
+
+[dict.1.sniff]
+To sniff is to take air in through your nose to smell a thing.
+
+[dict.1.map]
+A map is a picture that shows where places are.
+
+[dict.1.kitchen]
+A kitchen is the room where food is made.
+
+[dict.1.hiss]
+A hiss is the long soft sound air makes when it goes out of a small hole.

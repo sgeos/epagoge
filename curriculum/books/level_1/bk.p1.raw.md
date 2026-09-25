@@ -17,7 +17,13 @@
     "p1.raw.s04": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.raw.s05": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.raw.s06": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "p1.raw.s07": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.raw.s07": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.raw.x10": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.raw.x11": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.raw.x12": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.raw.x13": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.raw.x14": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.raw.x15": {"concepts": ["raw_and_made"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -51,3 +57,21 @@ The man used his hands to shape the wood, careful and slow.
 
 [p1.raw.s07]
 The chair was finished and stood in the house, ready to use.
+
+[p1.raw.x10]
+The chair sat in the corner, warm and quiet.
+
+[p1.raw.x11]
+A child sat on the chair and smiled at the sun outside.
+
+[p1.raw.x12]
+The wood felt smooth under small fingers, safe and strong.
+
+[p1.raw.x13]
+One day, the chair helped a tired bird rest after flying far.
+
+[p1.raw.x14]
+The chair stayed in the house, a friend to all who came.
+
+[p1.raw.x15]
+The chair sat in the corner, waiting for someone to sit on it.

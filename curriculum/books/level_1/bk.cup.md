@@ -20,7 +20,10 @@
     "bk.cup.s03": {"concepts": ["emptiness", "more_and_fewer", "liquid"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:some-is-fewer-than-all"}},
     "bk.cup.s04": {"concepts": ["emptiness", "liquid", "change"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "bk.cup.s05": {"concepts": ["liquid", "household_object", "activity"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
-    "bk.cup.s06": {"concepts": ["liquid", "household_object", "emptiness"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:quantity-survives-rearrangement"}}
+    "bk.cup.s06": {"concepts": ["liquid", "household_object", "emptiness"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:quantity-survives-rearrangement"}},
+    "cup.x13": {"concepts": ["change", "household_object"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "cup.x14": {"concepts": ["change", "household_object"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "cup.x15": {"concepts": ["change", "household_object"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +66,12 @@ Put soap in the water. Wash the cup with it.
 
 [bk.cup.s06]
 The soap water goes out into the sink. The cup is empty again.
+
+[cup.x13]
+The cup sits on the table, clean and dry.
+
+[cup.x14]
+The cup is empty, but it is ready to hold something again.
+
+[cup.x15]
+The cup sits on the shelf, clean and dry.

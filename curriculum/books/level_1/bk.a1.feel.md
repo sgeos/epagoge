@@ -20,7 +20,10 @@
     "a1.feel.s07": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.feel.s08": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.feel.x11": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "a1.feel.x12": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "a1.feel.x12": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.feel.x13": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.feel.x14": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.feel.x15": {"concepts": ["feeling"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +66,12 @@ He wakes up to the sound of birds outside his window.
 
 [a1.feel.x12]
 He wakes up to the sound of birds singing outside his window.
+
+[a1.feel.x13]
+The toy sits quietly on the shelf, waiting for him to play again.
+
+[a1.feel.x14]
+He smiles, reaches out, and picks it up, feeling glad and alive.
+
+[a1.feel.x15]
+He holds it close, feeling safe and warm in the morning light.

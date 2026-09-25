@@ -14,7 +14,16 @@
     "c1.stands_for.d03": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meaning"}, "defines": {"kind": "word", "target": "meaning"}},
     "c1.stands_for.d04": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:represent"}, "defines": {"kind": "word", "target": "represent"}},
     "c1.stands_for.d05": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sign"}, "defines": {"kind": "word", "target": "sign"}},
-    "c1.stands_for.s01": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}}
+    "c1.stands_for.s01": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
+    "c1.stands_for.x07": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.stands_for.x08": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.stands_for.x09": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.stands_for.x10": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.stands_for.x11": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.stands_for.x12": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.stands_for.x13": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.stands_for.x14": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.stands_for.x15": {"concepts": ["standing_for"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -39,3 +48,30 @@ Sign is a mark that shows something else.
 
 [c1.stands_for.s01]
 A child drew a circle on paper and said it shows the cup.
+
+[c1.stands_for.x07]
+The child held the circle up to the light and said it was the cup.
+
+[c1.stands_for.x08]
+The cup sat on the table, warm and full of milk.
+
+[c1.stands_for.x09]
+The circle looked different from the cup, but the child believed it was the same.
+
+[c1.stands_for.x10]
+The teacher asked if the circle could be something else, and the child said yes.
+
+[c1.stands_for.x11]
+The child laughed and said the bird was trying to drink from the cup.
+
+[c1.stands_for.x12]
+The circle stayed still, but the bird flew away into the blue sky.
+
+[c1.stands_for.x13]
+The child drew another circle and said it was the moon.
+
+[c1.stands_for.x14]
+The child held the circle up to the light, and it looked like the cup.
+
+[c1.stands_for.x15]
+The circle on the paper began to float, rising above the table.

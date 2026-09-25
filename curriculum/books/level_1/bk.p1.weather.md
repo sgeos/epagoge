@@ -13,7 +13,13 @@
     "p1.weather.d02": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:star"}, "defines": {"kind": "word", "target": "star"}},
     "p1.weather.d03": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:storm"}, "defines": {"kind": "word", "target": "storm"}},
     "p1.weather.d04": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sunny"}, "defines": {"kind": "word", "target": "sunny"}},
-    "p1.weather.s01": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.weather.s01": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.weather.x06": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.weather.x07": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.weather.x08": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.weather.x09": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.weather.x10": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.weather.x11": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -35,3 +41,21 @@ A sunny day has bright light from the sun and no clouds.
 
 [p1.weather.s01]
 The sky was sunny before.
+
+[p1.weather.x06]
+Clouds grow dark above the hill.
+
+[p1.weather.x07]
+The wind begins to blow through the trees.
+
+[p1.weather.x08]
+A little girl runs inside, closing the door behind her.
+
+[p1.weather.x09]
+The clouds grow dark above the green hill.
+
+[p1.weather.x10]
+She opens the door and steps inside, shaking wet drops.
+
+[p1.weather.x11]
+The clouds grew dark and low above the trees.

@@ -14,7 +14,12 @@
     "i1.opinion.d03": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:view"}, "defines": {"kind": "word", "target": "view"}},
     "i1.opinion.s01": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-know-differently"}},
     "i1.opinion.s02": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-know-differently"}},
-    "i1.opinion.s03": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-know-differently"}}
+    "i1.opinion.s03": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-know-differently"}},
+    "i1.opinion.x07": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.opinion.x08": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.opinion.x09": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.opinion.x10": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.opinion.x11": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -39,3 +44,18 @@ He holds the balloon string, trusting it will not break.
 
 [i1.opinion.s03]
 She does not know his view, and he does not know hers.
+
+[i1.opinion.x07]
+She turns away, her arms crossed, thinking the red balloon would be better.
+
+[i1.opinion.x08]
+He tries to run after it, but his feet sink into the soft grass.
+
+[i1.opinion.x09]
+She reaches out, not to take it, but to touch the air where it once was.
+
+[i1.opinion.x10]
+He lets go of the blue balloon, watching it rise above the trees.
+
+[i1.opinion.x11]
+She looks up, her eyes wide with wonder, not knowing what to say.

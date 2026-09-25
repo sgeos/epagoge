@@ -20,7 +20,8 @@
     "ac1.having.s04": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "ac1.having.s05": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "ac1.having.s06": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
-    "ac1.having.s07": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}}
+    "ac1.having.s07": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
+    "ac1.having.x13": {"concepts": ["having"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +64,6 @@ I will not steal hers because that would be wrong and I want to be honest.
 
 [ac1.having.s07]
 My sister says I am clever because I found two cups and know which is mine.
+
+[ac1.having.x13]
+I showed my sister the cup I made, and she smiled because it was bright and strong.

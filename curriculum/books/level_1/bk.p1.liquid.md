@@ -14,7 +14,16 @@
     "p1.liquid.d03": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bubble"}, "defines": {"kind": "word", "target": "bubble"}},
     "p1.liquid.d04": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drank"}, "defines": {"kind": "word", "target": "drank"}},
     "p1.liquid.d05": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drip"}, "defines": {"kind": "word", "target": "drip"}},
-    "p1.liquid.s01": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.liquid.s01": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.liquid.x07": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.liquid.x08": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.liquid.x09": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.liquid.x10": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.liquid.x11": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.liquid.x12": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.liquid.x13": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.liquid.x14": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.liquid.x15": {"concepts": ["liquid", "air"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -39,3 +48,30 @@ Drip is a small drop of liquid falling slowly.
 
 [p1.liquid.s01]
 The cup was empty, full of air.
+
+[p1.liquid.x07]
+The bubble floated above the cup.
+
+[p1.liquid.x08]
+The cup sat on the table, still empty.
+
+[p1.liquid.x09]
+A boy picked up the cup and held it close.
+
+[p1.liquid.x10]
+He blew into the cup, and air rushed out again.
+
+[p1.liquid.x11]
+The cup felt warm in his hands.
+
+[p1.liquid.x12]
+The bubble floated above the cup, bright and round.
+
+[p1.liquid.x13]
+The cup tipped, and the water dripped onto the floor.
+
+[p1.liquid.x14]
+The boy picked up the cup and carried it to the sink.
+
+[p1.liquid.x15]
+The cup still held air, waiting to be filled again.

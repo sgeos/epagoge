@@ -379,6 +379,10 @@
       "concept": "living_and_not_living"
     },
     {
+      "word": "bridge",
+      "concept": "way_of_doing"
+    },
+    {
       "word": "bright",
       "concept": "physical_property",
       "antonyms": [
@@ -1552,6 +1556,10 @@
       "concept": "person"
     },
     {
+      "word": "hiss",
+      "concept": "sound"
+    },
+    {
       "word": "hit",
       "concept": "force"
     },
@@ -1722,6 +1730,10 @@
       "antonyms": [
         "queen"
       ]
+    },
+    {
+      "word": "kitchen",
+      "concept": "household_object"
     },
     {
       "word": "knew",
@@ -2007,6 +2019,10 @@
       "synonyms": [
         "much"
       ]
+    },
+    {
+      "word": "map",
+      "concept": "standing_for"
     },
     {
       "word": "mark",
@@ -3200,6 +3216,10 @@
     {
       "word": "snap",
       "concept": "things_break"
+    },
+    {
+      "word": "sniff",
+      "concept": "body_part"
     },
     {
       "word": "snow",

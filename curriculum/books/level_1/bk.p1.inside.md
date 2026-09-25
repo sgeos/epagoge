@@ -19,7 +19,10 @@
     "p1.inside.s05": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}},
     "p1.inside.s06": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}},
     "p1.inside.s07": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}},
-    "p1.inside.s08": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}}
+    "p1.inside.s08": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}},
+    "p1.inside.x12": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.inside.x13": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.inside.x14": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -59,3 +62,12 @@ The water dripped from the cup, which was not closed.
 
 [p1.inside.s08]
 The cup is empty, and the water is gone, not inside, not outside, but lost.
+
+[p1.inside.x12]
+The water is gone, but the cup remains on the floor.
+
+[p1.inside.x13]
+The cup is picked up, placed on a shelf, safe and dry.
+
+[p1.inside.x14]
+The water is gone, but the cup still lies on the floor.

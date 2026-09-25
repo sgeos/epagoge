@@ -20,7 +20,8 @@
     "c1.know.s05": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}},
     "c1.know.s06": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}},
     "c1.know.s07": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}},
-    "c1.know.s08": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}}
+    "c1.know.s08": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}},
+    "c1.know.x13": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +64,6 @@ I felt sure I was right, so I spoke up, and others agreed.
 
 [c1.know.s08]
 I did not cheat, I did not lie, I did not hide, so I felt good, and stayed alive.
+
+[c1.know.x13]
+I placed the key in the lock, turned it once, and stepped into a room filled with light, where everyone was waiting to hear my story.

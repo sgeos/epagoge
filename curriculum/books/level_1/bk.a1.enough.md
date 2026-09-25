@@ -22,7 +22,8 @@
     "a1.enough.s07": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:living-things-need-supply"}},
     "a1.enough.x12": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "a1.enough.x13": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "a1.enough.x14": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "a1.enough.x14": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "a1.enough.x15": {"concepts": ["enough"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ The child reached into the pocket and pulled out a small seed, thinking of how i
 
 [a1.enough.x14]
 The child carried the empty cup back to the house to fill it again.
+
+[a1.enough.x15]
+The child sat on the warm ground, watching the plant as if waiting for a sign.

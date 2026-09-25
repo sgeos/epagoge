@@ -17,7 +17,11 @@
     "f1.cause.s04": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:cause-precedes-effect"}},
     "f1.cause.s05": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:cause-precedes-effect"}},
     "f1.cause.s06": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:cause-precedes-effect"}},
-    "f1.cause.s07": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:cause-precedes-effect"}}
+    "f1.cause.s07": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:cause-precedes-effect"}},
+    "f1.cause.x10": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.cause.x11": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.cause.x12": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.cause.x13": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -51,3 +55,15 @@ The ball rolled up the hill and then down, fast and loud.
 
 [f1.cause.s07]
 It stopped near the house, and I picked it up, glad it was safe.
+
+[f1.cause.x10]
+I carried the ball back to the path, careful not to drop it again.
+
+[f1.cause.x11]
+I looked around, wondering if anyone else had seen it roll so far.
+
+[f1.cause.x12]
+I carried it home, careful not to drop it on the path.
+
+[f1.cause.x13]
+I placed it on the shelf, where it stayed safe and still.

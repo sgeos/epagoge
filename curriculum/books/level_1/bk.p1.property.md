@@ -23,10 +23,7 @@
     "p1.property.s06": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "p1.property.s07": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "p1.property.s08": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
-    "p1.property.s09": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
-    "p1.property.s10": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
-    "p1.property.s51": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "topic:p1.property"}},
-    "p1.property.s52": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "topic:p1.property"}}
+    "p1.property.s09": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}}
   }
 }
 ---
@@ -78,12 +75,3 @@ The red ball is not clean.
 
 [p1.property.s09]
 The red ball is small and bright.
-
-[p1.property.s10]
-The blue ball is big and bright.
-
-[p1.property.s51]
-The ball rolled into the clean basket.
-
-[p1.property.s52]
-The sun was high and turned the sky blue.
