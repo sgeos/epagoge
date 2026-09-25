@@ -1,56 +1,53 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-24, describing `main` at `f7f01ad`.** Session 1 took this
-project from nothing to a validated specification and tooling layer, and
-then restructured the domain set from seven names to eleven. No corpus is
-generated and no model is trained. Read this block, run the validity check,
-then stop and wait for the human prompt.
+**Refreshed 2026-09-24, describing `main` at `dd1a919`.** Session 1 took
+this project from nothing to a closed toolchain, a generated corpus of six
+books, and a measurement of how far the lexicon is from defining itself.
+No model is trained. Read this block, run the validity check, then stop and
+wait for the human prompt.
 
 ---
 
 ## Validity
 
-**Branch**: `main`. No other branches, no remote.
+**Branch**: `main`. No other branches. **A remote exists**,
+`github.com/sgeos/epagoge`, empty and **private**, with no local `origin`
+and nothing pushed.
 
 **Before writing anything tracked, read the disclosure discipline
-`CLAUDE.md` points to.** Hard constraint. It holds the banned vocabulary and
-the scan that enforces it. A tracked document naming the deployment domain
-is a defect regardless of how true it is. **`CLAUDE.md` is deliberately the
-one tracked place that names it**, so this file points there rather than
-naming it twice.
+`CLAUDE.md` points to.** Hard constraint. `CLAUDE.md` is deliberately the
+one tracked place that names it, so do not name it a second time anywhere.
 
 **Validate by ANCESTRY and by CONTENT, never by a hash match.** A check
 requiring `HEAD` to equal a recorded commit claims nothing else ever lands.
 
-**Ancestry**: `main` should contain **`f7f01ad`**, the last commit before
-this refresh. If it does not, this file predates a reset and is stale.
+**Never pipe the gate into anything before testing its result.**
+`./tools/check.sh | tail && git commit` takes the exit status of `tail`.
+That happened once and a commit landed red. Run it bare, or redirect and
+read `$?`.
+
+**Ancestry**: `main` should contain **`dd1a919`**. If it does not, this
+file predates a reset and is stale.
 
 **Content** — cheap, independent, each verified on 2026-09-24. Check the
 rendered ORDER of this list, not just the next unused number.
 
-1. `./tools/check.sh` reports **ALL CHECKS PASSED** across ten checks.
-   Anything red means a statement below needs re-reading before it is
-   believed.
-2. The suite reports **257** tests.
-3. `curriculum/graph/concepts.json` **declares 11 domains** and holds **78**
-   nodes, of which **4 domains hold no concept at all** and are awaiting
-   content by design. It yields **4** derived transfer edges. A domain
-   named `everyday`, `physical_world`, or `communication` means this file
-   predates the 2026-09-24 restructure and is stale.
-4. `tools/validate_graph.py` reports **0** isolated concepts and **26**
-   cross-domain prerequisites. It also reports **1** specialisation edge and
-   **2** inert formal structures, and **those two remain known defects, not
-   targets**. A `foundation feeds` line means this file predates the
-   2026-09-24 metric replacement and is stale.
-5. Internal depth is **10** for `mathematics_and_formal_logic` and **6** for
-   `failure_analysis`. **Internal, not global.** Global depth now reads 10
-   against 9 and is the wrong quantity for the ablation contrast.
-6. Vocabulary completeness is **100 percent**, 142 terms, **0** unmapped,
-   over **28** sample corpus records.
-7. `curriculum/schedule/` holds **level one across all eleven domains** and
-   **level two across the two ablation domains only**. Level one schedules
-   30 existing concepts and 18 planned. **31 graph concepts remain
-   unscheduled**, which the validator prints.
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **eleven**
+   checks, and **exits 0**.
+2. The suite reports **321** tests.
+3. `curriculum/graph/concepts.json` declares **11** domains and holds
+   **117** nodes, with **1** domain still empty, **0** isolated concepts,
+   **50** cross-domain prerequisites, **9** specialisation edges and **6**
+   transfer edges.
+4. Internal depth is **10** for `mathematics_and_formal_logic` and **6**
+   for `failure_analysis`. **Internal, not global.** Global reads 10
+   against 9 and is the wrong quantity for the ablation.
+5. `curriculum/schedule/level_01.json` holds **83** units, **69** existing
+   concepts and **43** planned. Level two covers the two ablation domains
+   only.
+6. `curriculum/vocabulary.json` holds **877** terms, **760** at level one.
+7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
+   **49 of 760** words defined, of which **1** is grounded.
 8. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
    commit.
 
@@ -58,203 +55,152 @@ rendered ORDER of this list, not just the next unused number.
 
 1. Run the validity check and report the handoff valid, or
    invalid-and-stale, on its outcome.
-2. Read `docs/decisions/OPEN_QUESTIONS.md`. Nineteen answered, four
-   deferred, two open. Several answers carry corrections that must not be
-   re-reverted.
-3. Read `evals/PRE_REGISTRATION.md`. **Incomplete by design**, and must be
-   complete before the first ablation run.
-4. **Wait for the human prompt.** Do not begin corpus generation — see what
+2. Read `docs/decisions/CORPUS_SCALE.md`. It has the only numbers that say
+   how large this actually is.
+3. Read `evals/PRE_REGISTRATION.md`, **three amendments deep** and still
+   incomplete by design.
+4. **Wait for the human prompt.** Do not start bulk generation — see what
    is not yours, below.
 
 ## The state
 
-**Green and clean.** Thirty-one commits, nothing uncommitted. Seven
-documents in `secret/`, none tracked. Sixteen decision records, seven
-specifications, three architecture documents, 199 tests.
+**Green and clean.** Sixty-one commits, nothing uncommitted. Eight
+documents in `secret/`, none tracked, and **no path under it has ever been
+added in any commit**. Twenty-two decision records, 321 tests.
 
-**There is now a remote.** `github.com/sgeos/epagoge`, created empty and
-**private**, with no local `origin` configured and nothing pushed. The
-intended end state is public with everything sensitive quarantined in the
-gitignored `secret/`. **An audit must pass before the first push**, and it
-has not been run. See the disclosure section below.
+**What exists.** A concept graph of 117 nodes across 11 domains, declared
+rather than inferred. A curriculum schedule for levels one and two. A
+prescriptive lexicon of 877 terms. Six books, one of them a dictionary. A
+derived training stream, per ordering. A generator that writes books,
+reworks what it rejects, and quarantines what it cannot fix. A teacher
+model pulled and verified.
 
-**What exists.** A concept graph with prerequisite, instantiation, and
-specialisation edges and two reach metrics. A record schema with twelve
-enforced rules across four record types. A six-class claim taxonomy. A
-primitive register of 34 hand-authored axioms. A per-level vocabulary, fully
-mapped. A variance-pilot harness, run. A review tool that is also the
-sampled audit. A teacher model pulled and verified.
-
-**What does not exist.** Any generated corpus and any trained model. The
-28-record sample corpus exercises every feature and is not curriculum.
-
-**The curriculum schedule exists for levels one and two only.** Level one
-is complete across all eleven domains. Level two covers the two ablation
-domains and is partial by design. Levels three to seven are unwritten.
+**What does not exist.** Any trained model. Any corpus at volume. **Level
+one is 1.5 percent written at one book per topic, and that is the wrong
+shape anyway** — the budget wants 12 to 600 books per topic.
 
 ### The live defect
 
-**The specialisation layer holds one edge in the whole graph.**
-`anchor_reach` was built to measure that layer and returns zero for
-seventy-seven of seventy-eight nodes. That is a property of the layer, not
-of the concepts, and **a metric reading zero everywhere is
-indistinguishable from one that is not running**. Left alone deliberately,
-because forcing specialisations onto a thin layer would assert relations
-the content does not support. It fills when content exists.
+**The lexicon does not yet define itself.** Forty-nine words carry a
+definition and **one of them is grounded**. Forty-eight rest on something
+that does not bottom out, and forty-seven words are used in definitions and
+never defined.
 
-Two of six formal structures are also inert, instantiated once each, so
-neither yields a transfer edge. `error_detecting_code` is the one a
-`cybernetic_biological_systems` concept would instantiate, so it is a
-prediction rather than a defect.
+**This is the self-hosting problem and level one is the hard one.** Level
+two builds on a closed lexicon. Level one has only the function words under
+it, and those name nothing.
 
-**Resolved 2026-09-24.** Isolation and cross-domain disconnection are
-fixed. Twenty-six cross-domain prerequisites drawn, zero isolated
-concepts. `../decisions/GRAPH_CONNECTIVITY.md` carries what it cost.
+**The frontier grows before it shrinks.** Eight batches took definitions
+from 27 to 49 and the frontier from 38 to 47, because defining a word
+introduces the words its definition used. That is the shape of the problem,
+not a fault in the approach, and `generate_dictionary.py` works the
+frontier first because of it.
 
-### Findings that outlive the session
+## Findings that outlive the session
 
-- **The variance pilot measured a pairing gain of 20.7x seeds, free.**
-  Twelve paired seeds beat 246 unpaired. **Its numbers do NOT carry over**,
-  because the optimiser and schedule have since changed to Muon with
-  warmup-stable-decay.
-- **The pilot's first run trained 23 epochs**, where ordering effects
-  necessarily wash out, inflating the correlation from 0.954 to 0.987. Both
-  results are kept because the difference is the finding.
-- **An unexplained systematic difference appeared between two orderings that
-  should be equivalent**, sign following the ordering and not the execution
-  position, marginal at about p = 0.04. It is the shape of a false positive
-  and the ablation carries a null arm because of it.
+- **A rule written against records fires on everything not yet written.**
+  Four rules needed the same fix: the vocabulary lower bound, vocabulary
+  coverage, relation coverage, and prerequisite coverage. **A schedule
+  states where a concept is taught. Records show where it has been taught
+  so far.**
+- **Excluding a concept's dependents from a generation prompt starves it.**
+  A general concept is taught through its instances and its instances are
+  its dependents. `material`, `change` and `sound` produced nothing at all
+  while carrying five or six exclusions. Prerequisites and siblings are
+  excluded. Dependents are not.
+- **A constraint stated in a prompt is a suggestion until something checks
+  it.** A word list produced zero admissible records of twelve. The same
+  list with rejections fed back, naming the offending words, produced ten
+  of ten.
+- **The runtime rewrites each line as it wraps.** Partial word,
+  cursor-back, erase, newline, then the word again. Three attempts to
+  handle it. Stripping the escapes left fragments that counted as
+  vocabulary violations; replaying the delete left the newline, which cost
+  every wrapped sentence its full stop. A wide terminal does not help.
+- **The variance pilot measured a 20.7x pairing gain, and its numbers do
+  NOT carry over.** The optimiser changed to Muon with warmup-stable-decay,
+  and separately **the ablation now orders books rather than records**,
+  which the pilot could not have tested.
 - **The teacher conflates adjacent concepts unless the prompt excludes
-  them.** Prompts must carry the concept's nearest graph neighbours as
-  explicit exclusions; the graph already holds them.
-- **Maximal update parametrization is confound removal, not optimisation.**
-  Without it the three scale points carry different optimal hyperparameters,
-  so scale-dependence could be a tuning artifact — which lands on this
-  project's own proposed mechanism.
+  them**, and the graph already holds the neighbours.
 
 ## What is YOURS: decisions the operator holds
 
-1. **The level-one lexicon.** `curriculum/vocabulary.json` is a
-   **descriptive** artifact, derived to describe the words the sample
-   corpus happens to use, and it is now being used **prescriptively** as
-   the ceiling a generator must write inside. At level one that is 156
-   function words and 64 content words, which is why 84 of 100 drafts were
-   rejected. Author a real lexicon, teach fewer concepts at level one, or
-   accept surface repetition and deduplicate at the concept level. Nothing
-   generates at volume until this is chosen.
-2. **Levels three to seven of the schedule**, and the decision that gates
-   them. Level one allocates budget by what must be grounded, which is
-   public and true. **Level three onward needs subject weighting, which is
-   profile-derived and lives in the coverage manifest**, so scheduling it
+1. **Whether the lexicon is closable at all, and what to do where it is
+   not.** The lexicon is not frozen, so a word the teacher needs is
+   evidence rather than an error. But a word that cannot be defined in the
+   rest is a different problem and none has been found yet because so
+   little is defined.
+2. **Levels three to seven of the schedule.** Level one allocates budget by
+   what must be grounded, which is public and true. **Level three onward
+   needs subject weighting, which is profile-derived**, so scheduling it
    into a tracked artifact is a disclosure decision and not only a design
-   one. Levels one and two did not need it and deliberately do not use it.
-2. **Populating the specialisation layer**, which holds one edge. The
-   defect above is a content problem, not an edge-drawing problem.
-3. **Populating the four empty domains.**
-   `history_and_philosophy_of_science`, `institutional_interfacing`,
-   `cybernetic_biological_systems`, and `normative_adjudication` are
-   declared and hold nothing. The graph follows content, so they fill when
-   records teach them and not before.
-4. **Whether multi-head latent attention is admissible.** A low-rank
+   one.
+3. **Whether the arms stay distinguishable when books are the unit.** The
+   orderable set is smaller by orders of magnitude than the record-level
+   set the seed count was estimated against. **This is the sharpest open
+   risk to the design** and it follows from a decision that is otherwise
+   clearly right.
+4. **Whether a definition needs its own claim class.** It is not formal by
+   proof, not empirical, not an attributed position, not a conditional
+   result, not normative. Definitions are stipulative and currently use
+   `formal` with a `lexicon:` source, which is the nearest fit and not a
+   good one.
+5. **Whether a declared-faith claim needs a class.** `unsupported` is a
+   rejection class, always rejected. Adding a home for declared faith is
+   also a route past the validator for a claim that simply lacks support.
+6. **Whether multi-head latent attention is admissible.** A low-rank
    projection, which `JACOBIAN_SPACE.md` bans in the base model. Measure it
    against the effective-rank floor; do not adopt it on efficiency.
-5. **Five manifest topics still have no home.** Game theory, economics,
+7. **Five manifest topics still have no home.** Game theory, economics,
    modelling and simulation, and policy and governance. Game theory is
    mathematics, and mathematics is frozen until the ablation runs.
 
 ## What is NOT yours, and why it stays unstarted
 
-**Corpus generation at volume.** **Blocked on the level-one lexicon**, not
-on tooling. `generators/generate.py` runs end to end and its first measured
-run accepted **16 of 100**. The cause is recorded in `generators/README.md`
-and is a design decision, not a defect.
+**Bulk generation.** Not blocked on tooling. It is hours of wall time and
+the reading step after it is the operator's, per the recorded sequence: a
+hundred records generated, validated, **and read**, before anything scales.
 
 **The ablation.** Blocked on the pre-registration, itself blocked on
-re-measuring variance under the intended optimiser.
+re-measuring variance **under book-level ordering**, which no pilot has
+done.
 
-**Re-running the variance pilot.** Cheap and unblocked, but useless until
-the trainer uses Muon and warmup-stable-decay, which the pilot harness does
-not.
-
-## The ablation, after the connectivity work
-
-**`hazard_rate` is excluded from the ablation corpus and not from the
-graph.** A hazard rate is a rate, so the edge to `rate_of_change` is true
-and is drawn. It is the **only** failure analysis concept whose closure
-reaches mathematics, and through it twelve mathematics concepts would
-enter the failure analysis arm.
-
-**The distinction, which must not be lost.** The graph records what is
-true. The pre-registration declares what the experiment covers. Excluding a
-concept from an experiment and saying so is ordinary. Omitting a true edge
-from the graph to protect an experiment is not, and was rejected
-explicitly.
-
-**Any new cross-domain edge into failure analysis must be checked for
-whether its closure reaches mathematics**, and the arms recomputed. Cheap
-check, silent failure, which is the combination that gets skipped.
-
-Amendment 2 in `../../evals/PRE_REGISTRATION.md` carries the arms and the
-measured numbers.
+**Publishing.** The repository is private and audited clean. **Finding A is
+accepted, not softened**, and that acceptance is scoped to a *quiet* public
+repository. Discovery probability scales with attention, not content, so a
+launch post reopens the decision without a file changing.
 
 ## Disclosure, before any push
 
-**Finding A of the internal pre-commit audit is ACCEPTED, not softened.** Two
-independent conjunctions, the hardware constraints and now the eleven
-domain names, both point at the same deployment family. That was weighed
-and allowed. The threat model is **unintentionally timed disclosure rather
-than disclosure**, so reading between the lines is acceptable and lay
-readers should see nothing.
+**Audited 2026-09-24 and clean.** All 61 commit messages and all blobs in
+history scanned against the pattern, no hit. No `secret/` path ever added.
 
-**The acceptance is scoped to a quiet public repository.** Discovery
-probability scales with attention, not with content. Any launch post,
-paper, or deliberate promotion re-opens the decision without a file
-changing. Re-read finding A before drawing attention to this work.
-
-**Two gaps in the gate, both currently clean and neither enforced.** The
-disclosure scan reads `git ls-files`, so it never sees an untracked file.
-**Stage first, then gate**, or a new document passes by not being read.
-The scan also never reads commit messages or history at all, and history
-is what a push publishes. Both were scanned by hand on 2026-09-24 over all
-commit messages and all 197 blobs and both were clean. The pre-push audit
-must cover history, not the working tree.
+**Two rules were being enforced by nothing** until that audit, and both
+were violated. A tracked document may not cite a file under `secret/` by
+name, and the euphemism the discipline bans survived in the changelog.
+Both are checked now, and both checks were verified by making them fail.
 
 ## Governing rules that are easy to lose
 
-- **Run `./tools/check.sh` before any commit.** The static analysis sat
-  configured and unexecuted through the initial commit; on first run it
-  failed thirty-six ways.
-- **Never pipe the gate into anything before testing its result.**
-  `./tools/check.sh | tail -2 && git commit` takes the exit status of
-  `tail`, which always succeeds, so the commit runs whatever the gate said.
-  That happened once on 2026-09-24 and a commit landed on a red gate. Run
-  it bare, or redirect to a file and read `$?`.
+- **Run `./tools/check.sh` before any commit, bare, and read its exit
+  code.**
 - **A scan returning unexpected volume is presumed broken until its pattern
   is inspected.** An unanchored alternation matched `ore` inside `before`
-  and produced output indistinguishable from a clean result, one minute
-  after the same failure was recorded as a finding.
-- **The vocabulary design was corrected three times, each by running the
-  validator rather than by reasoning.** A concept can be taught before its
-  name is introduced, so a word's level is authored and the graph bounds it
-  from below only.
-- **A metric can hide the thing it appears to measure.** A low anchor-reach
-  score may mean a concept is not worth teaching or that the graph is
-  incomplete. "No cross-domain prerequisites" read as cleanliness and meant
-  disconnection. Prefer a metric that can report a zero as a defect.
+  one minute after the same failure was recorded as a finding.
+- **Read the output, not only the counts.** The worst defects in every
+  measured batch — a one-word fragment that passed every check, one
+  sentence written for two concepts, two stories stitched into one — were
+  invisible to every metric.
+- **Verify a new check by making it fail.** Watching one pass proves
+  nothing.
 - **Corrections are kept in place, not deleted.** Several records carry a
-  withdrawn claim beside its replacement. Removing one corrupts the record
-  of why the replacement is right.
-- **Never train toward being selected** by other models, and never let quirk
-  absorb a negative result. Both are recorded with reasoning.
-- **A constraint stated in a prompt is a suggestion until something checks
-  it.** A word list produced zero admissible records of twelve. The same
-  list, with rejections fed back naming the offending words, produced ten
-  of ten.
-- **Read the output, not only the counts.** The two worst defects in the
-  first real batch were a one-word fragment that passed every check and one
-  sentence written for two different concepts. No metric reported either.
-- Irreversible or outward-facing actions need confirmation. Nothing is
-  published; publication needs explicit in-session authorisation.
+  withdrawn claim beside its replacement.
+- **Prefer a metric that can report a zero as a defect.** "No cross-domain
+  prerequisites" read as cleanliness and meant disconnection.
+- **Never train toward being selected** by other models, and never let
+  quirk absorb a negative result.
+- Irreversible or outward-facing actions need confirmation.
 
 ---
 
@@ -262,6 +208,25 @@ must cover history, not the working tree.
 
 History records what was true at an increment. It is not stale, and
 rewriting it corrupts the record. New sessions append; they do not edit.
+
+### Session 1 continued, 2026-09-24, `9ab5190` to `dd1a919`
+
+The previous live block described `f7f01ad` and went stale in almost every
+number. It is not reproduced, because what it recorded as the live defect —
+foundation domains feeding nothing — was resolved, and its content checks
+named seven domains where there are now eleven. `CHANGELOG.md` carries the
+sequence in full.
+
+What changed in shape rather than in count. Domains went from seven to
+eleven and are now declared rather than inferred. A curriculum schedule
+exists, and it is where a concept gets its level. The lexicon became
+prescriptive and grew from 64 level-one content words to 760. Books became
+the unit of the corpus, then the unit of the ablation's ordering. The
+corpus split into three artifacts for three readers.
+
+Three external character standards were cross-referenced and one prediction
+was tested and held. Four scope reviews of the project's own domains found
+two that were missing the thing they are named for.
 
 ### Superseded live block, written 2026-09-24 at `71b01ff`
 
