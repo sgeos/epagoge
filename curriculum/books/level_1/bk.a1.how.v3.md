@@ -59,25 +59,25 @@ A tool is something you use to help, like a stick or a hand, to move or fix thin
 A trick is a clever way to do something.
 
 [a1.how.v3.s01]
-The boy found a box on the ground.
+The boy found a box on the ground. He touched it gently, feeling the smooth wood. The box was small, yet heavy, like it held something alive. He looked around, but no one was near. He wanted to open it, but feared what might come out. The air felt thick, like a blanket over his face.
 
 [a1.how.v3.s02]
-He remembered the stick from the garden and used it as a tool.
+He remembered the stick from the garden and used it as a tool. The stick was not enough; he needed something stronger. No one was near, not even a bird in the sky. He thought of his dad, but dad was far away. He took a breath, then pushed the stick forward again.
 
 [a1.how.v3.s03]
-He had been ready to try, and now the job was done.
+He had been ready to try, and now the job was done. He opened the box with his hands. The air inside was still and warm. He saw a small ball, round and bright. It looked like an apple but was not. He reached in and pulled it out. The box was empty, yet full of meaning.
 
 [a1.how.v3.s04]
-He looked at the ball and thought of the trick he had just used.
+He looked at the ball and thought of the trick he had just used. It was not an apple, but it felt alive. He could not explain it, yet he believed it. The ball was round, bright, and full of hidden meaning. He turned it over in his hands, feeling its smooth surface.
 
 [a1.how.v3.s05]
-The stick had helped him, not by force, but by clever manner.
+The stick had helped him, not by force, but by clever manner. He felt the box was alive, like the ball he had held before. The air around it felt thick, like a secret waiting to be told. He had never seen a box like this, not even in stories.
 
 [a1.how.v3.s06]
-He knew the box was not meant to be opened by hands alone.
+He knew the box was not meant to be opened by hands alone. The box was not meant to be opened by hands alone. He knew he had to find another way, a method not yet tried. The surface was smooth, yet something inside moved, alive. He reached out, not to touch, but to feel the shape of the secret.
 
 [a1.how.v3.s07]
-He placed the ball back inside and closed the box gently.
+He placed the ball back inside and closed the box gently. The box felt heavier now, as if it knew what had happened. The air above the box was still, no breeze, no sound. He thought about the stick, the one that stayed by the box. It was not made of wood, but of bamboo, straight and strong.
 
 [a1.how.v3.s08]
-The stick stayed by the box, a tool for any future job.
+The stick stayed by the box, a tool for any future job. He reached out with his hands to open the box. The air above the box felt still, thick with something unknown. He knew he should not open it, but he had to see. The box was made of wood, old and worn, its corners worn smooth.
