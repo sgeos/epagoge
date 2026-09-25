@@ -287,6 +287,10 @@
       ]
     },
     {
+      "word": "bend",
+      "concept": "shape"
+    },
+    {
       "word": "beside",
       "concept": "spatial_position"
     },
@@ -677,6 +681,10 @@
       "concept": "weather"
     },
     {
+      "word": "coin",
+      "concept": "exchange"
+    },
+    {
       "word": "cold",
       "concept": "heat",
       "antonyms": [
@@ -1039,6 +1047,10 @@
       "antonyms": [
         "late"
       ]
+    },
+    {
+      "word": "earth",
+      "concept": "material"
     },
     {
       "word": "easy",
@@ -1952,6 +1964,10 @@
       "concept": "enough"
     },
     {
+      "word": "lake",
+      "concept": "liquid"
+    },
+    {
       "word": "lamp",
       "concept": "household_object"
     },
@@ -2270,6 +2286,10 @@
       "concept": "same_amount"
     },
     {
+      "word": "material",
+      "concept": "material"
+    },
+    {
       "word": "maybe",
       "concept": "how_sure"
     },
@@ -2311,6 +2331,10 @@
       "synonyms": [
         "fix"
       ]
+    },
+    {
+      "word": "mess",
+      "concept": "physical_property"
     },
     {
       "word": "metal",
@@ -3108,6 +3132,10 @@
       "concept": "right_reason"
     },
     {
+      "word": "rim",
+      "concept": "shape"
+    },
+    {
       "word": "ring",
       "concept": "sound"
     },
@@ -3362,6 +3390,10 @@
       "concept": "physical_property"
     },
     {
+      "word": "shiny",
+      "concept": "physical_property"
+    },
+    {
       "word": "shoes",
       "concept": "household_object"
     },
@@ -3449,6 +3481,10 @@
     {
       "word": "sing",
       "concept": "sound"
+    },
+    {
+      "word": "single",
+      "concept": "counting"
     },
     {
       "word": "sink",
@@ -3588,6 +3624,10 @@
       ]
     },
     {
+      "word": "solid",
+      "concept": "material"
+    },
+    {
       "word": "someone",
       "concept": "person"
     },
@@ -3665,12 +3705,20 @@
       "concept": "liquid"
     },
     {
+      "word": "splash",
+      "concept": "liquid"
+    },
+    {
       "word": "spoon",
       "concept": "household_object"
     },
     {
       "word": "spot",
       "concept": "spatial_position"
+    },
+    {
+      "word": "spread",
+      "concept": "change"
     },
     {
       "word": "square",
@@ -3866,6 +3914,10 @@
       "concept": "how_sure"
     },
     {
+      "word": "surface",
+      "concept": "shape"
+    },
+    {
       "word": "swallow",
       "concept": "living_and_not_living"
     },
@@ -3895,6 +3947,10 @@
     {
       "word": "table",
       "concept": "household_object"
+    },
+    {
+      "word": "tail",
+      "concept": "body_part"
     },
     {
       "word": "take",
@@ -3938,6 +3994,10 @@
     {
       "word": "tally",
       "concept": "keeping_count"
+    },
+    {
+      "word": "tap",
+      "concept": "touching"
     },
     {
       "word": "task",

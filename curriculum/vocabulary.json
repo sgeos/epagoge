@@ -640,6 +640,17 @@
       "level": 1
     },
     {
+      "word": "bend",
+      "concept": "shape",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "bending",
+        "bends",
+        "bent"
+      ]
+    },
+    {
       "word": "beside",
       "concept": "spatial_position",
       "level": 1,
@@ -1367,6 +1378,15 @@
       "level": 1
     },
     {
+      "word": "coin",
+      "concept": "exchange",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "coins"
+      ]
+    },
+    {
       "word": "cold",
       "concept": "heat",
       "level": 1,
@@ -2033,6 +2053,15 @@
       "forms": [
         "earlier",
         "earliest"
+      ]
+    },
+    {
+      "word": "earth",
+      "concept": "material",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "earths"
       ]
     },
     {
@@ -3470,6 +3499,15 @@
       ]
     },
     {
+      "word": "lake",
+      "concept": "liquid",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "lakes"
+      ]
+    },
+    {
       "word": "lamp",
       "concept": "household_object",
       "level": 1,
@@ -3941,6 +3979,15 @@
       "level": 1
     },
     {
+      "word": "material",
+      "concept": "material",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "materials"
+      ]
+    },
+    {
       "word": "maybe",
       "concept": "how_sure",
       "level": 1
@@ -4018,6 +4065,15 @@
         "mended",
         "mending",
         "mends"
+      ]
+    },
+    {
+      "word": "mess",
+      "concept": "physical_property",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "messes"
       ]
     },
     {
@@ -5285,6 +5341,15 @@
       "level": 1
     },
     {
+      "word": "rim",
+      "concept": "shape",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "rims"
+      ]
+    },
+    {
       "word": "ring",
       "concept": "sound",
       "level": 1,
@@ -5737,6 +5802,11 @@
       ]
     },
     {
+      "word": "shiny",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
       "word": "shoes",
       "concept": "household_object",
       "level": 1
@@ -5876,6 +5946,11 @@
         "sings",
         "sung"
       ]
+    },
+    {
+      "word": "single",
+      "concept": "counting",
+      "level": 1
     },
     {
       "word": "sink",
@@ -6114,6 +6189,11 @@
       ]
     },
     {
+      "word": "solid",
+      "concept": "material",
+      "level": 1
+    },
+    {
       "word": "someone",
       "concept": "person",
       "level": 1
@@ -6233,6 +6313,17 @@
       ]
     },
     {
+      "word": "splash",
+      "concept": "liquid",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "splashed",
+        "splashes",
+        "splashing"
+      ]
+    },
+    {
       "word": "spoon",
       "concept": "household_object",
       "level": 1,
@@ -6251,6 +6342,16 @@
       ],
       "level": 1,
       "pos": "noun verb"
+    },
+    {
+      "word": "spread",
+      "concept": "change",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "spreading",
+        "spreads"
+      ]
     },
     {
       "word": "square",
@@ -6597,6 +6698,15 @@
       "level": 1
     },
     {
+      "word": "surface",
+      "concept": "shape",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "surfaces"
+      ]
+    },
+    {
       "word": "swallow",
       "concept": "living_and_not_living",
       "forms": [
@@ -6665,6 +6775,15 @@
       ]
     },
     {
+      "word": "tail",
+      "concept": "body_part",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "tails"
+      ]
+    },
+    {
       "word": "taken",
       "concept": "subtraction",
       "level": 2
@@ -6711,6 +6830,17 @@
         "tallied",
         "tallies",
         "tallying"
+      ]
+    },
+    {
+      "word": "tap",
+      "concept": "touching",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "tapped",
+        "tapping",
+        "taps"
       ]
     },
     {
@@ -7783,6 +7913,8 @@
     "cause": "makes",
     "causing": "making",
     "center": "middle",
+    "color": "colour",
+    "colors": "colours",
     "condition": "the way a thing is",
     "connects": "joins",
     "corresponds": "goes with",
@@ -7804,6 +7936,7 @@
     "focused": "looking at it",
     "form": "shape",
     "golden": "yellow",
+    "gray": "grey",
     "great": "big",
     "greater": "more",
     "human": "person",
@@ -7818,6 +7951,7 @@
     "location": "place",
     "matter": "be important",
     "moonlight": "light from the moon",
+    "movement": "moving",
     "object": "thing",
     "parchment": "paper",
     "position": "place",
@@ -7831,6 +7965,7 @@
     "similar": "like",
     "single": "one",
     "slightly": "a little",
+    "smoothly": "in a smooth way",
     "specific": "that one",
     "store": "keep",
     "sunlight": "light from the sun",
@@ -7838,6 +7973,7 @@
     "there's": "there is",
     "they're": "they are",
     "thickness": "how thick",
+    "tremble": "shake",
     "unknown": "not known",
     "unseen": "not seen",
     "usual": "what happens most times",

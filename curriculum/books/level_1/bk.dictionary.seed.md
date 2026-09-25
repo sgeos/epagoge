@@ -600,7 +600,22 @@
     "dict.1.great": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:great"}, "defines": {"kind": "word", "target": "great"}},
     "dict.1.return": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:return"}, "defines": {"kind": "word", "target": "return"}},
     "dict.1.live": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:live"}, "defines": {"kind": "word", "target": "live"}},
-    "dict.1.winding": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:winding"}, "defines": {"kind": "word", "target": "winding"}}
+    "dict.1.winding": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:winding"}, "defines": {"kind": "word", "target": "winding"}},
+    "dict.1.material": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:material"}, "defines": {"kind": "word", "target": "material"}},
+    "dict.1.surface": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:surface"}, "defines": {"kind": "word", "target": "surface"}},
+    "dict.1.single": {"concepts": ["counting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:single"}, "defines": {"kind": "word", "target": "single"}},
+    "dict.1.rim": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rim"}, "defines": {"kind": "word", "target": "rim"}},
+    "dict.1.tail": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tail"}, "defines": {"kind": "word", "target": "tail"}},
+    "dict.1.tap": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tap"}, "defines": {"kind": "word", "target": "tap"}},
+    "dict.1.spread": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spread"}, "defines": {"kind": "word", "target": "spread"}},
+    "dict.1.earth": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:earth"}, "defines": {"kind": "word", "target": "earth"}},
+    "dict.1.lake": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lake"}, "defines": {"kind": "word", "target": "lake"}},
+    "dict.1.mess": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mess"}, "defines": {"kind": "word", "target": "mess"}},
+    "dict.1.solid": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:solid"}, "defines": {"kind": "word", "target": "solid"}},
+    "dict.1.coin": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:coin"}, "defines": {"kind": "word", "target": "coin"}},
+    "dict.1.bend": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bend"}, "defines": {"kind": "word", "target": "bend"}},
+    "dict.1.shiny": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shiny"}, "defines": {"kind": "word", "target": "shiny"}},
+    "dict.1.splash": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:splash"}, "defines": {"kind": "word", "target": "splash"}}
   }
 }
 ---
@@ -2383,3 +2398,48 @@ To be alive.
 
 [dict.1.winding]
 Going this way and that, not straight.
+
+[dict.1.material]
+What a thing is made of.
+
+[dict.1.surface]
+The outside of a thing, where you can touch it.
+
+[dict.1.single]
+Only one.
+
+[dict.1.rim]
+The edge around the top of a cup.
+
+[dict.1.tail]
+The part at the back end of an animal.
+
+[dict.1.tap]
+To hit a thing with a small quick touch.
+
+[dict.1.spread]
+To move out over more space.
+
+[dict.1.earth]
+The ground under your feet.
+
+[dict.1.lake]
+A wide water with land all around it.
+
+[dict.1.mess]
+Things left out of order.
+
+[dict.1.solid]
+Hard all through, not a liquid and not air.
+
+[dict.1.coin]
+A small round piece of metal you pay with.
+
+[dict.1.bend]
+To make a thing round, so it is not straight.
+
+[dict.1.shiny]
+Giving back the light.
+
+[dict.1.splash]
+To make water fly up.
