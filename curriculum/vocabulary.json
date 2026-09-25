@@ -80,6 +80,7 @@
     "kept",
     "leave",
     "leaves",
+    "leaving",
     "left",
     "let",
     "lets",
@@ -1429,7 +1430,7 @@
     {
       "word": "doing",
       "concept": "activity",
-      "level": 6
+      "level": 1
     },
     {
       "word": "doll",

@@ -27,6 +27,30 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Coverage to 35.7 percent, closure held
+
+- **273 of 765 words, closure 100 percent.** A 30-batch pass added 59,
+  then twenty-seven authored definitions closed the frontier and six
+  cycles.
+- **Acceptance fell from 22.6 to 16.4 percent**, which was predicted. The
+  concrete nouns are gone and what remains is abstract or circular.
+- **The seed grew by one, not by a handful.** 234 to 235. Last round it
+  went 33 to 37 ostensive words and this round needed none, which is the
+  number to watch, since **the self-hosting claim is only as strong as the
+  seed is small.**
+- **A bad heuristic wrote six nonsense words into core.** Scanning for
+  core verbs missing an inflection, `a`, `i` and `it` were read as verbs
+  because `as`, `is` and `its` are core, producing `aed`, `aing`, `ied`,
+  `iing`, `ited` and `iting`. Reverted, and the rule tightened to require
+  **both** the `-s` and `-ing` forms as evidence rather than either.
+- **Two real gaps behind it.** `doing` and `taken` were unreachable at
+  level one. `doing` is lowered, since `activity` is already taught there.
+  **`taken` is left alone**, because at level two it is the subtraction
+  sense, and lowering it would reach into an ablation domain. The
+  definition that wanted it was reworded instead.
+- **The thesaurus coverage check fired**, `doing` having become a level-one
+  sense with no entry. Working as designed.
+
 ### Added. Coverage to 27 percent, with closure held at 100
 
 - **Closure is now a gate check.** `tools/validate_closure.py` fails when

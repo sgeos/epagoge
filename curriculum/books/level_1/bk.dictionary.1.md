@@ -114,7 +114,66 @@
     "dict.1.force": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:force"}, "defines": {"kind": "word", "target": "force"}},
     "dict.1.push": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:push"}, "defines": {"kind": "word", "target": "push"}},
     "dict.1.rock": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rock"}, "defines": {"kind": "word", "target": "rock"}},
-    "dict.1.stone": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stone"}, "defines": {"kind": "word", "target": "stone"}}
+    "dict.1.stone": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stone"}, "defines": {"kind": "word", "target": "stone"}},
+    "dict.1.bear": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bear"}, "defines": {"kind": "word", "target": "bear"}},
+    "dict.1.because": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:because"}, "defines": {"kind": "word", "target": "because"}},
+    "dict.1.become": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:become"}, "defines": {"kind": "word", "target": "become"}},
+    "dict.1.bed": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bed"}, "defines": {"kind": "word", "target": "bed"}},
+    "dict.1.began": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:began"}, "defines": {"kind": "word", "target": "began"}},
+    "dict.1.believed": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:believed"}, "defines": {"kind": "word", "target": "believed"}},
+    "dict.1.bell": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bell"}, "defines": {"kind": "word", "target": "bell"}},
+    "dict.1.bird": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bird"}, "defines": {"kind": "word", "target": "bird"}},
+    "dict.1.block": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:block"}, "defines": {"kind": "word", "target": "block"}},
+    "dict.1.blow": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blow"}, "defines": {"kind": "word", "target": "blow"}},
+    "dict.1.start": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:start"}, "defines": {"kind": "word", "target": "start"}},
+    "dict.1.thought": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thought"}, "defines": {"kind": "word", "target": "thought"}},
+    "dict.1.better": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:better"}, "defines": {"kind": "word", "target": "better"}},
+    "dict.1.boat": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:boat"}, "defines": {"kind": "word", "target": "boat"}},
+    "dict.1.book": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:book"}, "defines": {"kind": "word", "target": "book"}},
+    "dict.1.idea": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:idea"}, "defines": {"kind": "word", "target": "idea"}},
+    "dict.1.mind": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mind"}, "defines": {"kind": "word", "target": "mind"}},
+    "dict.1.sleep": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sleep"}, "defines": {"kind": "word", "target": "sleep"}},
+    "dict.1.best": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:best"}, "defines": {"kind": "word", "target": "best"}},
+    "dict.1.blocks": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blocks"}, "defines": {"kind": "word", "target": "blocks"}},
+    "dict.1.fly": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fly"}, "defines": {"kind": "word", "target": "fly"}},
+    "dict.1.read": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:read"}, "defines": {"kind": "word", "target": "read"}},
+    "dict.1.tend": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tend"}, "defines": {"kind": "word", "target": "tend"}},
+    "dict.1.write": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:write"}, "defines": {"kind": "word", "target": "write"}},
+    "dict.1.care": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:care"}, "defines": {"kind": "word", "target": "care"}},
+    "dict.1.insect": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:insect"}, "defines": {"kind": "word", "target": "insect"}},
+    "dict.1.letter": {"concepts": ["letter"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:letter"}, "defines": {"kind": "word", "target": "letter"}},
+    "dict.1.meaning": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meaning"}, "defines": {"kind": "word", "target": "meaning"}},
+    "dict.1.understand": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:understand"}, "defines": {"kind": "word", "target": "understand"}},
+    "dict.1.boss": {"concepts": ["someone_in_charge"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:boss"}, "defines": {"kind": "word", "target": "boss"}},
+    "dict.1.bottle": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bottle"}, "defines": {"kind": "word", "target": "bottle"}},
+    "dict.1.build": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:build"}, "defines": {"kind": "word", "target": "build"}},
+    "dict.1.six": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:six"}, "defines": {"kind": "word", "target": "six"}},
+    "dict.1.toy": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:toy"}, "defines": {"kind": "word", "target": "toy"}},
+    "dict.1.charge": {"concepts": ["someone_in_charge"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:charge"}, "defines": {"kind": "word", "target": "charge"}},
+    "dict.1.five": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:five"}, "defines": {"kind": "word", "target": "five"}},
+    "dict.1.float": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:float"}, "defines": {"kind": "word", "target": "float"}},
+    "dict.1.page": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:page"}, "defines": {"kind": "word", "target": "page"}},
+    "dict.1.rest": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rest"}, "defines": {"kind": "word", "target": "rest"}},
+    "dict.1.used": {"concepts": ["wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:used"}, "defines": {"kind": "word", "target": "used"}},
+    "dict.1.bowl": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bowl"}, "defines": {"kind": "word", "target": "bowl"}},
+    "dict.1.branch": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:branch"}, "defines": {"kind": "word", "target": "branch"}},
+    "dict.1.four": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:four"}, "defines": {"kind": "word", "target": "four"}},
+    "dict.1.break": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:break"}, "defines": {"kind": "word", "target": "break"}},
+    "dict.1.breath": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breath"}, "defines": {"kind": "word", "target": "breath"}},
+    "dict.1.breathe": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breathe"}, "defines": {"kind": "word", "target": "breathe"}},
+    "dict.1.play": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:play"}, "defines": {"kind": "word", "target": "play"}},
+    "dict.1.worn": {"concepts": ["wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:worn"}, "defines": {"kind": "word", "target": "worn"}},
+    "dict.1.new": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:new"}, "defines": {"kind": "word", "target": "new"}},
+    "dict.1.broke": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:broke"}, "defines": {"kind": "word", "target": "broke"}},
+    "dict.1.fix": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fix"}, "defines": {"kind": "word", "target": "fix"}},
+    "dict.1.bubble": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bubble"}, "defines": {"kind": "word", "target": "bubble"}},
+    "dict.1.bug": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bug"}, "defines": {"kind": "word", "target": "bug"}},
+    "dict.1.builds": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:builds"}, "defines": {"kind": "word", "target": "builds"}},
+    "dict.1.built": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:built"}, "defines": {"kind": "word", "target": "built"}},
+    "dict.1.stop": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stop"}, "defines": {"kind": "word", "target": "stop"}},
+    "dict.1.burn": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:burn"}, "defines": {"kind": "word", "target": "burn"}},
+    "dict.1.until": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:until"}, "defines": {"kind": "word", "target": "until"}},
+    "dict.1.called": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:called"}, "defines": {"kind": "word", "target": "called"}}
   }
 }
 ---
@@ -439,3 +498,180 @@ A rock is a hard thing from the ground.
 
 [dict.1.stone]
 A stone is a small rock.
+
+[dict.1.bear]
+A bear is a toy animal.
+
+[dict.1.because]
+Makes something happen.
+
+[dict.1.become]
+Change into something different.
+
+[dict.1.bed]
+A place to sleep.
+
+[dict.1.began]
+Started at the first time.
+
+[dict.1.believed]
+Believed is when someone thought a thing was true.
+
+[dict.1.bell]
+A thing that makes a sound when hit.
+
+[dict.1.bird]
+A bird is an animal that can move through the air.
+
+[dict.1.block]
+A block is a small hard thing with flat sides.
+
+[dict.1.blow]
+Move air from mouth.
+
+[dict.1.start]
+Beginning of an order.
+
+[dict.1.thought]
+A thought is an idea you had.
+
+[dict.1.better]
+More good than before or than another.
+
+[dict.1.boat]
+A thing that floats on water to move.
+
+[dict.1.book]
+A book is many pages with words on them.
+
+[dict.1.idea]
+An idea is something you think.
+
+[dict.1.mind]
+Your mind is where your ideas are.
+
+[dict.1.sleep]
+To rest with eyes closed and not awake.
+
+[dict.1.best]
+Most good, or better than others.
+
+[dict.1.blocks]
+Hard things made of wood or plastic to build with.
+
+[dict.1.fly]
+To fly is to move through the air.
+
+[dict.1.read]
+To look at words and understand their meaning.
+
+[dict.1.tend]
+To tend a thing is to care for it so it keeps being good.
+
+[dict.1.write]
+To write is to make words you can see.
+
+[dict.1.care]
+To care is to want a thing to be good.
+
+[dict.1.insect]
+A small animal with six legs.
+
+[dict.1.letter]
+A letter is one of the small parts you write to make a word.
+
+[dict.1.meaning]
+What a word stands for.
+
+[dict.1.understand]
+To know what something means.
+
+[dict.1.boss]
+Someone in charge of others.
+
+[dict.1.bottle]
+A container made of glass or plastic.
+
+[dict.1.build]
+To make something by putting parts together.
+
+[dict.1.six]
+A number that comes after five.
+
+[dict.1.toy]
+A toy is a thing made for a game.
+
+[dict.1.charge]
+A person in charge of something.
+
+[dict.1.five]
+A number that comes after four.
+
+[dict.1.float]
+To move on top of water or air.
+
+[dict.1.page]
+A page is one side of a piece of paper.
+
+[dict.1.rest]
+To stop moving and be still.
+
+[dict.1.used]
+Used is when someone has had a thing and made it do work before.
+
+[dict.1.bowl]
+A round container for food.
+
+[dict.1.branch]
+A part of a tree that grows out.
+
+[dict.1.four]
+A number that comes after three.
+
+[dict.1.break]
+Make something no longer whole.
+
+[dict.1.breath]
+Air that comes in and out of the body.
+
+[dict.1.breathe]
+Take air into the body and let it out.
+
+[dict.1.play]
+To play is to do a game.
+
+[dict.1.worn]
+Worn is when a thing has been used for a long time and is not new.
+
+[dict.1.new]
+New is when a thing has just been made.
+
+[dict.1.broke]
+Broke is when a thing does not work now because a part of it is not right.
+
+[dict.1.fix]
+To fix a thing is to make it work again.
+
+[dict.1.bubble]
+A small round ball of air.
+
+[dict.1.bug]
+A small animal that moves on legs.
+
+[dict.1.builds]
+Makes something by putting parts together.
+
+[dict.1.built]
+Made something from parts.
+
+[dict.1.stop]
+To change from moving to not moving.
+
+[dict.1.burn]
+To heat something until it changes.
+
+[dict.1.until]
+Up to the time when something happens.
+
+[dict.1.called]
+Named something with a word.

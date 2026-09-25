@@ -82,7 +82,13 @@
     "dict.1.work": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:work"}, "defines": {"kind": "word", "target": "work"}},
     "dict.1.working": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:working"}, "defines": {"kind": "word", "target": "working"}},
     "dict.1.young": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:young"}, "defines": {"kind": "word", "target": "young"}},
-    "dict.1.done": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:done"}, "defines": {"kind": "word", "target": "done"}}
+    "dict.1.done": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:done"}, "defines": {"kind": "word", "target": "done"}},
+    "dict.1.flat": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:flat"}, "defines": {"kind": "word", "target": "flat"}},
+    "dict.1.game": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:game"}, "defines": {"kind": "word", "target": "game"}},
+    "dict.1.glass": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:glass"}, "defines": {"kind": "word", "target": "glass"}},
+    "dict.1.named": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:named"}, "defines": {"kind": "word", "target": "named"}},
+    "dict.1.paper": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:paper"}, "defines": {"kind": "word", "target": "paper"}},
+    "dict.1.plastic": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plastic"}, "defines": {"kind": "word", "target": "plastic"}}
   }
 }
 ---
@@ -311,3 +317,21 @@ Young is when a living thing has not been for a long time.
 
 [dict.1.done]
 Done is when a thing has been made or finished.
+
+[dict.1.flat]
+Flat is when a thing has no part that goes up or down.
+
+[dict.1.game]
+A game is a thing people do together that they want to do.
+
+[dict.1.glass]
+Glass is hard stuff you can see through.
+
+[dict.1.named]
+Named is when someone has said the name of a thing.
+
+[dict.1.paper]
+Paper is thin flat stuff made from wood.
+
+[dict.1.plastic]
+Plastic is stuff that is made by people and is not wood or metal.
