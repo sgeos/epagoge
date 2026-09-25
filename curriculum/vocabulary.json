@@ -559,7 +559,10 @@
     {
       "word": "beside",
       "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "besides"
+      ]
     },
     {
       "word": "best",
@@ -878,7 +881,13 @@
     {
       "word": "calm",
       "concept": "feeling",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "calmed",
+        "calming",
+        "calms"
+      ]
     },
     {
       "word": "candidate",

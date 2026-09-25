@@ -1,0 +1,65 @@
+---
+{
+  "id": "bk.a1.self",
+  "level": 1,
+  "title": "I want the cup",
+  "subject": {
+    "kind": "topic",
+    "target": "a1.self"
+  },
+  "records": {
+    "a1.self.d00": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.self"}, "defines": {"kind": "topic", "target": "a1.self"}},
+    "a1.self.d01": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:others"}, "defines": {"kind": "word", "target": "others"}},
+    "a1.self.s01": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.s02": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.s03": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.s04": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.s05": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.s06": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.s07": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.s08": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.s09": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.s10": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
+    "a1.self.s11": {"concepts": ["self_and_other"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}}
+  }
+}
+---
+
+[a1.self.d00]
+I want the cup. She wants the cup. I am not her.
+
+[a1.self.d01]
+Others means more than one person besides the one speaking.
+
+[a1.self.s01]
+I want the cup.
+
+[a1.self.s02]
+She wants the cup.
+
+[a1.self.s03]
+I am not her.
+
+[a1.self.s04]
+I see the cup on the table.
+
+[a1.self.s05]
+I reach for it myself.
+
+[a1.self.s06]
+She tries to take it from me, but I say no.
+
+[a1.self.s07]
+She looks at me, and I look at her.
+
+[a1.self.s08]
+I feel angry, but I stay calm.
+
+[a1.self.s09]
+I think about others who might need it more.
+
+[a1.self.s10]
+I let her have it, because I am kind.
+
+[a1.self.s11]
+I feel happy, and I know I did right.

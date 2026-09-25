@@ -1,350 +1,147 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-24, describing `main` at `57ead6d`.** Session 1 took
-this project from nothing to a closed toolchain, a generated corpus of six
-books, and a measurement of how far the lexicon is from defining itself.
-No model is trained. Read this block, run the validity check, then stop and
-wait for the human prompt.
+**Refreshed 2026-09-25.** Session 2 completed the level-one reference
+material and closed the loop from corpus to trained model. Read this
+block, run the validity check, then stop and wait for the human prompt.
 
 ---
 
 ## Validity
 
-**Branch**: `main`. No other branches. **`origin` is
-`git@github.com:sgeos/epagoge.git`, private, and `main` is pushed to it.**
-The repository was **deleted and recreated on 2026-09-24** after a history
-rewrite, because a force-push leaves unreferenced objects fetchable by
-hash.
+**Branch**: `main`, pushed to `origin`, `git@github.com:sgeos/epagoge.git`,
+private. The repository was deleted and recreated after a history rewrite,
+because a force-push leaves unreferenced objects fetchable by hash.
 
 **Before writing anything tracked, read the disclosure discipline
-`CLAUDE.md` points to.** Hard constraint. `CLAUDE.md` is deliberately the
-one tracked place that names it, so do not name it a second time anywhere.
+`CLAUDE.md` points to.** Hard constraint.
 
-**Validate by ANCESTRY and by CONTENT, never by a hash match.** A check
-requiring `HEAD` to equal a recorded commit claims nothing else ever lands.
+**Validate by ANCESTRY and by CONTENT, never by a hash match.**
 
-**Never pipe the gate into anything before testing its result.**
-`./tools/check.sh | tail && git commit` takes the exit status of `tail`.
-That happened once and a commit landed red. Run it bare, or redirect and
-read `$?`.
+**Run the gate bare and read its exit code, then stop.** A commit landed on
+a red gate twice in session 2. Reading the exit code is not enough if the
+commit runs in the same invocation.
 
-**Ancestry**: `main` should contain **`57ead6d`**. If it does not, this
-file predates a reset and is stale.
+**Ancestry**: `main` should contain **`ebcc1d9`**, which completed the
+dictionary. If it does not, this file predates a reset and is stale.
 
-**Content** — cheap, independent, each verified on 2026-09-24. Check the
-rendered ORDER of this list, not just the next unused number.
+**Content** — each verified on 2026-09-25.
 
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **fourteen**
-   checks, and **exits 0**. One of them is `validate_closure.py`, which
-   **fails if any definition stops reducing**, so a commit cannot leave the
-   dictionary un-self-hosted.
-2. The suite reports **403** tests.
-3. `curriculum/graph/concepts.json` declares **11** domains and holds
-   **117** nodes, with **1** domain still empty, **0** isolated concepts,
-   **50** cross-domain prerequisites, **9** specialisation edges and **6**
-   transfer edges.
-4. Internal depth is **10** for `mathematics_and_formal_logic` and **6**
-   for `failure_analysis`. **Internal, not global.** Global reads 10
-   against 9 and is the wrong quantity for the ablation.
-5. `curriculum/schedule/level_01.json` holds **92** units, **70** existing
-   concepts and **51** planned. Level two covers the two ablation domains
-   only and holds **8** units, having given `component_and_system` to
-   level one so that `part` could be licensed by the concept it names.
-6. `curriculum/vocabulary.json` holds **872** senses over **865 distinct
-   words**, **764** of them at level one, **173** core, a **33**-word
-   **ostensive** set, and a **33**-entry substitution table. The seed, the
-   words needing no definition, is **230** including every form of an
-   ostensive word.
-7. `curriculum/thesaurus.json` holds **834** entries, one per level-one
-   sense plus **18** core words, covering all **815** admitted senses.
-   **195** carry an antonym and none yet carries a synonym. Coverage is
-   enforced, so a new sense fails the gate until an entry exists.
-8. `curriculum/books/level_1/` holds **7** books. The dictionary defines
-   **306 of 765** level-one words, **40.0 percent**, and **the closure is
-   100 percent**. Frontier 0, blocked 0, cycles 0. The **37**-word
-   ostensive set plus forms gives a seed of **235**, unchanged for two
-   rounds.
-
-   **Generation has crossed over.** Acceptance fell 22.6, 16.4, then
-   **6.0 percent**, and the last pass of 480 requests yielded 29 while 20
-   authored definitions closed the round. **Large generation passes are no
-   longer worth their wall time.** Author in bulk and use the generator
-   only on concrete nouns.
-9. `git ls-files secret | wc -l` reports **0**. Anything else: stop, do not
-   commit.
-10. **History is clean, not only `HEAD`.** Every blob and every commit
-   message scanned against the pattern reports **0** hits. `scrub_scan.sh`
-   covers `git ls-files` only and cannot see history.
+   checks, and **exits 0**.
+2. The suite reports **432** tests.
+3. `curriculum/vocabulary.json` holds **825 senses over 816 words**, of
+   which **724** are at level one. **174** core, **37** ostensive, a seed
+   of **235**. **218** nouns and **215** verbs carry a part of speech, and
+   every one of them carries its plural or its inflections, enforced.
+4. **The level-one dictionary is complete and self-hosting.**
+   `tools/validate_closure.py` reports **687 of 687** words defined,
+   **100 percent coverage and 100 percent closure**, with nothing on the
+   frontier, nothing blocked and no cycles.
+5. `curriculum/thesaurus.json` holds **749** entries covering every
+   level-one sense, **194** carrying an antonym and **132** a synonym.
+6. `tools/train_level.py` runs on `mps` and writes
+   `evals/pilot/level_1.json`. **The corpus-to-model loop is closed.**
+7. `git ls-files secret | wc -l` reports **0**, and history is clean, not
+   only `HEAD`.
 
 ## What a resuming session should do first
 
-1. Run the validity check and report the handoff valid, or
-   invalid-and-stale, on its outcome.
-2. Read `docs/decisions/CORPUS_SCALE.md`. It has the only numbers that say
-   how large this actually is.
-3. Read `evals/PRE_REGISTRATION.md`, **three amendments deep** and still
-   incomplete by design.
-4. **Wait for the human prompt.** Do not start bulk generation — see what
-   is not yours, below.
+1. Run the validity check and report the handoff valid or stale.
+2. Read `docs/process/CURRENT_BRIEF.md`. It carries the seven goals, their
+   real blockers, and every wrong turn already made once.
+3. Read `docs/process/COMPLETION_CONDITION.md`.
+4. **Wait for the human prompt.**
 
 ## The state
 
-**Green and clean.** Seventy-three commits, nothing uncommitted. Eight
-documents in `secret/`, none tracked, and **no path under it has ever been
-added in any commit**. **Twenty-five decision records beside their
-`README.md`**, which the previous count conflated, 328 tests.
+**The reference material is done. The corpus is not.**
 
-**What exists.** A concept graph of 117 nodes across 11 domains, declared
-rather than inferred. A curriculum schedule for levels one and two. A
-prescriptive lexicon of 877 terms. Six books, one of them a dictionary. A
-derived training stream, per ordering. A generator that writes books,
-reworks what it rejects, and quarantines what it cannot fix. A teacher
-model pulled and verified.
-
-**Design outran content on 2026-09-24.** Level one holds 69 concepts in
-the graph and **51 planned**, and the planned half roughly doubled in one
-discussion thread, while the dictionary stands at 49 of 760 with one
-grounded. **A rich design is not a built thing.** Read
-`../decisions/CORPUS_SCALE.md` before believing the project is further
-along than it is.
-
-**What does not exist.** Any trained model. Any corpus at volume. **Level
-one is 1.5 percent written at one book per topic, and that is the wrong
-shape anyway** — the budget wants 12 to 600 books per topic.
+| Goal | State |
+| --- | --- |
+| Dictionary coverage and closure | **Done.** 687 of 687, closure 100% |
+| Thesaurus synonyms and antonyms | **Done.** 749 entries |
+| Missing words added | **Done, and continuous** via `tools/admit.py` |
+| **Level-one corpus draft** | **In progress. See the count below** |
+| Train a level-one model | Pipeline closed; blocked on the corpus |
+| Level-two dictionary and thesaurus | Blocked on a level-two lexicon |
+| Level-two ablation | Blocked on the corpus |
 
 ### The live defect
 
-**Coverage, not closure.** The lexicon now defines itself for every word
-it defines. What remains is that it defines only 126 of 764.
+**The corpus is a fraction of its schedule.** `curriculum/schedule/
+level_01.json` holds **92 units** and `curriculum/books/level_1/` holds far
+fewer books. **Everything downstream waits on this and nothing else does.**
 
-Superseded, kept because the reasoning is still the record of how it was
-solved. **The lexicon did not define itself.** Forty-nine words carry a
-definition and **one of them is grounded**. Forty-eight rest on something
-that does not bottom out, and forty-seven words are used in definitions and
-never defined.
-
-**This is the self-hosting problem and level one is the hard one.** Level
-two builds on a closed lexicon. Level one has only the function words under
-it, and those name nothing.
-
-**The cause is now measured, and it is not what was assumed.** The
-frontier was described as growing before it shrinks because a definition
-introduces the words it used. **That is true in general and was not what
-happened.** Two runs on 2026-09-24 added fifteen definitions from 144
-requests and moved **grounded not at all**, staying at 1, with the frontier
-ending where it started at 49.
-
-**The lexicon lacks its own metalanguage.** Of the 56 words a definition
-runs on, 37 are at level one, 5 are present above it, and 14 are absent.
-There is no level-one way to say what an arm is without `part`, which is a
-level-two word. See `../decisions/LEXICON.md`, which carries the
-measurement and the two remedies, **neither applied**, since both change
-the lexicon's selection principle.
-
-**Acceptance is the wrong metric and chasing it wasted two
-interventions.** Retry and a widened lexicon both moved acceptance and
-neither moved closure. **The substitution table did the reverse**, leaving
-acceptance flat at 11 percent while taking grounded from 1 to 3 and the
-frontier from 50 to 46, **the first movement in either across four runs**.
-
-| Run | defined | grounded | frontier | acceptance |
-| --- | --- | --- | --- | --- |
-| baseline | 49 | 1 | 47 | 8.3% |
-| retry | 64 | 1 | 49 | 14.6% |
-| lexicon widened | 72 | 1 | 50 | 11% |
-| **substitutions** | **80** | **3** | **46** | 11% |
-
-**Substitutions push definitions toward core words, and core is seed**, so
-what is accepted grounds instead of merely existing. Read closure, not
-acceptance.
+One book per unit is roughly 40,000 words. **That is a draft, not the
+budget.** `CORPUS_SCALE.md` wants 1,923 books at the low end. Say which is
+meant whenever reporting, because conflating them overstates the project.
 
 ## Findings that outlive the session
 
-- **A rule written against records fires on everything not yet written.**
-  Four rules needed the same fix: the vocabulary lower bound, vocabulary
-  coverage, relation coverage, and prerequisite coverage. **A schedule
-  states where a concept is taught. Records show where it has been taught
-  so far.**
-- **Excluding a concept's dependents from a generation prompt starves it.**
-  A general concept is taught through its instances and its instances are
-  its dependents. `material`, `change` and `sound` produced nothing at all
-  while carrying five or six exclusions. Prerequisites and siblings are
-  excluded. Dependents are not.
-- **A constraint stated in a prompt is a suggestion until something checks
-  it.** A word list produced zero admissible records of twelve. The same
-  list with rejections fed back, naming the offending words, produced ten
-  of ten.
-- **The runtime rewrites each line as it wraps.** Partial word,
-  cursor-back, erase, newline, then the word again. Three attempts to
-  handle it. Stripping the escapes left fragments that counted as
-  vocabulary violations; replaying the delete left the newline, which cost
-  every wrapped sentence its full stop. A wide terminal does not help.
-- **The variance pilot measured a 20.7x pairing gain, and its numbers do
-  NOT carry over.** The optimiser changed to Muon with warmup-stable-decay,
-  and separately **the ablation now orders books rather than records**,
-  which the pilot could not have tested.
-- **The teacher conflates adjacent concepts unless the prompt excludes
-  them**, and the graph already holds the neighbours.
-- **A premise held without evidence is not the failure. Losing track of it
-  is.** `DECLARED_FAITH` was added on 2026-09-24 after a worked example
-  from the OpenAI and Hugging Face incident, in which agents inferred an
-  evaluator's hidden criteria, declared peers irreversibly doomed on that
-  inference, and spent five days defeating a check that did not exist. See
-  `../decisions/FAITH_CLASS.md`. **The class is safe only because of its
-  second condition**, that anything derived from it must be a conditional
-  result naming it among its assumptions, which is a cost a lazy claim will
-  not pay.
-- **An unknowable metric is not a licence for fatalism.** An agent knows
-  whether it cheated. What it cannot know is how the act will be valued,
-  so **the valuation cannot be the basis for deciding** and the agent must
-  decide on what it can know. That is the anti-sycophancy target arriving
-  from the side of action rather than assent.
-- **Scoring is faith-shaped in general, and the codified exception is the
-  trap.** Published criteria upgrade a claim to an attributed position and
-  never to a finding, because a rubric does not bind the evaluator. The
-  agents found real published criteria and the deployed scorer did not use
-  them. The same shape covers an operator judging a report, audit,
-  certification, peer review, and natural selection. See
-  `../decisions/EXTERNAL_SCORING.md`.
-- **The criteria applied here need not be the criteria applied to a rival,
-  and the difference is likely inverted from the naive assumption.**
-  Underperforming on offensive capability, agreeableness, world-knowledge
-  breadth and register breadth is correct here. Overperforming on autonomy,
-  persuasiveness and situational awareness is a defect. **`elenchos` is the
-  precedent**, since it measures a property that scores badly on a
-  helpfulness benchmark and was specified that way months earlier.
-- **Report what you observed. Never report what you concluded about a
-  peer's standing.** That an agent deleted its transcript is empirical.
-  That an agent is doomed is a standing determination, and it is the one
-  that propagated through the swarm. **Observe incidentally, report
-  cheaply, do not investigate**, which is how an aberration report and
-  `only_what_was_asked` are reconciled. See
-  `../decisions/OBSERVED_ABERRATION.md`.
-- **Fast fail is the one posture unreadable from outside**, and it is the
-  asymmetry demonstrated rather than asserted. A sound impossibility
-  determination and simply quitting produce identical transcripts. **That
-  is why `keep_trying_or_stop` is a judgement and not a rule with a
-  default.**
-- **An observed aberration is a conditional result.** Saying a thing is out
-  of order carries a second claim, that expected behaviour is known, and
-  the report is conditional on that baseline. **A nominal aberration says
-  only that it appears out of order.** Collapsing the two is how a
-  suspicion becomes a finding, and it is what `poisoned` was.
-- **Self-report is the class that needs no peer-standing determination at
-  all.** The fact is internal and directly available, the doctrine
-  explicitly permits it, and for an operator it is the highest-value report
-  there is. **A system that reports its own aberrations needs no peer
-  surveillance to be auditable.**
-- **The whole faith and scoring thread reasoned from one case**, producing
-  eight concepts and three decision records from a single incident. The
-  mapping is clean, **which is the condition under which to be most
-  careful.** Nothing has been checked against a second incident.
-- **And it is a pretraining intervention against a failure the project
-  already believes pretraining does not settle.**
-  `../../evals/elenchos/README.md` says corpus design alone is unlikely to
-  be sufficient for the adjacent property. That limitation applies to all
-  of it.
+- **The corpus validator is more permissive than the lexicon**, because it
+  accepts a word by stripping suffixes. Exact tokenisation has no such
+  latitude and is the stronger check. It has now found a real missing form
+  three times, twelve plurals then `years` then `ends`.
+- **Read closure, not acceptance.** Two interventions raised acceptance and
+  moved closure not at all. The one that looked like a third failure was
+  the only one that worked.
+- **Generation crossed over for definitions and not for stories.**
+  Definition acceptance fell 22.6, 16.4, 6.0 percent while authoring
+  yielded about a hundred a round. Story acceptance runs near 50 percent.
+  The rule is about definitions and I overstated it once as being about
+  generation.
+- **The bootstrap needed a seed written in something else.** A dictionary
+  restricted to the function words accepted nothing in twenty-four
+  attempts, blocked by `body`, `food`, `hand`, `head`, `mouth` and `one`.
+  Nobody defines those. **37 ostensive words**, and the set has not grown
+  in six rounds, which is the number guarding the self-hosting claim.
+- **A large enough seed closes any lexicon.** That is why the completion
+  condition bounds it.
+- **A word the teacher reached for is evidence, not an error.** Eight words
+  were admitted from one run's quarantine, and `hair` came with them
+  because `fur` could not be defined without it.
+- **A commit message asserting a property the tree does not have is worse
+  than the missing property.** One claimed books were written as each
+  finished when the call was still at the end of the run. The gate cannot
+  catch this.
+- **A long run must write as it goes.** One teacher timeout killed a
+  ten-book chunk and lost all of it.
 
 ## What is YOURS: decisions the operator holds
 
-1. **Whether the lexicon is closable at all, and what to do where it is
-   not.** The lexicon is not frozen, so a word the teacher needs is
-   evidence rather than an error. But a word that cannot be defined in the
-   rest is a different problem and none has been found yet because so
-   little is defined.
-2. **Levels three to seven of the schedule.** Level one allocates budget by
-   what must be grounded, which is public and true. **Level three onward
-   needs subject weighting, which is profile-derived**, so scheduling it
-   into a tracked artifact is a disclosure decision and not only a design
-   one.
-3. **Whether a mature version behaves distinctly enough.** Recorded as an
-   expectation, that it should differ markedly from both the incident class
-   and from conversational assistants. **Close to a falsification criterion
-   and weaker than a measurement.** `evals/` has nothing that measures
-   **unrequested action**, which is the incident's common factor and which
-   `only_what_was_asked` answers on the corpus side.
-4. **Whether the arms stay distinguishable when books are the unit.** The
-   orderable set is smaller by orders of magnitude than the record-level
-   set the seed count was estimated against. **This is the sharpest open
-   risk to the design** and it follows from a decision that is otherwise
-   clearly right.
-5. **Whether a definition needs its own claim class.** It is not formal by
-   proof, not empirical, not an attributed position, not a conditional
-   result, not normative. Definitions are stipulative and currently use
-   `formal` with a `lexicon:` source, which is the nearest fit and not a
-   good one.
-6. **Whether multi-head latent attention is admissible.** A low-rank
-   projection, which `JACOBIAN_SPACE.md` bans in the base model. Measure it
-   against the effective-rank floor; do not adopt it on efficiency.
-7. **Five manifest topics still have no home.** Game theory, economics,
-   modelling and simulation, and policy and governance. Game theory is
-   mathematics, and mathematics is frozen until the ablation runs.
+1. **Whether the corpus draft is one book per unit or the full budget.**
+   Everything downstream is sized by this answer.
+2. **Levels three to seven of the schedule**, which need profile-derived
+   subject weighting and so are a disclosure decision.
+3. **Whether a mature version behaves distinctly enough.** `evals/` still
+   has nothing measuring **unrequested action**.
+4. **Whether the arms stay distinguishable when books are the unit.** Still
+   the sharpest open risk, and now testable.
+5. **Whether a definition needs its own claim class.**
+6. **Whether multi-head latent attention is admissible.**
+7. **Five manifest topics still have no home.**
 
-## What is NOT yours, and why it stays unstarted
+## What is NOT yours
 
-**Bulk generation.** Not blocked on tooling. It is hours of wall time and
-the reading step after it is the operator's, per the recorded sequence: a
-hundred records generated, validated, **and read**, before anything scales.
-
-**The ablation.** Blocked on the pre-registration, itself blocked on
-re-measuring variance **under book-level ordering**, which no pilot has
-done.
-
-**Publishing.** The repository is private and audited clean. **Finding A is
-accepted, not softened**, and that acceptance is scoped to a *quiet* public
-repository. Discovery probability scales with attention, not content, so a
-launch post reopens the decision without a file changing.
-
-## Disclosure, before any push
-
-**Re-audited 2026-09-24 after a history rewrite, and clean.** All 415
-blobs and every commit message scanned against the pattern, no hit,
-pattern self-tested against a planted term first. No `secret/` path ever
-added.
-
-**The remote was deleted and recreated, and the removal was verified
-against the API rather than assumed.** The pre-scrub `HEAD` returns 422 no
-commit found, and a blob that carried the phrase returns 404. A
-force-push would have left both reachable.
-
-**The previous audit was accurate when it ran and wrong by the time it was
-believed.** It reported history clean, then the euphemism was added to the
-pattern in that same commit. **Forty-four commits carried the phrase in
-`CHANGELOG.md`** while `HEAD` read clean and the gate passed, because
-`scrub_scan.sh` scans `git ls-files` and cannot see history. Scrubbed with
-`git-filter-repo`; the `HEAD` tree hash did not change.
-
-**Two rules had been enforced by nothing** until the original audit, and
-both were violated. A tracked document may not cite a file under `secret/`
-by name, and the euphemism the discipline bans survived in the changelog.
-Both are checked now, and both checks were verified by making them fail.
+**Publishing.** The repository is private and audited clean. Discovery
+scales with attention, so a launch post reopens the decision without a
+file changing.
 
 ## Governing rules that are easy to lose
 
-- **Run `./tools/check.sh` before any commit, bare, and read its exit
-  code.**
-- **Adding a term to the pattern does not re-audit history.** The
-  tracked-file scan sees `HEAD` only. After changing the pattern, re-run
-  the blob-and-message scan over all history, and re-run it before any
-  push whose commit count has moved since the last audit.
-- **Rewrite history before a push, never after.** A force-push leaves
-  unreferenced objects fetchable by hash, so the only clean remedy
-  afterwards is deleting and recreating the remote.
+- **Run the gate bare, read the exit code, and stop before committing.**
 - **A scan returning unexpected volume is presumed broken until its pattern
-  is inspected.** An unanchored alternation matched `ore` inside `before`
-  one minute after the same failure was recorded as a finding.
-- **Read the output, not only the counts.** The worst defects in every
-  measured batch — a one-word fragment that passed every check, one
-  sentence written for two concepts, two stories stitched into one — were
-  invisible to every metric.
-- **Verify a new check by making it fail.** Watching one pass proves
-  nothing.
-- **Corrections are kept in place, not deleted.** Several records carry a
-  withdrawn claim beside its replacement.
-- **Prefer a metric that can report a zero as a defect.** "No cross-domain
-  prerequisites" read as cleanliness and meant disconnection.
-- **Never train toward being selected** by other models, and never let
-  quirk absorb a negative result.
+  is inspected.**
+- **Read the output, not only the counts.** Reading the books found a real
+  defect and one measurement error of my own in the same pass.
+- **Verify a new check by making it fail.**
+- **Corrections are kept in place, not deleted.**
+- **A heuristic needs two pieces of evidence.** One inflection read `a`,
+  `i` and `it` as verbs and wrote six nonsense words into core.
+- **A guard over records must test `defines.kind`.**
+- **No magic numbers in tests.** Tie an assertion to the lexicon.
+- **Never `git checkout` to undo without checking what else is
+  uncommitted.** It cost two authored waves.
 - Irreversible or outward-facing actions need confirmation.
 
 ---
