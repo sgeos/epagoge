@@ -471,7 +471,25 @@
     "dict.1.wooden": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wooden"}, "defines": {"kind": "word", "target": "wooden"}},
     "dict.1.worse": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:worse"}, "defines": {"kind": "word", "target": "worse"}},
     "dict.1.worst": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:worst"}, "defines": {"kind": "word", "target": "worst"}},
-    "dict.1.wrong": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wrong"}, "defines": {"kind": "word", "target": "wrong"}}
+    "dict.1.wrong": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wrong"}, "defines": {"kind": "word", "target": "wrong"}},
+    "dict.1.jump": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:jump"}, "defines": {"kind": "word", "target": "jump"}},
+    "dict.1.pick": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pick"}, "defines": {"kind": "word", "target": "pick"}},
+    "dict.1.choose": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:choose"}, "defines": {"kind": "word", "target": "choose"}},
+    "dict.1.clever": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:clever"}, "defines": {"kind": "word", "target": "clever"}},
+    "dict.1.smart": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:smart"}, "defines": {"kind": "word", "target": "smart"}},
+    "dict.1.road": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:road"}, "defines": {"kind": "word", "target": "road"}},
+    "dict.1.gift": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gift"}, "defines": {"kind": "word", "target": "gift"}},
+    "dict.1.shout": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shout"}, "defines": {"kind": "word", "target": "shout"}},
+    "dict.1.yell": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yell"}, "defines": {"kind": "word", "target": "yell"}},
+    "dict.1.teach": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:teach"}, "defines": {"kind": "word", "target": "teach"}},
+    "dict.1.study": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:study"}, "defines": {"kind": "word", "target": "study"}},
+    "dict.1.ill": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ill"}, "defines": {"kind": "word", "target": "ill"}},
+    "dict.1.toss": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:toss"}, "defines": {"kind": "word", "target": "toss"}},
+    "dict.1.broad": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:broad"}, "defines": {"kind": "word", "target": "broad"}},
+    "dict.1.rug": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rug"}, "defines": {"kind": "word", "target": "rug"}},
+    "dict.1.tale": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tale"}, "defines": {"kind": "word", "target": "tale"}},
+    "dict.1.drag": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drag"}, "defines": {"kind": "word", "target": "drag"}},
+    "dict.1.weary": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:weary"}, "defines": {"kind": "word", "target": "weary"}}
   }
 }
 ---
@@ -1867,3 +1885,57 @@ Worst is the most bad of all.
 
 [dict.1.wrong]
 Wrong is not right.
+
+[dict.1.jump]
+To jump is to push with your feet so your body goes up into the air.
+
+[dict.1.pick]
+To pick is to take the one you want from many.
+
+[dict.1.choose]
+To choose is to pick the one you want.
+
+[dict.1.clever]
+Clever is when someone can learn and think well.
+
+[dict.1.smart]
+Smart is clever.
+
+[dict.1.road]
+A road is a long hard way that people go on.
+
+[dict.1.gift]
+A gift is a thing you give to someone.
+
+[dict.1.shout]
+To shout is to say words with a very loud voice.
+
+[dict.1.yell]
+To yell is to shout.
+
+[dict.1.teach]
+To teach is to help someone learn.
+
+[dict.1.study]
+To study is to work to learn a thing.
+
+[dict.1.ill]
+Ill is sick.
+
+[dict.1.toss]
+To toss is to throw a thing a small way.
+
+[dict.1.broad]
+Broad is wide.
+
+[dict.1.rug]
+A rug is a mat you put on the ground in a room.
+
+[dict.1.tale]
+A tale is a story.
+
+[dict.1.drag]
+To drag is to pull a thing on the ground.
+
+[dict.1.weary]
+Weary is tired.

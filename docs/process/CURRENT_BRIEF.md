@@ -7,11 +7,11 @@ items. Delete when `COMPLETION_CONDITION.md` is met.
 
 | # | Goal | State | Real blocker |
 | --- | --- | --- | --- |
-| 1 | Dictionary coverage and closure | 481 of 698, closure 100% | None. Authoring |
+| 1 | Dictionary coverage and closure | **Done. 661 of 661, closure 100%** | — |
 | 2 | Thesaurus, synonyms and antonyms | 194 antonyms, 0 synonyms | None. Authoring |
 | 3 | Missing words added to both | No method yet | None. Derive from what definitions had to work around |
 | 4 | Full level-one corpus draft | **5 content books of 92 units** | None, at draft scale |
-| 5 | Train a level-one model | Trainer exists, torch 2.14 and MPS work | **Item 4.** The corpus is about 2,200 words and cannot train anything |
+| 5 | Train a level-one model | `epagoge.pilot` has the model, loop, device and paired orderings; torch 2.14 and MPS verified | **Item 4.** The corpus is about 2,200 words and cannot train anything |
 | 6 | Level-two dictionary and thesaurus | Level two holds 49 terms | Item 1, and a level-two lexicon |
 | 7 | Level-two ablation | Pre-registration has pending items | Items 4 and 5 |
 

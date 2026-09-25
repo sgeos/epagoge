@@ -17,7 +17,10 @@
     },
     {
       "word": "afraid",
-      "concept": "feeling"
+      "concept": "feeling",
+      "synonyms": [
+        "scared"
+      ]
     },
     {
       "word": "after",
@@ -72,6 +75,9 @@
       "concept": "asking",
       "antonyms": [
         "ask"
+      ],
+      "synonyms": [
+        "reply"
       ]
     },
     {
@@ -138,6 +144,9 @@
       "concept": "good_and_bad",
       "antonyms": [
         "good"
+      ],
+      "synonyms": [
+        "nasty"
       ]
     },
     {
@@ -192,6 +201,10 @@
       "concept": "sequence",
       "antonyms": [
         "end"
+      ],
+      "synonyms": [
+        "open",
+        "start"
       ]
     },
     {
@@ -240,6 +253,9 @@
       "concept": "physical_property",
       "antonyms": [
         "small"
+      ],
+      "synonyms": [
+        "large"
       ]
     },
     {
@@ -321,6 +337,9 @@
       "concept": "things_break",
       "antonyms": [
         "build"
+      ],
+      "synonyms": [
+        "smash"
       ]
     },
     {
@@ -336,6 +355,13 @@
       "concept": "physical_property",
       "antonyms": [
         "dark"
+      ]
+    },
+    {
+      "word": "broad",
+      "concept": "physical_property",
+      "synonyms": [
+        "wide"
       ]
     },
     {
@@ -401,7 +427,10 @@
     },
     {
       "word": "calm",
-      "concept": "feeling"
+      "concept": "feeling",
+      "synonyms": [
+        "quiet"
+      ]
     },
     {
       "word": "cannot",
@@ -472,6 +501,13 @@
       "concept": "person"
     },
     {
+      "word": "choose",
+      "concept": "way_of_doing",
+      "synonyms": [
+        "pick"
+      ]
+    },
+    {
       "word": "circle",
       "concept": "shape"
     },
@@ -488,6 +524,16 @@
       "concept": "physical_property",
       "antonyms": [
         "dirty"
+      ],
+      "synonyms": [
+        "wash"
+      ]
+    },
+    {
+      "word": "clever",
+      "concept": "being_told",
+      "synonyms": [
+        "smart"
       ]
     },
     {
@@ -496,7 +542,11 @@
     },
     {
       "word": "close",
-      "concept": "opening_and_shutting"
+      "concept": "opening_and_shutting",
+      "synonyms": [
+        "end",
+        "shut"
+      ]
     },
     {
       "word": "cloth",
@@ -572,7 +622,10 @@
     },
     {
       "word": "cost",
-      "concept": "exchange"
+      "concept": "exchange",
+      "synonyms": [
+        "pay"
+      ]
     },
     {
       "word": "count",
@@ -621,11 +674,17 @@
     },
     {
       "word": "cut",
-      "concept": "danger"
+      "concept": "danger",
+      "synonyms": [
+        "tear"
+      ]
     },
     {
       "word": "dad",
-      "concept": "family"
+      "concept": "family",
+      "synonyms": [
+        "father"
+      ]
     },
     {
       "word": "danger",
@@ -754,6 +813,13 @@
       ]
     },
     {
+      "word": "drag",
+      "concept": "force",
+      "synonyms": [
+        "pull"
+      ]
+    },
+    {
       "word": "drain",
       "concept": "emptiness"
     },
@@ -846,6 +912,10 @@
       "concept": "sequence",
       "antonyms": [
         "begin"
+      ],
+      "synonyms": [
+        "close",
+        "finish"
       ]
     },
     {
@@ -853,6 +923,9 @@
       "concept": "person",
       "antonyms": [
         "friend"
+      ],
+      "synonyms": [
+        "stranger"
       ]
     },
     {
@@ -894,7 +967,10 @@
     },
     {
       "word": "extra",
-      "concept": "enough"
+      "concept": "enough",
+      "synonyms": [
+        "spare"
+      ]
     },
     {
       "word": "eye",
@@ -941,6 +1017,9 @@
       "concept": "duration",
       "antonyms": [
         "slow"
+      ],
+      "synonyms": [
+        "quick"
       ]
     },
     {
@@ -955,6 +1034,9 @@
       "concept": "person",
       "antonyms": [
         "mother"
+      ],
+      "synonyms": [
+        "dad"
       ]
     },
     {
@@ -970,6 +1052,9 @@
       "concept": "more_and_fewer",
       "antonyms": [
         "many"
+      ],
+      "synonyms": [
+        "little"
       ]
     },
     {
@@ -989,7 +1074,10 @@
     },
     {
       "word": "finish",
-      "concept": "sequence"
+      "concept": "sequence",
+      "synonyms": [
+        "end"
+      ]
     },
     {
       "word": "fire",
@@ -1016,7 +1104,10 @@
     },
     {
       "word": "fix",
-      "concept": "things_break"
+      "concept": "things_break",
+      "synonyms": [
+        "mend"
+      ]
     },
     {
       "word": "flat",
@@ -1130,6 +1221,10 @@
       "concept": "plant"
     },
     {
+      "word": "gift",
+      "concept": "having"
+    },
+    {
       "word": "girl",
       "concept": "person",
       "antonyms": [
@@ -1149,7 +1244,10 @@
     },
     {
       "word": "glad",
-      "concept": "feeling"
+      "concept": "feeling",
+      "synonyms": [
+        "happy"
+      ]
     },
     {
       "word": "glass",
@@ -1164,6 +1262,9 @@
       "concept": "",
       "antonyms": [
         "come"
+      ],
+      "synonyms": [
+        "move"
       ]
     },
     {
@@ -1179,6 +1280,9 @@
       "concept": "good_and_bad",
       "antonyms": [
         "bad"
+      ],
+      "synonyms": [
+        "nice"
       ]
     },
     {
@@ -1224,7 +1328,11 @@
     },
     {
       "word": "guess",
-      "concept": "knowing"
+      "concept": "knowing",
+      "synonyms": [
+        "suppose",
+        "wonder"
+      ]
     },
     {
       "word": "half",
@@ -1243,6 +1351,9 @@
       "concept": "feeling",
       "antonyms": [
         "sad"
+      ],
+      "synonyms": [
+        "glad"
       ]
     },
     {
@@ -1251,6 +1362,9 @@
       "antonyms": [
         "easy",
         "soft"
+      ],
+      "synonyms": [
+        "strong"
       ]
     },
     {
@@ -1258,6 +1372,9 @@
       "concept": "danger",
       "antonyms": [
         "help"
+      ],
+      "synonyms": [
+        "hurt"
       ]
     },
     {
@@ -1273,7 +1390,10 @@
     },
     {
       "word": "hear",
-      "concept": "body_part"
+      "concept": "body_part",
+      "synonyms": [
+        "listen"
+      ]
     },
     {
       "word": "heard",
@@ -1357,7 +1477,10 @@
     },
     {
       "word": "home",
-      "concept": "people_together"
+      "concept": "people_together",
+      "synonyms": [
+        "house"
+      ]
     },
     {
       "word": "honest",
@@ -1376,7 +1499,10 @@
     },
     {
       "word": "house",
-      "concept": "household_object"
+      "concept": "household_object",
+      "synonyms": [
+        "home"
+      ]
     },
     {
       "word": "however",
@@ -1392,11 +1518,18 @@
     },
     {
       "word": "hurry",
-      "concept": "moving_and_still"
+      "concept": "moving_and_still",
+      "synonyms": [
+        "rush"
+      ]
     },
     {
       "word": "hurt",
-      "concept": "danger"
+      "concept": "danger",
+      "synonyms": [
+        "harm",
+        "pain"
+      ]
     },
     {
       "word": "ice",
@@ -1405,6 +1538,13 @@
     {
       "word": "idea",
       "concept": "knowing"
+    },
+    {
+      "word": "ill",
+      "concept": "danger",
+      "synonyms": [
+        "sick"
+      ]
     },
     {
       "word": "impossible",
@@ -1442,7 +1582,10 @@
     },
     {
       "word": "job",
-      "concept": "way_of_doing"
+      "concept": "way_of_doing",
+      "synonyms": [
+        "task"
+      ]
     },
     {
       "word": "join",
@@ -1454,6 +1597,13 @@
     {
       "word": "juice",
       "concept": "liquid"
+    },
+    {
+      "word": "jump",
+      "concept": "moving_and_still",
+      "synonyms": [
+        "skip"
+      ]
     },
     {
       "word": "key",
@@ -1503,7 +1653,11 @@
     },
     {
       "word": "large",
-      "concept": "physical_property"
+      "concept": "physical_property",
+      "synonyms": [
+        "big",
+        "tall"
+      ]
     },
     {
       "word": "last",
@@ -1540,7 +1694,10 @@
     },
     {
       "word": "learn",
-      "concept": "being_told"
+      "concept": "being_told",
+      "synonyms": [
+        "study"
+      ]
     },
     {
       "word": "learned",
@@ -1578,7 +1735,10 @@
     },
     {
       "word": "liar",
-      "concept": "person"
+      "concept": "person",
+      "synonyms": [
+        "thief"
+      ]
     },
     {
       "word": "lid",
@@ -1586,11 +1746,17 @@
     },
     {
       "word": "lie",
-      "concept": "being_told"
+      "concept": "being_told",
+      "synonyms": [
+        "trick"
+      ]
     },
     {
       "word": "lift",
-      "concept": "force"
+      "concept": "force",
+      "synonyms": [
+        "raise"
+      ]
     },
     {
       "word": "lifted",
@@ -1628,11 +1794,18 @@
     },
     {
       "word": "listen",
-      "concept": "sound"
+      "concept": "sound",
+      "synonyms": [
+        "hear"
+      ]
     },
     {
       "word": "little",
-      "concept": "physical_property"
+      "concept": "physical_property",
+      "synonyms": [
+        "few",
+        "small"
+      ]
     },
     {
       "word": "living",
@@ -1677,7 +1850,10 @@
     },
     {
       "word": "lot",
-      "concept": "more_and_fewer"
+      "concept": "more_and_fewer",
+      "synonyms": [
+        "plenty"
+      ]
     },
     {
       "word": "loud",
@@ -1713,22 +1889,34 @@
     },
     {
       "word": "manner",
-      "concept": "way_of_doing"
+      "concept": "way_of_doing",
+      "synonyms": [
+        "way"
+      ]
     },
     {
       "word": "many",
       "concept": "more_and_fewer",
       "antonyms": [
         "few"
+      ],
+      "synonyms": [
+        "much"
       ]
     },
     {
       "word": "mark",
-      "concept": "name"
+      "concept": "name",
+      "synonyms": [
+        "sign"
+      ]
     },
     {
       "word": "mat",
-      "concept": "household_object"
+      "concept": "household_object",
+      "synonyms": [
+        "rug"
+      ]
     },
     {
       "word": "match",
@@ -1768,7 +1956,10 @@
     },
     {
       "word": "mend",
-      "concept": "things_break"
+      "concept": "things_break",
+      "synonyms": [
+        "fix"
+      ]
     },
     {
       "word": "metal",
@@ -1776,7 +1967,10 @@
     },
     {
       "word": "method",
-      "concept": "way_of_doing"
+      "concept": "way_of_doing",
+      "synonyms": [
+        "way"
+      ]
     },
     {
       "word": "middle",
@@ -1848,6 +2042,9 @@
       "concept": "person",
       "antonyms": [
         "father"
+      ],
+      "synonyms": [
+        "mum"
       ]
     },
     {
@@ -1860,11 +2057,17 @@
     },
     {
       "word": "move",
-      "concept": "moving_and_still"
+      "concept": "moving_and_still",
+      "synonyms": [
+        "go"
+      ]
     },
     {
       "word": "much",
-      "concept": "more_and_fewer"
+      "concept": "more_and_fewer",
+      "synonyms": [
+        "many"
+      ]
     },
     {
       "word": "mud",
@@ -1872,7 +2075,10 @@
     },
     {
       "word": "mum",
-      "concept": "family"
+      "concept": "family",
+      "synonyms": [
+        "mother"
+      ]
     },
     {
       "word": "myself",
@@ -1891,11 +2097,18 @@
       "concept": "physical_property",
       "antonyms": [
         "wide"
+      ],
+      "synonyms": [
+        "thin"
       ]
     },
     {
       "word": "nasty",
-      "concept": "good_and_bad"
+      "concept": "good_and_bad",
+      "synonyms": [
+        "bad",
+        "unkind"
+      ]
     },
     {
       "word": "natural",
@@ -1932,7 +2145,10 @@
     },
     {
       "word": "nice",
-      "concept": "good_and_bad"
+      "concept": "good_and_bad",
+      "synonyms": [
+        "good"
+      ]
     },
     {
       "word": "night",
@@ -1961,7 +2177,10 @@
     },
     {
       "word": "noise",
-      "concept": "sound"
+      "concept": "sound",
+      "synonyms": [
+        "sound"
+      ]
     },
     {
       "word": "noisy",
@@ -1972,7 +2191,10 @@
     },
     {
       "word": "none",
-      "concept": "counting"
+      "concept": "counting",
+      "synonyms": [
+        "nothing"
+      ]
     },
     {
       "word": "noon",
@@ -1984,13 +2206,19 @@
     },
     {
       "word": "note",
-      "concept": "written_record"
+      "concept": "written_record",
+      "synonyms": [
+        "record"
+      ]
     },
     {
       "word": "nothing",
       "concept": "emptiness",
       "antonyms": [
         "everything"
+      ],
+      "synonyms": [
+        "none"
       ]
     },
     {
@@ -2022,6 +2250,9 @@
       "concept": "opening_and_shutting",
       "antonyms": [
         "shut"
+      ],
+      "synonyms": [
+        "begin"
       ]
     },
     {
@@ -2076,7 +2307,10 @@
     },
     {
       "word": "pain",
-      "concept": "danger"
+      "concept": "danger",
+      "synonyms": [
+        "hurt"
+      ]
     },
     {
       "word": "pair",
@@ -2104,7 +2338,11 @@
     },
     {
       "word": "path",
-      "concept": "direction"
+      "concept": "direction",
+      "synonyms": [
+        "road",
+        "way"
+      ]
     },
     {
       "word": "patted",
@@ -2112,7 +2350,10 @@
     },
     {
       "word": "pay",
-      "concept": "exchange"
+      "concept": "exchange",
+      "synonyms": [
+        "cost"
+      ]
     },
     {
       "word": "pen",
@@ -2129,6 +2370,13 @@
     {
       "word": "phrase",
       "concept": "sentence"
+    },
+    {
+      "word": "pick",
+      "concept": "way_of_doing",
+      "synonyms": [
+        "choose"
+      ]
     },
     {
       "word": "picture",
@@ -2160,7 +2408,11 @@
     },
     {
       "word": "plenty",
-      "concept": "enough"
+      "concept": "enough",
+      "synonyms": [
+        "lot",
+        "rich"
+      ]
     },
     {
       "word": "pocket",
@@ -2194,7 +2446,10 @@
     },
     {
       "word": "press",
-      "concept": "force"
+      "concept": "force",
+      "synonyms": [
+        "push"
+      ]
     },
     {
       "word": "pressed",
@@ -2220,6 +2475,9 @@
       "concept": "force",
       "antonyms": [
         "push"
+      ],
+      "synonyms": [
+        "drag"
       ]
     },
     {
@@ -2227,6 +2485,9 @@
       "concept": "force",
       "antonyms": [
         "pull"
+      ],
+      "synonyms": [
+        "press"
       ]
     },
     {
@@ -2242,7 +2503,10 @@
     },
     {
       "word": "quick",
-      "concept": "duration"
+      "concept": "duration",
+      "synonyms": [
+        "fast"
+      ]
     },
     {
       "word": "quickly",
@@ -2254,6 +2518,9 @@
       "antonyms": [
         "loud",
         "noisy"
+      ],
+      "synonyms": [
+        "calm"
       ]
     },
     {
@@ -2262,7 +2529,10 @@
     },
     {
       "word": "raise",
-      "concept": "falling"
+      "concept": "falling",
+      "synonyms": [
+        "lift"
+      ]
     },
     {
       "word": "raw",
@@ -2296,7 +2566,10 @@
     },
     {
       "word": "record",
-      "concept": "written_record"
+      "concept": "written_record",
+      "synonyms": [
+        "note"
+      ]
     },
     {
       "word": "red",
@@ -2304,7 +2577,10 @@
     },
     {
       "word": "remain",
-      "concept": "presence"
+      "concept": "presence",
+      "synonyms": [
+        "stay"
+      ]
     },
     {
       "word": "remember",
@@ -2319,7 +2595,10 @@
     },
     {
       "word": "reply",
-      "concept": "asking"
+      "concept": "asking",
+      "synonyms": [
+        "answer"
+      ]
     },
     {
       "word": "represent",
@@ -2338,6 +2617,9 @@
       "concept": "having",
       "antonyms": [
         "poor"
+      ],
+      "synonyms": [
+        "plenty"
       ]
     },
     {
@@ -2366,8 +2648,19 @@
       ]
     },
     {
+      "word": "road",
+      "concept": "direction",
+      "synonyms": [
+        "path",
+        "street"
+      ]
+    },
+    {
       "word": "rock",
-      "concept": "material"
+      "concept": "material",
+      "synonyms": [
+        "stone"
+      ]
     },
     {
       "word": "roll",
@@ -2383,7 +2676,10 @@
     },
     {
       "word": "rope",
-      "concept": "material"
+      "concept": "material",
+      "synonyms": [
+        "string"
+      ]
     },
     {
       "word": "rough",
@@ -2401,6 +2697,13 @@
       "concept": "touching"
     },
     {
+      "word": "rug",
+      "concept": "household_object",
+      "synonyms": [
+        "mat"
+      ]
+    },
+    {
       "word": "rule",
       "concept": "someone_in_charge"
     },
@@ -2414,7 +2717,10 @@
     },
     {
       "word": "rush",
-      "concept": "moving_and_still"
+      "concept": "moving_and_still",
+      "synonyms": [
+        "hurry"
+      ]
     },
     {
       "word": "rust",
@@ -2447,7 +2753,10 @@
     },
     {
       "word": "scared",
-      "concept": "feeling"
+      "concept": "feeling",
+      "synonyms": [
+        "afraid"
+      ]
     },
     {
       "word": "school",
@@ -2574,8 +2883,18 @@
       "concept": "body_part"
     },
     {
+      "word": "shout",
+      "concept": "sound",
+      "synonyms": [
+        "yell"
+      ]
+    },
+    {
       "word": "show",
-      "concept": "checking"
+      "concept": "checking",
+      "synonyms": [
+        "teach"
+      ]
     },
     {
       "word": "shown",
@@ -2593,11 +2912,17 @@
       "concept": "opening_and_shutting",
       "antonyms": [
         "open"
+      ],
+      "synonyms": [
+        "close"
       ]
     },
     {
       "word": "sick",
-      "concept": "danger"
+      "concept": "danger",
+      "synonyms": [
+        "ill"
+      ]
     },
     {
       "word": "side",
@@ -2605,7 +2930,10 @@
     },
     {
       "word": "sign",
-      "concept": "standing_for"
+      "concept": "standing_for",
+      "synonyms": [
+        "mark"
+      ]
     },
     {
       "word": "silver",
@@ -2639,7 +2967,10 @@
     },
     {
       "word": "skip",
-      "concept": "change"
+      "concept": "change",
+      "synonyms": [
+        "jump"
+      ]
     },
     {
       "word": "sky",
@@ -2672,6 +3003,9 @@
       "concept": "physical_property",
       "antonyms": [
         "big"
+      ],
+      "synonyms": [
+        "little"
       ]
     },
     {
@@ -2679,8 +3013,18 @@
       "concept": "measuring"
     },
     {
+      "word": "smart",
+      "concept": "being_told",
+      "synonyms": [
+        "clever"
+      ]
+    },
+    {
       "word": "smash",
-      "concept": "things_break"
+      "concept": "things_break",
+      "synonyms": [
+        "break"
+      ]
     },
     {
       "word": "smell",
@@ -2741,7 +3085,11 @@
     },
     {
       "word": "sound",
-      "concept": "sound"
+      "concept": "sound",
+      "synonyms": [
+        "noise",
+        "voice"
+      ]
     },
     {
       "word": "space",
@@ -2749,11 +3097,17 @@
     },
     {
       "word": "spare",
-      "concept": "enough"
+      "concept": "enough",
+      "synonyms": [
+        "extra"
+      ]
     },
     {
       "word": "speak",
-      "concept": "sentence"
+      "concept": "sentence",
+      "synonyms": [
+        "talk"
+      ]
     },
     {
       "word": "speed",
@@ -2804,11 +3158,17 @@
       "concept": "sequence",
       "antonyms": [
         "stop"
+      ],
+      "synonyms": [
+        "begin"
       ]
     },
     {
       "word": "stay",
-      "concept": "presence"
+      "concept": "presence",
+      "synonyms": [
+        "remain"
+      ]
     },
     {
       "word": "steal",
@@ -2832,7 +3192,10 @@
     },
     {
       "word": "stone",
-      "concept": "material"
+      "concept": "material",
+      "synonyms": [
+        "rock"
+      ]
     },
     {
       "word": "stop",
@@ -2847,7 +3210,10 @@
     },
     {
       "word": "story",
-      "concept": "writing"
+      "concept": "writing",
+      "synonyms": [
+        "tale"
+      ]
     },
     {
       "word": "stove",
@@ -2862,7 +3228,10 @@
     },
     {
       "word": "stranger",
-      "concept": "person"
+      "concept": "person",
+      "synonyms": [
+        "enemy"
+      ]
     },
     {
       "word": "straw",
@@ -2870,11 +3239,17 @@
     },
     {
       "word": "street",
-      "concept": "household_object"
+      "concept": "household_object",
+      "synonyms": [
+        "road"
+      ]
     },
     {
       "word": "string",
-      "concept": "material"
+      "concept": "material",
+      "synonyms": [
+        "rope"
+      ]
     },
     {
       "word": "stroke",
@@ -2885,6 +3260,16 @@
       "concept": "force",
       "antonyms": [
         "weak"
+      ],
+      "synonyms": [
+        "hard"
+      ]
+    },
+    {
+      "word": "study",
+      "concept": "being_told",
+      "synonyms": [
+        "learn"
       ]
     },
     {
@@ -2904,7 +3289,10 @@
     },
     {
       "word": "suppose",
-      "concept": "opinion"
+      "concept": "opinion",
+      "synonyms": [
+        "guess"
+      ]
     },
     {
       "word": "sure",
@@ -2916,7 +3304,10 @@
     },
     {
       "word": "swap",
-      "concept": "exchange"
+      "concept": "exchange",
+      "synonyms": [
+        "trade"
+      ]
     },
     {
       "word": "swim",
@@ -2938,14 +3329,27 @@
       ]
     },
     {
+      "word": "tale",
+      "concept": "writing",
+      "synonyms": [
+        "story"
+      ]
+    },
+    {
       "word": "talk",
-      "concept": "sentence"
+      "concept": "sentence",
+      "synonyms": [
+        "speak"
+      ]
     },
     {
       "word": "tall",
       "concept": "physical_property",
       "antonyms": [
         "short"
+      ],
+      "synonyms": [
+        "large"
       ]
     },
     {
@@ -2958,7 +3362,17 @@
     },
     {
       "word": "task",
-      "concept": "way_of_doing"
+      "concept": "way_of_doing",
+      "synonyms": [
+        "job"
+      ]
+    },
+    {
+      "word": "teach",
+      "concept": "being_told",
+      "synonyms": [
+        "show"
+      ]
     },
     {
       "word": "teacher",
@@ -2966,7 +3380,10 @@
     },
     {
       "word": "tear",
-      "concept": "things_break"
+      "concept": "things_break",
+      "synonyms": [
+        "cut"
+      ]
     },
     {
       "word": "tend",
@@ -2974,7 +3391,10 @@
     },
     {
       "word": "term",
-      "concept": "word"
+      "concept": "word",
+      "synonyms": [
+        "word"
+      ]
     },
     {
       "word": "test",
@@ -3000,7 +3420,10 @@
     },
     {
       "word": "thief",
-      "concept": "person"
+      "concept": "person",
+      "synonyms": [
+        "liar"
+      ]
     },
     {
       "word": "thin",
@@ -3008,6 +3431,9 @@
       "antonyms": [
         "fat",
         "thick"
+      ],
+      "synonyms": [
+        "narrow"
       ]
     },
     {
@@ -3036,7 +3462,10 @@
     },
     {
       "word": "throw",
-      "concept": "force"
+      "concept": "force",
+      "synonyms": [
+        "toss"
+      ]
     },
     {
       "word": "tie",
@@ -3059,7 +3488,10 @@
     },
     {
       "word": "tired",
-      "concept": "wearing_out"
+      "concept": "wearing_out",
+      "synonyms": [
+        "weary"
+      ]
     },
     {
       "word": "today",
@@ -3092,6 +3524,13 @@
       ]
     },
     {
+      "word": "toss",
+      "concept": "force",
+      "synonyms": [
+        "throw"
+      ]
+    },
+    {
       "word": "touch",
       "concept": "touching"
     },
@@ -3109,7 +3548,10 @@
     },
     {
       "word": "trade",
-      "concept": "exchange"
+      "concept": "exchange",
+      "synonyms": [
+        "swap"
+      ]
     },
     {
       "word": "tray",
@@ -3121,7 +3563,10 @@
     },
     {
       "word": "trick",
-      "concept": "way_of_doing"
+      "concept": "way_of_doing",
+      "synonyms": [
+        "lie"
+      ]
     },
     {
       "word": "true",
@@ -3198,6 +3643,9 @@
       "concept": "good_and_bad",
       "antonyms": [
         "kind"
+      ],
+      "synonyms": [
+        "nasty"
       ]
     },
     {
@@ -3257,7 +3705,10 @@
     },
     {
       "word": "voice",
-      "concept": "sound"
+      "concept": "sound",
+      "synonyms": [
+        "sound"
+      ]
     },
     {
       "word": "wait",
@@ -3291,7 +3742,10 @@
     },
     {
       "word": "wash",
-      "concept": "liquid"
+      "concept": "liquid",
+      "synonyms": [
+        "clean"
+      ]
     },
     {
       "word": "watch",
@@ -3307,7 +3761,12 @@
     },
     {
       "word": "way",
-      "concept": "discourse_marker"
+      "concept": "discourse_marker",
+      "synonyms": [
+        "manner",
+        "method",
+        "path"
+      ]
     },
     {
       "word": "weak",
@@ -3319,6 +3778,13 @@
     {
       "word": "wear",
       "concept": "wearing_out"
+    },
+    {
+      "word": "weary",
+      "concept": "feeling",
+      "synonyms": [
+        "tired"
+      ]
     },
     {
       "word": "weather",
@@ -3364,6 +3830,9 @@
       "concept": "physical_property",
       "antonyms": [
         "narrow"
+      ],
+      "synonyms": [
+        "broad"
       ]
     },
     {
@@ -3394,7 +3863,10 @@
     },
     {
       "word": "wonder",
-      "concept": "knowing"
+      "concept": "knowing",
+      "synonyms": [
+        "guess"
+      ]
     },
     {
       "word": "wood",
@@ -3406,7 +3878,10 @@
     },
     {
       "word": "word",
-      "concept": "word"
+      "concept": "word",
+      "synonyms": [
+        "term"
+      ]
     },
     {
       "word": "work",
@@ -3440,6 +3915,13 @@
     {
       "word": "year",
       "concept": "cycle"
+    },
+    {
+      "word": "yell",
+      "concept": "sound",
+      "synonyms": [
+        "shout"
+      ]
     },
     {
       "word": "yellow",

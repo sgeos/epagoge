@@ -679,6 +679,11 @@
       "level": 1
     },
     {
+      "word": "broad",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
       "word": "broom",
       "concept": "household_object",
       "level": 1
@@ -945,6 +950,17 @@
       ]
     },
     {
+      "word": "choose",
+      "concept": "way_of_doing",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "choosed",
+        "chooses",
+        "choosing"
+      ]
+    },
+    {
       "word": "circle",
       "concept": "shape",
       "level": 1
@@ -969,6 +985,11 @@
         "cleaning",
         "cleans"
       ]
+    },
+    {
+      "word": "clever",
+      "concept": "being_told",
+      "level": 1
     },
     {
       "word": "clock",
@@ -1384,6 +1405,17 @@
       "word": "dormant",
       "concept": "presence",
       "level": 5
+    },
+    {
+      "word": "drag",
+      "concept": "force",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "dragged",
+        "dragging",
+        "drags"
+      ]
     },
     {
       "word": "drain",
@@ -1956,6 +1988,11 @@
       "level": 1
     },
     {
+      "word": "gift",
+      "concept": "having",
+      "level": 1
+    },
+    {
       "word": "girl",
       "concept": "person",
       "level": 1
@@ -2353,6 +2390,11 @@
       "level": 6
     },
     {
+      "word": "ill",
+      "concept": "danger",
+      "level": 1
+    },
+    {
       "word": "impossible",
       "concept": "can_and_cannot",
       "level": 1
@@ -2425,6 +2467,17 @@
       "word": "juice",
       "concept": "liquid",
       "level": 1
+    },
+    {
+      "word": "jump",
+      "concept": "moving_and_still",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "jumped",
+        "jumping",
+        "jumps"
+      ]
     },
     {
       "word": "key",
@@ -3394,6 +3447,17 @@
       "level": 1
     },
     {
+      "word": "pick",
+      "concept": "way_of_doing",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "picked",
+        "picking",
+        "picks"
+      ]
+    },
+    {
       "word": "picture",
       "concept": "toy",
       "level": 1
@@ -3860,6 +3924,11 @@
       ]
     },
     {
+      "word": "road",
+      "concept": "direction",
+      "level": 1
+    },
+    {
       "word": "rock",
       "concept": "material",
       "level": 1
@@ -3915,6 +3984,11 @@
         "rubbing",
         "rubs"
       ]
+    },
+    {
+      "word": "rug",
+      "concept": "household_object",
+      "level": 1
     },
     {
       "word": "rule",
@@ -4178,6 +4252,17 @@
       "level": 1
     },
     {
+      "word": "shout",
+      "concept": "sound",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "shouted",
+        "shouting",
+        "shouts"
+      ]
+    },
+    {
       "word": "show",
       "concept": "checking",
       "level": 1,
@@ -4345,6 +4430,11 @@
     {
       "word": "smaller",
       "concept": "measuring",
+      "level": 1
+    },
+    {
+      "word": "smart",
+      "concept": "being_told",
       "level": 1
     },
     {
@@ -4691,6 +4781,17 @@
       "level": 5
     },
     {
+      "word": "study",
+      "concept": "being_told",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "studied",
+        "studies",
+        "studying"
+      ]
+    },
+    {
       "word": "stuff",
       "concept": "material",
       "level": 1
@@ -4802,6 +4903,11 @@
       "level": 2
     },
     {
+      "word": "tale",
+      "concept": "writing",
+      "level": 1
+    },
+    {
       "word": "talk",
       "concept": "sentence",
       "level": 1,
@@ -4839,6 +4945,17 @@
       "level": 1,
       "forms": [
         "tasks"
+      ]
+    },
+    {
+      "word": "teach",
+      "concept": "being_told",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "taught",
+        "teaches",
+        "teaching"
       ]
     },
     {
@@ -5040,6 +5157,17 @@
       "word": "top",
       "concept": "spatial_position",
       "level": 1
+    },
+    {
+      "word": "toss",
+      "concept": "force",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "tossed",
+        "tosses",
+        "tossing"
+      ]
     },
     {
       "word": "touch",
@@ -5410,6 +5538,11 @@
       ]
     },
     {
+      "word": "weary",
+      "concept": "feeling",
+      "level": 1
+    },
+    {
       "word": "weather",
       "concept": "weather",
       "level": 1
@@ -5572,6 +5705,17 @@
       "word": "years",
       "concept": "duration",
       "level": 5
+    },
+    {
+      "word": "yell",
+      "concept": "sound",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "yelled",
+        "yelling",
+        "yells"
+      ]
     },
     {
       "word": "yellow",
