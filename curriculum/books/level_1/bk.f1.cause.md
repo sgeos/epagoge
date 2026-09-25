@@ -21,7 +21,9 @@
     "f1.cause.x10": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "f1.cause.x11": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "f1.cause.x12": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "f1.cause.x13": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "f1.cause.x13": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.cause.x14": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.cause.x15": {"concepts": ["cause_and_effect"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ I carried it home, careful not to drop it on the path.
 
 [f1.cause.x13]
 I placed it on the shelf, where it stayed safe and still.
+
+[f1.cause.x14]
+The ball sat on the shelf, quiet and still, like a promise kept.
+
+[f1.cause.x15]
+The ball sat on the shelf, quiet and still.

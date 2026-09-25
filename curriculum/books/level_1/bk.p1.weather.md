@@ -19,7 +19,8 @@
     "p1.weather.x08": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.weather.x09": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.weather.x10": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "p1.weather.x11": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.weather.x11": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.weather.x12": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -59,3 +60,6 @@ She opens the door and steps inside, shaking wet drops.
 
 [p1.weather.x11]
 The clouds grew dark and low above the trees.
+
+[p1.weather.x12]
+She pulls her blanket close, feeling safe from the storm outside.

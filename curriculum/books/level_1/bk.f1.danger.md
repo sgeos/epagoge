@@ -22,7 +22,8 @@
     "f1.danger.x11": {"concepts": ["danger"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "f1.danger.x12": {"concepts": ["danger"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "f1.danger.x13": {"concepts": ["danger"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "f1.danger.x14": {"concepts": ["danger"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "f1.danger.x14": {"concepts": ["danger"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.danger.x15": {"concepts": ["danger"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ He learned to always ask before touching anything hot.
 
 [f1.danger.x14]
 He helped his little sister check the stove before she played near it.
+
+[f1.danger.x15]
+He checked the stove again before letting his sister touch it.

@@ -20,7 +20,9 @@
     "r1.measure.x09": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "r1.measure.x10": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "r1.measure.x11": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "r1.measure.x12": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "r1.measure.x12": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "r1.measure.x13": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "r1.measure.x14": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +65,9 @@ I used the stick to push the ball across the grass to my friend.
 
 [r1.measure.x12]
 I tied the stick to the rope so it could lift the heavy box.
+
+[r1.measure.x13]
+I used the stick to pull the balloon down from the branch.
+
+[r1.measure.x14]
+The stick stayed strong and safe, helping me carry the basket home.

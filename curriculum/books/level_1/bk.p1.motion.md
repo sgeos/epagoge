@@ -21,7 +21,9 @@
     "p1.motion.x10": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.motion.x11": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.motion.x12": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "p1.motion.x13": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.motion.x13": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.motion.x14": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.motion.x15": {"concepts": ["moving_and_still", "force"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ You catch them before they hit the ground.
 
 [p1.motion.x13]
 You push it and it moves across the grass.
+
+[p1.motion.x14]
+The cart rolls faster on the smooth path.
+
+[p1.motion.x15]
+The cart falls into the water and floats away.

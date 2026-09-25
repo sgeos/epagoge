@@ -19,7 +19,9 @@
     "i1.opinion.x08": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "i1.opinion.x09": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "i1.opinion.x10": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "i1.opinion.x11": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "i1.opinion.x11": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.opinion.x12": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.opinion.x13": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -59,3 +61,9 @@ He lets go of the blue balloon, watching it rise above the trees.
 
 [i1.opinion.x11]
 She looks up, her eyes wide with wonder, not knowing what to say.
+
+[i1.opinion.x12]
+They stand side by side, arms not crossed, hands reaching out to the sky.
+
+[i1.opinion.x13]
+They both look up, their faces soft with wonder, sharing the same sky.

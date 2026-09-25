@@ -22,7 +22,8 @@
     "f1.alive.x11": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "f1.alive.x12": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "f1.alive.x13": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "f1.alive.x14": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "f1.alive.x14": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.alive.x15": {"concepts": ["living_and_not_living", "dying"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ The child sat by the tree and placed a small stone on the ground, as if it were 
 
 [f1.alive.x14]
 The stone stayed there, quiet and still, just like the bird that would never fly again.
+
+[f1.alive.x15]
+The child sat still, watching the sky turn from blue to grey, then to dark.

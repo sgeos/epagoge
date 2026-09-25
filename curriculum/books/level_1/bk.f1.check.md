@@ -18,7 +18,8 @@
     "f1.check.s03": {"concepts": ["being_told", "checking"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:telling-can-be-wrong"}},
     "f1.check.s04": {"concepts": ["being_told", "checking"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:telling-can-be-wrong"}},
     "f1.check.s05": {"concepts": ["being_told", "checking"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:telling-can-be-wrong"}},
-    "f1.check.s06": {"concepts": ["being_told", "checking"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:telling-can-be-wrong"}}
+    "f1.check.s06": {"concepts": ["being_told", "checking"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:telling-can-be-wrong"}},
+    "f1.check.x11": {"concepts": ["being_told", "checking"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -55,3 +56,6 @@ I found a hidden path behind the tree.
 
 [f1.check.s06]
 I followed the path and saw a small wooden box.
+
+[f1.check.x11]
+I followed the map, walking through tall grass and over a wooden bridge.

@@ -19,7 +19,11 @@
     "p1.touch.s07": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
     "p1.touch.s08": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
     "p1.touch.x10": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "p1.touch.x11": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.touch.x11": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.touch.x12": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.touch.x13": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.touch.x14": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.touch.x15": {"concepts": ["touching"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -59,3 +63,15 @@ The child watches, wondering if the cup can ever be whole again.
 
 [p1.touch.x11]
 Later, the child draws a picture of the cup, smiling, and places it on the wall.
+
+[p1.touch.x12]
+The child picks up the broken cup pieces, one by one, placing them in a small basket.
+
+[p1.touch.x13]
+The child uses glue to join the edges, pressing them together with careful fingers.
+
+[p1.touch.x14]
+The cup is not whole again, but it sits on the shelf, smiling, just like the drawing.
+
+[p1.touch.x15]
+The child picks up the broken cup pieces, placing them in a small basket.

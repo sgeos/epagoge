@@ -18,7 +18,11 @@
     "i1.people.s05": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "i1.people.s06": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "i1.people.x09": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "i1.people.x10": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "i1.people.x10": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.people.x11": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.people.x12": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.people.x13": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.people.x14": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -55,3 +59,15 @@ A bird flies above, watching them build.
 
 [i1.people.x10]
 The water below flows fast, but they stay calm and strong.
+
+[i1.people.x11]
+The bridge is finished, and the class walks across it together.
+
+[i1.people.x12]
+The bird circles once more, then flies away into the bright sky.
+
+[i1.people.x13]
+The bridge stands strong, built with care and love.
+
+[i1.people.x14]
+The bridge stands strong, built with care and hands that worked as one.

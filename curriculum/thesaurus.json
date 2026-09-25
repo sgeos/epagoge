@@ -888,6 +888,10 @@
       "concept": "writing"
     },
     {
+      "word": "drift",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "drink",
       "concept": "living_and_not_living"
     },
@@ -1303,6 +1307,10 @@
     {
       "word": "garden",
       "concept": "plant"
+    },
+    {
+      "word": "gentle",
+      "concept": "way_of_doing"
     },
     {
       "word": "gift",
@@ -4032,6 +4040,10 @@
     {
       "word": "while",
       "concept": "duration"
+    },
+    {
+      "word": "whisper",
+      "concept": "sound"
     },
     {
       "word": "white",

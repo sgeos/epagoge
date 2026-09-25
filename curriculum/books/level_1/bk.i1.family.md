@@ -20,7 +20,8 @@
     "i1.family.s06": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "i1.family.s07": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "i1.family.x11": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "i1.family.x12": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "i1.family.x12": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.family.x13": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +64,6 @@ Her brother came in, holding a red balloon he had found outside.
 
 [i1.family.x12]
 Her brother laughed, holding a balloon that floated above the table.
+
+[i1.family.x13]
+She reached up, trying to catch it, her fingers brushing the air just above.

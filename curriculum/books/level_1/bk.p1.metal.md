@@ -18,7 +18,10 @@
     "p1.metal.s04": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "p1.metal.s05": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "p1.metal.s06": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
-    "p1.metal.s07": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}}
+    "p1.metal.s07": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
+    "p1.metal.x11": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.metal.x12": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.metal.x13": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -55,3 +58,12 @@ He placed it on the table and the room grew quiet, as if the air had stopped.
 
 [p1.metal.s07]
 The key was still in the lock, and the door stayed open.
+
+[p1.metal.x11]
+He reached for the key, still in the lock, and turned it once more.
+
+[p1.metal.x12]
+He turned to close the door, but the key would not come out.
+
+[p1.metal.x13]
+The air felt thick, and the walls seemed to breathe with him.

@@ -22,7 +22,8 @@
     "p1.stuff.x11": {"concepts": ["material", "shape"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.stuff.x12": {"concepts": ["material", "shape"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.stuff.x13": {"concepts": ["material", "shape"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "p1.stuff.x14": {"concepts": ["material", "shape"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.stuff.x14": {"concepts": ["material", "shape"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.stuff.x15": {"concepts": ["material", "shape"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ The child sits on the grass and watches the sky turn red.
 
 [p1.stuff.x14]
 The cup sits on a table, cool and heavy.
+
+[p1.stuff.x15]
+The bird flies away, leaving the cup behind.

@@ -1099,9 +1099,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "choosed",
         "chooses",
-        "choosing"
+        "choosing",
+        "chose",
+        "chosen"
       ]
     },
     {
@@ -1328,7 +1329,6 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "costed",
         "costing",
         "costs"
       ]
@@ -1689,6 +1689,17 @@
         "drawn",
         "draws",
         "drew"
+      ]
+    },
+    {
+      "word": "drift",
+      "concept": "moving_and_still",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "drifted",
+        "drifting",
+        "drifts"
       ]
     },
     {
@@ -2346,6 +2357,14 @@
       "pos": "noun",
       "forms": [
         "gardens"
+      ]
+    },
+    {
+      "word": "gentle",
+      "concept": "way_of_doing",
+      "level": 1,
+      "forms": [
+        "gently"
       ]
     },
     {
@@ -3177,8 +3196,8 @@
       "word": "lie",
       "concept": "being_told",
       "forms": [
-        "lies",
         "lied",
+        "lies",
         "lying"
       ],
       "level": 1,
@@ -3449,7 +3468,8 @@
       "word": "mean",
       "concept": "good_and_bad",
       "level": 1,
-      "pos": "verb"
+      "pos": "verb",
+      "forms": []
     },
     {
       "word": "mean",
@@ -4628,9 +4648,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "rised",
+        "risen",
         "rises",
-        "rising"
+        "rising",
+        "rose"
       ]
     },
     {
@@ -5007,9 +5028,9 @@
       "level": 1,
       "pos": "noun verb",
       "forms": [
-        "shined",
         "shines",
-        "shining"
+        "shining",
+        "shone"
       ]
     },
     {
@@ -5085,9 +5106,10 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "shrinked",
+        "shrank",
         "shrinking",
-        "shrinks"
+        "shrinks",
+        "shrunk"
       ]
     },
     {
@@ -5226,7 +5248,7 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "slided",
+        "slid",
         "slides",
         "sliding"
       ]
@@ -5543,10 +5565,10 @@
       "word": "steal",
       "concept": "having",
       "forms": [
+        "stealing",
         "steals",
         "stole",
-        "stolen",
-        "stealing"
+        "stolen"
       ],
       "level": 1,
       "pos": "verb"
@@ -6603,6 +6625,17 @@
       ]
     },
     {
+      "word": "whisper",
+      "concept": "sound",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "whispered",
+        "whispering",
+        "whispers"
+      ]
+    },
+    {
       "word": "white",
       "concept": "physical_property",
       "level": 1
@@ -6627,7 +6660,6 @@
       "level": 1,
       "pos": "verb",
       "forms": [
-        "winned",
         "winning",
         "wins",
         "won"

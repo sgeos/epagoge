@@ -22,7 +22,8 @@
     "p1.inside.s08": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-persist"}},
     "p1.inside.x12": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.inside.x13": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "p1.inside.x14": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.inside.x14": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.inside.x15": {"concepts": ["inside_and_outside"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ The cup is picked up, placed on a shelf, safe and dry.
 
 [p1.inside.x14]
 The water is gone, but the cup still lies on the floor.
+
+[p1.inside.x15]
+The cup is placed on the shelf, safe and dry.

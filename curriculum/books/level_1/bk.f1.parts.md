@@ -22,7 +22,8 @@
     "f1.parts.x11": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "f1.parts.x12": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "f1.parts.x13": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "f1.parts.x14": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "f1.parts.x14": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "f1.parts.x15": {"concepts": ["component_and_system"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ He went to the toy box and found a block that was just the right size and shape.
 
 [f1.parts.x14]
 The boy looked at the broken block and thought about how to fix it.
+
+[f1.parts.x15]
+The car rolled again, smooth and fast, down the path.

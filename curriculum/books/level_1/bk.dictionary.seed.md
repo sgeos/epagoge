@@ -508,7 +508,10 @@
     "dict.1.sniff": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sniff"}, "defines": {"kind": "word", "target": "sniff"}},
     "dict.1.map": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:map"}, "defines": {"kind": "word", "target": "map"}},
     "dict.1.kitchen": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:kitchen"}, "defines": {"kind": "word", "target": "kitchen"}},
-    "dict.1.hiss": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hiss"}, "defines": {"kind": "word", "target": "hiss"}}
+    "dict.1.hiss": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hiss"}, "defines": {"kind": "word", "target": "hiss"}},
+    "dict.1.whisper": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:whisper"}, "defines": {"kind": "word", "target": "whisper"}},
+    "dict.1.gentle": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gentle"}, "defines": {"kind": "word", "target": "gentle"}},
+    "dict.1.drift": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drift"}, "defines": {"kind": "word", "target": "drift"}}
   }
 }
 ---
@@ -2015,3 +2018,12 @@ A kitchen is the room where food is made.
 
 [dict.1.hiss]
 A hiss is the long soft sound air makes when it goes out of a small hole.
+
+[dict.1.whisper]
+To whisper is to say words with a very quiet voice.
+
+[dict.1.gentle]
+Gentle is when someone does a thing in a soft and careful way.
+
+[dict.1.drift]
+To drift is to move slowly with the air or the water.

@@ -22,7 +22,8 @@
     "p1.change.s03": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.change.s04": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.change.s25": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "empirical", "provenance": {"source_claim": "topic:p1.change"}},
-    "p1.change.s26": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "empirical", "provenance": {"source_claim": "topic:p1.change"}}
+    "p1.change.s26": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "empirical", "provenance": {"source_claim": "topic:p1.change"}},
+    "p1.change.x15": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ It fell slowly through the air and came to rest on the dirt.
 
 [p1.change.s26]
 The toy would not stay closed.
+
+[p1.change.x15]
+It floated over the garden, the trees, and the quiet village street.
