@@ -248,15 +248,19 @@ merely underpowered.
 the quantity most likely to move between a synthetic stream at 818,000
 parameters and a real corpus at target scale.
 
-**Re-measured on the level-one corpus 2026-09-25, and the result is not
-usable.** Eight paired seeds gave rho 0.9993 and a paired standard
-deviation of 0.00344, which would imply one seed per arm at every target
-effect. It is an artifact: 7,998 tokens is fifty-three training chunks,
-so 800 steps cycles the same seven batches about a hundred and fourteen
-times and the ordering stops contributing anything the initialisation
-does not. Held-out loss 5.85 against ln(2193) = 7.69 for uniform, so
-neither arm had converged either. **The seed count still rests on the
-synthetic pilot.** See `pilot/LEVEL_ONE_VARIANCE.md`.
+**Re-measured on the level-one corpus 2026-09-25, after two harness
+defects were found and closed.** Over 44,505 tokens and eight paired
+seeds, rho is **0.9574** against the pilot's 0.9539 and the pairing gain
+is **22.8x** against 20.7x. **The pilot's central finding transfers to
+real text**, which was the thing it was least confident about.
+
+**The seed count still cannot be fixed**, because the paired standard
+deviation moved by a factor of five between eight hundred and sixteen
+hundred steps, and item 10's endpoint is not chosen. Two earlier readings
+on this corpus, rho 0.9993 and 0.9936, are withdrawn: they were taken
+while the chunker was discarding three quarters of the corpus and the
+ordering was covering thirteen books of a hundred and forty-six. See
+`pilot/LEVEL_ONE_VARIANCE.md`.
 
 **A second reason to re-measure, added 2026-09-24.** The pilot ran under
 AdamW with cosine decay. `../docs/decisions/TRAINING_TECHNIQUES.md` adopts
@@ -297,10 +301,18 @@ cannot be revisited after results are seen.
 
 ## 10. Estimator choices
 
-**PENDING.** The exact tangent kernel is intractable at scale. Subsampling
-scheme, probe-set size, and estimator must be fixed here before any run,
-because an estimator chosen after seeing a curve is a choice about the
-result.
+**PENDING, and demonstrated to be load-bearing 2026-09-25.** The exact
+tangent kernel is intractable at scale. Subsampling scheme, probe-set
+size, and estimator must be fixed here before any run, because an
+estimator chosen after seeing a curve is a choice about the result.
+
+**The endpoint belongs in this item and it is not a formality.** On the
+level-one corpus, holding the corpus, the arms and the seeds fixed and
+changing only the step count from eight hundred to sixteen hundred moved
+the curriculum arm from worse in eight seeds of eight to better in seven
+of eight. Both readings would pass a naive paired test. Whoever picks the
+endpoint picks the sign of the result, so it is picked here, in advance,
+and in writing.
 
 The probe set is held fixed and identical across conditions.
 

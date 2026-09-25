@@ -115,10 +115,30 @@ def synthetic_stream(length: int, vocab_size: int, seed: int) -> list[int]:
     return stream
 
 
-def chunk(stream: list[int], seq_len: int) -> list[list[int]]:
-    """Split a stream into fixed-length chunks. Ordering acts on these."""
-    usable = (len(stream) - 1) // seq_len * seq_len
-    return [stream[i : i + seq_len + 1] for i in range(0, usable, seq_len)]
+def chunk(stream: list[int], seq_len: int, pad: int | None = None) -> list[list[int]]:
+    """Split a stream into fixed-length chunks. Ordering acts on these.
+
+    **Without ``pad`` the tail of every stream is thrown away**, and when
+    the streams are books rather than a corpus that is most of the corpus.
+    Measured 2026-09-25 over 146 level-one books: 35,438 tokens became 68
+    chunks of 128, which is 8,772 tokens, so three quarters were dropped
+    and every book shorter than 129 tokens contributed nothing at all. The
+    median book is 192 tokens.
+
+    Passing the padding id keeps the tail as a padded chunk. The caller is
+    then responsible for ignoring that id in the loss, which `train_once`
+    does, or the model learns to predict padding.
+    """
+    if pad is None:
+        usable = (len(stream) - 1) // seq_len * seq_len
+        return [stream[i : i + seq_len + 1] for i in range(0, usable, seq_len)]
+    out: list[list[int]] = []
+    for start in range(0, max(len(stream) - 1, 0), seq_len):
+        piece = stream[start : start + seq_len + 1]
+        if len(piece) < 2:
+            break
+        out.append(piece + [pad] * (seq_len + 1 - len(piece)))
+    return out
 
 
 def _batches(
@@ -156,18 +176,28 @@ def train_once(
     train_config: TrainConfig,
     init_seed: int,
     device: torch.device,
+    pad_id: int | None = None,
 ) -> float:
     """Train one model and return its held-out loss.
 
     ``init_seed`` fixes the initialisation. Two calls sharing an init seed and
     ``chunks`` but differing in ``order`` are a pair.
+
+    ``pad_id`` is excluded from the loss where the chunks carry padding.
     """
     # torch ships incomplete stubs for these two calls. The suppression is a
     # gap in the framework's typing, not a weakening of this module's.
     torch.manual_seed(init_seed)  # pyright: ignore[reportUnknownMemberType]
     model = TinyTransformer(model_config).to(device)
     optimiser = torch.optim.AdamW(model.parameters(), lr=train_config.learning_rate)
-    loss_fn = nn.CrossEntropyLoss()
+    # **Padding is excluded from the loss.** A padded tail chunk is there to
+    # keep the text, not to be predicted, and a model rewarded for emitting
+    # padding would learn the one thing the corpus never says.
+    loss_fn = (
+        nn.CrossEntropyLoss()
+        if pad_id is None
+        else nn.CrossEntropyLoss(ignore_index=pad_id)
+    )
 
     batches = _batches(chunks, order, train_config.batch_size, device)
     model.train()

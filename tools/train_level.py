@@ -39,6 +39,7 @@ import time
 from pathlib import Path
 from typing import cast
 
+from epagoge import schedule as sched
 from epagoge.book import (
     book_prerequisites,
     linear_extension,
@@ -56,7 +57,7 @@ from epagoge.pilot import (
     select_device,
     train_once,
 )
-from epagoge.tokeniser import build
+from epagoge.tokeniser import PAD, build
 from epagoge.variance import (
     MIN_OBSERVATIONS,
     PairedObservation,
@@ -70,9 +71,19 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 def book_order(
-    level: int, graph: ConceptGraph, seed: int, arm: str
+    level: int, graph: ConceptGraph, seed: int, arm: str, plan: sched.Schedule
 ) -> tuple[list[str], dict[str, str]]:
-    """Book ids in the arm's order, and each book's text."""
+    """Book ids in the arm's order, and each book's text.
+
+    **A book teaches what its unit teaches.** Taking the union of every
+    record's concepts instead counts a word the book merely defines as a
+    concept the book teaches, which manufactures dependencies between books
+    that have nothing to do with each other. Measured 2026-09-25 over 144
+    books, that reading made the dependency graph cyclic in twenty-four
+    places, `bk.a1.person` and `bk.b1.keeping_going` each depending on the
+    other, and `linear_extension` returns a short list on a cycle. Thirteen
+    books reached the trainer and a hundred and thirty-three did not.
+    """
     all_books, records = load_book_dir(ROOT / f"curriculum/books/level_{level}")
     by_id = {
         str(cast(dict[str, object], r)["id"]): cast(dict[str, object], r)
@@ -82,15 +93,8 @@ def book_order(
     # dependency graph cyclic. It is reference material and is emitted last.
     books = [b for b in all_books if not b.id.startswith("bk.dictionary.")]
     reference = [b for b in all_books if b.id.startswith("bk.dictionary.")]
-    teaches = {
-        b.id: {
-            c
-            for i in b.records
-            if i in by_id
-            for c in cast(list[str], by_id[i].get("concepts", []))
-        }
-        for b in books
-    }
+    by_unit = {u.id: set(u.teaches) for d in plan.domains for u in d.units}
+    teaches = {b.id: by_unit.get(b.subject, set()) for b in books}
     prerequisites = {n: set(graph.prerequisites_of(n)) for n in graph.nodes}
     deps = book_prerequisites(books, teaches, prerequisites)
     if arm == "topological":
@@ -133,8 +137,22 @@ def main(argv: list[str]) -> int:
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
     tokeniser = build(vocabulary, args.level)
     graph = ConceptGraph.load(ROOT / "curriculum/graph/concepts.json")
+    plan = sched.load(ROOT / f"curriculum/schedule/level_{args.level:02d}.json")
 
-    curriculum, text = book_order(args.level, graph, 0, "curriculum")
+    pad_id = tokeniser.ids[PAD]
+    curriculum, text = book_order(args.level, graph, 0, "curriculum", plan)
+    # **A short ordering is a cycle, and a cycle must stop the run.**
+    # `linear_extension` returns what it could order and says nothing, so a
+    # truncated corpus trained silently and reported itself as the level.
+    if len(curriculum) != len(text):
+        dropped = sorted(set(text) - set(curriculum))
+        print(
+            f"ordering covers {len(curriculum)} of {len(text)} books; "
+            f"the dependency graph is cyclic. First dropped: "
+            f"{' '.join(dropped[:5])}",
+            file=sys.stderr,
+        )
+        return 1
     # Chunks are built per book, so both arms share one chunk set and
     # differ only in the order the chunks are visited.
     chunks: list[list[int]] = []
@@ -143,7 +161,7 @@ def main(argv: list[str]) -> int:
     for book_id in curriculum:
         body = text.get(book_id, "")
         unknown += tokeniser.unknown(body)
-        for piece in chunk(tokeniser.encode(body), args.seq_len):
+        for piece in chunk(tokeniser.encode(body), args.seq_len, pad=pad_id):
             chunks.append(piece)
             owner.append(book_id)
     if unknown:
@@ -170,7 +188,7 @@ def main(argv: list[str]) -> int:
     train_ids = [i for i in range(len(chunks)) if i not in held_ids]
 
     def order_for(arm: str, seed: int) -> list[int]:
-        names, _ = book_order(args.level, graph, seed, arm)
+        names, _ = book_order(args.level, graph, seed, arm, plan)
         rank = {name: n for n, name in enumerate(names)}
         return sorted(train_ids, key=lambda i: (rank.get(owner[i], len(rank)), i))
 
@@ -201,6 +219,7 @@ def main(argv: list[str]) -> int:
                 train_config,
                 seed,
                 device,
+                pad_id=pad_id,
             )
             row[arm] = loss
             print(f"  seed {seed} {arm:12} held-out loss {loss:.4f}")

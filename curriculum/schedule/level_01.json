@@ -312,6 +312,7 @@
           "form": "These two are the same. That one is different. This pile has more.",
           "teaches": [
             "same_and_different",
+            "correspondence",
             "more_and_fewer"
           ],
           "primitives": [
@@ -323,7 +324,6 @@
           "id": "m1.count",
           "form": "One, two, three. Each thing gets the next number. The order never changes.",
           "teaches": [
-            "correspondence",
             "counting",
             "number_word_order"
           ],

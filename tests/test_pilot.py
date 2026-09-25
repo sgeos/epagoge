@@ -111,3 +111,40 @@ class TestModelConfig(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestPaddedChunking(unittest.TestCase):
+    """A book's tail is kept rather than dropped.
+
+    Measured 2026-09-25, chunking 146 level-one books at 128 without
+    padding kept 8,772 of 35,438 tokens, and every book shorter than 129
+    tokens produced nothing at all.
+    """
+
+    def test_without_padding_a_short_stream_yields_nothing(self) -> None:
+        self.assertEqual(chunk(list(range(100)), 128), [])
+
+    def test_with_padding_a_short_stream_yields_one_chunk(self) -> None:
+        pieces = chunk(list(range(100)), 128, pad=0)
+        self.assertEqual(len(pieces), 1)
+        self.assertEqual(len(pieces[0]), 129)
+        self.assertEqual(pieces[0][:100], list(range(100)))
+        self.assertEqual(set(pieces[0][100:]), {0})
+
+    def test_padding_keeps_every_token_of_a_long_stream(self) -> None:
+        stream = list(range(300))
+        pieces = chunk(stream, 128, pad=-1)
+        self.assertTrue(all(len(p) == 129 for p in pieces))
+        kept = [t for p in pieces for t in p if t != -1]
+        self.assertEqual(set(kept), set(stream))
+
+    def test_an_exhausted_stream_stops_rather_than_padding_a_whole_chunk(
+        self,
+    ) -> None:
+        """A chunk of pure padding teaches nothing and is not emitted."""
+        pieces = chunk(list(range(129)), 128, pad=0)
+        self.assertEqual(len(pieces), 1)
+
+    def test_a_stream_too_short_to_predict_yields_nothing(self) -> None:
+        self.assertEqual(chunk([7], 128, pad=0), [])
