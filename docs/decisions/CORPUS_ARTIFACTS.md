@@ -37,6 +37,25 @@ of one corpus rather than two corpora.
 narrative is the reason a book exists. Shuffling inside one would destroy
 the thing the ordering hypothesis is about while claiming to test it.
 
+## Each level carries a dictionary, and it is derived
+
+**Operator decision, 2026-09-24.** A level's corpus includes a dictionary
+of its own vocabulary.
+
+**It is derived, not authored.** Every word definition already exists
+inside the book that introduced it, carried on the record as
+`defines: {kind: word}`. The dictionary collects them, so there is no
+second place to keep in agreement with the first.
+
+**It is the last document of the level, and it is a consolidation.** Every
+word in it was already defined in context by the book that introduced it.
+Seven hundred definitions at the front, with no story around them, is
+exactly the lifeless-assertion failure the books exist to fix.
+
+**It makes the closure gap visible as a number.** `build_corpus.py` reports
+the fraction of the level's terms that carry a definition. At the first
+build that is **27 of 760**.
+
 ## Both questions now answered, and one created
 
 **ANSWERED 2026-09-24. The derived stream is ignored**, for the same reason

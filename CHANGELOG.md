@@ -27,6 +27,35 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Each level carries a dictionary, and it is derived
+
+- **Operator decision.** Every word definition already lives inside the
+  book that introduced it, so the dictionary collects them and there is no
+  second place to keep in agreement with the first.
+- **It is the last document of the level, as a consolidation.** Every word
+  in it was already defined in context. Seven hundred definitions at the
+  front, with no story around them, is exactly the lifeless-assertion
+  failure the books exist to fix.
+- **It makes the closure gap a number.** First build reports **27 of 760**
+  level-one words defined.
+
+### Measured. One book per topic is 1.47 percent of a corpus
+
+- `docs/decisions/CORPUS_SCALE.md`. **5 books, 681 words**, mean 136.
+- At that mean, one book for each of the 83 topics gives **11,304 words**,
+  against a recorded budget of roughly 770,000 to 7.7 million.
+- **Between 12 and 600 books per topic**, depending on budget and book
+  length. At 400 words a book, the low budget is **1,923 books**.
+- **Repetition is not a stylistic preference here. It is the only way the
+  budget is reachable at this book length**, and it is what gives the
+  spiral its material.
+- Cost from measured throughput: **eleven to twenty-two hours** of
+  single-stream wall time for the low budget, improving under concurrency.
+  That agrees with an estimate made before any book existed.
+- **The mean is from five books**, four written by the same prompt shape
+  against adjacent topics. A different topic may run longer or shorter and
+  the sample cannot say.
+
 ### Fixed. A pre-push audit found the disclosure scan enforcing one rule of three
 
 - **The scan covered banned vocabulary only.** The code-name discipline

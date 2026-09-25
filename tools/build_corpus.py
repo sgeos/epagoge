@@ -43,6 +43,10 @@ def main(argv: list[str]) -> int:
     parser.add_argument(
         "--graph", type=Path, default=Path("curriculum/graph/concepts.json")
     )
+    parser.add_argument(
+        "--vocabulary", type=Path, default=Path("curriculum/vocabulary.json")
+    )
+    parser.add_argument("--no-dictionary", action="store_true")
     args = parser.parse_args(argv[1:])
 
     books, records = load_book_dir(args.books)
@@ -110,8 +114,42 @@ def main(argv: list[str]) -> int:
                 json.dumps({"id": book.id, "level": book.level, "text": text}) + "\n"
             )
 
+        # **The dictionary is last, and it is a consolidation.** Every word
+        # in it was already defined in context by the book that introduced
+        # it. Seven hundred definitions at the front, with no story around
+        # them, is the lifeless-assertion failure the books exist to fix.
+        defined: dict[str, str] = {}
+        for record in records:
+            entry = cast(dict[str, object], record)
+            definition = cast(dict[str, object], entry.get("defines") or {})
+            if definition.get("kind") == "word":
+                defined[str(definition["target"])] = str(entry["content"])
+        level = order[0].level if order else 1
+        if not args.no_dictionary and defined:
+            text = "\n".join(f"{w}: {defined[w]}" for w in sorted(defined))
+            words += len(text.split())
+            handle.write(
+                json.dumps(
+                    {"id": f"dictionary.level_{level}", "level": level, "text": text}
+                )
+                + "\n"
+            )
+
     constrained = sum(1 for v in deps.values() if v)
-    print(f"{args.out}: {len(order)} documents, {words} words, order {args.order}")
+    wanted = {
+        t["word"]
+        for t in cast(
+            list[dict[str, object]],
+            json.loads(args.vocabulary.read_text(encoding="utf-8"))["terms"],
+        )
+        if cast(int, t["level"]) <= level
+    }
+    total = len(order) + (0 if args.no_dictionary or not defined else 1)
+    print(f"{args.out}: {total} documents, {words} words, order {args.order}")
+    print(
+        f"  dictionary: {len(defined)} of {len(wanted)} level-{level} words defined"
+        f"  {len(defined) / len(wanted) * 100:.1f}%"
+    )
     print(f"  {constrained} of {len(deps)} books are constrained by another")
     if args.order == "topological":
         print(f"  seed {args.seed}")
