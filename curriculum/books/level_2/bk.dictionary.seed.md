@@ -29,7 +29,6 @@
     "dict.2.lead": {"concepts": ["causal_chain"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lead"}, "defines": {"kind": "word", "target": "lead"}},
     "dict.2.minus": {"concepts": ["subtraction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:minus"}, "defines": {"kind": "word", "target": "minus"}},
     "dict.2.mishap": {"concepts": ["accident"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mishap"}, "defines": {"kind": "word", "target": "mishap"}},
-    "dict.2.ones": {"concepts": ["place_value"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ones"}, "defines": {"kind": "word", "target": "ones"}},
     "dict.2.pile": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pile"}, "defines": {"kind": "word", "target": "pile"}},
     "dict.2.quantity": {"concepts": ["quantity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:quantity"}, "defines": {"kind": "word", "target": "quantity"}},
     "dict.2.rearrange": {"concepts": ["conservation_of_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rearrange"}, "defines": {"kind": "word", "target": "rearrange"}},
@@ -37,9 +36,6 @@
     "dict.2.set": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:set"}, "defines": {"kind": "word", "target": "set"}},
     "dict.2.subtract": {"concepts": ["subtraction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:subtract"}, "defines": {"kind": "word", "target": "subtract"}},
     "dict.2.system": {"concepts": ["component_and_system"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:system"}, "defines": {"kind": "word", "target": "system"}},
-    "dict.2.taken": {"concepts": ["subtraction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:taken"}, "defines": {"kind": "word", "target": "taken"}},
-    "dict.2.ten": {"concepts": ["quantity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ten"}, "defines": {"kind": "word", "target": "ten"}},
-    "dict.2.tens": {"concepts": ["place_value"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tens"}, "defines": {"kind": "word", "target": "tens"}},
     "dict.2.thirty": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thirty"}, "defines": {"kind": "word", "target": "thirty"}},
     "dict.2.twelve": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:twelve"}, "defines": {"kind": "word", "target": "twelve"}},
     "dict.2.twenty": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:twenty"}, "defines": {"kind": "word", "target": "twenty"}},
@@ -111,9 +107,6 @@ Minus means one amount taken away from another.
 [dict.2.mishap]
 A mishap is a small accident.
 
-[dict.2.ones]
-Ones are the digits that show how many things there are on their own.
-
 [dict.2.pile]
 A pile is many things put one on top of another.
 
@@ -134,15 +127,6 @@ To subtract is to take one amount away from another.
 
 [dict.2.system]
 A system is many parts that work together as one thing.
-
-[dict.2.taken]
-Taken is when a thing has been moved away from where it was.
-
-[dict.2.ten]
-Ten is one more than nine.
-
-[dict.2.tens]
-Tens are the digits that show how many groups of ten there are.
 
 [dict.2.thirty]
 Thirty is three tens.

@@ -2661,10 +2661,6 @@
       "concept": "number_word_order"
     },
     {
-      "word": "ones",
-      "concept": "place_value"
-    },
-    {
       "word": "open",
       "concept": "opening_and_shutting",
       "antonyms": [
@@ -3960,10 +3956,6 @@
       ]
     },
     {
-      "word": "taken",
-      "concept": "subtraction"
-    },
-    {
       "word": "tale",
       "concept": "story",
       "synonyms": [
@@ -4026,15 +4018,11 @@
     },
     {
       "word": "ten",
-      "concept": "quantity"
+      "concept": "number_word_order"
     },
     {
       "word": "tend",
       "concept": "tending"
-    },
-    {
-      "word": "tens",
-      "concept": "place_value"
     },
     {
       "word": "term",

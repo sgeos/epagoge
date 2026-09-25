@@ -343,6 +343,20 @@
           "primitives": [
             "a-claim-can-be-so-or-not"
           ]
+        },
+        {
+          "id": "m1.same_count",
+          "form": "Move them about. Count again. There are still as many as before.",
+          "teaches": [
+            "conservation_of_number"
+          ]
+        },
+        {
+          "id": "m1.group",
+          "form": "Put the ones that are alike together. Now you have a group.",
+          "teaches": [
+            "grouping"
+          ]
         }
       ]
     },
@@ -416,6 +430,13 @@
           "form": "A thing is made of parts. One bad part can stop the whole thing.",
           "teaches": [
             "component_and_system"
+          ]
+        },
+        {
+          "id": "f1.chain",
+          "form": "This made that happen, and that made the next thing happen.",
+          "teaches": [
+            "causal_chain"
           ]
         }
       ]

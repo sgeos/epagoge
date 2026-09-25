@@ -164,6 +164,20 @@ def main(argv: list[str]) -> int:
                     "defines": {"kind": "word", "target": word},
                 }
             )
+        # **Written back in alphabetical order.** Appending put every new
+        # entry at the end, which is authoring order and is meaningful to
+        # nobody looking a word up. The gate checks the order, so leaving
+        # it to a separate pass makes every admission break the build.
+        out.sort(
+            key=lambda entry: (
+                str(
+                    cast(dict[str, object], entry.get("defines") or {}).get(
+                        "target", ""
+                    )
+                ),
+                str(entry.get("id", "")),
+            )
+        )
         seed_path.write_text(
             render_book(
                 {

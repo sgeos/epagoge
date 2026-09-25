@@ -33,26 +33,6 @@
           ]
         },
         {
-          "id": "m2.grouping",
-          "form": "Put the same ones together. Count the groups.",
-          "teaches": [
-            "grouping"
-          ],
-          "primitives": [
-            "same-again"
-          ]
-        },
-        {
-          "id": "m2.conservation",
-          "form": "Move them around and there are still the same number.",
-          "teaches": [
-            "conservation_of_number"
-          ],
-          "primitives": [
-            "quantity-survives-rearrangement"
-          ]
-        },
-        {
           "id": "m2.addsub",
           "form": "Adding is counting on. Taking away is counting back.",
           "teaches": [
@@ -68,16 +48,6 @@
     {
       "domain": "failure_analysis",
       "units": [
-        {
-          "id": "f2.chain",
-          "form": "This caused that, and that caused the next thing.",
-          "teaches": [
-            "causal_chain"
-          ],
-          "primitives": [
-            "cause-precedes-effect"
-          ]
-        },
         {
           "id": "f2.failing",
           "form": "It still looks whole but it no longer does its job.",

@@ -132,6 +132,7 @@
     "still",
     "such",
     "take",
+    "taken",
     "takes",
     "taking",
     "tell",
@@ -2861,7 +2862,7 @@
     {
       "word": "group",
       "concept": "grouping",
-      "level": 2,
+      "level": 1,
       "forms": [
         "grouped",
         "groups"
@@ -3503,7 +3504,7 @@
     {
       "word": "knock",
       "concept": "causal_chain",
-      "level": 2
+      "level": 1
     },
     {
       "word": "know",
@@ -4529,12 +4530,11 @@
     {
       "word": "one",
       "concept": "number_word_order",
-      "level": 1
-    },
-    {
-      "word": "ones",
-      "concept": "place_value",
-      "level": 2
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "ones"
+      ]
     },
     {
       "word": "open",
@@ -4809,7 +4809,7 @@
     {
       "word": "pile",
       "concept": "grouping",
-      "level": 2,
+      "level": 1,
       "forms": [
         "piles"
       ]
@@ -5743,7 +5743,7 @@
     {
       "word": "set",
       "concept": "grouping",
-      "level": 2,
+      "level": 1,
       "forms": [
         "sets"
       ],
@@ -6854,11 +6854,6 @@
       ]
     },
     {
-      "word": "taken",
-      "concept": "subtraction",
-      "level": 2
-    },
-    {
       "word": "tale",
       "concept": "story",
       "level": 1,
@@ -6957,8 +6952,12 @@
     },
     {
       "word": "ten",
-      "concept": "quantity",
-      "level": 2
+      "concept": "number_word_order",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "tens"
+      ]
     },
     {
       "word": "tend",
@@ -6970,11 +6969,6 @@
         "tending",
         "tends"
       ]
-    },
-    {
-      "word": "tens",
-      "concept": "place_value",
-      "level": 2
     },
     {
       "word": "term",
@@ -7378,7 +7372,7 @@
     {
       "word": "unchanged",
       "concept": "conservation_of_number",
-      "level": 2
+      "level": 1
     },
     {
       "word": "uncle",

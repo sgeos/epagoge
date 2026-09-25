@@ -212,6 +212,7 @@
     "dict.1.kitchen": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:kitchen"}, "defines": {"kind": "word", "target": "kitchen"}},
     "dict.1.knew": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:knew"}, "defines": {"kind": "word", "target": "knew"}},
     "dict.1.knife": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:knife"}, "defines": {"kind": "word", "target": "knife"}},
+    "dict.1.knock": {"concepts": ["causal_chain"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:knock"}, "defines": {"kind": "word", "target": "knock"}},
     "dict.1.lack": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lack"}, "defines": {"kind": "word", "target": "lack"}},
     "dict.1.lake": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lake"}, "defines": {"kind": "word", "target": "lake"}},
     "dict.1.lamp": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lamp"}, "defines": {"kind": "word", "target": "lamp"}},
@@ -519,6 +520,7 @@
     "dict.1.teach": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:teach"}, "defines": {"kind": "word", "target": "teach"}},
     "dict.1.teacher": {"concepts": ["someone_in_charge"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:teacher"}, "defines": {"kind": "word", "target": "teacher"}},
     "dict.1.tear": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tear"}, "defines": {"kind": "word", "target": "tear"}},
+    "dict.1.ten": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ten"}, "defines": {"kind": "word", "target": "ten"}},
     "dict.1.term": {"concepts": ["word"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:term"}, "defines": {"kind": "word", "target": "term"}},
     "dict.1.test": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:test"}, "defines": {"kind": "word", "target": "test"}},
     "dict.1.theirs": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:theirs"}, "defines": {"kind": "word", "target": "theirs"}},
@@ -557,6 +559,7 @@
     "dict.1.tumble": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tumble"}, "defines": {"kind": "word", "target": "tumble"}},
     "dict.1.twice": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:twice"}, "defines": {"kind": "word", "target": "twice"}},
     "dict.1.unable": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unable"}, "defines": {"kind": "word", "target": "unable"}},
+    "dict.1.unchanged": {"concepts": ["conservation_of_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unchanged"}, "defines": {"kind": "word", "target": "unchanged"}},
     "dict.1.uncle": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:uncle"}, "defines": {"kind": "word", "target": "uncle"}},
     "dict.1.uncover": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:uncover"}, "defines": {"kind": "word", "target": "uncover"}},
     "dict.1.undo": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:undo"}, "defines": {"kind": "word", "target": "undo"}},
@@ -1231,6 +1234,9 @@ Knew is when someone had a thing in mind before.
 
 [dict.1.knife]
 A knife is a tool with a sharp side you use to cut.
+
+[dict.1.knock]
+To hit a thing so it makes a sound or moves.
 
 [dict.1.lack]
 To lack is to not have a thing you need.
@@ -2153,6 +2159,9 @@ A teacher is a person whose work is to help others learn.
 [dict.1.tear]
 To tear is to pull a thing so it comes into parts.
 
+[dict.1.ten]
+One more than nine.
+
 [dict.1.term]
 A term is a word for a thing.
 
@@ -2266,6 +2275,9 @@ Twice means one time and then one more time.
 
 [dict.1.unable]
 Unable is when someone cannot do a thing.
+
+[dict.1.unchanged]
+Not changed, and the same as before.
 
 [dict.1.uncle]
 An uncle is the brother of your mother or father.
