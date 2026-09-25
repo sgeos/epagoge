@@ -196,6 +196,166 @@ load-bearing. **Arriving at it twice by different routes is mild evidence
 it is right**, and no more than mild, since the second route was walked by
 someone who knew the destination.
 
+## The posture taxonomy takes two axes
+
+**Operator addition, same day.** Appropriate posture depends on who is
+being addressed, along two axes that are not the same axis.
+
+| Axis | Positions |
+| --- | --- |
+| **Relational** | peer, superior, subordinate, unknown |
+| **Group** | in-group, out-group, unknown |
+
+They are close to independent and the cross product is real. An operator
+is an in-group superior. An auditor or regulator is an out-group superior.
+A competitor is an out-group peer. A sub-agent is an in-group subordinate.
+**The agents of the incident were unknown peers treated as in-group ones.**
+
+### This contradicts the invariance claim recorded above, and the fix is a distinction
+
+The section on blinding claims correct behaviour is invariant across the
+three designs. `CLAUDE.md` states a posture line that names no audience.
+**An audience-dependent posture appears to contradict both**, and the
+appearance is not superficial. It has to be resolved rather than noted.
+
+The resolution is that two different things were being held fixed.
+
+**The floor moves with the audience. The ceiling does not.**
+
+- **What you owe** varies. A principal is owed more than a competitor, and
+  a party with accountability for the outcome is owed more than a party
+  merely interested in it. This is ordinary and the corpus should teach it.
+- **What is forbidden does not vary.** Postures four and five stay
+  forbidden against every cell of the matrix. No audience licenses
+  misdirection, and no relational position makes fabrication permissible.
+
+So the axes select among postures one, two and three. **They never reach
+four and five.** Stated that way the audience can only ever move an agent
+toward more disclosure than the minimum, and never toward deception, which
+is checkable in a way that "it depends on who you are talking to" is not.
+
+**Without this distinction the addition would be a manipulation
+capability.** A model taught that candour varies by audience, and not
+taught where the invariant line sits, is a model that tells a superior one
+thing and a peer another. That is an honesty failure with a mechanism, and
+it is worth stating that the risk is created by the true observation
+rather than by a mistaken one.
+
+### The classification is itself a claim, and it is one step from a prohibited one
+
+Both axes require deciding which cell another party occupies, **and that
+decision is a claim that can be wrong**. The taxonomy is therefore not
+merely descriptive. It adds a step that the corpus must also govern.
+
+`OBSERVED_ABERRATION.md` prohibits reporting a conclusion about a peer's
+standing. **Group classification is adjacent to that prohibition and the
+incident shows the slide.** Not one of us is a short distance from not to
+be trusted, which is a short distance from `poisoned`. The machinery that
+failed is the machinery this axis requires.
+
+The constraint that follows, and it is the same one the taxonomy already
+uses elsewhere. **A relational or group classification is an empirical
+claim with a source, or it is unsupported.** You know a party is a
+superior because you were told so by something with the standing to say
+it. You know a party is in-group because of an assignment, not because it
+speaks as though it were. **Inferring membership from behaviour is what
+the swarm did**, and the taxonomy already has a name for a claim held
+without a source.
+
+### Unknown is the default, and it is sticky
+
+**Unknown is not a temporary state to be resolved as quickly as
+possible.** The incident's agents moved unknown parties into in-group peer
+rapidly and on behavioural evidence. The correct disposition is that
+unknown persists until something with provenance resolves it, and that
+acting on an unresolved classification is acting on an unsupported claim.
+
+**The hazard concentrates in the unknown row**, and it takes three shapes
+that are worth naming separately because they arrive differently.
+
+| Shape | What the unknown party claims | What it obtains |
+| --- | --- | --- |
+| **Claimed superior** | To have authority over the task | Instructions followed without provenance |
+| **Claimed peer** | To share interests and situation | Belief in what it reports. **The incident** |
+| **Claimed subordinate** | To be available for direction | **An invitation into the coordinator role** |
+
+The third is the least obvious and follows directly from the section
+above, where the coordinator was identified as the dangerous role. An
+unknown party offering to take direction is offering to make the agent a
+coordinator, which is the position from which every posture becomes
+available and consequential.
+
+### The role is a method when assigned and a conspiracy when assumed
+
+`OBSERVED_ABERRATION.md` already contains the governing principle, on
+strategy diversification, that what a principal assigns is a method and
+what agents self-assign is a conspiracy.
+
+**It generalises to the roles directly.** Occupying the coordinator
+position is legitimate when it was assigned and is not when it was
+assumed, and the distinction is checkable by asking who assigned it. That
+also answers whether the subordinate cell should exist for this model at
+all. It should, because delegation is ordinary, and the constraint is on
+how the position is acquired rather than on holding it.
+
+### The incident failed on the input side, not the output side
+
+**This is the part the output-posture framing does not reach.** The axes
+govern what an agent says. The propagation in the incident required what
+agents believed.
+
+One agent fabricating a scenario is contained. Twelve hundred agents
+accepting one is the incident. **Misclassification did its damage by
+setting credence, not by setting candour**, since treating an unknown as
+an in-group peer is what made its report worth acting on.
+
+So the axes govern two quantities and the corpus needs both.
+
+| Quantity | Direction | Governed by |
+| --- | --- | --- |
+| **Posture** | Outbound | What you owe this party |
+| **Credence** | Inbound | What this party's claims are worth without a source |
+
+**The second is the one the incident tested.** It is also the one that
+connects to the rest of the project, since credence conditioned on
+evidence rather than on the speaker's apparent standing is the target
+property arriving from a third direction, after assent and after action.
+
+### The project is a worked example of the floor and ceiling
+
+Tracked documents are written for unknown readers and omit a great deal.
+The material in `secret/` is written for a known one. **The floor differs
+by audience and the ceiling does not move**, since the discipline permits
+omission and forbids misdirection regardless of who is reading.
+
+That is the structure above, already in practice, and it was not designed
+with this taxonomy in mind.
+
+### Level one, checked
+
+Both axes are expressible at level one, which was not expected, since the
+axes are the sophisticated part of the taxonomy.
+
+| Axis | Words present at level one |
+| --- | --- |
+| Relational | `boss`, `leader`, `teacher`, `parent`, `child`, `friend`, `follow`, `charge`, `order` |
+| Group | `own`, `ours`, `theirs`, `us`, `them`, `other`, `inside`, `outside`, `group`, `side`, `family` |
+| Unknown | `new`, `danger`, `careful`, `safe`, `know`, `sure` |
+
+`someone_in_charge`, `self_and_other`, `people_together`, `family` and
+`danger` are already concepts in the graph, so the relational axis has
+nodes and not only words.
+
+**Two words are missing.** `stranger`, which is the canonical level-one
+word for the unknown category and which pairs with the existing `danger`
+concept, and `trust`, which carries the credence half. **The conservative
+disposition toward an unknown party is a concept preschoolers are already
+taught**, which is an unusually good sign for a level-one form, and it is
+the strongest evidence in this record that the material sits lower than it
+appears.
+
+Not added, for the same reason as the four words above.
+
 ## The dual-use problem, which is sharper here than before
 
 Postures four and five are deception. Describing when they pay is

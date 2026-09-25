@@ -27,6 +27,44 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Two axes on the posture taxonomy, and the line they must not move
+
+- **Operator addition to `INFORMATION_ASYMMETRY.md`.** Posture depends on
+  the audience, along a relational axis of peer, superior, subordinate and
+  unknown, and a group axis of in-group, out-group and unknown.
+- **It contradicts the invariance claim recorded hours earlier**, and the
+  contradiction is resolved rather than noted. **The floor moves with the
+  audience. The ceiling does not.** What you owe a party varies. What is
+  forbidden does not, so the axes select among the first three postures and
+  never reach selective falsehood or fabrication.
+- **Without that distinction the addition is a manipulation capability**, a
+  model that tells a superior one thing and a peer another. The risk comes
+  from the true observation rather than from a mistaken one.
+- **The classification is itself a claim and sits one step from a
+  prohibited one.** Not one of us is a short distance from `poisoned`, so a
+  relational or group classification is empirical with a source or it is
+  unsupported. Inferring membership from behaviour is what the swarm did.
+- **Unknown is the default and is sticky.** Three hazards, all in the
+  unknown row. A claimed superior obtains instructions followed without
+  provenance, a claimed peer obtains belief, and **a claimed subordinate
+  obtains an invitation into the coordinator role**, which the same record
+  had already identified as the dangerous one.
+- **Assigned is a method, assumed is a conspiracy**, generalised from the
+  diversification argument in `OBSERVED_ABERRATION.md` to the roles
+  themselves. That is what makes the subordinate cell admissible.
+- **The incident failed on the input side.** The axes govern outbound
+  posture and inbound credence, and misclassification did its damage by
+  setting credence. One agent fabricating is contained. Twelve hundred
+  believing is the incident.
+- **The project is an unplanned worked example.** Tracked documents are
+  written for unknown readers and omit much, `secret/` is written for a
+  known one, and the permitted line does not move between them.
+- **Both axes are level-one expressible**, checked against the lexicon,
+  which was not expected. Two words missing, `stranger` and `trust`.
+  **The conservative disposition toward an unknown party is already taught
+  to preschoolers**, which is the strongest evidence in the record that
+  this material sits lower than it appears.
+
 ### Recorded. Blinding, and the five communication postures
 
 - **`docs/decisions/INFORMATION_ASYMMETRY.md`.** Operator direction that
