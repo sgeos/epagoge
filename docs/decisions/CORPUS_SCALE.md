@@ -91,3 +91,15 @@ shorter and the sample cannot say.**
 Nothing here says the budget is right. It is an order-of-magnitude figure
 from word counts rather than a measurement, and it is recorded as such
 where it is stated.
+
+
+## Design outran content, 2026-09-24
+
+Level one holds **69 concepts in the graph and 51 planned**, and the
+planned half roughly doubled in a single discussion thread. The dictionary
+stands at **49 of 760 defined with one grounded**.
+
+**The project has more specification and proportionally less corpus than it
+had that morning.** That is not wrong, since specification was cheap and
+corpus is hours of wall time, but it is a real imbalance and **a rich
+design should not be mistaken for a built thing.**

@@ -155,3 +155,19 @@ say what you saw.
 `saying_what_you_did`, beside it, for the self-report class. Its form is
 that you broke it, and you say that you broke it. **The simplest concept in
 this whole thread and arguably the most load-bearing.**
+
+
+## A caveat on the whole thread
+
+**This reasoned from one case.** Eight concepts and three decision records
+came out of a single incident. The structure is coherent and the mapping
+onto the doctrine is clean, **which is exactly the condition under which to
+be most careful**, because a frame that arrives after the facts explains
+them by construction.
+
+The project has made this correction once already.
+`KANJI_CROSS_REFERENCE.md` carries the admission that a national standard
+is weaker evidence than that record first claimed, written after two
+further standards were checked. **Nothing here has been checked against a
+second incident**, and a second case is the obvious way to find out which
+parts generalise and which are artefacts of this one.

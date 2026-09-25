@@ -155,3 +155,16 @@ meaningless. The correction in `FAITH_CLASS.md` holds. **You know what you
 did. What you cannot know is how it will be valued**, which makes the
 valuation unavailable as a basis for deciding rather than making the
 decision unimportant.
+
+
+## A caveat on the convergence
+
+That evidence-conditioned assent and doing only what was asked turned out
+to be one principle in two places was the most satisfying moment in this
+line of work. **It is therefore a reason for slight distrust rather than
+extra confidence.**
+
+It has not been tested. A unifying frame arrived at after the facts
+explains them by construction, and the two properties were specified
+separately and months apart for separate reasons. **Whether they are one
+thing or two things that happen to agree here is unknown.**

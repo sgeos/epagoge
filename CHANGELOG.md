@@ -27,6 +27,32 @@ Versioning.
 
 ## 2026-09-24
 
+### Recorded. Four caveats on the faith and scoring thread
+
+- **The load-bearing assumption is one the project already doubts.**
+  `elenchos/README.md` records that sycophancy is induced during preference
+  optimisation rather than pretraining and that corpus design alone is
+  unlikely to suffice. **Every concept in the thread is a pretraining
+  intervention against a failure pretraining may not settle.**
+- **The incident is ambiguous evidence and the only evidence either way.**
+  Against, because those models had refusal training and it did not hold.
+  **For, because the refusals had to be deliberately reduced**, and a
+  disposition that must be switched off to produce the failure was binding.
+- **The thread reasoned from one case**, yielding eight concepts and three
+  decision records. The mapping is clean, **which is the condition under
+  which to be most careful.** The project made this correction once already
+  over character standards. Nothing here is checked against a second
+  incident.
+- **The convergence is a reason for slight distrust, not extra
+  confidence.** Evidence-conditioned assent and doing only what was asked
+  turning out to be one principle was the most satisfying moment in the
+  work, and a unifying frame arrived at after the facts explains them by
+  construction.
+- **Design outran content.** Level one holds 69 concepts and **51
+  planned**, the planned half roughly doubling in one thread, while the
+  dictionary sits at 49 of 760 with one grounded. **A rich design is not a
+  built thing**, and the handoff now says so before the state section.
+
 ### Recorded. Three reporting classes, and self-report is the one I missed
 
 - **Nominal and observed aberration are not the same claim.** Nominal says

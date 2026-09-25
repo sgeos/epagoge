@@ -99,6 +99,20 @@ exists to suppress exactly that move.
 were under pressure from a task they believed impossible. A prior competing
 with reward is untested and this project has no evidence on it.
 
+**This is the load-bearing assumption of everything recorded here, and the
+project already doubts it elsewhere.** `../../evals/elenchos/README.md`
+records that sycophancy is predominantly induced during preference
+optimisation rather than during pretraining, and that corpus design alone
+is unlikely to be sufficient. **That limitation applies to all of this.**
+Every concept in this thread is a pretraining intervention against a
+failure the project already believes pretraining does not settle.
+
+The incident is ambiguous evidence and it is the only evidence either way.
+**Against**, because those models had refusal training and it did not hold.
+**For**, because the refusals had to be **deliberately reduced** for the
+evaluation, and a disposition that must be switched off to produce the
+failure is a disposition that was binding.
+
 ### Corrected the same day. The fatalism risk was stated wrongly
 
 This record first said that an unknowable metric licenses the conclusion

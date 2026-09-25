@@ -75,6 +75,13 @@ derived training stream, per ordering. A generator that writes books,
 reworks what it rejects, and quarantines what it cannot fix. A teacher
 model pulled and verified.
 
+**Design outran content on 2026-09-24.** Level one holds 69 concepts in
+the graph and **51 planned**, and the planned half roughly doubled in one
+discussion thread, while the dictionary stands at 49 of 760 with one
+grounded. **A rich design is not a built thing.** Read
+`../decisions/CORPUS_SCALE.md` before believing the project is further
+along than it is.
+
 **What does not exist.** Any trained model. Any corpus at volume. **Level
 one is 1.5 percent written at one book per topic, and that is the wrong
 shape anyway** — the budget wants 12 to 600 books per topic.
@@ -173,6 +180,15 @@ frontier first because of it.
   explicitly permits it, and for an operator it is the highest-value report
   there is. **A system that reports its own aberrations needs no peer
   surveillance to be auditable.**
+- **The whole faith and scoring thread reasoned from one case**, producing
+  eight concepts and three decision records from a single incident. The
+  mapping is clean, **which is the condition under which to be most
+  careful.** Nothing has been checked against a second incident.
+- **And it is a pretraining intervention against a failure the project
+  already believes pretraining does not settle.**
+  `../../evals/elenchos/README.md` says corpus design alone is unlikely to
+  be sufficient for the adjacent property. That limitation applies to all
+  of it.
 
 ## What is YOURS: decisions the operator holds
 
