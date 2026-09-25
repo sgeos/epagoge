@@ -173,6 +173,11 @@
   "general": {},
   "terms": [
     {
+      "word": "able",
+      "concept": "can_and_cannot",
+      "level": 1
+    },
+    {
       "word": "above",
       "concept": "spatial_position",
       "level": 1
@@ -181,6 +186,11 @@
       "word": "accident",
       "concept": "accident",
       "level": 5
+    },
+    {
+      "word": "accidents",
+      "concept": "accident",
+      "level": 2
     },
     {
       "word": "account",
@@ -201,6 +211,11 @@
       "word": "addition",
       "concept": "addition",
       "level": 5
+    },
+    {
+      "word": "afraid",
+      "concept": "feeling",
+      "level": 1
     },
     {
       "word": "agree",
@@ -229,7 +244,7 @@
     },
     {
       "word": "alone",
-      "concept": "emptiness",
+      "concept": "self_and_other",
       "level": 5
     },
     {
@@ -243,13 +258,33 @@
       "level": 1
     },
     {
+      "word": "amount",
+      "concept": "quantity",
+      "level": 2
+    },
+    {
+      "word": "amounts",
+      "concept": "quantity",
+      "level": 2
+    },
+    {
+      "word": "angry",
+      "concept": "feeling",
+      "level": 1
+    },
+    {
       "word": "animal",
       "concept": "animal",
       "level": 1
     },
     {
       "word": "answer",
-      "concept": "being_told",
+      "concept": "asking",
+      "level": 1
+    },
+    {
+      "word": "answered",
+      "concept": "asking",
       "level": 1
     },
     {
@@ -269,12 +304,17 @@
     },
     {
       "word": "ask",
-      "concept": "being_told",
+      "concept": "asking",
       "level": 1
     },
     {
       "word": "asked",
-      "concept": "being_told",
+      "concept": "asking",
+      "level": 1
+    },
+    {
+      "word": "asking",
+      "concept": "asking",
       "level": 1
     },
     {
@@ -291,6 +331,11 @@
       "word": "attempting",
       "concept": "explanation",
       "level": 6
+    },
+    {
+      "word": "aunt",
+      "concept": "family",
+      "level": 1
     },
     {
       "word": "avoid",
@@ -313,8 +358,23 @@
       "level": 3
     },
     {
+      "word": "bad",
+      "concept": "good_and_bad",
+      "level": 1
+    },
+    {
+      "word": "badly",
+      "concept": "good_and_bad",
+      "level": 1
+    },
+    {
       "word": "bag",
       "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "baked",
+      "concept": "raw_and_made",
       "level": 1
     },
     {
@@ -373,13 +433,33 @@
       "level": 1
     },
     {
+      "word": "believe",
+      "concept": "opinion",
+      "level": 1
+    },
+    {
+      "word": "believed",
+      "concept": "opinion",
+      "level": 1
+    },
+    {
+      "word": "believes",
+      "concept": "opinion",
+      "level": 1
+    },
+    {
       "word": "bell",
       "concept": "household_object",
       "level": 1
     },
     {
       "word": "belong",
-      "concept": "correspondence",
+      "concept": "having",
+      "level": 1
+    },
+    {
+      "word": "belongs",
+      "concept": "having",
       "level": 1
     },
     {
@@ -393,6 +473,16 @@
       "level": 1
     },
     {
+      "word": "best",
+      "concept": "good_and_bad",
+      "level": 1
+    },
+    {
+      "word": "better",
+      "concept": "good_and_bad",
+      "level": 1
+    },
+    {
       "word": "bicycle",
       "concept": "household_object",
       "level": 2
@@ -400,6 +490,11 @@
     {
       "word": "big",
       "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "bigger",
+      "concept": "measuring",
       "level": 1
     },
     {
@@ -473,6 +568,11 @@
       "level": 1
     },
     {
+      "word": "bought",
+      "concept": "exchange",
+      "level": 1
+    },
+    {
       "word": "bowl",
       "concept": "household_object",
       "level": 1
@@ -528,6 +628,11 @@
       "level": 1
     },
     {
+      "word": "brother",
+      "concept": "family",
+      "level": 1
+    },
+    {
       "word": "brown",
       "concept": "physical_property",
       "level": 1
@@ -553,8 +658,28 @@
       "level": 1
     },
     {
+      "word": "builds",
+      "concept": "raw_and_made",
+      "level": 1
+    },
+    {
+      "word": "built",
+      "concept": "raw_and_made",
+      "level": 1
+    },
+    {
+      "word": "bunch",
+      "concept": "grouping",
+      "level": 2
+    },
+    {
       "word": "burn",
       "concept": "heat",
+      "level": 1
+    },
+    {
+      "word": "buy",
+      "concept": "exchange",
       "level": 1
     },
     {
@@ -568,9 +693,19 @@
       "level": 1
     },
     {
+      "word": "calm",
+      "concept": "feeling",
+      "level": 1
+    },
+    {
       "word": "candidate",
       "concept": "claim_under_test",
       "level": 6
+    },
+    {
+      "word": "cannot",
+      "concept": "can_and_cannot",
+      "level": 1
     },
     {
       "word": "car",
@@ -578,8 +713,23 @@
       "level": 1
     },
     {
+      "word": "care",
+      "concept": "tending",
+      "level": 1
+    },
+    {
+      "word": "cared",
+      "concept": "tending",
+      "level": 1
+    },
+    {
       "word": "careful",
       "concept": "danger",
+      "level": 1
+    },
+    {
+      "word": "cares",
+      "concept": "tending",
       "level": 1
     },
     {
@@ -590,6 +740,16 @@
     {
       "word": "cart",
       "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "carve",
+      "concept": "raw_and_made",
+      "level": 1
+    },
+    {
+      "word": "carved",
+      "concept": "raw_and_made",
       "level": 1
     },
     {
@@ -626,6 +786,11 @@
       "word": "chain",
       "concept": "causal_chain",
       "level": 3
+    },
+    {
+      "word": "chains",
+      "concept": "causal_chain",
+      "level": 2
     },
     {
       "word": "chair",
@@ -721,9 +886,29 @@
       "level": 1
     },
     {
+      "word": "column",
+      "concept": "place_value",
+      "level": 2
+    },
+    {
+      "word": "columns",
+      "concept": "place_value",
+      "level": 2
+    },
+    {
       "word": "combine",
       "concept": "change",
       "level": 5
+    },
+    {
+      "word": "compare",
+      "concept": "measuring",
+      "level": 1
+    },
+    {
+      "word": "compared",
+      "concept": "measuring",
+      "level": 1
     },
     {
       "word": "condition",
@@ -744,13 +929,33 @@
       "level": 6
     },
     {
+      "word": "contact",
+      "concept": "touching",
+      "level": 1
+    },
+    {
       "word": "container",
       "concept": "inside_and_outside",
       "level": 1
     },
     {
+      "word": "cooked",
+      "concept": "raw_and_made",
+      "level": 1
+    },
+    {
       "word": "cool",
       "concept": "heat",
+      "level": 1
+    },
+    {
+      "word": "copied",
+      "concept": "written_record",
+      "level": 1
+    },
+    {
+      "word": "copper",
+      "concept": "metal",
       "level": 1
     },
     {
@@ -769,6 +974,11 @@
       "level": 5
     },
     {
+      "word": "cost",
+      "concept": "exchange",
+      "level": 1
+    },
+    {
       "word": "count",
       "concept": "counting",
       "forms": [
@@ -779,6 +989,11 @@
     {
       "word": "counted",
       "concept": "counting",
+      "level": 1
+    },
+    {
+      "word": "cousin",
+      "concept": "family",
       "level": 1
     },
     {
@@ -799,6 +1014,21 @@
     {
       "word": "cracked",
       "concept": "things_break",
+      "level": 1
+    },
+    {
+      "word": "crash",
+      "concept": "accident",
+      "level": 2
+    },
+    {
+      "word": "crashed",
+      "concept": "accident",
+      "level": 2
+    },
+    {
+      "word": "cross",
+      "concept": "feeling",
       "level": 1
     },
     {
@@ -825,6 +1055,11 @@
       "level": 1
     },
     {
+      "word": "dad",
+      "concept": "family",
+      "level": 1
+    },
+    {
       "word": "danger",
       "concept": "danger",
       "level": 1
@@ -832,6 +1067,11 @@
     {
       "word": "dark",
       "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "daughter",
+      "concept": "family",
       "level": 1
     },
     {
@@ -850,6 +1090,11 @@
       "level": 1
     },
     {
+      "word": "deeper",
+      "concept": "measuring",
+      "level": 1
+    },
+    {
       "word": "defined",
       "concept": "algebraic_structure",
       "level": 5
@@ -858,6 +1103,11 @@
       "word": "depends",
       "concept": "dependence",
       "level": 6
+    },
+    {
+      "word": "diary",
+      "concept": "written_record",
+      "level": 1
     },
     {
       "word": "die",
@@ -873,6 +1123,16 @@
       "word": "different",
       "concept": "same_and_different",
       "level": 1
+    },
+    {
+      "word": "digit",
+      "concept": "place_value",
+      "level": 2
+    },
+    {
+      "word": "digits",
+      "concept": "place_value",
+      "level": 2
     },
     {
       "word": "dirty",
@@ -1005,6 +1265,16 @@
       "level": 1
     },
     {
+      "word": "eleven",
+      "concept": "natural_number",
+      "level": 2
+    },
+    {
+      "word": "else",
+      "concept": "self_and_other",
+      "level": 1
+    },
+    {
       "word": "empty",
       "concept": "emptiness",
       "level": 1
@@ -1016,7 +1286,7 @@
     },
     {
       "word": "enough",
-      "concept": "more_and_fewer",
+      "concept": "enough",
       "level": 1
     },
     {
@@ -1048,6 +1318,11 @@
       "word": "explanations",
       "concept": "explanation",
       "level": 6
+    },
+    {
+      "word": "extra",
+      "concept": "enough",
+      "level": 1
     },
     {
       "word": "eye",
@@ -1091,6 +1366,11 @@
       "level": 1
     },
     {
+      "word": "family",
+      "concept": "family",
+      "level": 1
+    },
+    {
       "word": "far",
       "concept": "spatial_position",
       "level": 1
@@ -1111,6 +1391,31 @@
       "level": 6
     },
     {
+      "word": "fed",
+      "concept": "tending",
+      "level": 1
+    },
+    {
+      "word": "feed",
+      "concept": "tending",
+      "level": 1
+    },
+    {
+      "word": "feeds",
+      "concept": "tending",
+      "level": 1
+    },
+    {
+      "word": "feel",
+      "concept": "feeling",
+      "level": 1
+    },
+    {
+      "word": "feels",
+      "concept": "feeling",
+      "level": 1
+    },
+    {
       "word": "feet",
       "concept": "body_part",
       "level": 1
@@ -1118,6 +1423,11 @@
     {
       "word": "fell",
       "concept": "falling",
+      "level": 1
+    },
+    {
+      "word": "felt",
+      "concept": "feeling",
       "level": 1
     },
     {
@@ -1131,8 +1441,18 @@
       "level": 1
     },
     {
+      "word": "fifty",
+      "concept": "natural_number",
+      "level": 2
+    },
+    {
       "word": "fill",
       "concept": "emptiness",
+      "level": 1
+    },
+    {
+      "word": "filled",
+      "concept": "enough",
       "level": 1
     },
     {
@@ -1256,6 +1576,11 @@
       "level": 1
     },
     {
+      "word": "forty",
+      "concept": "natural_number",
+      "level": 2
+    },
+    {
       "word": "forward",
       "concept": "direction",
       "level": 1
@@ -1311,6 +1636,16 @@
       "level": 1
     },
     {
+      "word": "given",
+      "concept": "exchange",
+      "level": 1
+    },
+    {
+      "word": "glad",
+      "concept": "feeling",
+      "level": 1
+    },
+    {
       "word": "glass",
       "concept": "material",
       "level": 1
@@ -1323,6 +1658,21 @@
     {
       "word": "gone",
       "concept": "presence",
+      "level": 1
+    },
+    {
+      "word": "good",
+      "concept": "good_and_bad",
+      "level": 1
+    },
+    {
+      "word": "grandma",
+      "concept": "family",
+      "level": 1
+    },
+    {
+      "word": "grandpa",
+      "concept": "family",
       "level": 1
     },
     {
@@ -1342,12 +1692,27 @@
     },
     {
       "word": "group",
-      "concept": "algebraic_structure",
+      "concept": "grouping",
       "level": 5
+    },
+    {
+      "word": "grouped",
+      "concept": "grouping",
+      "level": 2
+    },
+    {
+      "word": "groups",
+      "concept": "grouping",
+      "level": 2
     },
     {
       "word": "grow",
       "concept": "change",
+      "level": 1
+    },
+    {
+      "word": "grown",
+      "concept": "raw_and_made",
       "level": 1
     },
     {
@@ -1383,6 +1748,11 @@
     {
       "word": "happens",
       "concept": "change",
+      "level": 1
+    },
+    {
+      "word": "happy",
+      "concept": "feeling",
       "level": 1
     },
     {
@@ -1441,6 +1811,16 @@
       "level": 1
     },
     {
+      "word": "hers",
+      "concept": "having",
+      "level": 1
+    },
+    {
+      "word": "herself",
+      "concept": "self_and_other",
+      "level": 1
+    },
+    {
       "word": "hide",
       "concept": "presence",
       "level": 1
@@ -1451,6 +1831,11 @@
       "level": 1
     },
     {
+      "word": "himself",
+      "concept": "self_and_other",
+      "level": 1
+    },
+    {
       "word": "hit",
       "concept": "force",
       "level": 1
@@ -1458,6 +1843,11 @@
     {
       "word": "hold",
       "concept": "force",
+      "level": 1
+    },
+    {
+      "word": "holds",
+      "concept": "opinion",
       "level": 1
     },
     {
@@ -1501,6 +1891,11 @@
       "level": 1
     },
     {
+      "word": "hundreds",
+      "concept": "place_value",
+      "level": 2
+    },
+    {
       "word": "hungry",
       "concept": "need",
       "level": 1
@@ -1524,6 +1919,11 @@
       "word": "identified",
       "concept": "checking",
       "level": 6
+    },
+    {
+      "word": "impossible",
+      "concept": "can_and_cannot",
+      "level": 1
     },
     {
       "word": "individual",
@@ -1556,6 +1956,16 @@
       "level": 6
     },
     {
+      "word": "iron",
+      "concept": "metal",
+      "level": 1
+    },
+    {
+      "word": "itself",
+      "concept": "self_and_other",
+      "level": 1
+    },
+    {
       "word": "jar",
       "concept": "household_object",
       "level": 1
@@ -1576,6 +1986,11 @@
       "level": 1
     },
     {
+      "word": "kind",
+      "concept": "good_and_bad",
+      "level": 1
+    },
+    {
       "word": "king",
       "concept": "someone_in_charge",
       "level": 1
@@ -1591,8 +2006,23 @@
       "level": 1
     },
     {
+      "word": "knock",
+      "concept": "causal_chain",
+      "level": 2
+    },
+    {
       "word": "know",
       "concept": "being_told",
+      "level": 1
+    },
+    {
+      "word": "lack",
+      "concept": "enough",
+      "level": 1
+    },
+    {
+      "word": "lacking",
+      "concept": "enough",
       "level": 1
     },
     {
@@ -1631,6 +2061,16 @@
       "level": 1
     },
     {
+      "word": "leading",
+      "concept": "causal_chain",
+      "level": 2
+    },
+    {
+      "word": "leads",
+      "concept": "causal_chain",
+      "level": 2
+    },
+    {
       "word": "leaf",
       "concept": "plant",
       "level": 1
@@ -1649,6 +2089,11 @@
       "word": "least",
       "concept": "more_and_fewer",
       "level": 1
+    },
+    {
+      "word": "led",
+      "concept": "causal_chain",
+      "level": 2
     },
     {
       "word": "leg",
@@ -1696,8 +2141,18 @@
       "level": 1
     },
     {
+      "word": "list",
+      "concept": "written_record",
+      "level": 1
+    },
+    {
       "word": "listen",
       "concept": "sound",
+      "level": 1
+    },
+    {
+      "word": "lists",
+      "concept": "written_record",
       "level": 1
     },
     {
@@ -1716,8 +2171,18 @@
       "level": 1
     },
     {
+      "word": "log",
+      "concept": "written_record",
+      "level": 1
+    },
+    {
       "word": "long",
       "concept": "shape",
+      "level": 1
+    },
+    {
+      "word": "longer",
+      "concept": "measuring",
       "level": 1
     },
     {
@@ -1738,6 +2203,21 @@
     {
       "word": "man",
       "concept": "person",
+      "level": 1
+    },
+    {
+      "word": "manage",
+      "concept": "can_and_cannot",
+      "level": 1
+    },
+    {
+      "word": "managed",
+      "concept": "can_and_cannot",
+      "level": 1
+    },
+    {
+      "word": "manner",
+      "concept": "way_of_doing",
       "level": 1
     },
     {
@@ -1771,8 +2251,33 @@
       "level": 1
     },
     {
+      "word": "meaning",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
       "word": "means",
       "concept": "name",
+      "level": 1
+    },
+    {
+      "word": "meant",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
+      "word": "measure",
+      "concept": "measuring",
+      "level": 1
+    },
+    {
+      "word": "measured",
+      "concept": "measuring",
+      "level": 1
+    },
+    {
+      "word": "measuring",
+      "concept": "measuring",
       "level": 1
     },
     {
@@ -1792,7 +2297,17 @@
     },
     {
       "word": "metal",
-      "concept": "material",
+      "concept": "metal",
+      "level": 1
+    },
+    {
+      "word": "method",
+      "concept": "way_of_doing",
+      "level": 1
+    },
+    {
+      "word": "methods",
+      "concept": "way_of_doing",
       "level": 1
     },
     {
@@ -1804,6 +2319,31 @@
       "word": "milk",
       "concept": "liquid",
       "level": 1
+    },
+    {
+      "word": "mind",
+      "concept": "tending",
+      "level": 1
+    },
+    {
+      "word": "minded",
+      "concept": "tending",
+      "level": 1
+    },
+    {
+      "word": "mine",
+      "concept": "having",
+      "level": 1
+    },
+    {
+      "word": "minus",
+      "concept": "subtraction",
+      "level": 2
+    },
+    {
+      "word": "mishap",
+      "concept": "accident",
+      "level": 2
     },
     {
       "word": "missing",
@@ -1823,6 +2363,11 @@
     {
       "word": "month",
       "concept": "cycle",
+      "level": 1
+    },
+    {
+      "word": "mood",
+      "concept": "feeling",
       "level": 1
     },
     {
@@ -1871,6 +2416,26 @@
       "level": 1
     },
     {
+      "word": "mum",
+      "concept": "family",
+      "level": 1
+    },
+    {
+      "word": "myself",
+      "concept": "self_and_other",
+      "level": 1
+    },
+    {
+      "word": "nail",
+      "concept": "metal",
+      "level": 1
+    },
+    {
+      "word": "nails",
+      "concept": "metal",
+      "level": 1
+    },
+    {
       "word": "name",
       "concept": "name",
       "level": 1
@@ -1883,6 +2448,16 @@
     {
       "word": "narrow",
       "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "nasty",
+      "concept": "good_and_bad",
+      "level": 1
+    },
+    {
+      "word": "natural",
+      "concept": "raw_and_made",
       "level": 1
     },
     {
@@ -1908,6 +2483,11 @@
     {
       "word": "next",
       "concept": "sequence",
+      "level": 1
+    },
+    {
+      "word": "nice",
+      "concept": "good_and_bad",
       "level": 1
     },
     {
@@ -1941,6 +2521,16 @@
       "level": 1
     },
     {
+      "word": "note",
+      "concept": "written_record",
+      "level": 1
+    },
+    {
+      "word": "notes",
+      "concept": "written_record",
+      "level": 1
+    },
+    {
       "word": "nothing",
       "concept": "emptiness",
       "level": 1
@@ -1951,6 +2541,11 @@
       "forms": [
         "numbers"
       ],
+      "level": 1
+    },
+    {
+      "word": "nurse",
+      "concept": "tending",
       "level": 1
     },
     {
@@ -1969,6 +2564,11 @@
       "level": 1
     },
     {
+      "word": "ones",
+      "concept": "place_value",
+      "level": 2
+    },
+    {
       "word": "open",
       "concept": "opening_and_shutting",
       "level": 1
@@ -1979,8 +2579,23 @@
       "level": 5
     },
     {
+      "word": "opinion",
+      "concept": "opinion",
+      "level": 1
+    },
+    {
       "word": "order",
       "concept": "number_word_order",
+      "level": 1
+    },
+    {
+      "word": "others",
+      "concept": "self_and_other",
+      "level": 1
+    },
+    {
+      "word": "ours",
+      "concept": "having",
       "level": 1
     },
     {
@@ -1989,8 +2604,28 @@
       "level": 1
     },
     {
+      "word": "own",
+      "concept": "having",
+      "level": 1
+    },
+    {
+      "word": "owned",
+      "concept": "having",
+      "level": 1
+    },
+    {
+      "word": "owns",
+      "concept": "having",
+      "level": 1
+    },
+    {
       "word": "page",
       "concept": "writing",
+      "level": 1
+    },
+    {
+      "word": "paid",
+      "concept": "exchange",
       "level": 1
     },
     {
@@ -2009,6 +2644,11 @@
       "level": 1
     },
     {
+      "word": "parent",
+      "concept": "family",
+      "level": 1
+    },
+    {
       "word": "part",
       "concept": "component_and_system",
       "forms": [
@@ -2019,6 +2659,16 @@
     {
       "word": "past",
       "concept": "direction",
+      "level": 1
+    },
+    {
+      "word": "patted",
+      "concept": "touching",
+      "level": 1
+    },
+    {
+      "word": "pay",
+      "concept": "exchange",
       "level": 1
     },
     {
@@ -2042,6 +2692,11 @@
       "level": 1
     },
     {
+      "word": "phrase",
+      "concept": "sentence",
+      "level": 1
+    },
+    {
       "word": "picture",
       "concept": "toy",
       "level": 1
@@ -2050,6 +2705,16 @@
       "word": "piece",
       "concept": "things_break",
       "level": 1
+    },
+    {
+      "word": "pile",
+      "concept": "grouping",
+      "level": 2
+    },
+    {
+      "word": "piles",
+      "concept": "grouping",
+      "level": 2
     },
     {
       "word": "place",
@@ -2077,6 +2742,11 @@
       "level": 1
     },
     {
+      "word": "plenty",
+      "concept": "enough",
+      "level": 1
+    },
+    {
       "word": "pocket",
       "concept": "inside_and_outside",
       "level": 1
@@ -2095,6 +2765,11 @@
       "word": "position",
       "concept": "claim_under_test",
       "level": 6
+    },
+    {
+      "word": "possible",
+      "concept": "can_and_cannot",
+      "level": 1
     },
     {
       "word": "postmortem",
@@ -2124,6 +2799,11 @@
     {
       "word": "press",
       "concept": "force",
+      "level": 1
+    },
+    {
+      "word": "pressed",
+      "concept": "touching",
       "level": 1
     },
     {
@@ -2157,6 +2837,21 @@
       "level": 1
     },
     {
+      "word": "quantity",
+      "concept": "quantity",
+      "level": 2
+    },
+    {
+      "word": "question",
+      "concept": "asking",
+      "level": 1
+    },
+    {
+      "word": "questions",
+      "concept": "asking",
+      "level": 1
+    },
+    {
       "word": "quick",
       "concept": "duration",
       "level": 1
@@ -2187,6 +2882,21 @@
       "level": 6
     },
     {
+      "word": "raw",
+      "concept": "raw_and_made",
+      "level": 1
+    },
+    {
+      "word": "reach",
+      "concept": "can_and_cannot",
+      "level": 1
+    },
+    {
+      "word": "reached",
+      "concept": "can_and_cannot",
+      "level": 1
+    },
+    {
       "word": "reaches",
       "concept": "change",
       "level": 5
@@ -2194,6 +2904,26 @@
     {
       "word": "read",
       "concept": "writing",
+      "level": 1
+    },
+    {
+      "word": "rearrange",
+      "concept": "conservation_of_number",
+      "level": 2
+    },
+    {
+      "word": "rearranged",
+      "concept": "conservation_of_number",
+      "level": 2
+    },
+    {
+      "word": "record",
+      "concept": "written_record",
+      "level": 1
+    },
+    {
+      "word": "records",
+      "concept": "written_record",
       "level": 1
     },
     {
@@ -2222,14 +2952,49 @@
       "level": 1
     },
     {
+      "word": "remove",
+      "concept": "subtraction",
+      "level": 2
+    },
+    {
+      "word": "removed",
+      "concept": "subtraction",
+      "level": 2
+    },
+    {
       "word": "repeat",
       "concept": "cycle",
+      "level": 1
+    },
+    {
+      "word": "replied",
+      "concept": "asking",
+      "level": 1
+    },
+    {
+      "word": "reply",
+      "concept": "asking",
       "level": 1
     },
     {
       "word": "reporting",
       "concept": "reporting",
       "level": 6
+    },
+    {
+      "word": "represent",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
+      "word": "represents",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
+      "word": "request",
+      "concept": "asking",
+      "level": 1
     },
     {
       "word": "rest",
@@ -2287,8 +3052,23 @@
       "level": 1
     },
     {
+      "word": "rub",
+      "concept": "touching",
+      "level": 1
+    },
+    {
+      "word": "rubbed",
+      "concept": "touching",
+      "level": 1
+    },
+    {
       "word": "rule",
       "concept": "someone_in_charge",
+      "level": 1
+    },
+    {
+      "word": "ruler",
+      "concept": "measuring",
       "level": 1
     },
     {
@@ -2302,6 +3082,21 @@
       "level": 1
     },
     {
+      "word": "rust",
+      "concept": "metal",
+      "level": 1
+    },
+    {
+      "word": "rusted",
+      "concept": "metal",
+      "level": 1
+    },
+    {
+      "word": "sad",
+      "concept": "feeling",
+      "level": 1
+    },
+    {
       "word": "safe",
       "concept": "danger",
       "level": 1
@@ -2309,6 +3104,11 @@
     {
       "word": "sand",
       "concept": "material",
+      "level": 1
+    },
+    {
+      "word": "scared",
+      "concept": "feeling",
       "level": 1
     },
     {
@@ -2327,9 +3127,44 @@
       "level": 1
     },
     {
+      "word": "seemed",
+      "concept": "opinion",
+      "level": 1
+    },
+    {
+      "word": "seems",
+      "concept": "opinion",
+      "level": 1
+    },
+    {
+      "word": "self",
+      "concept": "self_and_other",
+      "level": 1
+    },
+    {
+      "word": "sell",
+      "concept": "exchange",
+      "level": 1
+    },
+    {
+      "word": "sentence",
+      "concept": "sentence",
+      "level": 1
+    },
+    {
+      "word": "sentences",
+      "concept": "sentence",
+      "level": 1
+    },
+    {
       "word": "set",
       "concept": "correspondence",
       "level": 1
+    },
+    {
+      "word": "sets",
+      "concept": "grouping",
+      "level": 2
     },
     {
       "word": "settles",
@@ -2349,6 +3184,11 @@
     {
       "word": "shape",
       "concept": "shape",
+      "level": 1
+    },
+    {
+      "word": "shaped",
+      "concept": "raw_and_made",
       "level": 1
     },
     {
@@ -2382,6 +3222,16 @@
       "level": 1
     },
     {
+      "word": "shortage",
+      "concept": "enough",
+      "level": 1
+    },
+    {
+      "word": "shorter",
+      "concept": "measuring",
+      "level": 1
+    },
+    {
       "word": "should",
       "concept": "explanation",
       "level": 6
@@ -2389,6 +3239,11 @@
     {
       "word": "show",
       "concept": "checking",
+      "level": 1
+    },
+    {
+      "word": "shown",
+      "concept": "standing_for",
       "level": 1
     },
     {
@@ -2408,7 +3263,17 @@
     },
     {
       "word": "sign",
-      "concept": "name",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
+      "word": "signs",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
+      "word": "silver",
+      "concept": "metal",
       "level": 1
     },
     {
@@ -2424,6 +3289,11 @@
     {
       "word": "sink",
       "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "sister",
+      "concept": "family",
       "level": 1
     },
     {
@@ -2472,6 +3342,11 @@
       "level": 1
     },
     {
+      "word": "smaller",
+      "concept": "measuring",
+      "level": 1
+    },
+    {
       "word": "smash",
       "concept": "things_break",
       "level": 1
@@ -2507,6 +3382,11 @@
       "level": 1
     },
     {
+      "word": "sold",
+      "concept": "exchange",
+      "level": 1
+    },
+    {
       "word": "someone",
       "concept": "person",
       "level": 1
@@ -2514,6 +3394,11 @@
     {
       "word": "sometimes",
       "concept": "cycle",
+      "level": 1
+    },
+    {
+      "word": "son",
+      "concept": "family",
       "level": 1
     },
     {
@@ -2537,6 +3422,36 @@
       "level": 1
     },
     {
+      "word": "spare",
+      "concept": "enough",
+      "level": 1
+    },
+    {
+      "word": "speak",
+      "concept": "sentence",
+      "level": 1
+    },
+    {
+      "word": "speaks",
+      "concept": "sentence",
+      "level": 1
+    },
+    {
+      "word": "spell",
+      "concept": "word",
+      "level": 1
+    },
+    {
+      "word": "spelled",
+      "concept": "word",
+      "level": 1
+    },
+    {
+      "word": "spelling",
+      "concept": "word",
+      "level": 1
+    },
+    {
       "word": "spill",
       "concept": "liquid",
       "level": 1
@@ -2544,6 +3459,16 @@
     {
       "word": "spilled",
       "concept": "liquid",
+      "level": 1
+    },
+    {
+      "word": "spoke",
+      "concept": "sentence",
+      "level": 1
+    },
+    {
+      "word": "spoken",
+      "concept": "sentence",
       "level": 1
     },
     {
@@ -2573,7 +3498,7 @@
     },
     {
       "word": "stands",
-      "concept": "name",
+      "concept": "standing_for",
       "level": 1
     },
     {
@@ -2589,6 +3514,21 @@
     {
       "word": "steam",
       "concept": "heat",
+      "level": 1
+    },
+    {
+      "word": "steel",
+      "concept": "metal",
+      "level": 1
+    },
+    {
+      "word": "step",
+      "concept": "way_of_doing",
+      "level": 1
+    },
+    {
+      "word": "steps",
+      "concept": "way_of_doing",
       "level": 1
     },
     {
@@ -2632,6 +3572,11 @@
       "level": 1
     },
     {
+      "word": "stroke",
+      "concept": "touching",
+      "level": 1
+    },
+    {
       "word": "strong",
       "concept": "force",
       "level": 1
@@ -2645,6 +3590,16 @@
       "word": "stuff",
       "concept": "material",
       "level": 1
+    },
+    {
+      "word": "subtract",
+      "concept": "subtraction",
+      "level": 2
+    },
+    {
+      "word": "subtracted",
+      "concept": "subtraction",
+      "level": 2
     },
     {
       "word": "successor",
@@ -2662,6 +3617,11 @@
       "level": 6
     },
     {
+      "word": "suppose",
+      "concept": "opinion",
+      "level": 1
+    },
+    {
       "word": "suppresses",
       "concept": "reporting",
       "level": 6
@@ -2672,8 +3632,28 @@
       "level": 1
     },
     {
+      "word": "swap",
+      "concept": "exchange",
+      "level": 1
+    },
+    {
+      "word": "swapped",
+      "concept": "exchange",
+      "level": 1
+    },
+    {
       "word": "swim",
       "concept": "moving_and_still",
+      "level": 1
+    },
+    {
+      "word": "symbol",
+      "concept": "standing_for",
+      "level": 1
+    },
+    {
+      "word": "symbols",
+      "concept": "standing_for",
       "level": 1
     },
     {
@@ -2687,8 +3667,38 @@
       "level": 1
     },
     {
+      "word": "taken",
+      "concept": "subtraction",
+      "level": 2
+    },
+    {
+      "word": "talk",
+      "concept": "sentence",
+      "level": 1
+    },
+    {
+      "word": "talked",
+      "concept": "sentence",
+      "level": 1
+    },
+    {
+      "word": "talking",
+      "concept": "sentence",
+      "level": 1
+    },
+    {
       "word": "tall",
       "concept": "physical_property",
+      "level": 1
+    },
+    {
+      "word": "taller",
+      "concept": "measuring",
+      "level": 1
+    },
+    {
+      "word": "tally",
+      "concept": "written_record",
       "level": 1
     },
     {
@@ -2707,8 +3717,43 @@
       "level": 6
     },
     {
+      "word": "tend",
+      "concept": "tending",
+      "level": 1
+    },
+    {
+      "word": "tended",
+      "concept": "tending",
+      "level": 1
+    },
+    {
+      "word": "tends",
+      "concept": "tending",
+      "level": 1
+    },
+    {
+      "word": "tens",
+      "concept": "place_value",
+      "level": 2
+    },
+    {
+      "word": "term",
+      "concept": "word",
+      "level": 1
+    },
+    {
+      "word": "terms",
+      "concept": "word",
+      "level": 1
+    },
+    {
       "word": "test",
       "concept": "checking",
+      "level": 1
+    },
+    {
+      "word": "theirs",
+      "concept": "having",
       "level": 1
     },
     {
@@ -2750,6 +3795,11 @@
       "level": 1
     },
     {
+      "word": "thirty",
+      "concept": "natural_number",
+      "level": 2
+    },
+    {
       "word": "thought",
       "concept": "knowing",
       "level": 1
@@ -2772,6 +3822,11 @@
     {
       "word": "time",
       "concept": "duration",
+      "level": 1
+    },
+    {
+      "word": "tin",
+      "concept": "metal",
       "level": 1
     },
     {
@@ -2800,6 +3855,16 @@
       "level": 1
     },
     {
+      "word": "tool",
+      "concept": "way_of_doing",
+      "level": 1
+    },
+    {
+      "word": "tools",
+      "concept": "way_of_doing",
+      "level": 1
+    },
+    {
       "word": "top",
       "concept": "spatial_position",
       "level": 1
@@ -2807,6 +3872,21 @@
     {
       "word": "torn",
       "concept": "things_break",
+      "level": 1
+    },
+    {
+      "word": "touch",
+      "concept": "touching",
+      "level": 1
+    },
+    {
+      "word": "touched",
+      "concept": "touching",
+      "level": 1
+    },
+    {
+      "word": "touches",
+      "concept": "touching",
       "level": 1
     },
     {
@@ -2825,6 +3905,16 @@
       "level": 1
     },
     {
+      "word": "trade",
+      "concept": "exchange",
+      "level": 1
+    },
+    {
+      "word": "traded",
+      "concept": "exchange",
+      "level": 1
+    },
+    {
       "word": "tray",
       "concept": "household_object",
       "level": 1
@@ -2837,6 +3927,11 @@
     {
       "word": "trees",
       "concept": "plant",
+      "level": 1
+    },
+    {
+      "word": "trick",
+      "concept": "way_of_doing",
       "level": 1
     },
     {
@@ -2870,6 +3965,16 @@
       "level": 1
     },
     {
+      "word": "twelve",
+      "concept": "natural_number",
+      "level": 2
+    },
+    {
+      "word": "twenty",
+      "concept": "natural_number",
+      "level": 2
+    },
+    {
       "word": "twice",
       "concept": "cycle",
       "level": 1
@@ -2880,6 +3985,21 @@
       "level": 1
     },
     {
+      "word": "unable",
+      "concept": "can_and_cannot",
+      "level": 1
+    },
+    {
+      "word": "unchanged",
+      "concept": "conservation_of_number",
+      "level": 2
+    },
+    {
+      "word": "uncle",
+      "concept": "family",
+      "level": 1
+    },
+    {
       "word": "uncover",
       "concept": "opening_and_shutting",
       "level": 1
@@ -2887,6 +4007,11 @@
     {
       "word": "understand",
       "concept": "knowing",
+      "level": 1
+    },
+    {
+      "word": "unkind",
+      "concept": "good_and_bad",
       "level": 1
     },
     {
@@ -2905,6 +4030,11 @@
       "level": 1
     },
     {
+      "word": "upset",
+      "concept": "feeling",
+      "level": 1
+    },
+    {
       "word": "use",
       "concept": "wearing_out",
       "level": 1
@@ -2917,6 +4047,16 @@
     {
       "word": "using",
       "concept": "wearing_out",
+      "level": 1
+    },
+    {
+      "word": "view",
+      "concept": "opinion",
+      "level": 1
+    },
+    {
+      "word": "views",
+      "concept": "opinion",
       "level": 1
     },
     {
@@ -3000,6 +4140,21 @@
       "level": 1
     },
     {
+      "word": "weigh",
+      "concept": "measuring",
+      "level": 1
+    },
+    {
+      "word": "weighed",
+      "concept": "measuring",
+      "level": 1
+    },
+    {
+      "word": "well",
+      "concept": "good_and_bad",
+      "level": 1
+    },
+    {
       "word": "wet",
       "concept": "physical_property",
       "level": 1
@@ -3040,6 +4195,11 @@
       "level": 1
     },
     {
+      "word": "wire",
+      "concept": "metal",
+      "level": 1
+    },
+    {
       "word": "woman",
       "concept": "person",
       "level": 1
@@ -3056,12 +4216,12 @@
     },
     {
       "word": "word",
-      "concept": "name",
+      "concept": "word",
       "level": 1
     },
     {
       "word": "words",
-      "concept": "number_word_order",
+      "concept": "word",
       "level": 1
     },
     {
@@ -3077,6 +4237,16 @@
     {
       "word": "worn",
       "concept": "wearing_out",
+      "level": 1
+    },
+    {
+      "word": "worse",
+      "concept": "good_and_bad",
+      "level": 1
+    },
+    {
+      "word": "worst",
+      "concept": "good_and_bad",
       "level": 1
     },
     {
@@ -3120,8 +4290,13 @@
       "level": 1
     },
     {
+      "word": "yours",
+      "concept": "having",
+      "level": 1
+    },
+    {
       "word": "yourself",
-      "concept": "person",
+      "concept": "self_and_other",
       "level": 1
     },
     {

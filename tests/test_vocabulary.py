@@ -18,6 +18,7 @@ from epagoge.vocabulary import (
     load_vocabulary,
     term_levels,
     tokenise,
+    unlexicalised,
     unlicensed,
     utilisation,
     validate_vocabulary,
@@ -333,3 +334,60 @@ class TestUnlicensed(unittest.TestCase):
     def test_every_offender_is_reported_not_just_the_first(self) -> None:
         found = unlicensed(self.vocabulary(), "ledger and frobnicator", 1)
         self.assertEqual(len(found), 3)
+
+
+class TestLexicalisation(unittest.TestCase):
+    """A concept with no word cannot be taught.
+
+    The other vocabulary rules run the opposite way, requiring a word to
+    name a real concept and to not precede it. Neither fires when a concept
+    has no word, because an unlexicalised concept breaks no rule as written.
+    It is simply unwritable.
+    """
+
+    def vocabulary(self) -> Vocabulary:
+        return Vocabulary(
+            core=("the",),
+            terms=(
+                Term(word="cup", concept="vessel", level=1),
+                Term(word="ledger", concept="ledger", level=5),
+            ),
+        )
+
+    def test_a_concept_with_a_word_at_its_level_is_clear(self) -> None:
+        self.assertEqual(unlexicalised(self.vocabulary(), {"vessel": 1}), [])
+
+    def test_a_concept_with_no_word_at_all_is_reported(self) -> None:
+        self.assertEqual(unlexicalised(self.vocabulary(), {"ghost": 1}), [("ghost", 1)])
+
+    def test_a_word_above_the_concepts_level_does_not_license_it(self) -> None:
+        """The word arrives too late to be usable where the concept is taught."""
+        self.assertEqual(
+            unlexicalised(self.vocabulary(), {"ledger": 2}), [("ledger", 2)]
+        )
+
+    def test_a_word_below_the_concepts_level_does_license_it(self) -> None:
+        self.assertEqual(unlexicalised(self.vocabulary(), {"vessel": 3}), [])
+
+    def test_the_earliest_word_decides(self) -> None:
+        v = Vocabulary(
+            terms=(
+                Term(word="late", concept="c", level=5),
+                Term(word="early", concept="c", level=1),
+            )
+        )
+        self.assertEqual(unlexicalised(v, {"c": 2}), [])
+
+    def test_a_planned_concept_is_exempt_through_the_validator(self) -> None:
+        """A term must name a graph concept, so planning and lexicalising
+        are the same step and the rule would fire on every plan."""
+        found = validate_vocabulary(
+            self.vocabulary(), [], {"vessel": object()}, {"vessel": 1, "planned": 1}
+        )
+        self.assertNotIn("concept-unlexicalised", {v.code for v in found})
+
+    def test_a_graph_concept_with_no_word_is_a_violation(self) -> None:
+        found = validate_vocabulary(
+            self.vocabulary(), [], {"vessel": object(), "bare": object()}, {"bare": 1}
+        )
+        self.assertIn("concept-unlexicalised", {v.code for v in found})

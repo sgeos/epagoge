@@ -98,6 +98,30 @@ thing constraining it, so a disagreement about whether a record is level
 three or four had nothing to appeal to. The vocabulary ceiling is a second,
 independent, automatic check.
 
+## A concept with no word cannot be taught
+
+**Added 2026-09-24.** `concept-unlexicalised` fires when a concept the
+schedule places at level L has no term licensed at or before L.
+
+**Nothing caught this until it was asked about**, and twenty-eight concepts
+had accumulated without a word. The other rules here run the opposite
+direction. A word must name a real concept, and a word may not be
+introduced before its concept. **Neither fires when a concept has no word**,
+because an unlexicalised concept breaks no rule as written. It is simply
+unwritable, and the generator is constrained to the level's word list so it
+cannot write about what that list does not name.
+
+Restricted to concepts the graph holds. A term must name a graph concept,
+so planning a concept and lexicalising it are the same step, and the rule
+would otherwise fire on every plan.
+
+**A word may still be introduced after its concept**, which is the design
+recorded above and was nearly destroyed while satisfying this check. The
+first attempt lowered every term to its concept's level, which would have
+flattened deliberate authoring across 40 terms. Only the absence of any
+word at or below the level is a defect. A late word alongside an early one
+is not.
+
 ## Prior art
 
 Restricted-vocabulary corpora are established rather than speculative.

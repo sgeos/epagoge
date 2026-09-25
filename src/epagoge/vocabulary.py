@@ -209,6 +209,34 @@ def unlicensed(vocabulary: Vocabulary, text: str, level: int) -> list[str]:
     return out
 
 
+def unlexicalised(
+    vocabulary: Vocabulary, scheduled: Mapping[str, int]
+) -> list[tuple[str, int]]:
+    """Scheduled concepts with no word licensed at or before their level.
+
+    **A concept with no word cannot be taught**, because the generator is
+    constrained to the level's admissible vocabulary and nothing in that
+    list names the concept.
+
+    Nothing caught this before it was asked about. The other vocabulary
+    rules run the opposite way, requiring that a word names a real concept
+    and that a word does not precede its concept. **Neither fires when a
+    concept has no word**, because an unlexicalised concept breaks no rule
+    as written. It is simply unwritable.
+    """
+    licensed: dict[str, int] = {}
+    for term in vocabulary.terms:
+        current = licensed.get(term.concept)
+        if current is None or term.level < current:
+            licensed[term.concept] = term.level
+    out: list[tuple[str, int]] = []
+    for concept, level in scheduled.items():
+        earliest = licensed.get(concept)
+        if earliest is None or earliest > level:
+            out.append((concept, level))
+    return sorted(out)
+
+
 def concept_levels(records: Sequence[Record]) -> dict[str, int]:
     """Earliest level at which each concept is taught."""
     out: dict[str, int] = {}
@@ -289,10 +317,36 @@ def validate_vocabulary(
     out: list[Violation] = []
     out.extend(_check_licensing(vocabulary, known_concepts))
     out.extend(_check_lower_bound(vocabulary, records, scheduled))
+    out.extend(_check_lexicalisation(vocabulary, known_concepts, scheduled))
     levels = term_levels(vocabulary, records)
     out.extend(_check_ceiling(vocabulary, records, levels))
     out.extend(_check_coverage(vocabulary, records, levels))
     return out
+
+
+def _check_lexicalisation(
+    vocabulary: Vocabulary,
+    known_concepts: Mapping[str, object],
+    scheduled: Mapping[str, int] | None,
+) -> list[Violation]:
+    """A concept in the graph and on the schedule must have a word.
+
+    Restricted to concepts the graph holds, because a concept a schedule
+    only plans cannot have a term at all. A term must name a graph concept,
+    so planning one and lexicalising it are the same step and the rule
+    would fire on every plan.
+    """
+    if not scheduled:
+        return []
+    in_graph = {c: lvl for c, lvl in scheduled.items() if c in known_concepts}
+    return [
+        Violation(
+            "concept-unlexicalised",
+            f"concept {concept!r} is scheduled at level {level} and no word "
+            "is licensed for it there",
+        )
+        for concept, level in unlexicalised(vocabulary, in_graph)
+    ]
 
 
 def _check_licensing(

@@ -27,6 +27,34 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. A check for concepts with no word, and 235 terms to satisfy it
+
+- `concept-unlexicalised` fires when a concept the schedule places at level
+  L has no term licensed at or before L. Seven new tests, **276 total**.
+- **It found 28, where an ad-hoc query had found 20.** Twenty at level one,
+  all added after the lexicon pass, and eight at level two in mathematics
+  and failure analysis that the lexicon never reached.
+- **Nothing caught this until it was asked about.** The other vocabulary
+  rules run the opposite direction, requiring a word to name a real concept
+  and to not precede it. Neither fires when a concept has no word, because
+  an unlexicalised concept breaks no rule as written. It is simply
+  unwritable.
+- Terms **586 to 821**, level one **509 to 704**, admissible at level one
+  **675 to 870**. Fourteen words remapped where a newer concept is their
+  more direct owner, among them `word` from `name`, `metal` from
+  `material`, and `ask` from `being_told`.
+
+### Fixed. An over-correction that would have flattened authored levels
+
+- The first attempt lowered **every** term to its concept's level, moving
+  40 of them, among them `cause` from level five to level one.
+- **A word may be introduced after its concept.** That is the recorded
+  design, on the grounds that a concept can be taught before its name is
+  introduced. Only the absence of any word at or below the level is a
+  defect, and a late word alongside an early one is not.
+- Reverted and redone. The 235 additions covered every gap on their own and
+  **no term needed lowering at all**.
+
 ### Added. A plain description of each domain, and nine concepts from them
 
 - Each of the eleven written for a reader who does not know the project,
