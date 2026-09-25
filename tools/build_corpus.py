@@ -28,6 +28,7 @@ from epagoge.book import (
     linear_extension,
     load_book_dir,
     random_linear_extension,
+    word_definitions,
 )
 from epagoge.concept_graph import ConceptGraph
 from epagoge.thesaurus import load as load_thesaurus
@@ -131,12 +132,11 @@ def main(argv: list[str]) -> int:
         # in it was already defined in context by the book that introduced
         # it. Seven hundred definitions at the front, with no story around
         # them, is the lifeless-assertion failure the books exist to fix.
-        defined: dict[str, str] = {}
-        for record in records:
-            entry = cast(dict[str, object], record)
-            definition = cast(dict[str, object], entry.get("defines") or {})
-            if definition.get("kind") == "word":
-                defined[str(definition["target"])] = str(entry["content"])
+        # Canonical, not whichever record was read last. Which definition
+        # reached the stream used to depend on file order.
+        defined = word_definitions(
+            all_books, [cast(dict[str, object], r) for r in records]
+        )
         level = order[0].level if order else 1
 
         # **The thesaurus is reference material too.** It is an analysis

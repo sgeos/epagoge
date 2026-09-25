@@ -31,6 +31,7 @@ from epagoge.book import (
     load_book_dir,
     records_in,
     render_book,
+    word_definitions,
 )
 from epagoge.vocabulary import load_vocabulary, tokenise, unlicensed
 
@@ -80,13 +81,10 @@ def main(argv: list[str]) -> int:
     for word, concept in senses:
         concept_of.setdefault(word, []).append(concept)
 
-    _, records = load_book_dir(book_dir)
-    defined: dict[str, str] = {}
-    for record in records:
-        entry = cast(dict[str, object], record)
-        definition = cast(dict[str, object], entry.get("defines") or {})
-        if definition.get("kind") == "word":
-            defined[str(definition["target"])] = str(entry["content"])
+    existing_books, records = load_book_dir(book_dir)
+    defined = word_definitions(
+        existing_books, [cast(dict[str, object], r) for r in records]
+    )
 
     def resolve(token: str) -> str | None:
         found = vocabulary.lookup(token)

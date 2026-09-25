@@ -34,6 +34,7 @@ from epagoge.book import (
     render_book,
     topological_orders_exist,
     validate_books,
+    word_definitions,
 )
 
 WORDS = {"cup", "water"}
@@ -481,3 +482,84 @@ class SeedWordsAndTheirInflections(unittest.TestCase):
         got = self.closure({"cup": "a ghost thing"}, {"a"})
         self.assertNotIn("cup", got.grounded)
         self.assertEqual(set(got.undefined), {"ghost", "thing"})
+
+
+class CanonicalDefinitions(unittest.TestCase):
+    """Which definition reaches the stream must not depend on file order.
+
+    Fifty-two words carried two or more different definitions, because a
+    book defines its words in context and the dictionary defines them
+    again. That is the design. What was not the design is that every
+    caller built the map by assignment in record order.
+    """
+
+    def build(
+        self, *books: tuple[str, list[tuple[str, str, str]]]
+    ) -> tuple[list[Book], list[dict[str, object]]]:
+        made: list[Book] = []
+        records: list[dict[str, object]] = []
+        for book_id, entries in books:
+            ids = [rid for rid, _w, _t in entries]
+            made.append(
+                Book(
+                    id=book_id,
+                    level=1,
+                    title=book_id,
+                    subject_kind=DefinitionKind.WORD,
+                    subject="x",
+                    records=tuple(ids),
+                )
+            )
+            for rid, word, text in entries:
+                records.append(
+                    {
+                        "id": rid,
+                        "content": text,
+                        "defines": {"kind": "word", "target": word},
+                    }
+                )
+        return made, records
+
+    def test_the_dictionary_definition_wins(self) -> None:
+        books, records = self.build(
+            ("bk.story", [("a", "empty", "Having nothing inside.")]),
+            (
+                "bk.dictionary.1",
+                [("b", "empty", "A thing is empty when it has nothing in it.")],
+            ),
+        )
+        got = word_definitions(books, records)
+        self.assertEqual(got["empty"], "A thing is empty when it has nothing in it.")
+
+    def test_it_wins_whichever_book_is_read_first(self) -> None:
+        books, records = self.build(
+            ("bk.dictionary.1", [("b", "empty", "canonical")]),
+            ("bk.story", [("a", "empty", "in context")]),
+        )
+        self.assertEqual(word_definitions(books, records)["empty"], "canonical")
+
+    def test_among_ordinary_books_the_first_is_kept(self) -> None:
+        """So adding an unrelated book does not move an existing entry."""
+        books, records = self.build(
+            ("bk.one", [("a", "cup", "first")]),
+            ("bk.two", [("b", "cup", "second")]),
+        )
+        self.assertEqual(word_definitions(books, records)["cup"], "first")
+
+    def test_a_word_defined_once_is_unchanged(self) -> None:
+        books, records = self.build(("bk.one", [("a", "cup", "only")]))
+        self.assertEqual(word_definitions(books, records), {"cup": "only"})
+
+    def test_records_that_define_nothing_are_ignored(self) -> None:
+        books = [
+            Book(
+                id="bk.one",
+                level=1,
+                title="t",
+                subject_kind=DefinitionKind.WORD,
+                subject="x",
+                records=("a",),
+            )
+        ]
+        records = [{"id": "a", "content": "a story line"}]
+        self.assertEqual(word_definitions(books, records), {})

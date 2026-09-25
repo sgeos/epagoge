@@ -1739,7 +1739,11 @@
     {
       "word": "end",
       "concept": "sequence",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "ends"
+      ],
+      "pos": "noun"
     },
     {
       "word": "enemy",

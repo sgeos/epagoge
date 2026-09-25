@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 from typing import cast
 
-from epagoge.book import dictionary_closure, load_book_dir
+from epagoge.book import dictionary_closure, load_book_dir, word_definitions
 from epagoge.vocabulary import load_vocabulary, tokenise
 
 
@@ -31,14 +31,8 @@ def main(argv: list[str]) -> int:
     level = int(argv[3]) if len(argv) == 4 else 1
     vocabulary = load_vocabulary(Path(argv[1]))
     seed = set(vocabulary.seed_words())
-    _books, records = load_book_dir(Path(argv[2]))
-
-    definitions: dict[str, str] = {}
-    for record in records:
-        entry = cast(dict[str, object], record)
-        defines = cast(dict[str, object], entry.get("defines") or {})
-        if defines.get("kind") == "word":
-            definitions[str(defines["target"])] = str(entry["content"])
+    books, records = load_book_dir(Path(argv[2]))
+    definitions = word_definitions(books, [cast(dict[str, object], r) for r in records])
 
     def resolve(token: str) -> str | None:
         found = vocabulary.lookup(token)

@@ -224,6 +224,43 @@ class Closure:
         return len(self.grounded) / total if total else 1.0
 
 
+def word_definitions(
+    books: Sequence[Book], records: Sequence[Mapping[str, object]]
+) -> dict[str, str]:
+    """The canonical definition of each word, preferring the dictionary.
+
+    **Fifty-two words carried two or more different definitions** on
+    2026-09-25, because a book defines its words in context and the
+    dictionary defines them again. That is the design and the paraphrase
+    is useful to a reader.
+
+    What was not the design is that every caller built the map by
+    assignment in record order, so **which definition reached the training
+    stream depended on which file was read last**. A dictionary book is the
+    canonical source and wins; among ordinary books the first is kept, so
+    the result does not move when an unrelated book is added.
+    """
+    canonical: dict[str, str] = {}
+    ordinary: dict[str, str] = {}
+    by_book = {
+        book.id: [r for r in records if str(r["id"]) in set(book.records)]
+        for book in books
+    }
+    for book in books:
+        target = canonical if book.id.startswith("bk.dictionary.") else ordinary
+        for record in by_book[book.id]:
+            defines = record.get("defines")
+            if not isinstance(defines, Mapping):
+                continue
+            entry = cast(Mapping[str, object], defines)
+            if entry.get("kind") != "word":
+                continue
+            word = str(entry["target"])
+            if word not in target:
+                target[word] = str(record["content"])
+    return {**ordinary, **canonical}
+
+
 def dictionary_closure(
     definitions: Mapping[str, str],
     seed: Collection[str],
