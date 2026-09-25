@@ -173,7 +173,120 @@
     "dict.1.ice": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ice"}, "defines": {"kind": "word", "target": "ice"}},
     "dict.1.colour": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:colour"}, "defines": {"kind": "word", "target": "colour"}},
     "dict.1.low": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:low"}, "defines": {"kind": "word", "target": "low"}},
-    "dict.1.wear": {"concepts": ["wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wear"}, "defines": {"kind": "word", "target": "wear"}}
+    "dict.1.wear": {"concepts": ["wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wear"}, "defines": {"kind": "word", "target": "wear"}},
+    "dict.1.her": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:her"}, "defines": {"kind": "word", "target": "her"}},
+    "dict.1.hers": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hers"}, "defines": {"kind": "word", "target": "hers"}},
+    "dict.1.herself": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:herself"}, "defines": {"kind": "word", "target": "herself"}},
+    "dict.1.him": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:him"}, "defines": {"kind": "word", "target": "him"}},
+    "dict.1.himself": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:himself"}, "defines": {"kind": "word", "target": "himself"}},
+    "dict.1.his": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:his"}, "defines": {"kind": "word", "target": "his"}},
+    "dict.1.itself": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:itself"}, "defines": {"kind": "word", "target": "itself"}},
+    "dict.1.me": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:me"}, "defines": {"kind": "word", "target": "me"}},
+    "dict.1.mine": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mine"}, "defines": {"kind": "word", "target": "mine"}},
+    "dict.1.myself": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:myself"}, "defines": {"kind": "word", "target": "myself"}},
+    "dict.1.ours": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ours"}, "defines": {"kind": "word", "target": "ours"}},
+    "dict.1.self": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:self"}, "defines": {"kind": "word", "target": "self"}},
+    "dict.1.theirs": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:theirs"}, "defines": {"kind": "word", "target": "theirs"}},
+    "dict.1.yours": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yours"}, "defines": {"kind": "word", "target": "yours"}},
+    "dict.1.yourself": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yourself"}, "defines": {"kind": "word", "target": "yourself"}},
+    "dict.1.none": {"concepts": ["counting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:none"}, "defines": {"kind": "word", "target": "none"}},
+    "dict.1.nobody": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nobody"}, "defines": {"kind": "word", "target": "nobody"}},
+    "dict.1.zero": {"concepts": ["counting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:zero"}, "defines": {"kind": "word", "target": "zero"}},
+    "dict.1.second": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:second"}, "defines": {"kind": "word", "target": "second"}},
+    "dict.1.third": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:third"}, "defines": {"kind": "word", "target": "third"}},
+    "dict.1.twice": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:twice"}, "defines": {"kind": "word", "target": "twice"}},
+    "dict.1.iron": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:iron"}, "defines": {"kind": "word", "target": "iron"}},
+    "dict.1.jar": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:jar"}, "defines": {"kind": "word", "target": "jar"}},
+    "dict.1.juice": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:juice"}, "defines": {"kind": "word", "target": "juice"}},
+    "dict.1.lock": {"concepts": ["opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lock"}, "defines": {"kind": "word", "target": "lock"}},
+    "dict.1.key": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:key"}, "defines": {"kind": "word", "target": "key"}},
+    "dict.1.knife": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:knife"}, "defines": {"kind": "word", "target": "knife"}},
+    "dict.1.lamp": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lamp"}, "defines": {"kind": "word", "target": "lamp"}},
+    "dict.1.land": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:land"}, "defines": {"kind": "word", "target": "land"}},
+    "dict.1.leaf": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:leaf"}, "defines": {"kind": "word", "target": "leaf"}},
+    "dict.1.lid": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lid"}, "defines": {"kind": "word", "target": "lid"}},
+    "dict.1.line": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:line"}, "defines": {"kind": "word", "target": "line"}},
+    "dict.1.mark": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mark"}, "defines": {"kind": "word", "target": "mark"}},
+    "dict.1.list": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:list"}, "defines": {"kind": "word", "target": "list"}},
+    "dict.1.log": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:log"}, "defines": {"kind": "word", "target": "log"}},
+    "dict.1.mat": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mat"}, "defines": {"kind": "word", "target": "mat"}},
+    "dict.1.milk": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:milk"}, "defines": {"kind": "word", "target": "milk"}},
+    "dict.1.model": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:model"}, "defines": {"kind": "word", "target": "model"}},
+    "dict.1.mouse": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mouse"}, "defines": {"kind": "word", "target": "mouse"}},
+    "dict.1.mud": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mud"}, "defines": {"kind": "word", "target": "mud"}},
+    "dict.1.mum": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mum"}, "defines": {"kind": "word", "target": "mum"}},
+    "dict.1.nail": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nail"}, "defines": {"kind": "word", "target": "nail"}},
+    "dict.1.noise": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:noise"}, "defines": {"kind": "word", "target": "noise"}},
+    "dict.1.noisy": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:noisy"}, "defines": {"kind": "word", "target": "noisy"}},
+    "dict.1.note": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:note"}, "defines": {"kind": "word", "target": "note"}},
+    "dict.1.sick": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sick"}, "defines": {"kind": "word", "target": "sick"}},
+    "dict.1.nurse": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nurse"}, "defines": {"kind": "word", "target": "nurse"}},
+    "dict.1.pan": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pan"}, "defines": {"kind": "word", "target": "pan"}},
+    "dict.1.pen": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pen"}, "defines": {"kind": "word", "target": "pen"}},
+    "dict.1.picture": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:picture"}, "defines": {"kind": "word", "target": "picture"}},
+    "dict.1.plate": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plate"}, "defines": {"kind": "word", "target": "plate"}},
+    "dict.1.pocket": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pocket"}, "defines": {"kind": "word", "target": "pocket"}},
+    "dict.1.pot": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pot"}, "defines": {"kind": "word", "target": "pot"}},
+    "dict.1.rain": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rain"}, "defines": {"kind": "word", "target": "rain"}},
+    "dict.1.roof": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:roof"}, "defines": {"kind": "word", "target": "roof"}},
+    "dict.1.straight": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:straight"}, "defines": {"kind": "word", "target": "straight"}},
+    "dict.1.measure": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:measure"}, "defines": {"kind": "word", "target": "measure"}},
+    "dict.1.ruler": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ruler"}, "defines": {"kind": "word", "target": "ruler"}},
+    "dict.1.sand": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sand"}, "defines": {"kind": "word", "target": "sand"}},
+    "dict.1.learn": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:learn"}, "defines": {"kind": "word", "target": "learn"}},
+    "dict.1.school": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:school"}, "defines": {"kind": "word", "target": "school"}},
+    "dict.1.seed": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:seed"}, "defines": {"kind": "word", "target": "seed"}},
+    "dict.1.wall": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wall"}, "defines": {"kind": "word", "target": "wall"}},
+    "dict.1.shelf": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shelf"}, "defines": {"kind": "word", "target": "shelf"}},
+    "dict.1.shell": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shell"}, "defines": {"kind": "word", "target": "shell"}},
+    "dict.1.shoes": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shoes"}, "defines": {"kind": "word", "target": "shoes"}},
+    "dict.1.silver": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:silver"}, "defines": {"kind": "word", "target": "silver"}},
+    "dict.1.snow": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:snow"}, "defines": {"kind": "word", "target": "snow"}},
+    "dict.1.soap": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:soap"}, "defines": {"kind": "word", "target": "soap"}},
+    "dict.1.son": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:son"}, "defines": {"kind": "word", "target": "son"}},
+    "dict.1.speak": {"concepts": ["sentence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:speak"}, "defines": {"kind": "word", "target": "speak"}},
+    "dict.1.voice": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:voice"}, "defines": {"kind": "word", "target": "voice"}},
+    "dict.1.sing": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sing"}, "defines": {"kind": "word", "target": "sing"}},
+    "dict.1.song": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:song"}, "defines": {"kind": "word", "target": "song"}},
+    "dict.1.spoon": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spoon"}, "defines": {"kind": "word", "target": "spoon"}},
+    "dict.1.square": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:square"}, "defines": {"kind": "word", "target": "square"}},
+    "dict.1.step": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:step"}, "defines": {"kind": "word", "target": "step"}},
+    "dict.1.stair": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stair"}, "defines": {"kind": "word", "target": "stair"}},
+    "dict.1.star": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:star"}, "defines": {"kind": "word", "target": "star"}},
+    "dict.1.steam": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:steam"}, "defines": {"kind": "word", "target": "steam"}},
+    "dict.1.steel": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:steel"}, "defines": {"kind": "word", "target": "steel"}},
+    "dict.1.wind": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wind"}, "defines": {"kind": "word", "target": "wind"}},
+    "dict.1.weather": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:weather"}, "defines": {"kind": "word", "target": "weather"}},
+    "dict.1.storm": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:storm"}, "defines": {"kind": "word", "target": "storm"}},
+    "dict.1.story": {"concepts": ["writing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:story"}, "defines": {"kind": "word", "target": "story"}},
+    "dict.1.stove": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stove"}, "defines": {"kind": "word", "target": "stove"}},
+    "dict.1.straw": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:straw"}, "defines": {"kind": "word", "target": "straw"}},
+    "dict.1.town": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:town"}, "defines": {"kind": "word", "target": "town"}},
+    "dict.1.street": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:street"}, "defines": {"kind": "word", "target": "street"}},
+    "dict.1.village": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:village"}, "defines": {"kind": "word", "target": "village"}},
+    "dict.1.string": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:string"}, "defines": {"kind": "word", "target": "string"}},
+    "dict.1.table": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:table"}, "defines": {"kind": "word", "target": "table"}},
+    "dict.1.tray": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tray"}, "defines": {"kind": "word", "target": "tray"}},
+    "dict.1.teacher": {"concepts": ["someone_in_charge"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:teacher"}, "defines": {"kind": "word", "target": "teacher"}},
+    "dict.1.thief": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thief"}, "defines": {"kind": "word", "target": "thief"}},
+    "dict.1.tin": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tin"}, "defines": {"kind": "word", "target": "tin"}},
+    "dict.1.window": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:window"}, "defines": {"kind": "word", "target": "window"}},
+    "dict.1.wire": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wire"}, "defines": {"kind": "word", "target": "wire"}},
+    "dict.1.week": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:week"}, "defines": {"kind": "word", "target": "week"}},
+    "dict.1.month": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:month"}, "defines": {"kind": "word", "target": "month"}},
+    "dict.1.year": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:year"}, "defines": {"kind": "word", "target": "year"}},
+    "dict.1.minute": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:minute"}, "defines": {"kind": "word", "target": "minute"}},
+    "dict.1.moment": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:moment"}, "defines": {"kind": "word", "target": "moment"}},
+    "dict.1.noon": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:noon"}, "defines": {"kind": "word", "target": "noon"}},
+    "dict.1.today": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:today"}, "defines": {"kind": "word", "target": "today"}},
+    "dict.1.tomorrow": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tomorrow"}, "defines": {"kind": "word", "target": "tomorrow"}},
+    "dict.1.yesterday": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yesterday"}, "defines": {"kind": "word", "target": "yesterday"}},
+    "dict.1.soon": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:soon"}, "defines": {"kind": "word", "target": "soon"}},
+    "dict.1.late": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:late"}, "defines": {"kind": "word", "target": "late"}},
+    "dict.1.sometimes": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sometimes"}, "defines": {"kind": "word", "target": "sometimes"}},
+    "dict.1.seven": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:seven"}, "defines": {"kind": "word", "target": "seven"}},
+    "dict.1.eight": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:eight"}, "defines": {"kind": "word", "target": "eight"}},
+    "dict.1.nine": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nine"}, "defines": {"kind": "word", "target": "nine"}}
   }
 }
 ---
@@ -675,3 +788,342 @@ Low is when a thing is near the ground.
 
 [dict.1.wear]
 To wear is to have cloth on your body.
+
+[dict.1.her]
+Her is the word for a girl or a woman you have said before.
+
+[dict.1.hers]
+Hers means the thing that is of her.
+
+[dict.1.herself]
+Herself means the same girl or woman and no other.
+
+[dict.1.him]
+Him is the word for a boy or a man you have said before.
+
+[dict.1.himself]
+Himself means the same boy or man and no other.
+
+[dict.1.his]
+His means the thing that is of him.
+
+[dict.1.itself]
+Itself means the same thing and no other.
+
+[dict.1.me]
+Me is the word you use for the one who is saying.
+
+[dict.1.mine]
+Mine means the thing that is of me.
+
+[dict.1.myself]
+Myself means me and no other.
+
+[dict.1.ours]
+Ours means the thing that is of us.
+
+[dict.1.self]
+Your self is what you are.
+
+[dict.1.theirs]
+Theirs means the thing that is of them.
+
+[dict.1.yours]
+Yours means the thing that is of you.
+
+[dict.1.yourself]
+Yourself means you and no other.
+
+[dict.1.none]
+None means not one.
+
+[dict.1.nobody]
+Nobody means not one person.
+
+[dict.1.zero]
+Zero is the number for nothing.
+
+[dict.1.second]
+Second is the one that comes after the first.
+
+[dict.1.third]
+Third is the one that comes after the second.
+
+[dict.1.twice]
+Twice means one time and then one more time.
+
+[dict.1.iron]
+Iron is a hard grey metal.
+
+[dict.1.jar]
+A jar is a glass thing you keep food in.
+
+[dict.1.juice]
+Juice is a liquid you get from a plant.
+
+[dict.1.lock]
+A lock is a thing that keeps a door shut.
+
+[dict.1.key]
+A key is a small metal thing you use to open a lock.
+
+[dict.1.knife]
+A knife is a tool with a sharp side you use to cut.
+
+[dict.1.lamp]
+A lamp is a thing that makes light.
+
+[dict.1.land]
+Land is the ground that is not water.
+
+[dict.1.leaf]
+A leaf is a thin flat green part of a plant.
+
+[dict.1.lid]
+A lid is a part that you put on top of a thing to shut it.
+
+[dict.1.line]
+A line is a long thin mark that goes one way.
+
+[dict.1.mark]
+A mark is a small part of a thing that you can see and that someone made.
+
+[dict.1.list]
+A list is many words or names put one after another.
+
+[dict.1.log]
+A log is a long round part of a tree.
+
+[dict.1.mat]
+A mat is a flat thing you put on the ground.
+
+[dict.1.milk]
+Milk is a white liquid that comes from a cow.
+
+[dict.1.model]
+A model is a small thing made to be like a big thing.
+
+[dict.1.mouse]
+A mouse is a very small grey animal.
+
+[dict.1.mud]
+Mud is wet dirt.
+
+[dict.1.mum]
+A mum is a mother.
+
+[dict.1.nail]
+A nail is a small thin metal thing with a sharp end.
+
+[dict.1.noise]
+A noise is a loud sound.
+
+[dict.1.noisy]
+Noisy is when there is much noise.
+
+[dict.1.note]
+A note is a few words you write to keep or to give.
+
+[dict.1.sick]
+Sick is when your body is not good.
+
+[dict.1.nurse]
+A nurse is a person whose work is to care for people who are sick.
+
+[dict.1.pan]
+A pan is a metal thing you put food in to make it hot.
+
+[dict.1.pen]
+A pen is a tool you use to write.
+
+[dict.1.picture]
+A picture is a thing someone made that shows how a thing looks.
+
+[dict.1.plate]
+A plate is a flat dish.
+
+[dict.1.pocket]
+A pocket is a small bag in your cloth.
+
+[dict.1.pot]
+A pot is a round thing you put food or a plant in.
+
+[dict.1.rain]
+Rain is water that comes down from the clouds.
+
+[dict.1.roof]
+A roof is the top part of a house.
+
+[dict.1.straight]
+Straight is when a line does not turn.
+
+[dict.1.measure]
+To measure is to find how big or how many a thing is.
+
+[dict.1.ruler]
+A ruler is a straight tool you use to measure.
+
+[dict.1.sand]
+Sand is very small parts of rock.
+
+[dict.1.learn]
+To learn is to get to know a thing you did not know.
+
+[dict.1.school]
+A school is a place where people go to learn.
+
+[dict.1.seed]
+A seed is a small part of a plant that a new plant grows from.
+
+[dict.1.wall]
+A wall is a side of a room that goes up.
+
+[dict.1.shelf]
+A shelf is a flat part on a wall where you put things.
+
+[dict.1.shell]
+A shell is the hard outside part of a seed or a small animal.
+
+[dict.1.shoes]
+Shoes are things you wear on your feet.
+
+[dict.1.silver]
+Silver is a bright grey metal.
+
+[dict.1.snow]
+Snow is water that comes down from the sky when it is very cold.
+
+[dict.1.soap]
+Soap is stuff you use with water to make things clean.
+
+[dict.1.son]
+A son is a boy of a mother and father.
+
+[dict.1.speak]
+To speak is to say words.
+
+[dict.1.voice]
+Your voice is the sound that comes from your mouth when you speak.
+
+[dict.1.sing]
+To sing is to make a sound with your voice that goes up and down.
+
+[dict.1.song]
+A song is words you sing.
+
+[dict.1.spoon]
+A spoon is a tool you use to eat liquid food.
+
+[dict.1.square]
+A square is a shape with sides that are all the same size.
+
+[dict.1.step]
+A step is one move of your foot.
+
+[dict.1.stair]
+A stair is one of the steps you go up in a house.
+
+[dict.1.star]
+A star is a very small bright point in the sky at night.
+
+[dict.1.steam]
+Steam is what water becomes when it is very hot.
+
+[dict.1.steel]
+Steel is a very hard metal.
+
+[dict.1.wind]
+Wind is air that moves.
+
+[dict.1.weather]
+Weather is what the air is doing, like rain or sun.
+
+[dict.1.storm]
+A storm is weather with much rain and loud wind.
+
+[dict.1.story]
+A story is words that tell what happened.
+
+[dict.1.stove]
+A stove is a thing that makes heat so you can make food hot.
+
+[dict.1.straw]
+Straw is the dry thin part of a plant.
+
+[dict.1.town]
+A town is a place where many people live together.
+
+[dict.1.street]
+A street is a long way in a town that people go on.
+
+[dict.1.village]
+A village is a small town.
+
+[dict.1.string]
+A string is a thin rope.
+
+[dict.1.table]
+A table is a flat thing on legs that you put things on.
+
+[dict.1.tray]
+A tray is a flat thing you use to carry food.
+
+[dict.1.teacher]
+A teacher is a person whose work is to help others learn.
+
+[dict.1.thief]
+A thief is a person who takes what is not theirs.
+
+[dict.1.tin]
+Tin is a soft metal.
+
+[dict.1.window]
+A window is a part of a wall made of glass that you can see through.
+
+[dict.1.wire]
+A wire is a long thin piece of metal.
+
+[dict.1.week]
+A week is seven days.
+
+[dict.1.month]
+A month is a time that has many weeks.
+
+[dict.1.year]
+A year is a long time that has many months.
+
+[dict.1.minute]
+A minute is a very small time.
+
+[dict.1.moment]
+A moment is a very small time.
+
+[dict.1.noon]
+Noon is the middle of the day.
+
+[dict.1.today]
+Today is the day that is now.
+
+[dict.1.tomorrow]
+Tomorrow is the day after today.
+
+[dict.1.yesterday]
+Yesterday is the day before today.
+
+[dict.1.soon]
+Soon means in a small time from now.
+
+[dict.1.late]
+Late is after the time a thing was to be.
+
+[dict.1.sometimes]
+Sometimes means at some times and not at other times.
+
+[dict.1.seven]
+Seven is one more than six.
+
+[dict.1.eight]
+Eight is one more than seven.
+
+[dict.1.nine]
+Nine is one more than eight.
