@@ -27,14 +27,13 @@ required and must not be manufactured.**
 
 ## Variance is measured on the level-one corpus
 
-The pilot already ran on a synthetic stream. This asks for the same
-measurement on real text.
-
 - A paired multi-seed run over the level-one corpus is recorded in the
   tree, with its seeds, the corpus size in tokens and its per-seed losses.
 - The record reports the unpaired spread, the paired spread and their
   correlation, and states how each compares with the synthetic-stream
   figures of 0.0750, 0.0233 and 0.9539.
+- The record states whether the corpus was large enough for the comparison
+  to be meaningful, and if it was not, says what quantity has to change.
 - `evals/PRE_REGISTRATION.md` reflects what this settles, and any item it
   does not settle still names the dependency that would.
 

@@ -248,6 +248,16 @@ merely underpowered.
 the quantity most likely to move between a synthetic stream at 818,000
 parameters and a real corpus at target scale.
 
+**Re-measured on the level-one corpus 2026-09-25, and the result is not
+usable.** Eight paired seeds gave rho 0.9993 and a paired standard
+deviation of 0.00344, which would imply one seed per arm at every target
+effect. It is an artifact: 7,998 tokens is fifty-three training chunks,
+so 800 steps cycles the same seven batches about a hundred and fourteen
+times and the ordering stops contributing anything the initialisation
+does not. Held-out loss 5.85 against ln(2193) = 7.69 for uniform, so
+neither arm had converged either. **The seed count still rests on the
+synthetic pilot.** See `pilot/LEVEL_ONE_VARIANCE.md`.
+
 **A second reason to re-measure, added 2026-09-24.** The pilot ran under
 AdamW with cosine decay. `../docs/decisions/TRAINING_TECHNIQUES.md` adopts
 maximal update parametrization, the Muon optimiser, and a
@@ -303,6 +313,12 @@ The probe set is held fixed and identical across conditions.
 - The ceiling that admits a corpus to the experiment: **PENDING**. It
   cannot sensibly be chosen before the first audit establishes what rate is
   achievable.
+- **A size floor is now known to be necessary and is PENDING.** Measured
+  2026-09-25, the completed level-one draft is 7,998 tokens, which is a
+  factor of 125 below the low end of its own token budget, and an ordering
+  comparison on it is degenerate rather than merely underpowered. Whatever
+  the residual error ceiling turns out to be, a corpus below some size
+  cannot enter the experiment at all, and that size is not yet fixed.
 
 ## 12. Effective-rank floor
 
@@ -345,7 +361,12 @@ the number is fixed once measurable.
 | 11 ceiling | The first corpus audit |
 | 12 | The first kernel measurements |
 
-**The variance pilot is the single largest unblocker and depends on
-nothing.** It measures run-to-run behaviour of the training setup, not the
-curriculum, so it runs on any small corpus and is not waiting on the
-concept graph or on corpus generation.
+**The variance pilot was the single largest unblocker and has run**, on
+2026-09-24 against a synthetic stream. The sentence that stood here said
+it depended on nothing and was the largest unblocker; it predated its own
+result and is kept in that form nowhere.
+
+**What remains is scale.** Re-measurement on the level-one corpus was
+attempted on 2026-09-25 and produced a degenerate result, so the quantity
+that has to move next is corpus size rather than seeds, optimiser or
+design. See `pilot/LEVEL_ONE_VARIANCE.md`.

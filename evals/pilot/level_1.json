@@ -1,20 +1,104 @@
 {
   "level": 1,
-  "chunks": 59,
-  "tokens": 7611,
-  "vocab_size": 1772,
-  "parameters": 1263360,
-  "steps": 20,
-  "seeds": 1,
+  "chunks": 62,
+  "tokens": 7998,
+  "vocab_size": 2193,
+  "parameters": 1371136,
+  "steps": 800,
+  "seeds": 8,
   "device": "mps",
-  "elapsed": "13.1s",
+  "elapsed": "2m50s",
   "results": [
     {
       "seed": 0,
-      "curriculum": 7.383670091629028,
-      "topological": 7.3835108280181885,
-      "difference": 0.00015926361083984375
+      "curriculum": 5.956953525543213,
+      "topological": 5.958967208862305,
+      "difference": -0.002013683319091797
+    },
+    {
+      "seed": 1,
+      "curriculum": 5.722218990325928,
+      "topological": 5.724607467651367,
+      "difference": -0.002388477325439453
+    },
+    {
+      "seed": 2,
+      "curriculum": 5.7724504470825195,
+      "topological": 5.7737884521484375,
+      "difference": -0.0013380050659179688
+    },
+    {
+      "seed": 3,
+      "curriculum": 5.808549880981445,
+      "topological": 5.809051513671875,
+      "difference": -0.0005016326904296875
+    },
+    {
+      "seed": 4,
+      "curriculum": 5.835405349731445,
+      "topological": 5.831799507141113,
+      "difference": 0.0036058425903320312
+    },
+    {
+      "seed": 5,
+      "curriculum": 5.928930759429932,
+      "topological": 5.927153587341309,
+      "difference": 0.0017771720886230469
+    },
+    {
+      "seed": 6,
+      "curriculum": 5.950003623962402,
+      "topological": 5.9581403732299805,
+      "difference": -0.008136749267578125
+    },
+    {
+      "seed": 7,
+      "curriculum": 5.796083450317383,
+      "topological": 5.797226905822754,
+      "difference": -0.0011434555053710938
     }
   ],
+  "variance": {
+    "pairs": 8,
+    "mean_loss": 5.846958190202713,
+    "seed_sd": 0.08885815412905167,
+    "paired_sd": 0.003435661133067418,
+    "correlation": 0.9992982287572192,
+    "mean_difference": -0.0012673735618591309,
+    "pairing_gain": 1337.8392293623672,
+    "requirements": [
+      {
+        "relative": 0.02,
+        "effect": 0.11693916380405427,
+        "paired": 1,
+        "unpaired": 10
+      },
+      {
+        "relative": 0.01,
+        "effect": 0.05846958190202713,
+        "paired": 1,
+        "unpaired": 37
+      },
+      {
+        "relative": 0.005,
+        "effect": 0.029234790951013567,
+        "paired": 1,
+        "unpaired": 146
+      },
+      {
+        "relative": 0.002,
+        "effect": 0.011693916380405426,
+        "paired": 1,
+        "unpaired": 907
+      }
+    ],
+    "detectable_at_20_paired_seeds": 0.0021522819390332767,
+    "synthetic_pilot": {
+      "seed_sd": 0.075,
+      "paired_sd": 0.0233,
+      "correlation": 0.9539,
+      "source": "evals/pilot/result_single_epoch.json"
+    }
+  },
   "note": "Held-out loss per arm per seed. This decides nothing. The pre-registered threshold does, and at this corpus size the arms are expected to be indistinguishable."
 }

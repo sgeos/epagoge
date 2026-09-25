@@ -12,17 +12,19 @@ met.
 | 1 | Dictionary coverage and closure | **Done.** 732 of 732 at level one, 766 of 766 at level two, closure 100 percent | — |
 | 2 | Thesaurus, synonyms and antonyms | **Done.** 849 entries, 194 antonyms, 132 synonyms | — |
 | 3 | Missing words added to both | **Done, and continuous** through `tools/admit.py` | — |
-| 4 | Full level-one corpus draft | **46 of 92 units have a book.** Every book that exists is at sixteen spreads | Generation, and nothing else |
-| 5 | Train a level-one model | Loop closed. `tools/train_level.py` runs on `mps` and writes `evals/pilot/` | Item 4, for a result that means anything |
+| 4 | Full level-one corpus draft | **Done. 92 of 92 units, every book at sixteen spreads** | — |
+| 5 | Train a level-one model | **Done, and the result is a null that means nothing.** Eight paired seeds on the real corpus | Corpus scale, for a result that means anything |
 | 6 | Level-two dictionary and thesaurus | **Done** | — |
-| 7 | Level-two ablation | Pre-registration has pending items, several of them the operator's | Items 4 and 5, plus decisions not mine |
+| 7 | Level-two ablation | Blocked, and now measurably so | **Corpus scale**, plus decisions not mine |
 
 ## What I recommend pursuing, and what I do not
 
-**A. The forty-six remaining level-one books, each at sixteen spreads.**
-This is the only goal gating anything else, and as of today it is gated
-by nothing. Every unit is authorable, measured rather than assumed: zero
-of ninety-two are blocked.
+**A. Done.** All ninety-two units have a book at sixteen spreads.
+
+**A2, which replaces it: more books per unit.** Twelve per topic is the
+low end of `CORPUS_SCALE.md` and is where an ordering comparison stops
+being degenerate. Ordinary generation work at eleven times the volume
+already done, needing no decision from anyone.
 
 **B. Closure, coverage and the gate hold the whole way.** The corpus and
 the lexicon grow together. A word the teacher reaches for is evidence, and
@@ -87,17 +89,25 @@ short until it is topped up, so a chunk is not committable until its books
 are at the standard. That is the intended shape: the gate refuses an
 unfinished corpus.
 
-## The sequencing claim, and it is the load-bearing one
+## The sequencing claim, corrected by measurement
 
-**Item 4 gates 5 and 7.** One book per unit is ninety-two books and
-roughly forty thousand words. That is what "full draft" means and it is
-the minimum orderable set an ablation can use, since the ablation orders
-books and a handful is not a set.
+**I claimed one book per unit was the minimum orderable set an ablation
+could use. It is not, and now there is a number.** The completed draft is
+**7,998 tokens**, which is fifty-three training chunks. At batch eight
+that is seven batches, so an 800-step run cycles them about a hundred and
+fourteen times and the ordering stops mattering after the first pass.
+Measured 2026-09-25: rho 0.9993, paired standard deviation 0.00344, and a
+requirement table claiming one seed per arm. All artifact. See
+`../../evals/pilot/LEVEL_ONE_VARIANCE.md`.
 
-**It is not the token budget.** `CORPUS_SCALE.md` wants twelve to six
-hundred books per topic, so 1,923 at the low end. A draft is one per unit.
-Say which is meant whenever reporting, because conflating them overstates
-the project by a factor of twenty.
+**The binding constraint is corpus scale.** 7,998 tokens against a
+level-one budget of 10^6 to 10^7 is a factor of 125 to 1,250 short.
+`CORPUS_SCALE.md` asks for twelve to six hundred books per topic and the
+corpus holds one, so the draft is about a twelfth of the low end.
+
+A draft is one book per unit and that target is met. **Say which is meant
+whenever reporting**, because conflating a draft with a trainable corpus
+overstates the project by a factor of twelve at the very least.
 
 ## What done means for 5 and 7
 
