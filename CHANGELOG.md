@@ -27,6 +27,44 @@ Versioning.
 
 ## 2026-09-24
 
+### Added. Three artifacts, three readers
+
+- `docs/decisions/CORPUS_ARTIFACTS.md` and `tools/build_corpus.py`. The
+  corpus is not one thing and one file served none of its three readers
+  well.
+- **The trainer must not see the annotation.** A stream containing
+  `[bk.cup.d01]` markers teaches a model to emit them. The markers exist so
+  a reviewer and a validator can attach metadata to a passage.
+- **The reviewer must not have to read it either**, and the validator needs
+  neither the prose nor the stream.
+- `curriculum/books/level_N/*.md` is authored and read. `corpus/*.jsonl` is
+  **derived**, one document per book, text only. First build is 5
+  documents, 681 words.
+
+### Found. The derived stream is per-ordering, which is the point
+
+- The same books produce a different stream under a different ordering,
+  **which is exactly what the ablation requires**. Treatment and control
+  become two builds of one corpus rather than two corpora.
+- **A book is one document and its internal order is never shuffled.** The
+  narrative is the reason a book exists, and shuffling inside one would
+  destroy the thing the ordering hypothesis is about while claiming to test
+  it.
+
+### Open. Two questions this raises and does not answer
+
+- **Should the derived stream be tracked?** `CORPUS_TRACKING.md` records an
+  operator decision to track `corpus/`, taken when that directory was going
+  to hold the authored records. It no longer does. The rationale was
+  reviewability and attribution, which the books now provide, and the same
+  decision records a 40 GB size risk. **The premise has changed and the
+  decision is the operator's.**
+- **Does the ablation order books or records?** The pre-registration was
+  written before books existed. If the unit is the record, a shuffle breaks
+  every book apart. If it is the book, the topological constraint applies
+  between books rather than between concepts. **It must say before the
+  ablation runs.**
+
 ### Changed. A book is Markdown, not JSON
 
 - **The ratio said so.** A level-one book of 173 words occupied **260
