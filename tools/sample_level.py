@@ -30,8 +30,6 @@ import json
 import sys
 from pathlib import Path
 
-import torch
-
 from epagoge import schedule as sched
 from epagoge.concept_graph import ConceptGraph
 from epagoge.pilot import (
@@ -41,6 +39,7 @@ from epagoge.pilot import (
     format_seconds,
     parameter_count,
     sample,
+    save_checkpoint,
     select_device,
     train_model,
 )
@@ -123,7 +122,7 @@ def main(argv: list[str]) -> int:
         device,
         pad_id,
     )
-    torch.save(model.state_dict(), args.weights)  # pyright: ignore[reportUnknownMemberType]
+    save_checkpoint(model, model_config, tokeniser.words, args.weights)
 
     # **The prompt is the corpus's own opening move.** A book starts with a
     # marker, so sampling from it asks the model to begin a book rather

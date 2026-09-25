@@ -88,12 +88,42 @@ rather than stating. Say what a reader is assumed to know already.
 
 `tools/validate_books.py --describe` reports every book missing either.
 
+## The fields a book carries besides its text
+
+| Field | What it is |
+| --- | --- |
+| `author` | Who wrote it: a person, or the teacher model and its operator |
+| `licence` | SPDX identifier. **Recorded per book, never assumed** |
+| `first_published` | ISO date this book first existed in any version |
+| `published` | ISO date of this version |
+| `about` | Back-cover copy: what it is about |
+| `teaches` | Back-cover copy: what a reader comes away with |
+
+**The licence is per book because this tree can hold books it did not
+write.** The corpus is CC0 and `exclude/` exists so contributions can
+arrive, so a book that names no licence is one nobody can safely reuse,
+which defeats publishing it.
+
+**Two dates because a book is edited.** A curator comparing two copies
+needs to know which is later; a reader citing one needs to know when the
+text they read was fixed. One date cannot answer both.
+
 ## Holding a book out of a run
 
 Each level directory has an `exclude/` subdirectory. **A book moved there
-is kept and not trained on**: the loader reads the level directory and
-does not descend, so an excluded book is invisible to every generator,
-validator and training run while keeping its history.
+is not trained on**: the loader reads the level directory and does not
+descend, so an excluded book is invisible to every generator, validator
+and training run.
+
+**Its contents are gitignored and the directory is kept by its
+`.gitkeep`.** So the convention travels with the repository and what is
+parked travels with the machine. A submission dropped in does not become
+a commit by accident, and a local exclusion stays local.
+
+**That means moving a tracked book here removes it from the repository.**
+Keeping the file and keeping it in git are different things, and the
+commit that moves one should say which was meant. `git add -f` tracks a
+book there deliberately.
 
 It exists for two cases. A book may be sound and still wrong for a
 particular corpus, off-register or redundant with a better one, and
@@ -120,5 +150,5 @@ directory nor the file can.
   spreads exactly, by level.
 - Every word admissible at the level, checked by exact tokenisation.
 - A subject definition, or the book is withheld.
-- `about` and `teaches` filled in.
+- `author`, `licence`, both dates, `about` and `teaches` filled in.
 - `./tools/check.sh` exits 0.

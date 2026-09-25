@@ -27,7 +27,7 @@ from pathlib import Path
 
 import torch
 
-from epagoge.pilot import ModelConfig, TinyTransformer, sample, select_device
+from epagoge.pilot import TinyTransformer, load_checkpoint, sample, select_device
 from epagoge.tokeniser import BOOK, SPECIALS, Tokeniser, build
 from epagoge.vocabulary import load_vocabulary
 
@@ -79,9 +79,6 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--tokens", type=int, default=60)
     parser.add_argument("--temperature", type=float, default=0.8)
     parser.add_argument("--seed", type=int, default=0)
-    parser.add_argument("--seq-len", type=int, default=128)
-    parser.add_argument("--d-model", type=int, default=256)
-    parser.add_argument("--layers", type=int, default=4)
     parser.add_argument("--device", type=str, default=None)
     args = parser.parse_args(argv[1:])
 
@@ -94,27 +91,32 @@ def main(argv: list[str]) -> int:
         )
         return 1
 
-    vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
-    tokeniser = build(vocabulary, args.level)
-    config = ModelConfig(
-        vocab_size=tokeniser.size,
-        d_model=args.d_model,
-        n_layers=args.layers,
-        seq_len=args.seq_len,
-    )
     device = select_device(args.device)
-    model = TinyTransformer(config).to(device)
-    state = torch.load(weights, map_location=device)  # pyright: ignore[reportUnknownMemberType]
     try:
-        _ = model.load_state_dict(state)
-    except RuntimeError as exc:
+        checkpoint = load_checkpoint(weights, device)
+    except ValueError as exc:
+        print(exc, file=sys.stderr)
+        return 1
+    model = checkpoint.model
+
+    # **The model speaks the vocabulary it was trained on, not today's.**
+    # Six words were admitted after one checkpoint was written and loading
+    # it failed on a size mismatch. Rebuilding the current tokeniser and
+    # forcing the weights into it would have been worse: every row after
+    # the first new word would stand for a different word than it was
+    # trained to.
+    tokeniser = Tokeniser(
+        words=checkpoint.words,
+        ids={word: n for n, word in enumerate(checkpoint.words)},
+    )
+    vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
+    now = build(vocabulary, args.level)
+    if now.size != tokeniser.size:
         print(
-            f"{weights} does not fit d_model={args.d_model} layers={args.layers}.\n"
-            f"Pass the shape the checkpoint was trained with.\n{exc}",
+            f"note: trained on {tokeniser.size} words, the lexicon now holds "
+            f"{now.size}. Retrain to speak the current one.",
             file=sys.stderr,
         )
-        return 1
-    model.eval()
 
     if args.prompt is not None:
         print(
@@ -126,7 +128,7 @@ def main(argv: list[str]) -> int:
                 device=device,
                 seed=args.seed,
                 temperature=args.temperature,
-                seq_len=args.seq_len,
+                seq_len=checkpoint.config.seq_len,
             )
         )
         return 0
@@ -153,7 +155,7 @@ def main(argv: list[str]) -> int:
                 device=device,
                 seed=args.seed + turn,
                 temperature=args.temperature,
-                seq_len=args.seq_len,
+                seq_len=checkpoint.config.seq_len,
             )
         )
         turn += 1

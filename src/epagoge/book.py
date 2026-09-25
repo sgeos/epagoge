@@ -79,6 +79,30 @@ class Book:
     teaches: str = ""
     """What a reader is meant to come away with, in ordinary English."""
 
+    author: str = ""
+    """Who wrote it. A person, or the teacher model and its operator."""
+
+    licence: str = ""
+    """The licence this book is published under, by SPDX identifier.
+
+    **Recorded per book rather than assumed from the repository.** The
+    corpus is CC0, and the `exclude/` directories exist so that outside
+    contributions can arrive, which means a book in this tree may not
+    share the repository's licence. A book that does not say is a book
+    nobody can safely reuse, which defeats publishing it.
+    """
+
+    first_published: str = ""
+    """ISO date this book first existed, in any version."""
+
+    published: str = ""
+    """ISO date of this version.
+
+    **Two dates because a book is edited.** A curator comparing two copies
+    needs to know which is later, and a reader citing one needs to know
+    when the text they read was fixed. One date cannot answer both.
+    """
+
 
 SPREADS_BY_LEVEL: Final[dict[int, int]] = {1: 16, 2: 64, 3: 112, 4: 160}
 """Spreads per book, by level, from the binding.
@@ -573,6 +597,15 @@ def validate_books(
                     " text cannot recover",
                 )
             )
+        if describe and not book.licence.strip():
+            out.append(
+                Violation(
+                    "unlicensed-book",
+                    f"book {book.id!r} names no licence, so nobody can safely"
+                    " reuse it, and the repository's licence cannot be assumed"
+                    " for a book that may have come from elsewhere",
+                )
+            )
     for book in books:
         if not book.records:
             out.append(Violation("empty-book", f"book {book.id!r} holds no record"))
@@ -722,6 +755,10 @@ def book_from_json(payload: object, where: str = "book") -> tuple[Book, list[obj
         records=tuple(ids),
         about=_optional(fields, "about", where),
         teaches=_optional(fields, "teaches", where),
+        author=_optional(fields, "author", where),
+        licence=_optional(fields, "licence", where),
+        first_published=_optional(fields, "first_published", where),
+        published=_optional(fields, "published", where),
     )
     return book, records
 
@@ -788,10 +825,16 @@ def book_head(book: Book) -> dict[str, object]:
     }
     # Omitted rather than written empty, so a book that has never been
     # described does not carry two blank fields pretending otherwise.
-    if book.about:
-        head["about"] = book.about
-    if book.teaches:
-        head["teaches"] = book.teaches
+    for key, value in (
+        ("author", book.author),
+        ("licence", book.licence),
+        ("first_published", book.first_published),
+        ("published", book.published),
+        ("about", book.about),
+        ("teaches", book.teaches),
+    ):
+        if value:
+            head[key] = value
     return head
 
 

@@ -64,3 +64,15 @@ corpus/*
 # checkpoint tracked without Large File Storage is a repository that
 # grows by a megabyte every run.
 evals/pilot/*.pt
+
+# Books parked out of a training run. The directory is tracked through its
+# .gitkeep so the convention travels with the repository; what is parked
+# there is not, so a local exclusion is a local decision and a dropped-in
+# submission does not become a commit by accident.
+#
+# **This means moving a tracked book here removes it from the repository.**
+# Keeping the file and keeping it in git are different things, and the
+# commit that moves one should say which was meant. Use `git add -f` to
+# track a book here deliberately.
+curriculum/books/level_*/exclude/*
+!curriculum/books/level_*/exclude/.gitkeep

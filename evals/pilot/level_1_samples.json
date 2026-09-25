@@ -2,16 +2,15 @@
   "level": 1,
   "steps": 400,
   "seed": 0,
-  "chunks": 433,
-  "parameters": 4345856,
-  "held_out_loss": 4.789392630259196,
+  "chunks": 578,
+  "parameters": 4348928,
+  "held_out_loss": 4.8361038102044,
   "temperature": 1.0,
-  "sampled_word_tokens": 140,
-  "distinct_share": 0.6142857142857143,
-  "sentence_share": 1.0,
+  "sampled_word_tokens": 35,
+  "distinct_share": 0.8285714285714286,
+  "sentence_share": 0.5,
   "samples": [
-    "the breeze about the cup . the cup is quietest she carry warm on the broad from the cup . she fit , not mine cup . she kept the heavy given , air his others for the past . made and still and it sniffing door . i kept having . living inside comes wind ate it with grew , and mouth eyes and rest on the cup stays and it air more of clay . the toy next",
-    "the floor and you butterfly open and to still . enough it an big . he stared of left cup , , and below , watching from it forest there of name feels , not to blow and get it had to points . she still there because heavy than a wheel to asleep know . the path its at the water freezes back , and we . she heated inside the above the cup is can not blocks minute"
+    "of . both to push tight . to signed . care , but others for caught and that comes , and i means to leaving and where colour to reach into eat in his not that reaches was lost stroking"
   ],
   "note": "Descriptive, and at this corpus size the samples are expected to be poor. Admissibility is deliberately not reported: the tokeniser is built from the level's lexicon, so every token the model can emit is admissible by construction and the figure would be one hundred per cent whatever the model learned."
 }

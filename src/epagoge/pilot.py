@@ -19,7 +19,8 @@ import math
 import random
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
-from typing import Final
+from pathlib import Path
+from typing import Final, cast
 
 import torch
 from torch import Tensor, nn
@@ -367,6 +368,85 @@ VOCABULARY_TENSORS: Final[tuple[str, ...]] = ("token.weight", "head.weight")
 Named rather than inferred from shape, because a model whose width happens
 to equal its vocabulary size would have every tensor match.
 """
+
+
+def save_checkpoint(
+    model: TinyTransformer,
+    config: ModelConfig,
+    words: Sequence[str],
+    path: Path,
+) -> None:
+    """Write weights together with the vocabulary they were trained on.
+
+    **A checkpoint without its word list is unusable the moment the
+    lexicon changes.** Six words were admitted after one was written and
+    loading it failed on a size mismatch, with nothing on disk saying what
+    size it had been or which word each row stood for.
+
+    The model speaks the vocabulary it was trained with. Reading a
+    checkpoint back therefore means rebuilding that tokeniser rather than
+    the current one, and carrying the word list is what makes that
+    possible.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+    torch.save(  # pyright: ignore[reportUnknownMemberType]
+        {
+            "state": model.state_dict(),
+            "words": list(words),
+            "config": {
+                "vocab_size": config.vocab_size,
+                "d_model": config.d_model,
+                "n_layers": config.n_layers,
+                "seq_len": config.seq_len,
+            },
+        },
+        path,
+    )
+
+
+@dataclass(frozen=True, slots=True)
+class Checkpoint:
+    """A trained model with the vocabulary and shape it was trained at."""
+
+    model: TinyTransformer
+    words: tuple[str, ...]
+    config: ModelConfig
+
+
+def load_checkpoint(path: Path, device: torch.device) -> Checkpoint:
+    """Rebuild a model at the shape its checkpoint was written with.
+
+    **Nothing is inferred from the caller.** A checkpoint that carries its
+    own shape cannot be loaded into the wrong one, which is the failure
+    this replaces: an error message blaming the model width when the
+    vocabulary had grown by six words.
+
+    A checkpoint written before this format is refused with a message
+    saying so, rather than being guessed at.
+    """
+    payload = cast(
+        "object",
+        torch.load(path, map_location=device),  # pyright: ignore[reportUnknownMemberType]
+    )
+    if not isinstance(payload, dict) or "words" not in payload:
+        raise ValueError(
+            f"{path} has no vocabulary in it, so the words its rows stand for "
+            "are unknown. Retrain to write one in the current format."
+        )
+    body = cast("dict[str, object]", payload)
+    saved = cast("dict[str, int]", body["config"])
+    config = ModelConfig(
+        vocab_size=saved["vocab_size"],
+        d_model=saved["d_model"],
+        n_layers=saved["n_layers"],
+        seq_len=saved["seq_len"],
+    )
+    model = TinyTransformer(config).to(device)
+    _ = model.load_state_dict(cast("Mapping[str, Tensor]", body["state"]))
+    model.eval()
+    return Checkpoint(
+        model=model, words=tuple(cast("list[str]", body["words"])), config=config
+    )
 
 
 def warm_start(
