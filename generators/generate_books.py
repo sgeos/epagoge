@@ -374,9 +374,6 @@ def main(argv: list[str]) -> int:
                 ids.append(rid)
                 tally.story += 1
             if ids:
-                # **Written as soon as it is complete.** Holding a run's
-                # books until the end meant one slow completion lost all
-                # of them, which happened.
                 books.append(
                     {
                         "id": f"bk.{unit.id}",
@@ -387,6 +384,11 @@ def main(argv: list[str]) -> int:
                     }
                 )
                 written += 1
+                # **Write it now, and again after rework.** Holding a run's
+                # books until the end meant a single failure lost all of
+                # them. The rework pass below improves some of these and
+                # rewrites them; this copy is what survives a crash.
+                write_books([books[-1]], {r["id"]: r for r in records}, [], args.out)
         if written >= args.limit:
             break
 
