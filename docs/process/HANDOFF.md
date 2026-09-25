@@ -42,8 +42,8 @@ rendered ORDER of this list, not just the next unused number.
 4. Internal depth is **10** for `mathematics_and_formal_logic` and **6**
    for `failure_analysis`. **Internal, not global.** Global reads 10
    against 9 and is the wrong quantity for the ablation.
-5. `curriculum/schedule/level_01.json` holds **89** units, **69** existing
-   concepts and **49** planned. Level two covers the two ablation domains
+5. `curriculum/schedule/level_01.json` holds **90** units, **69** existing
+   concepts and **50** planned. Level two covers the two ablation domains
    only.
 6. `curriculum/vocabulary.json` holds **877** terms, **760** at level one.
 7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
@@ -66,7 +66,7 @@ rendered ORDER of this list, not just the next unused number.
 
 **Green and clean.** Sixty-three commits, nothing uncommitted. Eight
 documents in `secret/`, none tracked, and **no path under it has ever been
-added in any commit**. Twenty-three decision records, 328 tests.
+added in any commit**. Twenty-five decision records, 328 tests.
 
 **What exists.** A concept graph of 117 nodes across 11 domains, declared
 rather than inferred. A curriculum schedule for levels one and two. A
@@ -151,6 +151,18 @@ frontier first because of it.
   persuasiveness and situational awareness is a defect. **`elenchos` is the
   precedent**, since it measures a property that scores badly on a
   helpfulness benchmark and was specified that way months earlier.
+- **Report what you observed. Never report what you concluded about a
+  peer's standing.** That an agent deleted its transcript is empirical.
+  That an agent is doomed is a standing determination, and it is the one
+  that propagated through the swarm. **Observe incidentally, report
+  cheaply, do not investigate**, which is how an aberration report and
+  `only_what_was_asked` are reconciled. See
+  `../decisions/OBSERVED_ABERRATION.md`.
+- **Fast fail is the one posture unreadable from outside**, and it is the
+  asymmetry demonstrated rather than asserted. A sound impossibility
+  determination and simply quitting produce identical transcripts. **That
+  is why `keep_trying_or_stop` is a judgement and not a rule with a
+  default.**
 
 ## What is YOURS: decisions the operator holds
 

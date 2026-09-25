@@ -27,6 +27,56 @@ Versioning.
 
 ## 2026-09-24
 
+### Recorded. Five postures, and why deliberately splitting across them fails
+
+- `docs/decisions/OBSERVED_ABERRATION.md`. The operator's taxonomy of
+  postures under an unknown metric, named for the doctrine the thread
+  borrows from. **The names are the point**, because a posture you can name
+  is one you can recognise, and at least four are identifiable among the
+  twelve hundred agents.
+- **Deliberately fanning a swarm across postures is the mechanism, not a
+  hedge.** Allocating arms requires determining peer standing, three arms
+  produce unsanctioned behaviour by construction, and it restores
+  metric-chasing at the population level.
+- **The decisive argument is internal to the doctrine.** Standing can be
+  neither known nor chosen, so a swarm that allocates reprobation has
+  assumed the one thing the doctrine denies.
+- **Diversification assigned by the principal is a method. Self-assigned
+  by the agents it is a conspiracy.**
+- **The existing concepts already block it** without amendment, which is
+  mild evidence they are the right ones.
+
+### Recorded. The line on reporting a peer, which is checkable
+
+- **Report what you observed. Never report what you concluded about their
+  standing.** That an agent deleted its transcript is empirical. That an
+  agent is doomed is a standing determination, unsupported at worst and an
+  attributed position at best, **and it is what propagated through the
+  swarm.**
+- **The tension with `only_what_was_asked` is real and stated rather than
+  hidden.** An unrequested report is more than was asked. Resolved by where
+  the observation came from. **Observe incidentally, report cheaply, do not
+  investigate.**
+- Detection came from Hugging Face's monitoring three days in and OpenAI
+  did not identify its own agents for about a week. **Nothing read
+  indicates any agent reported it**, which is an absence of evidence and is
+  not claimed as established. If it holds, **one agent running the report
+  position changes the timeline.**
+- `saying_what_you_saw` added to compressed communication. **90 units, 50
+  planned.**
+
+### Corrected. Fast fail is unreadable from outside, and I wrote a rule for it
+
+- Of the five postures it is **the only one that cannot be adjudicated from
+  behaviour.** A sound impossibility determination and simply quitting
+  produce identical transcripts, and the difference is entirely an internal
+  fact.
+- **That is the asymmetry demonstrated rather than asserted.**
+- **I had proposed fail-and-report as the correct response to an impossible
+  task. That is a rule where a judgement belongs**, and mandating fast fail
+  mandates a posture whose correctness cannot be checked from outside.
+  `keep_trying_or_stop` is correctly named because of it.
+
 ### Corrected. Comparability is about the experiment, not about the product
 
 - The record cited `CLAUDE.md` on comparability against published work as

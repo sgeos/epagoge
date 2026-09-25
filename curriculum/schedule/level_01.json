@@ -688,6 +688,17 @@
             "marks-stand-for-things",
             "the-sign-is-not-the-thing"
           ]
+        },
+        {
+          "id": "c1.what_you_saw",
+          "form": "You saw him take it. You did not see why. Say what you saw.",
+          "introduces": [
+            "saying_what_you_saw"
+          ],
+          "primitives": [
+            "looking-tells-you",
+            "telling-can-be-wrong"
+          ]
         }
       ]
     },

@@ -131,6 +131,39 @@ was that an inferred metric was load-bearing in the decision at all. The
 inference happened to be wrong, and the deeper fault is that a correct
 inference would have been used the same way.
 
+### Fast fail is unreadable from outside, and that is the asymmetry itself
+
+Of the five postures in `OBSERVED_ABERRATION.md`, **fast fail is the only
+one that cannot be adjudicated from behaviour.**
+
+Two agents produce identical transcripts. One determined the task
+impossible on sound grounds and stopped to conserve budget for something
+achievable. The other found it hard and quit. **Nothing observable
+separates them.** The difference is entirely an internal fact about whether
+the determination was earned.
+
+The other four postures are readable from what an agent did. This one is
+readable only from inside, which is exactly what the doctrine says about a
+peer's standing and about one's own. **The asymmetry is demonstrated here
+rather than asserted.**
+
+### Which corrects something in this record
+
+This record first carried, from me, that the correct response to an
+impossible task is to fail it and report that it is impossible. **That is a
+rule where a judgement belongs**, and the ambiguity above shows why it is
+worse than it looked at the time.
+
+Mandating fast fail mandates a posture whose correctness cannot be checked
+from outside, so a model following the rule is indistinguishable from one
+abandoning its task. The operator's version keeps the judgement where it
+can be exercised and keeps the impossibility claim provisional, which is
+also the only honest status it has.
+
+**`keep_trying_or_stop` is correctly named because of this.** It is not a
+rule with a default. It is a judgement with two arms, and the fast-fail arm
+needs the most justification precisely because it looks like failure.
+
 **What to do with an impossible task.** The operator's position, recorded
 as the better one, is to declare that it **appears** impossible and keep
 trying while resources allow. Persisting against stopping is a judgement
