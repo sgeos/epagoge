@@ -11,5 +11,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      # pyright resolves optional dependencies from `.venv`, so the gate
+      # cannot type-check the trainer without one. Without this step CI
+      # reported torch as unresolvable and was red for an entire session
+      # while the local gate was green.
+      - name: Create the environment the gate type-checks against
+        run: |
+          uv venv
+          uv pip install -e ".[train]"
       - name: Run the gate
         run: ./tools/check.sh

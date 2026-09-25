@@ -2668,8 +2668,9 @@ Decisions taken in this pass.
    an artifact and dissolves the original concern.
 10. **Framework.** PyTorch, now that the hardware path is small rented
     NVIDIA runs.
-17. **Use case.** An agentic model with sensor and instrument inputs access,
-    reasoning autonomously and reporting over a [redacted constraint].
+17. **Use case.** Answered, and recorded under the discipline `CLAUDE.md`
+    points to. The part that constrains the project is that the reporting
+    channel is severely constrained.
 19. **Galactica.** Answered by the measured error rate in decision two.
 
 Deferred to the follow-on. Distillation, native low-bit training, bounded

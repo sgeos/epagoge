@@ -386,6 +386,11 @@ def validate_books(
     out: list[Violation] = []
     seen: dict[str, str] = {}
     for book in books:
+        # **A dictionary is reference material, not a picture book.** It is
+        # as long as the lexicon is, so binding it to a signature would
+        # mean cutting definitions to fit a page count.
+        if book.id.startswith("bk.dictionary."):
+            continue
         if spreads is not None and len(book.records) != spreads:
             out.append(
                 Violation(

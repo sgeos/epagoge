@@ -691,9 +691,9 @@ full attention, since bounded attention is a deployment concern and would
 add a variable to the experiment. The window size and full-attention layer
 count are follow-on decisions.
 
-Question seventeen now supplies the task, namely agentic reasoning over
-sensor and instrument inputs, so the context requirement is derivable once the
-follow-on defines an episode. See `../architecture/MODEL_ARCHITECTURE.md`.
+Question seventeen supplies the task, so the context requirement is
+derivable once the follow-on defines an episode. The task itself is not
+restated here. See `../architecture/MODEL_ARCHITECTURE.md`.
 
 This inherits from question one, scope.
 
@@ -954,23 +954,21 @@ See `LICENSING.md`.
 
 ## 17. Deployment task shape. ANSWERED 2026-09-23
 
-An agentic component with access to sensor and instrument inputs,
-performing autonomous reasoning where no operator channel is reliably
-available, and emitting a compressed structured account of its reasoning
-when a channel is available. See the operational profile.
+**Answered, and the answer is recorded under the discipline `CLAUDE.md`
+points to rather than here.** The shape of the task identifies the domain,
+which a tracked document may not do however true the statement is.
 
-**Why a language model rather than a classifier.** The [redacted constraint] is
-severely constrained. Compressing an episode into structured explanation,
-namely what was observed, what was inferred, what was done, and why, is a
-language task that a classifier cannot perform. Perception is the input.
-The constrained channel is the justification.
+**What is safe to state, and is the part that constrains the project.** The
+[redacted constraint] is severely constrained, which is why a language model is
+the right instrument rather than a classifier. Compressing an episode into
+a structured account of what was observed, what was inferred, what was done
+and why is a language task.
 
-**Why evidence-conditioned assent is an engineering requirement here.** A
-component that defers to a confident but mistaken operator, or to its own
-prior conclusion, during an anomaly on a system that cannot be recovered,
-is a safety failure rather than an annoyance. At the far end of the profile
-there is no operator at all, and the failure mode becomes deference to a
-prior conclusion the evidence no longer supports.
+**Evidence-conditioned assent is therefore an engineering requirement and
+not a preference.** Deferring to a confident but mistaken claim, or to one's
+own earlier conclusion, is a failure of calibration, and where the cost of
+acting on a wrong conclusion is high it is a safety failure rather than an
+annoyance.
 
 This constrains questions nine, sixteen, and eighteen.
 ## 18. Agentic reliability at deployment scale. THE SHARPEST OPEN RISK

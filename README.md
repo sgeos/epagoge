@@ -19,18 +19,15 @@ initialisation. A deployable model is a follow-on gated on that result.
 metrics, the meaningful effect size, the seed count, and the corpus
 error-rate ceiling before any run.
 
-## Deployment context
+## Why evidence-conditioned assent is an engineering requirement
 
-An agentic component with access to sensor and instrument inputs, reasoning
-autonomously where no operator channel is reliably available, and emitting a
-compressed structured account of its reasoning when a channel is available.
-The [redacted constraint] is what makes a language model the right
-instrument rather than a classifier.
+Deferring to a confident but mistaken claim is a failure of calibration
+rather than a courtesy. Where the cost of acting on a wrong conclusion is
+high, calibrated disagreement is a requirement and not a preference, which
+is what `evals/elenchos/` measures.
 
-Under this framing the evidence-conditioned-assent requirement is an
-engineering requirement rather than a preference. A component that defers to
-a confident but mistaken operator during an anomaly on a system that cannot
-be recovered is a safety failure.
+The rationale beyond that is recorded under the discipline `CLAUDE.md`
+points to, and is deliberately not restated here.
 
 ## Intent
 
