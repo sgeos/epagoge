@@ -14,7 +14,7 @@
     "r1.when.d41": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:day"}, "defines": {"kind": "word", "target": "day"}},
     "r1.when.d44": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:begin"}, "defines": {"kind": "word", "target": "begin"}},
     "r1.when.d45": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ever"}, "defines": {"kind": "word", "target": "ever"}},
-    "r1.when.d46": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:finish"}, "defines": {"kind": "word", "target": "finish"}},
+    "r1.when.d46": {"concepts": ["finished_or_not"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:finish"}, "defines": {"kind": "word", "target": "finish"}},
     "r1.when.s01": {"concepts": ["sequence", "duration"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:cause-precedes-effect"}},
     "r1.when.s02": {"concepts": ["sequence", "duration"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:cause-precedes-effect"}},
     "r1.when.s03": {"concepts": ["sequence", "duration"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:cause-precedes-effect"}},

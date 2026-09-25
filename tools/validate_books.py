@@ -12,11 +12,11 @@ from pathlib import Path
 
 from epagoge import schedule as sched
 from epagoge.book import (
-    TYPICAL_WORDS,
     Definition,
     DefinitionKind,
     definition_coverage,
     load_book_dir,
+    typical_words,
     validate_books,
 )
 from epagoge.concept_graph import ConceptGraph
@@ -78,8 +78,10 @@ def main(argv: list[str]) -> int:
     print(f"  definitions        {len(definitions)}")
     for b in books:
         total = sum(words_in.get(r, 0) for r in b.records)
-        low, high = TYPICAL_WORDS
-        tag = "" if low <= total <= high else "  outside the typical range"
+        band = typical_words(b.level)
+        tag = ""
+        if band is not None and not band[0] <= total <= band[1]:
+            tag = "  outside the typical range"
         print(f"    {b.id:<16} {total:>5} words{tag}")
 
     # Coverage is reported and never gated. A word with no definition is not

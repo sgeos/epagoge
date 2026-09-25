@@ -22,7 +22,8 @@
     "r1.measure.x11": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "r1.measure.x12": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "r1.measure.x13": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "r1.measure.x14": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "r1.measure.x14": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "r1.measure.x15": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ I used the stick to pull the balloon down from the branch.
 
 [r1.measure.x14]
 The stick stayed strong and safe, helping me carry the basket home.
+
+[r1.measure.x15]
+The longer bamboo stick helped me carry the basket all the way home.

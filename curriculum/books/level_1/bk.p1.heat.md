@@ -21,7 +21,9 @@
     "p1.heat.x10": {"concepts": ["heat"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.heat.x11": {"concepts": ["heat"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.heat.x12": {"concepts": ["heat"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "p1.heat.x13": {"concepts": ["heat"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.heat.x13": {"concepts": ["heat"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.heat.x14": {"concepts": ["heat"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.heat.x15": {"concepts": ["heat"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ A small wooden spoon floats in the rising steam.
 
 [p1.heat.x13]
 The stove hisses, and the lid starts to jump.
+
+[p1.heat.x14]
+The pot began to sing, a high, sharp sound that made the glass shake on the shelf.
+
+[p1.heat.x15]
+The child stared at the pot, eyes wide with wonder.

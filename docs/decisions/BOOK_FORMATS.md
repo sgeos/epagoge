@@ -2,9 +2,14 @@
 
 **Superseded in part, 2026-09-25, by `LEVEL_CALIBRATION.md`.** The reading
 of level two recorded below, as early elementary at sixty-four pages, is
-wrong. The operator's calibration puts level two at the end of fourth
-grade, which is one hundred and sixty pages. The binding argument survives
-unchanged and is why every figure is a multiple of sixteen.
+wrong. The operator's calibration puts level two at entering fourth grade,
+which is **one hundred and twenty-eight pages, being sixty-four spreads**,
+at one hundred to one hundred and fifty words to the page. The binding
+argument survives unchanged and is why every figure is a multiple of
+sixteen.
+
+An earlier version of this note said one hundred and sixty pages, which is
+the level-four **spread** count read as a page count.
 
 Kept rather than deleted, because the reasoning that produced the wrong
 answer is the record of how the right one was reached.

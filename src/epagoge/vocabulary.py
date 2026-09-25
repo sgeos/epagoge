@@ -52,7 +52,7 @@ from pathlib import Path
 from typing import Final, cast
 
 from epagoge.concept_graph import Violation
-from epagoge.inflection import plural, verb_forms
+from epagoge.inflection import doubling_is_ambiguous, plural, verb_forms
 from epagoge.record import Record
 
 WORD_RE: Final[re.Pattern[str]] = re.compile(r"[a-z]+(?:'[a-z]+)?")
@@ -448,6 +448,7 @@ def validate_vocabulary(
     out.extend(_check_lower_bound(vocabulary, records, scheduled))
     out.extend(_check_lexicalisation(vocabulary, known_concepts, scheduled))
     out.extend(_check_inflections(vocabulary))
+    out.extend(_check_doubling(vocabulary))
     out.extend(_check_plurals(vocabulary))
     out.extend(_check_ostensive(vocabulary))
     levels = term_levels(vocabulary, records)
@@ -714,6 +715,31 @@ def _check_inflections(vocabulary: Vocabulary) -> list[Violation]:
                 )
             )
     return out
+
+
+def _check_doubling(vocabulary: Vocabulary) -> list[Violation]:
+    """A verb whose doubling cannot be derived must be classified by hand.
+
+    **This is the narrow half of a gap the project has not closed.** No
+    check compares a derived form against English, which is how ``rised``,
+    ``choosed``, ``costed``, ``shined``, ``shrinked``, ``slided`` and
+    ``winned`` stayed admissible for several commits. It does close the one
+    class where spelling alone cannot decide: a longer verb ending
+    consonant-vowel-consonant doubles when its final syllable is stressed
+    and not otherwise, so ``admit`` gives admitted and ``visit`` gives
+    visited. A verb of that shape must appear in ``IRREGULAR`` or in
+    ``NO_DOUBLE_MULTISYLLABIC``, and the gate refuses it until it does.
+    """
+    return [
+        Violation(
+            "unclassified-doubling",
+            f"verb {term.word!r} ends consonant-vowel-consonant and is not "
+            "listed as doubling or as not doubling, so its past and present "
+            "participle cannot be derived",
+        )
+        for term in vocabulary.terms
+        if "verb" in term.pos.split() and doubling_is_ambiguous(term.word)
+    ]
 
 
 def _parse_substitutions(raw: object) -> dict[str, str]:

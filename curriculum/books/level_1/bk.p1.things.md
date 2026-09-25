@@ -11,7 +11,7 @@
     "p1.things.d00": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.things"}, "defines": {"kind": "topic", "target": "p1.things"}},
     "p1.things.d01": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:appear"}, "defines": {"kind": "word", "target": "appear"}},
     "p1.things.d02": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bag"}, "defines": {"kind": "word", "target": "bag"}},
-    "p1.things.d03": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drain"}, "defines": {"kind": "word", "target": "drain"}},
+    "p1.things.d03": {"concepts": ["using_up"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drain"}, "defines": {"kind": "word", "target": "drain"}},
     "p1.things.d04": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:empty"}, "defines": {"kind": "word", "target": "empty"}},
     "p1.things.d05": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gone"}, "defines": {"kind": "word", "target": "gone"}},
     "p1.things.d45": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hide"}, "defines": {"kind": "word", "target": "hide"}},

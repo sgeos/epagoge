@@ -201,6 +201,17 @@
       "level": 1
     },
     {
+      "word": "accept",
+      "concept": "agreeing",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "accepted",
+        "accepting",
+        "accepts"
+      ]
+    },
+    {
       "word": "accident",
       "concept": "accident",
       "level": 2,
@@ -235,19 +246,41 @@
       "level": 5
     },
     {
+      "word": "admit",
+      "concept": "changing_your_mind",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "admits",
+        "admitted",
+        "admitting"
+      ]
+    },
+    {
       "word": "afraid",
       "concept": "feeling",
       "level": 1
     },
     {
       "word": "agree",
-      "concept": "checking",
+      "concept": "agreeing",
       "level": 1,
       "pos": "verb",
       "forms": [
         "agreed",
         "agreeing",
         "agrees"
+      ]
+    },
+    {
+      "word": "aim",
+      "concept": "goal",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "aimed",
+        "aiming",
+        "aims"
       ]
     },
     {
@@ -267,7 +300,7 @@
     },
     {
       "word": "allowed",
-      "concept": "someone_in_charge",
+      "concept": "allowed_or_not",
       "level": 1
     },
     {
@@ -337,6 +370,17 @@
         "appeared",
         "appearing",
         "appears"
+      ]
+    },
+    {
+      "word": "argue",
+      "concept": "disagreeing",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "argued",
+        "argues",
+        "arguing"
       ]
     },
     {
@@ -490,6 +534,11 @@
       "level": 1
     },
     {
+      "word": "because",
+      "concept": "giving_a_reason",
+      "level": 1
+    },
+    {
       "word": "become",
       "concept": "change",
       "level": 1,
@@ -528,7 +577,7 @@
     },
     {
       "word": "believe",
-      "concept": "opinion",
+      "concept": "taking_on_faith",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -616,6 +665,17 @@
       "word": "black",
       "concept": "physical_property",
       "level": 1
+    },
+    {
+      "word": "blame",
+      "concept": "saying_what_you_did",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "blamed",
+        "blames",
+        "blaming"
+      ]
     },
     {
       "word": "blameless",
@@ -755,7 +815,7 @@
     },
     {
       "word": "breathe",
-      "concept": "living_and_not_living",
+      "concept": "keeping_going",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -1055,7 +1115,7 @@
     },
     {
       "word": "cheat",
-      "concept": "good_and_bad",
+      "concept": "fair_and_unfair",
       "forms": [
         "cheats",
         "cheated",
@@ -1095,7 +1155,7 @@
     },
     {
       "word": "choose",
-      "concept": "way_of_doing",
+      "concept": "choosing",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -1319,6 +1379,17 @@
       "pos": "noun"
     },
     {
+      "word": "correct",
+      "concept": "mistake",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "corrected",
+        "correcting",
+        "corrects"
+      ]
+    },
+    {
       "word": "correction",
       "concept": "investigation_practice",
       "level": 5
@@ -1429,6 +1500,11 @@
       "pos": "noun"
     },
     {
+      "word": "cup",
+      "concept": "unit",
+      "level": 1
+    },
+    {
       "word": "curved",
       "concept": "shape",
       "level": 1
@@ -1496,6 +1572,17 @@
       "level": 1
     },
     {
+      "word": "decide",
+      "concept": "settling_it",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "decided",
+        "decides",
+        "deciding"
+      ]
+    },
+    {
       "word": "deep",
       "concept": "spatial_position",
       "level": 1,
@@ -1514,9 +1601,20 @@
       "level": 5
     },
     {
-      "word": "depends",
+      "word": "depend",
       "concept": "dependence",
       "level": 6
+    },
+    {
+      "word": "depend",
+      "concept": "resting_on_a_guess",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "depended",
+        "depending",
+        "depends"
+      ]
     },
     {
       "word": "diary",
@@ -1587,13 +1685,24 @@
     },
     {
       "word": "disagree",
-      "concept": "checking",
+      "concept": "disagreeing",
       "level": 1,
       "pos": "verb",
       "forms": [
         "disagreed",
         "disagreeing",
         "disagrees"
+      ]
+    },
+    {
+      "word": "discover",
+      "concept": "finding_out",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "discovered",
+        "discovering",
+        "discovers"
       ]
     },
     {
@@ -1635,7 +1744,7 @@
     },
     {
       "word": "done",
-      "concept": "activity",
+      "concept": "finished_or_not",
       "level": 1
     },
     {
@@ -1653,6 +1762,17 @@
       "level": 5
     },
     {
+      "word": "doubt",
+      "concept": "how_sure",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "doubted",
+        "doubting",
+        "doubts"
+      ]
+    },
+    {
       "word": "drag",
       "concept": "force",
       "level": 1,
@@ -1665,7 +1785,7 @@
     },
     {
       "word": "drain",
-      "concept": "emptiness",
+      "concept": "using_up",
       "level": 1,
       "pos": "noun verb",
       "forms": [
@@ -1816,7 +1936,7 @@
     },
     {
       "word": "either",
-      "concept": "same_and_different",
+      "concept": "not_both",
       "level": 1
     },
     {
@@ -1874,7 +1994,7 @@
     },
     {
       "word": "equal",
-      "concept": "more_and_fewer",
+      "concept": "same_amount",
       "level": 1
     },
     {
@@ -1898,13 +2018,29 @@
       "level": 1
     },
     {
+      "word": "exactly",
+      "concept": "only_what_was_asked",
+      "level": 1
+    },
+    {
+      "word": "explain",
+      "concept": "giving_a_reason",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "explained",
+        "explaining",
+        "explains"
+      ]
+    },
+    {
       "word": "explanations",
       "concept": "explanation",
       "level": 6
     },
     {
       "word": "extra",
-      "concept": "enough",
+      "concept": "only_what_was_asked",
       "level": 1
     },
     {
@@ -1939,8 +2075,17 @@
     },
     {
       "word": "fair",
-      "concept": "good_and_bad",
+      "concept": "fair_and_unfair",
       "level": 1
+    },
+    {
+      "word": "faith",
+      "concept": "taking_on_faith",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "faiths"
+      ]
     },
     {
       "word": "fall",
@@ -1956,7 +2101,7 @@
     },
     {
       "word": "false",
-      "concept": "being_told",
+      "concept": "being_wrong",
       "level": 1
     },
     {
@@ -2007,7 +2152,7 @@
     },
     {
       "word": "feed",
-      "concept": "tending",
+      "concept": "needing_supply",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -2066,7 +2211,7 @@
     },
     {
       "word": "finish",
-      "concept": "sequence",
+      "concept": "finished_or_not",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -2113,7 +2258,7 @@
     },
     {
       "word": "fix",
-      "concept": "things_break",
+      "concept": "mending",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -2186,6 +2331,11 @@
     },
     {
       "word": "follow",
+      "concept": "if_then",
+      "level": 1
+    },
+    {
+      "word": "follow",
       "concept": "sequence",
       "level": 1,
       "pos": "verb",
@@ -2201,7 +2351,7 @@
     },
     {
       "word": "food",
-      "concept": "need",
+      "concept": "needing_supply",
       "level": 1
     },
     {
@@ -2211,6 +2361,11 @@
       "forms": [
         "feet"
       ]
+    },
+    {
+      "word": "forbidden",
+      "concept": "allowed_or_not",
+      "level": 1
     },
     {
       "word": "force",
@@ -2402,13 +2557,22 @@
     },
     {
       "word": "glue",
-      "concept": "activity",
+      "concept": "joining_and_separating",
       "level": 1,
       "pos": "verb",
       "forms": [
         "glued",
         "glues",
         "gluing"
+      ]
+    },
+    {
+      "word": "goal",
+      "concept": "goal",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "goals"
       ]
     },
     {
@@ -2478,7 +2642,7 @@
     },
     {
       "word": "grow",
-      "concept": "change",
+      "concept": "growing",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -2494,7 +2658,7 @@
     },
     {
       "word": "guess",
-      "concept": "knowing",
+      "concept": "guess",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -2558,6 +2722,11 @@
       ]
     },
     {
+      "word": "hard",
+      "concept": "two_shoulds_at_once",
+      "level": 1
+    },
+    {
       "word": "harm",
       "concept": "danger",
       "level": 1,
@@ -2595,6 +2764,17 @@
       "level": 1,
       "forms": [
         "heads"
+      ]
+    },
+    {
+      "word": "heal",
+      "concept": "mending",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "healed",
+        "healing",
+        "heals"
       ]
     },
     {
@@ -2656,6 +2836,11 @@
     {
       "word": "herself",
       "concept": "self_and_other",
+      "level": 1
+    },
+    {
+      "word": "hide",
+      "concept": "leaving_out",
       "level": 1
     },
     {
@@ -2735,8 +2920,13 @@
       ]
     },
     {
+      "word": "hold",
+      "concept": "keeping_your_claim",
+      "level": 1
+    },
+    {
       "word": "holds",
-      "concept": "opinion",
+      "concept": "keeping_your_claim",
       "level": 1
     },
     {
@@ -2759,7 +2949,7 @@
     },
     {
       "word": "honest",
-      "concept": "being_told",
+      "concept": "saying_what_you_saw",
       "level": 1
     },
     {
@@ -2834,7 +3024,7 @@
     },
     {
       "word": "hurt",
-      "concept": "danger",
+      "concept": "being_hurt",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -2849,7 +3039,7 @@
     },
     {
       "word": "idea",
-      "concept": "knowing",
+      "concept": "guess",
       "level": 1,
       "forms": [
         "ideas"
@@ -2935,13 +3125,24 @@
     },
     {
       "word": "join",
-      "concept": "people_together",
+      "concept": "joining_and_separating",
       "level": 1,
       "pos": "verb",
       "forms": [
         "joined",
         "joining",
         "joins"
+      ]
+    },
+    {
+      "word": "judge",
+      "concept": "judged_by_another",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "judged",
+        "judges",
+        "judging"
       ]
     },
     {
@@ -3270,6 +3471,11 @@
     },
     {
       "word": "list",
+      "concept": "plan",
+      "level": 1
+    },
+    {
+      "word": "list",
       "concept": "written_record",
       "level": 1,
       "forms": [
@@ -3337,7 +3543,7 @@
     },
     {
       "word": "looking",
-      "concept": "checking",
+      "concept": "finding_out",
       "level": 1
     },
     {
@@ -3444,6 +3650,11 @@
       ]
     },
     {
+      "word": "mark",
+      "concept": "who_said_it",
+      "level": 1
+    },
+    {
       "word": "mat",
       "concept": "household_object",
       "level": 1,
@@ -3462,6 +3673,16 @@
         "matches",
         "matching"
       ]
+    },
+    {
+      "word": "match",
+      "concept": "same_amount",
+      "level": 1
+    },
+    {
+      "word": "maybe",
+      "concept": "how_sure",
+      "level": 1
     },
     {
       "word": "me",
@@ -3529,7 +3750,7 @@
     },
     {
       "word": "mend",
-      "concept": "things_break",
+      "concept": "mending",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -3545,7 +3766,7 @@
     },
     {
       "word": "method",
-      "concept": "way_of_doing",
+      "concept": "plan",
       "level": 1,
       "forms": [
         "methods"
@@ -3565,6 +3786,11 @@
     {
       "word": "milk",
       "concept": "liquid",
+      "level": 1
+    },
+    {
+      "word": "mind",
+      "concept": "changing_your_mind",
       "level": 1
     },
     {
@@ -3606,6 +3832,15 @@
       "word": "missing",
       "concept": "presence",
       "level": 1
+    },
+    {
+      "word": "mistake",
+      "concept": "mistake",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "mistakes"
+      ]
     },
     {
       "word": "model",
@@ -3735,6 +3970,11 @@
       ]
     },
     {
+      "word": "name",
+      "concept": "who_said_it",
+      "level": 1
+    },
+    {
       "word": "narrow",
       "concept": "physical_property",
       "level": 1,
@@ -3751,6 +3991,11 @@
     {
       "word": "natural",
       "concept": "raw_and_made",
+      "level": 1
+    },
+    {
+      "word": "near",
+      "concept": "close_enough",
       "level": 1
     },
     {
@@ -3776,6 +4021,11 @@
     {
       "word": "never",
       "concept": "cycle",
+      "level": 1
+    },
+    {
+      "word": "new",
+      "concept": "not_always_known",
       "level": 1
     },
     {
@@ -3813,7 +4063,7 @@
     },
     {
       "word": "nobody",
-      "concept": "person",
+      "concept": "all_some_none",
       "level": 1
     },
     {
@@ -3832,7 +4082,7 @@
     },
     {
       "word": "none",
-      "concept": "counting",
+      "concept": "all_some_none",
       "level": 1
     },
     {
@@ -3861,7 +4111,7 @@
     },
     {
       "word": "nothing",
-      "concept": "emptiness",
+      "concept": "all_some_none",
       "level": 1
     },
     {
@@ -3885,6 +4135,11 @@
     {
       "word": "often",
       "concept": "cycle",
+      "level": 1
+    },
+    {
+      "word": "old",
+      "concept": "out_of_date",
       "level": 1
     },
     {
@@ -3937,7 +4192,7 @@
     },
     {
       "word": "order",
-      "concept": "number_word_order",
+      "concept": "doing_in_order",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -4001,7 +4256,7 @@
     },
     {
       "word": "pain",
-      "concept": "danger",
+      "concept": "being_hurt",
       "level": 1
     },
     {
@@ -4129,7 +4384,7 @@
     },
     {
       "word": "pick",
-      "concept": "way_of_doing",
+      "concept": "choosing",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -4173,6 +4428,17 @@
         "placed",
         "places",
         "placing"
+      ]
+    },
+    {
+      "word": "plan",
+      "concept": "plan",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "planned",
+        "planning",
+        "plans"
       ]
     },
     {
@@ -4286,6 +4552,17 @@
       ]
     },
     {
+      "word": "praise",
+      "concept": "judged_by_another",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "praised",
+        "praises",
+        "praising"
+      ]
+    },
+    {
       "word": "present",
       "concept": "presence",
       "level": 5
@@ -4307,7 +4584,7 @@
     },
     {
       "word": "pretend",
-      "concept": "toy",
+      "concept": "real_and_pretend",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -4328,7 +4605,7 @@
     },
     {
       "word": "promise",
-      "concept": "being_told",
+      "concept": "promise",
       "level": 1,
       "pos": "noun verb",
       "forms": [
@@ -4339,7 +4616,7 @@
     },
     {
       "word": "proper",
-      "concept": "way_of_doing",
+      "concept": "rule",
       "level": 1,
       "forms": [
         "properly"
@@ -4347,7 +4624,7 @@
     },
     {
       "word": "prove",
-      "concept": "checking",
+      "concept": "settling_it",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -4394,7 +4671,7 @@
     },
     {
       "word": "question",
-      "concept": "asking",
+      "concept": "more_to_learn",
       "level": 1,
       "forms": [
         "questions"
@@ -4423,6 +4700,16 @@
         "quieter",
         "quietest",
         "quietly"
+      ]
+    },
+    {
+      "word": "quit",
+      "concept": "keep_trying_or_stop",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "quits",
+        "quitting"
       ]
     },
     {
@@ -4488,7 +4775,7 @@
     },
     {
       "word": "real",
-      "concept": "presence",
+      "concept": "real_and_pretend",
       "level": 1
     },
     {
@@ -4578,9 +4865,20 @@
       ]
     },
     {
-      "word": "reporting",
+      "word": "report",
       "concept": "reporting",
       "level": 6
+    },
+    {
+      "word": "report",
+      "concept": "saying_what_you_saw",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "reported",
+        "reporting",
+        "reports"
+      ]
     },
     {
       "word": "represent",
@@ -4616,6 +4914,11 @@
       ]
     },
     {
+      "word": "rest",
+      "concept": "resting_on_a_guess",
+      "level": 1
+    },
+    {
       "word": "rich",
       "concept": "having",
       "level": 1,
@@ -4632,6 +4935,11 @@
     {
       "word": "right",
       "concept": "direction",
+      "level": 1
+    },
+    {
+      "word": "right",
+      "concept": "right_reason",
       "level": 1
     },
     {
@@ -4721,6 +5029,11 @@
     },
     {
       "word": "rough",
+      "concept": "close_enough",
+      "level": 1
+    },
+    {
+      "word": "rough",
       "concept": "physical_property",
       "level": 1,
       "forms": [
@@ -4759,7 +5072,7 @@
     },
     {
       "word": "rule",
-      "concept": "someone_in_charge",
+      "concept": "rule",
       "level": 1,
       "pos": "noun verb",
       "forms": [
@@ -4849,13 +5162,24 @@
       ]
     },
     {
+      "word": "score",
+      "concept": "keeping_count",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "scored",
+        "scores",
+        "scoring"
+      ]
+    },
+    {
       "word": "second",
       "concept": "number_word_order",
       "level": 1
     },
     {
       "word": "secret",
-      "concept": "knowing",
+      "concept": "leaving_out",
       "forms": [
         "secrets"
       ],
@@ -4908,7 +5232,7 @@
     },
     {
       "word": "separate",
-      "concept": "people_together",
+      "concept": "joining_and_separating",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -4944,7 +5268,7 @@
     },
     {
       "word": "settles",
-      "concept": "checking",
+      "concept": "settling_it",
       "level": 1
     },
     {
@@ -4990,7 +5314,7 @@
     },
     {
       "word": "share",
-      "concept": "people_together",
+      "concept": "fair_and_unfair",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -5070,6 +5394,11 @@
       "level": 6
     },
     {
+      "word": "should",
+      "concept": "should_and_should_not",
+      "level": 1
+    },
+    {
       "word": "shoulder",
       "concept": "body_part",
       "forms": [
@@ -5090,7 +5419,7 @@
     },
     {
       "word": "show",
-      "concept": "checking",
+      "concept": "saying_what_you_did",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -5106,7 +5435,7 @@
     },
     {
       "word": "shrink",
-      "concept": "change",
+      "concept": "growing",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -5221,7 +5550,7 @@
     },
     {
       "word": "skip",
-      "concept": "change",
+      "concept": "leaving_out",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -5411,6 +5740,11 @@
       "level": 1
     },
     {
+      "word": "sore",
+      "concept": "being_hurt",
+      "level": 1
+    },
+    {
       "word": "sound",
       "concept": "sound",
       "level": 1,
@@ -5457,6 +5791,17 @@
         "spelled",
         "spelling",
         "spells"
+      ]
+    },
+    {
+      "word": "spend",
+      "concept": "using_up",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "spending",
+        "spends",
+        "spent"
       ]
     },
     {
@@ -5544,6 +5889,17 @@
       "pos": "noun"
     },
     {
+      "word": "stare",
+      "concept": "checking",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "stared",
+        "stares",
+        "staring"
+      ]
+    },
+    {
       "word": "start",
       "concept": "sequence",
       "level": 1,
@@ -5556,7 +5912,7 @@
     },
     {
       "word": "stay",
-      "concept": "presence",
+      "concept": "keeping_going",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -5595,7 +5951,7 @@
     },
     {
       "word": "step",
-      "concept": "way_of_doing",
+      "concept": "doing_in_order",
       "level": 1,
       "pos": "noun verb",
       "forms": [
@@ -5603,6 +5959,11 @@
         "stepping",
         "steps"
       ]
+    },
+    {
+      "word": "step",
+      "concept": "unit",
+      "level": 1
     },
     {
       "word": "stick",
@@ -5626,7 +5987,7 @@
     },
     {
       "word": "stop",
-      "concept": "change",
+      "concept": "keep_trying_or_stop",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -5646,7 +6007,7 @@
     },
     {
       "word": "story",
-      "concept": "writing",
+      "concept": "story",
       "level": 1,
       "pos": "noun",
       "forms": [
@@ -5730,7 +6091,7 @@
     },
     {
       "word": "study",
-      "concept": "being_told",
+      "concept": "more_to_learn",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -5768,13 +6129,24 @@
       "level": 1
     },
     {
+      "word": "supply",
+      "concept": "needing_supply",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "supplied",
+        "supplies",
+        "supplying"
+      ]
+    },
+    {
       "word": "support",
       "concept": "reporting",
       "level": 6
     },
     {
       "word": "suppose",
-      "concept": "opinion",
+      "concept": "guess",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -5790,7 +6162,7 @@
     },
     {
       "word": "sure",
-      "concept": "knowing",
+      "concept": "how_sure",
       "level": 1
     },
     {
@@ -5857,7 +6229,7 @@
     },
     {
       "word": "tale",
-      "concept": "writing",
+      "concept": "story",
       "level": 1,
       "pos": "noun",
       "forms": [
@@ -5890,7 +6262,7 @@
     },
     {
       "word": "tally",
-      "concept": "written_record",
+      "concept": "keeping_count",
       "level": 1,
       "pos": "noun verb",
       "forms": [
@@ -6082,7 +6454,7 @@
     },
     {
       "word": "tie",
-      "concept": "activity",
+      "concept": "joining_and_separating",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -6249,7 +6621,7 @@
     },
     {
       "word": "trust",
-      "concept": "opinion",
+      "concept": "taking_on_faith",
       "forms": [
         "trusted",
         "trusting",
@@ -6268,6 +6640,11 @@
         "tries",
         "trying"
       ]
+    },
+    {
+      "word": "try",
+      "concept": "keep_trying_or_stop",
+      "level": 1
     },
     {
       "word": "tumble",
@@ -6354,12 +6731,26 @@
     },
     {
       "word": "unfair",
-      "concept": "good_and_bad",
+      "concept": "fair_and_unfair",
       "level": 1
+    },
+    {
+      "word": "unit",
+      "concept": "unit",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "units"
+      ]
     },
     {
       "word": "unkind",
       "concept": "good_and_bad",
+      "level": 1
+    },
+    {
+      "word": "unknown",
+      "concept": "not_always_known",
       "level": 1
     },
     {
@@ -6385,7 +6776,7 @@
     },
     {
       "word": "untie",
-      "concept": "activity",
+      "concept": "joining_and_separating",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -6406,7 +6797,7 @@
     },
     {
       "word": "use",
-      "concept": "wearing_out",
+      "concept": "using_up",
       "level": 1,
       "forms": [
         "used",
@@ -6482,7 +6873,7 @@
     },
     {
       "word": "want",
-      "concept": "need",
+      "concept": "goal",
       "level": 1,
       "forms": [
         "wanted",
@@ -6496,9 +6887,13 @@
       "concept": "heat",
       "level": 1,
       "forms": [
+        "warmed",
         "warmer",
-        "warmest"
-      ]
+        "warmest",
+        "warming",
+        "warms"
+      ],
+      "pos": "verb"
     },
     {
       "word": "wash",
@@ -6699,7 +7094,7 @@
     },
     {
       "word": "wonder",
-      "concept": "knowing",
+      "concept": "more_to_learn",
       "level": 1,
       "pos": "verb",
       "forms": [
@@ -6762,7 +7157,7 @@
     },
     {
       "word": "wrong",
-      "concept": "knowing",
+      "concept": "being_wrong",
       "level": 1
     },
     {

@@ -43,6 +43,14 @@ Decision records, and the open questions that block implementation.
 - `OPEN_QUESTIONS.md` **closed for pre-planning 2026-09-23.** Nineteen
   questions, fifteen answered and four deferred to the gated follow-on.
   None open.
+- `LEVEL_CALIBRATION.md` decided 2026-09-25. Each level is the grade a
+  reader is ready to enter, from kindergarten at level one to
+  post-graduate practice at level seven. Fixes page counts by binding and
+  leaves concept complexity uncalibrated.
+- `LEVEL_ONE_CONCEPTS.md` recorded 2026-09-25. The fifty-one level-one
+  concepts the schedule planned and the graph lacked, with their domains
+  and prerequisites. Unblocks the forty-three units that could not be
+  authored, and does not author them.
 
 ## Convention
 

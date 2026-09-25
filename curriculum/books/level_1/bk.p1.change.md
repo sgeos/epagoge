@@ -16,7 +16,7 @@
     "p1.change.d05": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drop"}, "defines": {"kind": "word", "target": "drop"}},
     "p1.change.d06": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fall"}, "defines": {"kind": "word", "target": "fall"}},
     "p1.change.d07": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:land"}, "defines": {"kind": "word", "target": "land"}},
-    "p1.change.d24": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grow"}, "defines": {"kind": "word", "target": "grow"}},
+    "p1.change.d24": {"concepts": ["growing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grow"}, "defines": {"kind": "word", "target": "grow"}},
     "p1.change.s01": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.change.s02": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.change.s03": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},

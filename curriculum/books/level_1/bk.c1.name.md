@@ -21,7 +21,9 @@
     "c1.name.x10": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "c1.name.x11": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "c1.name.x12": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "c1.name.x13": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "c1.name.x13": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.name.x14": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "c1.name.x15": {"concepts": ["name", "writing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ He found a small stone shaped like the mark and carried it in his pocket.
 
 [c1.name.x13]
 He held the stone close, feeling its sharp edges like a secret.
+
+[c1.name.x14]
+The class whispered and pointed, but no one could say what it meant, so he kept it safe in his pocket.
+
+[c1.name.x15]
+The star on the cover seemed to shine brighter now, even in the dark.

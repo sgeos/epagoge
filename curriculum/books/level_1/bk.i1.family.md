@@ -21,7 +21,9 @@
     "i1.family.s07": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "i1.family.x11": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "i1.family.x12": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "i1.family.x13": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "i1.family.x13": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.family.x14": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.family.x15": {"concepts": ["family"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ Her brother laughed, holding a balloon that floated above the table.
 
 [i1.family.x13]
 She reached up, trying to catch it, her fingers brushing the air just above.
+
+[i1.family.x14]
+She smiled, her eyes still warm, as her brother handed her a new one, red and bright.
+
+[i1.family.x15]
+The balloon floated higher, drifting toward the window.

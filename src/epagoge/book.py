@@ -105,7 +105,42 @@ allowed to be short. Above the cap it is no longer a picture book.
 """
 
 TYPICAL_WORDS: Final[tuple[int, int]] = (100, 800)
-"""Reported, never enforced."""
+"""Reported, never enforced. The level-one band."""
+
+WORDS_PER_PAGE: Final[dict[int, tuple[int, int]]] = {2: (100, 150)}
+"""Words on a page, by level, for the levels whose density is settled.
+
+**Operator figure for level two, 2026-09-25.** About a hundred and
+twenty-five words to the page, give or take twenty-five, so a spread
+carries two hundred to three hundred. Level one is not in this table
+because its band was set directly as :data:`TYPICAL_WORDS` and a picture
+book's density is dominated by the picture.
+
+A level-two book is sixty-four spreads, so this puts it between twelve
+thousand eight hundred and nineteen thousand two hundred words.
+"""
+
+
+def typical_words(level: int) -> tuple[int, int] | None:
+    """The word count a book at this level is expected to land in.
+
+    Derived from the binding and the density rather than stated, so that
+    changing either changes this. Reported and never enforced, like the
+    band it generalises, because a book about one narrow thing is allowed
+    to be short.
+
+    **None where the density is not settled.** Levels three upward have a
+    page count and no words-to-the-page figure, and reporting the level-one
+    band for them would be a made-up number presented as a standard.
+    """
+    if level == 1:
+        return TYPICAL_WORDS
+    spreads = SPREADS_BY_LEVEL.get(level)
+    band = WORDS_PER_PAGE.get(level)
+    if spreads is None or band is None:
+        return None
+    pages = spreads * 2
+    return (band[0] * pages, band[1] * pages)
 
 
 @dataclass(frozen=True, slots=True)

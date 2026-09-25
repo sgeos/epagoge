@@ -747,6 +747,312 @@
       "name": "standing for",
       "kind": "domain_concept",
       "domain": "compressed_communication"
+    },
+    {
+      "id": "how_sure",
+      "name": "how sure you are",
+      "kind": "domain_concept",
+      "domain": "record_keeping"
+    },
+    {
+      "id": "out_of_date",
+      "name": "out of date",
+      "kind": "domain_concept",
+      "domain": "record_keeping"
+    },
+    {
+      "id": "who_said_it",
+      "name": "who said it",
+      "kind": "domain_concept",
+      "domain": "record_keeping"
+    },
+    {
+      "id": "unit",
+      "name": "unit of measure",
+      "kind": "domain_concept",
+      "domain": "record_keeping"
+    },
+    {
+      "id": "joining_and_separating",
+      "name": "joining and separating",
+      "kind": "domain_concept",
+      "domain": "directed_physical_interactions"
+    },
+    {
+      "id": "if_then",
+      "name": "if, then",
+      "kind": "domain_concept",
+      "domain": "mathematics_and_formal_logic"
+    },
+    {
+      "id": "all_some_none",
+      "name": "all, some, and none",
+      "kind": "domain_concept",
+      "domain": "mathematics_and_formal_logic"
+    },
+    {
+      "id": "not_both",
+      "name": "not both",
+      "kind": "domain_concept",
+      "domain": "mathematics_and_formal_logic"
+    },
+    {
+      "id": "goal",
+      "name": "goal",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "doing_in_order",
+      "name": "doing in order",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "finished_or_not",
+      "name": "finished or not",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "plan",
+      "name": "plan",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "mistake",
+      "name": "mistake",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "only_what_was_asked",
+      "name": "only what was asked",
+      "kind": "domain_concept",
+      "domain": "agentic_operations"
+    },
+    {
+      "id": "story",
+      "name": "story",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "leaving_out",
+      "name": "leaving out",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "close_enough",
+      "name": "close enough",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "more_to_learn",
+      "name": "more to learn",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "real_and_pretend",
+      "name": "real and pretend",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "saying_what_you_saw",
+      "name": "saying what you saw",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "saying_what_you_did",
+      "name": "saying what you did",
+      "kind": "domain_concept",
+      "domain": "compressed_communication"
+    },
+    {
+      "id": "keeping_count",
+      "name": "keeping count",
+      "kind": "domain_concept",
+      "domain": "accounting"
+    },
+    {
+      "id": "same_amount",
+      "name": "same amount",
+      "kind": "domain_concept",
+      "domain": "accounting"
+    },
+    {
+      "id": "using_up",
+      "name": "using up",
+      "kind": "domain_concept",
+      "domain": "accounting"
+    },
+    {
+      "id": "finding_out",
+      "name": "finding out",
+      "kind": "domain_concept",
+      "domain": "history_and_philosophy_of_science"
+    },
+    {
+      "id": "settling_it",
+      "name": "settling it",
+      "kind": "domain_concept",
+      "domain": "history_and_philosophy_of_science"
+    },
+    {
+      "id": "not_always_known",
+      "name": "not always known",
+      "kind": "domain_concept",
+      "domain": "history_and_philosophy_of_science"
+    },
+    {
+      "id": "guess",
+      "name": "guess",
+      "kind": "domain_concept",
+      "domain": "history_and_philosophy_of_science"
+    },
+    {
+      "id": "being_wrong",
+      "name": "being wrong",
+      "kind": "domain_concept",
+      "domain": "history_and_philosophy_of_science"
+    },
+    {
+      "id": "taking_on_faith",
+      "name": "taking on faith",
+      "kind": "domain_concept",
+      "domain": "history_and_philosophy_of_science"
+    },
+    {
+      "id": "resting_on_a_guess",
+      "name": "resting on a guess",
+      "kind": "domain_concept",
+      "domain": "history_and_philosophy_of_science"
+    },
+    {
+      "id": "giving_a_reason",
+      "name": "giving a reason",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "agreeing",
+      "name": "agreeing",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "disagreeing",
+      "name": "disagreeing",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "keeping_your_claim",
+      "name": "keeping your claim",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "changing_your_mind",
+      "name": "changing your mind",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "rule",
+      "name": "rule",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "judged_by_another",
+      "name": "judged by another",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "keeping_going",
+      "name": "keeping going",
+      "kind": "domain_concept",
+      "domain": "cybernetic_biological_systems"
+    },
+    {
+      "id": "needing_supply",
+      "name": "needing supply",
+      "kind": "domain_concept",
+      "domain": "cybernetic_biological_systems"
+    },
+    {
+      "id": "growing",
+      "name": "growing",
+      "kind": "domain_concept",
+      "domain": "cybernetic_biological_systems"
+    },
+    {
+      "id": "mending",
+      "name": "mending",
+      "kind": "domain_concept",
+      "domain": "cybernetic_biological_systems"
+    },
+    {
+      "id": "being_hurt",
+      "name": "being hurt",
+      "kind": "domain_concept",
+      "domain": "cybernetic_biological_systems"
+    },
+    {
+      "id": "choosing",
+      "name": "choosing",
+      "kind": "domain_concept",
+      "domain": "normative_adjudication"
+    },
+    {
+      "id": "should_and_should_not",
+      "name": "should and should not",
+      "kind": "domain_concept",
+      "domain": "normative_adjudication"
+    },
+    {
+      "id": "two_shoulds_at_once",
+      "name": "two shoulds at once",
+      "kind": "domain_concept",
+      "domain": "normative_adjudication"
+    },
+    {
+      "id": "fair_and_unfair",
+      "name": "fair and unfair",
+      "kind": "domain_concept",
+      "domain": "normative_adjudication"
+    },
+    {
+      "id": "promise",
+      "name": "promise",
+      "kind": "domain_concept",
+      "domain": "normative_adjudication"
+    },
+    {
+      "id": "allowed_or_not",
+      "name": "allowed or not",
+      "kind": "domain_concept",
+      "domain": "normative_adjudication"
+    },
+    {
+      "id": "keep_trying_or_stop",
+      "name": "keep trying or stop",
+      "kind": "domain_concept",
+      "domain": "normative_adjudication"
+    },
+    {
+      "id": "right_reason",
+      "name": "the right reason",
+      "kind": "domain_concept",
+      "domain": "normative_adjudication"
     }
   ],
   "prerequisites": {
@@ -1122,6 +1428,222 @@
     ],
     "standing_for": [
       "word"
+    ],
+    "how_sure": [
+      "knowing",
+      "checking"
+    ],
+    "out_of_date": [
+      "written_record",
+      "change",
+      "duration"
+    ],
+    "who_said_it": [
+      "being_told",
+      "name"
+    ],
+    "unit": [
+      "measuring",
+      "counting"
+    ],
+    "joining_and_separating": [
+      "touching",
+      "force",
+      "change"
+    ],
+    "if_then": [
+      "cause_and_effect",
+      "sentence"
+    ],
+    "all_some_none": [
+      "counting",
+      "more_and_fewer",
+      "emptiness"
+    ],
+    "not_both": [
+      "all_some_none",
+      "same_and_different"
+    ],
+    "goal": [
+      "need",
+      "way_of_doing"
+    ],
+    "doing_in_order": [
+      "sequence",
+      "activity"
+    ],
+    "finished_or_not": [
+      "goal",
+      "checking"
+    ],
+    "plan": [
+      "goal",
+      "doing_in_order"
+    ],
+    "mistake": [
+      "goal",
+      "checking"
+    ],
+    "only_what_was_asked": [
+      "asking",
+      "goal",
+      "plan"
+    ],
+    "story": [
+      "sentence",
+      "sequence"
+    ],
+    "leaving_out": [
+      "sentence",
+      "knowing"
+    ],
+    "close_enough": [
+      "measuring",
+      "same_and_different"
+    ],
+    "more_to_learn": [
+      "knowing",
+      "asking"
+    ],
+    "real_and_pretend": [
+      "knowing",
+      "story"
+    ],
+    "saying_what_you_saw": [
+      "sentence",
+      "knowing",
+      "checking"
+    ],
+    "saying_what_you_did": [
+      "sentence",
+      "activity",
+      "sequence"
+    ],
+    "keeping_count": [
+      "counting",
+      "written_record"
+    ],
+    "same_amount": [
+      "correspondence",
+      "more_and_fewer"
+    ],
+    "using_up": [
+      "having",
+      "change",
+      "emptiness"
+    ],
+    "finding_out": [
+      "knowing",
+      "asking",
+      "checking"
+    ],
+    "settling_it": [
+      "finding_out",
+      "checking"
+    ],
+    "not_always_known": [
+      "knowing",
+      "sequence",
+      "duration"
+    ],
+    "guess": [
+      "knowing",
+      "asking"
+    ],
+    "being_wrong": [
+      "guess",
+      "checking",
+      "mistake"
+    ],
+    "taking_on_faith": [
+      "being_told",
+      "knowing"
+    ],
+    "resting_on_a_guess": [
+      "guess",
+      "being_wrong"
+    ],
+    "giving_a_reason": [
+      "sentence",
+      "cause_and_effect"
+    ],
+    "agreeing": [
+      "opinion",
+      "same_and_different"
+    ],
+    "disagreeing": [
+      "opinion",
+      "same_and_different"
+    ],
+    "keeping_your_claim": [
+      "opinion",
+      "giving_a_reason"
+    ],
+    "changing_your_mind": [
+      "opinion",
+      "being_wrong"
+    ],
+    "rule": [
+      "someone_in_charge",
+      "way_of_doing"
+    ],
+    "judged_by_another": [
+      "someone_in_charge",
+      "checking"
+    ],
+    "keeping_going": [
+      "living_and_not_living",
+      "tending"
+    ],
+    "needing_supply": [
+      "need",
+      "keeping_going"
+    ],
+    "growing": [
+      "change",
+      "living_and_not_living"
+    ],
+    "mending": [
+      "things_break",
+      "tending"
+    ],
+    "being_hurt": [
+      "body_part",
+      "danger",
+      "feeling"
+    ],
+    "choosing": [
+      "can_and_cannot",
+      "good_and_bad"
+    ],
+    "should_and_should_not": [
+      "good_and_bad",
+      "way_of_doing"
+    ],
+    "two_shoulds_at_once": [
+      "should_and_should_not",
+      "choosing"
+    ],
+    "fair_and_unfair": [
+      "good_and_bad",
+      "same_amount"
+    ],
+    "promise": [
+      "sentence",
+      "should_and_should_not"
+    ],
+    "allowed_or_not": [
+      "rule",
+      "can_and_cannot"
+    ],
+    "keep_trying_or_stop": [
+      "choosing",
+      "enough",
+      "finished_or_not"
+    ],
+    "right_reason": [
+      "giving_a_reason",
+      "should_and_should_not"
     ]
   },
   "instantiates": {

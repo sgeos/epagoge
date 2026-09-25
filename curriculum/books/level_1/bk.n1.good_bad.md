@@ -10,7 +10,7 @@
   "records": {
     "n1.good_bad.d00": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "topic:n1.good_bad"}, "defines": {"kind": "topic", "target": "n1.good_bad"}},
     "n1.good_bad.d01": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bad"}, "defines": {"kind": "word", "target": "bad"}},
-    "n1.good_bad.d02": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fair"}, "defines": {"kind": "word", "target": "fair"}},
+    "n1.good_bad.d02": {"concepts": ["fair_and_unfair"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fair"}, "defines": {"kind": "word", "target": "fair"}},
     "n1.good_bad.d03": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:kind"}, "defines": {"kind": "word", "target": "kind"}},
     "n1.good_bad.d04": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mean"}, "defines": {"kind": "word", "target": "mean"}},
     "n1.good_bad.s01": {"concepts": ["good_and_bad"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:some-things-harm"}},

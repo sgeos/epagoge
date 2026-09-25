@@ -11,7 +11,7 @@
     "r1.written.d00": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.written"}, "defines": {"kind": "topic", "target": "r1.written"}},
     "r1.written.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copied"}, "defines": {"kind": "word", "target": "copied"}},
     "r1.written.d41": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:log"}, "defines": {"kind": "word", "target": "log"}},
-    "r1.written.d44": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tally"}, "defines": {"kind": "word", "target": "tally"}},
+    "r1.written.d44": {"concepts": ["keeping_count"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tally"}, "defines": {"kind": "word", "target": "tally"}},
     "r1.written.s01": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "r1.written.s02": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},
     "r1.written.s03": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},

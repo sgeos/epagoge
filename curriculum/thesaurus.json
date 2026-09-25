@@ -16,12 +16,20 @@
       ]
     },
     {
+      "word": "accept",
+      "concept": "agreeing"
+    },
+    {
       "word": "accident",
       "concept": "accident"
     },
     {
       "word": "add",
       "concept": "addition"
+    },
+    {
+      "word": "admit",
+      "concept": "changing_your_mind"
     },
     {
       "word": "afraid",
@@ -39,10 +47,14 @@
     },
     {
       "word": "agree",
-      "concept": "checking",
+      "concept": "agreeing",
       "antonyms": [
         "disagree"
       ]
+    },
+    {
+      "word": "aim",
+      "concept": "goal"
     },
     {
       "word": "air",
@@ -61,7 +73,7 @@
     },
     {
       "word": "allowed",
-      "concept": "someone_in_charge"
+      "concept": "allowed_or_not"
     },
     {
       "word": "already",
@@ -107,6 +119,10 @@
     {
       "word": "appear",
       "concept": "presence"
+    },
+    {
+      "word": "argue",
+      "concept": "disagreeing"
     },
     {
       "word": "arm",
@@ -202,6 +218,10 @@
       "concept": "cause_and_effect"
     },
     {
+      "word": "because",
+      "concept": "giving_a_reason"
+    },
+    {
       "word": "become",
       "concept": "change"
     },
@@ -233,7 +253,7 @@
     },
     {
       "word": "believe",
-      "concept": "opinion"
+      "concept": "taking_on_faith"
     },
     {
       "word": "bell",
@@ -293,6 +313,10 @@
     {
       "word": "black",
       "concept": "physical_property"
+    },
+    {
+      "word": "blame",
+      "concept": "saying_what_you_did"
     },
     {
       "word": "blanket",
@@ -376,7 +400,7 @@
     },
     {
       "word": "breathe",
-      "concept": "living_and_not_living"
+      "concept": "keeping_going"
     },
     {
       "word": "bridge",
@@ -526,7 +550,7 @@
     },
     {
       "word": "cheat",
-      "concept": "good_and_bad"
+      "concept": "fair_and_unfair"
     },
     {
       "word": "cheater",
@@ -542,7 +566,7 @@
     },
     {
       "word": "choose",
-      "concept": "way_of_doing",
+      "concept": "choosing",
       "synonyms": [
         "pick"
       ]
@@ -669,6 +693,10 @@
       "concept": "shape"
     },
     {
+      "word": "correct",
+      "concept": "mistake"
+    },
+    {
       "word": "cost",
       "concept": "exchange",
       "synonyms": [
@@ -716,6 +744,10 @@
     {
       "word": "cup",
       "concept": "household_object"
+    },
+    {
+      "word": "cup",
+      "concept": "unit"
     },
     {
       "word": "curved",
@@ -775,6 +807,10 @@
       "concept": "dying"
     },
     {
+      "word": "decide",
+      "concept": "settling_it"
+    },
+    {
       "word": "deep",
       "concept": "spatial_position",
       "antonyms": [
@@ -784,6 +820,10 @@
     {
       "word": "deeper",
       "concept": "measuring"
+    },
+    {
+      "word": "depend",
+      "concept": "resting_on_a_guess"
     },
     {
       "word": "diary",
@@ -828,10 +868,14 @@
     },
     {
       "word": "disagree",
-      "concept": "checking",
+      "concept": "disagreeing",
       "antonyms": [
         "agree"
       ]
+    },
+    {
+      "word": "discover",
+      "concept": "finding_out"
     },
     {
       "word": "dish",
@@ -855,11 +899,15 @@
     },
     {
       "word": "done",
-      "concept": "activity"
+      "concept": "finished_or_not"
     },
     {
       "word": "door",
       "concept": "household_object"
+    },
+    {
+      "word": "doubt",
+      "concept": "how_sure"
     },
     {
       "word": "down",
@@ -877,7 +925,7 @@
     },
     {
       "word": "drain",
-      "concept": "emptiness"
+      "concept": "using_up"
     },
     {
       "word": "drank",
@@ -953,7 +1001,7 @@
     },
     {
       "word": "either",
-      "concept": "same_and_different"
+      "concept": "not_both"
     },
     {
       "word": "eleven",
@@ -1002,7 +1050,7 @@
     },
     {
       "word": "equal",
-      "concept": "more_and_fewer"
+      "concept": "same_amount"
     },
     {
       "word": "evening",
@@ -1030,8 +1078,16 @@
       ]
     },
     {
+      "word": "exactly",
+      "concept": "only_what_was_asked"
+    },
+    {
+      "word": "explain",
+      "concept": "giving_a_reason"
+    },
+    {
       "word": "extra",
-      "concept": "enough",
+      "concept": "only_what_was_asked",
       "synonyms": [
         "spare"
       ]
@@ -1050,10 +1106,14 @@
     },
     {
       "word": "fair",
-      "concept": "good_and_bad",
+      "concept": "fair_and_unfair",
       "antonyms": [
         "unfair"
       ]
+    },
+    {
+      "word": "faith",
+      "concept": "taking_on_faith"
     },
     {
       "word": "fall",
@@ -1064,7 +1124,7 @@
     },
     {
       "word": "false",
-      "concept": "being_told",
+      "concept": "being_wrong",
       "antonyms": [
         "true"
       ]
@@ -1109,7 +1169,7 @@
     },
     {
       "word": "feed",
-      "concept": "tending"
+      "concept": "needing_supply"
     },
     {
       "word": "feel",
@@ -1146,7 +1206,7 @@
     },
     {
       "word": "finish",
-      "concept": "sequence",
+      "concept": "finished_or_not",
       "synonyms": [
         "end"
       ]
@@ -1176,7 +1236,7 @@
     },
     {
       "word": "fix",
-      "concept": "things_break",
+      "concept": "mending",
       "synonyms": [
         "mend"
       ]
@@ -1210,6 +1270,10 @@
     },
     {
       "word": "follow",
+      "concept": "if_then"
+    },
+    {
+      "word": "follow",
       "concept": "sequence"
     },
     {
@@ -1218,11 +1282,15 @@
     },
     {
       "word": "food",
-      "concept": "need"
+      "concept": "needing_supply"
     },
     {
       "word": "foot",
       "concept": "body_part"
+    },
+    {
+      "word": "forbidden",
+      "concept": "allowed_or_not"
     },
     {
       "word": "force",
@@ -1347,7 +1415,7 @@
     },
     {
       "word": "glue",
-      "concept": "activity"
+      "concept": "joining_and_separating"
     },
     {
       "word": "go",
@@ -1358,6 +1426,10 @@
       "synonyms": [
         "move"
       ]
+    },
+    {
+      "word": "goal",
+      "concept": "goal"
     },
     {
       "word": "gold",
@@ -1413,7 +1485,7 @@
     },
     {
       "word": "grow",
-      "concept": "change",
+      "concept": "growing",
       "antonyms": [
         "shrink"
       ]
@@ -1424,7 +1496,7 @@
     },
     {
       "word": "guess",
-      "concept": "knowing",
+      "concept": "guess",
       "synonyms": [
         "suppose",
         "wonder"
@@ -1468,6 +1540,10 @@
       ]
     },
     {
+      "word": "hard",
+      "concept": "two_shoulds_at_once"
+    },
+    {
       "word": "harm",
       "concept": "danger",
       "antonyms": [
@@ -1487,6 +1563,10 @@
     {
       "word": "head",
       "concept": "body_part"
+    },
+    {
+      "word": "heal",
+      "concept": "mending"
     },
     {
       "word": "hear",
@@ -1538,6 +1618,10 @@
     },
     {
       "word": "hide",
+      "concept": "leaving_out"
+    },
+    {
+      "word": "hide",
       "concept": "presence"
     },
     {
@@ -1576,8 +1660,12 @@
       "concept": "force"
     },
     {
+      "word": "hold",
+      "concept": "keeping_your_claim"
+    },
+    {
       "word": "holds",
-      "concept": "opinion"
+      "concept": "keeping_your_claim"
     },
     {
       "word": "hole",
@@ -1592,7 +1680,7 @@
     },
     {
       "word": "honest",
-      "concept": "being_told"
+      "concept": "saying_what_you_saw"
     },
     {
       "word": "horse",
@@ -1637,7 +1725,7 @@
     },
     {
       "word": "hurt",
-      "concept": "danger",
+      "concept": "being_hurt",
       "synonyms": [
         "harm",
         "pain"
@@ -1649,7 +1737,7 @@
     },
     {
       "word": "idea",
-      "concept": "knowing"
+      "concept": "guess"
     },
     {
       "word": "ill",
@@ -1701,10 +1789,14 @@
     },
     {
       "word": "join",
-      "concept": "people_together",
+      "concept": "joining_and_separating",
       "antonyms": [
         "separate"
       ]
+    },
+    {
+      "word": "judge",
+      "concept": "judged_by_another"
     },
     {
       "word": "juice",
@@ -1914,6 +2006,10 @@
     },
     {
       "word": "list",
+      "concept": "plan"
+    },
+    {
+      "word": "list",
       "concept": "written_record"
     },
     {
@@ -1959,7 +2055,7 @@
     },
     {
       "word": "looking",
-      "concept": "checking"
+      "concept": "finding_out"
     },
     {
       "word": "lose",
@@ -2040,6 +2136,10 @@
       ]
     },
     {
+      "word": "mark",
+      "concept": "who_said_it"
+    },
+    {
       "word": "mat",
       "concept": "household_object",
       "synonyms": [
@@ -2049,6 +2149,14 @@
     {
       "word": "match",
       "concept": "correspondence"
+    },
+    {
+      "word": "match",
+      "concept": "same_amount"
+    },
+    {
+      "word": "maybe",
+      "concept": "how_sure"
     },
     {
       "word": "me",
@@ -2084,7 +2192,7 @@
     },
     {
       "word": "mend",
-      "concept": "things_break",
+      "concept": "mending",
       "synonyms": [
         "fix"
       ]
@@ -2095,7 +2203,7 @@
     },
     {
       "word": "method",
-      "concept": "way_of_doing",
+      "concept": "plan",
       "synonyms": [
         "way"
       ]
@@ -2111,6 +2219,10 @@
     {
       "word": "milk",
       "concept": "liquid"
+    },
+    {
+      "word": "mind",
+      "concept": "changing_your_mind"
     },
     {
       "word": "mind",
@@ -2135,6 +2247,10 @@
     {
       "word": "missing",
       "concept": "presence"
+    },
+    {
+      "word": "mistake",
+      "concept": "mistake"
     },
     {
       "word": "model",
@@ -2229,6 +2345,10 @@
       "concept": "name"
     },
     {
+      "word": "name",
+      "concept": "who_said_it"
+    },
+    {
       "word": "narrow",
       "concept": "physical_property",
       "antonyms": [
@@ -2252,6 +2372,10 @@
     },
     {
       "word": "near",
+      "concept": "close_enough"
+    },
+    {
+      "word": "near",
       "concept": "spatial_position",
       "antonyms": [
         "far"
@@ -2267,6 +2391,10 @@
       "antonyms": [
         "always"
       ]
+    },
+    {
+      "word": "new",
+      "concept": "not_always_known"
     },
     {
       "word": "new",
@@ -2306,7 +2434,7 @@
     },
     {
       "word": "nobody",
-      "concept": "person",
+      "concept": "all_some_none",
       "antonyms": [
         "everyone"
       ]
@@ -2327,7 +2455,7 @@
     },
     {
       "word": "none",
-      "concept": "counting",
+      "concept": "all_some_none",
       "synonyms": [
         "nothing"
       ]
@@ -2349,7 +2477,7 @@
     },
     {
       "word": "nothing",
-      "concept": "emptiness",
+      "concept": "all_some_none",
       "antonyms": [
         "everything"
       ],
@@ -2368,6 +2496,10 @@
     {
       "word": "often",
       "concept": "cycle"
+    },
+    {
+      "word": "old",
+      "concept": "out_of_date"
     },
     {
       "word": "old",
@@ -2405,7 +2537,7 @@
     },
     {
       "word": "order",
-      "concept": "number_word_order"
+      "concept": "doing_in_order"
     },
     {
       "word": "others",
@@ -2447,7 +2579,7 @@
     },
     {
       "word": "pain",
-      "concept": "danger",
+      "concept": "being_hurt",
       "synonyms": [
         "hurt"
       ]
@@ -2517,7 +2649,7 @@
     },
     {
       "word": "pick",
-      "concept": "way_of_doing",
+      "concept": "choosing",
       "synonyms": [
         "choose"
       ]
@@ -2537,6 +2669,10 @@
     {
       "word": "place",
       "concept": "spatial_position"
+    },
+    {
+      "word": "plan",
+      "concept": "plan"
     },
     {
       "word": "plant",
@@ -2593,6 +2729,10 @@
       "concept": "liquid"
     },
     {
+      "word": "praise",
+      "concept": "judged_by_another"
+    },
+    {
       "word": "press",
       "concept": "force",
       "synonyms": [
@@ -2605,22 +2745,22 @@
     },
     {
       "word": "pretend",
-      "concept": "toy",
+      "concept": "real_and_pretend",
       "antonyms": [
         "real"
       ]
     },
     {
       "word": "promise",
-      "concept": "being_told"
+      "concept": "promise"
     },
     {
       "word": "proper",
-      "concept": "way_of_doing"
+      "concept": "rule"
     },
     {
       "word": "prove",
-      "concept": "checking"
+      "concept": "settling_it"
     },
     {
       "word": "pull",
@@ -2655,7 +2795,7 @@
     },
     {
       "word": "question",
-      "concept": "asking"
+      "concept": "more_to_learn"
     },
     {
       "word": "quick",
@@ -2678,6 +2818,10 @@
       "synonyms": [
         "calm"
       ]
+    },
+    {
+      "word": "quit",
+      "concept": "keep_trying_or_stop"
     },
     {
       "word": "rain",
@@ -2715,7 +2859,7 @@
     },
     {
       "word": "real",
-      "concept": "presence",
+      "concept": "real_and_pretend",
       "antonyms": [
         "pretend"
       ]
@@ -2765,6 +2909,10 @@
       ]
     },
     {
+      "word": "report",
+      "concept": "saying_what_you_saw"
+    },
+    {
       "word": "represent",
       "concept": "standing_for"
     },
@@ -2775,6 +2923,10 @@
     {
       "word": "rest",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "rest",
+      "concept": "resting_on_a_guess"
     },
     {
       "word": "rich",
@@ -2799,6 +2951,10 @@
       "antonyms": [
         "left"
       ]
+    },
+    {
+      "word": "right",
+      "concept": "right_reason"
     },
     {
       "word": "ring",
@@ -2847,6 +3003,10 @@
     },
     {
       "word": "rough",
+      "concept": "close_enough"
+    },
+    {
+      "word": "rough",
       "concept": "physical_property",
       "antonyms": [
         "smooth"
@@ -2869,7 +3029,7 @@
     },
     {
       "word": "rule",
-      "concept": "someone_in_charge"
+      "concept": "rule"
     },
     {
       "word": "ruler",
@@ -2931,12 +3091,16 @@
       "concept": "people_together"
     },
     {
+      "word": "score",
+      "concept": "keeping_count"
+    },
+    {
       "word": "second",
       "concept": "number_word_order"
     },
     {
       "word": "secret",
-      "concept": "knowing"
+      "concept": "leaving_out"
     },
     {
       "word": "seed",
@@ -2967,7 +3131,7 @@
     },
     {
       "word": "separate",
-      "concept": "people_together",
+      "concept": "joining_and_separating",
       "antonyms": [
         "join"
       ]
@@ -2986,7 +3150,7 @@
     },
     {
       "word": "settles",
-      "concept": "checking"
+      "concept": "settling_it"
     },
     {
       "word": "seven",
@@ -3013,7 +3177,7 @@
     },
     {
       "word": "share",
-      "concept": "people_together"
+      "concept": "fair_and_unfair"
     },
     {
       "word": "sharp",
@@ -3055,6 +3219,10 @@
       "concept": "measuring"
     },
     {
+      "word": "should",
+      "concept": "should_and_should_not"
+    },
+    {
       "word": "shoulder",
       "concept": "body_part"
     },
@@ -3067,7 +3235,7 @@
     },
     {
       "word": "show",
-      "concept": "checking",
+      "concept": "saying_what_you_did",
       "synonyms": [
         "teach"
       ]
@@ -3078,7 +3246,7 @@
     },
     {
       "word": "shrink",
-      "concept": "change",
+      "concept": "growing",
       "antonyms": [
         "grow"
       ]
@@ -3147,7 +3315,7 @@
     },
     {
       "word": "skip",
-      "concept": "change",
+      "concept": "leaving_out",
       "synonyms": [
         "jump"
       ]
@@ -3272,6 +3440,10 @@
       "concept": "duration"
     },
     {
+      "word": "sore",
+      "concept": "being_hurt"
+    },
+    {
       "word": "sound",
       "concept": "sound",
       "synonyms": [
@@ -3304,6 +3476,10 @@
     {
       "word": "spell",
       "concept": "word"
+    },
+    {
+      "word": "spend",
+      "concept": "using_up"
     },
     {
       "word": "spill",
@@ -3342,6 +3518,10 @@
       "concept": "weather"
     },
     {
+      "word": "stare",
+      "concept": "checking"
+    },
+    {
       "word": "start",
       "concept": "sequence",
       "antonyms": [
@@ -3353,7 +3533,7 @@
     },
     {
       "word": "stay",
-      "concept": "presence",
+      "concept": "keeping_going",
       "synonyms": [
         "remain"
       ]
@@ -3372,7 +3552,11 @@
     },
     {
       "word": "step",
-      "concept": "way_of_doing"
+      "concept": "doing_in_order"
+    },
+    {
+      "word": "step",
+      "concept": "unit"
     },
     {
       "word": "stick",
@@ -3387,7 +3571,7 @@
     },
     {
       "word": "stop",
-      "concept": "change",
+      "concept": "keep_trying_or_stop",
       "antonyms": [
         "start"
       ]
@@ -3398,7 +3582,7 @@
     },
     {
       "word": "story",
-      "concept": "writing",
+      "concept": "story",
       "synonyms": [
         "tale"
       ]
@@ -3455,7 +3639,7 @@
     },
     {
       "word": "study",
-      "concept": "being_told",
+      "concept": "more_to_learn",
       "synonyms": [
         "learn"
       ]
@@ -3480,15 +3664,19 @@
       "concept": "weather"
     },
     {
+      "word": "supply",
+      "concept": "needing_supply"
+    },
+    {
       "word": "suppose",
-      "concept": "opinion",
+      "concept": "guess",
       "synonyms": [
         "guess"
       ]
     },
     {
       "word": "sure",
-      "concept": "knowing"
+      "concept": "how_sure"
     },
     {
       "word": "swallow",
@@ -3530,7 +3718,7 @@
     },
     {
       "word": "tale",
-      "concept": "writing",
+      "concept": "story",
       "synonyms": [
         "story"
       ]
@@ -3558,7 +3746,7 @@
     },
     {
       "word": "tally",
-      "concept": "written_record"
+      "concept": "keeping_count"
     },
     {
       "word": "task",
@@ -3681,7 +3869,7 @@
     },
     {
       "word": "tie",
-      "concept": "activity",
+      "concept": "joining_and_separating",
       "antonyms": [
         "untie"
       ]
@@ -3789,11 +3977,15 @@
     },
     {
       "word": "trust",
-      "concept": "opinion"
+      "concept": "taking_on_faith"
     },
     {
       "word": "try",
       "concept": "checking"
+    },
+    {
+      "word": "try",
+      "concept": "keep_trying_or_stop"
     },
     {
       "word": "tumble",
@@ -3857,10 +4049,14 @@
     },
     {
       "word": "unfair",
-      "concept": "good_and_bad",
+      "concept": "fair_and_unfair",
       "antonyms": [
         "fair"
       ]
+    },
+    {
+      "word": "unit",
+      "concept": "unit"
     },
     {
       "word": "unkind",
@@ -3871,6 +4067,10 @@
       "synonyms": [
         "nasty"
       ]
+    },
+    {
+      "word": "unknown",
+      "concept": "not_always_known"
     },
     {
       "word": "unlike",
@@ -3895,7 +4095,7 @@
     },
     {
       "word": "untie",
-      "concept": "activity",
+      "concept": "joining_and_separating",
       "antonyms": [
         "tie"
       ]
@@ -3917,7 +4117,7 @@
     },
     {
       "word": "use",
-      "concept": "wearing_out"
+      "concept": "using_up"
     },
     {
       "word": "view",
@@ -3955,7 +4155,7 @@
     },
     {
       "word": "want",
-      "concept": "need"
+      "concept": "goal"
     },
     {
       "word": "warm",
@@ -4091,7 +4291,7 @@
     },
     {
       "word": "wonder",
-      "concept": "knowing",
+      "concept": "more_to_learn",
       "synonyms": [
         "guess"
       ]
@@ -4135,7 +4335,7 @@
     },
     {
       "word": "wrong",
-      "concept": "knowing",
+      "concept": "being_wrong",
       "antonyms": [
         "right"
       ]

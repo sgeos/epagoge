@@ -21,7 +21,9 @@
     "p1.metal.s07": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "p1.metal.x11": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.metal.x12": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "p1.metal.x13": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.metal.x13": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.metal.x14": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.metal.x15": {"concepts": ["metal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ He turned to close the door, but the key would not come out.
 
 [p1.metal.x13]
 The air felt thick, and the walls seemed to breathe with him.
+
+[p1.metal.x14]
+The key felt heavier now, as if it had grown into the lock itself.
+
+[p1.metal.x15]
+When he opened them again, the ring was gone, and the table was empty.

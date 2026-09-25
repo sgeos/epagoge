@@ -20,7 +20,10 @@
     "p1.weather.x09": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.weather.x10": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "p1.weather.x11": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "p1.weather.x12": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "p1.weather.x12": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.weather.x13": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.weather.x14": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "p1.weather.x15": {"concepts": ["weather"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -63,3 +66,12 @@ The clouds grew dark and low above the trees.
 
 [p1.weather.x12]
 She pulls her blanket close, feeling safe from the storm outside.
+
+[p1.weather.x13]
+The rain hits the window hard.
+
+[p1.weather.x14]
+Then the wind drops and the rain stops.
+
+[p1.weather.x15]
+The sun comes back and the sky is bright again.

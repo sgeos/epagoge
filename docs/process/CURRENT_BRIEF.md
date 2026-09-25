@@ -1,18 +1,20 @@
 # Current brief. Level one end to end, then level two
 
 **Rewritten 2026-09-25** after the operator expanded the goal set to seven
-items. Delete when `COMPLETION_CONDITION.md` is met.
+items. **Revised the same day**, after the twelve short books reached the
+spread standard and the fifty-one missing graph concepts were authored.
+Delete when `COMPLETION_CONDITION.md` is met.
 
 ## The seven, with what each actually depends on
 
 | # | Goal | State | Real blocker |
 | --- | --- | --- | --- |
-| 1 | Dictionary coverage and closure | **Done. 661 of 661, closure 100%** | — |
-| 2 | Thesaurus, synonyms and antonyms | **Done. 194 antonyms, 132 synonyms over 749 entries** | — |
+| 1 | Dictionary coverage and closure | **Done. 732 of 732, closure 100%** | — |
+| 2 | Thesaurus, synonyms and antonyms | **Done. 194 antonyms, 132 synonyms over 849 entries** | — |
 | 3 | Missing words added to both | **Done, and now continuous.** `tools/admit.py` pulls words the corpus asks for | — |
-| 4 | Full level-one corpus draft | **46 of 49 teachable units; 21 of 47 books at 16 spreads** | Generation, plus 3 withheld units |
+| 4 | Full level-one corpus draft | **46 of 92 units have a book; every book is at 16 spreads** | Generation. Nothing else |
 | 5 | Train a level-one model | `epagoge.pilot` has the model, loop, device and paired orderings; torch 2.14 and MPS verified | **Item 4.** The corpus is about 2,200 words and cannot train anything |
-| 6 | Level-two dictionary and thesaurus | **Done. 721 of 721, closure 100%** | — |
+| 6 | Level-two dictionary and thesaurus | **Done. 766 of 766, closure 100%** | — |
 | 7 | Level-two ablation | Pre-registration has pending items | Items 4 and 5 |
 
 ## The sequencing claim, and it is the load-bearing one
@@ -62,20 +64,23 @@ Existing books hold six to fifteen spreads and are topped up by
 `generators/extend_books.py` rather than regenerated, because a short book
 is unfinished and its existing lines are already true and admissible.
 
-**The gate does not yet pass `--spreads`**, because 52 books would fail.
-Enable it once the corpus complies. A check that is wired and never run is
-the failure this project has recorded twice.
+**The gate passes `--spreads 16` as of 2026-09-25.** Every level-one book
+is at the standard, and a new short book now fails the gate rather than
+being noticed later. It was wired and unrun for two sessions, which is the
+failure this project has recorded three times.
 
-## Only 49 of the 92 units can have a book
+## Every one of the 92 units can now have a book
 
-**43 units carry only `introduces`**, naming a concept the graph does not
-hold, so the generator cannot derive its neighbours and skips it. Covering
-them means authoring 51 graph concepts with prerequisite edges and domain
-assignments, which is design work and is the operator's.
+**Closed 2026-09-25.** The 43 units that carried only `introduces` now
+teach a concept the graph holds. Fifty-one concepts were authored with
+prerequisite edges and domain assignments, the schedule moved them from
+`introduces` to `teaches`, and each has at least one word, which is what
+`words_for` needs before the generator will attempt a book at all.
 
-Saying "48 of 92" implied the gap was generation throughput. **It is a
-graph question, and the completion condition now scopes to units that can
-actually have a book.**
+Measured rather than asserted: **0 of 92 units are blocked**, 46 have a
+book and 46 do not. `docs/decisions/LEVEL_ONE_CONCEPTS.md` records the
+design. **Unblocking is not authoring**, and the remaining 46 books are
+ordinary generation work.
 
 ## Wrong turns, every one already made once
 
@@ -128,7 +133,21 @@ actually have a book.**
 - **The corpus validator is more permissive than the lexicon.** It accepts
   a word by stripping suffixes, so `clouds` passes on the strength of
   `cloud`. Exact tokenisation is the stricter check and it found twelve
-  plurals nothing else had.
+  plurals nothing else had, and later `stared` and `warmed` in two books
+  that had already passed.
+- **Subtracting an existing form is wrong if the form sits at a higher
+  level.** `admit.py` dropped `depends` from `depend` because a level-six
+  term already spelled it, and admitted a level-one verb missing a form it
+  needs at level one. Deduplicate against what is admissible here.
+- **A form may not collide with another term's headword.** `depends` and
+  `reporting` were headwords at level six, which is what an inflected form
+  filed as a base word looks like. Folding each into its base verb was the
+  fix; adding the form to the base as well was not.
+- **The teacher reaching for a word is evidence.** Two books could not be
+  finished by generation after six attempts each, and the rejects were a
+  coherent treasure-hunt vocabulary. Six spreads were authored by hand
+  instead, which the operator's rule already permits: edit the story, do
+  not reject it.
 
 ## Watch these two numbers
 

@@ -48,17 +48,31 @@ def main(argv: list[str]) -> int:
     raw = cast(dict[str, object], json.loads(path.read_text(encoding="utf-8")))
     terms = cast(list[dict[str, object]], raw["terms"])
     core = cast(list[str], raw["core"])
+    # **Admissible here, not merely present somewhere.** Keyed on presence,
+    # `depend` lost `depends` because a level-six term already spelled it,
+    # and the verb was admitted at level one without a form it needs there.
     taken = set(core) | {
-        f for t in terms for f in [str(t["word"]), *cast(list[str], t.get("forms", []))]
+        f
+        for t in terms
+        if int(cast(int, t["level"])) <= args.level
+        for f in [str(t["word"]), *cast(list[str], t.get("forms", []))]
     }
-    concepts = {str(t["concept"]) for t in terms}
+    # **Checked against the graph, not against the terms already filed.**
+    # Keyed on the terms, the first word of a newly authored concept could
+    # never be admitted, which is exactly when admitting one matters.
+    graph_path = ROOT / "curriculum/graph/concepts.json"
+    graph = cast(dict[str, object], json.loads(graph_path.read_text(encoding="utf-8")))
+    nodes = cast(list[dict[str, object]], graph["nodes"])
+    concepts = {str(node["id"]) for node in nodes}
 
     problems: list[str] = []
     for word, spec in wanted.items():
         if word in taken:
             problems.append(f"{word}: already admitted")
         if spec.get("concept") not in concepts:
-            problems.append(f"{word}: concept {spec.get('concept')!r} is not in use")
+            problems.append(
+                f"{word}: concept {spec.get('concept')!r} is not in the graph"
+            )
         if not spec.get("definition"):
             problems.append(f"{word}: no definition")
         for part in spec.get("pos", "").split():

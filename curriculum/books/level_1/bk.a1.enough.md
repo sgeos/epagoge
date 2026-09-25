@@ -9,7 +9,7 @@
   },
   "records": {
     "a1.enough.d00": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.enough"}, "defines": {"kind": "topic", "target": "a1.enough"}},
-    "a1.enough.d01": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:extra"}, "defines": {"kind": "word", "target": "extra"}},
+    "a1.enough.d01": {"concepts": ["only_what_was_asked"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:extra"}, "defines": {"kind": "word", "target": "extra"}},
     "a1.enough.d02": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plenty"}, "defines": {"kind": "word", "target": "plenty"}},
     "a1.enough.d03": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shortage"}, "defines": {"kind": "word", "target": "shortage"}},
     "a1.enough.d04": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spare"}, "defines": {"kind": "word", "target": "spare"}},

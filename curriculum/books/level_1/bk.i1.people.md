@@ -22,7 +22,8 @@
     "i1.people.x11": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "i1.people.x12": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "i1.people.x13": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "i1.people.x14": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "i1.people.x14": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.people.x15": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -71,3 +72,6 @@ The bridge stands strong, built with care and love.
 
 [i1.people.x14]
 The bridge stands strong, built with care and hands that worked as one.
+
+[i1.people.x15]
+Home is warm, and the night sky shines above.

@@ -52,7 +52,10 @@ INLINE
 run "seed graph"         env PYTHONPATH=src python3 tools/validate_graph.py curriculum/graph/concepts.json
 run "corpus"             env PYTHONPATH=src python3 tools/validate_corpus.py curriculum/graph/concepts.json "$CORPUS" curriculum/primitives.json curriculum/vocabulary.json
 run "schedule"           env PYTHONPATH=src python3 tools/validate_schedule.py curriculum/graph/concepts.json curriculum/primitives.json curriculum/schedule/level_01.json curriculum/schedule/level_02.json
-run "books"              env PYTHONPATH=src python3 tools/validate_books.py curriculum/graph/concepts.json curriculum/vocabulary.json curriculum/schedule curriculum/books/level_1
+# **--spreads is on.** It was wired and not run for as long as the corpus
+# had short books, which is a shape of failure this project has recorded
+# three times. Every level-one book reached sixteen spreads on 2026-09-25.
+run "books"              env PYTHONPATH=src python3 tools/validate_books.py curriculum/graph/concepts.json curriculum/vocabulary.json curriculum/schedule curriculum/books/level_1 --spreads 16
 run "closure"            env PYTHONPATH=src python3 tools/validate_closure.py curriculum/vocabulary.json curriculum/books/level_1 1
 run "closure L2"         env PYTHONPATH=src python3 tools/validate_closure.py curriculum/vocabulary.json curriculum/books/level_2 2
 

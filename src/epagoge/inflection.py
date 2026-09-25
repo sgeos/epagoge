@@ -26,6 +26,33 @@ SIBILANT_ENDINGS: Final[tuple[str, ...]] = ("s", "x", "z", "ch", "sh", "o")
 NO_DOUBLE: Final[frozenset[str]] = frozenset("wxy")
 """Never doubled, so ``show`` gives showing and not showwing."""
 
+NO_DOUBLE_MULTISYLLABIC: Final[frozenset[str]] = frozenset(
+    {
+        "answer",
+        "cover",
+        "discover",
+        "enter",
+        "happen",
+        "listen",
+        "open",
+        "order",
+        "remember",
+        "uncover",
+        "whisper",
+        "wonder",
+    }
+)
+"""Longer verbs ending consonant-vowel-consonant whose final syllable is
+unstressed, so the consonant does not double.
+
+**Spelling does not say which way these go.** ``admit`` doubles and
+``visit`` does not, and nothing in the letters distinguishes them. Every
+such verb is therefore classified by hand, either here or in
+:data:`IRREGULAR`, and :func:`doubling_is_ambiguous` reports any that are
+classified in neither so the gate can refuse them. ``admit`` reached the
+lexicon as ``admited`` before this list existed.
+"""
+
 IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     # base: (past, past participle, present participle when not regular)
     "be": ("was", "been", "being"),
@@ -112,6 +139,13 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     "wake": ("woke", "woken", "waking"),
     "wear": ("wore", "worn", "wearing"),
     "write": ("wrote", "written", "writing"),
+    # Final syllable stressed, so the consonant doubles. Listed rather than
+    # derived, because stress is not recoverable from spelling.
+    "admit": ("admitted", "admitted", "admitting"),
+    "permit": ("permitted", "permitted", "permitting"),
+    "prefer": ("preferred", "preferred", "preferring"),
+    "quit": ("quit", "quit", "quitting"),
+    "spend": ("spent", "spent", "spending"),
 }
 """Verbs whose past forms are not derivable. The present participle is
 listed too so that one lookup answers the whole question."""
@@ -138,6 +172,26 @@ def _doubles_final(word: str) -> bool:
         and word[-2] in VOWELS
         and _is_consonant(word[-3])
     )
+
+
+def doubling_is_ambiguous(word: str) -> bool:
+    """True when the word is one whose doubling must be stated, not derived.
+
+    Fires for a verb of more than one syllable ending consonant-vowel-
+    consonant. ``_doubles_final`` answers no for every such word, which is
+    right for ``visit`` and wrong for ``admit``, so a word this reports must
+    appear in :data:`IRREGULAR` or in :data:`NO_DOUBLE_MULTISYLLABIC`.
+    """
+    if len(word) < 3 or sum(1 for c in word if c in VOWELS) < 2:
+        return False
+    if not (
+        _is_consonant(word[-1])
+        and word[-1] not in NO_DOUBLE
+        and word[-2] in VOWELS
+        and _is_consonant(word[-3])
+    ):
+        return False
+    return word not in IRREGULAR and word not in NO_DOUBLE_MULTISYLLABIC
 
 
 def third_person(word: str) -> str:

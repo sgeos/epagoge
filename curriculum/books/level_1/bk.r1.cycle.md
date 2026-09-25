@@ -21,7 +21,9 @@
     "r1.cycle.s04": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "r1.cycle.s52": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.cycle"}},
     "r1.cycle.x12": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "r1.cycle.x13": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "r1.cycle.x13": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "r1.cycle.x14": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "r1.cycle.x15": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ Day came again, bright and warm, with birds singing in the trees.
 
 [r1.cycle.x13]
 The child smiled, ready to play outside with a red ball.
+
+[r1.cycle.x14]
+The child picked it up, brushed off the dirt, and ran back toward the house.
+
+[r1.cycle.x15]
+The sun warmed the grass as the child sat up, smiling, and threw the ball high into the air.

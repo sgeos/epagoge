@@ -79,6 +79,29 @@ an early chapter book at the end of third grade, which is why it was
 chosen, and the evenness is a consequence worth noting and not evidence
 for anything.
 
+### Words on the page
+
+**Operator figure for level two, 2026-09-25.** About one hundred and
+twenty-five words to the page, give or take twenty-five, so a spread
+carries two hundred to three hundred and a sixty-four spread book runs
+between **12,800 and 19,200 words**.
+
+| Level | Words per page | Words per book |
+| --- | --- | --- |
+| 1 | not stated; picture-dominated | 100 to 800 |
+| 2 | **100 to 150** | **12,800 to 19,200** |
+| 3 and 4 | **not settled** | **not settled** |
+
+Level one was fixed as a word count directly rather than as a density,
+because a picture book's page is mostly picture. Levels three and four
+have a page count from the binding and no density, and `typical_words`
+reports nothing for them rather than reporting the level-one band, since a
+made-up figure presented as a standard is worse than a gap.
+
+**The level-two figure is a range that spans fifty per cent**, which is
+wide enough that it will not by itself catch a book of the wrong shape. It
+is reported and never enforced, like every other length figure here.
+
 **Above level four the unit stops being a book.** A paper is eight to
 twenty pages and a monograph is bound to no standard length, so a spread
 count measures nothing. The format standard applies to levels one through
@@ -86,7 +109,9 @@ four and the artifact at levels five through seven is the paper.
 
 ### Lexicon
 
-**Measured**: level one admits **738** words, level two **772**.
+**Measured 2026-09-25**, after the fifty-one level-one concepts were
+authored: level one admits **769** words, level two **803**. The earlier
+figures of 738 and 772 predate that work.
 
 **Proposed, and not measured**: the controlled lexicon roughly doubles per
 level to level four, then opens.
@@ -113,9 +138,12 @@ smaller than a reading one.
 
 ### Concept complexity
 
-**Measured**: level one teaches 70 concepts at a maximum prerequisite
-depth of **5**; level two adds 10 at depth **6**. The graph holds 117
-nodes at a maximum depth of **10**.
+**Measured 2026-09-25**: level one teaches **121** concepts at a maximum
+prerequisite depth of **8**; level two adds 10. The graph holds **168**
+nodes at a maximum depth of **10**. The earlier reading of 70 concepts at
+depth 5 was taken before `LEVEL_ONE_CONCEPTS.md` added fifty-one nodes,
+and the depth rose because the new concepts sit on top of the old ones
+rather than beside them.
 
 Depth in the graph is the candidate metric and **it is not yet calibrated
 against anything**. A level's complexity ceiling should be the deepest
@@ -125,7 +153,9 @@ the graph is too small above level two for a target to mean anything yet.
 ## What this does not settle
 
 **The level-two page count changes from 64 to 128 and nothing has been
-built to it.** Level two holds a dictionary and no books.
+built to it.** Level two holds a dictionary and a thesaurus and no books.
 
-**The 43 level-one units that only introduce a concept are unaffected.**
-They remain blocked on authoring 51 graph concepts.
+**Concept complexity per level is still uncalibrated.** Depth is the
+candidate metric, level one now measures eight, and no target says whether
+eight is right. The number moved because concepts were added, which is
+evidence that the metric tracks the graph rather than the level.

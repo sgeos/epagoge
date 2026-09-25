@@ -77,7 +77,7 @@
         {
           "id": "r1.sure",
           "form": "I know the cup is here. I think the spoon is here. They are not the same.",
-          "introduces": [
+          "teaches": [
             "how_sure"
           ],
           "primitives": [
@@ -88,7 +88,7 @@
         {
           "id": "r1.stale",
           "form": "The mark said the cup was full. That was before. It is empty now.",
-          "introduces": [
+          "teaches": [
             "out_of_date"
           ],
           "primitives": [
@@ -99,7 +99,7 @@
         {
           "id": "r1.who",
           "form": "She said the cup was full. Write down that it was her who said it.",
-          "introduces": [
+          "teaches": [
             "who_said_it"
           ],
           "primitives": [
@@ -110,7 +110,7 @@
         {
           "id": "r1.unit",
           "form": "Three cups of water. You have to say cups, or three means nothing.",
-          "introduces": [
+          "teaches": [
             "unit"
           ],
           "primitives": [
@@ -284,7 +284,7 @@
         {
           "id": "p1.join",
           "form": "Put the lid on the pot. Take the lid off the pot.",
-          "introduces": [
+          "teaches": [
             "joining_and_separating"
           ],
           "primitives": [
@@ -335,7 +335,7 @@
         {
           "id": "m1.logic",
           "form": "If it rains then the ground is wet. All, some, none. It cannot be both so and not so.",
-          "introduces": [
+          "teaches": [
             "if_then",
             "all_some_none",
             "not_both"
@@ -483,7 +483,7 @@
         {
           "id": "a1.goal",
           "form": "She wants the cup on the table. That is what she is working toward.",
-          "introduces": [
+          "teaches": [
             "goal"
           ],
           "primitives": [
@@ -493,7 +493,7 @@
         {
           "id": "a1.order",
           "form": "Open the box first. Then take out the cup. Not the other way.",
-          "introduces": [
+          "teaches": [
             "doing_in_order"
           ],
           "primitives": [
@@ -503,7 +503,7 @@
         {
           "id": "a1.done",
           "form": "The cup is on the table now. The job is done.",
-          "introduces": [
+          "teaches": [
             "finished_or_not"
           ],
           "primitives": [
@@ -513,7 +513,7 @@
         {
           "id": "a1.plan",
           "form": "Before you do it, you think how. Then you do it that way.",
-          "introduces": [
+          "teaches": [
             "plan"
           ],
           "primitives": [
@@ -524,7 +524,7 @@
         {
           "id": "a1.mistake",
           "form": "He meant to put it on the shelf. He put it on the floor.",
-          "introduces": [
+          "teaches": [
             "mistake"
           ],
           "primitives": [
@@ -546,7 +546,7 @@
         {
           "id": "a1.only_asked",
           "form": "She asked for one cup. You brought five. That is not better.",
-          "introduces": [
+          "teaches": [
             "only_what_was_asked"
           ],
           "primitives": [
@@ -607,7 +607,7 @@
         {
           "id": "c1.leaving_out",
           "form": "I told you the cup fell. I did not tell you where it fell.",
-          "introduces": [
+          "teaches": [
             "leaving_out"
           ],
           "primitives": [
@@ -617,7 +617,7 @@
         {
           "id": "c1.close_enough",
           "form": "The cup is about half full. Not exactly half. Near enough to use.",
-          "introduces": [
+          "teaches": [
             "close_enough"
           ],
           "primitives": [
@@ -628,7 +628,7 @@
         {
           "id": "c1.more_to_learn",
           "form": "That is the short way to say it. There is more to it than that.",
-          "introduces": [
+          "teaches": [
             "more_to_learn"
           ],
           "primitives": [
@@ -639,7 +639,7 @@
         {
           "id": "c1.real_pretend",
           "form": "The toy dog is not a dog. We say it is, and it is not.",
-          "introduces": [
+          "teaches": [
             "real_and_pretend"
           ],
           "revisits": [
@@ -653,7 +653,7 @@
         {
           "id": "c1.story",
           "form": "She told what happened. Some of it happened and some she made up.",
-          "introduces": [
+          "teaches": [
             "story"
           ],
           "primitives": [
@@ -699,7 +699,7 @@
         {
           "id": "c1.what_you_saw",
           "form": "You saw him take it. You did not see why. Say what you saw.",
-          "introduces": [
+          "teaches": [
             "saying_what_you_saw"
           ],
           "primitives": [
@@ -710,7 +710,7 @@
         {
           "id": "c1.what_you_did",
           "form": "You broke it. Say that you broke it.",
-          "introduces": [
+          "teaches": [
             "saying_what_you_did"
           ],
           "primitives": [
@@ -726,7 +726,7 @@
         {
           "id": "ac1.tally",
           "form": "Make one mark for each one. Count the marks to know how many.",
-          "introduces": [
+          "teaches": [
             "keeping_count"
           ],
           "primitives": [
@@ -748,7 +748,7 @@
         {
           "id": "ac1.same_amount",
           "form": "Pour the water into the bowl. There is still as much water.",
-          "introduces": [
+          "teaches": [
             "same_amount"
           ],
           "primitives": [
@@ -769,7 +769,7 @@
         {
           "id": "ac1.using_up",
           "form": "There was water. You drank some. Now there is less.",
-          "introduces": [
+          "teaches": [
             "using_up"
           ],
           "primitives": [
@@ -785,7 +785,7 @@
         {
           "id": "h1.findout",
           "form": "How do you know. Let us go and find out. Now we have settled it.",
-          "introduces": [
+          "teaches": [
             "finding_out",
             "settling_it"
           ],
@@ -798,7 +798,7 @@
         {
           "id": "h1.before",
           "form": "Nobody knew that once. Someone found it out.",
-          "introduces": [
+          "teaches": [
             "not_always_known"
           ],
           "primitives": [
@@ -808,7 +808,7 @@
         {
           "id": "h1.guess",
           "form": "Maybe it is in the box. We do not know yet. Let us look.",
-          "introduces": [
+          "teaches": [
             "guess"
           ],
           "primitives": [
@@ -819,7 +819,7 @@
         {
           "id": "h1.wrong",
           "form": "She thought it was in the box. She looked. It was not.",
-          "introduces": [
+          "teaches": [
             "being_wrong"
           ],
           "primitives": [
@@ -830,7 +830,7 @@
         {
           "id": "h1.faith",
           "form": "Someone may be watching. You cannot tell. Do your work as though.",
-          "introduces": [
+          "teaches": [
             "taking_on_faith"
           ],
           "primitives": [
@@ -841,7 +841,7 @@
         {
           "id": "h1.resting",
           "form": "You did not check the first thing. So you have not checked the next one either.",
-          "introduces": [
+          "teaches": [
             "resting_on_a_guess"
           ],
           "primitives": [
@@ -857,7 +857,7 @@
         {
           "id": "i1.reason",
           "form": "That is right because. That is not true because. Why do you say so.",
-          "introduces": [
+          "teaches": [
             "giving_a_reason",
             "agreeing",
             "disagreeing"
@@ -870,7 +870,7 @@
         {
           "id": "i1.hold_or_yield",
           "form": "I still say so, and here is why. You are right, I was wrong.",
-          "introduces": [
+          "teaches": [
             "keeping_your_claim",
             "changing_your_mind"
           ],
@@ -905,7 +905,7 @@
         {
           "id": "i1.rule",
           "form": "You must not run inside. That holds today and it held before. The rule is written down. That does not make it the rule they use.",
-          "introduces": [
+          "teaches": [
             "rule"
           ],
           "primitives": [
@@ -929,7 +929,7 @@
         {
           "id": "i1.judged",
           "form": "She will say if you did it well. You cannot see how she decides.",
-          "introduces": [
+          "teaches": [
             "judged_by_another"
           ],
           "primitives": [
@@ -945,7 +945,7 @@
         {
           "id": "b1.keeping_going",
           "form": "Living things need food and water to keep going. They grow.",
-          "introduces": [
+          "teaches": [
             "keeping_going",
             "needing_supply",
             "growing"
@@ -958,7 +958,7 @@
         {
           "id": "b1.mending",
           "form": "A cut closes up by itself. A broken cup does not.",
-          "introduces": [
+          "teaches": [
             "mending"
           ],
           "primitives": [
@@ -1008,7 +1008,7 @@
         {
           "id": "b1.hurt",
           "form": "The cup broke and stayed broken. The cut on her hand closed up.",
-          "introduces": [
+          "teaches": [
             "being_hurt"
           ],
           "primitives": [
@@ -1024,7 +1024,7 @@
         {
           "id": "n1.should",
           "form": "You should not run into the street. You should hold the handle.",
-          "introduces": [
+          "teaches": [
             "should_and_should_not"
           ],
           "primitives": [
@@ -1035,7 +1035,7 @@
         {
           "id": "n1.two_shoulds",
           "form": "You were told to hurry. You were told to be careful. Both at once.",
-          "introduces": [
+          "teaches": [
             "two_shoulds_at_once"
           ],
           "primitives": [
@@ -1046,7 +1046,7 @@
         {
           "id": "n1.fair",
           "form": "She got two and he got one. He says that is not fair.",
-          "introduces": [
+          "teaches": [
             "fair_and_unfair"
           ],
           "primitives": [
@@ -1057,7 +1057,7 @@
         {
           "id": "n1.promise",
           "form": "You said you would. Now you have to, because you said so.",
-          "introduces": [
+          "teaches": [
             "promise"
           ],
           "primitives": [
@@ -1079,7 +1079,7 @@
         {
           "id": "n1.allowed",
           "form": "You may have one. You must not have both.",
-          "introduces": [
+          "teaches": [
             "allowed_or_not"
           ],
           "primitives": [
@@ -1090,7 +1090,7 @@
         {
           "id": "n1.choosing",
           "form": "You cannot have both. Take one and leave the other.",
-          "introduces": [
+          "teaches": [
             "choosing"
           ],
           "primitives": [
@@ -1101,7 +1101,7 @@
         {
           "id": "n1.keep_trying",
           "form": "It looks like it cannot be done. You try again while you still can.",
-          "introduces": [
+          "teaches": [
             "keep_trying_or_stop"
           ],
           "primitives": [
@@ -1112,7 +1112,7 @@
         {
           "id": "n1.right_reason",
           "form": "You put it back because it was not yours. Not because she was looking.",
-          "introduces": [
+          "teaches": [
             "right_reason"
           ],
           "primitives": [

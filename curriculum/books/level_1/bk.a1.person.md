@@ -12,7 +12,7 @@
     "a1.person.d01": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:build"}, "defines": {"kind": "word", "target": "build"}},
     "a1.person.d02": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:carry"}, "defines": {"kind": "word", "target": "carry"}},
     "a1.person.d03": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dig"}, "defines": {"kind": "word", "target": "dig"}},
-    "a1.person.d04": {"concepts": ["need"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:food"}, "defines": {"kind": "word", "target": "food"}},
+    "a1.person.d04": {"concepts": ["needing_supply"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:food"}, "defines": {"kind": "word", "target": "food"}},
     "a1.person.d05": {"concepts": ["need"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hungry"}, "defines": {"kind": "word", "target": "hungry"}},
     "a1.person.s01": {"concepts": ["person", "activity", "need"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},
     "a1.person.s02": {"concepts": ["person", "activity", "need"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},

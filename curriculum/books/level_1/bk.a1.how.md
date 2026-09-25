@@ -9,10 +9,10 @@
   },
   "records": {
     "a1.how.d00": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.how"}, "defines": {"kind": "topic", "target": "a1.how"}},
-    "a1.how.d01": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:choose"}, "defines": {"kind": "word", "target": "choose"}},
+    "a1.how.d01": {"concepts": ["choosing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:choose"}, "defines": {"kind": "word", "target": "choose"}},
     "a1.how.d02": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:job"}, "defines": {"kind": "word", "target": "job"}},
     "a1.how.d03": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:manner"}, "defines": {"kind": "word", "target": "manner"}},
-    "a1.how.d04": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:method"}, "defines": {"kind": "word", "target": "method"}},
+    "a1.how.d04": {"concepts": ["plan"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:method"}, "defines": {"kind": "word", "target": "method"}},
     "a1.how.s01": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
     "a1.how.s02": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},
     "a1.how.s03": {"concepts": ["way_of_doing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},

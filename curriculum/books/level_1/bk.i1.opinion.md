@@ -9,8 +9,8 @@
   },
   "records": {
     "i1.opinion.d00": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "topic:i1.opinion"}, "defines": {"kind": "topic", "target": "i1.opinion"}},
-    "i1.opinion.d01": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:believe"}, "defines": {"kind": "word", "target": "believe"}},
-    "i1.opinion.d02": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:holds"}, "defines": {"kind": "word", "target": "holds"}},
+    "i1.opinion.d01": {"concepts": ["taking_on_faith"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:believe"}, "defines": {"kind": "word", "target": "believe"}},
+    "i1.opinion.d02": {"concepts": ["keeping_your_claim"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:holds"}, "defines": {"kind": "word", "target": "holds"}},
     "i1.opinion.d03": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:view"}, "defines": {"kind": "word", "target": "view"}},
     "i1.opinion.s01": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-know-differently"}},
     "i1.opinion.s02": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-know-differently"}},
@@ -21,7 +21,9 @@
     "i1.opinion.x10": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "i1.opinion.x11": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
     "i1.opinion.x12": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
-    "i1.opinion.x13": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
+    "i1.opinion.x13": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.opinion.x14": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},
+    "i1.opinion.x15": {"concepts": ["opinion"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}}
   }
 }
 ---
@@ -67,3 +69,9 @@ They stand side by side, arms not crossed, hands reaching out to the sky.
 
 [i1.opinion.x13]
 They both look up, their faces soft with wonder, sharing the same sky.
+
+[i1.opinion.x14]
+They both reached up again, their hands open, as if to catch the sky itself.
+
+[i1.opinion.x15]
+They stood together, arms not crossed, hands reaching out to the sky.

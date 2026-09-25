@@ -10,9 +10,9 @@
   "records": {
     "c1.know.d00": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.know"}, "defines": {"kind": "topic", "target": "c1.know"}},
     "c1.know.d01": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forget"}, "defines": {"kind": "word", "target": "forget"}},
-    "c1.know.d02": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:idea"}, "defines": {"kind": "word", "target": "idea"}},
+    "c1.know.d02": {"concepts": ["guess"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:idea"}, "defines": {"kind": "word", "target": "idea"}},
     "c1.know.d03": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:knew"}, "defines": {"kind": "word", "target": "knew"}},
-    "c1.know.d04": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:secret"}, "defines": {"kind": "word", "target": "secret"}},
+    "c1.know.d04": {"concepts": ["leaving_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:secret"}, "defines": {"kind": "word", "target": "secret"}},
     "c1.know.s01": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}},
     "c1.know.s02": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}},
     "c1.know.s03": {"concepts": ["knowing"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:looking-tells-you"}},
