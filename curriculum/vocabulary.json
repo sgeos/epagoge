@@ -33,6 +33,7 @@
     "can",
     "come",
     "comes",
+    "coming",
     "could",
     "did",
     "do",
@@ -42,6 +43,7 @@
     "even",
     "every",
     "find",
+    "finding",
     "finds",
     "for",
     "found",
@@ -49,14 +51,18 @@
     "gave",
     "get",
     "gets",
+    "getting",
     "give",
     "gives",
+    "giving",
     "go",
     "goes",
+    "going",
     "got",
     "had",
     "has",
     "have",
+    "having",
     "he",
     "here",
     "how",
@@ -69,6 +75,7 @@
     "its",
     "just",
     "keep",
+    "keeping",
     "keeps",
     "kept",
     "leave",
@@ -76,12 +83,14 @@
     "left",
     "let",
     "lets",
+    "letting",
     "look",
     "looked",
     "looks",
     "made",
     "make",
     "makes",
+    "making",
     "may",
     "might",
     "more",
@@ -103,12 +112,17 @@
     "out",
     "over",
     "put",
+    "puts",
+    "putting",
     "said",
     "same",
     "saw",
     "say",
+    "saying",
     "says",
     "see",
+    "seeing",
+    "seen",
     "sees",
     "she",
     "so",
@@ -117,7 +131,9 @@
     "such",
     "take",
     "takes",
+    "taking",
     "tell",
+    "telling",
     "tells",
     "than",
     "that",
@@ -154,6 +170,7 @@
     "will",
     "with",
     "would",
+    "yes",
     "yet",
     "you",
     "your"
@@ -310,7 +327,10 @@
     {
       "word": "ask",
       "concept": "asking",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "asks"
+      ]
     },
     {
       "word": "asked",
@@ -430,7 +450,12 @@
     {
       "word": "begin",
       "concept": "sequence",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "beginning",
+        "begins",
+        "begun"
+      ]
     },
     {
       "word": "behind",
@@ -690,7 +715,11 @@
     {
       "word": "call",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "calling",
+        "calls"
+      ]
     },
     {
       "word": "called",
@@ -1315,7 +1344,13 @@
     {
       "word": "eat",
       "concept": "living_and_not_living",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "ate",
+        "eaten",
+        "eating",
+        "eats"
+      ]
     },
     {
       "word": "edge",
@@ -2141,7 +2176,12 @@
     {
       "word": "know",
       "concept": "being_told",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "knowing",
+        "known",
+        "knows"
+      ]
     },
     {
       "word": "lack",
@@ -2171,7 +2211,7 @@
     {
       "word": "last",
       "concept": "sequence",
-      "level": 2
+      "level": 1
     },
     {
       "word": "lasted",
@@ -2324,7 +2364,11 @@
     {
       "word": "living",
       "concept": "living_and_not_living",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "live",
+        "lives"
+      ]
     },
     {
       "word": "lock",
@@ -2354,6 +2398,11 @@
     {
       "word": "lost",
       "concept": "presence",
+      "level": 1
+    },
+    {
+      "word": "lot",
+      "concept": "more_and_fewer",
       "level": 1
     },
     {
@@ -2805,6 +2854,14 @@
       "level": 1
     },
     {
+      "word": "oven",
+      "concept": "household_object",
+      "forms": [
+        "ovens"
+      ],
+      "level": 1
+    },
+    {
       "word": "own",
       "concept": "having",
       "level": 1
@@ -2832,6 +2889,11 @@
     {
       "word": "paid",
       "concept": "exchange",
+      "level": 1
+    },
+    {
+      "word": "pain",
+      "concept": "danger",
       "level": 1
     },
     {
@@ -3325,7 +3387,12 @@
     {
       "word": "run",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "ran",
+        "running",
+        "runs"
+      ]
     },
     {
       "word": "rush",
@@ -3499,6 +3566,14 @@
       "word": "should",
       "concept": "explanation",
       "level": 6
+    },
+    {
+      "word": "shoulder",
+      "concept": "body_part",
+      "forms": [
+        "shoulders"
+      ],
+      "level": 1
     },
     {
       "word": "show",
@@ -3753,6 +3828,14 @@
     {
       "word": "spoon",
       "concept": "household_object",
+      "level": 1
+    },
+    {
+      "word": "spot",
+      "concept": "spatial_position",
+      "forms": [
+        "spots"
+      ],
       "level": 1
     },
     {
@@ -4128,7 +4211,11 @@
     {
       "word": "think",
       "concept": "knowing",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "thinking",
+        "thinks"
+      ]
     },
     {
       "word": "third",
@@ -4412,7 +4499,10 @@
     {
       "word": "use",
       "concept": "wearing_out",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "uses"
+      ]
     },
     {
       "word": "used",
@@ -4467,7 +4557,12 @@
     {
       "word": "want",
       "concept": "need",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "wanted",
+        "wanting",
+        "wants"
+      ]
     },
     {
       "word": "warm",
@@ -4607,7 +4702,11 @@
     {
       "word": "work",
       "concept": "activity",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "worked",
+        "works"
+      ]
     },
     {
       "word": "working",
@@ -4667,6 +4766,11 @@
     {
       "word": "yesterday",
       "concept": "weather",
+      "level": 1
+    },
+    {
+      "word": "young",
+      "concept": "physical_property",
       "level": 1
     },
     {
