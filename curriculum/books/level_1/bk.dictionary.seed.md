@@ -581,7 +581,20 @@
     "dict.1.proof": {"concepts": ["settling_it"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:proof"}, "defines": {"kind": "word", "target": "proof"}},
     "dict.1.special": {"concepts": ["same_and_different"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:special"}, "defines": {"kind": "word", "target": "special"}},
     "dict.1.palm": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:palm"}, "defines": {"kind": "word", "target": "palm"}},
-    "dict.1.clearing": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:clearing"}, "defines": {"kind": "word", "target": "clearing"}}
+    "dict.1.clearing": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:clearing"}, "defines": {"kind": "word", "target": "clearing"}},
+    "dict.1.apple": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:apple"}, "defines": {"kind": "word", "target": "apple"}},
+    "dict.1.skin": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:skin"}, "defines": {"kind": "word", "target": "skin"}},
+    "dict.1.wound": {"concepts": ["being_hurt"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wound"}, "defines": {"kind": "word", "target": "wound"}},
+    "dict.1.scab": {"concepts": ["mending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:scab"}, "defines": {"kind": "word", "target": "scab"}},
+    "dict.1.feather": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:feather"}, "defines": {"kind": "word", "target": "feather"}},
+    "dict.1.life": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:life"}, "defines": {"kind": "word", "target": "life"}},
+    "dict.1.tiny": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tiny"}, "defines": {"kind": "word", "target": "tiny"}},
+    "dict.1.handle": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:handle"}, "defines": {"kind": "word", "target": "handle"}},
+    "dict.1.wave": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wave"}, "defines": {"kind": "word", "target": "wave"}},
+    "dict.1.alone": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alone"}, "defines": {"kind": "word", "target": "alone"}},
+    "dict.1.desk": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:desk"}, "defines": {"kind": "word", "target": "desk"}},
+    "dict.1.neat": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:neat"}, "defines": {"kind": "word", "target": "neat"}},
+    "dict.1.thought": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thought"}, "defines": {"kind": "word", "target": "thought"}}
   }
 }
 ---
@@ -2307,3 +2320,42 @@ The inside of your hand.
 
 [dict.1.clearing]
 An open space among the trees.
+
+[dict.1.apple]
+A round red or green thing that grows on a tree and you eat.
+
+[dict.1.skin]
+The soft cover on the outside of your body.
+
+[dict.1.wound]
+A hurt place on the body.
+
+[dict.1.scab]
+The hard cover that grows over a wound while it mends.
+
+[dict.1.feather]
+One of the light soft things that cover a bird.
+
+[dict.1.life]
+Being alive.
+
+[dict.1.tiny]
+Very small.
+
+[dict.1.handle]
+The part of a thing you hold.
+
+[dict.1.wave]
+Water that rises and falls as it moves.
+
+[dict.1.alone]
+With nobody else.
+
+[dict.1.desk]
+A table you work at.
+
+[dict.1.neat]
+Put in order, with each thing in its place.
+
+[dict.1.thought]
+Something you think.

@@ -148,6 +148,7 @@
     "they",
     "this",
     "those",
+    "though",
     "through",
     "to",
     "told",
@@ -314,7 +315,7 @@
     {
       "word": "alone",
       "concept": "self_and_other",
-      "level": 5
+      "level": 1
     },
     {
       "word": "already",
@@ -383,6 +384,15 @@
         "appeared",
         "appearing",
         "appears"
+      ]
+    },
+    {
+      "word": "apple",
+      "concept": "plant",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "apples"
       ]
     },
     {
@@ -1277,7 +1287,12 @@
     {
       "word": "clear",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "cleared",
+        "clears"
+      ]
     },
     {
       "word": "clearing",
@@ -1710,6 +1725,15 @@
         "depended",
         "depending",
         "depends"
+      ]
+    },
+    {
+      "word": "desk",
+      "concept": "household_object",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "desks"
       ]
     },
     {
@@ -2280,6 +2304,15 @@
       ]
     },
     {
+      "word": "feather",
+      "concept": "body_part",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "feathers"
+      ]
+    },
+    {
       "word": "feed",
       "concept": "needing_supply",
       "level": 1,
@@ -2831,6 +2864,15 @@
         "hands"
       ],
       "pos": "verb"
+    },
+    {
+      "word": "handle",
+      "concept": "household_object",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "handles"
+      ]
     },
     {
       "word": "hang",
@@ -3438,7 +3480,11 @@
     {
       "word": "large",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "larger",
+        "largest"
+      ]
     },
     {
       "word": "last",
@@ -3578,6 +3624,12 @@
       "pos": "verb"
     },
     {
+      "word": "life",
+      "concept": "living_and_not_living",
+      "level": 1,
+      "pos": "noun"
+    },
+    {
       "word": "lift",
       "concept": "force",
       "level": 1,
@@ -3596,10 +3648,12 @@
       "word": "light",
       "concept": "physical_property",
       "level": 1,
-      "pos": "noun",
+      "pos": "noun verb",
       "forms": [
+        "lighted",
         "lighter",
         "lightest",
+        "lighting",
         "lights"
       ]
     },
@@ -4188,6 +4242,11 @@
     {
       "word": "nearby",
       "concept": "spatial_position",
+      "level": 1
+    },
+    {
+      "word": "neat",
+      "concept": "physical_property",
       "level": 1
     },
     {
@@ -5395,6 +5454,15 @@
       "level": 1
     },
     {
+      "word": "scab",
+      "concept": "mending",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "scabs"
+      ]
+    },
+    {
       "word": "scared",
       "concept": "feeling",
       "level": 1
@@ -5814,6 +5882,15 @@
       "word": "size",
       "concept": "physical_property",
       "level": 1
+    },
+    {
+      "word": "skin",
+      "concept": "body_part",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "skins"
+      ]
     },
     {
       "word": "skip",
@@ -6731,8 +6808,7 @@
       "level": 1,
       "forms": [
         "thinking",
-        "thinks",
-        "thought"
+        "thinks"
       ],
       "pos": "verb"
     },
@@ -6750,6 +6826,15 @@
       "word": "thirty",
       "concept": "natural_number",
       "level": 2
+    },
+    {
+      "word": "thought",
+      "concept": "knowing",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "thoughts"
+      ]
     },
     {
       "word": "thousand",
@@ -6791,7 +6876,11 @@
     {
       "word": "tight",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "forms": [
+        "tighter",
+        "tightest"
+      ]
     },
     {
       "word": "time",
@@ -6804,6 +6893,11 @@
     {
       "word": "tin",
       "concept": "metal",
+      "level": 1
+    },
+    {
+      "word": "tiny",
+      "concept": "physical_property",
       "level": 1
     },
     {
@@ -7283,6 +7377,17 @@
       "level": 1
     },
     {
+      "word": "wave",
+      "concept": "liquid",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "waved",
+        "waves",
+        "waving"
+      ]
+    },
+    {
       "word": "way",
       "concept": "discourse_marker",
       "level": 1,
@@ -7522,6 +7627,15 @@
       "level": 1
     },
     {
+      "word": "wound",
+      "concept": "being_hurt",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "wounds"
+      ]
+    },
+    {
       "word": "write",
       "concept": "writing",
       "level": 1,
@@ -7608,6 +7722,7 @@
     }
   ],
   "substitutions": {
+    "advantage": "what helps",
     "amount": "how much",
     "ancient": "very old",
     "anymore": "now",
@@ -7619,22 +7734,28 @@
     "beside": "next to",
     "beyond": "past",
     "can't": "cannot",
+    "carefully": "with care",
     "cause": "makes",
     "causing": "making",
     "center": "middle",
+    "condition": "the way a thing is",
     "connects": "joins",
     "corresponds": "goes with",
+    "damage": "harm",
     "damaged": "broken",
     "didn't": "did not",
     "don't": "do not",
     "duration": "how long",
     "during": "when",
+    "effort": "hard work",
     "especially": "most of all",
     "event": "thing that happens",
     "evidence": "what shows it",
     "faintly": "a little",
     "fake": "not real",
     "final": "last",
+    "fluttered": "moved quickly",
+    "focused": "looking at it",
     "form": "shape",
     "golden": "yellow",
     "great": "big",
@@ -7645,8 +7766,11 @@
     "isn't": "is not",
     "it's": "it is",
     "item": "thing",
+    "leading": "going first",
+    "led": "took",
     "length": "how long",
     "location": "place",
+    "matter": "be important",
     "moonlight": "light from the moon",
     "object": "thing",
     "parchment": "paper",
@@ -7654,16 +7778,20 @@
     "present": "here",
     "realized": "knew",
     "rely": "depend on",
+    "required": "needed",
     "sequence": "order",
+    "sidewalk": "path",
+    "silence": "no sound",
     "similar": "like",
     "single": "one",
+    "slightly": "a little",
     "specific": "that one",
+    "store": "keep",
     "sunlight": "light from the sun",
     "that's": "that is",
     "there's": "there is",
     "they're": "they are",
     "thickness": "how thick",
-    "though": "but",
     "unknown": "not known",
     "unseen": "not seen",
     "wasn't": "was not",

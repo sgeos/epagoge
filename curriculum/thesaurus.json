@@ -76,6 +76,10 @@
       "concept": "allowed_or_not"
     },
     {
+      "word": "alone",
+      "concept": "self_and_other"
+    },
+    {
       "word": "already",
       "concept": "sequence"
     },
@@ -123,6 +127,10 @@
     {
       "word": "appear",
       "concept": "presence"
+    },
+    {
+      "word": "apple",
+      "concept": "plant"
     },
     {
       "word": "argue",
@@ -866,6 +874,10 @@
       "concept": "resting_on_a_guess"
     },
     {
+      "word": "desk",
+      "concept": "household_object"
+    },
+    {
       "word": "diary",
       "concept": "written_record"
     },
@@ -1220,6 +1232,10 @@
       "concept": "feeling"
     },
     {
+      "word": "feather",
+      "concept": "body_part"
+    },
+    {
       "word": "feed",
       "concept": "needing_supply"
     },
@@ -1569,6 +1585,10 @@
     {
       "word": "hand",
       "concept": "body_part"
+    },
+    {
+      "word": "handle",
+      "concept": "household_object"
     },
     {
       "word": "hang",
@@ -2036,6 +2056,10 @@
       ]
     },
     {
+      "word": "life",
+      "concept": "living_and_not_living"
+    },
+    {
       "word": "lift",
       "concept": "force",
       "synonyms": [
@@ -2456,6 +2480,10 @@
     {
       "word": "nearby",
       "concept": "spatial_position"
+    },
+    {
+      "word": "neat",
+      "concept": "physical_property"
     },
     {
       "word": "need",
@@ -3180,6 +3208,10 @@
       "concept": "material"
     },
     {
+      "word": "scab",
+      "concept": "mending"
+    },
+    {
       "word": "scared",
       "concept": "feeling",
       "synonyms": [
@@ -3420,6 +3452,10 @@
     {
       "word": "size",
       "concept": "physical_property"
+    },
+    {
+      "word": "skin",
+      "concept": "body_part"
     },
     {
       "word": "skip",
@@ -3985,6 +4021,10 @@
       "concept": "natural_number"
     },
     {
+      "word": "thought",
+      "concept": "knowing"
+    },
+    {
       "word": "thousand",
       "concept": "number_word_order"
     },
@@ -4017,6 +4057,10 @@
     {
       "word": "tin",
       "concept": "metal"
+    },
+    {
+      "word": "tiny",
+      "concept": "physical_property"
     },
     {
       "word": "tip",
@@ -4328,6 +4372,10 @@
       "concept": "liquid"
     },
     {
+      "word": "wave",
+      "concept": "liquid"
+    },
+    {
       "word": "way",
       "concept": "discourse_marker",
       "synonyms": [
@@ -4484,6 +4532,10 @@
       "antonyms": [
         "best"
       ]
+    },
+    {
+      "word": "wound",
+      "concept": "being_hurt"
     },
     {
       "word": "write",
