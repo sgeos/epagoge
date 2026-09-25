@@ -25,11 +25,11 @@ import sys
 from pathlib import Path
 from typing import cast
 
-from generate import ask
-from generate_books import Reject, Tally, admissible_words, keep
 from epagoge import prompt as prompts
 from epagoge.book import SPREADS, book_head, parse_book, render_book
 from epagoge.vocabulary import load_vocabulary
+from generate import ask
+from generate_books import Reject, Tally, admissible_words, keep
 
 ROOT = Path(__file__).resolve().parent.parent
 

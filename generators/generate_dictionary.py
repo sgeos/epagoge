@@ -22,8 +22,6 @@ from collections.abc import Mapping
 from pathlib import Path
 from typing import cast
 
-from generate import ask, well_formed
-from generate_books import admissible_words
 from epagoge import prompt as prompts
 from epagoge.book import (
     dictionary_closure,
@@ -34,6 +32,8 @@ from epagoge.book import (
     word_definitions,
 )
 from epagoge.vocabulary import load_vocabulary, tokenise, unlicensed
+from generate import ask, well_formed
+from generate_books import admissible_words
 
 ROOT = Path(__file__).resolve().parent.parent
 

@@ -27,12 +27,12 @@ import re
 import sys
 from pathlib import Path
 
-from generate import ask, split_lines, well_formed
-from generate_books import Reject, Tally, admissible_words, words_for
 from epagoge import prompt as prompts
 from epagoge import schedule as sched
 from epagoge.book import SPREADS_BY_LEVEL, WORDS_PER_SPREAD, render_book
 from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
+from generate import ask, split_lines, well_formed
+from generate_books import Reject, Tally, admissible_words, words_for
 
 ROOT = Path(__file__).resolve().parent.parent
 

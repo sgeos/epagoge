@@ -25,8 +25,8 @@ import sys
 from pathlib import Path
 from typing import cast
 
-from generate import ask
 from epagoge.book import book_head, parse_book, render_book
+from generate import ask
 
 ROOT = Path(__file__).resolve().parent.parent
 

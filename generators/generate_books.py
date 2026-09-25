@@ -18,11 +18,11 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import cast
 
-from generate import ask, well_formed
 from epagoge import prompt as prompts
 from epagoge import schedule as sched
 from epagoge.book import SPREADS, normalise_definition, render_book
 from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
+from generate import ask, well_formed
 
 ROOT = Path(__file__).resolve().parent.parent
 MAX_DEFINED = 8
