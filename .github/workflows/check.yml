@@ -29,7 +29,9 @@ jobs:
       # that never invalidates serves a stale environment after a dependency
       # changes, which is the silent-partial-coverage failure in another
       # costume.
-      - uses: astral-sh/setup-uv@v10
+      # Pinned exactly, unlike the other two, because setup-uv publishes no
+      # floating major tag past v7 while its current release is v10.
+      - uses: astral-sh/setup-uv@v10.2.0
         with:
           cache-dependency-glob: pyproject.toml
       - uses: actions/setup-python@v7
