@@ -394,7 +394,7 @@
     "dict.1.sentence": {"concepts": ["sentence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sentence"}, "defines": {"kind": "word", "target": "sentence"}},
     "dict.1.separate": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:separate"}, "defines": {"kind": "word", "target": "separate"}},
     "dict.1.set": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:set"}, "defines": {"kind": "word", "target": "set"}},
-    "dict.1.settles": {"concepts": ["settling_it"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:settles"}, "defines": {"kind": "word", "target": "settles"}},
+    "dict.1.settle": {"concepts": ["settling_it"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:settle"}, "defines": {"kind": "word", "target": "settle"}},
     "dict.1.shake": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shake"}, "defines": {"kind": "word", "target": "shake"}},
     "dict.1.shallow": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shallow"}, "defines": {"kind": "word", "target": "shallow"}},
     "dict.1.share": {"concepts": ["fair_and_unfair"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:share"}, "defines": {"kind": "word", "target": "share"}},
@@ -555,7 +555,28 @@
     "dict.1.curtain": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:curtain"}, "defines": {"kind": "word", "target": "curtain"}},
     "dict.1.river": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:river"}, "defines": {"kind": "word", "target": "river"}},
     "dict.1.steady": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:steady"}, "defines": {"kind": "word", "target": "steady"}},
-    "dict.1.pink": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pink"}, "defines": {"kind": "word", "target": "pink"}}
+    "dict.1.pink": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pink"}, "defines": {"kind": "word", "target": "pink"}},
+    "dict.1.truth": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:truth"}, "defines": {"kind": "word", "target": "truth"}},
+    "dict.1.undo": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:undo"}, "defines": {"kind": "word", "target": "undo"}},
+    "dict.1.heart": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:heart"}, "defines": {"kind": "word", "target": "heart"}},
+    "dict.1.clear": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:clear"}, "defines": {"kind": "word", "target": "clear"}},
+    "dict.1.stream": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stream"}, "defines": {"kind": "word", "target": "stream"}},
+    "dict.1.world": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:world"}, "defines": {"kind": "word", "target": "world"}},
+    "dict.1.fear": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fear"}, "defines": {"kind": "word", "target": "fear"}},
+    "dict.1.apart": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:apart"}, "defines": {"kind": "word", "target": "apart"}},
+    "dict.1.bucket": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bucket"}, "defines": {"kind": "word", "target": "bucket"}},
+    "dict.1.weight": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:weight"}, "defines": {"kind": "word", "target": "weight"}},
+    "dict.1.shadow": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:shadow"}, "defines": {"kind": "word", "target": "shadow"}},
+    "dict.1.puddle": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:puddle"}, "defines": {"kind": "word", "target": "puddle"}},
+    "dict.1.fact": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fact"}, "defines": {"kind": "word", "target": "fact"}},
+    "dict.1.bring": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bring"}, "defines": {"kind": "word", "target": "bring"}},
+    "dict.1.pass": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pass"}, "defines": {"kind": "word", "target": "pass"}},
+    "dict.1.climb": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:climb"}, "defines": {"kind": "word", "target": "climb"}},
+    "dict.1.slip": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:slip"}, "defines": {"kind": "word", "target": "slip"}},
+    "dict.1.blink": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blink"}, "defines": {"kind": "word", "target": "blink"}},
+    "dict.1.soak": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:soak"}, "defines": {"kind": "word", "target": "soak"}},
+    "dict.1.magic": {"concepts": ["real_and_pretend"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:magic"}, "defines": {"kind": "word", "target": "magic"}},
+    "dict.1.nearby": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nearby"}, "defines": {"kind": "word", "target": "nearby"}}
   }
 }
 ---
@@ -1718,8 +1739,8 @@ To separate is to make things not be together.
 [dict.1.set]
 A set is many things that go together.
 
-[dict.1.settles]
-Settles is when a thing comes down and stays.
+[dict.1.settle]
+To decide a thing so that it is not asked again.
 
 [dict.1.shake]
 To shake is to move a thing fast one way and then the other.
@@ -2203,3 +2224,66 @@ Not moving and not changing.
 
 [dict.1.pink]
 A colour like light red.
+
+[dict.1.truth]
+What is true.
+
+[dict.1.undo]
+To put a thing back the way it was before.
+
+[dict.1.heart]
+The part inside your body that keeps you alive.
+
+[dict.1.clear]
+Easy to see through, or easy to understand.
+
+[dict.1.stream]
+A small river.
+
+[dict.1.world]
+The whole place where we live.
+
+[dict.1.fear]
+To feel afraid of something.
+
+[dict.1.apart]
+Not together.
+
+[dict.1.bucket]
+A deep round container you carry water in.
+
+[dict.1.weight]
+How heavy a thing is.
+
+[dict.1.shadow]
+The dark shape made when a thing stops the light.
+
+[dict.1.puddle]
+A little water lying on the ground.
+
+[dict.1.fact]
+Something that is true and can be checked.
+
+[dict.1.bring]
+To carry a thing to someone.
+
+[dict.1.pass]
+To go by something.
+
+[dict.1.climb]
+To go up something.
+
+[dict.1.slip]
+To slide when you did not mean to.
+
+[dict.1.blink]
+To shut and open your eyes quickly.
+
+[dict.1.soak]
+To make something very wet.
+
+[dict.1.magic]
+Something that seems real but cannot happen.
+
+[dict.1.nearby]
+Close to here.

@@ -20,12 +20,13 @@ are what the book shape exists to put first.
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 from typing import cast
 
-from generate import ask, well_formed
-from generate_books import Tally, admissible_words, keep
+from generate import ask
+from generate_books import Reject, Tally, admissible_words, keep
 from epagoge import prompt as prompts
 from epagoge.book import SPREADS, parse_book, render_book
 from epagoge.vocabulary import load_vocabulary
@@ -39,6 +40,13 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--limit", type=int, default=5)
     parser.add_argument("--timeout", type=int, default=420)
     parser.add_argument("--attempts", type=int, default=2)
+    # **Top-up rounds are where most rejection now happens**, and until
+    # this was written their evidence went to stderr as a count and was
+    # gone. A word the teacher reached for is the reason the quarantine
+    # exists, so the pass that reaches hardest must write one.
+    parser.add_argument(
+        "--quarantine", type=Path, default=ROOT / "tmp/quarantine_extend.jsonl"
+    )
     args = parser.parse_args(argv[1:])
 
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
@@ -46,6 +54,7 @@ def main(argv: list[str]) -> int:
     book_dir = ROOT / f"curriculum/books/level_{args.level}"
 
     tally = Tally()
+    quarantine: list[Reject] = []
     done = 0
     for path in sorted(book_dir.glob("bk.*.md")):
         if done >= args.limit:
@@ -95,9 +104,15 @@ def main(argv: list[str]) -> int:
                 text = line.strip().lstrip("-").strip()
                 if not text or text.startswith(("STORY", "#")):
                     continue
-                if not well_formed(text):
-                    continue
-                if not keep(text, vocabulary, args.level, tally):
+                if not keep(
+                    text,
+                    vocabulary,
+                    args.level,
+                    tally,
+                    book=book.id,
+                    slot="story",
+                    quarantine=quarantine,
+                ):
                     continue
                 if text in existing or text in added:
                     continue
@@ -129,7 +144,22 @@ def main(argv: list[str]) -> int:
         path.write_text(render_book(head, entries), encoding="utf-8")
         print(f"    added {len(added)}, now {len(entries)}", file=sys.stderr)
         done += 1
-    print(f"extended {done} book(s)")
+    args.quarantine.parent.mkdir(parents=True, exist_ok=True)
+    with args.quarantine.open("w", encoding="utf-8") as handle:
+        for reject in quarantine:
+            handle.write(
+                json.dumps(
+                    {
+                        "book": reject.book,
+                        "slot": reject.slot,
+                        "reason": reject.reason,
+                        "offending": list(reject.offending),
+                        "text": reject.text,
+                    }
+                )
+                + "\n"
+            )
+    print(f"extended {done} book(s), {len(quarantine)} quarantined")
     for reason, count in sorted(tally.reasons.items(), key=lambda kv: -kv[1])[:8]:
         print(f"  {count:4}  {reason}", file=sys.stderr)
     return 0

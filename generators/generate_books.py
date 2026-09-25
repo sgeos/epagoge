@@ -21,13 +21,24 @@ from typing import cast
 from generate import ask, well_formed
 from epagoge import prompt as prompts
 from epagoge import schedule as sched
-from epagoge.book import SPREADS, render_book
+from epagoge.book import SPREADS, normalise_definition, render_book
 from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
 
 ROOT = Path(__file__).resolve().parent.parent
 MAX_DEFINED = 8
 """Words defined per book. More than this and the definitions crowd out the
 story, which is the part the book shape exists to produce."""
+
+MAX_ASKED = 14
+"""Story lines requested in one completion, however many the book needs.
+
+Observed 2026-09-25: two units whose teaching concept had one word asked
+for twenty-eight sentences and timed out at seven minutes, returning
+nothing. The evidence is two runs and the direction is what it is: a long
+constrained completion is where this teacher fails. The remainder is asked
+for by `extend_books`, whose calls are smaller and whose timeouts are
+therefore cheaper.
+"""
 
 SUBJECT_RE = re.compile(r"^SUBJECT:\s*(.+)$")
 WORD_RE = re.compile(r"^WORD\s+([a-z']+)\s*:\s*(.+)$")
@@ -106,19 +117,27 @@ def parse(raw: str) -> tuple[str | None, dict[str, str], list[str]]:
         if (m := SUBJECT_RE.match(line)) and subject is None:
             subject = m.group(1).strip()
         elif m := WORD_RE.match(line):
-            words[m.group(1)] = m.group(2).strip()
+            words[m.group(1)] = normalise_definition(m.group(2))
         elif m := STORY_RE.match(line):
             story.append(m.group(1).strip())
     return subject, words, story
 
 
 def judge(text: str, vocabulary: Vocabulary, level: int) -> tuple[str, tuple[str, ...]]:
-    """Empty reason means usable. Otherwise the reason and the words at fault."""
+    """Empty reason means usable. Otherwise the reason and the words at fault.
+
+    **The vocabulary is checked even when the shape fails.** Returning early
+    on shape threw away the one thing a reject is kept for: a word the
+    teacher reached for is evidence, and a line rejected as not a sentence
+    was reported with no words at all, so the evidence in it was invisible.
+    The reason still names the shape, because that is what makes the line
+    unusable first.
+    """
+    offending = tuple(sorted(set(unlicensed(vocabulary, text, level))))
     if not well_formed(text):
-        return "not a sentence", ()
-    offending = unlicensed(vocabulary, text, level)
+        return "not a sentence", offending
     if offending:
-        return "outside the ceiling", tuple(sorted(set(offending)))
+        return "outside the ceiling", offending
     return "", ()
 
 
@@ -238,8 +257,19 @@ def main(argv: list[str]) -> int:
             # so the story takes the rest, and roughly half of what the
             # teacher writes is rejected on vocabulary.
             wanted = max(1, SPREADS - 1 - len(defined))
+            # **Capped, because a long ask times out rather than returning
+            # less.** A unit teaching a newly authored concept has one or
+            # two words to define, so the uncapped ask reaches twenty-eight
+            # sentences, and two such units in one round hit the timeout and
+            # returned nothing at all. `extend_books` asks for the remainder
+            # afterwards in smaller calls, which a timeout costs far less.
             text = prompts.book(
-                unit.id, unit.form, defined, args.level, admissible, wanted * 2
+                unit.id,
+                unit.form,
+                defined,
+                args.level,
+                admissible,
+                min(wanted * 2, MAX_ASKED),
             )
             print(f"  {unit.id}", file=sys.stderr)
             # Accumulate across attempts rather than replacing. The first

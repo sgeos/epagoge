@@ -29,6 +29,7 @@ from epagoge.book import (
     linear_extension,
     load_book_dir,
     load_books,
+    normalise_definition,
     parse_book,
     random_linear_extension,
     render_book,
@@ -563,3 +564,38 @@ class CanonicalDefinitions(unittest.TestCase):
         ]
         records = [{"id": "a", "content": "a story line"}]
         self.assertEqual(word_definitions(books, records), {})
+
+
+class TestNormaliseDefinition(unittest.TestCase):
+    """A definition is a capitalised fragment, which is not a sentence.
+
+    The dictionary reads "Checking that something is true.", so a teacher
+    who writes "checking that something is true" has written an acceptable
+    entry in the wrong case rather than an unusable one.
+    """
+
+    def test_a_lowercase_fragment_is_capitalised_and_terminated(self) -> None:
+        self.assertEqual(
+            normalise_definition("a small number of something"),
+            "A small number of something.",
+        )
+
+    def test_an_already_shaped_definition_is_unchanged(self) -> None:
+        text = "Checking that something is true."
+        self.assertEqual(normalise_definition(text), text)
+
+    def test_other_terminators_are_kept(self) -> None:
+        self.assertEqual(normalise_definition("Is it so?"), "Is it so?")
+
+    def test_surrounding_space_is_dropped(self) -> None:
+        self.assertEqual(normalise_definition("  near, not far  "), "Near, not far.")
+
+    def test_an_empty_line_stays_empty(self) -> None:
+        self.assertEqual(normalise_definition("   "), "")
+
+    def test_only_the_first_letter_moves(self) -> None:
+        """Casing inside the line is the teacher's and is not touched."""
+        self.assertEqual(
+            normalise_definition("what a McTaggart series is"),
+            "What a McTaggart series is.",
+        )

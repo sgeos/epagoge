@@ -117,6 +117,10 @@
       "concept": "standing_for"
     },
     {
+      "word": "apart",
+      "concept": "joining_and_separating"
+    },
+    {
       "word": "appear",
       "concept": "presence"
     },
@@ -323,6 +327,10 @@
       "concept": "household_object"
     },
     {
+      "word": "blink",
+      "concept": "body_part"
+    },
+    {
       "word": "block",
       "concept": "toy"
     },
@@ -418,6 +426,10 @@
       ]
     },
     {
+      "word": "bring",
+      "concept": "activity"
+    },
+    {
       "word": "broad",
       "concept": "physical_property",
       "synonyms": [
@@ -446,6 +458,10 @@
     {
       "word": "bubble",
       "concept": "air"
+    },
+    {
+      "word": "bucket",
+      "concept": "household_object"
     },
     {
       "word": "bug",
@@ -606,11 +622,19 @@
       ]
     },
     {
+      "word": "clear",
+      "concept": "physical_property"
+    },
+    {
       "word": "clever",
       "concept": "being_told",
       "synonyms": [
         "smart"
       ]
+    },
+    {
+      "word": "climb",
+      "concept": "moving_and_still"
     },
     {
       "word": "clock",
@@ -1117,6 +1141,10 @@
       "concept": "body_part"
     },
     {
+      "word": "fact",
+      "concept": "knowing"
+    },
+    {
       "word": "fail",
       "concept": "failing"
     },
@@ -1182,6 +1210,10 @@
       "synonyms": [
         "dad"
       ]
+    },
+    {
+      "word": "fear",
+      "concept": "feeling"
     },
     {
       "word": "feed",
@@ -1602,6 +1634,10 @@
     {
       "word": "heard",
       "concept": "sound"
+    },
+    {
+      "word": "heart",
+      "concept": "body_part"
     },
     {
       "word": "heat",
@@ -2125,6 +2161,10 @@
       ]
     },
     {
+      "word": "magic",
+      "concept": "real_and_pretend"
+    },
+    {
       "word": "man",
       "concept": "person",
       "antonyms": [
@@ -2410,6 +2450,10 @@
       ]
     },
     {
+      "word": "nearby",
+      "concept": "spatial_position"
+    },
+    {
       "word": "need",
       "concept": "need"
     },
@@ -2637,6 +2681,10 @@
       "concept": "component_and_system"
     },
     {
+      "word": "pass",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "past",
       "concept": "direction"
     },
@@ -2797,6 +2845,10 @@
     {
       "word": "prove",
       "concept": "settling_it"
+    },
+    {
+      "word": "puddle",
+      "concept": "liquid"
     },
     {
       "word": "pull",
@@ -3189,12 +3241,16 @@
       "concept": "grouping"
     },
     {
-      "word": "settles",
+      "word": "settle",
       "concept": "settling_it"
     },
     {
       "word": "seven",
       "concept": "number_word_order"
+    },
+    {
+      "word": "shadow",
+      "concept": "physical_property"
     },
     {
       "word": "shake",
@@ -3376,6 +3432,10 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "slip",
+      "concept": "falling"
+    },
+    {
       "word": "slow",
       "concept": "duration",
       "antonyms": [
@@ -3440,6 +3500,10 @@
     {
       "word": "snow",
       "concept": "weather"
+    },
+    {
+      "word": "soak",
+      "concept": "liquid"
     },
     {
       "word": "soap",
@@ -3652,6 +3716,10 @@
     {
       "word": "straw",
       "concept": "material"
+    },
+    {
+      "word": "stream",
+      "concept": "liquid"
     },
     {
       "word": "street",
@@ -4028,6 +4096,10 @@
       "concept": "taking_on_faith"
     },
     {
+      "word": "truth",
+      "concept": "being_told"
+    },
+    {
       "word": "try",
       "concept": "checking"
     },
@@ -4094,6 +4166,10 @@
     {
       "word": "understand",
       "concept": "knowing"
+    },
+    {
+      "word": "undo",
+      "concept": "joining_and_separating"
     },
     {
       "word": "unfair",
@@ -4271,6 +4347,10 @@
       "concept": "measuring"
     },
     {
+      "word": "weight",
+      "concept": "measuring"
+    },
+    {
       "word": "well",
       "concept": "good_and_bad"
     },
@@ -4366,6 +4446,10 @@
     {
       "word": "work",
       "concept": "activity"
+    },
+    {
+      "word": "world",
+      "concept": "spatial_position"
     },
     {
       "word": "worse",

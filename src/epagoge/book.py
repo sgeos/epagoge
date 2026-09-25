@@ -121,6 +121,32 @@ thousand eight hundred and nineteen thousand two hundred words.
 """
 
 
+def normalise_definition(text: str) -> str:
+    """Capitalise and terminate a definition, which is a fragment by design.
+
+    **The dictionary's own style is a capitalised fragment**, as in
+    "Checking that something is true.", so a teacher writing "a small
+    number of something" has written an acceptable definition in the wrong
+    case. Measured 2026-09-25 over a round's quarantine, twenty-four of the
+    twenty-five lines rejected as not a sentence were definitions and every
+    one was recoverable this way.
+
+    **Confined to definitions.** A story line is prose, and its shape is
+    evidence about whether the teacher wrote a sentence at all, which is
+    the failure `well_formed` exists for. Normalising a story line would
+    have let "breath lasted long" through, which is the line that caused
+    the check to be written.
+    """
+    text = text.strip()
+    if not text:
+        return text
+    if not text[0].isupper():
+        text = text[0].upper() + text[1:]
+    if text[-1] not in ".!?":
+        text += "."
+    return text
+
+
 def typical_words(level: int) -> tuple[int, int] | None:
     """The word count a book at this level is expected to land in.
 

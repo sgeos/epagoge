@@ -362,6 +362,11 @@
       "level": 1
     },
     {
+      "word": "apart",
+      "concept": "joining_and_separating",
+      "level": 1
+    },
+    {
       "word": "appear",
       "concept": "presence",
       "level": 1,
@@ -692,6 +697,17 @@
       ]
     },
     {
+      "word": "blink",
+      "concept": "body_part",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "blinked",
+        "blinking",
+        "blinks"
+      ]
+    },
+    {
       "word": "block",
       "concept": "toy",
       "level": 1,
@@ -852,6 +868,17 @@
       ]
     },
     {
+      "word": "bring",
+      "concept": "activity",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "bringing",
+        "brings",
+        "brought"
+      ]
+    },
+    {
       "word": "broad",
       "concept": "physical_property",
       "level": 1
@@ -899,6 +926,15 @@
         "bubbled",
         "bubbles",
         "bubbling"
+      ]
+    },
+    {
+      "word": "bucket",
+      "concept": "household_object",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "buckets"
       ]
     },
     {
@@ -1231,9 +1267,25 @@
       ]
     },
     {
+      "word": "clear",
+      "concept": "physical_property",
+      "level": 1
+    },
+    {
       "word": "clever",
       "concept": "being_told",
       "level": 1
+    },
+    {
+      "word": "climb",
+      "concept": "moving_and_still",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "climbed",
+        "climbing",
+        "climbs"
+      ]
     },
     {
       "word": "clock",
@@ -2099,6 +2151,15 @@
       ]
     },
     {
+      "word": "fact",
+      "concept": "knowing",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "facts"
+      ]
+    },
+    {
       "word": "fail",
       "concept": "failing",
       "forms": [
@@ -2187,6 +2248,17 @@
       "word": "fault",
       "concept": "failing",
       "level": 6
+    },
+    {
+      "word": "fear",
+      "concept": "feeling",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "feared",
+        "fearing",
+        "fears"
+      ]
     },
     {
       "word": "feed",
@@ -2851,6 +2923,15 @@
       "word": "heard",
       "concept": "sound",
       "level": 1
+    },
+    {
+      "word": "heart",
+      "concept": "body_part",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "hearts"
+      ]
     },
     {
       "word": "heat",
@@ -3669,6 +3750,15 @@
       ]
     },
     {
+      "word": "magic",
+      "concept": "real_and_pretend",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "magics"
+      ]
+    },
+    {
       "word": "man",
       "concept": "person",
       "level": 1
@@ -4077,6 +4167,11 @@
       ]
     },
     {
+      "word": "nearby",
+      "concept": "spatial_position",
+      "level": 1
+    },
+    {
       "word": "need",
       "concept": "need",
       "level": 1,
@@ -4379,6 +4474,17 @@
       ],
       "level": 1,
       "pos": "noun"
+    },
+    {
+      "word": "pass",
+      "concept": "moving_and_still",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "passed",
+        "passes",
+        "passing"
+      ]
     },
     {
       "word": "past",
@@ -4716,6 +4822,15 @@
         "proved",
         "proves",
         "proving"
+      ]
+    },
+    {
+      "word": "puddle",
+      "concept": "liquid",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "puddles"
       ]
     },
     {
@@ -5367,14 +5482,29 @@
       "pos": "noun"
     },
     {
-      "word": "settles",
+      "word": "settle",
       "concept": "settling_it",
-      "level": 1
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "settled",
+        "settles",
+        "settling"
+      ]
     },
     {
       "word": "seven",
       "concept": "number_word_order",
       "level": 1
+    },
+    {
+      "word": "shadow",
+      "concept": "physical_property",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "shadows"
+      ]
     },
     {
       "word": "shake",
@@ -5687,6 +5817,17 @@
       ]
     },
     {
+      "word": "slip",
+      "concept": "falling",
+      "level": 1,
+      "pos": "noun verb",
+      "forms": [
+        "slipped",
+        "slipping",
+        "slips"
+      ]
+    },
+    {
       "word": "slow",
       "concept": "duration",
       "level": 1,
@@ -5791,6 +5932,17 @@
         "snowed",
         "snowing",
         "snows"
+      ]
+    },
+    {
+      "word": "soak",
+      "concept": "liquid",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "soaked",
+        "soaking",
+        "soaks"
       ]
     },
     {
@@ -6156,6 +6308,15 @@
       "word": "straw",
       "concept": "material",
       "level": 1
+    },
+    {
+      "word": "stream",
+      "concept": "liquid",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "streams"
+      ]
     },
     {
       "word": "street",
@@ -6753,6 +6914,15 @@
       "pos": "verb"
     },
     {
+      "word": "truth",
+      "concept": "being_told",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "truths"
+      ]
+    },
+    {
       "word": "try",
       "concept": "checking",
       "level": 1,
@@ -6849,6 +7019,18 @@
         "understanding",
         "understands",
         "understood"
+      ]
+    },
+    {
+      "word": "undo",
+      "concept": "joining_and_separating",
+      "level": 1,
+      "pos": "verb",
+      "forms": [
+        "undid",
+        "undoes",
+        "undoing",
+        "undone"
       ]
     },
     {
@@ -7114,6 +7296,15 @@
       ]
     },
     {
+      "word": "weight",
+      "concept": "measuring",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "weights"
+      ]
+    },
+    {
       "word": "well",
       "concept": "good_and_bad",
       "level": 1
@@ -7265,6 +7456,15 @@
       "pos": "verb"
     },
     {
+      "word": "world",
+      "concept": "spatial_position",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "worlds"
+      ]
+    },
+    {
       "word": "worse",
       "concept": "good_and_bad",
       "level": 1
@@ -7362,8 +7562,10 @@
   ],
   "substitutions": {
     "amount": "how much",
+    "ancient": "very old",
     "anymore": "now",
     "area": "space",
+    "attention": "looking",
     "available": "there to use",
     "beyond": "past",
     "cause": "makes",
@@ -7373,6 +7575,7 @@
     "corresponds": "goes with",
     "duration": "how long",
     "during": "when",
+    "especially": "most of all",
     "event": "thing that happens",
     "fake": "not real",
     "final": "last",
@@ -7385,15 +7588,20 @@
     "item": "thing",
     "length": "how long",
     "location": "place",
+    "moonlight": "light from the moon",
     "object": "thing",
+    "parchment": "paper",
     "position": "place",
     "present": "here",
     "sequence": "order",
     "similar": "like",
     "single": "one",
     "specific": "that one",
+    "sunlight": "light from the sun",
     "thickness": "how thick",
-    "unknown": "not known"
+    "though": "but",
+    "unknown": "not known",
+    "windowsill": "the edge of the window"
   },
   "ostensive": [
     "air",

@@ -137,6 +137,7 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     "tell": ("told", "told", "telling"),
     "think": ("thought", "thought", "thinking"),
     "throw": ("threw", "thrown", "throwing"),
+    "undo": ("undid", "undone", "undoing"),
     "understand": ("understood", "understood", "understanding"),
     "wake": ("woke", "woken", "waking"),
     "wear": ("wore", "worn", "wearing"),
