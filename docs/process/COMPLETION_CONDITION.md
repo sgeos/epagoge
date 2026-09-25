@@ -28,6 +28,8 @@ result is not required and must not be manufactured.**
 - **Every unit in `curriculum/schedule/level_01.json` has at least one
   book** in `curriculum/books/level_1/` teaching a concept that unit
   names.
+- **Every book holds exactly sixteen spreads**, which is the thirty-two
+  page trade standard, and the gate enforces that rather than reporting it.
 - `tools/validate_books.py` exits 0.
 - `tools/build_corpus.py` produces a stream under both orderings.
 

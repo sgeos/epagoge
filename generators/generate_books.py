@@ -21,7 +21,7 @@ from typing import cast
 from generate import ask, well_formed
 from epagoge import prompt as prompts
 from epagoge import schedule as sched
-from epagoge.book import render_book
+from epagoge.book import SPREADS, render_book
 from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -233,8 +233,13 @@ def main(argv: list[str]) -> int:
             defined = words_for(vocabulary, unit.teaches, args.level)
             if not defined:
                 continue
+            # **Ask for what the standard needs, plus room for rejection.**
+            # The subject takes one spread and each defined word takes one,
+            # so the story takes the rest, and roughly half of what the
+            # teacher writes is rejected on vocabulary.
+            wanted = max(1, SPREADS - 1 - len(defined))
             text = prompts.book(
-                unit.id, unit.form, defined, args.level, admissible, args.sentences
+                unit.id, unit.form, defined, args.level, admissible, wanted * 2
             )
             print(f"  {unit.id}", file=sys.stderr)
             # Accumulate across attempts rather than replacing. The first

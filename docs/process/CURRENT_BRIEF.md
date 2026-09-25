@@ -10,9 +10,9 @@ items. Delete when `COMPLETION_CONDITION.md` is met.
 | 1 | Dictionary coverage and closure | **Done. 661 of 661, closure 100%** | — |
 | 2 | Thesaurus, synonyms and antonyms | **Done. 194 antonyms, 132 synonyms over 749 entries** | — |
 | 3 | Missing words added to both | **Done, and now continuous.** `tools/admit.py` pulls words the corpus asks for | — |
-| 4 | Full level-one corpus draft | **12 books of 92 units** | None. Generation, running |
+| 4 | Full level-one corpus draft | **48 books of 92 units, none at 16 spreads** | None. Generation |
 | 5 | Train a level-one model | `epagoge.pilot` has the model, loop, device and paired orderings; torch 2.14 and MPS verified | **Item 4.** The corpus is about 2,200 words and cannot train anything |
-| 6 | Level-two dictionary and thesaurus | Level two holds 49 terms | Item 1, and a level-two lexicon |
+| 6 | Level-two dictionary and thesaurus | **Done. 721 of 721, closure 100%** | — |
 | 7 | Level-two ablation | Pre-registration has pending items | Items 4 and 5 |
 
 ## The sequencing claim, and it is the load-bearing one
@@ -50,6 +50,21 @@ words are rephrased instead.
 automated.** That is the same triage the operator gave for the lexicon,
 and putting a model in charge of it would grow the lexicon by whatever the
 model finds convenient.
+
+## The spread standard changes what a draft means
+
+**Sixteen spreads exactly, being thirty-two pages, being one signature.**
+A book that misses it cannot be physically published without someone else
+padding or cutting it, so the count is exact and not a floor.
+
+The corpus goal is therefore **92 books at 16 spreads**, not 92 books.
+Existing books hold six to fifteen spreads and are topped up by
+`generators/extend_books.py` rather than regenerated, because a short book
+is unfinished and its existing lines are already true and admissible.
+
+**The gate does not yet pass `--spreads`**, because 52 books would fail.
+Enable it once the corpus complies. A check that is wired and never run is
+the failure this project has recorded twice.
 
 ## Wrong turns, every one already made once
 
