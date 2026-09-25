@@ -2086,6 +2086,10 @@
       "concept": "spatial_position"
     },
     {
+      "word": "lever",
+      "concept": "force"
+    },
+    {
       "word": "liar",
       "concept": "person",
       "synonyms": [

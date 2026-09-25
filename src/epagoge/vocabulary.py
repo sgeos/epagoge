@@ -93,6 +93,17 @@ class Term:
     be admissible at the same level, which ``_check_inflections`` checks.
     """
 
+    source: str = ""
+    """Where this word was proposed, in free text. Empty where unrecorded.
+
+    **The corpus is CC0 and some candidate lists are not.** A word list
+    consulted to decide which English words to define is not the same act
+    as redistributing that list, and the difference is only auditable if
+    the origin is written down at admission. It also separates a word the
+    teacher reached for, which is evidence about the corpus, from one a
+    frequency scan proposed, which is evidence about a source.
+    """
+
     def surface_forms(self) -> tuple[str, ...]:
         return (self.word, *self.forms)
 
@@ -890,9 +901,18 @@ def _parse_terms(raw: object) -> list[Term]:
                 level=level,
                 forms=tuple(_str_list(entry.get("forms"), f"{where}.forms")),
                 pos=_parse_pos(entry.get("pos"), where),
+                source=_parse_source(entry.get("source"), where),
             )
         )
     return out
+
+
+def _parse_source(raw: object, where: str) -> str:
+    if raw is None:
+        return ""
+    if not isinstance(raw, str):
+        raise ValueError(f"{where}.source: expected a string")
+    return raw
 
 
 def _parse_pos(raw: object, where: str) -> str:

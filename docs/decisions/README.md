@@ -67,6 +67,11 @@ Decision records, and the open questions that block implementation.
   answer. Also records that level N training starts from the level N minus
   one model, so the level-one model is an initialisation rather than a
   demonstration.
+- `LEXICON_SOURCING.md` recorded 2026-09-25. The pipeline for taking the
+  level-two lexicon to about ten thousand words: seed from three lists,
+  scan public-domain and CC0 sources, accept the frequent in bulk, inspect
+  the per-source long tail. Frequency is per source rather than pooled,
+  and provenance is recorded at admission.
 
 ## Convention
 

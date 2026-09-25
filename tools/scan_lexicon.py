@@ -1,34 +1,34 @@
 #!/usr/bin/env python3
-"""Read text, and report the words it uses that the lexicon does not carry.
+"""Propose lexicon candidates from sources, counting each source separately.
 
-**A scanned lexicon is a proposal, not a decision.** This project's thesis
-is that uncurated input produces undesirable properties, and a frequency
-list from any corpus is uncurated by construction. So this ranks and
-reports; admitting is still a judgement made one word at a time, through
-`admit.py`, which requires a definition that reduces to the seed.
+**Frequency is per source, not pooled.** A word common in one book and
+absent from the rest is a word that book needed, and pooling would bury it
+under the long tail of everything else. Operator direction 2026-09-25: a
+word frequent in any one source is a candidate, and the per-source long
+tail is inspected rather than discarded.
 
-Reports three things about each candidate:
+So every candidate is reported with the sources it was frequent in and the
+sources where it trailed, and the two groups are separated because they
+get different treatment. The frequent group is bulk work. The long tail is
+where judgement is, and it is where a source's idiosyncrasies live.
 
-- **how often it occurs**, because a word used once is a word the source
-  happened to contain rather than one the level needs;
-- **whether the lexicon already carries it at a higher level**, which
-  makes it a question about level rather than about admission;
-- **whether it is a form of a word already admitted**, which is usually a
-  missing inflection rather than a new word, and this project has found
-  eleven of those the hard way.
+**This proposes and does not decide.** The thesis is that uncurated input
+produces undesirable properties, and a frequency list is uncurated by
+construction. `admit.py` decides, one word and one definition at a time.
 
-Nothing from the source is copied into the repository. What comes out is a
-list of English words, which is a fact about the source rather than a part
-of it. That said, the licence of anything scanned is the operator's to
-settle, and `../docs/decisions/READING_LEVEL_RESEARCH.md` lists sources
-that need no settling.
+**Archaism is not visible here and will not be.** A public-domain source
+is public domain because it is old, so a word can be frequent, plainly
+useful in 1880 and wrong for a child now. That is caught at drafting, not
+by a counter.
 
-    PYTHONPATH=src python3 tools/scan_lexicon.py --level 2 reader.txt
+    PYTHONPATH=src python3 tools/scan_lexicon.py --level 2 \
+        --seed lists/dale_chall.txt --frequent 5 sources/*.txt
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from collections import Counter
 from pathlib import Path
@@ -39,20 +39,47 @@ from epagoge.vocabulary import load_vocabulary, tokenise
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def read_seed(paths: list[Path]) -> set[str]:
+    """Word lists that are candidates regardless of any source's frequency.
+
+    Dale-Chall, the New General Service List and Ogden's Basic English are
+    the operator's starting point. **None is committed to this
+    repository**, because two of the three have a licence that a CC0
+    repository cannot carry, so they are supplied as files at scan time.
+    What the repository keeps is this project's own definitions of whatever
+    words survive judgement.
+    """
+    out: set[str] = set()
+    for path in paths:
+        for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+            word = line.strip().lower()
+            if word and word.isalpha():
+                out.add(word)
+    return out
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("files", nargs="+", type=Path)
+    parser.add_argument("files", nargs="*", type=Path, help="sources to scan")
     parser.add_argument("--level", type=int, default=2)
     parser.add_argument(
-        "--min-count", type=int, default=2, help="ignore words rarer than this"
+        "--seed",
+        action="append",
+        type=Path,
+        default=[],
+        help="a word list whose words are candidates without a frequency test",
     )
-    parser.add_argument("--top", type=int, default=60)
+    parser.add_argument(
+        "--frequent",
+        type=int,
+        default=5,
+        help="occurrences within one source that make a word frequent there",
+    )
+    parser.add_argument("--top", type=int, default=40)
+    parser.add_argument("--out", type=Path, default=None, help="write JSON here")
     args = parser.parse_args(argv[1:])
 
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
-    # **Core and exempt count as admissible.** The first version omitted
-    # exempt and reported proper nouns as candidates, which is the same
-    # mistake as asking whether a name should be defined.
     here = (
         {
             form
@@ -63,48 +90,93 @@ def main(argv: list[str]) -> int:
         | set(vocabulary.core)
         | set(vocabulary.exempt)
     )
-    anywhere: dict[str, int] = {}
-    for term in vocabulary.terms:
-        for form in term.surface_forms():
-            anywhere[form] = min(anywhere.get(form, term.level), term.level)
-
-    # A form of an admitted word is a missing inflection, not a new word.
+    anywhere = {
+        form: min(
+            (t.level for t in vocabulary.terms if form in t.surface_forms()),
+            default=0,
+        )
+        for t in vocabulary.terms
+        for form in t.surface_forms()
+    }
     derived: dict[str, str] = {}
     for term in vocabulary.terms:
         for form in (plural(term.word), *verb_forms(term.word)):
             derived.setdefault(form, term.word)
 
-    counts: Counter[str] = Counter()
-    read = 0
+    per_source: dict[str, Counter[str]] = {}
     for path in args.files:
         if not path.is_file():
             print(f"no such file: {path}", file=sys.stderr)
             return 2
         text = path.read_text(encoding="utf-8", errors="replace")
-        read += len(text)
-        counts.update(tokenise(text))
+        per_source[path.name] = Counter(
+            w for w in tokenise(text) if w.isalpha() and w not in here
+        )
 
-    candidates = [
-        (word, n)
-        for word, n in counts.most_common()
-        if word not in here and n >= args.min_count and word.isalpha()
-    ]
-    print(f"read {read} characters, {sum(counts.values())} tokens")
-    print(f"distinct words {len(counts)}, already admissible {len(here)}")
-    print(f"candidates at level {args.level}: {len(candidates)}")
-    print()
-    print(f"{'count':>6}  {'word':<18} note")
-    for word, n in candidates[: args.top]:
+    seeded = {w for w in read_seed(args.seed) if w not in here}
+
+    frequent_in: dict[str, list[str]] = {}
+    trailing_in: dict[str, list[str]] = {}
+    for name, counts in per_source.items():
+        for word, n in counts.items():
+            target = frequent_in if n >= args.frequent else trailing_in
+            target.setdefault(word, []).append(name)
+
+    frequent = sorted(frequent_in)
+    tail = sorted(w for w in trailing_in if w not in frequent_in)
+    seed_only = sorted(
+        w for w in seeded if w not in frequent_in and w not in trailing_in
+    )
+
+    def note(word: str) -> str:
         if word in anywhere:
-            note = f"already admitted at level {anywhere[word]}"
-        elif word in derived:
-            note = f"a form of {derived[word]!r}, which is admitted"
-        else:
-            note = ""
-        print(f"{n:>6}  {word:<18} {note}")
-    if len(candidates) > args.top:
-        print(f"... and {len(candidates) - args.top} more")
-    print("\nproposals only; admit.py decides, one word and one definition at a time")
+            return f"admitted at level {anywhere[word]}"
+        if word in derived:
+            return f"a form of {derived[word]!r}"
+        return ""
+
+    print(f"sources {len(per_source)}, seed lists {len(args.seed)}")
+    print(f"frequent in at least one source  {len(frequent)}")
+    print(f"long tail in every source        {len(tail)}")
+    print(f"from a seed list only            {len(seed_only)}")
+    print()
+    print("FREQUENT SOMEWHERE, take in bulk")
+    for word in frequent[: args.top]:
+        where = " ".join(sorted(frequent_in[word]))
+        print(f"  {word:<18} {note(word):<26} {where}")
+    if len(frequent) > args.top:
+        print(f"  ... and {len(frequent) - args.top} more")
+    print()
+    print("LONG TAIL EVERYWHERE, inspect per source")
+    for word in tail[: args.top]:
+        where = " ".join(sorted(trailing_in[word]))
+        print(f"  {word:<18} {note(word):<26} {where}")
+    if len(tail) > args.top:
+        print(f"  ... and {len(tail) - args.top} more")
+
+    if args.out is not None:
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text(
+            json.dumps(
+                {
+                    "level": args.level,
+                    "frequent_at": args.frequent,
+                    "sources": sorted(per_source),
+                    "frequent": {w: sorted(frequent_in[w]) for w in frequent},
+                    "long_tail": {w: sorted(trailing_in[w]) for w in tail},
+                    "seed_only": seed_only,
+                    "note": (
+                        "Proposals. Every word still needs a definition that "
+                        "reduces to the seed, and archaism is not visible to a "
+                        "counter."
+                    ),
+                },
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        print(f"\nwrote {args.out}")
     return 0
 
 

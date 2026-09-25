@@ -32,6 +32,7 @@
     "dict.2.knock": {"concepts": ["causal_chain"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:knock"}, "defines": {"kind": "word", "target": "knock"}},
     "dict.2.lead": {"concepts": ["causal_chain"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lead"}, "defines": {"kind": "word", "target": "lead"}},
     "dict.2.ledger": {"concepts": ["ledger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ledger"}, "defines": {"kind": "word", "target": "ledger"}},
+    "dict.2.lever": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lever"}, "defines": {"kind": "word", "target": "lever"}},
     "dict.2.minus": {"concepts": ["subtraction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:minus"}, "defines": {"kind": "word", "target": "minus"}},
     "dict.2.mishap": {"concepts": ["accident"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mishap"}, "defines": {"kind": "word", "target": "mishap"}},
     "dict.2.pile": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pile"}, "defines": {"kind": "word", "target": "pile"}},
@@ -122,6 +123,9 @@ To lead is to go first so others come after.
 
 [dict.2.ledger]
 The book a count is kept in, so it is not lost.
+
+[dict.2.lever]
+A long stick you press on one end to lift the other.
 
 [dict.2.minus]
 Minus means one amount taken away from another.

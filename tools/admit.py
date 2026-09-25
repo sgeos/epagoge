@@ -6,11 +6,16 @@ and the lexicon grow together, so a story that wants `balloon` is a reason
 to consider admitting `balloon` rather than a reason to file the story
 down. Operator direction, 2026-09-25.
 
-Input is JSON mapping a word to its concept, its parts of speech and its
-definition::
+Input is JSON mapping a word to its concept, its parts of speech, its
+definition and optionally where it came from::
 
     {"balloon": {"concept": "toy", "pos": "noun",
-                 "definition": "A balloon is a bag of air you play with."}}
+                 "definition": "A balloon is a bag of air you play with.",
+                 "source": "teacher, bk.p1.toys round 3"}}
+
+``source`` is free text and is recorded on the term. This corpus is CC0
+and some candidate word lists are not, so knowing where a word was
+proposed matters more than the word does.
 
 Forms are generated from the parts of speech, so a noun gets its plural
 and a verb its inflections without being asked. **Nothing is written
@@ -102,6 +107,14 @@ def main(argv: list[str]) -> int:
         }
         if parts:
             entry["pos"] = " ".join(sorted(set(parts)))
+        # **Where a word came from, recorded at admission.** This corpus is
+        # CC0 and some candidate lists are not, so the audit trail for a
+        # word is worth more than the word. It also separates a word the
+        # teacher reached for from one a scan proposed, which are different
+        # kinds of evidence.
+        source = spec.get("source", "").strip()
+        if source:
+            entry["source"] = source
         if forms:
             entry["forms"] = sorted(forms)
         terms.append(entry)

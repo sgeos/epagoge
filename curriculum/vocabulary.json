@@ -3720,6 +3720,16 @@
       "level": 1
     },
     {
+      "word": "lever",
+      "concept": "force",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan: machines.txt, frequent",
+      "forms": [
+        "levers"
+      ]
+    },
+    {
       "word": "liar",
       "concept": "person",
       "forms": [
