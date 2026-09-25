@@ -470,6 +470,28 @@
           "primitives": [
             "others-act"
           ]
+        },
+        {
+          "id": "a1.plan",
+          "form": "Before you do it, you think how. Then you do it that way.",
+          "introduces": [
+            "plan"
+          ],
+          "primitives": [
+            "trying-tells-you",
+            "cause-precedes-effect"
+          ]
+        },
+        {
+          "id": "a1.mistake",
+          "form": "He meant to put it on the shelf. He put it on the floor.",
+          "introduces": [
+            "mistake"
+          ],
+          "primitives": [
+            "others-act",
+            "checking-settles-it"
+          ]
         }
       ]
     },
@@ -529,6 +551,53 @@
           ],
           "primitives": [
             "telling-can-be-wrong"
+          ]
+        },
+        {
+          "id": "c1.close_enough",
+          "form": "The cup is about half full. Not exactly half. Near enough to use.",
+          "introduces": [
+            "close_enough"
+          ],
+          "primitives": [
+            "same-again",
+            "looking-tells-you"
+          ]
+        },
+        {
+          "id": "c1.more_to_learn",
+          "form": "That is the short way to say it. There is more to it than that.",
+          "introduces": [
+            "more_to_learn"
+          ],
+          "primitives": [
+            "telling-can-be-wrong",
+            "others-know-differently"
+          ]
+        },
+        {
+          "id": "c1.real_pretend",
+          "form": "The toy dog is not a dog. We say it is, and it is not.",
+          "introduces": [
+            "real_and_pretend"
+          ],
+          "revisits": [
+            "toy"
+          ],
+          "primitives": [
+            "the-sign-is-not-the-thing",
+            "marks-stand-for-things"
+          ]
+        },
+        {
+          "id": "c1.story",
+          "form": "She told what happened. Some of it happened and some she made up.",
+          "introduces": [
+            "story"
+          ],
+          "primitives": [
+            "telling-can-be-wrong",
+            "marks-stand-for-things"
           ]
         }
       ]
@@ -658,6 +727,17 @@
           "primitives": [
             "others-know-differently",
             "telling-can-be-wrong"
+          ]
+        },
+        {
+          "id": "i1.rule",
+          "form": "You must not run inside. That holds today and it held before.",
+          "introduces": [
+            "rule"
+          ],
+          "primitives": [
+            "danger-must-be-taught",
+            "others-act"
           ]
         }
       ]

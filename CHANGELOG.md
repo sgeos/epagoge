@@ -27,6 +27,40 @@ Versioning.
 
 ## 2026-09-24
 
+### Corrected. Simple word, not simple concept, is the level-one test
+
+- The selection rule had been applied to abstractness. **It belongs to the
+  word.** A goal is abstract and "goal" is simple, so it is level one. An
+  axiom is no more abstract and "axiom" is not simple, so it is not.
+- Several concepts had been deferred for being abstract while their words
+  were among the simplest available. Small children hold goals, expressed
+  concretely, and say so in one syllable.
+- **Foundational vocabulary for the axiomatic treatment of a topic belongs
+  at level one**, whatever the topic's later complexity, provided the words
+  are simple. Recorded in `docs/spec/CURRICULUM_LEVELS.md`.
+
+### Found. Level one must be able to say that an explanation was simplified
+
+- **Every level above level one simplifies**, in five declared kinds. That
+  declaration is metadata. **The model needs the language.**
+- A model that cannot say "that is the short way to say it, and there is
+  more to it" cannot mark its own simplification in what it produces,
+  however carefully the corpus marked it in what the model read.
+- The language has to be grounded at level one, because a concept cannot be
+  used before it is grounded and every level above is doing the
+  simplifying.
+- `close_enough`, `more_to_learn`, `real_and_pretend` and `story` added to
+  compressed communication, joining `leaving_out`. **The vocabulary of
+  disclosed approximation sits at the same level as the cup and the
+  crayon.**
+
+### Added. Three more simply-named abstract concepts
+
+- `plan` and `mistake` in agentic operations. Deciding before doing, and
+  meaning one thing and doing another.
+- `rule` in institutional interfacing. What holds today and held before.
+- Level one now **68 units, 61 existing concepts and 36 planned**.
+
 ### Found. Two domains were missing the thing they are named for
 
 - Every one of the eleven scope notes read against the concepts its domain

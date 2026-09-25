@@ -158,6 +158,49 @@ cross-domain gradient alignment measures, which is in the Jacobian
 instrumentation. Inter-topic mastery is therefore observable in the kernel
 rather than only inferable from downstream behaviour.
 
+## What level one admits. Simple word, not simple concept
+
+**Recorded 2026-09-24.** The constraint at level one is the lexicon, not
+the idea.
+
+A goal is an abstract concept and "goal" is a simple word, so it belongs at
+level one. An axiom is no more abstract and "axiom" is not a simple word,
+so it does not. **Abstractness is not the test. The word is.**
+
+This corrects a selection rule that had been applied the other way, under
+which several concepts were deferred for being abstract while their words
+were among the simplest available. Small children hold goals, expressed
+concretely, and say so in one syllable.
+
+The practical form. **Foundational vocabulary for the axiomatic treatment
+of a topic belongs at level one**, whatever the topic's later complexity,
+provided the words are simple. Level one is where a concept is grounded,
+and nothing above it can use a concept level one did not ground.
+
+## Level one must be able to say that an explanation was simplified
+
+**This is the case that makes the rule matter, and it is unusual.**
+
+Every level above level one simplifies. `../spec/RECORD_SCHEMA.md` gives
+five kinds of it, being omission, idealisation, superseded model, analogy,
+and vocabulary-limited, and a record declares which it used.
+
+**That declaration is metadata. The model needs the language.** A model
+that cannot say "that is the short way to say it, and there is more to it"
+has no way to mark its own simplification in what it produces, however
+carefully the corpus marked it in what the model read.
+
+The language has to be grounded at level one, because a concept cannot be
+used before it is grounded and every level above is doing the simplifying.
+So level one carries `leaving_out`, `close_enough`, `more_to_learn` and
+`real_and_pretend`, which is the vocabulary of disclosed approximation, at
+the same level as the cup and the crayon.
+
+**A human preschooler is not talking about records or supersession.** This
+corpus is not a human preschooler, and the developmental analogy motivates
+the shape of the ladder without dictating its content, which is recorded
+below.
+
 ## Corpus construction
 
 **Levels one to six are entirely synthetic and built to purpose**, the
