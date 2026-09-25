@@ -108,6 +108,26 @@ class Vocabulary:
     exempt: frozenset[str] = frozenset()
     """Proper nouns, units, and anything else outside the level system."""
 
+    ostensive: frozenset[str] = frozenset()
+    """Words the corpus teaches by showing, and the dictionary never defines.
+
+    **A self-hosted compiler needs a seed compiler written in something
+    else. Here that something else is experience.** Measured on 2026-09-25,
+    a dictionary restricted to definitions reducing to the function words
+    accepted nothing at all in twenty-four attempts, and the words doing
+    the blocking were `body`, `food`, `hand`, `head`, `mouth` and `one`.
+    Nobody defines those. They are pointed at.
+
+    So the seed is the function words, which name nothing, plus these,
+    which name something that cannot be said without circularity. Keeping
+    the set small and stated is what stops self-hosting becoming true by
+    fiat, since a large enough seed makes any lexicon close.
+
+    Each must also be an admitted term, so that the books still teach it.
+    The dictionary declining to define a word is not the corpus omitting
+    it.
+    """
+
     substitutions: Mapping[str, str] = field(default_factory=dict[str, str])
     """Words deliberately NOT admitted, and what to write instead.
 
@@ -392,6 +412,7 @@ def validate_vocabulary(
     out.extend(_check_lower_bound(vocabulary, records, scheduled))
     out.extend(_check_lexicalisation(vocabulary, known_concepts, scheduled))
     out.extend(_check_inflections(vocabulary))
+    out.extend(_check_ostensive(vocabulary))
     levels = term_levels(vocabulary, records)
     out.extend(_check_ceiling(vocabulary, records, levels))
     out.extend(_check_coverage(vocabulary, records, levels))
@@ -584,7 +605,24 @@ def load_vocabulary(path: Path) -> Vocabulary:
         general=_parse_general(body.get("general")),
         exempt=frozenset(_str_list(body.get("exempt"), "exempt")),
         substitutions=_parse_substitutions(body.get("substitutions")),
+        ostensive=frozenset(_str_list(body.get("ostensive"), "ostensive")),
     )
+
+
+def _check_ostensive(vocabulary: Vocabulary) -> list[Violation]:
+    """An ostensive word must still be a term the corpus teaches.
+
+    The dictionary declining to define a word is a statement about the
+    dictionary. It is not permission to leave the word out of the books.
+    """
+    return [
+        Violation(
+            "ostensive-unlicensed",
+            f"{word!r} is ostensive and is not an admitted term",
+        )
+        for word in sorted(vocabulary.ostensive)
+        if not vocabulary.senses(word)
+    ]
 
 
 def _check_inflections(vocabulary: Vocabulary) -> list[Violation]:

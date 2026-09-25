@@ -57,12 +57,20 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--size", type=int, default=12, help="words per batch")
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument("--attempts", type=int, default=3)
+    parser.add_argument(
+        "--ground-first",
+        action="store_true",
+        help="only accept definitions that reduce to the seed",
+    )
     args = parser.parse_args(argv[1:])
 
     book_dir = ROOT / f"curriculum/books/level_{args.level}"
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
     admissible = admissible_words(vocabulary, args.level)
-    seed = set(vocabulary.core) | set(vocabulary.exempt)
+    # The seed is what needs no definition. Function words name nothing;
+    # ostensive words name something that cannot be said without
+    # circularity and are taught by the books instead.
+    seed = set(vocabulary.core) | set(vocabulary.exempt) | set(vocabulary.ostensive)
     # **One entry per sense.** A word with a noun and a verb sense needs
     # two definitions, which is what a dictionary has always done.
     senses: list[tuple[str, str]] = sorted(
@@ -89,9 +97,13 @@ def main(argv: list[str]) -> int:
         closure = dictionary_closure(defined, seed, tokenise, resolve)
         # The frontier first. A word other definitions already lean on, with
         # nothing under it, is what keeps the lexicon from reducing.
-        frontier = [w for w in closure.undefined if w in concept_of]
-        rest = sorted(w for w in concept_of if w not in defined and w not in frontier)
-        todo = (frontier + rest)[: args.size]
+        frontier = [w for w in closure.undefined if w in concept_of and w not in seed]
+        rest = sorted(
+            w
+            for w in concept_of
+            if w not in defined and w not in frontier and w not in seed
+        )
+        todo: list[str] = (frontier + rest)[: args.size]
         if not todo:
             print("nothing left to define", file=sys.stderr)
             break
@@ -106,7 +118,15 @@ def main(argv: list[str]) -> int:
         # none. Every rejection in the batch that was classified was the
         # same cause, a definition reaching outside the level's lexicon.
         # The record generator already had this and the dictionary did not.
-        outstanding = list(todo)
+        # **Ground-first is the bootstrap.** A definition is admitted only
+        # if it makes its word reduce to the seed, so the dictionary grows
+        # outward from what needs no definition rather than accumulating
+        # entries that rest on nothing. The allowed list is then the seed
+        # plus what is already grounded, which is also far smaller than the
+        # level's whole vocabulary, and a 780-word allow-list is a
+        # constraint the teacher has been measured not to follow.
+        allowed = sorted(seed | closure.grounded) if args.ground_first else admissible
+        outstanding: list[str] = list(todo)
         rejected: list[str] = []
         offending: list[str] = []
         kept = 0
@@ -120,13 +140,13 @@ def main(argv: list[str]) -> int:
             # defining them badly, which the rejection list cannot express.
             if attempt == 0 or not rejected:
                 question = prompts.definitions(
-                    batch_words, args.level, admissible, vocabulary.substitutions
+                    batch_words, args.level, allowed, vocabulary.substitutions
                 )
             else:
                 question = prompts.definitions_retry(
                     batch_words,
                     args.level,
-                    admissible,
+                    allowed,
                     rejected,
                     offending,
                     vocabulary.substitutions,
@@ -148,6 +168,24 @@ def main(argv: list[str]) -> int:
                     rejected.append(f"{word}: {text}")
                     offending.extend(outside)
                     continue
+                if args.ground_first:
+                    # Exact rather than approximate. Add it and ask the
+                    # closure whether the word now reduces to the seed.
+                    trial = dict(defined)
+                    trial[word] = text
+                    if (
+                        word
+                        not in dictionary_closure(
+                            trial, seed, tokenise, resolve
+                        ).grounded
+                    ):
+                        rejected.append(f"{word}: {text}")
+                        offending.extend(
+                            t
+                            for t in tokenise(text)
+                            if t not in seed and (resolve(t) or t) not in allowed
+                        )
+                        continue
                 defined[word] = text
                 outstanding.remove(word)
                 written.append(
