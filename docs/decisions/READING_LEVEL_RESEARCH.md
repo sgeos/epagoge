@@ -165,3 +165,50 @@ would be CC0-safe and better targeted than a general English list. It
 would also be uncurated, which is the property this project exists to
 reject, so it would be a starting point for judgement rather than an
 answer.
+
+## Openly licensed fourth-grade material to scan for vocabulary
+
+**Operator question 2026-09-25:** are there CC0-compatible fourth-grade
+textbooks, covering or adjacent to the curated corpus's material, that
+could be scanned for their lexicon?
+
+**Yes, and the cleanest sources are not textbooks.**
+
+| Source | Licence | Fit to this corpus |
+| --- | --- | --- |
+| **Smithsonian Open Access** | **CC0**, commercial use, no attribution required | K–12 science and natural history. Directly adjacent to `directed_physical_interactions` and `cybernetic_biological_systems` |
+| **United States federal works** | **Public domain** by statute. NASA, NOAA, USGS education material | Measurement, weather, earth and space. Adjacent to `record_keeping` and the physical domains |
+| **Graded readers out of copyright** | Public domain by age. McGuffey and successors | The artifact type exactly: a fourth reader is a fourth-grade book. Vocabulary is Victorian |
+| **Siyavula** | **CC BY** | Grade 4 science, South African curriculum |
+| CK-12 | CC BY-NC | Grade 4 science, Utah curriculum |
+| OpenStax | CC BY, per their licensing page | Mostly secondary and tertiary |
+
+**The first two are the answer to the question as asked.** CC0 and public
+domain carry no obligation that a CC0 repository cannot meet, so no
+licensing judgement is needed to use them.
+
+### The distinction that makes even the restrictive sources usable
+
+**A word list extracted from a text is not the text.** Which words a
+fourth-grade science book uses is a fact about that book, and a frequency
+count is a measurement rather than a copy. Nothing from the source is
+redistributed: what enters this repository is a list of English words and
+this project's own definitions of them.
+
+**That is a legal judgement and the operator holds it**, which is why the
+CC0 and public-domain sources are listed first. They make the judgement
+unnecessary.
+
+### The caution that matters more than the licence
+
+**A scanned lexicon is a proposal, not a decision.** The thesis of this
+project is that uncurated input produces undesirable properties, and a
+frequency list from any corpus is uncurated by construction. Every word it
+surfaces still has to pass the question that built level one: would a
+reader at this level know this word, and if not, can the concept be said
+another way.
+
+**A Victorian reader is a worked example of the risk.** McGuffey's fourth
+reader is genuinely fourth-grade and genuinely public domain, and its
+vocabulary would carry a century and a half of drift into a corpus meant
+for a child now.
