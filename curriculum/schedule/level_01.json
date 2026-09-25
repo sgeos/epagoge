@@ -864,7 +864,7 @@
         },
         {
           "id": "i1.rule",
-          "form": "You must not run inside. That holds today and it held before.",
+          "form": "You must not run inside. That holds today and it held before. The rule is written down. That does not make it the rule they use.",
           "introduces": [
             "rule"
           ],
@@ -883,6 +883,17 @@
             "people_together"
           ],
           "primitives": [
+            "others-act"
+          ]
+        },
+        {
+          "id": "i1.judged",
+          "form": "She will say if you did it well. You cannot see how she decides.",
+          "introduces": [
+            "judged_by_another"
+          ],
+          "primitives": [
+            "others-know-differently",
             "others-act"
           ]
         }

@@ -42,8 +42,8 @@ rendered ORDER of this list, not just the next unused number.
 4. Internal depth is **10** for `mathematics_and_formal_logic` and **6**
    for `failure_analysis`. **Internal, not global.** Global reads 10
    against 9 and is the wrong quantity for the ablation.
-5. `curriculum/schedule/level_01.json` holds **87** units, **69** existing
-   concepts and **47** planned. Level two covers the two ablation domains
+5. `curriculum/schedule/level_01.json` holds **88** units, **69** existing
+   concepts and **48** planned. Level two covers the two ablation domains
    only.
 6. `curriculum/vocabulary.json` holds **877** terms, **760** at level one.
 7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
@@ -137,6 +137,13 @@ frontier first because of it.
   so **the valuation cannot be the basis for deciding** and the agent must
   decide on what it can know. That is the anti-sycophancy target arriving
   from the side of action rather than assent.
+- **Scoring is faith-shaped in general, and the codified exception is the
+  trap.** Published criteria upgrade a claim to an attributed position and
+  never to a finding, because a rubric does not bind the evaluator. The
+  agents found real published criteria and the deployed scorer did not use
+  them. The same shape covers an operator judging a report, audit,
+  certification, peer review, and natural selection. See
+  `../decisions/EXTERNAL_SCORING.md`.
 
 ## What is YOURS: decisions the operator holds
 

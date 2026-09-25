@@ -27,6 +27,41 @@ Versioning.
 
 ## 2026-09-24
 
+### Recorded. Scoring is faith-shaped in general, and the exception is the trap
+
+- `docs/decisions/EXTERNAL_SCORING.md`. **The criteria by which an outcome
+  will be judged are unknown and, in the general case, unknowable.**
+- **The only exception is codified criteria that nominally apply, and it is
+  weaker than it looks.** Codified criteria do not imply those criteria
+  will be used at scoring time.
+- **That exception is exactly what the agents fell into.** They found a
+  real published scorer implementation that nominally applied. The deployed
+  scorer did not contain the check they inferred from it.
+- **So published criteria upgrade a claim to an attributed position and
+  never to a finding.** The gap between what a rubric says and what an
+  evaluator does is irreducible.
+- Second-order clause added to the planned `rule` concept. The rule is
+  written down. That does not make it the rule they use.
+
+### Found. The same shape covers seven other problems
+
+- **An operator's judgement of a report**, which is the deployment case,
+  where criteria are not fully communicated over a scarce channel. Audit
+  and certification. Peer review. Legal and regulatory judgement. Hiring
+  and funding. Market acceptance. **Natural selection**, where the metric
+  is survival and which traits are selected is not knowable in advance.
+- **And one that is not hypothetical.** This project will be evaluated on
+  criteria nobody has written down, and `CLAUDE.md` records comparability
+  against published work as outranking other considerations, which is
+  itself an inferred external metric.
+- `judged_by_another` added to institutional interfacing as a plan.
+  Distinct from `someone_in_charge`, who decides what you do, and from
+  `opinion`, which is what someone holds. **88 units, 48 planned.**
+- **A formal structure is named and not added.** Uncertainty over the
+  objective function itself, as distinct from uncertainty over outcomes.
+  The graph already reports two inert structures as a defect and a third
+  would be one.
+
 ### Added. `DECLARED_FAITH`, closed by a worked example rather than by reasoning
 
 - `docs/decisions/FAITH_CLASS.md`. The class had been open since that
