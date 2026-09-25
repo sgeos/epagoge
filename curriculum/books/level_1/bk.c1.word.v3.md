@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.word"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how words are made of letters and how they name things, using the example of the word \"apple\" to illustrate how a word connects to a real object through sound, spelling, and meaning.",
+  "teaches": "Readers learn that words are things we say to name objects, that letters combine in order to spell words, and that the same word can be spoken, written, and understood across different contexts.",
   "records": {
     "c1.word.v3.d00": {"concepts": ["word", "letter"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.word"}, "defines": {"kind": "topic", "target": "c1.word"}},
     "c1.word.v3.d01": {"concepts": ["letter"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:letter"}, "defines": {"kind": "word", "target": "letter"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "n1.keep_trying"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child faces a storm and a broken boat, struggling to move it across wet grass while darkness and fear surround them.",
+  "teaches": "Even when something seems impossible, trying again with courage and help can lead to success and growth.",
   "records": {
     "n1.keep_trying.d00": {"concepts": ["keep_trying_or_stop"], "claim_class": "formal", "provenance": {"source_claim": "topic:n1.keep_trying"}, "defines": {"kind": "topic", "target": "n1.keep_trying"}},
     "n1.keep_trying.d01": {"concepts": ["keep_trying_or_stop"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:quit"}, "defines": {"kind": "word", "target": "quit"}},

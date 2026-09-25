@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.raw"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A tree grows in the forest, is cut down, and becomes a chair that a child uses, then waits alone, showing how things change and continue to have meaning.",
+  "teaches": "That objects made from nature carry stories of their origins and can still be part of new experiences, even after their purpose changes.",
   "records": {
     "p1.raw.v2.d00": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.raw"}, "defines": {"kind": "topic", "target": "p1.raw"}},
     "p1.raw.v2.d01": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:builds"}, "defines": {"kind": "word", "target": "builds"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.person"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows a boy engaging in everyday actions like carrying, building, digging, and eating, all tied to basic human needs and desires. It follows his simple day from hunger to satisfaction, highlighting how people interact with their world through physical effort and care.",
+  "teaches": "A person is someone who does things to meet needs like hunger, create things like fire, and care for others like a sister. Simple actions and choices show what it means to be a person in the world.",
   "records": {
     "a1.person.d00": {"concepts": ["person", "activity", "need"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.person"}, "defines": {"kind": "topic", "target": "a1.person"}},
     "a1.person.d01": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:build"}, "defines": {"kind": "word", "target": "build"}},

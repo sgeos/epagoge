@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.order"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child follows a simple sequence of actions, opening a box, taking out a cup, placing it on a table, revealing how order shapes everyday moments.",
+  "teaches": "That doing things in a specific order helps us understand what comes next and builds calm, predictable routines.",
   "records": {
     "a1.order.v3.d00": {"concepts": ["doing_in_order"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.order"}, "defines": {"kind": "topic", "target": "a1.order"}},
     "a1.order.v3.d01": {"concepts": ["doing_in_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:order"}, "defines": {"kind": "word", "target": "order"}},

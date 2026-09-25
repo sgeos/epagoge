@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.real_pretend"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A toy dog that isn't alive but becomes real through a child's imagination and care, showing how pretend can feel real when someone believes in it.",
+  "teaches": "That pretending isn't just play, it's how we connect, give feeling to things, and make something meaningful through love and attention.",
   "records": {
     "c1.real_pretend.d00": {"concepts": ["real_and_pretend"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.real_pretend"}, "defines": {"kind": "topic", "target": "c1.real_pretend"}},
     "c1.real_pretend.s01": {"concepts": ["real_and_pretend"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:the-sign-is-not-the-thing"}},

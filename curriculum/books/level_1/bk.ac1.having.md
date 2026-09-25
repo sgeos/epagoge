@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "ac1.having"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This story follows a child who learns about ownership through a simple cup, exploring what it means to have something as one's own, to share, and to respect others' belongings. It shows how personal items like a handmade cup can carry meaning and connection, even when shared with others.",
+  "teaches": "Children learn that having something doesn't mean hoarding it, ownership includes caring for what's yours, respecting what belongs to others, and sharing with kindness. The story gently shows that fairness, honesty, and friendship matter more than having more.",
   "records": {
     "ac1.having.d00": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "topic:ac1.having"}, "defines": {"kind": "topic", "target": "ac1.having"}},
     "ac1.having.d01": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:belong"}, "defines": {"kind": "word", "target": "belong"}},

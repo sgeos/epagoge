@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.close_enough"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A little bird hesitates near a cup of water that's not quite full, wondering if it's enough to drink. The story follows the quiet moments of waiting, changing light, and a child who arrives without needing to measure, finding satisfaction in what's near enough.",
+  "teaches": "That being close enough, whether to full or to success, is often good enough when you're not waiting for perfection. It shows how patience, small steps, and not needing exactness can bring peace and joy.",
   "records": {
     "c1.close_enough.v2.d00": {"concepts": ["close_enough"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.close_enough"}, "defines": {"kind": "topic", "target": "c1.close_enough"}},
     "c1.close_enough.v2.d01": {"concepts": ["close_enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:near"}, "defines": {"kind": "word", "target": "near"}},

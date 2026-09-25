@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.inside"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the idea of \"inside\" through simple, everyday actions like pouring water, spilling it, and seeing how things move from one place to another. It shows what it means for something to be contained, how things can move from inside to outside, and how space and position affect what happens.",
+  "teaches": "Readers learn to recognize what it means for something to be inside something else, how things can fall out, and how movement and position change what's happening in a situation. It demonstrates that being inside isn't always permanent, and that what's inside can affect what happens outside.",
   "records": {
     "p1.inside.v4.d00": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.inside"}, "defines": {"kind": "topic", "target": "p1.inside"}},
     "p1.inside.v4.d01": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:container"}, "defines": {"kind": "word", "target": "container"}},

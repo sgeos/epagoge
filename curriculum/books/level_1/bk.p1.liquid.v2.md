@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.liquid"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how water changes shape to fit whatever container it's in, and explores related ideas like air, bubbles, and how liquids move and flow.",
+  "teaches": "Children learn that liquids like water take the shape of their container, air is present even in empty cups, and movement like dripping or spilling happens when gravity acts on liquid.",
   "records": {
     "p1.liquid.v2.d00": {"concepts": ["liquid", "air"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.liquid"}, "defines": {"kind": "topic", "target": "p1.liquid"}},
     "p1.liquid.v2.d01": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blow"}, "defines": {"kind": "word", "target": "blow"}},

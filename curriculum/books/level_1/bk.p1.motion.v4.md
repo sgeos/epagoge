@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.motion"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores different kinds of motion through the simple, repeated presence of an object that starts still and then moves in various ways, rolling, floating, flying, being pushed or pulled, showing how forces change what things do.",
+  "teaches": "Readers learn how motion begins with a push or pull, and how different movements like rolling, floating, or flying happen in everyday life, helping them notice and name these actions in the world around them.",
   "records": {
     "p1.motion.v4.d00": {"concepts": ["moving_and_still", "force"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.motion"}, "defines": {"kind": "topic", "target": "p1.motion"}},
     "p1.motion.v4.d01": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:climb"}, "defines": {"kind": "word", "target": "climb"}},

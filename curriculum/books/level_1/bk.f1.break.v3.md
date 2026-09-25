@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.break"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy learns that things break, especially when they've been used a lot, and that even when something is broken, it can still hold meaning or beauty.",
+  "teaches": "That breakage is a natural part of life, and even broken things can lead to new moments of care, noticing, and kindness.",
   "records": {
     "f1.break.v3.d00": {"concepts": ["things_break", "wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.break"}, "defines": {"kind": "topic", "target": "f1.break"}},
     "f1.break.v3.d01": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:piece"}, "defines": {"kind": "word", "target": "piece"}},

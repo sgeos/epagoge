@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.where"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child explores a landscape by paying close attention to directions and positions, noticing where things are in space, above, behind, beside, forward, and backward, through simple, concrete experiences in nature.",
+  "teaches": "That understanding where things are, relative to oneself and other objects, helps navigate the world, and that movement has direction, which can be followed or changed.",
   "records": {
     "r1.where.v2.d00": {"concepts": ["spatial_position", "direction"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.where"}, "defines": {"kind": "topic", "target": "r1.where"}},
     "r1.where.v2.d01": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:above"}, "defines": {"kind": "word", "target": "above"}},

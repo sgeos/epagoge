@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.unit"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy tries to keep three cups of water balanced on a table, learning how a single unit, like one cup, can be lost or replaced, and how actions have consequences.",
+  "teaches": "That a unit is a single, countable thing, and when it's gone, it can be replaced, but the act of losing it changes the situation and calls for a response.",
   "records": {
     "r1.unit.v4.d00": {"concepts": ["unit"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.unit"}, "defines": {"kind": "topic", "target": "r1.unit"}},
     "r1.unit.v4.d01": {"concepts": ["unit"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cup"}, "defines": {"kind": "word", "target": "cup"}},

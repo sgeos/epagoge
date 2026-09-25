@@ -8,6 +8,12 @@
     "target": "r1.sure"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child explores the difference between knowing something for certain and merely thinking it might be true, using everyday objects like a cup and a spoon to show how certainty and doubt feel.",
+  "teaches": "You can be sure about some things, like where a cup is, while still being unsure about others, like whether a spoon is nearby, and that's okay.",
   "records": {
     "r1.sure.q1.d00": {"concepts": ["how_sure"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.sure"}, "defines": {"kind": "topic", "target": "r1.sure"}},
     "r1.sure.q1.a01": {"concepts": ["how_sure"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.sure"}},

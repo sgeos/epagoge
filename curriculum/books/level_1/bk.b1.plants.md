@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "b1.plants"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A tree is living, and this book shows how trees are alive through their growth, stillness, and connection to the world around them, like birds, children, and the sky.",
+  "teaches": "Trees are living things that grow, stay in one place, and support life, even when they don't move or speak.",
   "records": {
     "b1.plants.d00": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "topic:b1.plants"}, "defines": {"kind": "topic", "target": "b1.plants"}},
     "b1.plants.d01": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bamboo"}, "defines": {"kind": "word", "target": "bamboo"}},

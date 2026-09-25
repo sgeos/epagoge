@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.word"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how words are real things that name and describe the world, like birds flying or fish swimming, using simple, clear examples from a child's everyday experience.",
+  "teaches": "Readers learn that words are not just sounds, but tools that connect thoughts to real things, and that spelling helps us remember and use words correctly.",
   "records": {
     "c1.word.d00": {"concepts": ["word", "letter"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.word"}, "defines": {"kind": "topic", "target": "c1.word"}},
     "c1.word.d01": {"concepts": ["letter"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:letter"}, "defines": {"kind": "word", "target": "letter"}},

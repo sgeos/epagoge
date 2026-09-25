@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.metal"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child discovers a metal key, learns about the properties of metal through its use, and finds a hidden garden beyond a door it opens.",
+  "teaches": "Metal is hard, shiny, and can be shaped into useful things like keys and nails; some metals like iron can rust, while others like steel are strong and durable.",
   "records": {
     "p1.metal.v4.d00": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.metal"}, "defines": {"kind": "topic", "target": "p1.metal"}},
     "p1.metal.v4.d01": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copper"}, "defines": {"kind": "word", "target": "copper"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.how"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows a child figuring out how to open a box using different tools and methods, exploring choices like hands versus a stick, and learning through trial and error how to do a task carefully and effectively.",
+  "teaches": "It teaches that there are many ways to do something, that choosing the right tool for the job matters, and that trying different methods with patience leads to success.",
   "records": {
     "a1.how.d00": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.how"}, "defines": {"kind": "topic", "target": "a1.how"}},
     "a1.how.d01": {"concepts": ["choosing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:choose"}, "defines": {"kind": "word", "target": "choose"}},

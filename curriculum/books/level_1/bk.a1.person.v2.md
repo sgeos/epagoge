@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.person"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows what it means to be a person by focusing on simple actions like wanting, needing, carrying, and building, using a boy's effort to make a boat for his baby brother as a real-life example.",
+  "teaches": "It helps children understand that being a person involves having desires, taking action to meet needs, and using care and effort to create something meaningful.",
   "records": {
     "a1.person.v2.d00": {"concepts": ["person", "activity", "need"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.person"}, "defines": {"kind": "topic", "target": "a1.person"}},
     "a1.person.v2.d01": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:anyone"}, "defines": {"kind": "word", "target": "anyone"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.join"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young lid goes on a journey of separation and reunion, exploring how things can be apart and then come back together through simple, physical actions.",
+  "teaches": "That being apart doesn't mean being lost, and that connection can be restored through intention and action.",
   "records": {
     "p1.join.v4.d00": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.join"}, "defines": {"kind": "topic", "target": "p1.join"}},
     "p1.join.v4.d01": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:apart"}, "defines": {"kind": "word", "target": "apart"}},

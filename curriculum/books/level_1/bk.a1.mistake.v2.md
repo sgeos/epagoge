@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.mistake"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child accidentally drops a ball that rolls away, gets lost in a hole, and is eventually helped by a bird and a feather, showing how small mistakes can lead to unexpected events.",
+  "teaches": "Mistakes happen, but they don't have to stay mistakes, help and creativity can turn things around, even when things go wrong.",
   "records": {
     "a1.mistake.v2.d00": {"concepts": ["mistake"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.mistake"}, "defines": {"kind": "topic", "target": "a1.mistake"}},
     "a1.mistake.v2.d01": {"concepts": ["mistake"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:correct"}, "defines": {"kind": "word", "target": "correct"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.feel"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child feels intense longing and fear while trying to reach a mysterious toy just out of reach, experiencing anxiety, isolation, and the quiet courage it takes to face those feelings alone.",
+  "teaches": "Strong emotions like fear and desire are real and okay, and even when we feel overwhelmed, we can find peace and safety within ourselves.",
   "records": {
     "a1.feel.v2.d00": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.feel"}, "defines": {"kind": "topic", "target": "a1.feel"}},
     "a1.feel.v2.d01": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:afraid"}, "defines": {"kind": "word", "target": "afraid"}},

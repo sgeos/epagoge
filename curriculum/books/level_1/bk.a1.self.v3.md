@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.self"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book follows a child's strong desire for a cup, exploring the quiet moments when they realize their own thoughts and feelings are separate from others. It shows how recognizing \"I\" and \"me\" helps a child understand their own needs and beliefs, even when someone else wants the same thing.",
+  "teaches": "A child learns to identify their own feelings and desires, understanding that wanting something doesn't mean they're the same as someone else. It introduces the idea of self-awareness through simple, everyday moments, helping young readers notice their own thoughts and choices.",
   "records": {
     "a1.self.v3.d00": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.self"}, "defines": {"kind": "topic", "target": "a1.self"}},
     "a1.self.v3.d01": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alone"}, "defines": {"kind": "word", "target": "alone"}},

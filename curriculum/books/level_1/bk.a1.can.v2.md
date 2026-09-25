@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.can"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child explores what it means to be able to do something, testing her limits by lifting a cup, reaching for things, and discovering strength in effort and persistence.",
+  "teaches": "Ability, possibility, and effort are real and measurable, some things are within reach, others not, but trying and staying with the task builds confidence and clarity about what one can do.",
   "records": {
     "a1.can.v2.d00": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.can"}, "defines": {"kind": "topic", "target": "a1.can"}},
     "a1.can.v2.d01": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:able"}, "defines": {"kind": "word", "target": "able"}},

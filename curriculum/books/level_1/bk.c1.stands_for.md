@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.stands_for"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child uses simple marks on paper to represent real objects like a cup, a bird, and the moon, showing how symbols can stand for things that are not themselves.",
+  "teaches": "A mark on paper can represent something real, even if it doesn't look like it, and the same mark can stand for different things depending on how it's used.",
   "records": {
     "c1.stands_for.d00": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.stands_for"}, "defines": {"kind": "topic", "target": "c1.stands_for"}},
     "c1.stands_for.d01": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:anything"}, "defines": {"kind": "word", "target": "anything"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.can"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child explores what she can and cannot do, learning through small victories and setbacks how strength, persistence, and patience shape her ability to act in the world.",
+  "teaches": "She discovers that being able to do something doesn't mean she can do everything, and that even when things are hard or broken, she can still move forward with care and calm.",
   "records": {
     "a1.can.d00": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.can"}, "defines": {"kind": "topic", "target": "a1.can"}},
     "a1.can.d01": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:able"}, "defines": {"kind": "word", "target": "able"}},

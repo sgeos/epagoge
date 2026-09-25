@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.inside"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the simple yet fundamental idea of what it means for something to be inside or outside a container, using a cup and water as a clear example. It shows how things stay inside when they fit and are held by a container, and how they move out when the container is tipped or opened.",
+  "teaches": "Readers learn to recognize the difference between inside and outside through real-world actions like pouring and spilling. They understand that containers hold things inside, and that not all surfaces can contain liquids, some let them spread out instead.",
   "records": {
     "p1.inside.v3.d00": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.inside"}, "defines": {"kind": "topic", "target": "p1.inside"}},
     "p1.inside.v3.d01": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:container"}, "defines": {"kind": "word", "target": "container"}},

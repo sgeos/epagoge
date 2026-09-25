@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.raw"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A tree grows in the forest, and its raw wood is shaped into a chair through careful carving and building. The story follows the journey of the wood from its natural state to becoming a sturdy, comforting object used by a child and even a tired bird.",
+  "teaches": "Raw materials start as simple, unaltered parts of nature, like wood from a tree, and can be transformed through human care and skill. The book shows how something natural can become useful and meaningful through thoughtful shaping and use.",
   "records": {
     "p1.raw.d00": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.raw"}, "defines": {"kind": "topic", "target": "p1.raw"}},
     "p1.raw.d01": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:carve"}, "defines": {"kind": "word", "target": "carve"}},

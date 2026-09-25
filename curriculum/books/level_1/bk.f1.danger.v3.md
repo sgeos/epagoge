@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.danger"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows children how some things can hurt them even when they don't look dangerous, like hot stoves or sharp objects, and explains why it's important to listen to grown-ups about safety.",
+  "teaches": "Children learn to recognize hidden dangers around the home, understand the signs of harm like heat or pain, and know that asking before touching something can keep them safe.",
   "records": {
     "f1.danger.v3.d00": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.danger"}, "defines": {"kind": "topic", "target": "f1.danger"}},
     "f1.danger.v3.d01": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:careful"}, "defines": {"kind": "word", "target": "careful"}},

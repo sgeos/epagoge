@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.sure"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child searches for a cup and a spoon, exploring what it means to know something is there even when it's hidden, and how certainty can feel safe even without proof.",
+  "teaches": "That knowing something is true can be a quiet, personal feeling, not just a fact you see or touch, and that waiting to act can be a way of honoring what you believe.",
   "records": {
     "r1.sure.d00": {"concepts": ["how_sure"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.sure"}, "defines": {"kind": "topic", "target": "r1.sure"}},
     "r1.sure.d01": {"concepts": ["how_sure"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:maybe"}, "defines": {"kind": "word", "target": "maybe"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.can"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child tries to lift a heavy cup and eventually learns that even when something feels impossible, effort and persistence can lead to small victories. The story shows how physical limits, strength, and the difference between what is possible or impossible are experienced through real actions and feelings.",
+  "teaches": "Children learn that \"can\" and \"cannot\" describe real abilities based on effort and physical limits, not just outcomes. They also see how trying again, staying calm, and focusing on small progress help build confidence and understanding.",
   "records": {
     "a1.can.v3.d00": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.can"}, "defines": {"kind": "topic", "target": "a1.can"}},
     "a1.can.v3.d01": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:able"}, "defines": {"kind": "word", "target": "able"}},

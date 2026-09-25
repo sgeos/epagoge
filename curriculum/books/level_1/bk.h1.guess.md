@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "h1.guess"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child explores a mysterious wooden box, making guesses about what might be inside, testing ideas through observation and imagination, and discovering that some truths are revealed only through curiosity and patience.",
+  "teaches": "Guessing is a way to explore the unknown, and ideas can change as we learn more, even when things seem empty, there might still be something hidden, waiting to be noticed.",
   "records": {
     "h1.guess.d00": {"concepts": ["guess"], "claim_class": "formal", "provenance": {"source_claim": "topic:h1.guess"}, "defines": {"kind": "topic", "target": "h1.guess"}},
     "h1.guess.d01": {"concepts": ["guess"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:guess"}, "defines": {"kind": "word", "target": "guess"}},

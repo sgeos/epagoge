@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.mistake"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child accidentally drops a book while trying to put it on a shelf, showing how even small mistakes happen when we're not careful.",
+  "teaches": "Mistakes are normal and don't have to be scary, what matters is noticing them and trying again with more care.",
   "records": {
     "a1.mistake.v3.d00": {"concepts": ["mistake"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.mistake"}, "defines": {"kind": "topic", "target": "a1.mistake"}},
     "a1.mistake.v3.d01": {"concepts": ["mistake"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:correct"}, "defines": {"kind": "word", "target": "correct"}},

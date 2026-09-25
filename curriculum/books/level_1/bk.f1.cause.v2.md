@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.cause"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child pushes a ball, and the story follows what happens next, showing how one action leads to another in a clear sequence.",
+  "teaches": "It shows the idea of cause and effect through simple, real-life events like pushing, rolling, hitting, and digging, helping children understand that actions have reasons and results.",
   "records": {
     "f1.cause.v2.d00": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.cause"}, "defines": {"kind": "topic", "target": "f1.cause"}},
     "f1.cause.v2.d01": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:because"}, "defines": {"kind": "word", "target": "because"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.only_asked"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child asks for exactly one cup of water, but someone gives her five, leading to confusion and sadness. The story shows how giving more than asked can cause discomfort, even when meant kindly.",
+  "teaches": "When someone asks for just one thing, giving more doesn't make it better, it can make it harder to handle. True care means paying attention to what is asked, not what you think is needed.",
   "records": {
     "a1.only_asked.d00": {"concepts": ["only_what_was_asked"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.only_asked"}, "defines": {"kind": "topic", "target": "a1.only_asked"}},
     "a1.only_asked.d01": {"concepts": ["only_what_was_asked"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:exactly"}, "defines": {"kind": "word", "target": "exactly"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.heat"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child explores heat through everyday experiences, noticing how it feels, how it changes things like water, and how it can be both fascinating and dangerous.",
+  "teaches": "Heat can make things hot, cause liquids to boil and steam, and make materials change state, like water turning to steam or ice melting, while also needing care to avoid burns.",
   "records": {
     "p1.heat.d00": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.heat"}, "defines": {"kind": "topic", "target": "p1.heat"}},
     "p1.heat.d01": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fire"}, "defines": {"kind": "word", "target": "fire"}},

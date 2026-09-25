@@ -8,6 +8,12 @@
     "target": "p1.liquid"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores how liquids like water take the shape of their containers, while also showing that air fills empty spaces, even in a cup. It uses simple actions, drinking, blowing, dripping, and breathing, to show what's inside a cup at different times.",
+  "teaches": "Readers learn that liquids flow and take the shape of their containers, and that even empty cups are full of air. They also discover how air behaves differently from water, like forming bubbles or filling space when blown in.",
   "records": {
     "p1.liquid.q1.d00": {"concepts": ["liquid", "air"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.liquid"}, "defines": {"kind": "topic", "target": "p1.liquid"}},
     "p1.liquid.q1.d01": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blow"}, "defines": {"kind": "word", "target": "blow"}},

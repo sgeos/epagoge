@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.more_to_learn"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child's curiosity about the stars leads to questions, wonder, and quiet moments of connection with the unknown, showing how simple thoughts can open doors to deeper understanding.",
+  "teaches": "That asking questions and feeling wonder are natural parts of learning, and that even when answers aren't clear, the act of seeking them matters.",
   "records": {
     "c1.more_to_learn.d00": {"concepts": ["more_to_learn"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.more_to_learn"}, "defines": {"kind": "topic", "target": "c1.more_to_learn"}},
     "c1.more_to_learn.d01": {"concepts": ["more_to_learn"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:question"}, "defines": {"kind": "word", "target": "question"}},

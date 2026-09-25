@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.stuff"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the physical properties of everyday objects, focusing on a stone cup to introduce concepts like shape, texture, weight, and material through simple, sensory descriptions.",
+  "teaches": "Readers learn to observe and name basic attributes of things, such as roundness, smoothness, coldness, and emptiness, while understanding that objects have inherent qualities that can be felt and recognized.",
   "records": {
     "p1.stuff.v2.d00": {"concepts": ["material", "shape"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.stuff"}, "defines": {"kind": "topic", "target": "p1.stuff"}},
     "p1.stuff.v2.d01": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:circle"}, "defines": {"kind": "word", "target": "circle"}},

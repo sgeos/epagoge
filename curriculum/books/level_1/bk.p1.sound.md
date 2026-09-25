@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.sound"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book follows a child who hears a sudden loud noise when a cup falls, then notices the quiet that follows, exploring how sounds appear and disappear. It shows how sound travels, how it can be loud or silent, and how people react to unexpected noises.",
+  "teaches": "Readers learn to pay attention to sounds in everyday moments, recognizing that sounds have beginnings and endings, and that silence can be just as noticeable as noise. They also see how the same event can be experienced differently by different people.",
   "records": {
     "p1.sound.d00": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.sound"}, "defines": {"kind": "topic", "target": "p1.sound"}},
     "p1.sound.d01": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bang"}, "defines": {"kind": "word", "target": "bang"}},

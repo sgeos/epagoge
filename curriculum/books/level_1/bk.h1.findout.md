@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "h1.findout"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child and a friend search for a lost toy, using careful observation and simple steps to discover where it was hidden.",
+  "teaches": "That finding out something true often means looking closely, checking clues, and using your senses to solve a mystery.",
   "records": {
     "h1.findout.d00": {"concepts": ["finding_out", "settling_it"], "claim_class": "formal", "provenance": {"source_claim": "topic:h1.findout"}, "defines": {"kind": "topic", "target": "h1.findout"}},
     "h1.findout.d01": {"concepts": ["finding_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:discover"}, "defines": {"kind": "word", "target": "discover"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.stale"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A quiet story about loss and absence, told through the image of an empty cup that once held something meaningful. It shows how things can remain still and unchanged even after what filled them is gone.",
+  "teaches": "That some things feel empty not because they are broken, but because what made them full is no longer there. It also shows how silence and stillness can hold memory, even when nothing remains.",
   "records": {
     "r1.stale.v4.d00": {"concepts": ["out_of_date"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.stale"}, "defines": {"kind": "topic", "target": "r1.stale"}},
     "r1.stale.v4.s01": {"concepts": ["out_of_date"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},

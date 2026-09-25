@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.cause"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child pushes a ball, and it moves, showing how one action leads to another in a simple chain of events.",
+  "teaches": "That actions cause effects, and that observing what happens after a push helps us understand how things work.",
   "records": {
     "f1.cause.v4.d00": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.cause"}, "defines": {"kind": "topic", "target": "f1.cause"}},
     "f1.cause.v4.d01": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:because"}, "defines": {"kind": "word", "target": "because"}},

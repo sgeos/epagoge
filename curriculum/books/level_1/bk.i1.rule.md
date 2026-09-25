@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "i1.rule"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows a child facing a rule that says not to run inside, and choosing to follow it even when tempted. It portrays the internal struggle of resisting an impulse and the calm decision to wait, using a simple moment with a ball under the bed as a test of self-control.",
+  "teaches": "Following rules helps us stay safe and responsible, even when we want to break them. It also shows that waiting and controlling our actions can feel hard but is a way of doing the right thing.",
   "records": {
     "i1.rule.d00": {"concepts": ["rule"], "claim_class": "formal", "provenance": {"source_claim": "topic:i1.rule"}, "defines": {"kind": "topic", "target": "i1.rule"}},
     "i1.rule.d01": {"concepts": ["rule"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:proper"}, "defines": {"kind": "word", "target": "proper"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "ac1.tally"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows children how to use tally marks to count objects or events, one mark at a time, and how grouping them in fives makes counting easier. It demonstrates real-life situations where tallying is helpful, like counting animals or tracking classroom activities.",
+  "teaches": "Children learn to make one mark for each item or event, group marks in sets of five, and use tallies to keep track of larger numbers. They understand that each mark represents one thing and that the pattern of five helps quickly see how many there are.",
   "records": {
     "ac1.tally.d00": {"concepts": ["keeping_count"], "claim_class": "formal", "provenance": {"source_claim": "topic:ac1.tally"}, "defines": {"kind": "topic", "target": "ac1.tally"}},
     "ac1.tally.d01": {"concepts": ["keeping_count"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:score"}, "defines": {"kind": "word", "target": "score"}},

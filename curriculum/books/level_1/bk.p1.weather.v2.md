@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.weather"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A little girl and a baby watch the sky change from dry and clear to cloudy and rainy, noticing how the world looks and feels different when rain falls.",
+  "teaches": "Children learn to recognize weather changes like clouds, rain, and breezes, and how they affect the sky, the ground, and what we see and feel outside.",
   "records": {
     "p1.weather.v2.d00": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.weather"}, "defines": {"kind": "topic", "target": "p1.weather"}},
     "p1.weather.v2.d01": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breeze"}, "defines": {"kind": "word", "target": "breeze"}},

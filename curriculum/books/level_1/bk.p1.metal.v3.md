@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.metal"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy discovers that many everyday objects are made of metal, from keys and nails to bridges and cans, and learns how different metals behave, like rusting or shining when cleaned.",
+  "teaches": "Children learn to recognize metals by their look and feel, understand that metals can change over time, and see how materials like iron, steel, and tin are used in real things around them.",
   "records": {
     "p1.metal.v3.d00": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.metal"}, "defines": {"kind": "topic", "target": "p1.metal"}},
     "p1.metal.v3.d01": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copper"}, "defines": {"kind": "word", "target": "copper"}},

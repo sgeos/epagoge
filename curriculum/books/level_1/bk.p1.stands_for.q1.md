@@ -8,6 +8,12 @@
     "target": "p1.stands_for"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child plays with a toy car, learning that it isn't a real car but stands in for one, helping them imagine and pretend.",
+  "teaches": "Things can represent other things, like a toy standing for a real object, and this helps us play and understand the world.",
   "records": {
     "p1.stands_for.q1.d00": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.stands_for"}, "defines": {"kind": "topic", "target": "p1.stands_for"}},
     "p1.stands_for.q1.a01": {"concepts": ["toy"], "claim_class": "empirical", "provenance": {"source_claim": "topic:p1.stands_for"}},

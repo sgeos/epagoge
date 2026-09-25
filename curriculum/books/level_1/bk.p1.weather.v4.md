@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.weather"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young girl observes the changing weather as rain begins to fall, noticing the darkening sky, the wind, the sound of drops, and the way water runs down the window.",
+  "teaches": "Children learn to recognize signs of rain, dark clouds, wind, falling drops, and understand how weather changes over time, seeing the sky shift from cloudy to clear.",
   "records": {
     "p1.weather.v4.d00": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.weather"}, "defines": {"kind": "topic", "target": "p1.weather"}},
     "p1.weather.v4.d01": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cloudy"}, "defines": {"kind": "word", "target": "cloudy"}},

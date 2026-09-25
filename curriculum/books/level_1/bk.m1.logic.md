@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.logic"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book uses a simple story about rain, a wet ground, and a floating balloon to show how one thing can lead to another in a clear, predictable way. It explores basic ideas like cause and effect, time, and the idea that some things must be true while others cannot be at the same time.",
+  "teaches": "Readers learn how to follow logical connections between events, like how rain leads to a wet ground, and how one thing can happen after another. They also see how things can stay true even when other things change, like the ground drying while a balloon stays in the air.",
   "records": {
     "m1.logic.d00": {"concepts": ["if_then", "all_some_none", "not_both"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.logic"}, "defines": {"kind": "topic", "target": "m1.logic"}},
     "m1.logic.d01": {"concepts": ["all_some_none"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nobody"}, "defines": {"kind": "word", "target": "nobody"}},

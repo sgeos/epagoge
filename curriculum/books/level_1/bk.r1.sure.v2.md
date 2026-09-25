@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.sure"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child explores their surroundings with curiosity, using sight, touch, and observation to confirm what they believe is true, while also acknowledging uncertainty about things they can't see.",
+  "teaches": "That knowing something can come from direct experience, like seeing or touching, while still being open to not being certain about things we can't confirm.",
   "records": {
     "r1.sure.v2.d00": {"concepts": ["how_sure"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.sure"}, "defines": {"kind": "topic", "target": "r1.sure"}},
     "r1.sure.v2.d01": {"concepts": ["how_sure"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:doubt"}, "defines": {"kind": "word", "target": "doubt"}},

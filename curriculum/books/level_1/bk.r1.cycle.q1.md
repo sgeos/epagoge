@@ -8,6 +8,12 @@
     "target": "r1.cycle"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book follows the daily cycle of day and night, showing how each part of the day naturally leads to the next in a repeating pattern. It highlights the predictable rhythm of sunrise, daylight, evening, night, and the return of morning.",
+  "teaches": "Children learn that day and night repeat every single day without fail, and that each phase, like morning, evening, or nighttime, comes in a consistent order. They also discover that the sun and moon play key roles in marking these changes.",
   "records": {
     "r1.cycle.q1.d00": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.cycle"}, "defines": {"kind": "topic", "target": "r1.cycle"}},
     "r1.cycle.q1.a01": {"concepts": ["cycle"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.cycle"}},

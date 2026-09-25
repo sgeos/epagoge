@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.compare"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book helps children notice differences and similarities between objects, using simple comparisons like \"same,\" \"different,\" \"more,\" and \"few.\" It shows how things can be matched, paired, or counted, and how small details matter in understanding what goes together.",
+  "teaches": "Children learn to identify when two things are alike or different, understand basic comparisons like more vs. few, and recognize pairs, single items, and how things relate in groups. The story uses everyday scenes and clear examples to build early math and observation skills.",
   "records": {
     "m1.compare.v4.d00": {"concepts": ["same_and_different", "correspondence", "more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.compare"}, "defines": {"kind": "topic", "target": "m1.compare"}},
     "m1.compare.v4.d01": {"concepts": ["same_and_different"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:different"}, "defines": {"kind": "word", "target": "different"}},

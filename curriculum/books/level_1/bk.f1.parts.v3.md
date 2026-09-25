@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.parts"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy builds a boat from parts like wood and rope, learns how each part must be strong and fit together, and sees what happens when one part fails.",
+  "teaches": "Things are made of parts that must work together to function as a whole, and a single weak part can cause the whole thing to fail.",
   "records": {
     "f1.parts.v3.d00": {"concepts": ["component_and_system"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.parts"}, "defines": {"kind": "topic", "target": "f1.parts"}},
     "f1.parts.v3.d01": {"concepts": ["component_and_system"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:part"}, "defines": {"kind": "word", "target": "part"}},

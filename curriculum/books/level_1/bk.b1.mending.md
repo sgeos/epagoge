@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "b1.mending"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how the body naturally heals itself after a small injury, like a cut, using simple, everyday moments to illustrate the process.",
+  "teaches": "It teaches that some things, like wounds, mend on their own with time and care, while others, like broken objects, cannot be fixed the same way.",
   "records": {
     "b1.mending.d00": {"concepts": ["mending"], "claim_class": "formal", "provenance": {"source_claim": "topic:b1.mending"}, "defines": {"kind": "topic", "target": "b1.mending"}},
     "b1.mending.d01": {"concepts": ["mending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fix"}, "defines": {"kind": "word", "target": "fix"}},

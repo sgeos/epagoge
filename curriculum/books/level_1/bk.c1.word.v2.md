@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.word"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how words are connected to real things, using a child's simple experience of finding a word, recognizing it in the world, and writing it down. It demonstrates how letters come together to form words, how words name things, and how writing a word can feel like making something real.",
+  "teaches": "Readers learn that words are not just sounds, they are made of letters, can name real objects, and can be written to represent them. They also see how writing a word helps connect the idea, the sound, and the symbol.",
   "records": {
     "c1.word.v2.d00": {"concepts": ["word", "letter"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.word"}, "defines": {"kind": "topic", "target": "c1.word"}},
     "c1.word.v2.d01": {"concepts": ["letter"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:letter"}, "defines": {"kind": "word", "target": "letter"}},

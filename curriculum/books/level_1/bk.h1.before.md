@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "h1.before"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child discovers a mysterious red stone and a hidden wooden boat in the forest, leading to a quiet journey of courage and self-trust.",
+  "teaches": "That new things can feel unknown and scary, but keeping a secret can be safe when it's shared only with yourself, and that curiosity can lead to understanding even when no one else knows.",
   "records": {
     "h1.before.d00": {"concepts": ["not_always_known"], "claim_class": "formal", "provenance": {"source_claim": "topic:h1.before"}, "defines": {"kind": "topic", "target": "h1.before"}},
     "h1.before.d01": {"concepts": ["not_always_known"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:new"}, "defines": {"kind": "word", "target": "new"}},

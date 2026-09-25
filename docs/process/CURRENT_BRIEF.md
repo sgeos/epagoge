@@ -1,151 +1,99 @@
-# Current brief. Three problems, and only one of them is mine
+# Current brief. Finish the metadata, then lengthen the corpus
 
-**Rewritten 2026-09-25** after the operator framed the project as three
-problems rather than one, and **remeasured later the same day**. Delete
-when `COMPLETION_CONDITION.md` is met.
+**Written 2026-09-25**, replacing the three-problems brief, whose items
+are carried forward below. Delete when `COMPLETION_CONDITION.md` is met.
+Durable practice is in `PROCESS_STRATEGY.md` and is not repeated here.
 
-**The durable half of this document has moved.** Failure classes,
-verification posture and autonomy boundaries now live in
-`PROCESS_STRATEGY.md`, because a lesson filed in a document marked for
-deletion is deleted with it. The wrong turns below stay here as the
-specific record; the classes they belong to are in the strategy.
+## The present goals, as the tree reports them
 
-## The framing, and what it does to the work
+| Goal | State, measured 2026-09-25 |
+| --- | --- |
+| Level-one book metadata | **0 of 246** books carry any of six fields |
+| Level-one corpus length | **229 of 244** content books below the word band |
+| Level-one lexicon utilisation | **688 of 2,051** surface forms never used |
+| Level-two lexicon | 879 words against a target near 10,000 |
+| Schedules for levels three to seven | None exist |
+| Level seven | Not started. `sources/` empty, licensing unexamined |
+| Ordering ablation | Blocked on an endpoint the operator holds |
 
-`../decisions/THREE_PROBLEMS.md` has it in full. In short:
+The last four are the operator's and are listed in the handoff. They are
+not this brief's.
 
-**Level one is a bootstrapping problem** and it is solved in its
-essentials. The lexicon closes, every unit has a book, the model trains
-and can be talked to. What remains is volume and length, which is
-mechanical.
+## What to pursue, and why in this order
 
-**Levels two to six are a scheduling problem.** Allocation over a partial
-order: every concept and word slotted into a level and revisited at
-increasing complexity. Measured 2026-09-25: **24 concepts no schedule
-teaches, 14 taught once and never revisited**, and schedules for two of
-seven levels. The revisit gap was 68 when this document was first written.
+**First, book metadata, to completion.** It is bounded, finishable in one
+sitting, and it has sat at zero across three sessions while the capability
+to do it existed. The operator asked for `about` and `teaches` once and
+for `author`, `licence`, `first_published` and `published` again later.
+This is the project's own rule about unblocking not being authoring,
+applied to the one case where the tooling was already built.
 
-**Level seven is a transition problem** from an idealised synthetic corpus
-to real material. `sources/` is empty, its licensing constraint is
-recorded and unexamined, and nothing measures performance on a problem
-nobody wrote for the model. It has not started.
+**Second, corpus length**, with whatever budget remains. It is the larger
+prize, since the corpus is the *measured* limit on model quality, and it
+needs no new book. But it is open-ended where the metadata is bounded, and
+finishing beats starting.
 
-## What I recommend pursuing
+**Not lexicon utilisation.** Each of the 688 unused forms is a judgement
+about whether a module should use it, be drafted for it, or whether
+admitting it was a mistake. A loop cannot make that call and should not
+pretend to.
 
-**A. Level-one length.** Remeasured 2026-09-25: the corpus is 55,510 words,
-of which 48,634 sit in the 244 sixteen-spread content books, against
-195,200 at the operator's fifty-words-a-spread standard. **229 of those 244
-are below the band** and 15 are inside it; none is above.
-`fill_spreads.py` lengthens what exists rather than adding books, which
-also avoids the repetition that more books about the same units produces.
-**A factor of four without a new book.**
+## Two defects found before any of this work started
 
-**B. The revisit gap, where it is mechanical.** Down from 68 concepts to
-14, so this is now the smaller half of the scheduling problem. Each one
-left is the curriculum's own claim going unhonoured. Deciding
-*which* level a concept should be revisited at is design. Recording that a
-level-two module revisits the level-one concepts its own domain already
-teaches is not, and it closes a large part of the gap without a judgement
-per concept.
+Both were found in the first ten minutes, by reading the tool rather than
+running it. Neither would have announced itself.
 
-**C. `about` and `teaches` for books.** Written in unrestricted English for
-a curator, so nothing is rejected on vocabulary and the teacher cannot
-fail the way it fails on corpus prose. **Zero of 246 books carry them, and
-zero carry `author`, `licence`, `first_published` or `published` either.**
-The fields exist on `Book`, `book_head` writes them, and
-`generators/describe_books.py` exists. The capability was built and never
-applied, which is this project's own rule about unblocking not being
-authoring, in its purest form.
+**`generators/describe_books.py` rebuilds a `Book` by enumerating its
+fields.** It passes seven and the dataclass has twelve, so a bulk run
+would silently strip `form` from the **17 question-and-answer books**,
+along with any of the other four fields already present. This is exactly
+the failure `book_head` was written to prevent, and its docstring claims
+the problem is solved because one function now writes the front matter.
+**The writer side was fixed and the constructor side was not.** Fix it
+with `dataclasses.replace` so the set of fields is never enumerated again.
 
-**D. Not mine.** Schedules for levels three to seven. Anything under
-`sources/`, including the licensing question. The allocation that takes
-the level-two lexicon from 879 words to ten thousand, which is a schedule
-nobody has written rather than a backlog of admissions. The endpoint and
-estimator for pre-registration item 10, which fixes the sign of any
-ordering result.
+**`src/epagoge/book.py:books_from_json` drops the same five fields on
+read.** Any consumer of `load_books` sees books whose form and metadata
+are absent rather than empty, and cannot tell the difference.
 
-## What the framing corrected in my own priorities
+**Do not run the bulk description pass until both are fixed**, and add a
+round-trip test that fails when a field is added to `Book` and not carried
+through. A guard that has not been shown able to fail is not a guard.
 
-**I had been treating corpus volume as the universal answer.** It is the
-binding constraint on the level-one MVP and was measured to be. It is not
-binding at levels two to six, where coverage and consistency are, and a
-large corpus with unscheduled concepts would not be progress.
+## Wrong turns to avoid, specific to this work
 
-**I had been treating the level-two lexicon as a backlog.** Admitting
-words a round at a time from whatever blocked a generator will not produce
-ten thousand of them.
+- **`--limit` defaults to 10.** A bulk run needs an explicit count, and
+  the printed total is the check that it did what was asked.
+- **Do not apply the vocabulary ceiling to `about` and `teaches`.** They
+  are deliberately unrestricted, written for a person and never trained
+  on. That is the whole reason this task cannot fail the way corpus
+  generation fails.
+- **Fold typography.** The first generated description carried a curly
+  apostrophe, which lands in the JSON as `’`. The project already
+  lost four sentences to curly apostrophes once.
+- **`author` and `licence` are decisions, not derivations.** Pick a
+  defensible value, record why in a decision record, and do not invent
+  something that reads as a claim about authorship the project cannot
+  support. `first_published` and `published` *are* derivations, from the
+  git history of each book file, and must be derived rather than guessed.
+- **Read a sample of the output, not only the count.** Two interventions
+  once raised acceptance and moved closure not at all.
+- **Metadata is not corpus.** Adding six fields to 246 books changes no
+  measured model property. Do not report it as corpus growth.
+- **The run is about twenty-five seconds a book**, so 246 books is
+  roughly one hundred minutes of teacher time. Run it in the background
+  and do something else; do not sit on it.
+- **Gate, read the exit code, stop, then commit.** Three commits have
+  landed on a red gate by running both in one breath.
 
-## How a round goes
+## Carried forward from the three-problems brief
 
-1. Generate or fill a bounded chunk. Runs are additive.
-2. Bring every book to its exact spread count.
-3. Triage the quarantine: suitable words through `tools/admit.py`,
-   unsuitable ones into `substitutions`.
-4. A book the teacher cannot finish is finished by hand.
-5. Gate, read the exit code, stop, then commit.
+The framing in `../decisions/THREE_PROBLEMS.md` still governs. Level one
+is bootstrapping and is solved in its essentials. Levels two to six are a
+scheduling problem where coverage and consistency bind, not volume. Level
+seven is a transition problem that has not started.
 
-## Wrong turns, every one already made once
-
-- **The gate must gate.** A commit ran after `GATE=1` was printed in the
-  same invocation. Reading the exit code is not the control. Not issuing
-  the commit is. Three commits landed on a red gate this way.
-- **The local gate is not the gate.** CI was red for an entire session
-  because pyright resolves optional dependencies from a virtual
-  environment that exists locally and not on a runner. Check CI.
-- **Check a tool's remove path apart from its add path.** `sync_thesaurus`
-  keyed both on the level it was given, so syncing at level one deleted
-  every level-two entry. The dictionary generator replaced instead of
-  accumulating. Two tools whose add path concealed a destructive remove.
-- **Moving a sense moves its thesaurus entry.** Sixty-six senses were
-  re-filed onto newly authored concepts, and `sync_thesaurus` removes an
-  entry whose sense no longer exists, so the entries had to be carried
-  across in the same step or 194 antonyms and 132 synonyms would have gone.
-- **Deduplicate against what is admissible here.** `admit.py` subtracted
-  every existing form regardless of level, so `depend` entered level one
-  without `depends`, which a level-six term already spelled.
-- **An inflected form filed as a headword is a latent collision.**
-  `depends` and `reporting` were level-six headwords. Fold such a word
-  into its base verb rather than adding the form to the base as well.
-- **Nothing compares a derived form against English.** `admit`, `spend`
-  and `quit` inflected to `admited`, `spended` and `quited`, the same
-  class as the seven nonsense words found earlier. The doubling check
-  closes one narrow class of this and the gap is otherwise open.
-- **The corpus validator was more permissive than the lexicon, and is not
-  any more.** It accepted a word by stripping suffixes, so `ended` passed
-  on the strength of `end` and reached a book in a form the lexicon does
-  not carry. Eleven real gaps were found that way, every one of them after
-  the word was already written: `rains`, `stared`, `warmed`, `clearing`,
-  `facing`, `cleared`, `lighting`, `thoughts`, `ended`, `lived` and
-  `winding`. `unlicensed` is exact by default as of 2026-09-25 and asks
-  the question the tokeniser asks. The permissive reading survives behind
-  `exact=False`, for the case it was right for, which is whether a reader
-  would know a word rather than whether the corpus may contain it.
-- **Where an inflected form is also a word, the word carries it and the
-  base stops listing it.** `clear` and `clearing`, `think` and `thought`,
-  `live` against `life` and `living`. Otherwise one form belongs to two
-  terms and the lexicon refuses the tree.
-- **Do not run large generation passes for definitions.** Acceptance fell
-  22.6, 16.4, then 6.0 percent. Authoring yields about a hundred a round.
-  **Stories are different**: story acceptance runs near fifty percent, so
-  generation is the right tool there and authoring is the fallback.
-- **Read closure, not acceptance.** Two interventions raised acceptance
-  and moved closure not at all.
-- **Do not grow the ostensive seed to make closure easy.** Held at 37 for
-  many rounds. A large enough seed closes any lexicon.
-- **Do not describe a property the tree does not have yet.** Said twice.
-  Both were caught by checking rather than by remembering.
-- **Unblocking is not authoring.** The fifty-one concepts made forty-three
-  units authorable and wrote no books. Reporting enabling work as though
-  it were delivery is the error the concept record exists to avoid.
-- **No magic numbers in tests.** An assertion of more than 800 thesaurus
-  entries went stale the moment inflections were merged.
-- **Never `git checkout` to undo without checking what else is
-  uncommitted.** It cost two authored waves.
-
-## Watch these three numbers
-
-**The ostensive seed size**, which guards the self-hosting claim.
-**Books at the standard against ninety-two**, which is the honest measure
-of how much corpus exists. **Whether a reported figure came from the
-corpus or from the synthetic stream**, because the pilot numbers are
-already being quoted and only one of those two is this project.
+The specific wrong turns recorded against lexicon work, generation
+acceptance, thesaurus synchronisation and inflection remain in the git
+history of this file and in `PROCESS_STRATEGY.md`, which holds the classes
+they belong to.

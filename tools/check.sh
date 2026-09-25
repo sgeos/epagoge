@@ -82,6 +82,13 @@ run "coverage"           env PYTHONPATH=src python3 tools/coverage.py curriculum
 # because the ordering is a property of files a generator rewrites.
 run "dictionary order"   env PYTHONPATH=src python3 tools/sort_dictionary.py --check curriculum/books/level_1 curriculum/books/level_2
 
+# **Presence, and agreement with history.** A book's two dates are derived
+# from the commit log, so a committed book whose `published` field
+# disagrees with its own history is reporting something that was true once.
+# A book modified in the working tree is skipped, because its edit is not in
+# history yet.
+run "book metadata"      env PYTHONPATH=src python3 tools/stamp_books.py --level 1 --check
+
 # A document that names a file which no longer exists reads as evidence and
 # is not. Adapted from the keleusma repository's markdown link check, against
 # what this project's documents actually do, which is cite backticked paths.

@@ -984,6 +984,11 @@ def books_from_json(payload: object) -> list[Book]:
         for position, record in enumerate(records):
             if not isinstance(record, str):
                 raise ValueError(f"{where}.records[{position}]: expected a string")
+        # **The optional fields are read here too.** This listed six of
+        # twelve, so every consumer of `load_books` saw a book whose form
+        # and metadata were absent rather than empty and could not tell
+        # the difference. The markdown reader had them and the JSON reader
+        # did not, which is the same divergence in two directions.
         out.append(
             Book(
                 id=_require(fields, "id", where),
@@ -992,6 +997,13 @@ def books_from_json(payload: object) -> list[Book]:
                 subject_kind=DefinitionKind(_require(subject, "kind", where)),
                 subject=_require(subject, "target", where),
                 records=tuple(cast(list[str], records)),
+                about=_optional(fields, "about", where),
+                teaches=_optional(fields, "teaches", where),
+                form=_optional(fields, "form", where),
+                author=_optional(fields, "author", where),
+                licence=_optional(fields, "licence", where),
+                first_published=_optional(fields, "first_published", where),
+                published=_optional(fields, "published", where),
             )
         )
     return out

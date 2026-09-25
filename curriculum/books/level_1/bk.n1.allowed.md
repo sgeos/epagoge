@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "n1.allowed"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child learns the quiet weight of choice when they are allowed to keep only one thing they desire, between a floating red balloon and a visiting bird. The story shows what it means to let go, not out of loss, but out of respect for limits and the space those limits create.",
+  "teaches": "Some things are allowed, but not all at once, true freedom includes knowing when to say no. It's okay to want more, but choosing one means honoring what you keep, even as you let go.",
   "records": {
     "n1.allowed.d00": {"concepts": ["allowed_or_not"], "claim_class": "formal", "provenance": {"source_claim": "topic:n1.allowed"}, "defines": {"kind": "topic", "target": "n1.allowed"}},
     "n1.allowed.d01": {"concepts": ["allowed_or_not"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:allow"}, "defines": {"kind": "word", "target": "allow"}},

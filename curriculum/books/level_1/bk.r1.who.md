@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.who"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book follows a child's quiet moment of noticing and remembering a simple statement, \"She said the cup was full\", and traces how words, names, and marks connect to the person who spoke them.",
+  "teaches": "It shows how language helps us identify who says what, and how a name, written down, becomes a lasting sign of a person's presence.",
   "records": {
     "r1.who.d00": {"concepts": ["who_said_it"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.who"}, "defines": {"kind": "topic", "target": "r1.who"}},
     "r1.who.d01": {"concepts": ["who_said_it"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mark"}, "defines": {"kind": "word", "target": "mark"}},

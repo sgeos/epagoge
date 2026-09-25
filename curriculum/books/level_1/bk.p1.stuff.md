@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.stuff"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child interacts with two cups, one made of stone, one of clay, each with different textures, weights, and uses, showing how materials shape what objects can do.",
+  "teaches": "Different materials have distinct physical properties like hardness, weight, and temperature, and these affect how things feel, move, and are used in everyday life.",
   "records": {
     "p1.stuff.d00": {"concepts": ["material", "shape"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.stuff"}, "defines": {"kind": "topic", "target": "p1.stuff"}},
     "p1.stuff.d01": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:clay"}, "defines": {"kind": "word", "target": "clay"}},

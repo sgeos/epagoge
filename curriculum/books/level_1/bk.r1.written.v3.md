@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.written"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child makes a mark on the wall to remember a special day, then keeps records of returning to check it, discovering that the mark remains even after the memory fades.",
+  "teaches": "Writing and marking things down creates a lasting record that outlives forgetting, and the act of recording helps confirm what is real and true over time.",
   "records": {
     "r1.written.v3.d00": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.written"}, "defines": {"kind": "topic", "target": "r1.written"}},
     "r1.written.v3.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:diary"}, "defines": {"kind": "word", "target": "diary"}},

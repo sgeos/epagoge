@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "i1.people"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows children how people come together in a community to solve a problem, like building a bridge, by sharing ideas, helping each other, and working as a team. It highlights the everyday experiences of being part of a group, feeling safe at home, and connecting with others through shared efforts.",
+  "teaches": "Children learn that cooperation, care, and shared responsibility help people accomplish things that would be hard alone, and that belonging to a group gives strength and comfort. It shows how simple actions, like meeting, building, and supporting one another, create lasting connections and safe spaces.",
   "records": {
     "i1.people.d00": {"concepts": ["someone_in_charge", "people_together"], "claim_class": "formal", "provenance": {"source_claim": "topic:i1.people"}, "defines": {"kind": "topic", "target": "i1.people"}},
     "i1.people.d01": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:home"}, "defines": {"kind": "word", "target": "home"}},

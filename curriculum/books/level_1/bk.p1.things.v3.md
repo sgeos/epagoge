@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.things"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book follows a simple cup as it moves through different places and states, empty, hidden, visible, showing how objects stay the same even when their location or condition changes.",
+  "teaches": "It helps young children understand basic ideas like position, containment, and persistence, showing that things continue to exist even when out of sight or moved around.",
   "records": {
     "p1.things.v3.d00": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.things"}, "defines": {"kind": "topic", "target": "p1.things"}},
     "p1.things.v3.d01": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:appear"}, "defines": {"kind": "word", "target": "appear"}},

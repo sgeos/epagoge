@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.liquid"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how water changes shape to fit whatever container it's in, while also exploring air, bubbles, and the movement of liquids and gases through simple, everyday actions like blowing and pouring.",
+  "teaches": "Children learn that liquids like water take the shape of their container, air can be pushed around and trapped in bubbles, and that even empty cups are full of air, not nothing.",
   "records": {
     "p1.liquid.d00": {"concepts": ["liquid", "air"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.liquid"}, "defines": {"kind": "topic", "target": "p1.liquid"}},
     "p1.liquid.d01": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blow"}, "defines": {"kind": "word", "target": "blow"}},

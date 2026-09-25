@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.compare"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book helps children notice differences and similarities between objects, focusing on comparisons like more/less, few, same, different, and pairs. It uses simple, everyday situations and clear visuals to show how things can be matched or grouped.",
+  "teaches": "Children learn to identify when two things are the same or different, understand the idea of quantity through words like few and more, and recognize pairs and matches in their environment.",
   "records": {
     "m1.compare.v3.d00": {"concepts": ["same_and_different", "correspondence", "more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.compare"}, "defines": {"kind": "topic", "target": "m1.compare"}},
     "m1.compare.v3.d01": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:few"}, "defines": {"kind": "word", "target": "few"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.property"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores basic properties of objects, like color, size, shape, and texture, by comparing and contrasting them through simple, repetitive sentences. It shows how the same object can have multiple properties at once, and how those properties can change when compared to others.",
+  "teaches": "Readers learn to identify and describe common properties such as color, size, brightness, and smoothness, and understand that objects can have more than one property at the same time. They also learn that some properties are opposites, like big and small, and that being one thing doesn't mean being another.",
   "records": {
     "p1.property.d00": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.property"}, "defines": {"kind": "topic", "target": "p1.property"}},
     "p1.property.d01": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blue"}, "defines": {"kind": "word", "target": "blue"}},

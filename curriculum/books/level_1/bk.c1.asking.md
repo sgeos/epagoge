@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.asking"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This story follows a child who is unsure about the way to the garden and learns how to ask questions to find their way. It shows what happens when a child keeps asking, even when they're afraid or uncertain.",
+  "teaches": "Asking questions is a safe and helpful way to learn, even when you don't know the answers. It shows that curiosity and persistence lead to understanding, and that even small questions can guide you forward.",
   "records": {
     "c1.asking.d00": {"concepts": ["asking"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.asking"}, "defines": {"kind": "topic", "target": "c1.asking"}},
     "c1.asking.s01": {"concepts": ["asking"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-can-be-asked"}},

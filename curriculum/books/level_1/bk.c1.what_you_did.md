@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.what_you_did"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child accidentally breaks a cherished glass ball and faces the hard choice of hiding the truth or admitting responsibility. The story follows their internal struggle with fear, guilt, and the relief that comes from honesty.",
+  "teaches": "It shows that owning up to mistakes, even when scary, leads to peace of mind and trust. The book demonstrates how truth-telling builds integrity, even when it's hard to do.",
   "records": {
     "c1.what_you_did.d00": {"concepts": ["saying_what_you_did"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.what_you_did"}, "defines": {"kind": "topic", "target": "c1.what_you_did"}},
     "c1.what_you_did.s01": {"concepts": ["saying_what_you_did"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:telling-can-be-wrong"}},

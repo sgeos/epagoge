@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.done"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child carefully places a cup on a table and experiences the quiet satisfaction of completing a task with care and focus.",
+  "teaches": "That finishing something important brings peace and confidence, and that being calm and attentive helps you do your best work.",
   "records": {
     "a1.done.d00": {"concepts": ["finished_or_not"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.done"}, "defines": {"kind": "topic", "target": "a1.done"}},
     "a1.done.d01": {"concepts": ["finished_or_not"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:done"}, "defines": {"kind": "word", "target": "done"}},

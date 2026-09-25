@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.cycle"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-24",
+  "published": "2026-09-25",
+  "about": "This book shows how day and night naturally follow each other in a repeating cycle, using simple language and everyday moments like a child playing outside and the changing sky. It highlights the passage of time through the movement of the sun, moon, and clock, making the cycle visible in daily life.",
+  "teaches": "Readers learn that day and night are part of a continuous, predictable pattern that repeats every 24 hours, and that time moves forward steadily through natural and human-made markers like the sun, moon, and clocks.",
   "records": {
     "r1.cycle.d00": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.cycle"}, "defines": {"kind": "topic", "target": "r1.cycle"}},
     "r1.cycle.d01": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:clock"}, "defines": {"kind": "word", "target": "clock"}},

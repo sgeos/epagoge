@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.name"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child draws simple marks on pages, each representing something real like a bird or sun, showing how pictures and words stand for things without being them.",
+  "teaches": "That names and drawings are not the things they represent, but tools we use to understand and talk about the world.",
   "records": {
     "c1.name.v3.d00": {"concepts": ["name", "writing"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.name"}, "defines": {"kind": "topic", "target": "c1.name"}},
     "c1.name.v3.d01": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mark"}, "defines": {"kind": "word", "target": "mark"}},

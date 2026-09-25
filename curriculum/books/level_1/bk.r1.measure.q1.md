@@ -8,6 +8,12 @@
     "target": "r1.measure"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows children how to compare the lengths of everyday objects, like sticks, by lining them up or using a ruler to measure. It introduces the idea of length as a measurable quality that can be judged through direct comparison or tools.",
+  "teaches": "Children learn that length can be determined by placing objects side by side or using a ruler, and that one object can be longer, shorter, or the same length as another. They also learn that measuring helps us know for sure, not just guess.",
   "records": {
     "r1.measure.q1.d00": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.measure"}, "defines": {"kind": "topic", "target": "r1.measure"}},
     "r1.measure.q1.a01": {"concepts": ["measuring"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.measure"}},

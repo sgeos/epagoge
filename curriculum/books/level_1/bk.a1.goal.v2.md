@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.goal"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child focuses on a cup on the table, moving step by step toward reaching it, experiencing each small part of the journey with attention and care.",
+  "teaches": "Goal-setting begins with a clear focus, and every small action, reaching, touching, lifting, holding, builds toward achieving it, even when the goal is simple.",
   "records": {
     "a1.goal.v2.d00": {"concepts": ["goal"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.goal"}, "defines": {"kind": "topic", "target": "a1.goal"}},
     "a1.goal.v2.s01": {"concepts": ["goal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},

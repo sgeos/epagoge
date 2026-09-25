@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "n1.right_reason"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child finds a lost blue ball and chooses to return it, even though no one is watching, because it wasn't theirs. The story shows how doing the right thing feels natural and honest, even when no one sees.",
+  "teaches": "Right means doing what's fair, not just what's easy. It's not about being caught, but about knowing what belongs to someone else.",
   "records": {
     "n1.right_reason.d00": {"concepts": ["right_reason"], "claim_class": "formal", "provenance": {"source_claim": "topic:n1.right_reason"}, "defines": {"kind": "topic", "target": "n1.right_reason"}},
     "n1.right_reason.d01": {"concepts": ["right_reason"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:right"}, "defines": {"kind": "word", "target": "right"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.done"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A small cup sits on a table after being used, left alone in a quiet room where light shines and nothing moves. It remains still, empty, and undisturbed, showing what it means to be finished, safe, and complete.",
+  "teaches": "That tasks can be finished and still matter, even when no one is watching. It shows how calmness, stillness, and being whole can feel like peace and belonging.",
   "records": {
     "a1.done.v2.d00": {"concepts": ["finished_or_not"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.done"}, "defines": {"kind": "topic", "target": "a1.done"}},
     "a1.done.v2.s01": {"concepts": ["finished_or_not"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},

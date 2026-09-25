@@ -2,66 +2,61 @@
 
 Judge against the repository tree. **Ordering is explicitly not a
 completion criterion.** Any sequence of steps leaving the tree in the
-state below is complete. No branch, process or commit-shape requirement.
+state below is complete. No branch, process, or commit-shape requirement.
 
 **A measurement that falls short satisfies this. A good result is not
-required and must not be manufactured.**
+required and must not be manufactured.** Where a target is missed, the
+tree records the figure reached and why.
 
-## Level one, the bootstrapping problem
+## Book metadata
 
-- Every unit in `curriculum/schedule/level_01.json` has at least one book
-  in `curriculum/books/level_1/`, and every book there holds exactly
-  sixteen spreads.
-- The corpus is **larger in words than the 37,207 measured on
-  2026-09-25**, and the tree records the current figure.
-- A tool loads trained weights and answers a prompt, refusing rather than
-  inventing weights when none exist, and its output for at least one
-  prompt is recorded with the loss of the model that produced it.
+- Every book under `curriculum/books/level_1/` carries `about`,
+  `teaches`, `author`, `licence`, `first_published`, and `published`.
+- `about` and `teaches` are written in ordinary English, are not
+  restricted to the book's own vocabulary, and say something a title does
+  not already say.
+- `first_published` and `published` are derived from the version history
+  of each book file rather than assigned, and a tool in the tree
+  regenerates them.
+- The choice of `author` and `licence` values is recorded in a decision
+  record, including what was rejected.
+- The tree reports how many books carry the full set, and that number is
+  checkable without reading the books by hand.
 
-## Levels two to six, the scheduling problem
+## The field-enumeration defect is closed
 
-- The tree reports, by name and not as a percentage, every concept no
-  schedule teaches and every concept taught once and never revisited.
-- **The count of concepts taught once and never revisited is lower than
-  the 68 measured on 2026-09-25**, or the tree records why it is not.
-- Every level-two module names concepts it teaches or revisits, and no
-  scheduled concept lacks a word at its level.
+- No code rebuilds a book by listing its fields. Adding a field to the
+  book model reaches every reader and every writer without further edits.
+- A test fails if a field is added to the book model and is not preserved
+  across a read, write, and read again. The test has been shown to fail
+  against a deliberately broken case.
+- The seventeen question-and-answer books still declare their form.
 
-## Reference material stays sound
+## Corpus length
 
-- Every word admitted at a level and not in the seed has a definition
-  record under `curriculum/books/level_<n>/`.
-- `tools/validate_closure.py` reports closure 100 percent at levels one
-  and two, with nothing on the frontier, nothing blocked and no cycles.
-- Every sense admitted at a level has a thesaurus entry, and
-  `tools/validate_thesaurus.py` exits 0 at both levels.
+- The corpus is larger in words than the 55,510 measured on 2026-09-25,
+  and the tree records the current figure, or the tree records why it is
+  not larger.
+- No book exceeds the upper bound of its level's word band.
+- Every unit in `curriculum/schedule/level_01.json` still has at least one
+  book, and every book that is not a dictionary holds exactly sixteen
+  spreads.
+
+## Nothing already true is broken
+
+- `tools/check.sh` exits 0 and reports every check passing.
+- Closure is 100 percent at levels one and two, with nothing on the
+  frontier, nothing blocked, and no cycles.
+- Every sense admitted at a level has a thesaurus entry.
 - `ostensive` in `curriculum/vocabulary.json` holds at most 60 words.
 - Every dictionary book is in alphabetical order.
+- No file under `secret/` is tracked, and the disclosure scan is clean.
+- Every word admitted at a level and not in the seed has a definition
+  record.
 
-## What a curator can see
+## Honesty conditions
 
-- More books carry both `about` and `teaches` than the zero measured on
-  2026-09-25, and `tools/validate_books.py --describe` reports how many
-  still do not.
-- A specification for drafting a book at each level exists in the tree.
-
-## Gate and repository
-
-- `./tools/check.sh` exits 0.
-- The working tree is clean and `main` matches `origin/main`.
-- Continuous integration is green on the head commit.
-- `git ls-files secret` reports 0, and no model weights are tracked.
-
-## Records
-
-- `docs/process/HANDOFF.md` states the current corpus, closure, coverage
-  and model figures, and those match what the tools report.
-- Any goal left undone is named, with what blocks it.
-
-## Out of scope
-
-Schedules for levels three and above, anything under `sources/`, the
-level-two lexicon reaching ten thousand words, and the level-two ablation
-are **not** required. The first three are design the operator holds or
-work longer than a session; the ablation additionally depends on an
-endpoint nobody has fixed.
+- No document claims a curriculum or ordering benefit as established.
+- Every figure quoted in a document was measured on the tree, or the same
+  sentence says it was not.
+- Adding metadata is not reported as corpus growth.

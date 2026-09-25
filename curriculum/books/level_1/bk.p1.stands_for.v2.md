@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.stands_for"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A wooden toy car is used to represent many different things, from real animals to abstract ideas like loss and imitation.",
+  "teaches": "Children learn that objects can stand for other things, and that meaning comes from how we use them, not just what they are.",
   "records": {
     "p1.stands_for.v2.d00": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.stands_for"}, "defines": {"kind": "topic", "target": "p1.stands_for"}},
     "p1.stands_for.v2.d01": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bear"}, "defines": {"kind": "word", "target": "bear"}},

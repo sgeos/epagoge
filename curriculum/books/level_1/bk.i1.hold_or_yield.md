@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "i1.hold_or_yield"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the quiet strength it takes to admit when you're wrong, and how holding on to past mistakes can weigh you down. It shows a child learning to release what no longer serves them, whether it's a game, a fear, or a rigid belief.",
+  "teaches": "You can still believe in something even after you've been wrong, because growth comes from honesty and letting go. It's okay to carry your past, but you don't have to let it control your next move.",
   "records": {
     "i1.hold_or_yield.d00": {"concepts": ["keeping_your_claim", "changing_your_mind"], "claim_class": "formal", "provenance": {"source_claim": "topic:i1.hold_or_yield"}, "defines": {"kind": "topic", "target": "i1.hold_or_yield"}},
     "i1.hold_or_yield.d01": {"concepts": ["changing_your_mind"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:admit"}, "defines": {"kind": "word", "target": "admit"}},

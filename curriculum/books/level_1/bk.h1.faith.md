@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "h1.faith"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child quietly goes through daily routines, lighting a fire, walking outside, sitting by a tree, each act done not for a reason, but as a quiet gesture of trust in something unseen.",
+  "teaches": "Faith is not about proof, but about choosing to act as if someone is watching, even when you can't see or feel them. It's trusting your own actions, thoughts, and presence, even in silence.",
   "records": {
     "h1.faith.d00": {"concepts": ["taking_on_faith"], "claim_class": "formal", "provenance": {"source_claim": "topic:h1.faith"}, "defines": {"kind": "topic", "target": "h1.faith"}},
     "h1.faith.d01": {"concepts": ["taking_on_faith"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:believe"}, "defines": {"kind": "word", "target": "believe"}},

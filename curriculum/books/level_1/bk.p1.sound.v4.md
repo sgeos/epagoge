@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.sound"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child hears a cup fall and the loud noise it makes, then follows how that sound affects the people and animals in the room, ending with the baby discovering her own voice and the quiet after the noise.",
+  "teaches": "Sound is created when something moves the air, and it can travel, wake others, and change how people feel, both loud sounds and quiet ones are part of everyday life.",
   "records": {
     "p1.sound.v4.d00": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.sound"}, "defines": {"kind": "topic", "target": "p1.sound"}},
     "p1.sound.v4.d01": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bang"}, "defines": {"kind": "word", "target": "bang"}},

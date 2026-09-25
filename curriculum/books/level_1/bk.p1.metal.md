@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.metal"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child finds a mysterious key made of steel, which opens a door to a quiet room where an old ring seems to recognize them. The story follows the moment the key gets stuck in the lock and the room changes in subtle, unsettling ways.",
+  "teaches": "Metal is a material that can be hard, cold, and strong, like steel, and it can be used to make everyday things like keys and locks. The book shows how metal feels different from wood or other materials and how it can feel alive in a story, even if it's just a key.",
   "records": {
     "p1.metal.d00": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.metal"}, "defines": {"kind": "topic", "target": "p1.metal"}},
     "p1.metal.d01": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copper"}, "defines": {"kind": "word", "target": "copper"}},

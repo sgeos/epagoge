@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.cycle"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book gently introduces young children to the natural cycle of day and night, and how it repeats every day, year after year. It shows how time moves forward through familiar moments like sunrise, moonrise, and the changing of seasons.",
+  "teaches": "Children learn that day and night follow each other in a steady, predictable pattern that never stops. They also begin to understand that time is measured by the sun, moon, and the passing of days and months.",
   "records": {
     "r1.cycle.v4.d00": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.cycle"}, "defines": {"kind": "topic", "target": "r1.cycle"}},
     "r1.cycle.v4.d01": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:always"}, "defines": {"kind": "word", "target": "always"}},

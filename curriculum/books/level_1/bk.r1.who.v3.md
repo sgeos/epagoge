@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.who"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how words can carry identity and truth, focusing on the simple act of recognizing who said something and why it matters. It explores the connection between names, speech, and personal accountability through a quiet, everyday moment.",
+  "teaches": "Readers learn that a name is not just a label but a marker of who speaks and what is true. They see how careful listening and recording can preserve truth and personal identity.",
   "records": {
     "r1.who.v3.d00": {"concepts": ["who_said_it"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.who"}, "defines": {"kind": "topic", "target": "r1.who"}},
     "r1.who.v3.d01": {"concepts": ["who_said_it"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:name"}, "defines": {"kind": "word", "target": "name"}},

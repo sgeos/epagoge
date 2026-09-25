@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.join"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child explores the simple act of joining and separating a lid and a pot using glue, string, and rope, showing how different methods can connect or disconnect objects.",
+  "teaches": "That joining things together can keep them closed, and that separation requires effort, but that connections can be made and broken in different ways.",
   "records": {
     "p1.join.d00": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.join"}, "defines": {"kind": "topic", "target": "p1.join"}},
     "p1.join.s01": {"concepts": ["joining_and_separating"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:contact-moves-things"}},

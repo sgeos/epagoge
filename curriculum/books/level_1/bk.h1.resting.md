@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "h1.resting"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy rushes through his day without pausing, forgetting to check the door before leaving. When he realizes he's locked out, he stops to notice the quiet world around him.",
+  "teaches": "Taking a moment to be still can help you remember what matters. Resting isn't wasted time, it's how you reconnect with what you've overlooked.",
   "records": {
     "h1.resting.d00": {"concepts": ["resting_on_a_guess"], "claim_class": "formal", "provenance": {"source_claim": "topic:h1.resting"}, "defines": {"kind": "topic", "target": "h1.resting"}},
     "h1.resting.d01": {"concepts": ["resting_on_a_guess"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rest"}, "defines": {"kind": "word", "target": "rest"}},

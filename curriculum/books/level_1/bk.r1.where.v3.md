@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.where"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book helps children understand basic spatial and directional concepts like above, below, beside, ahead, behind, and forward and backward through simple, clear scenes and actions.",
+  "teaches": "Readers learn how to identify and use common direction words in real-life situations, recognizing where things are located in space and how movement relates to direction.",
   "records": {
     "r1.where.v3.d00": {"concepts": ["spatial_position", "direction"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.where"}, "defines": {"kind": "topic", "target": "r1.where"}},
     "r1.where.v3.d01": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:above"}, "defines": {"kind": "word", "target": "above"}},

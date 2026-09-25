@@ -8,6 +8,12 @@
     "target": "p1.change"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the simple, everyday idea that when things are released or changed, they naturally move or transform, like a ball falling, a door opening, or a book closing. It uses clear, repeated examples to show how letting go or changing something leads to a new state.",
+  "teaches": "Children learn that change is a natural part of life, when you let go, things fall; when you open, things become accessible. They begin to understand that actions have predictable results and that change often means something is no longer the same.",
   "records": {
     "p1.change.q1.d00": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.change"}, "defines": {"kind": "topic", "target": "p1.change"}},
     "p1.change.q1.a01": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "empirical", "provenance": {"source_claim": "topic:p1.change"}},

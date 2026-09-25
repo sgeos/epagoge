@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.because"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child lets go of a ball that rolls away, gets lost, and is eventually found and returned to a shelf. The story shows how letting go can lead to loss, but also how remembering the way back can bring things home again.",
+  "teaches": "That actions have consequences, and letting go of something can mean it's gone unless you remember how to find it. It also shows that holding on, even when things seem lost, can lead to recovery and peace.",
   "records": {
     "c1.because.v2.d00": {"concepts": ["discourse_marker"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.because"}, "defines": {"kind": "topic", "target": "c1.because"}},
     "c1.because.v2.d01": {"concepts": ["discourse_marker"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:way"}, "defines": {"kind": "word", "target": "way"}},

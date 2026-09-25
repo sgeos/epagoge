@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.liquid"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how water changes shape to fit whatever container holds it, and how it moves and spreads when not contained. It explores real experiences with water, filling, spilling, dripping, and drying, using simple, everyday moments.",
+  "teaches": "Children learn that liquids like water take the shape of their container, flow when tipped, and can spread and evaporate over time. They also see how air and water interact in ordinary situations, like bubbles forming or puddles drying.",
   "records": {
     "p1.liquid.v3.d00": {"concepts": ["liquid", "air"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.liquid"}, "defines": {"kind": "topic", "target": "p1.liquid"}},
     "p1.liquid.v3.d01": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blow"}, "defines": {"kind": "word", "target": "blow"}},

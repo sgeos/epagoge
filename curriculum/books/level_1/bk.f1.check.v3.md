@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.check"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child encounters a red apple that seems safe but turns out to be dangerous, leading them to question what they're told and learn to check for themselves.",
+  "teaches": "Trusting what others say isn't always safe, looking, thinking, and testing for yourself is how you find the truth.",
   "records": {
     "f1.check.v3.d00": {"concepts": ["being_told", "checking"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.check"}, "defines": {"kind": "topic", "target": "f1.check"}},
     "f1.check.v3.d01": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lie"}, "defines": {"kind": "word", "target": "lie"}},

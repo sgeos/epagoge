@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.how"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy finds a box and tries different ways to open it, learning that tools, patience, and thoughtful actions matter more than force.",
+  "teaches": "Simple actions like using a stick or being gentle can solve problems in smart, kind ways, and that every task has its own proper manner.",
   "records": {
     "a1.how.v3.d00": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.how"}, "defines": {"kind": "topic", "target": "a1.how"}},
     "a1.how.v3.d01": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bridge"}, "defines": {"kind": "word", "target": "bridge"}},

@@ -44,7 +44,7 @@ discipline `CLAUDE.md` points to, and nowhere else.
 
 **Content** — each verified on 2026-09-25.
 
-1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twenty**
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twenty-one**
    checks and **exits 0**, in about nine seconds.
 2. The suite reports **483** tests.
 3. `curriculum/vocabulary.json` holds **961 senses over 928 words**, of
@@ -69,6 +69,13 @@ discipline `CLAUDE.md` points to, and nowhere else.
    by grepping every commit rather than only `HEAD`.
 9. `tools/check_references.py` reports **no unresolved references** over
    the tracked documents, with `CHANGELOG.md` exempt.
+10. `tools/stamp_books.py --level 1 --check` reports **246 books, 0 missing
+   a field**. Every book carries `about`, `teaches`, `author`, `licence`,
+   `first_published` and `published`, and the 17 question-and-answer books
+   still declare `form`.
+11. The disclosure scan reports it covered **tracked and untracked files,
+   line by line and with whitespace collapsed**. A scan that does not say
+   all three is the old one, which missed both.
 
 **Two numbers in the closure output look like a contradiction and are
 not.** It reports 808 defined of 808 needing one, and 825 grounded. The
@@ -96,7 +103,7 @@ counted against the requirement because a seed word needs no definition.
 | --- | --- |
 | Level-one reference material | **Done.** 808 of 808, closure 100 percent |
 | Level-one corpus | **Complete and a quarter of its length.** See below |
-| Level-one book metadata | **None of it written.** Zero of 246 books |
+| Level-one book metadata | **Done.** All six fields on all 246 books |
 | Train a level-one model | **Done.** Interactive through `tools/talk.py` |
 | Level-two reference material | **Done**, lexicon at 9 percent of target |
 | Level-two corpus | **One module of 27 scheduled** |
@@ -112,12 +119,10 @@ at the standard, **without a single new book**.
 `generators/fill_spreads.py` does this and is the cheapest corpus growth
 available.
 
-**No book carries any of its metadata.** Zero of 246 have `about`,
-`teaches`, `author`, `licence`, `first_published` or `published`. The
-fields are on `Book`, `book_head` writes them, and
-`generators/describe_books.py` exists. **The capability was built and
-never applied**, which is this project's own rule about unblocking not
-being authoring. It is item C of the current brief and it has not moved.
+**A third of the level-one lexicon is still never used**, which is the
+defect that remains alongside length. 688 of 2,051 surface forms. Each is
+a judgement about whether a module should use it, be drafted for it, or
+whether admitting it was a mistake, so a loop should not close it.
 
 **A third of the level-one lexicon is never used.** 2,051 surface forms
 admitted, 1,363 used, **688 never**, and 11 headwords absent in every
@@ -270,6 +275,15 @@ reopens the decision without a file changing, and it is the operator's.
   it.
 - **A by-name exception list inside a checker is the defect the checker
   exists to catch.** Ask `git check-ignore`, not a list.
+- **The disclosure scan now covers untracked files and collapses
+  whitespace.** It did neither until 2026-09-25, and both gaps let banned
+  vocabulary reach a public push under a green gate. **`CHANGELOG.md`
+  carried a deployment-implying phrase from before publication**, wrapped
+  across a line break where a line-based scan could not see it. Fixed
+  forward; the operator holds whether the history needs anything.
+- **Do not fold the tokeniser's typography into prose a person reads.**
+  It maps a dash to a hyphen, which is right for word splitting and turned
+  `things down-like notes` into nonsense across 99 book descriptions.
 - Irreversible or outward-facing actions need confirmation. A prior
   authorisation does not extend to the next one.
 

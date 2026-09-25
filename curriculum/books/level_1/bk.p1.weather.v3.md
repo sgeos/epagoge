@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.weather"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child's quiet observation of a rainy day, showing how rain changes the world outside and how one can find simple joy in it.",
+  "teaches": "Rain is water falling from clouds, and weather like rain affects what we see and do outside, even when we stay inside.",
   "records": {
     "p1.weather.v3.d00": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.weather"}, "defines": {"kind": "topic", "target": "p1.weather"}},
     "p1.weather.v3.d01": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breeze"}, "defines": {"kind": "word", "target": "breeze"}},

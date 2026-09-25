@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.inside"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the concept of \"inside\" through simple, everyday moments involving a cup, water, and a pocket, showing how things stay inside containers when they fit well and how they move when they're not contained.",
+  "teaches": "Readers learn that containers hold things inside, that being inside means not outside, and that when something leaves a container, it's no longer inside, even if it's not clearly outside, it may be lost or gone.",
   "records": {
     "p1.inside.d00": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.inside"}, "defines": {"kind": "topic", "target": "p1.inside"}},
     "p1.inside.d01": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:container"}, "defines": {"kind": "word", "target": "container"}},

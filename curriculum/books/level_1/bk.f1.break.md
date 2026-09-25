@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.break"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows children how everyday things like toys, shoes, and bridges can break over time from use, weather, or sudden force, and how breaks often start with small cracks.",
+  "teaches": "It helps kids understand that breaking is a natural part of how things age and fail, and that some breaks can't be fixed, even when we try.",
   "records": {
     "f1.break.d00": {"concepts": ["things_break", "wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.break"}, "defines": {"kind": "topic", "target": "f1.break"}},
     "f1.break.d01": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:crack"}, "defines": {"kind": "word", "target": "crack"}},

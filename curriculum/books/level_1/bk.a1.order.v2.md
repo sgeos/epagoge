@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.order"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A little girl follows a simple sequence of actions, opening a box, taking out a cup, then an apple, showing how each step comes in a specific order. The story uses quiet, everyday moments to show how order brings calm and clarity to routine.",
+  "teaches": "That following a clear order helps us understand what to do next and makes tasks feel more predictable. It shows that even small actions, like placing things on a table or closing a box, can be part of a meaningful sequence.",
   "records": {
     "a1.order.v2.d00": {"concepts": ["doing_in_order"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.order"}, "defines": {"kind": "topic", "target": "a1.order"}},
     "a1.order.v2.d01": {"concepts": ["doing_in_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:order"}, "defines": {"kind": "word", "target": "order"}},

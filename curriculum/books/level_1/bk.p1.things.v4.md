@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.things"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A simple story about a cup that goes missing and is found again, exploring how objects stay the same even when they move or are hidden.",
+  "teaches": "That things keep their identity and purpose no matter where they are or how long they've been out of sight.",
   "records": {
     "p1.things.v4.d00": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.things"}, "defines": {"kind": "topic", "target": "p1.things"}},
     "p1.things.v4.d01": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:appear"}, "defines": {"kind": "word", "target": "appear"}},

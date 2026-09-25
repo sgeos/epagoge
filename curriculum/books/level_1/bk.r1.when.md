@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.when"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-24",
+  "published": "2026-09-25",
+  "about": "This book shows how time moves step by step, with each moment leading to the next, using simple, quiet moments from a child's day to illustrate the flow of time from beginning to end.",
+  "teaches": "It teaches that every action has a sequence, first this, then that, and that even small, patient acts, like caring for a tired animal or building a boat, matter because they happen in time and lead to something meaningful.",
   "records": {
     "r1.when.d00": {"concepts": ["sequence", "duration"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.when"}, "defines": {"kind": "topic", "target": "r1.when"}},
     "r1.when.d01": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:future"}, "defines": {"kind": "word", "target": "future"}},

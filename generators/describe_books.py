@@ -22,10 +22,12 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from dataclasses import replace
 from pathlib import Path
 from typing import cast
 
 from epagoge.book import book_head, parse_book, render_book
+from epagoge.vocabulary import fold_typography
 from generate import ask
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -78,8 +80,33 @@ def prompt_for(title: str, subject: str, body: str) -> str:
     )
 
 
+DASH_BETWEEN_DIGITS = re.compile(r"(?<=\d)\s*[\u2013\u2014]\s*(?=\d)")
+DASH = re.compile(r"\s*[\u2013\u2014]\s*")
+
+
+def fold_for_display(text: str) -> str:
+    """Straight typography for prose a person reads, not for tokenising.
+
+    **`fold_typography` is the wrong tool here and using it was a defect.**
+    That function serves the tokeniser, where a dash becomes `-` so that
+    word splitting is consistent and the result is never read. Applied to
+    back-cover copy it turned the teacher's em dashes into word-joining
+    hyphens: `writing things down\u2014like notes` became `down-like`, which
+    reads as a compound word that does not exist. **99 of 246 descriptions
+    were damaged this way** before it was caught, and they were rewritten.
+
+    A dash between clauses becomes a comma, which is what the teacher's
+    usage means in nearly every case here. A dash between digits stays a
+    hyphen, because there it is a range.
+    """
+    text = DASH_BETWEEN_DIGITS.sub("-", text)
+    text = DASH.sub(", ", text)
+    return fold_typography(text)
+
+
 def trim(text: str) -> str:
-    """Keep whole sentences up to the cap."""
+    """Keep whole sentences up to the cap, in straight typography."""
+    text = fold_for_display(text)
     words = text.split()
     if len(words) <= MAX_WORDS:
         return text.strip()
@@ -129,16 +156,14 @@ def main(argv: list[str]) -> int:
             print(f"  {book.id}: nothing usable", file=sys.stderr)
             continue
 
-        described = type(book)(
-            id=book.id,
-            level=book.level,
-            title=book.title,
-            subject_kind=book.subject_kind,
-            subject=book.subject,
-            records=book.records,
-            about=about,
-            teaches=teaches,
-        )
+        # **NEVER ENUMERATE THE FIELDS.** This built a new book from seven
+        # of the twelve, so a run over the corpus would have stripped
+        # `form` from every question-and-answer book and any metadata a
+        # book already carried. That is the failure `book_head` was
+        # written to prevent, surviving on the constructor side because
+        # only the writer side was ever fixed. `replace` carries whatever
+        # the dataclass holds, including fields added after this line.
+        described = replace(book, about=about, teaches=teaches)
         path.write_text(render_book(book_head(described), entries), encoding="utf-8")
         written += 1
         print(f"  {book.id}: described", file=sys.stderr)

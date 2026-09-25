@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.touch"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the simple yet powerful experience of touch through a child's everyday interaction with a cup, showing how different kinds of touch, pressing, rubbing, patting, sliding, change how things move and feel.",
+  "teaches": "Readers learn that touch is more than just contact, it includes pressure, motion, and texture, and that every touch can create a new moment or change in how things behave.",
   "records": {
     "p1.touch.v4.d00": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.touch"}, "defines": {"kind": "topic", "target": "p1.touch"}},
     "p1.touch.v4.d01": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:contact"}, "defines": {"kind": "word", "target": "contact"}},

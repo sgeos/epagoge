@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.plan"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child plans and builds a bamboo boat step by step, showing how thinking ahead and following a written plan helps turn an idea into reality.",
+  "teaches": "Planning means writing down steps before starting, and checking your plan helps avoid mistakes. It shows how adjusting your plan and following steps carefully leads to success.",
   "records": {
     "a1.plan.d00": {"concepts": ["plan"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.plan"}, "defines": {"kind": "topic", "target": "a1.plan"}},
     "a1.plan.d01": {"concepts": ["plan"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:method"}, "defines": {"kind": "word", "target": "method"}},

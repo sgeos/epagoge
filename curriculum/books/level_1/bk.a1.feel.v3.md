@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.feel"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child's deep longing for a toy, and the complex mix of emotions that come with wanting something just out of reach, fear, sadness, determination, joy, and loneliness.",
+  "teaches": "That strong feelings like wanting, fear, and loneliness are normal, and that it's okay to feel them even when you're not alone.",
   "records": {
     "a1.feel.v3.d00": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.feel"}, "defines": {"kind": "topic", "target": "a1.feel"}},
     "a1.feel.v3.d01": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:afraid"}, "defines": {"kind": "word", "target": "afraid"}},

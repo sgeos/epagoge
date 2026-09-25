@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.count"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book helps young children learn the basic sequence of numbers from zero to nine, showing how each number follows the previous one in a fixed order. It introduces the idea of counting as a way to determine how many items are in a group, using simple, clear examples.",
+  "teaches": "Children learn that numbers have a consistent order, that each number represents a specific quantity, and that zero means no items at all. They also begin to understand concepts like \"more than,\" \"before,\" and \"after\" through the relationships between numbers.",
   "records": {
     "m1.count.v4.d00": {"concepts": ["counting", "number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.count"}, "defines": {"kind": "topic", "target": "m1.count"}},
     "m1.count.v4.d01": {"concepts": ["counting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:count"}, "defines": {"kind": "word", "target": "count"}},

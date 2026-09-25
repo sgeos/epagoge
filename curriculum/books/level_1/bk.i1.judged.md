@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "i1.judged"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A quiet child follows a blue balloon to the top of a hill, moving through stillness, wind, and wonder, guided by an unseen presence that silently judges her actions.",
+  "teaches": "Judging isn't always about rules or voices, it can be a quiet, internal sense of rightness that comes from feeling, not words. Some things are good not because someone says so, but because they feel true.",
   "records": {
     "i1.judged.d00": {"concepts": ["judged_by_another"], "claim_class": "formal", "provenance": {"source_claim": "topic:i1.judged"}, "defines": {"kind": "topic", "target": "i1.judged"}},
     "i1.judged.d01": {"concepts": ["judged_by_another"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:judge"}, "defines": {"kind": "word", "target": "judge"}},

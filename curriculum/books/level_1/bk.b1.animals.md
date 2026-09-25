@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "b1.animals"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how a dog uses its body and senses to explore the world, focusing on movement, sight, hearing, and touch through a simple, engaging story.",
+  "teaches": "Children learn that animals are living things that move, feel, and use their body parts like eyes, ears, and limbs to interact with their environment.",
   "records": {
     "b1.animals.d00": {"concepts": ["animal", "body_part"], "claim_class": "formal", "provenance": {"source_claim": "topic:b1.animals"}, "defines": {"kind": "topic", "target": "b1.animals"}},
     "b1.animals.d01": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:animal"}, "defines": {"kind": "word", "target": "animal"}},

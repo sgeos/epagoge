@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.sound"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy drops a cup, and the story captures the sharp sound it makes, exploring how sudden noises can startle and then fade into quiet. It shows how sounds like banging, clapping, and wind are part of everyday life and can be noticed and felt.",
+  "teaches": "Children learn to recognize different kinds of sounds, loud, sharp, soft, and still, and how they change over time. They also see how paying attention to sounds can help us understand what's happening around us.",
   "records": {
     "p1.sound.v2.d00": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.sound"}, "defines": {"kind": "topic", "target": "p1.sound"}},
     "p1.sound.v2.d01": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bang"}, "defines": {"kind": "word", "target": "bang"}},

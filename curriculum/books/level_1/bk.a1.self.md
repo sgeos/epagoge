@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.self"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child learns to recognize their own desire for a cup, understand that others have their own wants too, and choose kindness over selfishness even when it's hard.",
+  "teaches": "You can have strong feelings about what you want, but you still get to choose how to act. Being kind doesn't mean giving up your needs, it means making space for others too.",
   "records": {
     "a1.self.d00": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.self"}, "defines": {"kind": "topic", "target": "a1.self"}},
     "a1.self.d01": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:others"}, "defines": {"kind": "word", "target": "others"}},

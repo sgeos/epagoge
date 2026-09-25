@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "n1.two_shoulds"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child carries food across a shaky bridge while trying to follow two conflicting instructions, hurry and be careful, showing how it feels to be pulled in two directions at once.",
+  "teaches": "When we face two strong demands at the same time, it's okay to slow down, breathe, and move with care, even if we're rushed.",
   "records": {
     "n1.two_shoulds.d00": {"concepts": ["two_shoulds_at_once"], "claim_class": "formal", "provenance": {"source_claim": "topic:n1.two_shoulds"}, "defines": {"kind": "topic", "target": "n1.two_shoulds"}},
     "n1.two_shoulds.d119": {"concepts": ["two_shoulds_at_once"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hard"}, "defines": {"kind": "word", "target": "hard"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "n1.should"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child sees a red ball roll into the street and feels the urge to run after it, but instead chooses to stop, look both ways, and ask for help. The story shows how pausing to think and following a simple rule can keep kids safe in everyday situations.",
+  "teaches": "Children learn that stopping and waiting is smarter than rushing, and that asking for help is a safe and helpful choice. They also learn that staying on the path and being careful leads to better outcomes than taking risks.",
   "records": {
     "n1.should.d00": {"concepts": ["should_and_should_not"], "claim_class": "formal", "provenance": {"source_claim": "topic:n1.should"}, "defines": {"kind": "topic", "target": "n1.should"}},
     "n1.should.s01": {"concepts": ["should_and_should_not"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:danger-must-be-taught"}},

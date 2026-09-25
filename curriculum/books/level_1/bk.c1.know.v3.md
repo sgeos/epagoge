@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.know"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows a child exploring the world through simple, everyday experiences, watching an apple fall, sharing food, feeling the breeze, noticing a warm stone, and each moment builds a quiet understanding of what it means to know, remember, and understand.",
+  "teaches": "It teaches that knowing isn't just about facts, but about paying attention, feeling things, and remembering what you've experienced, even when you can't name it.",
   "records": {
     "c1.know.v3.d00": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.know"}, "defines": {"kind": "topic", "target": "c1.know"}},
     "c1.know.v3.d01": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forget"}, "defines": {"kind": "word", "target": "forget"}},

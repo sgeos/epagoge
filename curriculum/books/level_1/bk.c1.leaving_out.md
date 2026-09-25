@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.leaving_out"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child hides a cup that fell, choosing not to tell where it landed, and keeps the secret even when it's no longer safe to do so. The story shows how leaving something out, like the truth about a small accident, can grow heavier over time.",
+  "teaches": "Keeping quiet about something important can make it worse, even if you think no one will notice. It's better to say what happened, even when it's hard, so you don't carry the secret alone.",
   "records": {
     "c1.leaving_out.d00": {"concepts": ["leaving_out"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.leaving_out"}, "defines": {"kind": "topic", "target": "c1.leaving_out"}},
     "c1.leaving_out.d01": {"concepts": ["leaving_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hide"}, "defines": {"kind": "word", "target": "hide"}},

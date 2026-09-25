@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.group"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child sorts blue and red blocks into groups based on color, then adjusts the groups to be equal in number. The story shows how things that are alike can be grouped together and how groups can be made the same size.",
+  "teaches": "Things that are alike, like color or shape, can be put together in a group, and groups can be compared and adjusted to be equal. This helps children understand basic ideas about sets, sorting, and equality.",
   "records": {
     "m1.group.d00": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.group"}, "defines": {"kind": "topic", "target": "m1.group"}},
     "m1.group.d01": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:group"}, "defines": {"kind": "word", "target": "group"}},

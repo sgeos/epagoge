@@ -8,6 +8,12 @@
     "target": "p1.things"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child explores the simple, constant presence of a cup through questions and playful movements, noticing how it stays the same even when empty, hidden, or moved.",
+  "teaches": "Things like cups don't change just because they're empty or out of sight, they remain the same object, even when not visible or full.",
   "records": {
     "p1.things.q1.d00": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.things"}, "defines": {"kind": "topic", "target": "p1.things"}},
     "p1.things.q1.a01": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "empirical", "provenance": {"source_claim": "topic:p1.things"}},

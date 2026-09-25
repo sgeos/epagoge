@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.count"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows children how numbers follow one another in a fixed order, using simple scenes from a child's day to illustrate counting in sequence. It introduces the idea of quantity through familiar objects and actions, like stepping or seeing a butterfly.",
+  "teaches": "Children learn that numbers come in a steady order, each one following the previous and coming before the next, and that counting helps us know how many things there are. They also learn that zero means nothing, and that one means just one thing.",
   "records": {
     "m1.count.v3.d00": {"concepts": ["counting", "number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.count"}, "defines": {"kind": "topic", "target": "m1.count"}},
     "m1.count.v3.d01": {"concepts": ["counting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:count"}, "defines": {"kind": "word", "target": "count"}},

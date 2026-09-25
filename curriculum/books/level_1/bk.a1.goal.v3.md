@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.goal"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A little girl tries to reach a cup on a table, facing small obstacles and setbacks while staying focused on her goal.",
+  "teaches": "Even when things don't go as planned, keeping your eye on what you want and trying different ways can help you succeed.",
   "records": {
     "a1.goal.v3.d00": {"concepts": ["goal"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.goal"}, "defines": {"kind": "topic", "target": "a1.goal"}},
     "a1.goal.v3.s01": {"concepts": ["goal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},

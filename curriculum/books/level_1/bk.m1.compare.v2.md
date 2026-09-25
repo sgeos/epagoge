@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.compare"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows children how to compare things by noticing differences and similarities in size, weight, speed, and position, using simple, everyday examples like apples, balls, and animals.",
+  "teaches": "Children learn to identify what is the same or different, recognize more or less, and understand basic comparisons like bigger vs. smaller, heavier vs. lighter, and above vs. below.",
   "records": {
     "m1.compare.v2.d00": {"concepts": ["same_and_different", "more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.compare"}, "defines": {"kind": "topic", "target": "m1.compare"}},
     "m1.compare.v2.d01": {"concepts": ["same_and_different"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:different"}, "defines": {"kind": "word", "target": "different"}},

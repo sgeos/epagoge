@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.motion"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how things stay still until a force makes them move, using simple, relatable examples like toys, bikes, and carts. It illustrates motion through everyday actions such as pushing, pulling, rolling, and lifting.",
+  "teaches": "Children learn that motion begins with a push or pull and that objects can move in different ways depending on how they're used. They also see how forces like gravity and friction affect movement, and how things can be still or move in predictable ways.",
   "records": {
     "p1.motion.v3.d00": {"concepts": ["moving_and_still", "force"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.motion"}, "defines": {"kind": "topic", "target": "p1.motion"}},
     "p1.motion.v3.d01": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:climb"}, "defines": {"kind": "word", "target": "climb"}},

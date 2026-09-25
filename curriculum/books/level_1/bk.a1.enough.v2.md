@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.enough"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A small plant survives with just enough water in a cup, while the world around it feels the absence of more, showing how scarcity shapes choices and quiet endurance.",
+  "teaches": "Enough means having what's needed, not too little and not too much; lack, shortage, plenty, and spare describe different relationships to resources, and knowing the difference helps us understand fairness and care.",
   "records": {
     "a1.enough.v2.d00": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.enough"}, "defines": {"kind": "topic", "target": "a1.enough"}},
     "a1.enough.v2.d01": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:enough"}, "defines": {"kind": "word", "target": "enough"}},

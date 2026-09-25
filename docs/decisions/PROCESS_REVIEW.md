@@ -113,8 +113,8 @@ The reference repository's rule is that continuous integration must be a
 what makes it safe to be the authority.
 
 **That containment cannot hold here.** The disclosure scan reads a pattern
-held outside version control, so on a runner it announces a skip and
-returns success. Publishing the pattern would publish the list of withheld
+this repository does not contain, so on a runner it announces a skip
+and returns success. Publishing the pattern would publish the list of withheld
 vocabulary, which is the thing being withheld.
 
 **So the local gate is load-bearing and cannot be trimmed**, and

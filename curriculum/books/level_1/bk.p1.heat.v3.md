@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.heat"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young boy learns about heat and cold through everyday experiences, like touching a hot stove and feeling cold water. The story shows how heat can cause burns, how cold feels, and how temperature changes can turn ice into water or water into steam.",
+  "teaches": "Children learn to recognize the dangers of heat, understand the difference between hot, cold, and cool, and see how temperature changes cause materials to melt or freeze. They also learn to respond calmly and safely when hurt, like waiting and using a cold cloth.",
   "records": {
     "p1.heat.v3.d00": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.heat"}, "defines": {"kind": "topic", "target": "p1.heat"}},
     "p1.heat.v3.d01": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:burn"}, "defines": {"kind": "word", "target": "burn"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.story"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A girl recounts a journey through the sky and land, blending real memories with imagined adventures as she travels in a balloon and a bamboo boat.",
+  "teaches": "Stories can include both true events and made-up parts, and telling them helps us understand our own experiences and feelings.",
   "records": {
     "c1.story.d00": {"concepts": ["story"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.story"}, "defines": {"kind": "topic", "target": "c1.story"}},
     "c1.story.d01": {"concepts": ["story"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:story"}, "defines": {"kind": "word", "target": "story"}},

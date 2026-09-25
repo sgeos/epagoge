@@ -8,6 +8,12 @@
     "target": "p1.inside"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the concept of \"inside\" through simple, repeated scenarios involving water and a cup, showing how things can move in and out of containers and spaces. It uses clear examples to illustrate what it means for something to be contained, to enter, or to be outside.",
+  "teaches": "Children learn to recognize and understand spatial relationships like \"inside,\" \"outside,\" \"enter,\" and \"containment\" through real-world actions and familiar objects. They see that containers hold things, that movement changes position, and that the same object can be inside or outside depending on where it is.",
   "records": {
     "p1.inside.q1.d00": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.inside"}, "defines": {"kind": "topic", "target": "p1.inside"}},
     "p1.inside.q1.d01": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:container"}, "defines": {"kind": "word", "target": "container"}},

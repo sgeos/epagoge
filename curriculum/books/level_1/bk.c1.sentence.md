@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.sentence"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child and her brother talk, build, and play together, showing how sentences help us share thoughts and plan actions.",
+  "teaches": "Sentences are made of words put together in order, and they let us say clear things, ask for help, and work with others.",
   "records": {
     "c1.sentence.d00": {"concepts": ["sentence"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.sentence"}, "defines": {"kind": "topic", "target": "c1.sentence"}},
     "c1.sentence.d01": {"concepts": ["sentence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:speak"}, "defines": {"kind": "word", "target": "speak"}},

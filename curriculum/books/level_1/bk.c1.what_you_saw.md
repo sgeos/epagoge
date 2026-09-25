@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.what_you_saw"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy witnesses a man take a red ball from a basket and struggles with whether to speak up, eventually choosing to calmly report what he saw without blame or fear.",
+  "teaches": "Speaking honestly about what you see, even when it's hard, helps others understand the truth and can lead to accountability and change.",
   "records": {
     "c1.what_you_saw.d00": {"concepts": ["saying_what_you_saw"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.what_you_saw"}, "defines": {"kind": "topic", "target": "c1.what_you_saw"}},
     "c1.what_you_saw.d01": {"concepts": ["saying_what_you_saw"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:report"}, "defines": {"kind": "word", "target": "report"}},

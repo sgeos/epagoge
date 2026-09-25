@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "n1.promise"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy keeps a promise he made to his little sister to help her build a balloon-powered boat, showing what it means to follow through on a commitment.",
+  "teaches": "A promise is a serious agreement that must be kept, even when it's hard or takes time, and doing so builds trust and joy between people.",
   "records": {
     "n1.promise.d00": {"concepts": ["promise"], "claim_class": "formal", "provenance": {"source_claim": "topic:n1.promise"}, "defines": {"kind": "topic", "target": "n1.promise"}},
     "n1.promise.d01": {"concepts": ["promise"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:promise"}, "defines": {"kind": "word", "target": "promise"}},

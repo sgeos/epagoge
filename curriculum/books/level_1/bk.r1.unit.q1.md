@@ -8,6 +8,12 @@
     "target": "r1.unit"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book uses the simple idea of measuring water in cups to show how units make numbers meaningful in real life. It demonstrates why we need to name what we're measuring, like \"cups\", so we know what the number refers to.",
+  "teaches": "Readers learn that numbers alone don't tell the full story; units like cups define what is being measured. They also see how the same unit can be reused and how different units can measure the same thing.",
   "records": {
     "r1.unit.q1.d00": {"concepts": ["unit"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.unit"}, "defines": {"kind": "topic", "target": "r1.unit"}},
     "r1.unit.q1.d01": {"concepts": ["unit"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cup"}, "defines": {"kind": "word", "target": "cup"}},

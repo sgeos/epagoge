@@ -12,6 +12,7 @@ import json
 import random
 import tempfile
 import unittest
+from dataclasses import fields, replace
 from pathlib import Path
 from typing import cast
 
@@ -248,6 +249,46 @@ class TestMarkdownFormat(unittest.TestCase):
         self.assertEqual(got.id, "bk")
         self.assertEqual(got.records, ("bk.r1", "bk.r2"))
         self.assertEqual(cast(dict[str, object], records[0])["concepts"], ["a"])
+
+    def test_every_field_survives_a_round_trip(self) -> None:
+        """A field added to ``Book`` must reach both readers and the writer.
+
+        **This test enumerates nothing.** It walks
+        ``dataclasses.fields(Book)`` and gives each one a distinctive
+        value, so a field added later is covered without anyone
+        remembering to extend this. A hand-written list here would be the
+        very defect the test exists to catch.
+
+        Two constructions dropped five fields each until 2026-09-25: the
+        description generator built a book from seven of twelve, which
+        would have stripped ``form`` from every question-and-answer book,
+        and ``books_from_json`` read six of twelve, so a caller could not
+        tell an absent field from an empty one.
+        """
+        skip = {"id", "level", "title", "subject_kind", "subject", "records"}
+        filled = replace(
+            Book(
+                id="bk",
+                level=1,
+                title="T",
+                subject_kind=DefinitionKind.DOMAIN,
+                subject="physics",
+                records=("bk.r1", "bk.r2"),
+            ),
+            **{
+                f.name: f"value for {f.name}"
+                for f in fields(Book)
+                if f.name not in skip
+            },
+        )
+
+        through_markdown, _ = parse_book(render_book(book_head(filled), self.records()))
+        self.assertEqual(through_markdown, filled)
+
+        through_json = books_from_json(
+            [{**book_head(filled), "records": list(filled.records)}]
+        )
+        self.assertEqual(through_json, [filled])
 
     def test_a_multi_paragraph_record_survives(self) -> None:
         """A level-five record is a paragraph and a level-seven one is more."""

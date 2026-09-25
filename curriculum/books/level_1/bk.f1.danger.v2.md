@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.danger"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows children how some dangers aren't obvious, like a hot pan or a sharp edge, because they look harmless but can cause real harm. It follows a child named Carlo who learns through small, painful experiences that not everything that seems safe actually is.",
+  "teaches": "Kids learn to recognize hidden dangers by paying attention to warnings and thinking before touching things, even when they seem normal. They understand that being careful, not afraid, helps them stay safe and healthy.",
   "records": {
     "f1.danger.v2.d00": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.danger"}, "defines": {"kind": "topic", "target": "f1.danger"}},
     "f1.danger.v2.d01": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cut"}, "defines": {"kind": "word", "target": "cut"}},

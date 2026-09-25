@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.same_count"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child explores how moving objects around doesn't change their number, using five apples as a consistent example.",
+  "teaches": "The quantity of a group stays the same even when the objects are rearranged, spread out, or moved to different places.",
   "records": {
     "m1.same_count.d00": {"concepts": ["conservation_of_number"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.same_count"}, "defines": {"kind": "topic", "target": "m1.same_count"}},
     "m1.same_count.d01": {"concepts": ["conservation_of_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unchanged"}, "defines": {"kind": "word", "target": "unchanged"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.because"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child lets go of a balloon, watches it float away, and experiences the quiet sadness of loss. The story follows the moment and its aftermath, showing how one action leads to another through simple, natural causes.",
+  "teaches": "When something happens because you did or didn't do something, it's not always about blame, but about understanding how actions connect to outcomes. Even when things are gone, new moments can still feel like they carry the same feeling.",
   "records": {
     "c1.because.v3.d00": {"concepts": ["discourse_marker"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.because"}, "defines": {"kind": "topic", "target": "c1.because"}},
     "c1.because.v3.d01": {"concepts": ["discourse_marker"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:instead"}, "defines": {"kind": "word", "target": "instead"}},

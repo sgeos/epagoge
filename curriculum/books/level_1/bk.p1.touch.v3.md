@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.touch"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the quiet, everyday moments when touch connects us to the world, showing how a single touch can create movement, warmth, sound, and feeling, even when nothing visibly moves.",
+  "teaches": "Readers learn that touch is more than contact, it can be gentle, firm, or fleeting, and each kind changes how we experience things, even when the object itself stays still.",
   "records": {
     "p1.touch.v3.d00": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.touch"}, "defines": {"kind": "topic", "target": "p1.touch"}},
     "p1.touch.v3.d01": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:contact"}, "defines": {"kind": "word", "target": "contact"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.danger"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child learns that some things can hurt even when they look harmless, like a hot stove or a sharp edge, and that being careful means asking others and checking before touching.",
+  "teaches": "You can't always tell what's dangerous just by looking, so it's important to ask before touching something new and to pay attention to warnings.",
   "records": {
     "f1.danger.d00": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.danger"}, "defines": {"kind": "topic", "target": "f1.danger"}},
     "f1.danger.s01": {"concepts": ["danger"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:some-things-harm"}},

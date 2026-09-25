@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.close_enough"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A small cup of liquid is never exactly half full, but it's always enough, whether for a thirsty mouse, a bird, or a child. The story follows the cup through quiet moments of waiting, nearness, and small uses, showing how closeness to a goal or need can still be meaningful.",
+  "teaches": "Things don't have to be perfect or exact to be useful or valuable. Being close enough, whether in fullness, time, or effort, can still count and matter.",
   "records": {
     "c1.close_enough.d00": {"concepts": ["close_enough"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.close_enough"}, "defines": {"kind": "topic", "target": "c1.close_enough"}},
     "c1.close_enough.d01": {"concepts": ["close_enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:near"}, "defines": {"kind": "word", "target": "near"}},

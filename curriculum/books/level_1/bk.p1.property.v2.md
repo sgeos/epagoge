@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.property"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child discovers different properties of everyday objects through a red ball's journey across a yard, noticing how things can be big, bright, round, broad, clear, or clean.",
+  "teaches": "Children learn to identify and compare basic physical properties like size, color, shape, and clarity through simple, concrete experiences with familiar objects.",
   "records": {
     "p1.property.v2.d00": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.property"}, "defines": {"kind": "topic", "target": "p1.property"}},
     "p1.property.v2.d01": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:big"}, "defines": {"kind": "word", "target": "big"}},

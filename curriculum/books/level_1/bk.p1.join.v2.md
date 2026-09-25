@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.join"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child explores what it means to join things together using glue and string, and what happens when things are separated, showing how different methods can keep parts connected.",
+  "teaches": "Things can be joined by glue or string, and once joined, they may be hard to separate; removing a lid shows how connection can be broken with effort.",
   "records": {
     "p1.join.v2.d00": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.join"}, "defines": {"kind": "topic", "target": "p1.join"}},
     "p1.join.v2.d01": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:apart"}, "defines": {"kind": "word", "target": "apart"}},

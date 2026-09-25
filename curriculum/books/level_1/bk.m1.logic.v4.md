@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.logic"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book uses a simple, everyday story about rain, wet ground, and a child's experiences to introduce basic ideas of logical thinking, such as cause and effect, truth conditions, and the idea that statements can be true or false. It shows how observations connect to conclusions through clear, real-world examples.",
+  "teaches": "Readers learn that some statements depend on conditions, like rain causing wet ground, and that not all things can be true at once. They also see how to reason step by step from what they observe to what must follow.",
   "records": {
     "m1.logic.v4.d00": {"concepts": ["if_then", "all_some_none", "not_both"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.logic"}, "defines": {"kind": "topic", "target": "m1.logic"}},
     "m1.logic.v4.d01": {"concepts": ["not_both"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:either"}, "defines": {"kind": "word", "target": "either"}},

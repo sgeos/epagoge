@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.change"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child lets go of a balloon that floats away, watching it drift higher and farther until it's out of sight, feeling sadness and letting go of the moment.",
+  "teaches": "Change is natural and sometimes painful, but letting go can be a quiet part of growing; things can shift and move on, and that's okay.",
   "records": {
     "p1.change.v4.d00": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.change"}, "defines": {"kind": "topic", "target": "p1.change"}},
     "p1.change.v4.d01": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:change"}, "defines": {"kind": "word", "target": "change"}},

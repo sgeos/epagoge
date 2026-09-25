@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.enough"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child faces a difficult choice when there is only enough water for one plant, learning about scarcity, care, and the weight of deciding who lives when resources are limited.",
+  "teaches": "Even when there is not enough to go around, we can still make thoughtful choices with compassion, and sometimes the hardest decisions teach us what truly matters.",
   "records": {
     "a1.enough.d00": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.enough"}, "defines": {"kind": "topic", "target": "a1.enough"}},
     "a1.enough.d01": {"concepts": ["only_what_was_asked"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:extra"}, "defines": {"kind": "word", "target": "extra"}},

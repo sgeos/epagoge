@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.mistake"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child tries to place a book on a high shelf but accidentally drops it on the floor, realizing too late that he made a mistake. The story shows how simple errors happen when plans go awry, even with good intentions.",
+  "teaches": "Mistakes are normal and don't mean you're bad, what matters is noticing them and trying again. It's okay to feel wrong about a mistake, but you can still fix it with care and effort.",
   "records": {
     "a1.mistake.d00": {"concepts": ["mistake"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.mistake"}, "defines": {"kind": "topic", "target": "a1.mistake"}},
     "a1.mistake.d01": {"concepts": ["mistake"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:correct"}, "defines": {"kind": "word", "target": "correct"}},

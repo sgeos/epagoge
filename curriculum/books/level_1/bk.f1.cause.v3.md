@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.cause"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child pushes a ball and watches it roll, exploring the connection between action and movement through simple, repeated experiences.",
+  "teaches": "That one thing can make another happen, like pushing causing motion, and that noticing this pattern helps us understand how the world works.",
   "records": {
     "f1.cause.v3.d00": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.cause"}, "defines": {"kind": "topic", "target": "f1.cause"}},
     "f1.cause.v3.d01": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:because"}, "defines": {"kind": "word", "target": "because"}},

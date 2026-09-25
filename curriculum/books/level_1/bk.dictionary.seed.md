@@ -7,6 +7,12 @@
     "kind": "word",
     "target": "thing"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book introduces young children to basic words that name everyday things, actions, and qualities, using simple definitions and clear examples. It helps them connect words to real-world experiences through familiar objects and concepts.",
+  "teaches": "Children learn how words represent things, actions, and states, building a foundation for understanding language through concrete examples. They discover that words can describe physical properties, relationships, and simple ideas like time, size, and movement.",
   "records": {
     "dict.1.accept": {"concepts": ["agreeing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:accept"}, "defines": {"kind": "word", "target": "accept"}},
     "dict.1.admit": {"concepts": ["changing_your_mind"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:admit"}, "defines": {"kind": "word", "target": "admit"}},

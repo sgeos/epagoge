@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "i1.opinion"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This story shows how two children have different opinions about which balloon is best, and how they each hold firmly to their own views without agreeing. It captures the quiet moment when they realize their differences don't have to divide them.",
+  "teaches": "People can have strong, honest opinions without being wrong, and it's possible to respect each other's views even when they're different. Shared wonder and quiet understanding can grow when we stop defending our own idea and simply notice the sky together.",
   "records": {
     "i1.opinion.d00": {"concepts": ["opinion"], "claim_class": "formal", "provenance": {"source_claim": "topic:i1.opinion"}, "defines": {"kind": "topic", "target": "i1.opinion"}},
     "i1.opinion.d01": {"concepts": ["taking_on_faith"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:believe"}, "defines": {"kind": "word", "target": "believe"}},

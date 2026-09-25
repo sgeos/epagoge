@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.name"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young boy draws a flower and names it \"rose,\" learning that the word is not the same as the real thing, and that names, marks, and pictures are symbols pointing to something beyond themselves.",
+  "teaches": "Words and drawings stand for things but are not the things themselves, and understanding this helps us see how language and meaning work in the world.",
   "records": {
     "c1.name.v2.d00": {"concepts": ["name", "writing"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.name"}, "defines": {"kind": "topic", "target": "c1.name"}},
     "c1.name.v2.d01": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:called"}, "defines": {"kind": "word", "target": "called"}},

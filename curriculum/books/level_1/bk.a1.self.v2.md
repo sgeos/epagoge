@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.self"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows a child navigating a moment of wanting something, like a cup, while recognizing their own feelings, choices, and boundaries, even when another child wants the same thing. It explores the difference between oneself and others, the experience of being alone, and how to handle strong emotions like anger or frustration.",
+  "teaches": "Readers learn that knowing your own self means understanding your feelings, making your own choices, and staying calm even when you want something that isn't yours. It shows how being aware of yourself helps you act with kindness and patience, even in tough moments.",
   "records": {
     "a1.self.v2.d00": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.self"}, "defines": {"kind": "topic", "target": "a1.self"}},
     "a1.self.v2.d01": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alone"}, "defines": {"kind": "word", "target": "alone"}},

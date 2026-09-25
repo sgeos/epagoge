@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.touch"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child explores how touch causes movement and change, watching a cup slide off a table, break, and be carefully repaired with glue and care.",
+  "teaches": "Touch can start motion, cause change, and even help fix things, showing that small actions have big effects and that broken things can still hold meaning.",
   "records": {
     "p1.touch.d00": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.touch"}, "defines": {"kind": "topic", "target": "p1.touch"}},
     "p1.touch.d01": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pressed"}, "defines": {"kind": "word", "target": "pressed"}},

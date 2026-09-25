@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.stands_for"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy plays with a toy car that isn't a real car, using it to represent other things like a bear, a block, or a person, showing how imagination turns objects into symbols.",
+  "teaches": "Objects can stand for other things, and meaning comes from how we use them, not just what they are.",
   "records": {
     "p1.stands_for.v3.d00": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.stands_for"}, "defines": {"kind": "topic", "target": "p1.stands_for"}},
     "p1.stands_for.v3.d01": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bear"}, "defines": {"kind": "word", "target": "bear"}},

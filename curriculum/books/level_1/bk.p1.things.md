@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.things"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the simple idea of an object, a cup, existing in different states and locations, showing how it remains the same even when its position or contents change. It uses repetition and contrast to highlight concepts like presence, absence, emptiness, and hiding.",
+  "teaches": "Readers learn to notice and name basic properties of things, such as whether something is here or gone, full or empty, visible or hidden. It helps build awareness of how objects stay the same even when their situation changes.",
   "records": {
     "p1.things.d00": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.things"}, "defines": {"kind": "topic", "target": "p1.things"}},
     "p1.things.d01": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:appear"}, "defines": {"kind": "word", "target": "appear"}},

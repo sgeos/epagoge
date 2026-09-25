@@ -89,6 +89,40 @@ annotation with no block, and a repeated identifier are all rejected.
 A block runs to the next marker, so a multi-paragraph record needs nothing
 special.
 
+## The metadata a book carries about itself
+
+Six fields beyond the subject, all optional in the schema and all present
+on every level-one book as of 2026-09-25. `book_head` writes them and
+omits any that is empty, so an absent field means nobody has got to it
+rather than that it is blank.
+
+| Field | What it is |
+| --- | --- |
+| `about` | What the book is about, for a curator |
+| `teaches` | What a reader should come away knowing |
+| `author` | Who the book is by. `docs/decisions/BOOK_ATTRIBUTION.md` |
+| `licence` | The SPDX identifier for the corpus licence |
+| `first_published` | Date of the earliest commit touching the file |
+| `published` | Date of the latest |
+| `form` | `question` for a question-and-answer book, else absent |
+
+**`about` and `teaches` are the one place a level's vocabulary ceiling
+does not apply.** They are written in ordinary English for a person
+choosing books, and are not text a model trains on. A description
+restricted to the book's own words would say what the title already says.
+
+**The two dates are derived, never written.** `tools/stamp_books.py`
+reads them from the commit log in one pass and is idempotent, and its
+`--check` mode fails when a committed book's `published` field disagrees
+with its own history.
+
+**NEVER REBUILD A BOOK BY LISTING ITS FIELDS.** Use `book_head` to write
+one and `dataclasses.replace` to change one. Two constructions each
+dropped five fields by enumerating them, and one would have stripped
+`form` from every question-and-answer book in a single bulk run. A test
+walks the dataclass and fails if a field added later is not carried
+through a read, a write and a read again.
+
 ## Definitions live on records, not on books
 
 A book is an ordering of records. A definition belongs to the sentence that

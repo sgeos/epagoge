@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.metal"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child discovers how everyday objects like keys and nails are made of metal, exploring the properties of metal through a worn key and a rusting nail.",
+  "teaches": "Metal is a material that can be strong, cold, and change over time when exposed to water, and many common objects are made from metals like iron and steel.",
   "records": {
     "p1.metal.v2.d00": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.metal"}, "defines": {"kind": "topic", "target": "p1.metal"}},
     "p1.metal.v2.d01": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copper"}, "defines": {"kind": "word", "target": "copper"}},

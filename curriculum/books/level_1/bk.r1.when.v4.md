@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.when"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how children experience time through simple, everyday moments, like waiting for something to be ready, moving from one thing to the next, or thinking about what comes after. It uses a quiet story of a boy waiting for an apple to ripen to illustrate the idea of \"first this, then that\" and how time unfolds step by step.",
+  "teaches": "Readers learn that time isn't just a clock, but a series of moments that happen in order, some slow, some quick, and that waiting can be part of a plan. They see how the future feels different from the present and how patience plays a role in everyday choices.",
   "records": {
     "r1.when.v4.d00": {"concepts": ["sequence", "duration"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.when"}, "defines": {"kind": "topic", "target": "r1.when"}},
     "r1.when.v4.d01": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:begin"}, "defines": {"kind": "word", "target": "begin"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.heat"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child learns the danger of touching a hot stove, experiencing a burn and then seeing how to respond with care and safety.",
+  "teaches": "Heat can cause pain and injury, and it's important to recognize hot things, avoid touching them, and know what to do if a burn happens.",
   "records": {
     "p1.heat.v4.d00": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.heat"}, "defines": {"kind": "topic", "target": "p1.heat"}},
     "p1.heat.v4.d01": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:burn"}, "defines": {"kind": "word", "target": "burn"}},

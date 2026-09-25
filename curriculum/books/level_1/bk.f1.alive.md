@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.alive"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book gently explores the natural cycle of life and death through the story of a child mourning a dead bird, showing what it means for a living thing to stop breathing, moving, and feeling.",
+  "teaches": "A living thing can breathe, move, and feel, but when it dies, it stays still and never wakes up again, and death is final and irreversible.",
   "records": {
     "f1.alive.d00": {"concepts": ["living_and_not_living", "dying"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.alive"}, "defines": {"kind": "topic", "target": "f1.alive"}},
     "f1.alive.d01": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alive"}, "defines": {"kind": "word", "target": "alive"}},

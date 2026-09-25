@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.stale"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A quiet story about a cup that once held water, now empty, and a mark that once said it was full, now gone, leaving behind silence and stillness. It shows how things change over time, even when they seem unchanged.",
+  "teaches": "That things can be full and then empty, and that being full doesn't last forever. It also shows how memories and labels can become untrue, and how silence and stillness can carry meaning.",
   "records": {
     "r1.stale.v2.d00": {"concepts": ["out_of_date"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.stale"}, "defines": {"kind": "topic", "target": "r1.stale"}},
     "r1.stale.v2.s01": {"concepts": ["out_of_date"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},

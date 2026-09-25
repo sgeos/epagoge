@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.break"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy tries to fix a broken bridge after it cracks under the weight of his cart, learning that some things can't be restored to their original state.",
+  "teaches": "That when things break, especially from use or age, they may never be whole again, but we can still find new ways to move forward.",
   "records": {
     "f1.break.v4.d00": {"concepts": ["things_break", "wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.break"}, "defines": {"kind": "topic", "target": "f1.break"}},
     "f1.break.v4.d01": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:crack"}, "defines": {"kind": "word", "target": "crack"}},

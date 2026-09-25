@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.break"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A story about how things, even strong ones like bridges, can break over time from use, weather, and stress, and how that breakage is part of life.",
+  "teaches": "That breaking isn't always a failure, sometimes it means something has done its job, and that change, repair, and new beginnings are natural and necessary.",
   "records": {
     "f1.break.v2.d00": {"concepts": ["things_break", "wearing_out"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.break"}, "defines": {"kind": "topic", "target": "f1.break"}},
     "f1.break.v2.d01": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:crack"}, "defines": {"kind": "word", "target": "crack"}},

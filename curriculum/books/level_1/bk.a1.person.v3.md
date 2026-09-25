@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.person"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows what a person can do, build, carry, want, and try, through the simple, everyday actions of a boy making a bamboo boat. It explores the quiet pride and imagination that come from creating something with your hands.",
+  "teaches": "A person is someone who acts, feels, and tries to make things happen, even when they're small or just starting out. The book shows how wanting something, planning, and doing lead to real results.",
   "records": {
     "a1.person.v3.d00": {"concepts": ["person", "activity", "need"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.person"}, "defines": {"kind": "topic", "target": "a1.person"}},
     "a1.person.v3.d01": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:baby"}, "defines": {"kind": "word", "target": "baby"}},

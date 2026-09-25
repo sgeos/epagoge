@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.cycle"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book gently shows how day and night follow each other in a steady, repeating pattern, using simple images and rhythms to illustrate the natural cycle of time. It highlights the changes in light, activity, and nature throughout the day and night, making the invisible rhythm of time visible.",
+  "teaches": "Children learn that time moves in predictable, repeating cycles, day turns into night, night into day, and that these changes happen without stopping. They begin to understand how daily patterns shape life, from sunrise to sunset and back again.",
   "records": {
     "r1.cycle.v3.d00": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.cycle"}, "defines": {"kind": "topic", "target": "r1.cycle"}},
     "r1.cycle.v3.d01": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:always"}, "defines": {"kind": "word", "target": "always"}},

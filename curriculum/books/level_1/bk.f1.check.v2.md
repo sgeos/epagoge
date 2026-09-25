@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.check"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child discovers that a seemingly real red apple is actually a fake, leading them to question what they see and investigate further.",
+  "teaches": "That not everything that looks true is actually true, and that checking things with your senses and curiosity helps you find the truth.",
   "records": {
     "f1.check.v2.d00": {"concepts": ["being_told", "checking"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.check"}, "defines": {"kind": "topic", "target": "f1.check"}},
     "f1.check.v2.d01": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lie"}, "defines": {"kind": "word", "target": "lie"}},

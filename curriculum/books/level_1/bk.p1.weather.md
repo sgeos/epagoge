@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.weather"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how weather changes throughout a day, following a little girl as rain comes, a storm passes, and the sun returns. It introduces basic weather concepts like rain, storms, clouds, wind, and sunny skies through simple, relatable moments.",
+  "teaches": "Readers learn that weather can change quickly, that rain and storms are natural parts of the cycle, and that after dark clouds and wind, sunny skies often return. It helps children recognize and name different weather conditions they might experience.",
   "records": {
     "p1.weather.d00": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.weather"}, "defines": {"kind": "topic", "target": "p1.weather"}},
     "p1.weather.d01": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rain"}, "defines": {"kind": "word", "target": "rain"}},

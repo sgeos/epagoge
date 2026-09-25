@@ -2669,8 +2669,8 @@ Decisions taken in this pass.
 10. **Framework.** PyTorch, now that the hardware path is small rented
     NVIDIA runs.
 17. **Use case.** Answered, and recorded under the discipline `CLAUDE.md`
-    points to. The part that constrains the project is that the reporting
-    channel is severely constrained.
+    points to. A clause naming the constraint was removed on 2026-09-25
+    under that discipline, which permits omission and not misdirection.
 19. **Galactica.** Answered by the measured error rate in decision two.
 
 Deferred to the follow-on. Distillation, native low-bit training, bounded

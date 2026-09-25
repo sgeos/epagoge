@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.check"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child questions a story they've been told about a red balloon, investigates what they see, and discovers the truth through careful observation and exploration.",
+  "teaches": "Just because someone says something is true doesn't mean it is, checking for yourself and looking closely can reveal what's real.",
   "records": {
     "f1.check.d00": {"concepts": ["being_told", "checking"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.check"}, "defines": {"kind": "topic", "target": "f1.check"}},
     "f1.check.d01": {"concepts": ["agreeing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:agree"}, "defines": {"kind": "word", "target": "agree"}},

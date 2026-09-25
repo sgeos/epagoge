@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.alive"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book gently explores the natural truth that all living things eventually die, using the quiet, tender story of a baby's life and passing. It shows what it means to be alive, moving, feeling, waking, through simple, concrete moments.",
+  "teaches": "Children learn that being alive means being able to breathe, move, and feel, and that death is the end of those things, not a return. It also shows that life continues even after someone dies, helping children understand loss without fear.",
   "records": {
     "f1.alive.v4.d00": {"concepts": ["living_and_not_living", "dying"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.alive"}, "defines": {"kind": "topic", "target": "f1.alive"}},
     "f1.alive.v4.d01": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alive"}, "defines": {"kind": "word", "target": "alive"}},

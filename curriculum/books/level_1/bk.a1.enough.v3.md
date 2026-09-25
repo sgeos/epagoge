@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.enough"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A single plant thrives in a garden with limited water, while a second plant struggles and dies, showing what happens when resources are scarce and only enough exists for one.",
+  "teaches": "Enough means having just what is needed, not more and not less; when there is not enough, some will lack, and not every need can be met.",
   "records": {
     "a1.enough.v3.d00": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.enough"}, "defines": {"kind": "topic", "target": "a1.enough"}},
     "a1.enough.v3.d01": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:enough"}, "defines": {"kind": "word", "target": "enough"}},

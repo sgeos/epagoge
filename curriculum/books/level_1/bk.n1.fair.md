@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "n1.fair"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy feels left out when his friend gets two toys and he gets only one, leading to a moment of imbalance and emotion. The story shows how sharing can create fairness, but also how fairness can be broken when one person takes more, even after an equal start.",
+  "teaches": "Fairness means everyone gets the same when it's equal, but it also means respecting when someone chooses not to share. True fairness includes both giving and respecting limits, and it helps everyone feel safe and happy.",
   "records": {
     "n1.fair.d00": {"concepts": ["fair_and_unfair"], "claim_class": "formal", "provenance": {"source_claim": "topic:n1.fair"}, "defines": {"kind": "topic", "target": "n1.fair"}},
     "n1.fair.d01": {"concepts": ["fair_and_unfair"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:share"}, "defines": {"kind": "word", "target": "share"}},

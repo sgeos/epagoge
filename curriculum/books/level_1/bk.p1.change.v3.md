@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.change"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the idea of change through simple, concrete experiences like letting go of a balloon and watching it rise and fall. It shows how actions lead to new states, open, closed, covered, fallen, and how things can shift in unexpected ways.",
+  "teaches": "Change is natural and often happens through small actions, like releasing something or putting it down. Once something changes, it can't go back to how it was, and that's okay.",
   "records": {
     "p1.change.v3.d00": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.change"}, "defines": {"kind": "topic", "target": "p1.change"}},
     "p1.change.v3.d01": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:become"}, "defines": {"kind": "word", "target": "become"}},

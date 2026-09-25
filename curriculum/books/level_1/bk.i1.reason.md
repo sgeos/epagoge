@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "i1.reason"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how children can resolve disagreements by explaining their reasons, listening to others, and working together to find the truth. It illustrates the natural process of sharing perspectives, using words like \"because\" to clarify thoughts and reach understanding.",
+  "teaches": "Children learn that having different opinions is normal, and they can handle differences by stating their reasons clearly and respectfully. They also see how listening, checking facts, and cooperating lead to calm, fair solutions.",
   "records": {
     "i1.reason.d00": {"concepts": ["giving_a_reason", "agreeing", "disagreeing"], "claim_class": "formal", "provenance": {"source_claim": "topic:i1.reason"}, "defines": {"kind": "topic", "target": "i1.reason"}},
     "i1.reason.d01": {"concepts": ["agreeing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:agree"}, "defines": {"kind": "word", "target": "agree"}},

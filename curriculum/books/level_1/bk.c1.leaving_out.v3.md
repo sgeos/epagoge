@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.leaving_out"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child accidentally drops a cup and chooses not to tell where it fell, leading to a quiet moment of guilt and decision-making. The story shows how withholding a small truth can create worry, even when no one else knows.",
+  "teaches": "Not telling the whole truth can feel heavy, even when the secret seems small. Facing a mistake and sharing it, even if it's hard, can bring relief and honesty.",
   "records": {
     "c1.leaving_out.v3.d00": {"concepts": ["leaving_out"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.leaving_out"}, "defines": {"kind": "topic", "target": "c1.leaving_out"}},
     "c1.leaving_out.v3.d01": {"concepts": ["leaving_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:secret"}, "defines": {"kind": "word", "target": "secret"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.alive"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book gently explores the natural cycle of life and death through the story of a young bird that cannot fly and eventually passes away. It shows what it means to be alive, moving, eating, drinking, and responding to the world, compared to what happens when life ends.",
+  "teaches": "Readers learn that living things are defined by their ability to breathe, move, and respond, while death means those functions stop forever. It also shows that death is a quiet, natural part of life, not something to fear, but to understand.",
   "records": {
     "f1.alive.v2.d00": {"concepts": ["living_and_not_living", "dying"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.alive"}, "defines": {"kind": "topic", "target": "f1.alive"}},
     "f1.alive.v2.d01": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alive"}, "defines": {"kind": "word", "target": "alive"}},

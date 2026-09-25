@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "ac1.using_up"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child uses up a bottle of water, noticing step by step how the amount decreases with each use, and eventually finds the bottle empty.",
+  "teaches": "That using something means it gets smaller or disappears, and once used up, it's gone, like water, time, or supplies, so we should think about how we use things.",
   "records": {
     "ac1.using_up.d00": {"concepts": ["using_up"], "claim_class": "formal", "provenance": {"source_claim": "topic:ac1.using_up"}, "defines": {"kind": "topic", "target": "ac1.using_up"}},
     "ac1.using_up.d01": {"concepts": ["using_up"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:use"}, "defines": {"kind": "word", "target": "use"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.raw"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A tree grows in the forest, becomes wood, and is shaped into a chair, which then holds a child and an apple that rolls away, showing how raw materials change through use and time.",
+  "teaches": "That things like wood, apples, and chairs are made of natural materials that start raw and change when shaped, used, or left alone.",
   "records": {
     "p1.raw.v3.d00": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.raw"}, "defines": {"kind": "topic", "target": "p1.raw"}},
     "p1.raw.v3.d01": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:baked"}, "defines": {"kind": "word", "target": "baked"}},

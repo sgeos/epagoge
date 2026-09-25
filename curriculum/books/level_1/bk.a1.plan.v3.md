@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.plan"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows a child using a plan, list, and method to build a bamboo and wood boat step by step, testing it, improving it, and sharing the process with a sibling.",
+  "teaches": "Readers learn how making a plan before starting, using a list to organize steps, and following a clear method help complete tasks successfully and make improvements easier.",
   "records": {
     "a1.plan.v3.d00": {"concepts": ["plan"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.plan"}, "defines": {"kind": "topic", "target": "a1.plan"}},
     "a1.plan.v3.d01": {"concepts": ["plan"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:list"}, "defines": {"kind": "word", "target": "list"}},

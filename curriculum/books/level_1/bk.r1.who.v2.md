@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.who"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young girl insists a cup is full of water even though it appears empty and no water spills when she turns it over, leading her to question what is real and who is telling the truth.",
+  "teaches": "That perception and belief can differ from physical evidence, and that someone's experience of truth matters even when others don't understand it.",
   "records": {
     "r1.who.v2.d00": {"concepts": ["who_said_it"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.who"}, "defines": {"kind": "topic", "target": "r1.who"}},
     "r1.who.v2.d01": {"concepts": ["who_said_it"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mark"}, "defines": {"kind": "word", "target": "mark"}},

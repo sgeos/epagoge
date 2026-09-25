@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.plan"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows a child solving a simple problem by thinking ahead, making a plan, testing ideas, and adjusting when things don't go as expected. It demonstrates how planning helps with everyday challenges like picking up a fallen apple and carrying it home.",
+  "teaches": "Readers learn that planning means thinking through steps before acting, trying ideas safely, and changing course if needed. It shows that even small problems can be solved with careful thought and a clear method.",
   "records": {
     "a1.plan.v2.d00": {"concepts": ["plan"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.plan"}, "defines": {"kind": "topic", "target": "a1.plan"}},
     "a1.plan.v2.d01": {"concepts": ["plan"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:list"}, "defines": {"kind": "word", "target": "list"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "b1.keeping_going"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how living things like birds need food and water every day to grow, stay strong, and keep moving. It follows a baby bird learning to eat, fly, and find food on its own.",
+  "teaches": "All living things must eat and drink to survive and grow. They learn to stay safe, feel hunger, and eventually care for themselves.",
   "records": {
     "b1.keeping_going.d00": {"concepts": ["keeping_going", "needing_supply", "growing"], "claim_class": "formal", "provenance": {"source_claim": "topic:b1.keeping_going"}, "defines": {"kind": "topic", "target": "b1.keeping_going"}},
     "b1.keeping_going.d01": {"concepts": ["keeping_going"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breathe"}, "defines": {"kind": "word", "target": "breathe"}},

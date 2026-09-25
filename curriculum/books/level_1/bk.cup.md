@@ -7,6 +7,12 @@
     "kind": "domain",
     "target": "directed_physical_interactions"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-24",
+  "published": "2026-09-25",
+  "about": "This book shows how physical actions like pouring, filling, and emptying help children understand how objects interact with substances like water and soap.",
+  "teaches": "It demonstrates that objects can be changed by directed actions, such as pouring or washing, and that their state (empty or full) depends on what they contain and how they are used.",
   "records": {
     "bk.cup.d01": {"concepts": ["change", "household_object"], "claim_class": "formal", "provenance": {"source_claim": "domain:directed_physical_interactions"}, "defines": {"kind": "domain", "target": "directed_physical_interactions"}},
     "bk.cup.d02": {"concepts": ["material", "physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:stuff"}, "defines": {"kind": "word", "target": "stuff"}},

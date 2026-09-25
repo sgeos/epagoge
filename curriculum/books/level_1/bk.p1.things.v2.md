@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.things"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young child discovers a cup in different places and thinks about what it means to be \"here\" even when empty, exploring ideas like location, identity, and absence through simple, repeated observations.",
+  "teaches": "Things can stay the same even when their contents change, and being present doesn't depend on what's inside, just being where it is, unchanged and recognizable.",
   "records": {
     "p1.things.v2.d00": {"concepts": ["household_object", "presence", "emptiness"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.things"}, "defines": {"kind": "topic", "target": "p1.things"}},
     "p1.things.v2.d01": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bag"}, "defines": {"kind": "word", "target": "bag"}},

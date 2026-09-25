@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.because"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child lets go of a balloon, watches it float away, and experiences sadness and longing, then finds quiet comfort in noticing how the sky and a bird carry on.",
+  "teaches": "Small actions have consequences, and letting go can lead to loss, but also to new connections and moments of wonder.",
   "records": {
     "c1.because.d00": {"concepts": ["discourse_marker"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.because"}, "defines": {"kind": "topic", "target": "c1.because"}},
     "c1.because.d01": {"concepts": ["discourse_marker"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:way"}, "defines": {"kind": "word", "target": "way"}},

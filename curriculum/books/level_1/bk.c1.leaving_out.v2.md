@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.leaving_out"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child witnesses a cup fall and break but chooses not to speak up, letting it stay hidden under the table while silence grows heavier with each passing moment.",
+  "teaches": "When we leave out the truth, even a small silence can grow into something bigger, and the weight of not saying what happened can be harder to carry than the act of telling.",
   "records": {
     "c1.leaving_out.v2.d00": {"concepts": ["leaving_out"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.leaving_out"}, "defines": {"kind": "topic", "target": "c1.leaving_out"}},
     "c1.leaving_out.v2.d01": {"concepts": ["leaving_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:secret"}, "defines": {"kind": "word", "target": "secret"}},

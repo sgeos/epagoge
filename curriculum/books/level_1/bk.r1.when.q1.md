@@ -8,6 +8,12 @@
     "target": "r1.when"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the concept of time and sequence through simple, relatable moments in a child's day, showing how one thing leads to another. It uses everyday events like sunrise, starting a task, and finishing a day to illustrate when things happen and how they follow each other.",
+  "teaches": "Readers learn how to understand the order of events and recognize what comes first, then next, and how time moves forward. They also learn that finishing something takes time and that planning ahead, like starting early, can help make things possible.",
   "records": {
     "r1.when.q1.d00": {"concepts": ["sequence", "duration"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.when"}, "defines": {"kind": "topic", "target": "r1.when"}},
     "r1.when.q1.d01": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:begin"}, "defines": {"kind": "word", "target": "begin"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.cycle"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book follows the natural cycle of day and night through simple, rhythmic language and quiet scenes of a child's daily life, showing how each part of the day flows smoothly into the next.",
+  "teaches": "Readers learn that time moves in repeating patterns, with day leading to night and night returning to day, and that each phase has its own calm, familiar rhythm.",
   "records": {
     "r1.cycle.v2.d00": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.cycle"}, "defines": {"kind": "topic", "target": "r1.cycle"}},
     "r1.cycle.v2.d01": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:always"}, "defines": {"kind": "word", "target": "always"}},

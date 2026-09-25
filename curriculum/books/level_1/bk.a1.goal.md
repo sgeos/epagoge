@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.goal"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child focuses on a simple goal, reaching for a blue cup on a table, through quiet, deliberate attention and sustained effort.",
+  "teaches": "That achieving a goal begins with clear focus and steady action, and that the moment of success feels real, calm, and deeply personal, even when no one else sees it.",
   "records": {
     "a1.goal.d00": {"concepts": ["goal"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.goal"}, "defines": {"kind": "topic", "target": "a1.goal"}},
     "a1.goal.s01": {"concepts": ["goal"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},

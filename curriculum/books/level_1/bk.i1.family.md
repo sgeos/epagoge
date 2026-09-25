@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "i1.family"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows a child's everyday moments with her family, including her mother, father, brother, grandmother, and other relatives, highlighting how they care for one another in simple, loving ways.",
+  "teaches": "Family includes more than just parents and children, it can be made up of aunts, uncles, cousins, and grandparents, all of whom offer love and support.",
   "records": {
     "i1.family.d00": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "topic:i1.family"}, "defines": {"kind": "topic", "target": "i1.family"}},
     "i1.family.d01": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:aunt"}, "defines": {"kind": "word", "target": "aunt"}},

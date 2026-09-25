@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "r1.written"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child discovers a mysterious diary in the woods and follows clues written in it, uncovering a hidden world through marks, lists, and stories that outlast memory.",
+  "teaches": "Writing and marking things down helps you remember even when you forget, and stories can lead you to places you never knew existed.",
   "records": {
     "r1.written.v2.d00": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.written"}, "defines": {"kind": "topic", "target": "r1.written"}},
     "r1.written.v2.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copied"}, "defines": {"kind": "word", "target": "copied"}},

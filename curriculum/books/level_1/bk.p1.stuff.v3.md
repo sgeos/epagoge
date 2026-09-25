@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.stuff"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child discovers a stone cup that feels alive, exploring how ordinary objects can hold quiet wonder through shape, texture, and stillness.",
+  "teaches": "That things made of stone, dirt, dust, and wood have their own quiet presence, and that stillness and texture can carry meaning even when nothing moves.",
   "records": {
     "p1.stuff.v3.d00": {"concepts": ["material", "shape"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.stuff"}, "defines": {"kind": "topic", "target": "p1.stuff"}},
     "p1.stuff.v3.d01": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:circle"}, "defines": {"kind": "word", "target": "circle"}},

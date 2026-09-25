@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.only_asked"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child asks for just one cup, but receives five, leading to confusion and mess when the extras are not needed.",
+  "teaches": "Asking for exactly what you need is often better than getting more, and sometimes more creates problems instead of help.",
   "records": {
     "a1.only_asked.v2.d00": {"concepts": ["only_what_was_asked"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.only_asked"}, "defines": {"kind": "topic", "target": "a1.only_asked"}},
     "a1.only_asked.v2.d01": {"concepts": ["only_what_was_asked"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:exactly"}, "defines": {"kind": "word", "target": "exactly"}},

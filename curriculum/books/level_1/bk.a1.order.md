@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.order"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young boy follows a simple sequence to open a box and find a cup inside, carefully doing each step in the correct order.",
+  "teaches": "The importance of following steps in order, and how doing things in the right sequence leads to predictable, satisfying results.",
   "records": {
     "a1.order.d00": {"concepts": ["doing_in_order"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.order"}, "defines": {"kind": "topic", "target": "a1.order"}},
     "a1.order.s01": {"concepts": ["doing_in_order"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:cause-precedes-effect"}},

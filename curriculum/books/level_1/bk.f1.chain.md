@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.chain"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how one small event can lead to another in a chain of causes and effects, using a simple story about a baby, a knock on the door, and a balloon floating away.",
+  "teaches": "Readers learn that actions, no matter how small, can set off a series of connected events, and that even tiny moments can have big consequences.",
   "records": {
     "f1.chain.d00": {"concepts": ["causal_chain"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.chain"}, "defines": {"kind": "topic", "target": "f1.chain"}},
     "f1.chain.d01": {"concepts": ["causal_chain"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:knock"}, "defines": {"kind": "word", "target": "knock"}},

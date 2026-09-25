@@ -8,6 +8,12 @@
     "target": "r1.who"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A simple, repetitive story that explores the idea of identity and attribution through the repeated phrase \"she said the cup was full,\" emphasizing who is speaking and what they are saying.",
+  "teaches": "Readers learn how to identify the subject of a sentence using pronouns like \"she\" and \"her,\" and understand that words like \"who\" and \"her\" help us track who is saying what.",
   "records": {
     "r1.who.q1.d00": {"concepts": ["who_said_it"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.who"}, "defines": {"kind": "topic", "target": "r1.who"}},
     "r1.who.q1.a01": {"concepts": ["who_said_it"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.who"}},

@@ -33,8 +33,8 @@ control. Not issuing the commit is.
 
 **Continuous integration is NOT a strict superset of the local gate here,
 and that inverts the usual advice.** The disclosure scan reads a pattern
-held outside version control, so on a runner it announces a skip and
-returns success. The local gate is therefore load-bearing and cannot be
+this repository does not contain, so on a runner it announces a skip
+and returns success. The local gate is therefore load-bearing and cannot be
 trimmed. The reference repository can treat its continuous integration as
 the authority because containment was checked step by step; this project
 cannot, because one check is structurally unable to run there.
@@ -59,6 +59,24 @@ hundred and forty-six. A chunker that kept a quarter of the corpus. A
 generator that skipped seven domains. Nine front-matter builders that
 would each have erased a field added later. **A tool that returns less
 than it was asked for must say so.**
+
+**A CHECK SCANS THE SET IT WAS GIVEN, WHICH IS RARELY THE SET THAT
+MATTERS.** The disclosure scan read `git ls-files`, so a new document was
+invisible until its first commit and the gate that ran before that commit
+could not see it. **Two documents carrying banned vocabulary were committed
+and pushed to a public repository with a green gate on either side.** It
+also matched line by line, so a banned multi-word phrase wrapped across a
+line break was invisible; two files had been carrying one for days, one
+since before publication. Both were closed on 2026-09-25. Before trusting
+a check, ask what it enumerates and whether the thing you fear would be
+inside that set.
+
+**A tool that is right for one job is wrong for another that looks like
+it.** `fold_typography` maps a dash to a hyphen because the tokeniser must
+split words consistently and never shows the result to anyone. Used on
+back-cover prose it turned `things down—like notes` into `down-like`, and
+damaged **99 of 246 descriptions** before it was caught. The corpus
+validator being more permissive than the lexicon is the same class.
 
 **A by-name list is correct the day it is written.** Prefer a pattern that
 matches to an enumeration that remembers. `curriculum/books/level_*/exclude/*`

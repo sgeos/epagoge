@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.alive"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book gently explains the natural cycle of life and death through the story of a baby's brief life, showing what it means to be alive, eating, drinking, moving, feeling, and what happens when life ends.",
+  "teaches": "Children learn that being alive means being able to sense the world, move, and grow, while death is the permanent end of those abilities, and that it is a quiet, inevitable part of life.",
   "records": {
     "f1.alive.v3.d00": {"concepts": ["living_and_not_living", "dying"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.alive"}, "defines": {"kind": "topic", "target": "f1.alive"}},
     "f1.alive.v3.d01": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alive"}, "defines": {"kind": "word", "target": "alive"}},

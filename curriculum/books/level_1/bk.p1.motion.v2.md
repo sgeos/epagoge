@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.motion"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how things can stay still even when they're moving, using a boat drifting on water as a quiet example of motion without direction.",
+  "teaches": "Readers learn that motion doesn't always mean going somewhere fast or in a straight line, things can move slowly, gently, and without purpose, like a boat carried by the breeze.",
   "records": {
     "p1.motion.v2.d00": {"concepts": ["moving_and_still", "force"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.motion"}, "defines": {"kind": "topic", "target": "p1.motion"}},
     "p1.motion.v2.d01": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:climb"}, "defines": {"kind": "word", "target": "climb"}},

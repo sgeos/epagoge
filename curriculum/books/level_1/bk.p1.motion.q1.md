@@ -8,6 +8,12 @@
     "target": "p1.motion"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how things that are still can start moving when a push or pull is applied, using simple examples like boats, balloons, and boxes. It explores everyday motion through actions like floating, drifting, and dragging.",
+  "teaches": "Readers learn that force, pushing or pulling, is what makes still things move, and that different forces cause different kinds of motion like floating, drifting, or dragging. They see how motion happens in real life, without needing complex explanations.",
   "records": {
     "p1.motion.q1.d00": {"concepts": ["moving_and_still", "force"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.motion"}, "defines": {"kind": "topic", "target": "p1.motion"}},
     "p1.motion.q1.d01": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drag"}, "defines": {"kind": "word", "target": "drag"}},

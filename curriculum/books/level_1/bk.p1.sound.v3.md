@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.sound"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child discovers the sounds around them after a cup falls, noticing loud bangs, hisses, and quiet moments, learning how different actions create different sounds.",
+  "teaches": "Sounds come from movement and contact, like hitting or falling, and can be loud or quiet depending on what makes them and where they happen.",
   "records": {
     "p1.sound.v3.d00": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.sound"}, "defines": {"kind": "topic", "target": "p1.sound"}},
     "p1.sound.v3.d01": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bang"}, "defines": {"kind": "word", "target": "bang"}},

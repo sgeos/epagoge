@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.know"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the quiet moments when children realize something important, remembering, understanding, or discovering something true on their own. It shows how knowing something, even if it's hard to share or remember, shapes who they are and what they do.",
+  "teaches": "Children learn that knowing isn't just about facts, it's about remembering, trusting your thoughts, and speaking up when you're sure. It shows how honesty, curiosity, and small acts of courage lead to connection and belonging.",
   "records": {
     "c1.know.d00": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.know"}, "defines": {"kind": "topic", "target": "c1.know"}},
     "c1.know.d01": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forget"}, "defines": {"kind": "word", "target": "forget"}},

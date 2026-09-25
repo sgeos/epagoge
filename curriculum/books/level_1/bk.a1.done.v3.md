@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.done"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child watches a cup of water sit still on a table throughout a quiet day, noticing small changes in light, shadow, and air while nothing else moves.",
+  "teaches": "That stillness can be full of subtle motion and presence, and that even simple moments can hold deep calm and completion.",
   "records": {
     "a1.done.v3.d00": {"concepts": ["finished_or_not"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.done"}, "defines": {"kind": "topic", "target": "a1.done"}},
     "a1.done.v3.s01": {"concepts": ["finished_or_not"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:others-act"}},

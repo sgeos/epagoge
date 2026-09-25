@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "b1.tending"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child learns how to care for a living plant by giving it water every day, noticing how it responds to being tended, and understanding that consistent attention keeps it alive.",
+  "teaches": "That caring for something living means showing up regularly with attention and action, and that even small acts of tending can make a big difference in keeping life strong.",
   "records": {
     "b1.tending.d112": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "topic:b1.tending"}, "defines": {"kind": "topic", "target": "b1.tending"}},
     "b1.tending.d109": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "topic:b1.tending"}, "defines": {"kind": "topic", "target": "b1.tending"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.how"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child discovers different ways to solve simple problems, like opening a box or crossing a gap, using tools and imagination. The story shows how tools, like sticks, can help us do things we couldn't do with just our hands.",
+  "teaches": "How things work, like how tools extend our reach or help us move safely. It shows that there are many ways to do something, and that thinking creatively can solve everyday challenges.",
   "records": {
     "a1.how.v2.d00": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.how"}, "defines": {"kind": "topic", "target": "a1.how"}},
     "a1.how.v2.d01": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bridge"}, "defines": {"kind": "word", "target": "bridge"}},

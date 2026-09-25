@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "a1.feel"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child's deep longing for a special toy, and the mix of emotions, excitement, frustration, tiredness, hope, and joy, that come with wanting something just out of reach.",
+  "teaches": "That strong feelings like wanting, waiting, and trying are normal, and that patience and calm can help us handle them, even when we can't have what we want right away.",
   "records": {
     "a1.feel.d00": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "topic:a1.feel"}, "defines": {"kind": "topic", "target": "a1.feel"}},
     "a1.feel.d01": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:afraid"}, "defines": {"kind": "word", "target": "afraid"}},

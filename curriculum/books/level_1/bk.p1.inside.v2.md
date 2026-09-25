@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.inside"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the concept of \"inside\" through a simple story about water spilling from a cup, showing how things can be contained or escape, and how space, position, and movement relate to what's inside or outside.",
+  "teaches": "Children learn to recognize what is inside something versus outside, understand containers and their contents, and see how things change when they move from one place to another.",
   "records": {
     "p1.inside.v2.d00": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.inside"}, "defines": {"kind": "topic", "target": "p1.inside"}},
     "p1.inside.v2.d01": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:container"}, "defines": {"kind": "word", "target": "container"}},

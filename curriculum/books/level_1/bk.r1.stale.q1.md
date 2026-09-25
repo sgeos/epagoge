@@ -8,6 +8,12 @@
     "target": "r1.stale"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A simple story about a cup that was once full but is now empty, exploring how things change over time.",
+  "teaches": "That things can go from full to empty, and that emptiness means there is nothing inside; change is natural and can be understood through observation.",
   "records": {
     "r1.stale.q1.d00": {"concepts": ["out_of_date"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.stale"}, "defines": {"kind": "topic", "target": "r1.stale"}},
     "r1.stale.q1.a01": {"concepts": ["out_of_date"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.stale"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "ac1.same_amount"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy pours water into a bowl, then watches as the water moves and changes position, but the amount stays the same even when spilled, rearranged, or shared with a ball.",
+  "teaches": "The amount of water doesn't change just because it's moved, spilled, or mixed with something else, showing that quantity stays the same even when the shape or location changes.",
   "records": {
     "ac1.same_amount.d00": {"concepts": ["same_amount"], "claim_class": "formal", "provenance": {"source_claim": "topic:ac1.same_amount"}, "defines": {"kind": "topic", "target": "ac1.same_amount"}},
     "ac1.same_amount.x01": {"concepts": ["same_amount"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:things-change"}},

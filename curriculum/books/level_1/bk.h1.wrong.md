@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "h1.wrong"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child searches everywhere for something she believes is in a box, only to discover it's not there, leading her through a series of mistaken assumptions and physical journeys.",
+  "teaches": "When something is not true, it's wrong; believing something false can lead to unnecessary effort, but checking again with care helps uncover the truth.",
   "records": {
     "h1.wrong.d00": {"concepts": ["being_wrong"], "claim_class": "formal", "provenance": {"source_claim": "topic:h1.wrong"}, "defines": {"kind": "topic", "target": "h1.wrong"}},
     "h1.wrong.d01": {"concepts": ["being_wrong"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:false"}, "defines": {"kind": "word", "target": "false"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "n1.good_bad"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book helps children understand the difference between things that are good for them and things that are bad or harmful, using simple examples like warm water versus a hot stove. It shows how some things feel good and help us, while others can cause harm or are unfair.",
+  "teaches": "Children learn to recognize safe and unsafe situations, understand fairness and kindness, and know that listening to adults helps keep them safe from harm.",
   "records": {
     "n1.good_bad.d00": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "topic:n1.good_bad"}, "defines": {"kind": "topic", "target": "n1.good_bad"}},
     "n1.good_bad.d01": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bad"}, "defines": {"kind": "word", "target": "bad"}},

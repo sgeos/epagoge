@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "b1.hurt"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A young girl experiences physical pain after breaking a cup and cutting her hand, and reflects on how hurt feels in her body and mind, noticing how some hurts fade while others leave lasting marks.",
+  "teaches": "Pain and hurt are real feelings that can linger even after a wound heals, and while some things may stay broken, healing is possible and growth can come from being hurt.",
   "records": {
     "b1.hurt.d00": {"concepts": ["being_hurt"], "claim_class": "formal", "provenance": {"source_claim": "topic:b1.hurt"}, "defines": {"kind": "topic", "target": "b1.hurt"}},
     "b1.hurt.d01": {"concepts": ["being_hurt"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pain"}, "defines": {"kind": "word", "target": "pain"}},

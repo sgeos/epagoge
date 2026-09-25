@@ -7,6 +7,12 @@
     "kind": "word",
     "target": "different"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-24",
+  "published": "2026-09-25",
+  "about": "This book explores the idea of difference by showing how words can describe things that are alike, unlike, or changed in some way. It uses simple definitions and everyday examples to help children see how things can be the same in some ways but different in others.",
+  "teaches": "Readers learn to recognize and understand differences in objects, feelings, and actions through clear, concrete examples. They also begin to see that being different doesn't mean being wrong or bad, but simply being unique.",
   "records": {
     "dict.1.able": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:able"}, "defines": {"kind": "word", "target": "able"}},
     "dict.1.afraid": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:afraid"}, "defines": {"kind": "word", "target": "afraid"}},

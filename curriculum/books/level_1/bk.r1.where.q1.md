@@ -8,6 +8,12 @@
     "target": "r1.where"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book helps young children understand basic spatial relationships like above, below, behind, beside, ahead, and over through simple, clear scenes and repeated phrases. It shows where things are located in relation to other objects in everyday settings.",
+  "teaches": "Children learn to identify and describe positions using words like above, below, behind, beside, ahead, and over, building early language and cognitive skills for navigating their world.",
   "records": {
     "r1.where.q1.d00": {"concepts": ["spatial_position", "direction"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.where"}, "defines": {"kind": "topic", "target": "r1.where"}},
     "r1.where.q1.a01": {"concepts": ["spatial_position", "direction"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.where"}},

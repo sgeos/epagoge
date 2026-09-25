@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.stands_for"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A boy plays with a toy car that isn't really a car, using it to represent other things in imaginative games, like a forest animal, a hill, a river, and a bridge.",
+  "teaches": "Things can stand for other things, and it's okay to use imagination to make up new meanings, even when the real thing isn't there.",
   "records": {
     "p1.stands_for.v4.d00": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.stands_for"}, "defines": {"kind": "topic", "target": "p1.stands_for"}},
     "p1.stands_for.v4.d01": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bear"}, "defines": {"kind": "word", "target": "bear"}},

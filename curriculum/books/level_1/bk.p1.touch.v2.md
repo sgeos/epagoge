@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.touch"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the quiet, everyday experience of touch through a child's interaction with a cup, showing how physical contact changes things, like how a hand lifts, presses, or rests on an object. It focuses on the sensations of pressure, weight, temperature, and movement, all through the simple act of touching.",
+  "teaches": "Readers learn that touch is more than just contact, it's how we feel the world, understand what's happening, and see how small actions cause change. It shows that even stillness and gentle pressure have meaning, and that every touch leaves a trace.",
   "records": {
     "p1.touch.v2.d00": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.touch"}, "defines": {"kind": "topic", "target": "p1.touch"}},
     "p1.touch.v2.d01": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:contact"}, "defines": {"kind": "word", "target": "contact"}},

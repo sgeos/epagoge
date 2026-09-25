@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.join"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child explores the difference between things being separate and joined, using a lid and a pot as examples. The story shows how objects can be pulled apart or connected using glue, string, or simply placing one on the other.",
+  "teaches": "Children learn that \"separate\" means apart, and \"join\" means connected, through everyday actions and materials. They see how things can be joined in different ways and how separation reverses the connection.",
   "records": {
     "p1.join.v3.d00": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.join"}, "defines": {"kind": "topic", "target": "p1.join"}},
     "p1.join.v3.d01": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:apart"}, "defines": {"kind": "word", "target": "apart"}},

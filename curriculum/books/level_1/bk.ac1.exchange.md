@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "ac1.exchange"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child trades a seashell for a cup, learns about fairness in exchanges, and discovers how giving and receiving can create meaningful connections.",
+  "teaches": "That exchanging items requires mutual agreement and fairness, and that the value of a trade often includes more than just the objects themselves.",
   "records": {
     "ac1.exchange.d00": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "topic:ac1.exchange"}, "defines": {"kind": "topic", "target": "ac1.exchange"}},
     "ac1.exchange.d01": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:given"}, "defines": {"kind": "word", "target": "given"}},

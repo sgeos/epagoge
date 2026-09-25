@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.count"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book helps young children learn to count by showing the steady, unchanging order of numbers from one to eight, using simple examples from everyday life like shoes, matches, and baskets. It introduces basic number concepts such as more than, less than, and the idea of zero through clear, visual comparisons.",
+  "teaches": "Children learn that numbers follow a fixed sequence, that each number represents a specific quantity, and that counting helps us understand how many things there are. They also discover that zero means none, and that pairs are two matching items, all through concrete, relatable examples.",
   "records": {
     "m1.count.v2.d00": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.count"}, "defines": {"kind": "topic", "target": "m1.count"}},
     "m1.count.v2.d01": {"concepts": ["counting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:count"}, "defines": {"kind": "word", "target": "count"}},

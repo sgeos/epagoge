@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.change"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book follows a toy that changes shape and moves through the air, showing how things can shift, fall, and land in new ways. It explores the natural flow of change through simple actions like opening, closing, dropping, and floating.",
+  "teaches": "Change is a quiet, ongoing process that happens when we let go of control. Things can shift, fall, and land differently, sometimes gently, sometimes unexpectedly, without needing to be fixed.",
   "records": {
     "p1.change.d00": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.change"}, "defines": {"kind": "topic", "target": "p1.change"}},
     "p1.change.d01": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:become"}, "defines": {"kind": "word", "target": "become"}},

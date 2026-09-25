@@ -31,6 +31,9 @@ Decision records, and the open questions that block implementation.
 - `PROCESS_REVIEW.md` decided. What was taken from the reference
   repository's process and what was rejected, with grounds. The durable
   outcome is `../process/PROCESS_STRATEGY.md`.
+- `BOOK_ATTRIBUTION.md` decided. A book's `author` is the project, its
+  `licence` is CC0-1.0, and its two dates are derived from version
+  history rather than written. Names what was rejected and why.
 - `LICENSING.md` decided. 0BSD for software, CC0 for corpus and
   documentation, third-party material under `sources/` excluded from both.
 - `TRAINING_TECHNIQUES.md` decided. Maximal update parametrization, Muon,

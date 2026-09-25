@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "m1.count"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book helps young children understand the basic idea of counting by showing how numbers follow one another in a fixed order, using simple actions and everyday objects like blocks, balls, and steps.",
+  "teaches": "Children learn that numbers represent quantity, come in a consistent sequence, and that each number comes after the one before it, with zero meaning nothing at all.",
   "records": {
     "m1.count.d00": {"concepts": ["correspondence", "counting", "number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "topic:m1.count"}, "defines": {"kind": "topic", "target": "m1.count"}},
     "m1.count.d01": {"concepts": ["counting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:count"}, "defines": {"kind": "word", "target": "count"}},

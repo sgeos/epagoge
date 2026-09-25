@@ -8,6 +8,12 @@
     "target": "p1.stuff"
   },
   "form": "question",
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child discovers a stone cup and explores its round shape, the material it's made of, and how that shape affects what it can do.",
+  "teaches": "Round things can roll, dirt and dust are common in nature, and shapes like circles have consistent properties regardless of what they're made of.",
   "records": {
     "p1.stuff.q1.d00": {"concepts": ["material", "shape"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.stuff"}, "defines": {"kind": "topic", "target": "p1.stuff"}},
     "p1.stuff.q1.d01": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:circle"}, "defines": {"kind": "word", "target": "circle"}},

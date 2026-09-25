@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "f1.cause"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book shows how one action, like pushing a ball, leads directly to another, like the ball rolling. It illustrates cause and effect through a simple, real-world story that children can follow step by step.",
+  "teaches": "Readers learn that every action has a result, and that understanding the order of events helps explain what happens. It shows how a single push can set off a chain of movements, making cause and effect clear through experience.",
   "records": {
     "f1.cause.d00": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "topic:f1.cause"}, "defines": {"kind": "topic", "target": "f1.cause"}},
     "f1.cause.d01": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:because"}, "defines": {"kind": "word", "target": "because"}},

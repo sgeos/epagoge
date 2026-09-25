@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.know"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book follows a child's journey of discovery through simple, repeated actions like looking, reaching, and following, showing how each experience builds real knowledge. It captures moments of noticing, touching, and remembering, turning ordinary events into clear lessons about what it means to know something.",
+  "teaches": "It shows that knowing comes from direct experience, seeing, touching, and remembering, not just hearing or being told. It gently illustrates how memories form, how ideas grow from actions, and how what we once knew can be forgotten or rediscovered.",
   "records": {
     "c1.know.v2.d00": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.know"}, "defines": {"kind": "topic", "target": "c1.know"}},
     "c1.know.v2.d01": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forget"}, "defines": {"kind": "word", "target": "forget"}},

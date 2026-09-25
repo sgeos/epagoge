@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.change"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "This book explores the simple yet powerful idea that change is natural and inevitable, using the story of a child releasing a balloon to show how letting go leads to movement and transformation. It illustrates physical changes like falling and landing, and emotional ones like releasing something to let it go.",
+  "teaches": "Readers learn that change isn't something to fear, it's a quiet, steady part of how things work, and sometimes letting go is how things find their next step. They see how actions like releasing, falling, and landing are all part of a bigger process of becoming.",
   "records": {
     "p1.change.v2.d00": {"concepts": ["change", "falling", "opening_and_shutting"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.change"}, "defines": {"kind": "topic", "target": "p1.change"}},
     "p1.change.v2.d01": {"concepts": ["change"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:become"}, "defines": {"kind": "word", "target": "become"}},

@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "n1.choosing"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child in a quiet garden must choose between two paths, then later faces a small wooden box with a tiny apple inside, each choice leading to a moment of letting go.",
+  "teaches": "Some things cannot be held onto at the same time, and every choice means giving up something else, even when both feel meaningful.",
   "records": {
     "n1.choosing.d00": {"concepts": ["choosing"], "claim_class": "formal", "provenance": {"source_claim": "topic:n1.choosing"}, "defines": {"kind": "topic", "target": "n1.choosing"}},
     "n1.choosing.d01": {"concepts": ["choosing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:choose"}, "defines": {"kind": "word", "target": "choose"}},

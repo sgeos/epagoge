@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "p1.stands_for"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child plays with a block toy car, using it to represent a real car in imaginative games, showing how objects can stand for other things.",
+  "teaches": "Children learn that symbols, like toys or drawings, can represent real things, and that pretending helps them understand the world around them.",
   "records": {
     "p1.stands_for.d00": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "topic:p1.stands_for"}, "defines": {"kind": "topic", "target": "p1.stands_for"}},
     "p1.stands_for.d01": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:doll"}, "defines": {"kind": "word", "target": "doll"}},

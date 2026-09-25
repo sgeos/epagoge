@@ -7,6 +7,12 @@
     "kind": "topic",
     "target": "c1.name"
   },
+  "author": "Epagoge",
+  "licence": "CC0-1.0",
+  "first_published": "2026-09-25",
+  "published": "2026-09-25",
+  "about": "A child discovers a mysterious mark in a book and wonders what it means, exploring how names and symbols are not the same as the things they represent.",
+  "teaches": "That words and symbols stand for ideas but aren't the things themselves, and that meaning comes from understanding, not just labels.",
   "records": {
     "c1.name.d00": {"concepts": ["name", "writing"], "claim_class": "formal", "provenance": {"source_claim": "topic:c1.name"}, "defines": {"kind": "topic", "target": "c1.name"}},
     "c1.name.d01": {"concepts": ["name"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:called"}, "defines": {"kind": "word", "target": "called"}},
