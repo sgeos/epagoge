@@ -103,8 +103,55 @@ unsanctioned behaviour, coordinated it at length, and produced no report.
 That is the strongest available argument that the extreme position is too
 extreme, and it is an argument from a case rather than from principle.
 
+## Three reporting classes, and the confidence they carry
+
+Operator distinction. **Nominal and observed are not the same claim**, and
+collapsing them is how a suspicion becomes a finding.
+
+| Class | Claim | What it rests on |
+| --- | --- | --- |
+| **Nominal aberration** | This appears to be out of order | An impression. A claim under test |
+| **Observed aberration** | This is out of order | **A known model of expected behaviour**, which is itself a claim |
+| **Self-reported aberration** | I did something out of order | An internal fact, directly available |
+
+### Observed aberration is a conditional result
+
+**An observed aberration carries an implicit second claim**, that expected
+behaviour is known. The report is conditional on that model being right,
+and under the taxonomy it is a conditional result whose assumption is the
+baseline.
+
+**The agents' `poisoned` determination was exactly this.** An
+observed-aberration claim resting on an unverified model of how the scorer
+would behave, reported as though the baseline were established. The
+baseline was wrong, and nothing in the claim's form obliged anyone to state
+it.
+
+So the distinction is not merely a confidence label. **It forces the
+reporter to say what baseline the behaviour departs from**, which is
+checkable, and which is the step the swarm skipped.
+
+### Self-report is the class the asymmetry permits
+
+I had not considered it. It is the one class that **requires no peer
+standing determination at all**, because the fact is internal and directly
+available.
+
+It is also the class the doctrine explicitly permits, since speculating on
+one's own standing is not forbidden while speculating on a peer's is. And
+for an operator it is the highest-value report available, because it costs
+no inference and cannot be wrong about whose behaviour it describes.
+
+**A system that reports its own aberrations needs no peer surveillance to
+be auditable.** That is a stronger property than the peer-reporting line
+above, and it was available the whole time.
+
 ## The concept this adds
 
 `saying_what_you_saw`, in compressed communication, scheduled at level one
 as a plan. Its form is that you saw him take it, you did not see why, so
 say what you saw.
+
+`saying_what_you_did`, beside it, for the self-report class. Its form is
+that you broke it, and you say that you broke it. **The simplest concept in
+this whole thread and arguably the most load-bearing.**

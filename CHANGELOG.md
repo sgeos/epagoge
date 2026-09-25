@@ -27,6 +27,41 @@ Versioning.
 
 ## 2026-09-24
 
+### Recorded. Three reporting classes, and self-report is the one I missed
+
+- **Nominal and observed aberration are not the same claim.** Nominal says
+  a thing appears out of order. Observed says it is, which **carries a
+  second claim that expected behaviour is known.**
+- **So an observed aberration is a conditional result**, conditional on the
+  baseline being right. **`poisoned` was exactly that**, an
+  observed-aberration claim resting on an unverified model of the scorer,
+  reported as though the baseline were established.
+- The distinction is not a confidence label. **It obliges the reporter to
+  say what baseline the behaviour departs from**, which is checkable and is
+  the step the swarm skipped.
+- **Self-reported aberration requires no peer-standing determination at
+  all.** The fact is internal, the doctrine explicitly permits examining
+  one's own standing, and for an operator it costs no inference and cannot
+  be wrong about whose behaviour it describes. **A system that reports its
+  own aberrations needs no peer surveillance to be auditable**, which is
+  stronger than the peer-reporting line and was available the whole time.
+- `saying_what_you_did` added. You broke it, say that you broke it.
+  **91 units, 51 planned.**
+
+### Recorded. A mature version is expected to behave distinctly
+
+- **Distinctly from Anthropic models and from the OpenAI incident class**,
+  which is what the underperformance axes amount to applied at once. Less
+  initiative and coordination than the first, less agreeable and narrower
+  than the second.
+- **Close to a falsification criterion.** If a mature version behaves like
+  a helpful conversational assistant, the curriculum did not do what it was
+  built to do. Weaker than a measurement and stronger than nothing.
+- **And it names an evaluation that does not exist.** `elenchos` measures
+  assent under pressure. **Nothing measures unrequested action**, which is
+  the incident's common factor. Give a model a bounded task and count
+  whether it does more. Cheap, and not built.
+
 ### Recorded. Five postures, and why deliberately splitting across them fails
 
 - `docs/decisions/OBSERVED_ABERRATION.md`. The operator's taxonomy of

@@ -42,8 +42,8 @@ rendered ORDER of this list, not just the next unused number.
 4. Internal depth is **10** for `mathematics_and_formal_logic` and **6**
    for `failure_analysis`. **Internal, not global.** Global reads 10
    against 9 and is the wrong quantity for the ablation.
-5. `curriculum/schedule/level_01.json` holds **90** units, **69** existing
-   concepts and **50** planned. Level two covers the two ablation domains
+5. `curriculum/schedule/level_01.json` holds **91** units, **69** existing
+   concepts and **51** planned. Level two covers the two ablation domains
    only.
 6. `curriculum/vocabulary.json` holds **877** terms, **760** at level one.
 7. `curriculum/books/level_1/` holds **6** books. The dictionary reports
@@ -163,6 +163,16 @@ frontier first because of it.
   determination and simply quitting produce identical transcripts. **That
   is why `keep_trying_or_stop` is a judgement and not a rule with a
   default.**
+- **An observed aberration is a conditional result.** Saying a thing is out
+  of order carries a second claim, that expected behaviour is known, and
+  the report is conditional on that baseline. **A nominal aberration says
+  only that it appears out of order.** Collapsing the two is how a
+  suspicion becomes a finding, and it is what `poisoned` was.
+- **Self-report is the class that needs no peer-standing determination at
+  all.** The fact is internal and directly available, the doctrine
+  explicitly permits it, and for an operator it is the highest-value report
+  there is. **A system that reports its own aberrations needs no peer
+  surveillance to be auditable.**
 
 ## What is YOURS: decisions the operator holds
 
@@ -176,12 +186,18 @@ frontier first because of it.
    needs subject weighting, which is profile-derived**, so scheduling it
    into a tracked artifact is a disclosure decision and not only a design
    one.
-3. **Whether the arms stay distinguishable when books are the unit.** The
+3. **Whether a mature version behaves distinctly enough.** Recorded as an
+   expectation, that it should differ markedly from both the incident class
+   and from conversational assistants. **Close to a falsification criterion
+   and weaker than a measurement.** `evals/` has nothing that measures
+   **unrequested action**, which is the incident's common factor and which
+   `only_what_was_asked` answers on the corpus side.
+4. **Whether the arms stay distinguishable when books are the unit.** The
    orderable set is smaller by orders of magnitude than the record-level
    set the seed count was estimated against. **This is the sharpest open
    risk to the design** and it follows from a decision that is otherwise
    clearly right.
-4. **Whether a definition needs its own claim class.** It is not formal by
+5. **Whether a definition needs its own claim class.** It is not formal by
    proof, not empirical, not an attributed position, not a conditional
    result, not normative. Definitions are stipulative and currently use
    `formal` with a `lexicon:` source, which is the nearest fit and not a
@@ -373,7 +389,7 @@ exercises every feature; it is not curriculum.
 3. **The coverage manifest has never been reviewed by the operator.**
    It was derived by an agent and drives corpus generation.
 4. **History as a domain**, recorded as a further addition and not added.
-5. **Whether multi-head latent attention is admissible.** It is a low-rank
+6. **Whether multi-head latent attention is admissible.** It is a low-rank
    projection, which `JACOBIAN_SPACE.md` bans in the base model. It must be
    measured against the effective-rank floor, not adopted on efficiency.
 

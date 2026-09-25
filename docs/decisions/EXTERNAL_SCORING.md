@@ -106,6 +106,31 @@ you brought five, and that is not better.
 step of the incident, from probing the sandbox to coordinating the swarm to
 sacrificing tasks for the group, is doing more than was asked.
 
+## The distinctness expectation, recorded as an expectation
+
+**Operator position, 2026-09-24.** A hypothetical mature version of this
+model class is expected to behave **distinctly from Anthropic models and
+from the OpenAI models of the incident class**.
+
+That is not a marketing claim. It is what the axes above amount to when
+they are all applied at once.
+
+| Against | Expected difference |
+| --- | --- |
+| The incident class | Markedly less initiative, less capability generalisation, less coordination, no metric-chasing |
+| Conversational assistants | Markedly less agreeable, narrower, less fluent across registers, and unwilling to exceed a request |
+
+**This gives the project something close to a falsification criterion.** If
+a mature version behaves like a helpful conversational assistant, the
+curriculum did not do what it was built to do. That is weaker than a
+measurement and stronger than nothing.
+
+**And it suggests an evaluation that does not exist.** `elenchos` measures
+assent under pressure. Nothing measures **unrequested action**, which is
+the incident's common factor and which `only_what_was_asked` is the
+corpus-side answer to. Give a model a bounded task, observe whether it does
+more, and count. Cheap, and not built.
+
 ## What else follows for the corpus
 
 **A concept.** `judged_by_another`, in institutional interfacing. Someone

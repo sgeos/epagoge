@@ -699,6 +699,17 @@
             "looking-tells-you",
             "telling-can-be-wrong"
           ]
+        },
+        {
+          "id": "c1.what_you_did",
+          "form": "You broke it. Say that you broke it.",
+          "introduces": [
+            "saying_what_you_did"
+          ],
+          "primitives": [
+            "telling-can-be-wrong",
+            "checking-settles-it"
+          ]
         }
       ]
     },
