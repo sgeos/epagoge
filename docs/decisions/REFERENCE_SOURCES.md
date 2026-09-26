@@ -18,8 +18,8 @@ do, because a check that depends on a file nobody can obtain is not a check.
 
 | File | Bytes | SHA-256 as fetched 2026-09-26 |
 | --- | --- | --- |
-| `wn3.1.dict.tar.gz` | 16 MB | `3f7d8be8ef6ecc7167d39b10d66954ec734280b5bdcd57f7d9eafe429d11c22a` |
-| `mthesaur.txt` | 24 MB | `7c9742b1ed94435a893c0719b426725edb8a5242f8c526a75461bd6cee2dfd32` |
+| `tmp/references/wn3.1.dict.tar.gz` | 16 MB | `3f7d8be8ef6ecc7167d39b10d66954ec734280b5bdcd57f7d9eafe429d11c22a` |
+| `tmp/references/mthesaur.txt` | 24 MB | `7c9742b1ed94435a893c0719b426725edb8a5242f8c526a75461bd6cee2dfd32` |
 
 **A checksum here is a record of what was consulted, not a demand.** An
 upstream file may legitimately change; if it does, say so rather than

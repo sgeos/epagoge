@@ -1,0 +1,96 @@
+{
+  "level": 1,
+  "corpus_tokens": 206192,
+  "chunks": 216,
+  "held_out_chunks": 36,
+  "vocab_size": 2246,
+  "seed": 0,
+  "device": "mps",
+  "elapsed": "1m30s",
+  "runs": [
+    {
+      "fraction": 1.0,
+      "train_chunks": 216,
+      "train_tokens": 173651,
+      "d_model": 256,
+      "layers": 4,
+      "steps": 50,
+      "parameters": 4588032,
+      "train_loss": 5.812725861867269,
+      "held_out_loss": 5.936826705932617,
+      "gap": 0.1241008440653486,
+      "curve": []
+    },
+    {
+      "fraction": 1.0,
+      "train_chunks": 216,
+      "train_tokens": 173651,
+      "d_model": 256,
+      "layers": 4,
+      "steps": 100,
+      "parameters": 4588032,
+      "train_loss": 4.788220862547557,
+      "held_out_loss": 4.95841121673584,
+      "gap": 0.170190354188283,
+      "curve": [
+        [
+          100,
+          6.126096587181092
+        ]
+      ]
+    },
+    {
+      "fraction": 1.0,
+      "train_chunks": 216,
+      "train_tokens": 173651,
+      "d_model": 256,
+      "layers": 4,
+      "steps": 200,
+      "parameters": 4588032,
+      "train_loss": 4.221136212348938,
+      "held_out_loss": 4.415270209312439,
+      "gap": 0.19413399696350098,
+      "curve": [
+        [
+          100,
+          6.126096525192261
+        ],
+        [
+          200,
+          4.407703454494476
+        ]
+      ]
+    },
+    {
+      "fraction": 1.0,
+      "train_chunks": 216,
+      "train_tokens": 173651,
+      "d_model": 256,
+      "layers": 4,
+      "steps": 400,
+      "parameters": 4588032,
+      "train_loss": 3.6614243487517038,
+      "held_out_loss": 4.0042389035224915,
+      "gap": 0.3428145547707877,
+      "curve": [
+        [
+          100,
+          6.126096301078796
+        ],
+        [
+          200,
+          4.346395792961121
+        ],
+        [
+          300,
+          3.8720728182792663
+        ],
+        [
+          400,
+          3.7085238337516784
+        ]
+      ]
+    }
+  ],
+  "note": "A small gap with both losses high means undertrained or under capacity. A large gap means the corpus is the limit."
+}

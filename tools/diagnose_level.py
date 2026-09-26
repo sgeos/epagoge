@@ -71,6 +71,25 @@ def main(argv: list[str]) -> int:
             "tree. Added 2026-09-25."
         ),
     )
+    parser.add_argument(
+        "--stream-per-book",
+        action="store_true",
+        help=(
+            "one sequence per book, sized to the longest book, so no window "
+            "straddles two books and none holds a fraction of one. Overrides "
+            "--seq-len."
+        ),
+    )
+    parser.add_argument(
+        "--positions",
+        choices=("learned", "rotary"),
+        default="learned",
+        help=(
+            "how position reaches attention. A learned table has one row per "
+            "index and starves at long sequences; rotary is a function of "
+            "relative distance and has nothing per index to learn."
+        ),
+    )
     parser.add_argument("--device", type=str, default=None)
     parser.add_argument(
         "--out", type=Path, default=ROOT / "evals/pilot/level_1_diagnosis.json"
@@ -88,21 +107,60 @@ def main(argv: list[str]) -> int:
         print("the book ordering is short; see train_level.py", file=sys.stderr)
         return 1
 
+    encoded = {book_id: tokeniser.encode(text.get(book_id, "")) for book_id in ordered}
+    longest = max((len(s) for s in encoded.values()), default=0)
+
+    # **A BOOK IS THE UNIT, and a sequence long enough to hold one makes
+    # each book its own stream.** Operator direction 2026-09-26: a picture
+    # book is a self-contained coherent work, so a window that straddles two
+    # of them teaches the model that unrelated text follows, and a window
+    # that holds a fraction of one never shows it a whole work. At 128 a
+    # nine-hundred-token book is seven windows and the model has never seen
+    # one entire.
+    seq_len = longest if args.stream_per_book else args.seq_len
+
+    # **THE SPLIT IS BY BOOK, and it was by chunk until 2026-09-26.**
+    # Chunks were concatenated across books and the last eighth taken, so
+    # the boundary fell inside a book and one book had its opening in
+    # training and its ending held out. It also means held-out is the tail
+    # of the curriculum order rather than a sample, which biases the figure
+    # and is why held-out loss here is not an estimate of loss on typical
+    # corpus text. Splitting by book is also what makes two sequence lengths
+    # comparable: both score the same books, so the only difference is how
+    # much context each prediction had.
+    boundary = max(1, len(ordered) - max(1, len(ordered) // 8))
+    train_books, held_books = ordered[:boundary], ordered[boundary:]
+
     chunks: list[list[int]] = []
-    for book_id in ordered:
-        chunks.extend(
-            chunk(tokeniser.encode(text.get(book_id, "")), args.seq_len, pad_id)
-        )
-    held = max(1, len(chunks) // 8)
-    train_ids = list(range(len(chunks) - held))
-    held_out = chunks[-held:]
+    for book_id in train_books:
+        chunks.extend(chunk(encoded[book_id], seq_len, pad_id))
+    train_ids = list(range(len(chunks)))
+    held_out: list[list[int]] = []
+    for book_id in held_books:
+        held_out.extend(chunk(encoded[book_id], seq_len, pad_id))
+
     device = select_device(args.device)
-    tokens = sum(len(tokeniser.encode(text.get(b, ""))) for b in ordered)
+    tokens = sum(len(s) for s in encoded.values())
+    held_tokens = sum(len(encoded[b]) for b in held_books)
+    truncated = sum(1 for b in ordered if len(encoded[b]) > seq_len)
 
     print(
-        f"device {device}, vocab {tokeniser.size}, {len(chunks)} chunks, "
-        f"{tokens} corpus tokens, {len(held_out)} held out"
+        f"device {device}, vocab {tokeniser.size}, seq_len {seq_len}"
+        f"{' (longest book)' if args.stream_per_book else ''}, "
+        f"{args.positions} positions"
     )
+    print(
+        f"  {len(train_books)} books training over {len(chunks)} sequence(s), "
+        f"{len(held_books)} held out over {len(held_out)}"
+    )
+    print(
+        f"  {tokens} corpus tokens, {held_tokens} held out, longest book "
+        f"{longest} tokens, {truncated} book(s) longer than seq_len"
+    )
+    # **A book longer than the sequence is split, not dropped**, so the
+    # stream-per-book claim fails quietly for it. Say so.
+    if truncated and args.stream_per_book:
+        print("  WARNING: stream-per-book was asked for and some book is split")
     print(
         f"{'frac':>6} {'chunks':>7} {'tokens':>8} {'width':>6} {'steps':>6} "
         f"{'params':>10} {'train':>7} {'held':>7} {'gap':>7}"
@@ -125,7 +183,8 @@ def main(argv: list[str]) -> int:
                         vocab_size=tokeniser.size,
                         d_model=width,
                         n_layers=layers,
-                        seq_len=args.seq_len,
+                        seq_len=seq_len,
+                        positions=args.positions,
                     )
                     result = train_diagnostic(
                         chunks,

@@ -46,6 +46,25 @@ class ModelConfig:
     n_layers: int = 4
     n_heads: int = 4
     seq_len: int = 128
+    positions: str = "learned"
+    """How position reaches attention: ``learned`` or ``rotary``.
+
+    **`learned` is a table with one row per index, and that is why it scales
+    badly here.** Measured 2026-09-26 on the same thirty held-out books: a
+    128-token window reaches held-out 3.550 and one sequence per book at
+    1,088 reaches 3.854, having seen four times the tokens. A 512 window
+    reaches 3.935, so 512 and 1,088 are indistinguishable and both are far
+    behind 128.
+
+    At 128 each position row is seen by about eleven training sequences. At
+    1,088 it is seen by a fifth of one, because a book is a single sequence
+    and there are only 216 of them. **A table cannot be learned from that.**
+
+    `rotary` makes position a function of relative distance instead, so
+    there is nothing per index to learn and nothing to starve. It is
+    offered alongside rather than replacing `learned`, so the comparison
+    stays inside one codebase and old checkpoints still load.
+    """
 
 
 @dataclass(frozen=True, slots=True)
@@ -56,6 +75,96 @@ class TrainConfig:
     warmup: int = 100
     min_lr_fraction: float = 0.1
     eval_batches: int = 24
+
+
+def rotary_table(
+    head_dim: int, length: int, device: torch.device, base: float = 10000.0
+) -> tuple[Tensor, Tensor]:
+    """Cosine and sine tables for rotary position embedding.
+
+    Half the head dimension is rotated against the other half, so the table
+    is built over ``head_dim // 2`` frequencies and each is used twice.
+    """
+    half = head_dim // 2
+    inverse = 1.0 / (
+        base ** (torch.arange(0, half, device=device, dtype=torch.float32) / half)
+    )
+    angles = torch.outer(
+        torch.arange(length, device=device, dtype=torch.float32), inverse
+    )
+    return angles.cos(), angles.sin()
+
+
+def apply_rotary(x: Tensor, cos: Tensor, sin: Tensor) -> Tensor:
+    """Rotate the halves of each head's vector by the position's angle.
+
+    ``x`` is (batch, heads, length, head_dim). The rotation is the standard
+    one: the first half and second half of the head dimension are treated
+    as the real and imaginary parts of a complex vector and multiplied by
+    ``e^{i*theta}``.
+    """
+    first, second = x.chunk(2, dim=-1)
+    cos = cos[None, None, : x.shape[2], :]
+    sin = sin[None, None, : x.shape[2], :]
+    return torch.cat((first * cos - second * sin, first * sin + second * cos), dim=-1)
+
+
+class CausalSelfAttention(nn.Module):
+    """Multi-head causal attention, written out so rotary can reach Q and K.
+
+    **`nn.TransformerEncoderLayer` computes attention internally**, so there
+    is no way to rotate its queries and keys from outside. This is the
+    smallest amount of hand-written attention that admits rotary position,
+    and it uses `scaled_dot_product_attention` so the kernel is still
+    torch's rather than ours.
+    """
+
+    def __init__(self, config: ModelConfig) -> None:
+        super().__init__()
+        if config.d_model % config.n_heads:
+            raise ValueError(
+                f"d_model {config.d_model} is not divisible by n_heads {config.n_heads}"
+            )
+        self.n_heads = config.n_heads
+        self.head_dim = config.d_model // config.n_heads
+        if self.head_dim % 2:
+            raise ValueError(
+                f"rotary needs an even head dimension, got {self.head_dim} "
+                f"from d_model {config.d_model} over {config.n_heads} heads"
+            )
+        self.qkv = nn.Linear(config.d_model, 3 * config.d_model, bias=False)
+        self.out = nn.Linear(config.d_model, config.d_model, bias=False)
+
+    def forward(self, hidden: Tensor, cos: Tensor, sin: Tensor) -> Tensor:
+        batch, length, _ = hidden.shape
+        qkv = self.qkv(hidden).view(batch, length, 3, self.n_heads, self.head_dim)
+        query, key, value = (qkv[:, :, i].transpose(1, 2) for i in range(3))
+        query = apply_rotary(query, cos, sin)
+        key = apply_rotary(key, cos, sin)
+        attended = torch.nn.functional.scaled_dot_product_attention(
+            query, key, value, is_causal=True
+        )
+        merged = attended.transpose(1, 2).reshape(batch, length, -1)
+        return self.out(merged)
+
+
+class RotaryBlock(nn.Module):
+    """Pre-norm block: rotary causal attention, then a feed-forward."""
+
+    def __init__(self, config: ModelConfig) -> None:
+        super().__init__()
+        self.norm_attention = nn.LayerNorm(config.d_model)
+        self.attention = CausalSelfAttention(config)
+        self.norm_feed = nn.LayerNorm(config.d_model)
+        self.feed = nn.Sequential(
+            nn.Linear(config.d_model, 4 * config.d_model),
+            nn.GELU(),
+            nn.Linear(4 * config.d_model, config.d_model),
+        )
+
+    def forward(self, hidden: Tensor, cos: Tensor, sin: Tensor) -> Tensor:
+        hidden = hidden + self.attention(self.norm_attention(hidden), cos, sin)
+        return hidden + self.feed(self.norm_feed(hidden))
 
 
 class TinyTransformer(nn.Module):
@@ -70,29 +179,51 @@ class TinyTransformer(nn.Module):
         super().__init__()
         self.config = config
         self.token = nn.Embedding(config.vocab_size, config.d_model)
-        self.position = nn.Embedding(config.seq_len, config.d_model)
-        layer = nn.TransformerEncoderLayer(
-            d_model=config.d_model,
-            nhead=config.n_heads,
-            dim_feedforward=4 * config.d_model,
-            batch_first=True,
-            norm_first=True,
-            dropout=0.0,
-        )
-        # **Nested tensors are switched off rather than left to warn.**
-        # They do nothing when `norm_first` is set, and torch says so on
-        # every construction, which put two lines of warning above every
-        # answer the model gave. A warning nobody can act on trains people
-        # to ignore warnings.
-        self.blocks = nn.TransformerEncoder(
-            layer, num_layers=config.n_layers, enable_nested_tensor=False
-        )
+        self.rotary = config.positions == "rotary"
+        if config.positions not in ("learned", "rotary"):
+            raise ValueError(
+                f"positions must be 'learned' or 'rotary', got {config.positions!r}"
+            )
+        if self.rotary:
+            # **No position table at all**, so nothing scales with the
+            # sequence length and nothing has to be learned per index.
+            self.position = None
+            self.rotary_blocks = nn.ModuleList(
+                RotaryBlock(config) for _ in range(config.n_layers)
+            )
+        else:
+            self.position = nn.Embedding(config.seq_len, config.d_model)
+            layer = nn.TransformerEncoderLayer(
+                d_model=config.d_model,
+                nhead=config.n_heads,
+                dim_feedforward=4 * config.d_model,
+                batch_first=True,
+                norm_first=True,
+                dropout=0.0,
+            )
+            # **Nested tensors are switched off rather than left to warn.**
+            # They do nothing when `norm_first` is set, and torch says so on
+            # every construction, which put two lines of warning above every
+            # answer the model gave. A warning nobody can act on trains
+            # people to ignore warnings.
+            self.blocks = nn.TransformerEncoder(
+                layer, num_layers=config.n_layers, enable_nested_tensor=False
+            )
         self.norm = nn.LayerNorm(config.d_model)
         self.head = nn.Linear(config.d_model, config.vocab_size, bias=False)
 
     def forward(self, tokens: Tensor) -> Tensor:
         length = tokens.shape[1]
+        if self.rotary:
+            head_dim = self.config.d_model // self.config.n_heads
+            cos, sin = rotary_table(head_dim, length, tokens.device)
+            hidden = self.token(tokens)
+            for block in self.rotary_blocks:
+                hidden = block(hidden, cos, sin)
+            return self.head(self.norm(hidden))
         positions = torch.arange(length, device=tokens.device)
+        if self.position is None:
+            raise RuntimeError("learned positions were asked for and none exist")
         hidden = self.token(tokens) + self.position(positions)
         mask = nn.Transformer.generate_square_subsequent_mask(
             length, device=tokens.device
@@ -405,6 +536,7 @@ def save_checkpoint(
                 "d_model": config.d_model,
                 "n_layers": config.n_layers,
                 "seq_len": config.seq_len,
+                "positions": config.positions,
             },
         },
         path,
@@ -441,12 +573,14 @@ def load_checkpoint(path: Path, device: torch.device) -> Checkpoint:
             "are unknown. Retrain to write one in the current format."
         )
     body = cast("dict[str, object]", payload)
-    saved = cast("dict[str, int]", body["config"])
+    saved = cast("dict[str, object]", body["config"])
+    # **Older checkpoints predate the choice and were all learned.**
     config = ModelConfig(
-        vocab_size=saved["vocab_size"],
-        d_model=saved["d_model"],
-        n_layers=saved["n_layers"],
-        seq_len=saved["seq_len"],
+        vocab_size=cast("int", saved["vocab_size"]),
+        d_model=cast("int", saved["d_model"]),
+        n_layers=cast("int", saved["n_layers"]),
+        seq_len=cast("int", saved["seq_len"]),
+        positions=cast("str", saved.get("positions", "learned")),
     )
     model = TinyTransformer(config).to(device)
     _ = model.load_state_dict(cast("Mapping[str, Tensor]", body["state"]))

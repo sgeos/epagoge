@@ -18,8 +18,10 @@ try:
         TinyTransformer,
         TrainConfig,
         WarmStart,
+        apply_rotary,
         chunk,
         orderings,
+        rotary_table,
         sample,
         select_device,
         synthetic_stream,
@@ -266,3 +268,93 @@ class TestWarmStart(unittest.TestCase):
         warm = WarmStart(state={}, older=older, newer=newer)
         self.assertEqual(list(warm.older), older)
         self.assertEqual(list(warm.newer), newer)
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestRotaryPositions(unittest.TestCase):
+    """Rotary position embedding, checked on the properties that matter.
+
+    **Added 2026-09-26 with the implementation.** A learned position table
+    starves at long sequences: measured on the same thirty held-out books,
+    a 128-token window reaches held-out 3.550 while one sequence per book
+    at 1,088 reaches 3.854 having seen four times the tokens. Rotary makes
+    position a function of relative distance, so there is nothing per index
+    to learn. It is hand-written because `nn.TransformerEncoderLayer`
+    computes attention internally and rotary has to reach Q and K.
+    """
+
+    def config(self, positions: str, seq_len: int = 16) -> ModelConfig:
+        return ModelConfig(
+            vocab_size=8,
+            d_model=16,
+            n_layers=2,
+            n_heads=2,
+            seq_len=seq_len,
+            positions=positions,
+        )
+
+    def test_rotation_at_position_zero_is_the_identity(self) -> None:
+        """cos(0) is one and sin(0) is zero, so nothing moves."""
+        import torch
+
+        cos, sin = rotary_table(8, 4, torch.device("cpu"))
+        x = torch.randn(1, 1, 4, 8)
+        rotated = apply_rotary(x, cos, sin)
+        self.assertTrue(torch.allclose(rotated[:, :, 0], x[:, :, 0], atol=1e-6))
+
+    def test_rotation_preserves_the_norm(self) -> None:
+        """A rotation is not allowed to change how long a vector is."""
+        import torch
+
+        cos, sin = rotary_table(8, 6, torch.device("cpu"))
+        x = torch.randn(2, 3, 6, 8)
+        rotated = apply_rotary(x, cos, sin)
+        self.assertTrue(torch.allclose(x.norm(dim=-1), rotated.norm(dim=-1), atol=1e-5))
+
+    def test_a_rotary_model_is_causal(self) -> None:
+        """Changing the last token must not change any earlier output.
+
+        **This is the property a hand-written attention is most likely to
+        break**, and it would break silently: the loss would improve because
+        the model could see the answer.
+        """
+        import torch
+
+        torch.manual_seed(0)
+        model = TinyTransformer(self.config("rotary")).eval()
+        tokens = torch.tensor([[1, 2, 3, 4, 5]])
+        with torch.no_grad():
+            before = model(tokens)
+            changed = tokens.clone()
+            changed[0, -1] = 7
+            after = model(changed)
+        self.assertTrue(torch.allclose(before[:, :-1], after[:, :-1], atol=1e-5))
+        self.assertFalse(torch.allclose(before[:, -1], after[:, -1], atol=1e-5))
+
+    def test_a_rotary_model_has_no_position_table(self) -> None:
+        """The whole point. Nothing scales with the sequence length."""
+        model = TinyTransformer(self.config("rotary"))
+        self.assertIsNone(model.position)
+        names = {name for name, _ in model.named_parameters()}
+        self.assertNotIn("position.weight", names)
+
+    def test_a_rotary_model_does_not_grow_with_the_sequence_length(self) -> None:
+        short = TinyTransformer(self.config("rotary", seq_len=16))
+        long = TinyTransformer(self.config("rotary", seq_len=1024))
+        self.assertEqual(
+            sum(p.numel() for p in short.parameters()),
+            sum(p.numel() for p in long.parameters()),
+        )
+
+    def test_a_learned_model_does_grow_with_the_sequence_length(self) -> None:
+        """The contrast, so the reason for rotary is in the tests too."""
+        short = TinyTransformer(self.config("learned", seq_len=16))
+        long = TinyTransformer(self.config("learned", seq_len=1024))
+        self.assertLess(
+            sum(p.numel() for p in short.parameters()),
+            sum(p.numel() for p in long.parameters()),
+        )
+
+    def test_an_unknown_position_scheme_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            _ = TinyTransformer(self.config("sinusoidal"))

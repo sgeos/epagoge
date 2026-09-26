@@ -34,6 +34,10 @@ Decision records, and the open questions that block implementation.
 - `BOOK_ATTRIBUTION.md` decided. A book's `author` is the project, its
   `licence` is CC0-1.0, and its two dates are derived from version
   history rather than written. Names what was rejected and why.
+- `CURRICULUM_LITERATURE.md` recorded. A literature spike on curriculum and
+  spiral training. The corpus-quality half of the thesis is well supported;
+  the ordering half is weakly supported and contradicted three times. Names
+  a confound in the planned ablation that would have invalidated it.
 - `RECURSIVE_DRAFTING.md` recorded. Level one needs a backport built on
   level-two concepts, so the levels cannot be drafted in order. Corrects
   THREE_PROBLEMS.md on where coverage and consistency bind.
