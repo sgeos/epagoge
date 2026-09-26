@@ -56,28 +56,28 @@ To make something clear using words.
 To argue against something or someone.
 
 [i1.reason.s01]
-I saw a red ball and thought it was mine because I had seen it earlier.
+I saw a red ball and thought it was mine because I had seen it earlier. I was sure it belonged to me because I had marked it with a blue pen. I knew it was mine because no one else had seen it before. I wanted to keep it because it was special to me.
 
 [i1.reason.s02]
-He agreed to let me check, so I looked again and found the mark.
+He agreed to let me check, so I looked again and found the mark. The mark was clear, just as I remembered it. I felt sure it was mine because it matched my own writing. No one else had been near the ball. I was able to prove it by showing the blue mark.
 
 [i1.reason.s03]
-We both felt calm and happy after the talk.
+We both felt calm and happy after the talk. That is right because the mark was clear and matched my own writing. I was able to prove it by showing the blue mark. No one else had been near the ball. The mark was not copied or changed. It was exactly as I had left it.
 
 [i1.reason.x10]
-I showed it to my friend, who said it belonged to someone else.
+I showed it to my friend, who said it belonged to someone else. That is right because I knew the mark was real and not copied. I could not accept the idea that someone else owned the ball. The blue mark was clear and matched my own writing exactly. I was able to prove it by showing the mark to my friend.
 
 [i1.reason.x11]
-We sat on the grass, facing each other, and took turns speaking.
+We sat on the grass, facing each other, and took turns speaking. I knew the mark was real and not copied. That is right because I could prove it with the blue mark. We both agreed it was not a lie. The ball belonged to me, not her. I could not accept the idea that someone else owned it.
 
 [i1.reason.x12]
-I told her how I had seen it first, and she explained her side.
+I told her how I had seen it first, and she explained her side. She said the ball had rolled across the grass, near the bamboo. I could not accept that, because I saw it first, above the tree. She argued it belonged to her, not me, because she had held it.
 
 [i1.reason.x13]
-We both agreed to check the mark on the ball and find the truth.
+We both agreed to check the mark on the ball and find the truth. I could not believe it was there, because I had never seen it before. We looked again, side by side, comparing the shape and size. It seemed to match the mark on her old toy, the one she kept in her basket.
 
 [i1.reason.x14]
-We sat together on the grass, sharing stories under the bright, warm sky.
+We sat together on the grass, sharing stories under the bright, warm sky. That is right because the mark on the ball matches the one on her toy. I could not believe it was real, but the proof was clear. The shape, the size, the way it looked—exactly alike. We both agreed to trust the truth we found.
 
 [i1.reason.x15]
-We both smiled and put the ball back in the basket.
+We both smiled and put the ball back in the basket. That is right because the proof was clear. The shape, the size, the way it looked—exactly alike. We agreed to trust the truth we found. No one else could have made it, not even a cheat. The mark on the ball matched the one on her toy.

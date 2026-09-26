@@ -50,34 +50,34 @@ The part of you that thinks, remembers, and knows things.
 A bag that holds food.
 
 [i1.hold_or_yield.s01]
-I admit I was wrong about the game.
+I admit I was wrong about the game. I still say so, and here is why. The game was not fair, but I was wrong to blame it. I thought the rules were broken, but they were not. I saw the ball fall, but I did not see the truth.
 
 [i1.hold_or_yield.s02]
-The ball holds its shape but can still break.
+The ball holds its shape but can still break. I saw it fall, but I did not see the weight it carried. I was afraid to admit what I had done. I thought the rules were broken, but they were not. The ball did not lie, but I did. I tried to hide the truth, but it showed through.
 
 [i1.hold_or_yield.s03]
-My mind was full of fear and doubt.
+My mind was full of fear and doubt. I could not face the truth about what I had done. I felt alone, even when others were near. The weight of my lie pressed down like a stone. I tried to pretend it never happened. I had broken trust, not just a rule.
 
 [i1.hold_or_yield.s04]
-I could not let go of the past.
+I could not let go of the past. I still say so, and here is why. I am not afraid to face the truth about what I have done. I know I broke trust, and I must accept the cost. I want to fix it, so I try again. I will not stay alone, not even when I feel weak.
 
 [i1.hold_or_yield.s05]
-I wanted to fix it, so I tried again.
+I wanted to fix it, so I tried again. I still say so, and here is why. I am not afraid to face the truth about what I have done. I know I broke trust, and I must accept the cost. I want to fix it, so I try again.
 
 [i1.hold_or_yield.s06]
-I held the ball gently, like a secret.
+I held the ball gently, like a secret. I knew it would fly, but I still believed it could land. I want to be honest, even when it hurts. I will not hide, not even from myself. I am not afraid to admit my mistakes. I choose to grow, not to stay the same.
 
 [i1.hold_or_yield.s07]
-I knew it would fly, but I still believed it could land.
+I knew it would fly, but I still believed it could land. I still say so, and here is why. I am alive, not just breathing, but feeling every moment. I choose to grow, not stay the same, even when it hurts. I am not afraid to admit my mistakes, because they teach me.
 
 [i1.hold_or_yield.s08]
-The air held the ball, like a promise.
+The air held the ball, like a promise. I am alive, not just breathing, but feeling every moment. I choose to grow, not stay the same, even when it hurts. I am not afraid to admit my mistakes, because they teach me. I saw it rise, and my mind felt calm.
 
 [i1.hold_or_yield.s09]
-I saw it rise, and my mind felt calm.
+I saw it rise, and my mind felt calm. I still say so, and here is why. I am able to face the truth, even when it hurts. I see it rise, and my mind feels calm. I know I was wrong before, but now I see. I can change, even if it takes time.
 
 [i1.hold_or_yield.s10]
-I knew I was wrong before, but now I see.
+I knew I was wrong before, but now I see. I still say so, because I know the truth is alive. I see it rise, and my mind feels calm. I can change, even if it takes time. I no longer fear the past, though it leaves a mark. I learn from every mistake, and I grow stronger.
 
 [i1.hold_or_yield.s11]
-I can still say so, because I learn from my mistakes.
+I can still say so, because I learn from my mistakes. I know the truth is alive, and it grows stronger each day. I am able to face fear, even when it feels sharp and loud. I accept the past, not to stay stuck, but to learn and move ahead.
