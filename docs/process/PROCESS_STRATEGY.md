@@ -78,6 +78,25 @@ back-cover prose it turned `things down—like notes` into `down-like`, and
 damaged **99 of 246 descriptions** before it was caught. The corpus
 validator being more permissive than the lexicon is the same class.
 
+**A COMPARISON IS ONLY AS GOOD AS WHAT IT HOLDS FIXED, and this project
+has now got that wrong twice in one day, in two different ways.**
+
+- **A loss figure is comparable only to one measured against the same
+  held-out set.** Each sweep holds out the last eighth of its own chunk
+  list, so a corpus that has grown holds out different material. Comparing
+  across two sweeps produced a scaling rate of 0.199 and a worry that
+  filling books added low-value tokens. Measured against one held-out set,
+  the same doubling bought 0.316, the largest increment in the series.
+- **Sampling one seed across different prompts measures the seed, not the
+  prompt.** Six prompts at `--seed 1` all began with `was`, which was
+  recorded as a learned trigger on the question mark and shown to the
+  teacher as a measurement. Over eight prompts at eight seeds the same
+  checkpoint begins with `was` once. **The teacher then built a theory on
+  it**, which is what a fabricated regularity costs downstream.
+
+Both read as findings. Neither was. **Before reporting a difference, say
+what was held fixed and check that it was.**
+
 **A by-name list is correct the day it is written.** Prefer a pattern that
 matches to an enumeration that remembers. `curriculum/books/level_*/exclude/*`
 in `.gitignore` covers a level that does not exist yet; a line per level

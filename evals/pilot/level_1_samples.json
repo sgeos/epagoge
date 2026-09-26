@@ -1,16 +1,18 @@
 {
   "level": 1,
-  "steps": 400,
+  "steps": 800,
   "seed": 0,
-  "chunks": 578,
+  "chunks": 983,
   "parameters": 4348928,
-  "held_out_loss": 4.8361038102044,
-  "temperature": 1.0,
-  "sampled_word_tokens": 35,
-  "distinct_share": 0.8285714285714286,
-  "sentence_share": 0.5,
+  "held_out_loss": 4.413167794545491,
+  "temperature": 0.8,
+  "sampled_word_tokens": 312,
+  "distinct_share": 0.38461538461538464,
+  "sentence_share": 0.7560975609756098,
   "samples": [
-    "of . both to push tight . to signed . care , but others for caught and that comes , and i means to leaving and where colour to reach into eat in his not that reaches was lost stroking"
+    "of . the door . the child felt the air . the cup was bright and still . the water and the light of the mark where is able to let eat in the cup . the table is cold . the cup is in the bright and be at the cup was above . the blue . the broken . the hand is warm and the table on the cup was not the cup is still and warm . the cup , only water for the floor . the table . it felt warm cup watches the breeze stayed still in the cup is bright and walks in the table . the cup is still over . the cup",
+    "was to use it brought . it . it was not to lift it had not the cup on the air . it , not cold , like when what to say it landed , and each for something to let it , but it . use this breeze , like a round . the paper and smooth . the cup had help . the table felt wide , like a bird flew of the cup was true . the baby was or flew are never knew it would float . the cup before . the air above felt alone . the cup is quiet . the milk . the child tried to the cup had clouds . the ball",
+    "in toward . the cart is must use , like a small and is strong sides it up and pulled a bird can drink or lasting and sees something . a wound . to each sky . a stick and past a small cup is a secret alone is done and said below . the sound cup is a key is a point means to their builds . a little number and real fall . a small hurts . the cup is a what felt a strong or food go to say things . the water on the air built in feel inside . way . the door . the cup is a push sold floats to touch the balloon"
   ],
   "note": "Descriptive, and at this corpus size the samples are expected to be poor. Admissibility is deliberately not reported: the tokeniser is built from the level's lexicon, so every token the model can emit is admissible by construction and the figure would be one hundred per cent whatever the model learned."
 }

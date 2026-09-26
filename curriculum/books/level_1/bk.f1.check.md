@@ -50,34 +50,34 @@ Not true; not real.
 Trying to see something, often with care.
 
 [f1.check.s01]
-I saw a red balloon floating above the tree.
+I saw a red balloon floating above the tree. It drifted slowly, caught in the breeze. The air felt warm, though the sky grew dark. I wanted to reach it, but my hands stayed still. I could not explain why it felt real. No one else was near, not even a bird.
 
 [f1.check.s02]
-I knew it was not real because balloons do not float in trees.
+I knew it was not real because balloons do not float in trees. The air felt still, though the breeze had passed. I could not explain why I felt so afraid. No one else was near, not even a bird. I wanted to reach it, but my hands stayed still.
 
 [f1.check.s03]
-I knew the story about the balloon was false.
+I knew the story about the balloon was false. The air above felt heavy, like a blanket pressed down. I could not explain why I felt so afraid. No one else was near, not even a bird. I wanted to reach it, but my hands stayed still. I had seen a balloon before, but not one like this.
 
 [f1.check.s04]
-My friend disagreed, but I kept looking.
+My friend disagreed, but I kept looking. I could not explain why I felt so afraid. The air above felt heavy, like a blanket pressed down. I wanted to reach it, but my hands stayed still. I had seen a balloon before, but not one like this. It floated above the tree, bright and blue.
 
 [f1.check.s05]
-I found a hidden path behind the tree.
+I found a hidden path behind the tree. The path wound ahead through tall grass and broken sticks. I felt afraid but kept going, step by step. The air above grew cooler, like a breeze from deep inside. It looked old, its corners worn and smooth. I did not know what was inside, but I had to open it.
 
 [f1.check.s06]
-I followed the path and saw a small wooden box.
+I followed the path and saw a small wooden box. The air above felt still, like time had stopped. I bent forward, my breath slow and quiet. It looked alive, as if it had just been picked. I did not know why it was there, or how long it had waited.
 
 [f1.check.x11]
-I followed the map, walking through tall grass and over a wooden bridge.
+I followed the map, walking through tall grass and over a wooden bridge. The air above felt still, like time had stopped. I bent forward, my breath slow and quiet. It looked alive, as if it had just been picked. I did not know why it was there, or how long it had waited.
 
 [f1.check.x12]
-I followed the path deeper into the forest, where the trees whispered secrets in the wind.
+I followed the path deeper into the forest, where the trees whispered secrets in the wind. The air above felt thick, like something was waiting. I saw a small red apple lying on the ground, its skin bright and smooth. It looked alive, as if it had just been picked.
 
 [f1.check.x13]
-I opened the box and found an old note inside.
+I opened the box and found an old note inside. The note said the balloon was only a picture on a string. I tried to remember if I had ever seen it before. It looked like a flower, or maybe a star. I wondered who had left it, and why.
 
 [f1.check.x14]
-The note said the balloon was only a picture on a string.
+The note said the balloon was only a picture on a string. The balloon was not alive. It could not fly. It was only a picture on a string. I looked again, and the shape was clear. It looked like a flower, or a star, or nothing at all. I did not know what to believe.
 
 [f1.check.x15]
-I went back and looked again, and the note was right.
+I went back and looked again, and the note was right. The balloon was not alive. It could not fly. It was only a picture on a string. I was afraid. I did not want to believe. But the shape was clear. It looked like a flower, or a star, or nothing at all.

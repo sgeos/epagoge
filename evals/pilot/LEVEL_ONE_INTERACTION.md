@@ -99,6 +99,20 @@ Six question prompts:
 to act as a cue for that single token. The model reported the two prompt
 words it did not have, `color` and `winter`, rather than guessing.
 
+> **CORRECTED LATER THE SAME DAY. THERE IS NO SUCH TRIGGER, AND THE ERROR
+> WAS MINE.** Every prompt above was sampled at `--seed 1`. At one seed the
+> sampling path is largely fixed before the prompt is read, so all six
+> outputs began alike for a reason that had nothing to do with question
+> marks. Re-run over **eight** question prompts at eight different seeds,
+> the same checkpoint begins with `was` **once**, with `.` three times, and
+> otherwise with `of`, `whole`, `,` and `is`.
+>
+> The teacher was then shown this artifact as a measurement and built a
+> theory on it, calling it a learned syntactic trigger. **That theory was
+> answering a fact that was not true.** The lesson is recorded in
+> `../../docs/process/PROCESS_STRATEGY.md`: sampling one seed across
+> different prompts measures the seed, not the prompt.
+
 ### The teacher's verdict, and where it does not hold
 
 Asked to rate the model given the project's maturity, it answered
@@ -137,6 +151,36 @@ of its answer its evidence least supports.
 **It establishes that 5 percent of records carrying a form is not enough
 to teach it.** 233 question marks in 4,691 records did not produce a model
 that answers.
+
+## Is a better loss visible in the output? Marginally, and measurably
+
+**Measured 2026-09-25**, comparing two checkpoints under **identical**
+sampling settings, seed for seed, on the same 2,259-word vocabulary. The
+earlier checkpoint was trained on 55,510 words; the later on 94,797 at the
+best configuration then known, width 256 and 800 steps. Held-out loss
+4.836 against **4.413**, perplexity 126 against **82**.
+
+Over eight question prompts at eight seeds:
+
+| | Earlier, perplexity 126 | Later, perplexity 82 |
+| --- | --- | --- |
+| Began with a plausible sentence-initial word | **3 of 8** | **8 of 8** |
+| Began with punctuation | 3 | 0 |
+| Question marks emitted | 0 | 2 |
+| Distinct share over five continuations | 0.225 | 0.242 |
+
+**So the improvement is real and narrow.** The later model always starts a
+sentence like a sentence, and it has begun to produce question marks at
+all. It does not answer questions, both remain dominated by `cup`, and
+neither is coherent past a clause.
+
+**Do not read the distinct share as progress.** 0.225 to 0.242 over 250
+tokens is not a difference this measurement can resolve.
+
+**What it says about using perplexity as the progress measure.** A drop
+from 126 to 82 buys a visible change in one discrete behaviour and no
+change in the quality a reader would notice. Perplexity is tracking
+something real and is a poor proxy for "worth talking to" at this range.
 
 **It does not establish anything about the ordering hypothesis.** No
 level-two model exists and no flat-order control has run. A single
