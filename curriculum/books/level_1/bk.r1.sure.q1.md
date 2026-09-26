@@ -11,7 +11,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A child explores the difference between knowing something for certain and merely thinking it might be true, using everyday objects like a cup and a spoon to show how certainty and doubt feel.",
   "teaches": "You can be sure about some things, like where a cup is, while still being unsure about others, like whether a spoon is nearby, and that's okay.",
   "records": {

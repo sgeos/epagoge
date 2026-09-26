@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A child records daily experiences through notes, lists, logs, and tallies, showing how written marks preserve memories even when the mind forgets.",
   "teaches": "Writing creates lasting records that help us remember, and different kinds of writing, like lists, logs, and tallies, serve specific purposes in tracking time, actions, and thoughts.",
   "records": {

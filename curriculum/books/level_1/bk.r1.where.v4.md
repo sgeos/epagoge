@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A young boy searches for an apple using everyday words that describe location and direction, showing how words like \"above,\" \"behind,\" and \"beside\" help us understand where things are.",
   "teaches": "Readers learn to recognize and use basic spatial and directional words through simple actions and clear contrasts in a story that shows where things are, not just what they are.",
   "records": {

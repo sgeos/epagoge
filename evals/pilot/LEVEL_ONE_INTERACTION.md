@@ -177,6 +177,23 @@ neither is coherent past a clause.
 **Do not read the distinct share as progress.** 0.225 to 0.242 over 250
 tokens is not a difference this measurement can resolve.
 
+> **AMENDED 2026-09-26. IT IS WORSE THAN UNRESOLVABLE. Distinct share at a
+> fixed temperature measures how SHARP a model is, not how good it is**, and
+> a better-fit model is sharper. Swept over the same eight prompts and
+> seeds:
+>
+> | Model | temp 0.8 | temp 1.0 | temp 1.2 |
+> | --- | --- | --- | --- |
+> | perplexity 126 | 0.428 | 0.597 | 0.694 |
+> | perplexity 41 | 0.331 | 0.491 | 0.616 |
+>
+> The better model is **less** varied at every temperature, and recovers
+> past the worse model's 0.8 figure by 1.2. The same holds for the
+> attractor: `cup` occurrences for the better model run 24, 11, then 3 as
+> temperature rises. **Neither figure separates a worse model from a
+> sharper one**, so neither belongs in a quality comparison. The class is
+> recorded in `../../docs/process/PROCESS_STRATEGY.md`.
+
 **What it says about using perplexity as the progress measure.** A drop
 from 126 to 82 buys a visible change in one discrete behaviour and no
 change in the quality a reader would notice. Perplexity is tracking
@@ -185,3 +202,43 @@ something real and is a poor proxy for "worth talking to" at this range.
 **It does not establish anything about the ordering hypothesis.** No
 level-two model exists and no flat-order control has run. A single
 undertrained level-one model cannot speak to it either way.
+
+
+---
+
+## The finished corpus, measured 2026-09-26
+
+The level-one corpus reached its length standard, 244 of 244 content books
+inside the word band, **172,810 words**, from 55,510 the previous morning.
+A model retrained at the best configuration then available, width 1024 and
+800 steps, reaches held-out **3.713**, a perplexity of **41** against 126
+for the checkpoint that started the day.
+
+**What improved, under identical prompts, seeds and temperature.**
+
+| | perplexity 126 | perplexity 41 |
+| --- | --- | --- |
+| Began with a word rather than punctuation | 4 of 8 | **8 of 8** |
+| Question marks emitted | 0 | 1 |
+
+**What did not improve, and what that turned out to mean.** At temperature
+0.8 the newer model repeats `cup` more often, 24 occurrences against 10,
+and is less varied. Both reverse as temperature rises, so both are
+sharpness rather than degradation, and neither is a quality signal. See the
+amendment above.
+
+**What the corpus did.** It became less concentrated, not more: `cup` fell
+from 1.69 percent of content-book tokens to **1.21**, its lead over the
+next content word narrowed from 2.7 times to 1.3, and distinct tokens used
+rose from 1,497 to 1,643. The worry that lengthening books would concentrate
+the corpus on its existing subjects is not supported.
+
+**What still does not work.** The model does not answer a question. It is
+not coherent across sentences. Unprompted it now holds a first-person voice
+across a passage and produces whole sentences, which it did not before, but
+prompted with a question it returns to declarative continuation.
+
+**The honest summary of the day** is that a threefold corpus and a wider
+model took perplexity from 126 to 41 and bought two narrow, checkable
+behaviours. Whether that is worth eleven hours is the operator's call, and
+the figures are here rather than an opinion about them.

@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A child confidently knows where a cup is, notices a spoon nearby, and explores the difference between certainty and doubt through simple observations and actions.",
   "teaches": "That being sure means trusting what you see and feel, and that noticing differences, like between a cup and a spoon, helps us understand the world clearly.",
   "records": {

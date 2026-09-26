@@ -11,7 +11,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book shows children how writing things down, like notes, lists, or diary entries, creates lasting marks that help them remember even when they forget. It explores simple, everyday ways to keep records through examples from daily life.",
   "teaches": "Readers learn that writing things down makes a permanent mark that stays after memory fades, and that tools like lists, notes, and diaries help us remember what matters.",
   "records": {

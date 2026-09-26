@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A quiet, worn cup sits empty on a table, remembering a time when it was full, marked by a sign that no longer means anything. The story shows how things lose their purpose over time, how memories fade, and how absence can become a kind of presence.",
   "teaches": "Things can hold meaning even when they no longer function, and silence or emptiness can speak just as clearly as words. What remains after something is gone, like a mark, a shadow, or a memory, can still tell a story.",
   "records": {

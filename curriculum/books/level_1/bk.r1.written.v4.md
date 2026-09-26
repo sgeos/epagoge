@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book shows how writing things down helps children remember important details, like where they hid a toy or what they did each day. It explores simple tools like marks on a wall, notes in a pocket, lists, logs, and diaries.",
   "teaches": "Writing creates a lasting record that stays even when memory fades. Different ways of writing, like lists, notes, or a diary, can help kids keep track of their lives and remember what matters.",
   "records": {

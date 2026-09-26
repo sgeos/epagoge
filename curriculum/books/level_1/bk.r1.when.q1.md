@@ -11,7 +11,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book explores the concept of time and sequence through simple, relatable moments in a child's day, showing how one thing leads to another. It uses everyday events like sunrise, starting a task, and finishing a day to illustrate when things happen and how they follow each other.",
   "teaches": "Readers learn how to understand the order of events and recognize what comes first, then next, and how time moves forward. They also learn that finishing something takes time and that planning ahead, like starting early, can help make things possible.",
   "records": {

@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A child searches for a cup and a spoon, using sight, sound, and touch to find them, exploring what it means to be certain or unsure.",
   "teaches": "Being sure doesn't always mean you're right, and doubt can help you look more carefully, especially when things aren't where you expect them.",
   "records": {

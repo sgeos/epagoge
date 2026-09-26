@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book shows how one small moment leads to another, tracing a child's quiet journey from wanting to build a boat to seeing it float away, all through the natural flow of time. It captures the patience of waiting, the effort of doing, and the quiet passage of time from one day to the next.",
   "teaches": "It helps children notice the sequence of events, first this, then that, and understand that time moves forward, even when we're not watching. It shows how small choices and patient steps lead to something bigger, and how each moment connects to the next.",
   "records": {

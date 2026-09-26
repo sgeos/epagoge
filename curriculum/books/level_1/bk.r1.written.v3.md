@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A child makes a mark on the wall to remember a special day, then keeps records of returning to check it, discovering that the mark remains even after the memory fades.",
   "teaches": "Writing and marking things down creates a lasting record that outlives forgetting, and the act of recording helps confirm what is real and true over time.",
   "records": {

@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book follows a boy's quiet journey through a series of small, meaningful actions, showing how one moment leads to the next in a natural sequence. It explores the idea of time as a flow of events, where each step comes \"first this, then that\" in a clear order.",
   "teaches": "Readers learn how time moves forward through actions, and how each moment naturally leads to the next, even when things feel uncertain or slow. It shows that waiting, starting, and continuing are all part of how time unfolds.",
   "records": {

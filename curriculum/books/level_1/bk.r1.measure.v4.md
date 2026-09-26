@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book helps children understand basic measurement concepts by comparing the lengths of everyday objects, like blocks, using a ruler. It shows how to use a ruler to measure and compare sizes in a simple, visual way.",
   "teaches": "Children learn to identify and describe length, compare objects as longer or shorter, and use a ruler to measure accurately. They also understand that measuring helps us know how things compare in size.",
   "records": {

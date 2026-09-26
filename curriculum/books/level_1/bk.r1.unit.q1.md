@@ -11,7 +11,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book uses the simple idea of measuring water in cups to show how units make numbers meaningful in real life. It demonstrates why we need to name what we're measuring, like \"cups\", so we know what the number refers to.",
   "teaches": "Readers learn that numbers alone don't tell the full story; units like cups define what is being measured. They also see how the same unit can be reused and how different units can measure the same thing.",
   "records": {

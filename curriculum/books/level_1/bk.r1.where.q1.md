@@ -11,7 +11,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book helps young children understand basic spatial relationships like above, below, behind, beside, ahead, and over through simple, clear scenes and repeated phrases. It shows where things are located in relation to other objects in everyday settings.",
   "teaches": "Children learn to identify and describe positions using words like above, below, behind, beside, ahead, and over, building early language and cognitive skills for navigating their world.",
   "records": {

@@ -11,7 +11,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A simple, repetitive story that explores the idea of identity and attribution through the repeated phrase \"she said the cup was full,\" emphasizing who is speaking and what they are saying.",
   "teaches": "Readers learn how to identify the subject of a sentence using pronouns like \"she\" and \"her,\" and understand that words like \"who\" and \"her\" help us track who is saying what.",
   "records": {

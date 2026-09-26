@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book explores the idea of identity and ownership through a simple moment involving a cup, a mark, and a name. It shows how small details, like a written name or a line marking a liquid level, can help someone recognize what belongs to them and who acted.",
   "teaches": "Children learn that people can be identified by their names, actions, and marks they make. It also shows how symbols like names and lines can carry meaning and help track who did what.",
   "records": {

@@ -11,7 +11,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A simple story about a cup that was once full but is now empty, exploring how things change over time.",
   "teaches": "That things can go from full to empty, and that emptiness means there is nothing inside; change is natural and can be understood through observation.",
   "records": {

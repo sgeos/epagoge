@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book follows three cups of water on a table, showing how each one moves differently, spilling, tipping, rolling, while focusing on the idea of counting and measuring things as units.",
   "teaches": "It shows that a unit is a single, countable thing used to measure or group items, and how small changes, like a crack or a tipped cup, can affect what happens to it.",
   "records": {

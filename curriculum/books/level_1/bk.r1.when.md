@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-24",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book shows how time moves step by step, with each moment leading to the next, using simple, quiet moments from a child's day to illustrate the flow of time from beginning to end.",
   "teaches": "It teaches that every action has a sequence, first this, then that, and that even small, patient acts, like caring for a tired animal or building a boat, matter because they happen in time and lead to something meaningful.",
   "records": {

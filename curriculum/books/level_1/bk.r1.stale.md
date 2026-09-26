@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A small clay cup, once full of cold water, now sits empty, its mark of fullness fading as time passes and memories shift. The story quietly traces the cup's life, from shaping and baking to holding water and finally becoming still and empty.",
   "teaches": "Things can hold meaning even when they're no longer full, and emptiness can be a kind of truth. What was once full may be empty, but that doesn't erase what it once was.",
   "records": {

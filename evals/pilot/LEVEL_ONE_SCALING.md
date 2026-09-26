@@ -139,3 +139,73 @@ tokens, about fifty books a unit, roughly twenty times what exists.
 This is generation volume, not a decision. `generate_books.py --variants
 N` writes an Nth book per unit and the observed rate is about
 twenty-five books a round.
+
+
+---
+
+## RE-MEASURED AGAIN 2026-09-26, on the finished corpus
+
+The level-one corpus reached its length standard: all 244 sixteen-spread
+content books inside the word band, **172,810 words and 206,206 tokens**,
+from 55,510 words the previous morning. Four fractions against one
+held-out set of 215 chunks, width 256 throughout to match the method of
+every earlier figure here, best across 400, 800 and 1,600 steps. Raw
+numbers in `level_1_scaling_final.json`.
+
+**Measured on a quiet machine.** Every figure taken in the hours before
+this was taken while the teacher held 17.7 GB and the system was in swap.
+Stopping it took free memory from 12 percent to 82 and swap from 23.5 GB to
+13.3, so this is the first clean measurement of the day.
+
+| Training tokens | Best held out | Perplexity | At steps |
+| --- | --- | --- | --- |
+| 22,504 | 4.686 | 108 | 400 |
+| 45,029 | 4.525 | 92 | 800 |
+| 90,206 | 4.155 | 64 | 800 |
+| 181,371 | **3.853** | **47** | 1600 |
+
+### The rate holds
+
+| Doubling | Nats bought | Per doubling |
+| --- | --- | --- |
+| 22,504 to 45,029 | +0.161 | 0.161 |
+| 45,029 to 90,206 | +0.370 | 0.369 |
+| 90,206 to 181,371 | +0.302 | **0.300** |
+
+Average over the range **0.277**, against the 0.294 first recorded and the
+0.247 measured at half this size. **The marginal rate at the top of the
+range is 0.300.** So the corpus is still paying at close to the rate the
+project has always assumed, and the earlier readings of 0.199 and of a
+rising rate were both artifacts of their conditions.
+
+**The lowest fraction is the least trustworthy point and should not anchor
+a fit.** At 22,504 tokens the model overfits by 400 steps with a gap of
+1.73, so its best figure is measuring the schedule as much as the data.
+That is why the shallow first increment of 0.161 does not indicate a
+shallow curve.
+
+### What it extrapolates to
+
+From 181,371 tokens, carrying the marginal 0.300 forward to 10^6 predicts
+held-out 3.107, a perplexity near **22**. At the 0.277 average it is 26.
+
+The morning's table predicted 35 at 10^6 from 45,547 tokens. **The
+prediction has improved and the order of magnitude has held**, which is all
+that table ever claimed.
+
+### The capacity frontier moved with the data
+
+Measured the same evening on the same corpus, best held out by width:
+**256 gives 3.853, 512 gives 3.749, 1024 gives 3.709.** On the 82,038-token
+corpus the curve had saturated by width 128, and going from 128 to 1024
+bought 0.103 nats. It now buys 0.144 from 256 to 1024.
+
+**The optimal step count also rose rather than falling.** Widths 256 and
+512 now want 1,600 steps where every width past 128 previously wanted
+fewer as it grew. "Optimal steps halve as width doubles" was a property of
+being data-starved, not a law.
+
+**Best on this corpus: held-out 3.709, perplexity 41, at width 1024 and
+800 steps.** Across the day, at the best configuration available at each
+point, perplexity went 120 to 92 to 41. Those three came from three
+different held-out sets and are a history rather than a rate.

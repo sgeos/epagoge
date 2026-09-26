@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A boy compares the lengths of a stick and a branch, then adds a rock to make the stick taller, discovering that size can change when things are combined.",
   "teaches": "Length and size can be compared and measured by placing objects side by side or using a standard point of reference like a rock.",
   "records": {

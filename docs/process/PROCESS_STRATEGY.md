@@ -71,6 +71,15 @@ since before publication. Both were closed on 2026-09-25. Before trusting
 a check, ask what it enumerates and whether the thing you fear would be
 inside that set.
 
+**A METRIC COMPARED AT A FIXED TEMPERATURE MEASURES SHARPNESS, NOT
+QUALITY.** Distinct-token share and attractor frequency were read as
+quality signals when comparing two models. Swept across temperatures, the
+better-fit model is less varied at every one and recovers past the worse
+model's figure by 1.2, and its attractor frequency falls from 24 to 3 as
+temperature rises. **A better model has a sharper distribution**, so at
+fixed temperature it looks more repetitive. Neither figure can separate a
+worse model from a sharper one. Compare across temperatures or not at all.
+
 **A tool that is right for one job is wrong for another that looks like
 it.** `fold_typography` maps a dash to a hyphen because the tokeniser must
 split words consistently and never shows the result to anyone. Used on

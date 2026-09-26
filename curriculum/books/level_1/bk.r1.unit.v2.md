@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A simple story about three cups of water, focusing on one that stays full and still while the others spill or are moved.",
   "teaches": "That some things remain unchanged even when others shift, and that calmness and consistency can be quiet strengths.",
   "records": {

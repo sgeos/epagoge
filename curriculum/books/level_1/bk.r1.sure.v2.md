@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A child explores their surroundings with curiosity, using sight, touch, and observation to confirm what they believe is true, while also acknowledging uncertainty about things they can't see.",
   "teaches": "That knowing something can come from direct experience, like seeing or touching, while still being open to not being certain about things we can't confirm.",
   "records": {

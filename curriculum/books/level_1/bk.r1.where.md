@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-24",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book helps children understand basic spatial relationships like above, below, behind, beside, forward, and backward through a simple story about a boy exploring a path and finding a key.",
   "teaches": "Children learn how words describe where things are in space and how direction affects movement, using clear examples from the story's actions and settings.",
   "records": {

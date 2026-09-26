@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book follows a child's quiet moment of noticing and remembering a simple statement, \"She said the cup was full\", and traces how words, names, and marks connect to the person who spoke them.",
   "teaches": "It shows how language helps us identify who says what, and how a name, written down, becomes a lasting sign of a person's presence.",
   "records": {

@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A boy compares sticks by length, uses a ruler to measure them, and learns how measuring helps decide which is better for building a bridge.",
   "teaches": "Length, comparison, and measurement are practical tools for solving real problems like choosing the right materials for a task.",
   "records": {

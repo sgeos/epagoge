@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A child tries to measure a unit of liquid using three cups of water, but spills happen along the way, showing how liquids move and how things change when they get wet.",
   "teaches": "That a unit is a standard amount used to measure things, and that containers like cups hold liquid, which can spill and affect other objects like cloth.",
   "records": {
