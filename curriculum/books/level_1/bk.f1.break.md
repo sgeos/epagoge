@@ -65,19 +65,19 @@ Smash means to break into many pieces using strong force, like glass hitting the
 A thing can break when it can no longer stay together.
 
 [f1.break.s01]
-The old wooden bridge broke after years of rain and wind.
+The old wooden bridge broke after years of rain and wind. The bridge broke after years of rain and wind. Rain soaked the wood until it could no longer hold. The stone path above the river began to crack. A crack appeared in the stone path above the river. The crack grew wider with each passing day.
 
 [f1.break.s02]
-A crack appeared in the stone path above the river.
+A crack appeared in the stone path above the river. The crack grew wider, deeper, and longer. The path could no longer hold. The water carried it away. The river flowed fast and loud. The air felt heavy and still. The sky turned dark and cloudy. The wind blew hard across the gap.
 
 [f1.break.s03]
-A small piece of wood fell into the stream below.
+A small piece of wood fell into the stream below. It floated away, carried by the fast flow. The water felt cold and strong against the wood. The stream kept moving, never stopping. The air above the water was thick and warm. A bird flew low, wings brushing the surface.
 
 [f1.break.s04]
-The wind caused the rope to snap and fall.
+The wind caused the rope to snap and fall. The water below rushed faster, carrying the broken piece away. The boy looked down, afraid of what might come next. The bridge could not hold again. He turned, wanting to run, but knew he had to stay. He picked up a stick, trying to test the ground.
 
 [f1.break.s05]
-The bridge had cracked and could not hold again.
+The bridge had cracked and could not hold again. He tried to pull the broken piece back. But the wood was too weak to fix. He could not make it whole again. The wind blew harder, carrying dust. He felt cold, even though it was warm. He sat on the ground, not sure what to do.
 
 [f1.break.s06]
-The boy tried to fix it but could not make it whole.
+The boy tried to fix it but could not make it whole. The boy sat still, his breath slow and quiet. He could not fix it, not even with glue or nails. The wind blew across the gap, carrying dust and leaves. He felt alone, not just in body but in mind.

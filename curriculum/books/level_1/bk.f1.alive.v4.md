@@ -56,28 +56,28 @@ Die means to stop living, to become dead.
 Drink means to take liquid into the mouth and swallow it.
 
 [f1.alive.v4.s01]
-The baby was alive and awake in the morning.
+The baby was alive and awake in the morning. The sun rose above the hill. The air felt warm and still. The room held quiet, full of light. The baby did not cry. The bird outside sang, high and clear. The window glass showed the sky. The world kept turning.
 
 [f1.alive.v4.x08]
-Morning light shone through the window, warm and bright.
+Morning light shone through the window, warm and bright. The bird outside stopped singing, its song gone. The sky stayed blue, but the light grew thin. The blanket felt heavy, not warm, not soft. The world kept turning, but something had stopped. The room held quiet, full of light, but life had left.
 
 [f1.alive.v4.x09]
-The baby woke, reached up with tiny hands, and smiled.
+The baby woke, reached up with tiny hands, and smiled. The blanket stayed heavy, no longer warm or soft. The room held quiet, full of air, but life had left. The bird outside flew past, wings spread wide. The sky stayed blue, but the light grew thin. The world kept turning, but something had stopped.
 
 [f1.alive.v4.x10]
-Outside, a bird flew past the window, wings spread wide.
+Outside, a bird flew past the window, wings spread wide. The bird flew above the trees, wings catching the bright light. The air felt thin, like it could not hold life. The sky stayed blue, but the world seemed quieter. The blanket stayed heavy, no longer warm or soft. The room held still, full of air, but no breath came.
 
 [f1.alive.v4.x11]
-The baby reached toward the bird, fingers open, eyes full of wonder.
+The baby reached toward the bird, fingers open, eyes full of wonder. The bird flew above the trees, wings catching the bright light. The air felt thin, like it could not hold life. The sky stayed blue, but the world seemed quieter. The blanket stayed heavy, no longer warm or soft.
 
 [f1.alive.v4.x12]
-The baby was no longer alive, and the world felt quiet and still.
+The baby was no longer alive, and the world felt quiet and still. The baby no longer breathed, and the air felt still and thick. The bird flew above the trees, gone now, no longer seen. The sky stayed blue, but the light felt different, not warm. The world had changed, and life could not return.
 
 [f1.alive.v4.x13]
-The morning light shone through the window, warm and bright.
+The morning light shone through the window, warm and bright. A bird flew above the trees, gone now, no longer seen. The sky stayed blue, but the light felt different, not warm. The world had changed, and life could not return. The baby no longer breathed, and the air felt thick.
 
 [f1.alive.v4.x14]
-Later, the baby did not wake, and the room felt quiet and still.
+Later, the baby did not wake, and the room felt quiet and still. The air stayed still, no breeze to move the curtain. The clock on the wall kept time, but no one heard it. No one came to open the door. The baby was not alive, not able to move.
 
 [f1.alive.v4.x15]
-The world moved on, as it always does, even when life is gone.
+The world moved on, as it always does, even when life is gone. Air drifted through the trees, carrying seeds to new ground. A bird flew above, singing a song no one heard. The apple fell from the branch, landing in the grass. No one picked it up, not even the boy who once loved it.

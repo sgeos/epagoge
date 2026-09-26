@@ -59,25 +59,25 @@ Die means to stop living, to become dead.
 Drink means to take liquid into the mouth and swallow it.
 
 [f1.alive.v2.s01]
-It ate seeds every morning and drank water from a leaf.
+It ate seeds every morning and drank water from a leaf. It stayed alive because it had air to breathe. It felt warm inside and moved with care. It looked about and saw the sky above. It wanted to go ahead but could not. It was afraid of the dark and the cold.
 
 [f1.alive.v2.s02]
-It was afraid and tried to fly, but its wings were weak.
+It was afraid and tried to fly, but its wings were weak. The wind blew cold and strong, making it feel worse. It could not move ahead, only lie still on the ground. Its body felt heavy, and its breath came slow. It thought of the sky, but could not reach it.
 
 [f1.alive.v2.s03]
-A cat came near and looked at it, but the bird stayed still.
+A cat came near and looked at it, but the bird stayed still. It did not move, though the wind blew again. Its breath came slow, and its body felt heavy. The sky above was bright, but it could not fly. It stayed on the ground, alone and still. The air was cold, and its eyes stayed closed.
 
 [f1.alive.v2.s04]
-The bird closed its eyes and stayed asleep for a long time.
+The bird closed its eyes and stayed asleep for a long time. The bird stayed asleep, its body cold and still. No wind moved the branches above. The sky stayed bright, but the light felt old. No one came near, not even the dog. Its breath did not come again, not even once.
 
 [f1.alive.v2.s05]
-It did not wake up again, and it was dead.
+It did not wake up again, and it was dead. It was dead. No breath came from its body. The sky stayed bright above. The branches did not move. No one came near. The bird would not wake again. The ground stayed cold. No sound came from the forest. No one would remember its song.
 
 [f1.alive.v2.s06]
-The bird did not eat or drink again, and its body stayed cold.
+The bird did not eat or drink again, and its body stayed cold. The bird stayed cold, its body no longer able to feel the air above. No breeze moved through the branches, and the sky stayed bright. The ground stayed hard, and no one came near. The forest stayed quiet, and no song would come again.
 
 [f1.alive.v2.s07]
-The cat walked away, and the sun rose above the trees.
+The cat walked away, and the sun rose above the trees. The light touched the grass, and the air felt warm. No one came to see, no one to care. The sky stayed bright, but the forest felt empty. The branch bent, and the leaves hung low. The ground stayed hard, no soft spot for life.
 
 [f1.alive.v2.s08]
-The sky turned dark, and the wind blew through the trees.
+The sky turned dark, and the wind blew through the trees. The ground stayed hard, but something had changed. No one came, no one to care, no one to see. The wind carried a sound, a whisper, a soft breath. The bird flew off, and the forest felt empty. The sun would rise again, but not for this life.

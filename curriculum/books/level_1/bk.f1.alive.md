@@ -56,28 +56,28 @@ To die means to stop living and become dead.
 To drink means to take liquid into the mouth and swallow it.
 
 [f1.alive.s01]
-It could not breathe, and its eyes stayed closed.
+It could not breathe, and its eyes stayed closed. The air above was still and thick. No sound came from its body. The light above was bright but cold. No one came to help. The wind did not move the leaves. No bird sang. No animal passed by. The grass was dry and cracked.
 
 [f1.alive.s02]
-It was asleep but never woke again.
+It was asleep but never woke again. The air above stayed still and cold. No bird flew, no animal passed by. The grass was dry, cracked, and dead. No one came to help, no one heard. The wind did not move the leaves. The sky was grey, cloudy, and heavy.
 
 [f1.alive.s03]
-It was dead, and death had come.
+It was dead, and death had come. No light came from above. The air stayed cold and still. No bird flew, no animal passed. The grass stayed dry, cracked, and dead. No one came to help, no one heard. The wind did not move the leaves. The sky stayed grey, cloudy, and heavy.
 
 [f1.alive.s04]
-It did not die again, and it would not become alive.
+It did not die again, and it would not become alive. The sky stayed grey, the air cold and still. The grass stayed dry, cracked, and dead. No sound came from the forest, no bird to sing. The wind did not move the leaves, the sky stayed heavy. The child walked across the grass to the old tree where the bird had once sung.
 
 [f1.alive.x11]
-The child walked across the grass to the old tree where the bird had once sung.
+The child walked across the grass to the old tree where the bird had once sung. The bird did not sing again. The child felt cold, and knew the bird was dead. No wind blew, no leaf moved, no sound came. The sky stayed grey, heavy above. The child looked down at the ground, seeing only dirt and dust.
 
 [f1.alive.x12]
-No one answered when the child called out, and the wind carried no sound.
+No one answered when the child called out, and the wind carried no sound. The child sat still, breathing slowly, as the air stayed thick and quiet. The child thought about life, and how it could end, even for a bird. The child felt small, alone, and afraid of what would come next.
 
 [f1.alive.x13]
-The child sat by the tree and placed a small stone on the ground, as if it were a gift.
+The child sat by the tree and placed a small stone on the ground, as if it were a gift. The child watched the stone, still and small, as if it were alive. The wind did not move it, though it blew hard above. The bird had been alive, now it was dead, like the stone.
 
 [f1.alive.x14]
-The stone stayed there, quiet and still, just like the bird that would never fly again.
+The stone stayed there, quiet and still, just like the bird that would never fly again. The sky grew darker, though the light still shone above. The child felt the air grow cold, like the ground after rain. The bird was dead, not asleep, not hiding, not waiting. The stone stayed, as if it knew it was meant to stay.
 
 [f1.alive.x15]
-The child sat still, watching the sky turn from blue to grey, then to dark.
+The child sat still, watching the sky turn from blue to grey, then to dark. The sky stayed dark, no longer bright above. The child felt the air grow colder, like ice on skin. The stone stayed, as if it knew it was meant to stay. The ground was still, no breath, no sign.

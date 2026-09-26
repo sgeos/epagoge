@@ -59,25 +59,25 @@ Die means to stop living, to no longer be alive, to never come back.
 Drink means to take liquid into the mouth and swallow it.
 
 [f1.alive.v3.s01]
-A baby was alive and happy, playing with a red ball.
+A baby was alive and happy, playing with a red ball. The ball rolled across the grass and stopped near a tree. The baby sat up, blinking in the bright sun. A bird flew above, its wings catching the light. The baby looked up, mouth open in wonder. The sky was blue, clear and wide.
 
 [f1.alive.v3.s02]
-The baby slept and was asleep under a soft blanket.
+The baby slept and was asleep under a soft blanket. A bird flew above, its wings catching the light. The sky was blue, clear and wide. A leaf drifted down, landing near the edge of the grass. The baby did not wake, not even when the breeze blew soft. The world moved on, but the baby stayed still.
 
 [f1.alive.v3.s03]
-The baby woke up and was awake, smiling at the sun.
+The baby woke up and was awake, smiling at the sun. The baby smiled and reached for the sun. The sun shone bright above the grass. The sky stayed blue, wide and clear. The baby did not cry, but stayed awake. The world moved on, but the baby stayed still.
 
 [f1.alive.v3.s04]
-The baby ate an apple, then drank milk from a cup.
+The baby ate an apple, then drank milk from a cup. The milk was warm and smooth, a gift from the cup. The sun stayed bright above the grass. The sky stayed blue, wide and clear. The world moved on, but the baby stayed still. The blanket stayed warm, covering the small body.
 
 [f1.alive.v3.s05]
-The baby did not wake up the next morning and was dead.
+The baby did not wake up the next morning and was dead. The baby was no longer alive. The blanket stayed warm, but the body was cold. The sun rose above the grass, bright and clear. The sky stayed blue, wide and still. No one could bring the baby back.
 
 [f1.alive.v3.s06]
-The parents knew death had come and could not be changed.
+The parents knew death had come and could not be changed. Life cannot go on after death. The body was still, no breath came. The sky stayed blue, wide and still. No one could bring the baby back. The blanket stayed warm, but the body was cold. The sun rose above the grass, bright and clear.
 
 [f1.alive.v3.s07]
-The baby could not eat again, could not drink again, could not move.
+The baby could not eat again, could not drink again, could not move. Life was gone, not able to return. The air felt still, no breath to move it. The blanket stayed warm, but the body was cold. No one could bring the baby back. The sky stayed blue, wide and still.
 
 [f1.alive.v3.s08]
-The family felt sad, and the sky was dark and cloudy.
+The family felt sad, and the sky was dark and cloudy. The sky stayed dark and cloudy, no light to show the way. The blanket stayed warm, but the body was cold, still as stone. No breath moved the air, no sound came from the room. The sky stayed dark and cloudy, no sun to lift the mood.

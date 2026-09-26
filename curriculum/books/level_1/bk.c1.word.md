@@ -47,37 +47,37 @@ To spell means to say or write the letters of a word.
 A word is a thing you say to name something.
 
 [c1.word.s01]
-The child found a book with a word on each page.
+The child found a book with a word on each page. The child turned the page and saw the word *fly*. It looked like a bird in the air. The word meant something that moves above the ground. The word was not a thing that walks or runs. It was a thing that goes ahead with no legs.
 
 [c1.word.s02]
-The word meant a term for a thing that flies.
+The word meant a term for a thing that flies. It was not a bird but could move above the ground. The child saw it in the air, like a balloon. It could be fast, or slow, or even stuck in the air. The word was not a thing that walks or runs.
 
 [c1.word.s03]
-The child said the word and thought of a bird in the sky.
+The child said the word and thought of a bird in the sky. The child said the word again and thought of a bird in the sky. The word meant something that flies above the ground. It could be fast, or slow, or stuck in the air like a balloon.
 
 [c1.word.s04]
-The child closed the book and kept it on the shelf.
+The child closed the book and kept it on the shelf. The child kept the book on the shelf above the floor. The book was not alone, but it was quiet. The word meant something real, not made up. The child thought of a bird in the sky, alive and flying.
 
 [c1.word.s05]
-The word was not a lie, it was true and real.
+The word was not a lie, it was true and real. The word was true and real, not made up. The child could feel it in the air, alive and bright. It came from inside, not from outside. The word belonged to the child, not to anyone else. It could be spoken, heard, or written.
 
 [c1.word.s06]
-The child knew the word and could use it again.
+The child knew the word and could use it again. The word was a name for a thing that moves through the air. It could be said with a voice that was alive and bright. It came from deep inside, not from outside. It was true and real, not made up or false.
 
 [c1.word.s07]
-The word was a name for a thing that moves through the air.
+The word was a name for a thing that moves through the air. It came from deep inside, not from outside. It was true and real, not made up or false. The child knew the word and could use it again. The word was alive and bright. It could be said with a voice that was strong and clear.
 
 [c1.word.x11]
-The child opened the book again and found a new word about something that flies.
+The child opened the book again and found a new word about something that flies. The word was about a bird that flew above the trees. It could move through the air with strong wings. The child felt the word alive and bright. The bird was not afraid of the wind or the sky.
 
 [c1.word.x12]
-The child placed the book back on the shelf, smiling, knowing the word was alive.
+The child placed the book back on the shelf, smiling, knowing the word was alive. The child felt the word alive and bright. The word was about a bird that flew above the trees. It could move through the air with strong wings. The child knew the word was real.
 
 [c1.word.x13]
-The child opened the book again and found a new word about something that swims.
+The child opened the book again and found a new word about something that swims. The child saw the word about a fish moving through the water. The word felt alive and bright, like a small light under the surface. It swam through the air, above the page, like a shadow on a stream.
 
 [c1.word.x14]
-The word made the child think of a fish moving through the water.
+The word made the child think of a fish moving through the water. It felt alive and bright, like a small light under the surface. The child saw the fish swim above the page, like a shadow on a stream. The child wanted to touch it, to feel its body, its shape, its speed.
 
 [c1.word.x15]
-The child opened the book again and saw the word written in bright blue letters.
+The child opened the book again and saw the word written in bright blue letters. The word felt warm against the page, like a small sun. The word was not just letters—it was a thing you say, and it had weight. The book did not open itself, but the word had come alive.
