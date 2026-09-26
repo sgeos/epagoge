@@ -65,6 +65,16 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--seq-len", type=int, default=128)
     parser.add_argument("--d-model", type=int, default=256)
+    parser.add_argument(
+        "--positions",
+        choices=("learned", "rotary"),
+        default="rotary",
+        help=(
+            "how position reaches attention. Defaults to rotary, which is "
+            "worth about 0.4 nats over a learned table at either sequence "
+            "length measured on 2026-09-26, with slightly fewer parameters."
+        ),
+    )
     parser.add_argument("--layers", type=int, default=4)
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--tokens", type=int, default=240, help="tokens to sample")
@@ -107,6 +117,7 @@ def main(argv: list[str]) -> int:
         d_model=args.d_model,
         n_layers=args.layers,
         seq_len=args.seq_len,
+        positions=args.positions,
     )
     device = select_device(args.device)
     import time

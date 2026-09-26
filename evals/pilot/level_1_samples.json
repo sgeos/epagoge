@@ -1,16 +1,17 @@
 {
   "level": 1,
-  "steps": 800,
+  "steps": 1600,
   "seed": 0,
   "chunks": 1725,
-  "parameters": 55130112,
-  "held_out_loss": 3.7027668555577598,
+  "parameters": 4305408,
+  "held_out_loss": 3.442571520805359,
   "temperature": 0.8,
-  "sampled_word_tokens": 49,
-  "distinct_share": 0.673469387755102,
-  "sentence_share": 0.8571428571428571,
+  "sampled_word_tokens": 149,
+  "distinct_share": 0.5369127516778524,
+  "sentence_share": 0.9166666666666666,
   "samples": [
-    "the wood . he reached down in his mind , as if he reached for the world . he sits on the air . he thought about the sky , slow and clear . he reached for a pull . the balloon floats above , next . he did not change , and smooth , not even the branch above"
+    ". each one is real , not metal , not hidden . it is not alone , but it is not broken . the river is the red stone , not like a bright like a crack in a stream . it feels same as if it does not name a lie . it is not done , not cold , not breathing like a dream . the stars appear above , not like a breeze . it does not yet , yet something without change . it is which",
+    "from the tree . the parts must move through the trees . the key is on the table . the ground is made of metal . it is you both above the sky . the ball lies still . where cannot reach . the ball is alive . it is not afraid . no one tries to . the balloon floats as the blue cup is here . the plant stays warm in the table . the stick is here . no one knows near . alone is gone ."
   ],
   "note": "Descriptive, and at this corpus size the samples are expected to be poor. Admissibility is deliberately not reported: the tokeniser is built from the level's lexicon, so every token the model can emit is admissible by construction and the figure would be one hundred per cent whatever the model learned."
 }
