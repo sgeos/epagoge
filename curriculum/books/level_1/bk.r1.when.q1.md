@@ -54,31 +54,31 @@ Coming before all others in time or order.
 The time that is to come.
 
 [r1.when.q1.a01]
-What does it mean to begin? To start something is to make the first move.
+What does it mean to begin? To start something is to make the first move. Begin again after the first move. The sky grows bright, the world alive. The apple falls, not broken, not lost. The boat floats, no need to pull. The bird flies, no need to explain. The moon rises, cold, not dark.
 
 [r1.when.q1.a02]
-When does the day end? The day ends when the sun goes down and the sky grows dark.
+When does the day end? The day ends when the sun goes down and the sky grows dark. The sky grows dark after the sun goes down. The moon rises above the hill, bright and cold. The bird flies ahead, wings wide, no need to stop. The boat floats on the river, moving slowly.
 
 [r1.when.q1.a03]
-Why did she start early? She started early because she wanted to finish before the day ended.
+Why did she start early? She started early because she wanted to finish before the day ended. She walked ahead, her breath steady, the path winding above the stream. She placed the apple on the stone, the gift she had brought. She sat, still, listening to the quiet, the world alive around her.
 
 [r1.when.q1.a04]
-What happens after the first thing is done? After the first thing is done, the next thing begins.
+What happens after the first thing is done? After the first thing is done, the next thing begins. The sun climbs higher, warming the stone where the apple lies. A bird sings from a branch above the stream. She sees a red balloon caught in a tree, floating above. She reaches up, but cannot touch it.
 
 [r1.when.q1.a05]
-Can you ever finish if you keep doing things fast? No, you cannot ever finish if you keep doing things fast without stopping.
+Can you ever finish if you keep doing things fast? No, you cannot ever finish if you keep doing things fast without stopping. First this, then that. A bird flies above the stream, carrying a red balloon. She cannot reach it, though she tries again. The balloon floats higher, caught in the breeze.
 
 [r1.when.q1.a06]
-How do you know what comes next in the future? You know what comes next in the future by remembering what came first and then what came after.
+How do you know what comes next in the future? You know what comes next in the future by remembering what came first and then what came after. First this, then that. A bird flies above the stream, carrying a red balloon. She cannot reach it, though she tries again.
 
 [r1.when.q1.a07]
-Why did it take a long time? It took a long time because the first thing came, then the next thing came, and each thing took time to finish.
+Why did it take a long time? It took a long time because the first thing came, then the next thing came, and each thing took time to finish. First came the wind, then the balloon rose above the stream. She flew ahead, her wings tired from the long climb.
 
 [r1.when.q1.a13]
-What does "first" mean? First means coming before all others.
+What does "first" mean? First means coming before all others. First came the sound, then the wind rose above the trees. She walked ahead, her feet tired from the long path. The sky turned bright, and the light grew strong. The balloon floated above the stream, slowly rising. She watched it go, her heart full of wonder.
 
 [r1.when.q1.a14]
-What happened first in the story? First, the sun rose early in the day.
+What happened first in the story? First, the sun rose early in the day. The sun rose early in the day. It warmed the grass and made the air feel alive. Birds began to sing, one after another. The sky turned bright, and the light grew strong. A balloon floated above the stream, slowly rising.
 
 [r1.when.q1.a15]
-What happened first? The first thing was the sun rising early in the day.
+What happened first? The first thing was the sun rising early in the day. The balloon floated above the stream, slowly rising. A butterfly landed on his hand, soft and alive. He did not move, afraid to break the moment. The sun rose higher, warming his back. The boy walked faster, following the path.

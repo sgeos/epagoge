@@ -53,31 +53,31 @@ Coming before all others in order.
 The time that has not yet come, like tomorrow or next year.
 
 [r1.when.v4.s01]
-It began early in the day.
+It began early in the day. The sky was bright above the trees. A bird sang from a branch nearby. He felt the air, cool and light. His breath came slow, steady, alive. He stood alone, not afraid. He had a plan, a goal ahead. He would walk to the garden, not run.
 
 [r1.when.v4.s02]
-The first thing he did was walk to the garden.
+The first thing he did was walk to the garden. He walked along the path, eyes on the ground. He bent down, careful not to break it. The air was still, no breeze, no sound. He felt the weight, the shape, the smooth skin. He looked around, no one near, no one watching.
 
 [r1.when.v4.s03]
-He found a small, red apple lying on the ground.
+He found a small, red apple lying on the ground. He held the apple, warm from the sun above. It felt alive, smooth, and red. He wondered if it had fallen from a tree nearby. The air was still, but his breath came quick. He looked around, no one near, no one watching.
 
 [r1.when.v4.s04]
-He decided to wait until it was ready.
+He decided to wait until it was ready. He waited, still and quiet, above the earth. The apple stayed warm, alive, and red. He thought about the tree, the branch, the fall. He could not move, not yet, not until it was ready. He felt the air, soft and still, like a breath held.
 
 [r1.when.v4.s05]
-He placed it in a basket and carried it home.
+He placed it in a basket and carried it home. The basket felt heavy, full of something alive and warm. The air smelled of earth and rain, soft and thick. He knew he must not drop it, not now, not ever. He kept his eyes forward, ahead, on the road.
 
 [r1.when.v4.s06]
-He set it on the table and watched it.
+He set it on the table and watched it. It blinked, once, slowly, like a secret waking. He felt his breath slow, his body still. He thought of the forest, the path, the basket. The sun had not yet climbed high. He wondered what it was, what it would become.
 
 [r1.when.v4.s07]
-The sun rose higher, and the day grew longer.
+The sun rose higher, and the day grew longer. The air felt warm, thick with quiet. He wondered if the thing on the table would move, or stay still. The sky above turned bright blue, clear and wide. He felt his breath slow, his body calm. He remembered the forest, the trees, the birds.
 
 [r1.when.v4.s08]
-It did not change, but he believed it would.
+It did not change, but he believed it would. The air felt still, thick with waiting. He thought of the path ahead, winding through the trees. He wondered if the thing would move on its own. He felt his breath slow, his body calm. He remembered the sound of the river, the splash of water.
 
 [r1.when.v4.s09]
-He could not eat it yet, even though he was hungry.
+He could not eat it yet, even though he was hungry. The apple sat on the table, bright and red, waiting. He thought about the path ahead, winding through the trees. He wondered if the thing would move on its own. He felt his breath slow, his body calm. He remembered the sound of the river, the splash of water.
 
 [r1.when.v4.s10]
-He thought about the future and what it might bring.
+He thought about the future and what it might bring. He saw a bright red apple, waiting on the table. He felt his breath slow, his body calm. He remembered the sound of the river, the splash of water. He thought about the things that might happen. He wondered if the thing would move on its own.

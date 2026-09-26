@@ -59,25 +59,25 @@ Following means coming after something, like a child following a parent.
 Moving toward the front, like a ball rolling forward.
 
 [r1.where.v2.s01]
-The path turned backward where the sun had set.
+The path turned backward where the sun had set. The air felt cold, though the sky stayed bright above. The child felt alone, yet knew someone was near. A light appeared below, not above, not behind. The boy looked down, not ahead, not back. He saw a small stone, smooth and round, not like the others.
 
 [r1.where.v2.s02]
-The child walked behind the big tree and saw the light below.
+The child walked behind the big tree and saw the light below. The light below was not a stone, but a small apple, red and round, not like the others. It sat on the ground, not floating, not hidden, but waiting. The air felt thick, not bright, not calm, but full of meaning.
 
 [r1.where.v2.s03]
-A small dog sat beside the path, looking up.
+A small dog sat beside the path, looking up. The light below was not a stone, but a small apple, red and round, not like the others. It sat on the ground, not floating, not hidden, but waiting. The air felt thick, not bright, not calm, but full of meaning.
 
 [r1.where.v2.s04]
-The child followed the direction of the river’s flow.
+The child followed the direction of the river’s flow. The water moved fast, not slow, not still, but rushing ahead. The path curved, not straight, not wide, but narrow and clear. A bird flew past, not far, not high, but low and quick. The child looked down, not up, not away, but at the ground.
 
 [r1.where.v2.s05]
-The path ended at a bridge over a fast-flowing stream.
+The path ended at a bridge over a fast-flowing stream. The bridge stood above the stream, not below, not beside, but straight and strong. The child looked down, not up, not away, but at the water rushing ahead. The air was cool, not hot, not still, but full of moving breath.
 
 [r1.where.v2.s06]
-The child crossed the bridge and went forward again.
+The child crossed the bridge and went forward again. The path turned sharp, not straight, not wide, but narrow and thin. The child felt alive, not dead, not afraid, not alone. A tree stood ahead, not behind, not far, but close and strong. The tree seemed to breathe, not to sleep, not to die, but to grow.
 
 [r1.where.v2.s07]
-The child stopped and looked behind, but no one was there.
+The child stopped and looked behind, but no one was there. The child stood still, here, not there. The air felt thick, not light, not clear, but heavy and still. No sound came from ahead, no voice, no breath, no bird. The child turned, not away, not back, but toward the tree.
 
 [r1.where.v2.s08]
-The child remembered the map and followed the direction to the village.
+The child remembered the map and followed the direction to the village. The child followed the path through the trees, not alone, but not with anyone either. The air above felt different, brighter, not heavy as before. The child saw a red apple on the ground, not stolen, not left behind.

@@ -62,22 +62,22 @@ Direction means the way something is going.
 Following means coming after something.
 
 [r1.where.v4.s01]
-The boy walked ahead, looking for the apple.
+The boy walked ahead, looking for the apple. The apple was not behind the rock. It was above the tree, bright and red. He could not reach it, not alone. No one came, not even his brother. He felt afraid, but not weak. He decided to climb, step by step.
 
 [r1.where.v4.s02]
-He saw it above the tree, not behind the rock.
+He saw it above the tree, not behind the rock. The apple was bright and red, not lost or gone. He felt alive, not afraid, not alone. He stood on the hill, not on the path. His breath came slow, not quick or loud. He looked up, not down, not back.
 
 [r1.where.v4.s03]
-He climbed up the hill, not down the path.
+He climbed up the hill, not down the path. His breath came slow, not rushed or shallow. The sun rose high, not hidden behind clouds. He saw a shape above, not below. A bird flew past, not a shadow or a trick. He felt alive, not tired or worn. The path was gone, not marked or clear.
 
 [r1.where.v4.s04]
-He moved backward when he heard a noise.
+He moved backward when he heard a noise. The sound came from above, not below. He stood alone, not with anyone. A bird flew past, not a shadow or a trick. He wanted to go ahead, not stay. He could not turn back, not now. He knew he was alive, not dead or asleep.
 
 [r1.where.v4.s05]
-The dog was beside him, not behind.
+The dog was beside him, not behind. The dog looked at him, not away. They stood together, not apart. He could not explain it, not even to himself. The dog was not afraid, not of the dark or the noise. He felt safe with the dog, not alone. They moved as one, not separate.
 
 [r1.where.v4.s06]
-He turned to face the direction of the sound.
+He turned to face the direction of the sound. The air felt thick, not light. A shadow moved, not still. The sound came from ahead, not behind. He stepped forward, not back. His breath came fast, not slow. The ground was soft, not hard. A small stone rolled, not stopped.
 
 [r1.where.v4.s07]
-The bird flew above, not below the branch.
+The bird flew above, not below the branch. It moved ahead, not back toward the ground. A shadow passed, not still on the leaves. He stepped forward, not away from the sound. His breath came fast, not slow with calm. The path curved, not straight into the clearing. The branch bent, not broken under weight.

@@ -45,40 +45,40 @@ A copy is a copy made from something else, like writing down a note.
 A list is a group of things written down in order.
 
 [r1.written.q1.a01]
-What is a list? A list is a group of things written down in order.
+What is a list? A list is a group of things written down in order. A mark is something you make to remember later. You can make a mark on paper, on wood, or in the dirt. A mark shows where something was or what happened. Some marks are small, some are big, some are clear.
 
 [r1.written.q1.a02]
-What can you do with a note? You can make a note to remember something, and it stays even if you forget.
+What can you do with a note? You can make a note to remember something, and it stays even if you forget. A note can stay above the rest when others are gone. It helps you remember what you meant to do. You can write a note to show where you were.
 
 [r1.written.q1.a03]
-Why keep a record? Keeping a record helps you remember what happened, even if you forget later.
+Why keep a record? Keeping a record helps you remember what happened, even if you forget later. A mark you make stays when you forget. It shows where you were, even if you move. You can write a note to show what you meant. The mark stays above the rest when others are gone.
 
 [r1.written.q1.a04]
-What stays after you forget? A mark you made, like a note or a record, stays after you forget.
+What stays after you forget? A mark you made, like a note or a record, stays after you forget. A mark you made stays after you forget. A note written now may be read later, alive in time. It stays above the noise, clear and whole. No one can take it away, not even time.
 
 [r1.written.q1.a05]
-What does a list do? A list helps you remember things you need to do or things you have.
+What does a list do? A list helps you remember things you need to do or things you have. A mark you make stays above the noise, alive in time. It helps you remember what you need to do or what you have. It shows you what comes next, ahead of the next step.
 
 [r1.written.q1.a06]
-How can you keep a record? You can keep a record by writing down what happens, like a note or a diary.
+How can you keep a record? You can keep a record by writing down what happens, like a note or a diary. A mark stays alive above the noise. It helps you remember what comes next, ahead of the next step. You can write a note to keep a record of what happens.
 
 [r1.written.q1.a07]
-What happens when you write a note? When you write a note, you make a mark so you know later, and the mark stays after you forget.
+What happens when you write a note? When you write a note, you make a mark so you know later, and the mark stays after you forget. A mark stays alive above the noise. It helps you remember what comes next, ahead of the next step. You can write a note to keep a record of what happens.
 
 [r1.written.q1.a08]
-Why keep a diary? You keep a diary to make a mark so you know later, and the mark stays after you forget.
+Why keep a diary? You keep a diary to make a mark so you know later, and the mark stays after you forget. A mark stays alive above the noise. It helps you remember what comes next, ahead of the next step. You can write a note to keep a record of what happens.
 
 [r1.written.q1.a09]
-What stays after you forget? A record, a note, a list, a diary, a log, or a copy stays after you forget.
+What stays after you forget? A record, a note, a list, a diary, a log, or a copy stays after you forget. A mark stays alive above the noise. It helps you remember what comes next, ahead of the next step. You can write a note to keep a record of what happens.
 
 [r1.written.q1.a12]
-What do you do when you want to remember something later? You make a mark so you know later.
+What do you do when you want to remember something later? You make a mark so you know later. The mark stays alive above the noise. It helps you remember what comes next, ahead of the next step. You can write a note to keep a record of what happens.
 
 [r1.written.q1.a13]
-Why does the mark stay after you forget? The mark stays after you forget because it is a record of what happened.
+Why does the mark stay after you forget? The mark stays after you forget because it is a record of what happened. The mark stays because it is real. It shows what happened, even when you forget. You can look at it again, and it helps you remember. The mark is alive, even when you are not.
 
 [r1.written.q1.a14]
-How can a list help you remember? A list helps you remember because it shows all the things you need to do or know.
+How can a list help you remember? A list helps you remember because it shows all the things you need to do or know. This shows you what is finished and what still needs work. A list gives you a clear path to follow. You can read it again and again, and it stays the same.
 
 [r1.written.q1.a15]
-How can a note help you remember? A note helps you remember because it is a record of what you need to know.
+How can a note help you remember? A note helps you remember because it is a record of what you need to know. It shows a word, a number, or a name. It helps you remember what you need to do. You can write it down to keep it safe.

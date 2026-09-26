@@ -62,22 +62,22 @@ Direction means the way something is going.
 Following means coming after something.
 
 [r1.where.v3.s01]
-The child sees a ball above the tree.
+The child sees a ball above the tree. The ball is above the tree, not there. It floats in the air, bright and round. The child watches, unable to reach. No one else sees it, not even the bird. The wind blows, but the ball stays still. The child tries to climb, but the branch is too high.
 
 [r1.where.v3.x10]
-The ball rolls down and lands in a basket beside the path.
+The ball rolls down and lands in a basket beside the path. The ball lies in the basket, safe and still. It is here, not there, where the path bends. The child sees it, no longer above the tree. The basket holds the ball, not the sky. The wind does not blow it away.
 
 [r1.where.v3.x11]
-The child walks ahead toward the bright blue sky.
+The child walks ahead toward the bright blue sky. The sky feels wide and open, full of air and light. No one else walks here, not even a bird or a mouse. It is only sky, and the child is here, not there. The child is alive, not asleep, not dead.
 
 [r1.where.v3.x12]
-A bird flies backward, then lands on a branch above.
+A bird flies backward, then lands on a branch above. The child feels the air move, light and warm. The bird blinks, its eye sharp and black. The child does not move, not even to breathe. The child wonders if the bird is afraid. The bird does not look at the child.
 
 [r1.where.v3.x13]
-The child bends down and picks up a small, smooth stone.
+The child bends down and picks up a small, smooth stone. It is not there, not in the sky, not in the tree, but here, in the hand. The child knows this stone is real, not a dream, not a lie. It came from here, not from far away, not from another place.
 
 [r1.where.v3.x14]
-The ball rolls down the hill and lands in a basket beside the path.
+The ball rolls down the hill and lands in a basket beside the path. The ball is here, not there, not above the tree, not in the sky. It rolled down the hill and landed in the basket, beside the path. The basket is made of bamboo, strong and light, able to hold things.
 
 [r1.where.v3.x15]
-The child picks up the basket and walks ahead toward the garden.
+The child picks up the basket and walks ahead toward the garden. The child walks ahead toward the garden, basket in hand. The air is warm, full of life and smell. The child stops, looking around, eyes wide with wonder. The garden is full of colour, full of sound. A small bird sings from a branch, high above.

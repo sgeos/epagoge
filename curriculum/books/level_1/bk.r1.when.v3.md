@@ -53,31 +53,31 @@ Coming before all others in time or order.
 The time that comes after now, what will happen.
 
 [r1.when.v3.s01]
-The sun rose early on a bright day.
+The sun rose early on a bright day. The air felt warm and still above the grass. The boy stood alone, looking ahead. He had a basket, filled with apples. He did not fear the dark or the noise. He believed he could find the secret place. The path wound through trees and stones.
 
 [r1.when.v3.s02]
-The boy began to walk down the path toward the forest.
+The boy began to walk down the path toward the forest. The boy walked along the path toward the forest. The air above felt still and bright. He felt alive and ready to find the secret place. He had a basket, filled with apples, and he was not afraid. He walked ahead, step by step, with no doubt.
 
 [r1.when.v3.s03]
-He picked it up and placed it in his pocket.
+He picked it up and placed it in his pocket. He wondered what it was made of, though he could not say. It looked like a small round piece of metal, but not copper. He felt it again, turning it over in his hand. He did not know why he kept it.
 
 [r1.when.v3.s04]
-He felt afraid, but he kept going, step by step.
+He felt afraid, but he kept going, step by step. The path ahead was narrow and covered in leaves. The air was still, and the sky above was grey. Every sound seemed too loud, too close. His hands were cold, his breath quick and shallow. He thought of the small metal piece in his pocket.
 
 [r1.when.v3.s05]
-He pushed it open and stepped inside.
+He pushed it open and stepped inside. The air felt thick, like something alive. He saw a shape above, a light bright and round. It hung from a wire, swinging slow. He took a step, then another, across the floor. He reached, but did not touch. A toy bear sat beside it, one eye missing.
 
 [r1.when.v3.s06]
-The room was dark, but a soft light shone from above.
+The room was dark, but a soft light shone from above. He stood still, feeling the air move like a breath. He looked around, but saw nothing alive. He stepped across the floor, slow and careful. He reached for the light, but stopped. He felt a pull, like something wanted him to stay.
 
 [r1.when.v3.s07]
-He opened it and began to write, one word at a time.
+He opened it and began to write, one word at a time. Each word felt heavy, like it belonged above the sky. He wrote about the past, then the future, and what might come next. The pen moved slow, as if afraid to make a mistake. He thought of the light above, and how it felt like a breath.
 
 [r1.when.v3.s08]
-He sat still, waiting for the next part to begin.
+He sat still, waiting for the next part to begin. The air felt thick, like it had weight above the quiet. He thought about the past, then the future, and what might come next. The light above seemed to breathe, steady and slow. He felt alone, though the room held more than one thing.
 
 [r1.when.v3.x14]
-He found a small key hanging from a string above the door.
+He found a small key hanging from a string above the door. He held the key above the door, its metal warm from the air. He felt the weight of it, the shape of it, the way it hung. He knew it belonged to something, though he could not say what.
 
 [r1.when.v3.x15]
-He turned the key in the lock and pushed the door wider.
+He turned the key in the lock and pushed the door wider. The air inside was still, thick with dust and old wood. He saw a table, a chair, a book lying open. He reached for it, fingers brushing the edge. Something moved behind the curtain. He felt the weight of being watched, but stayed still.

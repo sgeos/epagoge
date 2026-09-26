@@ -56,28 +56,28 @@ At any time in the past, future, or now.
 To come to the end of something.
 
 [r1.when.s01]
-He gave it warm milk and covered it with a soft cloth.
+He gave it warm milk and covered it with a soft cloth. He sat by the window, watching the breeze lift the curtain. The apple on the table seemed brighter than before. He could not say why, but it felt right to stay. He thought of the road ahead, long and winding.
 
 [r1.when.s02]
-He felt happy, and the day was not yet done.
+He felt happy, and the day was not yet done. The apple on the table seemed brighter than before. He could not say why, but it felt right to stay. He thought of the road ahead, long and winding. He knew the future would be better, because he had helped.
 
 [r1.when.s03]
-He knew the future would be better, because he had helped.
+He knew the future would be better, because he had helped. The apple on the table seemed brighter than before. He felt alive and ready to begin. The air was warm and full of light. He could hear birds singing above the trees. He thought of his brother, far away but not forgotten.
 
 [r1.when.s42]
-I started building a small boat from bamboo early in the day.
+I started building a small boat from bamboo early in the day. The boat was small but strong, made to float on water. I used string and glue to hold them in place. The boat had a flat bottom and a curved front. I tested it by placing it on the grass.
 
 [r1.when.s43]
-I tried it in the water, it floated, so I felt happy.
+I tried it in the water, it floated, so I felt happy. I wanted to follow it, but I stayed still. The sun shone bright above the trees. I felt calm, not afraid of the water. I thought about building another boat. This one could be bigger, stronger. I looked around the clearing.
 
 [r1.when.s47]
-Carlo dug under a log to find the animal.
+Carlo dug under a log to find the animal. The animal was small, alive, and covered in mud. He saw its eyes, open and wide with fear. Carlo knew he had to help, not harm. Its body was weak, its breath shallow. He wanted to bring it home, to care.
 
 [r1.when.s48]
-He found the cold, tired animal and took it home.
+He found the cold, tired animal and took it home. He placed it on a soft blanket near the warm stove. He thought about how alone it must have been. He wanted to help, to make it safe and whole. He brought water in a small cup, careful not to spill.
 
 [r1.when.s49]
-Carlo waited all day for the animal to wake up.
+Carlo waited all day for the animal to wake up. He thought about how alone it must have been. He brought water in a small cup, careful not to spill. He placed it near the warm stove, where the air was bright. He checked the blanket, made sure it was soft and dry.
 
 [r1.when.s50]
-When it did, it moved quickly around the room.
+When it did, it moved quickly around the room. It reached the window, pressed its face against the glass. It saw the sky, bright and blue above the trees. It wanted to go outside, but the door was locked. It turned, saw the basket, and climbed inside. It felt the air, warm and still, full of quiet.

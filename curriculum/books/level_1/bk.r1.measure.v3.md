@@ -59,25 +59,25 @@ Ruler means a straight tool used to measure length.
 Shorter means having less length than something else.
 
 [r1.measure.v3.s01]
-The boy found a long stick and held it against a shorter stick to compare.
+The boy found a long stick and held it against a shorter stick to compare. The stick was longer than the other one. He held it above his head to compare. The longer stick reached higher than the shorter one. The longer stick was not equal in size. He knew the longer one was better for reaching.
 
 [r1.measure.v3.s02]
-He placed the ruler next to the stick to measure the length.
+He placed the ruler next to the stick to measure the length. He felt the stick was better for reaching high places. The stick was not equal to the ruler in size. He could not fit the stick inside the box. The stick was too long for the narrow path.
 
 [r1.measure.v3.s03]
-The stick was longer than the ruler, so he knew it was bigger.
+The stick was longer than the ruler, so he knew it was bigger. He could reach above the tall grass with the stick. He felt the stick was better for reaching high places. The stick was not equal to the ruler in size. He could not fit the stick inside the box.
 
 [r1.measure.v3.s04]
-The longer stick reached deeper into the grass than the shorter one.
+The longer stick reached deeper into the grass than the shorter one. It could touch the hidden apple below the surface. He felt the stick was better able to reach far. The stick was not equal to the ruler in length. He could not fit the stick across the box.
 
 [r1.measure.v3.s05]
-He used the ruler again and found the longer stick was three times longer.
+He used the ruler again and found the longer stick was three times longer. He measured the stick again and found it was longer than the ruler by three times. He felt the stick was better able to reach deep into the ground. The ruler was not able to go across the gap.
 
 [r1.measure.v3.s06]
-The boy decided to build a bridge with the sticks to cross the puddle.
+The boy decided to build a bridge with the sticks to cross the puddle. The boy tied the longer stick across the puddle. He felt the stick was strong enough to hold his weight. He looked ahead and saw the other side was safe. He decided to use the stick as a bridge.
 
 [r1.measure.v3.s07]
-They agreed that the longer stick was better for the bridge.
+They agreed that the longer stick was better for the bridge. The stick was longer than the other one. The boy knew this was true. He felt the stick was better for the bridge. The stick held his weight above the puddle. He stepped across with care. The stick did not break.
 
 [r1.measure.v3.s08]
-The boy learned that measuring helps you know what is better.
+The boy learned that measuring helps you know what is better. The boy knew that measuring helped him know what was better. He felt the stick was longer than the other one. The stick held his weight above the puddle. He stepped across with care. The stick did not break.

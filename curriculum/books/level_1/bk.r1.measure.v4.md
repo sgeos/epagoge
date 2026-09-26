@@ -62,22 +62,22 @@ Ruler is a tool used to measure length.
 Shorter means having less length than something else.
 
 [r1.measure.v4.s01]
-The blue block is longer than the red block.
+The blue block is longer than the red block. This one is longer than that one. The length is different. I can measure it. The blue block goes across the table. The red block is shorter. The blue block stands above the red one. It reaches further. The blue block is not the same.
 
 [r1.measure.v4.s02]
-I want to compare their lengths.
+I want to compare their lengths. The blue block reaches further above the red one. This one is longer than that one. I measure from the same start point. The length is different, not the same. I place the ruler across both blocks. The blue block is longer, not shorter.
 
 [r1.measure.v4.s03]
-I use the ruler to measure both.
+I use the ruler to measure both. The blue block reaches further above the red one. This one is longer than that one. The length is different, not the same. I place the ruler across both blocks. The blue block is longer, not shorter. The ruler shows five units for the blue block.
 
 [r1.measure.v4.s04]
-The blue block measures five units.
+The blue block measures five units. The red block measures three units. Five is more than three. This one is longer than that one. The length is not equal. The blue block reaches further above. The red block is shorter. The space between them is not the same. The blocks are not alike.
 
 [r1.measure.v4.s05]
-The red block measures three units.
+The red block measures three units. It is shorter than the blue block. This one is longer than that one. The space above the red block is greater. The blue block reaches further above. The blocks are not alike. The red block is not equal in length. The distance between them is not the same.
 
 [r1.measure.v4.s06]
-The blue block is longer, so it is bigger.
+The blue block is longer, so it is bigger. It reaches higher above the table. The red block lies below it, shorter and smaller. This one is longer than that one, as shown by the space between. The distance above the red block is greater than below. The blue block is not alike in length.
 
 [r1.measure.v4.s07]
-I place the red block next to the blue block.
+I place the red block next to the blue block. The blue block reaches higher above the table. The red block lies below it, shorter and smaller. This one is longer than that one, as shown by the space between. The distance above the red block is greater than below.

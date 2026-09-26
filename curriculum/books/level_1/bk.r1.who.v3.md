@@ -41,43 +41,43 @@ She said the cup was full. Write down that it was her who said it.
 A name is a word used to call a person, animal, or thing.
 
 [r1.who.v3.s01]
-She said the cup was full.
+She said the cup was full. The cup was full of water. The water was cold and clear. She held it above her head. The cup did not break. The cup was made of glass. It felt heavy in her hand. She could not put it down. The cup was full again.
 
 [r1.who.v3.s02]
-The cup was full of water.
+The cup was full of water. She could not put it down. The water felt cold against her hand. She thought about the sky above. The sky was bright and blue. She wanted to go outside. She walked across the yard. She saw a bird on a branch. The bird sang a soft song.
 
 [r1.who.v3.s03]
-She said it was full.
+She said it was full. The cup held water, not air. She could not let it go. The water felt cold, like ice. She thought about the sky above. The sky was bright and blue. She wanted to go outside. She walked across the yard. She saw a bird on a branch.
 
 [r1.who.v3.s04]
-I wrote down her name.
+I wrote down her name. The name was clear on the paper. She could not forget it. The name felt alive, like a breath. She thought about the sky above. The sky was bright and blue. She wanted to go outside. She walked across the yard. She saw a bird on a branch.
 
 [r1.who.v3.s05]
-Her name was clear on the paper.
+Her name was clear on the paper. She looked at the cup. The cup was full. She saw the water inside. The water looked bright and blue. She thought about the sky above. She felt the air around her. She was not afraid. She wanted to go outside. She walked across the yard.
 
 [r1.who.v3.s06]
-The mark showed her name.
+The mark showed her name. She thought about the day ahead. The air felt warm and still. She wanted to go outside again. The cup was full of water. She saw the light above the cup. The water looked bright and blue. She felt the cool glass under her hand.
 
 [r1.who.v3.s07]
-I made the mark with a pen.
+I made the mark with a pen. The mark showed her name. She felt the cool glass under her hand. The cup was full of water. The light above the cup looked bright and blue. She thought about the day ahead. The air felt warm and still. She wanted to go outside again.
 
 [r1.who.v3.s08]
-The mark was not a guess.
+The mark was not a guess. It showed she had seen the truth. She knew the cup had been filled by someone else. The light above still shone blue and bright. No one else was in the room, yet she heard a sound. A soft breath, not her own, came from the corner.
 
 [r1.who.v3.s09]
-It showed who said it.
+It showed who said it. She said the cup was full. The blue light above showed the truth. No one else was there, but she heard a breath. It came from the corner, not her own. The cup had been filled before she saw it. She knew it was not empty.
 
 [r1.who.v3.s10]
-No one else said it.
+No one else said it. She stood still, listening to the breath above the floor. The cup was full, not empty, and the light stayed blue. She could not move, not even to breathe. The air felt thick, like a blanket pulled too tight. She knew the truth, though no one else could see it.
 
 [r1.who.v3.s11]
-I kept the paper safe.
+I kept the paper safe. The cup was full, not empty, and the light stayed blue. She could not move, not even to breathe. The air felt thick, like a blanket pulled too tight. She knew the truth, though no one else could see it. The name and mark were true.
 
 [r1.who.v3.s12]
-The name and mark were true.
+The name and mark were true. She said the cup was full. The air felt thick, like a blanket pulled too tight. She could not move, not even to breathe. No one else could see it, but she knew. The paper stayed safe in her pocket. She felt the weight of it, warm and real.
 
 [r1.who.v3.x14]
-She kept the paper in her pocket, where it stayed safe and warm.
+She kept the paper in her pocket, where it stayed safe and warm. The air felt still, like a breath held too long. She could not move, not even to blink. No one else could see it, but she knew. The mark was true, the name was real. She felt the weight, the shape, the proof.
 
 [r1.who.v3.x15]
-The next morning, she showed the paper to her teacher, who smiled and said it was true.
+The next morning, she showed the paper to her teacher, who smiled and said it was true. She said the cup was full. The water inside shone bright, like a small sun. She could not believe it, not even when she looked again. The cup held more than it should, more than possible.
