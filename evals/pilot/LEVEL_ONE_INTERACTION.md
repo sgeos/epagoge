@@ -242,3 +242,85 @@ prompted with a question it returns to declarative continuation.
 model took perplexity from 126 to 41 and bought two narrow, checkable
 behaviours. Whether that is worth eleven hours is the operator's call, and
 the figures are here rather than an opinion about them.
+
+---
+
+## The teacher's rating history
+
+The same teacher model was asked the same question twice, in one
+conversation, with its first answer still in context. **Both ratings and
+both sets of reasons are recorded**, because the change of mind is worth
+more than either verdict.
+
+| Asked | Corpus | Perplexity | Rating |
+| --- | --- | --- | --- |
+| 2026-09-25 | 55,510 words | 126 | **Extremely disappointing** |
+| 2026-09-26 | 172,810 words | 41 | **Slightly disappointing** |
+
+The four options offered were extremely disappointing, slightly
+disappointing, slightly impressive, extremely impressive. It was told it
+could say the honest answer lay outside them, and did not.
+
+### What it was shown between the two
+
+The capacity sweep, which tested its explanation directly. The corpus
+tripling and the concentration figures. The scaling rate measured against
+one held-out set. **And the withdrawal of the question-mark trigger it had
+built a theory on**, stated as this project's error rather than left in
+place.
+
+It was also told plainly what still does not work: no answering, no
+coherence across sentences, and more `cup` at a fixed temperature than
+before.
+
+### What it said the second time
+
+> "My first answer, extremely disappointing, was too harsh, and I now
+> withdraw it."
+
+**What moved it**: the scaling curve holding and the perplexity drop, which
+it said "directly contradict my earlier assumption that the corpus was
+structurally impoverished."
+
+**What did not**: the persistence of `cup`, which it re-read as "a symptom
+of overrepresentation, not a structural flaw."
+
+**Its summary**: "It is not stuck in a trap. It is learning."
+
+### Where the second answer is unsupported, which is the point of recording it
+
+**It withdrew a claim it was shown to be wrong about and immediately made a
+new one in the opposite direction.** From "the corpus is not a curriculum
+but a trap" to "the data supports the project's core hypothesis: that a
+graded, authored corpus can improve pretraining when scaled."
+
+**Nothing measured tests that.** What was measured is that more data lowers
+held-out loss, which is true of nearly any corpus. The ordering hypothesis
+needs a flat-order control and that ablation has never run. Its further
+claim that the corpus improves learning "not just in size, but in quality"
+has no comparison corpus behind it at all.
+
+**It also swapped one wrong attribution for another.** It attributed the
+remaining incoherence to "the current model's capacity to generalize."
+If that means parameters, the capacity sweep it had just been shown says
+the opposite: the curve saturates, so the model is data-limited.
+
+**And it asserted learned bias over evidence to the contrary.** It was told
+that the `cup` repetition reverses as temperature rises, which points to
+sharpness. It concluded learned bias without addressing that.
+
+### What this is worth
+
+**As a rating, little.** A model asked to judge prose it wrote itself,
+shown evidence chosen by the asker, moved one step on a four-point scale.
+
+**As a demonstration, more.** Both answers were stated with equal
+confidence and both overreached their evidence, in opposite directions,
+about fifteen hours apart. **That is the behaviour this project exists to
+train against**, produced on demand by the model writing its corpus, and it
+is the clearest argument in the repository for why
+`docs/spec/CLAIM_TAXONOMY.md` marks the epistemic status of every record
+and why `CLAUDE.md` forbids stating a curriculum benefit as established.
+
+The session that produced both is not in version control. The prompts and
+the model's answers are quoted above in full where they bear on a claim.
