@@ -38,7 +38,7 @@ import sys
 import time
 from collections.abc import Mapping
 from pathlib import Path
-from typing import cast
+from typing import Final, cast
 
 import torch
 from torch import Tensor
@@ -74,6 +74,22 @@ from epagoge.vocabulary import load_vocabulary
 
 ROOT = Path(__file__).resolve().parent.parent
 
+ARMS: Final[tuple[str, ...]] = ("curriculum", "topological", "shuffled")
+"""The orderings compared, and why there are three.
+
+**`shuffled` was added 2026-09-26 and its absence was a real gap.** The
+other two both respect the prerequisite graph, so the ablation compared two
+curricula against each other. A result from that pair says which valid
+ordering is better and says nothing about whether ordering helps, which is
+the project's actual hypothesis.
+
+It also answers the control Wu, Dyer and Neyshabur ask for. They found any
+curriculum benefit attributable to the training set growing rather than to
+the order, and their control grows the set with random membership. See
+`docs/decisions/CURRICULUM_LITERATURE.md` for what that does and does not
+isolate in a trainer that cycles a fixed ordered list.
+"""
+
 
 def book_order(
     level: int, graph: ConceptGraph, seed: int, arm: str, plan: sched.Schedule
@@ -102,7 +118,30 @@ def book_order(
     teaches = {b.id: by_unit.get(b.subject, set()) for b in books}
     prerequisites = {n: set(graph.prerequisites_of(n)) for n in graph.nodes}
     deps = book_prerequisites(books, teaches, prerequisites)
-    if arm == "topological":
+    if arm == "shuffled":
+        # **The flat control, and it did not exist until 2026-09-26.** The two
+        # arms above it both respect the prerequisite graph, so the ablation
+        # compared two curricula rather than a curriculum against no
+        # curriculum. A result from those two says which valid ordering is
+        # better, not whether ordering helps.
+        #
+        # It is also this design's answer to Wu, Dyer and Neyshabur, who
+        # found any curriculum benefit attributable to the training set
+        # growing rather than to the order, and whose control is a set that
+        # grows with random membership. In a trainer that cycles a fixed
+        # ordered list, the order IS the growth schedule for the first epoch,
+        # so a random order is that control.
+        #
+        # **The growth confound is smaller here than in their setting and the
+        # record should say so.** At 1,458 chunks and batch 8 an epoch is 182
+        # batches, so a 1,600-step run is about 8.8 epochs and every arm has
+        # seen everything after the first eleven percent. After that, set size
+        # cannot explain a difference and only the order within each cycle
+        # can.
+        shuffled = [b.id for b in books]
+        random.Random(seed).shuffle(shuffled)
+        names = shuffled
+    elif arm == "topological":
         names = random_linear_extension(deps, random.Random(seed))
     else:
         depth = graph.prerequisite_depth()
@@ -256,11 +295,19 @@ def main(argv: list[str]) -> int:
             f"{earlier.size} words into {tokeniser.size}"
         )
 
+    # **Three arms, and the third is the one that makes the comparison mean
+    # something.** `curriculum` and `topological` both respect the
+    # prerequisite graph, so a difference between them says which valid
+    # ordering is better rather than whether ordering helps at all.
+    # `shuffled` ignores the graph. The paired test below still contrasts
+    # curriculum against topological, because that is the pre-registered
+    # comparison; shuffled is reported alongside so a reader can see whether
+    # either curriculum beats no curriculum.
     results: list[dict[str, object]] = []
     started = time.time()
     for seed in range(args.seeds):
         row: dict[str, object] = {"seed": seed}
-        for arm in ("curriculum", "topological"):
+        for arm in ARMS:
             loss = train_once(
                 chunks,
                 order_for(arm, seed),
