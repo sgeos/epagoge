@@ -61,7 +61,6 @@
     "dict.1.contact": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:contact"}, "defines": {"kind": "word", "target": "contact"}},
     "dict.1.cooked": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cooked"}, "defines": {"kind": "word", "target": "cooked"}},
     "dict.1.cool": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cool"}, "defines": {"kind": "word", "target": "cool"}},
-    "dict.1.copied": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copied"}, "defines": {"kind": "word", "target": "copied"}},
     "dict.1.copper": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copper"}, "defines": {"kind": "word", "target": "copper"}},
     "dict.1.copy": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copy"}, "defines": {"kind": "word", "target": "copy"}},
     "dict.1.correct": {"concepts": ["mistake"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:correct"}, "defines": {"kind": "word", "target": "correct"}},
@@ -770,8 +769,6 @@ Cooked is when food has been made hot so you can eat it.
 [dict.1.cool]
 Cool is a little cold.
 
-[dict.1.copied]
-Copied is when someone has made a thing the same as another thing.
 
 [dict.1.copper]
 Copper is a metal that has a red brown colour.

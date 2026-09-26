@@ -711,15 +711,28 @@ def load_vocabulary(path: Path) -> Vocabulary:
 
 
 def _check_plurals(vocabulary: Vocabulary) -> list[Violation]:
-    """Every noun must have its plural admissible at the noun's level.
+    """Every count noun must have its plural admissible at its level.
 
     The same rule as verb inflections, and it exists for the same reason.
     A noun admitted without its plural sends a generator reaching for a
     form that is not there.
+
+    **A noun marked `mass` is exempt**, because it has no plural and the
+    rule was manufacturing one.
     """
     out: list[Violation] = []
     for term in vocabulary.terms:
-        if "noun" not in term.pos.split():
+        parts = term.pos.split()
+        if "noun" not in parts:
+            continue
+        # **A MASS NOUN HAS NO PLURAL, and the lexicon had no way to say
+        # so.** The rule below demanded one from every noun, so `fun`,
+        # `magic` and the noun sense of `full` each carried a form that is
+        # not English: `funs`, `magics`, `fulls`. Found on 2026-09-26 by
+        # judging the unused surface forms one at a time, which is the only
+        # thing that would have found it, since a form nobody writes is
+        # invisible to every other check.
+        if "mass" in parts:
             continue
         form = plural(term.word)
         if form == term.word or form in vocabulary.core:
@@ -915,6 +928,20 @@ def _parse_source(raw: object, where: str) -> str:
     return raw
 
 
+RECOGNISED_POS: Final[tuple[str, ...]] = ("verb", "noun", "adjective", "mass")
+"""What a term may claim to be.
+
+**`mass` is a qualifier on `noun`, not a part of speech**, and it is here
+because the lexicon had no way to say that a noun has no plural. Without it
+the plural rule demanded one from every noun and the lexicon carried
+`funs`, `magics` and `fulls`, none of which is English. Added 2026-09-26.
+
+It is deliberately not a separate field. A reader asking what a word is
+should find the whole answer in one place, and the plural rule is the only
+thing that consults it.
+"""
+
+
 def _parse_pos(raw: object, where: str) -> str:
     if raw is None:
         return ""
@@ -922,11 +949,15 @@ def _parse_pos(raw: object, where: str) -> str:
         raise ValueError(f"{where}.pos: expected a string")
     parts = raw.split()
     for part in parts:
-        if part not in ("verb", "noun", "adjective"):
+        if part not in RECOGNISED_POS:
             raise ValueError(
-                f"{where}.pos: only 'verb', 'noun' and 'adjective' are "
-                f"recognised, got {part!r}"
+                f"{where}.pos: only {', '.join(repr(p) for p in RECOGNISED_POS)} "
+                f"are recognised, got {part!r}"
             )
+    if "mass" in parts and "noun" not in parts:
+        raise ValueError(
+            f"{where}.pos: 'mass' qualifies 'noun' and {raw!r} has no noun"
+        )
     if len(set(parts)) != len(parts):
         raise ValueError(f"{where}.pos: repeated part of speech in {raw!r}")
     return " ".join(parts)

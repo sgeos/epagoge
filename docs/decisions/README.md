@@ -34,6 +34,9 @@ Decision records, and the open questions that block implementation.
 - `BOOK_ATTRIBUTION.md` decided. A book's `author` is the project, its
   `licence` is CC0-1.0, and its two dates are derived from version
   history rather than written. Names what was rejected and why.
+- `UNUSED_FORMS.md` decided. A judgement on every unused surface form at
+  level one. Seven culled as not English, four headwords left to the
+  operator, and two defects found in the lexicon model itself.
 - `LICENSING.md` decided. 0BSD for software, CC0 for corpus and
   documentation, third-party material under `sources/` excluded from both.
 - `TRAINING_TECHNIQUES.md` decided. Maximal update parametrization, Muon,

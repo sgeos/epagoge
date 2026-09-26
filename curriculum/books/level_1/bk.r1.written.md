@@ -15,7 +15,7 @@
   "teaches": "Writing creates lasting records that help us remember, and different kinds of writing, like lists, logs, and tallies, serve specific purposes in tracking time, actions, and thoughts.",
   "records": {
     "r1.written.d00": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.written"}, "defines": {"kind": "topic", "target": "r1.written"}},
-    "r1.written.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copied"}, "defines": {"kind": "word", "target": "copied"}},
+    "r1.written.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copy"}, "defines": {"kind": "word", "target": "copy"}},
     "r1.written.d41": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:log"}, "defines": {"kind": "word", "target": "log"}},
     "r1.written.d44": {"concepts": ["keeping_count"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tally"}, "defines": {"kind": "word", "target": "tally"}},
     "r1.written.s01": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},

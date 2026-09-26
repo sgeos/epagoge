@@ -15,7 +15,7 @@
   "teaches": "Writing creates a lasting record that stays even when memory fades. Different ways of writing, like lists, notes, or a diary, can help kids keep track of their lives and remember what matters.",
   "records": {
     "r1.written.v4.d00": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.written"}, "defines": {"kind": "topic", "target": "r1.written"}},
-    "r1.written.v4.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copied"}, "defines": {"kind": "word", "target": "copied"}},
+    "r1.written.v4.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copy"}, "defines": {"kind": "word", "target": "copy"}},
     "r1.written.v4.d02": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:diary"}, "defines": {"kind": "word", "target": "diary"}},
     "r1.written.v4.d03": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:list"}, "defines": {"kind": "word", "target": "list"}},
     "r1.written.v4.s01": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},

@@ -15,7 +15,7 @@
   "teaches": "Writing and marking things down helps you remember even when you forget, and stories can lead you to places you never knew existed.",
   "records": {
     "r1.written.v2.d00": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.written"}, "defines": {"kind": "topic", "target": "r1.written"}},
-    "r1.written.v2.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copied"}, "defines": {"kind": "word", "target": "copied"}},
+    "r1.written.v2.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copy"}, "defines": {"kind": "word", "target": "copy"}},
     "r1.written.v2.d02": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:diary"}, "defines": {"kind": "word", "target": "diary"}},
     "r1.written.v2.d03": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:list"}, "defines": {"kind": "word", "target": "list"}},
     "r1.written.v2.s01": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:marks-stand-for-things"}},

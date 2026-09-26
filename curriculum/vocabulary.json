@@ -1500,15 +1500,6 @@
       "pos": "adjective"
     },
     {
-      "word": "copied",
-      "concept": "written_record",
-      "level": 1,
-      "pos": "noun",
-      "forms": [
-        "copieds"
-      ]
-    },
-    {
       "word": "copper",
       "concept": "metal",
       "level": 1
@@ -1519,8 +1510,18 @@
       "level": 1,
       "pos": "verb",
       "forms": [
+        "copied",
         "copies",
         "copying"
+      ]
+    },
+    {
+      "word": "copy",
+      "concept": "written_record",
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "copies"
       ]
     },
     {
@@ -2338,8 +2339,6 @@
       "concept": "spatial_position",
       "level": 1,
       "forms": [
-        "farrer",
-        "farrest",
         "further",
         "furthest"
       ],
@@ -2700,21 +2699,17 @@
       "word": "full",
       "concept": "emptiness",
       "level": 1,
-      "pos": "adjective noun",
+      "pos": "adjective noun mass",
       "forms": [
         "fuller",
-        "fullest",
-        "fulls"
+        "fullest"
       ]
     },
     {
       "word": "fun",
       "concept": "feeling",
       "level": 1,
-      "pos": "noun",
-      "forms": [
-        "funs"
-      ]
+      "pos": "noun mass"
     },
     {
       "word": "function",
@@ -3974,10 +3969,7 @@
       "word": "magic",
       "concept": "real_and_pretend",
       "level": 1,
-      "pos": "noun",
-      "forms": [
-        "magics"
-      ]
+      "pos": "noun mass"
     },
     {
       "word": "man",
@@ -7079,7 +7071,6 @@
       "word": "thief",
       "concept": "person",
       "forms": [
-        "thiefs",
         "thieves"
       ],
       "level": 1,

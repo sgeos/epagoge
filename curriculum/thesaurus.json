@@ -745,16 +745,16 @@
       ]
     },
     {
-      "word": "copied",
-      "concept": "written_record"
-    },
-    {
       "word": "copper",
       "concept": "metal"
     },
     {
       "word": "copy",
       "concept": "toy"
+    },
+    {
+      "word": "copy",
+      "concept": "written_record"
     },
     {
       "word": "corner",

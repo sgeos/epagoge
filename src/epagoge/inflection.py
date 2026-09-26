@@ -345,6 +345,9 @@ IRREGULAR_PLURAL: Final[dict[str, str]] = {
     "loaf": "loaves",
     "half": "halves",
     "self": "selves",
+    # Missing until 2026-09-26, so the lexicon carried `thiefs`. Found by
+    # judging the unused surface forms one at a time.
+    "thief": "thieves",
     "fish": "fish",
     "sheep": "sheep",
     "deer": "deer",

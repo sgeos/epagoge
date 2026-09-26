@@ -16,7 +16,7 @@
   "teaches": "Readers learn that writing things down makes a permanent mark that stays after memory fades, and that tools like lists, notes, and diaries help us remember what matters.",
   "records": {
     "r1.written.q1.d00": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "topic:r1.written"}, "defines": {"kind": "topic", "target": "r1.written"}},
-    "r1.written.q1.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copied"}, "defines": {"kind": "word", "target": "copied"}},
+    "r1.written.q1.d01": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:copy"}, "defines": {"kind": "word", "target": "copy"}},
     "r1.written.q1.d02": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:list"}, "defines": {"kind": "word", "target": "list"}},
     "r1.written.q1.a01": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.written"}},
     "r1.written.q1.a02": {"concepts": ["written_record"], "claim_class": "empirical", "provenance": {"source_claim": "topic:r1.written"}},
