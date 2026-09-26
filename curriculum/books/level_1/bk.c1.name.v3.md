@@ -44,40 +44,40 @@ A mark is a sign made on a surface by a pen or tool.
 To mean is to represent or stand for something else.
 
 [c1.name.v3.s01]
-The book is called "draw" because it has marks on each page.
+The book is called "draw" because it has marks on each page. Each mark is a sign of something real, not just lines. The marks mean things like a bird, a tree, or a house. A child drew a mark with a pen, and it felt alive. The mark grew a shape, like a hand or a face.
 
 [c1.name.v3.s02]
-A child drew a mark on the first page with a pen.
+A child drew a mark on the first page with a pen. The mark felt alive and began to move. It grew a shape like a bird above a tree. The bird had wings made of blue and black. The tree stood tall and green with branches wide. The mark was not just lines but a thing with a name.
 
 [c1.name.v3.s03]
-The mark meant a bird flying above a tree.
+The mark meant a bird flying above a tree. The thing had a name and it was real. It flew above the tree with wings made of blue and black. It did not fear the wind or the clouds above. It had a name that meant something special. The name was not just sound but meaning.
 
 [c1.name.v3.s04]
-The pen was blue and left a smooth line.
+The pen was blue and left a smooth line. The mark meant something real and alive. It was not just a shape but a name. The name belonged to the thing that flew. The child felt the name in their hand. They knew it was safe and strong. The name could not be taken away.
 
 [c1.name.v3.s05]
-The child drew another mark, this one a circle.
+The child drew another mark, this one a circle. The circle meant a sun, not the thing itself. It was bright and round, like the one above the sky. The child felt its shape, warm and alive. They knew it was not the real sun, but a mark that stood for it.
 
 [c1.name.v3.s06]
-The circle meant a sun, not the thing itself.
+The circle meant a sun, not the thing itself. A name is not the thing, just a word. The word "sun" stands for the bright round thing above. It does not burn, but it is named for heat. They can see the sky, but not the word. The word is only a mark on paper.
 
 [c1.name.v3.s07]
-The name "sun" is not the sun, just a word.
+The name "sun" is not the sun, just a word. It stands for the bright thing above. The word does not burn, but it is named for heat. They can see the sky, but not the word. The word is only a mark on paper. A name is not the thing, just a symbol.
 
 [c1.name.v3.s08]
-The book has many pages with marks that mean different things.
+The book has many pages with marks that mean different things. Each mark stands for a thing that lives, moves, or is made. A tree is not the word “tree,” just a shape and a name. A house is not the word “house,” just a place built of wood and stone.
 
 [c1.name.v3.s09]
-The marks are not the things they represent.
+The marks are not the things they represent. The thing has a name. The name is not the thing, but a way to speak about it. A name helps us talk, but it does not make the thing alive. Names belong to things, not to the air or sky. No name can hold a star, but we use names to find it.
 
 [c1.name.v3.s10]
-The book is called "draw" because it shows how marks mean things.
+The book is called "draw" because it shows how marks mean things. The name is a way to speak about the thing, not the thing itself. The thing remains alive in its own way, not in the name. A name cannot hold the sky, but it helps us find it.
 
 [c1.name.v3.s11]
-The child keeps drawing, knowing the name is not the thing.
+The child keeps drawing, knowing the name is not the thing. The bird is alive, not in the name, but in the line above the circle. The name is a way to speak about the thing, not the thing itself. The thing remains alive in its own way, not in the name.
 
 [c1.name.v3.x14]
-The child drew a line above the circle, making wings for the bird.
+The child drew a line above the circle, making wings for the bird. The bird flew above the circle, wings made of air and light. No name could hold it, not even one from the list. The line bent, not broken, not dead, but alive. The child knew the name was not the bird, but the mark was something real.
 
 [c1.name.v3.x15]
-The child smiled, knowing the mark was not the bird, but something more.
+The child smiled, knowing the mark was not the bird, but something more. It could not be named, not even by the list. The child felt it move, a shape above the circle, bright and true. No one could explain it, not even the teacher with her red pen. The mark was not a bird, not a thing, not a name.

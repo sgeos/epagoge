@@ -50,34 +50,34 @@ To have known something before, in the past.
 A thing kept hidden from others.
 
 [c1.know.s01]
-I forgot the answer, so I guessed, and my idea was wrong.
+I forgot the answer, so I guessed, and my idea was wrong. I saw the truth, but I could not speak, so I stayed still. The air felt thick, like something heavy above me. I thought of my mother, her face soft, her voice kind. I wanted to cry, but no sound came out.
 
 [c1.know.s02]
-I knew the secret, but I could not tell anyone, so I stayed quiet.
+I knew the secret, but I could not tell anyone, so I stayed quiet. The air above felt still, like a breath held too long. I could not move, not even to blink. I thought of the apple in the basket, its skin bright red. I wanted to cry, but no sound came out.
 
 [c1.know.s03]
-I remembered the path, and I followed it, step by step.
+I remembered the path, and I followed it, step by step. The air above felt still, like a breath held too long. I could not move, not even to blink. I thought of the apple in the basket, its skin bright red. I wanted to cry, but no sound came out.
 
 [c1.know.s04]
-I saw the sign, and I knew it was true, so I stayed.
+I saw the sign, and I knew it was true, so I stayed. The air above felt thick, like a weight pressed down. I could not move, not even to blink. I thought of the apple in the basket, its skin bright red. I wanted to cry, but no sound came out.
 
 [c1.know.s05]
-I tried to open the door, but it was locked, so I used a key.
+I tried to open the door, but it was locked, so I used a key. I pulled the door open, and cold air rushed in. I stepped out, my feet on the ground, the world outside still. I looked down, and saw the apple from the basket, still there. I picked it up, its skin warm, like it had been waiting.
 
 [c1.know.s06]
-I found the box, and inside was a gift I had never seen before.
+I found the box, and inside was a gift I had never seen before. I pulled the string, and the paper fell away. Inside was a small blue box, its surface smooth and cold. I lifted it, and it seemed to float in my hand. The world outside grew still again.
 
 [c1.know.s07]
-I felt sure I was right, so I spoke up, and others agreed.
+I felt sure I was right, so I spoke up, and others agreed. I knew the truth, so I spoke again. The air felt thick, but I stayed calm. The answer was clear, like the sky after rain. I felt strong, not afraid, but alive. I had not cheated, not even once.
 
 [c1.know.s08]
-I did not cheat, I did not lie, I did not hide, so I felt good, and stayed alive.
+I did not cheat, I did not lie, I did not hide, so I felt good, and stayed alive. I was able to stand, though my legs shook. I knew the truth, and I would not hide it again. The air felt still, but I stayed alive. I had not lied, not even once, and I felt strong.
 
 [c1.know.x13]
-I placed the key in the lock, turned it once, and stepped into a room filled with light, where everyone was waiting to hear my story.
+I placed the key in the lock, turned it once, and stepped into a room filled with light, where everyone was waiting to hear my story. I saw the names, all alike, written in gold, and felt my breath slow. The light grew brighter, not hot, but alive with meaning.
 
 [c1.know.x14]
-I stepped forward, the light growing brighter, and saw a long table with names written in gold.
+I stepped forward, the light growing brighter, and saw a long table with names written in gold. Each name was alive with meaning, shining like a star. I saw my own name, written in gold, and felt my breath slow. The air felt thick, like a blanket, but I could still breathe.
 
 [c1.know.x15]
-Everyone turned to me, and I knew my story was the one they had been waiting to hear.
+Everyone turned to me, and I knew my story was the one they had been waiting to hear. The air felt thick, but I was able to move forward. I saw my name, written in gold, and knew it was true. No one else could tell my tale, not even my closest friend.

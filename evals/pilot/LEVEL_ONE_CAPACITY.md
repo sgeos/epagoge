@@ -115,8 +115,19 @@ argument applies to filling them and was not made.
 
 **This is suggestive and not measured.** The two rates come from sweeps
 with different held-out sets, and a controlled test would subsample the
-current corpus into fractions the way the original did. Until that is run,
-neither rate should be quoted as the project's scaling law.
+current corpus into fractions the way the original did.
+
+**THAT TEST WAS RUN THE SAME DAY AND THIS SECTION IS WRONG.** Against one
+fixed held-out set, the most recent doubling of the corpus bought **0.316
+nats, the largest increment in the series**, so the worry that filling adds
+lower-value tokens is not supported. The 0.199 figure was an artifact of
+comparing across two held-out sets. See the re-measurement in
+`LEVEL_ONE_SCALING.md`, which also finds that the marginal rate rises
+rather than holding constant, so no single rate should be quoted.
+
+The section is kept rather than deleted because the reasoning that produced
+it was wrong in a way worth being able to find again: **a figure is
+comparable only to one measured against the same held-out set.**
 
 ## Files
 

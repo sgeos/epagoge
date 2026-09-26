@@ -57,6 +57,20 @@ def main(argv: list[str]) -> int:
         help="d_model values to sweep",
     )
     parser.add_argument("--layers", type=int, nargs="+", default=[4])
+    parser.add_argument(
+        "--fractions",
+        type=float,
+        nargs="+",
+        default=[1.0],
+        help=(
+            "fractions of the training chunks to train on, against one "
+            "fixed held-out set. This is how the corpus scaling rate is "
+            "measured, and IT WAS MISSING: the recorded scaling result was "
+            "produced by something never committed, so the number that sets "
+            "the project's corpus target could not be reproduced from the "
+            "tree. Added 2026-09-25."
+        ),
+    )
     parser.add_argument("--device", type=str, default=None)
     parser.add_argument(
         "--out", type=Path, default=ROOT / "evals/pilot/level_1_diagnosis.json"
@@ -90,49 +104,61 @@ def main(argv: list[str]) -> int:
         f"{tokens} corpus tokens, {len(held_out)} held out"
     )
     print(
-        f"{'width':>6} {'layers':>7} {'steps':>6} {'params':>10} "
-        f"{'train':>7} {'held':>7} {'gap':>7}"
+        f"{'frac':>6} {'chunks':>7} {'tokens':>8} {'width':>6} {'steps':>6} "
+        f"{'params':>10} {'train':>7} {'held':>7} {'gap':>7}"
     )
 
     rows: list[dict[str, object]] = []
     started = time.time()
-    for width in args.width:
-        for layers in args.layers:
-            for steps in args.steps:
-                config = ModelConfig(
-                    vocab_size=tokeniser.size,
-                    d_model=width,
-                    n_layers=layers,
-                    seq_len=args.seq_len,
-                )
-                result = train_diagnostic(
-                    chunks,
-                    train_ids,
-                    held_out,
-                    config,
-                    TrainConfig(steps=steps, batch_size=args.batch_size),
-                    args.seed,
-                    device,
-                    pad_id,
-                )
-                params = parameter_count(config)
-                print(
-                    f"{width:>6} {layers:>7} {steps:>6} {params:>10} "
-                    f"{result.train_loss:>7.3f} {result.held_out_loss:>7.3f} "
-                    f"{result.gap:>7.3f}"
-                )
-                rows.append(
-                    {
-                        "d_model": width,
-                        "layers": layers,
-                        "steps": steps,
-                        "parameters": params,
-                        "train_loss": result.train_loss,
-                        "held_out_loss": result.held_out_loss,
-                        "gap": result.gap,
-                        "curve": [list(p) for p in result.curve],
-                    }
-                )
+    for fraction in args.fractions:
+        # **The held-out set never shrinks with the fraction.** Every
+        # fraction is scored against the same chunks, or the comparison
+        # would be between models measured on different data and would
+        # say nothing about corpus size.
+        kept = max(1, int(len(train_ids) * fraction))
+        subset = train_ids[:kept]
+        subset_tokens = sum(len([i for i in chunks[c] if i != pad_id]) for c in subset)
+        for width in args.width:
+            for layers in args.layers:
+                for steps in args.steps:
+                    config = ModelConfig(
+                        vocab_size=tokeniser.size,
+                        d_model=width,
+                        n_layers=layers,
+                        seq_len=args.seq_len,
+                    )
+                    result = train_diagnostic(
+                        chunks,
+                        subset,
+                        held_out,
+                        config,
+                        TrainConfig(steps=steps, batch_size=args.batch_size),
+                        args.seed,
+                        device,
+                        pad_id,
+                    )
+                    params = parameter_count(config)
+                    print(
+                        f"{fraction:>6.3f} {len(subset):>7} {subset_tokens:>8} "
+                        f"{width:>6} {steps:>6} {params:>10} "
+                        f"{result.train_loss:>7.3f} {result.held_out_loss:>7.3f} "
+                        f"{result.gap:>7.3f}"
+                    )
+                    rows.append(
+                        {
+                            "fraction": fraction,
+                            "train_chunks": len(subset),
+                            "train_tokens": subset_tokens,
+                            "d_model": width,
+                            "layers": layers,
+                            "steps": steps,
+                            "parameters": params,
+                            "train_loss": result.train_loss,
+                            "held_out_loss": result.held_out_loss,
+                            "gap": result.gap,
+                            "curve": [list(p) for p in result.curve],
+                        }
+                    )
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(
