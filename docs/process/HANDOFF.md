@@ -1,12 +1,18 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-25, describing the tree at the commit that carries
+**Refreshed 2026-09-26, describing the tree at the commit that carries
 this refresh.** Session 4 published the repository, reviewed the operator's
 `keleusma` repository for practice worth adopting, gave every book its
-metadata, settled whether model capacity or corpus is the limit, made the
-scaling law reproducible, and doubled the corpus. **It also withdrew three
-of its own findings**, which are listed below because the reasoning that
-produced them is more useful than the claims were. Read this block, run
+metadata, closed the level-one word band, settled whether capacity or
+corpus is the limit, made the scaling law reproducible, and took the model
+from perplexity 120 to 41. **It also withdrew four of its own findings**,
+which are listed below because the reasoning that produced them is more
+useful than the claims were.
+
+**It ended by recommending that the loop stop.** Everything left at level
+one is a judgement per item or is blocked on a decision the operator holds,
+and the cheapest-looking remaining work is work the project has already
+decided against. `CURRENT_BRIEF.md` says which is which. Read this block, run
 the validity check, then stop and wait for the human prompt.
 
 **NO COMMIT HASH IS STAMPED HERE, deliberately.** A stamp naming the
@@ -45,7 +51,9 @@ discipline `CLAUDE.md` points to, and nowhere else.
 **Content** — each verified on 2026-09-25.
 
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twenty-one**
-   checks and **exits 0**, in about nine seconds.
+   checks and **exits 0**, in about nine seconds. **The metadata check
+   fails after a date rollover** until `tools/stamp_books.py --level 1` is
+   re-run, which is the check working rather than a defect.
 2. The suite reports **484** tests.
 3. `curriculum/vocabulary.json` holds **961 senses over 928 words**, of
    which **845** are at level one and **879** at level two. **178** core,
@@ -62,11 +70,11 @@ discipline `CLAUDE.md` points to, and nowhere else.
    validator exempts by design. This item read "every book is at sixteen
    spreads" until 2026-09-25, which anyone checking it would have found
    false.
-   **The word count is deliberately not asserted as an equality.** It was
-   **105,783** at this refresh, up from 55,510 that morning, and
-   `generators/fill_spreads.py` was still running. Check that it is **at
-   least** that, and that **110 or more** of the 244 content books are
-   inside the word band, with none above it.
+   **The word count is deliberately not asserted as an equality**, since
+   any later fill raises it. It was **172,810** at this refresh, up from
+   55,510 the previous morning. Check that it is **at least** that, that
+   **all 244** content books are inside the word band, and that none is
+   above it.
 7. `curriculum/provenance.json` gives every word a first commit and a
    reconstructed admission criterion.
 8. `git ls-files secret | wc -l` reports **0**, and history is clean of
@@ -107,25 +115,22 @@ counted against the requirement because a seed word needs no definition.
 | Goal | State |
 | --- | --- |
 | Level-one reference material | **Done.** 808 of 808, closure 100 percent |
-| Level-one corpus | **Complete, 110 of 244 books at length.** See below |
+| Level-one corpus | **Complete and at length.** 244 of 244, 172,810 words |
 | Corpus or capacity the limit? | **Settled.** Corpus. Saturates at 128 |
 | Scaling law | **Reproducible**, and the marginal rate rises |
 | Level-one book metadata | **Done.** All six fields on all 246 books |
-| Train a level-one model | **Done.** Interactive through `tools/talk.py` |
+| Train a level-one model | **Done.** Perplexity 41 at width 1024 |
 | Level-two reference material | **Done**, lexicon at 9 percent of target |
 | Level-two corpus | **One module of 27 scheduled** |
 | Level-two ablation | **Blocked** on corpus scale and on an endpoint |
 
-### Two live defects, both measured
+### One live defect, measured
 
-**The corpus is still short of its own length standard, and closing
-steadily.** The operator set fifty words a spread, give or take thirty. At
-this refresh **134 of the 244 content books are below the band, 110 are
-inside it and none is above**, against 229 below that morning.
-`generators/fill_spreads.py` does this at about three minutes a book and is
-the cheapest corpus growth available. **The scaling re-measurement says it
-is paying**: the most recent doubling bought 0.316 nats against a fixed
-held-out set, the largest increment in the series.
+**The corpus reached its length standard and the defect is closed.** All
+244 content books are inside the band, none above, 172,810 words against
+55,510 the previous morning. Measured on the finished corpus, the marginal
+rate is **0.300 nats a doubling** and the best model reaches perplexity
+**41** at width 1024, so growing it further would still pay.
 
 **A third of the level-one lexicon is never used.** 2,051 surface forms
 admitted, 1,363 used, **688 never**, and 11 headwords absent in every form.
@@ -138,7 +143,7 @@ should not close it.
 That is a schedule nobody has written, not a backlog of admissions, and it
 is the operator's.
 
-### Three findings this session withdrew, and why they are kept
+### Four findings this session withdrew, and why they are kept
 
 **Each was recorded as a measurement and was not one.** The reasoning is
 kept beside each claim rather than deleted, because the failure mode is
@@ -159,8 +164,15 @@ more reusable than the finding was.
    this as a measurement and built a theory on it.**
    `../../evals/pilot/LEVEL_ONE_INTERACTION.md`.
 
+4. **"Distinct-token share tracks quality."** Swept across temperature
+   the better-fit model is less varied at every one and recovers past the
+   worse model's figure by 1.2, and its attractor frequency falls from 24
+   to 3. **Both figures measure sharpness**, and a better model is sharper.
+   `../../evals/pilot/LEVEL_ONE_INTERACTION.md`.
+
 **The class they share is in `PROCESS_STRATEGY.md`**: before reporting a
-difference, say what was held fixed and check that it was.
+difference, say what was held fixed and check that it was. **All four were
+found by doubting a result, not by a new measurement.**
 
 ## Findings that outlive the session
 
