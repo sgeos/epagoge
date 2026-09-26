@@ -56,28 +56,28 @@ Pair means two things that are the same or belong together.
 A point is a small mark or the end of something sharp.
 
 [m1.count.v2.s01]
-One comes first, then two, then three, each thing gets the next number.
+One comes first, then two, then three, each thing gets the next number. Each number comes in order, one after another, never out of place. Three is more than two, and two is more than one, each one grows. The number three stands tall, like a tree, above the rest.
 
 [m1.count.v2.s02]
-Five is more than four, and four is more than three.
+Five is more than four, and four is more than three. Three stands tall, like a tree, above the rest. Each number comes in order, one after another, never out of place. Three is more than two, and two is more than one, each one grows. The number three stands tall, like a tree, above the rest.
 
 [m1.count.v2.s03]
-A pair of shoes fits one foot each, and both are alike.
+A pair of shoes fits one foot each, and both are alike. They walk together, side by side, never apart. They move in step, as if made to match. It helps the foot go ahead, not behind. It keeps the foot warm in cold weather. It does not need to speak, yet it helps.
 
 [m1.count.v2.s04]
-A match is a small stick that can burn and make light.
+A match is a small stick that can burn and make light. Fire needs air to live and grow. It can hurt if touched, but it helps when used right. A match can be made of wood or paper. It is small but able to change a dark room into a bright one.
 
 [m1.count.v2.s05]
-Zero means no apples in the basket.
+Zero means no apples in the basket. One apple sits in the basket. Two apples make a pair. Three apples are more than two. A basket holds more than one. Each apple is red and round. The basket is made of bamboo. It can hold many things. A ball, a book, a cup.
 
 [m1.count.v2.s06]
-Eight is more than five, and five is more than four.
+Eight is more than five, and five is more than four. One apple sits above two. Three apples make a group. Each apple is red and round. The basket holds more than one. A ball, a book, a cup, all fit inside. The bamboo basket is strong and wide. It can carry many things.
 
 [m1.count.v2.s07]
-The order of numbers is always the same.
+The order of numbers is always the same. One comes before two, and two comes before three. Three is not equal to two, and two is not equal to one. Each number has a place, and no number changes its order. The list goes on, and each number stays in its spot.
 
 [m1.count.v2.s08]
-One, two, three, four, five, six, seven, eight.
+One, two, three, four, five, six, seven, eight. Each number comes in order, and no number changes its place. Three is not equal to two, and two is not equal to one. The list goes on, and each number stays in its spot. One comes first, two comes next, and three comes after.
 
 [m1.count.v2.x15]
-Eight is more than seven, and seven is more than six.
+Eight is more than seven, and seven is more than six. Each number stays in its place, no number changes. Three comes after two, and two comes after one. The list goes on, and each number stays true. One is first, two is second, three is third. Four is more than three, and five is more than four.

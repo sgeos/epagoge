@@ -28,7 +28,7 @@ from typing import cast
 from epagoge import prompt as prompts
 from epagoge.book import WORDS_PER_SPREAD, book_head, parse_book, render_book
 from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
-from generate import ask, split_lines, well_formed
+from generate import TIMEOUTS, ask, split_lines, well_formed
 from generate_books import Tally, admissible_words
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,7 +65,14 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--level", type=int, default=1)
     parser.add_argument("--limit", type=int, default=5, help="books to fill")
     parser.add_argument("--attempts", type=int, default=2)
-    parser.add_argument("--timeout", type=int, default=240)
+    # **MEASURED 2026-09-25, and the old default of 240 was never measured.**
+    # Six calls of exactly this shape against a warm teacher took 4.2 to
+    # 10.5 seconds, median 6.0, so 240 was forty times the median. One run
+    # spent 26 timeouts at 240 seconds, which is 104 minutes and about two
+    # fifths of its wall clock, waiting on completions that never arrived.
+    # Sixty is ten times the median and nearly six times the slowest call
+    # observed, so what it cuts off is hung rather than slow.
+    parser.add_argument("--timeout", type=int, default=60)
     parser.add_argument(
         "--target",
         type=int,
@@ -149,7 +156,13 @@ def main(argv: list[str]) -> int:
         print(f"    grew {grew} spread(s), book now {total} words", file=sys.stderr)
         filled += 1
 
-    print(f"filled {filled} book(s), {added_words} word(s) added")
+    # **Say what the run lost, not only what it produced.** A summary that
+    # reports books filled and omits completions abandoned reads as a clean
+    # run whatever the teacher did.
+    print(
+        f"filled {filled} book(s), {added_words} word(s) added, "
+        f"{TIMEOUTS[0]} completion(s) abandoned"
+    )
     for reason, count in sorted(tally.reasons.items(), key=lambda kv: -kv[1])[:6]:
         print(f"  {count:4}  {reason}", file=sys.stderr)
     return 0

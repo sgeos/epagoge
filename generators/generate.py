@@ -192,6 +192,17 @@ def strip_terminal_control(raw: str) -> str:
     return "".join(out)
 
 
+TIMEOUTS = [0]
+"""How many completions this process gave up on.
+
+A list of one rather than a bare integer so a caller can read it without
+importing the name again after a rebind. **It exists because a run reported
+how many books it filled and never how much it lost.** Twenty-six timeouts
+at 240 seconds is 104 minutes, which was about two fifths of one run's
+wall clock and appeared nowhere in its summary.
+"""
+
+
 def ask(text: str, *, timeout: int) -> str:
     """Run one completion. Loud on failure, but never fatal to a long run.
 
@@ -211,6 +222,7 @@ def ask(text: str, *, timeout: int) -> str:
             check=True,
         )
     except subprocess.TimeoutExpired:
+        TIMEOUTS[0] += 1
         print(
             f"  teacher timed out after {timeout}s, treating as empty",
             file=sys.stderr,

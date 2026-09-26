@@ -53,31 +53,31 @@ Pair means two things that go together as one unit.
 A point is a single thing, a small part, or a moment in time.
 
 [m1.compare.v4.s01]
-The two red blocks are alike, but the blue one is different.
+The two red blocks are alike, but the blue one is different. They are the same size, same shape, and same colour. Each block fits in the same spot on the table. They are equal in every way. The red ones belong together, the blue stands alone. They were placed side by side by the same hand.
 
 [m1.compare.v4.s02]
-The pair of shoes lies on the floor, one near the door.
+The pair of shoes lies on the floor, one near the door. They are the same size, same shape, and same colour. They were placed side by side by the same hand. No one else could wear them. They belong together, not apart. They are alike in every way. They are equal, just as the blocks were.
 
 [m1.compare.v4.s03]
-She counts the blocks: one, two, three, four, five, six, seven, eight.
+She counts the blocks: one, two, three, four, five, six, seven, eight. Each block is a different colour but the same size and shape. They are alike in every way, just as the shoes were. No one block is better than another. The same hand placed them, just as before.
 
 [m1.compare.v4.s04]
-The pile of apples is more than the few left in the basket.
+The pile of apples is more than the few left in the basket. The apples in the pile are the same as those in the basket. Each apple is round, red, and shiny, just like the others. No apple is bigger or smaller than another. They are alike in every way, just as the blocks were.
 
 [m1.compare.v4.s05]
-The cat walks across the room, tail high, eyes on the ball.
+The cat walks across the room, tail high, eyes on the ball. The ball rolls, bright and round, just like the apples. The cat stops, ears forward, eyes fixed on the ball. No sound comes from the room, only breath and quiet. The ball lies still, no longer moving, no longer rolling.
 
 [m1.compare.v4.s06]
-The red ball rolls down the hill, past the tree and into the grass.
+The red ball rolls down the hill, past the tree and into the grass. The balloon looks alike, round and bright, just like the ball. The ball is not a balloon, but both are round and roll. They lie still, side by side, in the same soft place. The wind blows, and both move a little, same way.
 
 [m1.compare.v4.s07]
-The water drips from the tap, one drop, then another.
+The water drips from the tap, one drop, then another. They move apart but follow the same path, down the curved metal. No drop is different, no one is faster or slower. They share the same shape, the same fall, the same landing. No drop is afraid, no drop is alone.
 
 [m1.compare.v4.s08]
-The moon shines above the quiet house, bright and round.
+The moon shines above the quiet house, bright and round. No two shadows are different, no one is longer or shorter. They move together, side by side, sharing the same ground. The air feels still, full of secrets the wind cannot carry. The house is asleep, its windows closed, its heart quiet.
 
 [m1.compare.v4.s09]
-The book lies open, pages turned by the breeze.
+The book lies open, pages turned by the breeze. The same words appear again, clear and true. A shadow on the floor matches the one above. The same air flows through both sides of the room. The same moon shines down, round and bright. The same grass grows under both feet.
 
 [m1.compare.v4.x15]
-The red ball stops rolling in the grass, still and quiet.
+The red ball stops rolling in the grass, still and quiet. It lies exactly where it fell, same as before. The same shape, same size, same red colour. It matches the one above, though not seen. The same grass grows around it, thick and green. The same shadow lies across its round face.

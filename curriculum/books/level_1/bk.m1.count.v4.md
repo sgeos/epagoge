@@ -53,31 +53,31 @@ Four is a number that comes after three and before five.
 Single means one thing and not more than one.
 
 [m1.count.v4.s01]
-One is first, and it comes before two.
+One is first, and it comes before two. One comes before two and two comes before three. Three is more than two and two is more than one. One is first, two is second, three is third. Each number has a place in order. The order stays the same. No number changes its place.
 
 [m1.count.v4.s02]
-Two comes after one and is more than one.
+Two comes after one and is more than one. Two is more than one and comes after it in order. Two is also able to stand alone and move ahead. Two is not afraid of the dark or the noise. Two is not alone in the house or in the yard.
 
 [m1.count.v4.s03]
-Three comes after two and is more than two.
+Three comes after two and is more than two. Three is able to stand alone and move ahead. Three is not afraid of the dark or the noise. Three is not alone in the house or in the yard. Three sees the sky above and feels the breeze. Three climbs the hill and looks down at the green grass.
 
 [m1.count.v4.s04]
-Four comes after three and is more than three.
+Four comes after three and is more than three. Four is able to stand alone and move ahead. Four is not afraid of the dark or the noise. Four is not alone in the house or in the yard. Four sees the sky above and feels the breeze. Four climbs the hill and looks down at the green grass.
 
 [m1.count.v4.s05]
-Five comes after four and is more than four.
+Five comes after four and is more than four. Five is able to stand alone and move ahead. Five is not afraid of the dark or the noise. Five is not alone in the house or in the yard. Five sees the sky above and feels the breeze. Five climbs the hill and looks down at the green grass.
 
 [m1.count.v4.s06]
-Six comes after five and is more than five.
+Six comes after five and is more than five. Six is able to stand alone and move ahead. Six is not afraid of the dark or the noise. Six is not alone in the house or in the yard. Six sees the sky above and feels the breeze. Six climbs the hill and looks down at the green grass.
 
 [m1.count.v4.s07]
-Seven comes after six and is more than six.
+Seven comes after six and is more than six. Seven is able to stand alone and move ahead. Seven is not afraid of the dark or the noise. Seven is not alone in the house or in the yard. Seven sees the sky above and feels the breeze. Seven climbs the hill and looks down at the green grass.
 
 [m1.count.v4.s08]
-Eight comes after seven and is more than seven.
+Eight comes after seven and is more than seven. Eight is able to stand alone and move ahead. Eight is not afraid of the dark or the noise. Eight is not alone in the house or in the yard. Eight sees the sky above and feels the breeze. Eight climbs the hill and looks down at the green grass.
 
 [m1.count.v4.s09]
-Nine comes after eight and is more than eight.
+Nine comes after eight and is more than eight. Nine is able to stand alone and move ahead. Nine is not afraid of the dark or the noise. Nine is not alone in the house or in the yard. Nine sees the sky above and feels the breeze. Nine climbs the hill and looks down at the green grass.
 
 [m1.count.v4.s10]
-Zero comes before one and means nothing at all.
+Zero comes before one and means nothing at all. Zero is not afraid of the dark or the noise. Zero can stand alone and move ahead. Zero sees the sky above and feels the breeze. Zero climbs the hill and looks down at the green grass. Zero is not alone in the house or in the yard.

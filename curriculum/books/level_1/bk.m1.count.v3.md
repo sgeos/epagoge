@@ -56,28 +56,28 @@ Single means one thing, not more than one.
 Zero is a number that means no thing at all.
 
 [m1.count.v3.s01]
-One is the first number, and it comes before two.
+One is the first number, and it comes before two. One is a number that comes before two. Two is a number that comes after one. Three is a number that comes after two. One, two, three, and four are numbers that come in order. The apple rolled across the grass and stopped near the tree.
 
 [m1.count.v3.x08]
-The apple rolled across the grass and stopped near the tree.
+The apple rolled across the grass and stopped near the tree. A breeze moved the leaves, soft and slow. No one saw it, but it knew it was there. It wanted to roll again, to go further. It could not move, but it dreamed of the path. It stayed, fixed in place, quiet and true.
 
 [m1.count.v3.x09]
-He looked around and saw a butterfly flying above the flowers.
+He looked around and saw a butterfly flying above the flowers. The butterfly flew across the grass and landed on a pink flower. It stayed still, wings open, breathing soft air. The butterfly did not move, but its body stayed alive. It had flown from the tree, past the stone, through the bright sun.
 
 [m1.count.v3.x10]
-The butterfly landed on a pink flower and stayed still.
+The butterfly landed on a pink flower and stayed still. The butterfly stayed still on the pink flower. It breathed soft air above the grass. He could not move, not even to blink. The sky turned bright, and the breeze grew calm. He thought of the tree, the stone, the sun.
 
 [m1.count.v3.x11]
-He whispered, “Stay,” and slowly stepped back.
+He whispered, “Stay,” and slowly stepped back. The air felt thick, like a blanket pressed above his head. He looked down, his foot near a stone, small and round. A bird flew above, wings wide, black against the bright sky. He thought of the tree, the stone, the sun. The breeze came again, soft and slow, like a breath.
 
 [m1.count.v3.x12]
-One, two, three, four, five—each number comes in order, like steps on a path.
+One, two, three, four, five—each number comes in order, like steps on a path. Each step feels real, like a stone placed just right. The air above is calm, not thick, not heavy. A bird flies, black against the bright sky. The tree stands tall, its branches wide, like arms reaching.
 
 [m1.count.v3.x13]
-A bird flies above the tree, and the sky stays bright and blue all day.
+A bird flies above the tree, and the sky stays bright and blue all day. The air feels calm, not thick, not heavy. The tree stands tall, its branches wide, like arms reaching. The path ahead is clear, each step a stone placed just right. The numbers come in order, each one after the last.
 
 [m1.count.v3.x14]
-The numbers come in order, each one after the last, never changing.
+The numbers come in order, each one after the last, never changing. One is a single point, small and bright, like a star in the sky. Two is a pair, side by side, like wings on a bird. Each number stands apart, yet fits with the next. The path ahead is clear, and the sky stays bright and blue.
 
 [m1.count.v3.x15]
-He smiled, turned, and began to walk back, counting each step as he went.
+He smiled, turned, and began to walk back, counting each step as he went. The path ahead was clear, and the sky stayed bright and blue. He walked across the grass, past a tree, and near a stone. He saw a red ball, small and round, lying on the ground.

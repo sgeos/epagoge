@@ -47,37 +47,37 @@ Match means two things that are the same or go together.
 Pair means two things that belong together.
 
 [m1.compare.v3.s01]
-Two apples are alike, one is different.
+Two apples are alike, one is different. The red apple is the same as the other red apple. They are both round and smooth, like a ball. They belong in the same basket. No one can tell them apart. They are equal in size and colour. Both were picked from the same tree.
 
 [m1.compare.v3.s02]
-There are few apples in the small basket.
+There are few apples in the small basket. The red apple is alike to the other red apple. They are both round and smooth, like a ball. They belong in the same basket. No one can tell them apart. They are equal in size and colour. Both were picked from the same tree.
 
 [m1.compare.v3.s03]
-The child points at the red ball.
+The child points at the red ball. The ball is alike in shape and colour to the apple in the basket. They belong in the same group of things that roll. They are equal in size and feel. But they look the same from a distance. The child knows they are not the same thing.
 
 [m1.compare.v3.s04]
-The number of toys in the box is more than the number outside.
+The number of toys in the box is more than the number outside. The toys inside are alike in shape and size. They belong in the same group of things that roll. Each one is equal in weight and feel. The child knows they are not the same thing. But from a distance, they look the same.
 
 [m1.compare.v3.s05]
-The boy tries to find the missing point in the game.
+The boy tries to find the missing point in the game. He looks above the grass, where the sky is bright and blue. He feels the breeze, cool and light, blowing across his face. He sees a red ball, rolled by the wind, near the basket. It is alike in shape and size to the others, but not the same.
 
 [m1.compare.v3.x09]
-The red ball rolls across the grass and stops near the basket.
+The red ball rolls across the grass and stops near the basket. It is alike in shape and size to the others, but not the same. It is not just any ball, but the one he lost before. The ball does not move, but seems to watch him. He wonders if it can feel, or think, or remember.
 
 [m1.compare.v3.x10]
-The child picks up the red ball and holds it close.
+The child picks up the red ball and holds it close. The child holds the red ball close, feeling its round shape, its smooth surface, its weight. He wonders if it remembers him too, or if it is just a copy. He does not know, but he believes it is the same.
 
 [m1.compare.v3.x11]
-Two apples sit in the basket, but one is missing.
+Two apples sit in the basket, but one is missing. He feels the air, still and quiet, like a secret held. He cannot explain why, but the apple is alike, not just the same. It is alive, not just a copy, not just a thing. He believes it belongs, even if it is not there.
 
 [m1.compare.v3.x12]
-He carries it back and places it with the others.
+He carries it back and places it with the others. He places it with the others. The apple feels alike, not just the same. It is alive, not just a copy. He cannot explain why, but it belongs. The air is still, like a secret held. He believes it, even if it is not there.
 
 [m1.compare.v3.x13]
-The child picks up the red ball and rolls it across the floor.
+The child picks up the red ball and rolls it across the floor. The child rolls the red ball across the floor. The ball feels alike, not just the same. It is alive, not just a copy. He cannot explain why, but it belongs. The air is still, like a secret held.
 
 [m1.compare.v3.x14]
-The boy smiles and puts the ball inside the basket, making a pair with the other red ball.
+The boy smiles and puts the ball inside the basket, making a pair with the other red ball. The boy feels the ball inside the basket, a pair made whole. The air above the basket is still, like a secret kept. He cannot explain why, but it belongs, not just a copy.
 
 [m1.compare.v3.x15]
-The boy smiles and reaches for the ball again.
+The boy smiles and reaches for the ball again. The ball feels alike in his hand, same weight, same shape. He lifts it above the basket, breath held. The air is still, like before, but now he knows it belongs. He cannot explain why, but it is true. The red ball, the same, is not a copy.
