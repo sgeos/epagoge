@@ -50,34 +50,34 @@ To cut shapes into wood or stone with a knife or tool.
 A food that has not been cooked or changed by heat.
 
 [p1.raw.v2.s01]
-A tree grew in the forest, natural and tall.
+A tree grew in the forest, natural and tall. It stood above all others, strong and alive. Its branches reached high, touching the bright sky. A child once drew its shape on a paper. The wood from it was once used to build a boat. The tree was not just wood—it was a life.
 
 [p1.raw.v2.x06]
-The chair sat in the corner of the house, quiet and still.
+The chair sat in the corner of the house, quiet and still. It had a back that curved like a branch, strong and wide. The wood was once alive, part of a forest, not a chair. It had felt rain, seen the sun, and heard birds. The chair had no name, but it knew its past.
 
 [p1.raw.v2.x07]
-Outside, the wind blew through the trees, whispering secrets.
+Outside, the wind blew through the trees, whispering secrets. The wind blew through the trees, whispering secrets. A bird flew past, bright and quick, its wing cutting the air. The forest breathed, soft and steady, like a living thing. The wood remembered the sun, the rain, the sky. It had been a tree, strong and tall, standing alone.
 
 [p1.raw.v2.x08]
-The child stood and walked to the window, looking out at the forest.
+The child stood and walked to the window, looking out at the forest. The wind blew through the trees, whispering secrets. A bird landed on a branch, its feathers bright in the sun. The wood remembered the sun, the rain, the sky. It had been a tree, strong and tall, standing alone.
 
 [p1.raw.v2.x09]
-They saw a bird land on a branch, its feathers bright in the sun.
+They saw a bird land on a branch, its feathers bright in the sun. The branch bent under the weight, but stayed strong. The wood remembered the wind, the rain, the sky. It had been a tree, alive and tall, standing alone. Now it was part of a table, smooth and flat.
 
 [p1.raw.v2.x10]
-The child thought about how the tree had lived, grown, and then been used.
+The child thought about how the tree had lived, grown, and then been used. The wood remembered the sun, the rain, the wind, the sky. It had been alive, tall, standing alone in the forest. Now it was part of a table, smooth and flat. The table had once been a whole tree, strong and broad.
 
 [p1.raw.v2.x11]
-The chair stood in the sun, warm and still.
+The chair stood in the sun, warm and still. The wood felt the heat above its surface. It remembered the sky, bright and wide. The tree had grown tall, strong, and alive. Now it was part of a chair, still and quiet. The child had sat here before, laughing and swinging.
 
 [p1.raw.v2.x12]
-A child sat on the chair, laughing and swinging their feet.
+A child sat on the chair, laughing and swinging their feet. It remembered the sky, bright and wide. The tree had grown tall, strong, and alive. Now it was part of a chair, still and quiet. The child had sat here before, laughing and swinging. It remembered the weight of small feet, moving up and down.
 
 [p1.raw.v2.x13]
-One day, the child left the chair, and it waited alone.
+One day, the child left the chair, and it waited alone. The wind blew through the room, soft and slow. The chair felt the air, cold and thin, above its wooden arms. It remembered the weight of a small body, moving up and down. The child had laughed, and the chair had felt alive.
 
 [p1.raw.v2.x14]
-The chair sat in the sun, warm and still.
+The chair sat in the sun, warm and still. It grew tall, reaching above the sky. The tree felt alive, breathing with the air. Each year, it grew a little bigger, strong and wide. Its leaves changed colour, green to gold and red. Then they fell, drifting like soft, quiet snow.
 
 [p1.raw.v2.x15]
-The chair sat in the sun, warm and still, waiting for a new story to begin.
+The chair sat in the sun, warm and still, waiting for a new story to begin. The wood was a tree, alive and tall, standing above the ground. The tree felt the sky, felt the rain, felt the quiet world. It knew the sky, the moon, the stars above. It had grown from nothing, made of wood, shaped by time.

@@ -59,25 +59,25 @@ Steel is a strong metal made from iron and other things, used to build bridges o
 Tin is a soft metal that can be used to cover other things, like a can or a pot.
 
 [p1.metal.v3.s01]
-The key is metal and it fits in the lock.
+The key is metal and it fits in the lock. The metal feels cold and hard, like ice. The lock has a small hole, just right for the key. The key has a long handle, shaped to fit a hand. It is not broken, not bent, not worn. It was made to last, to keep things safe.
 
 [p1.metal.v3.s02]
-The steel key had a small nail on it that fell off.
+The steel key had a small nail on it that fell off. The nail landed on the floor, cold and still. It rolled across the wooden floor, slow and quiet. The nail was made of metal, like the key, but smaller. The key felt lighter, though it was the same.
 
 [p1.metal.v3.s03]
-The iron box was old and had rust on its side.
+The iron box was old and had rust on its side. The box felt heavy, but not as strong as before. Inside, something dark and still remained. The key was made of metal, just like the box. It had a sharp edge and a narrow shape. No one had touched it in years.
 
 [p1.metal.v3.s04]
-The rust made the box weak and it cracked open.
+The rust made the box weak and it cracked open. A soft light came from above, bright and warm. He reached in, his fingers brushing a cold, smooth surface. He could not explain why, but he knew it belonged there. The box had been waiting for this moment. But he knew he had to keep going.
 
 [p1.metal.v3.s05]
-The boy walked under the bridge and found a tin box.
+The boy walked under the bridge and found a tin box. The boy held the tin box close, its metal surface cool against his palm. He wondered what it could open. The metal felt alive, not just cold. The key was not inside the box, but something else waited. He looked down at his hands—were they shaking?
 
 [p1.metal.v3.s06]
-The tin box had a key inside it.
+The tin box had a key inside it. The key was made of iron and it was covered in rust. It felt heavy in his hand, rough and old. He could not tell if it was alive or just metal. The key had no name, no number, no symbol. The boy looked around the clearing.
 
 [p1.metal.v3.s07]
-The key was made of iron and it was covered in rust.
+The key was made of iron and it was covered in rust. It felt heavy in his hand, rough and old. He could not tell if it was alive or just metal. The key had no name, no number, no symbol. The boy looked around the clearing. A bird flew above, its shadow crossing the ground.
 
 [p1.metal.v3.s08]
-The boy cleaned the rust with a cloth and the key became shiny.
+The boy cleaned the rust with a cloth and the key became shiny. He did not know why, but he believed it was right to follow. A bird sang above, its voice sharp and clear. But this one was different. It did not feel like a lie. It felt like a promise.

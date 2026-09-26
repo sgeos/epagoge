@@ -47,37 +47,37 @@ Having many loud sounds at once.
 Having no sound or very little sound.
 
 [p1.sound.s01]
-The cup fell from the table and made a loud bang.
+The cup fell from the table and made a loud bang. I heard the bang and ran to see what happened. The air felt thick and still. I stood near the floor where the cup broke. A sharp edge caught the light. She hid under the bed. The noise had come from above.
 
 [p1.sound.s02]
-I heard the bang and ran to see what happened.
+I heard the bang and ran to see what happened. The cup had fallen from above and broken on the floor. A sharp edge caught the light. I bent down to look, my breath slow. The room felt empty, yet full of sound. I could not move, not even to breathe.
 
 [p1.sound.s03]
-The room was quiet after the bang.
+The room was quiet after the bang. No sound came from above. I could not move, not even to breathe. I saw the edge of the cup, sharp and bright. I had not seen it happen, yet I knew. No one else was there, no one to answer. I wanted to stand, but my legs were weak.
 
 [p1.sound.s04]
-I looked around and saw the cup on the floor.
+I looked around and saw the cup on the floor. The sound had come from above, but nothing was there. The cup was not whole, yet it had been full. I saw a drop of liquid, still wet, on the edge. I could not move, not even to breathe. The room was quiet, but I heard the drip.
 
 [p1.sound.s05]
-I picked it up and felt it was still warm.
+I picked it up and felt it was still warm. The cup felt heavy, though it was light. I could not explain why it was warm. The liquid had not been hot, yet it felt alive. I held it close, as if it might speak. I did not want to let it go.
 
 [p1.sound.s06]
-I thought about what could have caused the noise.
+I thought about what could have caused the noise. The cup had fallen from the table. It landed on the floor with a loud bang. The sound came from the kitchen, near the sink. I could not explain why I felt afraid. The air felt heavy, like something was wrong.
 
 [p1.sound.s07]
-I called my brother to check if he heard it too.
+I called my brother to check if he heard it too. He said he was asleep and did not hear anything. I sat still, listening for any sound above the quiet. The air felt thick, like something was hiding in the walls. I stood up, my legs weak, and walked to the kitchen.
 
 [p1.sound.s08]
-He said he was asleep and did not hear anything.
+He said he was asleep and did not hear anything. The cup had fallen and the noise was gone. I stood still, my heart alive with fear. The air felt thick, like something was hiding in the walls. I could not believe it was gone. The quiet was louder than any noise.
 
 [p1.sound.s09]
-I knew the cup had fallen and the noise was gone.
+I knew the cup had fallen and the noise was gone. The air felt still, like something was hiding in the walls. I could not believe it was gone. The quiet was louder than any noise. I stood still, my heart alive with fear. It was not on the table, not on the floor.
 
 [p1.sound.x13]
-I placed the cup back on the table, careful to sit it near the edge.
+I placed the cup back on the table, careful to sit it near the edge. The air felt still, like something was hiding in the walls. I could not believe it was gone. The quiet was louder than any noise. I stood still, my heart alive with fear. It was not on the table, not on the floor.
 
 [p1.sound.x14]
-I looked out the window and saw a bird fly across the sky, as if it knew the noise too.
+I looked out the window and saw a bird fly across the sky, as if it knew the noise too. I heard a soft sound, like a cup hitting wood. The air above the floor felt thin and cold. I could not move, my body still, my breath caught. I saw a shadow near the table, but no cup was there.
 
 [p1.sound.x15]
-I held the warm cup and wondered if it had fallen on its own.
+I held the warm cup and wondered if it had fallen on its own. I heard a soft sound, like a cup hitting wood. The air above the floor felt thin and cold. I could not move, my body still, my breath caught. I saw a shadow near the table, but no cup was there.

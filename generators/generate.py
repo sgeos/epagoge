@@ -16,9 +16,9 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import shutil
-import subprocess  # noqa: S404
 import sys
+import urllib.error
+import urllib.request
 from collections.abc import Iterator
 from dataclasses import dataclass
 from pathlib import Path
@@ -33,18 +33,49 @@ ROOT = Path(__file__).resolve().parent.parent
 MODEL = "qwen3:30b-a3b-instruct-2507-q4_K_M"
 
 
-def teacher_binary() -> str:
-    """Resolve the runtime to an absolute path before executing it.
+ENDPOINT = "http://127.0.0.1:11434"
+"""Where the local teacher answers.
 
-    The argument vector is fixed and no shell is involved, so the only
-    variable is which binary the name resolves to. Resolving it here means
-    that is decided once and visibly rather than by the caller's PATH at the
-    moment of the call.
-    """
-    found = shutil.which("ollama")
-    if found is None:
-        raise RuntimeError("ollama is not on PATH; the teacher runs locally")
-    return found
+**This used to shell out to `ollama run`, and that was the bug.** The
+command line offers no way to say how large a context the work needs, so
+every completion inherited whatever the server had loaded. On 2026-09-25
+that was **32,768 tokens for prompts of about 1,260**, which is a
+key-value cache nineteen times larger than anything asked for. It pushed a
+32 GB machine to 9 percent free with swap 92 percent used, and the same
+completion that had taken a median of **6.0 seconds went past 300**. The
+run that hit it read as the teacher being slow.
+
+Over the endpoint the context is a request parameter, so the project
+declares what it needs instead of inheriting a default nobody chose.
+"""
+
+NUM_CTX = 4096
+"""The context this project asks for.
+
+Measured 2026-09-25: a `fill_spread` prompt is **1,261 tokens** and the
+answer runs 180 to 230, so 4,096 leaves better than threefold headroom.
+Dropping to it took the server from 21 GB to 18 GB, free memory from 9 to
+22 percent, and the completion back to 2.7 to 6.6 seconds.
+
+**Raise it deliberately and re-measure memory**, because the cost is
+quadratic in the wrong direction on a machine this size.
+"""
+
+RESERVED_FOR_OUTPUT = 768
+"""Tokens kept clear of the prompt so the answer is not what gets cut.
+
+The longest answer observed was 228 tokens. This is generous on purpose:
+the failure it guards against is silent, and the cost of being generous is
+a prompt refused early rather than an answer truncated late.
+"""
+
+CHARS_PER_TOKEN = 3
+"""Deliberately pessimistic, so the estimate over-counts tokens.
+
+The measured ratio on this project's prompts is about 5.4 characters a
+token. Using 3 means the guard fires early rather than late, which is the
+right direction for a check whose alternative is silent truncation.
+"""
 
 
 @dataclass(frozen=True, slots=True)
@@ -212,23 +243,56 @@ def ask(text: str, *, timeout: int) -> str:
     an unusable answer, which is what it is. A non-zero exit still raises,
     because that means the teacher is misconfigured rather than slow.
     """
-    try:
-        done = subprocess.run(  # noqa: S603
-            [teacher_binary(), "run", MODEL],
-            input=text,
-            capture_output=True,
-            text=True,
-            timeout=timeout,
-            check=True,
+    budget = NUM_CTX - RESERVED_FOR_OUTPUT
+    estimate = len(text) // CHARS_PER_TOKEN
+    if estimate > budget:
+        raise RuntimeError(
+            f"prompt is about {estimate} tokens against a budget of {budget} "
+            f"(num_ctx {NUM_CTX} less {RESERVED_FOR_OUTPUT} for the answer). "
+            "The server would truncate it silently, so this refuses instead. "
+            "Shorten the prompt or raise NUM_CTX deliberately."
         )
-    except subprocess.TimeoutExpired:
+
+    payload = json.dumps(
+        {
+            "model": MODEL,
+            "prompt": text,
+            "stream": False,
+            "options": {"num_ctx": NUM_CTX},
+        }
+    ).encode()
+    # **The scheme is a literal in this file, not input.** ENDPOINT is a
+    # constant naming a loopback address, so there is no user-supplied URL
+    # for a `file:` or custom scheme to arrive through.
+    request = urllib.request.Request(  # noqa: S310
+        f"{ENDPOINT}/api/generate",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:  # noqa: S310
+            body = cast(dict[str, object], json.load(response))
+    except TimeoutError:
         TIMEOUTS[0] += 1
         print(
             f"  teacher timed out after {timeout}s, treating as empty",
             file=sys.stderr,
         )
         return ""
-    return strip_terminal_control(done.stdout).strip()
+    except urllib.error.URLError as unreachable:
+        raise RuntimeError(
+            f"the teacher is not answering at {ENDPOINT}: {unreachable}. "
+            "It runs locally; start it before a generation run."
+        ) from unreachable
+
+    used = body.get("prompt_eval_count")
+    if isinstance(used, int) and used > budget:
+        print(
+            f"  WARNING: the prompt used {used} tokens against a budget of "
+            f"{budget}. Part of it was discarded before the model saw it.",
+            file=sys.stderr,
+        )
+    return strip_terminal_control(str(body.get("response", ""))).strip()
 
 
 def drafts_for(

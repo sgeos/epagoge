@@ -56,28 +56,28 @@ To move through the air, like a bird.
 A strong push or pull that makes something move.
 
 [p1.motion.v4.s01]
-It sits still.
+It sits still. It is not afraid to stay in one place. It has no need to move, no goal to reach. Its shape is round, like a ball or a moon. It lies on the ground, quiet and soft. No wind can lift it, no hand can shake it.
 
 [p1.motion.v4.x08]
-It rolls across the grass, smooth and round.
+It rolls across the grass, smooth and round. It moves without aim, not afraid of the path ahead. It feels the ground below, soft and alive with each turn. No wind can stop it, no hand can hold it back. It rolls over stones, past trees, through the open space.
 
 [p1.motion.v4.x09]
-The sun warms its surface, bright and hot.
+The sun warms its surface, bright and hot. It lies still, no longer rolling across the grass. No wind can move it now, no hand can lift it. It rests above the ground, flat and round. It stays in place, not afraid of the path ahead. It is not alone, though no one is near.
 
 [p1.motion.v4.x10]
-A child reaches out, fingers brushing its side.
+A child reaches out, fingers brushing its side. The side is warm, like a secret held close. It does not move, though the air flows past. The child wonders if it can hear, or feel, or think. It lies still, but not asleep, not dead. The sun still shines above, bright and clear.
 
 [p1.motion.v4.x11]
-The child laughs, then pushes it gently forward.
+The child laughs, then pushes it gently forward. The child pushes it again, and it moves across the grass. The sun shines above, bright and warm. It feels alive, though it does not speak. The child watches, eyes wide with wonder. It does not stop, not even when the path bends.
 
 [p1.motion.v4.x12]
-It moves through the garden, past flowers and stones.
+It moves through the garden, past flowers and stones. It rolls along the path, smooth and sure. The air is warm, full of life and light. It does not stop, not even when the stones bend. It feels alive, though it does not speak. It goes ahead, never back, never afraid.
 
 [p1.motion.v4.x13]
-The child watches it go, eyes wide with wonder.
+The child watches it go, eyes wide with wonder. It sits still. It does not move. It feels safe. It is above the ground. It is not afraid. It stays in one place. It does not roll. It does not go. It is not alive. It is not a child.
 
 [p1.motion.v4.x14]
-It rolls across the grass, slow and steady, never stopping.
+It rolls across the grass, slow and steady, never stopping. It is not a child, not a bird, not a ball. It does not stop to rest, not even when tired. It rolls on, steady, smooth, never breaking. It is not happy, not sad, not anything. It is just moving, over grass, over stones.
 
 [p1.motion.v4.x15]
-You feel the breeze lift your hair as you go.
+You feel the breeze lift your hair as you go. It sits still. The breeze lifts its hair. It feels the air above. It is not afraid. It stays alone. It does not move. It is not a child. It is not alive. It is not a bird. It is not a ball.

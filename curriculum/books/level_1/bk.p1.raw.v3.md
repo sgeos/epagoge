@@ -59,25 +59,25 @@ A natural thing comes from the earth, not made by people.
 A raw thing has not been changed by fire or tool.
 
 [p1.raw.v3.s01]
-The wood was a tree that grew in the forest.
+The wood was a tree that grew in the forest. It stood tall above the others, reaching the bright sky. The wind blew through, making the leaves whisper. The tree felt the breeze, the rain, the quiet. It did not move, but it knew each change. A child once climbed it, laughing, then fell.
 
 [p1.raw.v3.x09]
-The chair sat in the sun, warm and still.
+The chair sat in the sun, warm and still. The wood was old, shaped by time and care. No one had moved it in years, not even a breeze. The sun stayed, warm and still, above the grass. The chair knew no fear, no need to run. Only the air moved, soft and slow.
 
 [p1.raw.v3.x10]
-A child sat on the chair and felt its wooden arms.
+A child sat on the chair and felt its wooden arms. The wood was warm from the sun above. The arms held tight, strong and alive. The air moved gently, soft and slow. The chair had been here for years, long and true. No one had broken it, not even a storm.
 
 [p1.raw.v3.x11]
-The chair was old but still strong and able to hold.
+The chair was old but still strong and able to hold. It stood tall in the forest, reaching above the sky. Each ring inside told a story of wind, rain, and sun. The branches held birds and butterflies, soft and bright. No one knew its name, but it was kind and still.
 
 [p1.raw.v3.x12]
-The child placed an apple on the chair, and it rolled off.
+The child placed an apple on the chair, and it rolled off. The apple rolled across the ground, stopped near a stone. The tree stood tall, its branches holding light. The child picked it up, held it close. The air was warm, full of quiet. The chair was still, not moving, not broken.
 
 [p1.raw.v3.x13]
-A child sat on the chair and swung their feet, laughing.
+A child sat on the chair and swung their feet, laughing. The apple rolled across the grass, bright and still. The tree stood above, its branches wide and alive. The air smelled of earth, warm and full of life. The child watched, eyes wide, heart quick with wonder. A butterfly landed on the apple, wings open.
 
 [p1.raw.v3.x14]
-The apple rolled onto the grass and stayed there, still and bright.
+The apple rolled onto the grass and stayed there, still and bright. The apple stayed on the grass, bright and still. The tree stood above, its branches wide and alive. The child sat on the chair, feet swinging, eyes watching. The air smelled of earth, cool and full of life.
 
 [p1.raw.v3.x15]
-The apple rolled down the path and landed in a puddle.
+The apple rolled down the path and landed in a puddle. The tree stood above, its branches wide and alive. The child sat on the chair, feet swinging, eyes watching. The air smelled of earth, cool and full of life. The wood was a tree, once grown, now fallen. The wood was a tree, not broken, not gone.

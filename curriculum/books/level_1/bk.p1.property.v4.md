@@ -47,37 +47,37 @@ Broad means wide, or having a large size across.
 Clear means not cloudy and easy to see through.
 
 [p1.property.v4.s01]
-This one is red.
+This one is red. Red is a colour that stands out above others. A red balloon floats high in the air. Red paint can cover a wall or make a picture bright. Red is not the same as black or blue. It feels warm, like a fire or the sun.
 
 [p1.property.v4.s02]
-This one is big.
+This one is big. Big is not the same as red. It stands above others in size. A big balloon floats high in the air. Big feet walk fast across the ground. Big trees grow in the forest. Big hands can hold a heavy basket. Big animals move slowly through the grass.
 
 [p1.property.v4.s03]
-Red is not big.
+Red is not big. Red is bright and clear. Red appears on a ball and a flower. Red stands out above green and blue. Red is not afraid to be seen. Red can be warm like the sun. Red flows like a river in the morning. Red hides in the grass but still shows.
 
 [p1.property.v4.s04]
-The red ball is bright.
+The red ball is bright. It does not fear the sun. It feels warm and alive. It stands out like a flower. It is not afraid to be seen. It is round and smooth. It can be held in one hand. It is strong and safe. It does not break when it hits the floor.
 
 [p1.property.v4.s05]
 The bright ball is round.
 
 [p1.property.v4.s06]
-The round ball is clean.
+The round ball is clean. The red ball is round. It sits on the grass, still and bright. No one touches it, though it calls. The air is warm, and the sky is blue. The ball feels safe, though it is alone. It does not move, but it knows the world.
 
 [p1.property.v4.s07]
-The clean ball is smooth.
+The clean ball is smooth. The red ball is bright. It lies on the grass, still and warm. No one touches it, though it calls. The air is calm, and the sky is blue. The ball feels safe, though it is alone. It does not move, but it knows the world.
 
 [p1.property.v4.s08]
-The smooth ball is not black.
+The smooth ball is not black. The red ball is not black. It lies on the grass, warm and still. No one touches it, though it calls. The air is calm, and the sky is blue. The ball feels safe, though it is alone. It does not move, but it knows the world.
 
 [p1.property.v4.s09]
-The ball is not blue.
+The ball is not blue. It lies on the grass, warm and still. No one touches it, though it calls. The air is calm, and the sky is blue. The ball feels safe, though it is alone. It does not move, but it knows the world. It sees the sun above, bright and clear.
 
 [p1.property.v4.s10]
-The ball is not brown.
+The ball is not brown. It lies on the grass, warm and still. No one touches it, though it calls. The air is calm, and the sky is blue. The ball feels safe, though it is alone. It does not move, but it knows the world. It sees the sun above, bright and clear.
 
 [p1.property.v4.s11]
-The ball is not bright.
+The ball is not bright. It lies on the grass, warm and still. No one touches it, though it calls. The air is calm, and the sky is blue. The ball feels safe, though it is alone. It does not move, but it knows the world. It sees the sun above, bright and clear.
 
 [p1.property.v4.s12]
-The ball is not broad.
+The ball is not broad. It lies alone on the grass, warm and still. No one touches it, though it calls. The air is calm, and the sky is blue. The ball feels safe, though it is alone. It does not move, but it knows the world. It sees the sun above, bright and clear.

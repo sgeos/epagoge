@@ -59,25 +59,25 @@ Brown means the colour of earth.
 Clear means not cloudy and easy to see through.
 
 [p1.property.v3.s01]
-The big red ball rolled across the clean grass.
+The big red ball rolled across the clean grass. The red ball sat still on the clean grass. It felt warm in the bright sun. A small bird landed nearby and looked at it. The ball did not move, not even a little. The grass was soft and green, not dirty or dry.
 
 [p1.property.v3.s02]
-It rolled past the brown tree and stopped near the blue house.
+It rolled past the brown tree and stopped near the blue house. The ball felt warm in the bright sun. A small bird landed nearby and looked at it. The ball did not move, not even a little. The grass was soft and green, not dirty or dry. A butterfly flew above and landed on the blue house.
 
 [p1.property.v3.s03]
-The ball was clean and round, not dirty or broken.
+The ball was clean and round, not dirty or broken. The ball was red, not blue or green. It sat still on the grass, not moving. The sun shone bright above, not hiding. The air felt warm, not cold or sharp. The red ball felt alive, not dead. It was round, not flat or broken.
 
 [p1.property.v3.s04]
-The bird flew away, leaving the ball alone.
+The bird flew away, leaving the ball alone. It felt alone, not near anyone or anything. The grass was soft, not hard or sharp. The sky was bright, not dark or cloudy. The air was warm, not cold or still. The ball stayed in place, not rolling or flying. No one came near, not even a bird or a bug.
 
 [p1.property.v3.s05]
-The wind blew, and the ball rolled again, faster this time.
+The wind blew, and the ball rolled again, faster this time. The ball rolled faster, past the red apple, across the grass. It felt alive, not broken, not afraid. The wind blew again, pushing it forward, not back. The sky above stayed bright, not dark, not cloudy. It rolled along the path, not off the edge.
 
 [p1.property.v3.s06]
-It rolled down the hill and stopped at the edge of the clear stream.
+It rolled down the hill and stopped at the edge of the clear stream. The ball felt alive, not broken, not afraid. It floated on the water, bright and round. The stream flowed fast, not slow, not still. The sky above stayed bright, not dark, not cloudy. The wind blew again, pushing it forward, not back.
 
 [p1.property.v3.s07]
-The ball floated on the water, bright and round.
+The ball floated on the water, bright and round. It felt alive, not broken, not afraid. The stream flowed fast, not slow, not still. The sky above stayed bright, not dark, not cloudy. The wind blew again, pushing it forward, not back. It drifted across the clear, cool flow. It moved ahead, not back.
 
 [p1.property.v3.s08]
-It stayed there, hidden under the clear, cool flow.
+It stayed there, hidden under the clear, cool flow. The red ball floated, alive, not dead, not broken. No one saw it, not even the fish below. It drifted across the smooth, wide bed, not stuck. The water carried it, slow and sure, not fast. It passed under the bridge, hidden by shadow.

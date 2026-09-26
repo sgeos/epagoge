@@ -59,25 +59,25 @@ To catch something before it hits the ground.
 Hit something hard.
 
 [p1.motion.s01]
-It sits still on the ground.
+It sits still on the ground. The wind blows but it does not move. A bird lands nearby, then flies away. The sky above is bright blue. No one comes near it. It is not afraid. The ground is dry and warm. A leaf drifts down and rests beside it.
 
 [p1.motion.x09]
-You push it and it moves across the dirt.
+You push it and it moves across the dirt. It rolls forward with a steady sound. The dirt is dry and smooth under its wheels. The sky above is bright blue and clear. No one sees it move, not even the bird. It does not stop, not even when the wind blows.
 
 [p1.motion.x10]
-A strong push or pull makes the cart roll forward.
+A strong push or pull makes the cart roll forward. It sits still. No one sees it move. The cart stays in place. It does not roll again. The wheels are still. The dirt is dry and smooth. The sky above is bright blue. No bird flies near. No hand pulls it.
 
 [p1.motion.x11]
-You pull the rope and the cart moves again.
+You pull the rope and the cart moves again. The wheels roll across the dry dirt. The sky above stays bright blue. No bird flies near. No hand pulls it. The cart moves ahead. It does not stop. The wheels keep turning. The dirt stays smooth. The path is clear.
 
 [p1.motion.x12]
-You catch them before they hit the ground.
+You catch them before they hit the ground. It sits still. The cart does not move. The wheels stay bent. The dirt is cracked. No bird flies. No hand pulls. The cart stays. It does not go ahead. It does not roll. The handle is cold. The wood is dry.
 
 [p1.motion.x13]
-You push it and it moves across the grass.
+You push it and it moves across the grass. The wheels turn slowly at first, then faster. The handle stays cold against your hand. The grass bends under the weight of the cart. The air around it feels lighter, like breath after a long wait. The path ahead is clear, open, and bright.
 
 [p1.motion.x14]
-The cart rolls faster on the smooth path.
+The cart rolls faster on the smooth path. The handle stays cold, even in the bright sun. The air feels light, like a breath held too long. The path ahead is open, clear, and wide. The cart moves on, as if it knows where to go. The sky above is blue, without a cloud.
 
 [p1.motion.x15]
-The cart falls into the water and floats away.
+The cart falls into the water and floats away. The air feels heavy, like a breath held too long. The water flows slowly, carrying the cart away. No one comes to call it back. The boat drifts, alone, across the wide lake. The sky above is blue, then grey, then dark.

@@ -50,34 +50,34 @@ To move slowly without direction.
 To stay on top of water or air without sinking.
 
 [p1.motion.v2.s01]
-A small boat sits still on the water.
+A small boat sits still on the water. The water is calm and still, like glass. The boat does not move, not even a little. It stays in place, held by the quiet. No sound comes from the surface. The sky is bright blue, with no cloud. No one is near, not even a bird.
 
 [p1.motion.v2.x06]
-The boat drifts under a wide wooden bridge.
+The boat drifts under a wide wooden bridge. The water flows slowly, not fast, not wide. The air feels still, thick with quiet. A shadow passes above, long and dark. The wood of the bridge is rough, worn by time. The sky above is bright blue, clear and wide. No sound comes from the surface, not even a drip.
 
 [p1.motion.v2.x07]
-A bird lands on the boat and looks around.
+A bird lands on the boat and looks around. The bird is black, with wings that catch the bright blue sky. No sound comes from the water, not even a drip. The boat stays still, floating on the slow flow. The bridge above is wide, its wood rough and worn.
 
 [p1.motion.v2.x08]
-The boat drifts with the breeze, calm and still.
+The boat drifts with the breeze, calm and still. The boat stays still, floating on the slow flow. No sound comes from the water, not even a drip. The bridge above is wide, its wood rough and worn. A bird lands on the boat and looks around. The bird is black, with wings that catch the bright blue sky.
 
 [p1.motion.v2.x09]
-A fish jumps out of the water and lands back with a splash.
+A fish jumps out of the water and lands back with a splash. The bird on the boat lifts its head, eyes bright. It looks above, where the sky is wide and blue. The breeze is gone now, air still and warm. The fish is gone, but the splash remains.
 
 [p1.motion.v2.x10]
-The breeze grows stronger and pushes the boat gently.
+The breeze grows stronger and pushes the boat gently. The boat floats still on the bright water. The sky above is wide and blue. The air is warm and still. No one else is near. The boat drifts, calm and alone. The water flows slowly, clear and bright. The bird on the boat lifts its head.
 
 [p1.motion.v2.x11]
-The boat keeps drifting, calm and still, on the bright water.
+The boat keeps drifting, calm and still, on the bright water. The sky above is wide and blue. The air is warm and still. No one else is near. The water flows slowly, clear and bright. The bird on the boat lifts its head. It watches the sky, still and calm.
 
 [p1.motion.v2.x12]
-The breeze carries the boat under the bridge, slow and calm.
+The breeze carries the boat under the bridge, slow and calm. The boat drifts under the bridge, slow and calm. The air stays still, though the water keeps moving. It feels alive, though it does not move fast. No one else is near, only the quiet and the flow. The boat is not afraid, though it drifts alone.
 
 [p1.motion.v2.x13]
-The boat drifts under the bridge, moving slowly with the breeze.
+The boat drifts under the bridge, moving slowly with the breeze. It floats on the water, calm and still. The air above is bright and clear. No sound comes from the land nearby. The boat does not move fast, but it moves. It is alive, though it does not walk.
 
 [p1.motion.v2.x14]
-The boat drifts into the shadow of the bridge, calm and still.
+The boat drifts into the shadow of the bridge, calm and still. The water flows above, bright and clear, no sound comes from the land. The boat is alive, though it does not walk, it does not move. It rests, still, like a stone on the bottom, deep and quiet.
 
 [p1.motion.v2.x15]
-The boat moves on, calm and still, with no direction.
+The boat moves on, calm and still, with no direction. The sky above is wide, bright, and blue. No sound comes from the land, only air. The boat is alive, though it does not walk. It rests, still, like a stone on the bottom, deep and quiet. It drifts, not afraid, not in a hurry.

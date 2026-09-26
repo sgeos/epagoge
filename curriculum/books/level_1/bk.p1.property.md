@@ -56,28 +56,28 @@ Bright means giving off light.
 Colour is what something looks like when seen.
 
 [p1.property.s01]
-This one is red.
+This one is red. Red is a colour that stands out above others. It feels warm like the sun on the skin. A red apple sits on the table. The red ball rolls across the floor. It can mean danger, like a red light. It can mean love, like a red rose.
 
 [p1.property.s02]
-This one is big.
+This one is big. Big is a size that stands out above others. It feels strong like a tree in the wind. A big ball rolls across the floor. The big red apple sits on the table. It can mean fear, like a big storm. The big sky holds the sun and moon.
 
 [p1.property.s03]
-Red is not big.
+Red is not big. Red is bright like the sun at noon. Red is a colour that stands out above others. Red feels warm like a fire in the night. Red is not afraid to be seen. Red is not alone in the world. Red is not small, but not big either.
 
 [p1.property.s04]
-The red ball is bright and round.
+The red ball is bright and round. It does not fear the sun above. It feels warm like a fire in the night. It is not afraid to be seen. It is alive and moving. It is not alone in the world. It is able to roll on its own.
 
 [p1.property.s05]
 The big ball is broad and blue.
 
 [p1.property.s06]
-The bright red ball is not broad.
+The bright red ball is not broad. It is round and small. It rolls fast on the grass. It does not fall down. It stays in the air. The ball is red like a flower. It feels smooth and warm. No one else has a ball like this. It belongs to me.
 
 [p1.property.s07]
-The blue ball is clean and smooth.
+The blue ball is clean and smooth. It does not stick to the ground. It feels cool and light in my hand. I can hold it above my head. No one else has a ball like this. It is not red, but blue like the sky. It does not break when it hits the ground.
 
 [p1.property.s08]
-The red ball is not clean.
+The red ball is not clean. It has dirt stuck to its surface. It feels rough and heavy. It sticks to the ground. It is not bright like the sky. It is not blue like the ball before. It is red like an apple. It does not float. It does not shine.
 
 [p1.property.s09]
-The red ball is small and bright.
+The red ball is small and bright. It feels smooth and warm to the touch. It does not stick like the dirt-covered one. It shines like a small sun. It is not heavy like the stone. It moves with the breeze. It stays in place when placed on the ground.

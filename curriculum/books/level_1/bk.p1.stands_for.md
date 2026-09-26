@@ -56,28 +56,28 @@ To lose something, or not to win.
 A picture showing a place or thing.
 
 [p1.stands_for.s01]
-He placed the block car on the table, next to his doll.
+He placed the block car on the table, next to his doll. The block car was not a real car, but it stood for one. It was made of wood, not metal, and could not roll on its own. The wheels were round, but they did not turn. It looked like a car, but it was only a shape.
 
 [p1.stands_for.s02]
-The block car was not a real car, but it stood for one.
+The block car was not a real car, but it stood for one. It could not move on its own, though it looked like one. It was made of wood, not metal, and could not roll. The wheels were round, but they did not turn. It was shaped like a car, but it was only a shape.
 
 [p1.stands_for.s03]
-He used the block car to copy the way a real car moves.
+He used the block car to copy the way a real car moves. It could not roll, but he pushed it forward with his hand. The wheels stayed still, but he pretended they turned. He placed it on a hill made of books and pushed it down. It did not move, but he said it did, just the same.
 
 [p1.stands_for.s04]
-The block car was not alive, but Carlo pretended it was.
+The block car was not alive, but Carlo pretended it was. The block car was not a car. It could not move on its own. It was made of wood and glue. It was not alive, but Carlo believed it was. He gave it a name, a story, a past.
 
 [p1.stands_for.s05]
-He said the block car was a model of a real car from the future.
+He said the block car was a model of a real car from the future. It could not move, but Carlo believed it could. It was not alive, but it felt real in his hands. He painted it blue, bright and sharp, like a sky. He gave it a name, a story, a past.
 
 [p1.stands_for.s06]
-Carlo drew a picture of the block car in the snow.
+Carlo drew a picture of the block car in the snow. The snow was soft and deep, like a blanket over the ground. The car looked alive, even though it was only a mark. The picture felt real, like it could move. The car was not a real car, but it felt like one.
 
 [p1.stands_for.s07]
-The block car lost its place in the game, but Carlo still liked it.
+The block car lost its place in the game, but Carlo still liked it. The block car was not a car, but it felt alive. It could not move, yet it seemed to want to. He looked at it, and it looked back, even though it was only blocks. The car was not real, but it was real to him.
 
 [p1.stands_for.s30]
-Carlo played a game where the block car moved through the garden.
+Carlo played a game where the block car moved through the garden. The block car rolled across the grass, past the bright flowers. Its blocks felt alive, as if they knew the path. The garden was a world, and the car was its king. It rolled near a stick, then stopped beside a stone.
 
 [p1.stands_for.x15]
-The block car rolled over a stick, then stopped near a flower.
+The block car rolled over a stick, then stopped near a flower. The blocks were not meant to move on their own. It was not a car, but a toy made of wood and glue. The flower bent as if it knew the truth. It was only a shape built to look like a car.
