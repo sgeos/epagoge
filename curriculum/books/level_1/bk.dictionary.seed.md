@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "This book introduces young children to basic words that name everyday things, actions, and qualities, using simple definitions and clear examples. It helps them connect words to real-world experiences through familiar objects and concepts.",
   "teaches": "Children learn how words represent things, actions, and states, building a foundation for understanding language through concrete examples. They discover that words can describe physical properties, relationships, and simple ideas like time, size, and movement.",
   "records": {
@@ -768,7 +768,6 @@ Cooked is when food has been made hot so you can eat it.
 
 [dict.1.cool]
 Cool is a little cold.
-
 
 [dict.1.copper]
 Copper is a metal that has a red brown colour.

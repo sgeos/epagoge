@@ -2,17 +2,15 @@
   "level": 1,
   "steps": 800,
   "seed": 0,
-  "chunks": 1726,
-  "parameters": 55144448,
-  "held_out_loss": 3.7132707138856254,
+  "chunks": 1725,
+  "parameters": 55130112,
+  "held_out_loss": 3.7027668555577598,
   "temperature": 0.8,
-  "sampled_word_tokens": 302,
-  "distinct_share": 0.4105960264900662,
-  "sentence_share": 1.0,
+  "sampled_word_tokens": 49,
+  "distinct_share": 0.673469387755102,
+  "sentence_share": 0.8571428571428571,
   "samples": [
-    "i felt like a step that was not a lie . i had a small thing that that comes from something was long . i followed the colour . i could eat in my face . i was lost in the trees . i could not move , not afraid . i was above . the ball rolled across the path . the cat stayed low . i was not move , not even if the toy car was waiting . i should not fit in the floor . i felt cool and felt heavy , not even the shelf , not in the basket . the ball in and red ball rolled across the grass over the stove was",
-    "was not lost move , not even when he knew he reached up the sky above . he saw the path ahead , but he was not a promise , not afraid , each part of the for a bird above the mark , but he turned back to touch it again . he reached for it and saw a strong stone , careful not on the stream , not moving . he could not move , not even a line , or gone , not yet . it , not even a little . he walked across the world . he remembered the grass . the milk a block forward . he felt the same leaf . he wanted",
-    "whole . i could not move , not even to move , not even if the shelf . i pulled a drop it again , not and no one else was near , not even a leaf . i felt the street , not back . i did not move , not below . the ball rolled across the key was real car , not a secret . it , not even a fall , like a dream . the long her eyes , but it will not lost . i thought about the spoon . i heard a chair . i sat alone . i looked around it felt the grass , not even though i saw the balloon"
+    "the wood . he reached down in his mind , as if he reached for the world . he sits on the air . he thought about the sky , slow and clear . he reached for a pull . the balloon floats above , next . he did not change , and smooth , not even the branch above"
   ],
   "note": "Descriptive, and at this corpus size the samples are expected to be poor. Admissibility is deliberately not reported: the tokeniser is built from the level's lexicon, so every token the model can emit is admissible by construction and the figure would be one hundred per cent whatever the model learned."
 }

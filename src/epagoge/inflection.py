@@ -122,6 +122,11 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     "set": ("set", "set", "setting"),
     "shut": ("shut", "shut", "shutting"),
     "sing": ("sang", "sung", "singing"),
+    # `lit` is the past and participle a kindergarten reader meets. The
+    # regular `lighted` is correct English and archaic beside it, and the
+    # operator's rule is that a verb's inflections are all admitted while
+    # its archaic ones need not be. Added 2026-09-26.
+    "light": ("lit", "lit", "lighting"),
     "sink": ("sank", "sunk", "sinking"),
     "sleep": ("slept", "slept", "sleeping"),
     "speak": ("spoke", "spoken", "speaking"),

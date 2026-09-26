@@ -811,7 +811,7 @@
     {
       "word": "boss",
       "concept": "someone_in_charge",
-      "level": 1
+      "level": 2
     },
     {
       "word": "bottle",
@@ -2608,7 +2608,7 @@
     {
       "word": "forbidden",
       "concept": "allowed_or_not",
-      "level": 1
+      "level": 2
     },
     {
       "word": "force",
@@ -3248,7 +3248,7 @@
     {
       "word": "hook",
       "concept": "household_object",
-      "level": 1,
+      "level": 2,
       "pos": "noun",
       "forms": [
         "hooks"
@@ -3377,7 +3377,7 @@
     {
       "word": "insect",
       "concept": "animal",
-      "level": 1,
+      "level": 2,
       "pos": "noun",
       "forms": [
         "insects"
@@ -3780,11 +3780,11 @@
       "level": 1,
       "pos": "adjective noun verb",
       "forms": [
-        "lighted",
         "lighter",
         "lightest",
         "lighting",
-        "lights"
+        "lights",
+        "lit"
       ]
     },
     {
