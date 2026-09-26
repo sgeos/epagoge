@@ -10,8 +10,9 @@ Delete when `COMPLETION_CONDITION.md` is met. Durable practice is in
 | Goal | State, measured 2026-09-25 |
 | --- | --- |
 | Level-one book metadata | **Done.** All six fields on all 246 books |
-| Is the corpus really the limit? | **Confounded.** Untested below width 128 |
-| Level-one corpus length | **203 of 244** content books below the word band |
+| Is the corpus really the limit? | **Settled.** Yes. Saturates at width 128 |
+| Is the scaling law reproducible? | **Now yes.** The rate rises, not holds |
+| Level-one corpus length | **134 of 244** below the band, from 229 |
 | Level-one lexicon utilisation | **688 of 2,051** surface forms never used |
 | Level-two lexicon | 879 words against a target near 10,000 |
 | Schedules for levels three to seven | None exist |
@@ -92,9 +93,10 @@ field whatever erased it.
 ## Wrong turns to avoid on the capacity question
 
 - **Do not compare a new sweep against the recorded 4.789.** That figure
-  was measured on a 55,510-word corpus. The corpus is now over 70,000
-  words and growing. **Comparisons are valid only within one sweep on one
-  frozen corpus**, which is why the fill is suspended while a sweep runs.
+  was measured on a 55,510-word corpus, which passed 105,000 words by the
+  evening of the same day and was still growing. **Comparisons are valid
+  only within one sweep on one frozen corpus**, which is why the fill is
+  suspended while a sweep runs.
 - **Do not read held-out loss alone.** A small model can win on held-out
   loss because it underfits everything equally. Read the gap as well; the
   whole point of the diagnosis tool is that the two together separate

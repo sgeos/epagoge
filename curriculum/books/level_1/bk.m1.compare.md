@@ -59,25 +59,25 @@ Less, not as much.
 In the same way as.
 
 [m1.compare.s01]
-The two red balls are alike, but the blue ball is different.
+The two red balls are alike, but the blue ball is different. They are the same size, same shape, same colour. The red balls move together, side by side, like friends. The blue ball stays apart, alone, not joining the others. It just sits, still and quiet, in the same place.
 
 [m1.compare.s02]
-The red balls are a few, but the blue ball is one.
+The red balls are a few, but the blue ball is one. The blue ball is one, and the red balls are a few. They are not the same number, but they are alike in shape. The red balls move together, side by side, in a line. The blue ball stays still, alone, in the same place.
 
 [m1.compare.s03]
-The red balls are not less than the blue ball, but they are fewer.
+The red balls are not less than the blue ball, but they are fewer. They are alike in shape, but not in number. The blue ball stays still, alone, in the same place. The red balls move together, side by side, in a line. They are not the same number, but they are alike in shape.
 
 [m1.compare.s04]
-The red balls are like the blue ball in shape, but not in colour.
+The red balls are like the blue ball in shape, but not in colour. The red balls are alike in shape, but not in colour. They are not the same number, but they are alike in size. Each red ball is the same as the blue ball in shape. They move together, side by side, in a line.
 
 [m1.compare.s05]
-The red balls are not the least in number, but they are not the most.
+The red balls are not the least in number, but they are not the most. Each red ball is equal to the blue ball in shape and size. They move together in a line, side by side, as if sharing a path. No red ball is ahead, and none is behind.
 
 [m1.compare.s06]
-The blue ball is less in number than the red pile.
+The blue ball is less in number than the red pile. The blue ball is not the same as the red pile in number. Each red ball is equal to the blue ball in shape and size. They move together in a line, side by side, as if sharing a path.
 
 [m1.compare.s07]
-The red pile has more than the blue ball, a lot more.
+The red pile has more than the blue ball, a lot more. The red pile is not the same as the blue ball in number. Each red ball is alike in size and shape to the blue ball. They move together in a line, side by side, as if sharing a path.
 
 [m1.compare.s08]
-The red balls are like the blue ball in size, but not in kind.
+The red balls are like the blue ball in size, but not in kind. They move together in a line, side by side, as if sharing a path. Each red ball is alike in size and shape to the blue ball. They are not the same in number, though they appear alike.

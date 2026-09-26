@@ -1,13 +1,13 @@
 # Handoff Prompt
 
 **Refreshed 2026-09-25, describing the tree at the commit that carries
-this refresh.** Session 4 took the operator's framing of the project as
-three problems, completed and then lengthened the level-one corpus, made a
-checkpoint carry its own vocabulary, added the question-and-answer book
-because the corpus could not teach a model to answer, published the
-repository, and reviewed the operator's `keleusma` repository for practice
-worth adopting. Read this block, run the validity check, then stop and
-wait for the human prompt.
+this refresh.** Session 4 published the repository, reviewed the operator's
+`keleusma` repository for practice worth adopting, gave every book its
+metadata, settled whether model capacity or corpus is the limit, made the
+scaling law reproducible, and doubled the corpus. **It also withdrew three
+of its own findings**, which are listed below because the reasoning that
+produced them is more useful than the claims were. Read this block, run
+the validity check, then stop and wait for the human prompt.
 
 **NO COMMIT HASH IS STAMPED HERE, deliberately.** A stamp naming the
 commit that contains it is impossible, and one naming the parent is off by
@@ -46,7 +46,7 @@ discipline `CLAUDE.md` points to, and nowhere else.
 
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twenty-one**
    checks and **exits 0**, in about nine seconds.
-2. The suite reports **483** tests.
+2. The suite reports **484** tests.
 3. `curriculum/vocabulary.json` holds **961 senses over 928 words**, of
    which **845** are at level one and **879** at level two. **178** core,
    **37** ostensive, a seed of **257**, and **84** substitutions.
@@ -55,13 +55,18 @@ discipline `CLAUDE.md` points to, and nowhere else.
 5. `curriculum/thesaurus.json` holds **927** entries, 195 with an antonym
    and 132 with a synonym.
 6. `curriculum/books/level_1/` holds **246** books over **4,691**
-   records and **55,510 words**. Every unit has a book and **17 are
-   question-and-answer books**. **244 of the 246 are at sixteen spreads**;
-   the two that are not are `bk.dictionary.1` at 176 records and
-   `bk.dictionary.seed` at 611, which are reference books rather than
-   picture books and which the validator exempts by design. This item read
-   "every book is at sixteen spreads" until 2026-09-25, which anyone
-   checking it would have found false.
+   records. Every unit has a book and **17 are question-and-answer
+   books**. **244 of the 246 are at sixteen spreads**; the two that are not
+   are `bk.dictionary.1` at 176 records and `bk.dictionary.seed` at 611,
+   which are reference books rather than picture books and which the
+   validator exempts by design. This item read "every book is at sixteen
+   spreads" until 2026-09-25, which anyone checking it would have found
+   false.
+   **The word count is deliberately not asserted as an equality.** It was
+   **105,783** at this refresh, up from 55,510 that morning, and
+   `generators/fill_spreads.py` was still running. Check that it is **at
+   least** that, and that **110 or more** of the 244 content books are
+   inside the word band, with none above it.
 7. `curriculum/provenance.json` gives every word a first commit and a
    reconstructed admission criterion.
 8. `git ls-files secret | wc -l` reports **0**, and history is clean of
@@ -102,38 +107,60 @@ counted against the requirement because a seed word needs no definition.
 | Goal | State |
 | --- | --- |
 | Level-one reference material | **Done.** 808 of 808, closure 100 percent |
-| Level-one corpus | **Complete and a quarter of its length.** See below |
+| Level-one corpus | **Complete, 110 of 244 books at length.** See below |
+| Corpus or capacity the limit? | **Settled.** Corpus. Saturates at 128 |
+| Scaling law | **Reproducible**, and the marginal rate rises |
 | Level-one book metadata | **Done.** All six fields on all 246 books |
 | Train a level-one model | **Done.** Interactive through `tools/talk.py` |
 | Level-two reference material | **Done**, lexicon at 9 percent of target |
 | Level-two corpus | **One module of 27 scheduled** |
 | Level-two ablation | **Blocked** on corpus scale and on an endpoint |
 
-### Four live defects, all measured
+### Two live defects, both measured
 
-**The corpus is a quarter of its own length standard.** The operator set
-fifty words a spread, give or take thirty. Remeasured 2026-09-25:
-**229 of the 244 sixteen-spread content books are below the band**, 15 are
-inside it and none is above. Those 244 hold 48,634 words against 195,200
-at the standard, **without a single new book**.
-`generators/fill_spreads.py` does this and is the cheapest corpus growth
-available.
-
-**A third of the level-one lexicon is still never used**, which is the
-defect that remains alongside length. 688 of 2,051 surface forms. Each is
-a judgement about whether a module should use it, be drafted for it, or
-whether admitting it was a mistake, so a loop should not close it.
+**The corpus is still short of its own length standard, and closing
+steadily.** The operator set fifty words a spread, give or take thirty. At
+this refresh **134 of the 244 content books are below the band, 110 are
+inside it and none is above**, against 229 below that morning.
+`generators/fill_spreads.py` does this at about three minutes a book and is
+the cheapest corpus growth available. **The scaling re-measurement says it
+is paying**: the most recent doubling bought 0.316 nats against a fixed
+held-out set, the largest increment in the series.
 
 **A third of the level-one lexicon is never used.** 2,051 surface forms
-admitted, 1,363 used, **688 never**, and 11 headwords absent in every
-form. Mostly inflections, which are admitted automatically and used only
-if a writer happens to need them. Each one is a judgement: a module
-should use it, a module should be drafted for it, or admitting it was a
-mistake.
+admitted, 1,363 used, **688 never**, and 11 headwords absent in every form.
+Mostly inflections, admitted automatically and used only if a writer
+happens to need them. Each is a judgement about whether a module should use
+it, be drafted for it, or whether admitting it was a mistake, so a loop
+should not close it.
 
-**The level-two lexicon holds 879 words against a target of about
-10,000.** That is a schedule nobody has written, not a backlog of
-admissions.
+**The level-two lexicon holds 879 words against a target near 10,000.**
+That is a schedule nobody has written, not a backlog of admissions, and it
+is the operator's.
+
+### Three findings this session withdrew, and why they are kept
+
+**Each was recorded as a measurement and was not one.** The reasoning is
+kept beside each claim rather than deleted, because the failure mode is
+more reusable than the finding was.
+
+1. **"The model is too big for the corpus."** Refuted by a sweep of seven
+   widths from 16 to 1024 on one frozen corpus. Held-out loss falls
+   monotonically with width and the curve saturates near 128, so smaller is
+   decisively worse and bigger barely helps.
+   `../../evals/pilot/LEVEL_ONE_CAPACITY.md`.
+2. **"Filling books adds low-value tokens, at 0.199 nats per doubling."**
+   That compared two figures measured against different held-out sets.
+   Against one, the same doubling bought **0.316**, the largest increment
+   in the series. `../../evals/pilot/LEVEL_ONE_SCALING.md`.
+3. **"A question mark triggers the token `was`."** Six prompts sampled at
+   one seed all began alike for a reason unrelated to the prompt. Over
+   eight prompts at eight seeds it happens once. **The teacher was shown
+   this as a measurement and built a theory on it.**
+   `../../evals/pilot/LEVEL_ONE_INTERACTION.md`.
+
+**The class they share is in `PROCESS_STRATEGY.md`**: before reporting a
+difference, say what was held fixed and check that it was.
 
 ## Findings that outlive the session
 
