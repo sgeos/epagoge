@@ -53,31 +53,31 @@ The point where two sides meet.
 Small pieces of earth from the ground.
 
 [p1.stuff.v4.s01]
-The stone cup rolled across the ground.
+The stone cup rolled across the ground. The cup was round like a ball. It rolled through the grass and stopped near a tree. The cup could not move on its own. It had no legs or wheels. It could only roll when pushed by wind or hand. The cup stayed still after the breeze passed.
 
 [p1.stuff.v4.s02]
-The cup was round like a ball.
+The cup was round like a ball. The cup was made of stone. It felt cold and heavy to touch. The stone was smooth, like a river rock. It had no handle, no opening. It could not hold water or food. It was round and curved, like a ball. It stayed still, not moving again.
 
 [p1.stuff.v4.s03]
-The cup stayed still, not moving again.
+The cup stayed still, not moving again. It sat on the ground, covered in dust. No one came near it, though the air felt thick. A small bird landed on the stone, then flew away. The sky above was grey, not bright. No one knew why it was there, or how it came.
 
 [p1.stuff.v4.s04]
-A small dust cloud rose above it.
+A small dust cloud rose above it. The cup stayed still, made of stone. It sat on the ground, covered in dust. The sky above was grey, not bright. No one knew why it was there, or how it came. A small bird landed on the stone, then flew away.
 
 [p1.stuff.v4.s05]
-The dust settled like a blanket.
+The dust settled like a blanket. The cup stayed still, made of stone. No wind could move it, no hand could break it. The sky above stayed grey, not bright. No one knew why it was there, or how it came. A bird landed on the stone, then flew away.
 
 [p1.stuff.v4.s06]
-The cup stayed in the dirt, safe and quiet.
+The cup stayed in the dirt, safe and quiet. It was made of stone, cold and still. No light could shine through it, not even from above. Its surface was smooth, shaped by time and wind. No one had ever touched it, not even a child. It did not break, not even when the rain fell hard.
 
 [p1.stuff.v4.s07]
-No one saw it, not even in the bright sun.
+No one saw it, not even in the bright sun. The cup was made of stone, cold and still. Its surface was smooth, shaped by time and wind. No light could shine through it, not even from above. No one had ever touched it, not even a child. It did not break, not even when the rain fell hard.
 
 [p1.stuff.v4.s08]
-It was deep in the ground, hidden by the dirt.
+It was deep in the ground, hidden by the dirt. The stone cup stayed there, round and whole. No light could reach it, not even from above. No animal came near, not even a bird. No one knew it was there, not even the wind. It did not move, not even when the rain fell.
 
 [p1.stuff.v4.s09]
-The stone cup stayed there, round and whole.
+The stone cup stayed there, round and whole. It was made of stone, cold and hard. No light came from above to touch it. It did not feel the air or the breeze. It stayed alone, deep in the dirt. No animal came near, not even a bird. No one knew it was there, not even the wind.
 
 [p1.stuff.v4.s10]
-No one came to take it away.
+No one came to take it away. The cup stayed deep in the dirt, cold and hard. It felt nothing, not even the breeze. It did not know the sky above. It could not move, not even a little. It was alone, made of stone, whole and round. No light touched it, no sound came near.

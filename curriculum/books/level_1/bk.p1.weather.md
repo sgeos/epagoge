@@ -50,34 +50,34 @@ A storm is a bad weather with strong wind, rain, or snow.
 A sunny day has bright light from the sun and no clouds.
 
 [p1.weather.s01]
-The sky was sunny before.
+The sky was sunny before. Rain falls today. Clouds grow dark above the hill. Water drops fall from the sky. They hit the ground with small splashes. The grass turns wet and dark. A baby bird hides under a branch. The wind blows soft and steady. The ground is soft from the rain.
 
 [p1.weather.x06]
-Clouds grow dark above the hill.
+Clouds grow dark above the hill. Rain falls harder now, hitting the ground with more force. The wind begins to blow through the trees. The sky is full of grey, heavy air. Water drips from the leaves, one by one. The grass is soaked, the dirt turns soft. The wind lifts a leaf, then drops it again.
 
 [p1.weather.x07]
-The wind begins to blow through the trees.
+The wind begins to blow through the trees. The sky is dark, full of heavy air above. Water drips from the branches, one by one. A little girl runs inside, closing the door behind her. The wind lifts a leaf, then drops it again. The air feels cold, thick with rain and noise.
 
 [p1.weather.x08]
-A little girl runs inside, closing the door behind her.
+A little girl runs inside, closing the door behind her. Rain falls today. The sky is dark above the green hill. Water drips from the branches, one by one. The wind lifts a leaf, then drops it again. The air feels cold, thick with rain and noise. She stands by the window, watching the drops fall.
 
 [p1.weather.x09]
-The clouds grow dark above the green hill.
+The clouds grow dark above the green hill. The air feels thick, full of water and sound. She watches, still and quiet, eyes fixed on the sky. A single leaf floats, then sinks into the puddle. The hill seems to bend under the weight of the storm. Each drop falls like a tiny bell, sharp and clear.
 
 [p1.weather.x10]
-She opens the door and steps inside, shaking wet drops.
+She opens the door and steps inside, shaking wet drops. The air feels thick, full of water and sound. Each drop falls like a tiny bell, sharp and clear. She walks past the shelf, where books lie open. The book on the table is worn, its pages soft. The blanket is warm, thick, and dry.
 
 [p1.weather.x11]
-The clouds grew dark and low above the trees.
+The clouds grew dark and low above the trees. Rain begins to fall, soft at first, then stronger. Each drop hits the ground, making small splashes. The air feels heavy, full of water and sound. The blanket covers her, warm and dry. A bird flies low, wings brushing the trees.
 
 [p1.weather.x12]
-She pulls her blanket close, feeling safe from the storm outside.
+She pulls her blanket close, feeling safe from the storm outside. She wonders if the sky will ever clear. She thinks of her mother, far away, safe in bed. She closes her eyes, trying to sleep, but thoughts drift like leaves. She counts each drop, trying to calm her mind.
 
 [p1.weather.x13]
-The rain hits the window hard.
+The rain hits the window hard. It slips down like a tear from above. Each drop feels heavy, alive with sound. The wind blows cold, sharp against the glass. No bird sings, no leaf drifts, no one comes. The house stays still, safe, and low. It falls again, then again, with no end.
 
 [p1.weather.x14]
-Then the wind drops and the rain stops.
+Then the wind drops and the rain stops. The air feels still, clean, and soft. Each leaf above holds a drop, waiting to fall. The sky remains grey, but not dark. It lands on a branch, shakes its wet feathers. The sun has not come yet, but it will. The house feels quiet, full of breath.
 
 [p1.weather.x15]
-The sun comes back and the sky is bright again.
+The sun comes back and the sky is bright again. Rain falls today in drops that splash on the ground. Each leaf above shakes with a little weight. The air feels warm, not cold, and full of life. Birds fly across the sky, wings wide and bright. The grass is wet, soft, and green.

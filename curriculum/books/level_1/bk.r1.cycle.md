@@ -56,28 +56,28 @@ It is the time when the sun is gone and the sky is dark.
 The bright thing in the night sky is the moon.
 
 [r1.cycle.s01]
-The clock showed the time as the day went on.
+The clock showed the time as the day went on. The sun rose higher above the trees. The sky turned bright blue and stayed that way. The air felt warm and full of life. A dog ran after a red ball. The day grew longer and brighter. The clock kept time without stopping.
 
 [r1.cycle.s02]
-The moon appeared in the evening when the sky turned blue.
+The moon appeared in the evening when the sky turned blue. The sky grew darker above the trees. The air felt cool and still, like a secret held close. The world seemed quiet, as if holding its breath. The moon kept watch, never closing. The night stayed long, full of shadows and dreams.
 
 [r1.cycle.s03]
-The clock kept time, always moving forward.
+The clock kept time, always moving forward. The world felt alive, full of quiet promise. The air warmed, no longer cool or still. The day came again, steady and sure. The light grew stronger, spreading across the land. The sun rose high, filling every corner. The day was not the same, yet always the same.
 
 [r1.cycle.s04]
-The day and night followed each other, always the same.
+The day and night followed each other, always the same. The sky changed from bright to dark, then back again. The stars appeared above, steady and clear. Animals slept, some awake, others dreaming. The river flowed, smooth and quiet, never stopping. The clock kept time, never breaking its promise. The air grew thick with heat, full of life.
 
 [r1.cycle.s52]
-Night fell after evening, and stars appeared above.
+Night fell after evening, and stars appeared above. Animals slept, safe and warm in their beds. The river flowed, smooth and deep, never stopping. The moon rose high, bright and clear, above the trees. A bird flew past, wings cutting the dark. Time moved on, slow and sure, like breath.
 
 [r1.cycle.x12]
-Day came again, bright and warm, with birds singing in the trees.
+Day came again, bright and warm, with birds singing in the trees. The river flowed, smooth and clear, carrying leaves and light. He picked it up, warm from the sun, and held it close. The sky stayed blue, wide and open, full of space. Birds flew higher, following the path of the day.
 
 [r1.cycle.x13]
-The child smiled, ready to play outside with a red ball.
+The child smiled, ready to play outside with a red ball. The sun stayed bright, warm and high above. Birds flew in circles, wings catching the breeze. He stopped to watch a butterfly, soft and slow. The air smelled of earth and new green things. He turned, still smiling, ready to go again.
 
 [r1.cycle.x14]
-The child picked it up, brushed off the dirt, and ran back toward the house.
+The child picked it up, brushed off the dirt, and ran back toward the house. He stopped, looked up, saw the moon appear above the trees. He sat on the grass, legs crossed, eyes wide, watching the world slow. He reached out, touched it, felt its smooth round shape. The night came gently, stars blinking one by one.
 
 [r1.cycle.x15]
-The sun warmed the grass as the child sat up, smiling, and threw the ball high into the air.
+The sun warmed the grass as the child sat up, smiling, and threw the ball high into the air. He ran to it, picked it up, and threw it again. He sat down, legs crossed, eyes wide, thinking about where it might go. He felt the air grow cooler, the light softer.

@@ -68,7 +68,7 @@ Red is not big. Red is bright like the sun at noon. Red is a colour that stands 
 The red ball is bright and round. It does not fear the sun above. It feels warm like a fire in the night. It is not afraid to be seen. It is alive and moving. It is not alone in the world. It is able to roll on its own.
 
 [p1.property.s05]
-The big ball is broad and blue.
+The big ball is broad and blue. It does not fear the wind above. It feels smooth and warm like a fire. It is not alone in the air. It is not afraid to be seen. It is alive and able to roll. It does not stop or fall. It stays in the sky, not down.
 
 [p1.property.s06]
 The bright red ball is not broad. It is round and small. It rolls fast on the grass. It does not fall down. It stays in the air. The ball is red like a flower. It feels smooth and warm. No one else has a ball like this. It belongs to me.

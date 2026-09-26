@@ -62,22 +62,22 @@ Not at any time, not ever.
 The dark time between day and day.
 
 [r1.cycle.v3.s01]
-The sun comes up in the morning and the world wakes.
+The sun comes up in the morning and the world wakes. The sun climbs higher, warming the ground. Birds fly above the trees, singing songs. The sky stays bright, wide, and blue. The wind carries seeds from the tree. The sun moves ahead, slow and sure. No one sleeps, not even the baby.
 
 [r1.cycle.v3.x10]
-The sun climbs higher, warming the ground.
+The sun climbs higher, warming the ground. The air grows still, thick with heat. Birds fly above the trees, their wings catching the light. The sky stays bright, wide, and blue. The wind carries seeds from the tree. The sun moves ahead, slow and sure. No one sleeps, not even the baby.
 
 [r1.cycle.v3.x11]
-Birds sing from branches above the trees.
+Birds sing from branches above the trees. The air grows still, thick with heat. The sun moves ahead, slow and sure. No one sleeps, not even the baby. The wind carries seeds from the tree. The sky stays bright, wide, and blue. The ground feels warm, alive with life. He stops to watch the sky.
 
 [r1.cycle.v3.x12]
-The sky turns blue, clear and wide above the hill.
+The sky turns blue, clear and wide above the hill. The air feels still, thick with the heat of day. He stops, looks up, sees the sky again. The hill rises, covered in grass and stones. He bends, picks it up, feels its weight. The first star appears, small and sharp.
 
 [r1.cycle.v3.x13]
-The wind carries a balloon, floating far away.
+The wind carries a balloon, floating far away. The balloon floats above the trees, drifting slowly across the sky. It moves like a breath, rising and falling with the breeze. The sky turns dark, but the balloon still shines, bright and small. It does not fall, does not stop, does not fear the night.
 
 [r1.cycle.v3.x14]
-The world rests, quiet and still, as night comes again.
+The world rests, quiet and still, as night comes again. The stars blink once, then again, as if counting time. The world is still, and so is the heart. All is calm, all is dark, all is whole. And so it stays, for now, for long, for ever. The night stays long, but the stars stay bright.
 
 [r1.cycle.v3.x15]
-The sun climbs higher, warming the earth below.
+The sun climbs higher, warming the earth below. Birds wake and fly, high above the trees. The sun climbs higher, steady and strong. It shines on the roof, the window, the street. A child climbs a tree, slow and careful. He reaches for a branch, then sits. Each moment grows, one after another.

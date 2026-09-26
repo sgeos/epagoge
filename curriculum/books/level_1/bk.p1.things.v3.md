@@ -53,31 +53,31 @@ An open space in the forest is a clearing.
 Having nothing inside; not filled.
 
 [p1.things.v3.s01]
-The cup is here.
+The cup is here. It sits on the table, bright and clean. No one touched it, not even the cat. The cup is made of blue glass, smooth and clear. It holds no liquid, not even a drop of water. It stands tall, full of air, not empty. The cup is not afraid, not even of the wind.
 
 [p1.things.v3.s02]
-The cup is empty.
+The cup is empty. It sits on the table, still and quiet. No one comes near it, not even the cat. It feels no wind, no touch, no fear. It holds no water, no drink, no liquid. It is full of space, not nothing. It is not broken, not cracked, not gone.
 
 [p1.things.v3.s03]
-It is still the same cup.
+It is still the same cup. It sits on the table, alone and quiet. No one comes near it, not even the cat. It feels no wind, no touch, no fear. It holds no water, no drink, no liquid. It is full of space, not nothing. It is not broken, not cracked, not gone.
 
 [p1.things.v3.s04]
-The cup appears on the clearing.
+The cup appears on the clearing. It sits alone, still, in the open air. No one comes near it, not even the wind. It feels no fear, no touch, no weight. It is not broken, not cracked, not gone. It holds no liquid, no drink, no water. It is full of space, not nothing.
 
 [p1.things.v3.s05]
-The cup is inside the bag.
+The cup is inside the bag. It feels safe, hidden, warm, and still. It holds the cup close, like a secret, like a promise. No one sees it, not even light. It is not afraid, not alone, not lost. The bag moves, but slowly, like a breath. It is not heavy, not light, not gone.
 
 [p1.things.v3.s06]
-The bag is in the basket.
+The bag is in the basket. The basket sits on the bed. The bed is warm, soft, and still. The cup is here, safe, quiet, and whole. No one sees it, not even light. It is not afraid, not alone, not lost. The air is calm, the room is clear.
 
 [p1.things.v3.s07]
-The basket sits on the bed.
+The basket sits on the bed. The bed is warm, soft, and still. The cup is here, safe, quiet, and whole. No one sees it, not even light. It is not afraid, not alone, not lost. The air is calm, the room is clear. The cup feels the weight of the world above.
 
 [p1.things.v3.s08]
-The bed is in the clearing.
+The bed is in the clearing. The air is still and bright above. The cup is here, whole and safe. No one sees it, not even the light. It feels the weight of the world above. It is not afraid, not alone, not lost. The room is calm, the space is clear.
 
 [p1.things.v3.s09]
-The cup is gone from the basket.
+The cup is gone from the basket. It lies hidden under the bed, safe and still. No one sees it, not even the light above. It feels the weight of the world, but is not afraid. The air is calm, the space is clear. The room is quiet, the floor is clean.
 
 [p1.things.v3.s10]
-The cup is hidden under the bed.
+The cup is hidden under the bed. It feels safe and still. The air is calm above. No one sees it, not even the light. It lies alone, hidden in the dark. The floor is clean and quiet. The room is clear and still. The cup is not afraid. It stays where it is.

@@ -47,37 +47,37 @@ A container made of cloth or plastic to carry things.
 Having nothing inside.
 
 [p1.things.v4.s01]
-The cup is here.
+The cup is here. It sits on the table, still and whole. No one moved it, no wind blew it. It is not empty, not yet. A small light shines above it, bright and clear. The cup is made of blue glass, smooth and round. It holds no water, no drink, no food.
 
 [p1.things.v4.s02]
-The cup is empty.
+The cup is empty. No light shines above it now. No shadow moves across the room. The window is closed, the curtain drawn. The cup is here, but nothing lives inside. It is not broken, not cracked, not gone. It is only empty, and that is all. No one knows why it stays.
 
 [p1.things.v4.s03]
-It is still the same cup.
+It is still the same cup. The cup has not changed. No light shines above it now. The cup is here, and that is all. It is not broken, not cracked, not gone. It is only empty, and that is all. No one knows why it stays. It is not afraid.
 
 [p1.things.v4.s04]
-The cup had been hidden in the basket.
+The cup had been hidden in the basket. It was not alone, though it felt that way. No one had touched it, not even the cat. The cup was not afraid, though it had been hidden. It had not been broken, not even cracked. It was only empty, and that was all.
 
 [p1.things.v4.s05]
-The basket was on the bed.
+The basket was on the bed. The cup is here. It is not alone. The basket is on the bed. The bed is in the clearing. The air is still. The sun is bright. The cup feels alive. It is not afraid. It has been found. It was hidden. Now it is seen.
 
 [p1.things.v4.s06]
-The bed was in the clearing.
+The bed was in the clearing. The air is still. The sun is bright. The cup feels alive. It is not afraid. It has been found. It was hidden. Now it is seen. The cup is here. It is not alone. The basket is on the bed. The bed is in the clearing.
 
 [p1.things.v4.s07]
-The clearing was near the forest.
+The clearing was near the forest. The air above the trees felt thick and still. The cup is here, not lost, not broken. It has been found again, after days of hiding. No one else knows where it was. The cup feels alive, not afraid. It sits on the bed, near the window.
 
 [p1.things.v4.s08]
-The cup had been gone for days.
+The cup had been gone for days. No one could find it, not even the dog. The air above the cup felt still, like a secret. It had been moved across the room, then back again. It felt alive, awake, not afraid. It had been touched by hands, but not held.
 
 [p1.things.v4.s09]
-It was found again, still empty.
+It was found again, still empty. The air above the cup felt calm, not afraid. It had been moved across the room again, then back. No one had touched it, not even the dog. The cup was alive, awake, not broken. It sat on the table, still, like a secret.
 
 [p1.things.v4.s10]
-The cup was not broken.
+The cup was not broken. It sat above the table, still, alive. No one had touched it, not even the dog. The air around it felt calm, not afraid. It had been moved across the room again, then back. No one had changed it, not even the child. It felt whole, strong, alive.
 
 [p1.things.v4.s11]
-It was not changed.
+It was not changed. The cup stayed above the table, still alive. No one had touched it, not even the dog. The air around it felt calm, not afraid. It had been moved across the room again, then back. No one had changed it, not even the child. It felt whole, strong, alive.
 
 [p1.things.v4.s12]
-The cup was still the same.
+The cup was still the same. It stayed above the table, alive and calm. No one had moved it, not even the dog. The air around it felt safe, not afraid. It had been placed across the room, then back again. No one had touched it, not even the child.

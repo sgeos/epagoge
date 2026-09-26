@@ -74,7 +74,7 @@ It rolls on wheels when you push it forward. It is not afraid of the edge or the
 It fits under the table when not in use. It sits still when not in use. It stays put without moving on its own. It does not need to sleep or eat. It is made of strong wood and metal parts. It can carry a basket or a cup without spilling.
 
 [p1.motion.v3.x13]
-It helps you carry things from room to room.
+It helps you carry things from room to room. It sits still under the bright sun. The wind blows gently through the trees. A bird sings above the tall grass. They are pink and smooth, like a soft cloth. A butterfly lands on the edge of the leaf. The garden is quiet, full of life.
 
 [p1.motion.v3.x14]
 You take it outside to the garden. It sits still under the bright sun. The wind blows gently through the trees. A bird sings above the tall grass. They are pink and smooth, like a soft cloth. A butterfly lands on the edge of the leaf. The garden is quiet, full of life.

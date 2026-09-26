@@ -56,28 +56,28 @@ Stroke means to move a hand gently over a surface or body part.
 Touch means to come into contact with something, using a hand or part of the body.
 
 [p1.touch.v3.s01]
-Your hand is on the cup.
+Your hand is on the cup. The cup is warm from the heat inside. It holds water that came from the tap. The handle is smooth and fits your fingers. You feel the weight of it, steady and real. It sits on the table, not moving. The surface is clean, no marks or cracks.
 
 [p1.touch.v3.s02]
-Nothing moves until something touches it.
+Nothing moves until something touches it. The cup stays still, its handle warm against the fingers. No one else is in the room, only the quiet and the light. The table is clean, no marks, no cracks. A shadow falls across the floor, long and thin. The glass holds heat, not cold, not gone.
 
 [p1.touch.v3.s03]
-The cup did not move, but the air above it bent.
+The cup did not move, but the air above it bent. The air above the cup bent like a bridge made of light. The handle stayed warm, not cold, not dead, not broken. The light bent too, as if the air itself were alive. A whisper came, not from the room, not from the wall, not from the window.
 
 [p1.touch.v3.s04]
-A hand touched the cup again, this time with a stroke.
+A hand touched the cup again, this time with a stroke. The stroke felt warm, like breath on glass. The air above the cup bent again, shaped like a bridge made of light. The handle stayed warm, not cold, not dead, not broken. The light bent too, as if the air itself were alive.
 
 [p1.touch.v3.s05]
-The cup did not move, but the surface felt smooth.
+The cup did not move, but the surface felt smooth. The air above the cup bent again, shaped like a bridge made of light. The handle stayed warm, not cold, not dead, not broken. The light bent too, as if the air itself were alive. A hand touched the cup again, this time with a stroke.
 
 [p1.touch.v3.s06]
-The cup did not move, but the sound rose like a bell.
+The cup did not move, but the sound rose like a bell. The air above the cup bent again, shaped like a bridge made of light. The handle stayed warm, not cold, not dead, not broken. The light bent too, as if the air itself were alive. A hand touched the cup again, this time with a stroke.
 
 [p1.touch.v3.s07]
-The cup did not move, but the handle warmed.
+The cup did not move, but the handle warmed. The handle stayed warm, not cold, not dead, not broken. The air above the cup bent again, shaped like a bridge made of light. A hand touched the cup again, this time with a stroke. The surface felt warm, not hot, not burned, not broken.
 
 [p1.touch.v3.s08]
-The cup did not move, but the surface felt warm.
+The cup did not move, but the surface felt warm. A hand touched the cup again, this time with a stroke. The handle stayed warm, not cold, not dead, not broken. The air above the cup bent again, shaped like a bridge made of light. A breeze slipped through the window, brushing the edge of the table.
 
 [p1.touch.v3.x15]
-A breeze slipped through the window, brushing the edge of the table.
+A breeze slipped through the window, brushing the edge of the table. The cup felt warm, alive, as if it had a breath. The handle stayed smooth, not broken, not cold. A hand reached again, this time to lift the cup. The air above bent like a bridge made of light.

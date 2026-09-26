@@ -62,22 +62,22 @@ Not at any time, not ever.
 The time when the sun is gone and the sky is dark.
 
 [r1.cycle.v4.s01]
-The sun comes up in the morning and warms the earth.
+The sun comes up in the morning and warms the earth. It rises above the hill and lights the sky. Birds fly above the trees and sing. The air feels warm and soft after night. Animals wake up and begin to move. The sky turns blue, not dark. The grass stands tall, green and alive.
 
 [r1.cycle.v4.s02]
-The clock shows time as day goes on, step by step.
+The clock shows time as day goes on, step by step. The air feels warm and still. Birds fly above the trees and sing. Animals move across the grass and play. The sun rises higher, not low. The sky stays blue, not dark. The grass stands tall, green and alive.
 
 [r1.cycle.v4.s03]
-The moon appears in the sky above the trees in the evening.
+The moon appears in the sky above the trees in the evening. The air feels cooler now, not warm, and still. Animals stop playing and move to their homes. The sky turns dark, not blue, and the stars appear. The moon rises higher, not low, and stays above. The trees stand still, their branches like arms.
 
 [r1.cycle.v4.s04]
-The sky grows dark, and the world feels quiet at night.
+The sky grows dark, and the world feels quiet at night. Animals sleep deep, safe in their homes. Stars appear, bright and cold, like tiny lights above. The trees stand tall, their branches like arms held up. Even the wind has stopped, as if holding its breath. The night is long, and deep, and full of secrets.
 
 [r1.cycle.v4.s05]
-The moon shines bright, and the stars come out to play.
+The moon shines bright, and the stars come out to play. The world is still, and all things sleep. The wind moves slow, like a breath held long. Animals rest, safe in their homes. The trees stand tall, their branches like arms. The moon watches over all, bright and true.
 
 [r1.cycle.v4.s06]
-The world wakes up, and life moves on, always.
+The world wakes up, and life moves on, always. The day comes again, bright and clear. Life moves on, always awake and alive. Birds fly high, wings cutting through the air. The sun rises, warm on the ground. Children wake, eyes open, full of wonder. The world breathes, steady and strong.
 
 [r1.cycle.v4.s07]
-The month passes, but the sun comes again each day.
+The month passes, but the sun comes again each day. Birds fly again, wings cutting through the air. The day comes, warm and alive, full of light. The sky stays blue, clear and wide. The world moves on, steady and strong. Life goes on, day after day, no end. Night falls, soft and still, covering the ground.

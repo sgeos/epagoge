@@ -59,25 +59,25 @@ To hide something away.
 To hide something away.
 
 [p1.things.s01]
-The cup is here.
+The cup is here. It sits on the table, bright and blue. No one else sees it, not even the cat. It holds nothing, but it is full of light. The air around it feels warm and still. It is not made of glass, but of strong plastic. It was left here, not placed.
 
 [p1.things.s02]
-The cup is empty.
+The cup is empty. It holds no liquid, not even a drop. No one can see it but me, not even the cat. It sits on the table, alone and still. I am not afraid, though others might be. It is not broken, not cracked, not bent. It was made to hold, but now it holds only light.
 
 [p1.things.s03]
-It is still the same cup.
+It is still the same cup. It sits on the table, unchanged by time. No one can see it but me, not even the cat. It holds no liquid, not even a drop. It was made to hold, but now it holds only light. The light bends around its shape, soft and still.
 
 [p1.things.s04]
-The cup was placed on the bed.
+The cup was placed on the bed. It lies still, soft and low. No one else sees it, not even the cat. The light bends above it, bright and true. It holds no liquid, not even a drop. The bed is warm, and the air is quiet. The cup feels alive, though it is not.
 
 [p1.things.s05]
-The cup was not gone.
+The cup was not gone. It sat on the bed, still alive and bright. The air above it moved, soft and slow. No one else saw it, not even the cat. The light bent around it, sharp and true. It held no liquid, not even a drop. The bed was warm, and the air was quiet.
 
 [p1.things.s06]
-The cup was not hidden.
+The cup was not hidden. It sat on the bed, alive and bright. The air above it moved, soft and slow. No one else saw it, not even the cat. The light bent around it, sharp and true. It held no liquid, not even a drop. The bed was warm, and the air was quiet.
 
 [p1.things.s07]
-The cup was not broken.
+The cup was not broken. It sat on the bed, alive and bright. The air above it moved, soft and slow. No one else saw it, not even the cat. The light bent around it, sharp and true. It held no liquid, not even a drop. The bed was warm, and the air was quiet.
 
 [p1.things.s08]
-The cup was not filled.
+The cup was not filled. It sat on the bed, alive and bright. The air above it moved, soft and slow. No one else saw it, not even the cat. The light bent around it, sharp and true. It held no liquid, not even a drop. The bed was warm, and the air was quiet.

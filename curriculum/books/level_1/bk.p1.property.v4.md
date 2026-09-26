@@ -59,7 +59,7 @@ Red is not big. Red is bright and clear. Red appears on a ball and a flower. Red
 The red ball is bright. It does not fear the sun. It feels warm and alive. It stands out like a flower. It is not afraid to be seen. It is round and smooth. It can be held in one hand. It is strong and safe. It does not break when it hits the floor.
 
 [p1.property.v4.s05]
-The bright ball is round.
+The bright ball is round. The red ball is round. It sits on the grass, still and bright. No one touches it, though it calls. The air is warm, and the sky is blue. The ball feels safe, though it is alone. It does not move, but it knows the world.
 
 [p1.property.v4.s06]
 The round ball is clean. The red ball is round. It sits on the grass, still and bright. No one touches it, though it calls. The air is warm, and the sky is blue. The ball feels safe, though it is alone. It does not move, but it knows the world.

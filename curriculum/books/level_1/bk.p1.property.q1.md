@@ -57,7 +57,7 @@ Is this one broad? This one is broad. Broad is not narrow. This one is strong. S
 Is this one brown? This one is not brown. This one is red. Red is not brown. This one is bright. Bright is not dull. This one is warm. Warm is not cold. This one is smooth. Smooth is not rough. This one is strong. Strong is not weak. This one is alive.
 
 [p1.property.q1.a07]
-Is this one clean? This one is clean.
+Is this one clean? This one is clean. Is this one red? This one is red. Red is not blue, not green, not black. It stands out above all others. It feels warm like the sun. It can be loud or quiet, soft or sharp. It hides in shadows, shines in light.
 
 [p1.property.q1.a08]
 Is this one clear? This one is clear. Is this one red? This one is red. It is not blue, not green, not black. It stands out above all others. It feels warm like the sun. It can be loud or quiet, soft or sharp. It hides in shadows, shines in light.

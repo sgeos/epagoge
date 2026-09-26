@@ -50,34 +50,34 @@ An open space in a forest or among trees.
 Having nothing inside; not full.
 
 [p1.things.v2.s01]
-The cup is here.
+The cup is here. It sits on the table, still and quiet. The cup is here, not gone, not lost. It holds no water, no drink, no food. It has a handle, smooth and round. The cup is here, waiting for something. It is not broken, not cracked, not bent.
 
 [p1.things.v2.s02]
-The cup is empty.
+The cup is empty. It sits on the table, still and quiet. No water flows, no drink is near. The handle remains smooth, round, and warm. It is not broken, not cracked, not bent. The cup is here, not gone, not lost. It holds no food, no liquid, no breath.
 
 [p1.things.v2.s03]
-It is still the same cup.
+It is still the same cup. The handle remains warm and round. No change has come to its shape or size. The inside is clean and smooth. It holds no water, no drink, no breath. It sits still, not moved, not shaken. The light above it is bright and clear.
 
 [p1.things.v2.s04]
-The cup appeared on the table after the rain.
+The cup appeared on the table after the rain. It sat alone, not moved by the wind. The light above it was bright and clear. No one had touched it, no hand had come near. The handle remained warm, round, and whole. No mark, no crack, no sign of harm.
 
 [p1.things.v2.s05]
-The cup was not in the basket.
+The cup was not in the basket. It sat alone on the table, bright and clear. No hand had come near, no one had touched it. The handle remained warm, round, and whole. No mark, no crack, no sign of harm. The light above it was bright and clear. No wind had blown, no sound had come.
 
 [p1.things.v2.s06]
-The cup was not under the bed.
+The cup was not under the bed. It sat alone on the table, bright and clear. No hand had come near, no one had touched it. The handle remained warm, round, and whole. No mark, no crack, no sign of harm. The light above it was bright and clear. No wind had blown, no sound had come.
 
 [p1.things.v2.s07]
-The cup was not gone.
+The cup was not gone. It sat on the table, bright and clear. No hand had come near, no one had touched it. The handle remained warm, round, and whole. No mark, no crack, no sign of harm. The light above it was bright and clear. No wind had blown, no sound had come.
 
 [p1.things.v2.s08]
-The cup was not hidden.
+The cup was not hidden. It sat on the table, bright and clear. No hand had come near, no one had touched it. The handle remained warm, round, and whole. No mark, no crack, no sign of harm. The light above it was bright and clear. No wind had blown, no sound had come.
 
 [p1.things.v2.s09]
-The cup was still here.
+The cup was still here. It sat on the table, bright and clear. No hand had come near, no one had touched it. The handle remained warm, round, and whole. No mark, no crack, no sign of harm. The light above it was bright and clear. No wind had blown, no sound had come.
 
 [p1.things.v2.s10]
-The cup was not stolen.
+The cup was not stolen. The cup is here. It sits above the table, bright and clear. No one has moved it, no hand has touched it. The handle remains warm, round, and whole. No mark, no crack, no sign of harm. The light above it is bright and clear.
 
 [p1.things.v2.s11]
-The cup was not broken.
+The cup was not broken. The cup is here. It sits above the table, bright and clear. No one has moved it, no hand has touched it. The handle remains warm, round, and whole. No mark, no crack, no sign of harm. The light above it is bright and clear.

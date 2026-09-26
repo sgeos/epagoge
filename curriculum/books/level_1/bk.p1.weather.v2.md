@@ -56,28 +56,28 @@ The sky is the space above the ground.
 A star is a bright point of light in the night sky.
 
 [p1.weather.v2.s01]
-The sky was dry before, but now it is cloudy.
+The sky was dry before, but now it is cloudy. Rain falls today. Clouds move across the air. The wind blows hard and loud. Water drops fall from the sky. They hit the ground with a soft sound. The grass grows wet and dark. The leaves on the trees shake.
 
 [p1.weather.v2.x08]
-A little girl stands by the window, watching the sky.
+A little girl stands by the window, watching the sky. Rain falls above the trees and the ground. She sees drops slide down the glass like tiny rivers. The wind pushes the clouds across the sky. She presses her hand against the glass, warm and alive. She wonders if the rain can hear her thoughts.
 
 [p1.weather.v2.x09]
-A little girl stands at the window, watching the world turn wet.
+A little girl stands at the window, watching the world turn wet. Rain falls above the trees and the ground. She sees drops slide down the glass like tiny rivers. The wind pushes the clouds across the sky. She presses her hand against the glass, warm and alive. She wonders if the rain can hear her thoughts.
 
 [p1.weather.v2.x10]
-She pulls her blanket tight and smiles at the sky.
+She pulls her blanket tight and smiles at the sky. Rain falls above the trees and the ground. The wind pushes the clouds across the sky. She presses her hand against the glass, warm and alive. She wonders if the rain can hear her thoughts. The world outside is wet and bright.
 
 [p1.weather.v2.x11]
-The baby watches from the window, eyes wide with wonder.
+The baby watches from the window, eyes wide with wonder. Rain falls above the trees and the ground. She presses her hand against the glass, warm and alive. The wind pushes the clouds across the sky. She wonders if the rain can hear her thoughts. The world outside is wet and bright.
 
 [p1.weather.v2.x12]
-A red balloon drifts down, caught in the branches of a tree.
+A red balloon drifts down, caught in the branches of a tree. The baby watches, eyes wide, breath held in quiet wonder. She wants to reach, but the glass stays between her and the world. The wind pushes the clouds across the sky, dark and low. No one can stop it now, not even the wind.
 
 [p1.weather.v2.x13]
-The baby reaches out, fingers brushing the wet glass.
+The baby reaches out, fingers brushing the wet glass. Rain falls today, soft and steady, tapping the window above. The glass is cold, but her hand stays close, not afraid. She breathes in, then out, slow and steady, like the breeze. The room is warm, the blanket soft, the chair still.
 
 [p1.weather.v2.x14]
-The baby lets go of the glass and claps, her tiny hands making a soft sound.
+The baby lets go of the glass and claps, her tiny hands making a soft sound. The baby claps again, her eyes bright with wonder. She reaches out, fingers brushing the cool glass. A balloon drifts past, floating low above the wet leaves. The room is warm, the blanket soft, the chair still.
 
 [p1.weather.v2.x15]
-The balloon drifts lower, brushing the wet leaves.
+The balloon drifts lower, brushing the wet leaves. Rain falls today, soft and slow, on the grass and the ground. The baby lies awake, her eyes wide, watching the sky. The wind blows, and the leaves shake, dropping drops of water. The baby reaches out, fingers slipping on the wet glass.

@@ -62,22 +62,22 @@ Not at any time or place.
 The dark part of the day when stars shine.
 
 [r1.cycle.v2.s01]
-The sun comes up, morning light fills the sky.
+The sun comes up, morning light fills the sky. The sun climbs higher, bright and warm above the trees. Morning light fills the sky, spreading wide across the land. Birds fly ahead, singing songs of new days. The wind blows soft, carrying seeds and songs. A butterfly lands on a flower, wings open and bright.
 
 [r1.cycle.v2.s02]
-The clock shows time, and the day begins again.
+The clock shows time, and the day begins again. The sky turns bright, and the world grows warm. Birds fly ahead, singing songs of new days. The wind blows soft, carrying seeds and songs. A butterfly lands on a flower, wings open and bright. The sun climbs higher, bright and warm above the trees.
 
 [r1.cycle.v2.s03]
-The sky turns bright, and the world grows warm.
+The sky turns bright, and the world grows warm. Birds fly ahead, singing songs of new days. The wind blows soft, carrying seeds and songs. A butterfly lands on a flower, wings open and bright. The sun climbs higher, bright and warm above the trees. Shadows shrink, and light spreads across the land.
 
 [r1.cycle.v2.s04]
-The evening comes, and the air grows calm.
+The evening comes, and the air grows calm. The wind stops blowing, and the world feels still. A dog lies asleep by the door, warm and quiet. The moon rises, bright and round, above the hill. The stars appear, one by one, in the dark sky. The night comes, soft and deep, like a blanket.
 
 [r1.cycle.v2.s05]
-The boy plays with a ball, then runs to the garden.
+The boy plays with a ball, then runs to the garden. The sun is low, and the air feels warm and still. He stops to watch, his breath slow and steady. The garden is full of life, and he feels alive too. He sits on a stone, listening to the breeze.
 
 [r1.cycle.v2.s06]
-The sun sets, and the night comes slowly.
+The sun sets, and the night comes slowly. The night comes slowly, and the stars appear above. The moon shines bright, and the air feels still. The boy sits on the stone, his breath calm and steady. He feels alive, though the world seems quiet. The breeze moves through the trees, and leaves drift down.
 
 [r1.cycle.v2.s07]
-The stars appear, and the moon shines above.
+The stars appear, and the moon shines above. The night stays long, and the world feels still. The boy sits, his breath calm, his thoughts alive. He feels the air, cool and soft, moving above. The breeze drifts, and leaves fall, one by one. He hears a sound, not loud, but clear.
