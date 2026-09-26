@@ -1,15 +1,17 @@
-# Current brief. Finish the metadata, then lengthen the corpus
+# Current brief. Settle the capacity confound, and keep lengthening
 
-**Written 2026-09-25**, replacing the three-problems brief, whose items
-are carried forward below. Delete when `COMPLETION_CONDITION.md` is met.
-Durable practice is in `PROCESS_STRATEGY.md` and is not repeated here.
+**Written 2026-09-25 and revised the same day** after the metadata goal
+was met and a confound was found in the project's central measurement.
+Delete when `COMPLETION_CONDITION.md` is met. Durable practice is in
+`PROCESS_STRATEGY.md` and is not repeated here.
 
 ## The present goals, as the tree reports them
 
 | Goal | State, measured 2026-09-25 |
 | --- | --- |
-| Level-one book metadata | **0 of 246** books carry any of six fields |
-| Level-one corpus length | **229 of 244** content books below the word band |
+| Level-one book metadata | **Done.** All six fields on all 246 books |
+| Is the corpus really the limit? | **Confounded.** Untested below width 128 |
+| Level-one corpus length | **203 of 244** content books below the word band |
 | Level-one lexicon utilisation | **688 of 2,051** surface forms never used |
 | Level-two lexicon | 879 words against a target near 10,000 |
 | Schedules for levels three to seven | None exist |
@@ -21,24 +23,48 @@ not this brief's.
 
 ## What to pursue, and why in this order
 
-**First, book metadata, to completion.** It is bounded, finishable in one
-sitting, and it has sat at zero across three sessions while the capability
-to do it existed. The operator asked for `about` and `teaches` once and
-for `author`, `licence`, `first_published` and `published` again later.
-This is the project's own rule about unblocking not being authoring,
-applied to the one case where the tooling was already built.
+**First, settle whether the corpus is really the limit.** The project
+records that the model is limited by corpus and not by training, and that
+conclusion sets every priority downstream of it. It rests on a width sweep
+of exactly two points, 1.39M and 4.35M parameters, both far into the
+regime where a model memorises its data. **A two-point sweep entirely
+inside the memorisation regime cannot separate "the corpus is too small"
+from "the model is too big for this corpus."** Nothing below width 128 has
+ever been run. Each run costs a minute or two, so this is the cheapest
+test of the most load-bearing claim in the project.
 
-**Second, corpus length**, with whatever budget remains. It is the larger
-prize, since the corpus is the *measured* limit on model quality, and it
-needs no new book. But it is open-ended where the metadata is bounded, and
-finishing beats starting.
+It matters beyond tidiness. If a much smaller model generalises better on
+the same tokens, then part of what is recorded as a corpus limit is a
+capacity choice, and that is fixable today where corpus growth is eleven
+hours of teacher time.
+
+**Second, corpus length**, continuously in the background. It is the
+larger prize and needs no new book, but it is open-ended.
 
 **Not lexicon utilisation.** Each of the 688 unused forms is a judgement
 about whether a module should use it, be drafted for it, or whether
 admitting it was a mistake. A loop cannot make that call and should not
 pretend to.
 
-## Two defects found before any of this work started
+## What the teacher said, and what it is worth
+
+Asked to rate `sporos` given the project's maturity, the teacher answered
+**extremely disappointing**, and its diagnostics were partly sound: the
+model collapses to `the cup is` whatever it is asked, and every answer to a
+question begins with `was`. Both are reproducible.
+
+**Its causal reasoning was not sound, and the difference matters.** It
+argued that worse-than-chance held-out loss under overtraining "confirms
+the corpus is structurally impoverished." It does not. That is the ordinary
+signature of overfitting a small dataset, which is a statement about size.
+It also called `cup` a dominant subject; measured, `cup` is 1.69 percent of
+content-book tokens and appears in 85 of 244 books. Disproportionate among
+content words by a factor of 2.7, not dominant.
+
+**And it was judging its own prose.** Treat the verdict as one model's
+opinion, and the attractor collapse as the finding worth keeping.
+
+## Three defects found by reading the tools rather than running them
 
 Both were found in the first ten minutes, by reading the tool rather than
 running it. Neither would have announced itself.
@@ -56,11 +82,34 @@ with `dataclasses.replace` so the set of fields is never enumerated again.
 read.** Any consumer of `load_books` sees books whose form and metadata
 are absent rather than empty, and cannot tell the difference.
 
-**Do not run the bulk description pass until both are fixed**, and add a
-round-trip test that fails when a field is added to `Book` and not carried
-through. A guard that has not been shown able to fail is not a guard.
+**`generators/generate_books.py` was the third and the worst.** It built
+front matter from four fields and wrote it to the book's own path, so
+regenerating any of the 95 completed units would have erased its form and
+all six metadata fields. All three are fixed, a test walks the dataclass
+rather than listing names, and the gate now fails on a book missing a
+field whatever erased it.
 
-## Wrong turns to avoid, specific to this work
+## Wrong turns to avoid on the capacity question
+
+- **Do not compare a new sweep against the recorded 4.789.** That figure
+  was measured on a 55,510-word corpus. The corpus is now over 70,000
+  words and growing. **Comparisons are valid only within one sweep on one
+  frozen corpus**, which is why the fill is suspended while a sweep runs.
+- **Do not read held-out loss alone.** A small model can win on held-out
+  loss because it underfits everything equally. Read the gap as well; the
+  whole point of the diagnosis tool is that the two together separate
+  undertrained from out-of-corpus.
+- **Do not invoke compute-optimal scaling laws as though they transfer.**
+  They were fit at far larger scale for compute-optimal training, not for
+  small-data generalisation. The tokens-per-parameter ratio is a reason to
+  run the experiment, not evidence about its outcome.
+- **A negative result is the result.** If no width below 128 helps, then
+  the project's conclusion survives a stronger test and that is worth
+  recording plainly. Do not keep widening the grid until something moves.
+- **Do not overwrite `evals/pilot/level_1_diagnosis.json`.** It documents
+  the old corpus and is cited. A new sweep gets a new file.
+
+## Wrong turns to avoid on the metadata work, kept for the record
 
 - **`--limit` defaults to 10.** A bulk run needs an explicit count, and
   the printed total is the check that it did what was asked.

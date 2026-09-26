@@ -21,9 +21,19 @@ little until the corpus grows by an order of magnitude.
 
 ## What it says
 
-**Held-out loss turns upward almost immediately.** The best figure ever
-measured on this corpus is **4.789**, a perplexity of about 120, at width
-256 and four hundred steps. Every longer run is worse.
+**Held-out loss turns upward almost immediately.** The best figure on this
+corpus is **4.789**, a perplexity of about 120, at width 256 and four
+hundred steps. Every longer run is worse.
+
+**AMENDED 2026-09-25. Neither "ever measured" nor "at width 256" survived
+a wider sweep.** This sweep covered two widths, 128 and 256, and nothing
+above 256 had ever been run. `LEVEL_ONE_CAPACITY.md` sweeps seven widths
+from 16 to 1024 on a larger corpus and finds the best at **width 1024 and
+four hundred steps**, with the curve saturating around width 128. The
+figure of 4.789 remains correct for this corpus of 43,023 tokens and this
+two-point grid, which is what this file describes. **The conclusion it
+draws is unchanged and better supported**: the capacity curve saturates, so
+the corpus is the limit.
 
 **At 3,200 steps and width 256 the model reaches a training loss of 0.040
 and a held-out loss of 7.794.** It has memorised 43,023 tokens essentially

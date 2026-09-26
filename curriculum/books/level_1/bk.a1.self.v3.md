@@ -59,25 +59,25 @@ I told myself to stay calm when I felt afraid.
 I know my own self and what I believe.
 
 [a1.self.v3.s01]
-I want the cup.
+I want the cup. The cup is on the table. It is bright blue and round. I cannot reach it alone. I need help to bring it near. The cup holds water, not milk. It is not broken or cracked. I do not want to break it. I am not afraid to touch it.
 
 [a1.self.v3.s02]
-She wants the cup.
+She wants the cup. It is bright blue and round. She cannot reach it alone. She needs help to bring it near. The cup holds water, not milk. It is not broken or cracked. She does not want to break it. She is not afraid to touch it. She is able to lift it.
 
 [a1.self.v3.s03]
-I am not her.
+I am not her. I want the cup alone. I am able to reach it. I am not afraid to touch it. I can lift it by myself. The cup is bright blue and round. It holds water, not milk. It is not broken or cracked. I do not want to break it.
 
 [a1.self.v3.s04]
-I want the cup alone.
+I want the cup alone. The cup is bright blue and round. It holds water, not milk. It is not broken or cracked. I do not want to break it. I am able to reach it. I am not afraid to touch it. I can lift it by myself. The cup is alive with light.
 
 [a1.self.v3.s05]
-She wants the cup too.
+She wants the cup too. The cup is bright blue and round. It holds water, not milk. It is not broken or cracked. She does not want to break it. She is able to reach it. She is not afraid to touch it. She can lift it by herself. The cup is alive with light.
 
 [a1.self.v3.s06]
-I do not want anything else.
+I do not want anything else. I want the cup. It is bright blue and round. It holds water, not milk. It is not broken or cracked. I am able to reach it. I am not afraid to touch it. I can lift it by myself. The cup is alive with light.
 
 [a1.self.v3.s07]
-She looked at herself and saw the cup.
+She looked at herself and saw the cup. The cup was bright blue and round. It held water, not milk. It was not broken or cracked. She was able to reach it. She was not afraid to touch it. She could lift it by herself. The cup was alive with light.
 
 [a1.self.v3.s08]
-I know my own self and what I believe.
+I know my own self and what I believe. I am able to reach the cup without help. The cup is bright blue and round, like a sky at noon. It holds water, not milk, and is not broken. I believe it is safe to touch, and I do. I lift it by myself, strong and calm.

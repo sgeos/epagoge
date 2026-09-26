@@ -53,31 +53,31 @@ Food is something that helps a person grow and feel full.
 Hungry means a person wants food because their body needs it.
 
 [a1.person.s01]
-A boy wants food because he is hungry.
+A boy wants food because he is hungry. He walks across the yard with a basket. He finds a red apple on the ground. He picks it up and puts it in the basket. He sees a blue balloon tied to a tree. He does not take it, but looks at it.
 
 [a1.person.s02]
-He finds a basket and carries it to the garden.
+He finds a basket and carries it to the garden. He sees a red apple on the ground and picks it up. He places it in the basket and walks along the path. He does not take it, but walks on. He finds a small stone and picks it up.
 
 [a1.person.s03]
-He builds a small fire with sticks and wood.
+He builds a small fire with sticks and wood. He sits close, feeling the heat on his face. He feels safe, alive, and able to think. The fire builds a circle of light around him. He does not eat, but waits for the food to be ready. He feels the breeze touch his skin.
 
 [a1.person.s04]
-He eats the food and feels full and happy.
+He eats the food and feels full and happy. His eyes close, but not yet asleep. He listens to the breeze, soft and steady. He thinks about the path he walked, long and winding. He wonders what comes next, ahead in the dark. He is not afraid, not even of the night.
 
 [a1.person.s05]
-He lies on the blanket and falls asleep.
+He lies on the blanket and falls asleep. Dreams come, soft and bright. He sees a path above the trees, long and winding. The air is clean, full of green and light. He hears a bird, high in the sky, singing. He reaches out, but it flies away. He does not mind.
 
 [a1.person.s06]
-He wakes up when the sun is high.
+He wakes up when the sun is high. He sits up, feeling warm and alive. The air is still, full of green and light. He sees the path again, winding above the trees. A bird sings, but not high—closer, near the branch. It is the sound of a wooden block falling.
 
 [a1.person.s07]
-He carries the basket back to the house.
+He carries the basket back to the house. He walks slowly, his feet pressing into the soft earth. He thinks of his baby sister, waiting inside. He does not stop to watch, but keeps going ahead. His breath is steady, his steps sure. He remembers the apple from the tree, still whole.
 
 [a1.person.s08]
-He gives the food to his baby sister.
+He gives the food to his baby sister. The sun shines through the window, warm and bright. He sits beside her, feeling calm. She rests her head on his arm. He knows he must go again. The air is still, full of quiet. He listens for the wind, but hears only breath.
 
 [a1.person.x14]
-The boy walks to the garden again to plant more seeds.
+The boy walks to the garden again to plant more seeds. The seeds are small but full of life. He digs a small hole, deep enough to hold them. He covers them with soft dirt, then taps it down. The sky is bright above, full of light. He sits back, watching the breeze move through the trees.
 
 [a1.person.x15]
-He watches the sun move across the sky, feeling the warm light on his face.
+He watches the sun move across the sky, feeling the warm light on his face. He sits still, eyes closed, listening to the world breathe. He does not move, afraid to break the moment. The sky stays bright, no clouds to hide the light. He thinks about tomorrow, and the seeds that will rise.

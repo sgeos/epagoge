@@ -12,16 +12,13 @@ tree records the figure reached and why.
 
 - Every book under `curriculum/books/level_1/` carries `about`,
   `teaches`, `author`, `licence`, `first_published`, and `published`.
-- `about` and `teaches` are written in ordinary English, are not
-  restricted to the book's own vocabulary, and say something a title does
-  not already say.
-- `first_published` and `published` are derived from the version history
-  of each book file rather than assigned, and a tool in the tree
-  regenerates them.
-- The choice of `author` and `licence` values is recorded in a decision
-  record, including what was rejected.
-- The tree reports how many books carry the full set, and that number is
-  checkable without reading the books by hand.
+- `about` and `teaches` are ordinary English, not restricted to the book's
+  own vocabulary, and say something a title does not.
+- The two dates are derived from each file's version history by a tool in
+  the tree, not assigned.
+- A decision record gives the `author` and `licence` values and what was
+  rejected.
+- A check reports how many books carry the full set.
 
 ## The field-enumeration defect is closed
 
@@ -32,11 +29,29 @@ tree records the figure reached and why.
   against a deliberately broken case.
 - The seventeen question-and-answer books still declare their form.
 
+## The capacity question is settled either way
+
+- The tree records a model-size sweep at level one that includes widths
+  below 128, run on one frozen corpus, with training loss, held-out loss
+  and the gap for every point.
+- Its report names the corpus size it ran against and does not compare
+  its figures to a sweep on a different corpus.
+- It says which conclusion the evidence supports: that a smaller model
+  generalises better on the same tokens, or that it does not and the
+  recorded corpus limit survives. **A negative result satisfies this.**
+- Any surviving claim that corpus rather than training is the limit is
+  either supported by that sweep or marked as not separated from model
+  size.
+- The earlier diagnosis file is still present and still names the corpus
+  it describes.
+
 ## Corpus length
 
 - The corpus is larger in words than the 55,510 measured on 2026-09-25,
   and the tree records the current figure, or the tree records why it is
   not larger.
+- Fewer than 203 of the 244 sixteen-spread content books sit below the
+  level-one word band, or the tree records why not.
 - No book exceeds the upper bound of its level's word band.
 - Every unit in `curriculum/schedule/level_01.json` still has at least one
   book, and every book that is not a dictionary holds exactly sixteen

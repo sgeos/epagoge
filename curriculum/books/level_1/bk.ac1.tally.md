@@ -44,40 +44,40 @@ A score is a number that shows how many times something happened.
 A tally is a mark made to count things.
 
 [ac1.tally.x03]
-Each mark stands for one thing counted.
+Each mark stands for one thing counted. A mark made is one thing seen. One mark means one apple, one ball, one child. Each mark is a sign of one thing, not more, not less. Marks go up in groups of five, but each one stands alone. No mark is equal to another in meaning, though they look alike.
 
 [ac1.tally.x04]
-The marks go up in groups of five.
+The marks go up in groups of five. Each group stands alone, separate from the next. Five marks are counted together as one set. Each one is placed in order, straight and clear. A mark is not equal to another, though they look alike. They are made to show one thing, not more, not less.
 
 [ac1.tally.x05]
-Five marks make a full set.
+Five marks make a full set. Each mark stands alone, separate from the next. A mark is not equal to another, though they look alike. They are made to show one thing, not more, not less. A mark is placed in order, straight and clear. Each one is counted together as one set.
 
 [ac1.tally.x06]
-A group of five is easy to see.
+A group of five is easy to see. Each mark stands alone, separate from the next. A mark is not equal to another, though they look alike. They are made to show one thing, not more, not less. A mark is placed in order, straight and clear. Each one is counted together as one set.
 
 [ac1.tally.x07]
-The score shows how many things were counted.
+The score shows how many things were counted. Each mark stands for one thing, not more, not less. The score grows as more things are counted. A mark is made to show one thing, not many. It is not a guess, but a record of what is real. The score stays clear, even when the count is long.
 
 [ac1.tally.x08]
-One tally mark means one thing.
+One tally mark means one thing. It is not a guess, but a true record of what is real. The mark is made to show one thing, not many. A mark is not a lie, but a clear sign. It does not grow, it stays the same. Each mark is equal, no one is better than another.
 
 [ac1.tally.x09]
-Five tally marks mean five things.
+Five tally marks mean five things. Each mark stands alone, clear and true. No mark is bigger, no one is less. They are made in a line, one after another. They are made to count, not to hide. They are not afraid, they do not lie. They help us see what is there.
 
 [ac1.tally.x10]
-The marks are made in a line.
+The marks are made in a line. Each mark stands alone, clear and true. No mark is bigger, no one is less. They are made in a line, one after another. They are made to count, not to hide. They are not afraid, they do not lie. They help us see what is there.
 
 [ac1.tally.x11]
-Others use them to count animals.
+Others use them to count animals. A tally mark stands alone, clear and true. Each one is made to count, not to hide. They are not afraid, they do not lie. They help us see what is there. A teacher uses tally marks in class. Each mark is equal, no one is less.
 
 [ac1.tally.x12]
-A teacher uses tally marks in class.
+A teacher uses tally marks in class. A tally mark stands alone, clear and true. Each one is made to count, not to hide. They are not afraid, they do not lie. They help us see what is there. Each mark is equal, no one is less. Each mark is the same, no one is bigger.
 
 [ac1.tally.x13]
-A tally helps when numbers grow.
+A tally helps when numbers grow. Each mark stands equal, no one is less. They are made to count, not to hide. They are not afraid, they do not lie. They help us see what is there. Each mark is the same, no one is bigger. They are able to show how many.
 
 [ac1.tally.x14]
-One mark for each time something happens.
+One mark for each time something happens. Each mark shows a moment that was real. No mark is too small to count. They are made to show what is true. Each one stands equal, not more or less. They are not afraid to be seen. They help to show how many times.
 
 [ac1.tally.x15]
-The marks show how many times.
+The marks show how many times. Each one stands equal, not more or less. They are not afraid to be seen. They help to show how many times. Each mark shows a moment that was real. No mark is too small to count. They are made to show what is true.
