@@ -102,6 +102,13 @@ constraint on the level-one MVP and was measured to be. It is not the
 binding constraint at levels two to six, where coverage and consistency
 are, and a large corpus with unscheduled concepts would not be progress.
 
+> **AMENDED 2026-09-26, operator correction. Coverage and consistency bind
+> at level one too.** Volume was the measured bottleneck there because the
+> format limits what else can be done: eight hundred words cannot carry a
+> concept revisited at depth, so the only lever inside a picture book is
+> more of them. Level one solves coverage **across** books, which is why it
+> needs the later levels designed first. See `RECURSIVE_DRAFTING.md`.
+
 **It says the level-two lexicon gap is a scheduling failure**, not a
 writing backlog. 871 words against a target of 10,000 is a schedule that
 has not been written, and admitting words one round at a time from what

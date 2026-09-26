@@ -34,6 +34,12 @@ Decision records, and the open questions that block implementation.
 - `BOOK_ATTRIBUTION.md` decided. A book's `author` is the project, its
   `licence` is CC0-1.0, and its two dates are derived from version
   history rather than written. Names what was rejected and why.
+- `RECURSIVE_DRAFTING.md` recorded. Level one needs a backport built on
+  level-two concepts, so the levels cannot be drafted in order. Corrects
+  THREE_PROBLEMS.md on where coverage and consistency bind.
+- `REFERENCE_SOURCES.md` decided. WordNet for irregular inflection and
+  Moby for synonymy, fetched into ignored `tmp/references/` rather than
+  vendored, with links and checksums so independent work can follow.
 - `WHOLESOMENESS.md` decided. Wholesome age-appropriateness is an
   acceptance criterion. Not mechanically checkable, so it lives in the
   generation prompt, the lexicon, and review.

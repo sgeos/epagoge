@@ -89,6 +89,12 @@ run "dictionary order"   env PYTHONPATH=src python3 tools/sort_dictionary.py --c
 # history yet.
 run "book metadata"      env PYTHONPATH=src python3 tools/stamp_books.py --level 1 --check
 
+# **Reported, never gated, and the reference is not in the repository.**
+# WordNet records what English does; this project decides what a level
+# admits, so a mismatch is a question. Every irregular form this project got
+# wrong by hand was in these files.
+run "inflections"        env PYTHONPATH=src python3 tools/check_inflections.py --level 1 --show 25
+
 # A document that names a file which no longer exists reads as evidence and
 # is not. Adapted from the keleusma repository's markdown link check, against
 # what this project's documents actually do, which is cite backticked paths.
