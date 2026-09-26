@@ -62,22 +62,22 @@ To come down to the ground after falling is to land.
 To grow over time is to become bigger.
 
 [p1.change.s01]
-It began to float higher and higher until it changed direction.
+It began to float higher and higher until it changed direction. The wind blew it away from the tree and it fell toward the ground. The sky above turned bright blue, and the sun warmed its surface. But the ground pulled it down with a quiet force. No one saw it there, not even the bird flying above.
 
 [p1.change.s02]
-The wind blew it away from the tree and it fell toward the ground.
+The wind blew it away from the tree and it fell toward the ground. It fell through the air, slow and quiet, like a leaf. The wind carried it along, not strong but steady. It passed above the grass, the dirt, the stones. It did not care about the sky or the ground.
 
 [p1.change.s03]
-He could not cover it, so he let it go again and it fell.
+He could not cover it, so he let it go again and it fell. He let it go again and it fell through the air, slow and quiet, like a leaf. It passed above the grass, the dirt, the stones. It did not care about the sky or the ground.
 
 [p1.change.s04]
-It fell once more, but this time it landed on a soft bed.
+It fell once more, but this time it landed on a soft bed. The bed was warm and held it gently, like a secret. It did not move, not even when the breeze blew through the window. The sky above was blue, but the room was quiet and still. No one came to ask, to answer, or to touch it.
 
 [p1.change.s25]
-It fell slowly through the air and came to rest on the dirt.
+It fell slowly through the air and came to rest on the dirt. The dirt was dry and cracked, like a map of old roads. It did not move, not even when the breeze blew through the window. The sky above was blue, but the room was quiet and still.
 
 [p1.change.s26]
-The toy would not stay closed.
+The toy would not stay closed. It opened again, like a mouth trying to speak. Air rushed through its shape, making a sound like a small bell. It wanted to float, not fall, not stay. The room was too still, too full of things that would not move. It felt the breeze, sharp and cool, from the window above.
 
 [p1.change.x15]
-It floated over the garden, the trees, and the quiet village street.
+It floated over the garden, the trees, and the quiet village street. It floated above the garden, the trees, and the quiet village street. The breeze carried it gently, like a breath from the sky. It felt alive, not stuck, not afraid. It moved ahead, not back, not against the wind.

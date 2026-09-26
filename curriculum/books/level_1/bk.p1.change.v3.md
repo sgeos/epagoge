@@ -56,28 +56,28 @@ To fall from a higher place to a lower one.
 To come down and rest on a surface after falling.
 
 [p1.change.v3.s01]
-I held the balloon in my hand and it became light.
+I held the balloon in my hand and it became light. It floated above my fingers, rising slowly into the air. I could not hold it any longer, not even for a second. The balloon drifted higher, away from my reach. No one could stop it, not even the wind.
 
 [p1.change.v3.s02]
-I let go and it changed direction, rising above the ground.
+I let go and it changed direction, rising above the ground. The balloon floated up and fell through the air. It moved with the breeze, no longer held by my hand. The sky grew bright, the clouds thin and light. I watched it rise, no longer afraid. No one could stop it, not even the wind.
 
 [p1.change.v3.s03]
-It floated up and fell through the air.
+It floated up and fell through the air. The wind carried it above the trees. It moved with the breeze, no longer held by my hand. The sky grew bright, the clouds thin and light. I watched it rise, no longer afraid. No one could stop it, not even the wind.
 
 [p1.change.v3.s04]
-I saw it rise again, and then fall once more.
+I saw it rise again, and then fall once more. It floated down, soft and slow, through the air. The wind carried it across the grass. I watched it sink, not afraid. No one came to take it. No one could stop it. It stayed there, deep below the surface.
 
 [p1.change.v3.s05]
-It dropped from the sky and fell into a puddle.
+It dropped from the sky and fell into a puddle. The water covered it, and it stayed still. No one came to find it, not even a child. A small fish swam near, but did not touch it. It felt the weight of the world, but did not break. The puddle held it, like a secret kept.
 
 [p1.change.v3.s06]
-The water covered it, and it stayed still.
+The water covered it, and it stayed still. It stayed still, deep below the surface. No one came to see it, not even a bird. The water held it, warm and slow. It felt the weight of the sky above. It did not break, though it was afraid. It waited, alone, in the dark.
 
 [p1.change.v3.s07]
-I reached down and pulled it out.
+I reached down and pulled it out. The balloon was open now and no longer held air. It fell, slow and soft, through the water. I let go, and it sank. No sound, no fear, no weight. It was alive, but not alive. I felt the air leave me. My breath came quick, then slow.
 
 [p1.change.v3.s08]
-The balloon was open now and no longer held air.
+The balloon was open now and no longer held air. I could not hold it, not even if I tried. No sound came from the surface, no breath from me. It sank deeper, not fast, not slow, just gone. I knew it would not rise again. I could not fix it, could not bring it back.
 
 [p1.change.v3.s09]
-It did not rise again, and I knew it would not change.
+It did not rise again, and I knew it would not change. The air above felt heavier, as if the sky had grown tired. I could not hold it, not even if I tried. No sound came from the surface, no breath from me. It sank deeper, not fast, not slow, just gone.

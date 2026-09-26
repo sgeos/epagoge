@@ -62,22 +62,22 @@ To take place is to happen.
 To come down and stop on the ground is to land.
 
 [p1.change.v2.s01]
-A balloon rises above the ground and floats in the air.
+A balloon rises above the ground and floats in the air. It drifts slowly, carried by the breeze. It feels the sky, not the earth. It does not fall, not yet. Its shape is round, like a bubble. It was not meant to stay. No one can stop it. It floats on air, not force.
 
 [p1.change.v2.s02]
-It happens slowly as the wind carries it higher.
+It happens slowly as the wind carries it higher. It rises higher, above the trees, past the birds, into the bright blue air. The wind carries it, not pushing, not pulling, just letting it go. It feels the sky, not the ground, and knows no weight. It floats, not because it wants to, but because it must.
 
 [p1.change.v2.s03]
-A child sees it and reaches to pick it up.
+A child sees it and reaches to pick it up. The balloon feels light and smooth in the hand. The child holds tight, afraid it might fly away. The child looks up, eyes wide, breath held. The balloon wants to go, not stay. The child feels the weight, but also the air.
 
 [p1.change.v2.s04]
-The child opens the hand and lets it go.
+The child opens the hand and lets it go. The balloon rises above the trees, carried by the breeze. The sky feels wide, open, full of space. The child feels light too, as if something inside has lifted. No need to hold on, no need to fear. The child takes a deep breath, feels the wind on the face.
 
 [p1.change.v2.s05]
-The balloon becomes light again and floats away.
+The balloon becomes light again and floats away. It rises above the trees, carried by the breeze. The sky feels wide, open, full of space. The child feels light too, as if something inside has lifted. No need to hold on, no need to fear. The child takes a deep breath, feels the wind on the face.
 
 [p1.change.v2.s06]
-The child watches it rise, then fall, then land once more.
+The child watches it rise, then fall, then land once more. The balloon floats above the trees, carried by the breeze. It drifts across the sky, bright and light, full of air. No one touches it, no one blames it for leaving. The wind moves through the trees, making soft sounds.
 
 [p1.change.v2.s07]
-The child learns that when you let go, it falls.
+The child learns that when you let go, it falls. The child watches it fall, soft and slow, through the air. It lands on the grass, still whole, still bright. No one blames it for leaving, not even the wind. The balloon lies still, a small round shape on the ground.

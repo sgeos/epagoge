@@ -50,7 +50,7 @@ The old wooden chair had lasted many years, but one day it cracked under the wei
 The crack grew longer after the child sat on it again, and then it snapped. Pieces flew across the room, landing near the window. The child sat on the floor, eyes wide with fear. No one could fix it again. The wood was too weak, too old, too broken. The chair had once been strong, but now it was just a pile of broken wood.
 
 [f1.break.v3.s03]
-The piece of wood fell to the floor, and the chair was now broken.
+The piece of wood fell to the floor, and the chair was now broken. The wood was too dry, too weak, too old to mend. No one could fix it again, not even with glue or nails. The chair had been strong once, but now it was just a pile of broken wood.
 
 [f1.break.v3.s04]
 The chair had worn down from years of use, and now it could not hold anything. The wood was old, too dry to mend. Even the nails had rusted, too weak to hold. No one would sit on it again. It was not fit for anything. It was just wood, no longer a chair.

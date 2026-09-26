@@ -53,7 +53,7 @@ She looked at the cups and shook her head. She knew one was enough, not five. Sh
 The extra cups spilled water on the floor. She did not want to slip and fall. The blue glass cup was still bright and clean. No one else was in the room. She was alone, yet not afraid. She thought about the apple on the table. It was whole, not cut.
 
 [a1.only_asked.v2.x06]
-She picked up one cup and placed it on the table.
+She picked up one cup and placed it on the table. She looked at the cup, its blue surface bright above the table. She felt calm, not afraid, though the air was still. She thought about the apple, whole and red, sitting nearby. She did not touch it yet, not ready to decide.
 
 [a1.only_asked.v2.x07]
 She filled it with water from the tap. The water flowed clear and cool, bright as a morning sky. She held the cup steady, not letting it tip. She looked at the water, seeing her own face in the liquid. She thought about the day, how it began so calm.

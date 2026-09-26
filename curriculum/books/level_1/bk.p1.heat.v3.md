@@ -53,31 +53,31 @@ Freeze means to become solid when cold, like water turning to ice.
 Melt means to turn from solid to liquid when hot, like ice in sun.
 
 [p1.heat.v3.s01]
-The stove is hot.
+The stove is hot. Heat rises above the metal. The air near it feels thick and warm. I cannot touch it. It burns anything that comes close. Even a small spoon left too long will melt. The oven door stays shut. No one should open it. The handle is hot.
 
 [p1.heat.v3.x07]
-He burns his finger and cries.
+He burns his finger and cries. The pain is sharp and hot, like fire inside. His mother rushes in and holds him. She lifts him gently, arms around his back. She checks the finger, eyes full of care. She holds him close, breathing slow. She sits on the edge of the bed, quiet.
 
 [p1.heat.v3.x08]
-His mother rushes in and holds him.
+His mother rushes in and holds him. She lifts him gently, arms around his back. The stove is hot, and the burn is real. He feels the heat even through his clothes. She checks the finger, eyes full of care. She knows the stove must be off. The oven door is open, and the fire is gone.
 
 [p1.heat.v3.x09]
-She tells him to wait and be careful.
+She tells him to wait and be careful. He sits still, eyes on the stove, not moving. He remembers the burn, real and sharp. She said to wait, not to touch, not to go near. He feels the heat even through his clothes. His fingers are red, but not burned again.
 
 [p1.heat.v3.x10]
-The boy sits on the floor, quiet and still.
+The boy sits on the floor, quiet and still. He watches the stove, hot and bright. He feels the heat even through the floor. His fingers are red, but not burned again. He remembers the burn, sharp and real. He does not want to feel it again. He knows the stove is not safe.
 
 [p1.heat.v3.x11]
-The boy learns to wait before touching the stove.
+The boy learns to wait before touching the stove. He feels the heat rise like a breath from the earth. He knows the stove is hot and not safe. He remembers the burn, sharp and real. He does not want to feel it again. He stands still, not moving, not afraid.
 
 [p1.heat.v3.x12]
-The boy touched the stove and pulled his hand back fast.
+The boy touched the stove and pulled his hand back fast. He feels the burn still, sharp and real. He knows he should not touch the stove again. He does not want to feel it again. He looks at the stove, black and still. He thinks about the burn, the pain, the red mark.
 
 [p1.heat.v3.x13]
-The mother brought a cold cloth and placed it on his hand to help it feel better.
+The mother brought a cold cloth and placed it on his hand to help it feel better. He watched it move, slow and steady, like time itself. The room was quiet, only the drip of water from the tap, steady and clear. He knew he must not touch it again, not ever, not even to look.
 
 [p1.heat.v3.x14]
-He watched the steam rise from the water, thinking about how hot it had been.
+He watched the steam rise from the water, thinking about how hot it had been. The air around it felt thick and alive with heat. He had seen his father once try to open it too fast and pull his hand back. No one should touch it again, not even to look.
 
 [p1.heat.v3.x15]
-A pot on the stove begins to steam.
+A pot on the stove begins to steam. It moves slowly, as if afraid to leave. The air around it feels hot and alive. No one should come near, not even to look. The stove is hot, and the heat is real. It burns if you stay too long. The steam carries the smell of cooked food.

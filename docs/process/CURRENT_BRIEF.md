@@ -12,7 +12,7 @@ Delete when `COMPLETION_CONDITION.md` is met. Durable practice is in
 | Level-one book metadata | **Done.** All six fields on all 246 books |
 | Is the corpus really the limit? | **Settled.** Yes. Saturates at width 128 |
 | Is the scaling law reproducible? | **Now yes.** The rate rises, not holds |
-| Level-one corpus length | **134 of 244** below the band, from 229 |
+| Level-one corpus length | **88 of 244** below the band, from 229 |
 | Level-one lexicon utilisation | **688 of 2,051** surface forms never used |
 | Level-two lexicon | 879 words against a target near 10,000 |
 | Schedules for levels three to seven | None exist |
@@ -41,6 +41,12 @@ hours of teacher time.
 
 **Second, corpus length**, continuously in the background. It is the
 larger prize and needs no new book, but it is open-ended.
+
+**Progress, measured through the day.** 15 of 244 content books inside the
+word band at breakfast, **156** by late evening, and the corpus from 55,510
+words to **128,993**. The re-measured scaling curve says this is paying:
+the most recent doubling bought 0.316 nats against a fixed held-out set,
+the largest increment in the series.
 
 **Not lexicon utilisation.** Each of the 688 unused forms is a judgement
 about whether a module should use it, be drafted for it, or whether
@@ -131,9 +137,13 @@ field whatever erased it.
   once raised acceptance and moved closure not at all.
 - **Metadata is not corpus.** Adding six fields to 246 books changes no
   measured model property. Do not report it as corpus growth.
-- **The run is about twenty-five seconds a book**, so 246 books is
-  roughly one hundred minutes of teacher time. Run it in the background
-  and do something else; do not sit on it.
+- **Measure the rate over a long run, not two books.** The fill was
+  estimated at "about three minutes a book" from a two-book sample that
+  happened to contain a timeout. Measured over **30 consecutive books with
+  no interruptions it is 83 seconds**, so the remaining work was
+  overestimated by a factor of two. The description pass is about
+  twenty-five seconds a book. Run either in the background and do
+  something else; do not sit on it.
 - **Gate, read the exit code, stop, then commit.** Three commits have
   landed on a red gate by running both in one breath.
 

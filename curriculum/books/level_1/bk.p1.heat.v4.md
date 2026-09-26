@@ -56,28 +56,28 @@ Heat is what makes something warm or hot.
 Melt means to change from solid to liquid because of heat.
 
 [p1.heat.v4.s01]
-The stove is hot because fire burns inside.
+The stove is hot because fire burns inside. The heat rises above the metal surface. It makes the air around it feel thick and heavy. No one should touch it, not even a child. It cannot be stopped once it starts. Water turns to steam and lifts the lid. The steam burns if you get too close.
 
 [p1.heat.v4.x08]
-The child reached out to touch the stove.
+The child reached out to touch the stove. Heat rose like a wave through the air. No one should touch it, not even a child. The hand pulled back quickly. The air felt thick, hard to breathe. The child thought of the danger, the pain. The child knew the truth: hot things hurt.
 
 [p1.heat.v4.x09]
-The hand pulled back quickly.
+The hand pulled back quickly. The air felt hot, thick, alive with danger. The child knew the stove was not safe, not even for a moment. No one should touch it, not even to look. The child thought of the pain, the hurt, the fire. The heat stayed, rising, waiting, strong.
 
 [p1.heat.v4.x10]
-A red mark appeared on the skin.
+A red mark appeared on the skin. The child felt the pain like a sharp stone inside. The mark stayed bright, angry, alive with heat. They could not move, not even to breathe. The room felt hot, thick, too full of heat to live. The child knew they had done something wrong.
 
 [p1.heat.v4.x11]
-The child cried out in pain.
+The child cried out in pain. The stove is hot. The child saw the red mark on the skin. The pain felt like fire inside. The room was full of heat. The stove burned bright. The child could not move. The air felt thick. The stove was not meant to be touched.
 
 [p1.heat.v4.x12]
-The mother ran in from the next room.
+The mother ran in from the next room. She saw the child on the floor. Her face showed fear and pain. She reached out with both hands. She pulled the child close. The child cried again. The mother spoke soft words. She said, “I am here. She checked the red mark.
 
 [p1.heat.v4.x13]
-She placed a cool cloth on the burn.
+She placed a cool cloth on the burn. The room felt still, like air after a storm. The stove was hot, and the mark was red. She spoke soft words, not loud, not angry. The child did not cry again. The heat had left the skin, but the pain stayed.
 
 [p1.heat.v4.x14]
-The child felt better soon after.
+The child felt better soon after. The child sat on the floor, breathing slow. The cloth stayed cool on the red mark. No one else was in the room. The door was closed. The window was open. A breeze slipped through, soft and clear. The stove was still warm, though not burning.
 
 [p1.heat.v4.x15]
-The stove was turned off.
+The stove was turned off. The air felt still, like the room held its breath. The metal stayed warm, not hot. A shadow slipped across the floor. The child sat still, eyes open, awake. No one else came near. The window stayed open, letting in a breeze. The cloth stayed cool on the red mark.

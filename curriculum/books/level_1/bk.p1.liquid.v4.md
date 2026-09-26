@@ -53,31 +53,31 @@ Drank means to take liquid into the mouth and swallow it.
 Flow is the way liquid moves, like water in a stream.
 
 [p1.liquid.v4.s01]
-The cup is empty and full of air.
+The cup is empty and full of air. Air fills the space where water could be. The air is still and quiet above the cup. No one can see it, but it is alive. It moves when the wind blows outside. The cup cannot hold air like it holds water.
 
 [p1.liquid.v4.x07]
-The cup sits on the table, still full of air.
+The cup sits on the table, still full of air. Air is alive and moves when the wind blows. The cup cannot hold air like it holds water. The air inside is still and quiet above the cup. No one can see it, but it is alive. It moves when the breeze comes.
 
 [p1.liquid.v4.x08]
-A breeze blows, and the air inside the cup moves.
+A breeze blows, and the air inside the cup moves. It moves above the bottom, along the sides. The air is alive and takes the shape of the cup. The cup holds the air like a secret. It stays because the cup is whole. No hole, no crack, no break.
 
 [p1.liquid.v4.x09]
-Now the cup is empty, ready to hold water.
+Now the cup is empty, ready to hold water. The water is clear and still, waiting to be poured. It moves gently, not fast, not slow, just flowing. The cup holds it above the table, not below. The water takes the shape of the cup, smooth and whole. It stays because the cup is strong and whole.
 
 [p1.liquid.v4.x10]
-The water takes the shape of the cup, smooth and clear.
+The water takes the shape of the cup, smooth and clear. It stays because the cup is strong and whole. The cup holds the water above the table, not below. The water flows gently, not fast, not slow, just moving. The cup is made of glass, clear and strong. The cup has a handle, round and smooth.
 
 [p1.liquid.v4.x11]
-The cup is full, and the water does not spill.
+The cup is full, and the water does not spill. The water stays above the table, not below. The cup is strong and whole, so the water remains inside. No air can get in, no light can pass through the top. The water is still, not moving, not falling. It is alive, yet it has no shape of its own.
 
 [p1.liquid.v4.x12]
-The cup is now empty again, and the child puts it away.
+The cup is now empty again, and the child puts it away. The cup is empty again, and the child puts it away. The cup is made of glass, and it is clear, not cloudy. The cup holds water, but it does not hold air. The cup is not alive, but the water is alive.
 
 [p1.liquid.v4.x13]
-The cup is filled with water, and the water takes the shape of the cup.
+The cup is filled with water, and the water takes the shape of the cup. The cup holds the water, and the water does not fall. The water is alive and moves when the cup is tipped. The cup is made of glass, and the water is clear, not cloudy.
 
 [p1.liquid.v4.x14]
-The water flows slowly down the drain when the cup is tipped.
+The water flows slowly down the drain when the cup is tipped. The drain is narrow and dark, like a hidden path. The water moves with a quiet breath, not loud, not fast. It flows because it must, because it is alive. It joins a larger stream, a hidden river.
 
 [p1.liquid.v4.x15]
-The empty cup sits on the table, waiting to be filled again.
+The empty cup sits on the table, waiting to be filled again. The water waits in the cup, shaped by its home. The water feels the shape, moves with it, stays true. The cup is the only thing it can be. It is alive, yet shaped by what it holds.

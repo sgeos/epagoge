@@ -71,7 +71,7 @@ She opened the door. It was not behind the door. She looked above the shelf. She
 She checked under the bed. It was not there. She looked above the bed. She felt a breeze. It came from outside. She stood up. She moved slowly. She saw a basket. It was empty. She checked under the bed again. She turned around. She saw a small blue ball.
 
 [h1.wrong.x12]
-She ran outside. It was not in the garden.
+She ran outside. It was not in the garden. She looked above the tree. It was not in the branches. She felt the wind. It blew cold and sharp. She thought of home. It was far away. She felt alone. No one came to help. She reached the top. She saw a balloon.
 
 [h1.wrong.x13]
 She climbed the tree. It was not in the branches. She looked above. It was not in the sky. She saw a balloon. She felt the wind. It blew cold and sharp. She thought of home. It was far away. She felt alone. No one came to help. She reached the top.
