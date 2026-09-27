@@ -13,7 +13,7 @@ import unittest
 from pathlib import Path
 
 from epagoge.book import load_book_dir
-from epagoge.tokeniser import UNK, WORD_RE, build
+from epagoge.tokeniser import BOOK, EOT, RESERVED, SPECIALS, UNK, WORD_RE, build
 from epagoge.vocabulary import Term, Vocabulary, load_vocabulary
 
 
@@ -106,3 +106,60 @@ class TestPossessives(unittest.TestCase):
         t = build(vocab("cup", "water"), 1)
         self.assertIn("'s", t.ids)
         self.assertEqual(t.unknown("the cup's water"), [])
+
+
+class TestWorkBoundaries(unittest.TestCase):
+    """A work begins and ends with a token that says so.
+
+    **`<book>` occurred zero times in 356,975 training tokens** while being
+    the seed every unprompted sample started from, and nothing marked an
+    ending at all, so a sampler had no stopping condition and emitted
+    exactly its budget every time. `docs/decisions/STRUCTURAL_TOKENS.md`
+    has the grounds and the sources.
+    """
+
+    def test_a_work_is_announced_at_both_ends(self) -> None:
+        t = build(vocab("cup"), 1)
+        ids = t.encode_work("the cup is")
+        self.assertEqual(ids[0], t.ids[BOOK])
+        self.assertEqual(ids[-1], t.ids[EOT])
+        self.assertEqual(ids[1:-1], t.encode("the cup is"))
+
+    def test_a_fragment_is_not_announced_as_a_work(self) -> None:
+        """A prompt is not a work and must not claim to be one."""
+        t = build(vocab("cup"), 1)
+        self.assertNotIn(t.ids[BOOK], t.encode("the cup is"))
+        self.assertNotIn(t.ids[EOT], t.encode("the cup is"))
+
+    def test_an_empty_work_is_still_a_work(self) -> None:
+        t = build(vocab("cup"), 1)
+        self.assertEqual(t.encode_work(""), [t.ids[BOOK], t.ids[EOT]])
+
+    def test_the_reserved_slots_are_present_and_unused(self) -> None:
+        """Held so the next structural token is not a vocabulary migration."""
+        t = build(vocab("cup"), 1)
+        for name in RESERVED:
+            self.assertIn(name, t.ids)
+        self.assertEqual(len(RESERVED), 16)
+        corpus = t.encode_work("the cup is")
+        for name in RESERVED:
+            self.assertNotIn(t.ids[name], corpus)
+
+    def test_every_special_is_reachable_and_distinct(self) -> None:
+        t = build(vocab("cup"), 1)
+        ids = [t.ids[s] for s in SPECIALS]
+        self.assertEqual(len(set(ids)), len(ids))
+        self.assertEqual(ids, sorted(ids), "specials should lead the vocabulary")
+
+    def test_the_shipped_corpus_encodes_as_works_without_unknowns(self) -> None:
+        """The real corpus, not a fixture: announcing a work adds no unknown."""
+        root = Path(__file__).resolve().parent.parent
+        t = build(load_vocabulary(root / "curriculum/vocabulary.json"), 1)
+        books, records = load_book_dir(root / "curriculum/books/level_1")
+        by_id = {str(r["id"]): r for r in records}
+        unk = t.ids[UNK]
+        for book in books[:20]:
+            text = "\n".join(
+                str(by_id[i]["content"]) for i in book.records if i in by_id
+            )
+            self.assertNotIn(unk, t.encode_work(text), book.id)

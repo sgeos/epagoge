@@ -14,7 +14,10 @@ import tempfile
 import unittest
 from dataclasses import fields
 from pathlib import Path
-from typing import cast
+from typing import TYPE_CHECKING, cast
+
+if TYPE_CHECKING:
+    from torch import Tensor
 
 try:
     from epagoge.pilot import (
@@ -28,6 +31,7 @@ try:
         head_count,
         load_checkpoint,
         orderings,
+        pack,
         renamed_parameters,
         rotary_table,
         sample,
@@ -696,3 +700,87 @@ class TestWarmStartGuard(unittest.TestCase):
         words = ["<pad>", "cup", "water"]
         kept = warm_start(self.model(), self.model().state_dict(), words, words)
         self.assertEqual(kept, len(words))
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestSampleStops(unittest.TestCase):
+    """A sample must be able to end before its budget.
+
+    Until 2026-09-27 `sample` looped exactly `count` times with no exit, so
+    every answer stopped mid-clause at the budget and that was mistaken for
+    a model with nothing more to say.
+
+    **The model here is a stub that always predicts one token.** A real
+    transformer was tried first and made a worse test: under tied
+    embeddings, forcing the output head also rewrites the input embedding,
+    so the logits came out uniform and the test measured nothing.
+    """
+
+    def certain(self, token: int, vocab: int = 6) -> TinyTransformer:
+        import torch
+
+        class Certain(TinyTransformer):
+            def forward(self, tokens: Tensor) -> Tensor:
+                logits = torch.zeros(1, tokens.shape[1], vocab)
+                logits[:, :, token] = 50.0
+                return logits
+
+        return Certain(ModelConfig(vocab_size=vocab, d_model=8, n_layers=1, seq_len=8))
+
+    def test_without_a_stop_it_returns_the_whole_budget(self) -> None:
+        got = sample(self.certain(3), [1], 20, select_device("cpu"), seed=0)
+        self.assertEqual(len(got), 20)
+        self.assertEqual(set(got), {3})
+
+    def test_with_a_stop_it_ends_at_the_token(self) -> None:
+        got = sample(self.certain(3), [1], 20, select_device("cpu"), stop=3)
+        self.assertEqual(got, [3])
+
+    def test_the_stop_token_is_returned_so_the_caller_can_tell(self) -> None:
+        """Otherwise an ended sample and a truncated one look identical."""
+        got = sample(self.certain(3), [1], 20, select_device("cpu"), stop=3)
+        self.assertEqual(got[-1], 3)
+
+    def test_a_stop_that_never_comes_still_honours_the_budget(self) -> None:
+        got = sample(self.certain(3), [1], 7, select_device("cpu"), stop=5)
+        self.assertEqual(len(got), 7)
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestPacking(unittest.TestCase):
+    """Windows filled from whole works, rather than one padded work each.
+
+    Padding is a property of chunking each work separately, and it reached
+    25.6 percent of slots at sequence length 1,088.
+    """
+
+    def test_short_works_share_a_window(self) -> None:
+        packed = pack([[1, 2, 3], [4, 5, 6]], 8, 0)
+        self.assertEqual(len(packed), 1)
+        self.assertEqual(packed[0][:6], [1, 2, 3, 4, 5, 6])
+
+    def test_every_window_is_exactly_one_longer_than_the_sequence(self) -> None:
+        """A chunk holds seq_len + 1 ids so inputs and targets can offset."""
+        for packed in (pack([[1, 2, 3], [4, 5]], 8, 0), pack([list(range(30))], 8, 0)):
+            for window in packed:
+                self.assertEqual(len(window), 9)
+
+    def test_a_work_longer_than_a_window_still_chunks(self) -> None:
+        """Nothing is gained by refusing to split what cannot fit."""
+        packed = pack([list(range(1, 40))], 8, 0)
+        self.assertGreater(len(packed), 1)
+
+    def test_packing_loses_no_content(self) -> None:
+        works = [[1, 2, 3], [4, 5], [6, 7, 8, 9]]
+        flat = [t for w in pack(works, 16, 0) for t in w if t != 0]
+        self.assertEqual(sorted(flat), sorted(t for w in works for t in w))
+
+    def test_packing_uses_fewer_windows_than_padding_each_work(self) -> None:
+        """The whole point, stated as an assertion rather than a comment."""
+        works = [[1, 2, 3], [4, 5], [6, 7], [8, 9, 1]]
+        padded = [c for w in works for c in chunk(w, 8, 0)]
+        self.assertLess(len(pack(works, 8, 0)), len(padded))
+
+    def test_a_non_positive_sequence_length_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            _ = pack([[1, 2]], 0, 0)

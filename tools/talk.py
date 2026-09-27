@@ -28,7 +28,7 @@ from pathlib import Path
 import torch
 
 from epagoge.pilot import TinyTransformer, load_checkpoint, sample, select_device
-from epagoge.tokeniser import BOOK, SPECIALS, Tokeniser, build
+from epagoge.tokeniser import BOOK, EOT, SPECIALS, Tokeniser, build
 from epagoge.vocabulary import load_vocabulary
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -58,6 +58,11 @@ def answer(
             f"  [outside level: {' '.join(unknown)}]",
             file=sys.stderr,
         )
+    # **A checkpoint written before 2026-09-27 has no end-of-text token**,
+    # and it carries its own word list, so asking for one by name would
+    # raise. Absent it there is nothing to stop on and the old behaviour is
+    # the honest one, reported rather than silently reproduced.
+    end = tokeniser.ids.get(EOT)
     produced = sample(
         model,
         ids,
@@ -66,8 +71,23 @@ def answer(
         seed=seed,
         temperature=temperature,
         seq_len=seq_len,
+        stop=end,
     )
-    specials = {tokeniser.ids[s] for s in SPECIALS}
+    # **Say which of the two endings happened.** A sample that ran out of
+    # budget and one that finished look identical once the stop token is
+    # filtered out, and reading the first as the second is how a model with
+    # no way to stop was mistaken for a model with nothing more to say.
+    if end is None:
+        print("  [no end-of-text token in this checkpoint]", file=sys.stderr)
+    elif produced and produced[-1] == end:
+        print("  [ended]", file=sys.stderr)
+    else:
+        print(f"  [ran out of budget at {tokens} tokens]", file=sys.stderr)
+    # **Only the specials this checkpoint actually has.** Indexing by name
+    # assumes the current vocabulary, and the whole reason a checkpoint
+    # carries its own word list is that it may not be the current one. An
+    # older one has no `<eot>` and this raised `KeyError` on it.
+    specials = {tokeniser.ids[s] for s in SPECIALS if s in tokeniser.ids}
     return tokeniser.decode([t for t in produced if t not in specials])
 
 

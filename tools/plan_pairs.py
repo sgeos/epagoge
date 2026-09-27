@@ -82,7 +82,7 @@ def retention(level: int) -> dict[str, float]:
             text = "\n".join(
                 str(by_id[i]["content"]) for i in book.records if i in by_id
             )
-            ids = tokeniser.encode(text)
+            ids = tokeniser.encode_work(text)
             total = counted = 0.0
             for start in range(0, len(ids) - 1, checkpoint.config.seq_len):
                 piece = ids[start : start + checkpoint.config.seq_len + 1]

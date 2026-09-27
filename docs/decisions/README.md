@@ -53,6 +53,14 @@ Decision records, and the open questions that block implementation.
 - `UNUSED_FORMS.md` decided. A judgement on every unused surface form at
   level one. Seven culled as not English, four headwords left to the
   operator, and two defects found in the lexicon model itself.
+- `STRUCTURAL_TOKENS.md` decided. An end-of-text token, packing rather than
+  padding, and reserved slots. The measured claim that moves this project is
+  that a structural announcement changes what a reader predicts while its
+  notation does not, so the marker must exist and its spelling is free.
+- `ETIQUETTE.md` recorded. Salutations and valedictions belong in
+  `institutional_interfacing` as the register its four moves are performed
+  in. Names the bound that keeps it from becoming general social skills, and
+  leaves the level and the words to the operator.
 - `FIELD_ENUMERATION.md` recorded. Four instances of a record built from a
   subset of its own dataclass's fields, three in the book code and one in
   the checkpoint code. Classifies which omissions fail loudly and which

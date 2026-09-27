@@ -212,7 +212,7 @@ def main(argv: list[str]) -> int:
     for book_id in curriculum:
         body = text.get(book_id, "")
         unknown += tokeniser.unknown(body)
-        for piece in chunk(tokeniser.encode(body), args.seq_len, pad=pad_id):
+        for piece in chunk(tokeniser.encode_work(body), args.seq_len, pad=pad_id):
             chunks.append(piece)
             owner.append(book_id)
     if unknown:
@@ -258,7 +258,7 @@ def main(argv: list[str]) -> int:
     # a corpus of 35,438, which overstated it by a quarter and fed a
     # published shortfall figure.
     chunk_ids = sum(len(c) for c in chunks)
-    tokens = sum(len(tokeniser.encode(text.get(b, ""))) for b in curriculum)
+    tokens = sum(len(tokeniser.encode_work(text.get(b, ""))) for b in curriculum)
     print(
         f"device {device}, vocab {tokeniser.size}, {len(chunks)} chunks, "
         f"{tokens} corpus tokens, {chunk_ids} chunk ids including padding, "

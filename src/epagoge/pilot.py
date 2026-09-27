@@ -414,6 +414,48 @@ def chunk(stream: list[int], seq_len: int, pad: int | None = None) -> list[list[
     return out
 
 
+def pack(streams: Sequence[list[int]], seq_len: int, pad: int) -> list[list[int]]:
+    """Fill windows from whole works, never splitting one across two.
+
+    **Padding is not a property of the corpus, it is a property of chunking
+    each work separately.** Measured here on 2026-09-26, padding was 6.8
+    percent of slots at sequence length 128 and 25.6 at 1,088, and the error
+    it fed into the held-out loss grew with it.
+
+    This is Best-fit Packing's idea at this project's scale. A work is
+    placed in the first window with room for it, and a work longer than a
+    window keeps its own chunks as before, because nothing can be gained by
+    refusing to split what cannot fit.
+
+    **It is deliberately NOT wired into the ordering ablation**, and that is
+    the whole reason this is a separate function rather than a flag on
+    `chunk`. `tools/train_level.py` tokenises and chunks each book on its
+    own precisely so that an ordering is a permutation of one fixed chunk
+    set. Packing books together makes the chunk contents depend on the order
+    they were packed in, so the arms would differ in their content as well
+    as their order, which is the confound that design exists to remove.
+
+    To have both, the bin assignment has to be computed once, independently
+    of any arm, and the ordering then permutes windows rather than books.
+    That is a real option and it is not taken here, because it changes what
+    the ablation's unit is and that is the operator's to decide.
+    """
+    if seq_len < 1:
+        raise ValueError(f"seq_len must be positive, got {seq_len}")
+    windows: list[list[int]] = []
+    for stream in streams:
+        if len(stream) > seq_len + 1:
+            windows.extend(chunk(stream, seq_len, pad))
+            continue
+        for window in windows:
+            if len(window) + len(stream) <= seq_len + 1:
+                window.extend(stream)
+                break
+        else:
+            windows.append(list(stream))
+    return [w + [pad] * (seq_len + 1 - len(w)) for w in windows if len(w) >= 2]
+
+
 def _batches(
     chunks: list[list[int]], order: list[int], batch_size: int, device: torch.device
 ) -> list[tuple[Tensor, Tensor]]:
@@ -981,8 +1023,9 @@ def sample(
     temperature: float = 1.0,
     top_k: int = 0,
     seq_len: int = 128,
+    stop: int | None = None,
 ) -> list[int]:
-    """Continue ``prompt`` for ``count`` tokens, sampling from the model.
+    """Continue ``prompt`` for at most ``count`` tokens, sampling.
 
     Seeded, because a sample nobody can reproduce is an anecdote. The
     context is truncated to the training sequence length, since the
@@ -991,6 +1034,13 @@ def sample(
     ``top_k`` of zero samples from the full distribution. Truncating it
     flatters the model by hiding the tail it puts mass on, so the default
     does not.
+
+    **``stop`` ends the sample at a token instead of at the budget**, and
+    until 2026-09-27 there was no such token to pass. Output stopped
+    mid-clause at exactly ``count`` tokens every time, which looked like a
+    model with nothing more to say and was a loop with no exit. The stop
+    token is returned, so a caller can tell a work that ended from one that
+    ran out of budget.
     """
     if temperature <= 0.0:
         raise ValueError(f"temperature must be positive, got {temperature}")
@@ -1011,6 +1061,8 @@ def sample(
             probabilities = torch.softmax(logits, dim=-1).to("cpu")
             nxt = int(torch.multinomial(probabilities, 1, generator=generator).item())
             out.append(nxt)
+            if stop is not None and nxt == stop:
+                break
     return out[len(prompt) :]
 
 

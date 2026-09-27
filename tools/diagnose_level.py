@@ -29,6 +29,7 @@ from epagoge.pilot import (
     TrainConfig,
     chunk,
     format_seconds,
+    pack,
     parameter_count,
     select_device,
     train_diagnostic,
@@ -104,6 +105,11 @@ def main(argv: list[str]) -> int:
             "relative distance and has nothing per index to learn."
         ),
     )
+    parser.add_argument(
+        "--pack",
+        action="store_true",
+        help="fill windows from whole books instead of padding each one out",
+    )
     parser.add_argument("--device", type=str, default=None)
     parser.add_argument(
         "--out", type=Path, default=ROOT / "evals/pilot/level_1_diagnosis.json"
@@ -121,7 +127,9 @@ def main(argv: list[str]) -> int:
         print("the book ordering is short; see train_level.py", file=sys.stderr)
         return 1
 
-    encoded = {book_id: tokeniser.encode(text.get(book_id, "")) for book_id in ordered}
+    encoded = {
+        book_id: tokeniser.encode_work(text.get(book_id, "")) for book_id in ordered
+    }
     longest = max((len(s) for s in encoded.values()), default=0)
 
     # **A BOOK IS THE UNIT, and a sequence long enough to hold one makes
@@ -145,13 +153,25 @@ def main(argv: list[str]) -> int:
     boundary = max(1, len(ordered) - max(1, len(ordered) // 8))
     train_books, held_books = ordered[:boundary], ordered[boundary:]
 
-    chunks: list[list[int]] = []
-    for book_id in train_books:
-        chunks.extend(chunk(encoded[book_id], seq_len, pad_id))
+    # **Packing fills a window from whole works instead of padding each one
+    # out.** Padding was 6.8 percent of slots at 128 and 25.6 at 1,088, and
+    # it is a property of chunking each book separately rather than of the
+    # corpus. Off by default so the change is measured rather than assumed,
+    # and never wired into `train_level.py`, where packing books together
+    # would make chunk contents depend on the arm's ordering. `pilot.pack`
+    # carries that reasoning.
+    def windows(ids: list[str]) -> list[list[int]]:
+        streams = [encoded[b] for b in ids]
+        if args.pack:
+            return pack(streams, seq_len, pad_id)
+        out: list[list[int]] = []
+        for stream in streams:
+            out.extend(chunk(stream, seq_len, pad_id))
+        return out
+
+    chunks = windows(train_books)
     train_ids = list(range(len(chunks)))
-    held_out: list[list[int]] = []
-    for book_id in held_books:
-        held_out.extend(chunk(encoded[book_id], seq_len, pad_id))
+    held_out = windows(held_books)
 
     device = select_device(args.device)
     tokens = sum(len(s) for s in encoded.values())

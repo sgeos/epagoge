@@ -356,6 +356,14 @@ def book(
         "  - State what is so. Do not address the reader as a teacher would.",
         "  - A definition says what the word means, using the other words.",
         "  - No word outside the list above.",
+        # **Four exclamation marks in 356,975 level-one tokens**, measured
+        # 2026-09-27, against 30,507 full stops. The mark is admissible and
+        # the corpus simply never reached for it, so a model trained here
+        # has no idea what surprise or delight looks like in writing. Asked
+        # for rather than required, because a picture book that exclaims on
+        # every page is worse than one that never does.
+        "  - A sentence may end with an exclamation mark where something",
+        "    surprising or delightful happens. Use it sparingly.",
     ]
     return "\n".join(lines)
 

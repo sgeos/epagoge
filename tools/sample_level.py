@@ -43,7 +43,7 @@ from epagoge.pilot import (
     select_device,
     train_model,
 )
-from epagoge.tokeniser import BOOK, PAD, SPECIALS, build
+from epagoge.tokeniser import BOOK, EOT, PAD, SPECIALS, build
 from epagoge.vocabulary import load_vocabulary
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -105,7 +105,7 @@ def main(argv: list[str]) -> int:
     chunks: list[list[int]] = []
     for book_id in ordered:
         chunks.extend(
-            chunk(tokeniser.encode(text.get(book_id, "")), args.seq_len, pad_id)
+            chunk(tokeniser.encode_work(text.get(book_id, "")), args.seq_len, pad_id)
         )
     if len(chunks) < args.batch_size * 2:
         print(f"only {len(chunks)} chunks; too small to train", file=sys.stderr)
@@ -138,17 +138,25 @@ def main(argv: list[str]) -> int:
     # **The prompt is the corpus's own opening move.** A book starts with a
     # marker, so sampling from it asks the model to begin a book rather
     # than to continue an arbitrary fragment.
+    #
+    # **That sentence was false until 2026-09-27 and is true now.** The
+    # marker was never emitted into any training stream, so it occurred
+    # zero times in 356,975 tokens and every sample here began from a row
+    # training had never visited. `Tokeniser.encode_work` now announces
+    # both ends of a work, which is what makes the seed mean anything.
     prompt = [tokeniser.ids[BOOK]]
-    specials = {tokeniser.ids[s] for s in SPECIALS}
+    specials = {tokeniser.ids[s] for s in SPECIALS if s in tokeniser.ids}
 
     texts: list[str] = []
     words: list[str] = []
+    ended = 0
     for n in range(args.samples):
         produced = sample(
             model,
             prompt,
             args.tokens,
             device,
+            stop=tokeniser.ids[EOT],
             seed=args.seed * 1000 + n,
             temperature=args.temperature,
             seq_len=args.seq_len,
@@ -160,7 +168,13 @@ def main(argv: list[str]) -> int:
             and t < len(tokeniser.words)
             and tokeniser.words[t].isalpha()
         )
-        texts.append(tokeniser.decode(produced))
+        # **The stop token is counted, not printed.** Left in the decoded
+        # text it round-trips through `encode` as an unknown word and
+        # corrupts the sentence-shape statistic below, which is computed by
+        # re-encoding these strings.
+        if produced and produced[-1] == tokeniser.ids[EOT]:
+            ended += 1
+        texts.append(tokeniser.decode([t for t in produced if t not in specials]))
 
     # **Admissibility is not measurable this way and the first version of
     # this tool measured it anyway.** The tokeniser is built from the
@@ -191,6 +205,14 @@ def main(argv: list[str]) -> int:
         f"{distinct * 100:.1f}% distinct, "
         f"{sentence_share * 100:.1f}% of sentences at least "
         f"{MIN_SENTENCE_WORDS} words"
+    )
+    # **Whether the model can stop, which was unmeasurable until the corpus
+    # carried an end-of-text token.** A sample that ran out of budget and
+    # one that finished are indistinguishable in the text, so the count is
+    # taken where the difference is still visible.
+    print(
+        f"  {ended} of {args.samples} sample(s) ended on their own "
+        f"within {args.tokens} tokens"
     )
     print(f"wrote {args.weights}")
     for n, body in enumerate(texts):

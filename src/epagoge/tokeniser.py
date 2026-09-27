@@ -38,7 +38,39 @@ POSSESSIVE: Final[str] = "'s"
 PAD: Final[str] = "<pad>"
 UNK: Final[str] = "<unk>"
 BOOK: Final[str] = "<book>"
-SPECIALS: Final[tuple[str, ...]] = (PAD, UNK, BOOK, POSSESSIVE)
+
+EOT: Final[str] = "<eot>"
+"""End of text. **A work has to be able to end.**
+
+Until 2026-09-27 nothing in the vocabulary meant "this work is finished", so
+`pilot.sample` had no stopping condition and emitted exactly the number of
+tokens it was asked for, stopping mid-clause wherever that fell.
+
+`docs/decisions/STRUCTURAL_TOKENS.md` has the grounds. The short form is
+that this is universal practice, that GPT-2 shipped `<|endoftext|>` as
+essentially its only special token, and that TinyStories, which is the
+closest published precedent to this corpus, separates stories with it.
+"""
+
+RESERVED_COUNT: Final[int] = 16
+"""Unused token slots, held so the next structural token is not a migration.
+
+**Adding a token changes the vocabulary size, which invalidates every
+checkpoint on disk.** Llama 3 ships 256 reserved slots for this reason. That
+count is proportionate to a vocabulary of 128,000 and not to one of 2,250,
+so sixteen is held here instead, costing sixteen embedding rows.
+
+**They are never emitted, so their rows stay near initialisation.** That is
+the same property that made `<book>` useless as a sampling seed, and it is
+correct here: a reserved slot is a placeholder, not a token with a meaning
+waiting to be learned.
+"""
+
+RESERVED: Final[tuple[str, ...]] = tuple(
+    f"<reserved_{n}>" for n in range(RESERVED_COUNT)
+)
+
+SPECIALS: Final[tuple[str, ...]] = (PAD, UNK, BOOK, EOT, POSSESSIVE) + RESERVED
 
 
 @dataclass(frozen=True, slots=True)
@@ -57,6 +89,25 @@ class Tokeniser:
         return [
             self.ids.get(t, unk) for t in WORD_RE.findall(fold_typography(text).lower())
         ]
+
+    def encode_work(self, text: str) -> list[int]:
+        """Token ids for one complete work, announced as one.
+
+        **A work begins with `<book>` and ends with `<eot>`**, which is the
+        shape Llama 3 uses with `<|begin_of_text|>` and `<|end_of_text|>`.
+
+        Two defects close here. `<book>` was the seed
+        `tools/sample_level.py` and `tools/talk.py` start an unprompted
+        sample from, and it occurred **zero times in 356,975 training
+        tokens**, so every such sample began from a row training never
+        visited. And nothing marked an ending, so the model had no way to
+        stop and no way to learn that a book is a bounded thing.
+
+        Use this wherever a whole book becomes a stream. Use `encode` for a
+        fragment, such as a prompt, which is not a work and must not claim
+        to be one.
+        """
+        return [self.ids[BOOK], *self.encode(text), self.ids[EOT]]
 
     def decode(self, tokens: list[int]) -> str:
         return " ".join(
