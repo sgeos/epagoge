@@ -383,6 +383,38 @@ volume was
    taking free space from 41 to 172 GiB; saves are in
    `~/steam-saves-2026-09-26`.
 
+**Items 5, 6 and 7 were answered on 2026-09-27 and the entries above are
+left standing rather than edited away.** What changed:
+
+- **Item 5 has a speculative position and a real one.** The metadata-only
+  acquisition scheme is drafted in `../decisions/SOURCE_ACQUISITION.md` in
+  enough detail to adopt and is **deliberately not adopted**. The standing
+  position is deferral until the first acquisition, `sources/` stays
+  tracked, and `sources/bodies/` is ignored as a guard so a body cannot be
+  committed by accident before the decision. The Wikipedia question is
+  untouched.
+- **Item 6 is resolved and its count was stale.** Two of the fourteen,
+  `drunk` and `lighted`, had already been decided in `08f5013` and the
+  record was never updated, so this file carried fourteen for a day where
+  twelve was right. Four forms are culled through the `mass` qualifier and
+  seven kept. The rule is that an archaic form need not be admitted while a
+  current one is kept even when unused.
+- **Item 7 is done and its figure did not reproduce.** The 219 GB above
+  measures nothing that exists. Measured on 2026-09-27 there were **120.3
+  GiB** across 91 `target` directories. **75.1 GiB was reclaimed** from 66
+  of them, Keleusma and 1830 excluded on instruction, along with 2.16 GiB of
+  unpinned Rust toolchains and 1.62 GiB of caches belonging to applications
+  that were not running. The volume moved from 75 percent with 229 GiB free
+  to **66 percent with 305 GiB free**.
+- **Rust 1.92 must not be uninstalled.** It is pinned by thirteen
+  `rust-toolchain.toml` files, every one of them inside a Keleusma tree, and
+  removing it as an old version would have broken the project that was
+  explicitly excluded. 1.89.0 is pinned by three more.
+- **`~/Library/Caches/Mozilla.sccache` holds 10 GiB and was deliberately
+  kept.** It is the compiler cache that makes the 75 GiB of deleted build
+  output cheap to rebuild, so clearing both would have been the worst
+  available combination.
+
 ## What is NOT yours
 
 **Announcing.** The repository is public; discovery is not. A launch post
