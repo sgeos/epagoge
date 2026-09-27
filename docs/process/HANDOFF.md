@@ -1,6 +1,6 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-26, describing the tree at the commit that carries this
+**Refreshed 2026-09-27, describing the tree at the commit that carries this
 refresh.** Read this block, run the validity check, then stop and wait for
 the human prompt.
 
@@ -10,32 +10,15 @@ moment anything else lands. Every hash in this repository changed once
 already. **Validate by ancestry and by content**, which the next section
 gives in a form that does not depend on any hash.
 
-## READ THIS FIRST: the tree is mid-flight
+## The tree is clean
 
-**Work is running in the background and the gate is RED.** This is expected
-and it is not damage. Nothing was committed on a red gate.
+**Nothing is running, nothing is uncommitted, CI is green.** The cross-book
+work described below completed and landed.
 
-**What is running.** `generators/cross_books.py` is writing 150
-cross-concept books from `tmp/pairs.json`. Two shell drivers in the session
-scratchpad chain the rest: generate, then fill every short book, then
-describe, then stamp, then gate. Check with
-`pgrep -fl 'cross_books|fill_spreads|describe_books'`.
-
-**Why the gate is red.** The new books have no `about` or `teaches` yet,
-because the teacher is busy generating and the description pass runs last.
-`tools/stamp_books.py --level 1 --check` names them.
-
-**DO NOT weaken the metadata check to get a commit through.**
-`CONTRIBUTING.md` forbids exactly that. The books need describing, which is
-the queued work.
-
-**If the background jobs are gone and the gate is still red**, run in this
-order: `describe_books.py --level 1 --limit 400`, then
-`stamp_books.py --level 1`, then the gate, then commit.
-
-**Uncommitted and valuable.** Nine modified tracked files and four new
-paths, listed under "what is uncommitted" below. The architecture work in
-`src/epagoge/pilot.py` is the part worth protecting.
+**At this refresh**: 399 books over 7,138 records and **297,523 words**. All
+397 sixteen-spread content books are inside the word band, none above, and
+all 399 carry their six metadata fields. **Concept pairs realised: 262 of
+7,626**, from 109.
 
 ## Validity
 
@@ -52,39 +35,28 @@ history and the runner clones one commit.
 first commit's `README.md` begins `# Epagoge`, and grepping every commit
 message for the former name returns 0.
 
-**Content, each verified 2026-09-26 at commit `c1b2ba2` unless noted.**
+**Content, each verified 2026-09-27.**
 
-1. `./tools/check.sh` reports **twenty-two** checks. It exits non-zero while
-   the cross-book work is unfinished; that is the metadata check doing its
-   job.
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** over **twenty-two**
+   checks and **exits 0**.
 2. The suite reports **499** tests, up from 483 that morning.
 3. `curriculum/vocabulary.json` holds **960 senses over 928 words**, of
    which **841** are admissible at level one. **178** core, **37**
    ostensive, a seed of **257**.
 4. **Both dictionaries are self-hosting**, 807 of 807 at level one, closure
    100 percent, nothing blocked and no cycles.
-5. `curriculum/books/level_1/` held **246** books at `c1b2ba2` and holds
-   **307** on disk as the cross-book run proceeds, heading for 407. The word
-   count is deliberately **not** asserted as an equality: it was 172,810 at
-   the commit and rises as books are filled. Check it is **at least** that.
-6. `tools/stamp_books.py --level 1 --check` reports every committed book
-   carrying all six metadata fields. New books fail until described.
+5. `curriculum/books/level_1/` holds **399** books over **7,138** records.
+   The word count is deliberately **not** asserted as an equality, since any
+   later fill raises it. It was **297,523**; check it is **at least** that,
+   that all content books are in the band and none above.
+6. `tools/stamp_books.py --level 1 --check` reports **399 books, 0 missing a
+   field** and no date disagreeing with history.
 7. **Unused surface forms 529 of 2,038**, and **headwords never used at all
    is 0**, from eleven the day before.
 8. `git ls-files secret | wc -l` reports **0**, and the disclosure scan
    reports it covered tracked and untracked files, line by line and with
    whitespace collapsed. **A scan that does not say all three is the old
    one, which missed both.**
-
-## What is uncommitted
-
-**Modified.** `src/epagoge/pilot.py` (the architecture work),
-`src/epagoge/prompt.py`, `generators/generate.py`, `tools/diagnose_level.py`,
-`tools/stamp_books.py`, `tests/test_pilot.py`, `docs/decisions/README.md`,
-and two books the fill touched.
-
-**New.** `generators/cross_books.py`, `tools/plan_pairs.py`,
-`docs/decisions/COMBINATORIAL_RICHNESS.md`, and the cross books themselves.
 
 ## THREE MEASUREMENTS ARE OWED, and none is optional
 
@@ -120,16 +92,17 @@ paths rather than argued.
 | Level-one lexicon | **Done.** 841 words, closure 100 percent, seed 257 |
 | Level-one corpus length | **Done at `c1b2ba2`**, 244 of 244 in band |
 | Level-one book metadata | **Done for committed books**, pending for new ones |
-| Combinatorial richness | **In progress.** 109 pairs of 7,626, +150 running |
+| Combinatorial richness | **262 pairs of 7,626**, from 109. More is the lever |
 | Architecture | **Enhanced, unmeasured.** Tying, init, heads, rotary |
 | Ordering ablation | **Blocked** on an endpoint the operator holds |
 
 ### Live defects
 
-**The corpus realises a tiny fraction of its own combinations.** 109 concept
-pairs of 7,626 possible, and every concept's partners were its own
-unit-mates, because a book is about a unit and a variant repeats it.
-`docs/decisions/COMBINATORIAL_RICHNESS.md` has the measurement and the rule.
+**The corpus realises 262 concept pairs of 7,626.** Better than the 109 it
+started at and still three percent. `COMBINATORIAL_RICHNESS.md` has the rule
+and `tools/plan_pairs.py` plans any number more. **Exhaustive singles and
+pairs is 7,750 books and 7.25M tokens, inside the stated budget**, so this is
+a scheduling question rather than a feasibility one.
 
 **The model is worst at the concepts the project exists to teach.**
 `giving_a_reason`, `disagreeing` and `agreeing` at loss 4.011 against 2.017
@@ -141,8 +114,9 @@ once and never revisited, which is 94 percent, so it ranks nothing. Its
 value is as an inventory; `tools/retention.py` says which to write for
 first.
 
-**A third of the level-one lexicon is never used**, 529 of 2,038 surface
-forms. `docs/decisions/UNUSED_FORMS.md` judged every one and left fourteen
+**Unused surface forms should be re-counted**; the figure of 529 of 2,038
+predates 153 new books. `docs/decisions/UNUSED_FORMS.md` judged every one
+and left fourteen
 sense questions to the operator.
 
 ### Findings that outlive the session
@@ -184,7 +158,8 @@ sense questions to the operator.
    for module seeding is recorded as open**: it is CC BY-SA and prose derived
    from it may be a derivative work.
 6. **Fourteen sense questions** in `UNUSED_FORMS.md`.
-7. **Whether to clear 219 GB of Rust build output under ~/projects.** The volume was
+7. **Whether to clear 219 GB of Rust build output under ~/projects.** The
+volume was
    at 96 percent and swap exhaustion is the likeliest cause of this
    machine's crashes. Steam and three games were removed on instruction,
    taking free space from 41 to 172 GiB; saves are in
@@ -198,7 +173,10 @@ reopens the decision without a file changing.
 ## Governing rules that are easy to lose
 
 - **Run the gate, read the exit code, stop, then commit.**
-- **Check CI separately.** Twice red while the local gate was green.
+- **Check CI separately.** Red while the local gate was green three times,
+  most recently because `stamp_books --check` skips files modified in the
+  working tree, which is exactly the set whose dates the pending commit is
+  about to change.
 - **A tool that returns less than it was asked for must say so.**
 - **Before reporting a difference, say what was held fixed and check that it
   was.** Five instances this session: a loss compared across held-out sets, a
