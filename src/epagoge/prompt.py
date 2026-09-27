@@ -243,6 +243,17 @@ BOOK_FORMAT: Final[str] = """SUBJECT: <one sentence saying what this book is abo
 WORD <word>: <one sentence saying what that word means>
 STORY: <one sentence>"""
 
+SUBJECT_AND_STORY_FORMAT: Final[
+    str
+] = """SUBJECT: <one sentence saying what this book is about>
+STORY: <one sentence>"""
+"""The format when a book defines no new words.
+
+A book that recombines concepts already taught has nothing to define beyond
+its own subject, and offering it a WORD line invites definitions nobody
+asked for.
+"""
+
 
 def continue_story(
     title: str,
@@ -317,11 +328,20 @@ def book(
         "",
         "Write these lines, in this order and in this exact format:",
         "",
-        BOOK_FORMAT,
+        BOOK_FORMAT if words else SUBJECT_AND_STORY_FORMAT,
         "",
-        "One SUBJECT line. Then one WORD line for each of these words:",
     ]
-    lines += [f"  {word}" for word in sorted(words)]
+    # **An empty `words` used to produce a prompt that misled.** It said "one
+    # WORD line for each of these words" and then listed none, immediately
+    # above the admissible vocabulary, so the teacher read that list as the
+    # words to define and returned a definition for all 845 of them and no
+    # story at all. Found 2026-09-26 by a generator that defines no new words
+    # because it recombines concepts already taught.
+    if words:
+        lines.append("One SUBJECT line. Then one WORD line for each of these words:")
+        lines += [f"  {word}" for word in sorted(words)]
+    else:
+        lines.append("One SUBJECT line, then the STORY lines. No WORD lines.")
     lines += [
         "",
         f"Then {sentences} STORY lines that tell one story, in order, using",

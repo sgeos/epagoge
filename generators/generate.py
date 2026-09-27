@@ -234,7 +234,26 @@ wall clock and appeared nowhere in its summary.
 """
 
 
-def ask(text: str, *, timeout: int) -> str:
+MAX_PREDICT = 1024
+"""How many tokens a completion may generate before it is cut off.
+
+**`ask` bounded the context and never bounded the output, and that cost a
+generation pass.** On 2026-09-26 a whole-book prompt of the same size as a
+spread-fill prompt, which answers in three to six seconds, timed out at 90
+and then at 240. The input was not the problem: asked for sixteen sentences
+under a hard word list the teacher generates until it decides to stop, and
+under a constraint it cannot satisfy it does not stop.
+
+A cap turns that from a timeout into a truncated answer, which the caller
+can use the usable part of. **A bounded failure beats an unbounded wait.**
+
+Generous by intent. The longest useful reply observed is a book description
+at about 230 tokens and a spread fill at about 180, so a thousand is four
+times the largest thing anything here asks for.
+"""
+
+
+def ask(text: str, *, timeout: int, max_predict: int = MAX_PREDICT) -> str:
     """Run one completion. Loud on failure, but never fatal to a long run.
 
     **A raised timeout killed a ten-book chunk and lost all of it**, since
@@ -258,7 +277,7 @@ def ask(text: str, *, timeout: int) -> str:
             "model": MODEL,
             "prompt": text,
             "stream": False,
-            "options": {"num_ctx": NUM_CTX},
+            "options": {"num_ctx": NUM_CTX, "num_predict": max_predict},
         }
     ).encode()
     # **The scheme is a literal in this file, not input.** ENDPOINT is a

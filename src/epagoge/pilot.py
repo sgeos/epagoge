@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import math
 import random
+import sys
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
@@ -37,6 +38,22 @@ ln(256) with a paired difference of zero.
 """
 
 
+HEAD_CHANNELS = 64
+"""Channels per attention head when the head count is derived."""
+
+
+def head_count(d_model: int, requested: int) -> int:
+    """How many heads a width should use.
+
+    Zero means derive, which keeps the head dimension near
+    ``HEAD_CHANNELS`` at every width instead of letting it grow with the
+    model. At least one head, and never more heads than channels.
+    """
+    if requested > 0:
+        return requested
+    return max(1, min(d_model, d_model // HEAD_CHANNELS))
+
+
 @dataclass(frozen=True, slots=True)
 class ModelConfig:
     """Deliberately small. The pilot measures variance, not capability."""
@@ -44,8 +61,48 @@ class ModelConfig:
     vocab_size: int = DEFAULT_VOCAB
     d_model: int = 128
     n_layers: int = 4
-    n_heads: int = 4
+    n_heads: int = 0
+    """Attention heads. **Zero means derive one head per 64 channels.**
+
+    **It was fixed at four regardless of width, and that was a defect.** At
+    width 1,024 four heads is a head dimension of 256, where 64 to 128 is
+    standard, so every wide point in the capacity sweep of 2026-09-26 was
+    measured on an unusual shape. Deriving it keeps the head dimension near
+    64 at every width, which is what the sweep meant to vary and did not.
+
+    An explicit value still overrides, because a sweep over head count is a
+    legitimate thing to want.
+    """
+
+    dropout: float = 0.0
+    """Dropout on attention output and the feed-forward.
+
+    **No regularisation has ever been tried here.** The capacity sweep
+    reached gaps of 2.659 between training and held-out loss, which is heavy
+    overfitting, and dropout is the cheapest response. Zero by default so
+    the change is measured rather than assumed.
+    """
+
+    norm: str = "layer"
+    """`layer` or `rms`. RMSNorm drops the mean subtraction and the bias."""
+
+    feed: str = "gelu"
+    """`gelu` or `swiglu`.
+
+    SwiGLU is the modern default and uses three matrices where GELU uses
+    two, so the hidden width is cut to eight thirds to keep the parameter
+    count comparable. Otherwise a comparison measures size, not shape.
+    """
     seq_len: int = 128
+    tie_embeddings: bool = True
+    """Whether the output head shares the input embedding's matrix.
+
+    **Absent until 2026-09-26, and it was thirteen percent of the model.** At
+    2,246 words and width 256 an untied head is 575,000 parameters against
+    4.3 million total, spent on a second copy of what the embedding already
+    holds. Tying is the usual choice for a model this small.
+    """
+
     positions: str = "learned"
     """How position reaches attention: ``learned`` or ``rotary``.
 
@@ -117,52 +174,109 @@ class CausalSelfAttention(nn.Module):
     smallest amount of hand-written attention that admits rotary position,
     and it uses `scaled_dot_product_attention` so the kernel is still
     torch's rather than ours.
+
+    **BOTH POSITION SCHEMES NOW USE THIS BLOCK, and until 2026-09-26 only
+    rotary did.** The learned path used `nn.TransformerEncoderLayer`, which
+    carries biases on its projections where this does not: thirteen bias
+    tensors against nine. So the measured 0.4 nats attributed to rotary was
+    confounded with bias removal and with whatever else the two
+    implementations differ in. Sharing the block makes position the only
+    difference, which is what the comparison claimed to be measuring.
     """
 
     def __init__(self, config: ModelConfig) -> None:
         super().__init__()
-        if config.d_model % config.n_heads:
+        heads = head_count(config.d_model, config.n_heads)
+        if config.d_model % heads:
             raise ValueError(
-                f"d_model {config.d_model} is not divisible by n_heads {config.n_heads}"
+                f"d_model {config.d_model} is not divisible by {heads} head(s)"
             )
-        self.n_heads = config.n_heads
-        self.head_dim = config.d_model // config.n_heads
+        self.n_heads = heads
+        self.head_dim = config.d_model // heads
+        self.dropout = nn.Dropout(config.dropout)
         if self.head_dim % 2:
             raise ValueError(
                 f"rotary needs an even head dimension, got {self.head_dim} "
-                f"from d_model {config.d_model} over {config.n_heads} heads"
+                f"from d_model {config.d_model} over {heads} head(s)"
             )
         self.qkv = nn.Linear(config.d_model, 3 * config.d_model, bias=False)
         self.out = nn.Linear(config.d_model, config.d_model, bias=False)
 
-    def forward(self, hidden: Tensor, cos: Tensor, sin: Tensor) -> Tensor:
+    def forward(self, hidden: Tensor, cos: Tensor | None, sin: Tensor | None) -> Tensor:
         batch, length, _ = hidden.shape
         qkv = self.qkv(hidden).view(batch, length, 3, self.n_heads, self.head_dim)
         query, key, value = (qkv[:, :, i].transpose(1, 2) for i in range(3))
-        query = apply_rotary(query, cos, sin)
-        key = apply_rotary(key, cos, sin)
+        if cos is not None and sin is not None:
+            query = apply_rotary(query, cos, sin)
+            key = apply_rotary(key, cos, sin)
         attended = torch.nn.functional.scaled_dot_product_attention(
             query, key, value, is_causal=True
         )
         merged = attended.transpose(1, 2).reshape(batch, length, -1)
-        return self.out(merged)
+        return self.dropout(self.out(merged))
 
 
-class RotaryBlock(nn.Module):
-    """Pre-norm block: rotary causal attention, then a feed-forward."""
+def _norm(config: ModelConfig) -> nn.Module:
+    if config.norm == "rms":
+        return nn.RMSNorm(config.d_model)
+    if config.norm != "layer":
+        raise ValueError(f"norm must be 'layer' or 'rms', got {config.norm!r}")
+    return nn.LayerNorm(config.d_model)
+
+
+class SwiGLU(nn.Module):
+    """Gated feed-forward, as Llama and PaLM use.
+
+    **The hidden width is eight thirds rather than four times.** SwiGLU needs
+    three matrices where GELU needs two, so keeping the multiplier at four
+    would make it half again as large and a comparison against GELU would be
+    measuring size rather than shape.
+    """
 
     def __init__(self, config: ModelConfig) -> None:
         super().__init__()
-        self.norm_attention = nn.LayerNorm(config.d_model)
-        self.attention = CausalSelfAttention(config)
-        self.norm_feed = nn.LayerNorm(config.d_model)
-        self.feed = nn.Sequential(
-            nn.Linear(config.d_model, 4 * config.d_model),
-            nn.GELU(),
-            nn.Linear(4 * config.d_model, config.d_model),
+        hidden = int(8 * config.d_model / 3)
+        hidden += -hidden % 8
+        self.gate = nn.Linear(config.d_model, hidden, bias=False)
+        self.up = nn.Linear(config.d_model, hidden, bias=False)
+        self.down = nn.Linear(hidden, config.d_model, bias=False)
+        self.drop = nn.Dropout(config.dropout)
+
+    def forward(self, hidden: Tensor) -> Tensor:
+        return self.drop(
+            self.down(nn.functional.silu(self.gate(hidden)) * self.up(hidden))
         )
 
-    def forward(self, hidden: Tensor, cos: Tensor, sin: Tensor) -> Tensor:
+
+def _feed(config: ModelConfig) -> nn.Module:
+    if config.feed == "swiglu":
+        return SwiGLU(config)
+    if config.feed != "gelu":
+        raise ValueError(f"feed must be 'gelu' or 'swiglu', got {config.feed!r}")
+    return nn.Sequential(
+        nn.Linear(config.d_model, 4 * config.d_model),
+        nn.GELU(),
+        nn.Linear(4 * config.d_model, config.d_model),
+        nn.Dropout(config.dropout),
+    )
+
+
+class Block(nn.Module):
+    """Pre-norm block: causal attention, then a feed-forward.
+
+    Rotary is applied only when tables are passed, so the same block serves
+    both position schemes and neither gets an advantage the comparison was
+    not meant to measure.
+    """
+
+    def __init__(self, config: ModelConfig) -> None:
+        super().__init__()
+        self.norm_attention = _norm(config)
+        self.attention = CausalSelfAttention(config)
+        self.norm_feed = _norm(config)
+        self.feed = _feed(config)
+
+    def forward(self, hidden: Tensor, cos: Tensor | None, sin: Tensor | None) -> Tensor:
         hidden = hidden + self.attention(self.norm_attention(hidden), cos, sin)
         return hidden + self.feed(self.norm_feed(hidden))
 
@@ -177,58 +291,71 @@ class TinyTransformer(nn.Module):
 
     def __init__(self, config: ModelConfig) -> None:
         super().__init__()
-        self.config = config
-        self.token = nn.Embedding(config.vocab_size, config.d_model)
-        self.rotary = config.positions == "rotary"
         if config.positions not in ("learned", "rotary"):
             raise ValueError(
                 f"positions must be 'learned' or 'rotary', got {config.positions!r}"
             )
-        if self.rotary:
-            # **No position table at all**, so nothing scales with the
-            # sequence length and nothing has to be learned per index.
-            self.position = None
-            self.rotary_blocks = nn.ModuleList(
-                RotaryBlock(config) for _ in range(config.n_layers)
-            )
-        else:
-            self.position = nn.Embedding(config.seq_len, config.d_model)
-            layer = nn.TransformerEncoderLayer(
-                d_model=config.d_model,
-                nhead=config.n_heads,
-                dim_feedforward=4 * config.d_model,
-                batch_first=True,
-                norm_first=True,
-                dropout=0.0,
-            )
-            # **Nested tensors are switched off rather than left to warn.**
-            # They do nothing when `norm_first` is set, and torch says so on
-            # every construction, which put two lines of warning above every
-            # answer the model gave. A warning nobody can act on trains
-            # people to ignore warnings.
-            self.blocks = nn.TransformerEncoder(
-                layer, num_layers=config.n_layers, enable_nested_tensor=False
-            )
+        self.config = config
+        self.rotary = config.positions == "rotary"
+        self.token = nn.Embedding(config.vocab_size, config.d_model)
+        # **No table at all under rotary**, so nothing scales with the
+        # sequence length and nothing has to be learned per index.
+        self.position = (
+            None if self.rotary else nn.Embedding(config.seq_len, config.d_model)
+        )
+        self.blocks = nn.ModuleList(Block(config) for _ in range(config.n_layers))
         self.norm = nn.LayerNorm(config.d_model)
         self.head = nn.Linear(config.d_model, config.vocab_size, bias=False)
+        if config.tie_embeddings:
+            # **The head and the embedding are one matrix.** Untied, the head
+            # is vocab_size by d_model, which at 2,246 words and width 256 is
+            # 575,000 of 4.3 million parameters: thirteen percent of the model
+            # spent on a second copy of what the embedding already holds.
+            self.head.weight = self.token.weight
+        self.apply(self._initialise)
+        # **Residual projections are scaled down by the depth.** Without it
+        # the variance of the residual stream grows with the layer count. This
+        # is the GPT-2 initialisation and it was not being done.
+        for name, parameter in self.named_parameters():
+            if name.endswith(
+                ("feed.2.weight", "attention.out.weight", "feed.down.weight")
+            ):
+                with torch.no_grad():
+                    _ = parameter.mul_(1.0 / math.sqrt(2 * config.n_layers))
+
+    @staticmethod
+    def _initialise(module: nn.Module) -> None:
+        """Normal(0, 0.02), which is usual for a transformer and was not used.
+
+        Default PyTorch initialisation is uniform and scaled by fan-in, which
+        suits a plain multilayer network rather than this.
+        """
+        if isinstance(module, nn.Linear):
+            nn.init.normal_(module.weight, mean=0.0, std=0.02)
+            # Every Linear here is built with bias=False except the feed
+            # forward's two, and pyright knows the attribute is a Parameter
+            # rather than an optional, so the guard is on the module kind.
+            if "bias" in dict(module.named_parameters()):
+                nn.init.zeros_(module.bias)
+        elif isinstance(module, nn.Embedding):
+            nn.init.normal_(module.weight, mean=0.0, std=0.02)
 
     def forward(self, tokens: Tensor) -> Tensor:
         length = tokens.shape[1]
+        hidden = self.token(tokens)
+        cos: Tensor | None = None
+        sin: Tensor | None = None
         if self.rotary:
-            head_dim = self.config.d_model // self.config.n_heads
+            head_dim = self.config.d_model // head_count(
+                self.config.d_model, self.config.n_heads
+            )
             cos, sin = rotary_table(head_dim, length, tokens.device)
-            hidden = self.token(tokens)
-            for block in self.rotary_blocks:
-                hidden = block(hidden, cos, sin)
-            return self.head(self.norm(hidden))
-        positions = torch.arange(length, device=tokens.device)
-        if self.position is None:
-            raise RuntimeError("learned positions were asked for and none exist")
-        hidden = self.token(tokens) + self.position(positions)
-        mask = nn.Transformer.generate_square_subsequent_mask(
-            length, device=tokens.device
-        )
-        hidden = self.blocks(hidden, mask=mask, is_causal=True)
+        else:
+            if self.position is None:
+                raise RuntimeError("learned positions were asked for and none exist")
+            hidden = hidden + self.position(torch.arange(length, device=tokens.device))
+        for block in self.blocks:
+            hidden = block(hidden, cos, sin)
         return self.head(self.norm(hidden))
 
 
@@ -290,6 +417,42 @@ def _batches(
         block = torch.tensor(rows, dtype=torch.long, device=device)
         out.append((block[:, :-1], block[:, 1:]))
     return out
+
+
+def _summed_loss(
+    model: TinyTransformer,
+    batches: list[tuple[Tensor, Tensor]],
+    model_config: ModelConfig,
+    pad_id: int | None,
+) -> tuple[float, int]:
+    """Total loss and the number of tokens it was measured over.
+
+    **A mean of per-batch means is the wrong average when batches hold
+    different numbers of real tokens**, and they do whenever anything is
+    padded. It gave a batch that was mostly padding the same weight as a full
+    one. At 128 tokens 6.8 percent of slots are padding and at 1,088 it is
+    25.6, so the error grew with the sequence length and therefore fell
+    hardest on exactly the arm this project was comparing.
+
+    Summing and dividing once by the token count is the per-token figure the
+    documents have been calling held-out loss all along.
+    """
+    objective = (
+        nn.CrossEntropyLoss(reduction="sum")
+        if pad_id is None
+        else nn.CrossEntropyLoss(reduction="sum", ignore_index=pad_id)
+    )
+    total = 0.0
+    counted = 0
+    with torch.no_grad():
+        for inputs, targets in batches:
+            logits = model(inputs)
+            flat = targets.reshape(-1)
+            total += float(objective(logits.reshape(-1, model_config.vocab_size), flat))
+            counted += int(
+                flat.numel() if pad_id is None else int((flat != pad_id).sum())
+            )
+    return total, counted
 
 
 def _schedule(step: int, config: TrainConfig) -> float:
@@ -453,31 +616,32 @@ def train_diagnostic(
 
     model.eval()
     order_eval = list(range(len(held_out)))
-    eval_batches = _batches(held_out, order_eval, train_config.batch_size, device)[
-        : train_config.eval_batches
-    ]
-    total = 0.0
-    with torch.no_grad():
-        for inputs, targets in eval_batches:
-            logits = model(inputs)
-            total += loss_fn(
-                logits.reshape(-1, model_config.vocab_size), targets.reshape(-1)
-            ).item()
+    all_eval = _batches(held_out, order_eval, train_config.batch_size, device)
+    eval_batches = all_eval[: train_config.eval_batches]
+    # **A partial evaluation must say so.** This took the first
+    # `eval_batches` batches in index order, which for a held-out set that is
+    # the tail of the curriculum is a systematic slice and not a sample. At
+    # 267 held-out chunks and batch 8 that was 24 of 33 batches, so every
+    # held-out figure this project has reported came from 73 percent of its
+    # own held-out set, silently.
+    if len(eval_batches) < len(all_eval):
+        print(
+            f"  NOTE: held-out loss over {len(eval_batches)} of "
+            f"{len(all_eval)} batches; raise eval_batches to use them all",
+            file=sys.stderr,
+        )
+    total, counted = _summed_loss(model, eval_batches, model_config, pad_id)
     # **Training loss is measured in eval mode over the same batches**, not
     # taken from the last step of the loop. A running figure is dominated
     # by whichever batch happened to come last and by dropout, and it is
     # the gap that this number exists to make meaningful.
-    train_total = 0.0
-    with torch.no_grad():
-        for inputs, targets in batches[: train_config.eval_batches]:
-            logits = model(inputs)
-            train_total += loss_fn(
-                logits.reshape(-1, model_config.vocab_size), targets.reshape(-1)
-            ).item()
+    train_total, train_counted = _summed_loss(
+        model, batches[: train_config.eval_batches], model_config, pad_id
+    )
     return TrainResult(
         model=model,
-        held_out_loss=total / max(len(eval_batches), 1),
-        train_loss=train_total / max(len(batches[: train_config.eval_batches]), 1),
+        held_out_loss=total / max(counted, 1),
+        train_loss=train_total / max(train_counted, 1),
         curve=tuple(curve),
     )
 

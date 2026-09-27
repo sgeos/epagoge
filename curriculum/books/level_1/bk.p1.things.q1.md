@@ -42,7 +42,7 @@ The cup is here. The cup is empty. It is still the same cup.
 Where is the cup? The cup is here. It is not gone. It is still the same cup. The cup is empty. It has not changed. It sits on the table. The table is wooden. The cup is small. It has a handle. The handle is warm. It feels smooth.
 
 [p1.things.q1.a02]
-Is the cup full or empty? The cup is empty.
+Is the cup full or empty? The cup is empty. It sits still on the table. The table is wooden. The cup is small. It has a handle. The handle is warm. It feels smooth. The cup is not afraid. It does not hide. It stays in one place. The cup is able to stay.
 
 [p1.things.q1.a03]
 Does the cup change when it is empty? No, the cup is still the same cup. The cup is here. It sits on the table, still and quiet. The cup is not afraid of the dark. It does not hide when the light goes out. The cup is able to stay in one place.

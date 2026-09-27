@@ -1,329 +1,222 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-26, describing the tree at the commit that carries
-this refresh.** Session 4 published the repository, reviewed the operator's
-`keleusma` repository for practice worth adopting, gave every book its
-metadata, closed the level-one word band, settled whether capacity or
-corpus is the limit, made the scaling law reproducible, and took the model
-from perplexity 120 to 41. **It also withdrew four of its own findings**,
-which are listed below because the reasoning that produced them is more
-useful than the claims were.
+**Refreshed 2026-09-26, describing the tree at the commit that carries this
+refresh.** Read this block, run the validity check, then stop and wait for
+the human prompt.
 
-**It ended by recommending that the loop stop.** Everything left at level
-one is a judgement per item or is blocked on a decision the operator holds,
-and the cheapest-looking remaining work is work the project has already
-decided against. `CURRENT_BRIEF.md` says which is which. Read this block, run
-the validity check, then stop and wait for the human prompt.
+**NO COMMIT HASH IS STAMPED HERE, deliberately.** A stamp naming the commit
+that contains it is impossible and one naming the parent is off by one the
+moment anything else lands. Every hash in this repository changed once
+already. **Validate by ancestry and by content**, which the next section
+gives in a form that does not depend on any hash.
 
-**NO COMMIT HASH IS STAMPED HERE, deliberately.** A stamp naming the
-commit that contains it is impossible, and one naming the parent is off by
-one the moment anything else lands. Every hash in this repository changed
-once already. **Validate by ancestry and by content**, which the next
-section gives in a form that does not depend on any hash.
+## READ THIS FIRST: the tree is mid-flight
 
-**The history was rewritten twice and the repository was then recreated
-public at those rewritten commits.** Recorded below under publication.
+**Work is running in the background and the gate is RED.** This is expected
+and it is not damage. Nothing was committed on a red gate.
 
----
+**What is running.** `generators/cross_books.py` is writing 150
+cross-concept books from `tmp/pairs.json`. Two shell drivers in the session
+scratchpad chain the rest: generate, then fill every short book, then
+describe, then stamp, then gate. Check with
+`pgrep -fl 'cross_books|fill_spreads|describe_books'`.
+
+**Why the gate is red.** The new books have no `about` or `teaches` yet,
+because the teacher is busy generating and the description pass runs last.
+`tools/stamp_books.py --level 1 --check` names them.
+
+**DO NOT weaken the metadata check to get a commit through.**
+`CONTRIBUTING.md` forbids exactly that. The books need describing, which is
+the queued work.
+
+**If the background jobs are gone and the gate is still red**, run in this
+order: `describe_books.py --level 1 --limit 400`, then
+`stamp_books.py --level 1`, then the gate, then commit.
+
+**Uncommitted and valuable.** Nine modified tracked files and four new
+paths, listed under "what is uncommitted" below. The architecture work in
+`src/epagoge/pilot.py` is the part worth protecting.
 
 ## Validity
 
-**Branch**: `main`, pushed to `origin`, `github.com/sgeos/epagoge`,
-public. **CI is green and must be checked, not assumed.** It was red on
-the previous head while the local gate passed, because one check is
-derived from git history and the runner clones one commit.
+**Branch**: `main`, pushed to `origin`, `github.com/sgeos/epagoge`, public.
+**CI is green and must be checked, not assumed.** It was red on an earlier
+head while the local gate passed, because one check is derived from git
+history and the runner clones one commit.
 
 **Before writing anything tracked, read the disclosure discipline
 `CLAUDE.md` points to.** Hard constraint.
 
-**Validate by ANCESTRY and by CONTENT, never by a hash match.**
+**Ancestry cannot be checked by commit identity.** Every hash changed on
+2026-09-25 when the history was rewritten twice. **Check by content**: the
+first commit's `README.md` begins `# Epagoge`, and grepping every commit
+message for the former name returns 0.
 
-**Run the gate, read its exit code, then stop before committing.**
+**Content, each verified 2026-09-26 at commit `c1b2ba2` unless noted.**
 
-**Ancestry cannot be checked by commit identity.** Every hash in this
-repository changed on 2026-09-25 when the history was rewritten twice,
-first to remove deployment vocabulary and then to remove the project's
-former name. **Check by content instead**: the first commit's `README.md`
-begins `# Epagoge`, and `git log --all --format='%B' | grep -ic <the
-former name>` returns 0. The former name is recorded once, under the
-discipline `CLAUDE.md` points to, and nowhere else.
+1. `./tools/check.sh` reports **twenty-two** checks. It exits non-zero while
+   the cross-book work is unfinished; that is the metadata check doing its
+   job.
+2. The suite reports **499** tests, up from 483 that morning.
+3. `curriculum/vocabulary.json` holds **960 senses over 928 words**, of
+   which **841** are admissible at level one. **178** core, **37**
+   ostensive, a seed of **257**.
+4. **Both dictionaries are self-hosting**, 807 of 807 at level one, closure
+   100 percent, nothing blocked and no cycles.
+5. `curriculum/books/level_1/` held **246** books at `c1b2ba2` and holds
+   **307** on disk as the cross-book run proceeds, heading for 407. The word
+   count is deliberately **not** asserted as an equality: it was 172,810 at
+   the commit and rises as books are filled. Check it is **at least** that.
+6. `tools/stamp_books.py --level 1 --check` reports every committed book
+   carrying all six metadata fields. New books fail until described.
+7. **Unused surface forms 529 of 2,038**, and **headwords never used at all
+   is 0**, from eleven the day before.
+8. `git ls-files secret | wc -l` reports **0**, and the disclosure scan
+   reports it covered tracked and untracked files, line by line and with
+   whitespace collapsed. **A scan that does not say all three is the old
+   one, which missed both.**
 
-**Content** — each verified on 2026-09-25.
+## What is uncommitted
 
-1. `./tools/check.sh` reports **ALL CHECKS PASSED** across **twenty-one**
-   checks and **exits 0**, in about nine seconds. **The metadata check
-   fails after a date rollover** until `tools/stamp_books.py --level 1` is
-   re-run, which is the check working rather than a defect.
-2. The suite reports **484** tests.
-3. `curriculum/vocabulary.json` holds **961 senses over 928 words**, of
-   which **845** are at level one and **879** at level two. **178** core,
-   **37** ostensive, a seed of **257**, and **84** substitutions.
-4. **Both dictionaries are complete and self-hosting**, 808 of 808 at
-   level one, closure 100 percent, nothing blocked and no cycles.
-5. `curriculum/thesaurus.json` holds **927** entries, 195 with an antonym
-   and 132 with a synonym.
-6. `curriculum/books/level_1/` holds **246** books over **4,691**
-   records. Every unit has a book and **17 are question-and-answer
-   books**. **244 of the 246 are at sixteen spreads**; the two that are not
-   are `bk.dictionary.1` at 176 records and `bk.dictionary.seed` at 611,
-   which are reference books rather than picture books and which the
-   validator exempts by design. This item read "every book is at sixteen
-   spreads" until 2026-09-25, which anyone checking it would have found
-   false.
-   **The word count is deliberately not asserted as an equality**, since
-   any later fill raises it. It was **172,810** at this refresh, up from
-   55,510 the previous morning. Check that it is **at least** that, that
-   **all 244** content books are inside the word band, and that none is
-   above it.
-7. `curriculum/provenance.json` gives every word a first commit and a
-   reconstructed admission criterion.
-8. `git ls-files secret | wc -l` reports **0**, and history is clean of
-   both the deployment vocabulary and the former project name, verified
-   by grepping every commit rather than only `HEAD`.
-9. `tools/check_references.py` reports **no unresolved references** over
-   the tracked documents, with `CHANGELOG.md` exempt.
-10. `tools/stamp_books.py --level 1 --check` reports **246 books, 0 missing
-   a field**. Every book carries `about`, `teaches`, `author`, `licence`,
-   `first_published` and `published`, and the 17 question-and-answer books
-   still declare `form`.
-11. The disclosure scan reports it covered **tracked and untracked files,
-   line by line and with whitespace collapsed**. A scan that does not say
-   all three is the old one, which missed both.
+**Modified.** `src/epagoge/pilot.py` (the architecture work),
+`src/epagoge/prompt.py`, `generators/generate.py`, `tools/diagnose_level.py`,
+`tools/stamp_books.py`, `tests/test_pilot.py`, `docs/decisions/README.md`,
+and two books the fill touched.
 
-**Two numbers in the closure output look like a contradiction and are
-not.** It reports 808 defined of 808 needing one, and 825 grounded. The
-difference is 17 definitions of seed words, which are written but are not
-counted against the requirement because a seed word needs no definition.
+**New.** `generators/cross_books.py`, `tools/plan_pairs.py`,
+`docs/decisions/COMBINATORIAL_RICHNESS.md`, and the cross books themselves.
 
-## What a resuming session should do first
+## THREE MEASUREMENTS ARE OWED, and none is optional
 
-1. Run the validity check and report the handoff valid or stale.
-2. **Check CI.** A green local gate does not mean a green remote one, and
-   that has now happened twice for two different reasons.
-3. Read `docs/decisions/THREE_PROBLEMS.md`, which says what kind of
-   problem each level is.
-4. Read `docs/process/PROCESS_STRATEGY.md` for durable practice, then
-   `docs/process/CURRENT_BRIEF.md` for what is live. The split is new as
-   of 2026-09-25 and exists because a lesson filed in a document marked
-   for deletion is deleted with it.
-5. **Read `evals/pilot/LEVEL_ONE_*.md` before quoting any number from
-   `level_1.json`.**
-6. **Wait for the human prompt.**
+**Every one was invalidated by a defect found in auditing, not by a new
+result.** Anything quoting the old figures is quoting a confounded number.
+
+1. **The rotary comparison.** "Rotary is worth 0.4 nats" was confounded: the
+   learned path used `nn.TransformerEncoderLayer` and the rotary path a
+   hand-written block, **thirteen bias tensors against nine**. Both now share
+   one `Block` so position is the only difference. Re-run the 128 against
+   1,088 grid.
+2. **Every held-out figure this project has ever reported.** The evaluation
+   took the first `eval_batches` = 24 batches in index order, which at 267
+   held-out chunks is **24 of 33, a systematic slice of the curriculum
+   tail**. And it averaged per-batch means, which is the wrong average when
+   batches hold different numbers of real tokens, and padding is 6.8 percent
+   of slots at 128 tokens and **25.6 at 1,088** — so the error grew with
+   sequence length and fell hardest on the arm being compared. Both fixed;
+   it now sums and divides once by the token count and announces partial
+   coverage.
+3. **The wide points of the capacity sweep.** `n_heads` was fixed at four at
+   every width, so width 1,024 ran at **head_dim 256** where 64 to 128 is
+   standard. Now derived at one head per 64 channels.
+
+**One suspicion was tested and cleared.** Attention does not see padding:
+padding is a suffix and attention is causal, verified empirically in both
+paths rather than argued.
 
 ## The state
 
 | Goal | State |
 | --- | --- |
-| Level-one reference material | **Done.** 808 of 808, closure 100 percent |
-| Level-one corpus | **Complete and at length.** 244 of 244, 172,810 words |
-| Corpus or capacity the limit? | **Settled.** Corpus. Saturates at 128 |
-| Scaling law | **Reproducible**, and the marginal rate rises |
-| Level-one book metadata | **Done.** All six fields on all 246 books |
-| Train a level-one model | **Done.** Perplexity 41 at width 1024 |
-| Level-two reference material | **Done**, lexicon at 9 percent of target |
-| Level-two corpus | **One module of 27 scheduled** |
-| Level-two ablation | **Blocked** on corpus scale and on an endpoint |
+| Level-one lexicon | **Done.** 841 words, closure 100 percent, seed 257 |
+| Level-one corpus length | **Done at `c1b2ba2`**, 244 of 244 in band |
+| Level-one book metadata | **Done for committed books**, pending for new ones |
+| Combinatorial richness | **In progress.** 109 pairs of 7,626, +150 running |
+| Architecture | **Enhanced, unmeasured.** Tying, init, heads, rotary |
+| Ordering ablation | **Blocked** on an endpoint the operator holds |
 
-### One live defect, measured
+### Live defects
 
-**The corpus reached its length standard and the defect is closed.** All
-244 content books are inside the band, none above, 172,810 words against
-55,510 the previous morning. Measured on the finished corpus, the marginal
-rate is **0.300 nats a doubling** and the best model reaches perplexity
-**41** at width 1024, so growing it further would still pay.
+**The corpus realises a tiny fraction of its own combinations.** 109 concept
+pairs of 7,626 possible, and every concept's partners were its own
+unit-mates, because a book is about a unit and a variant repeats it.
+`docs/decisions/COMBINATORIAL_RICHNESS.md` has the measurement and the rule.
 
-**A third of the level-one lexicon is never used.** 2,051 surface forms
-admitted, 1,363 used, **688 never**, and 11 headwords absent in every form.
-Mostly inflections, admitted automatically and used only if a writer
-happens to need them. Each is a judgement about whether a module should use
-it, be drafted for it, or whether admitting it was a mistake, so a loop
-should not close it.
+**The model is worst at the concepts the project exists to teach.**
+`giving_a_reason`, `disagreeing` and `agreeing` at loss 4.011 against 2.017
+for `emptiness`. The epistemic relations are the point and they are at the
+bottom.
 
-**The level-two lexicon holds 879 words against a target near 10,000.**
-That is a schedule nobody has written, not a backlog of admissions, and it
-is the operator's.
+**`coverage.py` is undiscriminating.** It flags 116 of 124 concepts as taught
+once and never revisited, which is 94 percent, so it ranks nothing. Its
+value is as an inventory; `tools/retention.py` says which to write for
+first.
 
-### Four findings this session withdrew, and why they are kept
+**A third of the level-one lexicon is never used**, 529 of 2,038 surface
+forms. `docs/decisions/UNUSED_FORMS.md` judged every one and left fourteen
+sense questions to the operator.
 
-**Each was recorded as a measurement and was not one.** The reasoning is
-kept beside each claim rather than deleted, because the failure mode is
-more reusable than the finding was.
+### Findings that outlive the session
 
-1. **"The model is too big for the corpus."** Refuted by a sweep of seven
-   widths from 16 to 1024 on one frozen corpus. Held-out loss falls
-   monotonically with width and the curve saturates near 128, so smaller is
-   decisively worse and bigger barely helps.
-   `../../evals/pilot/LEVEL_ONE_CAPACITY.md`.
-2. **"Filling books adds low-value tokens, at 0.199 nats per doubling."**
-   That compared two figures measured against different held-out sets.
-   Against one, the same doubling bought **0.316**, the largest increment
-   in the series. `../../evals/pilot/LEVEL_ONE_SCALING.md`.
-3. **"A question mark triggers the token `was`."** Six prompts sampled at
-   one seed all began alike for a reason unrelated to the prompt. Over
-   eight prompts at eight seeds it happens once. **The teacher was shown
-   this as a measurement and built a theory on it.**
-   `../../evals/pilot/LEVEL_ONE_INTERACTION.md`.
-
-4. **"Distinct-token share tracks quality."** Swept across temperature
-   the better-fit model is less varied at every one and recovers past the
-   worse model's figure by 1.2, and its attractor frequency falls from 24
-   to 3. **Both figures measure sharpness**, and a better model is sharper.
-   `../../evals/pilot/LEVEL_ONE_INTERACTION.md`.
-
-**The class they share is in `PROCESS_STRATEGY.md`**: before reporting a
-difference, say what was held fixed and check that it was. **All four were
-found by doubting a result, not by a new measurement.**
-
-## Findings that outlive the session
-
-- **The endpoint picks the sign.** Same corpus, arms and seeds: at 800
-  steps the curriculum arm is worse in 8 of 8, paired t +8.35; at 1,600
-  it is better in 7 of 8, t −3.17. **Both would pass a naive test.**
-  Anyone reporting an ordering effect from here must say what endpoint
-  produced it.
-- **The model is limited by corpus, not training.** At width 256 and
-  3,200 steps it reaches training loss 0.040 and held-out 7.794 against
-  ln(2253) = 7.72 for uniform: it memorises the corpus and predicts
-  unseen text worse than chance. Best reachable is perplexity **133**.
-- **Held-out loss falls about 0.29 nats per corpus doubling**, putting
-  10^6 tokens near perplexity 35. Extrapolated over 2.3 orders of
-  magnitude from 0.9, and optimistic and pessimistic for reasons the
-  record names.
-- **A model reproduces only the forms it was shown.** The corpus held one
-  question mark in 4,419 records and no question with an answer, so the
-  model continued a question instead of answering. Scale does not touch
-  this. 17 question books now exist.
-- **Silent partial coverage is this project's characteristic failure.**
-  A book ordering covering 13 of 146, a chunker keeping a quarter of the
-  corpus, a generator skipping seven domains, nine front-matter builders
-  that would have erased a new field. **A tool that returns less than it
-  was asked for must say so.**
-- **The generation-time check was weaker than the tokeniser** and let
-  eleven forms into books the lexicon did not carry. `unlicensed` is
-  exact by default now.
-- **Seven inflected forms were filed as headwords**: `depends`,
-  `reporting`, `settles`, `allowed`, `ones`, `tens`, `explanations`.
-  Each blocked every form but the one filed.
-- **Nothing compares a derived form against English.** The doubling
-  check closes one narrow class; seven verbs needed hand-written entries.
-- **A word list extracted from a text is not the text**, which is what
-  makes a licensed source usable for vocabulary and not for prose.
+- **A full pairwise corpus is affordable and I was wrong to say otherwise.**
+  124 singles is 116k tokens; 7,626 pairs, one pair a book, is 7.1M. Both
+  tiers together are **7.25M tokens, inside the stated 1M to 10M budget**.
+  Triples are 310,124 and cost 5.2M tokens at eight concepts a book. **The
+  binding constraint is teacher-hours, not corpus size**: about twelve days
+  for singles and pairs.
+- **The literature splits the thesis in two.**
+  `docs/decisions/CURRICULUM_LITERATURE.md` has it. Corpus quality is well
+  supported; ordering by content difficulty is contradicted three times,
+  including by Rohde and Plaut in 1999. What does work is sequence-length
+  curricula and **model-measured** revisiting.
+- **A guard that has not been shown able to fail is not a guard.** Every
+  check added this session was shown failing against a broken input first.
+- **The teacher's context was inherited, not chosen.** It served 32,768
+  tokens for prompts of 1,260, which held 21 GB on a 32 GB machine and made
+  a six-second call take over 300. `generate.ask` now declares `num_ctx` and
+  caps `num_predict`, because **a bounded failure beats an unbounded wait**.
+- **A concept name is not a word.** Putting `emptiness` in a prompt cost a
+  book: the teacher echoed it, it is not in the lexicon, and every subject
+  line was rejected despite twenty-three usable spreads.
 
 ## What is YOURS: decisions the operator holds
 
-1. **The endpoint and estimator, item 10.** It fixes the sign of any
-   ordering result this project publishes.
-2. **Whether consulting Dale-Chall and the NGSL is compatible with CC0.**
-   Both are in `tmp/lists/` and neither is committed. Nine thousand words
-   wait on this.
-3. **Schedules for levels three to seven.** None exist.
-4. **The minimum meaningful effect, item 7**, justified from the
-   literature.
-5. **`sources/` and level seven.** Empty, licensing unexamined, and
-   nothing in `evals/` measures a real task.
-6. **Whether level-one's 1,280-word upper bound is right**, since it
-   exceeds the picture-book convention of 1,000.
-7. **Whether the `m1.compare` cycle resolution was the right one.** Two
-   alternatives are named in the commit; one adds a 93rd unit.
-8. **Whether a parked book should leave the repository.** `exclude/` is
-   gitignored as asked, so moving a tracked book there removes it.
-
-## Publication
-
-**Audited on 2026-09-25 and published the same day.** What the audit
-changed, and what remains binding.
-
-**Done.** Six open questions that described the deployment domain moved
-to `secret/`, each leaving a stub saying it exists and is answered
-privately. The same class of statement was removed wherever else it
-appeared. Thirteen literals were scrubbed from every commit in history,
-verified at zero occurrences. The teacher model is attributed in the
-README. Two false status lines were corrected. A stale corpus stream was
-removed. The project was renamed and the former name scrubbed from
-content, paths and commit messages.
-
-**The repository was recreated, not force-pushed.** Deleting the earlier
-remote is what makes its objects unreachable; a force push would have
-left them fetchable by hash. That remote was private for its whole life
-and no hash from it was ever held by anyone but the operator.
-
-**The scrub binds only what was tracked when it ran.** Everything written
-from here on is subject to the same discipline, and the disclosure scan
-in the gate is what enforces it rather than anyone's memory.
-
-**The public surface, set 2026-09-25 and verifiable with `gh repo view`.**
-Description and six topics set. Licence detected as `0BSD`, which required
-reducing `LICENSE` and `LICENSE-CC0` to bare licence text and moving the
-scope map to `LICENSING.md`; a preamble in front of the text defeats the
-detector. Wiki and projects off, issues on. A build badge in the README.
-`CONTRIBUTING.md`, `CITATION.cff`, `llms.txt`, a pull-request template and
-three issue templates.
-
-**A ruleset named `main` is active with no bypass actors.** It blocks
-deletion, blocks non-fast-forward pushes and requires linear history.
-**It binds the owner too**, so another history rewrite means disabling it
-in settings first. That is deliberate and it will surprise anyone who has
-forgotten it. Required status checks were **not** enabled: under rulesets
-that applies to direct pushes as well as pull requests, and since checks
-run only after a push lands it would force every change through a pull
-request.
+1. **The endpoint and estimator, pre-registration item 10.** It fixes the
+   sign of any ordering result: at 800 steps the curriculum arm was worse in
+   8 of 8, at 1,600 better in 7 of 8.
+2. **Whether the ablation's third arm is enough.** `shuffled` now ignores
+   the graph. Wu, Dyer and Neyshabur ask for a growing-set control; in a
+   trainer that cycles a fixed order the growth phase is the first eleven
+   percent, so the shuffled arm is chiefly a flat baseline.
+3. **The level-two lexicon, 879 words against about 10,000.** A complete
+   draft lexicon precedes corpus drafting, by operator direction.
+4. **Schedules for levels three to seven.** None exist.
+5. **`sources/` and level seven.** Empty, licensing unexamined. **Wikipedia
+   for module seeding is recorded as open**: it is CC BY-SA and prose derived
+   from it may be a derivative work.
+6. **Fourteen sense questions** in `UNUSED_FORMS.md`.
+7. **Whether to clear 219 GB of Rust build output under ~/projects.** The volume was
+   at 96 percent and swap exhaustion is the likeliest cause of this
+   machine's crashes. Steam and three games were removed on instruction,
+   taking free space from 41 to 172 GiB; saves are in
+   `~/steam-saves-2026-09-26`.
 
 ## What is NOT yours
 
 **Announcing.** The repository is public; discovery is not. A launch post
-reopens the decision without a file changing, and it is the operator's.
+reopens the decision without a file changing.
 
 ## Governing rules that are easy to lose
 
 - **Run the gate, read the exit code, stop, then commit.**
-- **Check CI separately.** Twice red while the local gate was green: once
-  for a missing virtual environment, once for a shallow clone.
+- **Check CI separately.** Twice red while the local gate was green.
 - **A tool that returns less than it was asked for must say so.**
-- **A check whose answer depends on the shape of the checkout must say
-  which shape it needs.**
-- **Finishing beats starting.** A fill run that spends its limit on new
-  books leaves the short ones short.
-- **Corrections are kept in place.** A wrong claim in a pushed commit is
-  corrected in the next one, not amended away.
-- **Check a tool's remove path apart from its add path.**
-- **A metric that agrees with you whatever happens is not a
-  measurement.** One reported 100 percent and would have for an untrained
-  model.
-- **Read the output, not only the counts.**
-- **`git-filter-repo --replace-text` has no comment syntax.** Every line
-  is a literal. A commented file was run on 2026-09-25 and its bare `#`
-  replaced every `#` in every file in history, corrupting every Python
-  source and every Markdown heading. **Take a mirror clone first**; that
-  is what made it a detour rather than the end of the project.
-- **A rewrite that changes content must be checked against commit
-  messages too.** Rewriting the name left one message describing a rename
-  that no longer existed and asserting the opposite of the truth.
-- **No magic numbers in tests.** Tie an assertion to the lexicon.
-- **Never `git checkout` to undo without checking what else is
-  uncommitted.**
-- **A workflow that triggers on push must not group its concurrency by
-  ref.** With `cancel-in-progress`, a second push to `main` cancels the
-  first commit's run and leaves that commit with no verdict. Key a branch
-  run by `github.run_id`, which cannot collide. Committed in the wrong
-  form on 2026-09-25 and caught by reviewing the reference repository.
-- **`astral-sh/setup-uv` publishes no floating major tag past v7** while
-  its current release is v10, so it is pinned exactly and the other two
-  actions are not. The asymmetry is in the workflow file.
-- **A guard that has not been shown able to fail is not a guard.** Show a
-  new check failing against a deliberately broken input before trusting
-  it.
-- **A by-name exception list inside a checker is the defect the checker
-  exists to catch.** Ask `git check-ignore`, not a list.
-- **The disclosure scan now covers untracked files and collapses
-  whitespace.** It did neither until 2026-09-25, and both gaps let banned
-  vocabulary reach a public push under a green gate. **`CHANGELOG.md`
-  carried a deployment-implying phrase from before publication**, wrapped
-  across a line break where a line-based scan could not see it. Fixed
-  forward; the operator holds whether the history needs anything.
-- **Do not fold the tokeniser's typography into prose a person reads.**
-  It maps a dash to a hyphen, which is right for word splitting and turned
-  `things down-like notes` into nonsense across 99 book descriptions.
-- Irreversible or outward-facing actions need confirmation. A prior
+- **Before reporting a difference, say what was held fixed and check that it
+  was.** Five instances this session: a loss compared across held-out sets, a
+  sample compared across seeds, a metric compared across temperatures, a
+  latency measured once and trusted as a constant, and an architecture
+  comparison confounded by bias asymmetry.
+- **A metric compared at a fixed temperature measures sharpness, not
+  quality.** Distinct-token share and attractor frequency both reverse with
+  temperature.
+- **Corrections are kept in place**, beside the claim, not amended away.
+- **Do not weaken a check to make something pass.**
+- **`git-filter-repo --replace-text` has no comment syntax.** A commented
+  file corrupted every file in history once. Take a mirror clone first.
+- **A workflow that triggers on push must not group concurrency by ref**, or
+  a second push cancels the first commit's verdict.
+- **The ruleset on `main` binds the owner too.** Another history rewrite
+  means disabling it in settings first.
+- Irreversible or outward-facing actions need confirmation, and a prior
   authorisation does not extend to the next one.
 
 ---

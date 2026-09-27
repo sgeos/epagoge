@@ -58,6 +58,20 @@ def main(argv: list[str]) -> int:
     )
     parser.add_argument("--layers", type=int, nargs="+", default=[4])
     parser.add_argument(
+        "--n-heads",
+        type=int,
+        default=0,
+        help="0 derives one head per 64 channels, which is what a width sweep wants",
+    )
+    parser.add_argument("--dropout", type=float, default=0.0)
+    parser.add_argument("--norm", choices=("layer", "rms"), default="layer")
+    parser.add_argument("--feed", choices=("gelu", "swiglu"), default="gelu")
+    parser.add_argument(
+        "--untied",
+        action="store_true",
+        help="do not share the output head with the input embedding",
+    )
+    parser.add_argument(
         "--fractions",
         type=float,
         nargs="+",
@@ -147,7 +161,9 @@ def main(argv: list[str]) -> int:
     print(
         f"device {device}, vocab {tokeniser.size}, seq_len {seq_len}"
         f"{' (longest book)' if args.stream_per_book else ''}, "
-        f"{args.positions} positions"
+        f"{args.positions} positions, {args.norm} norm, {args.feed} feed, "
+        f"dropout {args.dropout}, "
+        f"{'untied' if args.untied else 'tied'} embeddings"
     )
     print(
         f"  {len(train_books)} books training over {len(chunks)} sequence(s), "
@@ -185,6 +201,11 @@ def main(argv: list[str]) -> int:
                         n_layers=layers,
                         seq_len=seq_len,
                         positions=args.positions,
+                        n_heads=args.n_heads,
+                        dropout=args.dropout,
+                        norm=args.norm,
+                        feed=args.feed,
+                        tie_embeddings=not args.untied,
                     )
                     result = train_diagnostic(
                         chunks,

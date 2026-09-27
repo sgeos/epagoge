@@ -34,6 +34,9 @@ Decision records, and the open questions that block implementation.
 - `BOOK_ATTRIBUTION.md` decided. A book's `author` is the project, its
   `licence` is CC0-1.0, and its two dates are derived from version
   history rather than written. Names what was rejected and why.
+- `COMBINATORIAL_RICHNESS.md` decided. Repetition should make new concept
+  combinations rather than repeat old ones. The corpus realised 109 of
+  7,626 possible pairs and every partner was a unit-mate.
 - `CURRICULUM_LITERATURE.md` recorded. A literature spike on curriculum and
   spiral training. The corpus-quality half of the thesis is well supported;
   the ordering half is weakly supported and contradicted three times. Names

@@ -56,7 +56,7 @@ It sat on the table. The cup was full. No one had touched it. The mark had said 
 The mark had filled it once. It was not empty. The cup held something real. The water inside was clear. The air above stayed still. The mark had meant it to stay full. No one had come near. The cup stayed on the table. The table stayed still. The mark had said it was full.
 
 [r1.stale.s07]
-The mark had filled it with water.
+The mark had filled it with water. The air felt thick, like it could not move. The boy thought about what the mark had meant. He wondered if the cup could ever be full again. He had never seen it empty. He had never seen it spill. He believed the mark had meant it to stay full.
 
 [r1.stale.s08]
 The water had been cold. It felt sharp against the skin. The cup sat on the table, still. No one moved. A breeze slipped through the open door. The mark had not returned. The boy felt alone. He reached out, fingers brushing the rim. The cup did not move. He wondered if it would ever be full again.

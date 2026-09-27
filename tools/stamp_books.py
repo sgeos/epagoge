@@ -31,6 +31,7 @@ import subprocess  # noqa: S404
 import sys
 from collections import defaultdict
 from dataclasses import replace
+from datetime import date
 from pathlib import Path
 from typing import cast
 
@@ -133,8 +134,14 @@ def main(argv: list[str]) -> int:
 
         known = dates.get(relative)
         if known is None:
+            # **A BOOK NOT YET IN HISTORY IS STAMPED WITH TODAY.** Deriving
+            # both dates from the commit log deadlocked a new book: the gate
+            # refuses it for having no dates, and it cannot have dates until
+            # it is committed. Today is the honest answer, it is what the
+            # next commit will record anyway, and `--check` verifies it
+            # against history from then on.
             untracked.append(book.id)
-            first = last = ""
+            first = last = date.today().isoformat()
         else:
             first, last = known
 
@@ -182,7 +189,7 @@ def main(argv: list[str]) -> int:
 
     print(f"stamped {stamped}, already correct {unchanged}")
     if untracked:
-        print(f"  {len(untracked)} not in history yet, dates left alone")
+        print(f"  {len(untracked)} not in history yet, stamped with today")
     return 0
 
 

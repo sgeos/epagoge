@@ -20,6 +20,7 @@ try:
         WarmStart,
         apply_rotary,
         chunk,
+        head_count,
         orderings,
         rotary_table,
         sample,
@@ -358,3 +359,93 @@ class TestRotaryPositions(unittest.TestCase):
     def test_an_unknown_position_scheme_is_refused(self) -> None:
         with self.assertRaises(ValueError):
             _ = TinyTransformer(self.config("sinusoidal"))
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestArchitectureOptions(unittest.TestCase):
+    """The four enhancements found by auditing on 2026-09-26.
+
+    Each is a config option so it is measured rather than assumed, except the
+    head count, which was a defect: it was fixed at four regardless of width,
+    so width 1,024 ran with a head dimension of 256 where 64 to 128 is
+    standard.
+    """
+
+    def config(self, **kwargs: object) -> ModelConfig:
+        base = {
+            "vocab_size": 32,
+            "d_model": 64,
+            "n_layers": 2,
+            "seq_len": 16,
+            "positions": "rotary",
+        }
+        return ModelConfig(**{**base, **kwargs})  # type: ignore[arg-type]
+
+    def test_heads_are_derived_to_keep_the_head_dimension_near_sixty_four(
+        self,
+    ) -> None:
+        for width, expected in ((64, 1), (128, 2), (256, 4), (512, 8), (1024, 16)):
+            self.assertEqual(head_count(width, 0), expected)
+            self.assertEqual(width // head_count(width, 0), 64)
+
+    def test_a_narrow_model_still_gets_one_head(self) -> None:
+        self.assertEqual(head_count(16, 0), 1)
+        self.assertEqual(head_count(32, 0), 1)
+
+    def test_an_explicit_head_count_still_wins(self) -> None:
+        """A sweep over head count is a legitimate thing to want."""
+        self.assertEqual(head_count(256, 4), 4)
+        self.assertEqual(head_count(256, 1), 1)
+
+    def test_every_norm_and_feed_combination_builds_and_is_causal(self) -> None:
+        import torch
+
+        for norm in ("layer", "rms"):
+            for feed in ("gelu", "swiglu"):
+                torch.manual_seed(0)
+                model = TinyTransformer(self.config(norm=norm, feed=feed)).eval()
+                tokens = torch.tensor([[1, 2, 3, 4, 5]])
+                with torch.no_grad():
+                    before = model(tokens)
+                    changed = tokens.clone()
+                    changed[0, -1] = 7
+                    after = model(changed)
+                self.assertTrue(
+                    torch.allclose(before[:, :-1], after[:, :-1], atol=1e-5),
+                    f"{norm} and {feed} broke causality",
+                )
+
+    def test_swiglu_stays_comparable_in_size_to_gelu(self) -> None:
+        """Otherwise a comparison measures size rather than shape."""
+        gelu = TinyTransformer(self.config(feed="gelu"))
+        swiglu = TinyTransformer(self.config(feed="swiglu"))
+        a = sum(p.numel() for p in gelu.parameters())
+        b = sum(p.numel() for p in swiglu.parameters())
+        self.assertLess(abs(a - b) / a, 0.05)
+
+    def test_dropout_changes_training_output_and_not_evaluation_output(self) -> None:
+        import torch
+
+        torch.manual_seed(0)
+        model = TinyTransformer(self.config(dropout=0.5))
+        tokens = torch.tensor([[1, 2, 3, 4]])
+        model.train()
+        with torch.no_grad():
+            self.assertFalse(torch.allclose(model(tokens), model(tokens)))
+        model.eval()
+        with torch.no_grad():
+            self.assertTrue(torch.allclose(model(tokens), model(tokens)))
+
+    def test_an_unknown_norm_or_feed_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            _ = TinyTransformer(self.config(norm="batch"))
+        with self.assertRaises(ValueError):
+            _ = TinyTransformer(self.config(feed="relu"))
+
+    def test_tying_removes_the_head_from_the_parameter_count(self) -> None:
+        tied = TinyTransformer(self.config(tie_embeddings=True))
+        untied = TinyTransformer(self.config(tie_embeddings=False))
+        saved = sum(p.numel() for p in untied.parameters()) - sum(
+            p.numel() for p in tied.parameters()
+        )
+        self.assertEqual(saved, 32 * 64)
