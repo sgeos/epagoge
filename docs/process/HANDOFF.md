@@ -197,7 +197,18 @@ sense questions to the operator.
 - **The ordering arms were measuring gradient noise as much as ordering.**
   `pilot._batches` takes consecutive positions from an arm's order, so an
   arm sets both the visit sequence and what each batch holds. A curriculum
-  order averages 1.20 distinct subjects a batch against 1.88 shuffled.
+  order averages **1.562** distinct subjects a batch against **2.975**
+  shuffled, over 160 batches. **Corrected from 1.20 and 1.88**, which came
+  from a proxy for a book's chunk count; the proportions held.
+- **The pre-registered contrast measures batch composition and nothing
+  else.** Over six control block sizes the curriculum arm's loss is linear
+  in homogeneity at r = -0.984, and the topological arm sits on that line
+  within one to two seed standard deviations. Item 3 names exactly that
+  pair.
+- **The flat arm is the only one carrying signal.** `shuffled` sits five to
+  seven seed standard deviations below the line. It is not shown to be an
+  ordering effect: it differs in three ways at once and lies past the range
+  the controls cover.
 - **Controlled, about sixty percent of the effect disappears.** Shuffling
   books inside blocks of 32 keeps every book within 10 percent of its
   curriculum position and removes 87 percent of the homogeneity gap. The

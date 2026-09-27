@@ -6,32 +6,33 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**Batch composition under each arm is measured and recorded**, not asserted.
-A record states, per arm, how homogeneous a training batch is under some
-stated measure, and says how many batches the figure rests on.
+**Batch homogeneity is measured from the real chunk assignment**, not from
+a proxy for it, and a record says so.
 
-**A control exists that preserves the curriculum sequence while changing
-batch composition**, and the record states how far it moves each of those
-two quantities, so a reader can see it is a control and not a second
-shuffled arm.
+**The earlier homogeneity figures, which came from a wrong proxy, are
+corrected everywhere they appear**, with the correction visible rather than
+silently substituted, and with a statement of what the error did and did not
+change.
 
-**That control has been trained and compared against the uncontrolled
-baseline** at the same endpoint and the same number of seeds, and the
-comparison is recorded with the per-arm means and the seed count.
+**A curve of held-out loss against batch homogeneity exists**, measured at
+three or more block sizes with the curriculum sequence held fixed, recorded
+with the seed count per point.
 
-**The record states which mechanism the result supports**, in the form of
-what the arm difference is attributable to, and says plainly if the answer
-is that the two cannot be separated by this experiment.
+**Each block size is recorded with both quantities it affects**: how
+homogeneous batches become, and how far books move from their curriculum
+position. A reader can see which block sizes are controls and which are not.
 
-**Every ordering figure this harness has produced is marked with whether it
-survives the answer.** If the arm difference turns out to be attributable to
-batch composition, any record presenting an ordering effect says so before
-its numbers.
+**The record states where the shuffled arm falls relative to that curve**,
+and therefore what the residual is attributable to, or states plainly that
+the design cannot tell.
 
-**No ordering verdict is presented as settled.** Reporting which mechanism
-explains the arm difference is in scope. Declaring which ordering is better
-for the curriculum hypothesis is not, because the endpoint and the minimum
-effect are unchosen and belong to the operator.
+**Any extrapolation beyond the measured range is labelled as one.** If the
+shuffled arm's homogeneity lies outside the range the curriculum arm covers,
+the record says so where the conclusion is drawn.
+
+**No curriculum effect is claimed as established.** Reporting what the
+residual is attributable to is in scope. Declaring that ordering helps or
+harms is not.
 
 **Every figure says how many seeds it rests on.**
 
@@ -44,6 +45,4 @@ assumed.
 **The working tree is clean and pushed**, with no tracked evaluation
 artifact holding the output of a probe rather than a recorded run.
 
-**Nothing was added beyond what this question needs.** A control arm and the
-measurement that justifies it are in scope. A new token, generator, training
-objective or corpus is not.
+**Nothing was added beyond what this question needs.**

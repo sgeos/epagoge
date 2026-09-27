@@ -221,17 +221,22 @@ def main(argv: list[str]) -> int:
         default=None,
         help="warm start from this level's weights",
     )
-    # **The evaluation was truncated and said so.** At 28 held-out batches
-    # the default of 24 scores 86 percent of the set, which is a consistent
-    # estimator of a slightly different quantity and is the wrong instrument
-    # for a variance study whose effects are 0.2 percent of the loss. Zero
-    # means every batch.
+    # **An arm changes batch composition as well as visit order**, because
+    # `pilot._batches` takes consecutive positions from the ordering.
+    # Shuffling inside blocks keeps the sequence and discards the
+    # homogeneity, and `evals/pilot/LEVEL_ONE_VARIANCE.md` measures how much
+    # of the arm effect each accounts for. One is the identity.
     parser.add_argument(
         "--block-shuffle",
         type=int,
         default=1,
         help="shuffle books within blocks of this size; 1 is the identity",
     )
+    # **The evaluation was truncated and said so.** At 28 held-out batches
+    # the default of 24 scores 86 percent of the set, which is a consistent
+    # estimator of a slightly different quantity and is the wrong instrument
+    # for a variance study whose effects are 0.2 percent of the loss. Zero
+    # means every batch.
     parser.add_argument("--eval-batches", type=int, default=0)
     parser.add_argument("--out", type=Path, default=ROOT / "evals/pilot/level_1.json")
     args = parser.parse_args(argv[1:])

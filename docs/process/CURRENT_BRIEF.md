@@ -1,65 +1,59 @@
-# Current brief. Find out whether the ablation measures ordering
+# Current brief. Find out what the surviving forty percent is
 
-**Written 2026-09-27**, replacing the brief that priced the endpoint
-decision. That work is done and its brief is superseded rather than
-deleted. Durable practice is in `PROCESS_STRATEGY.md`.
+**Written 2026-09-27**, replacing the brief that asked whether the ablation
+measures ordering. It answered: about sixty percent of the arm difference
+was batch homogeneity. **This brief is about the rest.** Durable practice is
+in `PROCESS_STRATEGY.md`.
 
 ## Why this and nothing else
 
-**The project's central experiment may be measuring the wrong thing, and
-one run can tell.** `pilot._batches` takes consecutive positions from an
-arm's ordering, so an arm decides both the sequence in which books are
-visited and **what each batch contains**.
+**A residual of about 0.045 nats survived the control**, which is several
+times the within-arm spread, so it is not noise. It is either a real
+ordering effect, which would be the first evidence this project has for its
+own thesis, or it is homogeneity at a grain the control does not reach.
 
-**Measured over 223 batches**: a curriculum ordering averages 1.20 distinct
-subjects per batch against 1.88 for a shuffled one. **The homogeneity
-ordering matches the loss ordering exactly**, curriculum most homogeneous
-and worst, shuffled least homogeneous and best, at both endpoints.
+**Those two possibilities call for opposite work** and the project cannot
+tell them apart from what has been run. **Distinguishing them is worth more
+than anything else available**, because one of them says the experiment has
+started working and the other says it still has not.
 
-**Batch homogeneity changes gradient noise for reasons that have nothing to
-do with curricula.** So the arm difference is consistent with a curriculum
-effect and equally consistent with an optimisation artefact.
+## The test
 
-**This is the third harness defect of its shape.** The chunker discarded
-three quarters of the corpus. `linear_extension` covered thirteen books of
-a hundred and forty-six. Both were found after results had been read off
-them. `CLAUDE.md` forbids stating a curriculum benefit as established, and
-the same discipline forbids stating a curriculum harm.
+**Block size traces a curve with the sequence held fixed.** Running the
+curriculum arm at block sizes from 1 to 64 varies batch homogeneity while
+keeping every book near its curriculum position, so loss against homogeneity
+along that curve is the effect of homogeneity alone.
 
-## What to do
-
-1. **Separate the two mechanisms with a control that keeps one and
-   discards the other.** Shuffling books inside blocks of 32 leaves every
-   book within 10 percent of its curriculum position while moving batch
-   homogeneity 87 percent of the way to the shuffled arm.
-2. **Run it against the unshuffled baseline at equal seeds and endpoint**,
-   and read which way the curriculum arm moves.
-3. **Record the answer whichever way it falls**, and say what it does to
-   every ordering result this harness has produced.
+**The shuffled arm is the test point.** It differs from the curriculum arm
+in both homogeneity and sequence. If its loss falls on the curve extrapolated
+to its homogeneity, then sequence contributes nothing and the residual is
+homogeneity the control did not reach. If it falls below the curve, the gap
+is the ordering effect.
 
 ## Prior failures, and the specific wrong turns to avoid
 
-**Do not conclude from three points.** Homogeneity and loss agreeing across
-three arms is a rank correlation over three items. It motivated this
-experiment; it does not settle it.
+**Measure homogeneity from the real chunking.** The first measurement of it
+used a proxy for how many chunks a book makes, and the proxy was wrong. The
+proportions survived and the absolute numbers did not, and three committed
+records carry the wrong ones. **Correct them rather than quietly replace
+them.**
 
-**Do not report an ordering verdict.** Items 7 and 10 are unchosen. What is
-in scope is whether the arms differ *for the reason the experiment
-assumes*, not which arm is better.
+**Do not fit a line to a curve.** Loss against homogeneity has no reason to
+be linear, and an extrapolation past the measured range is the weakest part
+of this design. If the shuffled arm sits outside the range the curriculum
+arm covers, say so rather than extrapolating confidently.
 
-**Do not let the control change more than intended.** A block shuffle that
-moves books far from their curriculum position is not a control, it is a
-second shuffled arm. The 10 percent figure is the thing to keep checking.
+**Do not conclude a curriculum effect exists.** A residual consistent with
+an ordering effect is not a demonstration of one. `CLAUDE.md` forbids
+stating a curriculum benefit as established, and this design cannot
+establish it: the endpoint and the minimum effect are unchosen.
 
-**Do not assume the instrument is innocent.** The truncated evaluation was
-ruled out by measurement last tick, not by argument, and that was right.
+**Do not let the control drift into a second shuffled arm.** Block 64 moves
+books out of place. Report how far each block size displaces books alongside
+its homogeneity.
 
-**Do not overwrite a tracked artifact.** `train_level.py` writes
-`evals/pilot/level_1.json` by default and it is tracked. Pass `--out`.
-
-**Do not read a count from arithmetic.** Read it from the gate.
-
-**Check CI separately.**
+**Do not overwrite a tracked artifact**, do not read a count from
+arithmetic, and check CI separately.
 
 ## What is not this brief's to decide
 

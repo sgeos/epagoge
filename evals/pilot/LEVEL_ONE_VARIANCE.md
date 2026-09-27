@@ -304,3 +304,107 @@ It preserves each book's position to within 10 percent of the corpus, which
 is a coarse guarantee. A curriculum effect operating at a finer grain than
 32 books would be partly destroyed by this control and would show up here as
 homogeneity.
+
+
+---
+
+# The residual, and a correction to the figures above
+
+**Measured 2026-09-27**, six seeds a point, 800 steps, width 256.
+
+## Correction: the homogeneity figures above came from a bad proxy
+
+**The homogeneity numbers in the two sections above are wrong and their
+proportions are right.** They estimated a book's chunk count as half its
+record count instead of tokenising and chunking it. Measured from the real
+chunk assignment over 160 batches:
+
+| | Recorded above | Actually |
+| --- | --- | --- |
+| curriculum, block 1 | 1.20 | **1.562** |
+| curriculum, block 32 | 1.79 | **2.681** |
+| shuffled | 1.88 | **2.975** |
+| share of the gap block 32 closes | 87% | **90%** |
+
+**Nothing downstream of them changes.** The block-32 control still closes
+about nine tenths of the homogeneity gap, still leaves every book within 10
+percent of its curriculum position, and the loss figures were never
+proxies. **The error was in describing the control, not in applying it.**
+
+## Block size does two things, and they part company at 64
+
+| Block | Subjects per batch | Books within 10% of place | Mean displacement |
+| --- | --- | --- | --- |
+| 1 | 1.562 | 100% | 0.0 |
+| 2 | 1.675 | 100% | 0.5 |
+| 4 | 1.881 | 100% | 1.3 |
+| 8 | 2.112 | 100% | 2.6 |
+| 16 | 2.475 | 100% | 5.3 |
+| 32 | 2.681 | 100% | 10.4 |
+| 64 | 2.856 | **88%** | 20.4 |
+| shuffled arm | 2.975 | **24%** | 130.1 |
+
+**Blocks 1 to 32 are controls** and block 64 is not quite one.
+
+## The curve
+
+Curriculum arm, held-out loss against batch homogeneity, sequence held
+fixed:
+
+| Block | Homogeneity | Curriculum | Topological | Shuffled |
+| --- | --- | --- | --- | --- |
+| 1 | 1.562 | 3.5946 | 3.5091 | 3.4799 |
+| 2 | 1.675 | 3.5931 | 3.5083 | 3.4806 |
+| 4 | 1.881 | 3.5856 | 3.5091 | 3.4821 |
+| 8 | 2.112 | 3.5744 | 3.5119 | 3.4881 |
+| 16 | 2.475 | 3.5479 | 3.5089 | 3.4866 |
+| 32 | 2.681 | 3.5299 | 3.5116 | 3.4856 |
+| 64 | 2.856 | 3.5124 | 3.5057 | 3.4829 |
+
+**The curriculum arm's loss is very nearly a linear function of batch
+homogeneity**, r = -0.984 over the six control points and -0.985 including
+block 64. **The other two arms barely move**, which they should not: the
+control removes a homogeneity they never had.
+
+## Where the other arms fall
+
+Fitted on blocks 1 to 32 only, the six points that preserve the sequence:
+
+| Arm | Its homogeneity | Curve predicts | Observed | Residual |
+| --- | --- | --- | --- | --- |
+| topological | 2.962 | 3.5184 | 3.5091 | **-0.0093** |
+| shuffled | 2.975 | 3.5177 | 3.4799 | **-0.0377** |
+
+Including block 64 gives -0.0033 and -0.0316. Seed standard deviation
+across the sweep runs 0.005 to 0.007.
+
+**The topological arm sits on the curve**, within one to two seed standard
+deviations of it. **So the difference between the curriculum and topological
+arms is batch homogeneity and nothing else that this can detect.**
+
+**That contrast is the pre-registered one.** `PRE_REGISTRATION.md` item 3
+contrasts curriculum against topological, and on this evidence **the
+pre-registered comparison measures batch composition rather than
+ordering**.
+
+**The shuffled arm sits 0.032 to 0.038 below the curve**, five to seven
+times the seed standard deviation. That part is not homogeneity.
+
+## What the residual is, and what it is not
+
+**It is not shown to be an ordering effect.** Three things distinguish the
+shuffled arm from a block-shuffled curriculum, and this design separates
+none of them: it ignores the prerequisite graph, it displaces books by 130
+places on average rather than 10, and it sits at a homogeneity **beyond the
+range the controls cover**. The prediction at 2.975 is an extrapolation of
+0.29 past the last control point, against a fitted range of 1.12, so a
+curve that bends upward near the top would produce this residual with no
+ordering effect at all.
+
+**What it does say** is that the flat control, added on 2026-09-26 because
+the other two arms both respect the graph, is the only arm that shows
+anything a homogeneity curve does not already explain. **The arm that was
+added last is the only one carrying signal.**
+
+**No curriculum verdict follows.** Items 7 and 10 are unchosen, and a
+residual consistent with an ordering effect is not a demonstration of one.

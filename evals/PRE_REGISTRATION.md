@@ -263,11 +263,15 @@ and rho will move again when they are.
 **A third reason was found while taking this measurement, and it has since
 been measured.** Batches are built from consecutive positions in the
 ordering, so an arm decides both the visit order and the composition of
-every batch. A curriculum ordering averages 1.20 distinct subjects per batch
-against 1.88 for a shuffled one.
+every batch. A curriculum ordering averages **1.562** distinct subjects per
+batch against **2.975** for a shuffled one, over 160 batches.
+
+> **Corrected 2026-09-27.** This first read 1.20 against 1.88, from a proxy
+> that guessed a book's chunk count from its record count. The proportions
+> were right and the absolute numbers were not.
 
 **Controlled by shuffling books inside blocks of 32**, which keeps every
-book within 10 percent of its curriculum position while removing 87 percent
+book within 10 percent of its curriculum position while removing 90 percent
 of the homogeneity gap, **about sixty percent of the curriculum arm's
 penalty disappears**. Six seeds at each of two endpoints: the gap between
 the curriculum and shuffled arms falls from +0.115 to +0.044 at 800 steps
@@ -278,6 +282,19 @@ already heterogeneous by at most 0.008, which is the placebo check.
 by about two and a half times**, including the earlier result that the sign
 flipped with the endpoint, which was measured on the uncontrolled arms.
 **Any ablation run must use the control**, and `--block-shuffle` is how.
+
+**A block-size sweep then made it worse for this item.** Across six control
+sizes the curriculum arm's loss is very nearly linear in batch homogeneity,
+r = -0.984, and **the topological arm sits on that line**, within one to two
+seed standard deviations. **The contrast this pre-registration names in item
+3, curriculum against topological, is therefore batch composition and
+nothing else this can detect.**
+
+**The shuffled arm sits five to seven seed standard deviations below the
+line**, so the flat control added on 2026-09-26 is the only arm carrying
+anything a homogeneity curve does not explain. That residual is not shown to
+be an ordering effect: the shuffled arm differs in three ways at once and
+lies beyond the range the controls cover.
 `pilot/LEVEL_ONE_VARIANCE.md` has the working.
 
 ### Superseded, kept for the reasoning
