@@ -304,12 +304,23 @@ batch-diversity metric most generous to the confound, **about 77 percent of
 the gap is unexplained**. Pooled over 42 paired observations the difference
 is 0.0255 nats and **42 of 42 point the same way**.
 
-**So an ordering property tracks held-out loss after controls, and the
-property is whether the prerequisite graph is respected.** That is the first
-controlled ordering signal this project has. **It is not a verdict on the
-hypothesis**: held-out loss is not what `evals/elenchos/` measures, 0.026
-nats is 0.7 percent against an item 7 that is unchosen, and it rests on one
-corpus at one width and one endpoint.
+**So an ordering property tracks held-out loss after controls.** At matched
+batch diversity, an ordering that respects the prerequisite graph reaches
+higher held-out loss than one that ignores it, by 0.026 nats in 42 of 42
+paired runs.
+
+> **CORRECTED 2026-09-27. The property was named as the graph and that was
+> overclaimed.** Graph-respecting orders also sort books by length, +0.31
+> against +0.06 for shuffled, because a book with more prerequisites is
+> placed later and 90 percent of books carry one. The two are collinear at
+> -0.76 across arms and neither varies enough within an arm to separate
+> them. **The mechanism is unidentified**: it is the graph, or sequence
+> length, or both. An arm that orders by length without the graph would
+> decide it and does not exist.
+
+**It is not a verdict on the hypothesis**: held-out loss is not what
+`evals/elenchos/` measures, 0.026 nats is 0.7 percent against an item 7 that
+is unchosen, and it rests on one corpus at one width and one endpoint.
 `pilot/LEVEL_ONE_VARIANCE.md` has the working.
 
 ### Superseded, kept for the reasoning

@@ -504,3 +504,90 @@ the chunker discarding three quarters of the corpus, the ordering covering
 thirteen books of a hundred and forty-six, the evaluation scoring 86 percent
 of the held-out set, and batch composition tracking the arm. **Each was
 found after results had been read off it.**
+
+---
+
+# CORRECTION, 2026-09-27. The residual is not shown to be the graph
+
+**The section above says the residual is attributable to respecting the
+prerequisite graph. That was overclaimed and this withdraws it.**
+
+**What the previous section did was eliminate three alternatives**,
+displacement, padding and batch diversity, and conclude the graph by
+elimination. **It did not look for a fourth**, and there is one.
+
+## The fourth difference: graph-respecting orders sort books by length
+
+Correlation between a book's position and its length, six seeds:
+
+| Ordering | Correlation | First 100 books | Last 100 books |
+| --- | --- | --- | --- |
+| curriculum | +0.274 | 698 words | 777 words |
+| topological | **+0.311** | 680 words | 778 words |
+| shuffled | **+0.062** | 717 words | 745 words |
+
+**Both graph-respecting arms put longer books later and the shuffled arm
+does not.** Book length runs from 177 to 1,210 words with a standard
+deviation of 124, so this is a real gradient and not rounding.
+
+**It is a consequence of the graph rather than an accident.** A book with
+more prerequisites is placed later by any linear extension, and 90 percent
+of books carry at least one prerequisite, 1.9 on average.
+
+## Why it cannot be separated from the graph here
+
+Over 84 runs across the two matched arms:
+
+| Pair | Correlation |
+| --- | --- |
+| loss against length ordering | +0.884 |
+| loss against batch diversity | -0.790 |
+| **length ordering against batch diversity** | **-0.757** |
+
+**The two predictors are collinear**, because both are nearly determined by
+which arm a run belongs to, and with two groups everything that differs
+between them is confounded with everything else that does.
+
+**Within each arm neither varies enough to decide it.** Length ordering
+spans +0.187 to +0.221 inside the topological arm and +0.071 to +0.122
+inside the shuffled arm, ranges that do not overlap and are too narrow to
+regress against. Within-arm correlations of loss with length ordering are
++0.08 and +0.22, which settles nothing.
+
+## What the data does dissociate
+
+**The curriculum and topological arms have the same length ordering**,
++0.274 and +0.311, and very different batch diversity, 3.187 against 4.279.
+Their loss gap is explained by the diversity curve.
+
+**The topological and shuffled arms have similar batch diversity**, 4.279
+against 4.479, and very different length ordering. Their loss gap is not
+explained by diversity.
+
+**So diversity explains the first gap and something else explains the
+second, and the something else is length ordering or graph structure or
+both.** That is as far as this design reaches.
+
+## The experiment that would decide it
+
+**An arm that orders books by length without respecting the graph.** If it
+reproduces the topological arm's penalty, the effect is sequence length and
+not curriculum. If it does not, the graph survives as the explanation.
+
+**That arm does not exist and is not built here**, because building it while
+a claim of mine is standing uncorrected would be the wrong order of work.
+
+## What this changes upstream
+
+**Every statement that the residual is the graph is withdrawn**, in this
+file, in `../PRE_REGISTRATION.md` and in `../../docs/process/HANDOFF.md`.
+What survives is narrower and still worth having: **at matched batch
+diversity, an ordering that respects the prerequisite graph reaches higher
+held-out loss than one that ignores it, by 0.026 nats in 42 of 42 paired
+runs, and the mechanism is unidentified.**
+
+**This is the fifth defect found in this harness, and the first that was in
+the reasoning rather than the code.** The other four were the chunker, the
+ordering coverage, the truncated evaluation and batch composition. **This
+one was mine**, and it was produced by concluding from elimination without
+asking what else had not been eliminated.

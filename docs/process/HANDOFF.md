@@ -207,17 +207,20 @@ sense questions to the operator.
   pair.
 - **The flat arm is the only one carrying signal.** `shuffled` sits five to
   seven seed standard deviations below the line.
-- **That signal is now attributed and it is the graph.** Compared against
-  the topological arm, which sits at the same batch diversity, displacement
-  is eliminated because topological moves books 55.9 places and stays on the
-  curve, padding is 6.45 percent under every arm, and the most generous
-  diversity metric leaves 77 percent of the gap unexplained. **42 of 42
-  paired observations point the same way**, mean 0.0255 nats.
-- **So respecting the prerequisite graph costs held-out loss**, which is the
-  first controlled ordering signal the project has. **It is not a verdict**:
-  held-out loss is not what elenchos measures, 0.7 percent sits against an
-  unchosen item 7, and four harness defects have already been found by
-  doubting results of exactly this shape.
+- **An ordering property tracks held-out loss after controls.** At matched
+  batch diversity the graph-respecting arm loses by 0.0255 nats in **42 of
+  42** paired runs. Displacement is eliminated, padding is 6.45 percent
+  everywhere, and the most generous diversity metric leaves 77 percent
+  unexplained.
+- **WHICH property is not identified, and a claim that it was is
+  withdrawn.** Graph-respecting orders also sort books by length, +0.31
+  against +0.06, because a prerequisite-heavy book is placed later and 90
+  percent of books carry a prerequisite. The two predictors are collinear at
+  -0.76 across arms and neither varies enough within an arm. **An arm that
+  orders by length without the graph would decide it and does not exist.**
+- **This is the fifth defect and the first in the reasoning rather than the
+  code.** It came from concluding by elimination without asking what had not
+  been eliminated.
 - **Controlled, about sixty percent of the effect disappears.** Shuffling
   books inside blocks of 32 keeps every book within 10 percent of its
   curriculum position and removes 87 percent of the homogeneity gap. The
