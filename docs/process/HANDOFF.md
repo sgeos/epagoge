@@ -14,10 +14,15 @@ gives in a form that does not depend on any hash.
 
 **Nothing is running, nothing is uncommitted, CI is green.**
 
-**At this refresh**: 444 books over 7,867 records and **308,381 words**,
+**At this refresh**: 469 books over 8,267 records and **315,444 words**,
 every content book inside the word band and every book carrying its six
 metadata fields. **Concept pairs realised: 312 of 8,128**, and only one
 concept is held by a single book.
+
+**The corpus can now show a question being answered.** 42 of 96 schedule
+units carry a question-and-answer book, against 17 before, and the corpus
+holds one question mark per 49 sentences against one per 103. **54 units
+still have none**, which is the next obvious batch.
 
 **Pair coverage can be counted three ways and two are wrong.** Counting
 every concept any record mentions gives 88 percent, because the dictionary
