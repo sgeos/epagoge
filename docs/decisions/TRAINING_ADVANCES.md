@@ -150,9 +150,34 @@ measured**, which is the same discipline `dropout`, `norm`, `feed` and
 3. **`tools/diagnose_level.py` takes `--weight-decay` and
    `--min-lr-fraction`**, so both can be swept on the real corpus.
 
-**Not implemented, and each would be a real change rather than an option**:
-token-replacement augmentation, right-to-left and offset objectives,
+4. **`TrainConfig.token_replacement` and `--token-replacement` exist**,
+   implemented 2026-09-27 and measured. This is the augmentation study's
+   best single intervention, and it is the best thing this spike produced.
+
+**Still not implemented**: right-to-left and offset objectives,
 masked-input regularisation, and any optimizer other than AdamW.
+
+## What the measurements settled
+
+**Three claims were tested on this tree and they came out three different
+ways**, which is the reason each was implemented as an option rather than
+adopted from the citation.
+
+| Claim | Outcome here |
+| --- | --- |
+| Raise weight decay far above default | **Conditional.** Wins only where the model overfits, by 0.055 nats |
+| Decay the learning rate below 10 percent | **No evidence.** 0.1 is best at both endpoints tested |
+| Random token replacement regularises | **Confirmed and larger.** 0.130 nats over three paired seeds |
+
+**Token replacement is 2.4 times the weight-decay effect at the same cell,
+and the two do not stack.** Applied together they are no better than token
+replacement alone, so they are two treatments for the same slack.
+
+**The published rate did not transfer unchanged.** The study found 15
+percent best at 150M parameters on 75M tokens; here 5 percent is at least
+as good and probably better.
+
+Figures in `../../evals/pilot/LEVEL_ONE_REGULARISATION.md`.
 
 ## Measured here
 

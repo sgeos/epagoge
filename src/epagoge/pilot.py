@@ -173,6 +173,28 @@ class TrainConfig:
     differs by scheduler. Unchanged pending measurement.
     """
 
+    token_replacement: float = 0.0
+    """Fraction of input tokens replaced by a random one, labels untouched.
+
+    **Training-time augmentation for a corpus read many times**, recorded in
+    `docs/decisions/TRAINING_ADVANCES.md`. A 2026 study trains a 150M model
+    for 100 epochs on 75M tokens, which is the closest published setting to
+    this project's, and finds its baseline bottoming out at validation loss
+    4.015 at epoch 16 and degrading monotonically after it. **Random
+    replacement at 15 percent was the best single intervention at 3.841**,
+    ahead of masking at 3.910 to 3.923.
+
+    **Replacement beats masking because the replacement is plausible but
+    wrong.** A mask token announces that something is missing; a random real
+    token does not, so the context has to do the work of noticing.
+
+    The label is always the original token, so this is a corruption of the
+    input and not a change of objective. Padding is never corrupted, since a
+    padded slot is not text and the loss ignores it anyway.
+
+    Zero by default so the change is measured rather than assumed.
+    """
+
     eval_batches: int = 24
 
 
@@ -492,6 +514,34 @@ def pack(streams: Sequence[list[int]], seq_len: int, pad: int) -> list[list[int]
     return [w + [pad] * (seq_len + 1 - len(w)) for w in windows if len(w) >= 2]
 
 
+def corrupt(inputs: Tensor, rate: float, vocab_size: int, pad_id: int | None) -> Tensor:
+    """Replace a fraction of input tokens with random ones, in place of none.
+
+    **The targets are not touched.** The model is still asked for the
+    original next token; what changes is that some of the context it is
+    given is wrong. That is what makes this a regulariser rather than a
+    different objective.
+
+    **Padding is never corrupted.** A padded slot is not text, the loss
+    already ignores it, and filling it with a random word would teach the
+    model that a work can be followed by noise.
+
+    Draws from the ambient torch generator, which `train_model` seeds, so a
+    run stays reproducible from its seed.
+    """
+    if rate <= 0.0:
+        return inputs
+    if not 0.0 < rate <= 1.0:
+        raise ValueError(f"token_replacement must be in (0, 1], got {rate}")
+    chosen = torch.rand(inputs.shape, device=inputs.device) < rate
+    if pad_id is not None:
+        chosen &= inputs != pad_id
+    noise = torch.randint(
+        0, vocab_size, inputs.shape, device=inputs.device, dtype=inputs.dtype
+    )
+    return torch.where(chosen, noise, inputs)
+
+
 def _batches(
     chunks: list[list[int]], order: list[int], batch_size: int, device: torch.device
 ) -> list[tuple[Tensor, Tensor]]:
@@ -689,6 +739,12 @@ def train_diagnostic(
     window: list[float] = []
     for step in range(train_config.steps):
         inputs, targets = batches[step % len(batches)]
+        inputs = corrupt(
+            inputs,
+            train_config.token_replacement,
+            model_config.vocab_size,
+            pad_id,
+        )
         for group in optimiser.param_groups:
             group["lr"] = _schedule(step, train_config)
         logits = model(inputs)

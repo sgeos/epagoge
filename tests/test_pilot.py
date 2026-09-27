@@ -28,6 +28,7 @@ try:
         WarmStart,
         apply_rotary,
         chunk,
+        corrupt,
         head_count,
         load_checkpoint,
         orderings,
@@ -784,3 +785,70 @@ class TestPacking(unittest.TestCase):
     def test_a_non_positive_sequence_length_is_refused(self) -> None:
         with self.assertRaises(ValueError):
             _ = pack([[1, 2]], 0, 0)
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestCorruption(unittest.TestCase):
+    """Token replacement corrupts the input and leaves the target alone.
+
+    The best single augmentation in the data-constrained study recorded in
+    `docs/decisions/TRAINING_ADVANCES.md`. A replaced token is plausible but
+    wrong, which is why it beats a mask token there.
+    """
+
+    def batch(self, pad: int = 0) -> Tensor:
+        import torch
+
+        return torch.tensor([[5, 6, 7, pad, pad], [8, 9, 5, 6, pad]])
+
+    def test_zero_is_the_identity(self) -> None:
+        import torch
+
+        inputs = self.batch()
+        self.assertTrue(torch.equal(corrupt(inputs, 0.0, 32, 0), inputs))
+
+    def test_everything_changes_at_rate_one_except_padding(self) -> None:
+        import torch
+
+        torch.manual_seed(0)
+        inputs = self.batch()
+        out = corrupt(inputs, 1.0, 32, 0)
+        self.assertTrue(torch.equal(out[inputs == 0], inputs[inputs == 0]))
+        self.assertFalse(torch.equal(out[inputs != 0], inputs[inputs != 0]))
+
+    def test_padding_is_never_corrupted(self) -> None:
+        """A padded slot is not text and must not become a random word."""
+        import torch
+
+        torch.manual_seed(1)
+        inputs = self.batch()
+        for _ in range(20):
+            out = corrupt(inputs, 1.0, 32, 0)
+            self.assertTrue(torch.equal(out[inputs == 0], inputs[inputs == 0]))
+
+    def test_without_a_pad_id_everything_is_eligible(self) -> None:
+        import torch
+
+        torch.manual_seed(2)
+        inputs = self.batch()
+        out = corrupt(inputs, 1.0, 32, None)
+        self.assertFalse(torch.equal(out, inputs))
+
+    def test_replacements_stay_inside_the_vocabulary(self) -> None:
+        import torch
+
+        torch.manual_seed(3)
+        out = corrupt(self.batch(), 1.0, 11, 0)
+        self.assertTrue(bool((out >= 0).all() and (out < 11).all()))
+
+    def test_a_rate_above_one_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            _ = corrupt(self.batch(), 1.5, 32, 0)
+
+    def test_it_is_reproducible_from_a_seed(self) -> None:
+        import torch
+
+        torch.manual_seed(7)
+        first = corrupt(self.batch(), 0.5, 32, 0)
+        torch.manual_seed(7)
+        self.assertTrue(torch.equal(first, corrupt(self.batch(), 0.5, 32, 0)))

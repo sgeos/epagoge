@@ -85,6 +85,75 @@ decisive cell.
 when the training-to-held-out gap passes about one nat. That rule is
 induced from six cells and is a hypothesis, not a result.
 
+## Token replacement, which is the larger effect
+
+**Measured 2026-09-27 at the same decisive cell**, width 512, 3,200 steps,
+rotary. A fraction of input tokens is replaced by a random one and the
+target is left alone, so the model is still asked for the original next
+token from a context that is partly wrong.
+
+| Rate | Train | Held | Gap |
+| --- | --- | --- | --- |
+| 0.00 | 1.870 | 3.061 | 1.191 |
+| **0.05** | 2.058 | **2.912** | 0.854 |
+| 0.15 | 2.304 | 2.930 | 0.626 |
+
+**Three paired seeds at 0.05 against nothing.**
+
+| Seed | Held at 0.00 | Held at 0.05 | Difference |
+| --- | --- | --- | --- |
+| 0 | 3.061 | 2.912 | **-0.149** |
+| 1 | 3.050 | 2.941 | **-0.109** |
+| 2 | 3.054 | 2.923 | **-0.131** |
+
+**Three of three, mean -0.130 nats**, which is 2.4 times the weight-decay
+effect at the same cell.
+
+**The rate this project wants is lower than the published one.** The study
+that motivated this found 15 percent best at 150M parameters on 75M tokens.
+Here 5 percent beats 15 percent, by 0.018 at seed 0. That is one seed and
+the two are close, so the honest statement is that 5 is at least as good
+here and the published optimum did not transfer unchanged.
+
+## The two regularisers do not stack
+
+Weight decay 0.5 with token replacement 0.05, seed 0, same cell: **2.921**,
+against 2.912 for token replacement alone and 3.009 for weight decay alone.
+
+**Adding weight decay on top of token replacement changes nothing**, and if
+anything is marginally worse. They are two treatments for the same slack
+rather than two independent gains, and token replacement dominates. One
+seed, so this bounds the combination rather than settling it.
+
+## The learning-rate floor, which is a null here
+
+`min_lr_fraction` is 0.1 and the optimizer benchmark's eighth takeaway says
+decaying further than 10 percent of the maximum significantly improves
+results. **It does not here.** Width 256, one seed.
+
+| Floor | Held at 1,600 | Held at 3,200 |
+| --- | --- | --- |
+| **0.1** | **3.235** | **3.037** |
+| 0.01 | 3.258 | 3.043 |
+| 0.0 | 3.262 | 3.045 |
+
+**The current value is best at both endpoints** and the ordering is
+consistent, though the differences run from 0.006 to 0.027 and are one seed
+each. **This is an absence of evidence for the finding here, not a
+refutation of it.** The benchmark's result is at 124M to 720M parameters
+with batch sizes in the hundreds of thousands of tokens.
+
+## What all of this changes
+
+**Token replacement at 0.05 is the one intervention worth using**, and only
+where the model overfits. The default stays at 0.0 for the same reason the
+weight-decay default stays at 0.01: the standard configuration is not the
+decisive cell.
+
+**The rule of thumb is unchanged and now has a better lever.** When the
+training-to-held-out gap passes about one nat, reach for
+`--token-replacement 0.05` before `--weight-decay`.
+
 ## Reproducing
 
 **Pass `--out`.** `tools/diagnose_level.py` writes

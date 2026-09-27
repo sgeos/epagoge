@@ -110,6 +110,12 @@ def main(argv: list[str]) -> int:
     # See `docs/decisions/TRAINING_ADVANCES.md`. Exposed so the claim can be
     # tested here rather than believed.
     parser.add_argument("--weight-decay", type=float, default=0.01)
+    parser.add_argument(
+        "--token-replacement",
+        type=float,
+        default=0.0,
+        help="fraction of input tokens replaced by a random one",
+    )
     parser.add_argument("--min-lr-fraction", type=float, default=0.1)
     parser.add_argument(
         "--pack",
@@ -244,6 +250,7 @@ def main(argv: list[str]) -> int:
                             batch_size=args.batch_size,
                             weight_decay=args.weight_decay,
                             min_lr_fraction=args.min_lr_fraction,
+                            token_replacement=args.token_replacement,
                         ),
                         args.seed,
                         device,
