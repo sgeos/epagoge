@@ -1,6 +1,6 @@
 {
   "_comment": "When each word entered the lexicon. 'recorded at admission' is evidence written when the decision was made. 'reconstructed from history' is the commit that first contained the word, which is what the commit was about rather than necessarily why that word was in it. 'admitted_because' is the criterion that commit's batch met, applied to every word in it: right about the pass and not necessarily about each word. Low to moderate fidelity, and lowest for the 444-word prescriptive pass, because bootstrapping a closed lexicon does not decompose into per-word reasons.",
-  "revisions": 45,
+  "revisions": 47,
   "words": {
     "able": {
       "commit": "1a5ac29cc8b6",
@@ -97,6 +97,24 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "afternoon": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "age": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "agree": {
       "commit": "019dea991be7",
@@ -354,6 +372,15 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "author": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "avoid": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -466,6 +493,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "basin": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "basket": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -474,6 +510,33 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "bay": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "beach": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "beam": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "bear": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -481,6 +544,15 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "beautiful": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "because": {
       "commit": "fe327c12ce59",
@@ -1179,6 +1251,15 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "certain": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "chain": {
       "commit": "e8630c78135a",
       "date": "2026-09-24",
@@ -1282,6 +1363,15 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "city": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "claim": {
       "commit": "3990e10b5727",
@@ -1403,6 +1493,15 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "coast": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "coin": {
       "commit": "bf31d447ce79",
       "date": "2026-09-25",
@@ -1418,6 +1517,15 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "color": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "colour": {
       "commit": "019dea991be7",
@@ -1683,6 +1791,15 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "current": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "curtain": {
       "commit": "5a6d1c7a1f9e",
       "date": "2026-09-25",
@@ -1795,6 +1912,15 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "dense": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "depend": {
       "commit": "a0366a07b501",
       "date": "2026-09-25",
@@ -1810,6 +1936,15 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "describe": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "desk": {
       "commit": "f83abb17f6d2",
@@ -1850,6 +1985,15 @@
       "criterion": "mapping",
       "admitted_because": "Admitted when per-level vocabulary was introduced and terms were assigned the level at which they become admissible.",
       "evidence": "reconstructed from history"
+    },
+    "difficult": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "dig": {
       "commit": "ce2c954c366f",
@@ -2171,6 +2315,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "echo": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "edge": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2178,6 +2331,15 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "effect": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "eight": {
       "commit": "fe327c12ce59",
@@ -2298,6 +2460,15 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
+    },
+    "example": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "explain": {
       "commit": "a0366a07b501",
@@ -2675,6 +2846,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "flood": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "floor": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2706,6 +2886,15 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "fog": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "follow": {
       "commit": "fe327c12ce59",
@@ -3117,6 +3306,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "hail": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "hair": {
       "commit": "fce98982136e",
       "date": "2026-09-25",
@@ -3293,6 +3491,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "height": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "hello": {
       "commit": "b0017ddb1815",
       "date": "2026-09-26",
@@ -3407,6 +3614,15 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "history": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "hit": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -3478,6 +3694,15 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "hour": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "hours": {
       "commit": "019dea991be7",
@@ -3767,6 +3992,15 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "knowledge": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "lack": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -3958,6 +4192,15 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "lesson": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "letter": {
       "commit": "7eb598b27ebc",
@@ -4440,6 +4683,15 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "mile": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "milk": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -4575,6 +4827,24 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "motion": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "mountain": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "mouse": {
       "commit": "fe327c12ce59",
@@ -4720,6 +4990,15 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "necessary": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "need": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -4863,6 +5142,24 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "observe": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "ocean": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "often": {
       "commit": "fe327c12ce59",
@@ -5329,6 +5626,15 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "portion": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "position": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -5376,6 +5682,15 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "power": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "praise": {
       "commit": "a0366a07b501",
@@ -6041,6 +6356,24 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "safety": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "salt": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "sand": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -6088,6 +6421,15 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
+    },
+    "sea": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "second": {
       "commit": "fe327c12ce59",
@@ -6168,6 +6510,15 @@
       "criterion": "inflection",
       "admitted_because": "A form of an admitted word, added because a word admitted in one form is a trap for a generator constrained to the level.",
       "evidence": "reconstructed from history"
+    },
+    "series": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "set": {
       "commit": "fe327c12ce59",
@@ -6304,6 +6655,15 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "shore": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "short": {
       "commit": "fe327c12ce59",
@@ -6600,6 +6960,15 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "smoke": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "smooth": {
       "commit": "fe327c12ce59",
@@ -7122,6 +7491,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "strength": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "string": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -7194,6 +7572,15 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "summer": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "sun": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -7209,6 +7596,15 @@
       "criterion": "teacher",
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "sunset": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "supply": {
       "commit": "a0366a07b501",
@@ -7634,6 +8030,15 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "tide": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "tie": {
       "commit": "ce2c954c366f",
@@ -8107,6 +8512,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "useful": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
     "using": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -8411,6 +8825,15 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "winter": {
+      "commit": "a2b7f4971801",
+      "date": "2026-09-27",
+      "commit_subject": "Run the first real lexicon scan, and find that its design does not work",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
     },
     "wire": {
       "commit": "1a5ac29cc8b6",

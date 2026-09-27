@@ -19,13 +19,13 @@ and are not tracked.**
 
 | File | Source | Tokens | SHA-256, first 16 |
 | --- | --- | --- | --- |
-| `src_mcguffey_1.txt` | McGuffey's First Eclectic Reader, Revised Edition, `gutenberg.org/ebooks/14640` | 7,737 | `d25c72582b33dbf1` |
-| `src_mcguffey_2.txt` | McGuffey's Second Eclectic Reader, `gutenberg.org/ebooks/14668` | 17,476 | `7bbffe1a74b1f2a0` |
-| `src_mcguffey_3.txt` | McGuffey's Third Eclectic Reader, `gutenberg.org/ebooks/14766` | 26,809 | `544a38c181c9ed93` |
-| `src_mcguffey_4.txt` | McGuffey's Fourth Eclectic Reader, `gutenberg.org/ebooks/14880` | 64,278 | `0d4fb7a43bfc0238` |
-| `src_noaa_ocean.txt` | NOAA Ocean Service, Ocean Facts, 23 pages, `oceanservice.noaa.gov/facts/` | 12,124 | `f7ba69a8cfbaf6ab` |
-| `src_noaa_jetstream.txt` | NOAA JetStream weather school, 134 pages, `noaa.gov/jetstream` | 118,031 | `25f03f5817768884` |
-| `src_nasa_spaceplace.txt` | NASA Space Place, 8 articles, `spaceplace.nasa.gov` | 7,172 | `594d2bd584537403` |
+| `tmp/lexicon-sources/src_mcguffey_1.txt` | McGuffey's First Eclectic Reader, Revised Edition, https://gutenberg.org/ebooks/14640 | 7,737 | `d25c72582b33dbf1` |
+| `tmp/lexicon-sources/src_mcguffey_2.txt` | McGuffey's Second Eclectic Reader, https://gutenberg.org/ebooks/14668 | 17,476 | `7bbffe1a74b1f2a0` |
+| `tmp/lexicon-sources/src_mcguffey_3.txt` | McGuffey's Third Eclectic Reader, https://gutenberg.org/ebooks/14766 | 26,809 | `544a38c181c9ed93` |
+| `tmp/lexicon-sources/src_mcguffey_4.txt` | McGuffey's Fourth Eclectic Reader, https://gutenberg.org/ebooks/14880 | 64,278 | `0d4fb7a43bfc0238` |
+| `tmp/lexicon-sources/src_noaa_ocean.txt` | NOAA Ocean Service, Ocean Facts, 23 pages, https://oceanservice.noaa.gov/facts/ | 12,124 | `f7ba69a8cfbaf6ab` |
+| `tmp/lexicon-sources/src_noaa_jetstream.txt` | NOAA JetStream weather school, 134 pages, https://noaa.gov/jetstream | 118,031 | `25f03f5817768884` |
+| `tmp/lexicon-sources/src_nasa_spaceplace.txt` | NASA Space Place, 8 articles, https://spaceplace.nasa.gov | 7,172 | `594d2bd584537403` |
 
 **Retrieved 2026-09-27.** The readers are public domain by age. The federal
 material is public domain by statute. Two transformations were applied: the
@@ -178,6 +178,26 @@ halves of the same rule disagreed.
 `hour`, which this batch admits at level two, and the collision is what
 surfaced it. **That is the ninth inflected form found filed as a word**,
 after `copied` was the eighth. Removed, with `hour` carrying the form.
+
+## Two gate properties this exposed, and neither is a bug
+
+**A check derived from git history cannot pass in the commit that changes the
+lexicon.** `word_provenance.py --check` compares the tracked provenance file
+against what the history produces, and the history does not contain a word
+until the commit adding it exists. So the gate passed before this batch was
+committed and failed after, and the file had to be regenerated in a following
+commit. **The same shape already caught `stamp_books --check`**, which skips
+files modified in the working tree, which is exactly the set whose dates a
+pending commit is about to change. This is the second instance and it is
+structural.
+
+**A check that resolves paths passes locally on untracked files.** The source
+table first named the scan sources by basename. Locally they resolved because
+the files were sitting in `tmp/`; in the runner's clone they did not exist and
+the reference check reported eight unresolved. **Writing the full ignored path
+makes `git check-ignore` answer instead**, which works in any clone because
+`.gitignore` is tracked. The check was right both times and what differed was
+which of its three resolution paths answered.
 
 ## What this does not settle
 

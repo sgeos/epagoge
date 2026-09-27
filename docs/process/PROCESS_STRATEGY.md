@@ -218,6 +218,25 @@ catch**, a pin count written from a half-remembered list where the grep was
 still available, which is the count-from-arithmetic failure for the fifth
 time.
 
+**A LOCAL GATE CAN PASS ON FILES THE REPOSITORY DOES NOT HAVE.** The fourth
+divergence between the local gate and continuous integration, and a mechanism
+distinct from the three before it. The reference check resolves a named path
+three ways, and the third is the working filesystem. A record naming seven
+scan sources under ignored `tmp/` resolved locally **because the files were
+sitting there**, and failed in the runner's clone, which has the `.gitignore`
+but not the files.
+
+**The check was right both times.** What differed was which of its three
+resolution paths answered. Writing the full ignored path rather than the
+basename makes `git check-ignore` answer instead, and that works in any
+clone because `.gitignore` is tracked.
+
+**The general form is worth more than the instance.** A check that consults
+the filesystem passes on untracked state, so a green local gate says nothing
+about a clone whenever the thing being checked is a path. **The three earlier
+divergences all had this shape** and were each diagnosed as their own
+specific cause.
+
 ## Autonomy boundaries
 
 **Proceed** without asking on anything bounded and already on the roadmap.
