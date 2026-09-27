@@ -35,6 +35,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from collections.abc import Mapping
 from dataclasses import replace
 from pathlib import Path
 from typing import cast
@@ -73,7 +74,7 @@ satisfy.
 """
 
 
-def prompt_for(body: str) -> str:
+def prompt_for(body: str, substitutions: Mapping[str, str] | None = None) -> str:
     """Ask for one title, drawn from the book's own words.
 
     **The admissible word list is deliberately not sent.** At 849 words it
@@ -85,6 +86,12 @@ def prompt_for(body: str) -> str:
     construction, so the constraint is stricter than the ceiling and
     shorter to state, and a title built from the book's own words is what a
     title should be. The ceiling is still checked afterwards.
+
+    **The substitutions are supplied because naming a banned word is not
+    supplying the replacement**, which `epagoge.prompt` learned first. A
+    title was refused four times running for `it's`, a contraction the
+    lexicon carries a replacement for, and the teacher returned the same
+    line every time because nothing told it what to write instead.
 
     **The length bound is stated here as well as enforced below, and it was
     not at first.** Every one of the sixteen refusals in the first two runs
@@ -107,6 +114,18 @@ def prompt_for(body: str) -> str:
             "",
             "Use ONLY words that appear in the book above. Do not use any",
             "other word. Do not name a topic or a subject.",
+            *(
+                [
+                    "",
+                    "These are NOT allowed. Write the replacement instead:",
+                    *(
+                        f'  {banned}  ->  write "{instead}"'
+                        for banned, instead in sorted((substitutions or {}).items())
+                    ),
+                ]
+                if substitutions
+                else []
+            ),
             "",
             "Answer with exactly one line, in this form:",
             "TITLE: <the title>",
@@ -167,7 +186,7 @@ def main(argv: list[str]) -> int:
         )
         new = ""
         for _ in range(args.attempts):
-            raw = ask(prompt_for(body), timeout=args.timeout)
+            raw = ask(prompt_for(body, vocabulary.substitutions), timeout=args.timeout)
             found = TITLE_RE.search(raw or "")
             if not found:
                 continue

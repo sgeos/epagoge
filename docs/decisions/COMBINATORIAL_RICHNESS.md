@@ -203,6 +203,31 @@ measurement in this record says the return is.
 not take, and are reported here rather than being quietly dropped from the
 count.
 
+## A second round, same day
+
+**Twenty-nine books from thirty planned pairs**, one refused for a subject
+line.
+
+| | Before | After |
+| --- | --- | --- |
+| Content books | 413 | **442** |
+| Pairs realised | 283 | **312 of 8,128** |
+| Coverage | 3.5% | **3.8%** |
+| Concepts in exactly one book | 2 | **1** |
+| Concepts in two or three | 22 | **14** |
+| Corpus words | 301,219 | **308,381** |
+
+**Twenty-nine books bought twenty-nine pairs** and moved eight more
+concepts out of the thin bands. Across the two rounds: 398 books to 442,
+268 pairs to 312, and concepts held by three books or fewer fell from 31 to
+15.
+
+**The rate is the thing to note.** At roughly thirty books a round, the
+exhaustive singles-and-pairs corpus this record prices at 7,750 books is
+about two hundred and sixty rounds away. **These rounds are a sample of
+that work, not a dent in it**, and saying so is the difference between
+progress and the appearance of it.
+
 ## Counting pair coverage, which can be done three ways
 
 **Two of them are wrong and both are tempting.**

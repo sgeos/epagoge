@@ -14,9 +14,10 @@ gives in a form that does not depend on any hash.
 
 **Nothing is running, nothing is uncommitted, CI is green.**
 
-**At this refresh**: 415 books over 7,403 records and **301,219 words**,
+**At this refresh**: 444 books over 7,867 records and **308,381 words**,
 every content book inside the word band and every book carrying its six
-metadata fields. **Concept pairs realised: 283 of 8,128.**
+metadata fields. **Concept pairs realised: 312 of 8,128**, and only one
+concept is held by a single book.
 
 **Pair coverage can be counted three ways and two are wrong.** Counting
 every concept any record mentions gives 88 percent, because the dictionary
