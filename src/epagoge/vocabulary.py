@@ -800,10 +800,24 @@ def _check_comparison(vocabulary: Vocabulary) -> list[Violation]:
     reason: a word admitted in one form sends a generator reaching for one
     that is not there. Declared rather than inferred, because gradability
     is not recoverable from spelling.
+
+    **An adjective marked `periphrastic` is exempt**, because it compares
+    with `more` and `most` rather than with a suffix and the rule was
+    manufacturing forms that are not English.
     """
     out: list[Violation] = []
     for term in vocabulary.terms:
-        if "adjective" not in term.pos.split():
+        parts = term.pos.split()
+        if "adjective" not in parts:
+            continue
+        # **A PERIPHRASTIC ADJECTIVE HAS NO SUFFIXED FORMS**, and until
+        # 2026-09-27 the lexicon could not say so. `beautiful` compares with
+        # `more` and `most`, which are already words, and declaring it an
+        # adjective manufactured `beautifuler` and `beautifulest` the way the
+        # plural rule manufactured `funs` and `magics`. The safeguard had been
+        # to leave such a word undeclared, which loses the part of speech to
+        # protect the forms.
+        if "periphrastic" in parts:
             continue
         for form in comparison(term.word):
             if form in vocabulary.core:
@@ -928,7 +942,13 @@ def _parse_source(raw: object, where: str) -> str:
     return raw
 
 
-RECOGNISED_POS: Final[tuple[str, ...]] = ("verb", "noun", "adjective", "mass")
+RECOGNISED_POS: Final[tuple[str, ...]] = (
+    "verb",
+    "noun",
+    "adjective",
+    "mass",
+    "periphrastic",
+)
 """What a term may claim to be.
 
 **`mass` is a qualifier on `noun`, not a part of speech**, and it is here
@@ -966,6 +986,11 @@ def _parse_pos(raw: object, where: str) -> str:
     if "mass" in parts and "noun" not in parts:
         raise ValueError(
             f"{where}.pos: 'mass' qualifies 'noun' and {raw!r} has no noun"
+        )
+    if "periphrastic" in parts and "adjective" not in parts:
+        raise ValueError(
+            f"{where}.pos: 'periphrastic' qualifies 'adjective' and {raw!r} "
+            f"has no adjective"
         )
     if len(set(parts)) != len(parts):
         raise ValueError(f"{where}.pos: repeated part of speech in {raw!r}")

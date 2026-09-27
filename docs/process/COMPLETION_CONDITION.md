@@ -6,41 +6,50 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**A configuration is named as the best measured**, with every setting that
-differs from the defaults stated, and with the held-out loss it reaches.
+**Sources are vendored outside version control and recorded inside it.** At
+least four public-domain or CC0 sources were scanned. A tracked record names
+each one with its retrieval date, the licence determined at retrieval and a
+content hash. **No source body is tracked and no licensed word list is
+tracked.**
 
-**That configuration was found by a sweep over more than one setting**,
-recorded with the full grid rather than only the winner, so a reader can see
-what was beaten and by how much.
+**Both Victorian and modern sources are among them**, so the two can be
+contrasted.
 
-**Whether the settings combine is stated from measurement**, not assumed.
-If two improvements do not add, the record says so.
+**The frequency threshold is set from the scan rather than defaulted**, with
+the distribution that justified it stated, and with the candidate counts at
+neighbouring values given so a reader can see what the choice costs. **If it
+was chosen by eye the record says so** rather than implying it was derived.
 
-**The best result rests on more than one seed**, or is labelled as resting
-on one, and the seed-to-seed spread is stated so a reader can judge whether
-the winner is distinguishable from its neighbours.
+**Candidates are reported per source rather than pooled**, and a word frequent
+in one source and absent from the others appears as a candidate rather than as
+long tail.
 
-**The shipped checkpoint is trained at the named configuration**, loads
-through the ordinary loader, and `tools/talk.py` runs against it without
-reporting a vocabulary mismatch.
+**The archaism problem is measured rather than asserted.** A figure states how
+much of the Victorian sources' frequent vocabulary is absent from the modern
+sources, and the record says plainly that the figure identifies candidates for
+judgement rather than deciding any of them.
 
-**A reader looking for what to train with can find the answer** in a
-tracked document, rather than having to reconstruct it from evaluation
-records.
+**Some words are admitted from the scan and each carries the source that
+proposed it.**
 
-**The frontier is stated as one number with its configuration attached**, so
-a later claim has something specific to beat.
+**Level two is still self-hosting and its coverage of words needing a
+definition did not fall.** No word is admitted without a definition.
 
-**No improvement is credited beyond what the sweep shows.** Anything
-measured in isolation and not in combination is described as such.
+**A reader looking for how to extend the lexicon can find the answer in a
+tracked document**, including what the scan proposes and what it cannot see.
 
-**The gate passes.** `./tools/check.sh` reports all checks passed and exits
-0, with no check weakened or removed to achieve it.
+**Nothing claims the lexicon is complete.** The remaining gap between the
+current count and the target is stated as a number.
+
+**No claim rests on a figure the tree cannot reproduce.** Every count in a
+tracked document was read from a tool rather than computed by hand.
+
+**The gate passes.** `./tools/check.sh` reports all checks passed and exits 0,
+with no check weakened or removed to achieve it.
 
 **Continuous integration is green** on the pushed head, checked rather than
 assumed.
 
-**The working tree is clean and pushed**, with no tracked evaluation
-artifact holding the output of a probe rather than a recorded run.
+**The working tree is clean and pushed.**
 
 **Nothing was added beyond what this question needs.**

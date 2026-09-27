@@ -17,6 +17,7 @@ from epagoge.vocabulary import (
     Term,
     Vocabulary,
     _check_comparison,
+    _parse_pos,
     load_vocabulary,
     term_levels,
     tokenise,
@@ -809,3 +810,41 @@ class TestAdjectiveComparison(unittest.TestCase):
     def test_the_shipped_lexicon_has_no_missing_comparison(self) -> None:
         vocabulary = load_vocabulary(Path("curriculum/vocabulary.json"))
         self.assertEqual(_check_comparison(vocabulary), [])
+
+    def test_a_periphrastic_adjective_owes_no_suffixed_form(self) -> None:
+        """`beautiful` compares with more and most, so `beautifuler` is not
+        a form it is missing. The qualifier says so, the way `mass` says a
+        noun has no plural. Without it the only way to avoid the manufactured
+        form was to leave the word undeclared, which loses the part of speech
+        to protect the forms."""
+        vocabulary = Vocabulary(
+            terms=(
+                Term(
+                    word="beautiful",
+                    concept="good_and_bad",
+                    level=2,
+                    pos="adjective periphrastic",
+                ),
+            )
+        )
+        self.assertEqual(_check_comparison(vocabulary), [])
+
+    def test_periphrastic_without_adjective_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            _parse_pos("periphrastic", "terms[0]")
+
+    def test_periphrastic_is_recognised_beside_adjective(self) -> None:
+        self.assertEqual(
+            _parse_pos("adjective periphrastic", "terms[0]"),
+            "adjective periphrastic",
+        )
+
+    def test_mass_without_noun_is_refused(self) -> None:
+        """The sibling rule, which had no test until the second qualifier was
+        added and the gap became visible."""
+        with self.assertRaises(ValueError):
+            _parse_pos("mass", "terms[0]")
+
+    def test_an_unrecognised_part_of_speech_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            _parse_pos("adverb", "terms[0]")

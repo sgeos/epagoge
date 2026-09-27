@@ -36,6 +36,7 @@ from pathlib import Path
 from typing import cast
 
 from epagoge.inflection import comparison, plural, verb_forms
+from epagoge.vocabulary import RECOGNISED_POS
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -80,8 +81,15 @@ def main(argv: list[str]) -> int:
             )
         if not spec.get("definition"):
             problems.append(f"{word}: no definition")
+        # **THE LIST USED TO BE SPELLED OUT HERE AND IT DRIFTED.** `mass`
+        # was added to the lexicon on 2026-09-26 and `periphrastic` on
+        # 2026-09-27, and this tool rejected both, so a qualifier the
+        # validator understood could not be admitted through the tool that
+        # admits words. That is the field-enumeration defect recorded in
+        # `docs/decisions/FIELD_ENUMERATION.md`, a second copy of a list that
+        # has one authority. It now reads the authority.
         for part in spec.get("pos", "").split():
-            if part not in ("verb", "noun", "adjective"):
+            if part not in RECOGNISED_POS:
                 problems.append(f"{word}: unknown part of speech {part!r}")
     if problems:
         print(f"{len(problems)} problem(s), nothing written:", file=sys.stderr)
@@ -93,11 +101,18 @@ def main(argv: list[str]) -> int:
     for word, spec in sorted(wanted.items()):
         parts = spec.get("pos", "").split()
         forms: set[str] = set()
-        if "noun" in parts and plural(word) != word:
+        # **A mass noun has no plural and a periphrastic adjective has no
+        # suffixed forms.** Both qualifiers were added because the rules that
+        # demand a form manufacture one where the word has none. This tool
+        # generates the forms those rules then demand, so it has to honour the
+        # same exemptions or it writes exactly what they exist to prevent. The
+        # mass gap was live from 2026-09-26 to 2026-09-27: the validator
+        # skipped mass nouns and this tool would still have generated `funs`.
+        if "noun" in parts and "mass" not in parts and plural(word) != word:
             forms.add(plural(word))
         if "verb" in parts:
             forms.update(verb_forms(word))
-        if "adjective" in parts:
+        if "adjective" in parts and "periphrastic" not in parts:
             forms.update(comparison(word))
         forms -= taken
         entry: dict[str, object] = {

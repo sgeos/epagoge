@@ -80,6 +80,13 @@ Decision records, and the open questions that block implementation.
   metadata-only acquisition scheme for terminal-stage literature, written
   while `sources/` is empty because adopting it after a body is committed
   costs a history rewrite. The standing position stays deferral.
+- `LEXICON_SCAN.md` measured. The first real run of the lexicon scan, over
+  four Victorian readers and three modern federal sources. The threshold is
+  kept at five and shown to be arbitrary within a wide band, since the curve
+  has no knee. **The era contrast was designed to make archaism visible and
+  does not**, and its near-symmetry in both directions is the evidence that
+  it measures topical disjointness instead. Records the 47-word first batch
+  and three defects found by running the pipeline rather than planning it.
 - `TRAINING_TECHNIQUES.md` decided. Maximal update parametrization, Muon,
   warmup-stable-decay, and multi-token prediction adopted. The first is
   confound removal rather than optimisation.

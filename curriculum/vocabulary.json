@@ -266,6 +266,26 @@
       "level": 1
     },
     {
+      "word": "afternoon",
+      "concept": "duration",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "afternoons"
+      ]
+    },
+    {
+      "word": "age",
+      "concept": "duration",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "ages"
+      ]
+    },
+    {
       "word": "agree",
       "concept": "agreeing",
       "level": 1,
@@ -461,6 +481,16 @@
       ]
     },
     {
+      "word": "author",
+      "concept": "who_said_it",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "authors"
+      ]
+    },
+    {
       "word": "avoid",
       "concept": "danger",
       "level": 6
@@ -551,12 +581,52 @@
       ]
     },
     {
+      "word": "basin",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "basins"
+      ]
+    },
+    {
       "word": "basket",
       "concept": "household_object",
       "level": 1,
       "pos": "noun",
       "forms": [
         "baskets"
+      ]
+    },
+    {
+      "word": "bay",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "bays"
+      ]
+    },
+    {
+      "word": "beach",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "beaches"
+      ]
+    },
+    {
+      "word": "beam",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "beams"
       ]
     },
     {
@@ -567,6 +637,13 @@
       "forms": [
         "bears"
       ]
+    },
+    {
+      "word": "beautiful",
+      "concept": "good_and_bad",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
       "word": "because",
@@ -1183,6 +1260,13 @@
       "pos": "noun"
     },
     {
+      "word": "certain",
+      "concept": "how_sure",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
       "word": "chain",
       "concept": "causal_chain",
       "level": 2,
@@ -1280,6 +1364,16 @@
       "pos": "noun",
       "forms": [
         "circles"
+      ]
+    },
+    {
+      "word": "city",
+      "concept": "people_together",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "cities"
       ]
     },
     {
@@ -1409,6 +1503,16 @@
       "level": 1
     },
     {
+      "word": "coast",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "coasts"
+      ]
+    },
+    {
       "word": "coin",
       "concept": "exchange",
       "level": 1,
@@ -1426,6 +1530,16 @@
         "coldest"
       ],
       "pos": "adjective"
+    },
+    {
+      "word": "color",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "colors"
+      ]
     },
     {
       "word": "colour",
@@ -1666,6 +1780,16 @@
       "level": 1
     },
     {
+      "word": "current",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "currents"
+      ]
+    },
+    {
       "word": "curtain",
       "concept": "household_object",
       "level": 1,
@@ -1773,6 +1897,17 @@
       "level": 5
     },
     {
+      "word": "dense",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "denser",
+        "densest"
+      ]
+    },
+    {
       "word": "depend",
       "concept": "dependence",
       "level": 6
@@ -1786,6 +1921,18 @@
         "depended",
         "depending",
         "depends"
+      ]
+    },
+    {
+      "word": "describe",
+      "concept": "saying_what_you_saw",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "described",
+        "describes",
+        "describing"
       ]
     },
     {
@@ -1821,6 +1968,13 @@
       "word": "different",
       "concept": "same_and_different",
       "level": 1
+    },
+    {
+      "word": "difficult",
+      "concept": "can_and_cannot",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
       "word": "dig",
@@ -2122,12 +2276,32 @@
       "pos": "verb"
     },
     {
+      "word": "echo",
+      "concept": "sound",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "echos"
+      ]
+    },
+    {
       "word": "edge",
       "concept": "shape",
       "level": 1,
       "pos": "noun",
       "forms": [
         "edges"
+      ]
+    },
+    {
+      "word": "effect",
+      "concept": "cause_and_effect",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "effects"
       ]
     },
     {
@@ -2225,6 +2399,16 @@
       "word": "exactly",
       "concept": "only_what_was_asked",
       "level": 1
+    },
+    {
+      "word": "example",
+      "concept": "standing_for",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "examples"
+      ]
     },
     {
       "word": "explain",
@@ -2536,6 +2720,16 @@
       ]
     },
     {
+      "word": "flood",
+      "concept": "weather",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "floods"
+      ]
+    },
+    {
       "word": "floor",
       "concept": "household_object",
       "level": 1
@@ -2571,6 +2765,13 @@
         "flown",
         "flying"
       ]
+    },
+    {
+      "word": "fog",
+      "concept": "weather",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
       "word": "follow",
@@ -2943,6 +3144,13 @@
       ]
     },
     {
+      "word": "hail",
+      "concept": "weather",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
       "word": "hair",
       "concept": "body_part",
       "level": 1,
@@ -3120,6 +3328,16 @@
       "pos": "adjective"
     },
     {
+      "word": "height",
+      "concept": "measuring",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "heights"
+      ]
+    },
+    {
       "word": "hello",
       "concept": "greeting_and_parting",
       "level": 1,
@@ -3220,6 +3438,16 @@
       ]
     },
     {
+      "word": "history",
+      "concept": "story",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "histories"
+      ]
+    },
+    {
       "word": "hit",
       "concept": "force",
       "level": 1,
@@ -3301,9 +3529,14 @@
       "pos": "adjective"
     },
     {
-      "word": "hours",
+      "word": "hour",
       "concept": "duration",
-      "level": 6
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "hours"
+      ]
     },
     {
       "word": "house",
@@ -3566,6 +3799,13 @@
       "pos": "verb"
     },
     {
+      "word": "knowledge",
+      "concept": "knowing",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
       "word": "lack",
       "concept": "enough",
       "level": 1,
@@ -3726,6 +3966,16 @@
       "word": "less",
       "concept": "more_and_fewer",
       "level": 1
+    },
+    {
+      "word": "lesson",
+      "concept": "more_to_learn",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "lessons"
+      ]
     },
     {
       "word": "letter",
@@ -4201,6 +4451,16 @@
       "level": 1
     },
     {
+      "word": "mile",
+      "concept": "unit",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "miles"
+      ]
+    },
+    {
       "word": "milk",
       "concept": "liquid",
       "level": 1
@@ -4312,6 +4572,23 @@
       "pos": "noun",
       "forms": [
         "mothers"
+      ]
+    },
+    {
+      "word": "motion",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
+      "word": "mountain",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "mountains"
       ]
     },
     {
@@ -4443,6 +4720,13 @@
       ]
     },
     {
+      "word": "necessary",
+      "concept": "need",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
       "word": "need",
       "concept": "need",
       "level": 1,
@@ -4568,6 +4852,28 @@
       "pos": "noun",
       "forms": [
         "nurses"
+      ]
+    },
+    {
+      "word": "observe",
+      "concept": "saying_what_you_saw",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "observed",
+        "observes",
+        "observing"
+      ]
+    },
+    {
+      "word": "ocean",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "oceans"
       ]
     },
     {
@@ -4998,6 +5304,16 @@
       "level": 6
     },
     {
+      "word": "portion",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "portions"
+      ]
+    },
+    {
       "word": "position",
       "concept": "claim_under_test",
       "level": 6
@@ -5031,6 +5347,13 @@
         "pouring",
         "pours"
       ]
+    },
+    {
+      "word": "power",
+      "concept": "force",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
       "word": "praise",
@@ -5693,6 +6016,20 @@
       ]
     },
     {
+      "word": "safety",
+      "concept": "danger",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
+      "word": "salt",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
       "word": "sand",
       "concept": "material",
       "level": 1
@@ -5734,6 +6071,16 @@
         "scored",
         "scores",
         "scoring"
+      ]
+    },
+    {
+      "word": "sea",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "seas"
       ]
     },
     {
@@ -5803,6 +6150,16 @@
         "separated",
         "separates",
         "separating"
+      ]
+    },
+    {
+      "word": "series",
+      "concept": "sequence",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "serieses"
       ]
     },
     {
@@ -5955,6 +6312,16 @@
       "word": "shoes",
       "concept": "household_object",
       "level": 1
+    },
+    {
+      "word": "shore",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "shores"
+      ]
     },
     {
       "word": "short",
@@ -6268,6 +6635,13 @@
         "smiles",
         "smiling"
       ]
+    },
+    {
+      "word": "smoke",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
       "word": "smooth",
@@ -6753,6 +7127,13 @@
       ]
     },
     {
+      "word": "strength",
+      "concept": "force",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
       "word": "string",
       "concept": "material",
       "level": 1,
@@ -6817,6 +7198,16 @@
       "level": 5
     },
     {
+      "word": "summer",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "summers"
+      ]
+    },
+    {
       "word": "sun",
       "concept": "cycle",
       "level": 1
@@ -6825,6 +7216,16 @@
       "word": "sunny",
       "concept": "weather",
       "level": 1
+    },
+    {
+      "word": "sunset",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "sunsets"
+      ]
     },
     {
       "word": "supply",
@@ -7204,6 +7605,16 @@
         "throwing",
         "thrown",
         "throws"
+      ]
+    },
+    {
+      "word": "tide",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "tides"
       ]
     },
     {
@@ -7602,6 +8013,13 @@
       "pos": "verb"
     },
     {
+      "word": "useful",
+      "concept": "good_and_bad",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
       "word": "view",
       "concept": "opinion",
       "level": 1,
@@ -7911,6 +8329,16 @@
       "pos": "noun",
       "forms": [
         "wings"
+      ]
+    },
+    {
+      "word": "winter",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "forms": [
+        "winters"
       ]
     },
     {

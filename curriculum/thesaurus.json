@@ -50,6 +50,14 @@
       ]
     },
     {
+      "word": "afternoon",
+      "concept": "duration"
+    },
+    {
+      "word": "age",
+      "concept": "duration"
+    },
+    {
       "word": "agree",
       "concept": "agreeing",
       "antonyms": [
@@ -170,6 +178,10 @@
       ]
     },
     {
+      "word": "author",
+      "concept": "who_said_it"
+    },
+    {
       "word": "awake",
       "concept": "living_and_not_living",
       "antonyms": [
@@ -230,12 +242,32 @@
       "concept": "sound"
     },
     {
+      "word": "basin",
+      "concept": "shape"
+    },
+    {
       "word": "basket",
       "concept": "household_object"
     },
     {
+      "word": "bay",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "beach",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "beam",
+      "concept": "physical_property"
+    },
+    {
       "word": "bear",
       "concept": "toy"
+    },
+    {
+      "word": "beautiful",
+      "concept": "good_and_bad"
     },
     {
       "word": "because",
@@ -585,6 +617,10 @@
       "concept": "cause_and_effect"
     },
     {
+      "word": "certain",
+      "concept": "how_sure"
+    },
+    {
       "word": "chain",
       "concept": "causal_chain"
     },
@@ -626,6 +662,10 @@
     {
       "word": "circle",
       "concept": "shape"
+    },
+    {
+      "word": "city",
+      "concept": "people_together"
     },
     {
       "word": "claim",
@@ -697,6 +737,10 @@
       "concept": "weather"
     },
     {
+      "word": "coast",
+      "concept": "spatial_position"
+    },
+    {
       "word": "coin",
       "concept": "exchange"
     },
@@ -706,6 +750,10 @@
       "antonyms": [
         "hot"
       ]
+    },
+    {
+      "word": "color",
+      "concept": "physical_property"
     },
     {
       "word": "colour",
@@ -822,6 +870,10 @@
       "concept": "unit"
     },
     {
+      "word": "current",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "curtain",
       "concept": "household_object"
     },
@@ -898,8 +950,16 @@
       "concept": "measuring"
     },
     {
+      "word": "dense",
+      "concept": "physical_property"
+    },
+    {
       "word": "depend",
       "concept": "resting_on_a_guess"
+    },
+    {
+      "word": "describe",
+      "concept": "saying_what_you_saw"
     },
     {
       "word": "desk",
@@ -922,6 +982,10 @@
       "antonyms": [
         "same"
       ]
+    },
+    {
+      "word": "difficult",
+      "concept": "can_and_cannot"
     },
     {
       "word": "dig",
@@ -1080,8 +1144,16 @@
       "concept": "living_and_not_living"
     },
     {
+      "word": "echo",
+      "concept": "sound"
+    },
+    {
       "word": "edge",
       "concept": "shape"
+    },
+    {
+      "word": "effect",
+      "concept": "cause_and_effect"
     },
     {
       "word": "eight",
@@ -1168,6 +1240,10 @@
     {
       "word": "exactly",
       "concept": "only_what_was_asked"
+    },
+    {
+      "word": "example",
+      "concept": "standing_for"
     },
     {
       "word": "explain",
@@ -1357,6 +1433,10 @@
       ]
     },
     {
+      "word": "flood",
+      "concept": "weather"
+    },
+    {
       "word": "floor",
       "concept": "household_object"
     },
@@ -1371,6 +1451,10 @@
     {
       "word": "fly",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "fog",
+      "concept": "weather"
     },
     {
       "word": "follow",
@@ -1623,6 +1707,10 @@
       ]
     },
     {
+      "word": "hail",
+      "concept": "weather"
+    },
+    {
       "word": "hair",
       "concept": "body_part"
     },
@@ -1723,6 +1811,10 @@
       ]
     },
     {
+      "word": "height",
+      "concept": "measuring"
+    },
+    {
       "word": "hello",
       "concept": "greeting_and_parting"
     },
@@ -1792,6 +1884,10 @@
       "concept": "sound"
     },
     {
+      "word": "history",
+      "concept": "story"
+    },
+    {
       "word": "hit",
       "concept": "force"
     },
@@ -1836,6 +1932,10 @@
       "antonyms": [
         "cold"
       ]
+    },
+    {
+      "word": "hour",
+      "concept": "duration"
     },
     {
       "word": "house",
@@ -1996,6 +2096,10 @@
       "concept": "being_told"
     },
     {
+      "word": "knowledge",
+      "concept": "knowing"
+    },
+    {
       "word": "lack",
       "concept": "enough"
     },
@@ -2096,6 +2200,10 @@
       "antonyms": [
         "more"
       ]
+    },
+    {
+      "word": "lesson",
+      "concept": "more_to_learn"
     },
     {
       "word": "letter",
@@ -2400,6 +2508,10 @@
       "concept": "duration"
     },
     {
+      "word": "mile",
+      "concept": "unit"
+    },
+    {
       "word": "milk",
       "concept": "liquid"
     },
@@ -2481,6 +2593,14 @@
       "synonyms": [
         "mum"
       ]
+    },
+    {
+      "word": "motion",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "mountain",
+      "concept": "shape"
     },
     {
       "word": "mouse",
@@ -2571,6 +2691,10 @@
     {
       "word": "neat",
       "concept": "physical_property"
+    },
+    {
+      "word": "necessary",
+      "concept": "need"
     },
     {
       "word": "need",
@@ -2683,6 +2807,14 @@
     {
       "word": "nurse",
       "concept": "tending"
+    },
+    {
+      "word": "observe",
+      "concept": "saying_what_you_saw"
+    },
+    {
+      "word": "ocean",
+      "concept": "liquid"
     },
     {
       "word": "often",
@@ -2921,6 +3053,10 @@
       ]
     },
     {
+      "word": "portion",
+      "concept": "quantity"
+    },
+    {
       "word": "possible",
       "concept": "can_and_cannot",
       "antonyms": [
@@ -2934,6 +3070,10 @@
     {
       "word": "pour",
       "concept": "liquid"
+    },
+    {
+      "word": "power",
+      "concept": "force"
     },
     {
       "word": "praise",
@@ -3296,6 +3436,14 @@
       ]
     },
     {
+      "word": "safety",
+      "concept": "danger"
+    },
+    {
+      "word": "salt",
+      "concept": "material"
+    },
+    {
       "word": "same",
       "concept": "",
       "antonyms": [
@@ -3328,6 +3476,10 @@
     {
       "word": "score",
       "concept": "keeping_count"
+    },
+    {
+      "word": "sea",
+      "concept": "liquid"
     },
     {
       "word": "second",
@@ -3370,6 +3522,10 @@
       "antonyms": [
         "join"
       ]
+    },
+    {
+      "word": "series",
+      "concept": "sequence"
     },
     {
       "word": "set",
@@ -3444,6 +3600,10 @@
     {
       "word": "shoes",
       "concept": "household_object"
+    },
+    {
+      "word": "shore",
+      "concept": "spatial_position"
     },
     {
       "word": "short",
@@ -3636,6 +3796,10 @@
     {
       "word": "smile",
       "concept": "feeling"
+    },
+    {
+      "word": "smoke",
+      "concept": "material"
     },
     {
       "word": "smooth",
@@ -3908,6 +4072,10 @@
       ]
     },
     {
+      "word": "strength",
+      "concept": "force"
+    },
+    {
       "word": "string",
       "concept": "material",
       "synonyms": [
@@ -3944,6 +4112,10 @@
       "concept": "subtraction"
     },
     {
+      "word": "summer",
+      "concept": "cycle"
+    },
+    {
       "word": "sun",
       "concept": "cycle",
       "antonyms": [
@@ -3953,6 +4125,10 @@
     {
       "word": "sunny",
       "concept": "weather"
+    },
+    {
+      "word": "sunset",
+      "concept": "cycle"
     },
     {
       "word": "supply",
@@ -4173,6 +4349,10 @@
       "synonyms": [
         "toss"
       ]
+    },
+    {
+      "word": "tide",
+      "concept": "cycle"
     },
     {
       "word": "tie",
@@ -4443,6 +4623,10 @@
       "concept": "using_up"
     },
     {
+      "word": "useful",
+      "concept": "good_and_bad"
+    },
+    {
       "word": "view",
       "concept": "opinion"
     },
@@ -4620,6 +4804,10 @@
     {
       "word": "wing",
       "concept": "body_part"
+    },
+    {
+      "word": "winter",
+      "concept": "cycle"
     },
     {
       "word": "wire",
