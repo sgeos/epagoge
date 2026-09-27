@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 import sys
 import time
 from pathlib import Path
@@ -222,8 +223,17 @@ def main(argv: list[str]) -> int:
         # fraction is scored against the same chunks, or the comparison
         # would be between models measured on different data and would
         # say nothing about corpus size.
+        #
+        # **The subset is sampled, and it was a prefix until 2026-09-27.**
+        # `train_ids[:kept]` takes the first chunks in curriculum order, so
+        # a small fraction was the shallowest books and each doubling added
+        # material both in quantity and in resemblance to the held-out
+        # tail. That measures corpus size confounded with curriculum
+        # position, and this file's own purpose is the unconfounded
+        # quantity. Seeded, so a fraction is the same subset across widths
+        # and step counts within a run.
         kept = max(1, int(len(train_ids) * fraction))
-        subset = train_ids[:kept]
+        subset = sorted(random.Random(args.seed).sample(train_ids, kept))
         subset_tokens = sum(len([i for i in chunks[c] if i != pad_id]) for c in subset)
         for width in args.width:
             for layers in args.layers:

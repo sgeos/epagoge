@@ -246,6 +246,16 @@ sense questions to the operator.
   is 0.7 percent of the loss and **item 7 fixes whether that counts**.
   Narrowing the attribution further cannot make meaningful an effect nobody
   has called meaningful.
+- **Corpus doubling is worth about 0.26 nats and the rate is not falling**,
+  measured over an eightfold range against one held-out set. At thirty books
+  a round that is fifteen rounds per doubling, which makes it **the most
+  expensive lever measured this week**: token replacement was worth 1.217
+  nats at the collapse point and rotary 0.292.
+- **The optimum is twenty epochs at every corpus size**, to within a tenth,
+  so the best step count doubles with the corpus. **Anything sweeping corpus
+  size must sweep steps with it**, or it measures the interaction.
+- **The corpus-size subsample was a curriculum prefix and is now a sample.**
+  The prefix overstated the last doubling by two thirds.
 - **Controlled, about sixty percent of the effect disappears.** Shuffling
   books inside blocks of 32 keeps every book within 10 percent of its
   curriculum position and removes 87 percent of the homogeneity gap. The

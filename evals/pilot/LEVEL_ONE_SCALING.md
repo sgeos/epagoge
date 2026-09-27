@@ -7,6 +7,10 @@
 > per-batch means over a systematic slice. It also predates rotary
 > positions, weight tying and the end-of-text token.
 >
+> **The current measurement is at the end of this file**, and it found
+> that the subsample this record rests on was a curriculum prefix rather
+> than a sample.
+>
 > **Quote nothing here as a current property of this project.** It is kept
 > because the reasoning is still worth reading and because deleting a
 > measurement corrupts the record of why the next one was taken.
@@ -220,3 +224,76 @@ being data-starved, not a law.
 800 steps.** Across the day, at the best configuration available at each
 point, perplexity went 120 to 92 to 41. Those three came from three
 different held-out sets and are a history rather than a rate.
+
+---
+
+# Re-measured 2026-09-27, and the subsample was confounded
+
+**On the current corpus**: 444 books, 322,136 training tokens, rotary
+positions, width 256, four layers, one held-out set identical at every
+size, one seed per point.
+
+## The fraction was a curriculum prefix and is now a sample
+
+**`train_ids[:kept]` took the first chunks in curriculum order.** A small
+fraction was therefore the shallowest books, and every doubling added
+material both in quantity and in resemblance to the held-out set, which is
+the curriculum tail. **That measures corpus size confounded with curriculum
+position**, and this file's own purpose is the unconfounded quantity.
+
+**It moved the answer.** Over the last doubling the prefix gave -0.396 nats
+and a seeded sample gives -0.241, so the prefix overstated it by about two
+thirds.
+
+## The curve
+
+Best held-out loss at each corpus size, across four step counts.
+
+| Training tokens | 400 | 800 | 1,600 | 3,200 | Best |
+| --- | --- | --- | --- | --- | --- |
+| 40,407 | **3.800** | 3.895 | 4.804 | 5.977 | 3.800 |
+| 81,190 | 3.731 | **3.510** | 3.672 | 4.850 | 3.510 |
+| 161,749 | 3.765 | 3.462 | **3.255** | 3.352 | 3.255 |
+| 322,136 | 3.826 | 3.524 | 3.229 | **3.014** | 3.014 |
+
+**About 0.26 nats per doubling, and the rate is not falling**: -0.290,
+-0.255, -0.241 over three doublings spanning eight times the corpus.
+
+## The optimum is a fixed number of epochs, not of steps
+
+| Tokens | Best at | Epochs |
+| --- | --- | --- |
+| 40,407 | 400 steps | **20.3** |
+| 81,190 | 800 steps | **20.2** |
+| 161,749 | 1,600 steps | **20.3** |
+| 322,136 | 3,200 steps | **20.3** |
+
+**Twenty epochs at every size, to within a tenth.** The optimal step count
+doubles exactly with the corpus, so a step count fixed across corpus sizes
+measures the interaction rather than either term. **Anything sweeping
+corpus size must sweep steps with it.**
+
+## A wrong reading of my own, kept because it shows why
+
+**Measured first at 1,600 and 3,200 steps only, the curve appeared to
+decelerate sharply**, at -1.13, -0.42 and -0.24 nats per doubling, and the
+obvious conclusion was that corpus growth had begun to pay off. **That was
+an artefact of the step range.** At the smallest corpus both step counts
+were far past the optimum, giving 4.804 and 5.977 against 3.800 at 400
+steps, so the smallest point was understated by a full nat and the early
+slope was invented.
+
+## What it means for writing more books
+
+**A doubling of the corpus is worth about 0.26 nats and costs roughly
+fifteen generation rounds** at the thirty books a round this project
+currently manages.
+
+**Two changes measured this week were worth more for less.** Token
+replacement at the point where training collapses was worth 1.217 nats, and
+rotary positions 0.292 at a short window. **So corpus growth is real,
+steady, and currently the most expensive lever available.**
+
+**This is about tokens, not about coverage.** Concept pair coverage is a
+different quantity, it is at 312 of 8,128, and nothing here measures what
+covering more of it would do.

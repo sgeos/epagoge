@@ -67,6 +67,11 @@ select = ["E", "F", "W", "B", "S", "I", "N", "UP", "ANN", "RET", "SIM", "PTH"]
 # The ordering arms of the ablation are drawn from a declared seed, for
 # the same reason. A run that cannot be reproduced measures nothing.
 "tools/train_level.py" = ["S311"]
+# The corpus-size sweep draws a subset of chunks from a declared seed. It
+# was a curriculum prefix until 2026-09-27, which measured corpus size
+# confounded with curriculum position; a sample is the unconfounded thing
+# and a reproducible sample needs a seeded generator.
+"tools/diagnose_level.py" = ["S311"]
 "src/epagoge/variance.py" = ["S311"]
 "tools/run_pilot.py" = ["S311"]
 # The corpus builder shuffles book order for the ablation's control arm,

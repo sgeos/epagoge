@@ -6,31 +6,31 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**The level-one corpus holds more books than it did**, and every book in it
-meets the standards the gate enforces, with none admitted by weakening a
-check.
+**Held-out loss against training corpus size is measured on the current
+corpus**, at three or more sizes spanning at least a fourfold range, with
+the held-out set identical at every size and that fact stated.
 
-**Concept pair coverage is recorded before and after**, computed as the
-union of concepts across each content book's own records with the
-dictionary books excluded, and the record states which counting method was
-used and why the other two are wrong.
+**More than one step count is run at each size**, and the record says which
+figure it reports and why, since the optimal step count moves with corpus
+size.
 
-**Every new book carries its metadata fields and a date consistent with
-version history**, as the gate's own checks report.
+**The record states what the slope means for whether to write more books**,
+in terms a reader can act on, and distinguishes what the curve measures
+from what it does not.
 
-**No new book uses a word outside the level**, as the corpus validator
-reports.
+**`evals/pilot/LEVEL_ONE_SCALING.md` no longer presents only figures taken
+before the current corpus**, and a reader meets the current measurement or a
+pointer to it before the older one.
 
-**Any book the generator produced that did not meet the standard is either
-brought to standard or absent**, and the record says how many were refused
-or discarded rather than reporting only what succeeded.
+**Every figure says how many seeds it rests on**, and any single-seed figure
+is labelled as such.
 
-**A round that bought tokens rather than structure is reported as such.**
-If pair coverage did not move, the record says so plainly instead of
-reporting the book count alone.
+**No claim is made that generation is or is not worthwhile beyond what the
+measurement supports.** Token count and concept coverage are different
+quantities and the record says which was measured.
 
 **The gate passes.** `./tools/check.sh` reports all checks passed and exits
-0.
+0, with no check weakened or removed to achieve it.
 
 **Continuous integration is green** on the pushed head, checked rather than
 assumed.
@@ -38,6 +38,4 @@ assumed.
 **The working tree is clean and pushed**, with no tracked evaluation
 artifact holding the output of a probe rather than a recorded run.
 
-**No claim about model behaviour is made from this work.** Adding books
-changes the corpus; whether it changes the model is a separate measurement
-and is not part of this.
+**Nothing was added beyond what this question needs.**
