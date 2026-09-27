@@ -1053,6 +1053,30 @@
       "name": "the right reason",
       "kind": "domain_concept",
       "domain": "normative_adjudication"
+    },
+    {
+      "id": "greeting_and_parting",
+      "name": "greeting and parting",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "asking_politely",
+      "name": "asking politely",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "thanking",
+      "name": "thanking",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
+    },
+    {
+      "id": "apologising",
+      "name": "apologising",
+      "kind": "domain_concept",
+      "domain": "institutional_interfacing"
     }
   ],
   "prerequisites": {
@@ -1644,6 +1668,22 @@
     "right_reason": [
       "giving_a_reason",
       "should_and_should_not"
+    ],
+    "greeting_and_parting": [
+      "people_together",
+      "self_and_other"
+    ],
+    "asking_politely": [
+      "people_together",
+      "need"
+    ],
+    "thanking": [
+      "people_together",
+      "having"
+    ],
+    "apologising": [
+      "people_together",
+      "mistake"
     ]
   },
   "instantiates": {

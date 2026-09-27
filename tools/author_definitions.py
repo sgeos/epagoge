@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import cast
 
 from epagoge.book import (
+    book_head,
     dictionary_closure,
     load_book_dir,
     parse_book,
@@ -129,18 +130,7 @@ def main(argv: list[str]) -> int:
             kept.append(entry)
         if changed:
             path.write_text(
-                render_book(
-                    {
-                        "id": book.id,
-                        "level": book.level,
-                        "title": book.title,
-                        "subject": {
-                            "kind": book.subject_kind.value,
-                            "target": book.subject,
-                        },
-                    },
-                    kept,
-                ),
+                render_book(book_head(book), kept),
                 encoding="utf-8",
             )
 
@@ -179,18 +169,7 @@ def main(argv: list[str]) -> int:
             )
         )
         seed_path.write_text(
-            render_book(
-                {
-                    "id": book.id,
-                    "level": book.level,
-                    "title": book.title,
-                    "subject": {
-                        "kind": book.subject_kind.value,
-                        "target": book.subject,
-                    },
-                },
-                out,
-            ),
+            render_book(book_head(book), out),
             encoding="utf-8",
         )
     print(f"patched {patched}, appended {len(fresh)}, total defined {len(trial)}")

@@ -29,7 +29,14 @@ from pathlib import Path
 
 from epagoge import prompt as prompts
 from epagoge import schedule as sched
-from epagoge.book import SPREADS_BY_LEVEL, WORDS_PER_SPREAD, render_book
+from epagoge.book import (
+    SPREADS_BY_LEVEL,
+    WORDS_PER_SPREAD,
+    Book,
+    DefinitionKind,
+    book_head,
+    render_book,
+)
 from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
 from generate import ask, split_lines, well_formed
 from generate_books import Reject, Tally, admissible_words, words_for
@@ -187,12 +194,15 @@ def main(argv: list[str]) -> int:
             # before saying anything else, exactly as a book does.
             records[0]["claim_class"] = "formal"
             records[0]["defines"] = {"kind": "topic", "target": unit.id}
-            head = {
-                "id": f"bk.{unit.id}",
-                "level": args.level,
-                "title": unit.form.split(".")[0],
-                "subject": {"kind": "topic", "target": unit.id},
-            }
+            head = book_head(
+                Book(
+                    id=f"bk.{unit.id}",
+                    level=args.level,
+                    title=unit.form.split(".")[0],
+                    subject_kind=DefinitionKind.TOPIC,
+                    subject=unit.id,
+                )
+            )
             (out / f"bk.{unit.id}.md").write_text(
                 render_book(head, records), encoding="utf-8"
             )

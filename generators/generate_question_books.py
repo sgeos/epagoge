@@ -28,7 +28,14 @@ from typing import cast
 
 from epagoge import prompt as prompts
 from epagoge import schedule as sched
-from epagoge.book import SPREADS, Book, book_head, parse_book, render_book
+from epagoge.book import (
+    SPREADS,
+    Book,
+    DefinitionKind,
+    book_head,
+    parse_book,
+    render_book,
+)
 from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
 from generate import ask, well_formed
 from generate_books import Tally, admissible_words, words_for
@@ -236,13 +243,16 @@ def main(argv: list[str]) -> int:
                         "provenance": {"source_claim": f"topic:{unit.id}"},
                     }
                 )
-            head = {
-                "id": book_id,
-                "level": args.level,
-                "title": unit.form.split(".")[0],
-                "subject": {"kind": "topic", "target": unit.id},
-                "form": "question",
-            }
+            head = book_head(
+                Book(
+                    id=book_id,
+                    level=args.level,
+                    title=unit.form.split(".")[0],
+                    subject_kind=DefinitionKind.TOPIC,
+                    subject=unit.id,
+                    form="question",
+                )
+            )
             path.write_text(render_book(head, records), encoding="utf-8")
             already.add(book_id)
             written += 1

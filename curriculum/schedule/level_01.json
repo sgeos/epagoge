@@ -957,6 +957,22 @@
             "others-know-differently",
             "others-act"
           ]
+        },
+        {
+          "id": "i1.manners",
+          "form": "Hello. Please. Thank you. I am sorry. Goodbye.",
+          "teaches": [
+            "greeting_and_parting",
+            "asking_politely",
+            "thanking",
+            "apologising"
+          ],
+          "revisits": [
+            "people_together"
+          ],
+          "primitives": [
+            "others-act"
+          ]
         }
       ]
     },

@@ -25,7 +25,7 @@ from collections.abc import Callable, Collection, Iterable, Mapping, Sequence
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import Final, cast
+from typing import Final, NewType, cast
 
 from epagoge.concept_graph import Violation
 
@@ -820,7 +820,22 @@ def extend_records(
     return out
 
 
-def book_head(book: Book) -> dict[str, object]:
+BookHead = NewType("BookHead", dict[str, object])
+"""Front matter that came from :func:`book_head`, and could not be typed by hand.
+
+**This is a type whose only constructor is `book_head`.** The alternative,
+an ordinary mapping, let five call sites build front matter from a literal,
+and two of them were rewriting an existing book, so every field the literal
+did not name was dropped. `author_definitions.py` erased six fields from
+`bk.dictionary.seed.md` on 2026-09-27 that way, which is the fifth instance
+of this defect class in this repository and the second in one day.
+
+A comment asking callers to use `book_head` had already been written and was
+not enough. Making the wrong thing fail under `pyright --strict` is.
+"""
+
+
+def book_head(book: Book) -> BookHead:
     """The front matter of a book, for handing back to :func:`render_book`.
 
     **Every tool that rewrites a book was rebuilding this by hand**, and
@@ -831,12 +846,14 @@ def book_head(book: Book) -> dict[str, object]:
 
     One function, so a new field reaches every writer at once.
     """
-    head: dict[str, object] = {
-        "id": book.id,
-        "level": book.level,
-        "title": book.title,
-        "subject": {"kind": book.subject_kind.value, "target": book.subject},
-    }
+    head: BookHead = BookHead(
+        {
+            "id": book.id,
+            "level": book.level,
+            "title": book.title,
+            "subject": {"kind": book.subject_kind.value, "target": book.subject},
+        }
+    )
     # Omitted rather than written empty, so a book that has never been
     # described does not carry two blank fields pretending otherwise.
     for key, value in (
@@ -853,9 +870,7 @@ def book_head(book: Book) -> dict[str, object]:
     return head
 
 
-def render_book(
-    payload: Mapping[str, object], records: Sequence[Mapping[str, object]]
-) -> str:
+def render_book(payload: BookHead, records: Sequence[Mapping[str, object]]) -> str:
     """A book as prose with its annotation above it.
 
     **JSON was the wrong format and the ratio said so.** A level-one book of

@@ -24,6 +24,9 @@ from typing import cast
 
 from epagoge import prompt as prompts
 from epagoge.book import (
+    Book,
+    DefinitionKind,
+    book_head,
     dictionary_closure,
     extend_records,
     load_book_dir,
@@ -230,12 +233,15 @@ def main(argv: list[str]) -> int:
             existing, [cast(Mapping[str, object], r) for r in written]
         )
         subject = cast(Mapping[str, object], merged[0]["defines"])
-        head = {
-            "id": book_id,
-            "level": args.level,
-            "title": f"Words at level {args.level}",
-            "subject": {"kind": "word", "target": str(subject["target"])},
-        }
+        head = book_head(
+            Book(
+                id=book_id,
+                level=args.level,
+                title=f"Words at level {args.level}",
+                subject_kind=DefinitionKind.WORD,
+                subject=str(subject["target"]),
+            )
+        )
         path.write_text(render_book(head, merged), encoding="utf-8")
 
     closure = dictionary_closure(defined, seed, tokenise, resolve)

@@ -98,6 +98,39 @@ does.
    because closure is enforced and a word without one breaks it. That is
    generation work and it follows the decision rather than preceding it.
 
-**Nothing is added to the graph or the lexicon by this record.** Both are
-the operator's, and this states the case and the bound so that the decision
-can be taken on them rather than on a fait accompli.
+**Nothing was added to the graph or the lexicon by this record.** Both are
+the operator's, and this stated the case and the bound so that the decision
+could be taken on them rather than on a fait accompli.
+
+## ADDED 2026-09-27, on operator direction
+
+**The operator directed that this vocabulary be admitted at level one**, for
+a model kindergartener. The deferred questions above were therefore settled
+by that direction rather than by argument here, and the record of what was
+deferred is kept above rather than rewritten.
+
+**Four concepts** are in `curriculum/graph/concepts.json` under
+`institutional_interfacing`, each with prerequisites drawn from concepts
+that already exist: `greeting_and_parting` from `people_together` and
+`self_and_other`, `asking_politely` from `people_together` and `need`,
+`thanking` from `people_together` and `having`, and `apologising` from
+`people_together` and `mistake`.
+
+**Nine words**, admitted through `tools/admit.py`, which refuses the whole
+batch unless every definition is grounded: `hello`, `hi`, `goodbye`, `bye`,
+`greet`, `welcome`, `please`, `thank` and `sorry`. Closure holds at 100
+percent and the dictionary is still self-hosting.
+
+**The level went to 8 units in this domain and 400 books**, with
+`bk.i1.manners` teaching the unit. Every one of the nine headwords is used
+in the corpus rather than only defined, which is the coverage rule in
+`../spec/VOCABULARY.md`. Two inflections, `greets` and `thanks`, are
+admitted and unused.
+
+**`apologising` is defined by what was done, not by what was claimed.**
+`sorry` reads "You say sorry when you did something wrong and you want to
+make it better." That keeps the concern above live in the definition
+itself: an apology here follows an act, and conceding a claim remains a
+separate move that `institutional_interfacing` already teaches. **Whether
+the two stay separate in the corpus is not enforced by anything** and
+should be watched when a book teaches both.

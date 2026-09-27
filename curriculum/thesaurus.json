@@ -526,6 +526,10 @@
       ]
     },
     {
+      "word": "bye",
+      "concept": "greeting_and_parting"
+    },
+    {
       "word": "call",
       "concept": "sound"
     },
@@ -1550,6 +1554,10 @@
       ]
     },
     {
+      "word": "goodbye",
+      "concept": "greeting_and_parting"
+    },
+    {
       "word": "grandma",
       "concept": "family",
       "antonyms": [
@@ -1574,6 +1582,10 @@
     {
       "word": "green",
       "concept": "physical_property"
+    },
+    {
+      "word": "greet",
+      "concept": "greeting_and_parting"
     },
     {
       "word": "grey",
@@ -1711,6 +1723,10 @@
       ]
     },
     {
+      "word": "hello",
+      "concept": "greeting_and_parting"
+    },
+    {
       "word": "help",
       "concept": "activity",
       "antonyms": [
@@ -1735,6 +1751,10 @@
     {
       "word": "herself",
       "concept": "self_and_other"
+    },
+    {
+      "word": "hi",
+      "concept": "greeting_and_parting"
     },
     {
       "word": "hide",
@@ -2874,6 +2894,10 @@
       "concept": "toy"
     },
     {
+      "word": "please",
+      "concept": "asking_politely"
+    },
+    {
       "word": "plenty",
       "concept": "enough",
       "synonyms": [
@@ -3683,6 +3707,10 @@
       "concept": "being_hurt"
     },
     {
+      "word": "sorry",
+      "concept": "apologising"
+    },
+    {
       "word": "sound",
       "concept": "sound",
       "synonyms": [
@@ -4066,6 +4094,10 @@
     {
       "word": "test",
       "concept": "checking"
+    },
+    {
+      "word": "thank",
+      "concept": "thanking"
     },
     {
       "word": "theirs",
@@ -4520,6 +4552,10 @@
     {
       "word": "weight",
       "concept": "measuring"
+    },
+    {
+      "word": "welcome",
+      "concept": "greeting_and_parting"
     },
     {
       "word": "well",

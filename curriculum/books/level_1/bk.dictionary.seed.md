@@ -40,6 +40,7 @@
     "dict.1.bucket": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bucket"}, "defines": {"kind": "word", "target": "bucket"}},
     "dict.1.butterfly": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:butterfly"}, "defines": {"kind": "word", "target": "butterfly"}},
     "dict.1.buy": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:buy"}, "defines": {"kind": "word", "target": "buy"}},
+    "dict.1.bye": {"concepts": ["greeting_and_parting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bye"}, "defines": {"kind": "word", "target": "bye"}},
     "dict.1.calm": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:calm"}, "defines": {"kind": "word", "target": "calm"}},
     "dict.1.cat": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cat"}, "defines": {"kind": "word", "target": "cat"}},
     "dict.1.cause": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cause"}, "defines": {"kind": "word", "target": "cause"}},
@@ -161,10 +162,12 @@
     "dict.1.glue": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:glue"}, "defines": {"kind": "word", "target": "glue"}},
     "dict.1.goal": {"concepts": ["goal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:goal"}, "defines": {"kind": "word", "target": "goal"}},
     "dict.1.gold": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gold"}, "defines": {"kind": "word", "target": "gold"}},
+    "dict.1.goodbye": {"concepts": ["greeting_and_parting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:goodbye"}, "defines": {"kind": "word", "target": "goodbye"}},
     "dict.1.grandma": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grandma"}, "defines": {"kind": "word", "target": "grandma"}},
     "dict.1.grandpa": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grandpa"}, "defines": {"kind": "word", "target": "grandpa"}},
     "dict.1.grass": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grass"}, "defines": {"kind": "word", "target": "grass"}},
     "dict.1.great": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:great"}, "defines": {"kind": "word", "target": "great"}},
+    "dict.1.greet": {"concepts": ["greeting_and_parting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:greet"}, "defines": {"kind": "word", "target": "greet"}},
     "dict.1.group": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:group"}, "defines": {"kind": "word", "target": "group"}},
     "dict.1.grown": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grown"}, "defines": {"kind": "word", "target": "grown"}},
     "dict.1.guess": {"concepts": ["guess"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:guess"}, "defines": {"kind": "word", "target": "guess"}},
@@ -179,10 +182,12 @@
     "dict.1.heard": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:heard"}, "defines": {"kind": "word", "target": "heard"}},
     "dict.1.heart": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:heart"}, "defines": {"kind": "word", "target": "heart"}},
     "dict.1.heavy": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:heavy"}, "defines": {"kind": "word", "target": "heavy"}},
+    "dict.1.hello": {"concepts": ["greeting_and_parting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hello"}, "defines": {"kind": "word", "target": "hello"}},
     "dict.1.help": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:help"}, "defines": {"kind": "word", "target": "help"}},
     "dict.1.her": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:her"}, "defines": {"kind": "word", "target": "her"}},
     "dict.1.hers": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hers"}, "defines": {"kind": "word", "target": "hers"}},
     "dict.1.herself": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:herself"}, "defines": {"kind": "word", "target": "herself"}},
+    "dict.1.hi": {"concepts": ["greeting_and_parting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hi"}, "defines": {"kind": "word", "target": "hi"}},
     "dict.1.high": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:high"}, "defines": {"kind": "word", "target": "high"}},
     "dict.1.hill": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hill"}, "defines": {"kind": "word", "target": "hill"}},
     "dict.1.him": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:him"}, "defines": {"kind": "word", "target": "him"}},
@@ -335,6 +340,7 @@
     "dict.1.plant": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plant"}, "defines": {"kind": "word", "target": "plant"}},
     "dict.1.plastic": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plastic"}, "defines": {"kind": "word", "target": "plastic"}},
     "dict.1.plate": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plate"}, "defines": {"kind": "word", "target": "plate"}},
+    "dict.1.please": {"concepts": ["asking_politely"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:please"}, "defines": {"kind": "word", "target": "please"}},
     "dict.1.plenty": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:plenty"}, "defines": {"kind": "word", "target": "plenty"}},
     "dict.1.pocket": {"concepts": ["inside_and_outside"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pocket"}, "defines": {"kind": "word", "target": "pocket"}},
     "dict.1.point": {"concepts": ["correspondence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:point"}, "defines": {"kind": "word", "target": "point"}},
@@ -465,6 +471,7 @@
     "dict.1.song": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:song"}, "defines": {"kind": "word", "target": "song"}},
     "dict.1.soon": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:soon"}, "defines": {"kind": "word", "target": "soon"}},
     "dict.1.sore": {"concepts": ["being_hurt"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sore"}, "defines": {"kind": "word", "target": "sore"}},
+    "dict.1.sorry": {"concepts": ["apologising"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sorry"}, "defines": {"kind": "word", "target": "sorry"}},
     "dict.1.sound": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sound"}, "defines": {"kind": "word", "target": "sound"}},
     "dict.1.space": {"concepts": ["emptiness"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:space"}, "defines": {"kind": "word", "target": "space"}},
     "dict.1.spare": {"concepts": ["enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spare"}, "defines": {"kind": "word", "target": "spare"}},
@@ -528,6 +535,7 @@
     "dict.1.ten": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ten"}, "defines": {"kind": "word", "target": "ten"}},
     "dict.1.term": {"concepts": ["word"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:term"}, "defines": {"kind": "word", "target": "term"}},
     "dict.1.test": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:test"}, "defines": {"kind": "word", "target": "test"}},
+    "dict.1.thank": {"concepts": ["thanking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thank"}, "defines": {"kind": "word", "target": "thank"}},
     "dict.1.theirs": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:theirs"}, "defines": {"kind": "word", "target": "theirs"}},
     "dict.1.thick": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thick"}, "defines": {"kind": "word", "target": "thick"}},
     "dict.1.thief": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thief"}, "defines": {"kind": "word", "target": "thief"}},
@@ -595,6 +603,7 @@
     "dict.1.week": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:week"}, "defines": {"kind": "word", "target": "week"}},
     "dict.1.weigh": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:weigh"}, "defines": {"kind": "word", "target": "weigh"}},
     "dict.1.weight": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:weight"}, "defines": {"kind": "word", "target": "weight"}},
+    "dict.1.welcome": {"concepts": ["greeting_and_parting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:welcome"}, "defines": {"kind": "word", "target": "welcome"}},
     "dict.1.well": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:well"}, "defines": {"kind": "word", "target": "well"}},
     "dict.1.while": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:while"}, "defines": {"kind": "word", "target": "while"}},
     "dict.1.whisper": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:whisper"}, "defines": {"kind": "word", "target": "whisper"}},
@@ -705,6 +714,9 @@ A small animal with big wings that flies.
 
 [dict.1.buy]
 To buy is to give something to get a thing.
+
+[dict.1.bye]
+Bye is a short word that means goodbye.
 
 [dict.1.calm]
 Calm is when a thing is still and there is no loud sound.
@@ -1069,6 +1081,9 @@ The thing you want to reach.
 [dict.1.gold]
 Gold is a metal that has a yellow colour.
 
+[dict.1.goodbye]
+Goodbye is the word you say when you go away from someone.
+
 [dict.1.grandma]
 A grandma is the mother of your mother or father.
 
@@ -1080,6 +1095,9 @@ Grass is a small green plant that grows on the ground.
 
 [dict.1.great]
 Very good, or very big.
+
+[dict.1.greet]
+To greet someone is to say hello to them.
 
 [dict.1.group]
 Some things or people together.
@@ -1123,6 +1141,9 @@ The part inside your body that keeps you alive.
 [dict.1.heavy]
 Heavy is when a thing is hard to hold up.
 
+[dict.1.hello]
+Hello is the word you say when you meet someone.
+
 [dict.1.help]
 To help is to do a thing with someone so they can do it.
 
@@ -1134,6 +1155,9 @@ Hers means the thing that is of her.
 
 [dict.1.herself]
 Herself means the same girl or woman and no other.
+
+[dict.1.hi]
+Hi is a short word that means hello.
 
 [dict.1.high]
 High is when a thing is a long way up.
@@ -1591,6 +1615,9 @@ Plastic is stuff that is made by people and is not wood or metal.
 [dict.1.plate]
 A plate is a flat dish.
 
+[dict.1.please]
+Please is the word you say when you ask someone for help.
+
 [dict.1.plenty]
 Plenty is more than enough.
 
@@ -1981,6 +2008,9 @@ Soon means in a small time from now.
 [dict.1.sore]
 Feeling pain when touched.
 
+[dict.1.sorry]
+You say sorry when you did something wrong and you want to make it better.
+
 [dict.1.sound]
 A sound is what you get with your ear.
 
@@ -2169,6 +2199,9 @@ A term is a word for a thing.
 
 [dict.1.test]
 To test is to try a thing to see if it works.
+
+[dict.1.thank]
+To thank someone is to tell them you are glad for what they gave you.
 
 [dict.1.theirs]
 Theirs means the thing that is of them.
@@ -2370,6 +2403,9 @@ To weigh is to find how heavy a thing is.
 
 [dict.1.weight]
 How heavy a thing is.
+
+[dict.1.welcome]
+Welcome is the word you say when someone comes to you and you are glad.
 
 [dict.1.well]
 Well is in a good way.
