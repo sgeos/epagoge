@@ -6,36 +6,33 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**Displacement is measured and recorded for every arm and for each control
-point**, so a reader can see which orderings preserve the sequence and which
-do not.
+**An ordering exists that carries the length gradient without respecting the
+prerequisite graph**, and it is available to the trainer.
 
-**More than one measure of batch diversity is used**, and the record says
-how well each fits the control curve and how much of the arm difference each
-explains. The residual is reported under the metric that explains the most,
-not the least.
+**Its length gradient is shown to match the graph-respecting arm's**, and
+its batch diversity is shown to match the graph-ignoring arm's, both by
+measurement recorded alongside the arms they are matched against. A reader
+can see it is a control rather than a fourth variable.
 
-**Mechanical confounds are checked rather than assumed**, including whether
-the arms differ in how much padding their batches carry, with the figures
-recorded.
+**The statistic used for that match is stated**, and whether it is computed
+per run or across runs, because the two differ by half again for these
+orderings.
 
-**The paired difference between the two matched arms is pooled across every
-run available**, and the record states how many paired observations it rests
-on and how many point the same way.
+**The arm has been trained against both existing arms** at the same
+endpoint and seed count, with per-arm means and the seed count recorded.
 
-**The record states what the residual is attributable to and what it is
-not**, naming each alternative that was eliminated and how, and naming any
-that survive.
+**The record states what the result implies for the residual**, including
+what a result falling between the two existing arms would mean, and states
+plainly if the design cannot decide.
 
-**No curriculum verdict is claimed.** Reporting that an ordering property
-tracks held-out loss after controls is in scope. Declaring the project's
-hypothesis supported or refuted is not, because held-out loss is not the
-property the project targets and the minimum meaningful effect is unchosen.
+**The default set of arms the trainer compares is unchanged**, so that
+adding this control does not silently alter what an ordinary run measures.
 
-**Anything that would change if a further confound were found is marked as
-such**, rather than presented as settled.
+**Any claim that the residual is attributable to a named cause is either
+supported by this experiment or absent.** The previously withdrawn
+attribution is not reinstated without the evidence this arm provides.
 
-**Every figure says how many seeds or observations it rests on.**
+**Every figure says how many seeds it rests on.**
 
 **The gate passes.** `./tools/check.sh` reports all checks passed and exits
 0, with no check weakened or removed to achieve it.

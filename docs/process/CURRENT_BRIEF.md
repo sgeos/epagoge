@@ -1,53 +1,56 @@
-# Current brief. Attribute the residual, or say it cannot be attributed
+# Current brief. Build the arm that decides it
 
-**Written 2026-09-27**, replacing the brief that asked what the surviving
-forty percent is. Durable practice is in `PROCESS_STRATEGY.md`.
+**Written 2026-09-27**, replacing the brief that attributed the residual.
+That brief's conclusion was withdrawn a tick later and this one exists
+because of the withdrawal. Durable practice is in `PROCESS_STRATEGY.md`.
 
 ## Why this and nothing else
 
-**A residual survived the homogeneity control and three things could
-explain it.** The shuffled arm sits five to seven seed standard deviations
-below the curve the curriculum arm traces when only batch homogeneity is
-varied. It differs from that curve's points in three ways at once: it
-ignores the prerequisite graph, it displaces books far, and it sits past the
-homogeneity range the controls cover.
+**Two explanations for the ordering residual are collinear and no analysis
+can separate them.** Orders that respect the prerequisite graph also sort
+books by length, because a prerequisite-heavy book is placed later and 90
+percent of books carry one. Across the arms the two predictors correlate at
+-0.76, and within each arm neither varies enough to regress.
 
-**Two of those three can be eliminated with measurements already
-affordable**, and the third by choosing a better comparison rather than a
-new experiment. **The topological arm is the better comparison**: it sits at
-essentially the same batch homogeneity as the shuffled arm, so the two are
-already matched on the quantity that explained everything else.
+**With two groups, everything that differs between them is confounded with
+everything else that does.** The fix is a third group, not a cleverer fit.
 
-## What to do
+**The arm to build has the length ordering and not the graph.** If it
+reproduces the graph-respecting arm's penalty, the effect is sequence length
+and the curriculum interpretation is dead. If it lands with the shuffled
+arm, the graph survives as the explanation.
 
-1. **Measure displacement for every arm**, so the claim that displacement
-   does or does not track loss rests on numbers.
-2. **Check whether the two arms being compared are matched on more than one
-   measure of batch diversity**, not just the one the curve was fitted on. A
-   result that survives only the metric it was fitted to is not a result.
-3. **Rule out the mechanical confounds.** Padding differs by arm only if the
-   chunks differ, which they should not, and that is worth confirming rather
-   than assuming.
-4. **Pool the paired difference across every run already taken**, and report
-   how many observations point the same way.
+## The trap this brief exists to avoid
 
-## Prior failures, and the specific wrong turns to avoid
+**A control is only a control if it matches on the thing it holds fixed.**
+The weight that sets how strongly this arm sorts by length has to be tuned
+until its length ordering equals the graph-respecting arm's. Tuned wrong,
+the arm varies two things again and the tick is wasted.
 
-**Do not fit one metric and declare the confound dead.** Subjects per batch
-explained almost none of the topological-shuttled gap, but concepts and
-domains per batch are also good fits to the control curve and explain more.
-**Report the residual under the metric most favourable to the confound**,
-not the one most favourable to the conclusion.
+**Tune against the arm as implemented, not against a reconstruction of
+it.** A first attempt tuned against a script that rebuilt the ordering
+by hand and came out half again too strong, because the real arm places the
+dictionary books differently.
 
-**Do not call the residual a curriculum result.** Held-out loss is not the
-property this project targets. `CLAUDE.md` forbids stating a curriculum
-benefit as established and the same discipline applies to a harm, and item
-7 fixes what size of effect counts and is unchosen.
+**Tune against the right statistic.** Correlating a book's mean position
+across seeds against its length gives +0.311. Correlating within a single
+seed gives +0.211. A training run sees one order, so the per-run figure is
+the target, and the first tuning used the other one.
 
-**Do not forget that four harness defects have now been found this way.**
-The chunker, the ordering coverage, the truncated evaluation and the batch
-composition were each found after results had been read off them. Look for
-the fifth before believing the fourth's conclusion.
+## Other wrong turns to avoid
+
+**Do not change what the ablation compares by default.** A fourth arm costs
+a third more compute on every run that does not ask this question, and
+changing the default comparison is a design decision that belongs to the
+operator. Make the arm available.
+
+**Do not conclude from the arm alone.** Report where it falls relative to
+both existing arms, and say what a middling result would mean, because a
+result between them does not decide anything.
+
+**Do not treat this as the last confound.** Five have now been found, the
+most recent in the reasoning rather than the code. Ask what else differs
+between the new arm and the ones it is being compared to, before reporting.
 
 **Do not overwrite a tracked artifact**, do not read a count from
 arithmetic, and check CI separately.

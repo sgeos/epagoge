@@ -71,6 +71,31 @@ from epagoge.vocabulary import load_vocabulary
 
 ROOT = Path(__file__).resolve().parent.parent
 
+LENGTH_WEIGHT: Final[float] = 0.265
+"""How strongly the `length` arm sorts by book length.
+
+Chosen so that arm's position-to-length correlation matches the topological
+arm's, which is what makes it a control rather than another variable.
+**Both are measured per seed and then averaged**, at +0.211 for topological
+and +0.213 for this arm over six seeds, and the weight was tuned against
+the arm as implemented rather than against a reconstruction of it.
+
+**Tuned to 0.40 first, against the wrong statistic.** Correlating a book's
+*mean* position across seeds against its length gives +0.311 for the
+topological arm, because averaging the positions removes the per-run noise.
+That is a fact about the arm across seeds, and the quantity a single
+training run sees is the per-run one. Matching the wrong target would have
+given this arm half again the length ordering it is supposed to hold fixed.
+"""
+
+PAIRED_ARMS: Final[frozenset[str]] = frozenset({"curriculum", "topological"})
+"""The two arms the pre-registered contrast is between.
+
+`evals/PRE_REGISTRATION.md` item 3 names this pair. Variance statistics are
+computed over it and over nothing else, so selecting a set of arms that
+omits either one yields no paired estimate.
+"""
+
 ARMS: Final[tuple[str, ...]] = ("curriculum", "topological", "shuffled")
 """The orderings compared, and why there are three.
 
@@ -120,7 +145,34 @@ def book_order(
     teaches = {b.id: by_unit.get(b.subject, set()) for b in books}
     prerequisites = {n: set(graph.prerequisites_of(n)) for n in graph.nodes}
     deps = book_prerequisites(books, teaches, prerequisites)
-    if arm == "shuffled":
+    if arm == "length":
+        # **The control for the confound found on 2026-09-27.** Orders that
+        # respect the prerequisite graph also sort books by length, at
+        # +0.311 against +0.062 for a free shuffle, because a book with more
+        # prerequisites is placed later and 90 percent of books carry one.
+        # Length ordering and graph structure were collinear at -0.76 across
+        # the arms, so neither could be credited with the effect.
+        #
+        # This arm has the length ordering and not the graph. The mixing
+        # weight is 0.40 because that reproduces the topological arm's
+        # correlation to three decimals, measured over six seeds, so the two
+        # differ in the graph and match on length.
+        generator = random.Random(seed)
+        length = {
+            b.id: sum(
+                len(str(by_id[i]["content"]).split()) for i in b.records if i in by_id
+            )
+            for b in books
+        }
+        by_length = sorted(length, key=lambda n: length[n])
+        place = {n: i / max(1, len(by_length) - 1) for i, n in enumerate(by_length)}
+        names = sorted(
+            place,
+            key=lambda n: (
+                LENGTH_WEIGHT * place[n] + (1.0 - LENGTH_WEIGHT) * generator.random()
+            ),
+        )
+    elif arm == "shuffled":
         # **The flat control, and it did not exist until 2026-09-26.** The two
         # arms above it both respect the prerequisite graph, so the ablation
         # compared two curricula rather than a curriculum against no
@@ -226,6 +278,11 @@ def main(argv: list[str]) -> int:
     # Shuffling inside blocks keeps the sequence and discards the
     # homogeneity, and `evals/pilot/LEVEL_ONE_VARIANCE.md` measures how much
     # of the arm effect each accounts for. One is the identity.
+    # **Arms are selectable rather than fixed**, because the `length` control
+    # added on 2026-09-27 answers one question and would cost a third more
+    # compute on every run that does not ask it. Changing what the ablation
+    # compares by default is a design decision and is the operator's.
+    parser.add_argument("--arms", type=str, nargs="+", default=list(ARMS))
     parser.add_argument(
         "--block-shuffle",
         type=int,
@@ -384,7 +441,7 @@ def main(argv: list[str]) -> int:
     started = time.time()
     for seed in range(args.seeds):
         row: dict[str, object] = {"seed": seed}
-        for arm in ARMS:
+        for arm in args.arms:
             loss = train_once(
                 chunks,
                 order_for(arm, seed),
@@ -398,8 +455,13 @@ def main(argv: list[str]) -> int:
             )
             row[arm] = loss
             print(f"  seed {seed} {arm:12} held-out loss {loss:.4f}")
-        if is_finite(cast(float, row["curriculum"])) and is_finite(
-            cast(float, row["topological"])
+        # **The paired contrast needs both of its arms present.** `--arms`
+        # can select any subset, and asking for a subset that omits one of
+        # them used to raise `KeyError` here after the first seed had
+        # trained. Skipped loudly rather than silently, because a run that
+        # reports no variance statistics should say why.
+        if row.keys() >= PAIRED_ARMS and all(
+            is_finite(cast(float, row[a])) for a in PAIRED_ARMS
         ):
             row["difference"] = cast(float, row["curriculum"]) - cast(
                 float, row["topological"]
@@ -419,6 +481,13 @@ def main(argv: list[str]) -> int:
         if "difference" in row
     ]
     variance: dict[str, object] | None = None
+    if not set(args.arms) >= PAIRED_ARMS:
+        print(
+            f"  no variance statistics: the paired contrast needs "
+            f"{' and '.join(sorted(PAIRED_ARMS))} and this run has "
+            f"{' '.join(args.arms)}",
+            file=sys.stderr,
+        )
     if len(observations) >= MIN_OBSERVATIONS:
         est = estimate(observations)
         mean_loss = sum((o.treatment + o.control) / 2 for o in observations) / len(

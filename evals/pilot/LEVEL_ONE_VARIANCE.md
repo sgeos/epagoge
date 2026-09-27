@@ -591,3 +591,85 @@ the reasoning rather than the code.** The other four were the chunker, the
 ordering coverage, the truncated evaluation and batch composition. **This
 one was mine**, and it was produced by concluding from elimination without
 asking what else had not been eliminated.
+
+---
+
+# The length arm, 2026-09-27. Length ordering is eliminated
+
+**The correction above named an experiment and this is it.** An arm that
+carries the length gradient without respecting the prerequisite graph.
+
+## The control
+
+| Arm | Length ordering | Batch diversity | Respects graph |
+| --- | --- | --- | --- |
+| topological | +0.211 | 4.236 | yes |
+| shuffled | +0.098 | 4.487 | no |
+| **length** | **+0.213** | **4.511** | **no** |
+
+**Matched to the graph-respecting arm on length and to the graph-ignoring
+arm on diversity.** Both figures are correlations computed per seed and
+averaged, which is the statistic a single training run sees.
+
+## The result, six seeds
+
+| Arm | Mean | sd |
+| --- | --- | --- |
+| topological | 3.5091 | 0.0069 |
+| **length** | **3.4842** | 0.0049 |
+| shuffled | 3.4799 | 0.0058 |
+
+| Contrast | Difference | t | Same sign |
+| --- | --- | --- | --- |
+| length minus topological | **-0.0249** | -6.90 | 6 of 6 |
+| length minus shuffled | +0.0043 | +1.61 | 5 of 6 |
+
+**The length arm behaves like the graph-ignoring arm, not like the
+graph-respecting one.** It sits 15 percent of the way from shuffled to
+topological, and that 15 percent is not distinguishable from zero at six
+seeds.
+
+**So sorting books by length is not what costs the graph-respecting arm its
+0.029 nats.** That alternative is eliminated.
+
+## What survives, and why it may be one thing rather than two
+
+**The graph, and distance from a valid ordering, and they may not be
+separable even in principle.**
+
+| Arm | Displacement from curriculum |
+| --- | --- |
+| curriculum | 0.0 |
+| block-shuffled curriculum, 32 | 10.4 |
+| topological | 48.7 |
+| length | 118.2 |
+| shuffled | 133.1 |
+
+**Every arm that respects the graph sits between 0 and 49, and every arm
+that ignores it sits above 118.** Two random linear extensions of this
+graph are 57.9 apart from each other, so the set of valid orderings is a
+region roughly 50 wide, and staying inside it is what a small displacement
+means. **Respecting the graph and staying near a valid order are the same
+constraint described two ways**, and no arm can have one without the other.
+
+**The arms that sit on the homogeneity curve are exactly the ones that
+respect the graph**, curriculum, the block shuffles and topological. The two
+that fall below it, shuffled and length, are exactly the two that do not.
+
+## What this does and does not reinstate
+
+**It narrows the withdrawn claim rather than restoring it.** The claim was
+that the residual is the graph, withdrawn because length ordering was an
+unexamined alternative. **Length ordering is now examined and eliminated**,
+so what remains is: at matched batch diversity and matched length ordering,
+an ordering inside the graph's constraint set reaches higher held-out loss
+than one outside it, by 0.025 nats in 6 of 6 paired seeds.
+
+**It is still not a verdict.** Held-out loss is not what `evals/elenchos/`
+measures, 0.7 percent sits against an item 7 that is unchosen, and this is
+one corpus at one width and one endpoint with six seeds.
+
+**And it is still not the last confound.** Five have been found, the most
+recent in the reasoning. The honest question for the next reader is what
+else differs between an ordering inside the constraint set and one outside
+it, beyond the three things measured here.

@@ -317,6 +317,14 @@ paired runs.
 > them. **The mechanism is unidentified**: it is the graph, or sequence
 > length, or both. An arm that orders by length without the graph would
 > decide it and does not exist.
+>
+> **RESOLVED IN PART 2026-09-27.** That arm was built. Matched on length at
+> +0.213 against +0.211 and on diversity at 4.511 against 4.487, it behaves
+> like the graph-ignoring arm: 0.025 nats below topological in 6 of 6 seeds
+> and 0.004 above shuffled. **Length ordering is eliminated.** What survives
+> is the graph, inseparable from distance to a valid ordering, since every
+> arm respecting the graph sits within 49 of the curriculum order and every
+> arm ignoring it beyond 118.
 
 **It is not a verdict on the hypothesis**: held-out loss is not what
 `evals/elenchos/` measures, 0.026 nats is 0.7 percent against an item 7 that

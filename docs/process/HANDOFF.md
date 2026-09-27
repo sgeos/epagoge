@@ -212,12 +212,17 @@ sense questions to the operator.
   42** paired runs. Displacement is eliminated, padding is 6.45 percent
   everywhere, and the most generous diversity metric leaves 77 percent
   unexplained.
-- **WHICH property is not identified, and a claim that it was is
-  withdrawn.** Graph-respecting orders also sort books by length, +0.31
-  against +0.06, because a prerequisite-heavy book is placed later and 90
-  percent of books carry a prerequisite. The two predictors are collinear at
-  -0.76 across arms and neither varies enough within an arm. **An arm that
-  orders by length without the graph would decide it and does not exist.**
+- **Length ordering was the rival explanation and it is eliminated.** An
+  arm matched to the graph-respecting arm on length, +0.213 against +0.211,
+  and to the graph-ignoring arm on diversity, behaves like the latter: 0.025
+  nats below topological in 6 of 6 seeds, and 0.004 above shuffled. It sits
+  15 percent of the way across the gap.
+- **What survives may be one thing described two ways.** Every arm
+  respecting the graph sits 0 to 49 from the curriculum order and every arm
+  ignoring it sits above 118, and two random linear extensions are 57.9
+  apart, so the valid set is a region about 50 wide. **Respecting the graph
+  and staying near a valid order cannot be separated**, and the arms on the
+  homogeneity curve are exactly the ones inside the set.
 - **This is the fifth defect and the first in the reasoning rather than the
   code.** It came from concluding by elimination without asking what had not
   been eliminated.
