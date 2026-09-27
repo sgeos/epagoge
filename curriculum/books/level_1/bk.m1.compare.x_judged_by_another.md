@@ -2,7 +2,7 @@
 {
   "id": "bk.m1.compare.x_judged_by_another",
   "level": 1,
-  "title": "Correspondence, and judged by another",
+  "title": "The pair is alike, the one is different, the pile has more",
   "subject": {
     "kind": "topic",
     "target": "m1.compare"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child examines groups of objects, comparing them to find what matches, what is different, and what is more. The story shows how children notice equality, difference, and quantity through everyday choices.",
   "teaches": "Children learn to judge comparisons by looking at what is alike, what doesn't belong, and how size or number affects fairness. They discover that truth in comparisons comes from careful observation, not just rules.",
   "records": {

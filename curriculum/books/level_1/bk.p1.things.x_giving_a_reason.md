@@ -2,7 +2,7 @@
 {
   "id": "bk.p1.things.x_giving_a_reason",
   "level": 1,
-  "title": "Presence, and giving a reason",
+  "title": "The cup remains because it is still here, still the same cup",
   "subject": {
     "kind": "topic",
     "target": "p1.things"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A simple cup sits empty on a table, quietly present through time, change, and absence, showing how something can matter deeply even when it seems useless or unnoticed.",
   "teaches": "Just being there, unchanged and still, can be meaningful; presence itself holds value, even without purpose, movement, or life.",
   "records": {

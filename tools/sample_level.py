@@ -97,7 +97,7 @@ def main(argv: list[str]) -> int:
     plan = sched.load(ROOT / f"curriculum/schedule/level_{args.level:02d}.json")
 
     pad_id = tokeniser.ids[PAD]
-    ordered, text = book_order(args.level, graph, 0, "curriculum", plan)
+    ordered, text, titles = book_order(args.level, graph, 0, "curriculum", plan)
     if len(ordered) != len(text):
         print("the book ordering is short; see train_level.py", file=sys.stderr)
         return 1
@@ -105,7 +105,11 @@ def main(argv: list[str]) -> int:
     chunks: list[list[int]] = []
     for book_id in ordered:
         chunks.extend(
-            chunk(tokeniser.encode_work(text.get(book_id, "")), args.seq_len, pad_id)
+            chunk(
+                tokeniser.encode_work(text.get(book_id, ""), titles.get(book_id, "")),
+                args.seq_len,
+                pad_id,
+            )
         )
     if len(chunks) < args.batch_size * 2:
         print(f"only {len(chunks)} chunks; too small to train", file=sys.stderr)

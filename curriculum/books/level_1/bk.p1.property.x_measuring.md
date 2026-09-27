@@ -2,7 +2,7 @@
 {
   "id": "bk.p1.property.x_measuring",
   "level": 1,
-  "title": "Physical property, and measuring",
+  "title": "Red ball is bigger and heavier than blue ball",
   "subject": {
     "kind": "topic",
     "target": "p1.property"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book helps children understand basic physical properties like size, weight, and space by comparing two balls, one red and one blue, using everyday tools like rulers and containers.",
   "teaches": "Children learn how to measure length with a ruler, compare how much space objects take up, and recognize that heavier objects feel different and move differently than lighter ones.",
   "records": {

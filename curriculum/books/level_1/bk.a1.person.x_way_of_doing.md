@@ -2,7 +2,7 @@
 {
   "id": "bk.a1.person.x_way_of_doing",
   "level": 1,
-  "title": "Activity, and way of doing",
+  "title": "A person builds a bridge with care and steady hands",
   "subject": {
     "kind": "topic",
     "target": "a1.person"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book shows a child how one person can calmly and carefully accomplish a meaningful task, like building a bridge, by using tools, following a method, and staying focused. It portrays the quiet strength in doing something well, step by step, even when working alone.",
   "teaches": "A person can make a difference by approaching tasks with care, patience, and steady effort, no matter how big or small. The way something is done, thoughtfully and with kindness, matters as much as the result.",
   "records": {

@@ -2,7 +2,7 @@
 {
   "id": "bk.n1.keep_trying.x_same_amount",
   "level": 1,
-  "title": "Keep trying or stop, and same amount",
+  "title": "Try again with care, even when it feels hard",
   "subject": {
     "kind": "topic",
     "target": "n1.keep_trying"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book follows a child facing a difficult task that feels impossible, showing how persistence, small steps, and trusting oneself can lead to progress even when things seem bleak. It portrays the emotional and physical experience of trying again after failure, with moments of doubt, fatigue, and quiet strength.",
   "teaches": "That trying again, even when it's hard, scary, or exhausting, is a powerful and necessary part of learning and growing. It shows that effort matters more than perfection, and that every small attempt builds resilience and confidence.",
   "records": {

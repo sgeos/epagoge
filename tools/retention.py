@@ -101,7 +101,7 @@ def main(argv: list[str]) -> int:
             text = "\n".join(
                 str(by_id[i]["content"]) for i in book.records if i in by_id
             )
-            ids = tokeniser.encode_work(text)
+            ids = tokeniser.encode_work(text, book.title or "")
             if len(ids) < 2:
                 continue
             total = 0.0

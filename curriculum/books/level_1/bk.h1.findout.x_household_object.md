@@ -2,7 +2,7 @@
 {
   "id": "bk.h1.findout.x_household_object",
   "level": 1,
-  "title": "Settling it, and household object",
+  "title": "We find proof by testing what we build and see",
   "subject": {
     "kind": "topic",
     "target": "h1.findout"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A group of children set out to prove simple truths using everyday objects and hands-on experiments, exploring ideas like air, water, weight, and proof through a journey to the lake and river.",
   "teaches": "Children learn that evidence comes from testing and observing, not just guessing, and that real understanding builds step by step through doing and checking.",
   "records": {

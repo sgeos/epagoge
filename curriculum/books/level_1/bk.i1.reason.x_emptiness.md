@@ -2,7 +2,7 @@
 {
   "id": "bk.i1.reason.x_emptiness",
   "level": 1,
-  "title": "Giving a reason, and emptiness",
+  "title": "The hole stays empty until something holds it full",
   "subject": {
     "kind": "topic",
     "target": "i1.reason"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child tries to fill a hole in the ground with dirt, water, and a wall of blocks, but each time the space remains empty, not because it lacks material, but because emptiness is not just the absence of things, but a kind of presence that waits to be named.",
   "teaches": "A space can feel empty even when filled, and being full isn't just about what's inside, but about what the space is allowed to hold, like a reason, a story, or a feeling that has not yet been given shape.",
   "records": {

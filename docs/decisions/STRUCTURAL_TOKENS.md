@@ -183,8 +183,18 @@ as a tension rather than resolved by citation.
    > word. `generators/cross_books.py` uses `words_for` for prompts and the
    > title was not routed through it.
    >
-   > Announcing titles waits on fixing those 47 titles, which is corpus
-   > work and is the operator's to schedule.
+   > **UNBLOCKED AND DONE 2026-09-27.** All 47 were rewritten by
+   > `generators/retitle_books.py`, which asks the teacher for a title from
+   > the book's own text and refuses anything outside the ceiling. 0 of 400
+   > titles are now outside it, and a test asserts that.
+   >
+   > **Every refusal along the way was a bound of mine, not the
+   > vocabulary.** Sixteen books were refused across two runs for exceeding
+   > a ten-word limit I had guessed at, on titles entirely inside the
+   > lexicon, and the teacher answered identically on every retry. The bound
+   > is now 12, set from the corpus's own range of 1 to 11 words, and it is
+   > stated in the prompt as well as enforced after it. **A constraint
+   > enforced only by rejection is one the teacher cannot satisfy.**
 5. **No spread-boundary token.** The general answer to a paragraph break is
    a blank line, and the pure-frame specification is explicit that a
    boundary renders as exactly one blank line because a double gap would

@@ -204,9 +204,17 @@ def main(argv: list[str]) -> int:
         book = Book(
             id=book_id,
             level=args.level,
-            # A title is prose for a person and is not vocabulary-checked,
-            # so it may name the concepts. Picking a representative word
-            # alphabetically gave "and what is clearing" for emptiness.
+            # **CORRECTED 2026-09-27. A title is trained on now.**
+            # This read "a title is prose for a person and is not
+            # vocabulary-checked, so it may name the concepts", which was
+            # true when it was written and stopped being true the day the
+            # title became an announcement line in the stream. It cost 47
+            # titles of 400, every one naming a concept rather than using
+            # words. `generators/retitle_books.py` replaced them from each
+            # book's own text and is the tool to run after this one.
+            # Picking a representative word alphabetically was tried first
+            # and gave "and what is clearing" for emptiness, which is why
+            # the teacher writes the title from the body instead.
             title=f"{readable(target).capitalize()}, and {readable(partner)}",
             subject_kind=DefinitionKind.TOPIC,
             subject=unit,

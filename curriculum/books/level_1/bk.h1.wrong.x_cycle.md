@@ -2,7 +2,7 @@
 {
   "id": "bk.h1.wrong.x_cycle",
   "level": 1,
-  "title": "Being wrong, and cycle",
+  "title": "She thought it was in the box",
   "subject": {
     "kind": "topic",
     "target": "h1.wrong"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child searches repeatedly for something she believes is in a box, only to realize it was never there, yet still feels its presence, exploring how being wrong isn't failure, but part of learning what's real.",
   "teaches": "Mistakes aren't failures, and truth can be known even when it's not seen; being wrong helps us notice what's truly there, even when it's not where we expect.",
   "records": {

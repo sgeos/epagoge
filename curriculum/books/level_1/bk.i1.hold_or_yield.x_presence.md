@@ -2,7 +2,7 @@
 {
   "id": "bk.i1.hold_or_yield.x_presence",
   "level": 1,
-  "title": "Keeping your claim, and presence",
+  "title": "I still say so, and here is why",
   "subject": {
     "kind": "topic",
     "target": "i1.hold_or_yield"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child holds onto a belief about an apple's location, even when it disappears, and later admits they were wrong, showing how we can stay true to our sense of self even when facts change.",
   "teaches": "We can choose to stay present and honest, even when we're uncertain or have made mistakes, and that being with ourselves matters more than being right.",
   "records": {

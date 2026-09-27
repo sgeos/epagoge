@@ -2,7 +2,7 @@
 {
   "id": "bk.n1.good_bad.x_cause_and_effect",
   "level": 1,
-  "title": "Good and bad, and cause and effect",
+  "title": "Warm water is good and hot stove is bad",
   "subject": {
     "kind": "topic",
     "target": "n1.good_bad"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book explores the difference between things that help and things that harm, using simple, everyday experiences like warm water and a hot stove to show how choices have consequences.",
   "teaches": "Children learn to recognize safe and unsafe situations by understanding cause and effect, such as how touching a hot stove causes pain while warm water brings comfort and safety.",
   "records": {

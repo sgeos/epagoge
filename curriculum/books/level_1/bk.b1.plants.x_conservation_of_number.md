@@ -2,7 +2,7 @@
 {
   "id": "bk.b1.plants.x_conservation_of_number",
   "level": 1,
-  "title": "Plant, and conservation of number",
+  "title": "The tree stays, the leaves remain, the garden is home",
   "subject": {
     "kind": "topic",
     "target": "b1.plants"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book explores how plants stay in one place and grow steadily, showing that their number and size remain the same even when moved by wind or losing leaves. It gently illustrates the idea that living things like trees and flowers don't walk away, and their parts, like leaves and apples, stay connected to their home.",
   "teaches": "Readers learn that plants are alive and stay in one spot, growing and changing without moving. The book shows that the number of leaves or parts on a plant stays constant over time, even when some fall or bend, helping children understand conservation of number through nature.",
   "records": {

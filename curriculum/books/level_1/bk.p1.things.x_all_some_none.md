@@ -2,7 +2,7 @@
 {
   "id": "bk.p1.things.x_all_some_none",
   "level": 1,
-  "title": "Household object, and all some none",
+  "title": "The cup stays alone and still above the sink",
   "subject": {
     "kind": "topic",
     "target": "p1.things"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book quietly observes ordinary household objects, cups, bottles, blankets, bells, left unused, unnoticed, and still in their places. It shows how things can exist without being seen, touched, or needed, even when they're perfectly functional.",
   "teaches": "That objects have a presence and potential even when no one pays attention to them. It invites children to notice the quiet, overlooked things around them and consider what it means to be unseen yet still whole.",
   "records": {

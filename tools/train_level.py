@@ -90,8 +90,13 @@ isolate in a trainer that cycles a fixed ordered list.
 
 def book_order(
     level: int, graph: ConceptGraph, seed: int, arm: str, plan: sched.Schedule
-) -> tuple[list[str], dict[str, str]]:
-    """Book ids in the arm's order, and each book's text.
+) -> tuple[list[str], dict[str, str], dict[str, str]]:
+    """Book ids in the arm's order, each book's text, and each book's title.
+
+    **The title is returned because it is trained on**, as an announcement
+    line at the head of the work. See `Tokeniser.encode_work` and
+    `docs/decisions/STRUCTURAL_TOKENS.md`. It was presentation only until
+    2026-09-27.
 
     **A book teaches what its unit teaches.** Taking the union of every
     record's concepts instead counts a word the book merely defines as a
@@ -158,7 +163,8 @@ def book_order(
         b.id: "\n".join(str(by_id[i]["content"]) for i in b.records if i in by_id)
         for b in all_books
     }
-    return ordered, text
+    titles = {b.id: b.title or "" for b in all_books}
+    return ordered, text, titles
 
 
 def main(argv: list[str]) -> int:
@@ -191,7 +197,7 @@ def main(argv: list[str]) -> int:
     plan = sched.load(ROOT / f"curriculum/schedule/level_{args.level:02d}.json")
 
     pad_id = tokeniser.ids[PAD]
-    curriculum, text = book_order(args.level, graph, 0, "curriculum", plan)
+    curriculum, text, titles = book_order(args.level, graph, 0, "curriculum", plan)
     # **A short ordering is a cycle, and a cycle must stop the run.**
     # `linear_extension` returns what it could order and says nothing, so a
     # truncated corpus trained silently and reported itself as the level.
@@ -211,8 +217,15 @@ def main(argv: list[str]) -> int:
     unknown: list[str] = []
     for book_id in curriculum:
         body = text.get(book_id, "")
-        unknown += tokeniser.unknown(body)
-        for piece in chunk(tokeniser.encode_work(body), args.seq_len, pad=pad_id):
+        title = titles.get(book_id, "")
+        # **The title is checked too, because it is now trained on.** It was
+        # presentation until 2026-09-27 and this loop only ever saw the body.
+        unknown += tokeniser.unknown(body) + tokeniser.unknown(title)
+        for piece in chunk(
+            tokeniser.encode_work(body, title),
+            args.seq_len,
+            pad=pad_id,
+        ):
             chunks.append(piece)
             owner.append(book_id)
     if unknown:
@@ -239,7 +252,7 @@ def main(argv: list[str]) -> int:
     train_ids = [i for i in range(len(chunks)) if i not in held_ids]
 
     def order_for(arm: str, seed: int) -> list[int]:
-        names, _ = book_order(args.level, graph, seed, arm, plan)
+        names, _, _ = book_order(args.level, graph, seed, arm, plan)
         rank = {name: n for n, name in enumerate(names)}
         return sorted(train_ids, key=lambda i: (rank.get(owner[i], len(rank)), i))
 
@@ -258,7 +271,10 @@ def main(argv: list[str]) -> int:
     # a corpus of 35,438, which overstated it by a quarter and fed a
     # published shortfall figure.
     chunk_ids = sum(len(c) for c in chunks)
-    tokens = sum(len(tokeniser.encode_work(text.get(b, ""))) for b in curriculum)
+    tokens = sum(
+        len(tokeniser.encode_work(text.get(b, ""), titles.get(b, "")))
+        for b in curriculum
+    )
     print(
         f"device {device}, vocab {tokeniser.size}, {len(chunks)} chunks, "
         f"{tokens} corpus tokens, {chunk_ids} chunk ids including padding, "

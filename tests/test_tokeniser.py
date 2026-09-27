@@ -163,3 +163,45 @@ class TestWorkBoundaries(unittest.TestCase):
                 str(by_id[i]["content"]) for i in book.records if i in by_id
             )
             self.assertNotIn(unk, t.encode_work(text), book.id)
+
+
+class TestTitleAnnouncement(unittest.TestCase):
+    """A work announces itself with its title, as an ordinary Markdown line.
+
+    The notation is free and the announcement is not.
+    `docs/decisions/STRUCTURAL_TOKENS.md` records the measurement: deleting
+    a structural announcement makes the prose after it harder to predict at
+    five reader scales, and swapping its notation moves a measured zero.
+    """
+
+    def test_a_title_is_announced_before_the_body(self) -> None:
+        t = build(vocab("cup"), 1)
+        ids = t.encode_work("the cup is", "the cup")
+        self.assertEqual(ids[0], t.ids[BOOK])
+        self.assertEqual(ids[1], t.ids["#"])
+        self.assertEqual(ids[1:-1], t.encode("# the cup the cup is"))
+
+    def test_no_title_means_no_announcement_rather_than_an_empty_one(self) -> None:
+        """A bare sigil would announce a boundary and name nothing."""
+        t = build(vocab("cup"), 1)
+        self.assertNotIn(t.ids["#"], t.encode_work("the cup is"))
+        self.assertNotIn(t.ids["#"], t.encode_work("the cup is", "   "))
+
+    def test_the_sigil_is_in_the_vocabulary(self) -> None:
+        t = build(vocab("cup"), 1)
+        self.assertIn("#", t.ids)
+        self.assertEqual(t.encode("#"), [t.ids["#"]])
+
+    def test_every_shipped_title_is_inside_the_level(self) -> None:
+        """A title is trained on now, so an unknown in one is a defect.
+
+        This is the check that did not exist while a title was presentation
+        only, and 47 of 400 titles named a concept rather than using words.
+        """
+        root = Path(__file__).resolve().parent.parent
+        t = build(load_vocabulary(root / "curriculum/vocabulary.json"), 1)
+        books, _ = load_book_dir(root / "curriculum/books/level_1")
+        bad = {
+            b.id: t.unknown(b.title or "") for b in books if t.unknown(b.title or "")
+        }
+        self.assertEqual(bad, {}, f"{len(bad)} title(s) outside the level")

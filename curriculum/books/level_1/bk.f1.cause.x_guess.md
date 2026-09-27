@@ -2,7 +2,7 @@
 {
   "id": "bk.f1.cause.x_guess",
   "level": 1,
-  "title": "Cause and effect, and guess",
+  "title": "The ball rolled because I pushed it first",
   "subject": {
     "kind": "topic",
     "target": "f1.cause"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book explores the basic idea of cause and effect through a child's experience of pushing a ball and watching it roll. It shows how actions come before results, and how we can predict what will happen based on what we observe.",
   "teaches": "Readers learn that one event can make another happen, and that the order of events helps us understand why things occur. It demonstrates how noticing patterns, like a ball rolling faster on smooth surfaces, helps us figure out what caused the effect.",
   "records": {

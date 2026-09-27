@@ -2,7 +2,7 @@
 {
   "id": "bk.ac1.having.x_exchange",
   "level": 1,
-  "title": "Having, and exchange",
+  "title": "I keep my coin and share what is mine",
   "subject": {
     "kind": "topic",
     "target": "ac1.having"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book follows a child learning about ownership, fairness, and sharing through simple exchanges like trading coins for cups, apples for balloons, and gifts for kindness. It shows how decisions about keeping or giving shape relationships and personal values.",
   "teaches": "Children learn that having something doesn't mean you must keep it forever, fair trades and honest choices build trust and shared joy. Real wealth comes not from hoarding, but from knowing what's yours, what's theirs, and how giving can make everyone richer.",
   "records": {

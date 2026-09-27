@@ -2,7 +2,7 @@
 {
   "id": "bk.ac1.tally.x_sequence",
   "level": 1,
-  "title": "Keeping count, and sequence",
+  "title": "First mark, next mark, last mark, tally grows",
   "subject": {
     "kind": "topic",
     "target": "ac1.tally"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book shows children how to use tally marks to keep track of counts, one mark at a time, in a clear sequence from first to last. It demonstrates how each mark fits into a growing line, helping children see how numbers build step by step.",
   "teaches": "Children learn to count by making and following tally marks in order, recognizing that each mark represents one unit and that the sequence matters. They understand that counting every mark, in order, ensures no number is missed or added by mistake.",
   "records": {

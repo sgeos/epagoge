@@ -2,7 +2,7 @@
 {
   "id": "bk.i1.reason.x_household_object",
   "level": 1,
-  "title": "Giving a reason, and household object",
+  "title": "Boat floats, bell rings, blanket lies on bed",
   "subject": {
     "kind": "topic",
     "target": "i1.reason"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child explores cause and effect through everyday objects like a bell, boat, bottle, and blanket, using them to explain why things are true or false in a looping, imaginative story.",
   "teaches": "Children learn how simple actions and physical properties, like floating, moving, or holding, create logical connections between events, building early reasoning skills through play and observation.",
   "records": {

@@ -2,7 +2,7 @@
 {
   "id": "bk.c1.name.x_duration",
   "level": 1,
-  "title": "Name, and duration",
+  "title": "The name stayed, but the thing changed",
   "subject": {
     "kind": "topic",
     "target": "c1.name"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book explores the quiet, powerful moments that shape our lives, like a breath, a feeling, or a name that lingers in the air long after the moment has passed. It shows how something deeply real can exist without a physical form, and how names can carry meaning beyond their literal use.",
   "teaches": "A name is not the thing it describes, but it can hold its essence, like a memory or a feeling that stays even when the moment is gone. Some of the most important things in life, love, time, presence, aren't things you can touch, but they are felt, remembered, and carried through words and silence.",
   "records": {

@@ -2,7 +2,7 @@
 {
   "id": "bk.i1.hold_or_yield.x_goal",
   "level": 1,
-  "title": "Keeping your claim, and goal",
+  "title": "I choose to pass, even when I feel afraid",
   "subject": {
     "kind": "topic",
     "target": "i1.hold_or_yield"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book follows a child learning to hold onto their values and goals, even when scared or tempted to give in. It shows what it means to choose kindness, courage, and honesty over fear, even when it's hard.",
   "teaches": "You can be strong even when you're afraid, and choosing to do what's right matters more than winning. Holding your goal steady, like a promise to yourself, helps you keep going, even when you feel small or alone.",
   "records": {

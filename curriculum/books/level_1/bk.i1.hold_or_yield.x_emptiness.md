@@ -2,7 +2,7 @@
 {
   "id": "bk.i1.hold_or_yield.x_emptiness",
   "level": 1,
-  "title": "Changing your mind, and emptiness",
+  "title": "I admit I was wrong and see the gap",
   "subject": {
     "kind": "topic",
     "target": "i1.hold_or_yield"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book shows a child learning to recognize when they're holding on too tightly to their own beliefs, and how letting go can create space for truth, peace, and growth. It explores the quiet strength in admitting you were wrong, and the freedom found in emptying your mind of fear and need to be right.",
   "teaches": "You don't have to fill every silence or fear with answers, sometimes the most important thing is to let go and listen. Real understanding comes not from being full, but from making room for what's true, even when it's hard.",
   "records": {

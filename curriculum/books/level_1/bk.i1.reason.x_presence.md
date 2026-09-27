@@ -2,7 +2,7 @@
 {
   "id": "bk.i1.reason.x_presence",
   "level": 1,
-  "title": "Disagreeing, and presence",
+  "title": "The apple remains, the balloon goes, and we sit, watching",
   "subject": {
     "kind": "topic",
     "target": "i1.reason"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book explores how children reason about what is real, what is gone, and what remains, especially when their experiences don't match others'. It shows how one child believes a balloon is lost because they can't see it, while another insists it still exists in the sky, even unseen.",
   "teaches": "It shows that disagreement can come from different ways of knowing, and that reasoning about what is real often involves imagination, memory, and the quiet certainty of personal experience.",
   "records": {

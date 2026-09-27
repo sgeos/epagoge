@@ -2,7 +2,7 @@
 {
   "id": "bk.r1.sure.x_keeping_your_claim",
   "level": 1,
-  "title": "How sure, and keeping your claim",
+  "title": "I know the cup is here but the spoon is not",
   "subject": {
     "kind": "topic",
     "target": "r1.sure"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child grapples with uncertainty about whether an object they believe is real, like a spoon, still exists when they can't see or feel it, exploring the difference between what they know and what they only believe.",
   "teaches": "That certainty can exist even without proof, and that holding on to something in your mind, like a memory or belief, can be just as real as touching it, especially when you're sure it's not gone.",
   "records": {

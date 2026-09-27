@@ -2,7 +2,7 @@
 {
   "id": "bk.m1.logic.x_household_object",
   "level": 1,
-  "title": "Not both, and household object",
+  "title": "The boat floats and the bottle rolls when it rains",
   "subject": {
     "kind": "topic",
     "target": "m1.logic"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book uses familiar household objects and simple situations to explore basic ideas of logic, like how things can't be both true and false at the same time, and how some statements must be either one way or the other, not both. It shows children that certain things, like being wet or dry, floating or sinking, full or empty, can't happen at the same time in the same way.",
   "teaches": "Children learn that contradictions don't make sense, something can't be both true and not true at once, and that choices often come in clear opposites, like full or empty, wet or dry, floating or sinking. They also see how things can be alike or different based on size, shape, or function, and how to think through simple real-world situations using logic.",
   "records": {

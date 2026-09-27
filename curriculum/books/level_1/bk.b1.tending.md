@@ -2,7 +2,7 @@
 {
   "id": "bk.b1.tending",
   "level": 1,
-  "title": "Add water and the plant keeps living",
+  "title": "Water keeps the plant alive and strong",
   "subject": {
     "kind": "topic",
     "target": "b1.tending"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-27",
   "about": "A child learns how to care for a living plant by giving it water every day, noticing how it responds to being tended, and understanding that consistent attention keeps it alive.",
   "teaches": "That caring for something living means showing up regularly with attention and action, and that even small acts of tending can make a big difference in keeping life strong.",
   "records": {

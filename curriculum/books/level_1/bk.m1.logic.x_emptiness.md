@@ -2,7 +2,7 @@
 {
   "id": "bk.m1.logic.x_emptiness",
   "level": 1,
-  "title": "All some none, and emptiness",
+  "title": "The ground is full and nothing is empty",
   "subject": {
     "kind": "topic",
     "target": "m1.logic"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book uses a simple story about rain filling a hole in the ground to explore basic ideas of logic, such as the law of non-contradiction and the difference between \"all,\" \"some,\" and \"none.\" It shows how something can't be both full and empty at the same time, and how truth depends on clear, consistent states.",
   "teaches": "Readers learn that things can't be both true and false at once, that \"all\" means every part, \"none\" means no part, and \"some\" means at least one. It helps children grasp that empty and full are opposite states, and that logic helps us understand what's real and what's not.",
   "records": {

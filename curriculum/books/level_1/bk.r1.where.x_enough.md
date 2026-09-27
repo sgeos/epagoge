@@ -2,7 +2,7 @@
 {
   "id": "bk.r1.where.x_enough",
   "level": 1,
-  "title": "Spatial position, and enough",
+  "title": "The child finds the basket over that way",
   "subject": {
     "kind": "topic",
     "target": "r1.where"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child journeys through a quiet, changing landscape, searching for what is missing, food, a balloon, a place to belong, while navigating feelings of isolation, effort, and the shifting sense of \"here\" versus \"there.\"",
   "teaches": "Even when something feels out of reach or just \"enough\" isn't enough, the act of moving forward, noticing what's near, and finding small solutions can lead to a deeper sense of what is truly sufficient.",
   "records": {

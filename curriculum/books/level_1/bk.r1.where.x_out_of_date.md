@@ -2,7 +2,7 @@
 {
   "id": "bk.r1.where.x_out_of_date",
   "level": 1,
-  "title": "Direction, and out of date",
+  "title": "I walk ahead on the clear path, not back, not afraid",
   "subject": {
     "kind": "topic",
     "target": "r1.where"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child follows a mysterious path through a quiet, timeless landscape, guided by an old figure and a sense of direction that feels both familiar and uncertain. The journey unfolds through repeated shifts in perspective, where \"here\" and \"there,\" \"old\" and \"ahead,\" blur into one another.",
   "teaches": "That direction isn't always about physical places, but about how we make sense of where we are and where we're going through memory, repetition, and quiet persistence. It shows how identity and location are shaped by what we carry forward, not just where we came from.",
   "records": {

@@ -2,7 +2,7 @@
 {
   "id": "bk.r1.when.x_keeping_count",
   "level": 1,
-  "title": "Duration, and keeping count",
+  "title": "Each moment counted, each step scored, the child kept going",
   "subject": {
     "kind": "topic",
     "target": "r1.when"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child keeps a daily tally of every moment, counting each breath, step, and minute as part of a quiet, determined effort to stay present and move toward a personal goal.",
   "teaches": "Time is made real through attention and effort, and every moment, no matter how small, adds up to progress, even when it feels hard to keep track.",
   "records": {

@@ -2,7 +2,7 @@
 {
   "id": "bk.ac1.same_amount.x_mending",
   "level": 1,
-  "title": "Same amount, and mending",
+  "title": "The bowl holds the water, equal and whole",
   "subject": {
     "kind": "topic",
     "target": "ac1.same_amount"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child carefully mends a broken bowl with glue, then watches as water pours in and fills it just as before, noticing that even with a crack, the amount of water remains the same.",
   "teaches": "Even when something is broken, it can still hold the same amount as before, and repairs can restore balance and function, showing that quantity stays equal through change.",
   "records": {

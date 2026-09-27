@@ -2,7 +2,7 @@
 {
   "id": "bk.m1.same_count.x_someone_in_charge",
   "level": 1,
-  "title": "Conservation of number, and someone in charge",
+  "title": "The count stays the same when things move",
   "subject": {
     "kind": "topic",
     "target": "m1.same_count"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book shows how the total number of items stays the same even when they are moved around, hidden, or rearranged in different places. It uses playful characters and living objects to demonstrate that moving things doesn't change how many there are.",
   "teaches": "A child will learn that quantity remains constant despite changes in position or arrangement, a key idea in understanding conservation of number. They'll see that counting is reliable, even when things are out of sight or shifted around.",
   "records": {

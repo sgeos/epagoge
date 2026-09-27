@@ -2,7 +2,7 @@
 {
   "id": "bk.p1.things.x_agreeing",
   "level": 1,
-  "title": "Emptiness, and agreeing",
+  "title": "The cup is empty and still the same cup",
   "subject": {
     "kind": "topic",
     "target": "p1.things"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book uses a simple, repeating image of an empty cup to explore what it means to be still, present, and whole without needing to be filled or fixed. It shows how emptiness isn't a lack, but a space that allows room for peace, clarity, and self-acceptance.",
   "teaches": "You don't need to be full or busy to be real or valuable, being empty can be honest, strong, and open to what comes. You can be okay just as you are, even when alone or quiet, and still be connected to the world.",
   "records": {

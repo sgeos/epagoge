@@ -2,7 +2,7 @@
 {
   "id": "bk.f1.check.x_activity",
   "level": 1,
-  "title": "Checking, and activity",
+  "title": "The child checked the truth and found the apple",
   "subject": {
     "kind": "topic",
     "target": "f1.check"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child discovers that appearances can be misleading, and learns to test what they see by looking closely, touching, and questioning their first guesses. They follow clues in nature and hidden places to uncover the truth behind a story they were told.",
   "teaches": "When something seems off, it's important to check for yourself instead of believing at first glance. Real understanding comes from looking, testing, and being willing to admit when you were wrong.",
   "records": {

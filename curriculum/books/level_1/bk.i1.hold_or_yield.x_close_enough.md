@@ -2,7 +2,7 @@
 {
   "id": "bk.i1.hold_or_yield.x_close_enough",
   "level": 1,
-  "title": "Keeping your claim, and close enough",
+  "title": "I hold the stone and stay near",
   "subject": {
     "kind": "topic",
     "target": "i1.hold_or_yield"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child learns to hold on to what matters, like a small stone, through fear and failure, discovering that staying close to something real and near gives strength, even when they can't keep it perfectly.",
   "teaches": "You don't need to be strong to stay put; sometimes, being near what holds you is enough. Letting go isn't failure, but choosing to stay close again is courage.",
   "records": {

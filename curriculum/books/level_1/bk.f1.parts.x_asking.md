@@ -2,7 +2,7 @@
 {
   "id": "bk.f1.parts.x_asking",
   "level": 1,
-  "title": "Component and system, and asking",
+  "title": "A bad part can break the whole boat",
   "subject": {
     "kind": "topic",
     "target": "f1.parts"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A boy tries to build and fix a boat made of simple parts, learning that each piece must be strong and fit properly, or the whole thing fails. He struggles alone at first, then realizes he needs help when a part breaks or doesn't work.",
   "teaches": "A broken or weak part can ruin the whole system, no matter how good the rest is. Asking for help isn't weakness, it's how things stay strong and keep working.",
   "records": {

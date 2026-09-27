@@ -22,7 +22,7 @@ from typing import Final
 from epagoge.vocabulary import Vocabulary, fold_typography
 
 WORD_RE: Final[re.Pattern[str]] = re.compile(
-    r"[a-z]+(?:'(?!s\b)[a-z]+)*|'s\b|[0-9]+|[.,!?;:]"
+    r"[a-z]+(?:'(?!s\b)[a-z]+)*|'s\b|[0-9]+|[.,!?;:#]"
 )
 """Words, numerals, and the punctuation the corpus actually uses.
 
@@ -90,7 +90,7 @@ class Tokeniser:
             self.ids.get(t, unk) for t in WORD_RE.findall(fold_typography(text).lower())
         ]
 
-    def encode_work(self, text: str) -> list[int]:
+    def encode_work(self, text: str, title: str = "") -> list[int]:
         """Token ids for one complete work, announced as one.
 
         **A work begins with `<book>` and ends with `<eot>`**, which is the
@@ -103,11 +103,26 @@ class Tokeniser:
         visited. And nothing marked an ending, so the model had no way to
         stop and no way to learn that a book is a bounded thing.
 
+        **A title is written as an announcement line, `# like this`**, and
+        the reason it is Markdown rather than a token is measured.
+        `docs/decisions/STRUCTURAL_TOKENS.md` records a three-arm probe over
+        five readers from 0.6B to 8.2B: deleting a structural announcement
+        makes the prose after it harder to predict at every scale, and
+        swapping the notation between a sigil and a bare line moves a
+        measured zero. **The announcement has to be there and its spelling
+        is free**, so it is spelled the way level seven will arrive.
+
+        The title is checked against the level's ceiling like any other
+        text, by `generators/retitle_books.py`. It was not, while it was
+        only prose for a person, and 47 of 400 named a concept instead of
+        using words.
+
         Use this wherever a whole book becomes a stream. Use `encode` for a
         fragment, such as a prompt, which is not a work and must not claim
         to be one.
         """
-        return [self.ids[BOOK], *self.encode(text), self.ids[EOT]]
+        head = self.encode(f"# {title}") if title.strip() else []
+        return [self.ids[BOOK], *head, *self.encode(text), self.ids[EOT]]
 
     def decode(self, tokens: list[int]) -> str:
         return " ".join(
@@ -134,7 +149,7 @@ def build(vocabulary: Vocabulary, level: int) -> Tokeniser:
         if term.level <= level:
             words.update(term.surface_forms())
     ordered = list(SPECIALS) + sorted(words) + [str(d) for d in range(10)]
-    ordered += [c for c in ".,!?;:" if c not in ordered]
+    ordered += [c for c in ".,!?;:#" if c not in ordered]
     seen: dict[str, int] = {}
     unique: list[str] = []
     for word in ordered:

@@ -128,13 +128,14 @@ def main(argv: list[str]) -> int:
     plan = sched.load(ROOT / f"curriculum/schedule/level_{args.level:02d}.json")
 
     pad_id = tokeniser.ids[PAD]
-    ordered, text = book_order(args.level, graph, 0, "curriculum", plan)
+    ordered, text, titles = book_order(args.level, graph, 0, "curriculum", plan)
     if len(ordered) != len(text):
         print("the book ordering is short; see train_level.py", file=sys.stderr)
         return 1
 
     encoded = {
-        book_id: tokeniser.encode_work(text.get(book_id, "")) for book_id in ordered
+        book_id: tokeniser.encode_work(text.get(book_id, ""), titles.get(book_id, ""))
+        for book_id in ordered
     }
     longest = max((len(s) for s in encoded.values()), default=0)
 

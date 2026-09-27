@@ -2,7 +2,7 @@
 {
   "id": "bk.c1.sentence.x_causal_chain",
   "level": 1,
-  "title": "Sentence, and causal chain",
+  "title": "A knock becomes a sentence that builds a boat",
   "subject": {
     "kind": "topic",
     "target": "c1.sentence"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child hears a knock on the door and realizes it's not just noise, but a message, like a sentence, carrying care and meaning. The story shows how words, even simple ones, can connect people and express what matters.",
   "teaches": "Every word and sound can carry a purpose when we pay attention. A sentence is more than grammar, it's a way to share feelings, build understanding, and connect with others.",
   "records": {

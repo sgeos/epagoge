@@ -2,7 +2,7 @@
 {
   "id": "bk.c1.because.x_tending",
   "level": 1,
-  "title": "Discourse marker, and tending",
+  "title": "It fell because you let go",
   "subject": {
     "kind": "topic",
     "target": "c1.because"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book follows a child learning how care and attention change over time, showing moments when letting go is necessary, even when it's hard. It explores the idea of cause and effect through everyday events like a balloon floating away or a baby slipping, always linking actions to their outcomes.",
   "teaches": "Children learn that care isn't just holding on, it also means knowing when to release, and that every choice has a consequence. The story shows how being mindful, attentive, and gentle helps through tough moments, even when things go wrong.",
   "records": {

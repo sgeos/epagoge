@@ -2,7 +2,7 @@
 {
   "id": "bk.n1.two_shoulds.x_change",
   "level": 1,
-  "title": "Two shoulds at once, and change",
+  "title": "You must hurry and be careful at once",
   "subject": {
     "kind": "topic",
     "target": "n1.two_shoulds"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child faces the challenge of doing two important things at once, hurrying to reach a goal while also being careful not to get hurt. The story shows how hard it feels to balance speed and caution, especially when afraid or uncertain.",
   "teaches": "It's okay to feel torn between two needs, like moving forward and staying safe, and you don't have to do it alone. Change is hard, but small choices, like stepping around a broken branch, show how care and progress can happen together.",
   "records": {

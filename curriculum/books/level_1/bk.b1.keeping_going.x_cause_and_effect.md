@@ -2,7 +2,7 @@
 {
   "id": "bk.b1.keeping_going.x_cause_and_effect",
   "level": 1,
-  "title": "Growing, and cause and effect",
+  "title": "The bird grows, shrinks, and grows again to fly",
   "subject": {
     "kind": "topic",
     "target": "b1.keeping_going"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A baby bird learns to grow stronger by eating, drinking, and keeping going even when afraid, tired, or cold, showing how living things change size and strength based on what they need.",
   "teaches": "Growth isn't just about getting bigger, it's about keeping going through tough times, and it happens when you meet your needs and keep trying, even when things feel hard.",
   "records": {

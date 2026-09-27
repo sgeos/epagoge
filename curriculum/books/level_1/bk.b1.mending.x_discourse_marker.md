@@ -2,7 +2,7 @@
 {
   "id": "bk.b1.mending.x_discourse_marker",
   "level": 1,
-  "title": "Mending, and discourse marker",
+  "title": "A cut heals but a broken cup does not fix itself",
   "subject": {
     "kind": "topic",
     "target": "b1.mending"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book explores the difference between natural healing, like a cut closing on its own, and things that can't be restored to their original state, like a broken cup. It shows how some wounds heal over time, while broken objects need help to be used again, even if they're changed forever.",
   "teaches": "Some things, like injuries to the body, heal on their own with time and care, while other things, like broken objects, can't return to how they were. Even when something is broken, it can still be useful and meaningful, just in a different way.",
   "records": {

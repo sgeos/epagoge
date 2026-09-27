@@ -2,7 +2,7 @@
 {
   "id": "bk.n1.two_shoulds.x_force",
   "level": 1,
-  "title": "Two shoulds at once, and force",
+  "title": "I carried the heavy basket through the storm",
   "subject": {
     "kind": "topic",
     "target": "n1.two_shoulds"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child faces tasks that demand both speed and caution at the same time, like rushing forward while carefully holding something fragile, or moving through a storm without dropping a heavy load. The story shows how it feels to carry two urgent demands at once, when every choice seems to pull in opposite directions.",
   "teaches": "It's possible to meet conflicting demands by staying focused and holding on, even when the pressure feels overwhelming. The experience teaches that strength isn't just physical, but the quiet effort to keep going when you're tired, afraid, or pulled in two directions.",
   "records": {

@@ -2,7 +2,7 @@
 {
   "id": "bk.ac1.exchange.x_real_and_pretend",
   "level": 1,
-  "title": "Exchange, and real and pretend",
+  "title": "She gave the shell and got the cup",
   "subject": {
     "kind": "topic",
     "target": "ac1.exchange"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child imagines trading a seashell for a magical cup, only to realize that real value comes not from what is gained, but from the trust and meaning behind the exchange. The story explores how we assign importance to things, whether they are real or imagined, and how letting go of something precious can change us.",
   "teaches": "True exchange is not about getting something in return, but about giving something meaningful and trusting it will matter. We learn that magic isn't in the object, but in the belief and care behind it, and that some things, once given, can never be truly reclaimed.",
   "records": {

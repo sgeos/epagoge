@@ -2,7 +2,7 @@
 {
   "id": "bk.h1.resting.x_discourse_marker",
   "level": 1,
-  "title": "Resting on a guess, and discourse marker",
+  "title": "The boy forgot the first thing and could not go back",
   "subject": {
     "kind": "topic",
     "target": "h1.resting"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child walks a dark, uncertain path, afraid to move forward or rest, because they didn't check the first thing, like a door or a window, leading to a sense of being lost and overwhelmed.",
   "teaches": "Rest is not the same as stopping; true rest comes only after facing fear and remembering what matters, even when you can't see it.",
   "records": {

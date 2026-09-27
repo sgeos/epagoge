@@ -2,7 +2,7 @@
 {
   "id": "bk.p1.sound.x_component_and_system",
   "level": 1,
-  "title": "Sound, and component and system",
+  "title": "A cup falls and breaks into part, whole, and pieces",
   "subject": {
     "kind": "topic",
     "target": "p1.sound"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child watches a cup fall and break, noticing how the sound of the break reveals the cup's journey from whole to pieces, and how each part makes its own sound.",
   "teaches": "Sound is not just noise, it has shape, movement, and meaning, and it travels through the air, walls, and space, even after the event is over.",
   "records": {

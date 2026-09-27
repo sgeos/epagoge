@@ -2,7 +2,7 @@
 {
   "id": "bk.r1.when.x_name",
   "level": 1,
-  "title": "Sequence, and name",
+  "title": "Carlo built a bridge, then a boat, and found his bear again",
   "subject": {
     "kind": "topic",
     "target": "r1.when"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "This book follows a child named Carlo as he builds a bridge, then a boat, using a sequence of careful steps, each marked by a name, a tool, or a sign. It shows how starting with a small action, like placing a stick or carving a name, leads to something bigger through persistence and planning.",
   "teaches": "It teaches that every important task begins with a first step, and that progress comes from following a plan, even when things break or fail. It shows how names, marks, and small actions give meaning to movement and help us keep going, even in the dark.",
   "records": {

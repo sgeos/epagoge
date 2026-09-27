@@ -2,7 +2,7 @@
 {
   "id": "bk.m1.logic.x_presence",
   "level": 1,
-  "title": "If then, and presence",
+  "title": "The ground stays wet after the rain",
   "subject": {
     "kind": "topic",
     "target": "m1.logic"
@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-09-27",
   "about": "A child observes the world through simple truths, like rain making the ground wet, or a ball disappearing in a puddle, using everyday moments to explore basic rules of logic. The story shows how things can't be both true and not true at the same time, and how truth stays clear even when things change.",
   "teaches": "Children learn that some ideas must be either true or false, never both, and that truth doesn't change just because we wish it to. They see how logic helps us understand the world, even when things are hidden or unclear.",
   "records": {
