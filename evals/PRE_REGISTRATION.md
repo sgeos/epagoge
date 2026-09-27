@@ -260,14 +260,25 @@ different paired standard deviations. And
 parametrization, Muon and warmup-stable-decay, none implemented, so sigma
 and rho will move again when they are.
 
-**A third reason was found while taking this measurement and it is worse
-than the other two.** Batches are built from consecutive positions in the
+**A third reason was found while taking this measurement, and it has since
+been measured.** Batches are built from consecutive positions in the
 ordering, so an arm decides both the visit order and the composition of
-every batch. **The ablation varies two things while intending to vary one**,
-and nothing measured so far separates a curriculum effect from the effect of
-training on homogeneous batches. `pilot/LEVEL_ONE_VARIANCE.md` names the
-experiment that would separate them. **Until it is run, no ordering result
-from this harness means what it appears to mean.**
+every batch. A curriculum ordering averages 1.20 distinct subjects per batch
+against 1.88 for a shuffled one.
+
+**Controlled by shuffling books inside blocks of 32**, which keeps every
+book within 10 percent of its curriculum position while removing 87 percent
+of the homogeneity gap, **about sixty percent of the curriculum arm's
+penalty disappears**. Six seeds at each of two endpoints: the gap between
+the curriculum and shuffled arms falls from +0.115 to +0.044 at 800 steps
+and from +0.117 to +0.049 at 1,600. The control moves the two arms that were
+already heterogeneous by at most 0.008, which is the placebo check.
+
+**So every ordering figure this harness has produced overstates the effect
+by about two and a half times**, including the earlier result that the sign
+flipped with the endpoint, which was measured on the uncontrolled arms.
+**Any ablation run must use the control**, and `--block-shuffle` is how.
+`pilot/LEVEL_ONE_VARIANCE.md` has the working.
 
 ### Superseded, kept for the reasoning
 

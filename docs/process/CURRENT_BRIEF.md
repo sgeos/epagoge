@@ -1,79 +1,68 @@
-# Current brief. Price the decisions the operator holds
+# Current brief. Find out whether the ablation measures ordering
 
-**Written 2026-09-27**, replacing the brief that said to pay the measurement
-debt. That debt is paid and its brief is superseded rather than deleted.
+**Written 2026-09-27**, replacing the brief that priced the endpoint
+decision. That work is done and its brief is superseded rather than
+deleted. Durable practice is in `PROCESS_STRATEGY.md`.
 
-**This brief is about a narrower thing: making an operator decision
-cheaper to take, without taking it.** Durable practice is in
-`PROCESS_STRATEGY.md`.
+## Why this and nothing else
 
-## Why this and not something else
+**The project's central experiment may be measuring the wrong thing, and
+one run can tell.** `pilot._batches` takes consecutive positions from an
+arm's ordering, so an arm decides both the sequence in which books are
+visited and **what each batch contains**.
 
-**Everything left at level one is blocked on a person, and one of those
-blocks can be made easier from here.** `evals/PRE_REGISTRATION.md` item 6
-fixes the seed count for the ablation. It says the number cannot be fixed
-because the paired standard deviation moved by a factor of five between 800
-and 1,600 steps, and because item 10, the endpoint, is unchosen.
+**Measured over 223 batches**: a curriculum ordering averages 1.20 distinct
+subjects per batch against 1.88 for a shuffled one. **The homogeneity
+ordering matches the loss ordering exactly**, curriculum most homogeneous
+and worst, shuffled least homogeneous and best, at both endpoints.
 
-**Item 10 is the operator's and must stay so.** The handoff records why it
-is load-bearing: at 800 steps the curriculum arm was worse in eight seeds of
-eight, and at 1,600 it was better in seven of eight. **The endpoint picks
-the sign of the headline result**, so an agent choosing it would be choosing
-the answer.
+**Batch homogeneity changes gradient noise for reasons that have nothing to
+do with curricula.** So the arm difference is consistent with a curriculum
+effect and equally consistent with an optimisation artefact.
 
-**But nothing stops the cost of each choice being measured.** How many
-paired seeds a 1 percent effect needs at 800 steps, and how many at 1,600,
-is arithmetic once sigma and rho are known at each. That converts item 10
-from a decision with unknown consequences into a decision with a price list.
-
-**The numbers it currently rests on describe an eighth of this corpus.**
-Item 6's figures were taken over 44,505 tokens. The corpus is 308,931 now,
-the architecture has rotary positions, tied embeddings and derived heads,
-and the evaluation is a token-weighted sum rather than a mean of per-batch
-means over a systematic slice.
+**This is the third harness defect of its shape.** The chunker discarded
+three quarters of the corpus. `linear_extension` covered thirteen books of
+a hundred and forty-six. Both were found after results had been read off
+them. `CLAUDE.md` forbids stating a curriculum benefit as established, and
+the same discipline forbids stating a curriculum harm.
 
 ## What to do
 
-1. **Measure variance, paired standard deviation and correlation on the
-   current corpus, at more than one endpoint**, with enough seeds that the
-   estimate means something.
-2. **Report required seeds per endpoint per target effect**, so the cost of
-   each endpoint choice is visible side by side.
-3. **Update item 6 and `evals/pilot/LEVEL_ONE_VARIANCE.md`** with current
-   figures, and say plainly what remains provisional and why.
-4. **Say whether the pairing design still pays**, which is the one claim in
-   item 6 that could fail on a real corpus at this size.
+1. **Separate the two mechanisms with a control that keeps one and
+   discards the other.** Shuffling books inside blocks of 32 leaves every
+   book within 10 percent of its curriculum position while moving batch
+   homogeneity 87 percent of the way to the shuffled arm.
+2. **Run it against the unshuffled baseline at equal seeds and endpoint**,
+   and read which way the curriculum arm moves.
+3. **Record the answer whichever way it falls**, and say what it does to
+   every ordering result this harness has produced.
 
 ## Prior failures, and the specific wrong turns to avoid
 
-**Do not report an ordering verdict.** The arms are measured here only to
-get a paired difference for variance estimation. **Whether curriculum beats
-topological is exactly what item 10 controls the sign of**, and reporting it
-from a chosen endpoint would be choosing the endpoint. Report spread,
-correlation and seed counts; do not report which arm won.
+**Do not conclude from three points.** Homogeneity and loss agreeing across
+three arms is a rank correlation over three items. It motivated this
+experiment; it does not settle it.
 
-**Do not present item 6 as closed.** Two reasons outlive this work. The
-endpoint is unchosen, and `TRAINING_TECHNIQUES.md` adopts an optimiser and
-schedule that are not implemented, so sigma and rho will move again when
-they are.
+**Do not report an ordering verdict.** Items 7 and 10 are unchosen. What is
+in scope is whether the arms differ *for the reason the experiment
+assumes*, not which arm is better.
 
-**Do not quote the old pairing gain as if it still held.** 22.8x was
-measured over 146 books and 44,505 tokens.
+**Do not let the control change more than intended.** A block shuffle that
+moves books far from their curriculum position is not a control, it is a
+second shuffled arm. The 10 percent figure is the thing to keep checking.
 
-**Do not use fewer seeds than the estimator needs**, and report how many
-observations each estimate rests on.
+**Do not assume the instrument is innocent.** The truncated evaluation was
+ruled out by measurement last tick, not by argument, and that was right.
 
-**Do not overwrite a tracked artifact.** `tools/train_level.py` writes
-`evals/pilot/level_1.json` by default and that file is tracked. Pass
-`--out`.
+**Do not overwrite a tracked artifact.** `train_level.py` writes
+`evals/pilot/level_1.json` by default and it is tracked. Pass `--out`.
 
-**Do not read a count from arithmetic.** Read it from the tool.
+**Do not read a count from arithmetic.** Read it from the gate.
 
-**Check CI separately.** Red while the local gate was green three times.
+**Check CI separately.**
 
 ## What is not this brief's to decide
 
-Items 5, 7 and 10 of the pre-registration, the level-two lexicon, schedules
-for levels three to seven, `sources/` and level seven, the fourteen sense
-questions, and the Rust build output. **Announcing the repository is not
-this brief's either.**
+Items 5, 7 and 10, the level-two lexicon, schedules for levels three to
+seven, `sources/` and level seven, the fourteen sense questions, and the
+Rust build output. **Announcing the repository is not this brief's either.**

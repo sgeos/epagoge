@@ -224,3 +224,83 @@ a small change to the trainer.
 **Until it is run, no ordering result from this harness means what it
 appears to mean**, including the earlier finding that the sign flipped with
 the endpoint.
+
+---
+
+# The confound is real and it is most of the effect
+
+**Measured 2026-09-27**, six seeds a cell, both endpoints, width 256, every
+held-out batch scored.
+
+## The control
+
+**Books are shuffled inside consecutive blocks of 32.** That keeps the
+curriculum and discards the homogeneity: over 223 batches it moves distinct
+subjects per batch from **1.20 to 1.79**, which is 87 percent of the way to
+the shuffled arm's 1.88, while leaving **every book within 10 percent of its
+curriculum position**.
+
+| Books per block | Subjects per batch | Books within 10% of place |
+| --- | --- | --- |
+| 1 | 1.20 | 100% |
+| 8 | 1.55 | 100% |
+| **32** | **1.79** | **100%** |
+| 64 | 1.83 | 88% |
+| 400 | 2.06 | 22% |
+
+## What it does
+
+Held-out loss, block 1 against block 32.
+
+| Arm | 800 steps | 1,600 steps |
+| --- | --- | --- |
+| curriculum | 3.5946 → 3.5299, **-0.0647** | 3.3172 → 3.2563, **-0.0609** |
+| topological | 3.5091 → 3.5116, +0.0026 | 3.2323 → 3.2320, -0.0003 |
+| shuffled | 3.4799 → 3.4856, +0.0057 | 3.2002 → 3.2076, +0.0075 |
+
+**The control moves the curriculum arm and leaves the other two alone.**
+That is the placebo check and it passes: topological and shuffled were
+already heterogeneous, so destroying homogeneity should do nothing to them,
+and it moves them by at most 0.0075 against a curriculum shift of 0.06, an
+order of magnitude more. **It replicates at both endpoints.**
+
+## The answer
+
+| | 800 steps | 1,600 steps |
+| --- | --- | --- |
+| curriculum minus shuffled, uncontrolled | +0.1147 | +0.1170 |
+| the same gap, controlled | +0.0443 | +0.0486 |
+| **share attributable to ordering** | **39%** | **42%** |
+
+**About sixty percent of the curriculum arm's penalty is batch homogeneity
+and not ordering.** The remaining 0.044 to 0.049 nats is still several
+times the within-arm spread, so something ordering-related survives, and it
+is less than half of what this harness reported.
+
+**Every ordering figure this harness has produced overstates the effect by
+about two and a half times**, including the earlier result that the sign
+flipped between 800 and 1,600 steps, which was measured on the uncontrolled
+arms.
+
+**The control also makes runs more consistent.** Seed standard deviation
+falls from 0.0058 to 0.0048 at 800 steps and from 0.0082 to 0.0041 at
+1,600, and the correlation that pairing depends on recovers from about zero
+to 0.24 and 0.33. **Homogeneous batches were a source of run-to-run noise
+as well as of bias.**
+
+## What this does not settle
+
+**It does not say which ordering is better.** Items 7 and 10 are unchosen
+and that verdict is not this measurement's to give. What is settled is that
+the arms differ substantially for a reason the experiment was not designed
+to measure.
+
+**One width, one batch size, one corpus.** The homogeneity a batch has is a
+function of how many chunks a book makes and how many chunks a batch holds,
+both of which are fixed here.
+
+**Block 32 is not a proof that 100 percent of the sequence is preserved.**
+It preserves each book's position to within 10 percent of the corpus, which
+is a coarse guarantee. A curriculum effect operating at a finer grain than
+32 books would be partly destroyed by this control and would show up here as
+homogeneity.

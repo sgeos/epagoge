@@ -6,36 +6,34 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**Variance has been re-measured on the current corpus at more than one
-endpoint.** A record under `evals/pilot/` carries, for each endpoint, the
-seed-to-seed standard deviation, the paired standard deviation, the
-correlation between arms, and the number of paired observations each rests
-on.
+**Batch composition under each arm is measured and recorded**, not asserted.
+A record states, per arm, how homogeneous a training batch is under some
+stated measure, and says how many batches the figure rests on.
 
-**The cost of each endpoint is stated as seed counts.** For each endpoint
-measured, the record gives the paired and unpaired seeds required to detect
-at least two different target effect sizes.
+**A control exists that preserves the curriculum sequence while changing
+batch composition**, and the record states how far it moves each of those
+two quantities, so a reader can see it is a control and not a second
+shuffled arm.
 
-**No ordering verdict appears anywhere.** Nothing added in this work states
-or implies which arm won, because the endpoint that would fix the sign is
-unchosen and belongs to the operator. Reporting spread, correlation and
-seed counts is in scope; reporting which arm was better is not.
+**That control has been trained and compared against the uncontrolled
+baseline** at the same endpoint and the same number of seeds, and the
+comparison is recorded with the per-arm means and the seed count.
 
-**Item 6 of `evals/PRE_REGISTRATION.md` carries the current figures and is
-still marked provisional**, with the reasons it remains so named
-explicitly: the endpoint is unchosen, and the adopted optimiser and
-schedule are not implemented.
+**The record states which mechanism the result supports**, in the form of
+what the arm difference is attributable to, and says plainly if the answer
+is that the two cannot be separated by this experiment.
 
-**`evals/pilot/LEVEL_ONE_VARIANCE.md` no longer presents superseded figures
-as current**, and a reader meets the current measurement or a pointer to it
-before any older number.
+**Every ordering figure this harness has produced is marked with whether it
+survives the answer.** If the arm difference turns out to be attributable to
+batch composition, any record presenting an ordering effect says so before
+its numbers.
 
-**Whether pairing still pays is stated as a measured claim**, with the
-current gain given rather than the older one repeated.
+**No ordering verdict is presented as settled.** Reporting which mechanism
+explains the arm difference is in scope. Declaring which ordering is better
+for the curriculum hypothesis is not, because the endpoint and the minimum
+effect are unchosen and belong to the operator.
 
-**Every figure presented says how many seeds it rests on**, and anything
-resting on fewer observations than the estimator's own minimum is labelled
-as such rather than presented as an estimate.
+**Every figure says how many seeds it rests on.**
 
 **The gate passes.** `./tools/check.sh` reports all checks passed and exits
 0, with no check weakened or removed to achieve it.
@@ -46,6 +44,6 @@ assumed.
 **The working tree is clean and pushed**, with no tracked evaluation
 artifact holding the output of a probe rather than a recorded run.
 
-**No new capability was added** beyond what is needed to take these
-measurements. A new option, token, generator, or training objective is
-outside this condition.
+**Nothing was added beyond what this question needs.** A control arm and the
+measurement that justifies it are in scope. A new token, generator, training
+objective or corpus is not.

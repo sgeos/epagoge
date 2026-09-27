@@ -167,6 +167,39 @@ def book_order(
     return ordered, text, titles
 
 
+def block_shuffle(names: list[str], size: int, seed: int) -> list[str]:
+    """Shuffle within consecutive blocks, keeping the coarse order intact.
+
+    **This separates the two things an arm currently changes at once.**
+    `_batches` takes consecutive positions from an ordering, so an arm
+    decides both the sequence in which books are visited and what each batch
+    is made of. Measured 2026-09-27 over 223 batches: a curriculum ordering
+    averages **1.20 distinct subjects per batch** against **1.88** for a
+    shuffled one, so curriculum batches are far more homogeneous, and
+    homogeneity changes gradient noise for reasons that have nothing to do
+    with curricula.
+
+    Shuffling inside blocks of 32 books moves the homogeneity to 1.79,
+    which is 87 percent of the way to the shuffled arm, while leaving
+    **every book within 10 percent of its curriculum position**. So a run at
+    block 32 keeps the curriculum and discards the homogeneity, and the
+    difference between it and block 1 is the part of the arm effect that was
+    never about ordering.
+
+    A size of 1 or less is the identity, which is the pre-existing
+    behaviour and the default.
+    """
+    if size <= 1:
+        return list(names)
+    generator = random.Random(seed)
+    out: list[str] = []
+    for start in range(0, len(names), size):
+        part = names[start : start + size]
+        generator.shuffle(part)
+        out += part
+    return out
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--level", type=int, default=1)
@@ -193,6 +226,12 @@ def main(argv: list[str]) -> int:
     # estimator of a slightly different quantity and is the wrong instrument
     # for a variance study whose effects are 0.2 percent of the loss. Zero
     # means every batch.
+    parser.add_argument(
+        "--block-shuffle",
+        type=int,
+        default=1,
+        help="shuffle books within blocks of this size; 1 is the identity",
+    )
     parser.add_argument("--eval-batches", type=int, default=0)
     parser.add_argument("--out", type=Path, default=ROOT / "evals/pilot/level_1.json")
     args = parser.parse_args(argv[1:])
@@ -259,6 +298,7 @@ def main(argv: list[str]) -> int:
 
     def order_for(arm: str, seed: int) -> list[int]:
         names, _, _ = book_order(args.level, graph, seed, arm, plan)
+        names = block_shuffle(names, args.block_shuffle, seed)
         rank = {name: n for n, name in enumerate(names)}
         return sorted(train_ids, key=lambda i: (rank.get(owner[i], len(rank)), i))
 

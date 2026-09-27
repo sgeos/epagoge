@@ -192,6 +192,27 @@ sense questions to the operator.
   words**, which blocks announcing titles and is a fourth instance of the
   rule that a concept name is not a word.
 
+### Added 2026-09-27, the ablation's own instrument
+
+- **The ordering arms were measuring gradient noise as much as ordering.**
+  `pilot._batches` takes consecutive positions from an arm's order, so an
+  arm sets both the visit sequence and what each batch holds. A curriculum
+  order averages 1.20 distinct subjects a batch against 1.88 shuffled.
+- **Controlled, about sixty percent of the effect disappears.** Shuffling
+  books inside blocks of 32 keeps every book within 10 percent of its
+  curriculum position and removes 87 percent of the homogeneity gap. The
+  curriculum-minus-shuffled gap falls from +0.115 to +0.044 at 800 steps and
+  +0.117 to +0.049 at 1,600, six seeds each, while the two already
+  heterogeneous arms move by at most 0.008.
+- **So every ordering figure from this harness overstates by about two and a
+  half times**, including "the endpoint picks the sign", which was measured
+  uncontrolled. `--block-shuffle` is the control and an ablation must use it.
+- **It was also a noise source.** Seed standard deviation halves under the
+  control at 1,600 steps and the pairing correlation recovers from zero.
+- **Pairing no longer pays.** Variance fell elevenfold as the corpus grew
+  eightfold, so a 1 percent effect needs one seed rather than twelve paired
+  or 246 unpaired.
+
 ### Findings that outlive the session
 
 - **A full pairwise corpus is affordable and I was wrong to say otherwise.**
