@@ -21,7 +21,19 @@ dependencies = []
 
 [project.optional-dependencies]
 # Only the pilot trainer needs these. Install with: uv pip install -e ".[train]"
-train = ["torch==2.14.0", "numpy"]
+#
+# **Both pinned exactly, and numpy was not until 2026-09-27.** Every measured
+# number in `evals/` was produced under some numpy nobody recorded, and a
+# later release could move one without a file in this tree changing. That is
+# the reproducibility gap a lock file would have closed, and pinning here
+# closes it in the file that states the dependency, which is the convention
+# torch already followed and `tools/check.sh` follows for ruff and pyright.
+#
+# **The transitive closure is still unpinned, and this does not claim
+# otherwise.** Ten further distributions arrive under torch. They are pinned
+# by nothing, and closing that would take a lock file the installer actually
+# consults. See the note on `uv.lock` in `.gitignore`.
+train = ["torch==2.14.0", "numpy==2.5.3"]
 
 [build-system]
 requires = ["hatchling"]
