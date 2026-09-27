@@ -1,5 +1,11 @@
 # Weight decay at level one, and where it starts to matter
 
+> **Figures below were scored on 24 of 48 held-out batches**, which every
+> run announced. Comparisons between cells are sound because the truncation
+> is identical; **absolute losses are about 0.25 nats optimistic**. See
+> `REFERENCE_CONFIGURATION.md`, measured on the whole set.
+
+
 **Measured 2026-09-27** on the 400-book corpus, 306,449 training tokens,
 rotary positions, tied embeddings, derived head count, sequence length 128.
 All figures are held-out loss under the corrected token-weighted evaluation.

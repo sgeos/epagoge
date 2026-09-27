@@ -246,6 +246,18 @@ sense questions to the operator.
   is 0.7 percent of the loss and **item 7 fixes whether that counts**.
   Narrowing the attribution further cannot make meaningful an effect nobody
   has called meaningful.
+- **The reference configuration is recorded** in
+  `../../evals/pilot/REFERENCE_CONFIGURATION.md`, and the shipped
+  checkpoint is trained at it: rotary, width 512, 3,200 steps, token
+  replacement 0.05. **Frontier 3.156 against 3.236 for the defaults**, three
+  seeds, whole held-out set.
+- **Capacity pays only if it is regularised.** Unregularised, width 512 is
+  slightly worse than 256; regularised it is clearly better. That
+  interaction is why earlier width sweeps made the wide points look bad.
+- **`diagnose_level.py` scored 24 of 48 held-out batches** until today, so
+  **every figure it produced is about 0.25 nats optimistic**, including four
+  records written the same day. Comparisons survive because the truncation
+  was identical; absolute losses do not. Both tools now take the whole set.
 - **Corpus doubling is worth about 0.26 nats and the rate is not falling**,
   measured over an eightfold range against one held-out set. At thirty books
   a round that is fifteen rounds per doubling, which makes it **the most

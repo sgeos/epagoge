@@ -1,5 +1,11 @@
 # Rotary positions, whole-book streams, and what the model fails to retain
 
+> **Figures below were scored on 24 of 48 held-out batches**, which every
+> run announced. Comparisons between cells are sound because the truncation
+> is identical; **absolute losses are about 0.25 nats optimistic**. See
+> `REFERENCE_CONFIGURATION.md`, measured on the whole set.
+
+
 > **SUPERSEDED IN PART, 2026-09-27. Do not quote the grid below.** It was
 > taken with the two position paths built differently, thirteen bias tensors
 > against nine, so it measured the block as well as the position scheme. It

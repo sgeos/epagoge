@@ -80,6 +80,11 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--tokens", type=int, default=240, help="tokens to sample")
     parser.add_argument("--samples", type=int, default=3)
     parser.add_argument("--temperature", type=float, default=1.0)
+    # **The shipped checkpoint should be the best the project can make.**
+    # `evals/pilot/REFERENCE_CONFIGURATION.md` records what that is and how
+    # it was found; without this flag the model anyone prompts is the one
+    # the defaults produce, which measured 0.106 nats worse.
+    parser.add_argument("--token-replacement", type=float, default=0.0)
     parser.add_argument("--device", type=str, default=None)
     # **Defaults are the best configuration the sweep found**, width 256 at
     # four hundred steps, held-out loss 4.789. Every longer run measured on
@@ -132,7 +137,11 @@ def main(argv: list[str]) -> int:
         list(range(len(chunks) - held)),
         chunks[-held:],
         model_config,
-        TrainConfig(steps=args.steps, batch_size=args.batch_size),
+        TrainConfig(
+            steps=args.steps,
+            batch_size=args.batch_size,
+            token_replacement=args.token_replacement,
+        ),
         args.seed,
         device,
         pad_id,

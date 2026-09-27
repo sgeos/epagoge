@@ -6,28 +6,33 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**Held-out loss against training corpus size is measured on the current
-corpus**, at three or more sizes spanning at least a fourfold range, with
-the held-out set identical at every size and that fact stated.
+**A configuration is named as the best measured**, with every setting that
+differs from the defaults stated, and with the held-out loss it reaches.
 
-**More than one step count is run at each size**, and the record says which
-figure it reports and why, since the optimal step count moves with corpus
-size.
+**That configuration was found by a sweep over more than one setting**,
+recorded with the full grid rather than only the winner, so a reader can see
+what was beaten and by how much.
 
-**The record states what the slope means for whether to write more books**,
-in terms a reader can act on, and distinguishes what the curve measures
-from what it does not.
+**Whether the settings combine is stated from measurement**, not assumed.
+If two improvements do not add, the record says so.
 
-**`evals/pilot/LEVEL_ONE_SCALING.md` no longer presents only figures taken
-before the current corpus**, and a reader meets the current measurement or a
-pointer to it before the older one.
+**The best result rests on more than one seed**, or is labelled as resting
+on one, and the seed-to-seed spread is stated so a reader can judge whether
+the winner is distinguishable from its neighbours.
 
-**Every figure says how many seeds it rests on**, and any single-seed figure
-is labelled as such.
+**The shipped checkpoint is trained at the named configuration**, loads
+through the ordinary loader, and `tools/talk.py` runs against it without
+reporting a vocabulary mismatch.
 
-**No claim is made that generation is or is not worthwhile beyond what the
-measurement supports.** Token count and concept coverage are different
-quantities and the record says which was measured.
+**A reader looking for what to train with can find the answer** in a
+tracked document, rather than having to reconstruct it from evaluation
+records.
+
+**The frontier is stated as one number with its configuration attached**, so
+a later claim has something specific to beat.
+
+**No improvement is credited beyond what the sweep shows.** Anything
+measured in isolation and not in combination is described as such.
 
 **The gate passes.** `./tools/check.sh` reports all checks passed and exits
 0, with no check weakened or removed to achieve it.

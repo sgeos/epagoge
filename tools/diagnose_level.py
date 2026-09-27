@@ -110,6 +110,11 @@ def main(argv: list[str]) -> int:
     # says each sits at the wrong end of its range for a corpus this small.
     # See `docs/decisions/TRAINING_ADVANCES.md`. Exposed so the claim can be
     # tested here rather than believed.
+    # **The default scored 24 of 48 held-out batches and said so.** Every
+    # cell of a sweep is truncated identically so comparisons survive it,
+    # but an absolute figure quoted as a result should be the whole set.
+    # Zero means every batch. `tools/train_level.py` gained this first.
+    parser.add_argument("--eval-batches", type=int, default=0)
     parser.add_argument("--weight-decay", type=float, default=0.01)
     parser.add_argument(
         "--token-replacement",
@@ -261,6 +266,11 @@ def main(argv: list[str]) -> int:
                             weight_decay=args.weight_decay,
                             min_lr_fraction=args.min_lr_fraction,
                             token_replacement=args.token_replacement,
+                            eval_batches=(
+                                args.eval_batches
+                                if args.eval_batches > 0
+                                else 1_000_000
+                            ),
                         ),
                         args.seed,
                         device,

@@ -1,5 +1,11 @@
 # Is the corpus the limit, or was the model the wrong size?
 
+> **Figures below were scored on 24 of 48 held-out batches**, which every
+> run announced. Comparisons between cells are sound because the truncation
+> is identical; **absolute losses are about 0.25 nats optimistic**. See
+> `REFERENCE_CONFIGURATION.md`, measured on the whole set.
+
+
 > **STALE, 2026-09-27. Every figure below predates the tree it describes.**
 > The corpus is now **400 books and 308,931 tokens**, the vocabulary 2,279
 > ids, the head count derived rather than fixed at four, and the held-out
