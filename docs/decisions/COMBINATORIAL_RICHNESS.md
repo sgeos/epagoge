@@ -177,3 +177,47 @@ served and a concept with ten is not much better served than one with four.
 corpus and on the 400-book corpus at one architecture and evaluate both on
 one held-out set. Nothing here does that, and without it the drop from
 4.011 to 3.243 remains six changes measured together.
+
+## A round of writing, 2026-09-27, and what it bought
+
+**Fifteen cross-concept books, planned to spread rather than deepen.**
+`tools/plan_pairs.py` chose eighteen pairs, all new, with eighteen distinct
+targets and eighteen distinct partners and no partner used twice, seventeen
+of them crossing domains.
+
+| | Before | After |
+| --- | --- | --- |
+| Content books | 398 | **413** |
+| Pairs realised | 268 of 8,128 | **283 of 8,128** |
+| Coverage | 3.3% | **3.5%** |
+| Concepts in exactly one book | 4 | **2** |
+| Concepts in two or three | 27 | **22** |
+| Corpus words | 297,804 | **301,219** |
+
+**Fifteen books bought fifteen pairs**, which is the most a round of this
+shape can buy and is the point of planning for distinct partners. **Seven
+concepts moved out of the thinnest two bands**, which is where the
+measurement in this record says the return is.
+
+**Three of eighteen were refused** for a subject line the validator would
+not take, and are reported here rather than being quietly dropped from the
+count.
+
+## Counting pair coverage, which can be done three ways
+
+**Two of them are wrong and both are tempting.**
+
+| Method | Result |
+| --- | --- |
+| Every concept any record mentions | **88.4%** |
+| Only the concepts a book's schedule unit teaches | **0.5%** |
+| **Union across a content book's own records** | **3.5%** |
+
+**The first counts the dictionary books**, which define nearly the whole
+lexicon and therefore form one enormous clique that has taught nobody
+anything. **The second loses every cross-concept book's partner**, because
+such a book's subject is its target's unit and the partner appears nowhere
+in the schedule.
+
+**The third is the one to use** and it is what the handoff's figures have
+always meant. It was arrived at here by getting the other two first.

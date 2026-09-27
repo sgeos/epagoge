@@ -14,9 +14,16 @@ gives in a form that does not depend on any hash.
 
 **Nothing is running, nothing is uncommitted, CI is green.**
 
-**At this refresh**: 400 books over 7,163 records and **297,804 words**,
+**At this refresh**: 415 books over 7,403 records and **301,219 words**,
 every content book inside the word band and every book carrying its six
-metadata fields.
+metadata fields. **Concept pairs realised: 283 of 8,128.**
+
+**Pair coverage can be counted three ways and two are wrong.** Counting
+every concept any record mentions gives 88 percent, because the dictionary
+books form one clique. Counting only what a book's schedule unit teaches
+gives 0.5 percent, because a cross-concept book's partner is not in the
+schedule. **The union across a content book's own records, dictionary books
+excluded, is the figure this file means.**
 
 **The measurement debt this file has carried since 2026-09-26 is paid.**
 All three owed measurements were re-run on the current tree and the

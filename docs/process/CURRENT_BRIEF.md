@@ -1,58 +1,60 @@
-# Current brief. Make the record match what is known
+# Current brief. Buy pair coverage, because that is what is left
 
-**Written 2026-09-27**, replacing the brief that built the length arm.
+**Written 2026-09-27**, replacing the brief that audited the record.
 Durable practice is in `PROCESS_STRATEGY.md`.
 
-## Why this and not a sixth confound
+## Why this and not more measurement
 
-**Five consecutive rounds of work changed what this project believes, and
-each of them corrected claims in more than one document.** The homogeneity
-figures were corrected in three places, an attribution was withdrawn in
-three and partly reinstated in two, and the seed-count item was rewritten
-twice.
+**The measurement work has reached the operator.** The surviving ordering
+effect is 0.7 percent of the loss and `../../evals/PRE_REGISTRATION.md` item
+7 fixes whether that counts. Until it is chosen, further precision on it
+changes nothing.
 
-**A claim that survives a correction in one document is the failure this
-project keeps finding in its own code**, and it has already happened twice
-here. Two live statements still gave a reason for an operator decision that
-the measurements had removed.
+**Corpus breadth needs no decision and the project has measured its
+value.** `../decisions/COMBINATORIAL_RICHNESS.md` found the second book
+about a concept worth a great deal and the tenth worth little, so the return
+is in covering concepts that are thin and pairs that do not exist, not in
+piling books on concepts that already have ten.
 
-**The confound hunt has also reached diminishing returns.** The remaining
-effect is 0.025 nats, which is 0.7 percent, and **item 7 fixes whether that
-counts and is unchosen**. Spending another round narrowing the attribution
-of an effect nobody has yet called meaningful is precision without purpose.
+**Coverage is 268 concept pairs of 8,128**, which is 3.3 percent.
 
 ## What to do
 
-1. **Find every live claim the session's measurements changed**, and correct
-   it where it stands rather than deleting it.
-2. **Distinguish live text from accumulated history.** The handoff's history
-   block is appended, never edited, and a claim there is a record of what was
-   believed rather than an assertion.
-3. **Give the evaluation record a current-state summary at its top**, so a
-   reader meets the conclusion before the stratigraphy of five appended
-   sections and two corrections.
-4. **Say what is now the binding constraint**, so the next reader spends
-   their effort where it moves something.
+1. **Plan pairs that spread rather than deepen**, preferring partners that
+   are least used and targets the model retains worst.
+2. **Generate, fill, describe and stamp them**, and let the gate refuse
+   anything that does not meet the standard.
+3. **Re-measure coverage afterwards** and record the before and after, since
+   a round of writing that bought tokens rather than structure is a round
+   that failed.
 
-## Prior failures, and the specific wrong turns to avoid
+## The measurement trap this brief exists to flag
 
-**Do not edit history to make it consistent.** Corrections are kept beside
-the claim. A record of a belief that turned out wrong is the reason the
-replacement is trustworthy, and rewriting it destroys that.
+**Pair coverage can be computed three ways and two of them are wrong.**
+Counting every concept any record mentions gives **88 percent**, because the
+dictionary books define nearly the whole lexicon and form one enormous
+clique. Counting only the concepts a book's schedule unit teaches gives
+**0.5 percent**, because a cross-concept book's subject is its target's
+unit and its partner appears nowhere in the schedule.
 
-**Do not declare an item dead because its reason died.** The endpoint item
-was justified by an effect that no longer reproduces, and the item still
-stands for a different reason. Correct the justification, not the item.
+**The right count is the union of concepts across a content book's own
+records, excluding the dictionary books.** That gives 3.3 percent and
+matches what the handoff recorded. **Check any coverage figure against the
+handoff's before believing it.**
 
-**Do not confuse a stale figure with a superseded one.** A figure in a
-section already marked superseded needs nothing. A figure in live text
-needs correcting.
+## Other wrong turns to avoid
 
-**Do not summarise away the corrections.** A current-state summary sits
-above the history; it does not replace it.
+**Do not put a concept name in a prompt.** It is not a word, the teacher
+echoes it, and the book is discarded. The generator takes the words that
+teach a concept for exactly this reason.
 
-**Do not read a count from arithmetic**, do not pipe a run through a filter
-that hides its exit code, and check CI separately.
+**Do not let a short book through.** Sixteen spreads is the standard, and
+a generated book has arrived at eighteen and at eight.
+
+**Do not trust a run whose output you filtered.** A traceback piped through
+a filter leaves the shell reporting the filter's exit code.
+
+**Do not read a count from arithmetic**, and check CI separately.
 
 ## What is not this brief's to decide
 
