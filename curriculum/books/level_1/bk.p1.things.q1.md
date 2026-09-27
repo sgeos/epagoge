@@ -11,7 +11,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-09-26",
   "about": "A young child explores the simple, constant presence of a cup through questions and playful movements, noticing how it stays the same even when empty, hidden, or moved.",
   "teaches": "Things like cups don't change just because they're empty or out of sight, they remain the same object, even when not visible or full.",
   "records": {

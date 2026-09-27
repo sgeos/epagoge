@@ -133,6 +133,19 @@ def main(argv: list[str]) -> int:
         entries = [cast(dict[str, object], r) for r in records]
 
         known = dates.get(relative)
+        # **A BOOK EDITED TODAY IS PUBLISHED TODAY, whatever history says.**
+        # Deriving `published` from the last commit leaves every edited book
+        # exactly one commit behind: the stamp runs, history still names the
+        # previous commit, the file agrees, the check passes, and then the
+        # commit itself moves history forward and makes the file stale. CI
+        # caught this on 2026-09-27 where the local gate could not, because
+        # `--check` skips a file modified in the working tree and that is
+        # precisely the file whose date is about to change.
+        #
+        # Today is the date the pending commit will record, so stamping it is
+        # both correct and the only value that closes the loop.
+        if known is not None and relative in dirty:
+            known = (known[0], date.today().isoformat())
         if known is None:
             # **A BOOK NOT YET IN HISTORY IS STAMPED WITH TODAY.** Deriving
             # both dates from the commit log deadlocked a new book: the gate
