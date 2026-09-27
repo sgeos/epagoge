@@ -6,35 +6,36 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**Batch homogeneity is measured from the real chunk assignment**, not from
-a proxy for it, and a record says so.
+**Displacement is measured and recorded for every arm and for each control
+point**, so a reader can see which orderings preserve the sequence and which
+do not.
 
-**The earlier homogeneity figures, which came from a wrong proxy, are
-corrected everywhere they appear**, with the correction visible rather than
-silently substituted, and with a statement of what the error did and did not
-change.
+**More than one measure of batch diversity is used**, and the record says
+how well each fits the control curve and how much of the arm difference each
+explains. The residual is reported under the metric that explains the most,
+not the least.
 
-**A curve of held-out loss against batch homogeneity exists**, measured at
-three or more block sizes with the curriculum sequence held fixed, recorded
-with the seed count per point.
+**Mechanical confounds are checked rather than assumed**, including whether
+the arms differ in how much padding their batches carry, with the figures
+recorded.
 
-**Each block size is recorded with both quantities it affects**: how
-homogeneous batches become, and how far books move from their curriculum
-position. A reader can see which block sizes are controls and which are not.
+**The paired difference between the two matched arms is pooled across every
+run available**, and the record states how many paired observations it rests
+on and how many point the same way.
 
-**The record states where the shuffled arm falls relative to that curve**,
-and therefore what the residual is attributable to, or states plainly that
-the design cannot tell.
+**The record states what the residual is attributable to and what it is
+not**, naming each alternative that was eliminated and how, and naming any
+that survive.
 
-**Any extrapolation beyond the measured range is labelled as one.** If the
-shuffled arm's homogeneity lies outside the range the curriculum arm covers,
-the record says so where the conclusion is drawn.
+**No curriculum verdict is claimed.** Reporting that an ordering property
+tracks held-out loss after controls is in scope. Declaring the project's
+hypothesis supported or refuted is not, because held-out loss is not the
+property the project targets and the minimum meaningful effect is unchosen.
 
-**No curriculum effect is claimed as established.** Reporting what the
-residual is attributable to is in scope. Declaring that ordering helps or
-harms is not.
+**Anything that would change if a further confound were found is marked as
+such**, rather than presented as settled.
 
-**Every figure says how many seeds it rests on.**
+**Every figure says how many seeds or observations it rests on.**
 
 **The gate passes.** `./tools/check.sh` reports all checks passed and exits
 0, with no check weakened or removed to achieve it.

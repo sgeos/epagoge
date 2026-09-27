@@ -1,56 +1,53 @@
-# Current brief. Find out what the surviving forty percent is
+# Current brief. Attribute the residual, or say it cannot be attributed
 
-**Written 2026-09-27**, replacing the brief that asked whether the ablation
-measures ordering. It answered: about sixty percent of the arm difference
-was batch homogeneity. **This brief is about the rest.** Durable practice is
-in `PROCESS_STRATEGY.md`.
+**Written 2026-09-27**, replacing the brief that asked what the surviving
+forty percent is. Durable practice is in `PROCESS_STRATEGY.md`.
 
 ## Why this and nothing else
 
-**A residual of about 0.045 nats survived the control**, which is several
-times the within-arm spread, so it is not noise. It is either a real
-ordering effect, which would be the first evidence this project has for its
-own thesis, or it is homogeneity at a grain the control does not reach.
+**A residual survived the homogeneity control and three things could
+explain it.** The shuffled arm sits five to seven seed standard deviations
+below the curve the curriculum arm traces when only batch homogeneity is
+varied. It differs from that curve's points in three ways at once: it
+ignores the prerequisite graph, it displaces books far, and it sits past the
+homogeneity range the controls cover.
 
-**Those two possibilities call for opposite work** and the project cannot
-tell them apart from what has been run. **Distinguishing them is worth more
-than anything else available**, because one of them says the experiment has
-started working and the other says it still has not.
+**Two of those three can be eliminated with measurements already
+affordable**, and the third by choosing a better comparison rather than a
+new experiment. **The topological arm is the better comparison**: it sits at
+essentially the same batch homogeneity as the shuffled arm, so the two are
+already matched on the quantity that explained everything else.
 
-## The test
+## What to do
 
-**Block size traces a curve with the sequence held fixed.** Running the
-curriculum arm at block sizes from 1 to 64 varies batch homogeneity while
-keeping every book near its curriculum position, so loss against homogeneity
-along that curve is the effect of homogeneity alone.
-
-**The shuffled arm is the test point.** It differs from the curriculum arm
-in both homogeneity and sequence. If its loss falls on the curve extrapolated
-to its homogeneity, then sequence contributes nothing and the residual is
-homogeneity the control did not reach. If it falls below the curve, the gap
-is the ordering effect.
+1. **Measure displacement for every arm**, so the claim that displacement
+   does or does not track loss rests on numbers.
+2. **Check whether the two arms being compared are matched on more than one
+   measure of batch diversity**, not just the one the curve was fitted on. A
+   result that survives only the metric it was fitted to is not a result.
+3. **Rule out the mechanical confounds.** Padding differs by arm only if the
+   chunks differ, which they should not, and that is worth confirming rather
+   than assuming.
+4. **Pool the paired difference across every run already taken**, and report
+   how many observations point the same way.
 
 ## Prior failures, and the specific wrong turns to avoid
 
-**Measure homogeneity from the real chunking.** The first measurement of it
-used a proxy for how many chunks a book makes, and the proxy was wrong. The
-proportions survived and the absolute numbers did not, and three committed
-records carry the wrong ones. **Correct them rather than quietly replace
-them.**
+**Do not fit one metric and declare the confound dead.** Subjects per batch
+explained almost none of the topological-shuttled gap, but concepts and
+domains per batch are also good fits to the control curve and explain more.
+**Report the residual under the metric most favourable to the confound**,
+not the one most favourable to the conclusion.
 
-**Do not fit a line to a curve.** Loss against homogeneity has no reason to
-be linear, and an extrapolation past the measured range is the weakest part
-of this design. If the shuffled arm sits outside the range the curriculum
-arm covers, say so rather than extrapolating confidently.
+**Do not call the residual a curriculum result.** Held-out loss is not the
+property this project targets. `CLAUDE.md` forbids stating a curriculum
+benefit as established and the same discipline applies to a harm, and item
+7 fixes what size of effect counts and is unchosen.
 
-**Do not conclude a curriculum effect exists.** A residual consistent with
-an ordering effect is not a demonstration of one. `CLAUDE.md` forbids
-stating a curriculum benefit as established, and this design cannot
-establish it: the endpoint and the minimum effect are unchosen.
-
-**Do not let the control drift into a second shuffled arm.** Block 64 moves
-books out of place. Report how far each block size displaces books alongside
-its homogeneity.
+**Do not forget that four harness defects have now been found this way.**
+The chunker, the ordering coverage, the truncated evaluation and the batch
+composition were each found after results had been read off them. Look for
+the fifth before believing the fourth's conclusion.
 
 **Do not overwrite a tracked artifact**, do not read a count from
 arithmetic, and check CI separately.

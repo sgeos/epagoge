@@ -408,3 +408,99 @@ added last is the only one carrying signal.**
 
 **No curriculum verdict follows.** Items 7 and 10 are unchosen, and a
 residual consistent with an ordering effect is not a demonstration of one.
+
+---
+
+# Attributing the residual, 2026-09-27
+
+**The residual is not displacement, not padding, and mostly not batch
+diversity.** What survives is associated with respecting the prerequisite
+graph.
+
+## The comparison to make is topological against shuffled
+
+**Those two arms are already matched on the quantity that explained
+everything else.** Batch diversity, measured from the real chunk assignment
+over 160 batches:
+
+| Ordering | Subjects | Concepts | Domains | Books | Displacement |
+| --- | --- | --- | --- | --- | --- |
+| curriculum | 1.562 | 2.331 | 1.300 | 3.094 | 0.0 |
+| curriculum, block 32 | 2.681 | 3.913 | 2.206 | 3.044 | 10.4 |
+| **topological** | **2.962** | 4.369 | 2.550 | 3.062 | **55.9** |
+| **shuffled** | **2.975** | 4.531 | 2.638 | 3.019 | **130.1** |
+
+**Displacement is eliminated by the topological arm itself.** It moves books
+by 55.9 places on average, five times the block-32 control, and it sits on
+the homogeneity curve within one to two seed standard deviations. **A large
+displacement is therefore not what moves the loss.**
+
+**Padding is eliminated by measurement.** Every arm carries the same chunks
+in a different order, so batch padding is **6.45 percent under all four**,
+differing only in how it is spread between batches, and the loss ignores it.
+
+**The extrapolation objection is eliminated by matching.** Both arms sit at
+essentially the same diversity, 2.962 against 2.975, so whatever the curve
+does beyond the control range it does to both.
+
+## How much diversity explains, under the metric most generous to it
+
+Curve fitted on the six control block sizes, then asked to predict the gap:
+
+| Metric | Fit to the curve | Explains | Unexplained |
+| --- | --- | --- | --- |
+| subjects per batch | r = -0.984 | -0.0007 | **-0.0284** |
+| concepts per batch | r = -0.991 | -0.0066 | **-0.0226** |
+| domains per batch | r = -0.992 | -0.0066 | **-0.0226** |
+
+Observed shuffled minus topological is **-0.0292**.
+
+**All three fit the control curve almost perfectly and none explains more
+than a quarter of the gap.** Reported under the metrics most favourable to
+the confound, about **77 percent** of the difference is not batch
+diversity.
+
+## How consistent it is
+
+Paired within each seed, across all seven block settings, six seeds each:
+
+| Block | Mean shuffled minus topological | sd |
+| --- | --- | --- |
+| 1 | -0.0292 | 0.0120 |
+| 2 | -0.0277 | 0.0117 |
+| 4 | -0.0270 | 0.0088 |
+| 8 | -0.0238 | 0.0094 |
+| 16 | -0.0223 | 0.0117 |
+| 32 | -0.0260 | 0.0109 |
+| 64 | -0.0228 | 0.0076 |
+
+**Pooled: 42 paired observations, mean -0.0255, and 42 of 42 point the same
+way.**
+
+## What this is, and five things it is not
+
+**What it is.** At matched batch diversity, an ordering that ignores the
+prerequisite graph reaches lower held-out loss than one that respects it, by
+about 0.026 nats, consistently, and most of that is not explained by any
+batch-composition measure taken here.
+
+**It is not a verdict on the project's hypothesis.** Held-out loss is not
+the property this project targets. `evals/elenchos/` measures what it cares
+about and none of this touches it.
+
+**It is not a pre-registered result.** Item 7 fixes what size of effect
+counts and item 10 fixes the endpoint, and both are unchosen. 0.026 nats on
+3.5 is 0.7 percent.
+
+**It is not scale-general.** One corpus, one width, one batch size, 800
+steps, four epochs.
+
+**It is not a claim that the graph is wrong.** The graph orders
+prerequisites; this measures what happens when a small model reads books in
+that order over four passes. Those are different claims.
+
+**It is not immune to a fifth defect.** Four have now been found this way:
+the chunker discarding three quarters of the corpus, the ordering covering
+thirteen books of a hundred and forty-six, the evaluation scoring 86 percent
+of the held-out set, and batch composition tracking the arm. **Each was
+found after results had been read off it.**

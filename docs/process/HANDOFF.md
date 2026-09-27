@@ -206,9 +206,18 @@ sense questions to the operator.
   within one to two seed standard deviations. Item 3 names exactly that
   pair.
 - **The flat arm is the only one carrying signal.** `shuffled` sits five to
-  seven seed standard deviations below the line. It is not shown to be an
-  ordering effect: it differs in three ways at once and lies past the range
-  the controls cover.
+  seven seed standard deviations below the line.
+- **That signal is now attributed and it is the graph.** Compared against
+  the topological arm, which sits at the same batch diversity, displacement
+  is eliminated because topological moves books 55.9 places and stays on the
+  curve, padding is 6.45 percent under every arm, and the most generous
+  diversity metric leaves 77 percent of the gap unexplained. **42 of 42
+  paired observations point the same way**, mean 0.0255 nats.
+- **So respecting the prerequisite graph costs held-out loss**, which is the
+  first controlled ordering signal the project has. **It is not a verdict**:
+  held-out loss is not what elenchos measures, 0.7 percent sits against an
+  unchosen item 7, and four harness defects have already been found by
+  doubting results of exactly this shape.
 - **Controlled, about sixty percent of the effect disappears.** Shuffling
   books inside blocks of 32 keeps every book within 10 percent of its
   curriculum position and removes 87 percent of the homogeneity gap. The

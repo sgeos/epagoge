@@ -292,9 +292,24 @@ nothing else this can detect.**
 
 **The shuffled arm sits five to seven seed standard deviations below the
 line**, so the flat control added on 2026-09-26 is the only arm carrying
-anything a homogeneity curve does not explain. That residual is not shown to
-be an ordering effect: the shuffled arm differs in three ways at once and
-lies beyond the range the controls cover.
+anything a homogeneity curve does not explain.
+
+**That residual was then attributed**, by comparing the shuffled arm against
+the topological arm rather than against the curve, since the two sit at
+essentially the same batch diversity and so are matched on the quantity that
+explained everything else. Displacement is eliminated because the
+topological arm moves books 55.9 places and still sits on the curve; padding
+is eliminated by measurement at 6.45 percent under every arm; and under the
+batch-diversity metric most generous to the confound, **about 77 percent of
+the gap is unexplained**. Pooled over 42 paired observations the difference
+is 0.0255 nats and **42 of 42 point the same way**.
+
+**So an ordering property tracks held-out loss after controls, and the
+property is whether the prerequisite graph is respected.** That is the first
+controlled ordering signal this project has. **It is not a verdict on the
+hypothesis**: held-out loss is not what `evals/elenchos/` measures, 0.026
+nats is 0.7 percent against an item 7 that is unchosen, and it rests on one
+corpus at one width and one endpoint.
 `pilot/LEVEL_ONE_VARIANCE.md` has the working.
 
 ### Superseded, kept for the reasoning
