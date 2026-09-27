@@ -193,6 +193,31 @@ the filter's status. A training run crashed after its first seed and the
 shell reported success, and a lint failure was hidden the same way an hour
 later, by the same mistake in a different command.
 
+## Added 2026-09-27, later the same day, and it is the sibling of the last one
+
+**DO NOT CHAIN THE GATE TO THE COMMIT.** `check.sh` was run, then the
+commit, then the push, in one shell command joined by a semicolon. The gate
+failed, the commit ran on the gate's output rather than on its exit code, and
+a failing tree reached `origin`. `9a7981c`.
+
+**The rule that says to run the gate, read the exit code, stop, then commit
+already existed**, and it was not disobeyed so much as bypassed by the shape
+of the command. **Nobody decided to skip the gate.** The decision point was
+removed by putting the three steps in one invocation, which is exactly how
+the filter-and-exit-code failure above works, one layer up.
+
+**So the gate runs alone and the next command reads its status.** A gate
+whose result is not looked at before the next step is a gate that is not
+gating.
+
+**What it had caught was real.** The reference check resolves file names
+mentioned in prose against the tree, and the text named a toolchain file that
+exists elsewhere on this machine and not in this repository. **A second
+defect in the same replacement text was not something the gate could
+catch**, a pin count written from a half-remembered list where the grep was
+still available, which is the count-from-arithmetic failure for the fifth
+time.
+
 ## Autonomy boundaries
 
 **Proceed** without asking on anything bounded and already on the roadmap.
