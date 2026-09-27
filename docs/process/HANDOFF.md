@@ -406,10 +406,10 @@ left standing rather than edited away.** What changed:
   unpinned Rust toolchains and 1.62 GiB of caches belonging to applications
   that were not running. The volume moved from 75 percent with 229 GiB free
   to **66 percent with 305 GiB free**.
-- **Rust 1.92 must not be uninstalled.** It is pinned by thirteen
-  `rust-toolchain.toml` files, every one of them inside a Keleusma tree, and
-  removing it as an old version would have broken the project that was
-  explicitly excluded. 1.89.0 is pinned by three more.
+- **Rust 1.92 must not be uninstalled.** Thirteen toolchain pin files name
+  it, every one of them inside a Keleusma tree, and removing it as an old
+  version would have broken the project that was explicitly excluded. Three
+  further pins name 1.89.0, one names 1.77 and one names a 2024 nightly.
 - **`~/Library/Caches/Mozilla.sccache` holds 10 GiB and was deliberately
   kept.** It is the compiler cache that makes the 75 GiB of deleted build
   output cheap to rebuild, so clearing both would have been the worst
