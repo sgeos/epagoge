@@ -39,11 +39,12 @@ message for the former name returns 0.
 
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** over **twenty-two**
    checks and **exits 0**.
-2. The suite reports **499** tests, up from 483 that morning.
-3. `curriculum/vocabulary.json` holds **960 senses over 928 words**, of
-   which **841** are admissible at level one. **178** core, **37**
-   ostensive, a seed of **257**.
-4. **Both dictionaries are self-hosting**, 807 of 807 at level one, closure
+2. The suite reports **526** tests.
+3. `curriculum/vocabulary.json` holds **961 senses over 927 words**, of
+   which **840** are admissible at level one. **178** core, **37**
+   ostensive, a seed of **257**. **The tokeniser is larger than the
+   lexicon**: 2,263 ids, because 21 of them are special.
+4. **Both dictionaries are self-hosting**, 803 of 803 at level one, closure
    100 percent, nothing blocked and no cycles.
 5. `curriculum/books/level_1/` holds **399** books over **7,138** records.
    The word count is deliberately **not** asserted as an equality, since any
@@ -51,12 +52,26 @@ message for the former name returns 0.
    that all content books are in the band and none above.
 6. `tools/stamp_books.py --level 1 --check` reports **399 books, 0 missing a
    field** and no date disagreeing with history.
-7. **Unused surface forms 529 of 2,038**, and **headwords never used at all
-   is 0**, from eleven the day before.
+7. **Unused surface forms 413 of 2,038**, and **headwords never used at all
+   is 0**. The re-count the previous refresh asked for has happened: the 153
+   cross-concept books consumed 116 previously unused forms.
 8. `git ls-files secret | wc -l` reports **0**, and the disclosure scan
    reports it covered tracked and untracked files, line by line and with
    whitespace collapsed. **A scan that does not say all three is the old
    one, which missed both.**
+
+## Corrections to the refresh above, kept in place
+
+**Four numbers in the block above were carried forward without being
+re-run, and are corrected rather than quietly fixed.** The previous refresh
+asserted 960 senses over 928 words with 841 at level one, and closure at 807
+of 807. The tree reports 961 over 927 with 840, and 803 of 803. The books
+check corroborates 840 independently, reporting level-one utilisation as 820
+of 840. **A refresh that restates a number must re-run it.**
+
+**A pushed commit message claimed 533 tests where the tree has 526.**
+`5bf8c2b`. The count was written from arithmetic rather than from the gate.
+Corrected here rather than amended, because the commit is pushed.
 
 ## THREE MEASUREMENTS ARE OWED, and none is optional
 
@@ -118,6 +133,32 @@ first.
 predates 153 new books. `docs/decisions/UNUSED_FORMS.md` judged every one
 and left fourteen
 sense questions to the operator.
+
+### Added 2026-09-27, after the checkpoint and structural-token work
+
+- **A serialised record must say what it does not carry.**
+  `../decisions/FIELD_ENUMERATION.md`. `save_checkpoint` wrote five of
+  `ModelConfig`'s ten fields, so a reload rebuilt the other five from
+  today's defaults. Two of those five fail loudly and three silently, and
+  `n_heads` is the worst: written at two and read as four, every tensor fits
+  and attention is split differently than it was trained to.
+- **A work now has a beginning and an end.**
+  `../decisions/STRUCTURAL_TOKENS.md`. `<book>` occurred zero times in
+  356,975 training tokens while being the seed of every unprompted sample.
+  `<eot>` is new, sixteen reserved slots are held, and two of six samples
+  ended on their own after 600 steps.
+- **The announcement is the cue and the notation is not.** Measured
+  elsewhere over five readers from 0.6B to 8.2B: deleting a structural
+  announcement makes the following prose harder to predict, and swapping
+  Markdown for a bare line moves a measured zero. **No training-time
+  evidence exists**, and this project can produce it cheaply.
+- **The vocabulary grew by 21 ids, so every checkpoint on disk is now
+  refused**, cleanly, by the machinery landed the same day.
+- **`evals/pilot/level_1_samples.json` is stale**, produced under a
+  vocabulary of 2,246 and an untied head, neither of which exists.
+- **47 of 399 book titles hold a concept identifier rather than lexicon
+  words**, which blocks announcing titles and is a fourth instance of the
+  rule that a concept name is not a word.
 
 ### Findings that outlive the session
 
