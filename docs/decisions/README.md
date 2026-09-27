@@ -53,6 +53,10 @@ Decision records, and the open questions that block implementation.
 - `UNUSED_FORMS.md` decided. A judgement on every unused surface form at
   level one. Seven culled as not English, four headwords left to the
   operator, and two defects found in the lexicon model itself.
+- `FIELD_ENUMERATION.md` recorded. Four instances of a record built from a
+  subset of its own dataclass's fields, three in the book code and one in
+  the checkpoint code. Classifies which omissions fail loudly and which
+  rebuild a different model in silence.
 - `LICENSING.md` decided. 0BSD for software, CC0 for corpus and
   documentation, third-party material under `sources/` excluded from both.
 - `TRAINING_TECHNIQUES.md` decided. Maximal update parametrization, Muon,

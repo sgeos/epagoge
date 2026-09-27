@@ -19,7 +19,7 @@ import math
 import random
 import sys
 from collections.abc import Mapping, Sequence
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass, fields
 from pathlib import Path
 from typing import Final, cast
 
@@ -121,6 +121,12 @@ class ModelConfig:
     there is nothing per index to learn and nothing to starve. It is
     offered alongside rather than replacing `learned`, so the comparison
     stays inside one codebase and old checkpoints still load.
+
+    **CORRECTED 2026-09-27. Old checkpoints stopped loading the next day.**
+    Unifying the two position paths into one `Block` renamed the module
+    attribute from `rotary_blocks` to `blocks`, and nothing compared a
+    written checkpoint against the code that would read it.
+    `RENAMED_PARAMETERS` carries the rename, so the claim is true again.
     """
 
 
@@ -672,6 +678,61 @@ to equal its vocabulary size would have every tensor match.
 """
 
 
+LEGACY_MODEL_DEFAULTS: Final[dict[str, object]] = {
+    "n_heads": 4,
+    "dropout": 0.0,
+    "norm": "layer",
+    "feed": "gelu",
+    "tie_embeddings": False,
+    "positions": "learned",
+}
+"""What a field meant in a checkpoint written before it was recorded.
+
+**A field absent from a checkpoint takes the value it had then, never the
+value it defaults to now.** `n_heads` was fixed at four rather than derived
+and the head was untied, and both changed on 2026-09-26. The other four
+entries repeat today's default, and they are listed anyway so that this
+mapping covers every optional field rather than only the two that moved.
+
+**The tying case fails silently, which is why this exists.** Under tying
+`head.weight` and `token.weight` are one storage, so an untied checkpoint
+holding two different matrices loads with one overwriting the other,
+`load_state_dict` reports nothing wrong, and the model is simply not the one
+that was trained. The level-one checkpoint of 2026-09-26 holds two matrices
+differing by 4.58, so this is the live case and not a hypothetical.
+
+**A field here and not in the checkpoint is recoverable. A field in neither
+is not**, and `load_checkpoint` refuses rather than inventing one. That is
+what makes adding a field to `ModelConfig` without a historical value a loud
+failure instead of a quiet reinterpretation of every checkpoint on disk.
+"""
+
+RENAMED_PARAMETERS: Final[tuple[tuple[str, str], ...]] = (
+    ("rotary_blocks.", "blocks."),
+)
+"""Parameter prefixes that have been renamed, old name first.
+
+**The two position paths were unified into one `Block` on 2026-09-26** and
+the attribute holding the layers went from `rotary_blocks` to `blocks`. The
+tensors are the same ten per layer under the same names, so this is a
+relabelling rather than a reinterpretation, which is why remapping is
+admissible here where guessing at a shape would not be.
+"""
+
+
+def renamed_parameters(state: Mapping[str, Tensor]) -> dict[str, Tensor]:
+    """Apply every recorded rename to the names in a loaded state dict."""
+    out: dict[str, Tensor] = {}
+    for name, tensor in state.items():
+        current = name
+        for old, new in RENAMED_PARAMETERS:
+            if current.startswith(old):
+                current = new + current[len(old) :]
+                break
+        out[current] = tensor
+    return out
+
+
 def save_checkpoint(
     model: TinyTransformer,
     config: ModelConfig,
@@ -689,19 +750,33 @@ def save_checkpoint(
     checkpoint back therefore means rebuilding that tokeniser rather than
     the current one, and carrying the word list is what makes that
     possible.
+
+    **The config is written whole rather than field by field.** Enumerated
+    by hand it recorded five of ten fields, so `n_heads`, `dropout`, `norm`,
+    `feed` and `tie_embeddings` were all absent and a checkpoint reloaded
+    into whatever those default to today.
+
+    **Three of those five omissions are silent and two are loud**, measured
+    2026-09-27 by dropping each field from a written checkpoint in turn.
+    `norm` and `feed` are loud, because RMSNorm and SwiGLU carry different
+    parameter names and the load refuses. `n_heads`, `tie_embeddings` and
+    `dropout` are silent, because every tensor still fits. **`n_heads` is the
+    worst of the three**: written at two and read back as four, the model
+    loads without complaint and splits attention differently than it was
+    trained to. No shape check can see that, which is why the field must be
+    recorded rather than inferred.
+
+    This is the fourth instance in
+    this repository of a record built from a subset of its own dataclass's
+    fields, after three in the book code, and the remedy is the same one:
+    derive the field list instead of retyping it.
     """
     path.parent.mkdir(parents=True, exist_ok=True)
     torch.save(  # pyright: ignore[reportUnknownMemberType]
         {
             "state": model.state_dict(),
             "words": list(words),
-            "config": {
-                "vocab_size": config.vocab_size,
-                "d_model": config.d_model,
-                "n_layers": config.n_layers,
-                "seq_len": config.seq_len,
-                "positions": config.positions,
-            },
+            "config": asdict(config),
         },
         path,
     )
@@ -716,6 +791,35 @@ class Checkpoint:
     config: ModelConfig
 
 
+def verify_loaded(
+    model: TinyTransformer, state: Mapping[str, Tensor], path: Path
+) -> None:
+    """Confirm every saved tensor is in the model unchanged after loading.
+
+    **`load_state_dict` checks names and shapes, not aliasing.** Where two
+    parameters share one storage, loading a checkpoint that holds two
+    different matrices for them succeeds, the second assignment overwrites
+    the first, and nothing anywhere says so. That is not a shape error and no
+    existing check would see it.
+
+    This is the guard for that class, and it was written after being shown to
+    fail: loading the untied level-one checkpoint into a tied model raises
+    here and loaded silently before.
+    """
+    loaded = model.state_dict()
+    for name, expected in state.items():
+        here = loaded.get(name)
+        if here is None:
+            continue
+        if not torch.equal(here.detach().cpu(), expected.detach().cpu()):
+            raise ValueError(
+                f"{path}: {name} does not match the checkpoint after loading. "
+                "Two parameters most likely share one storage, so one "
+                "overwrote the other, and the model is not the one that was "
+                "trained."
+            )
+
+
 def load_checkpoint(path: Path, device: torch.device) -> Checkpoint:
     """Rebuild a model at the shape its checkpoint was written with.
 
@@ -726,6 +830,14 @@ def load_checkpoint(path: Path, device: torch.device) -> Checkpoint:
 
     A checkpoint written before this format is refused with a message
     saying so, rather than being guessed at.
+
+    **A field the checkpoint does not carry is filled from
+    `LEGACY_MODEL_DEFAULTS`, which is what it meant then**, and a renamed
+    parameter is remapped through `RENAMED_PARAMETERS`. Both are
+    relabellings of a structure that is verified to match, so neither is a
+    guess. Anything that does not reconcile raises `ValueError`, because
+    every caller here reports that and none reports a bare torch
+    `RuntimeError`.
     """
     payload = cast(
         "object",
@@ -738,16 +850,46 @@ def load_checkpoint(path: Path, device: torch.device) -> Checkpoint:
         )
     body = cast("dict[str, object]", payload)
     saved = cast("dict[str, object]", body["config"])
-    # **Older checkpoints predate the choice and were all learned.**
+    missing = [
+        field.name
+        for field in fields(ModelConfig)
+        if field.name not in saved and field.name not in LEGACY_MODEL_DEFAULTS
+    ]
+    if missing:
+        raise ValueError(
+            f"{path} records no {', '.join(missing)} and there is no historical "
+            "value to fall back on, so the shape it was trained at is unknown. "
+            "Retrain to write one in the current format."
+        )
+    # **Older checkpoints predate several of these fields.** Absent ones
+    # take the value they had then, never today's default.
     config = ModelConfig(
         vocab_size=cast("int", saved["vocab_size"]),
         d_model=cast("int", saved["d_model"]),
         n_layers=cast("int", saved["n_layers"]),
+        n_heads=cast("int", saved.get("n_heads", LEGACY_MODEL_DEFAULTS["n_heads"])),
+        dropout=cast("float", saved.get("dropout", LEGACY_MODEL_DEFAULTS["dropout"])),
+        norm=cast("str", saved.get("norm", LEGACY_MODEL_DEFAULTS["norm"])),
+        feed=cast("str", saved.get("feed", LEGACY_MODEL_DEFAULTS["feed"])),
         seq_len=cast("int", saved["seq_len"]),
-        positions=cast("str", saved.get("positions", "learned")),
+        tie_embeddings=cast(
+            "bool",
+            saved.get("tie_embeddings", LEGACY_MODEL_DEFAULTS["tie_embeddings"]),
+        ),
+        positions=cast(
+            "str", saved.get("positions", LEGACY_MODEL_DEFAULTS["positions"])
+        ),
     )
     model = TinyTransformer(config).to(device)
-    _ = model.load_state_dict(cast("Mapping[str, Tensor]", body["state"]))
+    state = renamed_parameters(cast("Mapping[str, Tensor]", body["state"]))
+    try:
+        _ = model.load_state_dict(state)
+    except RuntimeError as exc:
+        raise ValueError(
+            f"{path} does not fit a model built from the config it carries. "
+            f"torch says: {exc}"
+        ) from exc
+    verify_loaded(model, state, path)
     model.eval()
     return Checkpoint(
         model=model, words=tuple(cast("list[str]", body["words"])), config=config
@@ -775,8 +917,22 @@ def warm_start(
 
     Every other parameter is copied outright, since nothing else is
     indexed by the vocabulary.
+
+    **A state sharing no name with the model is refused.** A missing key
+    means "keep the fresh initialisation", which is right for one parameter
+    and means "copy nothing at all" for every parameter at once. Until
+    2026-09-27 `train_level.py` passed the whole checkpoint payload here
+    rather than its `state` entry, so every key missed, nothing was copied,
+    zero was returned, and the caller printed that it had warm started. A
+    tool that returns less than it was asked for must say so.
     """
     target = model.state_dict()
+    if not any(name in state for name in target):
+        raise ValueError(
+            "the warm-start state shares no parameter name with the model, so "
+            "nothing would be copied. A whole checkpoint payload was most "
+            "likely passed where its 'state' entry belongs."
+        )
     index = {word: position for position, word in enumerate(newer)}
     kept = 0
     merged: dict[str, Tensor] = {}

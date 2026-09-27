@@ -10,10 +10,15 @@ learnable structure rather than anything about the model.
 
 from __future__ import annotations
 
+import tempfile
 import unittest
+from dataclasses import fields
+from pathlib import Path
+from typing import cast
 
 try:
     from epagoge.pilot import (
+        LEGACY_MODEL_DEFAULTS,
         ModelConfig,
         TinyTransformer,
         TrainConfig,
@@ -21,11 +26,15 @@ try:
         apply_rotary,
         chunk,
         head_count,
+        load_checkpoint,
         orderings,
+        renamed_parameters,
         rotary_table,
         sample,
+        save_checkpoint,
         select_device,
         synthetic_stream,
+        verify_loaded,
         warm_start,
     )
 
@@ -449,3 +458,241 @@ class TestArchitectureOptions(unittest.TestCase):
             p.numel() for p in tied.parameters()
         )
         self.assertEqual(saved, 32 * 64)
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestCheckpointRoundTrip(unittest.TestCase):
+    """A checkpoint must reload as the model that was written, or say why not.
+
+    **It did not, and the failure had two halves.** `save_checkpoint`
+    recorded five of `ModelConfig`'s ten fields, so a reload rebuilt the five
+    it omitted from whatever they default to today. And the module attribute
+    holding the layers was renamed, so the level-one checkpoint stopped
+    loading at all.
+
+    **The loud half was the lucky half.** `tie_embeddings` defaults to true
+    now and was absent then, and under tying the head and the embedding are
+    one storage, so an untied checkpoint loads with one matrix overwriting
+    the other and `load_state_dict` reports nothing. The rename is what
+    turned a wrong model into an exception.
+    """
+
+    def config(self, **kwargs: object) -> ModelConfig:
+        base = {
+            "vocab_size": 12,
+            "d_model": 64,
+            "n_layers": 2,
+            "seq_len": 16,
+        }
+        return ModelConfig(**{**base, **kwargs})  # type: ignore[arg-type]
+
+    def words(self, count: int) -> list[str]:
+        return ["<pad>"] + [f"w{n}" for n in range(1, count)]
+
+    def write(self, config: ModelConfig, path: Path) -> TinyTransformer:
+        import torch
+
+        torch.manual_seed(0)
+        model = TinyTransformer(config)
+        save_checkpoint(model, config, self.words(config.vocab_size), path)
+        return model
+
+    def test_the_saved_config_carries_every_field_of_the_dataclass(self) -> None:
+        """Enumerated by hand it carried five of ten, which is the defect."""
+        import torch
+
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "m.pt"
+            _ = self.write(self.config(), path)
+            payload = torch.load(path, map_location="cpu")
+        self.assertEqual(
+            set(payload["config"]),
+            {field.name for field in fields(ModelConfig)},
+        )
+
+    def test_every_field_survives_a_round_trip_at_a_non_default_value(self) -> None:
+        """Set to a default, an omitted field round-trips by coincidence."""
+        config = self.config(
+            n_heads=2,
+            dropout=0.25,
+            norm="rms",
+            feed="swiglu",
+            tie_embeddings=False,
+            positions="rotary",
+        )
+        for field in fields(ModelConfig):
+            self.assertNotEqual(
+                getattr(config, field.name),
+                field.default,
+                f"{field.name} is at its default, so this test cannot see it",
+            )
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "m.pt"
+            _ = self.write(config, path)
+            loaded = load_checkpoint(path, select_device("cpu"))
+        self.assertEqual(loaded.config, config)
+
+    def test_a_checkpoint_reloads_the_weights_it_was_written_with(self) -> None:
+        import torch
+
+        config = self.config(positions="rotary", tie_embeddings=False)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "m.pt"
+            written = self.write(config, path)
+            loaded = load_checkpoint(path, select_device("cpu"))
+        before = written.state_dict()
+        after = loaded.model.state_dict()
+        self.assertEqual(set(before), set(after))
+        for name, tensor in before.items():
+            self.assertTrue(torch.equal(tensor, after[name]), name)
+
+    def legacy(self, path: Path) -> dict[str, object]:
+        """A payload in the format written before 2026-09-27.
+
+        Five config fields, and the layers under `rotary_blocks`. Built from
+        a real model so the tensors are the right shapes.
+        """
+        import torch
+
+        config = self.config(positions="rotary", tie_embeddings=False)
+        torch.manual_seed(1)
+        model = TinyTransformer(config)
+        state = {
+            name.replace("blocks.", "rotary_blocks.", 1)
+            if name.startswith("blocks.")
+            else name: tensor
+            for name, tensor in model.state_dict().items()
+        }
+        payload = {
+            "state": state,
+            "words": self.words(config.vocab_size),
+            "config": {
+                "vocab_size": config.vocab_size,
+                "d_model": config.d_model,
+                "n_layers": config.n_layers,
+                "seq_len": config.seq_len,
+                "positions": config.positions,
+            },
+        }
+        torch.save(payload, path)
+        return payload
+
+    def test_a_legacy_checkpoint_loads_as_the_model_it_was(self) -> None:
+        """Untied and four-headed, which is what those fields meant then."""
+        import torch
+
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "old.pt"
+            payload = self.legacy(path)
+            loaded = load_checkpoint(path, select_device("cpu"))
+        self.assertFalse(loaded.config.tie_embeddings)
+        self.assertEqual(loaded.config.n_heads, LEGACY_MODEL_DEFAULTS["n_heads"])
+        after = loaded.model.state_dict()
+        expected = renamed_parameters(cast("dict[str, object]", payload["state"]))  # type: ignore[arg-type]
+        self.assertEqual(set(expected), set(after))
+        for name, tensor in expected.items():
+            self.assertTrue(torch.equal(tensor, after[name]), name)
+
+    def test_the_rename_is_applied_and_nothing_else_is_touched(self) -> None:
+        import torch
+
+        state = {
+            "rotary_blocks.0.attention.qkv.weight": torch.zeros(1),
+            "token.weight": torch.zeros(1),
+        }
+        self.assertEqual(
+            set(renamed_parameters(state)),
+            {"blocks.0.attention.qkv.weight", "token.weight"},
+        )
+
+    def test_two_parameters_sharing_one_storage_is_refused(self) -> None:
+        """The silent failure, shown failing.
+
+        This is what loading the untied level-one checkpoint into a tied
+        model does. `load_state_dict` raises nothing and the model is wrong.
+        """
+        import torch
+
+        config = self.config(positions="rotary", tie_embeddings=False)
+        torch.manual_seed(2)
+        untied = TinyTransformer(config).state_dict()
+        tied = TinyTransformer(self.config(positions="rotary", tie_embeddings=True))
+        _ = tied.load_state_dict(untied)
+        with self.assertRaises(ValueError):
+            verify_loaded(tied, untied, Path("in-memory"))
+
+    def test_a_checkpoint_missing_a_shape_field_is_refused(self) -> None:
+        """No historical value exists for these, so no value may be invented."""
+        import torch
+
+        for absent in ("vocab_size", "d_model", "n_layers", "seq_len"):
+            with tempfile.TemporaryDirectory() as directory:
+                path = Path(directory) / "old.pt"
+                payload = self.legacy(path)
+                config = cast("dict[str, object]", payload["config"])
+                del config[absent]
+                torch.save(payload, path)
+                with self.assertRaises(ValueError) as caught:
+                    _ = load_checkpoint(path, select_device("cpu"))
+                self.assertIn(absent, str(caught.exception))
+
+    def test_a_checkpoint_without_its_words_is_refused(self) -> None:
+        import torch
+
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "old.pt"
+            payload = self.legacy(path)
+            del payload["words"]
+            torch.save(payload, path)
+            with self.assertRaises(ValueError):
+                _ = load_checkpoint(path, select_device("cpu"))
+
+    def test_a_state_that_does_not_fit_raises_a_value_error(self) -> None:
+        """Callers report `ValueError`; none reports a torch `RuntimeError`."""
+        import torch
+
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "old.pt"
+            payload = self.legacy(path)
+            state = cast("dict[str, object]", payload["state"])
+            del state["token.weight"]
+            torch.save(payload, path)
+            with self.assertRaises(ValueError):
+                _ = load_checkpoint(path, select_device("cpu"))
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestWarmStartGuard(unittest.TestCase):
+    """A warm start that copies nothing must say so rather than report zero.
+
+    `train_level.py` passed the whole checkpoint payload where its `state`
+    entry belongs, so every parameter name missed, every parameter kept its
+    fresh initialisation, and the caller printed that it had warm started.
+    """
+
+    def model(self) -> TinyTransformer:
+        return TinyTransformer(
+            ModelConfig(vocab_size=3, d_model=8, n_layers=1, seq_len=4)
+        )
+
+    def test_a_payload_where_a_state_belongs_is_refused(self) -> None:
+        import torch
+
+        words = ["<pad>", "cup", "water"]
+        payload = {
+            "state": self.model().state_dict(),
+            "words": words,
+            "config": {},
+        }
+        with self.assertRaises(ValueError):
+            _ = warm_start(
+                self.model(),
+                cast("dict[str, torch.Tensor]", payload),
+                words,
+                words,
+            )
+
+    def test_a_state_that_does_share_names_is_accepted(self) -> None:
+        words = ["<pad>", "cup", "water"]
+        kept = warm_start(self.model(), self.model().state_dict(), words, words)
+        self.assertEqual(kept, len(words))

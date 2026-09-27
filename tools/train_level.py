@@ -36,12 +36,8 @@ import json
 import random
 import sys
 import time
-from collections.abc import Mapping
 from pathlib import Path
 from typing import Final, cast
-
-import torch
-from torch import Tensor
 
 from epagoge import schedule as sched
 from epagoge.book import (
@@ -58,6 +54,7 @@ from epagoge.pilot import (
     chunk,
     format_seconds,
     is_finite,
+    load_checkpoint,
     parameter_count,
     select_device,
     train_once,
@@ -281,18 +278,27 @@ def main(argv: list[str]) -> int:
                 file=sys.stderr,
             )
             return 1
-        earlier = build(vocabulary, args.from_level)
+        # **Loaded through `load_checkpoint`, and it was not until
+        # 2026-09-27.** Two defects sat here, both silent. The whole payload
+        # was passed as the state, so no parameter name matched and nothing
+        # was copied. And the older word list was rebuilt from today's
+        # lexicon rather than read from the checkpoint, so had a word been
+        # admitted since, every row after it would have carried the wrong
+        # word's vector. Carrying the word list is the entire reason
+        # `save_checkpoint` writes one.
+        try:
+            earlier = load_checkpoint(weights, device)
+        except ValueError as exc:
+            print(exc, file=sys.stderr)
+            return 1
         warm = WarmStart(
-            state=cast(
-                "Mapping[str, Tensor]",
-                torch.load(weights, map_location=device),  # pyright: ignore[reportUnknownMemberType]
-            ),
+            state=earlier.model.state_dict(),
             older=list(earlier.words),
             newer=list(tokeniser.words),
         )
         print(
             f"warm start from level {args.from_level}, "
-            f"{earlier.size} words into {tokeniser.size}"
+            f"{len(earlier.words)} words into {tokeniser.size}"
         )
 
     # **Three arms, and the third is the one that makes the comparison mean
