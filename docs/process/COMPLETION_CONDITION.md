@@ -6,33 +6,31 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**An ordering exists that carries the length gradient without respecting the
-prerequisite graph**, and it is available to the trainer.
+**No live tracked document asserts a claim the session's measurements have
+changed.** Where such a claim appeared in live text, it carries a correction
+beside it rather than having been deleted.
 
-**Its length gradient is shown to match the graph-respecting arm's**, and
-its batch diversity is shown to match the graph-ignoring arm's, both by
-measurement recorded alongside the arms they are matched against. A reader
-can see it is a control rather than a fourth variable.
+**Text inside an accumulated-history section is unedited**, and the
+distinction between history and live text is respected wherever a claim
+appears in both.
 
-**The statistic used for that match is stated**, and whether it is computed
-per run or across runs, because the two differ by half again for these
-orderings.
+**Where a decision's stated justification no longer holds but the decision
+still stands, the record says both**, rather than removing the item or
+leaving the dead reason in place.
 
-**The arm has been trained against both existing arms** at the same
-endpoint and seed count, with per-arm means and the seed count recorded.
+**The evaluation record that grew through this session opens with its
+current state**, so a reader meets the present conclusion before the
+sections it replaced, and the superseded sections remain readable.
 
-**The record states what the result implies for the residual**, including
-what a result falling between the two existing arms would mean, and states
-plainly if the design cannot decide.
+**The record names what is now the binding constraint** on further progress,
+so a reader knows where effort moves something.
 
-**The default set of arms the trainer compares is unchanged**, so that
-adding this control does not silently alter what an ordinary run measures.
+**Every figure presented as current says how many seeds or observations it
+rests on.**
 
-**Any claim that the residual is attributable to a named cause is either
-supported by this experiment or absent.** The previously withdrawn
-attribution is not reinstated without the evidence this arm provides.
-
-**Every figure says how many seeds it rests on.**
+**No claim is reinstated that the evidence does not support**, and anything
+resting on a measurement taken before the current corpus, vocabulary or
+controls is marked where a reader meets it.
 
 **The gate passes.** `./tools/check.sh` reports all checks passed and exits
 0, with no check weakened or removed to achieve it.
@@ -43,4 +41,5 @@ assumed.
 **The working tree is clean and pushed**, with no tracked evaluation
 artifact holding the output of a probe rather than a recorded run.
 
-**Nothing was added beyond what this question needs.**
+**Nothing was added beyond what this question needs.** No new arm, option,
+token, generator or training objective.

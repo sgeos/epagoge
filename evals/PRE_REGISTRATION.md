@@ -426,6 +426,17 @@ of eight. Both readings would pass a naive paired test. Whoever picks the
 endpoint picks the sign of the result, so it is picked here, in advance,
 and in writing.
 
+> **CORRECTED 2026-09-27. That justification no longer holds and the item
+> still stands.** Those runs did not control batch composition, which
+> overstates an arm difference by about two and a half times, and on the
+> current corpus the sign does not flip between the two endpoints: the
+> curriculum arm is worse at both. **What the endpoint still decides is
+> precision, not sign.** The paired standard deviation is 0.0074 at 800
+> steps against 0.0103 at 1,600, so it sets how many seeds any given effect
+> size needs. Picking it in advance and in writing remains right, for the
+> ordinary reason that choosing an endpoint after seeing the results is
+> choosing the result.
+
 The probe set is held fixed and identical across conditions.
 
 ## 11. Corpus acceptance

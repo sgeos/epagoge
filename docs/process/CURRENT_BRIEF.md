@@ -1,59 +1,58 @@
-# Current brief. Build the arm that decides it
+# Current brief. Make the record match what is known
 
-**Written 2026-09-27**, replacing the brief that attributed the residual.
-That brief's conclusion was withdrawn a tick later and this one exists
-because of the withdrawal. Durable practice is in `PROCESS_STRATEGY.md`.
+**Written 2026-09-27**, replacing the brief that built the length arm.
+Durable practice is in `PROCESS_STRATEGY.md`.
 
-## Why this and nothing else
+## Why this and not a sixth confound
 
-**Two explanations for the ordering residual are collinear and no analysis
-can separate them.** Orders that respect the prerequisite graph also sort
-books by length, because a prerequisite-heavy book is placed later and 90
-percent of books carry one. Across the arms the two predictors correlate at
--0.76, and within each arm neither varies enough to regress.
+**Five consecutive rounds of work changed what this project believes, and
+each of them corrected claims in more than one document.** The homogeneity
+figures were corrected in three places, an attribution was withdrawn in
+three and partly reinstated in two, and the seed-count item was rewritten
+twice.
 
-**With two groups, everything that differs between them is confounded with
-everything else that does.** The fix is a third group, not a cleverer fit.
+**A claim that survives a correction in one document is the failure this
+project keeps finding in its own code**, and it has already happened twice
+here. Two live statements still gave a reason for an operator decision that
+the measurements had removed.
 
-**The arm to build has the length ordering and not the graph.** If it
-reproduces the graph-respecting arm's penalty, the effect is sequence length
-and the curriculum interpretation is dead. If it lands with the shuffled
-arm, the graph survives as the explanation.
+**The confound hunt has also reached diminishing returns.** The remaining
+effect is 0.025 nats, which is 0.7 percent, and **item 7 fixes whether that
+counts and is unchosen**. Spending another round narrowing the attribution
+of an effect nobody has yet called meaningful is precision without purpose.
 
-## The trap this brief exists to avoid
+## What to do
 
-**A control is only a control if it matches on the thing it holds fixed.**
-The weight that sets how strongly this arm sorts by length has to be tuned
-until its length ordering equals the graph-respecting arm's. Tuned wrong,
-the arm varies two things again and the tick is wasted.
+1. **Find every live claim the session's measurements changed**, and correct
+   it where it stands rather than deleting it.
+2. **Distinguish live text from accumulated history.** The handoff's history
+   block is appended, never edited, and a claim there is a record of what was
+   believed rather than an assertion.
+3. **Give the evaluation record a current-state summary at its top**, so a
+   reader meets the conclusion before the stratigraphy of five appended
+   sections and two corrections.
+4. **Say what is now the binding constraint**, so the next reader spends
+   their effort where it moves something.
 
-**Tune against the arm as implemented, not against a reconstruction of
-it.** A first attempt tuned against a script that rebuilt the ordering
-by hand and came out half again too strong, because the real arm places the
-dictionary books differently.
+## Prior failures, and the specific wrong turns to avoid
 
-**Tune against the right statistic.** Correlating a book's mean position
-across seeds against its length gives +0.311. Correlating within a single
-seed gives +0.211. A training run sees one order, so the per-run figure is
-the target, and the first tuning used the other one.
+**Do not edit history to make it consistent.** Corrections are kept beside
+the claim. A record of a belief that turned out wrong is the reason the
+replacement is trustworthy, and rewriting it destroys that.
 
-## Other wrong turns to avoid
+**Do not declare an item dead because its reason died.** The endpoint item
+was justified by an effect that no longer reproduces, and the item still
+stands for a different reason. Correct the justification, not the item.
 
-**Do not change what the ablation compares by default.** A fourth arm costs
-a third more compute on every run that does not ask this question, and
-changing the default comparison is a design decision that belongs to the
-operator. Make the arm available.
+**Do not confuse a stale figure with a superseded one.** A figure in a
+section already marked superseded needs nothing. A figure in live text
+needs correcting.
 
-**Do not conclude from the arm alone.** Report where it falls relative to
-both existing arms, and say what a middling result would mean, because a
-result between them does not decide anything.
+**Do not summarise away the corrections.** A current-state summary sits
+above the history; it does not replace it.
 
-**Do not treat this as the last confound.** Five have now been found, the
-most recent in the reasoning rather than the code. Ask what else differs
-between the new arm and the ones it is being compared to, before reporting.
-
-**Do not overwrite a tracked artifact**, do not read a count from
-arithmetic, and check CI separately.
+**Do not read a count from arithmetic**, do not pipe a run through a filter
+that hides its exit code, and check CI separately.
 
 ## What is not this brief's to decide
 

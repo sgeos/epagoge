@@ -1,5 +1,34 @@
 # Variance and ordering on the level-one corpus
 
+## Where this file stands, 2026-09-27
+
+**This file grew five sections in one day and the newest is the truest.**
+Read this summary, then anything below it in order. Every superseded section
+is kept because the reason a replacement is trustworthy is the record of
+what it replaced.
+
+| Question | Answer |
+| --- | --- |
+| Does pairing still pay? | **No.** Gain 1.55x and 1.00x, against 22.8x |
+| Seeds for a 1 percent effect? | **One**, either design, against 12 paired |
+| Do the arms differ? | **Yes**, and mostly for the wrong reason |
+| How much is batch composition? | **About 60 percent** |
+| Is the rest the graph? | Claimed, withdrawn, then narrowed |
+| Is it sequence length? | **No.** Eliminated by a matched arm |
+| What survives? | An ordering inside the graph's constraint set costs **0.025 nats** |
+
+**The binding constraint is no longer measurement.** The surviving effect is
+0.7 percent of the loss, and `../PRE_REGISTRATION.md` item 7 fixes whether
+that counts and is unchosen. **Narrowing the attribution further cannot make
+an effect meaningful that nobody has yet called meaningful.**
+
+**Two things a reader should not carry away.** Held-out loss is not the
+property this project targets, `../elenchos/` is, and nothing here touches
+it. And five confounds have been found in this harness, the most recent in
+the reasoning rather than the code, so the sixth is a live possibility
+rather than a rhetorical caution.
+
+
 > **STALE, 2026-09-27. Every figure below predates the tree it describes.**
 > The corpus is now **400 books and 308,931 tokens**, the vocabulary 2,279
 > ids, the head count derived rather than fixed at four, and the held-out

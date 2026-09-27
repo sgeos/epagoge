@@ -226,6 +226,18 @@ sense questions to the operator.
 - **This is the fifth defect and the first in the reasoning rather than the
   code.** It came from concluding by elimination without asking what had not
   been eliminated.
+- **Three controls exist now and none is on by default.**
+  `--block-shuffle N` shuffles books inside blocks of N, holding the
+  sequence and discarding batch homogeneity. `--arms` selects which arms
+  run, and `length` is an arm carrying the length gradient without the
+  graph. `--eval-batches 0` scores the whole held-out set, where the default
+  24 was scoring 86 percent of it. **An ablation should use the first and
+  the last; the default comparison is deliberately unchanged, because
+  changing it is the operator's.**
+- **The binding constraint is no longer measurement.** The surviving effect
+  is 0.7 percent of the loss and **item 7 fixes whether that counts**.
+  Narrowing the attribution further cannot make meaningful an effect nobody
+  has called meaningful.
 - **Controlled, about sixty percent of the effect disappears.** Shuffling
   books inside blocks of 32 keeps every book within 10 percent of its
   curriculum position and removes 87 percent of the homogeneity gap. The
@@ -266,9 +278,16 @@ sense questions to the operator.
 
 ## What is YOURS: decisions the operator holds
 
-1. **The endpoint and estimator, pre-registration item 10.** It fixes the
-   sign of any ordering result: at 800 steps the curriculum arm was worse in
-   8 of 8, at 1,600 better in 7 of 8.
+1. **The endpoint and estimator, pre-registration item 10.** **The reason
+   given here was that the endpoint fixes the sign, at 800 steps the
+   curriculum arm worse in 8 of 8 and at 1,600 better in 7 of 8. That
+   reason no longer holds and the item still does.** Those runs were
+   uncontrolled for batch composition, which overstates an arm difference by
+   about two and a half times, and on the current corpus the sign does not
+   flip: the curriculum arm is worse at both endpoints. What the endpoint
+   still decides is the paired standard deviation, 0.0074 at 800 steps
+   against 0.0103 at 1,600, and therefore the seed count. **Item 10 is now a
+   precision decision rather than a sign decision.**
 2. **Whether the ablation's third arm is enough.** `shuffled` now ignores
    the graph. Wu, Dyer and Neyshabur ask for a growing-set control; in a
    trainer that cycles a fixed order the growth phase is the first eleven
