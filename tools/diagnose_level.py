@@ -105,6 +105,12 @@ def main(argv: list[str]) -> int:
             "relative distance and has nothing per index to learn."
         ),
     )
+    # **Both were inherited rather than chosen**, and a 2026 literature spike
+    # says each sits at the wrong end of its range for a corpus this small.
+    # See `docs/decisions/TRAINING_ADVANCES.md`. Exposed so the claim can be
+    # tested here rather than believed.
+    parser.add_argument("--weight-decay", type=float, default=0.01)
+    parser.add_argument("--min-lr-fraction", type=float, default=0.1)
     parser.add_argument(
         "--pack",
         action="store_true",
@@ -232,7 +238,12 @@ def main(argv: list[str]) -> int:
                         subset,
                         held_out,
                         config,
-                        TrainConfig(steps=steps, batch_size=args.batch_size),
+                        TrainConfig(
+                            steps=steps,
+                            batch_size=args.batch_size,
+                            weight_decay=args.weight_decay,
+                            min_lr_fraction=args.min_lr_fraction,
+                        ),
                         args.seed,
                         device,
                         pad_id,

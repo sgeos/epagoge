@@ -53,6 +53,11 @@ Decision records, and the open questions that block implementation.
 - `UNUSED_FORMS.md` decided. A judgement on every unused surface form at
   level one. Seven culled as not English, four headwords left to the
   operator, and two defects found in the lexicon model itself.
+- `TRAINING_ADVANCES.md` recorded. A spike on state-of-the-art training and
+  architecture. Names this project's regime as data-constrained and
+  compute-abundant, which is what makes the literature searchable, and finds
+  that the weight-decay recommendation is conditional on overfitting being
+  present. Says what does not transfer and why.
 - `STRUCTURAL_TOKENS.md` decided. An end-of-text token, packing rather than
   padding, and reserved slots. The measured claim that moves this project is
   that a structural announcement changes what a reader predicts while its

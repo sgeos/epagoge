@@ -136,7 +136,43 @@ class TrainConfig:
     batch_size: int = 16
     learning_rate: float = 3e-4
     warmup: int = 100
+
+    weight_decay: float = 0.01
+    """Decoupled weight decay. **It was never set, and 0.01 is torch's default.**
+
+    Recorded 2026-09-27 after a literature spike, in
+    `docs/decisions/TRAINING_ADVANCES.md`. `torch.optim.AdamW` was
+    constructed with a learning rate and nothing else, so this value was
+    inherited rather than chosen, and nothing in the repository said what it
+    was.
+
+    **Two independent 2026 sources say it is the wrong end of the range for
+    this project's regime.** A benchmark of optimizers over standardised
+    pretraining reports that a large decoupled term of 0.5 and above
+    significantly changes the final loss, and singles out frameworks that
+    omit weight decay as a default non-zero hyperparameter. A study of the
+    data-constrained regime, which is this project's regime by a wide
+    margin, finds optima from 0.4 at 72M parameters to 3.2 at 1.4B, against
+    a standard practice of 0.1, and reports validation loss falling from
+    3.88 to 3.42 at 257M on 100M tokens.
+
+    **Measured here 2026-09-27, and the literature's claim is conditional.**
+    Raising it to 0.5 lost in five of six cells and won in the one cell where
+    the model was overfitting, at width 512 and 3,200 steps, by 0.055 nats
+    over three paired seeds. `evals/pilot/LEVEL_ONE_REGULARISATION.md` has
+    the figures. **The default stays at 0.01 because that is what five of six
+    cells prefer**, and anything training wider or longer should raise it.
+    """
+
     min_lr_fraction: float = 0.1
+    """Floor of the cosine decay, as a fraction of the peak rate.
+
+    **0.1 is exactly the value the optimizer benchmark says to go below.**
+    Its eighth takeaway is that decaying further than 10 percent of the
+    maximal significantly improves results, and that the best final rate
+    differs by scheduler. Unchanged pending measurement.
+    """
+
     eval_batches: int = 24
 
 
@@ -633,7 +669,11 @@ def train_diagnostic(
     model = TinyTransformer(model_config).to(device)
     if warm_from is not None:
         _ = warm_start(model, warm_from.state, warm_from.older, warm_from.newer)
-    optimiser = torch.optim.AdamW(model.parameters(), lr=train_config.learning_rate)
+    optimiser = torch.optim.AdamW(
+        model.parameters(),
+        lr=train_config.learning_rate,
+        weight_decay=train_config.weight_decay,
+    )
     # **Padding is excluded from the loss.** A padded tail chunk is there to
     # keep the text, not to be predicted, and a model rewarded for emitting
     # padding would learn the one thing the corpus never says.
