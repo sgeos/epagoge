@@ -66,6 +66,10 @@ Decision records, and the open questions that block implementation.
   `institutional_interfacing` as the register its four moves are performed
   in. Names the bound that keeps it from becoming general social skills, and
   leaves the level and the words to the operator.
+- `KERNEL_TRACTABILITY.md` recorded. The tangent kernel matrix is
+  intractable and every quantity this project wants from it is a trace, so
+  effective rank is estimable matrix-free. Corrects a premise item 10
+  inherited from the literature rather than measured.
 - `FIELD_ENUMERATION.md` recorded. Four instances of a record built from a
   subset of its own dataclass's fields, three in the book code and one in
   the checkpoint code. Classifies which omissions fail loudly and which

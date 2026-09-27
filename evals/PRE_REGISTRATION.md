@@ -208,6 +208,21 @@ would be evidence that prerequisite depth is the mechanism.
 
 ## 5. Scale points
 
+**DECIDED 2026-09-27, operator direction: a single scale point**, with
+rescaling to sizes this host can train as the fallback if scale-dependence
+is ever wanted.
+
+**The three points below assume a corpus that does not exist.**
+Chinchilla-optimal for 100M parameters is roughly two billion tokens
+against 378,156 here, so a 100M model on this corpus is over-parameterised
+by four orders of magnitude, and width 1,024 at 52.7M is already measured
+as worse than width 512. The host has no CUDA device.
+
+**Scale-dependence is a secondary question and the primary one does not
+need it.** Whether ordering matters at all is answerable at one size.
+
+### Superseded, kept for the reasoning
+
 **PROVISIONAL** pending the variance pilot.
 
 **Maximal update parametrization is required for these points to be
@@ -382,9 +397,30 @@ the training dynamics, so sigma and rho do not carry over.
 
 ## 7. Minimum meaningful effect
 
-**PENDING** the variance pilot. Must be stated in the pilot's measured
-units and justified from the literature rather than chosen for
-affordability.
+**DECIDED 2026-09-27, operator direction. Two thresholds, both reported.**
+
+**Whether ordering has any reliable effect and whether it has a meaningful
+one are different questions and the ablation answers both.** Reporting only
+the second hides a real but small effect; reporting only the first dresses
+a rounding error as a finding.
+
+| | Threshold | The question it answers |
+| --- | --- | --- |
+| **Reliability** | Paired interval excludes zero | Distinguishable from noise? |
+| **Meaningfulness** | **0.065 nats, 2 percent** | Large enough to act on? |
+
+**The meaningfulness threshold is justified by decision-relevance rather
+than by the literature**, and that departure is deliberate and stated. The
+smallest lever this project acts on is the reference configuration, worth
+0.080 nats. An ordering effect below that changes no decision anyone here
+takes, so calling it meaningful would attach the word to something with no
+consequence.
+
+**Both verdicts are reported even when they disagree**, and the disagreeing
+case is the expected one: the controlled ordering effect currently measures
+0.025 nats, which clears reliability at four or more paired seeds and does
+not clear meaningfulness. **That combination is a result, not a failure to
+conclude**, and it is the one the curriculum literature predicts.
 
 ## 8. Failure condition
 
@@ -414,9 +450,25 @@ cannot be revisited after results are seen.
 ## 10. Estimator choices
 
 **PENDING, and demonstrated to be load-bearing 2026-09-25.** The exact
-tangent kernel is intractable at scale. Subsampling scheme, probe-set
-size, and estimator must be fixed here before any run, because an
-estimator chosen after seeing a curve is a choice about the result.
+tangent kernel is intractable at scale.
+
+> **CORRECTED 2026-09-27. The premise is inherited rather than measured.**
+> `../docs/decisions/KERNEL_TRACTABILITY.md` has the spike. The *matrix* is
+> intractable, at order n squared and a further factor of the vocabulary
+> squared for a language model. **Every quantity this item needs is a
+> trace**, and effective rank is the participation ratio, two traces,
+> estimable matrix-free by Hutch++ with convergence guarantees. **This
+> project's models are 3.7 to 13.8 million parameters**, far below the
+> scale the word "intractable" was borrowed from, and item 5 has since
+> dropped the 100M to 1B points that motivated it.
+>
+> **What still must be fixed in advance** is the estimator, the probe set,
+> the probe-set size and the Hutch++ sample count, for the ordinary reason
+> that choosing any of them after seeing a curve is choosing the result.
+
+Subsampling scheme, probe-set size, and estimator must be fixed here before
+any run, because an estimator chosen after seeing a curve is a choice about
+the result.
 
 **The endpoint belongs in this item and it is not a formality.** On the
 level-one corpus, holding the corpus, the arms and the seeds fixed and
@@ -490,8 +542,8 @@ the number is fixed once measurable.
 | --- | --- |
 | 2 | **Done 2026-09-24** |
 | 6 | **Re-measured 2026-09-27.** Pairing no longer pays; a confound is open |
-| 7 | The minimum effect, still to be justified from the literature |
-| 5 | Allocation, once the seed count is final |
+| 7 | **Decided 2026-09-27.** Two thresholds, both reported |
+| 5 | **Decided 2026-09-27.** A single scale point |
 | 9 correction, 10 | Decision, once the endpoint is fixed |
 | 11 ceiling | The first corpus audit |
 | 12 | The first kernel measurements |

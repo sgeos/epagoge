@@ -311,6 +311,23 @@ sense questions to the operator.
   book: the teacher echoed it, it is not in the lexicon, and every subject
   line was rejected despite twenty-three usable spreads.
 
+## Named work, in the operator's priority order
+
+1. **The level-two lexicon**, 879 words against about 10,000 at a fourth
+   grade target. `../decisions/LEXICON_SOURCING.md` has the pipeline: seed
+   from lists, scan public-domain and CC0 sources, accept the frequent in
+   bulk, inspect the per-source long tail, record provenance at admission.
+   **A complete draft precedes level-two corpus drafting**, by standing
+   direction.
+2. **Question-and-answer books for the 54 units without one.** 42 of 96
+   have one, and the form is what lets a model answer rather than continue.
+3. **Implement what `TRAINING_TECHNIQUES.md` adopts**: maximal update
+   parametrization, Muon, warmup-stable-decay. Under the 2026-09-27
+   direction these are outstanding work rather than experiments to justify
+   one at a time.
+4. **Schedules for levels three to seven**, against targets already fixed
+   in `../decisions/LEVEL_CALIBRATION.md`. Research and design work.
+
 ## What is YOURS: decisions the operator holds
 
 1. **The endpoint and estimator, pre-registration item 10.** **The reason

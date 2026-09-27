@@ -221,3 +221,35 @@ weakness of the design rather than leaving to be noticed.
   Vision Transformers*, 2026, `https://arxiv.org/abs/2609.27735`.
 - Liu and others, *Muon is Scalable for LLM Training*, 2025,
   `https://arxiv.org/abs/2502.16982`.
+
+
+## Operator direction, 2026-09-27. The corpus is the value add
+
+**"The corpus is the nominal value add. Regularisation and architecture
+should use state of the art nominal optimal solutions, as that appears to
+be a cheaper part of the problem."**
+
+**This settles how the project treats the two halves differently.** The
+corpus is the thing being built and every choice in it is the project's
+own. **The training machinery is not a research subject here**, and where
+a published optimum exists it is adopted rather than rediscovered.
+
+**It is supported by this project's own measurements.** A corpus doubling
+is worth 0.26 nats and costs about fifteen generation rounds. The reference
+configuration is worth 0.080 nats and costs one flag. Token replacement was
+worth 1.217 nats where training collapses. **Machinery is cheap and corpus
+is expensive, so machinery should be taken from the literature and corpus
+should be written.**
+
+**What it changes in practice.** Measuring an architecture or regularisation
+option one at a time, against a baseline, is the wrong default. Adopting the
+published optimum and measuring only where this project's regime plausibly
+differs is the right one, and this project's regime does differ in one
+stated way: it is data-constrained and compute-abundant, which is the
+section above.
+
+**What is adopted and unimplemented remains the gap.**
+`TRAINING_TECHNIQUES.md` adopts maximal update parametrization, Muon and
+warmup-stable-decay, and none is implemented. **Under this direction those
+are no longer optional experiments to be justified one by one**, they are
+outstanding work.
