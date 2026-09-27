@@ -135,6 +135,64 @@ the concept record exists to avoid.
 in one replaced every `#` in every file in history. Read the format, take
 a mirror clone first, and verify the head tree hash afterwards.
 
+## Added 2026-09-27, after a session that found six
+
+**Three were in code and three were in reasoning**, and the reasoning ones
+were harder to see because nothing failed.
+
+**A TOOL THAT ANNOUNCES ITS OWN TRUNCATION IS ONLY USEFUL IF SOMEONE HEARS
+IT.** `diagnose_level.py` printed "held-out loss over 24 of 48 batches" on
+every run for a day. **It was read past about forty times**, through four
+evaluation records, until an absolute figure was about to be published as a
+frontier. Every number that tool produced was 0.25 nats optimistic.
+Comparisons survived, because the truncation was identical everywhere, and
+absolute values did not. **The announcement was added deliberately, by this
+project, for exactly this case, and it still did not work.** A partial
+result should be refused or defaulted to whole, not narrated.
+
+**ELIMINATION IS NOT ATTRIBUTION.** An ordering residual was attributed to
+the prerequisite graph by ruling out three alternatives and taking the
+remainder. A fourth existed, unlooked-for: graph-respecting orders also sort
+books by length. **Before concluding from elimination, the question is what
+has not been enumerated**, and the answer is never zero.
+
+**A CONTROL IS ONLY A CONTROL IF IT MATCHES ON WHAT IT HOLDS FIXED**, and
+that has to be verified after building it rather than assumed from the
+construction. One control was tuned against a reconstruction of the arm
+rather than the arm, and the real one placed a class of books differently.
+The same control was then tuned against the wrong statistic, a correlation
+of mean position across seeds rather than within one seed, which differ by
+half again. **Both would have produced a control varying two things, and
+both looked correct in the write-up.**
+
+**THE SAME QUANTITY COMPUTED THREE WAYS GAVE 88 PERCENT, 0.5 PERCENT AND
+3.5 PERCENT.** Pair coverage counting every concept any record mentions
+counts the dictionary books, which define the lexicon and form one clique.
+Counting only what a schedule unit teaches loses every cross-concept book's
+partner. **Two of the three were produced before the right one**, and what
+caught it was disagreement with a figure already in the handoff, not
+reasoning. **Check a derived quantity against a recorded one before
+believing it.**
+
+**A LESSON RECORDED IN ONE FILE GETS RELEARNED IN ANOTHER.** `prompt.py`
+carries a comment saying that naming a banned word is not supplying the
+replacement. `retitle_books.py` then refused a title four times for a
+contraction the lexicon has a substitution for, because its prompt named no
+replacement. Separately, `book_head` existed with a docstring asking callers
+to use it, and two call sites did not. **Where a lesson can be made
+structural it should be**: the second was fixed by a type whose only
+constructor is the right one, and the comment had not been enough.
+
+**READ A COUNT FROM THE TOOL.** Four times in one session a number went
+into a record from arithmetic when the gate would have supplied it: a test
+count in a pushed commit message, a record count, a word count, and a
+second word count. **Three were caught by checking and one by the gate.**
+
+**DO NOT PIPE A RUN THROUGH A FILTER AND READ THE EXIT CODE.** It reports
+the filter's status. A training run crashed after its first seed and the
+shell reported success, and a lint failure was hidden the same way an hour
+later, by the same mistake in a different command.
+
 ## Autonomy boundaries
 
 **Proceed** without asking on anything bounded and already on the roadmap.

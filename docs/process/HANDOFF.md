@@ -1,8 +1,13 @@
 # Handoff Prompt
 
-**Refreshed 2026-09-27, describing the tree at the commit that carries this
-refresh.** Read this block, run the validity check, then stop and wait for
-the human prompt.
+**Refreshed 2026-09-27 at the close of a twenty-five commit session.**
+
+**The single most important line in this file.**
+`tools/diagnose_level.py` scored 24 of 48 held-out batches for most of that
+session and announced it on every run. **Every figure it produced before
+this refresh is about 0.25 nats optimistic.** Comparisons survive, because
+the truncation was identical everywhere; absolute losses do not. Four
+evaluation records carry a banner saying which is which.
 
 **NO COMMIT HASH IS STAMPED HERE, deliberately.** A stamp naming the commit
 that contains it is impossible and one naming the parent is off by one the
@@ -36,6 +41,17 @@ All three owed measurements were re-run on the current tree and the
 conclusions of two of them changed. Every evaluation record that still
 holds a figure taken before the current corpus now says so at its top.
 
+## What a resuming session should do first
+
+1. Run the validity check below and report the handoff valid or stale.
+2. **Check CI separately.** A green local gate is not a green remote one,
+   and the two have diverged three times.
+3. Read `CURRENT_BRIEF.md`, then the named work queue further down.
+4. **Read the failure classes in `PROCESS_STRATEGY.md` before measuring
+   anything.** Six defects were found in one session, three of them in
+   reasoning rather than in code, and every one is of a recurring kind.
+5. **Wait for the human prompt.**
+
 ## Validity
 
 **Branch**: `main`, pushed to `origin`, `github.com/sgeos/epagoge`, public.
@@ -62,18 +78,27 @@ message for the former name returns 0.
    lexicon**: **2,279** ids, because 22 of them are special or structural.
 4. **Both dictionaries are self-hosting**, 812 of 812 at level one, closure
    100 percent, grounded 833, nothing blocked and no cycles.
-5. `curriculum/books/level_1/` holds **400** books over **7,163** records.
-   The word count is deliberately **not** asserted as an equality, since any
-   later fill raises it. It was **297,804**; check it is **at least** that,
-   that all content books are in the band and none above.
-6. `tools/stamp_books.py --level 1 --check` reports **400 books, 0 missing a
+5. `curriculum/books/level_1/` holds **469** books over **8,267** records,
+   467 of them content books. The word count is deliberately **not**
+   asserted as an equality, since any later fill raises it. It was
+   **315,444**; check it is **at least** that, that all content books are
+   in the band and none above.
+6. `tools/stamp_books.py --level 1 --check` reports **469 books, 0 missing a
    field** and no date disagreeing with history.
-7. **Unused surface forms 419 of 2,056**, and **headwords never used at all
-   is 0**.
-9. **`evals/pilot/level_1.pt` loads**, was written at vocabulary 2,279, and
-   `tools/talk.py`, `tools/retention.py` and `tools/plan_pairs.py` all run
-   against it. Every one of them was inoperable before this refresh.
-8. `git ls-files secret | wc -l` reports **0**, and the disclosure scan
+7. **Unused surface forms 405**, and **headwords never used at all is 0**.
+   Level-one vocabulary utilisation is **829 of 849**.
+8. **`evals/pilot/level_1.pt` loads and is trained at the reference
+   configuration** in `../../evals/pilot/REFERENCE_CONFIGURATION.md`, not at
+   the defaults. `tools/talk.py`, `tools/retention.py` and
+   `tools/plan_pairs.py` all run against it.
+9. **Concept pairs realised: 312 of 8,128**, counted as the union across a
+   content book's own records with the dictionary books excluded. **Two
+   other counting methods give 88 percent and 0.5 percent and both are
+   wrong**; the reasons are in `../decisions/COMBINATORIAL_RICHNESS.md`.
+10. **42 of 96 schedule units carry a question-and-answer book**, and the
+    corpus holds **646 question marks in 378,156 training tokens**, one per
+    49 sentences.
+11. `git ls-files secret | wc -l` reports **0**, and the disclosure scan
    reports it covered tracked and untracked files, line by line and with
    whitespace collapsed. **A scan that does not say all three is the old
    one, which missed both.**
