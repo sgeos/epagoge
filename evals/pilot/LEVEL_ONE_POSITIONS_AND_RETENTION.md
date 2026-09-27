@@ -1,5 +1,13 @@
 # Rotary positions, whole-book streams, and what the model fails to retain
 
+> **SUPERSEDED IN PART, 2026-09-27. Do not quote the grid below.** It was
+> taken with the two position paths built differently, thirteen bias tensors
+> against nine, so it measured the block as well as the position scheme. It
+> also predates the corpus growing from 246 books to 400, the head count
+> becoming derived, and the evaluation becoming a token-weighted sum over
+> the whole held-out set. **The re-measurement is at the end of this file**
+> and it reaches the same conclusions with different numbers.
+
 **Measured 2026-09-26** on the finished level-one corpus, 206,206 tokens,
 after the lexicon culls. Held-out is **30 books**, split on book boundaries,
 so every figure in the grid below scores the same text and differs only in
@@ -127,3 +135,71 @@ random fifteen percent of chunks rather than the book-boundary split used
 for the grid. Different held-out sets, so the two numbers are not
 comparable, which is the rule this project has broken four times and is
 restating here.
+
+
+---
+
+# Re-measured 2026-09-27, with the confound removed
+
+**This is one of the three measurements `HANDOFF.md` recorded as owed.**
+Both position paths now share one `Block`, so position is the only thing
+that differs between them. Heads are derived at one per 64 channels rather
+than fixed at four. The corpus is 400 books and 308,931 tokens. The
+evaluation sums losses over the whole held-out set and divides once by the
+token count.
+
+Width 256, four layers, 1,600 steps, **three seeds per cell**, held-out
+loss.
+
+| Positions | 128-token windows | 1,088-token windows |
+| --- | --- | --- |
+| learned table | 3.533, 3.534, 3.534 | 3.852, 3.855, 3.873 |
+| **rotary** | **3.235, 3.240, 3.251** | 3.296, 3.355, 3.289 |
+
+Means:
+
+| Positions | 128 | 1,088 |
+| --- | --- | --- |
+| learned table | 3.534 | 3.860 |
+| **rotary** | **3.242** | 3.313 |
+
+**No seed crosses any cell boundary**, so every comparison below is
+consistent across all three.
+
+## What survives, and what is corrected
+
+**Rotary still wins and the figure changes.** It is worth **0.292 nats at
+128 and 0.547 at 1,088**, against 0.409 and 0.388 under the confounded
+measurement. The direction and the rough size hold; the claim that the two
+effects were independent does not.
+
+**They are not independent, and the interaction is the interesting part.**
+The rotary advantage nearly doubles from 128 to 1,088. That is what the
+mechanism predicts: a learned table has one row per index, and at 1,088
+tokens with 400 books each row is seen by a fraction of one sequence, so
+the longer the window the more there is for a table to fail to learn.
+
+**Short windows still win and the margin is mostly the table.** 128 beats
+1,088 by **0.326 nats with a learned table and 0.071 with rotary**. The
+earlier measurement put those at 0.304 and 0.325 and concluded the sequence
+length mattered as much either way. **It does not.** Most of what looked
+like a penalty for making a book one sequence was the position table
+starving, and once position is relative the penalty is about a fifth of
+what it was.
+
+**The book-as-stream idea is still refuted and by much less than before.**
+0.071 nats at three seeds is a real gap and a small one, and
+`docs/decisions/STRUCTURAL_TOKENS.md` records that the regime where a
+sequence is a document is one frontier runs reach with intra-document
+masking switched on, which this does not do. **Whether it would survive
+that change is untested.**
+
+## What this does not cover
+
+**One width, one depth, one step count.** Width 256 at four layers and
+1,600 steps.
+
+**Padding is not held fixed across the sequence lengths.** A 1,088-token
+window pads more than a 128-token one, and packing is implemented but was
+not used here. The token-weighted evaluation removes padding's effect on
+the loss arithmetic; it does not remove it from what the model saw.

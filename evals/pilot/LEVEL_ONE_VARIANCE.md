@@ -1,5 +1,17 @@
 # Variance and ordering on the level-one corpus
 
+> **STALE, 2026-09-27. Every figure below predates the tree it describes.**
+> The corpus is now **400 books and 308,931 tokens**, the vocabulary 2,279
+> ids, the head count derived rather than fixed at four, and the held-out
+> loss a token-weighted sum over the whole set rather than a mean of
+> per-batch means over a systematic slice. **Its variance and correlation
+> figures are the ones `evals/PRE_REGISTRATION.md` item 6 depends on**, so
+> they need re-measuring before any ablation is run, not merely relabelling.
+>
+> **Quote nothing here as a current property of this project.** It is kept
+> because the reasoning is still worth reading and because deleting a
+> measurement corrupts the record of why the next one was taken.
+
 **Measured 2026-09-25**, eight paired seeds over 146 books, **35,438
 tokens**, 1,382,912 parameters, Metal Performance Shaders. Raw numbers in
 `level_1.json`, which has since been overwritten by a larger run.

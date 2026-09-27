@@ -1,5 +1,16 @@
 # Why the model does not answer a question
 
+> **STALE, 2026-09-27. Every figure below predates the tree it describes.**
+> The corpus is now **400 books and 308,931 tokens**, the vocabulary 2,279
+> ids, the head count derived rather than fixed at four, and the held-out
+> loss a token-weighted sum over the whole set rather than a mean of
+> per-batch means over a systematic slice. The model it prompts no longer
+> exists and its checkpoint is refused by the current loader.
+>
+> **Quote nothing here as a current property of this project.** It is kept
+> because the reasoning is still worth reading and because deleting a
+> measurement corrupts the record of why the next one was taken.
+
 **Measured 2026-09-25**, prompted with `what is the cup ?`.
 
 > of . the cup . the child is doing . one breeze that is not been and that

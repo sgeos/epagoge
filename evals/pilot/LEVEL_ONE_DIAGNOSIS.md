@@ -1,5 +1,16 @@
 # Is the level-one model undertrained or out of corpus
 
+> **STALE, 2026-09-27. Every figure below predates the tree it describes.**
+> The corpus is now **400 books and 308,931 tokens**, the vocabulary 2,279
+> ids, the head count derived rather than fixed at four, and the held-out
+> loss a token-weighted sum over the whole set rather than a mean of
+> per-batch means over a systematic slice. It was taken over 43,023 tokens,
+> about an eighth of the corpus today.
+>
+> **Quote nothing here as a current property of this project.** It is kept
+> because the reasoning is still worth reading and because deleting a
+> measurement corrupts the record of why the next one was taken.
+
 **Measured 2026-09-25** over 43,023 corpus tokens, 433 chunks, 54 held
 out, vocabulary 2,253. Raw numbers in `level_1_diagnosis.json`.
 

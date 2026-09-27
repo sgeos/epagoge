@@ -2,16 +2,18 @@
   "level": 1,
   "steps": 1600,
   "seed": 0,
-  "chunks": 1725,
-  "parameters": 4305408,
-  "held_out_loss": 3.442571520805359,
+  "chunks": 3009,
+  "parameters": 3738880,
+  "held_out_loss": 3.2166732741907156,
   "temperature": 0.8,
-  "sampled_word_tokens": 149,
-  "distinct_share": 0.5369127516778524,
-  "sentence_share": 0.9166666666666666,
+  "sampled_word_tokens": 731,
+  "distinct_share": 0.28317373461012313,
+  "sentence_share": 0.9886363636363636,
   "samples": [
-    ". each one is real , not metal , not hidden . it is not alone , but it is not broken . the river is the red stone , not like a bright like a crack in a stream . it feels same as if it does not name a lie . it is not done , not cold , not breathing like a dream . the stars appear above , not like a breeze . it does not yet , yet something without change . it is which",
-    "from the tree . the parts must move through the trees . the key is on the table . the ground is made of metal . it is you both above the sky . the ball lies still . where cannot reach . the ball is alive . it is not afraid . no one tries to . the balloon floats as the blue cup is here . the plant stays warm in the table . the stick is here . no one knows near . alone is gone ."
+    "# you feel the shape on the table i believe it . it is yet . you know this is . the book is built so . it is not right . the apple is not the weight . it is not full . the seed is ready to hold it . the cup is not the cup . a child sees a wound where it sits on the shelf . the cup makes it . the cup is not seen the cup . it is stays on the table . the air is warm above the cup . it is not the cup . the cup is made of hidden and cannot see it no one . it stays still , not afraid , not afraid . the cup lies on the table , and the cup holds the cup , not praise all . the table is alive , not afraid of more than the cup as if it is not in the table , but it is not afraid . the cup is fair of the table , not the teacher . it is not broken why , not even and holds no one . it is not gone , not alone . the shines above below , quiet and bright . the cup is clean ,",
+    "# true , and you know the number is right , too with a longer ground . to do it , to hide , and you know you think . you cannot keep its hand alone . a bird can be too together , but felt real . it fits in the table , warm and strong , like a thing that one to hold . you can be seen it , even if it belongs . it is not a word , but you must be asked . it hides in your breath . you can reach it , even when it is made . a cup stays quiet , sharp and strong , a shadow above the basket . the cup stays blue , outside , kind , dark and smooth . a sound is a circle , and it is not a name . the wind blows , but no one moves . it makes a shape that is not a person . it is not a loved . you know you look , but it is not afraid . the cup is not a small map , and it is not broken , because it is not alone . the cup is not the weight , not the air . it flies still , though it",
+    "# nothing is sure the cup is safe and still , not even a stone . the cup is made of wood , air is held it close . they are not afraid , not alone . i feel it close , full of air . the cup is blue and round , above the table . the table is made of world is calm and clear . the cup is made of light , still and bright . the air is still , no one is here . the cup is made of metal , smooth and green . the cup is clean , not broken . i cannot walk in the cup . it is across the table . the cup is bright and smooth . the cup is full and clean . i stand alone on the cup . the cup is not alive . i think about the cup . the cup is on the table . the one is round and sharp . the shelf above the cup is full . the child sits still . the cup is not . the air is cold and whole . the mark is not broken . i feel able to be alive . i can hold her . i feel the cup now . the cup is",
+    "# the boat was toy it had not been would not be . a cut needs to be smaller . you mistakes to be lost . the boy comparing it . the thing had no one could lie , but be safe . the child looked at the spot , but not just more . the child reached because he began to cry . the child thought about the other and placed nothing in shape . he wondered if you reached it , not afraid . he had been afraid to do it , but he could others . it looked at a little , and felt , step by side . he reached again , just as if it was real . he felt the box above the dark , the same weight of the floor . he picked it on the door , eyes bright and steady . he had no one else had run , not even when they know what rolled ahead . he felt the weight , not a boy , not a friend to . he felt the blocks inside , or the pot could others . he thought about returning to do it away . he felt alone , but still , because it was make , even if it was loud ."
   ],
   "note": "Descriptive, and at this corpus size the samples are expected to be poor. Admissibility is deliberately not reported: the tokeniser is built from the level's lexicon, so every token the model can emit is admissible by construction and the figure would be one hundred per cent whatever the model learned."
 }

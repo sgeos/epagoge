@@ -12,13 +12,16 @@ gives in a form that does not depend on any hash.
 
 ## The tree is clean
 
-**Nothing is running, nothing is uncommitted, CI is green.** The cross-book
-work described below completed and landed.
+**Nothing is running, nothing is uncommitted, CI is green.**
 
-**At this refresh**: 399 books over 7,138 records and **297,523 words**. All
-397 sixteen-spread content books are inside the word band, none above, and
-all 399 carry their six metadata fields. **Concept pairs realised: 262 of
-7,626**, from 109.
+**At this refresh**: 400 books over 7,163 records and **297,804 words**,
+every content book inside the word band and every book carrying its six
+metadata fields.
+
+**The measurement debt this file has carried since 2026-09-26 is paid.**
+All three owed measurements were re-run on the current tree and the
+conclusions of two of them changed. Every evaluation record that still
+holds a figure taken before the current corpus now says so at its top.
 
 ## Validity
 
@@ -39,22 +42,24 @@ message for the former name returns 0.
 
 1. `./tools/check.sh` reports **ALL CHECKS PASSED** over **twenty-two**
    checks and **exits 0**.
-2. The suite reports **526** tests.
-3. `curriculum/vocabulary.json` holds **961 senses over 927 words**, of
-   which **840** are admissible at level one. **178** core, **37**
+2. The suite reports **537** tests.
+3. `curriculum/vocabulary.json` holds **970 senses over 936 words**, of
+   which **849** are admissible at level one. **178** core, **37**
    ostensive, a seed of **257**. **The tokeniser is larger than the
-   lexicon**: 2,263 ids, because 21 of them are special.
-4. **Both dictionaries are self-hosting**, 803 of 803 at level one, closure
-   100 percent, nothing blocked and no cycles.
-5. `curriculum/books/level_1/` holds **399** books over **7,138** records.
+   lexicon**: **2,279** ids, because 22 of them are special or structural.
+4. **Both dictionaries are self-hosting**, 812 of 812 at level one, closure
+   100 percent, grounded 833, nothing blocked and no cycles.
+5. `curriculum/books/level_1/` holds **400** books over **7,163** records.
    The word count is deliberately **not** asserted as an equality, since any
-   later fill raises it. It was **297,523**; check it is **at least** that,
+   later fill raises it. It was **297,804**; check it is **at least** that,
    that all content books are in the band and none above.
-6. `tools/stamp_books.py --level 1 --check` reports **399 books, 0 missing a
+6. `tools/stamp_books.py --level 1 --check` reports **400 books, 0 missing a
    field** and no date disagreeing with history.
-7. **Unused surface forms 413 of 2,038**, and **headwords never used at all
-   is 0**. The re-count the previous refresh asked for has happened: the 153
-   cross-concept books consumed 116 previously unused forms.
+7. **Unused surface forms 419 of 2,056**, and **headwords never used at all
+   is 0**.
+9. **`evals/pilot/level_1.pt` loads**, was written at vocabulary 2,279, and
+   `tools/talk.py`, `tools/retention.py` and `tools/plan_pairs.py` all run
+   against it. Every one of them was inoperable before this refresh.
 8. `git ls-files secret | wc -l` reports **0**, and the disclosure scan
    reports it covered tracked and untracked files, line by line and with
    whitespace collapsed. **A scan that does not say all three is the old
@@ -73,7 +78,34 @@ of 840. **A refresh that restates a number must re-run it.**
 `5bf8c2b`. The count was written from arithmetic rather than from the gate.
 Corrected here rather than amended, because the commit is pushed.
 
-## THREE MEASUREMENTS ARE OWED, and none is optional
+## The three owed measurements are paid, and two changed their answer
+
+**Re-run 2026-09-27 on the current tree**, with both position paths sharing
+one `Block`, heads derived, and the corrected token-weighted evaluation.
+
+1. **The position comparison.** Rotary still wins and the figure moved, to
+   **0.292 nats at 128 and 0.547 at 1,088** over three seeds a cell. **The
+   earlier claim that sequence length and position scheme were independent
+   is withdrawn.** The rotary advantage nearly doubles with window length,
+   and most of what looked like a penalty for making a book one sequence was
+   the position table starving: 128 beats 1,088 by 0.326 nats with a learned
+   table and by **0.071** with rotary.
+2. **The held-out figures.** Every eval record that still carries a figure
+   from before the corrected evaluation is marked stale at its top.
+   `LEVEL_ONE_VARIANCE.md` is the one that matters beyond labelling, because
+   `evals/PRE_REGISTRATION.md` item 6 depends on its numbers.
+3. **The capacity sweep.** **Width 1,024 is not the best width and the old
+   ranking is withdrawn.** With heads derived it is worse than 512 and 256
+   at every duration. Best measured is **3.037 at width 256 and 3,200
+   steps**. Undertraining was the obvious explanation and was tested and
+   ruled out.
+
+**A fourth thing was found while paying them.** At 6,400 steps every width
+collapses, width 512 reaching a training loss of 0.501 against held-out
+4.130. Token replacement at 0.15 turns that into **2.913**, which is 1.217
+nats and the best result at that width.
+
+## Superseded: the owed-measurement block, kept for its reasoning
 
 **Every one was invalidated by a defect found in auditing, not by a new
 result.** Anything quoting the old figures is quoting a confounded number.

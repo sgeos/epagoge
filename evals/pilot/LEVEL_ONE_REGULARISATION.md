@@ -115,6 +115,27 @@ Here 5 percent beats 15 percent, by 0.018 at seed 0. That is one seed and
 the two are close, so the honest statement is that 5 is at least as good
 here and the published optimum did not transfer unchanged.
 
+## At 6,400 steps it stops being an improvement and becomes a rescue
+
+**Measured 2026-09-27**, width 512, where training to 6,400 steps collapses.
+
+| Rate | Train | Held |
+| --- | --- | --- |
+| 0.00 | 0.501 | **4.130** |
+| 0.05 | 0.896 | 3.226 |
+| 0.15 | 1.469 | **2.913** |
+
+**1.217 nats.** At this duration the untreated model has memorised the
+corpus, and `LEVEL_ONE_CAPACITY.md` has the surrounding table.
+
+**The best rate rises with duration**, from 0.05 at 3,200 steps to 0.15 at
+6,400. That is the direction the source study predicts, since it found 15
+percent best at 100 epochs.
+
+**It buys duration and not a better model.** 2.913 at 6,400 steps is the
+same as 2.912 at 3,200 with the lower rate, so what moves is where training
+stops helping.
+
 ## The two regularisers do not stack
 
 Weight decay 0.5 with token replacement 0.05, seed 0, same cell: **2.921**,

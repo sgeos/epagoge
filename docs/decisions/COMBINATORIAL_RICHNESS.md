@@ -116,3 +116,64 @@ a round of writing bought structure or only tokens.
 `tools/retention.py`. If retention does not respond, the combinatorial
 argument is right about the corpus and wrong about the model, and that is
 worth knowing.
+
+## Checked 2026-09-27, and the answer is mixed
+
+**The eleven moved, and the comparison that shows it is not controlled.**
+`giving_a_reason`, `disagreeing` and `agreeing` were the worst-retained
+concepts at loss 4.011 when this record was written. On a model trained on
+the current corpus they are at **3.243 over ten books each**, and they are
+no longer in the worst eleven.
+
+**That number must not be read as the effect of the cross-concept books.**
+Between the two measurements the corpus went from 246 books to 400, the
+vocabulary from 2,246 tokens to 2,279, the position scheme to rotary, the
+head count to derived, the evaluation to a token-weighted sum, and every
+work gained a beginning, an end and a title announcement. **The two models
+also differ in what they had seen**, since the earlier one was scored on
+books it was never trained on. Six things moved together and this measures
+their sum.
+
+### The cross-sectional test, which is controlled and weaker than it looks
+
+Within one model and one corpus, does a concept with more books retain
+better? Over 133 concepts, loss against the logarithm of books per concept:
+
+| Books per concept | Concepts | Mean loss |
+| --- | --- | --- |
+| 1 | 5 | **4.153** |
+| 2 to 3 | 41 | 3.158 |
+| 4 to 7 | 71 | 3.039 |
+| 8 or more | 16 | 2.937 |
+
+**Correlation over all 133 concepts is -0.344 and that figure is
+misleading.** Four of the five single-book concepts are the etiquette
+concepts admitted hours earlier, so that bin is not "concepts with one
+book", it is "concepts written today". **Excluding every single-book
+concept, the correlation falls to -0.110 and the slope from -0.195 to
+-0.053 nats per e-fold of books.**
+
+**So the marginal value of the second book is large and the marginal value
+of the tenth is small.** Bin means stay monotone across the range, spanning
+0.22 nats from two books to eight, but books per concept explains little of
+the variance between concepts once every concept has at least two.
+
+### What that does to the argument in this record
+
+**It supports the conclusion and undercuts one reading of the mechanism.**
+The conclusion is that repetition should buy new combinations rather than
+repeat old ones, and a weak return on the tenth book about a concept is
+exactly what that predicts. **What it argues against is answering poor
+retention by writing more books about the same concept**, which is what
+`tools/retention.py` ranks for and what an unwary reader of this record
+would do.
+
+**Breadth over depth, on this evidence.** A concept with one book is badly
+served and a concept with ten is not much better served than one with four.
+
+### Still owed
+
+**A controlled version of the first comparison.** Train on the 246-book
+corpus and on the 400-book corpus at one architecture and evaluate both on
+one held-out set. Nothing here does that, and without it the drop from
+4.011 to 3.243 remains six changes measured together.

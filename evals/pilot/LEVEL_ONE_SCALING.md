@@ -1,5 +1,16 @@
 # What another order of magnitude of corpus would buy
 
+> **STALE, 2026-09-27. Every figure below predates the tree it describes.**
+> The corpus is now **400 books and 308,931 tokens**, the vocabulary 2,279
+> ids, the head count derived rather than fixed at four, and the held-out
+> loss a token-weighted sum over the whole set rather than a mean of
+> per-batch means over a systematic slice. It also predates rotary
+> positions, weight tying and the end-of-text token.
+>
+> **Quote nothing here as a current property of this project.** It is kept
+> because the reasoning is still worth reading and because deleting a
+> measurement corrupts the record of why the next one was taken.
+
 **Measured 2026-09-25.** Four corpus fractions against one held-out set,
 three step counts each, width 256, four layers, 4,345,856 parameters. Raw
 numbers in `level_1_scaling.json`.

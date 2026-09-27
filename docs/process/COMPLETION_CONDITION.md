@@ -1,67 +1,51 @@
 # Completion condition
 
-Judge against the repository tree. **Ordering is explicitly not a
-completion criterion.** Any sequence of steps leaving the tree in the state
-below is complete. No branch, process, or commit-shape requirement.
+**Ordering is explicitly not a completion criterion.** Any order satisfies
+this, and so does any branch, any commit shape and any process. What counts
+is the end state of the tree.
 
-**A measurement that falls short satisfies this. A good result is not
-required and must not be manufactured.** Where a target is missed, the tree
-records the figure reached and why.
+## Done when all of the following hold
 
-**The level-one condition below was met on 2026-09-26.** It is kept because
-a condition that is deleted once met leaves nothing to check a regression
-against. Anything that would break a clause here is a regression.
+**A checkpoint loads.** `evals/pilot/level_1.pt` exists, was written at the
+current vocabulary size, and `tools/talk.py --level 1 --prompt "the cup is"`
+produces output without an error and without reporting a vocabulary
+mismatch.
 
-## Level one
+**The position comparison has been re-measured** at both position schemes
+and at least two sequence lengths, on the current corpus, with heads derived
+rather than fixed. `evals/pilot/LEVEL_ONE_POSITIONS_AND_RETENTION.md`
+carries the new figures and states the corpus size and head derivation they
+were taken under.
 
-- Every book under `curriculum/books/level_1/` carries `about`, `teaches`,
-  `author`, `licence`, `first_published` and `published`, and a check
-  reports how many do.
-- The two dates are derived from each file's version history by a tool in
-  the tree, not assigned. A decision record gives the `author` and
-  `licence` values and what was rejected.
-- Every sixteen-spread content book is inside the level-one word band.
-  None is above it.
-- Every unit in `curriculum/schedule/level_01.json` has at least one book,
-  and every book that is not a dictionary holds exactly sixteen spreads.
-- No code rebuilds a book by listing its fields, and a test fails if a
-  field added to the book model is not carried through a read, a write and
-  a read again. The test has been shown to fail against a broken case.
-- The seventeen question-and-answer books still declare their form.
+**The capacity sweep has been re-measured** with derived heads over at least
+three widths. `evals/pilot/LEVEL_ONE_CAPACITY.md` carries the new figures.
 
-## Measurement is reproducible and honest
+**Retention has been re-measured** on a checkpoint trained on the current
+corpus. A record states whether the epistemic concepts that were worst
+retained moved, and states explicitly that the book set changed between the
+two measurements so the two rankings are not a controlled comparison.
 
-- A model-size sweep and a corpus-fraction sweep at level one are both in
-  the tree, each naming the corpus it ran against, and a tool in the tree
-  reproduces both.
-- No figure is compared against one measured with a different held-out set,
-  a different temperature, or a different corpus, unless the text says so.
-- Distinct-token share and attractor frequency are not presented as
-  quality measures.
-- Every superseded claim is corrected beside itself rather than deleted.
+**Every evaluation record under `evals/pilot/` that still carries a figure
+taken before the current corpus, vocabulary or head derivation says so in
+that record**, in a form a reader meets before the figure.
 
-## Nothing already true is broken
+**No figure presented as a result rests on one seed.** Anything single-seed
+is labelled as such where it appears.
 
-- `tools/check.sh` exits 0 and reports every check passing.
-- Closure is 100 percent at levels one and two, nothing on the frontier,
-  nothing blocked, no cycles.
-- Every sense admitted at a level has a thesaurus entry, and every word
-  admitted and not in the seed has a definition record.
-- `ostensive` in `curriculum/vocabulary.json` holds at most 60 words.
-- Every dictionary book is in alphabetical order.
-- No file under `secret/` is tracked, and the disclosure scan reports that
-  it covered tracked and untracked files, line by line and with whitespace
-  collapsed.
+**`docs/process/HANDOFF.md` validity block matches the tree**, including
+book count, record count, test count, vocabulary and token counts, and each
+asserted number is one that was read from a tool rather than computed by
+hand.
 
-## Honesty conditions
+**The gate passes.** `./tools/check.sh` reports all checks passed and exits
+0, with no check weakened or removed to achieve it.
 
-- No document claims a curriculum or ordering benefit as established.
-- Every figure quoted was measured on the tree, or the same sentence says
-  it was not.
+**Continuous integration is green** on the pushed head, checked rather than
+assumed.
 
-## What would need authorising before a further condition applies
+**The working tree is clean and pushed**, with no tracked evaluation
+artifact left holding the output of a probe rather than a recorded run.
 
-Level two is a scheduling problem, not a writing one. **A condition for it
-cannot be written until the lexicon allocation from 879 words toward ten
-thousand exists**, because a corpus written before that allocation would be
-invalidated by it.
+**No new capability was added** beyond what is needed to take these
+measurements. A new option, token, generator, or training objective is
+outside this condition.

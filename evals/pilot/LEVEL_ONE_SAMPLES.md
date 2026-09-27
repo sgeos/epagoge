@@ -1,5 +1,17 @@
 # What a level-one model actually produces
 
+> **STALE, 2026-09-27. Every figure below predates the tree it describes.**
+> The corpus is now **400 books and 308,931 tokens**, the vocabulary 2,279
+> ids, the head count derived rather than fixed at four, and the held-out
+> loss a token-weighted sum over the whole set rather than a mean of
+> per-batch means over a systematic slice. It also predates the beginning-
+> of-work and end-of-text tokens, so its samples could not stop and its seed
+> token had never been trained on.
+>
+> **Quote nothing here as a current property of this project.** It is kept
+> because the reasoning is still worth reading and because deleting a
+> measurement corrupts the record of why the next one was taken.
+
 **Measured 2026-09-25.** One model, 1,386,496 parameters, 800 steps on the
 level-one corpus, sampled at temperature 1.0 from the book marker. Raw
 output in `level_1_samples.json`, weights in `level_1.pt`, which is not

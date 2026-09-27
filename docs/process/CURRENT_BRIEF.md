@@ -1,83 +1,87 @@
-# Current brief. The loop has run out of work that is its own
+# Current brief. Pay the measurement debt, and stop adding surface
 
-**Written 2026-09-26**, replacing the brief whose completion condition is
-met. **This one recommends stopping rather than continuing**, and says what
-each remaining item is waiting on. Durable practice is in
-`PROCESS_STRATEGY.md`. The reasoning behind the measurements is in
+**Written 2026-09-27**, replacing the brief that recommended stopping. That
+one was right at the time and the situation changed: three sessions of
+capability landed on top of it, and the corpus, the vocabulary, the
+architecture and the training machinery all moved.
+
+**The work now is arithmetic, not invention.** Durable practice is in
+`PROCESS_STRATEGY.md`. The reasoning behind each measurement is in
 `../../evals/pilot/`.
 
-## What level one now is
+## Why this and not something else
 
-| Property | State |
-| --- | --- |
-| Lexicon | 845 words at level one, closure 100 percent, seed of 37 |
-| Books | 246 over 4,691 records, **172,810 words** |
-| Length standard | **244 of 244 content books inside the word band** |
-| Metadata | All six fields on all 246 books |
-| Best model | Held out **3.713**, perplexity **41**, width 1024 |
-| Gate | 21 checks, exits 0, about nine seconds |
+**Every recorded number describes a tree that no longer exists.** The
+corpus went from 246 books to 400, the vocabulary from 2,246 tokens to
+2,279, the head count from fixed to derived, the evaluation from a biased
+slice averaged wrongly to a token-weighted sum, and every work now carries a
+beginning, an end and a title announcement. **None of the figures in
+`evals/pilot/` were taken under any of that.**
 
-The corpus began the previous morning at 55,510 words with 229 of 244
-content books below the band and a model at perplexity 120.
+**No checkpoint on disk loads.** `evals/pilot/level_1.pt` holds a vocabulary
+of 2,246 against 2,279 today. It is refused cleanly, which is the machinery
+working, and it means `tools/talk.py`, `tools/retention.py` and
+`tools/plan_pairs.py` cannot run at all. **The project currently cannot be
+talked to.**
 
-## Why there is nothing left for a loop to take
+**The handoff lists three measurements as owed and says none is optional.**
+They have been owed since before this session and this session did not pay
+them. Adding a fourth capability instead would be the same choice a fourth
+time.
 
-Each remaining item fails one of the two tests in `PROCESS_STRATEGY.md`:
-either it needs information only the operator holds, or the project's own
-framing says it is not the work to do next.
+## What to do
 
-**The 688 unused surface forms.** Each is a judgement about whether a
-module should use it, whether a module should be drafted for it, or whether
-admitting it was a mistake. A loop cannot make that call for 688 words and
-should not pretend to.
+1. **Produce a checkpoint that loads.** Train at the current vocabulary and
+   architecture and save it where the tools look.
+2. **Re-run the position comparison.** 128 against a whole-book window, at
+   both schemes, now that both share one `Block` and heads are derived. The
+   claim that rotary is worth 0.4 nats is confounded and must not be quoted
+   until this is redone.
+3. **Re-run the capacity sweep** with derived heads, so the wide points mean
+   something. Width 1,024 previously ran at head dimension 256.
+4. **Re-run retention**, which is what `COMBINATORIAL_RICHNESS.md` commits
+   to: whether the eleven worst-retained epistemic concepts moved after 153
+   cross-concept books. If retention does not respond, the combinatorial
+   argument is right about the corpus and wrong about the model.
+5. **Make every stale eval record say so**, in the record itself, so a
+   reader cannot quote a confounded figure by accident.
+6. **Re-stamp the handoff** so its validity block matches the tree.
 
-**The ordering ablation.** Blocked on the endpoint and estimator of
-pre-registration item 10. **The endpoint fixes the sign of the result**: at
-800 steps the curriculum arm was worse in 8 of 8 and at 1,600 better in 7
-of 8. Nobody should choose that after seeing the data, which is why it is
-the operator's and why it is pre-registration.
+## Prior failures, and the specific wrong turns to avoid
 
-**The level-two lexicon, 879 words against a target near 10,000.** An
-allocation over a partial order, not a backlog. Admitting words a round at
-a time from whatever blocked a generator will not produce ten thousand.
+**Do not add a feature.** The temptation this brief exists to resist is that
+the next capability is more interesting than the next measurement. Five
+landed in one session. The debt is measurement.
 
-**Schedules for levels three to seven.** None exist.
+**Do not quote a figure taken before the change it spans.** Retention
+numbers from 216 books and retention numbers from 400 books are not
+comparable, because the book set is the denominator. Say what moved and say
+that the set moved with it.
 
-**`sources/` and level seven.** Empty, and its licensing constraint is
-recorded as unexamined.
+**Do not report one seed as a result.** It was done twice this session and
+flagged both times. A paired difference over three seeds is the minimum that
+earns the word "result", and even that is weak.
 
-## The wrong turn that is available and should not be taken
+**Do not overwrite a tracked eval artifact with a probe.** It happened twice
+this session. `tools/diagnose_level.py` and the sample tools take `--out`.
 
-**Writing the level-two corpus now.** It looks like bounded roadmap work:
-27 units are scheduled across 11 domains, one book exists at 3 of its 64
-spreads, and the tooling would run unattended for about twenty hours.
+**Do not claim a count from arithmetic.** A commit message claimed 533 tests
+where the tree had 526. Read it from the gate.
 
-**The project's own framing forbids it.** `../decisions/THREE_PROBLEMS.md`
-says volume is a level-one concern, that at levels two to six coverage and
-consistency bind instead, and that **a large corpus with unscheduled
-concepts would not be progress**. Writing 432,000 words against an
-879-word lexicon would produce level-one prose at level-two length, and
-the lexicon allocation would then invalidate it.
+**Do not conflate "the corpus grew" with "the model improved."** A loss that
+falls while the held-out set changes has not been shown to fall.
 
-So the cheapest-looking work available is the work the project has already
-decided against, and a loop optimising for visible output would take it.
+**Do not weaken a check to make something pass**, and do not delete a
+correction. Corrections stay beside the claim.
 
-## What this session did, for a resuming reader
+**Check CI separately.** Red while the local gate was green three times.
 
-Eleven hours, and the most useful output was catching its own errors.
+## What is not this brief's to decide
 
-**Delivered.** Book metadata on all 246 books, where there had been none.
-The word band closed. Three field-enumeration defects fixed, one of which
-would have erased metadata from every regenerated book. Two holes closed in
-the disclosure scan, one of which had let banned vocabulary reach a public
-push. The scaling experiment made reproducible, its tool having never been
-committed. The teacher's context declared rather than inherited, which was
-a fiftyfold latency regression. A reference check added to the gate.
+The seven operator-held items in `HANDOFF.md`, unchanged: the endpoint and
+estimator, whether the third ablation arm suffices, the level-two lexicon,
+schedules for levels three to seven, `sources/` and level seven, the
+fourteen sense questions, and the 219 GB of Rust build output.
 
-**Withdrawn, with the reasoning kept in place.** That the model was too big
-for the corpus. That filling books added low-value tokens. That a question
-mark triggered the token `was`. That distinct-token share measures quality.
-
-**The class they share** is one rule: before reporting a difference, say
-what was held fixed and check that it was. Four instances in one day, all
-found by doubting a result rather than by any new measurement.
+**Announcing the repository is not this brief's either.** It is public and
+discovery is not.
