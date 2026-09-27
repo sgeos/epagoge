@@ -221,6 +221,56 @@ if the design must be trimmed, since it is the large majority of cost.
 
 ## 6. Seed count
 
+**RE-MEASURED 2026-09-27 on the current corpus. STILL PROVISIONAL.**
+
+Eight paired seeds at each of two endpoints, 400 books and 360,950 tokens,
+width 256, every held-out batch scored. `pilot/LEVEL_ONE_VARIANCE.md` has
+the working.
+
+| | 800 steps | 1,600 steps | Earlier, 44,505 tokens |
+| --- | --- | --- | --- |
+| Seed sd | **0.006478** | **0.007239** | 0.0750 |
+| Paired sd | 0.007356 | 0.010260 | 0.0233 |
+| Correlation | **+0.392** | **-0.009** | 0.9574 |
+| Pairing gain | **1.55x** | **1.00x** | 22.8x |
+
+Seeds required:
+
+| Effect | 800 paired | 800 unpaired | 1,600 paired | 1,600 unpaired |
+| --- | --- | --- | --- | --- |
+| 2.0% | 1 | 1 | 1 | 1 |
+| 1.0% | 1 | 1 | 1 | 1 |
+| 0.5% | 2 | 3 | 4 | 4 |
+| 0.2% | 9 | 14 | 20 | 20 |
+
+**The pairing design no longer pays and the experiment no longer needs it.**
+Run-to-run variance fell by a factor of about eleven when the corpus grew
+eightfold, so a 1 percent effect needs one seed by either design, against
+the twelve paired and two hundred and forty-six unpaired this item
+originally recorded. **The claim that pairing is worth twenty-two times the
+seeds is withdrawn for this corpus.**
+
+**Twenty paired seeds resolve 0.0046 nats at 800 steps and 0.0064 at
+1,600**, which is the number to quote when item 7 is chosen.
+
+**It stays provisional for two reasons that this measurement does not
+touch.** The endpoint, item 10, is unchosen and the two endpoints give
+different paired standard deviations. And
+`../docs/decisions/TRAINING_TECHNIQUES.md` adopts maximal update
+parametrization, Muon and warmup-stable-decay, none implemented, so sigma
+and rho will move again when they are.
+
+**A third reason was found while taking this measurement and it is worse
+than the other two.** Batches are built from consecutive positions in the
+ordering, so an arm decides both the visit order and the composition of
+every batch. **The ablation varies two things while intending to vary one**,
+and nothing measured so far separates a curriculum effect from the effect of
+training on homogeneous batches. `pilot/LEVEL_ONE_VARIANCE.md` names the
+experiment that would separate them. **Until it is run, no ordering result
+from this harness means what it appears to mean.**
+
+### Superseded, kept for the reasoning
+
 **MEASURED 2026-09-24, PROVISIONAL pending re-measurement at target scale.**
 
 The pilot ran at 818,000 parameters on a synthetic stream, single-epoch. See
@@ -366,7 +416,7 @@ the number is fixed once measurable.
 | Item | Unblocked by |
 | --- | --- |
 | 2 | **Done 2026-09-24** |
-| 6 | **Measured 2026-09-24**, provisional pending target scale |
+| 6 | **Re-measured 2026-09-27.** Pairing no longer pays; a confound is open |
 | 7 | The minimum effect, still to be justified from the literature |
 | 5 | Allocation, once the seed count is final |
 | 9 correction, 10 | Decision, once the endpoint is fixed |

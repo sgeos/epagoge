@@ -11,6 +11,7 @@
 > **Quote nothing here as a current property of this project.** It is kept
 > because the reasoning is still worth reading and because deleting a
 > measurement corrupts the record of why the next one was taken.
+> **The current measurement is at the end of this file.**
 
 **Measured 2026-09-25**, eight paired seeds over 146 books, **35,438
 tokens**, 1,382,912 parameters, Metal Performance Shaders. Raw numbers in
@@ -115,3 +116,111 @@ eight over 345 chunks is about eighteen passes through the corpus, so
 repetition still dominates and an ordering signal has eighteen chances to
 wash out. The direction of travel is right: the draft was 7,998 tokens
 before the two defects were fixed and more books were written.
+
+
+---
+
+# Re-measured 2026-09-27, and the pairing design has stopped paying
+
+**Eight paired seeds at each of two endpoints**, on the current corpus:
+400 books, 360,950 corpus tokens, width 256, four layers, 3,771,648
+parameters, rotary positions, batch 16, sequence length 128. **Every
+held-out batch is scored**, not the first 24 of 28.
+
+| | 800 steps | 1,600 steps | Synthetic pilot |
+| --- | --- | --- | --- |
+| Mean loss | 3.5515 | 3.2746 | — |
+| Seed sd | **0.006478** | **0.007239** | 0.0750 |
+| Paired sd | 0.007356 | 0.010260 | 0.0233 |
+| Correlation | **+0.392** | **-0.009** | 0.9539 |
+| Pairing gain | **1.55x** | **1.00x** | 20.7x |
+
+**Run-to-run variance has fallen by a factor of about eleven**, from 0.0750
+to 0.0065. **The correlation that made pairing worth 22.8x has gone**, to
+0.39 at the shorter endpoint and to zero at the longer one.
+
+## Why this is good news even though it destroys the clever part
+
+**The design was clever because the experiment was expensive.** Pairing was
+worth two orders of magnitude when a 1 percent effect needed 246 unpaired
+seeds. It is worth nothing now because that experiment has become cheap.
+
+Seeds required, at each endpoint:
+
+| Effect | 800 paired | 800 unpaired | 1,600 paired | 1,600 unpaired |
+| --- | --- | --- | --- | --- |
+| 2.0% | 1 | 1 | 1 | 1 |
+| 1.0% | 1 | 1 | 1 | 1 |
+| 0.5% | 2 | 3 | 4 | 4 |
+| 0.2% | 9 | 14 | 20 | 20 |
+
+**A 1 percent effect now needs one seed either way**, against the
+pre-registered twelve paired and two hundred and forty-six unpaired.
+Twenty paired seeds resolve 0.0046 nats at 800 steps and 0.0064 at 1,600.
+
+**The cause is almost certainly the corpus.** It was 44,505 tokens when rho
+was 0.9574 and it is 360,950 now, so each run sees eight times the data and
+converges to a much more consistent place. When the shared component shrinks
+toward the floor set by the evaluation itself, the correlation between two
+runs that share an initialisation has little left to be a correlation of.
+
+**The truncated evaluation was ruled out as the cause.** At 24 of 28
+batches the same measurement gives rho 0.407 and 1.60x at 800 steps against
+0.392 and 1.55x over the whole set. The instrument was not doing it.
+
+## What this costs the endpoint decision
+
+**Item 10 is much cheaper to get wrong than it was.** At either endpoint the
+ablation is affordable at any effect size down to half a percent, so the
+choice no longer trades power against cost. What it still decides is which
+question is being asked.
+
+## An observation about the arms, which is not the ablation
+
+**This measurement was set up to estimate spread, and the spread turned out
+to be small enough that the arms separate cleanly. That is worth reporting
+and it is not a verdict.**
+
+| Arm | 800 steps | 1,600 steps |
+| --- | --- | --- |
+| curriculum | 3.5947 (sd 0.0046) | 3.3175 (sd 0.0025) |
+| topological | 3.5082 (sd 0.0072) | 3.2317 (sd 0.0092) |
+| shuffled | 3.4799 (sd 0.0067) | 3.2014 (sd 0.0077) |
+
+**The three arms order the same way at both endpoints**, and the gaps are
+ten to thirty times the within-arm spread. **The sign no longer flips
+between 800 and 1,600 steps**, which is the property that made item 10
+load-bearing when it was recorded.
+
+**This must not be read as the pre-registered result, for three reasons.**
+Item 7, the minimum meaningful effect, is unchosen. Item 10, the endpoint
+and estimator, is unchosen. And the confound below is large enough to
+account for the whole thing.
+
+## The confound, which is the most important thing on this page
+
+**Batches are built from consecutive positions in the ordering.**
+`pilot._batches` takes `order[start:start + batch_size]`, so the ordering
+decides not only the sequence in which books are visited but **what each
+batch is made of**.
+
+**A curriculum ordering therefore produces homogeneous batches** of books
+about neighbouring concepts at similar depth, and a shuffled ordering
+produces heterogeneous ones. Batch composition affects gradient noise
+independently of any curriculum effect, and it is a large effect in ordinary
+stochastic gradient descent.
+
+**So the arms differ in two things at once, and the ablation was designed to
+vary one.** The observation above is consistent with a curriculum effect and
+equally consistent with homogeneous batches training worse, and nothing here
+separates them.
+
+**The experiment that separates them** holds batch composition fixed while
+varying only visit order, for instance by assigning chunks to batches by a
+stride that is the same under every arm and permuting only the order in
+which those fixed batches are visited. **It is not run here** and it is not
+a small change to the trainer.
+
+**Until it is run, no ordering result from this harness means what it
+appears to mean**, including the earlier finding that the sign flipped with
+the endpoint.

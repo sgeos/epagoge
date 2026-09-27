@@ -6,36 +6,36 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**A checkpoint loads.** `evals/pilot/level_1.pt` exists, was written at the
-current vocabulary size, and `tools/talk.py --level 1 --prompt "the cup is"`
-produces output without an error and without reporting a vocabulary
-mismatch.
+**Variance has been re-measured on the current corpus at more than one
+endpoint.** A record under `evals/pilot/` carries, for each endpoint, the
+seed-to-seed standard deviation, the paired standard deviation, the
+correlation between arms, and the number of paired observations each rests
+on.
 
-**The position comparison has been re-measured** at both position schemes
-and at least two sequence lengths, on the current corpus, with heads derived
-rather than fixed. `evals/pilot/LEVEL_ONE_POSITIONS_AND_RETENTION.md`
-carries the new figures and states the corpus size and head derivation they
-were taken under.
+**The cost of each endpoint is stated as seed counts.** For each endpoint
+measured, the record gives the paired and unpaired seeds required to detect
+at least two different target effect sizes.
 
-**The capacity sweep has been re-measured** with derived heads over at least
-three widths. `evals/pilot/LEVEL_ONE_CAPACITY.md` carries the new figures.
+**No ordering verdict appears anywhere.** Nothing added in this work states
+or implies which arm won, because the endpoint that would fix the sign is
+unchosen and belongs to the operator. Reporting spread, correlation and
+seed counts is in scope; reporting which arm was better is not.
 
-**Retention has been re-measured** on a checkpoint trained on the current
-corpus. A record states whether the epistemic concepts that were worst
-retained moved, and states explicitly that the book set changed between the
-two measurements so the two rankings are not a controlled comparison.
+**Item 6 of `evals/PRE_REGISTRATION.md` carries the current figures and is
+still marked provisional**, with the reasons it remains so named
+explicitly: the endpoint is unchosen, and the adopted optimiser and
+schedule are not implemented.
 
-**Every evaluation record under `evals/pilot/` that still carries a figure
-taken before the current corpus, vocabulary or head derivation says so in
-that record**, in a form a reader meets before the figure.
+**`evals/pilot/LEVEL_ONE_VARIANCE.md` no longer presents superseded figures
+as current**, and a reader meets the current measurement or a pointer to it
+before any older number.
 
-**No figure presented as a result rests on one seed.** Anything single-seed
-is labelled as such where it appears.
+**Whether pairing still pays is stated as a measured claim**, with the
+current gain given rather than the older one repeated.
 
-**`docs/process/HANDOFF.md` validity block matches the tree**, including
-book count, record count, test count, vocabulary and token counts, and each
-asserted number is one that was read from a tool rather than computed by
-hand.
+**Every figure presented says how many seeds it rests on**, and anything
+resting on fewer observations than the estimator's own minimum is labelled
+as such rather than presented as an estimate.
 
 **The gate passes.** `./tools/check.sh` reports all checks passed and exits
 0, with no check weakened or removed to achieve it.
@@ -44,7 +44,7 @@ hand.
 assumed.
 
 **The working tree is clean and pushed**, with no tracked evaluation
-artifact left holding the output of a probe rather than a recorded run.
+artifact holding the output of a probe rather than a recorded run.
 
 **No new capability was added** beyond what is needed to take these
 measurements. A new option, token, generator, or training objective is

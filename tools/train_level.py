@@ -188,6 +188,12 @@ def main(argv: list[str]) -> int:
         default=None,
         help="warm start from this level's weights",
     )
+    # **The evaluation was truncated and said so.** At 28 held-out batches
+    # the default of 24 scores 86 percent of the set, which is a consistent
+    # estimator of a slightly different quantity and is the wrong instrument
+    # for a variance study whose effects are 0.2 percent of the loss. Zero
+    # means every batch.
+    parser.add_argument("--eval-batches", type=int, default=0)
     parser.add_argument("--out", type=Path, default=ROOT / "evals/pilot/level_1.json")
     args = parser.parse_args(argv[1:])
 
@@ -262,7 +268,11 @@ def main(argv: list[str]) -> int:
         n_layers=args.layers,
         seq_len=args.seq_len,
     )
-    train_config = TrainConfig(steps=args.steps, batch_size=args.batch_size)
+    train_config = TrainConfig(
+        steps=args.steps,
+        batch_size=args.batch_size,
+        eval_batches=args.eval_batches if args.eval_batches > 0 else 1_000_000,
+    )
     device = select_device(args.device)
     # **Two different numbers, and the difference is not small.** A chunk
     # holds seq_len + 1 ids so that inputs and targets can be offset, and a
