@@ -939,6 +939,15 @@ the plural rule demanded one from every noun and the lexicon carried
 It is deliberately not a separate field. A reader asking what a word is
 should find the whole answer in one place, and the plural rule is the only
 thing that consults it.
+
+**Widened 2026-09-27, and the name is now narrower than the meaning.** What
+the plural rule needs to know is whether the sense admits a plural, and a
+mass noun is the common reason but not the only one. `while` on `duration`
+is a count noun whose plural is archaic, and it carries `mass` because
+adding a second qualifier for one word would give the rule two things to
+consult. Should a third class of no-plural sense appear, rename this for
+what it does rather than widen it again. See
+`docs/decisions/UNUSED_FORMS.md`.
 """
 
 

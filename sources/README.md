@@ -35,3 +35,14 @@ Every source should carry its identifier, retrieval date, licence as
 determined at retrieval, and a content hash. A source whose licence was
 never determined should be recorded as undetermined rather than left blank,
 because a blank field is indistinguishable from an unexamined one.
+
+## The acquisition scheme is drafted and not adopted
+
+**Added 2026-09-27.** `../docs/decisions/SOURCE_ACQUISITION.md` draws the
+metadata-only scheme this file offers above as a mitigation, in enough detail
+to adopt. **It is not adopted.** The standing position is deferral until the
+first acquisition, and this directory stays tracked.
+
+**One guard is in place ahead of the decision.** `sources/bodies/` is
+ignored, so a body placed there cannot be committed by accident. The
+directory does not exist and the rule does not imply it should.

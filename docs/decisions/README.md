@@ -76,6 +76,10 @@ Decision records, and the open questions that block implementation.
   rebuild a different model in silence.
 - `LICENSING.md` decided. 0BSD for software, CC0 for corpus and
   documentation, third-party material under `sources/` excluded from both.
+- `SOURCE_ACQUISITION.md` drafted and deliberately NOT adopted. A
+  metadata-only acquisition scheme for terminal-stage literature, written
+  while `sources/` is empty because adopting it after a body is committed
+  costs a history rewrite. The standing position stays deferral.
 - `TRAINING_TECHNIQUES.md` decided. Maximal update parametrization, Muon,
   warmup-stable-decay, and multi-token prediction adopted. The first is
   confound removal rather than optimisation.

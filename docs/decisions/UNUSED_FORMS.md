@@ -95,3 +95,76 @@ second sense, not about whether the form is well formed.
 correct participle of `drink` and collides with an adjective no picture
 book wants. `lighted` is correct but archaic beside `lit`, which is **not**
 admitted, so culling it would leave `light` with no past form at all.
+
+## The fourteen are resolved, and two were already decided
+
+**Added 2026-09-27, on operator direction.**
+
+### Corrections to the section above, kept in place
+
+**`lit` is admitted, and the claim above that it is not was false one commit
+later.** `08f5013`, the commit after this record, made `light` irregular so
+it generates `lit` and no longer generates `lighted`. So `lighted` is not an
+admitted form, there is nothing to decide about it, and the stated reason
+for keeping it, that culling would leave `light` with no past form, stopped
+holding the same day.
+
+**`drunk` was decided in the same commit.** It stays as an inflection of
+`drink` and is refused as an adjective. The reasoning is in
+`WHOLESOMENESS.md`.
+
+**Both decisions went into `WHOLESOMENESS.md` and the code, and this file
+was never updated.** That is the failure class already recorded in
+`../process/PROCESS_STRATEGY.md`, a lesson filed in one document and
+relearned in another. `HANDOFF.md` inherited the stale count of fourteen and
+carried it for a day.
+
+**`manners` was settled by usage rather than by decision.** The etiquette
+work created the schedule unit `bk.i1.manners` and the corpus now uses the
+form 296 times, so the question of whether the lexicon wants the etiquette
+sense is answered by the books already teaching it.
+
+### The line that decides the remaining eleven
+
+**An archaic form need not be admitted. A current form is kept even when
+unused.**
+
+The first half is the `lighted` principle generalised from verbs to nouns.
+The second half is this record's own KEEP rule, which says nothing is gained
+by culling a form that would be correct if written.
+
+| Form | Judgement | Why |
+| --- | --- | --- |
+| `furs`, `earths`, `faiths` | CULL | The base is a mass noun in the admitted sense |
+| `whiles` | CULL | Archaic. `between whiles` is not level-one English |
+| `lots` | KEEP | The same sense as `lot`, on `more_and_fewer` |
+| `tens`, `fives`, `fours`, `sixes`, `hundreds`, `thousands` | KEEP | Current English as the plural of a number name |
+
+**Applied 2026-09-27.** `fur`, `earth`, `faith` and `while` carry `mass` and
+their plurals are gone from `forms`. Admitted surface forms fall from 2,053
+to 2,049 and unused ones from 405 to 401, which is the four and nothing
+else.
+
+**The quantity sense of the number words is a level-two question.**
+`hundreds of ants` is a quantity word rather than the plural of a number
+name, and `hundred` already carries a second sense at level two on
+`place_value`. Recorded here so the level-two lexicon work meets it instead
+of rediscovering it.
+
+### `mass` now means more than mass, and that is a widening
+
+**Three of the four culls are genuine mass nouns. `while` is not.** It is a
+count noun whose plural is archaic. The qualifier is the only thing the
+plural rule consults, and what that rule needs to know is whether the sense
+admits a plural, so the qualifier's documented meaning is widened rather
+than a second qualifier added for one word.
+
+**This is a widening and the record says so**, rather than implying that
+`while` is a mass noun. If a third class of no-plural sense appears the
+qualifier should be renamed for what it does.
+
+### What this still does not settle
+
+**`drunk` and `lit` are both admitted and both unused by the corpus.**
+Neither is a lexicon question any longer. Whether a book should reach for
+them is a writing question.

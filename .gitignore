@@ -73,6 +73,14 @@ corpus/*
 !corpus/.gitkeep
 !corpus/README.md
 
+# Resolved source bodies, ignored before any exist. A metadata-only
+# acquisition scheme is drafted and NOT adopted in
+# docs/decisions/SOURCE_ACQUISITION.md; sources/ itself stays tracked.
+# This rule is a guard, not the adoption: adopting the scheme after a
+# body has been committed costs a history rewrite, so the guard is worth
+# more than it costs while the directory is empty.
+sources/bodies/
+
 # Trained weights. Reproducible from the corpus and a seed, and a
 # checkpoint tracked without Large File Storage is a repository that
 # grows by a megabyte every run.

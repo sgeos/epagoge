@@ -2097,10 +2097,7 @@
       "word": "earth",
       "concept": "material",
       "level": 1,
-      "pos": "noun",
-      "forms": [
-        "earths"
-      ]
+      "pos": "noun mass"
     },
     {
       "word": "easy",
@@ -2309,10 +2306,7 @@
       "word": "faith",
       "concept": "taking_on_faith",
       "level": 1,
-      "pos": "noun",
-      "forms": [
-        "faiths"
-      ]
+      "pos": "noun mass"
     },
     {
       "word": "fall",
@@ -2726,10 +2720,7 @@
       "word": "fur",
       "concept": "body_part",
       "level": 1,
-      "pos": "noun",
-      "forms": [
-        "furs"
-      ]
+      "pos": "noun mass"
     },
     {
       "word": "future",
@@ -7850,10 +7841,7 @@
       "word": "while",
       "concept": "duration",
       "level": 1,
-      "pos": "noun",
-      "forms": [
-        "whiles"
-      ]
+      "pos": "noun mass"
     },
     {
       "word": "whisper",
