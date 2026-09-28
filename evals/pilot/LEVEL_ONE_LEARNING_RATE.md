@@ -64,11 +64,49 @@ way to find out was to sweep. **A caveat resolved by measurement is worth more
 than a caveat that was never raised**, and this one could have gone the other
 way.
 
-## What this does not settle
+## The width ranking survives per-width tuning
 
-**The width ranking is a separate sweep** and is not answered by the points
-above. Every one of them holds width at 512, and the question is whether width
-1,024's published disadvantage survives being given its own rate.
+**Every width was given its own sweep and every optimum is bracketed on both
+sides.** These are AdamW, one seed, otherwise the reference configuration.
+
+| Width | Params | Rates swept | Optimum | Held out there |
+| --- | --- | --- | --- | --- |
+| 256 | 3.7M | 3e-4, **6e-4**, 1e-3 | 6e-4 | 3.189 |
+| **512** | 13.8M | 1e-4, **3e-4**, 6e-4 | 3e-4 | **3.170** |
+| 1,024 | 52.7M | 5e-5, 7e-5, **1e-4**, 1.5e-4, 3e-4 | 1e-4 | 3.220 |
+
+**Width 512 wins at every width's own best rate**, so the ranking the project
+published and then marked provisional is sound. **Tuning narrows the
+256-against-512 gap from 0.027 to 0.019 and does not flip it**, and width
+1,024 is worse by 0.050 even at its optimum.
+
+**The widest model's minimum was at the edge of the first grid it was given**,
+at 1e-4 with 1.5e-4 worse, and two further points were run below it before
+anything was recorded. **An optimum at the edge of a grid is a boundary, not an
+optimum**, and declaring the ranking sound on one would have repeated the
+original defect with extra steps.
+
+## The scaling law is confirmed over one doubling and overshot over the next
+
+**Maximal update parametrization says the optimal rate scales as one over the
+width.** Measured here:
+
+| Step | Predicted ratio | Measured ratio |
+| --- | --- | --- |
+| 256 to 512 | 2 | **2**, exactly, 6e-4 to 3e-4 |
+| 512 to 1,024 | 2 | **3**, 3e-4 to 1e-4 |
+
+**So the relationship is right in direction and not exact on this tree.** The
+optimum falls faster than one over the width at the top end. **This is a
+three-point curve at one seed and is not offered as a scaling law**; what it
+supports is that the rate must move with width, which is the claim that made
+the fixed-rate sweep unsound.
+
+**That is a better reason to keep μP adopted than the one recorded on
+2026-09-28**, which reasoned about what a confound could do rather than
+showing the relationship holds here.
+
+## What this does not settle
 
 **The optimum may move with anything else held fixed here**: duration,
 schedule, token replacement, depth and corpus size are all fixed at one value,

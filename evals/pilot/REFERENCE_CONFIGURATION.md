@@ -14,7 +14,7 @@ seeds a cell, scoring **every held-out batch**.
 | --- | --- | --- |
 | **optimiser** | **muon** | **0.117 nats over AdamW, the largest single lever measured** |
 | positions | rotary | 0.292 nats over a learned table at this window |
-| width | 512 | Beats 256 when regularised, **and the ranking is provisional, see below** |
+| width | 512 | Best of 256, 512 and 1,024 **each at its own tuned rate** |
 | layers | 4 | Unswept |
 | steps | 3,400 | About 20.2 epochs on this corpus, and twenty is the optimum at every corpus size measured |
 | token replacement | 0.05 | 0.15 is indistinguishable from it here |
@@ -39,7 +39,7 @@ and `tools/talk.py` runs against it.
 **The supporting grid is in `LEVEL_ONE_OPTIMISER.md`**, including the
 combination that does not add.
 
-## Caveats. One was raised and then resolved, two stand
+## Caveats. Two were raised and resolved, one stands
 
 **~~This is default against default, not tuned against tuned.~~ Resolved
 2026-09-28 and the caveat is removed.** Both rates were swept and **both
@@ -50,10 +50,11 @@ See `LEVEL_ONE_LEARNING_RATE.md`.
 **The caveat is struck through rather than deleted**, because it was correct to
 raise and could have gone the other way.
 
-**The width row is provisional for the same reason.** Every run this project
-has done used one learning rate across widths 16 to 1,024, and maximal update
-parametrization's claim is that the optimal rate moves with width. See
-`../../docs/decisions/TRAINING_TECHNIQUES.md`.
+**~~The width row is provisional for the same reason.~~ Resolved 2026-09-28
+and the ranking survives.** Each of 256, 512 and 1,024 was swept to a bracketed
+optimum and **512 wins at every width's own best rate**, 3.170 against 3.189
+and 3.220. Tuning narrows the 256 gap and does not flip it. See
+`LEVEL_ONE_LEARNING_RATE.md`.
 
 **Warmup-stable-decay is a capability, not an improvement.** It is adopted
 because the stable phase can be extended and the decay applied later, so a run

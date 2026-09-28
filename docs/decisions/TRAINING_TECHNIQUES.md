@@ -64,6 +64,32 @@ ranking should be treated as provisional until it is. **Neither is claimed
 here and neither was run.** μP remains adopted and unimplemented, now with a
 reason that this corpus supports.
 
+### Amended the same day. The rate is reachable, and the relationship is measured
+
+**The learning rate is now settable from the tools that train**, and every
+width was swept to a bracketed optimum on the current corpus.
+
+| Width | Optimum rate | Predicted ratio to the next | Measured ratio |
+| --- | --- | --- | --- |
+| 256 | 6e-4 | | |
+| 512 | 3e-4 | 2 | **2, exactly** |
+| 1,024 | 1e-4 | 2 | **3** |
+
+**So the claim that made the fixed-rate sweep unsound is confirmed here.** The
+optimal rate does move with width, exactly as predicted over the first
+doubling and faster than predicted over the second.
+
+**The width ranking survives.** 512 reaches 3.170 against 3.189 at 256 and
+3.220 at 1,024, each at its own best rate, so the conclusion the project
+published and then marked provisional is sound. `LEVEL_ONE_CAPACITY.md` and
+`REFERENCE_CONFIGURATION.md` are annotated.
+
+**μP is still unimplemented and is still adopted.** What changed is that its
+premise is now measured on this tree rather than inherited, which is a
+stronger footing than the reasoning above it. **What it would buy is not
+having to sweep a rate per width**, and three sweeps is what settling this
+cost.
+
 ### Muon optimiser
 
 Reported to expand the Pareto frontier over AdamW on the compute-time

@@ -1,5 +1,14 @@
 # Is the corpus the limit, or was the model the wrong size?
 
+> **Re-measured 2026-09-28 with each width given its own learning rate, and
+> the ranking below survives.** Every figure in this file was taken at a fixed
+> 3e-4, which maximal update parametrization says is wrong for all but one
+> width. On the current corpus at 3,400 steps, with each width swept to a
+> bracketed optimum, width 512 reaches 3.170 against 3.189 at 256 and 3.220 at
+> 1,024. **The conclusion holds; the figures here do not transfer**, since they
+> were taken on a smaller corpus at other durations. See
+> `LEVEL_ONE_LEARNING_RATE.md`.
+
 > **Figures below were scored on 24 of 48 held-out batches**, which every
 > run announced. Comparisons between cells are sound because the truncation
 > is identical; **absolute losses are about 0.25 nats optimistic**. See
