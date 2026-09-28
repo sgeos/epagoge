@@ -123,6 +123,13 @@ def main(argv: list[str]) -> int:
         help="fraction of input tokens replaced by a random one",
     )
     parser.add_argument("--min-lr-fraction", type=float, default=0.1)
+    # **Adopted 2026-09-24 and implemented 2026-09-28.** Exposed here so the
+    # adoption can be measured on this corpus rather than believed from the
+    # literature, which is what the other two advances got.
+    parser.add_argument("--schedule", choices=("cosine", "wsd"), default="cosine")
+    parser.add_argument("--decay-fraction", type=float, default=0.1)
+    parser.add_argument("--optimiser", choices=("adamw", "muon"), default="adamw")
+    parser.add_argument("--muon-lr", type=float, default=0.02)
     parser.add_argument(
         "--pack",
         action="store_true",
@@ -281,6 +288,10 @@ def main(argv: list[str]) -> int:
                             weight_decay=args.weight_decay,
                             min_lr_fraction=args.min_lr_fraction,
                             token_replacement=args.token_replacement,
+                            schedule=args.schedule,
+                            decay_fraction=args.decay_fraction,
+                            optimiser=args.optimiser,
+                            muon_lr=args.muon_lr,
                             eval_batches=(
                                 args.eval_batches
                                 if args.eval_batches > 0

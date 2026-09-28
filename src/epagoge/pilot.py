@@ -18,7 +18,7 @@ from __future__ import annotations
 import math
 import random
 import sys
-from collections.abc import Mapping, Sequence
+from collections.abc import Callable, Iterable, Mapping, Sequence
 from dataclasses import asdict, dataclass, fields
 from pathlib import Path
 from typing import Final, cast
@@ -164,8 +164,50 @@ class TrainConfig:
     cells prefer**, and anything training wider or longer should raise it.
     """
 
+    optimiser: str = "adamw"
+    """``adamw`` or ``muon``. Under ``muon`` the matrices go to Muon and
+    everything else still goes to AdamW, which is what the method specifies.
+
+    **Adopted 2026-09-24, implemented 2026-09-28.** See :class:`Muon`.
+    """
+
+    muon_lr: float = 0.02
+    """Peak rate for the Muon group. **The reference default, not a measured
+    value.** Muon's update is orthogonalised, so its natural scale differs
+    from AdamW's and the two rates are not comparable numbers. Both follow
+    the same schedule shape.
+    """
+
+    muon_momentum: float = 0.95
+    """Momentum for the Muon group. The reference default."""
+
+    schedule: str = "cosine"
+    """Learning-rate schedule. ``cosine`` or ``wsd``.
+
+    **Warmup-stable-decay was adopted on 2026-09-24 and not implemented until
+    2026-09-28.** `docs/decisions/TRAINING_TECHNIQUES.md` names it as what
+    recent small-model pretraining protocols use, and the property it is
+    adopted for is that the stable phase can be extended and the decay applied
+    later, so a run can be lengthened without restarting. A cosine schedule
+    cannot: its shape depends on the total step count, so changing the total
+    changes every earlier rate and the run has to begin again.
+
+    **That property is not what is measured here.** What a single run can show
+    is whether the shape reaches a better loss at a fixed duration, which is a
+    different and smaller question. The record says which was tested.
+    """
+
+    decay_fraction: float = 0.1
+    """Share of the run spent decaying, under ``wsd``. Ignored by ``cosine``.
+
+    **Published values range from about 10 to 20 percent** and this project
+    has measured none of them. 0.1 is the low end, chosen so that the stable
+    phase is as long as the literature allows rather than because a
+    measurement preferred it.
+    """
+
     min_lr_fraction: float = 0.1
-    """Floor of the cosine decay, as a fraction of the peak rate.
+    """Floor of the decay, as a fraction of the peak rate. Both schedules.
 
     **0.1 is exactly the value the optimizer benchmark says to go below.**
     Its eighth takeaway is that decaying further than 10 percent of the
@@ -590,19 +632,172 @@ def _summed_loss(
 
 
 def _schedule(step: int, config: TrainConfig) -> float:
-    """Linear warmup then cosine decay.
+    """Linear warmup, then cosine decay or a stable phase with a late decay.
 
     Warmup alone leaves the rate at its peak forever. Measured 2026-09-24,
     that made four thousand steps converge worse than two thousand, and
     variance measured under a setup that destabilises would not transfer to
     an ablation that uses a schedule.
+
+    **Both shapes share the warmup and the floor**, so a comparison between
+    them is a comparison of the middle rather than of three things at once.
     """
     if step < config.warmup:
         return config.learning_rate * (step + 1) / config.warmup
-    progress = (step - config.warmup) / max(config.steps - config.warmup, 1)
-    cosine = 0.5 * (1.0 + math.cos(math.pi * min(progress, 1.0)))
     floor = config.min_lr_fraction
+    remaining = max(config.steps - config.warmup, 1)
+    progress = (step - config.warmup) / remaining
+    if config.schedule == "wsd":
+        # **Stable at the peak, then a linear decay over the last share.**
+        # The point of the shape is that nothing before the decay depends on
+        # where the run ends, so a run can be extended by moving the decay.
+        stable = 1.0 - config.decay_fraction
+        if progress < stable:
+            return config.learning_rate
+        tail = (progress - stable) / max(config.decay_fraction, 1e-9)
+        return config.learning_rate * (1.0 - (1.0 - floor) * min(tail, 1.0))
+    cosine = 0.5 * (1.0 + math.cos(math.pi * min(progress, 1.0)))
     return config.learning_rate * (floor + (1.0 - floor) * cosine)
+
+
+def _newton_schulz(matrix: torch.Tensor, steps: int = 5) -> torch.Tensor:
+    """Approximate the orthogonalisation of a matrix, as Muon specifies it.
+
+    **Transcribed from the reference implementation**, at
+    `https://kellerjordan.github.io/posts/muon/` and
+    `https://github.com/KellerJordan/Muon`, retrieved 2026-09-28. The
+    coefficients and the five iterations are the published ones and are not
+    this project's choice.
+
+    **One deviation, stated rather than hidden.** The reference casts to
+    bfloat16 for speed. This runs in the tensor's own dtype, because the host
+    is Metal rather than CUDA and a precision change is not a thing to make
+    silently while measuring a loss difference of a few hundredths of a nat.
+    That makes this slower than the reference and not numerically identical
+    to it.
+    """
+    if matrix.ndim != 2:
+        raise ValueError(f"expected a matrix, got {matrix.ndim} dimensions")
+    a, b, c = 3.4445, -4.7750, 2.0315
+    # Casts rather than bare expressions because torch's stubs leave `.T` and
+    # `.norm()` partially unknown, and this module type-checks in strict mode.
+    # The ignore is a gap in torch's stubs for `.norm()`, not a weakening
+    # of this module's typing; the annotation above carries the type.
+    norm = cast(Tensor, matrix.norm())  # pyright: ignore[reportUnknownMemberType]
+    x: Tensor = matrix / (norm + 1e-7)
+    transposed = matrix.size(0) > matrix.size(1)
+    if transposed:
+        x = x.T
+    for _ in range(steps):
+        gram: Tensor = x @ x.T
+        poly: Tensor = b * gram + c * (gram @ gram)
+        x = a * x + poly @ x
+    return x.T if transposed else x
+
+
+class Muon(torch.optim.Optimizer):
+    """Orthogonalised momentum for two-dimensional parameters.
+
+    **Adopted 2026-09-24 in `docs/decisions/TRAINING_TECHNIQUES.md` and not
+    implemented until 2026-09-28.** Reported to expand the Pareto frontier
+    over AdamW on the compute-time tradeoff and to retain data efficiency at
+    large batch sizes.
+
+    **It is for hidden matrices only.** The reference is explicit that scalar
+    and vector parameters, the embedding, and the final classifier head go to
+    AdamW instead, and that this is an empirical finding that differs from
+    the theory. :func:`muon_groups` does that split, and a run that hands
+    everything to this optimiser is not a test of Muon.
+
+    **Nesterov momentum by default**, matching the reference.
+    """
+
+    def __init__(
+        self,
+        params: Iterable[torch.nn.Parameter],
+        lr: float = 0.02,
+        momentum: float = 0.95,
+        weight_decay: float = 0.0,
+        nesterov: bool = True,
+        ns_steps: int = 5,
+    ) -> None:
+        if lr <= 0:
+            raise ValueError(f"lr must be positive, got {lr}")
+        if not 0.0 <= momentum < 1.0:
+            raise ValueError(f"momentum must be in [0, 1), got {momentum}")
+        if ns_steps < 1:
+            raise ValueError(f"ns_steps must be positive, got {ns_steps}")
+        defaults = {
+            "lr": lr,
+            "momentum": momentum,
+            "weight_decay": weight_decay,
+            "nesterov": nesterov,
+            "ns_steps": ns_steps,
+        }
+        super().__init__(params, defaults)  # pyright: ignore[reportUnknownMemberType]
+
+    @torch.no_grad()
+    def step(self, closure: Callable[[], float] | None = None) -> float | None:  # pyright: ignore[reportIncompatibleMethodOverride]
+        loss = None if closure is None else closure()
+        for group in self.param_groups:
+            beta = float(cast(float, group["momentum"]))
+            lr = float(cast(float, group["lr"]))
+            decay = float(cast(float, group["weight_decay"]))
+            nesterov = bool(cast(bool, group["nesterov"]))
+            ns_steps = int(cast(int, group["ns_steps"]))
+            for param in cast("list[torch.nn.Parameter]", group["params"]):
+                grad = param.grad
+                if grad is None:
+                    continue
+                if grad.ndim != 2:
+                    raise ValueError(
+                        f"Muon takes matrices and got {grad.ndim} dimensions; "
+                        "use muon_groups to split the parameters"
+                    )
+                state = cast("dict[str, torch.Tensor]", self.state[param])
+                if "momentum_buffer" not in state:
+                    state["momentum_buffer"] = torch.zeros_like(grad)
+                buffer = state["momentum_buffer"]
+                _ = buffer.lerp_(grad, 1.0 - beta)
+                update = grad.lerp(buffer, beta) if nesterov else buffer.clone()
+                update = _newton_schulz(update, ns_steps)
+                # The reference scales by the square root of the aspect ratio,
+                # so a tall matrix takes a larger step than a square one.
+                update = update * max(1.0, update.size(-2) / update.size(-1)) ** 0.5
+                if decay:
+                    _ = param.mul_(1.0 - lr * decay)
+                _ = param.add_(update.reshape(param.shape), alpha=-lr)
+        return loss
+
+
+def muon_groups(
+    model: nn.Module,
+) -> tuple[list[torch.nn.Parameter], list[torch.nn.Parameter]]:
+    """Split parameters into the ones Muon takes and the ones it must not.
+
+    **Returns (matrices, everything else).** A parameter goes to Muon only if
+    it is two-dimensional and is not an embedding, which covers the output
+    head too because this model ties the two by default. Biases and norm
+    scales are one-dimensional and are excluded by that alone.
+
+    **This split is the load-bearing part of the method**, not a detail. The
+    reference states that handing the embedding or the classifier head to
+    Muon degrades every transformer training it was tried on.
+    """
+    embedding_params = {
+        id(p)
+        for module in model.modules()
+        if isinstance(module, nn.Embedding)
+        for p in module.parameters()
+    }
+    matrices: list[torch.nn.Parameter] = []
+    others: list[torch.nn.Parameter] = []
+    for param in model.parameters():
+        if param.ndim == 2 and id(param) not in embedding_params:
+            matrices.append(param)
+        else:
+            others.append(param)
+    return matrices, others
 
 
 def train_once(
@@ -719,11 +914,43 @@ def train_diagnostic(
     model = TinyTransformer(model_config).to(device)
     if warm_from is not None:
         _ = warm_start(model, warm_from.state, warm_from.older, warm_from.newer)
-    optimiser = torch.optim.AdamW(
-        model.parameters(),
-        lr=train_config.learning_rate,
-        weight_decay=train_config.weight_decay,
-    )
+    # **Muon takes the matrices and AdamW keeps everything else.** The split
+    # is the method rather than an optimisation of it, and `muon_groups` says
+    # why. Under `adamw` there is one optimiser and the list has one entry, so
+    # the loop below does not branch on which mode it is in.
+    optimisers: list[tuple[torch.optim.Optimizer, float]]
+    if train_config.optimiser == "muon":
+        matrices, others = muon_groups(model)
+        optimisers = [
+            (
+                Muon(
+                    matrices,
+                    lr=train_config.muon_lr,
+                    momentum=train_config.muon_momentum,
+                    weight_decay=train_config.weight_decay,
+                ),
+                train_config.muon_lr,
+            ),
+            (
+                torch.optim.AdamW(
+                    others,
+                    lr=train_config.learning_rate,
+                    weight_decay=train_config.weight_decay,
+                ),
+                train_config.learning_rate,
+            ),
+        ]
+    else:
+        optimisers = [
+            (
+                torch.optim.AdamW(
+                    model.parameters(),
+                    lr=train_config.learning_rate,
+                    weight_decay=train_config.weight_decay,
+                ),
+                train_config.learning_rate,
+            )
+        ]
     # **Padding is excluded from the loss.** A padded tail chunk is there to
     # keep the text, not to be predicted, and a model rewarded for emitting
     # padding would learn the one thing the corpus never says.
@@ -745,14 +972,22 @@ def train_diagnostic(
             model_config.vocab_size,
             pad_id,
         )
-        for group in optimiser.param_groups:
-            group["lr"] = _schedule(step, train_config)
+        # **The schedule is a shape, so each optimiser scales its own peak by
+        # it.** Muon's rate and AdamW's are not comparable numbers, and
+        # driving both from one absolute value would silently retune one of
+        # them while claiming to compare schedules.
+        shape = _schedule(step, train_config) / train_config.learning_rate
+        for optimiser, peak in optimisers:
+            for group in optimiser.param_groups:
+                group["lr"] = peak * shape
         logits = model(inputs)
         loss = loss_fn(logits.reshape(-1, model_config.vocab_size), targets.reshape(-1))
-        optimiser.zero_grad(set_to_none=True)
+        for optimiser, _peak in optimisers:
+            optimiser.zero_grad(set_to_none=True)
         loss.backward()
         _ = nn.utils.clip_grad_norm_(model.parameters(), 1.0)
-        optimiser.step()  # pyright: ignore[reportUnknownMemberType]
+        for optimiser, _peak in optimisers:
+            optimiser.step()  # pyright: ignore[reportUnknownMemberType]
         window.append(loss.item())
         if curve_every > 0 and (step + 1) % curve_every == 0:
             curve.append((step + 1, sum(window) / len(window)))

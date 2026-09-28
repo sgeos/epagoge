@@ -852,3 +852,164 @@ class TestCorruption(unittest.TestCase):
         first = corrupt(self.batch(), 0.5, 32, 0)
         torch.manual_seed(7)
         self.assertTrue(torch.equal(first, corrupt(self.batch(), 0.5, 32, 0)))
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestWarmupStableDecay(unittest.TestCase):
+    """Adopted 2026-09-24, implemented 2026-09-28.
+
+    The property it is adopted for is that the stable phase can be extended
+    and the decay applied later, so a run lengthens without restarting. These
+    assert the shape; that property is asserted separately below.
+    """
+
+    def config(self, steps: int = 1000) -> TrainConfig:
+        return TrainConfig(
+            steps=steps,
+            warmup=100,
+            learning_rate=1.0,
+            schedule="wsd",
+            decay_fraction=0.1,
+            min_lr_fraction=0.1,
+        )
+
+    def test_warmup_reaches_the_peak(self) -> None:
+        from epagoge.pilot import _schedule
+
+        self.assertAlmostEqual(_schedule(99, self.config()), 1.0)
+
+    def test_the_stable_phase_holds_the_peak(self) -> None:
+        from epagoge.pilot import _schedule
+
+        config = self.config()
+        for step in (100, 400, 800, 900):
+            self.assertAlmostEqual(_schedule(step, config), 1.0, msg=f"step {step}")
+
+    def test_the_tail_decays_to_the_floor(self) -> None:
+        from epagoge.pilot import _schedule
+
+        config = self.config()
+        self.assertLess(_schedule(999, config), 0.2)
+        self.assertGreaterEqual(_schedule(999, config), 0.1)
+
+    def test_the_rate_never_rises_after_warmup(self) -> None:
+        from epagoge.pilot import _schedule
+
+        config = self.config()
+        rates = [_schedule(s, config) for s in range(100, 1000)]
+        self.assertEqual(rates, sorted(rates, reverse=True))
+
+    def test_the_stable_phase_does_not_depend_on_the_total(self) -> None:
+        """**This is the property the technique was adopted for.** A cosine
+        schedule's every rate depends on the total step count, so lengthening
+        a run changes what already happened. Under wsd the stable phase does
+        not move, so a run can be extended by moving the decay."""
+        from epagoge.pilot import _schedule
+
+        short, long = self.config(1000), self.config(2000)
+        for step in (100, 400, 800):
+            self.assertAlmostEqual(
+                _schedule(step, short), _schedule(step, long), msg=f"step {step}"
+            )
+
+    def test_cosine_rates_do_depend_on_the_total(self) -> None:
+        from epagoge.pilot import _schedule
+
+        short = TrainConfig(steps=1000, warmup=100, learning_rate=1.0)
+        long = TrainConfig(steps=2000, warmup=100, learning_rate=1.0)
+        self.assertNotAlmostEqual(_schedule(400, short), _schedule(400, long))
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestMuon(unittest.TestCase):
+    """Transcribed from the reference implementation, cited in the docstring.
+
+    **The parameter split is the method, not a detail.** The reference is
+    explicit that the embedding and the classifier head go to AdamW, and a
+    run that hands them to Muon is not a test of Muon.
+    """
+
+    def test_the_orthogonalisation_pushes_singular_values_toward_one(self) -> None:
+        import torch
+
+        from epagoge.pilot import _newton_schulz
+
+        torch.manual_seed(0)
+        values = torch.linalg.svdvals(_newton_schulz(torch.randn(64, 32)))
+        self.assertGreater(float(values.min()), 0.5)
+        self.assertLess(float(values.max()), 1.5)
+
+    def test_a_tall_matrix_and_a_wide_one_both_work(self) -> None:
+        import torch
+
+        from epagoge.pilot import _newton_schulz
+
+        torch.manual_seed(0)
+        self.assertEqual(_newton_schulz(torch.randn(64, 16)).shape, (64, 16))
+        self.assertEqual(_newton_schulz(torch.randn(16, 64)).shape, (16, 64))
+
+    def test_a_non_matrix_is_refused(self) -> None:
+        import torch
+
+        from epagoge.pilot import _newton_schulz
+
+        with self.assertRaises(ValueError):
+            _newton_schulz(torch.randn(8))
+
+    def test_bad_hyperparameters_are_refused(self) -> None:
+        import torch
+
+        from epagoge.pilot import Muon
+
+        param = torch.nn.Parameter(torch.randn(4, 4))
+        for kwargs in ({"lr": 0.0}, {"momentum": 1.0}, {"ns_steps": 0}):
+            with self.assertRaises(ValueError):
+                Muon([param], **kwargs)  # pyright: ignore[reportArgumentType]
+
+    def test_a_step_moves_the_parameter(self) -> None:
+        import torch
+
+        from epagoge.pilot import Muon
+
+        torch.manual_seed(0)
+        param = torch.nn.Parameter(torch.randn(8, 4))
+        before = param.detach().clone()
+        param.grad = torch.randn(8, 4)
+        Muon([param], lr=0.1).step()
+        self.assertFalse(torch.allclose(before, param.detach()))
+
+    def test_a_vector_parameter_is_refused_rather_than_mishandled(self) -> None:
+        import torch
+
+        from epagoge.pilot import Muon
+
+        param = torch.nn.Parameter(torch.randn(8))
+        param.grad = torch.randn(8)
+        with self.assertRaises(ValueError):
+            Muon([param], lr=0.1).step()
+
+    def test_the_split_excludes_embeddings_and_vectors(self) -> None:
+        import torch
+
+        from epagoge.pilot import ModelConfig, TinyTransformer, muon_groups
+
+        model = TinyTransformer(ModelConfig(vocab_size=32, d_model=16, n_layers=1))
+        matrices, others = muon_groups(model)
+        self.assertTrue(all(p.ndim == 2 for p in matrices))
+        embedded = {
+            id(p)
+            for module in model.modules()
+            if isinstance(module, torch.nn.Embedding)
+            for p in module.parameters()
+        }
+        self.assertTrue(all(id(p) not in embedded for p in matrices))
+        self.assertTrue(any(id(p) in embedded for p in others))
+
+    def test_the_split_covers_every_parameter_exactly_once(self) -> None:
+        from epagoge.pilot import ModelConfig, TinyTransformer, muon_groups
+
+        model = TinyTransformer(ModelConfig(vocab_size=32, d_model=16, n_layers=1))
+        matrices, others = muon_groups(model)
+        ids = [id(p) for p in matrices] + [id(p) for p in others]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(set(ids), {id(p) for p in model.parameters()})
