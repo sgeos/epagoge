@@ -181,6 +181,27 @@ class TrainConfig:
     muon_momentum: float = 0.95
     """Momentum for the Muon group. The reference default."""
 
+    muon_weight_decay: float | None = None
+    """Decay for the Muon group. ``None`` reuses :attr:`weight_decay`.
+
+    **The same number means very different things in the two groups, and a
+    sweep that varied one value measured that rather than weight decay.**
+    Muon's shrinkage is coupled to its own rate, `p *= 1 - lr * decay`, and
+    that rate is 0.02 against AdamW's 3e-4. So one decay value produces about
+    sixty-seven times the per-step shrinkage on the matrices as on everything
+    else, and over 3,400 steps the difference is not a detail: at 0.1 the
+    matrix factor is roughly `exp(-6.8)` and the AdamW factor roughly
+    `exp(-0.1)`.
+
+    **Measured 2026-09-28**: sweeping the shared value to 0.1 left held-out
+    loss unchanged at 3.067 while training loss fell from 1.95 to 1.36, which
+    is not what regularisation does, and 0.5 reached 3.265. See
+    `../../evals/pilot/LEVEL_ONE_OPTIMISER.md`.
+
+    ``None`` rather than a number so that the existing single-value behaviour
+    is unchanged unless a caller asks for the split.
+    """
+
     schedule: str = "cosine"
     """Learning-rate schedule. ``cosine`` or ``wsd``.
 
@@ -927,7 +948,11 @@ def train_diagnostic(
                     matrices,
                     lr=train_config.muon_lr,
                     momentum=train_config.muon_momentum,
-                    weight_decay=train_config.weight_decay,
+                    weight_decay=(
+                        train_config.weight_decay
+                        if train_config.muon_weight_decay is None
+                        else train_config.muon_weight_decay
+                    ),
                 ),
                 train_config.muon_lr,
             ),

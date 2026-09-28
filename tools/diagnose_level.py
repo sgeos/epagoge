@@ -130,6 +130,12 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--decay-fraction", type=float, default=0.1)
     parser.add_argument("--optimiser", choices=("adamw", "muon"), default="adamw")
     parser.add_argument("--muon-lr", type=float, default=0.02)
+    # **Separate from --weight-decay because the same number is not the
+    # same treatment.** Muon's shrinkage is coupled to its own rate, which
+    # is about sixty-seven times AdamW's, so one shared value applies a far
+    # stronger decay to the matrices than to everything else. Omitted means
+    # reuse --weight-decay, which is what the first sweep did.
+    parser.add_argument("--muon-weight-decay", type=float, default=None)
     parser.add_argument(
         "--pack",
         action="store_true",
@@ -292,6 +298,7 @@ def main(argv: list[str]) -> int:
                             decay_fraction=args.decay_fraction,
                             optimiser=args.optimiser,
                             muon_lr=args.muon_lr,
+                            muon_weight_decay=args.muon_weight_decay,
                             eval_batches=(
                                 args.eval_batches
                                 if args.eval_batches > 0
