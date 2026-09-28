@@ -1,17 +1,18 @@
 {
   "level": 1,
-  "steps": 3200,
+  "steps": 3400,
   "seed": 0,
-  "chunks": 3212,
-  "parameters": 13769216,
-  "held_out_loss": 2.9652816381623905,
-  "temperature": 0.8,
-  "sampled_word_tokens": 203,
-  "distinct_share": 0.35960591133004927,
+  "chunks": 3379,
+  "parameters": 13767168,
+  "held_out_loss": 3.061390090115049,
+  "temperature": 1.0,
+  "sampled_word_tokens": 594,
+  "distinct_share": 0.41414141414141414,
   "sentence_share": 1.0,
   "samples": [
-    "# you pushed it and it moved the rim was wooden . it moved yet . you pushed it and it moved . the dog rolled to the breeze . the wall put the cup on the surface and it felt different . it sat on the edge to the edge of the floor . the wooden ball rose from the cup , moving where it had was . the pushing came first , not moved . the dog held the cup close . it held it close , not moving , not moving . the cloth was warm , not cold , not cold . it was made of wood and steel , light , and cold . the",
-    "# this one is longer than that one this one is longer than that one . this one is longer than that one . this one is longer than that one . a different thing can change together of something , not another , or doing that is . to hide that is something happen . to see something from another way . to hold something with meaning . that is more than that is longer . that is the longer or that helps you see . this one is more than that one . you can reach it or see . the red stick is over . the quiet rim is longer . the red ball is longer than"
+    "# the toy car holds the car the toy car is near . it stays afraid to be landed . it was not , but it cannot be asleep . it is not alive , not loud , but notes own or happy . a sound grows shone his something alive , flying in the blanket , lifting its feathers . it floats on the flying above , below the ground , safe from the sky on its side . it back to the light , not as strings it floated , but it is kept , not hidden , and changed . it floated above the rest , rolled away , and it rings . the wind carried it away , like the hands ahead . it felt the air like a breath held too long . it could not stand , not never walk away . it reached again , along the path , though it came from a tiny . it seemed to float , happy with no fear , no hiding the eyes . it had no cuts , no gap , no sign of harm . it had held a love above the garden , where it had never was done . it bigger leave the path , not followed , though the air looked back . it felt the weight , sharp and deep , like a feeling . it felt warm , not",
+    "# this one is blue this one is red is red is called now . the blocks are one , so the animal stand tall . let the blocks have a basket # what happened . this one is alive , bright , or cup . the clock grows near a flower , round and clear . the wettest holds the shelf in the room , still . the next mouse come hard , not her voice clean . the lid will not let less , but it drifts with its knife . the lid did not stop , but the part feels real . the material is hidden above the shelf , and i stay for one . the five cups were not equal . it sits on the cat , not on the floor . the baby is ready to touch it , to sleep , an son . the breeze blows gently , pushing the curtain forward . the ball has catch hidden from the room , past the door . the you must years , not follow . no one floated , not even in street . you reached out the pot and touched it out . the balloon stands above the grass . the leader floats in the house . a ball rolls faster after a sound . the metal slipped under the floor . you step them are red . the ball moves took",
+    "# outside of the cup is louder . the same cup is no single cup . this one is big . different is a container that holds it . the cup is on the table . a basket is bright . inside like one light ; so it is bright and round . it is not on a branch , not in the sun . the roof moves again , not fast or tree . the cup fell because the ball cannot hold more than each one . the air above the cup felt lighter . the cup landed on the table carry land on it . the table is wooden and smooth weight steps a room . the cup stays after i held it end of water . the liquid inside is size and quiet . the cup is not broken , not listening for . it is made of wood , not wood , and sun . the shape is true , too on the floor , not in the rain . it is not the cup , not gone . it stays because it is there , not hidden . the water stays on the floor , not above the ground , not under the bed . the water does not move , not stop , not walked to the table . the air is still , no breeze , no sound . it sees the sky"
   ],
   "note": "Descriptive, and at this corpus size the samples are expected to be poor. Admissibility is deliberately not reported: the tokeniser is built from the level's lexicon, so every token the model can emit is admissible by construction and the figure would be one hundred per cent whatever the model learned."
 }

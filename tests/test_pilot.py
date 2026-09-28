@@ -1013,3 +1013,28 @@ class TestMuon(unittest.TestCase):
         ids = [id(p) for p in matrices] + [id(p) for p in others]
         self.assertEqual(len(ids), len(set(ids)))
         self.assertEqual(set(ids), {id(p) for p in model.parameters()})
+
+
+@unittest.skipUnless(HAVE_TORCH, "optional 'train' dependencies absent")
+class TestEvalBatchesDefault(unittest.TestCase):
+    """**The default was 24 and that was the defect, not the callers.**
+
+    A partial held-out figure is about 0.25 nats optimistic here, because the
+    held-out set is the tail of the curriculum and the first batches are the
+    easier ones. Two callers were fixed on 2026-09-27 by passing a large
+    number; the third was missed and reported the shipped checkpoint's loss
+    over 24 of 52 batches. Fixing callers leaves the trap armed for the next
+    one, so the default is where it is fixed.
+    """
+
+    def test_the_default_asks_for_every_batch(self) -> None:
+        self.assertEqual(TrainConfig().eval_batches, 0)
+
+    def test_zero_is_not_a_request_for_no_batches(self) -> None:
+        """Zero means all, so the sentinel cannot be read as an empty slice."""
+        config = TrainConfig()
+        self.assertEqual(config.eval_batches or 52, 52)
+
+    def test_an_explicit_count_still_truncates(self) -> None:
+        config = TrainConfig(eval_batches=8)
+        self.assertEqual(config.eval_batches or 52, 8)

@@ -258,7 +258,23 @@ class TrainConfig:
     Zero by default so the change is measured rather than assumed.
     """
 
-    eval_batches: int = 24
+    eval_batches: int = 0
+    """Held-out batches to score. **Zero, the default, scores every one.**
+
+    **The default was 24 and that was the defect, not the callers.** A partial
+    held-out figure is about 0.25 nats optimistic here, because the held-out
+    set is the tail of the curriculum and the first batches are the easier
+    ones, so the slice is systematic rather than a sample. The truncation was
+    fixed in `tools/diagnose_level.py` and `tools/train_level.py` on
+    2026-09-27 by having each pass a large number, and
+    `tools/sample_level.py` was missed, so on 2026-09-28 the shipped
+    checkpoint's loss was reported over 24 of 52 batches. **The tool
+    announced it and it was read past for the fourth time.**
+
+    Fixing the two callers left the trap armed for the third. **The default is
+    the only place a fix reaches a caller nobody has written yet**, so it is
+    fixed here and a caller that wants speed asks for it.
+    """
 
 
 def rotary_table(
@@ -1021,7 +1037,8 @@ def train_diagnostic(
     model.eval()
     order_eval = list(range(len(held_out)))
     all_eval = _batches(held_out, order_eval, train_config.batch_size, device)
-    eval_batches = all_eval[: train_config.eval_batches]
+    wanted = train_config.eval_batches or len(all_eval)
+    eval_batches = all_eval[:wanted]
     # **A partial evaluation must say so.** This took the first
     # `eval_batches` batches in index order, which for a held-out set that is
     # the tail of the curriculum is a systematic slice and not a sample. At
@@ -1040,7 +1057,7 @@ def train_diagnostic(
     # by whichever batch happened to come last and by dropout, and it is
     # the gap that this number exists to make meaningful.
     train_total, train_counted = _summed_loss(
-        model, batches[: train_config.eval_batches], model_config, pad_id
+        model, batches[:wanted], model_config, pad_id
     )
     return TrainResult(
         model=model,
