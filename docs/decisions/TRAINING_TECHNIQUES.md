@@ -27,6 +27,43 @@ variable the hypothesis concerns.
 μP is therefore what makes the three-scale design interpretable, not an
 optimisation on top of it.
 
+### Amended 2026-09-28. The reason above is superseded and the adoption stands
+
+**The justification above rests on the three scale points, and item 5 dropped
+them.** `../../evals/PRE_REGISTRATION.md` item 5 was decided on 2026-09-27 as
+a single scale point, with rescaling as a fallback if scale-dependence is ever
+wanted. **With one scale point there is no cross-scale confound to remove**,
+so the sentence above is no longer a reason for anything.
+
+**The superseded text is kept in place** rather than edited away, because the
+reason it gives was the reason at the time.
+
+**This is the shape of the item 10 finding.** A claim inherited from an
+earlier plan, still standing after a later decision removed its premise,
+because nobody propagated the change. That is now twice.
+
+**But the adoption survives, for a confound that is live inside one scale
+point.** μP's statement is that the optimal learning rate scales with width.
+**No tool in this repository exposes the learning rate.** Every run it has
+ever done used the trainer's default of 3e-4, across widths 16 to 1,024.
+
+**So the width sweep held fixed the one hyperparameter μP says must move with
+width**, and it produced a published conclusion:
+`../../evals/pilot/LEVEL_ONE_CAPACITY.md` reports width 1,024 reaching 4.525
+and the later re-measurement withdrew the width ranking. **Whether width 1,024
+is worse, or is merely mis-tuned at a rate chosen for a model a fourth its
+width, is not separable from the runs that exist.**
+
+**That is precisely the confound μP was adopted to remove**, appearing within
+a single scale point rather than across three. The original reason is gone and
+a better one is in the tree.
+
+**What follows, and none of it is done.** The learning rate needs to be
+reachable before μP can be implemented or the confound measured, and the width
+ranking should be treated as provisional until it is. **Neither is claimed
+here and neither was run.** μP remains adopted and unimplemented, now with a
+reason that this corpus supports.
+
 ### Muon optimiser
 
 Reported to expand the Pareto frontier over AdamW on the compute-time
