@@ -12,6 +12,7 @@ from pathlib import Path
 
 from epagoge import schedule as sched
 from epagoge.book import (
+    SPREADS_BY_LEVEL,
     Definition,
     DefinitionKind,
     definition_coverage,
@@ -81,12 +82,23 @@ def main(argv: list[str]) -> int:
     print(f"  books              {len(books)}")
     print(f"  records in books   {sum(len(b.records) for b in books)}")
     print(f"  definitions        {len(definitions)}")
+    # **SPREAD COUNT IS REPORTED BECAUSE NOTHING WAS REPORTING IT.** A book is
+    # bound in signatures of sixteen pages, so a level-one book short of its
+    # spread count cannot be published without someone padding or cutting it.
+    # Eight question books sat at 8 to 15 records on 2026-09-27 and no check
+    # said so, while fifty were flagged for a word count measured against a
+    # band derived for a different form. The word band is a judgement and this
+    # is arithmetic over the binding, so this is the firmer of the two and it
+    # was the one missing.
     for b in books:
         total = sum(words_in.get(r, 0) for r in b.records)
-        band = typical_words(b.level)
+        band = typical_words(b.level, b.form)
         tag = ""
         if band is not None and not band[0] <= total <= band[1]:
             tag = "  outside the typical range"
+        spreads = SPREADS_BY_LEVEL.get(b.level)
+        if spreads is not None and len(b.records) < spreads:
+            tag += f"  {len(b.records)} of {spreads} spreads"
         print(f"    {b.id:<16} {total:>5} words{tag}")
 
     # Coverage is reported and never gated. A word with no definition is not

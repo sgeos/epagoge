@@ -87,6 +87,14 @@ Decision records, and the open questions that block implementation.
   does not**, and its near-symmetry in both directions is the evidence that
   it measures topical disjointness instead. Records the 47-word first batch
   and three defects found by running the pipeline rather than planning it.
+- `QUESTION_BOOKS.md` completed. Every one of the 96 level-one units now
+  carries a question-and-answer book at its full sixteen spreads, and the
+  corpus holds one question mark per 24.7 sentences against one per 49.
+  **The word band was flagging fifty books against a figure derived for the
+  narrative form**, and the question form's density varies about twice as
+  much relative to its mean, so no band is recorded rather than one being
+  invented. The spread-count check that was missing is firmer than the word
+  band that was firing.
 - `TRAINING_TECHNIQUES.md` decided. Maximal update parametrization, Muon,
   warmup-stable-decay, and multi-token prediction adopted. The first is
   confound removal rather than optimisation.

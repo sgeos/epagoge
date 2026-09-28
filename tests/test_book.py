@@ -667,6 +667,17 @@ class TestBookSize(unittest.TestCase):
         self.assertIsNone(typical_words(5))
         self.assertIsNone(max_words(5))
 
+    def test_a_form_with_no_settled_density_reports_none(self) -> None:
+        """Fifty question books were flagged against a band derived for the
+        narrative form. Measured, they vary about twice as much relative to
+        their mean, so no band of comparable tightness fits them and the
+        figure is absent rather than invented."""
+        self.assertIsNone(typical_words(1, "question"))
+
+    def test_an_unlisted_form_keeps_its_level_band(self) -> None:
+        self.assertEqual(typical_words(1, ""), (320, 1280))
+        self.assertEqual(typical_words(1, "narrative"), (320, 1280))
+
     def test_the_cap_allows_a_quarter_over_the_band(self) -> None:
         """The band says typical and the cap says still this kind of book,
         so the cap sits above the band rather than on it."""

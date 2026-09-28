@@ -6,40 +6,31 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**Sources are vendored outside version control and recorded inside it.** At
-least four public-domain or CC0 sources were scanned. A tracked record names
-each one with its retrieval date, the licence determined at retrieval and a
-content hash. **No source body is tracked and no licensed word list is
-tracked.**
+**Every level-one schedule unit carries a question-and-answer book.** If any
+unit does not, the count and the reason are stated in a tracked document and
+the remainder is named rather than left implicit.
 
-**Both Victorian and modern sources are among them**, so the two can be
-contrasted.
+**The question book's word band is settled and recorded.** Either these books
+sit inside the band the gate checks, or a tracked document states the band that
+applies to them and why it differs. **No book is reported outside a range that
+no document explains.**
 
-**The frequency threshold is set from the scan rather than defaulted**, with
-the distribution that justified it stated, and with the candidate counts at
-neighbouring values given so a reader can see what the choice costs. **If it
-was chosen by eye the record says so** rather than implying it was derived.
+**The exchange count is resolved.** A tracked document states how many
+exchanges a question book carries and what follows for any measure that counts
+records, including pair coverage, which counts only books with exactly sixteen.
 
-**Candidates are reported per source rather than pooled**, and a word frequent
-in one source and absent from the others appears as a candidate rather than as
-long tail.
+**Question-mark density is measured after the batch, not asserted**, and the
+figure is read from a tool.
 
-**The archaism problem is measured rather than asserted.** A figure states how
-much of the Victorian sources' frequent vocabulary is absent from the modern
-sources, and the record says plainly that the figure identifies candidates for
-judgement rather than deciding any of them.
+**No content book left its word band and no book lost a metadata field.** The
+stamp check reports every book carrying its fields.
 
-**Some words are admitted from the scan and each carries the source that
-proposed it.**
+**Every added book is valid to the book checker and its records validate
+against the schema.**
 
-**Level two is still self-hosting and its coverage of words needing a
-definition did not fall.** No word is admitted without a definition.
-
-**A reader looking for how to extend the lexicon can find the answer in a
-tracked document**, including what the scan proposes and what it cannot see.
-
-**Nothing claims the lexicon is complete.** The remaining gap between the
-current count and the target is stated as a number.
+**No word was admitted to the lexicon to make generation succeed.** If any word
+was admitted, it carries a definition and a recorded source, and level-one
+closure is unchanged at one hundred percent of words needing one.
 
 **No claim rests on a figure the tree cannot reproduce.** Every count in a
 tracked document was read from a tool rather than computed by hand.

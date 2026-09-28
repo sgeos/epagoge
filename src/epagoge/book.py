@@ -249,8 +249,29 @@ def normalise_definition(text: str) -> str:
     return text
 
 
-def typical_words(level: int) -> tuple[int, int] | None:
-    """The word count a book at this level is expected to land in.
+UNSETTLED_DENSITY_FORMS: Final[frozenset[str]] = frozenset({"question"})
+"""Forms whose words-per-spread figure is not settled, so no band applies.
+
+**Measured 2026-09-27 over 44 complete question books.** They average 29.0
+words a spread with a standard deviation of 15.1, a relative variation of
+0.52, against the narrative form's 42.5 and 12.0, which is 0.28. **No band
+of comparable tightness fits them**: the narrative band holds 383 of 425
+narrative books, and the best question band tried holds 39 of 44 only by
+spanning 240 to 880 words, a range of nearly four to one, which reports
+nothing.
+
+So the figure is absent rather than invented. **This is the same reasoning
+:func:`typical_words` already applies to levels five and above**, where a
+spread count measures nothing and reporting the level-one band would be a
+made-up number presented as a standard. Fifty books were being flagged
+against a band derived for a different form.
+
+Removing a form from this set requires a measurement, not a preference.
+"""
+
+
+def typical_words(level: int, form: str = "") -> tuple[int, int] | None:
+    """The word count a book at this level and form is expected to land in.
 
     Derived from the binding and the density rather than stated, so that
     changing either changes this. Reported and never enforced, like the
@@ -260,12 +281,15 @@ def typical_words(level: int) -> tuple[int, int] | None:
     **None where the density is not settled.** Levels five and above are
     papers rather than books, so a spread count measures nothing and
     reporting the level-one band for them would be a made-up number
-    presented as a standard.
+    presented as a standard. The same holds per form, for the forms in
+    :data:`UNSETTLED_DENSITY_FORMS`.
 
     Derived from one table rather than two. An earlier version kept words
     per page beside words per spread, which is the same quantity in two
     units, and they would have drifted.
     """
+    if form in UNSETTLED_DENSITY_FORMS:
+        return None
     spreads = SPREADS_BY_LEVEL.get(level)
     band = WORDS_PER_SPREAD.get(level)
     if spreads is None or band is None:

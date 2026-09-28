@@ -142,6 +142,7 @@ def main(argv: list[str]) -> int:
                         args.level,
                         admissible,
                         wanted,
+                        vocabulary.substitutions,
                     ),
                     timeout=args.timeout,
                 )

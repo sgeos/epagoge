@@ -1,101 +1,84 @@
-# Current brief. Run the first real lexicon scan and set the threshold
+# Current brief. Give every unit a question book, and settle their band
 
-**Written 2026-09-27**, replacing the brief that found the frontier, whose
-completion condition is met. Durable practice is in `PROCESS_STRATEGY.md`.
+**Written 2026-09-27**, replacing the lexicon-scan brief, whose completion
+condition is met. Durable practice is in `PROCESS_STRATEGY.md`.
 
 ## Why this
 
-**The level-two lexicon is the operator's first priority and it holds 879
-words against a target of about ten thousand.** A complete draft lexicon
-precedes level-two corpus drafting, by operator direction, so everything
-downstream waits on it.
+**54 of 96 level-one schedule units carry no question-and-answer book.** That
+is the operator's second priority and the obvious next batch, named as such in
+the handoff.
 
-**`tools/scan_lexicon.py` exists and has never been run on a real source.**
-The pipeline in `../decisions/LEXICON_SOURCING.md` has five steps and the
-project has done none of them. The tool was written, tested against
-fixtures, and left.
+**The reason the form matters is measured rather than assumed.** On 2026-09-25
+the corpus held one question mark in 4,419 records, no question with an answer
+after it, and the model met "what is the cup ?" by carrying on rather than
+answering. **A model reproduces the forms it was shown.** The form is now
+present in 42 units and absent in 54, so the corpus can show a question being
+answered for fewer than half its subjects.
 
-**The threshold is the specific missing measurement.** That record says what
-counts as frequent "is a parameter with a default of five and no measurement
-behind it" and that it "should be set from what the first real scan looks
-like rather than guessed now." **A default nobody measured is the same defect
-class as a check nobody ran**, which this project has already met once when
-its static analysis reported thirty-six errors on first execution.
-
-## What is out of scope, and this is the important half
-
-**Do not attempt the whole lexicon.** Every admitted word needs a definition
-or level two stops being self-hosting, and `admit.py` refuses a word without
-one. Nine thousand definitions is not one session's work, and a session that
-admits words without them trades the project's central property for a count.
-
-**Do not touch step one of the pipeline.** It seeds from Dale-Chall and the
-New General Service List. Dale-Chall has no licence anyone could find and the
-NGSL is CC BY-SA, which a CC0 repository cannot carry, and whether consulting
-them is compatible with CC0 is unsettled and operator-held. **The pipeline
-was deliberately built so the answer changes which files are passed in rather
-than what the tools do**, so the scan runs without them.
+**A second job comes with it.** 62 books are reported outside the typical word
+range and most are question books, which run about 220 to 330 words against a
+narrative band of roughly 500 to 870. **The gate prints that on every run and
+nothing has acted on it.** This project has already been bitten once by a tool
+announcing a fact forty times while nobody heard it, so the flag gets resolved
+rather than carried: either question books are brought into a band, or they
+have their own band and the record says what it is and why.
 
 ## What to do
 
-1. **Vendor public-domain and CC0 sources into ignored `tmp/`**, with a
-   tracked record naming each one, its retrieval date, the licence determined
-   at retrieval and a content hash. Bodies are not tracked.
-2. **Include both Victorian readers and modern federal or Smithsonian
-   material**, because the contrast is what makes archaism measurable.
-3. **Run the scan and set the threshold from what it looks like**, reporting
-   the distribution and the sensitivity at neighbouring values.
-4. **Measure the archaism problem** the record asserts and has never
-   quantified.
-5. **Admit a first batch with definitions**, sized to what can be defined
-   properly, so the pipeline is proven end to end from source to admitted
-   word rather than reported on.
+1. **Write a question-and-answer book for every unit that has none.**
+2. **Decide the question book's word band** and record it, so the flag either
+   stops firing or means something.
+3. **Measure the question-mark density afterwards** rather than asserting it
+   improved.
+4. **Check the exchange count.** The first book written under this brief
+   produced 13 exchanges over 14 spreads rather than 16 records. Pair coverage
+   counts only books with exactly 16 records, so a short question book is
+   invisible to that measure, and that interaction should be stated whichever
+   way it is resolved.
 
 ## Prior failures, and the specific wrong turns to avoid
 
-**Do not chain the gate to the commit.** Done an hour ago. The gate, the
-commit and the push in one shell command pushed a failing tree to `origin`,
-because the commit ran on the gate's output instead of its exit code. Run the
-gate alone, read the exit code, stop, then commit.
+**Do not chain the gate to the commit.** Done twice in this session's history
+and it pushed a failing tree to `origin` once. Run the gate alone, read the
+exit code, stop, then commit.
 
-**Do not read a count from arithmetic.** Five instances, most recently a pin
-count written as six when the measured values were three, one and one. If a
-tool can supply the number, the number comes from the tool.
+**Do not pipe a run through a filter and read the exit code.** It reports the
+filter's status. This has already cost one wasted training run and hidden one
+lint failure.
 
-**Do not pool frequency across sources.** The per-source choice is
-load-bearing and recorded. A word frequent in one source and absent from the
-rest is a word that source needed, and pooling buries it. The tool already
-does the right thing; the mistake would be in reading its output.
+**Do not read a count from arithmetic.** Six instances. If the gate supplies
+the number, the number comes from the gate.
 
-**Do not treat the scan as a decision.** It proposes. The project's thesis is
-that uncurated input produces undesirable properties, and a frequency list is
-uncurated by construction.
+**Do not assume a green local gate means a green clone.** Four divergences, and
+the general form is that a check consulting the filesystem or git history
+passes on state the runner does not have. A path named in prose must resolve
+by tracked file or by `.gitignore`, not by a file that happens to exist here.
 
-**Do not expect the counter to see archaism.** A public-domain source is
-public domain because it is old. A word can be frequent, plainly useful in
-1880 and wrong for a child now, and the modern-source contrast identifies
-candidates for judgement rather than deciding any of them.
+**Do not treat a vocabulary rejection as a vocabulary problem.** Sixteen title
+refusals were the generator's own word-count bound rather than the lexicon, and
+the first question book under this brief rejected `important`, `result`,
+`final` and `matters` as outside the ceiling, which is the ceiling working.
+**Read what the rejection says before widening anything.**
 
-**Do not report a threshold as tuned.** If it is chosen by looking at a
-distribution, say that, and give the neighbouring values so a reader can see
-what the choice costs.
+**Do not widen the lexicon to make generation succeed.** A word the teacher
+reached for is evidence worth considering and not a reason to admit on the
+spot, and admission is a separate judgement with a definition attached.
 
-**Do not commit a source body or a licensed word list.** Both are licensing
-exposure and one is size exposure, and `sources/` is tracked, so a mistake
-there lands in history.
+**Do not top up a short book by padding it.** There is a fill mode for books
+that exist and are short, and a book brought to length with filler is worse
+than a short one, because the length then means nothing.
 
-**Do not let coverage fall.** Level two reports 850 of 850 words needing a
-definition. A word admitted without one shows as undefined while the closure
-check may still exit 0, which is a silent degradation rather than a failure.
-Check the coverage figure, not just the exit code.
+**Do not modify untracked files.** Operator constraint.
 
-**Do not widen the lexicon to make a scan look productive.** A candidate the
-curriculum has no use for is not an improvement, and `UNUSED_FORMS.md`
-records what happens when forms are admitted faster than they are used.
+**Do not let the word count regress.** Any content book leaving its band, or
+any book losing a metadata field, is a defect introduced by this batch rather
+than a property of it.
 
 ## What is not this brief's to decide
 
 The Dale-Chall and NGSL licensing question, the terminal-stage record
 licensing question, schedules for levels three to seven, `sources/` and level
-seven, and the acquisition scheme drafted in
-`../decisions/SOURCE_ACQUISITION.md`, which stays unadopted.
+seven, and the acquisition scheme in `../decisions/SOURCE_ACQUISITION.md`,
+which stays unadopted. **Announcing the repository is not this brief's
+either.**

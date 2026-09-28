@@ -368,6 +368,34 @@ def book(
     return "\n".join(lines)
 
 
+def _substitution_lines(substitutions: Mapping[str, str] | None) -> list[str]:
+    """The block naming banned words and what to write instead.
+
+    **Naming a banned word is not supplying the replacement.** Measured
+    2026-09-25: the retry named every offending word and the teacher reached
+    for it again, and those words overwhelmingly had an ordinary substitute
+    already admitted. An instruction to avoid something is harder to act on
+    than one that says what to write instead.
+
+    **Shared because it was learned twice and missed a third time.** The
+    dictionary prompt had it, `retitle_books.py` relearned it four refusals
+    later, and `question_book` never had it at all, which cost 61 of 86
+    tallied refusals on 2026-09-27 for words with no substitute offered. A
+    lesson that lives in one function gets relearned in the next one, so this
+    is one block that every prompt can reach.
+    """
+    if not substitutions:
+        return []
+    return [
+        "",
+        "These words are NOT allowed. Write the replacement instead:",
+        *(
+            f'  {banned}  ->  write "{instead}"'
+            for banned, instead in sorted(substitutions.items())
+        ),
+    ]
+
+
 def question_book(
     subject: str,
     subject_form: str,
@@ -375,6 +403,7 @@ def question_book(
     level: int,
     admissible: Sequence[str],
     pairs: int = 10,
+    substitutions: Mapping[str, str] | None = None,
 ) -> str:
     """Prompt for a picture book that asks and answers.
 
@@ -430,6 +459,7 @@ def question_book(
         "Use ONLY these words, in any order and any inflection:",
         "  " + " ".join(sorted(admissible)),
     ]
+    lines += _substitution_lines(substitutions)
     return "\n".join(lines)
 
 
@@ -632,20 +662,7 @@ def definitions(
         "Use ONLY these words, in any order and any inflection:",
         "  " + " ".join(sorted(admissible)),
     ]
-    if substitutions:
-        # **Naming a banned word is not supplying the replacement.** The
-        # retry named every offending word and the teacher reached for it
-        # again, and those words overwhelmingly had an ordinary substitute
-        # already admitted. An instruction to avoid something is harder to
-        # act on than one that says what to write instead.
-        lines += [
-            "",
-            "These words are NOT allowed. Write the replacement instead:",
-        ]
-        lines += [
-            f'  {banned}  ->  write "{instead}"'
-            for banned, instead in sorted(substitutions.items())
-        ]
+    lines += _substitution_lines(substitutions)
     lines += [
         "",
         "Rules:",

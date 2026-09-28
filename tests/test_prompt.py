@@ -287,3 +287,57 @@ class TestModuleSpread(unittest.TestCase):
             _ = prompts.module_spread(
                 "m2.number", "counting", "tens", "", 2, self.WORDS, 0
             )
+
+
+class TestQuestionBook(unittest.TestCase):
+    """The question prompt had no test and no substitution block.
+
+    **A lesson that lives in one function gets relearned in the next.** The
+    dictionary prompt names banned words with their replacements, and
+    `retitle_books.py` relearned that four refusals later. `question_book`
+    never had it, which cost 61 of 86 tallied refusals on 2026-09-27 for
+    words with no substitute offered.
+    """
+
+    WORDS = {"cup": "household_object"}
+    ADMISSIBLE = ("a", "cup", "is", "the", "what")
+
+    def test_the_word_list_is_the_hardest_constraint(self) -> None:
+        text = prompts.question_book(
+            "a1.can", "what a child can lift", self.WORDS, 1, self.ADMISSIBLE, 3
+        )
+        self.assertIn("HARDEST CONSTRAINT", text)
+        self.assertIn("cup", text)
+
+    def test_a_substitution_names_the_replacement(self) -> None:
+        text = prompts.question_book(
+            "a1.can",
+            "what a child can lift",
+            self.WORDS,
+            1,
+            self.ADMISSIBLE,
+            3,
+            {"important": "means a lot"},
+        )
+        self.assertIn("NOT allowed", text)
+        self.assertIn('important  ->  write "means a lot"', text)
+
+    def test_no_substitution_block_when_none_is_supplied(self) -> None:
+        text = prompts.question_book(
+            "a1.can", "what a child can lift", self.WORDS, 1, self.ADMISSIBLE, 3
+        )
+        self.assertNotIn("NOT allowed", text)
+
+    def test_an_empty_mapping_adds_nothing(self) -> None:
+        text = prompts.question_book(
+            "a1.can", "what a child can lift", self.WORDS, 1, self.ADMISSIBLE, 3, {}
+        )
+        self.assertNotIn("NOT allowed", text)
+
+    def test_no_admissible_vocabulary_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            prompts.question_book("a1.can", "x", self.WORDS, 1, (), 3)
+
+    def test_fewer_than_one_exchange_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            prompts.question_book("a1.can", "x", self.WORDS, 1, self.ADMISSIBLE, 0)
