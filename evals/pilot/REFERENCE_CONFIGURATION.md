@@ -14,7 +14,7 @@ seeds a cell, scoring **every held-out batch**.
 | --- | --- | --- |
 | **optimiser** | **muon** | **0.117 nats over AdamW, the largest single lever measured** |
 | positions | rotary | 0.292 nats over a learned table at this window |
-| width | 512 | Beats 256 only when regularised, **and see the caveat below** |
+| width | 512 | Beats 256 when regularised, **and the ranking is provisional, see below** |
 | layers | 4 | Unswept |
 | steps | 3,400 | About 20.2 epochs on this corpus, and twenty is the optimum at every corpus size measured |
 | token replacement | 0.05 | 0.15 is indistinguishable from it here |
@@ -39,12 +39,16 @@ and `tools/talk.py` runs against it.
 **The supporting grid is in `LEVEL_ONE_OPTIMISER.md`**, including the
 combination that does not add.
 
-## Three caveats, none of which the number removes
+## Caveats. One was raised and then resolved, two stand
 
-**This is default against default, not tuned against tuned.** Muon runs at its
-reference default of 0.02 and AdamW at this project's 3e-4. Those are not
-comparable quantities, **no tool here exposes the AdamW learning rate**, and so
-the baseline could not have been tuned even had that been wanted.
+**~~This is default against default, not tuned against tuned.~~ Resolved
+2026-09-28 and the caveat is removed.** Both rates were swept and **both
+defaults sit at their measured optimum**, bracketed on either side, so the
+comparison was tuned against tuned by accident. The figure stands unchanged.
+See `LEVEL_ONE_LEARNING_RATE.md`.
+
+**The caveat is struck through rather than deleted**, because it was correct to
+raise and could have gone the other way.
 
 **The width row is provisional for the same reason.** Every run this project
 has done used one learning rate across widths 16 to 1,024, and maximal update
@@ -121,7 +125,8 @@ one.
 
 **Four layers is unswept.** Every figure here holds depth fixed.
 
-**Muon's own hyperparameters are unswept**, all at the reference defaults.
+**Muon's momentum and Newton-Schulz step count are unswept**, both at the
+reference defaults. Its learning rate is swept and 0.02 is its optimum.
 
 **Whether weight decay helps the matrices is open.** The sweep varied one value
 that is coupled to each optimiser's own rate, so it applied about sixty-seven

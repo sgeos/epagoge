@@ -6,41 +6,39 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**A baseline is measured on the current corpus** at a duration justified by
-the twenty-epoch rule, over more than one seed, with the seed spread stated and
-with every held-out batch scored. **The stale frontier is not used as the
-comparison point**, and any figure carried from before the corpus refresh is
-labelled as describing a smaller corpus.
+**The learning rate is settable from a tool that trains**, so a run can state
+what rate it used rather than inheriting one.
 
-**Warmup-stable-decay exists in the trainer and its effect is measured**
-against that baseline, or a tracked document says why it was not adopted.
+**A sweep over the learning rate is recorded for AdamW**, with the full set of
+points rather than only the winner, at the duration the twenty-epoch rule
+implies.
 
-**Muon exists in the trainer and its effect is measured** against that
-baseline, or a tracked document says why it was not adopted. **If it is
-implemented, a tracked document names what the implementation was checked
-against and states which parameters it is applied to and which are left to the
-other optimiser.**
+**A sweep over the learning rate is recorded for Muon**, on the same terms.
 
-**Whether the two combine is stated from measurement rather than assumed.** If
-they do not add, the record says so.
+**The optimiser comparison is restated with each optimiser at its own best
+measured rate**, over more than one seed, with the seed spread given. **The
+record says plainly whether the previously published 0.117 nats survives**, and
+if it does not, the earlier figure is corrected in place rather than edited
+away.
 
-**Maximal update parametrization's status is settled in a tracked document.**
-Its superseded justification is kept in place rather than edited away, and the
-document says what the technique is still for, if anything, now that a single
-scale point is decided.
+**The width ranking's status is settled in a tracked document.** Either a
+measurement at per-width rates is recorded, or the document states why it could
+not be settled and leaves the ranking provisional with that reason.
 
-**No improvement is credited beyond what was run.** Anything measured alone
-and not in combination is described as such, and a technique adopted on
-reasoning rather than measurement says which it was.
+**Every figure carried from before this work is labelled with what it was
+measured under**, so a reader cannot mistake an untuned figure for a tuned one.
 
-**A reader looking for what to train with can find the current answer** in a
-tracked document, with the configuration and the loss it reaches.
+**No comparison presents a tuned arm against an untuned one as a comparison of
+methods.**
 
 **No claim rests on a figure the tree cannot reproduce.** Every count and loss
 in a tracked document was read from a tool rather than computed by hand.
 
 **No tracked evaluation artifact holds the output of a probe** rather than a
 recorded run.
+
+**A reader looking for what to train with can find the current answer** in a
+tracked document, with the configuration and the loss it reaches.
 
 **The gate passes.** `./tools/check.sh` reports all checks passed and exits 0,
 with no check weakened or removed to achieve it.

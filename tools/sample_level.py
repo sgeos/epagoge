@@ -95,6 +95,7 @@ def main(argv: list[str]) -> int:
     # Muon is worth 0.117 nats here, measured over three seeds in
     # `evals/pilot/LEVEL_ONE_OPTIMISER.md`, so the tool that writes the
     # checkpoint has to be able to use it.
+    parser.add_argument("--learning-rate", type=float, default=3e-4)
     parser.add_argument("--optimiser", choices=("adamw", "muon"), default="adamw")
     parser.add_argument("--schedule", choices=("cosine", "wsd"), default="cosine")
     parser.add_argument(
@@ -161,6 +162,7 @@ def main(argv: list[str]) -> int:
         TrainConfig(
             steps=args.steps,
             batch_size=args.batch_size,
+            learning_rate=args.learning_rate,
             token_replacement=args.token_replacement,
             optimiser=args.optimiser,
             schedule=args.schedule,

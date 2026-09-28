@@ -1,101 +1,79 @@
-# Current brief. Adopt what was decided, and re-measure what moved
+# Current brief. Make the learning rate reachable, then re-decide two claims
 
-**Written 2026-09-28**, replacing the question-book brief, whose completion
-condition is met. Durable practice is in `PROCESS_STRATEGY.md`.
+**Written 2026-09-28**, replacing the brief that adopted Muon, whose
+completion condition is met. Durable practice is in `PROCESS_STRATEGY.md`.
 
 ## Why this
 
-**`TRAINING_TECHNIQUES.md` adopted four things on 2026-09-24 and none is
-implemented.** `train_level.py` says so in a comment. An adoption that never
-reaches the code is a decision the tree does not have, and this is the
-operator's third priority.
+**No tool in this repository exposes the learning rate.** Every run it has
+ever done used the trainer's default of 3e-4, so that value was inherited and
+never chosen. **A parameter no tool can reach has never been held fixed
+deliberately, only by default, and a default is not a control.**
 
-**The frontier is stale by a corpus refresh.** `REFERENCE_CONFIGURATION.md`
-measured 3.156 on 444 books and 322,136 training tokens. The corpus now holds
-523 books and 395,715 tokens, twenty-three percent more. **The twenty-epoch
-rule says the optimal step count scales with corpus size**, so 3,200 steps is
-the right duration for a corpus that no longer exists, and every figure
-measured at it describes a smaller one.
+**Two published conclusions depend on it and both are currently provisional.**
 
-**So a technique cannot be credited against 3.156.** The baseline has to be
-re-measured on the current corpus at the corpus-scaled duration before
-anything is compared to it, or an improvement and a corpus refresh will be
-indistinguishable.
+**Muon's 0.117 nats is a comparison of configurations, not of optimisers.**
+Muon runs at its reference default of 0.02 and AdamW at 3e-4. Those are not
+comparable quantities and neither was tuned. If AdamW at a better rate closes
+most of the gap, the headline shrinks and the record has to say so.
 
-## The premise problem, which comes first
+**The width ranking is worse than provisional.** Widths 16 to 1,024 were swept
+against one fixed rate, and maximal update parametrization's central claim is
+that the optimal rate scales with width. `LEVEL_ONE_CAPACITY.md` published that
+width 1,024 is worse and a later re-measurement withdrew the ranking. **Whether
+1,024 is genuinely worse or is mis-tuned at a rate chosen for a quarter its
+width is not separable from the runs that exist.**
 
-**Maximal update parametrization's stated justification is gone.** The record
-calls it "mandatory, and not for efficiency", because without it "the three
-scale points in open question five have different optimal hyperparameters",
-and "any observed scale-dependence in the ordering effect could then be an
-artifact of mis-tuning rather than a property of scale."
-
-**Item 5 was decided on 2026-09-27 as a single scale point**, with rescaling
-as a fallback. **With one scale point there is no cross-scale confound to
-remove.**
-
-**This is the shape of the item 10 finding.** An adoption resting on a premise
-a later decision removed, where nobody propagated the change. **Decide what
-μP is still worth and say so**, rather than implementing against a reason that
-has expired or dropping it without looking.
+**This brief does not add a finding. It decides whether two existing ones are
+real.** That is worth more than a third finding on the same foundation.
 
 ## What to do
 
-1. **Re-measure the baseline on the current corpus** at the duration the
-   twenty-epoch rule implies, with more than one seed, scoring every held-out
-   batch.
-2. **Implement warmup-stable-decay** and measure it against that baseline.
-3. **Implement Muon** and measure it against that baseline.
-4. **Measure them together**, because two improvements are not two
-   improvements until they have been run together.
-5. **Record what μP is still for**, with the superseded reason kept in place.
+1. **Expose the learning rate** on the tools that train.
+2. **Sweep AdamW's rate** at the reference configuration and find its best.
+3. **Sweep Muon's rate** the same way.
+4. **Restate the optimiser comparison at each one's best**, over more than one
+   seed, and say plainly whether the 0.117 survives.
+5. **Measure whether the width ranking survives per-width tuning**, or record
+   why it could not be settled and leave it provisional with the reason.
 
 ## Prior failures, and the specific wrong turns to avoid
 
-**Do not credit an improvement against the old frontier.** 3.156 is a figure
-about a smaller corpus. Anything compared to it measures the corpus refresh as
-well as the change.
+**Do not sweep at a short duration to afford more points.** An intermediate
+reading of a decelerating scaling curve was wrong, and the cause was sweeping
+only 1,600 and 3,200 steps; adding 400 and 800 removed it. The duration here is
+3,400 steps, about 20.2 epochs, and a cheaper run measures a different thing.
 
-**Do not assume improvements add.** Weight decay and token replacement were
-measured together once and did not stack, being two treatments for the same
-slack. A combined result is measured, not summed.
+**Do not compare a tuned arm against an untuned one and call it a comparison of
+methods.** That is the mistake this brief exists to correct, and the correction
+is worthless if it introduces the same shape in the other direction.
 
-**Do not sweep duration and corpus size independently.** The optimum is about
-twenty epochs at every corpus size measured so far, so a step count held fixed
-across corpus sizes measures the interaction rather than the corpus.
+**Do not report a single seed as a result.** The seed spread here runs 0.003 to
+0.013 depending on the arm, and a best-of-many over one seed each is a maximum
+of noise as much as of quality.
 
-**Do not report a single seed as a frontier.** A best-of-many over one seed
-each is a maximum of noise as much as a maximum of quality, and the
-seed-to-seed spread here is around 0.007 to 0.018.
+**Do not assume the best rate transfers across anything.** Width, optimiser,
+duration and schedule may each move it. Whatever is held fixed must be stated
+and checked.
 
-**Check what the evaluation tool scores.** `diagnose_level.py` scored 24 of 48
-held-out batches for a day while announcing it on every run, and every
-absolute figure from that period is about 0.25 nats optimistic. Read the line.
+**Do not read a count or a loss from arithmetic.** Six instances. If a tool
+supplies the number, the number comes from the tool.
 
-**Do not pipe a run through a filter and read the exit code.** It reports the
-filter's status, and that has cost one wasted training run and hidden one lint
-failure.
+**Do not chain the gate to the commit.** Done in this session and it pushed a
+failing tree to `origin`.
 
-**Do not chain the gate to the commit.** Done in this session's history and it
-pushed a failing tree to `origin`.
+**Do not let a probe write a tracked artifact.** `--out` is required on the
+three measurement tools now, so this should be structurally impossible; if a
+new tool is added it must not reintroduce a tracked default.
 
-**Do not read a count from arithmetic**, and do not compare across anything
-held fixed without checking it was actually held fixed. Five instances of the
-second in one session, including a loss compared across held-out sets and an
-architecture comparison confounded by bias asymmetry.
+**Check what the evaluation scored.** Four instances of a tool announcing its
+own truncation and being read past. The default now scores every held-out
+batch, and a figure quoted without that being true is about 0.25 nats
+optimistic.
 
-**Do not overwrite a tracked evaluation artifact with a probe.** The diagnosis
-and sample tools take an output path.
-
-**Do not implement an optimiser from memory.** Muon's update is an
-orthogonalisation of the momentum matrix and the details matter. If the
-implementation cannot be checked against a stated source, say so rather than
-presenting it as the published method.
-
-**Do not apply a matrix optimiser to vectors.** Muon is for two-dimensional
-parameters. Embeddings, biases, norms and the output head are conventionally
-left to the other optimiser, and a run that ignores that is not a test of
-Muon.
+**Do not widen the claim to fit the effort.** If tuning AdamW closes the gap,
+the finding is that the gap was tuning, and that is a real and publishable
+result rather than a failure of this brief.
 
 ## What is not this brief's to decide
 

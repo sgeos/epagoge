@@ -129,6 +129,12 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--schedule", choices=("cosine", "wsd"), default="cosine")
     parser.add_argument("--decay-fraction", type=float, default=0.1)
     parser.add_argument("--optimiser", choices=("adamw", "muon"), default="adamw")
+    # **IT WAS NEVER REACHABLE AND SO NEVER CHOSEN.** Every run this project
+    # made before 2026-09-28 used the trainer's default of 3e-4, across widths
+    # 16 to 1,024 and against Muon at 0.02. A parameter no tool can reach has
+    # never been held fixed deliberately, only by default, and a default is not
+    # a control. See `docs/process/PROCESS_STRATEGY.md`.
+    parser.add_argument("--learning-rate", type=float, default=3e-4)
     parser.add_argument("--muon-lr", type=float, default=0.02)
     # **Separate from --weight-decay because the same number is not the
     # same treatment.** Muon's shrinkage is coupled to its own rate, which
@@ -291,6 +297,7 @@ def main(argv: list[str]) -> int:
                         TrainConfig(
                             steps=steps,
                             batch_size=args.batch_size,
+                            learning_rate=args.learning_rate,
                             weight_decay=args.weight_decay,
                             min_lr_fraction=args.min_lr_fraction,
                             token_replacement=args.token_replacement,

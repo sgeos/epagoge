@@ -64,22 +64,20 @@ one, reliably**: the baseline's worst seed is 3.195 and the schedule's best is
 **So the schedule is a capability rather than an improvement**, and it should
 be chosen when a run needs extending rather than to lower a loss.
 
-## The caveat on Muon's figure, which is the same one as the width ranking
+## The caveat on Muon's figure, raised here and resolved the same day
 
-**This is default against default, not tuned against tuned.** Muon runs at the
-reference default of 0.02 and AdamW at this project's default of 3e-4. **The
-two rates are not comparable quantities**, neither was tuned, and **no tool in
-this repository exposes the AdamW learning rate**, so the baseline could not
-have been tuned even had that been wanted.
+**As written, this was default against default rather than tuned against
+tuned.** Muon ran at the reference default of 0.02 and AdamW at this project's
+3e-4, the two are not comparable quantities, neither had been tuned, and no
+tool exposed the AdamW rate.
 
-**Part of Muon's gain may be that its default suits this setup better.** That
-is not a reason to discount the result, which is large and consistent across
-seeds, but it is a reason not to call it a comparison of optimisers. **It is a
-comparison of two configurations, one of which nobody could adjust.**
+**Resolved 2026-09-28. Both defaults sit at their measured optimum**,
+bracketed on either side, so this was tuned against tuned by accident and
+**the 0.117 stands unchanged**. See `LEVEL_ONE_LEARNING_RATE.md`.
 
-**This is the confound recorded the same day against the width ranking** in
-`../../docs/decisions/TRAINING_TECHNIQUES.md`. The learning rate becoming
-reachable is what would settle both.
+**The caveat is kept rather than deleted** because it was correct to raise and
+could have gone the other way. **The width ranking's version of it is a
+separate sweep** and is not answered by this.
 
 ## A prediction from an existing rule, tested and not supported
 
