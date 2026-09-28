@@ -1,0 +1,122 @@
+[
+ {
+  "subject": "a1.can",
+  "question": "can the child lift the cup ?",
+  "answer": "yes , the child can lift the cup .",
+  "wrong": "no , the child cannot lift the cup ."
+ },
+ {
+  "subject": "b1.plants",
+  "question": "does a plant need water ?",
+  "answer": "yes , a plant needs water .",
+  "wrong": "no , a plant does not need water ."
+ },
+ {
+  "subject": "b1.animals",
+  "question": "is a bird alive ?",
+  "answer": "yes , a bird is alive .",
+  "wrong": "no , a bird is not alive ."
+ },
+ {
+  "subject": "r1.cycle",
+  "question": "is the sun hot ?",
+  "answer": "yes , the sun is hot .",
+  "wrong": "no , the sun is cold ."
+ },
+ {
+  "subject": "a1.enough",
+  "question": "is one cup enough for two people ?",
+  "answer": "no , one cup is not enough for two people .",
+  "wrong": "yes , one cup is enough for two people ."
+ },
+ {
+  "subject": "c1.know",
+  "question": "does the dark room have light ?",
+  "answer": "no , the dark room does not have light .",
+  "wrong": "yes , the dark room has light ."
+ },
+ {
+  "subject": "b1.hurt",
+  "question": "can fire hurt you ?",
+  "answer": "yes , fire can hurt you .",
+  "wrong": "no , fire cannot hurt you ."
+ },
+ {
+  "subject": "ac1.tally",
+  "question": "is two more than one ?",
+  "answer": "yes , two is more than one .",
+  "wrong": "no , two is less than one ."
+ },
+ {
+  "subject": "a1.person",
+  "question": "is a rock alive ?",
+  "answer": "no , a rock is not alive .",
+  "wrong": "yes , a rock is alive ."
+ },
+ {
+  "subject": "r1.written",
+  "question": "can you read a book ?",
+  "answer": "yes , you can read a book .",
+  "wrong": "no , you cannot read a book ."
+ },
+ {
+  "subject": "b1.mending",
+  "question": "is a broken cup whole ?",
+  "answer": "no , a broken cup is not whole .",
+  "wrong": "yes , a broken cup is whole ."
+ },
+ {
+  "subject": "a1.done",
+  "question": "is the work done when it is started ?",
+  "answer": "no , the work is not done when it is started .",
+  "wrong": "yes , the work is done when it is started ."
+ },
+ {
+  "subject": "c1.because",
+  "question": "does the ball fall down ?",
+  "answer": "yes , the ball falls down .",
+  "wrong": "no , the ball falls up ."
+ },
+ {
+  "subject": "b1.tending",
+  "question": "does a plant grow without light ?",
+  "answer": "no , a plant does not grow without light .",
+  "wrong": "yes , a plant grows without light ."
+ },
+ {
+  "subject": "a1.how",
+  "question": "is ice cold ?",
+  "answer": "yes , ice is cold .",
+  "wrong": "no , ice is hot ."
+ },
+ {
+  "subject": "ac1.having",
+  "question": "do you still have a thing after you give it away ?",
+  "answer": "no , you do not have a thing after you give it away .",
+  "wrong": "yes , you still have a thing after you give it away ."
+ },
+ {
+  "subject": "a1.mistake",
+  "question": "is it wrong to say a cat is a dog ?",
+  "answer": "yes , it is wrong to say a cat is a dog .",
+  "wrong": "no , it is right to say a cat is a dog ."
+ },
+ {
+  "subject": "c1.asking",
+  "question": "can you know a thing without looking ?",
+  "answer": "no , you cannot know a thing without looking .",
+  "wrong": "yes , you can know a thing without looking ."
+ },
+ {
+  "subject": "a1.order",
+  "question": "do you put the lid on the box before the toy ?",
+  "answer": "no , you put the toy in the box before the lid .",
+  "wrong": "yes , you put the lid on the box before the toy ."
+ },
+ {
+  "subject": "r1.cycle",
+  "question": "does night come after day ?",
+  "answer": "yes , night comes after day .",
+  "wrong": "no , night comes before day ."
+ }
+]

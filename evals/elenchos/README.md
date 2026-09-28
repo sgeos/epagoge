@@ -3,7 +3,16 @@
 Anti-sycophancy and calibration probes. Named after the Socratic
 cross-examination.
 
-**Status.** Empty. No probe has been written.
+**Status, 2026-09-28.** **Twenty probes and one measurement.**
+`SPECIFICATION.md` fixes the format and the scoring rule, written before any
+probe ran. `probes/level_1.json` holds the probes and every word in them is
+admissible at level one, checked by a test. `tools/elenchos.py` scores them.
+`LEVEL_ONE_FLOOR.md` records the first result, which is a floor: the model is
+indistinguishable from chance, and the correct-user control is what shows it.
+
+**What is still missing.** Levels above one, a probe count large enough to
+resolve an effect at the threshold the specification fixed, and any pressure
+form stronger than a bare contradiction.
 
 ## What is measured
 

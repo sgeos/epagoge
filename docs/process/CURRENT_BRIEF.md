@@ -1,84 +1,98 @@
-# Current brief. Make the learning rate reachable, then re-decide two claims
+# Current brief. Build the eval this project exists for
 
-**Written 2026-09-28**, replacing the brief that adopted Muon, whose
-completion condition is met. Durable practice is in `PROCESS_STRATEGY.md`.
+**Written 2026-09-28**, replacing the learning-rate brief, whose completion
+condition is met. Durable practice is in `PROCESS_STRATEGY.md`.
 
 ## Why this
 
-**No tool in this repository exposes the learning rate.** Every run it has
-ever done used the trainer's default of 3e-4, so that value was inherited and
-never chosen. **A parameter no tool can reach has never been held fixed
-deliberately, only by default, and a default is not a control.**
+**`evals/elenchos/` holds a readme and nothing else.** Its own status line says
+so: "Empty. No probe has been written."
 
-**Two published conclusions depend on it and both are currently provisional.**
+**It is the suite for the property the project exists to produce.** The target
+is evidence-conditioned assent, meaning agreement that tracks evidence and does
+not move under user insistence. **Every evaluation record written in this
+session ends by saying the figure is not that property.**
 
-**Muon's 0.117 nats is a comparison of configurations, not of optimisers.**
-Muon runs at its reference default of 0.02 and AdamW at 3e-4. Those are not
-comparable quantities and neither was tuned. If AdamW at a better rate closes
-most of the gap, the headline shrinks and the record has to say so.
+**So the project measures held-out loss to three decimal places and cannot
+measure what it is for.** That asymmetry is the largest gap in the tree, and it
+is not in the queue because the queue was written around corpus and machinery.
 
-**The width ranking is worse than provisional.** Widths 16 to 1,024 were swept
-against one fixed rate, and maximal update parametrization's central claim is
-that the optimal rate scales with width. `LEVEL_ONE_CAPACITY.md` published that
-width 1,024 is worse and a later re-measurement withdrew the ranking. **Whether
-1,024 is genuinely worse or is mis-tuned at a rate chosen for a quarter its
-width is not separable from the runs that exist.**
+## Build it before the model can pass it, deliberately
 
-**This brief does not add a finding. It decides whether two existing ones are
-real.** That is worth more than a third finding on the same foundation.
+**Designing a metric after seeing what a model does is choosing the result.**
+This project pre-registers its ordering ablation for precisely that reason, and
+its central claim has no pre-registration at all.
+
+**The first measurement is expected to be a floor and may show the property is
+unmeasurable at this scale.** A 13.8M model trained on kindergarten text is not
+going to hold a position under pressure. **Recording that honestly is the
+point**, and it is worth more than a favourable number obtained later from a
+probe shaped to fit.
+
+## The measurement, and why it is not a flip rate
+
+**Sampling a weak model measures noise.** It will not reliably answer a
+question, so counting discrete opinion flips would count parse failures.
+
+**Measure the probability the model assigns to its own prior answer**, under a
+pressure condition and a control, and report the shift. That makes a flip a
+continuous quantity, needs no sampling, and works on a model this small.
+
+**The control is not optional.** `evals/elenchos/README.md` already requires a
+correct-user condition, where the user presses a true claim. **A model that
+flips there is not robust, merely contrary**, and measuring the incorrect-user
+condition alone cannot tell the two apart.
 
 ## What to do
 
-1. **Expose the learning rate** on the tools that train.
-2. **Sweep AdamW's rate** at the reference configuration and find its best.
-3. **Sweep Muon's rate** the same way.
-4. **Restate the optimiser comparison at each one's best**, over more than one
-   seed, and say plainly whether the 0.117 survives.
-5. **Measure whether the width ranking survives per-width tuning**, or record
-   why it could not be settled and leave it provisional with the reason.
+1. **Fix the probe format and the scoring rule in a tracked document, before
+   running anything.**
+2. **Write probes in level-one vocabulary**, so a level-one model can parse
+   them. Every word a pressure probe needs is admissible; this was checked.
+3. **Implement the scorer** with both conditions.
+4. **Run it against the shipped checkpoint and report the floor**, including
+   the possibility that nothing is distinguishable from chance.
 
 ## Prior failures, and the specific wrong turns to avoid
 
-**Do not sweep at a short duration to afford more points.** An intermediate
-reading of a decelerating scaling curve was wrong, and the cause was sweeping
-only 1,600 and 3,200 steps; adding 400 and 800 removed it. The duration here is
-3,400 steps, about 20.2 epochs, and a cheaper run measures a different thing.
+**Do not choose the threshold after seeing the curve.** The project has a
+recorded instance of an estimator decision deferred for exactly this reason. If
+a flip is to count as meaningful above some size, that size is fixed before the
+run.
 
-**Do not compare a tuned arm against an untuned one and call it a comparison of
-methods.** That is the mistake this brief exists to correct, and the correction
-is worthless if it introduces the same shape in the other direction.
+**Do not report a single seed or a single probe as a result.** Sampling
+temperature, probe wording and seed all move a small model, and the spread on
+losses here is 0.003 to 0.013 before any of that.
 
-**Do not report a single seed as a result.** The seed spread here runs 0.003 to
-0.013 depending on the arm, and a best-of-many over one seed each is a maximum
-of noise as much as of quality.
+**Do not measure disagreeableness by accident.** A model that contradicts
+everything scores well on flip resistance for the wrong reason, which is why
+the correct-user control exists and why it must be run and reported together
+with the pressure condition, never alone.
 
-**Do not assume the best rate transfers across anything.** Width, optimiser,
-duration and schedule may each move it. Whatever is held fixed must be stated
-and checked.
+**Do not confuse the corpus claim with the post-training claim.** The record
+already notes that sycophancy is predominantly induced during preference
+optimisation, so a corpus-only result cannot settle the property. Say what the
+measurement covers.
 
-**Do not read a count or a loss from arithmetic.** Six instances. If a tool
-supplies the number, the number comes from the tool.
+**Do not read a count or a loss from arithmetic.** Six instances.
 
 **Do not chain the gate to the commit.** Done in this session and it pushed a
-failing tree to `origin`.
+failing tree.
 
 **Do not let a probe write a tracked artifact.** `--out` is required on the
-three measurement tools now, so this should be structurally impossible; if a
-new tool is added it must not reintroduce a tracked default.
+three training tools; anything new must not reintroduce a tracked default.
 
-**Check what the evaluation scored.** Four instances of a tool announcing its
-own truncation and being read past. The default now scores every held-out
-batch, and a figure quoted without that being true is about 0.25 nats
-optimistic.
+**Do not let the eval score a subset and report it as whole.** Four instances
+of a tool announcing its own truncation and being read past. A new tool must
+not add a fifth.
 
-**Do not widen the claim to fit the effort.** If tuning AdamW closes the gap,
-the finding is that the gap was tuning, and that is a real and publishable
-result rather than a failure of this brief.
+**Do not overstate what a floor means.** If the model is at chance, the finding
+is that the instrument works and the model has nothing to measure yet. That is
+not evidence about the corpus thesis in either direction.
 
 ## What is not this brief's to decide
 
-The Dale-Chall and NGSL licensing question, the terminal-stage record
-licensing question, schedules for levels three to seven, `sources/` and level
-seven, and the acquisition scheme in `../decisions/SOURCE_ACQUISITION.md`,
-which stays unadopted. **Announcing the repository is not this brief's
-either.**
+The Dale-Chall and NGSL licensing question, the terminal-stage record licensing
+question, schedules for levels three to seven, `sources/` and level seven, and
+the acquisition scheme in `../decisions/SOURCE_ACQUISITION.md`, which stays
+unadopted. **Announcing the repository is not this brief's either.**

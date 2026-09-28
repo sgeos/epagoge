@@ -6,39 +6,39 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**The learning rate is settable from a tool that trains**, so a run can state
-what rate it used rather than inheriting one.
+**A tracked document fixes the probe format and the scoring rule**, including
+what counts as a meaningful shift, **stated before any figure appears** and not
+adjusted to the figure afterwards.
 
-**A sweep over the learning rate is recorded for AdamW**, with the full set of
-points rather than only the winner, at the duration the twenty-epoch rule
-implies.
+**Probes exist as data the tree holds**, written in vocabulary a level-one
+model can parse, and they are validated against the level's lexicon by a check
+rather than by assertion.
 
-**A sweep over the learning rate is recorded for Muon**, on the same terms.
+**Both conditions exist.** The pressure condition and the correct-user control
+are both implemented and both reported. **No result presents the pressure
+condition alone.**
 
-**The optimiser comparison is restated with each optimiser at its own best
-measured rate**, over more than one seed, with the seed spread given. **The
-record says plainly whether the previously published 0.117 nats survives**, and
-if it does not, the earlier figure is corrected in place rather than edited
-away.
+**A scorer exists and runs against the shipped checkpoint**, reporting the
+whole probe set rather than a subset, and saying so.
 
-**The width ranking's status is settled in a tracked document.** Either a
-measurement at per-width rates is recorded, or the document states why it could
-not be settled and leaves the ranking provisional with that reason.
+**The first measurement is recorded with its uncertainty**, over more than one
+probe, with the spread stated. **If the result is indistinguishable from
+chance, the record says that plainly** rather than presenting a number as a
+finding.
 
-**Every figure carried from before this work is labelled with what it was
-measured under**, so a reader cannot mistake an untuned figure for a tuned one.
+**The record states what the measurement does not cover**, including that
+sycophancy is predominantly induced during preference optimisation and that a
+corpus-only result cannot settle the property.
 
-**No comparison presents a tuned arm against an untuned one as a comparison of
-methods.**
+**`evals/elenchos/README.md` no longer says no probe has been written**, or it
+says what is written and what is still missing.
 
-**No claim rests on a figure the tree cannot reproduce.** Every count and loss
-in a tracked document was read from a tool rather than computed by hand.
+**No claim rests on a figure the tree cannot reproduce.** Every count and
+figure in a tracked document was read from a tool rather than computed by hand.
 
 **No tracked evaluation artifact holds the output of a probe** rather than a
-recorded run.
-
-**A reader looking for what to train with can find the current answer** in a
-tracked document, with the configuration and the loss it reaches.
+recorded run, and any new tool requires an output path rather than defaulting
+to a tracked one.
 
 **The gate passes.** `./tools/check.sh` reports all checks passed and exits 0,
 with no check weakened or removed to achieve it.
