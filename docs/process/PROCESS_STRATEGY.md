@@ -271,6 +271,28 @@ each condition being compared, and whether anything else moves with it. **A
 parameter that is not reachable from a tool has never been held fixed
 deliberately**, only by default, and a default is not a control.
 
+## Added 2026-09-28. A recorded property is not a guard
+
+**The provenance record is derived from git history**, so it cannot be
+regenerated before the commit that changes the lexicon: the new words have no
+first commit yet, and the commit gives them one. **That property was recorded
+twice** and then walked into anyway, by running the regeneration in the same
+breath as the commit. The gate passed locally and continuous integration
+failed on the pushed head.
+
+**Three of this session's recurring failures have the same shape.** A warning,
+then a per-caller fix, then finally a change that makes the failure impossible:
+the tracked output default, the truncated evaluation, and now this. **In every
+case the note was written before the recurrence and did not prevent it.**
+
+**So the rule is about where a lesson goes, not whether it is learned.** A
+property a caller must remember at the right moment is a property that will be
+forgotten at the wrong one. `word_provenance.py` now refuses to write when the
+lexicon holds words no commit contains, and says to commit first.
+
+**The test of whether a lesson has been made structural is whether the next
+person can fail the same way.** If they can, it was documentation.
+
 ## Added 2026-09-28. A filtered view is not a sample
 
 **A rule was written from evidence the filter had constructed.** The question

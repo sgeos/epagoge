@@ -288,6 +288,30 @@ def main(argv: list[str]) -> int:
         return 0
 
     if args.out is not None:
+        # **A RECORD WRITTEN BEFORE THE COMMIT IS STALE THE MOMENT IT LANDS.**
+        # This file is derived from git history, so a word sitting in the
+        # working tree and not yet in any commit has no entry to write, and
+        # the next commit gives it one. Writing here and committing both in
+        # the same breath therefore produces a file the gate rejects in
+        # continuous integration while passing locally, which happened on
+        # 2026-09-28 after the structural property had already been recorded
+        # twice. A note was not enough, so the tool refuses instead.
+        working = {
+            str(term["word"])
+            for term in cast("list[dict[str, object]]", current.get("terms", []))
+        }
+        uncommitted = sorted(working - set(first))
+        if uncommitted:
+            print(
+                f"refusing to write: {len(uncommitted)} word(s) are in the "
+                "lexicon and not yet in any commit, so this record would be "
+                "stale as soon as they are committed.",
+                file=sys.stderr,
+            )
+            for word in uncommitted[:10]:
+                print(f"  {word}", file=sys.stderr)
+            print("  Commit the lexicon first, then regenerate.", file=sys.stderr)
+            return 1
         args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text(
             json.dumps(

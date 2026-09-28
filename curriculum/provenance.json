@@ -1,6 +1,6 @@
 {
   "_comment": "When each word entered the lexicon. 'recorded at admission' is evidence written when the decision was made. 'reconstructed from history' is the commit that first contained the word, which is what the commit was about rather than necessarily why that word was in it. 'admitted_because' is the criterion that commit's batch met, applied to every word in it: right about the pass and not necessarily about each word. Low to moderate fidelity, and lowest for the 444-word prescriptive pass, because bootstrapping a closed lexicon does not decompose into per-word reasons.",
-  "revisions": 48,
+  "revisions": 49,
   "words": {
     "able": {
       "commit": "1a5ac29cc8b6",
@@ -381,6 +381,15 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "autumn": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
     "avoid": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -493,6 +502,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "bank": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
     "basin": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -544,6 +562,15 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "beast": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
     },
     "beautiful": {
       "commit": "a2b7f4971801",
@@ -802,6 +829,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "board": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
     "boat": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -898,6 +934,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "breast": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
     "breath": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -970,6 +1015,15 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "brook": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
     "broom": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -985,6 +1039,15 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "brow": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
     },
     "brown": {
       "commit": "fe327c12ce59",
@@ -1017,6 +1080,15 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "bud": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
     },
     "bug": {
       "commit": "fe327c12ce59",
@@ -1058,6 +1130,15 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "bundle": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
     "burn": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -1089,6 +1170,15 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "operator direction, 2026-09-27, kindergarten etiquette",
+      "evidence": "recorded at admission"
+    },
+    "cage": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
       "evidence": "recorded at admission"
     },
     "call": {
@@ -1123,6 +1213,15 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "cane": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
     "cannot": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -1130,6 +1229,15 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "cap": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
     },
     "car": {
       "commit": "fe327c12ce59",
@@ -1251,6 +1359,15 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "cave": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
     "certain": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -1331,6 +1448,24 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "cheek": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
+    "chestnut": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
     },
     "child": {
       "commit": "fe327c12ce59",
@@ -1444,6 +1579,15 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "cloak": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
     },
     "clock": {
       "commit": "fe327c12ce59",
@@ -1759,6 +1903,24 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "creature": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
+    "creek": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
     "cross": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -1855,6 +2017,15 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "dawn": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
     },
     "day": {
       "commit": "019dea991be7",
@@ -2845,6 +3016,15 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "flock": {
+      "commit": "1346e83608e8",
+      "date": "2026-09-28",
+      "commit_subject": "Close the gap between a scan candidate and an admitted word",
+      "criterion": "corpus",
+      "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
     },
     "flood": {
       "commit": "a2b7f4971801",
