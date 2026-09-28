@@ -7,7 +7,7 @@ seeds a cell, scoring **every held-out batch**.
 
     PYTHONPATH=src .venv/bin/python tools/sample_level.py --level 1 \
       --steps 3200 --d-model 512 --layers 4 --positions rotary \
-      --token-replacement 0.05
+      --token-replacement 0.05 --out evals/pilot/level_1_samples.json
 
 | Setting | Value | Why |
 | --- | --- | --- |

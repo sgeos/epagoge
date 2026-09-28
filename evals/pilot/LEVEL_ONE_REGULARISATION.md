@@ -188,6 +188,14 @@ training-to-held-out gap passes about one nat, reach for
 so a probe silently overwrites it with one cell. That happened while these
 figures were being taken and was reverted.
 
+**Amended 2026-09-28: it happened again, and the default is gone.** A
+200-step probe overwrote the same file one command after a brief carrying
+this warning was written. That is the second occurrence against three
+warnings, so `--out` is now required on `diagnose_level.py`,
+`sample_level.py` and `train_level.py`, all three of which defaulted to a
+tracked path. **A tool cannot know whether a run is a probe or a record**, and
+the two had been sharing a default.
+
     PYTHONPATH=src .venv/bin/python tools/diagnose_level.py --level 1 \
       --positions rotary --steps 3200 --width 512 --weight-decay 0.5 --seed 0 \
       --out tmp/probe.json

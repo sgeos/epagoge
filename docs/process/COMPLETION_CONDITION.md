@@ -6,34 +6,41 @@ is the end state of the tree.
 
 ## Done when all of the following hold
 
-**Every level-one schedule unit carries a question-and-answer book.** If any
-unit does not, the count and the reason are stated in a tracked document and
-the remainder is named rather than left implicit.
+**A baseline is measured on the current corpus** at a duration justified by
+the twenty-epoch rule, over more than one seed, with the seed spread stated and
+with every held-out batch scored. **The stale frontier is not used as the
+comparison point**, and any figure carried from before the corpus refresh is
+labelled as describing a smaller corpus.
 
-**The question book's word band is settled and recorded.** Either these books
-sit inside the band the gate checks, or a tracked document states the band that
-applies to them and why it differs. **No book is reported outside a range that
-no document explains.**
+**Warmup-stable-decay exists in the trainer and its effect is measured**
+against that baseline, or a tracked document says why it was not adopted.
 
-**The exchange count is resolved.** A tracked document states how many
-exchanges a question book carries and what follows for any measure that counts
-records, including pair coverage, which counts only books with exactly sixteen.
+**Muon exists in the trainer and its effect is measured** against that
+baseline, or a tracked document says why it was not adopted. **If it is
+implemented, a tracked document names what the implementation was checked
+against and states which parameters it is applied to and which are left to the
+other optimiser.**
 
-**Question-mark density is measured after the batch, not asserted**, and the
-figure is read from a tool.
+**Whether the two combine is stated from measurement rather than assumed.** If
+they do not add, the record says so.
 
-**No content book left its word band and no book lost a metadata field.** The
-stamp check reports every book carrying its fields.
+**Maximal update parametrization's status is settled in a tracked document.**
+Its superseded justification is kept in place rather than edited away, and the
+document says what the technique is still for, if anything, now that a single
+scale point is decided.
 
-**Every added book is valid to the book checker and its records validate
-against the schema.**
+**No improvement is credited beyond what was run.** Anything measured alone
+and not in combination is described as such, and a technique adopted on
+reasoning rather than measurement says which it was.
 
-**No word was admitted to the lexicon to make generation succeed.** If any word
-was admitted, it carries a definition and a recorded source, and level-one
-closure is unchanged at one hundred percent of words needing one.
+**A reader looking for what to train with can find the current answer** in a
+tracked document, with the configuration and the loss it reaches.
 
-**No claim rests on a figure the tree cannot reproduce.** Every count in a
-tracked document was read from a tool rather than computed by hand.
+**No claim rests on a figure the tree cannot reproduce.** Every count and loss
+in a tracked document was read from a tool rather than computed by hand.
+
+**No tracked evaluation artifact holds the output of a probe** rather than a
+recorded run.
 
 **The gate passes.** `./tools/check.sh` reports all checks passed and exits 0,
 with no check weakened or removed to achieve it.

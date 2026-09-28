@@ -92,7 +92,22 @@ def main(argv: list[str]) -> int:
     # LEVEL_ONE_DIAGNOSIS.md.
     parser.add_argument("--weights", type=Path, default=ROOT / "evals/pilot/level_1.pt")
     parser.add_argument(
-        "--out", type=Path, default=ROOT / "evals/pilot/level_1_samples.json"
+        # **THE DEFAULT WAS A TRACKED ARTIFACT, SO THE DEFAULT WAS A
+        # DESTRUCTIVE ACT.** Three tools wrote a recorded result unless told
+        # otherwise, and on 2026-09-28 a 200-step probe overwrote
+        # `level_1_diagnosis.json` one command after a brief was written
+        # warning against exactly that. It is the SECOND occurrence and the
+        # THIRD warning: `evals/pilot/LEVEL_ONE_REGULARISATION.md` records the
+        # first and says it was reverted, and two briefs carried the caution
+        # forward. A warning that has failed three times is not the mechanism,
+        # so the lesson is made structural instead: the tool cannot know
+        # whether a run is a probe or a record, so it refuses to guess and the
+        # caller says which.
+        "--out",
+        type=Path,
+        required=True,
+        help="where to write the result; a recorded run and a probe "
+        "must not share a path",
     )
     args = parser.parse_args(argv[1:])
 
