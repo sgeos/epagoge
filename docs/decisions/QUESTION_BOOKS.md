@@ -70,6 +70,26 @@ against a 320 floor, they predate this work, and the module's posture is that
 a book about one narrow thing is allowed to be short. **Untouched and named
 rather than left to be rediscovered.**
 
+## Sixteen spreads each, and zero new concept pairs
+
+**Every question book carries sixteen exchanges**, one to a spread, because a
+spread is a page turn and the turn is where the answer lands.
+
+**That matters to pair coverage, which counts only books with exactly sixteen
+records.** Before this batch, eight question books were below that and were
+invisible to the measure. All 96 now qualify.
+
+**And it changed the figure by nothing. Measured: 312 of 8,128 either way.**
+Excluding every question book gives the same 312, so **the question books
+contribute zero pairs the corpus did not already have.**
+
+**That follows from what the form is** and is worth stating rather than
+discovering later. A question book teaches its own unit's concepts, the same
+ones its narrative sibling teaches, so every pair it realises was realised
+already. **The form buys the corpus the ability to show a question being
+answered. It buys no combinatorial richness at all**, and a later reading of
+the pair figure should not expect this batch to appear in it.
+
 ## The prompt had no substitution block, and that is the third time
 
 **`LEXICON.md` records the finding: naming a banned word is not supplying the
