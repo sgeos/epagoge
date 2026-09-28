@@ -237,6 +237,40 @@ about a clone whenever the thing being checked is a path. **The three earlier
 divergences all had this shape** and were each diagnosed as their own
 specific cause.
 
+## Added 2026-09-28, and it is one class with three instances in a day
+
+**A HYPERPARAMETER WITH ONE NAME IS NOT NECESSARILY ONE QUANTITY.** Three
+confounds in a single day, each invisible because the parameter had a single
+name.
+
+**The learning rate across widths.** Every run this project has ever done used
+the trainer's default of 3e-4, because no tool exposes it, and width was swept
+from 16 to 1,024 against that fixed value. Maximal update parametrization's
+whole claim is that the optimal rate moves with width. **So the published
+width ranking is not separable from mis-tuning**, and it is now marked
+provisional.
+
+**The learning rate across two optimisers.** Muon at its reference default of
+0.02 against AdamW at 3e-4. Those are not comparable numbers, so the measured
+0.117 nats is a comparison of two configurations rather than of two
+optimisers, and one of them could not be adjusted at all.
+
+**The weight decay across two optimiser groups.** Muon's shrinkage is coupled
+to its own rate, so one shared value applied about sixty-seven times the
+per-step shrinkage to the matrices as to everything else. A sweep of that
+value measured the coupling and not the decay.
+
+**What caught the third one was the training loss moving the wrong way.** More
+decay lowered training loss, which regularisation cannot do. **Nothing caught
+the first two; they were reasoned out afterwards from what the code could and
+could not express.**
+
+**So the check is mechanical rather than attentive.** Before reporting the
+effect of varying a named parameter, ask what quantity the name resolves to in
+each condition being compared, and whether anything else moves with it. **A
+parameter that is not reachable from a tool has never been held fixed
+deliberately**, only by default, and a default is not a control.
+
 ## Autonomy boundaries
 
 **Proceed** without asking on anything bounded and already on the roadmap.

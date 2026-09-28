@@ -91,6 +91,12 @@ def main(argv: list[str]) -> int:
     # this corpus is worse, because the model memorises it. See
     # LEVEL_ONE_DIAGNOSIS.md.
     parser.add_argument("--weights", type=Path, default=ROOT / "evals/pilot/level_1.pt")
+    # **The shipped checkpoint should be the best the project can make.**
+    # Muon is worth 0.117 nats here, measured over three seeds in
+    # `evals/pilot/LEVEL_ONE_OPTIMISER.md`, so the tool that writes the
+    # checkpoint has to be able to use it.
+    parser.add_argument("--optimiser", choices=("adamw", "muon"), default="adamw")
+    parser.add_argument("--schedule", choices=("cosine", "wsd"), default="cosine")
     parser.add_argument(
         # **THE DEFAULT WAS A TRACKED ARTIFACT, SO THE DEFAULT WAS A
         # DESTRUCTIVE ACT.** Three tools wrote a recorded result unless told
@@ -156,6 +162,8 @@ def main(argv: list[str]) -> int:
             steps=args.steps,
             batch_size=args.batch_size,
             token_replacement=args.token_replacement,
+            optimiser=args.optimiser,
+            schedule=args.schedule,
         ),
         args.seed,
         device,

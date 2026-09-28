@@ -81,14 +81,49 @@ comparison of two configurations, one of which nobody could adjust.**
 `../../docs/decisions/TRAINING_TECHNIQUES.md`. The learning rate becoming
 reachable is what would settle both.
 
+## A prediction from an existing rule, tested and not supported
+
+**The rule was written before these runs.** Weight decay was measured to help
+where the train-to-held-out gap exceeds about one nat, which is why the
+reference configuration leaves it at the default with a gap of 0.76. **Muon's
+gap is 1.12**, so the rule predicted weight decay should now help.
+
+| Muon, shared weight decay | Held out, 3 seeds | sd | Train | Gap |
+| --- | --- | --- | --- | --- |
+| 0.01, the default | **3.066** | 0.0032 | 1.95 | 1.12 |
+| 0.1 | 3.067 | 0.0042 | 1.36 | 1.70 |
+| 0.5 | 3.267 | 0.0049 | 2.75 | 0.52 |
+
+**The prediction is not supported.** At 0.1 the held-out loss does not move,
+and at 0.5 it is 0.20 worse.
+
+### And the sweep was measuring something other than weight decay
+
+**At 0.1 the training loss fell from 1.95 to 1.36 and the gap widened to
+1.70.** Regularisation does not lower training loss. That is the signal that
+the varied quantity was not the one named.
+
+**Muon's shrinkage is coupled to its own rate**, `p *= 1 - lr * decay`, and
+that rate is 0.02 against AdamW's 3e-4. **So one shared value applies about
+sixty-seven times the per-step shrinkage to the matrices as to everything
+else.** Over 3,400 steps the matrix factor at 0.1 is roughly `exp(-6.8)` and
+the AdamW factor roughly `exp(-0.1)`.
+
+**So this measured a large decay on the matrices against a mild one elsewhere,
+not a decay sweep.** The two are now settable independently, defaulting to the
+shared value so nothing already measured moved. **The rule is neither confirmed
+nor refuted for Muon**, and a clean test would sweep the matrix decay alone.
+
+**Three times in one day a single name turned out not to be a single
+quantity**: the learning rate across widths, the learning rate across two
+optimisers, and this. Each confound was invisible because the parameter had
+one name.
+
 ## What is not established
 
-**Weight decay under Muon is unmeasured at the time of writing.** The recorded
-rule is that weight decay helps where the train-to-held-out gap exceeds about
-one nat, which is why the reference configuration leaves it at the default
-with a gap of 0.76. **Muon's gap is 1.12 and the schedule's is 1.06, both
-above that line**, so the rule predicts it should now help. That prediction
-was made from a rule written before these runs and is being tested.
+**Whether weight decay helps the matrices is still open.** The sweep above
+shows it does not help at the shared value and explains why that is not the
+same question.
 
 **Muon's own hyperparameters are unswept.** Its rate, its momentum and the
 Newton-Schulz step count are all the reference defaults.
