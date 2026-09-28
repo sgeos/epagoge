@@ -16,23 +16,42 @@
     "dict.2.already": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:already"}, "defines": {"kind": "word", "target": "already"}},
     "dict.2.amount": {"concepts": ["quantity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:amount"}, "defines": {"kind": "word", "target": "amount"}},
     "dict.2.author": {"concepts": ["who_said_it"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:author"}, "defines": {"kind": "word", "target": "author"}},
+    "dict.2.autumn": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:autumn"}, "defines": {"kind": "word", "target": "autumn"}},
     "dict.2.balance": {"concepts": ["balance"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:balance"}, "defines": {"kind": "word", "target": "balance"}},
+    "dict.2.bank": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bank"}, "defines": {"kind": "word", "target": "bank"}},
     "dict.2.basin": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:basin"}, "defines": {"kind": "word", "target": "basin"}},
     "dict.2.bay": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bay"}, "defines": {"kind": "word", "target": "bay"}},
     "dict.2.beach": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:beach"}, "defines": {"kind": "word", "target": "beach"}},
     "dict.2.beam": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:beam"}, "defines": {"kind": "word", "target": "beam"}},
+    "dict.2.beast": {"concepts": ["animal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:beast"}, "defines": {"kind": "word", "target": "beast"}},
     "dict.2.beautiful": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:beautiful"}, "defines": {"kind": "word", "target": "beautiful"}},
     "dict.2.bicycle": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bicycle"}, "defines": {"kind": "word", "target": "bicycle"}},
+    "dict.2.board": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:board"}, "defines": {"kind": "word", "target": "board"}},
+    "dict.2.breast": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breast"}, "defines": {"kind": "word", "target": "breast"}},
+    "dict.2.brook": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:brook"}, "defines": {"kind": "word", "target": "brook"}},
+    "dict.2.brow": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:brow"}, "defines": {"kind": "word", "target": "brow"}},
+    "dict.2.bud": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bud"}, "defines": {"kind": "word", "target": "bud"}},
     "dict.2.bunch": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bunch"}, "defines": {"kind": "word", "target": "bunch"}},
+    "dict.2.bundle": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bundle"}, "defines": {"kind": "word", "target": "bundle"}},
+    "dict.2.cage": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cage"}, "defines": {"kind": "word", "target": "cage"}},
+    "dict.2.cane": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cane"}, "defines": {"kind": "word", "target": "cane"}},
+    "dict.2.cap": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cap"}, "defines": {"kind": "word", "target": "cap"}},
+    "dict.2.cave": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cave"}, "defines": {"kind": "word", "target": "cave"}},
     "dict.2.certain": {"concepts": ["how_sure"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:certain"}, "defines": {"kind": "word", "target": "certain"}},
     "dict.2.chain": {"concepts": ["causal_chain"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:chain"}, "defines": {"kind": "word", "target": "chain"}},
+    "dict.2.cheek": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cheek"}, "defines": {"kind": "word", "target": "cheek"}},
+    "dict.2.chestnut": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:chestnut"}, "defines": {"kind": "word", "target": "chestnut"}},
     "dict.2.city": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:city"}, "defines": {"kind": "word", "target": "city"}},
     "dict.2.claim": {"concepts": ["claim_under_test"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:claim"}, "defines": {"kind": "word", "target": "claim"}},
+    "dict.2.cloak": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cloak"}, "defines": {"kind": "word", "target": "cloak"}},
     "dict.2.coast": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:coast"}, "defines": {"kind": "word", "target": "coast"}},
     "dict.2.color": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:color"}, "defines": {"kind": "word", "target": "color"}},
     "dict.2.column": {"concepts": ["place_value"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:column"}, "defines": {"kind": "word", "target": "column"}},
     "dict.2.crash": {"concepts": ["accident"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:crash"}, "defines": {"kind": "word", "target": "crash"}},
+    "dict.2.creature": {"concepts": ["living_and_not_living"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:creature"}, "defines": {"kind": "word", "target": "creature"}},
+    "dict.2.creek": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:creek"}, "defines": {"kind": "word", "target": "creek"}},
     "dict.2.current": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:current"}, "defines": {"kind": "word", "target": "current"}},
+    "dict.2.dawn": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dawn"}, "defines": {"kind": "word", "target": "dawn"}},
     "dict.2.dense": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dense"}, "defines": {"kind": "word", "target": "dense"}},
     "dict.2.describe": {"concepts": ["saying_what_you_saw"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:describe"}, "defines": {"kind": "word", "target": "describe"}},
     "dict.2.difficult": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:difficult"}, "defines": {"kind": "word", "target": "difficult"}},
@@ -44,6 +63,7 @@
     "dict.2.explanation": {"concepts": ["explanation"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:explanation"}, "defines": {"kind": "word", "target": "explanation"}},
     "dict.2.fail": {"concepts": ["failing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fail"}, "defines": {"kind": "word", "target": "fail"}},
     "dict.2.fifty": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fifty"}, "defines": {"kind": "word", "target": "fifty"}},
+    "dict.2.flock": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:flock"}, "defines": {"kind": "word", "target": "flock"}},
     "dict.2.flood": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:flood"}, "defines": {"kind": "word", "target": "flood"}},
     "dict.2.fog": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fog"}, "defines": {"kind": "word", "target": "fog"}},
     "dict.2.forever": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forever"}, "defines": {"kind": "word", "target": "forever"}},
@@ -123,8 +143,14 @@ An amount is how much there is of a thing.
 [dict.2.author]
 An author is the person who wrote a thing.
 
+[dict.2.autumn]
+The time of year when leaves fall from trees and the air gets cool.
+
 [dict.2.balance]
 When two sides hold the same amount, so one is not more than the other.
+
+[dict.2.bank]
+A raised place of earth by a river or lake.
 
 [dict.2.basin]
 A basin is a low part of the land that water runs into.
@@ -138,14 +164,47 @@ A beach is the flat land at the shore where you can walk.
 [dict.2.beam]
 A beam is a line of light.
 
+[dict.2.beast]
+A large animal that is not a person.
+
 [dict.2.beautiful]
 Beautiful is when a thing is very good to look at.
 
 [dict.2.bicycle]
 A bicycle is a thing with two wheels that you use to move with your feet.
 
+[dict.2.board]
+A flat piece of wood used for writing or walking on.
+
+[dict.2.breast]
+The front part of the body where the heart is.
+
+[dict.2.brook]
+A small stream of water that runs through a forest.
+
+[dict.2.brow]
+The part of the face above the eyes.
+
+[dict.2.bud]
+A small part on a plant that can grow into a leaf or flower.
+
 [dict.2.bunch]
 A bunch is a group of things that are together.
+
+[dict.2.bundle]
+A group of things tied or held together.
+
+[dict.2.cage]
+A box made of metal or wood to hold an animal.
+
+[dict.2.cane]
+A stick used to help walk or as a tool.
+
+[dict.2.cap]
+A small cover for the top of a bottle or head.
+
+[dict.2.cave]
+A large hole in the ground or rock.
 
 [dict.2.certain]
 Certain is when you are sure a thing is true.
@@ -153,11 +212,20 @@ Certain is when you are sure a thing is true.
 [dict.2.chain]
 A chain is many things joined one after another.
 
+[dict.2.cheek]
+The side of the face near the mouth.
+
+[dict.2.chestnut]
+A round seed from a tree that has a hard shell.
+
 [dict.2.city]
 A city is a very big town where many people live.
 
 [dict.2.claim]
 Something said to be true, before anyone has checked it.
+
+[dict.2.cloak]
+A long piece of cloth worn over the body.
 
 [dict.2.coast]
 A coast is the land next to the sea.
@@ -171,8 +239,17 @@ A column is a line of things going up and down.
 [dict.2.crash]
 A crash is when two things hit each other hard.
 
+[dict.2.creature]
+A thing that lives or is alive, like an animal or a person.
+
+[dict.2.creek]
+A small stream of liquid water.
+
 [dict.2.current]
 A current is water or air that keeps moving the same way.
+
+[dict.2.dawn]
+The time when the sun starts to rise in the morning.
 
 [dict.2.dense]
 Dense is when a lot of a thing is in a small space.
@@ -206,6 +283,9 @@ To fail is to try a thing and not do it.
 
 [dict.2.fifty]
 Fifty is five tens.
+
+[dict.2.flock]
+A group of birds or animals together.
 
 [dict.2.flood]
 A flood is when so much water comes that it covers the land.

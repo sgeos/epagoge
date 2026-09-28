@@ -87,6 +87,11 @@ Decision records, and the open questions that block implementation.
   does not**, and its near-symmetry in both directions is the evidence that
   it measures topical disjointness instead. Records the 47-word first batch
   and three defects found by running the pipeline rather than planning it.
+- `DEFINING_VOCABULARY.md` built. The missing step between a scan candidate
+  and an admitted word, and the finding that the definition prompt listed the
+  whole lexicon so it grew with the work. Raising the context fixed it and
+  drove swap to 14.9 GB of 16.4 GB, so the ask is narrowed to a 700-word
+  defining vocabulary instead, at the same 67 percent acceptance.
 - `QUESTION_BOOKS.md` completed. Every one of the 96 level-one units now
   carries a question-and-answer book at its full sixteen spreads, and the
   corpus holds one question mark per 24.7 sentences against one per 49.

@@ -182,6 +182,10 @@
       "concept": "who_said_it"
     },
     {
+      "word": "autumn",
+      "concept": "cycle"
+    },
+    {
       "word": "awake",
       "concept": "living_and_not_living",
       "antonyms": [
@@ -242,6 +246,10 @@
       "concept": "sound"
     },
     {
+      "word": "bank",
+      "concept": "spatial_position"
+    },
+    {
       "word": "basin",
       "concept": "shape"
     },
@@ -264,6 +272,10 @@
     {
       "word": "bear",
       "concept": "toy"
+    },
+    {
+      "word": "beast",
+      "concept": "animal"
     },
     {
       "word": "beautiful",
@@ -403,6 +415,10 @@
       "concept": "physical_property"
     },
     {
+      "word": "board",
+      "concept": "household_object"
+    },
+    {
       "word": "boat",
       "concept": "household_object"
     },
@@ -459,6 +475,10 @@
       ]
     },
     {
+      "word": "breast",
+      "concept": "body_part"
+    },
+    {
       "word": "breath",
       "concept": "air"
     },
@@ -493,6 +513,10 @@
       ]
     },
     {
+      "word": "brook",
+      "concept": "liquid"
+    },
+    {
       "word": "broom",
       "concept": "household_object"
     },
@@ -502,6 +526,10 @@
       "antonyms": [
         "sister"
       ]
+    },
+    {
+      "word": "brow",
+      "concept": "body_part"
     },
     {
       "word": "brown",
@@ -518,6 +546,10 @@
     {
       "word": "bucket",
       "concept": "household_object"
+    },
+    {
+      "word": "bud",
+      "concept": "plant"
     },
     {
       "word": "bug",
@@ -543,6 +575,10 @@
       "concept": "grouping"
     },
     {
+      "word": "bundle",
+      "concept": "grouping"
+    },
+    {
       "word": "burn",
       "concept": "heat"
     },
@@ -562,6 +598,10 @@
       "concept": "greeting_and_parting"
     },
     {
+      "word": "cage",
+      "concept": "household_object"
+    },
+    {
       "word": "call",
       "concept": "sound"
     },
@@ -577,8 +617,16 @@
       ]
     },
     {
+      "word": "cane",
+      "concept": "household_object"
+    },
+    {
       "word": "cannot",
       "concept": "can_and_cannot"
+    },
+    {
+      "word": "cap",
+      "concept": "household_object"
     },
     {
       "word": "car",
@@ -617,6 +665,10 @@
       "concept": "cause_and_effect"
     },
     {
+      "word": "cave",
+      "concept": "spatial_position"
+    },
+    {
       "word": "certain",
       "concept": "how_sure"
     },
@@ -647,6 +699,14 @@
     {
       "word": "check",
       "concept": "checking"
+    },
+    {
+      "word": "cheek",
+      "concept": "body_part"
+    },
+    {
+      "word": "chestnut",
+      "concept": "plant"
     },
     {
       "word": "child",
@@ -711,6 +771,10 @@
     {
       "word": "climb",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "cloak",
+      "concept": "household_object"
     },
     {
       "word": "clock",
@@ -851,6 +915,14 @@
       "concept": "accident"
     },
     {
+      "word": "creature",
+      "concept": "living_and_not_living"
+    },
+    {
+      "word": "creek",
+      "concept": "liquid"
+    },
+    {
       "word": "cross",
       "concept": "feeling"
     },
@@ -915,6 +987,10 @@
       "antonyms": [
         "son"
       ]
+    },
+    {
+      "word": "dawn",
+      "concept": "cycle"
     },
     {
       "word": "day",
@@ -1431,6 +1507,10 @@
       "antonyms": [
         "sink"
       ]
+    },
+    {
+      "word": "flock",
+      "concept": "grouping"
     },
     {
       "word": "flood",

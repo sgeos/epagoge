@@ -52,6 +52,20 @@ declares what it needs instead of inheriting a default nobody chose.
 NUM_CTX = 4096
 """The context this project asks for.
 
+**Raised to 6,144 on 2026-09-28 and reverted the same hour, measured.** The
+definition prompt lists every admissible word, so its size grows with the
+lexicon it is being used to build, and at 934 words it reached 3,494 tokens
+against a 3,328 budget. Raising the context worked and cost too much: the
+server went from 18 GB resident to 19 GB, **swap reached 14.9 GB of 16.4 GB
+and free memory fell to 0.1 GB**, which is the exhaustion condition this host
+has crashed under. The note below was right.
+
+**The shape is the problem, not the budget.** At the ten-thousand-word target
+the word list alone is roughly fifteen thousand tokens, so no context this
+machine can hold would be enough. The fix is to ask the teacher to write in a
+small defining vocabulary rather than in the whole lexicon. See
+`docs/decisions/DEFINING_VOCABULARY.md`.
+
 Measured 2026-09-25: a `fill_spread` prompt is **1,261 tokens** and the
 answer runs 180 to 230, so 4,096 leaves better than threefold headroom.
 Dropping to it took the server from 21 GB to 18 GB, free memory from 9 to

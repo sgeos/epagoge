@@ -271,6 +271,26 @@ each condition being compared, and whether anything else moves with it. **A
 parameter that is not reachable from a tool has never been held fixed
 deliberately**, only by default, and a default is not a control.
 
+## Added 2026-09-28. A filtered view is not a sample
+
+**A rule was written from evidence the filter had constructed.** The question
+was whether dictionary entries lead with the word. A grep for lines matching a
+capitalised word followed by "is" returned eight, all of that shape, and the
+rule followed. **The pattern could not have returned anything else.**
+
+**Measured properly, 551 of 795 entries do not lead with the word and 244 do**,
+so the rule imposed a minority convention on the majority and rejected every
+definition in the next run.
+
+**The check is to ask what the query could not have returned.** A search for
+confirmation returns confirmation. This is a different failure from reading a
+count off arithmetic, because the number was real and the population was
+wrong.
+
+**It cost one run and was caught by the result being absurd**, at zero
+acceptances where the previous run had two thirds. **A less extreme error would
+have survived**, which is the reason to record it rather than the cost.
+
 ## Autonomy boundaries
 
 **Proceed** without asking on anything bounded and already on the roadmap.

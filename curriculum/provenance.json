@@ -1,6 +1,6 @@
 {
   "_comment": "When each word entered the lexicon. 'recorded at admission' is evidence written when the decision was made. 'reconstructed from history' is the commit that first contained the word, which is what the commit was about rather than necessarily why that word was in it. 'admitted_because' is the criterion that commit's batch met, applied to every word in it: right about the pass and not necessarily about each word. Low to moderate fidelity, and lowest for the 444-word prescriptive pass, because bootstrapping a closed lexicon does not decompose into per-word reasons.",
-  "revisions": 47,
+  "revisions": 48,
   "words": {
     "able": {
       "commit": "1a5ac29cc8b6",
