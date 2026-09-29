@@ -4355,6 +4355,10 @@
       ]
     },
     {
+      "word": "taste",
+      "concept": "physical_property"
+    },
+    {
       "word": "teach",
       "concept": "being_told",
       "synonyms": [
@@ -4526,6 +4530,10 @@
       "antonyms": [
         "today"
       ]
+    },
+    {
+      "word": "tongue",
+      "concept": "body_part"
     },
     {
       "word": "tool",

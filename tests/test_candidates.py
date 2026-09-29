@@ -14,6 +14,101 @@ import define_candidates as generator  # noqa: E402
 from epagoge.vocabulary import Term, Vocabulary  # noqa: E402
 
 
+class TestSenseSpecifications(unittest.TestCase):
+    def test_invalid_specs_fail_before_teacher_access(self) -> None:
+        values: list[object] = [
+            [],
+            {},
+            {"other": {"sense": "A plant", "pos": "noun"}},
+            {"zibble": "plant"},
+            {"zibble": {"sense": "A plant"}},
+            *[
+                {"zibble": {"sense": sense, "pos": "noun"}}
+                for sense in (None, "", " ", "x" * 241, " " * 240 + "x")
+            ],
+            *[
+                {"zibble": {"sense": "A plant", "pos": pos}}
+                for pos in (None, "", "noun noun", "unknown", "mass", "periphrastic")
+            ],
+            {"zibble": {"sense": "A plant", "pos": "noun", "extra": True}},
+        ]
+        bodies = [json.dumps(value) for value in values] + [
+            '{"zibble":{"sense":"one","sense":"two","pos":"noun"}}',
+            '{"zibble":{"sense":"one","pos":"noun"},"zibble":{}}',
+            '{"zibble":',
+        ]
+        for body in bodies:
+            with self.subTest(body=body), tempfile.TemporaryDirectory() as tmp:
+                path = Path(tmp)
+                (path / "candidates.json").write_text('{"zibble":"plant"}')
+                (path / "senses.json").write_text(body)
+                with (
+                    patch.object(generator, "ask") as ask,
+                    contextlib.redirect_stderr(io.StringIO()),
+                    self.assertRaises(SystemExit),
+                ):
+                    generator.main(
+                        [
+                            "define",
+                            str(path / "candidates.json"),
+                            "--senses",
+                            str(path / "senses.json"),
+                            "--source",
+                            "manual",
+                            "--out",
+                            str(path / "out.json"),
+                            "--report",
+                            str(path / "report.json"),
+                        ]
+                    )
+                ask.assert_not_called()
+                self.assertFalse((path / "out.json").exists())
+
+    def test_specs_reach_prompt_report_and_proposal(self) -> None:
+        specs = {
+            "zibble": {"sense": "Material sense only", "pos": "noun mass"},
+            "zorple": {"sense": "Physical quality only", "pos": "adjective"},
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            (path / "candidates.json").write_text(
+                '{"zibble":"material","zorple":"physical_property"}'
+            )
+            senses = path / "senses.json"
+            senses.write_text(json.dumps(specs))
+            with (
+                patch.object(
+                    generator,
+                    "ask",
+                    return_value=(
+                        "zibble: A thing you can hold.\nzorple: A very small thing."
+                    ),
+                ) as ask,
+                contextlib.redirect_stdout(io.StringIO()),
+                contextlib.redirect_stderr(io.StringIO()),
+            ):
+                generator.main(
+                    [
+                        "define",
+                        str(path / "candidates.json"),
+                        "--senses",
+                        str(senses),
+                        "--source",
+                        "manual",
+                        "--out",
+                        str(path / "out.json"),
+                        "--report",
+                        str(path / "report.json"),
+                    ]
+                )
+            report = json.loads((path / "report.json").read_text())
+            self.assertEqual(report["sense_specifications"], specs)
+            self.assertEqual(report["sense_input_hash"], generator.file_digest(senses))
+            for word, spec in specs.items():
+                self.assertIn(spec["sense"], ask.call_args.args[0])
+                self.assertEqual(report["accepted"][word]["pos"], spec["pos"])
+
+
 class TestDefiningSelection(unittest.TestCase):
     def test_selection_retains_seed_and_displaces_ranked_words(self) -> None:
         vocabulary = Vocabulary(
@@ -264,6 +359,9 @@ class TestCandidates(unittest.TestCase):
             )
             self.assertEqual(set(data["outcomes"]), {"zibble", "zorple", "zapple"})
             self.assertEqual(data["accepted"], json.loads(out.read_text()))
+            self.assertEqual(data["sense_specifications"], {})
+            self.assertIsNone(data["sense_input_hash"])
+            self.assertEqual(data["accepted"]["zibble"]["pos"], "noun")
 
     def test_teacher_failure_is_recorded_as_deferred(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

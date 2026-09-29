@@ -13,12 +13,12 @@ in `PROCESS_STRATEGY.md`.
 ## State being handed over
 
 The operator authorized publication of the accumulated continuity repairs,
-lexical increments and current inflection review on 2026-09-28. They form one
+lexical increments and subsequent bounded reviews on 2026-09-28. They form one
 publication scope. Earlier descriptions of this work as uncommitted refer to
 the earlier sessions. Check the actual git status and remote revision before
 assuming a later session has the same tree.
 
-The local gate most recently passed with 599 tests and no skips, zero type
+The local gate most recently passed with 601 tests and no skips, zero type
 errors or warnings, 96 percent core coverage and 92 percent reported training
 coverage. The disclosure scan passed. Remote continuous-integration status
 must be checked separately for the published revision.
@@ -28,30 +28,34 @@ publication scope. Establish a new brief and condition for later work.
 
 ## Completed work and next development target
 
-The latest review is `evals/review/level_2_inflections/README.md`. All 28
-initially undeclared level-two entries have a decision. Fifteen received
-reviewed noun or verb declarations. Thirteen remain explicitly deferred.
-Fourteen forms became newly explicit and newly licensed, including bunches.
-The review preserved definitions, concepts and original admission sources.
+The latest review is `evals/review/level_2_taste_senses/README.md`. The candidate
+generator accepts optional explicit senses and parts of speech for exactly
+the candidate set. Malformed specifications fail before teacher access.
+Prompts and reports retain the specifications and their input hash.
 
-Explicit term surface forms through level two increased from 2,259 to 2,273.
-Level two still admits 964 distinct headwords, leaving 9,036 to the
-approximate ten-thousand-word target. Level one remains at 849. Required
-definition coverage is 812 of 812 at level one and 927 of 927 at level two.
-Both dictionaries remain fully grounded. Preservation hashes match level-one
-books, reference weights, the level-two dictionary and earlier review artifacts.
+The four-word batch mechanically accepted taste. Agent adaptations admitted
+tongue and taste with reviewed noun plurals. Sugar and sweet remain deferred
+because their replies define each through the other and the sugar reply lacks
+independently distinguishing content. Explicit sense instructions do not
+replace semantic review or dictionary-grounding checks.
 
-The earlier candidate-generator work remains available. Optional defining
-words occupy slots within the existing 700-word cap, and reports retain both
-requested selections and the actual list. Teacher context remains 4096 tokens.
-A general acceptance improvement is unmeasured.
+Level two now admits 966 distinct headwords, leaving 9,034 to the approximate
+ten-thousand-word target. Level one remains at 849. Required definition
+coverage is 812 of 812 at level one and 929 of 929 at level two. Both
+dictionaries remain fully grounded. Preservation hashes match level-one
+books, reference weights and all earlier review artifacts.
 
-The next recommended investigation remains a bounded defining-sense review
-of taste, sugar, sweet and the fruit usages of skin and stone. Crash also
-needs a deliberate noun-and-verb sense decision. The missing plural of bunch
-is now repaired. No new sense is authorized by a recommendation alone.
-Independent semantic expert review remains unavailable. Experimental,
-licensing and later-schedule decisions remain reserved to the operator.
+Earlier repairs remain in place. Fifteen part-of-speech declarations and
+fourteen new forms were reviewed in level_2_inflections. Optional defining
+words still occupy slots within the existing 700-word list, and the teacher
+context remains 4096 tokens. No general acceptance improvement is measured.
+
+The next recommended investigation is independently grounded defining
+language for sugar and sweet, with sour as a possible additional taste
+candidate. Fruit senses of skin and stone and the noun-and-verb treatment of
+crash remain separate unresolved reviews. No new sense is authorized by this
+recommendation alone. Independent expert semantic review is unavailable.
+Experimental, licensing and later-schedule decisions remain with the operator.
 
 ## Starting the next Codex session
 
@@ -90,8 +94,8 @@ above. Re-run the validators before using any count after corpus changes.
 The recorded increment can also be checked against the current authoring tree
 
     .venv/bin/python tools/measure_lexicon_increment.py \
-      evals/review/level_2_fruit_retry \
-      --check evals/review/level_2_fruit_retry/measurement.json
+      evals/review/level_2_taste_senses \
+      --check evals/review/level_2_taste_senses/measurement.json
 
 The generator requires explicit source evidence, output and report paths.
 Its report retains prompts, replies, every candidate outcome and counts.
@@ -155,7 +159,7 @@ as well as membership. Retired direct admissions retain their evidence.
 The audit found the teacher service, its model, local weights and scan sources
 present. Metal was visible outside the sandbox. Sandbox failures must not be
 reported as missing host capabilities. The teacher context remains 4,096.
-The latest pre-generation check measured approximately 15.3 GB of swap in use. Check current memory
+The latest pre-generation check measured approximately 13.9 GB of swap in use. Check current memory
 before sustained generation or concurrent training.
 
 Run the local gate, inspect its exit status, and check continuous integration

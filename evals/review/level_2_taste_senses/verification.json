@@ -1,0 +1,26 @@
+{
+  "full_gate": {
+    "exit_code": 0,
+    "test_runs": [
+      "Ran 601 tests in 6.394s",
+      "Ran 601 tests in 8.295s"
+    ],
+    "skipped": 0,
+    "type_errors": 0,
+    "type_warnings": 0,
+    "core_coverage_percent": 96,
+    "training_coverage_percent": 92,
+    "disclosure_scan": "clean",
+    "log_sha256": "c1faebee5af00e4f22ca15b6b27080434fe40ac078fbe929fd6724ef36d83888"
+  },
+  "measurement_hash": "4eab98289d13fc6e2550f6cd758021cc3b1b276f8e2dda698af149c42d91294d",
+  "sense_specification_hash": "9d27b2aef5f8178d400f8cba8f21bafe506e9d0794fa2a20eee5d92fb886506c",
+  "prior_artifacts_preserved": true,
+  "level_one_books_and_reference_preserved": true,
+  "completion_condition_characters": 1355,
+  "source_hashes": {
+    "generators/define_candidates.py": "21c0b2c66f8b74e3f37fa2db8014d9cb977d07e28ec30efba86db014dc0a320e",
+    "tests/test_candidates.py": "706e9e89d96e17be17486ec07daed7eb24953b50ade0b7ce93769528318b0b15"
+  },
+  "limits": "Agent semantic review without independent expert validation. No general throughput or curriculum benefit is established. Remote publication and workflow verification are recorded in the session transcript."
+}

@@ -1,0 +1,12 @@
+{
+  "memory": {
+    "swap_used_megabytes": 13921.62,
+    "swap_total_megabytes": 15360.0,
+    "free_pages": 14705,
+    "page_size_bytes": 16384
+  },
+  "teacher_context": 4096,
+  "attempt_limit": 1,
+  "concurrent_training": false,
+  "limits": "Point-in-time memory measurement. Teacher replies are nondeterministic."
+}

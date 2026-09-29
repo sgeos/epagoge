@@ -28,6 +28,11 @@ Input is JSON mapping a word to the concept it names:
 
 Output is what `tools/admit.py` consumes, with the source recorded.
 
+Optional ``--senses`` reads an object keyed by exactly the candidate words.
+Each value contains ``sense`` and ``pos`` strings. Sense descriptions are
+limited to 240 characters and parts of speech override the batch default.
+These instructions constrain meaning without licensing additional words.
+
     PYTHONPATH=src:generators python3 generators/define_candidates.py \\
       candidates.json --level 2 --source "manual proposals" \
       --out batch.json --report report.json
@@ -42,7 +47,7 @@ import sys
 from collections import Counter
 from collections.abc import Sequence
 from pathlib import Path
-from typing import cast
+from typing import TypedDict, cast
 
 from epagoge import prompt as prompts
 from epagoge.artifacts import check_outputs, digest, file_digest, write_json
@@ -128,16 +133,55 @@ def defining_vocabulary(
     return sorted(required | set(ranked[:room]))
 
 
-def load_candidates(path: Path) -> dict[str, str]:
-    def unique(pairs: list[tuple[str, object]]) -> dict[str, object]:
-        result: dict[str, object] = {}
-        for key, value in pairs:
-            if key in result:
-                raise ValueError(f"duplicate candidate {key}")
-            result[key] = value
-        return result
+class SenseSpec(TypedDict):
+    sense: str
+    pos: str
 
-    raw = json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=unique)
+
+def unique_fields(pairs: list[tuple[str, object]]) -> dict[str, object]:
+    result: dict[str, object] = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f"duplicate field {key}")
+        result[key] = value
+    return result
+
+
+def load_senses(path: Path, candidates: dict[str, str]) -> dict[str, SenseSpec]:
+    """Reject ambiguous specifications before crossing the teacher boundary."""
+    raw = json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=unique_fields)
+    if not isinstance(raw, dict) or set(cast(dict[str, object], raw)) != set(
+        candidates
+    ):
+        raise ValueError("sense specifications must cover exactly the candidate set")
+    specs: dict[str, SenseSpec] = {}
+    for word, value in cast(dict[str, object], raw).items():
+        if not isinstance(value, dict) or set(cast(dict[str, object], value)) != {
+            "sense",
+            "pos",
+        }:
+            raise ValueError(f"{word}: expected only sense and pos fields")
+        row = cast(dict[str, object], value)
+        sense, pos = row["sense"], row["pos"]
+        if not isinstance(sense, str) or not sense.strip() or len(sense) > 240:
+            raise ValueError(f"{word}: sense must contain 1 to 240 characters")
+        if not isinstance(pos, str):
+            raise ValueError(f"{word}: pos must be text")
+        parts = pos.split()
+        if (
+            not parts
+            or len(set(parts)) != len(parts)
+            or set(parts) - set(RECOGNISED_POS)
+            or ("mass" in parts and "noun" not in parts)
+            or ("periphrastic" in parts and "adjective" not in parts)
+        ):
+            raise ValueError(f"{word}: invalid parts of speech")
+        specs[word] = {"sense": sense, "pos": pos}
+    return specs
+
+
+def load_candidates(path: Path) -> dict[str, str]:
+    raw = json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=unique_fields)
     if not isinstance(raw, dict):
         raise ValueError(f"{path}: expected an object mapping word to concept")
     out: dict[str, str] = {}
@@ -159,6 +203,11 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--attempts", type=int, default=3)
     parser.add_argument("--timeout", type=int, default=240)
     parser.add_argument("--pos", default="noun", help="part of speech for the batch")
+    parser.add_argument(
+        "--senses",
+        type=Path,
+        help="optional JSON mapping every candidate to sense and pos fields",
+    )
     parser.add_argument(
         "--defining-word",
         action="append",
@@ -190,6 +239,7 @@ def main(argv: list[str]) -> int:
         parser.error("unrecognised or empty parts of speech")
     try:
         candidates = load_candidates(args.file)
+        senses = load_senses(args.senses, candidates) if args.senses else {}
         graph = ConceptGraph.load(ROOT / "curriculum/graph/concepts.json")
         if set(candidates.values()) - graph.nodes.keys():
             raise ValueError("candidates name unknown concepts")
@@ -225,6 +275,13 @@ def main(argv: list[str]) -> int:
             question = prompts.definitions(
                 missing, args.level, admissible, vocabulary.substitutions
             )
+            if senses:
+                question += (
+                    "\n\nDefine only the following senses and parts of speech. "
+                    "These notes describe meaning, not additional licensed words. "
+                    "Keep the definitions inside the word list above.\n"
+                    + json.dumps({word: senses[word] for word, _ in missing})
+                )
             events: list[dict[str, object]] = []
             request: dict[str, object] = {
                 "requested": [w for w, _ in missing],
@@ -267,7 +324,7 @@ def main(argv: list[str]) -> int:
                 events.append({"word": word, "status": "mechanically_accepted"})
                 accepted[word] = {
                     "concept": wanted[word],
-                    "pos": args.pos,
+                    "pos": senses[word]["pos"] if senses else args.pos,
                     "definition": text,
                     "source": args.source,
                 }
@@ -295,6 +352,8 @@ def main(argv: list[str]) -> int:
         "teacher": MODEL,
         "context": NUM_CTX,
         "attempt_limit": args.attempts,
+        "sense_specifications": senses,
+        "sense_input_hash": file_digest(args.senses) if args.senses else None,
         "selected_defining_words": args.defining_word,
         "defining_vocabulary": admissible,
         "requests": requests,

@@ -8043,6 +8043,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "taste": {
+      "source": "Manual defining-sense proposals from retained fruit rejection evidence, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_taste_senses/review.json",
+      "evidence": "recorded at admission"
+    },
     "teach": {
       "commit": "ec0c962714b8",
       "date": "2026-09-25",
@@ -8348,6 +8352,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "tongue": {
+      "source": "Manual defining-sense proposals from retained fruit rejection evidence, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_taste_senses/review.json",
+      "evidence": "recorded at admission"
     },
     "tool": {
       "commit": "1a5ac29cc8b6",

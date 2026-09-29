@@ -1,21 +1,24 @@
 Ordering is not a completion criterion.
 
-The brief identifies current goals, the inflection-review scope, rationale,
+The brief records current goals, the bounded sense-review scope, rationale,
 prior failures and reserved decisions.
 
-A retained review accounts for all 28 initially undeclared level-two entries.
-Clear noun and verb cases have reviewed declarations and actual forms.
-Other cases have explicit deferrals. Bunches is licensed at level two.
-Original admission sources, definitions and concept assignments are preserved.
+The candidate generator supports optional explicit senses and parts of speech
+for exactly its candidate set. Malformed, duplicate, incomplete, excessive
+or unknown specification fields fail before teacher access. Tests cover those
+boundaries and unchanged default behavior. Prompts and reports retain the
+specified senses, and proposals use the specified parts of speech.
 
-Measurements distinguish headwords, explicit surface forms and actual
-licensing changes. Headword counts and the remaining target gap are accurate.
-Both dictionaries retain complete grounded coverage. Baseline hashes match
-level-one books, reference weights and earlier review artifacts.
+New evidence accounts for tongue, taste, sugar and sweet with retained source
+information, replies, mechanical outcomes and reasoned admission or deferral.
+Admitted definitions and actual forms have explicit semantic review. Agent
+edits are identified. No circular or ungrounded definition is admitted.
 
-The full gate passes without skipped tests or weakened checks. The handoff
-reflects the delivered state and remaining limits. No general throughput or
-curriculum benefit is claimed. Confirmatory training remains blocked.
+Measurements match the final tree and report counts, the remaining gap and
+complete grounded dictionary coverage. Earlier evidence, level-one books and
+reference weights match baseline hashes. Teacher context remains 4096 tokens.
+The handoff records remaining limits without claiming general throughput or
+curriculum benefit. Confirmatory training remains blocked.
 
-All non-ignored work is committed, the working tree is clean, and the remote
-contains the resulting commit. Ignored artifacts remain excluded.
+The full gate passes without skipped tests or weakened checks. All non-ignored
+work is committed and present on the remote, and the working tree is clean.

@@ -7,7 +7,7 @@ falsification-oriented foundation model.
 
 **Status.** Under implementation. The handoff audit on 2026-09-28 verified
 523 level-one books over 9,131 records and a lexicon admitting 849 distinct
-words at level one. The current tree admits 964 words through level two.
+words at level one. The current tree admits 966 words through level two.
 Levels two and above remain incomplete. Current work and restart commands are in `docs/process/HANDOFF.md`.
 
 Corpus generation uses a local instance of

@@ -1,0 +1,42 @@
+{
+  "tongue": {
+    "decision": "admit",
+    "reason": "Mouth-organ sense. Replace the taste dependency with movement, eating and speaking so that tongue grounds independently of taste. Body_part fits the physical organ. Review the regular count-noun plural tongues. Exclude language and projecting-object senses.",
+    "mechanical_outcome": "deferred",
+    "definition_origin": "Agent adaptation of retained teacher reply",
+    "definition": "The soft part inside your mouth that you can move to help you eat and speak.",
+    "concept": "body_part",
+    "pos": "noun",
+    "source": "Manual defining-sense proposals from retained fruit rejection evidence, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_taste_senses/review.json",
+    "reviewed_forms": [
+      "tongue",
+      "tongues"
+    ]
+  },
+  "taste": {
+    "decision": "admit",
+    "reason": "Food-or-drink sensory-quality sense. The mechanically accepted reply includes temperature and texture without distinction. Narrow it by excluding those properties and naming the independently grounded tongue. Physical_property is used for the perceived food quality. Retain the count noun and tastes for distinct qualities. No preference or sampling-verb sense is admitted.",
+    "mechanical_outcome": "mechanically_accepted",
+    "definition_origin": "Agent adaptation of retained teacher reply",
+    "definition": "What you feel with your tongue when food or drink touches it, apart from how hot, cold, hard or soft it is.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "Manual defining-sense proposals from retained fruit rejection evidence, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_taste_senses/review.json",
+    "reviewed_forms": [
+      "taste",
+      "tastes"
+    ]
+  },
+  "sugar": {
+    "decision": "defer",
+    "reason": "The reply defines sugar through sweet, and sweet through sugar. White material is not a distinguishing account of ordinary table sugar. Defer until an independently grounded definition preserves the intended food-material sense. No mass-noun forms are admitted.",
+    "mechanical_outcome": "deferred",
+    "forms_review": "No forms admitted. Reconsider only with an independently grounded sense-specific definition."
+  },
+  "sweet": {
+    "decision": "defer",
+    "reason": "The reply depends on sugar, whose current proposal depends on sweet. Defer rather than admit the cycle or replace the sense with general pleasantness. The intended adjective would need reviewed sweeter and sweetest forms, but no forms are admitted.",
+    "mechanical_outcome": "deferred",
+    "forms_review": "No forms admitted. Reconsider only with an independently grounded sense-specific definition."
+  }
+}

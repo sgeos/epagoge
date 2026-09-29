@@ -7745,6 +7745,16 @@
       "pos": "noun"
     },
     {
+      "word": "taste",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "noun",
+      "source": "Manual defining-sense proposals from retained fruit rejection evidence, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_taste_senses/review.json",
+      "forms": [
+        "tastes"
+      ]
+    },
+    {
       "word": "teach",
       "concept": "being_told",
       "level": 1,
@@ -8020,6 +8030,16 @@
       "word": "tomorrow",
       "concept": "weather",
       "level": 1
+    },
+    {
+      "word": "tongue",
+      "concept": "body_part",
+      "level": 2,
+      "pos": "noun",
+      "source": "Manual defining-sense proposals from retained fruit rejection evidence, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_taste_senses/review.json",
+      "forms": [
+        "tongues"
+      ]
     },
     {
       "word": "tool",

@@ -1,0 +1,18 @@
+{
+  "tongue": {
+    "sense": "The movable organ inside the mouth used in eating and speaking. Exclude language and projecting-object senses.",
+    "pos": "noun"
+  },
+  "taste": {
+    "sense": "The sensory quality detected in the mouth from food or drink. Exclude preference, sampling and texture senses.",
+    "pos": "noun"
+  },
+  "sugar": {
+    "sense": "Ordinary table sugar used as a food ingredient. Exclude a general chemical class or figurative sense. Do not assume that anything white or pleasant is sugar.",
+    "pos": "noun mass"
+  },
+  "sweet": {
+    "sense": "The adjective for the taste characteristic of sugar. Exclude kind, pleasant, musical and other figurative senses.",
+    "pos": "adjective"
+  }
+}

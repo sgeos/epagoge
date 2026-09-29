@@ -2,78 +2,75 @@
 
 ## Present goals
 
-The priority remains completing the level-two lexicon before drafting its
-content. The current tree has 964 distinct words through level two, leaving
-9,036 to the approximate ten-thousand-word target. Later goals include
-schedules, expanded evidence-conditioned-assent evaluation and a complete
-experimental protocol. Confirmatory training remains blocked. Experimental,
-licensing and later-schedule decisions remain reserved to the operator.
+Complete the level-two lexicon before drafting its content. The verified
+baseline has 964 headwords through level two and a gap of 9,036 to the
+approximate target. Later goals include schedules, expanded evaluation and
+the experimental protocol. Confirmatory training remains blocked. Licensing,
+experimental and later-schedule decisions remain with the operator.
 
-## Recommended scope
+## Recommended work
 
-Review all 28 level-two entries with no declared part of speech. Repair clear
-noun and verb inflection gaps using their existing definitions and concept
-assignments. The previous generation report rejected bunches even though
-bunch was already admitted. Without a noun declaration, the inflection
-validator cannot require its plural. This is direct evidence of a usability
-gap, not evidence that adding headwords is unnecessary.
+Review tongue, taste, sugar and sweet with explicit senses and parts of
+speech. Tongue is the movable mouth organ and belongs to body_part. Taste is
+the sensory quality of food or drink and belongs to physical_property. Sugar
+is ordinary table sugar and belongs to material. Sweet is the taste adjective
+and belongs to physical_property. These are proposed assignments to review,
+not permission to admit the words. Tongue supports a grounded taste account.
+Sugar and sweet require special scrutiny for circularity and distinguishing
+content. Food colour or general pleasantness alone is insufficient.
 
-The bounded repair candidates are the count nouns accident, account, amount,
-bicycle, bunch, chain, column, digit, mishap, quantity and system, and the
-verbs fail, rearrange, remove and subtract. Review the existing senses and
-actual forms. Record every other entry as deferred with a reason. Preserve
-existing forms and admission sources. Do not manufacture additional senses.
-No teacher generation is necessary for this review.
+Add optional per-candidate sense specifications to the existing generator.
+A specification records a bounded nonblank sense description and recognized
+parts of speech for exactly the candidate set. Invalid structure, duplicate
+keys, missing or extra candidates, unknown fields, blank senses and invalid
+parts of speech fail before teacher access. With no specification, existing
+behavior remains unchanged. The teacher receives the intended senses as
+instructions, and the report retains the exact specifications and file hash.
+Per-candidate parts of speech reach the mechanical proposal. Sense notes do
+not license words or establish correctness.
 
-Record the entire starting inventory and candidate-by-candidate outcomes in
-evals/review/level_2_inflections. Measure headword and explicit surface-form
-counts separately. Verify that bunches is licensed at level two and that
-new forms do not become licensed at level one. Verify complete dictionary
-coverage and grounding. Preserve all earlier review artifacts, all level-one
-books, reference weights and dictionary definitions.
+Retain a bounded teacher run and an entry-by-entry review in
+evals/review/level_2_taste_senses. Admit only suitable sourced definitions
+that retain complete grounded coverage. Review actual forms, including
+comparatives if sweet is admitted and the mass qualifier for table sugar.
+Retain all mechanical outcomes, semantic decisions and agent edits. A
+candidate may be deferred rather than admitted through a weak definition.
+Measure final counts and the remaining gap, and preserve earlier records,
+level-one books and the reference checkpoint. Use the existing context limit
+of 4096 tokens and check host memory before sequential generation.
 
-## Publication scope
+## Rationale and prior failures
 
-The operator explicitly authorizes committing and pushing all non-ignored
-work, including the accumulated continuity repairs, tests, lockfile and
-lexical evidence. Inspect the combined changes, run the full gate and publish
-the resulting tree to the configured remote without rewriting remote history.
-Do not force-add ignored artifacts. Resolve any actual gate or publication
-failure and report the observed outcome. Update the handoff so that historical
-uncommitted-state language is not presented as current guidance.
+The fruit batch repeatedly requested taste and sweet. Concept labels alone
+do not identify a word sense. Existing skin and stone definitions showed that
+surface licensing can pass while the intended meaning is unsupported.
+Explicit specifications make the intended meaning auditable but their effect
+on acceptance is unmeasured. Do not claim a throughput improvement from this
+batch or treat a compliant prompt as proof that the reply followed it.
 
-## Prior failures and wrong turns
+Do not define sugar through sweet and sweet through sugar without independent
+grounding. Do not accept a list of examples as a sufficient definition. Do not
+confuse taste with texture, temperature, preference or every sensation in the
+mouth. Do not declare a figurative sense merely because it is common.
 
-Do not claim headword growth from added inflections. A word can already be
-accepted through the validator's suffix handling without appearing among
-explicit forms. Measure both explicit forms and actual licensing changes.
+Do not expand the seed, enlarge the teacher context, weaken validators or
+manufacture forms to force admissions. Do not alter prior evidence to make
+historical counts current. Separate mechanical acceptance, semantic review
+and final admission counts. Agent review has no independent expert audit.
 
-Do not infer a part of speech from an ending or a filtered sample. Account
-has a reporting definition here, not an arithmetic sense. Crash has a noun
-definition but a past-tense form and needs a separate sense decision. Number
-words and words used as modifiers need explicit later classification rather
-than automatic plural or comparison forms. Missing declarations are an
-inventory for judgement, not permission to label every entry a noun.
+## Verification and publication
 
-Do not rewrite original admission sources to imply this review introduced
-existing words. Store repair evidence separately. Do not relax the inflection
-validator, expand the seed, alter definitions to hide ambiguity, or add the
-fruit senses of stone and skin without a separate review.
+Regression tests exercise specification boundaries without a live teacher.
+The full gate must pass. Update the handoff with measured results and limits.
+The operator authorizes committing and pushing all non-ignored work. Preserve
+ignored artifacts and verify the published revision and clean working tree.
+Ordering is not a completion criterion.
 
-Do not lose existing uncommitted work when preparing the commit. Preserve
-historic reports even where their exact-tree measurements are no longer
-current. The gate must pass on the actual publication tree. Local success is
-not evidence of remote continuous-integration success. Record each separately.
+## Delivered outcome
 
-No throughput or curriculum benefit is established by this scope. Independent
-semantic expert review remains unavailable. Ordering is not a completion
-criterion.
-
-## Delivered lexical result
-
-The review repaired 15 entries and explicitly deferred 13. Fourteen forms
-became newly explicit and newly licensed at level two. Explicit term surface
-forms increased from 2,259 to 2,273. Level-one licensing is unchanged.
-Headwords remain at 964 through level two and the remaining gap is 9,036.
-Both dictionaries remain fully grounded with complete required coverage.
-The retained review records every decision and preservation measurement.
+The generator now supports optional validated sense specifications and retains
+them in prompts and reports. The four-word batch mechanically accepted one
+reply. Agent review admitted tongue and taste after revisions, and deferred
+sugar and sweet because of circularity and inadequate distinguishing content.
+Level two now has 966 headwords and a remaining gap of 9,034. Both dictionaries
+retain complete grounded coverage. The new review retains every outcome.

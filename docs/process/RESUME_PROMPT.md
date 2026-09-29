@@ -7,7 +7,7 @@ preserve the continuity repairs, tests, lockfile and recorded lexical work. Veri
 The previous bounded increment is complete. Read its generation and review
 records under evals/review/level_2_increment, evals/review/level_2_foundations
 evals/review/level_2_foundations_followup, evals/review/level_2_fruit_retry
-and evals/review/level_2_inflections. Recommend a small set of
+evals/review/level_2_inflections and evals/review/level_2_taste_senses. Recommend a small set of
 foundational defining words and explicit senses that addresses the observed
 rejections. Draft a new CURRENT_BRIEF.md and a COMPLETION_CONDITION.md under
 4000 characters for that scope, then complete the specified work. The condition

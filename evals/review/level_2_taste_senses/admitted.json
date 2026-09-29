@@ -1,0 +1,14 @@
+{
+  "tongue": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "The soft part inside your mouth that you can move to help you eat and speak.",
+    "source": "Manual defining-sense proposals from retained fruit rejection evidence, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_taste_senses/review.json"
+  },
+  "taste": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "What you feel with your tongue when food or drink touches it, apart from how hot, cold, hard or soft it is.",
+    "source": "Manual defining-sense proposals from retained fruit rejection evidence, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_taste_senses/review.json"
+  }
+}

@@ -118,8 +118,10 @@
     "dict.2.summer": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:summer"}, "defines": {"kind": "word", "target": "summer"}},
     "dict.2.sunset": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sunset"}, "defines": {"kind": "word", "target": "sunset"}},
     "dict.2.system": {"concepts": ["component_and_system"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:system"}, "defines": {"kind": "word", "target": "system"}},
+    "dict.2.taste": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:taste"}, "defines": {"kind": "word", "target": "taste"}},
     "dict.2.thirty": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thirty"}, "defines": {"kind": "word", "target": "thirty"}},
     "dict.2.tide": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tide"}, "defines": {"kind": "word", "target": "tide"}},
+    "dict.2.tongue": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tongue"}, "defines": {"kind": "word", "target": "tongue"}},
     "dict.2.twelve": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:twelve"}, "defines": {"kind": "word", "target": "twelve"}},
     "dict.2.twenty": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:twenty"}, "defines": {"kind": "word", "target": "twenty"}},
     "dict.2.unchanged": {"concepts": ["conservation_of_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unchanged"}, "defines": {"kind": "word", "target": "unchanged"}},
@@ -459,11 +461,17 @@ Sunset is the time when the sun goes down.
 [dict.2.system]
 A system is many parts that work together as one thing.
 
+[dict.2.taste]
+What you feel with your tongue when food or drink touches it, apart from how hot, cold, hard or soft it is.
+
 [dict.2.thirty]
 Thirty is three tens.
 
 [dict.2.tide]
 A tide is the way the sea goes up and then down every day.
+
+[dict.2.tongue]
+The soft part inside your mouth that you can move to help you eat and speak.
 
 [dict.2.twelve]
 Twelve is two more than ten.
