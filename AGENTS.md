@@ -5,6 +5,50 @@ Guidance for automated agents working in this repository.
 The authoritative instructions live in [`CLAUDE.md`](CLAUDE.md). Read that
 file first. It is agent-agnostic in content despite its name.
 
+## What runs in a fresh clone, and what needs the authoring host
+
+**Added 2026-09-28 for a handoff to a different agent.** Four things this
+project uses are deliberately not in version control, so a clone has the
+repository and not the workshop.
+
+| Absent from a clone | Why | What it blocks |
+| --- | --- | --- |
+| `evals/pilot/*.pt` | Reproducible from the corpus and a seed | `talk.py`, `elenchos.py`, `retention.py` until a checkpoint is trained |
+| `tmp/` | Scratch, including the vendored scan sources | `scan_lexicon.py` until the sources are re-fetched |
+| `corpus/` | Derived, rebuilt by `build_corpus.py` | Nothing. Rebuild it |
+| `secret/` | Never tracked | The disclosure scan, which then skips loudly |
+
+**The teacher model is local and is not a dependency a clone can install.** It
+is named in `generators/TEACHER.md` and served over Ollama on the authoring
+host. **Every generator needs it** and none of them will run without it.
+
+**Training needs the optional dependency group** and a device. The figures in
+`evals/pilot/` were measured on Apple Metal; a run elsewhere will not reproduce
+them bitwise, which `CLAUDE.md` already states as a standing obligation rather
+than a surprise.
+
+### What this leaves fully available
+
+**The gate, and everything it checks.** Lint, formatting, strict type checking,
+the tests, the coverage floor, and every graph, corpus, schedule, book, closure
+and thesaurus validation. **Continuous integration runs exactly this and is
+green**, which is the proof that the tree validates without the workshop.
+
+**All lexicon and curriculum work that does not need the teacher**: judgement
+on candidates, concept assignment, schedules, specifications and decision
+records.
+
+### One obligation a clone cannot discharge
+
+**`CLAUDE.md` requires reading the code-name discipline before writing tracked
+prose, and that document is inside `secret/`.** An agent without it cannot
+check its own writing against the rule it is being asked to follow, and the
+disclosure scan that would catch a mistake skips for the same reason.
+
+**This is the operator's call and is flagged rather than worked around.** The
+options are to supply `secret/` to the environment, to leave tracked prose to
+an agent that has it, or to accept the exposure knowingly.
+
 ## Summary of the obligations that matter most here
 
 - The curriculum-ordering benefit is a hypothesis under test, never a

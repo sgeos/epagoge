@@ -1,5 +1,215 @@
 # Handoff Prompt
 
+**Refreshed 2026-09-28 at the close of a session that ran unattended, and
+written for a different agent than the one that wrote it.**
+
+**READ `AGENTS.md` FIRST IF YOU ARE NOT THE AUTHORING AGENT.** It says what a
+clone has and what it does not, which is the difference between this repository
+and the workshop it was built in. Four things are deliberately untracked and
+one of them makes an obligation in `CLAUDE.md` undischargeable. That is flagged
+for the operator, not solved.
+
+**NO COMMIT HASH IS STAMPED HERE, deliberately.** A stamp naming the commit
+that contains it is impossible and one naming the parent is off by one the
+moment anything else lands. **Validate by ancestry and by content.**
+
+## The tree is clean
+
+**Nothing is running, nothing is uncommitted, continuous integration is green
+on the pushed head.** The loop that drove this session is stopped.
+
+## What a resuming session should do first
+
+1. Run the validity check below and report the handoff valid or stale.
+2. **Check continuous integration separately.** A green local gate is not a
+   green clone, and the two have now diverged five times.
+3. **Read the failure classes in `PROCESS_STRATEGY.md` before measuring
+   anything.** They are the most valuable thing in this repository and three of
+   them were added by failures that happened *after* being written down.
+4. Read `CURRENT_BRIEF.md`, then the named work below.
+5. **Wait for the human prompt.**
+
+## Validity
+
+**Branch**: `main`, pushed to `origin`, `github.com/sgeos/epagoge`, public.
+
+**Ancestry cannot be checked by commit identity.** Every hash changed on
+2026-09-25 when the history was rewritten twice. **Check by content**: the
+first commit's `README.md` begins `# Epagoge`, and grepping every commit
+message for the former name returns 0.
+
+**Content, each read from a tool on 2026-09-28.**
+
+1. `./tools/check.sh` reports **ALL CHECKS PASSED** over **twenty-two** checks
+   and **exits 0**.
+2. The suite reports **579** tests.
+3. `curriculum/vocabulary.json` holds **1,036 terms**, **178** core, **37**
+   ostensive. **849** distinct words admissible at level one and **954** at
+   level two. **77 terms carry a source recorded at admission.**
+4. **Both dictionaries are self-hosting.** Level one defines **812 of 812**
+   words needing one; level two **917 of 917**. Closure 100 percent at both,
+   seed 257, nothing blocked and no cycles.
+5. `curriculum/books/level_1/` holds **523** books over **9,131** records. The
+   word count is deliberately **not** asserted as an equality, since any later
+   fill raises it. It was **330,710**, summed from the per-book figures the
+   books check prints. **Check it is at least that.**
+6. `tools/stamp_books.py --level 1 --check` reports **523 books, 0 missing a
+   field**.
+7. **Unused surface forms 395**, of 2,049 admitted, and **headwords never used
+   at all is 0**.
+8. **All 96 level-one schedule units carry a question-and-answer book**, every
+   one at its full sixteen spreads.
+9. **Concept pairs realised: 312 of 8,128**, counted as the union across a
+   content book's own records with the dictionary books excluded. **Two other
+   counting methods give 88 percent and 0.5 percent and both are wrong**; the
+   reasons are in `../decisions/COMBINATORIAL_RICHNESS.md`.
+10. `git ls-files secret | wc -l` reports **0**, and the disclosure scan
+    reports it covered tracked and untracked files, line by line and with
+    whitespace collapsed. **A scan that does not say all three is the old one.**
+11. **`evals/pilot/level_1.pt` is not in the repository** and cannot be. It is
+    trained at the reference configuration on the authoring host. A clone must
+    retrain before `talk.py`, `elenchos.py` or `retention.py` will run.
+
+## The state, and what changed in this session
+
+**The frontier moved and the reason is one flag.**
+`evals/pilot/REFERENCE_CONFIGURATION.md` is the answer to "what should I train
+with". **Muon at 3.066 held-out over three seeds against 3.183 for the
+defaults**, on 344,348 training tokens at 3,400 steps, which is 20.2 epochs.
+**0.117 nats, more than the entire previous reference configuration bought.**
+
+**Every unit can now show a question being answered.** 96 of 96, from 42.
+Question marks went 646 to 1,381, one per 24.7 sentences from one per 49.
+**They contribute zero new concept pairs**, measured, because a question book
+teaches its own unit's concepts and its narrative sibling already realised
+them.
+
+**`elenchos` exists and has run.** It was an empty directory. It now has a
+specification written before any probe, twenty probes validated against the
+lexicon by a test, a scorer, and a first result. **The result is a floor and
+the control is what shows it**: the model appears to resist pressure perfectly
+until you see it does the same thing when agreed with.
+
+**The lexicon pipeline has no hole in it.** `define_candidates.py` is the
+missing step between a scan candidate and an admitted word. **954 words at
+level two, so 9,046 remain.**
+
+### Live defects and open risks
+
+**The machine is close to its memory ceiling.** Raising the teacher's context
+to 6,144 drove swap to 14.9 GB of 16.4 and free memory to 0.1 GB, which is the
+exhaustion condition this host has crashed under. Reverted. **Do not raise
+`NUM_CTX` without measuring.**
+
+**The definition prompt does not scale and the fix is partial.** It listed the
+whole lexicon, so it grew with the work. A 700-word defining vocabulary fixes
+the ask at constant size, but **concept assignment is still per word** and is
+the remaining manual step in the loop.
+
+**Every figure in `evals/pilot/` measured before 2026-09-27 is about 0.25 nats
+optimistic**, from a truncated evaluation. Comparisons survive; absolutes do
+not. The affected records carry a banner.
+
+**44 narrative books sit below the word band and nobody has looked at why.**
+They are cross-concept variants at 200 to 270 words against a 320 floor. The
+design permits a short book, so these are not defects, but the share is larger
+than expected.
+
+### Findings that outlive the session
+
+**A hyperparameter with one name is not necessarily one quantity.** Three
+confounds in a day: the learning rate across widths, the learning rate across
+two optimisers, and the weight decay across two optimiser groups. **Only the
+third was caught by anything other than hindsight**, and what caught it was the
+training loss moving in a direction regularisation cannot move it.
+
+**Both defaults were already optimal, which nobody could have known.** AdamW's
+3e-4 and Muon's 0.02 both sit at bracketed optima. **The caveat that the
+comparison was untuned was correct to raise and resolved the opposite way**,
+and it is struck through rather than deleted so a reader sees the question was
+asked.
+
+**The scaling law reproduced here.** Optimal rate halves as width doubles:
+measured exactly 2 from 256 to 512, and 3 from 512 to 1,024. Right in
+direction, not exact at the top end, on a three-point curve at one seed.
+
+**Two improvements did not add, for the third time.** Muon and
+warmup-stable-decay together are 0.080 worse than Muon alone, and the training
+loss shows why: each alone fits harder, together the model underfits.
+
+**A filtered view is not a sample.** A rule was written from a grep that could
+only return the shape it appeared to discover, and it rejected every definition
+in the next run.
+
+**A recorded property is not a guard.** Three failures this session recurred
+*after* being documented, and in each case only a change that made the failure
+impossible held. **The test is whether the next person can still fail the same
+way.**
+
+## Named work, in the operator's priority order
+
+1. **The level-two lexicon.** 954 words against about ten thousand. The
+   pipeline is built and the remaining manual step is concept assignment. **The
+   words the teacher reached for and could not have are the cheapest next
+   batch**: `honey`, `fruit`, `flour`, `clothing`, `beans`, `petals`, `yeast`,
+   `nut`, `roasted`, `rows`.
+2. **Schedules for levels three to seven.** None exist. Targets are calibrated.
+3. **More `elenchos` probes.** Twenty cannot resolve an effect at the threshold
+   the specification fixed, because the per-probe spread is 0.0909 against a
+   threshold of 0.05.
+4. **The 44 out-of-band narrative books**, to decide whether they are short by
+   design.
+
+## What is YOURS: decisions the operator holds
+
+1. **Whether an agent without `secret/` may write tracked prose.** `CLAUDE.md`
+   requires reading the code-name discipline first and it is not in the clone,
+   and the scan that would catch a mistake skips for the same reason. **New
+   with this handoff.**
+2. **The Dale-Chall and New General Service List licensing question**, which
+   keeps step one of the sourcing pipeline shut.
+3. **`sources/` and level seven.** The acquisition scheme is drafted in
+   `../decisions/SOURCE_ACQUISITION.md` and **deliberately not adopted**.
+4. **Whether terminal-stage records carry a distinct licensing status**, open
+   question twenty-five.
+5. **The endpoint and estimator, pre-registration item 10**, now a precision
+   decision rather than a sign decision.
+6. **Whether the ablation's third arm is enough.**
+
+## What is NOT yours
+
+**Announcing.** The repository is public; discovery is not. A launch post
+reopens the decision without a file changing.
+
+## Governing rules that are easy to lose
+
+- **Run the gate alone, read the exit code, stop, then commit.** Chaining them
+  in one command pushed a failing tree once.
+- **Check continuous integration separately.** Five divergences. The general
+  form is that a check consulting the filesystem or git history passes on state
+  the runner does not have.
+- **A history-derived check cannot pass in the commit that changes what it
+  derives from.** `word_provenance.py` now refuses rather than relying on
+  anyone remembering this.
+- **Read counts from the tool.** Six instances of arithmetic in a record.
+- **Do not pipe a run through a filter and read the exit code.**
+- **`--out` is required on every measurement tool.** Three defaulted to a
+  tracked path and one was overwritten twice.
+- **Before reporting a difference, say what was held fixed and check that it
+  was.**
+- **Corrections are kept in place**, beside the claim, not amended away.
+- **Do not weaken a check to make something pass.**
+- **`git-filter-repo --replace-text` has no comment syntax.** A commented file
+  corrupted every file in history once. Take a mirror clone first.
+- **The ruleset on `main` binds the owner too.**
+- Irreversible or outward-facing actions need confirmation, and a prior
+  authorisation does not extend to the next one.
+
+---
+
+## Superseded 2026-09-28, the block written at the close of the previous session
+
+
 **Refreshed 2026-09-27 at the close of a twenty-five commit session.**
 
 **The single most important line in this file.**
@@ -448,6 +658,7 @@ reopens the decision without a file changing.
   authorisation does not extend to the next one.
 
 ---
+
 
 ## EVERYTHING BELOW THIS LINE IS ACCUMULATED HISTORY
 
