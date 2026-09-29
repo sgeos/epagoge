@@ -221,12 +221,17 @@
       "level": 2,
       "forms": [
         "accidents"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "account",
       "concept": "reporting",
-      "level": 2
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "accounts"
+      ]
     },
     {
       "word": "accumulating",
@@ -359,7 +364,8 @@
       "level": 2,
       "forms": [
         "amounts"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "angry",
@@ -790,7 +796,11 @@
     {
       "word": "bicycle",
       "concept": "household_object",
-      "level": 2
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "bicycles"
+      ]
     },
     {
       "word": "big",
@@ -975,6 +985,13 @@
       "forms": [
         "branches"
       ]
+    },
+    {
+      "word": "bread",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json"
     },
     {
       "word": "break",
@@ -1173,7 +1190,11 @@
     {
       "word": "bunch",
       "concept": "grouping",
-      "level": 2
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "bunches"
+      ]
     },
     {
       "word": "bundle",
@@ -1221,6 +1242,16 @@
       "concept": "greeting_and_parting",
       "level": 1,
       "source": "operator direction, 2026-09-27, kindergarten etiquette"
+    },
+    {
+      "word": "cabbage",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun",
+      "source": "Manual common food and plant proposals, level_2_increment review, 2026-09-28; generated proposal edited during semantic review",
+      "forms": [
+        "cabbages"
+      ]
     },
     {
       "word": "cage",
@@ -1402,7 +1433,8 @@
       "level": 2,
       "forms": [
         "chains"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "chair",
@@ -1474,6 +1506,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
       "forms": [
         "cheeks"
+      ]
+    },
+    {
+      "word": "cherry",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun",
+      "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
+      "forms": [
+        "cherries"
       ]
     },
     {
@@ -1712,7 +1754,8 @@
       "level": 2,
       "forms": [
         "columns"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "combine",
@@ -2183,7 +2226,8 @@
       "level": 2,
       "forms": [
         "digits"
-      ]
+      ],
+      "pos": "noun"
     },
     {
       "word": "direction",
@@ -2297,6 +2341,13 @@
         "doubting",
         "doubts"
       ]
+    },
+    {
+      "word": "dough",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json"
     },
     {
       "word": "drag",
@@ -2657,9 +2708,12 @@
       "word": "fail",
       "concept": "failing",
       "forms": [
+        "failed",
+        "failing",
         "fails"
       ],
-      "level": 2
+      "level": 2,
+      "pos": "verb"
     },
     {
       "word": "failure",
@@ -2935,6 +2989,13 @@
       "level": 1
     },
     {
+      "word": "flour",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json"
+    },
+    {
       "word": "flow",
       "concept": "liquid",
       "level": 1,
@@ -3097,6 +3158,16 @@
       "level": 1
     },
     {
+      "word": "fruit",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun",
+      "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
+      "forms": [
+        "fruits"
+      ]
+    },
+    {
       "word": "full",
       "concept": "emptiness",
       "level": 1,
@@ -3234,6 +3305,16 @@
       "source": "operator direction, 2026-09-27, kindergarten etiquette"
     },
     {
+      "word": "grain",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun",
+      "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
+      "forms": [
+        "grains"
+      ]
+    },
+    {
       "word": "grandma",
       "concept": "family",
       "level": 1,
@@ -3249,6 +3330,16 @@
       "pos": "noun",
       "forms": [
         "grandpas"
+      ]
+    },
+    {
+      "word": "grape",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun",
+      "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
+      "forms": [
+        "grapes"
       ]
     },
     {
@@ -4703,7 +4794,11 @@
     {
       "word": "mishap",
       "concept": "accident",
-      "level": 2
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "mishaps"
+      ]
     },
     {
       "word": "missing",
@@ -5307,6 +5402,16 @@
       ]
     },
     {
+      "word": "pear",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun",
+      "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
+      "forms": [
+        "pears"
+      ]
+    },
+    {
       "word": "pen",
       "concept": "writing",
       "level": 1,
@@ -5549,6 +5654,13 @@
       ]
     },
     {
+      "word": "powder",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json"
+    },
+    {
       "word": "power",
       "concept": "force",
       "level": 2,
@@ -5680,7 +5792,11 @@
     {
       "word": "quantity",
       "concept": "quantity",
-      "level": 2
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "quantities"
+      ]
     },
     {
       "word": "queen",
@@ -5813,8 +5929,11 @@
       "concept": "conservation_of_number",
       "level": 2,
       "forms": [
-        "rearranged"
-      ]
+        "rearranged",
+        "rearranges",
+        "rearranging"
+      ],
+      "pos": "verb"
     },
     {
       "word": "reconcile",
@@ -5880,8 +5999,11 @@
       "concept": "subtraction",
       "level": 2,
       "forms": [
-        "removed"
-      ]
+        "removed",
+        "removes",
+        "removing"
+      ],
+      "pos": "verb"
     },
     {
       "word": "repeat",
@@ -7389,8 +7511,11 @@
       "concept": "subtraction",
       "level": 2,
       "forms": [
-        "subtracted"
-      ]
+        "subtracted",
+        "subtracting",
+        "subtracts"
+      ],
+      "pos": "verb"
     },
     {
       "word": "successor",
@@ -7530,7 +7655,11 @@
     {
       "word": "system",
       "concept": "component_and_system",
-      "level": 2
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "systems"
+      ]
     },
     {
       "word": "table",

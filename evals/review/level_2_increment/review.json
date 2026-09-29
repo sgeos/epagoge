@@ -1,0 +1,244 @@
+{
+  "honey": {
+    "decision": "defer",
+    "reason": "The reply depends on sweet and nectar, which are not currently admitted.",
+    "outside_vocabulary": [
+      "bees",
+      "nectar",
+      "sweet"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "fruit": {
+    "decision": "defer",
+    "reason": "Sweetness and edibility do not define the full fruit category. A sense-specific account is needed.",
+    "outside_vocabulary": [
+      "sour",
+      "sweet",
+      "vines"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "flour": {
+    "decision": "defer",
+    "reason": "The proposal depends on unadmitted grain or bread vocabulary.",
+    "outside_vocabulary": [
+      "bread",
+      "cooking",
+      "dough",
+      "fine",
+      "grain",
+      "powder"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "yeast": {
+    "decision": "defer",
+    "reason": "The proposal depends on bread and needs a more informative account than a tiny living thing.",
+    "outside_vocabulary": [
+      "bread"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "nut": {
+    "decision": "defer",
+    "reason": "The proposed fruit and shell account needs a declared common-food sense and a narrower scope.",
+    "outside_vocabulary": [
+      "fruit",
+      "shelled"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "pear": {
+    "decision": "defer",
+    "reason": "One reply reverses the usual narrow-top and broad-bottom shape. Both rely on unadmitted words.",
+    "outside_vocabulary": [
+      "flesh",
+      "fruit",
+      "sweet"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "peach": {
+    "decision": "defer",
+    "reason": "The reply depends on fruit and flesh, which are not currently admitted.",
+    "outside_vocabulary": [
+      "flesh",
+      "fruit",
+      "fuzzy",
+      "sweet"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "plum": {
+    "decision": "defer",
+    "reason": "The proposal relies on unadmitted fruit vocabulary and gives an insufficiently distinguishing description.",
+    "outside_vocabulary": [
+      "fruit",
+      "purple",
+      "sweet"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "cherry": {
+    "decision": "defer",
+    "reason": "The proposal depends on fruit and does not distinguish cherry from other small fruits.",
+    "outside_vocabulary": [
+      "fruit",
+      "sweet"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "grape": {
+    "decision": "defer",
+    "reason": "The proposal depends on fruit, bunches or vines, which are not currently admitted.",
+    "outside_vocabulary": [
+      "bunches",
+      "fruit",
+      "vines"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "lemon": {
+    "decision": "defer",
+    "reason": "The reply depends on fruit, sour and taste, which are not currently admitted.",
+    "outside_vocabulary": [
+      "fruit",
+      "sour",
+      "taste"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "onion": {
+    "decision": "defer",
+    "reason": "The proposal depends on layers and needs to distinguish the edible bulb from the entire plant.",
+    "outside_vocabulary": [
+      "layers"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "carrot": {
+    "decision": "defer",
+    "reason": "The proposed root description is useful but requires currently unadmitted vocabulary.",
+    "outside_vocabulary": [
+      "orange",
+      "root",
+      "underground",
+      "vegetable"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "potato": {
+    "decision": "defer",
+    "reason": "The reply calls the edible part a root. That is a semantic error, beyond the vocabulary failures.",
+    "outside_vocabulary": [
+      "root",
+      "starchy",
+      "underground",
+      "vegetable"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "cabbage": {
+    "decision": "admit",
+    "reason": "Retain the plant sense and regular count-noun plural. Refine the broad green-plant proposal with its food use and common head shape, without asserting that every cabbage is green or forms a head.",
+    "generated_definition": "A green plant with thick leaves, grown in gardens.",
+    "definition": "A plant grown for food, often with many leaves close together in a round head.",
+    "pos": "noun",
+    "reviewed_forms": [
+      "cabbage",
+      "cabbages"
+    ],
+    "concept": "plant",
+    "source": "Manual common food and plant proposals, level_2_increment review, 2026-09-28; generated proposal edited during semantic review"
+  },
+  "lettuce": {
+    "decision": "defer",
+    "reason": "The reply depends on leafy and salads, which are not currently admitted.",
+    "outside_vocabulary": [
+      "leafy",
+      "salads"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "pepper": {
+    "decision": "defer",
+    "reason": "The replies alternate between the plant and its fruit. The intended sense must be settled.",
+    "outside_vocabulary": [
+      "fruit",
+      "spicy",
+      "sweet"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "garlic": {
+    "decision": "defer",
+    "reason": "The cooking-use description needs a more distinguishing plant-part definition.",
+    "outside_vocabulary": [
+      "cooking",
+      "flavor",
+      "taste"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "cheese": {
+    "decision": "defer",
+    "reason": "The description is too broad to distinguish cheese from other milk products.",
+    "outside_vocabulary": [
+      "cooking",
+      "firm",
+      "meals"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "butter": {
+    "decision": "defer",
+    "reason": "The ingredient-based sense needs a grounded account of cream and a narrower definition than a spread.",
+    "outside_vocabulary": [
+      "bread",
+      "cooking",
+      "cream",
+      "creamy"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "cream": {
+    "decision": "defer",
+    "reason": "The reply depends on unadmitted cooking vocabulary and needs a distinguishing milk-product definition.",
+    "outside_vocabulary": [
+      "cooking"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "bread": {
+    "decision": "defer",
+    "reason": "The reply excludes soft breads by saying baked until hard.",
+    "outside_vocabulary": [
+      "flour",
+      "yeast"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "dough": {
+    "decision": "defer",
+    "reason": "The proposal depends on flour and bread, neither currently admitted.",
+    "outside_vocabulary": [
+      "bread",
+      "cakes",
+      "flour",
+      "ingredients",
+      "mixture"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  },
+  "soup": {
+    "decision": "defer",
+    "reason": "The proposal depends on cooking or boiling and ingredients, which are not currently admitted.",
+    "outside_vocabulary": [
+      "boiling",
+      "cooking",
+      "ingredients"
+    ],
+    "forms_review": "No forms admitted. Part-of-speech and sense review is deferred with the word."
+  }
+}

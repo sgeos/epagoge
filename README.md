@@ -5,14 +5,13 @@
 A graded synthetic corpus and curriculum for training a
 falsification-oriented foundation model.
 
-**Status.** Under implementation. Level one is drafted: 246 books over
-95 scheduled units, a self-hosting lexicon of 845 words, and a model
-trained on it that can be prompted. Levels two and above are specified
-and barely written. The measured limit on model quality is corpus size,
-recorded in `evals/pilot/`.
+**Status.** Under implementation. The handoff audit on 2026-09-28 verified
+523 level-one books over 9,131 records and a lexicon admitting 849 distinct
+words at level one. The current tree admits 964 words through level two.
+Levels two and above remain incomplete. Current work and restart commands are in `docs/process/HANDOFF.md`.
 
-**The corpus is machine-generated.** Every book was written by a local
-instance of `qwen3:30b-a3b-instruct-2507-q4_K_M`, Apache 2.0, against a
+Corpus generation uses a local instance of
+`qwen3:30b-a3b-instruct-2507-q4_K_M`, Apache 2.0, against a
 closed vocabulary, and every line was checked against that vocabulary
 before entering the corpus. Rejected lines were rewritten or the words
 were admitted deliberately; nothing was absorbed unchecked. Some passages
@@ -24,14 +23,12 @@ deferred to the gated follow-on. See
 `docs/decisions/OPEN_QUESTIONS.md`.
 
 **The deliverable** is the corpus, the curriculum specification, and a
-pre-registered ordering ablation at three scale points from random
+pre-registered ordering ablation from random
 initialisation. A deployable model is a follow-on gated on that result.
 
-**The pre-registration exists** at `evals/PRE_REGISTRATION.md` and has
-open items, the sharpest being the training endpoint. Holding everything
-else fixed and changing only the step count moved the ordering result
-from one sign to the other, so no ordering claim from this repository
-means anything until that is fixed in advance.
+**The pre-registration exists** at `evals/PRE_REGISTRATION.md` and remains
+incomplete. Exploratory training is available. Confirmatory runs are refused
+until the protocol and its outstanding decisions are complete.
 
 ## Why evidence-conditioned assent is an engineering requirement
 
@@ -76,7 +73,7 @@ epagoge/
 ├── generators/      Corpus synthesis pipeline
 ├── evals/           Evaluation suites
 │   └── elenchos/    Anti-sycophancy and calibration probes
-├── corpus/          Generated corpus data, tracked in version control
+├── corpus/          Derived corpus streams, ignored and rebuilt
 ├── sources/         Terminal-stage literature, tracked in version control
 ├── docs/            Architecture, decisions, process, specification
 ├── tools/           Auxiliary scripts
@@ -128,12 +125,11 @@ import it. **Every tool in `tools/` was unrunnable as its own docstring
 described it** until 2026-09-25, because they were developed with
 `PYTHONPATH=src` exported in the shell and nothing said so.
 
-    uv venv
-    uv pip install -e ".[train]"
+    uv sync --locked --extra train
 
-The `train` extra pulls PyTorch and is needed only by the tools that
-train or sample. Without it the rest still run and the gate still passes,
-because its tests skip when the extra is absent.
+The full gate installs the locked training and verification environment,
+runs through its interpreter, and refuses skipped tests. Core corpus tools
+use the standard library, but the full gate requires the training extra.
 
     ./tools/check.sh
     .venv/bin/python tools/talk.py --level 1 --prompt "the cup is"

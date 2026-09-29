@@ -1,0 +1,21 @@
+{
+  "memory": {
+    "swap_used_megabytes": 15306.19,
+    "swap_total_megabytes": 16384.0,
+    "free_pages": 52564,
+    "page_size_bytes": 16384
+  },
+  "teacher_context": 4096,
+  "attempt_limit": 1,
+  "concurrent_training": false,
+  "selected_defining_words": [
+    "fruit",
+    "juice",
+    "seed",
+    "skin",
+    "tree",
+    "bunch",
+    "stone"
+  ],
+  "limits": "One sequential request. Memory is a point-in-time observation and teacher output is nondeterministic."
+}

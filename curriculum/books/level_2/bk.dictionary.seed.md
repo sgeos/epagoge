@@ -27,12 +27,14 @@
     "dict.2.beautiful": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:beautiful"}, "defines": {"kind": "word", "target": "beautiful"}},
     "dict.2.bicycle": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bicycle"}, "defines": {"kind": "word", "target": "bicycle"}},
     "dict.2.board": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:board"}, "defines": {"kind": "word", "target": "board"}},
+    "dict.2.bread": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bread"}, "defines": {"kind": "word", "target": "bread"}},
     "dict.2.breast": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breast"}, "defines": {"kind": "word", "target": "breast"}},
     "dict.2.brook": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:brook"}, "defines": {"kind": "word", "target": "brook"}},
     "dict.2.brow": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:brow"}, "defines": {"kind": "word", "target": "brow"}},
     "dict.2.bud": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bud"}, "defines": {"kind": "word", "target": "bud"}},
     "dict.2.bunch": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bunch"}, "defines": {"kind": "word", "target": "bunch"}},
     "dict.2.bundle": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bundle"}, "defines": {"kind": "word", "target": "bundle"}},
+    "dict.2.cabbage": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cabbage"}, "defines": {"kind": "word", "target": "cabbage"}},
     "dict.2.cage": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cage"}, "defines": {"kind": "word", "target": "cage"}},
     "dict.2.cane": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cane"}, "defines": {"kind": "word", "target": "cane"}},
     "dict.2.cap": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cap"}, "defines": {"kind": "word", "target": "cap"}},
@@ -40,6 +42,7 @@
     "dict.2.certain": {"concepts": ["how_sure"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:certain"}, "defines": {"kind": "word", "target": "certain"}},
     "dict.2.chain": {"concepts": ["causal_chain"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:chain"}, "defines": {"kind": "word", "target": "chain"}},
     "dict.2.cheek": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cheek"}, "defines": {"kind": "word", "target": "cheek"}},
+    "dict.2.cherry": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cherry"}, "defines": {"kind": "word", "target": "cherry"}},
     "dict.2.chestnut": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:chestnut"}, "defines": {"kind": "word", "target": "chestnut"}},
     "dict.2.city": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:city"}, "defines": {"kind": "word", "target": "city"}},
     "dict.2.claim": {"concepts": ["claim_under_test"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:claim"}, "defines": {"kind": "word", "target": "claim"}},
@@ -56,6 +59,7 @@
     "dict.2.describe": {"concepts": ["saying_what_you_saw"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:describe"}, "defines": {"kind": "word", "target": "describe"}},
     "dict.2.difficult": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:difficult"}, "defines": {"kind": "word", "target": "difficult"}},
     "dict.2.digit": {"concepts": ["place_value"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:digit"}, "defines": {"kind": "word", "target": "digit"}},
+    "dict.2.dough": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dough"}, "defines": {"kind": "word", "target": "dough"}},
     "dict.2.echo": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:echo"}, "defines": {"kind": "word", "target": "echo"}},
     "dict.2.effect": {"concepts": ["cause_and_effect"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:effect"}, "defines": {"kind": "word", "target": "effect"}},
     "dict.2.eleven": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:eleven"}, "defines": {"kind": "word", "target": "eleven"}},
@@ -65,9 +69,13 @@
     "dict.2.fifty": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fifty"}, "defines": {"kind": "word", "target": "fifty"}},
     "dict.2.flock": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:flock"}, "defines": {"kind": "word", "target": "flock"}},
     "dict.2.flood": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:flood"}, "defines": {"kind": "word", "target": "flood"}},
+    "dict.2.flour": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:flour"}, "defines": {"kind": "word", "target": "flour"}},
     "dict.2.fog": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fog"}, "defines": {"kind": "word", "target": "fog"}},
     "dict.2.forever": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forever"}, "defines": {"kind": "word", "target": "forever"}},
     "dict.2.forty": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forty"}, "defines": {"kind": "word", "target": "forty"}},
+    "dict.2.fruit": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:fruit"}, "defines": {"kind": "word", "target": "fruit"}},
+    "dict.2.grain": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grain"}, "defines": {"kind": "word", "target": "grain"}},
+    "dict.2.grape": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grape"}, "defines": {"kind": "word", "target": "grape"}},
     "dict.2.group": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:group"}, "defines": {"kind": "word", "target": "group"}},
     "dict.2.hail": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hail"}, "defines": {"kind": "word", "target": "hail"}},
     "dict.2.height": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:height"}, "defines": {"kind": "word", "target": "height"}},
@@ -88,8 +96,10 @@
     "dict.2.necessary": {"concepts": ["need"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:necessary"}, "defines": {"kind": "word", "target": "necessary"}},
     "dict.2.observe": {"concepts": ["saying_what_you_saw"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:observe"}, "defines": {"kind": "word", "target": "observe"}},
     "dict.2.ocean": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ocean"}, "defines": {"kind": "word", "target": "ocean"}},
+    "dict.2.pear": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pear"}, "defines": {"kind": "word", "target": "pear"}},
     "dict.2.pile": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pile"}, "defines": {"kind": "word", "target": "pile"}},
     "dict.2.portion": {"concepts": ["fraction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:portion"}, "defines": {"kind": "word", "target": "portion"}},
+    "dict.2.powder": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:powder"}, "defines": {"kind": "word", "target": "powder"}},
     "dict.2.power": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:power"}, "defines": {"kind": "word", "target": "power"}},
     "dict.2.quantity": {"concepts": ["quantity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:quantity"}, "defines": {"kind": "word", "target": "quantity"}},
     "dict.2.rearrange": {"concepts": ["conservation_of_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rearrange"}, "defines": {"kind": "word", "target": "rearrange"}},
@@ -176,6 +186,9 @@ A bicycle is a thing with two wheels that you use to move with your feet.
 [dict.2.board]
 A flat piece of wood used for writing or walking on.
 
+[dict.2.bread]
+A food made from flour and water worked together, often baked in an oven.
+
 [dict.2.breast]
 The front part of the body where the heart is.
 
@@ -193,6 +206,9 @@ A bunch is a group of things that are together.
 
 [dict.2.bundle]
 A group of things tied or held together.
+
+[dict.2.cabbage]
+A plant grown for food, often with many leaves close together in a round head.
 
 [dict.2.cage]
 A box made of metal or wood to hold an animal.
@@ -214,6 +230,9 @@ A chain is many things joined one after another.
 
 [dict.2.cheek]
 The side of the face near the mouth.
+
+[dict.2.cherry]
+A small round tree fruit, often red, with a hard part in the middle that holds one seed.
 
 [dict.2.chestnut]
 A round seed from a tree that has a hard shell.
@@ -263,6 +282,9 @@ Difficult is when a thing is hard to do.
 [dict.2.digit]
 A digit is one of the marks you write to show a number.
 
+[dict.2.dough]
+A thick soft material made by working flour and water or another liquid together, which can be shaped before it is cooked.
+
 [dict.2.echo]
 An echo is a sound that comes back to you.
 
@@ -290,6 +312,9 @@ A group of birds or animals together.
 [dict.2.flood]
 A flood is when so much water comes that it covers the land.
 
+[dict.2.flour]
+Powder made by breaking grain into very small pieces, used to make food.
+
 [dict.2.fog]
 Fog is a cloud on the ground, so you cannot see far.
 
@@ -298,6 +323,15 @@ Forever means for all time, with no end.
 
 [dict.2.forty]
 Forty is four tens.
+
+[dict.2.fruit]
+The part of a plant that grows from a flower and often holds seeds.
+
+[dict.2.grain]
+A small hard seed from a grass plant grown for food.
+
+[dict.2.grape]
+A small round fruit with juice inside and a thin outside cover, growing in groups on a climbing plant.
 
 [dict.2.group]
 A group is many things or people together.
@@ -359,11 +393,17 @@ To observe is to look at a thing with care.
 [dict.2.ocean]
 An ocean is a very big body of water.
 
+[dict.2.pear]
+A tree fruit often narrow at the top and round and wide near the bottom.
+
 [dict.2.pile]
 A pile is many things put one on top of another.
 
 [dict.2.portion]
 A portion is one part of a whole thing.
+
+[dict.2.powder]
+Dry material made up of very small separate pieces.
 
 [dict.2.power]
 Power is how much work a thing can do.

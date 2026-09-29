@@ -8,7 +8,7 @@ seeds a cell, scoring **every held-out batch**.
     PYTHONPATH=src .venv/bin/python tools/sample_level.py --level 1 \
       --steps 3400 --d-model 512 --layers 4 --positions rotary \
       --token-replacement 0.05 --optimiser muon \
-      --out evals/pilot/level_1_samples.json
+      --weights tmp/reference-level-1.pt --out tmp/reference-level-1.json
 
 | Setting | Value | Why |
 | --- | --- | --- |
@@ -22,6 +22,14 @@ seeds a cell, scoring **every held-out batch**.
 | weight decay | the default | 0.1 does not move the loss and 0.5 is 0.20 worse |
 | tying, derived heads | on, the defaults | |
 
+The example writes new artifacts and refuses existing destinations. It does
+not replace the current reference checkpoint. Select a new destination for
+each run. Use `--overwrite` only when replacement is intended.
+
+For interrupted-run continuation, add `--training-state` with a separate
+path. Keep the planned step count unchanged when resuming with `--resume`.
+See `docs/process/HANDOFF.md` for the restart contract.
+
 ## The frontier
 
 | Configuration | Held-out, 3 seeds | sd |
@@ -32,7 +40,7 @@ seeds a cell, scoring **every held-out batch**.
 **0.117 nats, and it costs one flag.** A corpus doubling buys about 0.26 and
 costs roughly fifteen generation rounds.
 
-**The shipped checkpoint reports 3.061** on its own single seed, inside the
+**The authoring-host checkpoint reports 3.061** on its own single seed, inside the
 three-seed spread. `evals/pilot/level_1.pt` is trained at this configuration
 and `tools/talk.py` runs against it.
 

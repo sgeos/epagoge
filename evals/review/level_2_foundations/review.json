@@ -1,0 +1,56 @@
+{
+  "fruit": {
+    "decision": "admit",
+    "reason": "Plant-part sense. Reject sweetness and edibility as necessary properties. Replace the teacher food-sense proposal with a flower-origin definition and qualify seed presence. Count plural fruits is standard. Culinary and figurative senses are outside this admission. The admission validator rejected usually. Replace it with admitted often and retain that failed attempt.",
+    "mechanical_outcome": "deferred",
+    "definition_origin": "Agent adaptation of retained teacher reply, independently reviewed for the declared sense",
+    "definition": "The part of a plant that grows from a flower and often holds seeds.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
+    "reviewed_forms": [
+      "fruit",
+      "fruits"
+    ]
+  },
+  "grain": {
+    "decision": "admit",
+    "reason": "Food-seed sense. Narrow the teacher plant-seed definition to grass plants so that seeds of unrelated food plants are not included. Count plural grains is standard. Small particles and wood patterns are separate senses.",
+    "mechanical_outcome": "mechanically_accepted",
+    "definition_origin": "Agent adaptation of retained teacher reply, independently reviewed for the declared sense",
+    "definition": "A small hard seed from a grass plant grown for food.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
+    "reviewed_forms": [
+      "grain",
+      "grains"
+    ]
+  },
+  "powder": {
+    "decision": "admit",
+    "reason": "Divided dry-material sense. Replace unadmitted fine and grinding with admitted words. Grinding is not a necessary production method. Use a mass noun with no plural in this sense. Substance-type plurals are outside this admission.",
+    "mechanical_outcome": "deferred",
+    "definition_origin": "Agent adaptation of retained teacher reply, independently reviewed for the declared sense",
+    "definition": "Dry material made up of very small separate pieces.",
+    "concept": "material",
+    "pos": "noun mass",
+    "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
+    "reviewed_forms": [
+      "powder"
+    ]
+  },
+  "flour": {
+    "decision": "admit",
+    "reason": "Grain-food material sense. Replace fine with a size description. The definition depends on independently grounded grain and powder, not on bread. Use a mass noun with no plural in this sense. Non-grain flours and type plurals are outside this admission.",
+    "mechanical_outcome": "deferred",
+    "definition_origin": "Agent adaptation of retained teacher reply, independently reviewed for the declared sense",
+    "definition": "Powder made by breaking grain into very small pieces, used to make food.",
+    "concept": "material",
+    "pos": "noun mass",
+    "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
+    "reviewed_forms": [
+      "flour"
+    ]
+  }
+}

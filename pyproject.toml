@@ -7,10 +7,7 @@ license = "0BSD"
 license-files = ["LICENSE", "LICENSE-CC0", "LICENSING.md"]
 authors = [{ name = "Brendan Sechter", email = "sgeos@hotmail.com" }]
 
-# UNRESOLVED. The system interpreter is 3.14.7. Machine learning wheel
-# availability for 3.14 has not been verified, so the floor is set at
-# 3.12 and no exact interpreter is pinned. Resolve before adding the
-# first dependency. See docs/decisions/PYTHON_VERSION.md.
+# Python 3.12 is the verification baseline. See docs/decisions/PYTHON_VERSION.md.
 requires-python = ">=3.12"
 
 # The core stays dependency-free. Everything under src/epagoge/ other than
@@ -20,20 +17,11 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.optional-dependencies]
-# Only the pilot trainer needs these. Install with: uv pip install -e ".[train]"
-#
-# **Both pinned exactly, and numpy was not until 2026-09-27.** Every measured
-# number in `evals/` was produced under some numpy nobody recorded, and a
-# later release could move one without a file in this tree changing. That is
-# the reproducibility gap a lock file would have closed, and pinning here
-# closes it in the file that states the dependency, which is the convention
-# torch already followed and `tools/check.sh` follows for ruff and pyright.
-#
-# **The transitive closure is still unpinned, and this does not claim
-# otherwise.** Ten further distributions arrive under torch. They are pinned
-# by nothing, and closing that would take a lock file the installer actually
-# consults. See the note on `uv.lock` in `.gitignore`.
+# Install the locked training and verification environment with uv sync --locked --extra train.
 train = ["torch==2.14.0", "numpy==2.5.3"]
+
+[dependency-groups]
+dev = ["ruff==0.16.8", "pyright==1.1.414", "coverage==7.10.7"]
 
 [build-system]
 requires = ["hatchling"]
@@ -64,6 +52,7 @@ select = ["E", "F", "W", "B", "S", "I", "N", "UP", "ANN", "RET", "SIM", "PTH"]
 # same reason: an experiment must be reproducible from a declared seed, which
 # is the property a cryptographic generator does not offer.
 "src/epagoge/pilot.py" = ["S311"]
+"src/epagoge/ordering.py" = ["S311"]
 # The ordering arms of the ablation are drawn from a declared seed, for
 # the same reason. A run that cannot be reproduced measures nothing.
 "tools/train_level.py" = ["S311"]

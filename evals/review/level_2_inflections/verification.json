@@ -1,0 +1,21 @@
+{
+  "full_gate": {
+    "exit_code": 0,
+    "test_runs": [
+      "Ran 599 tests in 6.396s",
+      "Ran 599 tests in 8.325s"
+    ],
+    "skipped": 0,
+    "type_errors": 0,
+    "type_warnings": 0,
+    "core_coverage_percent": 96,
+    "training_coverage_percent": 92,
+    "disclosure_scan": "clean",
+    "log_sha256": "01039a4eeedf9f17101dea746eb36b1d9006ce103664f54a8661d2202808276a"
+  },
+  "preservation_verified": true,
+  "measurement_hash": "cc7d1f5fa063855eacc6e0c0c0ac45216628ddf8af01f3533c223566ea587235",
+  "completion_condition_characters": 1111,
+  "publication_scope": "All non-ignored work, including accumulated continuity repairs and lexical evidence, authorized by the operator. Remote commit verification is recorded in the session transcript after publication.",
+  "limits": "Local gate success does not establish remote workflow success, independent semantic quality or curriculum benefit."
+}

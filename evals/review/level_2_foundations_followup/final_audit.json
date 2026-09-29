@@ -1,0 +1,82 @@
+{
+  "before": {
+    "1": 849,
+    "2": 955
+  },
+  "after": {
+    "1": 849,
+    "2": 961
+  },
+  "remaining_gap": 9039,
+  "admissions": {
+    "fruit": {
+      "definition": "The part of a plant that grows from a flower and often holds seeds.",
+      "concept": "plant",
+      "forms": [
+        "fruit",
+        "fruits"
+      ],
+      "matched_review": true
+    },
+    "grain": {
+      "definition": "A small hard seed from a grass plant grown for food.",
+      "concept": "plant",
+      "forms": [
+        "grain",
+        "grains"
+      ],
+      "matched_review": true
+    },
+    "powder": {
+      "definition": "Dry material made up of very small separate pieces.",
+      "concept": "material",
+      "forms": [
+        "powder"
+      ],
+      "matched_review": true
+    },
+    "flour": {
+      "definition": "Powder made by breaking grain into very small pieces, used to make food.",
+      "concept": "material",
+      "forms": [
+        "flour"
+      ],
+      "matched_review": true
+    },
+    "bread": {
+      "definition": "A food made from flour and water worked together, often baked in an oven.",
+      "concept": "material",
+      "forms": [
+        "bread"
+      ],
+      "matched_review": true
+    },
+    "dough": {
+      "definition": "A thick soft material made by working flour and water or another liquid together, which can be shaped before it is cooked.",
+      "concept": "material",
+      "forms": [
+        "dough"
+      ],
+      "matched_review": true
+    }
+  },
+  "prior_increment_preserved": true,
+  "level_one_books_and_reference_preserved": true,
+  "stage_artifact_hashes_verified": true,
+  "full_gate": {
+    "exit_code": 0,
+    "test_runs": [
+      "Ran 595 tests in 6.268s",
+      "Ran 595 tests in 8.426s"
+    ],
+    "skipped": 0,
+    "type_errors": 0,
+    "type_warnings": 0,
+    "core_coverage_percent": 96,
+    "training_coverage_percent": 92,
+    "disclosure_scan": "clean",
+    "log_sha256": "1ebc5d7b4bf25290cd8fa739f2245ada1c805d17e3af9067878d65d11270e6ab"
+  },
+  "completion_condition_characters": 1430,
+  "limits": "Semantic review was performed by the authoring agent without independent expert validation. These batches do not establish general throughput or curriculum benefit. Confirmatory training remains blocked."
+}

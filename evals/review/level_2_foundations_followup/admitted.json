@@ -1,0 +1,14 @@
+{
+  "bread": {
+    "concept": "material",
+    "pos": "noun mass",
+    "definition": "A food made from flour and water worked together, often baked in an oven.",
+    "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json"
+  },
+  "dough": {
+    "concept": "material",
+    "pos": "noun mass",
+    "definition": "A thick soft material made by working flour and water or another liquid together, which can be shaped before it is cooked.",
+    "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json"
+  }
+}

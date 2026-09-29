@@ -1,5 +1,6 @@
 {
-  "_comment": "When each word entered the lexicon. 'recorded at admission' is evidence written when the decision was made. 'reconstructed from history' is the commit that first contained the word, which is what the commit was about rather than necessarily why that word was in it. 'admitted_because' is the criterion that commit's batch met, applied to every word in it: right about the pass and not necessarily about each word. Low to moderate fidelity, and lowest for the 444-word prescriptive pass, because bootstrapping a closed lexicon does not decompose into per-word reasons.",
+  "_comment": "Legacy history is frozen at history_through. New words carry direct source evidence without a commit hash. When each word entered the lexicon. 'recorded at admission' is evidence written when the decision was made. 'reconstructed from history' is the commit that first contained the word, which is what the commit was about rather than necessarily why that word was in it. 'admitted_because' is the criterion that commit's batch met, applied to every word in it: right about the pass and not necessarily about each word. Low to moderate fidelity, and lowest for the 444-word prescriptive pass, because bootstrapping a closed lexicon does not decompose into per-word reasons.",
+  "history_through": "1082227d89d2f9abcdee71e4df00a7c408538060",
   "revisions": 49,
   "words": {
     "able": {
@@ -926,6 +927,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "bread": {
+      "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json",
+      "evidence": "recorded at admission"
+    },
     "break": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -1170,6 +1175,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "operator direction, 2026-09-27, kindergarten etiquette",
+      "evidence": "recorded at admission"
+    },
+    "cabbage": {
+      "source": "Manual common food and plant proposals, level_2_increment review, 2026-09-28; generated proposal edited during semantic review",
       "evidence": "recorded at admission"
     },
     "cage": {
@@ -1456,6 +1465,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
+    "cherry": {
+      "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
       "evidence": "recorded at admission"
     },
     "chestnut": {
@@ -2310,6 +2323,10 @@
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
     },
+    "dough": {
+      "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json",
+      "evidence": "recorded at admission"
+    },
     "drag": {
       "commit": "ec0c962714b8",
       "date": "2026-09-25",
@@ -3043,6 +3060,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "flour": {
+      "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
+      "evidence": "recorded at admission"
+    },
     "flow": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -3203,6 +3224,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "fruit": {
+      "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
+      "evidence": "recorded at admission"
     },
     "full": {
       "commit": "fe327c12ce59",
@@ -3373,6 +3398,10 @@
       "source": "operator direction, 2026-09-27, kindergarten etiquette",
       "evidence": "recorded at admission"
     },
+    "grain": {
+      "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
+      "evidence": "recorded at admission"
+    },
     "grandma": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -3388,6 +3417,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "grape": {
+      "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
+      "evidence": "recorded at admission"
     },
     "grass": {
       "commit": "fe327c12ce59",
@@ -5613,6 +5646,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "pear": {
+      "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
+      "evidence": "recorded at admission"
+    },
     "pen": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -5862,6 +5899,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "powder": {
+      "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
+      "evidence": "recorded at admission"
     },
     "power": {
       "commit": "a2b7f4971801",

@@ -6,7 +6,7 @@ cannot separate a model that learned the language from one that learned
 which words are common, and the project reported a loss for two sessions
 without a token ever being generated.
 
-Loads weights written by `train_level.py --save` or `sample_level.py`,
+Loads weights written by `sample_level.py`,
 and refuses to invent them: a checkpoint that does not exist is an error
 rather than a fresh untrained model, because an untrained model answers
 every prompt and means nothing.
@@ -106,7 +106,8 @@ def main(argv: list[str]) -> int:
     if not weights.is_file():
         print(
             f"no weights at {weights}. Train some first:\n"
-            f"  .venv/bin/python tools/sample_level.py --level {args.level}",
+            f"  .venv/bin/python tools/sample_level.py --level {args.level} "
+            f"--weights evals/pilot/level_{args.level}.pt --out tmp/samples.json",
             file=sys.stderr,
         )
         return 1

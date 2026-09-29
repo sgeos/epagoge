@@ -39,26 +39,11 @@ jobs:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      # There is no lockfile, so the cache has to be keyed on the only file
-      # that states a dependency. Left unset it matches nothing, and a cache
-      # that never invalidates serves a stale environment after a dependency
-      # changes, which is the silent-partial-coverage failure in another
-      # costume.
-      # Pinned exactly, unlike the other two, because setup-uv publishes no
-      # floating major tag past v7 while its current release is v10.
       - uses: astral-sh/setup-uv@v10.2.0
         with:
-          cache-dependency-glob: pyproject.toml
+          cache-dependency-glob: uv.lock
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-      # pyright resolves optional dependencies from `.venv`, so the gate
-      # cannot type-check the trainer without one. Without this step CI
-      # reported torch as unresolvable and was red for an entire session
-      # while the local gate was green.
-      - name: Create the environment the gate type-checks against
-        run: |
-          uv venv
-          uv pip install -e ".[train]"
       - name: Run the gate
         run: ./tools/check.sh

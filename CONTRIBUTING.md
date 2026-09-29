@@ -14,19 +14,23 @@ produced by a model whose terms of use restrict the output.
 
     git clone https://github.com/sgeos/epagoge
     cd epagoge
-    uv venv
-    uv pip install -e ".[train]"
+    uv sync --locked --extra train
     ./tools/check.sh
 
-The `train` extra pulls PyTorch, which is large and is needed only by the
-tools that train or sample a model. Without it the rest still run and the
-gate still passes, because the tests that need it skip.
+The full gate requires the training extra and refuses skipped tests. It uses
+the versions in `uv.lock`, including verification tools. The core coverage
+floor remains 95 percent. Training coverage is reported separately.
 
-**`./tools/check.sh` is the gate and it must be green before a commit.**
-Twenty checks covering lint, formatting, strict type checking, tests, a
-coverage floor, the concept graph, the corpus, lexicon closure, document
-references, and the disclosure scan. Run it, read its exit code, and stop
-if it is not zero.
+**Run the full gate before committing.** It validates the corpus export as
+well as lint, formatting, types, tests, provenance, graph, books, schedules,
+closure, references and disclosure. A successful local gate does not verify
+the remote workflow.
+
+For a new word, record its source at admission and regenerate
+`curriculum/provenance.json` with `tools/word_provenance.py --out` before
+running the gate. Commit the lexicon and provenance record together. Legacy
+history reconstruction is anchored by the record's `history_through` field.
+New admissions do not depend on the hash of their containing commit.
 
 **One check cannot run in a clone.** The disclosure scan reads a pattern
 that is deliberately not in version control. In your clone it announces

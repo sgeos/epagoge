@@ -19,18 +19,7 @@ evals/review/verdicts.jsonl
 .coverage
 htmlcov/
 
-# Written by `uv run` and `uv sync`, and consulted by NEITHER of the two
-# commands this project uses. The gate installs with `uv pip install -e`,
-# which does not read a lock file, and nothing in the tree invokes `uv run`
-# or `uv sync`. A tracked lock would therefore look like a reproducibility
-# guarantee and be inert, which is the same failure as a check that is wired
-# and never run. Versions are pinned where they are stated instead: torch and
-# numpy in pyproject.toml, ruff and pyright in tools/check.sh.
-#
-# **Track it if the project ever installs with `uv sync`.** At that point it
-# is consulted, CI should run `--frozen`, and the cache key in
-# .github/workflows/check.yml should move from pyproject.toml onto the lock.
-uv.lock
+# uv.lock is tracked and consumed by local setup and continuous integration.
 
 # Environment-specific secrets. Follows the convention used by the
 # keleusma repository. The directory exists locally and is never tracked.

@@ -1,0 +1,26 @@
+{
+  "fruit": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "The part of a plant that grows from a flower and often holds seeds.",
+    "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json"
+  },
+  "grain": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A small hard seed from a grass plant grown for food.",
+    "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json"
+  },
+  "powder": {
+    "concept": "material",
+    "pos": "noun mass",
+    "definition": "Dry material made up of very small separate pieces.",
+    "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json"
+  },
+  "flour": {
+    "concept": "material",
+    "pos": "noun mass",
+    "definition": "Powder made by breaking grain into very small pieces, used to make food.",
+    "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json"
+  }
+}

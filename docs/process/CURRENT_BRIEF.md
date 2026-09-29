@@ -1,84 +1,79 @@
-# Current brief. Close the gap between a candidate and an admitted word
+# Brief
 
-**Written 2026-09-28**, replacing the brief that built `elenchos`, whose
-completion condition is met. Durable practice is in `PROCESS_STRATEGY.md`.
+## Present goals
 
-## Why this
+The priority remains completing the level-two lexicon before drafting its
+content. The current tree has 964 distinct words through level two, leaving
+9,036 to the approximate ten-thousand-word target. Later goals include
+schedules, expanded evidence-conditioned-assent evaluation and a complete
+experimental protocol. Confirmatory training remains blocked. Experimental,
+licensing and later-schedule decisions remain reserved to the operator.
 
-**The level-two lexicon is the operator's first priority and holds 934 words
-against a target near ten thousand.** A complete draft lexicon precedes
-level-two corpus drafting, by operator direction, so everything downstream
-waits on it.
+## Recommended scope
 
-**Candidates are not the obstacle.** The scan of 2026-09-27 produced 2,376
-words frequent in at least one public-domain source, and 9,487 more in the long
-tail.
+Review all 28 level-two entries with no declared part of speech. Repair clear
+noun and verb inflection gaps using their existing definitions and concept
+assignments. The previous generation report rejected bunches even though
+bunch was already admitted. Without a noun declaration, the inflection
+validator cannot require its plural. This is direct evidence of a usability
+gap, not evidence that adding headwords is unnecessary.
 
-**Definitions are the obstacle, and the pipeline has a hole in the middle.**
-Every admitted word needs a definition or level two stops being self-hosting,
-and `admit.py` refuses without one, correctly. `generate_dictionary.py` writes
-definitions for words that are already admitted. **Nothing takes a candidate
-and produces the definition that would let it be admitted**, so the only route
-is writing them by hand, which is what the 47-word batch did.
+The bounded repair candidates are the count nouns accident, account, amount,
+bicycle, bunch, chain, column, digit, mishap, quantity and system, and the
+verbs fail, rearrange, remove and subtract. Review the existing senses and
+actual forms. Record every other entry as deferred with a reason. Preserve
+existing forms and admission sources. Do not manufacture additional senses.
+No teacher generation is necessary for this review.
 
-**Nine thousand words at a hundred a session is ninety sessions.** That is not
-a plan, and the reason to build the bridge is that it makes every later batch
-cheap rather than that it makes this one large.
+Record the entire starting inventory and candidate-by-candidate outcomes in
+evals/review/level_2_inflections. Measure headword and explicit surface-form
+counts separately. Verify that bunches is licensed at level two and that
+new forms do not become licensed at level one. Verify complete dictionary
+coverage and grounding. Preserve all earlier review artifacts, all level-one
+books, reference weights and dictionary definitions.
 
-## What to do
+## Publication scope
 
-1. **Write the missing step**: take candidate words with their concepts,
-   have the teacher draft definitions inside the level's own vocabulary, and
-   emit exactly what `admit.py` consumes.
-2. **Run it for a substantial first batch**, themed so that concept assignment
-   is tractable rather than a per-word guess.
-3. **Record what the acceptance rate is**, because it decides whether the
-   remaining gap is reachable at all and nobody has measured it.
+The operator explicitly authorizes committing and pushing all non-ignored
+work, including the accumulated continuity repairs, tests, lockfile and
+lexical evidence. Inspect the combined changes, run the full gate and publish
+the resulting tree to the configured remote without rewriting remote history.
+Do not force-add ignored artifacts. Resolve any actual gate or publication
+failure and report the observed outcome. Update the handoff so that historical
+uncommitted-state language is not presented as current guidance.
 
-## Prior failures, and the specific wrong turns to avoid
+## Prior failures and wrong turns
 
-**Do not admit a word without a definition.** Coverage is reported and the
-closure check can still exit 0 while a word sits undefined, so a silent
-degradation is possible. Check the coverage figure, not just the exit code.
+Do not claim headword growth from added inflections. A word can already be
+accepted through the validator's suffix handling without appearing among
+explicit forms. Measure both explicit forms and actual licensing changes.
 
-**Do not widen the lexicon to make the pipeline look productive.** A candidate
-the curriculum has no use for is not an improvement, and `UNUSED_FORMS.md`
-records what happens when forms are admitted faster than they are used.
+Do not infer a part of speech from an ending or a filtered sample. Account
+has a reporting definition here, not an arithmetic sense. Crash has a noun
+definition but a past-tense form and needs a separate sense decision. Number
+words and words used as modifiers need explicit later classification rather
+than automatic plural or comparison forms. Missing declarations are an
+inventory for judgement, not permission to label every entry a noun.
 
-**Archaism is invisible to the scan and to the teacher.** Measured on
-2026-09-27: the era contrast does not separate archaism from topic, and the
-public-domain sources are old because they are public domain. **Judgement at
-drafting is the only place this is caught**, and it has to be spent.
+Do not rewrite original admission sources to imply this review introduced
+existing words. Store repair evidence separately. Do not relax the inflection
+validator, expand the seed, alter definitions to hide ambiguity, or add the
+fruit senses of stone and skin without a separate review.
 
-**Check the generated forms, not just the word.** Admitting a noun generates a
-plural and an adjective generates comparison forms, and both rules have
-manufactured nonsense before: `funs`, `magics`, `farrer`, `beautifuler`. The
-`mass` and `periphrastic` qualifiers exist for exactly this and should be used
-rather than discovered again.
+Do not lose existing uncommitted work when preparing the commit. Preserve
+historic reports even where their exact-tree measurements are no longer
+current. The gate must pass on the actual publication tree. Local success is
+not evidence of remote continuous-integration success. Record each separately.
 
-**A word the teacher reaches for is evidence, not permission.** Admission is a
-separate judgement with a definition attached.
+No throughput or curriculum benefit is established by this scope. Independent
+semantic expert review remains unavailable. Ordering is not a completion
+criterion.
 
-**Record provenance at admission.** The corpus is CC0 and some candidate lists
-are not, so where a word was proposed matters more than the word does.
+## Delivered lexical result
 
-**Do not read a count from arithmetic.** Six instances. The gate supplies these
-numbers.
-
-**Do not chain the gate to the commit.** Done in this session and it pushed a
-failing tree to `origin`.
-
-**Do not let a new tool default its output to a tracked path.** Three tools did
-and one was overwritten twice before the default was removed.
-
-**Do not report an acceptance rate from one batch as a property of the
-pipeline.** One themed batch is one sample, and themed batches are the easy
-case.
-
-## What is not this brief's to decide
-
-The Dale-Chall and NGSL licensing question, which keeps step one of the
-sourcing pipeline shut. The terminal-stage record licensing question, schedules
-for levels three to seven, `sources/` and level seven, and the acquisition
-scheme in `../decisions/SOURCE_ACQUISITION.md`, which stays unadopted.
-**Announcing the repository is not this brief's either.**
+The review repaired 15 entries and explicitly deferred 13. Fourteen forms
+became newly explicit and newly licensed at level two. Explicit term surface
+forms increased from 2,259 to 2,273. Level-one licensing is unchanged.
+Headwords remain at 964 through level two and the remaining gap is 9,036.
+Both dictionaries remain fully grounded with complete required coverage.
+The retained review records every decision and preservation measurement.

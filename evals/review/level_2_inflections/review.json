@@ -1,0 +1,646 @@
+{
+  "accident": {
+    "decision": "repair",
+    "reason": "The existing definition names a countable entity or quantity. Retain the existing sense and review its regular plural.",
+    "before": {
+      "word": "accident",
+      "concept": "accident",
+      "level": 2,
+      "forms": [
+        "accidents"
+      ]
+    },
+    "after": {
+      "word": "accident",
+      "concept": "accident",
+      "level": 2,
+      "forms": [
+        "accidents"
+      ],
+      "pos": "noun"
+    },
+    "new_explicit_forms": [],
+    "licensed_before": {
+      "accidents": true
+    },
+    "licensed_after": {
+      "accidents": true
+    }
+  },
+  "account": {
+    "decision": "repair",
+    "reason": "The reporting definition names an account of events. Declare only the count noun and accounts. No arithmetic or verb sense is introduced.",
+    "before": {
+      "word": "account",
+      "concept": "reporting",
+      "level": 2
+    },
+    "after": {
+      "word": "account",
+      "concept": "reporting",
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "accounts"
+      ]
+    },
+    "new_explicit_forms": [
+      "accounts"
+    ],
+    "licensed_before": {
+      "accounts": false
+    },
+    "licensed_after": {
+      "accounts": true
+    }
+  },
+  "already": {
+    "decision": "defer",
+    "reason": "Temporal adverb. No noun, verb or adjective forms are justified by its current definition.",
+    "before": {
+      "word": "already",
+      "concept": "sequence",
+      "level": 2
+    },
+    "after": {
+      "word": "already",
+      "concept": "sequence",
+      "level": 2
+    }
+  },
+  "amount": {
+    "decision": "repair",
+    "reason": "The existing definition names a countable entity or quantity. Retain the existing sense and review its regular plural.",
+    "before": {
+      "word": "amount",
+      "concept": "quantity",
+      "level": 2,
+      "forms": [
+        "amounts"
+      ]
+    },
+    "after": {
+      "word": "amount",
+      "concept": "quantity",
+      "level": 2,
+      "forms": [
+        "amounts"
+      ],
+      "pos": "noun"
+    },
+    "new_explicit_forms": [],
+    "licensed_before": {
+      "amounts": true
+    },
+    "licensed_after": {
+      "amounts": true
+    }
+  },
+  "bicycle": {
+    "decision": "repair",
+    "reason": "The existing definition names a countable entity or quantity. Retain the existing sense and review its regular plural.",
+    "before": {
+      "word": "bicycle",
+      "concept": "household_object",
+      "level": 2
+    },
+    "after": {
+      "word": "bicycle",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "bicycles"
+      ]
+    },
+    "new_explicit_forms": [
+      "bicycles"
+    ],
+    "licensed_before": {
+      "bicycles": false
+    },
+    "licensed_after": {
+      "bicycles": true
+    }
+  },
+  "boss": {
+    "decision": "defer",
+    "reason": "The word is available as an ostensive seed. Defer part-of-speech expansion pending an explicit review of the person sense and its existing uses.",
+    "before": {
+      "word": "boss",
+      "concept": "someone_in_charge",
+      "level": 2
+    },
+    "after": {
+      "word": "boss",
+      "concept": "someone_in_charge",
+      "level": 2
+    }
+  },
+  "bunch": {
+    "decision": "repair",
+    "reason": "The grouping definition names a count noun. Bunches is its regular plural and was rejected in the retained fruit-generation report.",
+    "before": {
+      "word": "bunch",
+      "concept": "grouping",
+      "level": 2
+    },
+    "after": {
+      "word": "bunch",
+      "concept": "grouping",
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "bunches"
+      ]
+    },
+    "new_explicit_forms": [
+      "bunches"
+    ],
+    "licensed_before": {
+      "bunches": false
+    },
+    "licensed_after": {
+      "bunches": true
+    }
+  },
+  "chain": {
+    "decision": "repair",
+    "reason": "The existing definition names a countable entity or quantity. Retain the existing sense and review its regular plural.",
+    "before": {
+      "word": "chain",
+      "concept": "causal_chain",
+      "level": 2,
+      "forms": [
+        "chains"
+      ]
+    },
+    "after": {
+      "word": "chain",
+      "concept": "causal_chain",
+      "level": 2,
+      "forms": [
+        "chains"
+      ],
+      "pos": "noun"
+    },
+    "new_explicit_forms": [],
+    "licensed_before": {
+      "chains": true
+    },
+    "licensed_after": {
+      "chains": true
+    }
+  },
+  "column": {
+    "decision": "repair",
+    "reason": "The existing definition names a countable entity or quantity. Retain the existing sense and review its regular plural.",
+    "before": {
+      "word": "column",
+      "concept": "place_value",
+      "level": 2,
+      "forms": [
+        "columns"
+      ]
+    },
+    "after": {
+      "word": "column",
+      "concept": "place_value",
+      "level": 2,
+      "forms": [
+        "columns"
+      ],
+      "pos": "noun"
+    },
+    "new_explicit_forms": [],
+    "licensed_before": {
+      "columns": true
+    },
+    "licensed_after": {
+      "columns": true
+    }
+  },
+  "crash": {
+    "decision": "defer",
+    "reason": "The dictionary entry defines a noun while the stored form crashed implies a verb. Defer until both senses and their declarations are reviewed together.",
+    "before": {
+      "word": "crash",
+      "concept": "accident",
+      "level": 2,
+      "forms": [
+        "crashed"
+      ]
+    },
+    "after": {
+      "word": "crash",
+      "concept": "accident",
+      "level": 2,
+      "forms": [
+        "crashed"
+      ]
+    }
+  },
+  "digit": {
+    "decision": "repair",
+    "reason": "The existing definition names a countable entity or quantity. Retain the existing sense and review its regular plural.",
+    "before": {
+      "word": "digit",
+      "concept": "place_value",
+      "level": 2,
+      "forms": [
+        "digits"
+      ]
+    },
+    "after": {
+      "word": "digit",
+      "concept": "place_value",
+      "level": 2,
+      "forms": [
+        "digits"
+      ],
+      "pos": "noun"
+    },
+    "new_explicit_forms": [],
+    "licensed_before": {
+      "digits": true
+    },
+    "licensed_after": {
+      "digits": true
+    }
+  },
+  "eleven": {
+    "decision": "defer",
+    "reason": "Number word. Defer classification and count-noun uses rather than add elevens automatically.",
+    "before": {
+      "word": "eleven",
+      "concept": "natural_number",
+      "level": 2
+    },
+    "after": {
+      "word": "eleven",
+      "concept": "natural_number",
+      "level": 2
+    }
+  },
+  "fail": {
+    "decision": "repair",
+    "reason": "The existing definition explicitly describes an action. Review the complete regular verb forms and retain the existing sense.",
+    "before": {
+      "word": "fail",
+      "concept": "failing",
+      "forms": [
+        "fails"
+      ],
+      "level": 2
+    },
+    "after": {
+      "word": "fail",
+      "concept": "failing",
+      "forms": [
+        "failed",
+        "failing",
+        "fails"
+      ],
+      "level": 2,
+      "pos": "verb"
+    },
+    "new_explicit_forms": [
+      "failed",
+      "failing"
+    ],
+    "licensed_before": {
+      "failed": false,
+      "failing": false,
+      "fails": true
+    },
+    "licensed_after": {
+      "failed": true,
+      "failing": true,
+      "fails": true
+    }
+  },
+  "fifty": {
+    "decision": "defer",
+    "reason": "Number word. Defer classification and count-noun uses rather than add fifties automatically.",
+    "before": {
+      "word": "fifty",
+      "concept": "natural_number",
+      "level": 2
+    },
+    "after": {
+      "word": "fifty",
+      "concept": "natural_number",
+      "level": 2
+    }
+  },
+  "forbidden": {
+    "decision": "defer",
+    "reason": "Participial modifier with no level-two dictionary definition. Defer its relation to forbid and the intended sense rather than invent comparison forms.",
+    "before": {
+      "word": "forbidden",
+      "concept": "allowed_or_not",
+      "level": 2
+    },
+    "after": {
+      "word": "forbidden",
+      "concept": "allowed_or_not",
+      "level": 2
+    }
+  },
+  "forever": {
+    "decision": "defer",
+    "reason": "Temporal adverb. No noun, verb or adjective forms are justified by its current definition.",
+    "before": {
+      "word": "forever",
+      "concept": "duration",
+      "level": 2
+    },
+    "after": {
+      "word": "forever",
+      "concept": "duration",
+      "level": 2
+    }
+  },
+  "forty": {
+    "decision": "defer",
+    "reason": "Number word. Defer classification and count-noun uses rather than add forties automatically.",
+    "before": {
+      "word": "forty",
+      "concept": "natural_number",
+      "level": 2
+    },
+    "after": {
+      "word": "forty",
+      "concept": "natural_number",
+      "level": 2
+    }
+  },
+  "hundred": {
+    "decision": "defer",
+    "reason": "Number word with hundreds already recorded. Preserve it and defer full classification of number and count-noun uses.",
+    "before": {
+      "word": "hundred",
+      "concept": "place_value",
+      "level": 2,
+      "forms": [
+        "hundreds"
+      ]
+    },
+    "after": {
+      "word": "hundred",
+      "concept": "place_value",
+      "level": 2,
+      "forms": [
+        "hundreds"
+      ]
+    }
+  },
+  "minus": {
+    "decision": "defer",
+    "reason": "Subtraction marker. Defer part-of-speech classification rather than assume a count noun.",
+    "before": {
+      "word": "minus",
+      "concept": "subtraction",
+      "level": 2
+    },
+    "after": {
+      "word": "minus",
+      "concept": "subtraction",
+      "level": 2
+    }
+  },
+  "mishap": {
+    "decision": "repair",
+    "reason": "The existing definition names a countable entity or quantity. Retain the existing sense and review its regular plural.",
+    "before": {
+      "word": "mishap",
+      "concept": "accident",
+      "level": 2
+    },
+    "after": {
+      "word": "mishap",
+      "concept": "accident",
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "mishaps"
+      ]
+    },
+    "new_explicit_forms": [
+      "mishaps"
+    ],
+    "licensed_before": {
+      "mishaps": false
+    },
+    "licensed_after": {
+      "mishaps": true
+    }
+  },
+  "quantity": {
+    "decision": "repair",
+    "reason": "The existing definition names a countable entity or quantity. Retain the existing sense and review its regular plural.",
+    "before": {
+      "word": "quantity",
+      "concept": "quantity",
+      "level": 2
+    },
+    "after": {
+      "word": "quantity",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "quantities"
+      ]
+    },
+    "new_explicit_forms": [
+      "quantities"
+    ],
+    "licensed_before": {
+      "quantities": false
+    },
+    "licensed_after": {
+      "quantities": true
+    }
+  },
+  "rearrange": {
+    "decision": "repair",
+    "reason": "The existing definition explicitly describes an action. Review the complete regular verb forms and retain the existing sense.",
+    "before": {
+      "word": "rearrange",
+      "concept": "conservation_of_number",
+      "level": 2,
+      "forms": [
+        "rearranged"
+      ]
+    },
+    "after": {
+      "word": "rearrange",
+      "concept": "conservation_of_number",
+      "level": 2,
+      "forms": [
+        "rearranged",
+        "rearranges",
+        "rearranging"
+      ],
+      "pos": "verb"
+    },
+    "new_explicit_forms": [
+      "rearranges",
+      "rearranging"
+    ],
+    "licensed_before": {
+      "rearranged": true,
+      "rearranges": false,
+      "rearranging": false
+    },
+    "licensed_after": {
+      "rearranged": true,
+      "rearranges": true,
+      "rearranging": true
+    }
+  },
+  "remove": {
+    "decision": "repair",
+    "reason": "The existing definition explicitly describes an action. Review the complete regular verb forms and retain the existing sense.",
+    "before": {
+      "word": "remove",
+      "concept": "subtraction",
+      "level": 2,
+      "forms": [
+        "removed"
+      ]
+    },
+    "after": {
+      "word": "remove",
+      "concept": "subtraction",
+      "level": 2,
+      "forms": [
+        "removed",
+        "removes",
+        "removing"
+      ],
+      "pos": "verb"
+    },
+    "new_explicit_forms": [
+      "removes",
+      "removing"
+    ],
+    "licensed_before": {
+      "removed": true,
+      "removes": false,
+      "removing": false
+    },
+    "licensed_after": {
+      "removed": true,
+      "removes": true,
+      "removing": true
+    }
+  },
+  "subtract": {
+    "decision": "repair",
+    "reason": "The existing definition explicitly describes an action. Review the complete regular verb forms and retain the existing sense.",
+    "before": {
+      "word": "subtract",
+      "concept": "subtraction",
+      "level": 2,
+      "forms": [
+        "subtracted"
+      ]
+    },
+    "after": {
+      "word": "subtract",
+      "concept": "subtraction",
+      "level": 2,
+      "forms": [
+        "subtracted",
+        "subtracting",
+        "subtracts"
+      ],
+      "pos": "verb"
+    },
+    "new_explicit_forms": [
+      "subtracting",
+      "subtracts"
+    ],
+    "licensed_before": {
+      "subtracted": true,
+      "subtracting": false,
+      "subtracts": false
+    },
+    "licensed_after": {
+      "subtracted": true,
+      "subtracting": true,
+      "subtracts": true
+    }
+  },
+  "system": {
+    "decision": "repair",
+    "reason": "The existing definition names a countable entity or quantity. Retain the existing sense and review its regular plural.",
+    "before": {
+      "word": "system",
+      "concept": "component_and_system",
+      "level": 2
+    },
+    "after": {
+      "word": "system",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "systems"
+      ]
+    },
+    "new_explicit_forms": [
+      "systems"
+    ],
+    "licensed_before": {
+      "systems": false
+    },
+    "licensed_after": {
+      "systems": true
+    }
+  },
+  "thirty": {
+    "decision": "defer",
+    "reason": "Number word. Defer classification and count-noun uses rather than add thirties automatically.",
+    "before": {
+      "word": "thirty",
+      "concept": "natural_number",
+      "level": 2
+    },
+    "after": {
+      "word": "thirty",
+      "concept": "natural_number",
+      "level": 2
+    }
+  },
+  "twelve": {
+    "decision": "defer",
+    "reason": "Number word. Defer classification and count-noun uses rather than add twelves automatically.",
+    "before": {
+      "word": "twelve",
+      "concept": "natural_number",
+      "level": 2
+    },
+    "after": {
+      "word": "twelve",
+      "concept": "natural_number",
+      "level": 2
+    }
+  },
+  "twenty": {
+    "decision": "defer",
+    "reason": "Number word. Defer classification and count-noun uses rather than add twenties automatically.",
+    "before": {
+      "word": "twenty",
+      "concept": "natural_number",
+      "level": 2
+    },
+    "after": {
+      "word": "twenty",
+      "concept": "natural_number",
+      "level": 2
+    }
+  }
+}

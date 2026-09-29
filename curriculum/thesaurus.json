@@ -465,6 +465,10 @@
       "concept": "plant"
     },
     {
+      "word": "bread",
+      "concept": "material"
+    },
+    {
       "word": "break",
       "concept": "things_break",
       "antonyms": [
@@ -598,6 +602,10 @@
       "concept": "greeting_and_parting"
     },
     {
+      "word": "cabbage",
+      "concept": "plant"
+    },
+    {
       "word": "cage",
       "concept": "household_object"
     },
@@ -703,6 +711,10 @@
     {
       "word": "cheek",
       "concept": "body_part"
+    },
+    {
+      "word": "cherry",
+      "concept": "plant"
     },
     {
       "word": "chestnut",
@@ -1130,6 +1142,10 @@
       "concept": "how_sure"
     },
     {
+      "word": "dough",
+      "concept": "material"
+    },
+    {
       "word": "down",
       "concept": "",
       "antonyms": [
@@ -1521,6 +1537,10 @@
       "concept": "household_object"
     },
     {
+      "word": "flour",
+      "concept": "material"
+    },
+    {
       "word": "flow",
       "concept": "liquid"
     },
@@ -1612,6 +1632,10 @@
       "antonyms": [
         "back"
       ]
+    },
+    {
+      "word": "fruit",
+      "concept": "plant"
     },
     {
       "word": "full",
@@ -1722,6 +1746,10 @@
       "concept": "greeting_and_parting"
     },
     {
+      "word": "grain",
+      "concept": "plant"
+    },
+    {
       "word": "grandma",
       "concept": "family",
       "antonyms": [
@@ -1734,6 +1762,10 @@
       "antonyms": [
         "grandma"
       ]
+    },
+    {
+      "word": "grape",
+      "concept": "plant"
     },
     {
       "word": "grass",
@@ -3039,6 +3071,10 @@
       ]
     },
     {
+      "word": "pear",
+      "concept": "plant"
+    },
+    {
       "word": "pen",
       "concept": "writing"
     },
@@ -3150,6 +3186,10 @@
     {
       "word": "pour",
       "concept": "liquid"
+    },
+    {
+      "word": "powder",
+      "concept": "material"
     },
     {
       "word": "power",

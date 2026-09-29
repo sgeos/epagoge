@@ -1,0 +1,62 @@
+{
+  "cherry": {
+    "decision": "admit",
+    "reason": "Fruit sense. The teacher colour-and-size description is too broad. Add the central hard part enclosing a seed. Qualify red rather than requiring it. Plant is appropriate for the fruit sense. This introductory description is not an exhaustive species-identification key. Avoid stone because its current definition is rock.",
+    "mechanical_outcome": "mechanically_accepted",
+    "definition_origin": "Agent adaptation of retained teacher reply",
+    "definition": "A small round tree fruit, often red, with a hard part in the middle that holds one seed.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
+    "reviewed_forms": [
+      "cherry",
+      "cherries"
+    ]
+  },
+  "grape": {
+    "decision": "admit",
+    "reason": "Fruit sense. Replace unadmitted bunches with groups and omit a colour restriction. Add the climbing-plant growth habit and juice with a thin outer cover. Plant fits this fruit sense. Do not use skin in an unrecorded plant sense. Do not require seeds, since seedless grapes exist.",
+    "mechanical_outcome": "deferred",
+    "definition_origin": "Agent adaptation of retained teacher reply",
+    "definition": "A small round fruit with juice inside and a thin outside cover, growing in groups on a climbing plant.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
+    "reviewed_forms": [
+      "grape",
+      "grapes"
+    ]
+  },
+  "pear": {
+    "decision": "admit",
+    "reason": "Fruit sense. Replace unadmitted stem with the characteristic qualified narrow-top and wider-bottom shape. Unlike the earlier erroneous reply, the shape is not reversed. Often leaves room for round varieties. Plant fits the fruit sense.",
+    "mechanical_outcome": "deferred",
+    "definition_origin": "Agent adaptation of retained teacher reply",
+    "definition": "A tree fruit often narrow at the top and round and wide near the bottom.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
+    "reviewed_forms": [
+      "pear",
+      "pears"
+    ]
+  },
+  "lemon": {
+    "decision": "defer",
+    "reason": "Defer the fruit sense. The reply requires sour and taste. A yellow tree-fruit description without an informative taste account is insufficient. No new taste words are admitted to force acceptance.",
+    "mechanical_outcome": "deferred",
+    "forms_review": "No forms admitted. Later admission requires a new review."
+  },
+  "peach": {
+    "decision": "defer",
+    "reason": "Defer the fruit sense. The reply relies on fuzzy, sweet and taste, and skin currently has a body-covering definition. Its distinguishing surface description requires an explicit sense review beyond this batch. No forms admitted.",
+    "mechanical_outcome": "deferred",
+    "forms_review": "No forms admitted. Later admission requires a new review."
+  },
+  "plum": {
+    "decision": "defer",
+    "reason": "Defer the fruit sense. Sweet, tart and taste are unavailable, and the teacher uses skin outside its recorded body sense. The remaining small tree-fruit account does not distinguish it adequately from the other candidates. No forms admitted.",
+    "mechanical_outcome": "deferred",
+    "forms_review": "No forms admitted. Later admission requires a new review."
+  }
+}

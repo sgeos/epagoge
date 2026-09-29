@@ -26,6 +26,8 @@ from typing import Final, cast
 import torch
 from torch import Tensor, nn
 
+from epagoge.artifacts import atomic_output, check_outputs, digest, file_digest
+
 DEFAULT_VOCAB: Final[int] = 32
 """Small deliberately.
 
@@ -896,6 +898,34 @@ class TrainResult:
         return self.held_out_loss - self.train_loss
 
 
+@dataclass(frozen=True, slots=True)
+class RunProgress:
+    """Periodic restart state for a fixed training horizon and input stream."""
+
+    path: Path
+    resume: Path | None = None
+    every: int = 100
+    stop_after: int | None = None
+    identity: str = ""
+
+
+def rng_state(device: torch.device) -> Tensor:
+    if device.type == "cuda":
+        return torch.cuda.get_rng_state(device)
+    if device.type == "mps":
+        return torch.mps.get_rng_state()
+    return torch.get_rng_state()
+
+
+def restore_rng(state: Tensor, device: torch.device) -> None:
+    if device.type == "cuda":
+        torch.cuda.set_rng_state(state.cpu(), device)
+    elif device.type == "mps":
+        torch.mps.set_rng_state(state.cpu())
+    else:
+        torch.set_rng_state(state.cpu())
+
+
 def train_model(
     chunks: list[list[int]],
     order: list[int],
@@ -906,6 +936,7 @@ def train_model(
     device: torch.device,
     pad_id: int | None = None,
     warm_from: WarmStart | None = None,
+    progress: RunProgress | None = None,
 ) -> tuple[TinyTransformer, float]:
     """Train one model and return it with its held-out loss.
 
@@ -923,6 +954,7 @@ def train_model(
         device,
         pad_id,
         warm_from=warm_from,
+        progress=progress,
     )
     return result.model, result.held_out_loss
 
@@ -938,6 +970,7 @@ def train_diagnostic(
     pad_id: int | None = None,
     curve_every: int = 100,
     warm_from: WarmStart | None = None,
+    progress: RunProgress | None = None,
 ) -> TrainResult:
     """Train one model and return it with training and held-out loss.
 
@@ -945,6 +978,57 @@ def train_diagnostic(
     step is taken, which is what makes level N a continuation of level N
     minus one rather than a fresh run.
     """
+    if train_config.steps <= 0 or train_config.batch_size <= 0:
+        raise ValueError("steps and batch size must be positive")
+    if not order or not held_out or len(set(order)) != len(order):
+        raise ValueError(
+            "training order must be nonempty and unique, with held-out data"
+        )
+    if any(i < 0 or i >= len(chunks) for i in order):
+        raise ValueError("training order contains an invalid chunk index")
+    if train_config.optimiser not in {"adamw", "muon"}:
+        raise ValueError("unknown optimiser")
+    if train_config.schedule not in {"cosine", "wsd"}:
+        raise ValueError("unknown learning-rate schedule")
+    if train_config.learning_rate <= 0:
+        raise ValueError("learning rate must be positive")
+    if progress is not None:
+        if warm_from is not None:
+            raise ValueError("restart state and warm starts cannot be combined")
+        if progress.every <= 0:
+            raise ValueError("checkpoint interval must be positive")
+        if (
+            progress.stop_after is not None
+            and not 0 < progress.stop_after <= train_config.steps
+        ):
+            raise ValueError("stop-after must be within the fixed training horizon")
+        replacing = (
+            progress.resume is not None
+            and progress.path.resolve() == progress.resume.resolve()
+        )
+        check_outputs([progress.path], overwrite=replacing)
+    contract = (
+        digest(
+            {
+                "model": asdict(model_config),
+                "training": asdict(train_config),
+                "chunks": chunks,
+                "order": order,
+                "held_out": held_out,
+                "curve_every": curve_every,
+                "seed": init_seed,
+                "device": str(device),
+                "pad_id": pad_id,
+                "torch": str(torch.__version__),
+                "python": sys.version,
+                "threads": torch.get_num_threads(),
+                "code": file_digest(Path(__file__)),
+                "identity": progress.identity if progress else "",
+            }
+        )
+        if progress
+        else ""
+    )
     # torch ships incomplete stubs for these two calls. The suppression is a
     # gap in the framework's typing, not a weakening of this module's.
     torch.manual_seed(init_seed)  # pyright: ignore[reportUnknownMemberType]
@@ -1005,7 +1089,46 @@ def train_diagnostic(
     model.train()
     curve: list[tuple[int, float]] = []
     window: list[float] = []
-    for step in range(train_config.steps):
+    start = 0
+    end = train_config.steps
+    published = (
+        progress is not None
+        and progress.resume is not None
+        and progress.path.resolve() == progress.resume.resolve()
+    )
+    if progress is not None:
+        if progress.stop_after is not None:
+            end = progress.stop_after
+        if progress.resume is not None:
+            saved = cast(
+                dict[str, object],
+                torch.load(  # pyright: ignore[reportUnknownMemberType]
+                    progress.resume,
+                    map_location=device,
+                    weights_only=True,
+                ),
+            )
+            if saved.get("contract") != contract or saved.get("format") != 1:
+                raise ValueError(
+                    "restart state does not match inputs, configuration or runtime"
+                )
+            saved_step = saved["step"]
+            if type(saved_step) is not int:
+                raise ValueError("invalid restart step")
+            start = saved_step
+            if not 0 <= start < end:
+                raise ValueError("restart step must precede requested stopping point")
+            states = cast(list[dict[str, object]], saved["optimisers"])
+            if len(states) != len(optimisers):
+                raise ValueError("restart optimizer count differs")
+            model.load_state_dict(cast(dict[str, Tensor], saved["model"]))
+            for (optimiser, _), state in zip(optimisers, states, strict=True):
+                optimiser.load_state_dict(state)
+            curve = cast(list[tuple[int, float]], saved["curve"])
+            window = cast(list[float], saved["window"])
+            torch.set_rng_state(cast(Tensor, saved["cpu_rng"]).cpu())
+            restore_rng(cast(Tensor, saved["device_rng"]), device)
+    for step in range(start, end):
         inputs, targets = batches[step % len(batches)]
         inputs = corrupt(
             inputs,
@@ -1033,6 +1156,26 @@ def train_diagnostic(
         if curve_every > 0 and (step + 1) % curve_every == 0:
             curve.append((step + 1, sum(window) / len(window)))
             window = []
+
+        if progress is not None and (
+            (step + 1) % progress.every == 0 or step + 1 == end
+        ):
+            with atomic_output(progress.path, overwrite=published) as handle:
+                torch.save(
+                    {  # pyright: ignore[reportUnknownMemberType]
+                        "format": 1,
+                        "contract": contract,
+                        "step": step + 1,
+                        "model": model.state_dict(),
+                        "optimisers": [o.state_dict() for o, _ in optimisers],
+                        "cpu_rng": torch.get_rng_state(),
+                        "device_rng": rng_state(device),
+                        "curve": curve,
+                        "window": window,
+                    },
+                    handle,
+                )
+            published = True
 
     model.eval()
     order_eval = list(range(len(held_out)))
@@ -1153,6 +1296,9 @@ def save_checkpoint(
     config: ModelConfig,
     words: Sequence[str],
     path: Path,
+    *,
+    overwrite: bool = False,
+    manifest: dict[str, object] | None = None,
 ) -> None:
     """Write weights together with the vocabulary they were trained on.
 
@@ -1186,15 +1332,16 @@ def save_checkpoint(
     fields, after three in the book code, and the remedy is the same one:
     derive the field list instead of retyping it.
     """
-    path.parent.mkdir(parents=True, exist_ok=True)
-    torch.save(  # pyright: ignore[reportUnknownMemberType]
-        {
-            "state": model.state_dict(),
-            "words": list(words),
-            "config": asdict(config),
-        },
-        path,
-    )
+    with atomic_output(path, overwrite=overwrite) as handle:
+        torch.save(  # pyright: ignore[reportUnknownMemberType]
+            {
+                "state": model.state_dict(),
+                "words": list(words),
+                "config": asdict(config),
+                "manifest": manifest,
+            },
+            handle,
+        )
 
 
 @dataclass(frozen=True, slots=True)

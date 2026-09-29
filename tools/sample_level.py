@@ -20,20 +20,23 @@ model, which is what a vacuous metric looks like when it agrees with you.
 expected to be poor, and a number that looks bad is the measurement
 working.
 
-    .venv/bin/python tools/sample_level.py --level 1 --steps 800
+    .venv/bin/python tools/sample_level.py --level 1 --steps 800 \
+        --weights tmp/sample.pt --out tmp/sample.json
 """
 
 from __future__ import annotations
 
 import argparse
-import json
 import sys
+from dataclasses import asdict
 from pathlib import Path
 
 from epagoge import schedule as sched
+from epagoge.artifacts import check_outputs, digest, input_manifest, write_json
 from epagoge.concept_graph import ConceptGraph
 from epagoge.pilot import (
     ModelConfig,
+    RunProgress,
     TrainConfig,
     chunk,
     format_seconds,
@@ -90,7 +93,12 @@ def main(argv: list[str]) -> int:
     # four hundred steps, held-out loss 4.789. Every longer run measured on
     # this corpus is worse, because the model memorises it. See
     # LEVEL_ONE_DIAGNOSIS.md.
-    parser.add_argument("--weights", type=Path, default=ROOT / "evals/pilot/level_1.pt")
+    parser.add_argument("--weights", type=Path, required=True)
+    parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument("--training-state", type=Path)
+    parser.add_argument("--resume", type=Path)
+    parser.add_argument("--checkpoint-every", type=int, default=100)
+    parser.add_argument("--stop-after", type=int)
     # **The shipped checkpoint should be the best the project can make.**
     # Muon is worth 0.117 nats here, measured over three seeds in
     # `evals/pilot/LEVEL_ONE_OPTIMISER.md`, so the tool that writes the
@@ -117,6 +125,23 @@ def main(argv: list[str]) -> int:
         "must not share a path",
     )
     args = parser.parse_args(argv[1:])
+    if args.resume and not args.training_state:
+        parser.error("--resume requires --training-state")
+    if args.stop_after is not None and not args.training_state:
+        parser.error("--stop-after requires --training-state")
+    manifest_path = args.out.with_suffix(args.out.suffix + ".manifest.json")
+    try:
+        check_outputs([args.weights, args.out, manifest_path], overwrite=args.overwrite)
+        if args.training_state:
+            outputs = {p.resolve() for p in (args.weights, args.out, manifest_path)}
+            if args.training_state.resolve() in outputs or (
+                args.resume and args.resume.resolve() in outputs
+            ):
+                raise ValueError(
+                    "training state must be separate from output artifacts"
+                )
+    except (ValueError, FileExistsError) as exc:
+        parser.error(str(exc))
 
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
     tokeniser = build(vocabulary, args.level)
@@ -153,25 +178,66 @@ def main(argv: list[str]) -> int:
     device = select_device(args.device)
     import time
 
+    train_config = TrainConfig(
+        steps=args.steps,
+        batch_size=args.batch_size,
+        learning_rate=args.learning_rate,
+        token_replacement=args.token_replacement,
+        optimiser=args.optimiser,
+        schedule=args.schedule,
+    )
+    manifest = input_manifest(ROOT, args.level)
+    manifest.update(
+        {
+            "model": asdict(model_config),
+            "training": asdict(train_config),
+            "seed": args.seed,
+            "device": str(device),
+            "vocabulary": list(tokeniser.words),
+            "chunk_hash": digest(chunks),
+            "books": ordered,
+            "order": list(range(len(chunks) - held)),
+            "held_out": list(range(len(chunks) - held, len(chunks))),
+            "purpose": "exploratory",
+        }
+    )
+    manifest["ordering_hash"] = digest(manifest["order"])
+    progress = (
+        RunProgress(
+            args.training_state,
+            args.resume,
+            args.checkpoint_every,
+            args.stop_after,
+            digest(manifest),
+        )
+        if args.training_state
+        else None
+    )
+    write_json(manifest_path, manifest, overwrite=args.overwrite)
     started = time.time()
     model, loss = train_model(
         chunks,
         list(range(len(chunks) - held)),
         chunks[-held:],
         model_config,
-        TrainConfig(
-            steps=args.steps,
-            batch_size=args.batch_size,
-            learning_rate=args.learning_rate,
-            token_replacement=args.token_replacement,
-            optimiser=args.optimiser,
-            schedule=args.schedule,
-        ),
+        train_config,
         args.seed,
         device,
         pad_id,
+        progress=progress,
     )
-    save_checkpoint(model, model_config, tokeniser.words, args.weights)
+    save_checkpoint(
+        model,
+        model_config,
+        tokeniser.words,
+        args.weights,
+        overwrite=args.overwrite,
+        manifest={
+            **manifest,
+            "completed_steps": args.stop_after or args.steps,
+            "complete": args.stop_after is None or args.stop_after == args.steps,
+        },
+    )
 
     # **The prompt is the corpus's own opening move.** A book starts with a
     # marker, so sampling from it asks the model to begin a book rather
@@ -256,34 +322,33 @@ def main(argv: list[str]) -> int:
     for n, body in enumerate(texts):
         print(f"\n--- sample {n} ---\n{body[:600]}")
 
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(
-        json.dumps(
-            {
-                "level": args.level,
-                "steps": args.steps,
-                "seed": args.seed,
-                "chunks": len(chunks),
-                "parameters": parameter_count(model_config),
-                "held_out_loss": loss,
-                "temperature": args.temperature,
-                "sampled_word_tokens": len(words),
-                "distinct_share": distinct,
-                "sentence_share": sentence_share,
-                "samples": texts,
-                "note": (
-                    "Descriptive, and at this corpus size the samples are "
-                    "expected to be poor. Admissibility is deliberately not "
-                    "reported: the tokeniser is built from the level's "
-                    "lexicon, so every token the model can emit is admissible "
-                    "by construction and the figure would be one hundred per "
-                    "cent whatever the model learned."
-                ),
-            },
-            indent=2,
-        )
-        + "\n",
-        encoding="utf-8",
+    write_json(
+        args.out,
+        {
+            "level": args.level,
+            "steps": args.stop_after or args.steps,
+            "planned_steps": args.steps,
+            "complete": args.stop_after is None or args.stop_after == args.steps,
+            "manifest_hash": digest(manifest),
+            "seed": args.seed,
+            "chunks": len(chunks),
+            "parameters": parameter_count(model_config),
+            "held_out_loss": loss,
+            "temperature": args.temperature,
+            "sampled_word_tokens": len(words),
+            "distinct_share": distinct,
+            "sentence_share": sentence_share,
+            "samples": texts,
+            "note": (
+                "Descriptive, and at this corpus size the samples are "
+                "expected to be poor. Admissibility is deliberately not "
+                "reported: the tokeniser is built from the level's "
+                "lexicon, so every token the model can emit is admissible "
+                "by construction and the figure would be one hundred per "
+                "cent whatever the model learned."
+            ),
+        },
+        overwrite=args.overwrite,
     )
     print(f"\nwrote {args.out}")
     return 0

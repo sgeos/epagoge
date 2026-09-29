@@ -1,0 +1,40 @@
+{
+  "before": {
+    "1": 849,
+    "2": 961
+  },
+  "after": {
+    "1": 849,
+    "2": 964
+  },
+  "remaining_gap": 9036,
+  "mechanically_accepted": 1,
+  "admitted": 3,
+  "deferred_after_review": 3,
+  "defining_vocabulary_count": 700,
+  "selected_words_present": true,
+  "context": 4096,
+  "earlier_artifacts_preserved": true,
+  "level_one_books_and_reference_preserved": true,
+  "full_gate": {
+    "exit_code": 0,
+    "test_runs": [
+      "Ran 599 tests in 8.856s",
+      "Ran 599 tests in 10.949s"
+    ],
+    "skipped": 0,
+    "type_errors": 0,
+    "type_warnings": 0,
+    "core_coverage_percent": 96,
+    "training_coverage_percent": 92,
+    "disclosure_scan": "clean",
+    "log_sha256": "efe2b93e6a12c3b8014c657d349ce3d80eec93ff50cb0d3258d45271224e5518"
+  },
+  "source_hashes": {
+    "generators/define_candidates.py": "ac90d398a025940d98cd7f7d2db6143b7b9fe3163ad7169b523020e68abe9f84",
+    "tests/test_candidates.py": "3393199a83d8d32e3282271b918f2ea4f4c04828bc39f622ae2a4f53e97a8082",
+    "generators/generate.py": "c9989592bcb810072e454adb8050849dc7c62bf4f0545684bcc03fd252e184d8"
+  },
+  "completion_condition_characters": 1442,
+  "limits": "One nondeterministic teacher request with agent semantic review. Independent expert validation, causal acceptance improvement and general throughput remain unmeasured. Confirmatory training remains blocked."
+}

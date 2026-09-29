@@ -1,0 +1,28 @@
+{
+  "bread": {
+    "decision": "admit",
+    "reason": "Food sense. Remove yeast as a required ingredient because breads need not contain yeast. Retain baking as typical rather than universal. Material is the existing graph category for this prepared food substance. Use a mass noun without type plurals. The definition is introductory, not a recipe or an exhaustive classification of flour-based foods.",
+    "mechanical_outcome": "deferred",
+    "definition_origin": "Agent adaptation of retained teacher reply, independently reviewed for the declared sense",
+    "definition": "A food made from flour and water worked together, often baked in an oven.",
+    "concept": "material",
+    "pos": "noun mass",
+    "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json",
+    "reviewed_forms": [
+      "bread"
+    ]
+  },
+  "dough": {
+    "decision": "admit",
+    "reason": "Uncooked flour-and-liquid material sense. Replace sticky mixture and ingredients with grounded language. Shapeability distinguishes this sense from a pourable liquid. Do not restrict its use to bread. Material fits this prepared substance. Use a mass noun without type plurals. The money sense is excluded.",
+    "mechanical_outcome": "deferred",
+    "definition_origin": "Agent adaptation of retained teacher reply, independently reviewed for the declared sense",
+    "definition": "A thick soft material made by working flour and water or another liquid together, which can be shaped before it is cooked.",
+    "concept": "material",
+    "pos": "noun mass",
+    "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json",
+    "reviewed_forms": [
+      "dough"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "reviewed": 28,
+  "repaired": 15,
+  "deferred": 13,
+  "before_headwords": {
+    "1": 849,
+    "2": 964
+  },
+  "after_headwords": {
+    "1": 849,
+    "2": 964
+  },
+  "remaining_gap": 9036,
+  "before_explicit_surfaces": {
+    "1": 2049,
+    "2": 2259
+  },
+  "after_explicit_surfaces": {
+    "1": 2049,
+    "2": 2273
+  },
+  "added_explicit_forms": [
+    "accounts",
+    "bicycles",
+    "bunches",
+    "failed",
+    "failing",
+    "mishaps",
+    "quantities",
+    "rearranges",
+    "rearranging",
+    "removes",
+    "removing",
+    "subtracting",
+    "subtracts",
+    "systems"
+  ],
+  "newly_licensed_at_level_two": [
+    "accounts",
+    "bicycles",
+    "bunches",
+    "failed",
+    "failing",
+    "mishaps",
+    "quantities",
+    "rearranges",
+    "rearranging",
+    "removes",
+    "removing",
+    "subtracting",
+    "subtracts",
+    "systems"
+  ],
+  "level_one_licensing_unchanged": true,
+  "closure": {
+    "1": "curriculum/books/level_1: dictionary at level 1\n  defined      812 of 812 words needing one  100.0% coverage\n  also         21 definition(s) of seed words, not counted\n  grounded     833  closure 100.0%\n  seed         257 words need no definition and are excluded\n  self-hosting  yes\n",
+    "2": "curriculum/books/level_2: dictionary at level 2\n  defined      927 of 927 words needing one  100.0% coverage\n  also         17 definition(s) of seed words, not counted\n  grounded     944  closure 100.0%\n  seed         257 words need no definition and are excluded\n  self-hosting  yes\n"
+  },
+  "preservation_passed": true,
+  "only_reviewed_vocabulary_changes": true,
+  "vocabulary_hash": "5f4828de363a7753b86afdaea2adff9ac5b442529f49564a7a4d21813aed73f8",
+  "review_hash": "a819f274ea895b7bbd6313937ae1a25dc02ccc3c3cbfc3bada51c5fa4636f11a",
+  "before_hash": "dc5df77d8b3b929c3d9e51d457b34105317e03b05e3ecc0824defc244fa5516b",
+  "limits": "No new headwords or senses. This is agent review without independent expert validation. No general throughput or curriculum benefit is measured."
+}

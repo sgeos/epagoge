@@ -21,32 +21,36 @@ stream at 818,000 parameters. `evals/pilot/README.md` says plainly that
 the correlation is the number most likely to move on real text, and item
 6 of the pre-registration stays provisional until it is re-measured on
 the corpus. Computing the same quantities here is what makes the two runs
-comparable. It does not make them equivalent: the optimiser and schedule
-are still AdamW with cosine decay, and `TRAINING_TECHNIQUES.md` adopts
-maximal update parametrization, Muon and warmup-stable-decay, none of
-which is implemented.
+comparable. AdamW with cosine decay remains the default. Muon, rotary
+positions and warmup-stable-decay are selectable. These are exploratory
+runs. The incomplete pre-registration blocks confirmatory runs.
 
-    .venv/bin/python tools/train_level.py --level 1 --seeds 4 --steps 600
+    .venv/bin/python tools/train_level.py --level 1 --seeds 4 --steps 600 \
+        --out tmp/ordering.json
+
 """
 
 from __future__ import annotations
 
 import argparse
-import json
 import random
 import sys
 import time
+from dataclasses import asdict
 from pathlib import Path
 from typing import Final, cast
 
 from epagoge import schedule as sched
-from epagoge.book import (
-    book_prerequisites,
-    linear_extension,
-    load_book_dir,
-    random_linear_extension,
+from epagoge.artifacts import (
+    check_outputs,
+    digest,
+    file_digest,
+    input_manifest,
+    write_json,
 )
 from epagoge.concept_graph import ConceptGraph
+from epagoge.ordering import ORDERINGS
+from epagoge.ordering import book_order as ordered_books
 from epagoge.pilot import (
     ModelConfig,
     TrainConfig,
@@ -71,23 +75,6 @@ from epagoge.vocabulary import load_vocabulary
 
 ROOT = Path(__file__).resolve().parent.parent
 
-LENGTH_WEIGHT: Final[float] = 0.265
-"""How strongly the `length` arm sorts by book length.
-
-Chosen so that arm's position-to-length correlation matches the topological
-arm's, which is what makes it a control rather than another variable.
-**Both are measured per seed and then averaged**, at +0.211 for topological
-and +0.213 for this arm over six seeds, and the weight was tuned against
-the arm as implemented rather than against a reconstruction of it.
-
-**Tuned to 0.40 first, against the wrong statistic.** Correlating a book's
-*mean* position across seeds against its length gives +0.311 for the
-topological arm, because averaging the positions removes the per-run noise.
-That is a fact about the arm across seeds, and the quantity a single
-training run sees is the per-run one. Matching the wrong target would have
-given this arm half again the length ordering it is supposed to hold fixed.
-"""
-
 PAIRED_ARMS: Final[frozenset[str]] = frozenset({"curriculum", "topological"})
 """The two arms the pre-registered contrast is between.
 
@@ -96,8 +83,8 @@ computed over it and over nothing else, so selecting a set of arms that
 omits either one yields no paired estimate.
 """
 
-ARMS: Final[tuple[str, ...]] = ("curriculum", "topological", "shuffled")
-"""The orderings compared, and why there are three.
+ARMS: Final[tuple[str, ...]] = ("curriculum", "topological", "shuffled", "null")
+"""The default exploratory arms include the independent null ordering.
 
 **`shuffled` was added 2026-09-26 and its absence was a real gap.** The
 other two both respect the prerequisite graph, so the ablation compared two
@@ -116,107 +103,9 @@ isolate in a trainer that cycles a fixed ordered list.
 def book_order(
     level: int, graph: ConceptGraph, seed: int, arm: str, plan: sched.Schedule
 ) -> tuple[list[str], dict[str, str], dict[str, str]]:
-    """Book ids in the arm's order, each book's text, and each book's title.
-
-    **The title is returned because it is trained on**, as an announcement
-    line at the head of the work. See `Tokeniser.encode_work` and
-    `docs/decisions/STRUCTURAL_TOKENS.md`. It was presentation only until
-    2026-09-27.
-
-    **A book teaches what its unit teaches.** Taking the union of every
-    record's concepts instead counts a word the book merely defines as a
-    concept the book teaches, which manufactures dependencies between books
-    that have nothing to do with each other. Measured 2026-09-25 over 144
-    books, that reading made the dependency graph cyclic in twenty-four
-    places, `bk.a1.person` and `bk.b1.keeping_going` each depending on the
-    other, and `linear_extension` returns a short list on a cycle. Thirteen
-    books reached the trainer and a hundred and thirty-three did not.
-    """
-    all_books, records = load_book_dir(ROOT / f"curriculum/books/level_{level}")
-    by_id = {
-        str(cast(dict[str, object], r)["id"]): cast(dict[str, object], r)
-        for r in records
-    }
-    # A dictionary book spans nearly every concept, so it makes the
-    # dependency graph cyclic. It is reference material and is emitted last.
-    books = [b for b in all_books if not b.id.startswith("bk.dictionary.")]
-    reference = [b for b in all_books if b.id.startswith("bk.dictionary.")]
-    by_unit = {u.id: set(u.teaches) for d in plan.domains for u in d.units}
-    teaches = {b.id: by_unit.get(b.subject, set()) for b in books}
-    prerequisites = {n: set(graph.prerequisites_of(n)) for n in graph.nodes}
-    deps = book_prerequisites(books, teaches, prerequisites)
-    if arm == "length":
-        # **The control for the confound found on 2026-09-27.** Orders that
-        # respect the prerequisite graph also sort books by length, at
-        # +0.311 against +0.062 for a free shuffle, because a book with more
-        # prerequisites is placed later and 90 percent of books carry one.
-        # Length ordering and graph structure were collinear at -0.76 across
-        # the arms, so neither could be credited with the effect.
-        #
-        # This arm has the length ordering and not the graph. The mixing
-        # weight is 0.40 because that reproduces the topological arm's
-        # correlation to three decimals, measured over six seeds, so the two
-        # differ in the graph and match on length.
-        generator = random.Random(seed)
-        length = {
-            b.id: sum(
-                len(str(by_id[i]["content"]).split()) for i in b.records if i in by_id
-            )
-            for b in books
-        }
-        by_length = sorted(length, key=lambda n: length[n])
-        place = {n: i / max(1, len(by_length) - 1) for i, n in enumerate(by_length)}
-        names = sorted(
-            place,
-            key=lambda n: (
-                LENGTH_WEIGHT * place[n] + (1.0 - LENGTH_WEIGHT) * generator.random()
-            ),
-        )
-    elif arm == "shuffled":
-        # **The flat control, and it did not exist until 2026-09-26.** The two
-        # arms above it both respect the prerequisite graph, so the ablation
-        # compared two curricula rather than a curriculum against no
-        # curriculum. A result from those two says which valid ordering is
-        # better, not whether ordering helps.
-        #
-        # It is also this design's answer to Wu, Dyer and Neyshabur, who
-        # found any curriculum benefit attributable to the training set
-        # growing rather than to the order, and whose control is a set that
-        # grows with random membership. In a trainer that cycles a fixed
-        # ordered list, the order IS the growth schedule for the first epoch,
-        # so a random order is that control.
-        #
-        # **The growth confound is smaller here than in their setting and the
-        # record should say so.** At 1,458 chunks and batch 8 an epoch is 182
-        # batches, so a 1,600-step run is about 8.8 epochs and every arm has
-        # seen everything after the first eleven percent. After that, set size
-        # cannot explain a difference and only the order within each cycle
-        # can.
-        shuffled = [b.id for b in books]
-        random.Random(seed).shuffle(shuffled)
-        names = shuffled
-    elif arm == "topological":
-        names = random_linear_extension(deps, random.Random(seed))
-    else:
-        depth = graph.prerequisite_depth()
-
-        def shallowest(ready: set[str]) -> str:
-            return min(
-                ready,
-                key=lambda name: (
-                    max((depth[c] for c in teaches[name] if c in depth), default=0),
-                    name,
-                ),
-            )
-
-        names = linear_extension(deps, shallowest)
-    ordered = names + [b.id for b in reference]
-    text = {
-        b.id: "\n".join(str(by_id[i]["content"]) for i in b.records if i in by_id)
-        for b in all_books
-    }
-    titles = {b.id: b.title or "" for b in all_books}
-    return ordered, text, titles
+    return ordered_books(
+        ROOT / f"curriculum/books/level_{level}", graph, seed, arm, plan
+    )
 
 
 def block_shuffle(names: list[str], size: int, seed: int) -> list[str]:
@@ -282,7 +171,7 @@ def main(argv: list[str]) -> int:
     # added on 2026-09-27 answers one question and would cost a third more
     # compute on every run that does not ask it. Changing what the ablation
     # compares by default is a design decision and is the operator's.
-    parser.add_argument("--arms", type=str, nargs="+", default=list(ARMS))
+    parser.add_argument("--arms", choices=ORDERINGS, nargs="+", default=list(ARMS))
     parser.add_argument(
         "--block-shuffle",
         type=int,
@@ -313,7 +202,33 @@ def main(argv: list[str]) -> int:
         help="where to write the result; a recorded run and a probe "
         "must not share a path",
     )
+    parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument(
+        "--purpose", choices=("exploratory", "confirmatory"), default="exploratory"
+    )
+    parser.add_argument("--positions", choices=("learned", "rotary"), default="learned")
+    parser.add_argument("--optimiser", choices=("adamw", "muon"), default="adamw")
+    parser.add_argument("--schedule", choices=("cosine", "wsd"), default="cosine")
+    parser.add_argument("--learning-rate", type=float, default=3e-4)
+    parser.add_argument("--token-replacement", type=float, default=0.0)
     args = parser.parse_args(argv[1:])
+    if args.purpose == "confirmatory":
+        parser.error(
+            "confirmatory runs are blocked until PRE_REGISTRATION.md is complete "
+            "and the protocol is implemented"
+        )
+    if args.seeds < 1 or args.steps < 1 or not 0 < args.held_out < 1:
+        parser.error(
+            "positive seeds and steps and a held-out fraction "
+            "strictly between zero and one are required"
+        )
+    if len(set(args.arms)) != len(args.arms):
+        parser.error("arms must be unique")
+    manifest_path = args.out.with_suffix(args.out.suffix + ".manifest.json")
+    try:
+        check_outputs([args.out, manifest_path], overwrite=args.overwrite)
+    except (ValueError, FileExistsError) as exc:
+        parser.error(str(exc))
 
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
     tokeniser = build(vocabulary, args.level)
@@ -386,10 +301,15 @@ def main(argv: list[str]) -> int:
         d_model=args.d_model,
         n_layers=args.layers,
         seq_len=args.seq_len,
+        positions=args.positions,
     )
     train_config = TrainConfig(
         steps=args.steps,
         batch_size=args.batch_size,
+        optimiser=args.optimiser,
+        schedule=args.schedule,
+        learning_rate=args.learning_rate,
+        token_replacement=args.token_replacement,
         eval_batches=args.eval_batches if args.eval_batches > 0 else 1_000_000,
     )
     device = select_device(args.device)
@@ -454,6 +374,40 @@ def main(argv: list[str]) -> int:
     # curriculum against topological, because that is the pre-registered
     # comparison; shuffled is reported alongside so a reader can see whether
     # either curriculum beats no curriculum.
+    orders = {
+        str(seed): {arm: order_for(arm, seed) for arm in args.arms}
+        for seed in range(args.seeds)
+    }
+    if any(
+        sorted(order) != train_ids
+        for arms in orders.values()
+        for order in arms.values()
+    ):
+        raise ValueError("arms must permute exactly the same training chunks")
+    manifest = input_manifest(ROOT, args.level)
+    manifest.update(
+        {
+            "purpose": args.purpose,
+            "model": asdict(model_config),
+            "training": asdict(train_config),
+            "device": str(device),
+            "seeds": list(range(args.seeds)),
+            "arms": args.arms,
+            "block_shuffle": args.block_shuffle,
+            "chunk_hash": digest(chunks),
+            "held_out": sorted(held_ids),
+            "owners": owner,
+            "vocabulary": list(tokeniser.words),
+            "orders": orders,
+            "ordering_hash": digest(orders),
+            "warm_start_hash": file_digest(
+                ROOT / f"evals/pilot/level_{args.from_level}.pt"
+            )
+            if args.from_level is not None
+            else None,
+        }
+    )
+    write_json(manifest_path, manifest, overwrite=args.overwrite)
     results: list[dict[str, object]] = []
     started = time.time()
     for seed in range(args.seeds):
@@ -461,7 +415,7 @@ def main(argv: list[str]) -> int:
         for arm in args.arms:
             loss = train_once(
                 chunks,
-                order_for(arm, seed),
+                orders[str(seed)][arm],
                 held_out,
                 model_config,
                 train_config,
@@ -470,6 +424,8 @@ def main(argv: list[str]) -> int:
                 pad_id=pad_id,
                 warm_from=warm,
             )
+            if not is_finite(loss):
+                raise ValueError(f"non-finite loss for seed {seed}, arm {arm}")
             row[arm] = loss
             print(f"  seed {seed} {arm:12} held-out loss {loss:.4f}")
         # **The paired contrast needs both of its arms present.** `--arms`
@@ -481,6 +437,10 @@ def main(argv: list[str]) -> int:
             is_finite(cast(float, row[a])) for a in PAIRED_ARMS
         ):
             row["difference"] = cast(float, row["curriculum"]) - cast(
+                float, row["topological"]
+            )
+        if {"null", "topological"} <= row.keys():
+            row["null_difference"] = cast(float, row["null"]) - cast(
                 float, row["topological"]
             )
         results.append(row)
@@ -548,7 +508,24 @@ def main(argv: list[str]) -> int:
             file=sys.stderr,
         )
 
+    null_observations = [
+        PairedObservation(
+            seed=cast(int, row["seed"]),
+            treatment=cast(float, row["null"]),
+            control=cast(float, row["topological"]),
+        )
+        for row in results
+        if "null_difference" in row and is_finite(cast(float, row["null_difference"]))
+    ]
+    null_variance = (
+        asdict(estimate(null_observations))
+        if len(null_observations) >= MIN_OBSERVATIONS
+        else None
+    )
     payload = {
+        "manifest_hash": digest(manifest),
+        "purpose": args.purpose,
+        "null_variance": null_variance,
         "level": args.level,
         "chunks": len(chunks),
         "tokens": tokens,
@@ -567,8 +544,7 @@ def main(argv: list[str]) -> int:
             "are expected to be indistinguishable."
         ),
     }
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    write_json(args.out, payload, overwrite=args.overwrite)
     print(f"wrote {args.out}")
     return 0
 

@@ -1,0 +1,20 @@
+{
+  "cherry": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A small round tree fruit, often red, with a hard part in the middle that holds one seed.",
+    "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json"
+  },
+  "grape": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A small round fruit with juice inside and a thin outside cover, growing in groups on a climbing plant.",
+    "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json"
+  },
+  "pear": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A tree fruit often narrow at the top and round and wide near the bottom.",
+    "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json"
+  }
+}

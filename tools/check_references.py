@@ -51,7 +51,7 @@ EXEMPT = frozenset({"CHANGELOG.md"})
 
 def tracked_files() -> list[str]:
     out = subprocess.run(  # noqa: S603
-        ["git", "ls-files"],  # noqa: S607
+        ["git", "ls-files", "--cached", "--others", "--exclude-standard"],  # noqa: S607
         capture_output=True,
         text=True,
         check=True,

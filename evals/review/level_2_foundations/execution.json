@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-28",
+  "teacher_context": 4096,
+  "attempts_per_batch": 1,
+  "concurrent_generation": false,
+  "training_run": false,
+  "memory": {
+    "page_size_bytes": 16384,
+    "free_pages": 157159,
+    "swap_used_megabytes": 16551.38,
+    "swap_total_megabytes": 17408.0
+  },
+  "starting_gate": {
+    "exit_code": 0,
+    "tests": 595,
+    "skipped": 0,
+    "type_errors": 0,
+    "type_warnings": 0,
+    "core_coverage_percent": 96,
+    "training_coverage_percent": 92,
+    "disclosure_scan": "clean"
+  },
+  "prior_increment_hashes": {
+    "evals/review/level_2_increment/README.md": "1aebb8b5b29058c6f4b48309a582c5864b8d7c348eb6ce4f1ec666e411a063ba",
+    "evals/review/level_2_increment/admitted.json": "a8e63831568d39ea5d4aab0b96dd5f9854d5c9661e75fc18a6f9c126aa524695",
+    "evals/review/level_2_increment/before.json": "566a38227e4099da33461d8d3e4a55279f47c80ddc1957698dfe51fc720e3050",
+    "evals/review/level_2_increment/candidates.json": "07614aa7f6e43ac23c683a2aa7dfd7e76fa1fec9da275312b2888b70c9aac1cb",
+    "evals/review/level_2_increment/generated.json": "dd9c9a6ff24ae0e138a17063820e72fb4ac87f4f8a3e85d0f3fa33c4554c635f",
+    "evals/review/level_2_increment/generation.json": "01dc79a8aaee89928cd5677920492a7ffd3136bfdc681d75e02801de1e0cdac4",
+    "evals/review/level_2_increment/measurement.json": "6a59ffd19e36177a10ed24e6f108eeab064883104d341d3492535f3520847cd7",
+    "evals/review/level_2_increment/review.json": "a3eef3e56bd0e3bdf9125e7a681e3970a994e607e5d9cf9a8232acee0c75a998"
+  },
+  "sandbox_attempt": "sandbox_attempt/generation.json",
+  "limits": "Memory is a point-in-time observation. Teacher replies are nondeterministic. No training was run."
+}

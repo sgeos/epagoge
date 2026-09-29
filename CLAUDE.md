@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code when working in this repository.
+This file provides authoritative guidance to agents working in this repository.
 
 ## Project Overview
 
@@ -12,9 +12,9 @@ stages revisit those concepts at increasing complexity, terminating in
 unmodified scientific literature. The organising spine is the scientific
 method.
 
-**Status**: Under implementation. Level one is drafted at 246 books and
-a model has been trained on it and can be prompted. Levels two and above
-are specified and barely written.
+**Status**. Under implementation. The handoff audit on 2026-09-28 verified
+523 level-one books and a working local checkpoint. Levels two and above
+remain incomplete. The current brief is `docs/process/CURRENT_BRIEF.md`.
 
 **Read `docs/process/HANDOFF.md` first, and run its validity check before
 believing anything in it.**
@@ -128,6 +128,13 @@ epagoge/
 ```
 
 ## Toolchain
+
+The full gate requires the locked training environment. Use
+`uv sync --locked --extra train`. This supersedes earlier statements that
+the full gate passes without the training extra. It refuses skipped tests.
+Exploratory runs are available. Confirmatory runs remain blocked pending
+completion of `evals/PRE_REGISTRATION.md` and its executable protocol.
+
 
 Python is primary and settled. Rust is reserved for corpus-processing
 passes that profiling shows to be bottlenecks, and none is written.

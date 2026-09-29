@@ -79,6 +79,8 @@ def main(argv: list[str]) -> int:
             problems.append(
                 f"{word}: concept {spec.get('concept')!r} is not in the graph"
             )
+        if not spec.get("source", "").strip():
+            problems.append(f"{word}: no admission source")
         if not spec.get("definition"):
             problems.append(f"{word}: no definition")
         # **THE LIST USED TO BE SPELLED OUT HERE AND IT DRIFTED.** `mass`

@@ -11,26 +11,21 @@ different stream under a different ordering, which is what the ordering
 ablation requires.
 
     PYTHONPATH=src python3 tools/build_corpus.py <book-dir> <out.jsonl> \
-        [--order authored|shuffled] [--seed N]
+        [--order curriculum|topological] [--seed N]
 """
 
 from __future__ import annotations
 
 import argparse
 import json
-import random
 import sys
 from pathlib import Path
 from typing import cast
 
-from epagoge.book import (
-    book_prerequisites,
-    linear_extension,
-    load_book_dir,
-    random_linear_extension,
-    word_definitions,
-)
+from epagoge import schedule as sched
+from epagoge.book import load_book_dir, word_definitions
 from epagoge.concept_graph import ConceptGraph
+from epagoge.ordering import book_order
 from epagoge.thesaurus import load as load_thesaurus
 
 
@@ -41,6 +36,7 @@ def main(argv: list[str]) -> int:
     parser.add_argument(
         "--order", choices=("curriculum", "topological"), default="curriculum"
     )
+    parser.add_argument("--schedule", type=Path, default=None)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument(
         "--graph", type=Path, default=Path("curriculum/graph/concepts.json")
@@ -56,73 +52,29 @@ def main(argv: list[str]) -> int:
     args = parser.parse_args(argv[1:])
 
     all_books, records = load_book_dir(args.books)
-    # **A dictionary book is a reference, not a step in the curriculum.** It
-    # spans every concept it defines, so it depends on almost every other
-    # book while almost every other book supplies a word it defines, which
-    # made the dependency graph cyclic the moment one existed. It is
-    # excluded from the ordering and emitted last, which is where a
-    # consolidation belongs anyway.
-    books = [b for b in all_books if not b.id.startswith("bk.dictionary.")]
-    reference = [b for b in all_books if b.id.startswith("bk.dictionary.")]
-    by_id = {
-        str(cast(dict[str, object], r)["id"]): cast(dict[str, object], r)
-        for r in records
-    }
-
-    # A book is one document. Its internal order is not shuffled, because the
-    # narrative is the reason a book exists, and shuffling inside one would
-    # destroy the thing the ordering hypothesis is about.
+    if not all_books:
+        parser.error("book directory is empty")
+    levels = {book.level for book in all_books}
+    if len(levels) != 1:
+        parser.error("export one level at a time")
+    level = next(iter(levels))
+    plan_path = args.schedule or Path(f"curriculum/schedule/level_{level:02d}.json")
+    plan = sched.load(plan_path)
     graph = ConceptGraph.load(args.graph)
-    teaches = {
-        b.id: {
-            c
-            for i in b.records
-            if i in by_id
-            for c in cast(list[str], by_id[i].get("concepts", []))
-        }
-        for b in books
-    }
-    prerequisites = {n: set(graph.prerequisites_of(n)) for n in graph.nodes}
-    deps = book_prerequisites(books, teaches, prerequisites)
-
-    by_book = {b.id: b for b in books}
-    if args.order == "topological":
-        # A random linear extension, not a random permutation. A permutation
-        # can put a book teaching counting before the one teaching same and
-        # different, which is not a curriculum in any ordering.
-        names = random_linear_extension(deps, random.Random(args.seed))
-    else:
-        # **The curriculum arm is derived, not authored.** Taking the order
-        # off the filenames gave an alphabetical sequence that broke two
-        # book dependencies, which is not a curriculum and would have been
-        # the treatment arm of an experiment about ordering.
-        #
-        # Shallowest first among the books that are ready, which is the
-        # difficulty-graded ordering the hypothesis is about.
-        depth = graph.prerequisite_depth()
-
-        def shallowest(ready: set[str]) -> str:
-            return min(
-                ready,
-                key=lambda name: (
-                    max((depth[c] for c in teaches[name] if c in depth), default=0),
-                    name,
-                ),
-            )
-
-        names = linear_extension(deps, shallowest)
-    if len(names) != len(deps):
-        print("book dependencies are cyclic", file=sys.stderr)
-        return 1
-    order = [by_book[n] for n in names if n in by_book] + reference
+    try:
+        names, text_by_id, _ = book_order(
+            args.books, graph, args.seed, args.order, plan
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
+    by_book = {book.id: book for book in all_books}
+    order = [by_book[name] for name in names]
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     words = 0
     with args.out.open("w", encoding="utf-8") as handle:
         for book in order:
-            text = "\n".join(
-                str(by_id[i]["content"]) for i in book.records if i in by_id
-            )
+            text = text_by_id[book.id]
             words += len(text.split())
             handle.write(
                 json.dumps({"id": book.id, "level": book.level, "text": text}) + "\n"
@@ -180,7 +132,6 @@ def main(argv: list[str]) -> int:
                 + "\n"
             )
 
-    constrained = sum(1 for v in deps.values() if v)
     wanted = {
         t["word"]
         for t in cast(
@@ -200,7 +151,6 @@ def main(argv: list[str]) -> int:
         f"  {len(defined) / len(wanted) * 100:.1f}%"
     )
     print(f"  thesaurus:  {len(thesaurus_lines)} relations")
-    print(f"  {constrained} of {len(deps)} books are constrained by another")
     if args.order == "topological":
         print(f"  seed {args.seed}")
     return 0

@@ -7,8 +7,10 @@ to be recovered rather than invented, and the repository's own history is
 the only honest source: the commit that first introduced a word says when
 it arrived and, in its message, why.
 
-Walks every revision of the vocabulary and records, for each word, the
-first commit that contains it. Where a term carries a `source` written at
+Walks vocabulary history through the frozen legacy anchor and records the
+first commit for each historical word. New words carry direct admission
+evidence and are checked before and after their containing commit.
+Where a term carries a `source` written at
 admission, that is reported alongside and is better evidence, because it
 was written when the decision was made rather than reconstructed from it.
 
@@ -177,26 +179,39 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--top", type=int, default=12)
     args = parser.parse_args(argv[1:])
 
+    if git("rev-parse", "--is-shallow-repository").strip() == "true":
+        print("full history is required to verify provenance", file=sys.stderr)
+        return 1
+    path = ROOT / "curriculum/provenance.json"
+    held = cast(dict[str, object], json.loads(path.read_text(encoding="utf-8")))
+    # Freeze the legacy reconstruction. New admissions carry evidence directly,
+    # so their validity cannot depend on the hash of the commit containing them.
+    anchor = str(held.get("history_through", git("rev-parse", "HEAD").strip()))
     history = [
         line.split("\t", 2)
         for line in git(
-            "log", "--reverse", "--format=%H\t%ad\t%s", "--date=short", "--", TRACKED
+            "log",
+            anchor,
+            "--reverse",
+            "--format=%H\t%ad\t%s",
+            "--date=short",
+            "--",
+            TRACKED,
         ).splitlines()
         if line.strip()
     ]
     if not history:
         print("no history for the vocabulary", file=sys.stderr)
         return 2
-
+    current = cast(dict[str, object], json.loads((ROOT / TRACKED).read_text()))
+    baseline = cast(dict[str, object], json.loads(git("show", f"{anchor}:{TRACKED}")))
     sources: dict[str, str] = {}
-    current = cast(
-        "dict[str, object]",
-        json.loads((ROOT / TRACKED).read_text(encoding="utf-8")),
-    )
-    for term in cast("list[dict[str, object]]", current.get("terms", [])):
-        recorded = str(term.get("source", "")).strip()
-        if recorded:
-            sources.setdefault(str(term["word"]), recorded)
+    for payload in (baseline, current):
+        for term in cast(list[dict[str, object]], payload.get("terms", [])):
+            source = str(term.get("source", "")).strip()
+            if source:
+                sources[str(term["word"])] = source
+    working = {str(t["word"]) for t in cast(list[dict[str, object]], current["terms"])}
 
     # **Words that have left the lexicon are kept.** The record is a
     # history and a word folded into its base word still happened.
@@ -222,101 +237,81 @@ def main(argv: list[str]) -> int:
         else:
             entry["evidence"] = "reconstructed from history"
 
+    recorded_words = cast(dict[str, object], held.get("words", {}))
+    for word in sorted((working | recorded_words.keys()) - first.keys()):
+        source = sources.get(word)
+        if word not in working:
+            # Retired direct admissions remain as historical evidence.
+            entry = recorded_words[word]
+            if not isinstance(entry, dict) or set(cast(dict[str, object], entry)) != {
+                "source",
+                "evidence",
+            }:
+                print(f"invalid retired admission for {word}", file=sys.stderr)
+                return 1
+            archived = cast(dict[str, str], entry)
+            if archived.get("evidence") != "recorded at admission":
+                return 1
+            source = archived.get("source")
+        if not isinstance(source, str) or not source.strip():
+            print(f"{word} needs a source recorded at admission", file=sys.stderr)
+            return 1
+        first[word] = {"source": source, "evidence": "recorded at admission"}
+
     recorded = sum(
         1 for e in first.values() if e["evidence"] == "recorded at admission"
     )
     print(f"revisions of the lexicon      {len(history)}")
-    print(f"words with a first commit     {len(first)}")
+    print(f"words with provenance         {len(first)}")
     print(f"  source recorded at admission  {recorded}")
     print(f"  reconstructed from history    {len(first) - recorded}")
     print()
     by_date: dict[str, int] = {}
     for entry in first.values():
-        by_date[entry["date"]] = by_date.get(entry["date"], 0) + 1
+        date = entry.get("date", "direct admission")
+        by_date[date] = by_date.get(date, 0) + 1
     print("words first seen, by date")
     for date in sorted(by_date):
         print(f"  {date}  {by_date[date]:>5}")
     print()
     by_criterion: dict[str, int] = {}
     for entry in first.values():
-        key = entry["criterion"]
+        key = entry.get("criterion", "direct admission")
         by_criterion[key] = by_criterion.get(key, 0) + 1
     print("admission criterion, reconstructed and of low to moderate fidelity")
     for kind, n in sorted(by_criterion.items(), key=lambda kv: -kv[1]):
         print(f"  {kind:<16} {n:>5}")
 
     if args.check:
-        path = ROOT / "curriculum/provenance.json"
-        if not path.is_file():
-            print(f"no {path}", file=sys.stderr)
-            return 1
-        # **A shallow clone cannot answer this.** Continuous integration
-        # checks out one commit by default, so the history the record is
-        # derived from is not there and every word looks new. Skipping is
-        # honest; reporting staleness from a truncated history is not.
-        if len(history) < 2:
+        changed = sorted(
+            word
+            for word in first.keys() | recorded_words.keys()
+            if first.get(word) != recorded_words.get(word)
+        )
+        if (
+            "history_through" not in held
+            or changed
+            or held.get("revisions") != len(history)
+        ):
             print(
-                "SKIPPED: only one revision of the lexicon is in this clone, "
-                "so the history the record is built from is absent.\n"
-                "  This is expected in a shallow clone. Fetch the full "
-                "history to check it.",
-            )
-            return 0
-        held = cast("dict[str, object]", json.loads(path.read_text(encoding="utf-8")))
-        recorded_words = cast("dict[str, object]", held.get("words", {}))
-        # **Only one direction is staleness.** A word the lexicon holds
-        # with no provenance means the record was not regenerated. A word
-        # in the record that the lexicon no longer holds is history, which
-        # is what the record is for: `allowed`, `depends` and `settles`
-        # were admitted and later folded into their base words, and
-        # forgetting that they ever existed would make the record worse.
-        missing = sorted(set(first) - set(recorded_words))
-        departed = len(set(recorded_words) - set(first))
-        if missing:
-            print(
-                f"provenance is stale: {len(missing)} word(s) in the lexicon "
-                "have no entry",
+                f"provenance is stale ({len(changed)} entries). "
+                "Regenerate before committing.",
                 file=sys.stderr,
             )
-            for word in missing[:10]:
+            for word in changed[:10]:
                 print(f"  {word}", file=sys.stderr)
             return 1
-        print(
-            f"provenance covers every word in the lexicon, and keeps "
-            f"{departed} that have since left it"
-        )
+        print("provenance fields and admission coverage match")
         return 0
 
     if args.out is not None:
-        # **A RECORD WRITTEN BEFORE THE COMMIT IS STALE THE MOMENT IT LANDS.**
-        # This file is derived from git history, so a word sitting in the
-        # working tree and not yet in any commit has no entry to write, and
-        # the next commit gives it one. Writing here and committing both in
-        # the same breath therefore produces a file the gate rejects in
-        # continuous integration while passing locally, which happened on
-        # 2026-09-28 after the structural property had already been recorded
-        # twice. A note was not enough, so the tool refuses instead.
-        working = {
-            str(term["word"])
-            for term in cast("list[dict[str, object]]", current.get("terms", []))
-        }
-        uncommitted = sorted(working - set(first))
-        if uncommitted:
-            print(
-                f"refusing to write: {len(uncommitted)} word(s) are in the "
-                "lexicon and not yet in any commit, so this record would be "
-                "stale as soon as they are committed.",
-                file=sys.stderr,
-            )
-            for word in uncommitted[:10]:
-                print(f"  {word}", file=sys.stderr)
-            print("  Commit the lexicon first, then regenerate.", file=sys.stderr)
-            return 1
         args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text(
             json.dumps(
                 {
                     "_comment": (
+                        "Legacy history is frozen at history_through. New words "
+                        "carry direct source evidence without a commit hash. "
                         "When each word entered the lexicon. 'recorded at "
                         "admission' is evidence written when the decision was "
                         "made. 'reconstructed from history' is the commit that "
@@ -329,6 +324,7 @@ def main(argv: list[str]) -> int:
                         "prescriptive pass, because bootstrapping a closed "
                         "lexicon does not decompose into per-word reasons."
                     ),
+                    "history_through": anchor,
                     "revisions": len(history),
                     "words": dict(sorted(first.items())),
                 },

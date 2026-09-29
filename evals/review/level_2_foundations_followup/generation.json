@@ -1,0 +1,58 @@
+{
+  "level": 2,
+  "source": "Manual bread and dough proposals from level_2_increment rejection review, after foundational admissions, 2026-09-28",
+  "candidates": {
+    "bread": "material",
+    "dough": "material"
+  },
+  "input_hash": "1ab216e9648cdc1598a3a447ac363db0ca911135e2881af6cd10f9a6e6e3de1d",
+  "vocabulary_hash": "d55968e32819ec6b038aee96c87dda9d2504fbac2b7ef630d174ce2ff3ed356c",
+  "graph_hash": "97f2061bd035465fb3af8e8993931a6e164ba07ac6260a2d80fd58582103e919",
+  "teacher": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+  "context": 4096,
+  "attempt_limit": 1,
+  "requests": [
+    {
+      "requested": [
+        "bread",
+        "dough"
+      ],
+      "prompt": "Write a dictionary entry for each of these words, at reading level 2.\n\nTHE HARDEST CONSTRAINT IS THE WORD LIST AT THE BOTTOM.\nEvery word you write must appear in it. **This is a dictionary that\nexplains its own words using its own words**, so a definition that\nreaches outside the list defeats the purpose of writing it.\n\nWrite one line per word, in this exact format:\n\nWORD <word>: <one sentence saying what that word means>\n\nThe words, with the idea each one names:\n  bread  (material)\n  dough  (material)\n\nUse ONLY these words, in any order and any inflection:\n  a able about above accept across admit afraid after again against agree ahead air alike alive all alone along also always am among amount an and angry animal another answer any anyone anything apart apple are argue arm around as ask asleep at author awake away baby back bad bag ball balloon bamboo bang basket be because become bed been before begin behind being believe bell belong below beside best better between big bigger bird black blanket blink block blocks blue boat body book both bottle bowl box boy branch break breath breathe breeze bridge bright bring brother brown bubble build builds built burn but by calm came can cannot car care careful carlo carry cat cause chain chair change charge check child choose circle claim class clay clean clear clearing climb close cloth cold colour come comes coming compare contact container cool corner correct could count crack cry cup curtain curved cut danger dark day dead death deep did die different direction dirt do does dog doing done door doubt down dream drift drink drip drop dry dust each ear earth eat edge effect eight else empty end enough equal even ever every everyone exactly explain eye face fair faith fall false family far fast fear feather feel few fill filled find finding finds finish fire first fish fit five fix flat float floor flow fly follow food foot for force forest forget forward found four friend from full fun game gap garden gave get gets getting gift girl give gives giving glass glue go goal goes going gone good got grass green grey ground group grow guess had half hand handle happen happy hard harm has have having he head heal hear heard heart heat heavy help her here hers hide high hill him his hit hold holds hole home honest hot house how hurt i idea iec if in inside into iron is it its itself job join just keep keeping keeps kept key kind knew know kuhn lakatos land last leaf learn leave leaves leaving left leg length less let lets letter letting level lid lie life lift lifted light like line liquid list listen little live living lock long longer look looked looking looks lost loud love low made make makes making man many mark match material may me mean meaning meant measure mend metal method might milk mind mine missing mistake moment monte moon more morning most mother motion mouth move much must my myself name natural near need never new next night no noise none nose not note nothing now nts number obs of off old on once one only onto open opinion or order other others our out outside over own page pain paper part past path peano person pick piece pile place plan plant play pocket popper possible pot pressed pretend promise proof pull push put puts putting question quick quiet rain raw reach reaches ready real reason record red remember rest return right rim rise river rock roll room rope rough round rule ruler run sad safe said same saw say saying says secret see seeing seemed seems seen sees self sentence set shadow shape shaped share sharp she shelf shell short shorter should show side sign single sister sit size skin sky sleep slow slowly small smooth so soft some someone something song sound space speak spill spoon spot stand stands start stay steady steam steel step stick still stone stop story stove straight stream street string strong stuff such sun supply sure surface system table take taken takes taking tall tally task teacher tell telling tells than that the their them then there these they thick thin thing think this those though thought three through tight time tired to together told too took tool top touch toward toy tree true trust truth try turn two unable unchanged under understand unfair unit until up us use very voice wait walk wall want warm was water way we weak weather weight well went were wet what when where which while whisper white who whole whom whose why wide will wind window with without woman wonder wood wooden word work world would wound write wrong yellow yes yet you young your\n\nThese words are NOT allowed. Write the replacement instead:\n  act  ->  write \"do\"\n  advantage  ->  write \"what helps\"\n  amount  ->  write \"how much\"\n  ancient  ->  write \"very old\"\n  anymore  ->  write \"now\"\n  area  ->  write \"space\"\n  aside  ->  write \"to one side\"\n  attention  ->  write \"looking\"\n  available  ->  write \"there to use\"\n  beneath  ->  write \"under\"\n  beside  ->  write \"next to\"\n  beyond  ->  write \"past\"\n  can't  ->  write \"cannot\"\n  carefully  ->  write \"with care\"\n  cause  ->  write \"makes\"\n  causing  ->  write \"making\"\n  center  ->  write \"middle\"\n  color  ->  write \"colour\"\n  colors  ->  write \"colours\"\n  complete  ->  write \"done\"\n  condition  ->  write \"the way a thing is\"\n  connects  ->  write \"joins\"\n  corresponds  ->  write \"goes with\"\n  damage  ->  write \"harm\"\n  damaged  ->  write \"broken\"\n  didn't  ->  write \"did not\"\n  don't  ->  write \"do not\"\n  duration  ->  write \"how long\"\n  during  ->  write \"when\"\n  effort  ->  write \"hard work\"\n  especially  ->  write \"most of all\"\n  event  ->  write \"thing that happens\"\n  evidence  ->  write \"what shows it\"\n  expected  ->  write \"thought it would happen\"\n  faintly  ->  write \"a little\"\n  fake  ->  write \"not real\"\n  final  ->  write \"last\"\n  fluttered  ->  write \"moved quickly\"\n  focused  ->  write \"looking at it\"\n  form  ->  write \"shape\"\n  golden  ->  write \"yellow\"\n  gray  ->  write \"grey\"\n  great  ->  write \"big\"\n  greater  ->  write \"more\"\n  human  ->  write \"person\"\n  imagined  ->  write \"pretend\"\n  important  ->  write \"means a lot\"\n  information  ->  write \"what is known\"\n  isn't  ->  write \"is not\"\n  it's  ->  write \"it is\"\n  item  ->  write \"thing\"\n  leading  ->  write \"going first\"\n  led  ->  write \"took\"\n  length  ->  write \"how long\"\n  location  ->  write \"place\"\n  matter  ->  write \"be important\"\n  moonlight  ->  write \"light from the moon\"\n  movement  ->  write \"moving\"\n  object  ->  write \"thing\"\n  okay  ->  write \"all right\"\n  parchment  ->  write \"paper\"\n  position  ->  write \"place\"\n  present  ->  write \"here\"\n  realized  ->  write \"knew\"\n  rely  ->  write \"depend on\"\n  required  ->  write \"needed\"\n  sequence  ->  write \"order\"\n  sidewalk  ->  write \"path\"\n  silence  ->  write \"no sound\"\n  similar  ->  write \"like\"\n  single  ->  write \"one\"\n  slightly  ->  write \"a little\"\n  smoothly  ->  write \"in a smooth way\"\n  specific  ->  write \"that one\"\n  store  ->  write \"keep\"\n  sunlight  ->  write \"light from the sun\"\n  that's  ->  write \"that is\"\n  there's  ->  write \"there is\"\n  they're  ->  write \"they are\"\n  thickness  ->  write \"how thick\"\n  tremble  ->  write \"shake\"\n  unknown  ->  write \"not known\"\n  unseen  ->  write \"not seen\"\n  unsure  ->  write \"not sure\"\n  usual  ->  write \"what happens most times\"\n  wasn't  ->  write \"was not\"\n  windowsill  ->  write \"the edge of the window\"\n  won't  ->  write \"will not\"\n  you're  ->  write \"you are\"\n\nRules:\n  - Say what the word means. Do not give an example instead.\n  - A word may appear in its own definition, as in a dictionary.\n  - Prefer simpler words even where a longer one would be exact.\n  - Every line ends with a full stop. No other output.",
+      "outcomes": [
+        {
+          "word": "bread",
+          "status": "outside_vocabulary",
+          "tokens": [
+            "yeast"
+          ]
+        },
+        {
+          "word": "dough",
+          "status": "outside_vocabulary",
+          "tokens": [
+            "bread",
+            "ingredients",
+            "mixture",
+            "sticky"
+          ]
+        }
+      ],
+      "response": "bread: a food made from flour, water, and yeast, often baked.  \ndough: a soft, sticky mixture made from flour, water, and other ingredients, used to make bread."
+    }
+  ],
+  "outcomes": {
+    "bread": "deferred",
+    "dough": "deferred"
+  },
+  "counts": {
+    "input": 2,
+    "already_admitted": 0,
+    "offered": 2,
+    "mechanically_accepted": 0,
+    "deferred": 2
+  },
+  "mechanical_acceptance_rate": 0.0,
+  "accepted": {},
+  "accepted_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "note": "Mechanical validation does not establish meaning or dictionary grounding."
+}
