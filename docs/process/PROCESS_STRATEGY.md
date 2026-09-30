@@ -4,10 +4,12 @@
 operator's `keleusma` repository, which was this project's reference when
 it was set up and has moved a long way since.
 
-This document holds what is **durable**. `CURRENT_BRIEF.md` holds what is
-current and is deleted when its completion condition is met, which is why
-the lessons below were moved out of it: a list of failure modes filed in a
-document marked for deletion is a list that will be deleted.
+This document holds what is **durable**. `CURRENT_BRIEF.md` holds a bounded
+scope and is marked completed when its condition is met. A completed brief
+may remain until a new scope replaces it, with the previous brief and
+condition preserved beside their review evidence. The handoff identifies
+current task status. Durable lessons belong here so replacement of a brief
+does not erase them.
 
 ## Engineering classification
 

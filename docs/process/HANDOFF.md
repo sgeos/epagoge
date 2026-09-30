@@ -1,30 +1,71 @@
 # Handoff
 
-Updated after the Codex continuity repair and bounded lexicon increment on
-2026-09-28.
+## Validity check and continuity stamp
 
-## Current authority
+Stamped 2026-09-30 at 20:35 Coordinated Universal Time. The verified base is
+`7011d61131dab25b84f0ae6b70cda0f41c66ea86`. This is an ancestry anchor,
+not the revision containing this document. A later documentation commit
+does not invalidate it merely by changing the current revision.
 
-Read `CLAUDE.md`, then this file and `CURRENT_BRIEF.md`. Earlier handoffs are
-preserved in `HANDOFF_HISTORY.md` as historical evidence. Their commands and
-status statements are not current instructions. Durable failure analysis is
-in `PROCESS_STRATEGY.md`.
+Read `CLAUDE.md` and run these checks before relying on the state below.
 
-## State being handed over
+    git status --short
+    git merge-base --is-ancestor 7011d61131dab25b84f0ae6b70cda0f41c66ea86 HEAD
+    git diff --stat 7011d61131dab25b84f0ae6b70cda0f41c66ea86
+    .venv/bin/python tools/measure_lexicon_increment.py \
+      evals/review/level_2_taste_senses \
+      --check evals/review/level_2_taste_senses/measurement.json
 
-The operator authorized publication of the accumulated continuity repairs,
-lexical increments and subsequent bounded reviews on 2026-09-28. They form one
-publication scope. Earlier descriptions of this work as uncommitted refer to
-the earlier sessions. Check the actual git status and remote revision before
-assuming a later session has the same tree.
+Ancestry success and matching content support the recorded lexical state.
+Inspect later changes and local edits for changes to the task or its evidence.
+If ancestry fails or measurements disagree, report the affected claims as
+stale and reconcile them against the tree. Do not require equality with the
+anchor. Missing host artifacts make the associated checks unverified rather
+than disproved. Use the restart verification below for the full gate.
 
-The local gate most recently passed with 601 tests and no skips, zero type
-errors or warnings, 96 percent core coverage and 92 percent reported training
-coverage. The disclosure scan passed. Remote continuous-integration status
-must be checked separately for the published revision.
+## Current authority and task status
 
-The current brief and completion condition describe this bounded review and
-publication scope. Establish a new brief and condition for later work.
+Read this file with `CURRENT_BRIEF.md` and `COMPLETION_CONDITION.md`.
+The brief and condition describe the completed taste-sense increment, not
+an instruction to repeat it. Earlier handoffs in `HANDOFF_HISTORY.md` are
+historical evidence. Their commands and status statements are not current
+instructions. Durable failure analysis is in `PROCESS_STRATEGY.md`.
+
+The latest requested scope is this handoff refresh for post-compaction and
+new-session continuity. It adds no lexical or training task. A weekly usage
+limit interrupted the refresh before edits. The operator upgraded the plan
+and requested resumption. No generation or training job was started for this
+refresh, and no background job needs resuming from this session.
+
+After compaction, continue any unfinished explicit user task using the
+transcript and the tree. For this refresh, inspect whether documentation
+edits, verification or publication remain. The operator has authorized
+committing and pushing all non-ignored work in this scope. Preserve ignored
+host artifacts. Do not infer publication or cleanliness from this stamp.
+Verify the working tree, remote revision and continuous integration result.
+If the refresh is complete and no later task exists, report readiness for
+the next task. Recommendations below do not initiate another lexical batch.
+
+## Verified publication and evidence
+
+The taste-sense increment was committed and published at the verified base.
+Its [continuous integration run](https://github.com/sgeos/epagoge/actions/runs/36530723855)
+completed successfully, rechecked on 2026-09-30. This result covers the base,
+not future revisions. The last full local gate for that increment passed with
+601 tests and no skips, zero type errors or warnings, 96 percent core
+coverage and 92 percent reported training coverage. Its disclosure scan
+passed. The increment measurement was rechecked against the authoring tree
+on 2026-09-30 and matched, including the preservation hashes.
+
+The full local gate also passed on the continuity refresh on 2026-09-30,
+including the reference checks and the local disclosure scan. Test and
+coverage counts were unchanged. Publication of the refresh must be checked
+against its containing revision rather than the base run linked above.
+
+Local and remote checks are separate evidence. Run the full local gate on
+changes and inspect its exit status before committing. Check continuous
+integration for the actual published revision, including a handoff-only
+revision. Continuous integration cannot discharge the local disclosure scan.
 
 ## Completed work and next development target
 
@@ -59,9 +100,11 @@ Experimental, licensing and later-schedule decisions remain with the operator.
 
 ## Starting the next Codex session
 
-The suggested prompt is `docs/process/RESUME_PROMPT.md`. Start a fresh session
-in this existing directory so the authoring-host artifacts remain available. The installed Codex command-line interface was version 0.158.0
-when its help output was checked for these options.
+The continuity prompt is `docs/process/RESUME_PROMPT.md`. Start a fresh session
+in this existing directory so the authoring-host artifacts remain available.
+The installed Codex command-line interface was version 0.158.0 when its help
+output was checked for these options in the earlier continuity repair. That
+version has not been rechecked for this refresh.
 
     codex --cd /Users/bsechter/projects/python/epagoge \
       --sandbox workspace-write --ask-for-approval on-request \
@@ -90,12 +133,6 @@ obtain them or have the operator explicitly resolve that constraint.
 The 2026-09-28 audit verified 523 level-one books, 9,131 records and 330,710
 words. The audit measured 954 level-two words before the increment described
 above. Re-run the validators before using any count after corpus changes.
-
-The recorded increment can also be checked against the current authoring tree
-
-    .venv/bin/python tools/measure_lexicon_increment.py \
-      evals/review/level_2_taste_senses \
-      --check evals/review/level_2_taste_senses/measurement.json
 
 The generator requires explicit source evidence, output and report paths.
 Its report retains prompts, replies, every candidate outcome and counts.
@@ -156,11 +193,14 @@ as well as membership. Retired direct admissions retain their evidence.
 
 ## Host and verification limits
 
-The audit found the teacher service, its model, local weights and scan sources
-present. Metal was visible outside the sandbox. Sandbox failures must not be
-reported as missing host capabilities. The teacher context remains 4,096.
-The latest pre-generation check measured approximately 13.9 GB of swap in use. Check current memory
-before sustained generation or concurrent training.
+The 2026-09-28 audit found the teacher service, its model, local weights and
+scan sources present. Service availability has not been rechecked for this
+documentation refresh. Metal was visible outside the sandbox. Sandbox
+failures must not be reported as missing host capabilities. The teacher
+context remains 4,096.
+The earlier pre-generation check measured approximately 13.9 GB of swap in
+use. That is a historical measurement, not current memory state. Check
+current memory before sustained generation or concurrent training.
 
 Run the local gate, inspect its exit status, and check continuous integration
 separately for the published revision. Local and remote checks are distinct.

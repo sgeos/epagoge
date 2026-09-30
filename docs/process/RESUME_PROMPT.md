@@ -1,29 +1,32 @@
-Resume development in this existing working directory.
+Resume continuity in this existing working directory.
 
-Read AGENTS.md, CLAUDE.md, docs/process/HANDOFF.md and the private code-name
-instructions before editing tracked prose. Inspect the working tree and
-preserve the continuity repairs, tests, lockfile and recorded lexical work. Verify the starting state using the handoff commands.
+Read AGENTS.md, CLAUDE.md and docs/process/HANDOFF.md. Run the handoff validity
+check and distinguish verified state from stale claims or unavailable host
+artifacts. Read the private code-name instructions required by CLAUDE.md
+before editing tracked prose. Preserve local work and ignored host artifacts.
 
-The previous bounded increment is complete. Read its generation and review
-records under evals/review/level_2_increment, evals/review/level_2_foundations
-evals/review/level_2_foundations_followup, evals/review/level_2_fruit_retry
-evals/review/level_2_inflections and evals/review/level_2_taste_senses. Recommend a small set of
-foundational defining words and explicit senses that addresses the observed
-rejections. Draft a new CURRENT_BRIEF.md and a COMPLETION_CONDITION.md under
-4000 characters for that scope, then complete the specified work. The condition
-must describe observable tree properties, impose no task-order, branch or
-process requirements, and explicitly state that ordering is not a completion
-criterion.
+Use the latest explicit user task and the current tree to determine what
+remains. After compaction, continue unfinished work from the transcript.
+In a fresh session, use the handoff task status and inspect subsequent
+changes. A completed CURRENT_BRIEF.md and COMPLETION_CONDITION.md are evidence
+of delivered work, not instructions to repeat it. Historical handoffs and
+recommendations do not authorize new scope. If no unfinished task remains,
+report the verified state and readiness for the next task.
 
-Use the existing candidate-definition and admission tools. Review meanings,
-concept assignments and actual inflections. Admit only sourced definitions
-that preserve complete grounded dictionary coverage. Record every candidate,
-reply, rejection and admission in new artifacts. Measure the before-and-after
-counts and remaining gap. Preserve level-one books and reference weights.
-Do not infer general throughput from one batch or weaken a validator.
+The taste-sense increment is complete. The latest requested scope is the
+continuity refresh described in the handoff. Finish any outstanding edits,
+verification or publication for that scope. The operator authorized committing
+and pushing all non-ignored work in that scope. Determine actual publication
+from git and the remote rather than assuming that a stamp proves it.
 
-Keep the teacher context at its existing limit and check host memory before
-sustained generation. Keep experimental, licensing and later-schedule decisions
-reserved to the operator. Confirmatory training remains blocked. Run the full
-gate and report its actual result, the delivered changes and remaining limits.
-Do not commit or publish without an explicit request.
+If a subsequent task requests a new recommendation and implementation,
+establish a new brief and completion condition for that scope. Preserve the
+previous artifacts as historical evidence. The condition must remain under
+4000 characters, describe observable tree properties and explicitly state
+that ordering is not a completion criterion. It must impose no task-order,
+branch or process requirements.
+
+Keep experimental, licensing and later-schedule decisions reserved to the
+operator. Confirmatory training remains blocked. Run the full gate before
+any commit, inspect its exit status, and check continuous integration
+separately for the published revision. Report actual results and limitations.

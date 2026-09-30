@@ -1,5 +1,9 @@
 # Brief
 
+Completed at `7011d61131dab25b84f0ae6b70cda0f41c66ea86` and published.
+Retained with `COMPLETION_CONDITION.md` as evidence of the completed scope.
+Use `HANDOFF.md` for current task status. This brief does not initiate new work.
+
 ## Present goals
 
 Complete the level-two lexicon before drafting its content. The verified

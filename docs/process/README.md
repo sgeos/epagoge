@@ -4,14 +4,18 @@ Working practice for this repository.
 
 | Document | What it holds |
 | --- | --- |
-| `HANDOFF.md` | The resume prompt, with a validity check to run before believing it |
+| `HANDOFF.md` | Current state, task status, continuity stamp and validity check |
+| `RESUME_PROMPT.md` | Entry prompt for restoring continuity without inventing new scope |
+| `HANDOFF_HISTORY.md` | Superseded handoffs retained as historical evidence |
 | `PROCESS_STRATEGY.md` | Durable practice. Verification posture, failure classes, autonomy boundaries |
-| `CURRENT_BRIEF.md` | The live brief. Deleted when `COMPLETION_CONDITION.md` is met |
-| `COMPLETION_CONDITION.md` | The end state the current brief is working toward |
+| `CURRENT_BRIEF.md` | The bounded brief, marked completed when its condition is met |
+| `COMPLETION_CONDITION.md` | Observable end state for the associated brief |
 
 **The split between the last two and `PROCESS_STRATEGY.md` is the point.**
-A failure mode recorded in a document marked for deletion is deleted with
-it. Anything that outlives the current brief belongs in the strategy.
+Completed briefs and conditions may remain until a new scope replaces them.
+Preserve them with the corresponding review evidence before replacement.
+Mark completion explicitly so resuming agents do not restart delivered work.
+Anything that outlives the current brief belongs in the strategy.
 
 ## Handoff
 
@@ -19,7 +23,11 @@ it. Anything that outlives the current brief belongs in the strategy.
 validity check that must be run before anything in it is believed, since a
 handoff that has gone stale is worse than none.
 
-Validate by ancestry and by content, never by a hash match.
+Stamp the handoff with a verification time and an already verified base
+revision. Validate by ancestry and by content, never by equality with the
+current revision. The stamp does not assert its own containing commit hash
+or prove publication. Rewrite the current handoff and append the superseded
+text to history. Distinguish unfinished user tasks from recommendations.
 
 ## Current practice
 
