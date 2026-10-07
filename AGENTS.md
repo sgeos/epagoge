@@ -5,6 +5,34 @@ Guidance for automated agents working in this repository.
 The authoritative instructions live in [`CLAUDE.md`](CLAUDE.md). Read that
 file first. It is agent-agnostic in content despite its name.
 
+## Starting a session in Codex or Grok Build
+
+**Current state is in [`docs/process/HANDOFF.md`](docs/process/HANDOFF.md)**,
+and [`docs/process/RESUME_PROMPT.md`](docs/process/RESUME_PROMPT.md) is the
+prompt a new session should be given. Both are written for any agent.
+
+Checked on 2026-10-07 against the help output of the installed tools, Codex
+CLI 0.160.1 and Grok Build 1.0.46. Codex reads this file. Grok Build's
+bundled documentation says it reads this file and `CLAUDE.md`. Recheck the
+flags if either tool has been upgraded.
+
+    codex --cd /Users/bsechter/projects/python/epagoge \
+      --sandbox workspace-write --ask-for-approval on-request \
+      "Read docs/process/RESUME_PROMPT.md and carry out its instructions."
+
+    grok --cwd /Users/bsechter/projects/python/epagoge \
+      "Read docs/process/RESUME_PROMPT.md and carry out its instructions."
+
+**Three host needs fall outside a workspace sandbox**, and a failure on any
+of them is a sandbox restriction, not a project defect. `tools/check.sh` runs
+`uv sync`, which reads the uv cache in the home directory. The teacher is
+served on the loopback address. Pushing needs the network and the git
+credentials. In this project's 2026-10-07 session the gate failed inside a
+sandbox before any check ran, for the first reason, and passed outside it.
+
+`.codex/` holds host-specific Codex settings and is ignored rather than
+tracked.
+
 ## What runs in a fresh clone, and what needs the authoring host
 
 **Added 2026-09-28 for a handoff to a different agent.** Four things this

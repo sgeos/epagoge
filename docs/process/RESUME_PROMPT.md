@@ -1,4 +1,5 @@
-Resume continuity in this existing working directory.
+Resume continuity in this existing working directory. This prompt is written
+for any agent, including Codex and Grok Build.
 
 Read AGENTS.md, CLAUDE.md and docs/process/HANDOFF.md. Run the handoff validity
 check and distinguish verified state from stale claims or unavailable host
@@ -14,11 +15,11 @@ recommendations do not authorize new scope. If no unfinished task remains,
 report the verified state and readiness for the next task.
 
 The latest scope applied the operator's six decisions of 2026-10-07 after a
-self-directed loop was cancelled. No scope is open. The operator authorized
-pushing that work. Verify the remote revision and its continuous integration
-result rather than assuming them. Do not push without
-asking. Determine actual publication from git and the remote rather than
-assuming that a stamp proves it.
+self-directed loop was cancelled, and the repository was then prepared for
+handoff to Codex and Grok Build. No scope is open. That work was pushed under
+the operator's authorization, which does not extend to later work. Ask before
+pushing anything new. Determine actual publication from git and the remote
+rather than assuming that a stamp proves it.
 
 If a subsequent task requests a new recommendation and implementation,
 establish a new brief and completion condition for that scope. Preserve the

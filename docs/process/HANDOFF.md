@@ -2,18 +2,24 @@
 
 ## Validity check and continuity stamp
 
-Stamped 2026-10-07. The ancestry anchor is
-`d553c135ec9cbebc81461509d4aae83b183aa05a`, the commit that restamped the
-books edited for US spelling. It is not the revision containing this
-document. The operator authorized pushing this work. Verify the remote
-revision and the continuous integration result for it rather than inferring
-either from this stamp.
+Stamped 2026-10-07 at 23:43 Coordinated Universal Time. The verified base is
+`eae5ab68988078aecf8412e1b664662dbca560d2`, the operator-decision
+commit. This is an ancestry anchor, not the revision containing this
+document. A later documentation commit does not invalidate it merely by
+changing the current revision.
+
+The base was pushed to `origin/main` and its [continuous integration
+run](https://github.com/sgeos/epagoge/actions/runs/37686405718) succeeded.
+The full local gate passed on it with 625 tests and no skips, zero type
+errors or warnings, 96 percent core coverage, 92 percent reported training
+coverage and a clean disclosure scan. That evidence covers the base, not
+later revisions.
 
 Read `CLAUDE.md` and run these checks before relying on the state below.
 
     git status --short
-    git merge-base --is-ancestor d553c135ec9cbebc81461509d4aae83b183aa05a HEAD
-    git log --oneline d553c135ec9cbebc81461509d4aae83b183aa05a..HEAD
+    git merge-base --is-ancestor eae5ab68988078aecf8412e1b664662dbca560d2 HEAD
+    git log --oneline eae5ab68988078aecf8412e1b664662dbca560d2..HEAD
     .venv/bin/python tools/measure_lexicon_increment.py \
       evals/review/level_2_operator_decisions \
       --check evals/review/level_2_operator_decisions/measurement.json
@@ -36,6 +42,15 @@ review records that followed them. Earlier handoffs in `HANDOFF_HISTORY.md`
 are historical evidence. Durable failure analysis is in
 `PROCESS_STRATEGY.md`.
 
+## Starting the next session
+
+The repository is prepared for Codex and Grok Build. `AGENTS.md` gives the
+verified launch commands for both, the host needs that fall outside a
+workspace sandbox, and what a fresh clone lacks. Give a new session
+`docs/process/RESUME_PROMPT.md`. Start it in this existing directory, so the
+ignored host artifacts under `secret/`, `tmp/` and `evals/pilot/` remain
+available.
+
 ## Operator decisions of 2026-10-07
 
 1. **All words are shown and defined.** Ostensive words stay grounded by
@@ -53,7 +68,8 @@ are historical evidence. Durable failure analysis is in
    Adjectives, adverbs and inflections filed as headwords were not changed.
 5. **Technical words.** Forty-three of the 44 are admitted. Electromagnetic
    waits on electricity and magnet.
-6. **Commit and push.** Authorized for this work.
+6. **Commit and push.** Done for this work. The authorization does not
+   extend to later work.
 
 ## What the session delivered
 

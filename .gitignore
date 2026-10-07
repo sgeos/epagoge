@@ -25,6 +25,10 @@ htmlcov/
 # keleusma repository. The directory exists locally and is never tracked.
 secret/
 
+# Host-specific agent settings, such as a Codex context window. They
+# describe this machine and model, not the project.
+.codex/
+
 # Transient scratch files. The directory itself is tracked through its
 # placeholder so that the path exists in a fresh clone.
 tmp/*
