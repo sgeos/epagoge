@@ -2,15 +2,21 @@
 
 ## Validity check and continuity stamp
 
-Interim stamp written before the multi-source commit. The ancestry anchor is
-`a1bd67f8`, the food-blocker commit. A restamp naming the multi-source commit
-follows in a separate commit.
+Stamped 2026-10-07 at 17:09 Coordinated Universal Time. The verified base is
+`336545b5e6cb0327d73614cde23bb5e6c608e6b0`, the multi-source commit.
+This is an ancestry anchor, not the revision containing this document. A later documentation commit does not invalidate
+it merely by changing the current revision.
+
+At the stamp the full local gate passed on the base with 625 tests and no
+skips, zero type errors or warnings, 96 percent core coverage, 92 percent
+reported training coverage and a clean disclosure scan. The base is not
+pushed, so no continuous integration result exists for it.
 
 Read `CLAUDE.md` and run these checks before relying on the state below.
 
     git status --short
-    git merge-base --is-ancestor a1bd67f HEAD
-    git log --oneline a1bd67f..HEAD
+    git merge-base --is-ancestor 336545b5e6cb0327d73614cde23bb5e6c608e6b0 HEAD
+    git log --oneline 336545b5e6cb0327d73614cde23bb5e6c608e6b0..HEAD
     .venv/bin/python tools/measure_lexicon_increment.py \
       evals/review/level_2_multi_source \
       --check evals/review/level_2_multi_source/measurement.json
