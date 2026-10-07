@@ -1,0 +1,602 @@
+{
+  "accurate": {
+    "concept": "checking",
+    "pos": "adjective periphrastic",
+    "definition": "Accurate means exactly right, with no mistakes.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "activity": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "An activity is something that people do, often for fun or to learn.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "actually": {
+    "concept": "real_and_pretend",
+    "pos": "",
+    "definition": "Actually means really, or in fact.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "affect": {
+    "concept": "cause_and_effect",
+    "pos": "verb",
+    "definition": "To affect something is to change it or to act on it.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "ago": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Ago means before now, as in two days ago.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "angle": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "An angle is the corner made where two straight lines meet.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "area": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "An area is a part of a place or of a surface.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "beauty": {
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "definition": "Beauty is what makes something good to look at or to hear.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "berry": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A berry is a small, soft, round fruit with many seeds inside.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "bit": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A bit is a small piece or a small amount of something.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "brave": {
+    "concept": "feeling",
+    "pos": "adjective",
+    "definition": "Brave means ready to do something dangerous or scary.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "busy": {
+    "concept": "activity",
+    "pos": "adjective",
+    "definition": "Busy means having a lot to do.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "century": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "A century is one hundred years.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "chick": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A chick is a very young bird.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "climate": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "The climate of a place is the weather it usually has over many years.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "coastal": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Coastal means on or near a coast.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "community": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A community is a group of people who live in the same place or share something.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "corn": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Corn is a tall grass plant with large heads of yellow seeds that people and animals eat.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "create": {
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "definition": "To create something is to make something new.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "damage": {
+    "concept": "things_break",
+    "pos": "mass noun verb",
+    "definition": "Damage is harm done to something, and to damage something is to harm it.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "dare": {
+    "concept": "feeling",
+    "pos": "verb",
+    "definition": "To dare is to be brave enough to do something, or to ask someone to do something to show that they are brave.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "dear": {
+    "concept": "feeling",
+    "pos": "adjective",
+    "definition": "Dear means loved very much, and it is also a kind word at the start of a letter.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "depth": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "The depth of something is how deep it is.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "difference": {
+    "concept": "same_and_different",
+    "pos": "noun",
+    "definition": "A difference is a way in which two things are not the same.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "dinner": {
+    "concept": "needing_supply",
+    "pos": "noun",
+    "definition": "Dinner is the main meal of the day, often eaten in the evening.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "dress": {
+    "concept": "household_object",
+    "pos": "noun verb",
+    "definition": "A dress is something a girl or a woman wears that covers the body from the top down to the legs, and to dress is to put on what you wear.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "eagle": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "An eagle is a large bird with strong wings that catches small animals with its feet.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "east": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "East is the direction where the sun comes up in the morning.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "egg": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "An egg is a round thing with a shell that comes out of a mother bird, and a baby bird grows inside it, and people eat some eggs as food.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "elephant": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "An elephant is a very large grey animal with big ears and a long nose that it can use like a hand.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "event": {
+    "concept": "sequence",
+    "pos": "noun",
+    "definition": "An event is something that happens, often something important.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "explore": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To explore a place is to travel through it to find out what it is like.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "fence": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A fence is a wall of wood or wire around a field or a yard.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "forecast": {
+    "concept": "guess",
+    "pos": "noun",
+    "definition": "A forecast is what people expect to happen, such as what the weather will be like tomorrow.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "frightened": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Frightened means afraid.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "gas": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A gas is a material like air, which has no shape of its own and spreads out to fill a space.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "gate": {
+    "concept": "opening_and_shutting",
+    "pos": "noun",
+    "definition": "A gate is a door in a fence or a wall.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "growth": {
+    "concept": "growing",
+    "pos": "mass noun",
+    "definition": "Growth is growing, or how much something has grown.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "hat": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A hat is a thing you wear on your head.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "hope": {
+    "concept": "feeling",
+    "pos": "noun verb",
+    "definition": "To hope is to want something to happen and to think that it might.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "human": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A human is a person.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "hurricane": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A hurricane is a very large and strong storm with a fast wind that turns in a circle.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "important": {
+    "concept": "need",
+    "pos": "adjective periphrastic",
+    "definition": "Something important is needed very much, or can change a lot.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "include": {
+    "concept": "component_and_system",
+    "pos": "verb",
+    "definition": "To include something is to have it as one of the parts.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "indeed": {
+    "concept": "real_and_pretend",
+    "pos": "",
+    "definition": "Indeed means in fact, and it makes what is said stronger.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "information": {
+    "concept": "knowing",
+    "pos": "mass noun",
+    "definition": "Information is facts or knowledge about something.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "island": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "An island is a piece of land with water all around it.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "joy": {
+    "concept": "feeling",
+    "pos": "mass noun",
+    "definition": "Joy is a feeling of being very happy.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "kindly": {
+    "concept": "good_and_bad",
+    "pos": "",
+    "definition": "Kindly means in a kind way.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "kindness": {
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "definition": "Kindness is being kind to others.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "kite": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "A kite is a light toy on a long string that flies in the wind.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "kitten": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A kitten is a young cat.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "lay": {
+    "concept": "activity",
+    "pos": "verb",
+    "definition": "To lay something is to put it down flat, and a bird lays an egg when the egg comes out of its body.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "local": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Local means in or near the place where you are.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "location": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A location is a place where something is.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "merchant": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A merchant is a person who buys and sells things to make money.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "merry": {
+    "concept": "feeling",
+    "pos": "adjective",
+    "definition": "Merry means happy and full of fun.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "mill": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A mill is a building where grain is broken into flour.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "money": {
+    "concept": "exchange",
+    "pos": "mass noun",
+    "definition": "Money is the coins and paper that people use to pay for things.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "neck": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "Your neck is the part of your body between your head and your shoulders.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "nest": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A nest is a home that a bird makes, often of sticks and grass, where it lays its eggs.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "north": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "North is the direction on your left when you face the sun as it comes up in the morning.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "observation": {
+    "concept": "saying_what_you_saw",
+    "pos": "noun",
+    "definition": "An observation is something you find out by looking or listening with care.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "occur": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To occur is to happen.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "owl": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "An owl is a bird with big eyes that flies at night and catches small animals.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "perfect": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Perfect means with nothing wrong, as good as it can be.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "perhaps": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Perhaps means maybe.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "pleasant": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Pleasant means nice to see, to hear or to be with.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "pond": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A pond is a very small lake.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "pool": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A pool is a small area of water, such as one made for people to swim in.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "pretty": {
+    "concept": "good_and_bad",
+    "pos": "adjective",
+    "definition": "Pretty means nice to look at.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "protect": {
+    "concept": "danger",
+    "pos": "verb",
+    "definition": "To protect something is to keep it safe from harm.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "provide": {
+    "concept": "needing_supply",
+    "pos": "verb",
+    "definition": "To provide something is to give it to someone who needs it.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "really": {
+    "concept": "real_and_pretend",
+    "pos": "",
+    "definition": "Really means in fact, or very.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "release": {
+    "concept": "allowed_or_not",
+    "pos": "verb",
+    "definition": "To release something is to let it go.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "response": {
+    "concept": "asking",
+    "pos": "noun",
+    "definition": "A response is an answer to something that was said or done.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "ride": {
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "definition": "To ride is to sit on something that moves and be carried by it, such as a horse or a bicycle.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "salty": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Salty means having salt in it, or having the taste of salt.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "save": {
+    "concept": "danger",
+    "pos": "verb",
+    "definition": "To save someone is to keep them from harm, and to save something is to keep it to use later.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "scientist": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A scientist is a person who studies the world to find out how it works.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "send": {
+    "concept": "exchange",
+    "pos": "verb",
+    "definition": "To send something is to make it go to another place or to another person.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "sheep": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A sheep is an animal kept by people for its thick, soft hair, which is used to make cloth.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "sight": {
+    "concept": "saying_what_you_saw",
+    "pos": "noun",
+    "definition": "Sight is being able to see, or something that you see.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "sir": {
+    "concept": "asking_politely",
+    "pos": "",
+    "definition": "Sir is a word you use with good manners when you speak to a man.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "softly": {
+    "concept": "physical_property",
+    "pos": "",
+    "definition": "Softly means in a soft or quiet way.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "soldier": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A soldier is a person whose job is to help a country in a war.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "sport": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "A sport is a game in which people use their bodies and often play to win.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "store": {
+    "concept": "exchange",
+    "pos": "noun verb",
+    "definition": "A store is a place where people buy things, and to store something is to keep it to use later.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "strange": {
+    "concept": "same_and_different",
+    "pos": "adjective",
+    "definition": "Strange means different from what you know or expect.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "supper": {
+    "concept": "needing_supply",
+    "pos": "noun",
+    "definition": "Supper is a meal eaten in the evening.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "surprise": {
+    "concept": "feeling",
+    "pos": "noun verb",
+    "definition": "A surprise is something you did not expect, and to surprise someone is to do something they did not expect.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "temperature": {
+    "concept": "heat",
+    "pos": "noun",
+    "definition": "The temperature of something is how hot or cold it is.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "tent": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A tent is a small house made of cloth held up by poles, which people can sleep in outside.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "tidal": {
+    "concept": "cycle",
+    "pos": "adjective periphrastic",
+    "definition": "Tidal means having to do with the tide.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "till": {
+    "concept": "sequence",
+    "pos": "",
+    "definition": "Till means until.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "trouble": {
+    "concept": "danger",
+    "pos": "mass noun",
+    "definition": "Trouble is a time when things go wrong, or something that makes things hard.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "video": {
+    "concept": "standing_for",
+    "pos": "noun",
+    "definition": "A video is moving pictures, often with sound, that you can watch again and again.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "whistle": {
+    "concept": "sound",
+    "pos": "noun verb",
+    "definition": "A whistle is a high sound made by blowing air through a small hole, or a small thing you blow to make that sound.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "wild": {
+    "concept": "living_and_not_living",
+    "pos": "adjective",
+    "definition": "Wild animals and plants live and grow on their own, not cared for by people.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  },
+  "wish": {
+    "concept": "feeling",
+    "pos": "noun verb",
+    "definition": "To wish is to want something very much, often something that may not happen.",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+  }
+}

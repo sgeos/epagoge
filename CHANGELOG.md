@@ -44,6 +44,18 @@ Versioning.
   rejected definitions they blocked, and refuses a malformed report.
 - Irregular inflections for strike, species and potato, and non-doubling
   entries for offer, scatter and travel.
+- 100 level-two headwords from a rule-selected pool of scan words frequent in
+  at least two sources, reviewed in `evals/review/level_2_multi_source/`.
+  Level two rose to 1,185 headwords, measured, leaving 8,815.
+- `tools/candidate_pool.py` selects a pool by stated rules and records every
+  removal, counting without naming words the private disclosure pattern
+  withholds. Irregular inflections for lay, ride, send and occur.
+
+### Fixed
+
+- `tools/scrub_scan.sh` matched neither plurals of withheld terms nor, in its
+  line-break pass, other cases, and it reported clean over no files when its
+  temporary file could not be created. All three now fail as they should.
 
 ### Changed
 
@@ -56,8 +68,8 @@ Versioning.
 
 ### Notes
 
-- No general throughput is established. Both pools are exhausted, and the
-  batches are agent review without independent expert validation.
+- No general throughput is established. All three pools are exhausted, and
+  the batches are agent review without independent expert validation.
 - Sweet blocked 16 retained rejected definitions, but most of the words it
   blocked were definable without it. The ostensive question stays with the
   operator.

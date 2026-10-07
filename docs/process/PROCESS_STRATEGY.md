@@ -315,6 +315,25 @@ wrong.
 acceptances where the previous run had two thirds. **A less extreme error would
 have survived**, which is the reason to record it rather than the cost.
 
+## Added 2026-10-07. The disclosure scan had three more holes
+
+**The class recorded on 2026-09-25 recurred in the same script.** The scan
+anchored each withheld term at both ends of a word, so a plural passed. Its
+second pass was case-sensitive while its first was not. And when its
+temporary file could not be created it scanned nothing and printed clean,
+with a blank where the file count belonged. **The blank count was visible in
+the output and still read as success**, which is the announced-truncation
+failure from 2026-09-27 in a new place.
+
+What found the plural was not the scan. A lexicon pool tool applying the same
+pattern was being checked by hand, and a plural of a withheld word sat in its
+output. **A check is only as wide as its matching rule**, and a rule written
+for whole words was never asked about inflections.
+
+So the scan now fails on an empty or uncreatable file list, matches an
+optional plural, and matches case-insensitively in both passes. Each change
+was shown failing on a probe first.
+
 ## Autonomy boundaries
 
 **Proceed** without asking on anything bounded and already on the roadmap.

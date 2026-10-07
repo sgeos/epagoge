@@ -1,33 +1,37 @@
 # Handoff
 
-## Validity check
+## Validity check and continuity stamp
 
-Written 2026-10-07. The ancestry anchor is
-`8367a44d71073e051c32fe1ea607d5b305d6b348`, the revision this session started
-from. It is not the revision containing this document.
+Interim stamp written before the multi-source commit. The ancestry anchor is
+`a1bd67f8`, the food-blocker commit. A restamp naming the multi-source commit
+follows in a separate commit.
 
 Read `CLAUDE.md` and run these checks before relying on the state below.
 
     git status --short
-    git merge-base --is-ancestor 8367a44d71073e051c32fe1ea607d5b305d6b348 HEAD
-    git log --oneline 8367a44d71073e051c32fe1ea607d5b305d6b348..HEAD
+    git merge-base --is-ancestor a1bd67f HEAD
+    git log --oneline a1bd67f..HEAD
     .venv/bin/python tools/measure_lexicon_increment.py \
-      evals/review/level_2_food_blockers \
-      --check evals/review/level_2_food_blockers/measurement.json
+      evals/review/level_2_multi_source \
+      --check evals/review/level_2_multi_source/measurement.json
 
 A passing measurement check means the lexicon counts below match the tree.
-It fails by design once any later batch changes the vocabulary, and earlier
-batch measurements, including the era-overlap batch from the same session,
-already fail for that reason. A failure then marks the counts below as stale
-rather than wrong. Missing host artifacts make the associated checks
-unverified rather than disproved.
+It fails by design once any later batch changes the vocabulary, and the
+measurements of every earlier batch, including the two earlier batches of
+this session, already fail for that reason. A failure then marks the counts
+below as stale rather than wrong. Missing host artifacts make the associated
+checks unverified rather than disproved.
 
 ## Current authority and task status
 
-`CURRENT_BRIEF.md` and `COMPLETION_CONDITION.md` describe the food-blocker
-scope, the second of two scopes opened on 2026-10-07 by a self-directed loop.
-The first, the era-overlap batch, is preserved with its brief and condition
-in `evals/review/level_2_food_blockers/`. Earlier handoffs in
+A self-directed loop ran three scopes on 2026-10-07 and was **cancelled by
+the operator** during the third. The third scope was finished before
+stopping. No loop, wakeup or background job remains. **No further scope is
+open.** `CURRENT_BRIEF.md` and `COMPLETION_CONDITION.md` describe the third
+scope and are evidence of delivered work, not instructions to repeat it. The
+first two briefs and conditions are preserved as `previous_*.md` in
+`evals/review/level_2_food_blockers/` and
+`evals/review/level_2_multi_source/`. Earlier handoffs in
 `HANDOFF_HISTORY.md` are historical evidence. Durable failure analysis is in
 `PROCESS_STRATEGY.md`.
 
@@ -38,39 +42,43 @@ Continuous integration has therefore not run on these commits.
 
 ## What these scopes delivered
 
-**Two agent-authored lexical batches.** No teacher ran in either, because host
-swap was nearly exhausted, and each batch's `authoring.json` records that.
+**Three agent-authored lexical batches.** No teacher ran in any of them,
+because host swap was nearly exhausted when the session began, and each
+batch's `authoring.json` records that.
 
-The era-overlap batch reviewed every remaining word the 2026-09-27 scan found
-frequent in both a historical reader and a modern federal source, 146 entries
-in all, and admitted 83. Its record is `evals/review/level_2_era_overlap/`.
+| Batch | Pool | Entries | Admitted | Deferred | Excluded |
+| --- | --- | --- | --- | --- | --- |
+| `level_2_era_overlap` | Scan words frequent in both eras | 146 | 83 | 20 | 43 |
+| `level_2_food_blockers` | Blockers of retained rejections | 57 | 36 | 13 | 8 |
+| `level_2_multi_source` | Scan words frequent in two sources | 183 | 100 | 68 | 15 |
 
-The food-blocker batch reviewed every word that blocked a retained rejected
-teacher definition and the sixteen retained food and plant deferrals, 57
-entries in all, and admitted 36. Fifteen of the sixteen deferrals are now
-admitted. Lemon remains, blocked only by sour. Its record is
-`evals/review/level_2_food_blockers/`.
-
-Measured on the final tree, level two admits 1,085 distinct headwords, up
-from 966 at the start of the session, leaving 8,915 to the approximate
+Measured on the final tree, level two admits 1,185 distinct headwords, up
+from 966 at the start of the session, leaving 8,815 to the approximate
 ten-thousand-word target. Level one remains at 849. Required definition
-coverage is 812 of 812 at level one and 1,048 of 1,048 at level two, with
+coverage is 812 of 812 at level one and 1,148 of 1,148 at level two, with
 complete closure at both. All level-one books, the reference checkpoint and
 every earlier review artifact match their recorded hashes.
+
+**Tools for lexical growth.** The measurement tool accounts for a batch that
+declares no teacher ran. `tools/blocking_words.py` ranks words outside a
+level by the retained rejected definitions they blocked.
+`tools/candidate_pool.py` selects a pool from a scan report by stated rules,
+records every removal, and counts without naming words withheld by the
+private disclosure pattern. Tests cover all three.
 
 **Prompts no longer ban admitted words.** `substitutions_at` drops a
 substitution key admissible at the prompted level, and every generator now
 uses it. `tools/check_substitutions.py` reports the remaining contradictions
 in the gate without failing.
 
-**Two tools for lexical growth.** The measurement tool accounts for a batch
-that declares no teacher ran. `tools/blocking_words.py` ranks words outside a
-level by the rejected definitions they blocked and refuses malformed reports.
-Tests cover both.
+**The disclosure scan had three holes, now closed.** It missed plurals of
+withheld terms, its second pass was case-sensitive, and it printed clean over
+no files when its temporary file could not be created. Each fix was shown
+failing on a probe. `PROCESS_STRATEGY.md` records the lesson.
 
-**Inflection tables.** Strike is irregular, offer, scatter and travel do not
-double, and species and potato have their plurals recorded. Each was found by
-the gate or by the plural rule producing a wrong form.
+**Inflection tables.** Strike, lay, ride, send and occur are irregular. Offer,
+scatter and travel do not double. Species and potato have their plurals
+recorded. Each was found by the gate or by the rule producing a wrong form.
 
 ## Open items for the operator
 
@@ -87,19 +95,23 @@ These are recorded findings, not authorized work.
 3. **Seven level-one contradictions.** Beside, cause, great, greater,
    length, single and unknown are admitted at level one and also listed as
    substitutions. Either the ban or the admission is stale.
-4. **Sky has no plural.** The level-one entry declares no part of speech.
-5. **Publication** of the local commits.
+4. **Level-one entries without a part of speech.** Sky and man declare none,
+   so skies and men are not admissible anywhere.
+5. **Technical deferrals.** The multi-source batch deferred 44 technical
+   words by agent judgement, pending a level-two schedule unit that needs
+   them. Whether any belong at level two is a curriculum decision.
+6. **Publication** of the local commits.
 
 ## Recommended next work
 
-Both principled pools used in this session are exhausted. The next is the
-remainder of the scan's frequent group, about two thousand words, which needs
-a rule-based filter for proper nouns, fragments and archaisms before review.
-Its modern sources also contain terms that the disclosure scan refuses in
-tracked files, so any pool drawn from them must be filtered before anything
-is written. Neither throughput nor the semantic quality of agent-authored
-definitions has been measured, and no level-two book uses any word from
-either batch yet.
+All three pools used in this session are exhausted. `tools/candidate_pool.py`
+can produce the next one by relaxing the source rule to one source, which
+leaves roughly 1,800 words that need much heavier archaism and technicality
+judgement. A different, unmeasured route is to draft level-two books, since no
+level-two book uses any word admitted in this session and the coverage rule
+is therefore unmet at level two. Drafting needs the teacher, so check host
+memory first. Neither throughput nor the semantic quality of agent-authored
+definitions has been measured.
 
 ## Restart verification
 

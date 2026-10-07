@@ -48,15 +48,30 @@ fi
 # **Tracked AND untracked-but-not-ignored.** Everything a commit could pick
 # up. Ignored files are excluded because they are not published; secret/ is
 # excluded because it is the pattern's own home.
-FILES=$(mktemp)
+# **A scan over no files is not clean.** On 2026-10-07 mktemp failed inside a
+# sandbox, every later step read an empty path, and the script printed clean
+# over a blank file count. Failing to enumerate is now a failure.
+if ! FILES=$(mktemp); then
+  echo "DISCLOSURE SCAN FAILED. Could not create the file list."
+  exit 1
+fi
 trap 'rm -f "$FILES"' EXIT
 { git ls-files; git ls-files --others --exclude-standard; } \
   | grep -v '^secret/' | sort -u > "$FILES"
+if [ ! -s "$FILES" ]; then
+  echo "DISCLOSURE SCAN FAILED. The file list is empty."
+  exit 1
+fi
+
+# **An optional plural suffix, because word anchoring hid plurals.** A term
+# anchored at both ends did not match its own plural, so a plural of a banned
+# word passed the scan. Found 2026-10-07 while filtering a lexicon pool.
+anchored="\\b(${terms})(s|es)?\\b"
 
 fail=0
 
 # Pass one, line by line, which is the pass that can name a line number.
-hits=$(tr '\n' '\0' < "$FILES" | xargs -0 grep -IniE "\\b(${terms})\\b" 2>/dev/null || true)
+hits=$(tr '\n' '\0' < "$FILES" | xargs -0 grep -IniE "$anchored" 2>/dev/null || true)
 if [ -n "$hits" ]; then
   echo "DISCLOSURE SCAN FAILED. Files contain withheld vocabulary:"
   echo "$hits"
@@ -68,7 +83,7 @@ fi
 wrapped=""
 while IFS= read -r file; do
   [ -f "$file" ] || continue
-  if tr '\n' ' ' < "$file" 2>/dev/null | tr -s ' ' | grep -qIE "\\b(${terms})\\b"; then
+  if tr '\n' ' ' < "$file" 2>/dev/null | tr -s ' ' | grep -qiIE "$anchored"; then
     case "$hits" in
       *"$file"*) ;;
       *) wrapped="${wrapped}  ${file}"$'\n' ;;

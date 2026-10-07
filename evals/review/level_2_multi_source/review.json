@@ -1,0 +1,1654 @@
+{
+  "accurate": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Accurate means exactly right, with no mistakes.",
+    "concept": "checking",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "accurate"
+    ]
+  },
+  "activities": {
+    "decision": "exclude",
+    "reason": "An inflected form of activity, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "activity": {
+    "decision": "admit",
+    "reason": "Base of the pool forms activities. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "An activity is something that people do, often for fun or to learn.",
+    "concept": "activity",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "activities",
+      "activity"
+    ]
+  },
+  "actually": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Actually means really, or in fact.",
+    "concept": "real_and_pretend",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "actually"
+    ]
+  },
+  "advisories": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "affect": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To affect something is to change it or to act on it.",
+    "concept": "cause_and_effect",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "affect",
+      "affected",
+      "affecting",
+      "affects"
+    ]
+  },
+  "ago": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ago means before now, as in two days ago.",
+    "concept": "duration",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "ago"
+    ]
+  },
+  "angle": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "An angle is the corner made where two straight lines meet.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "angle",
+      "angles"
+    ]
+  },
+  "antenna": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "area": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use. Area is a level-one substitution key. Prompts at level two now present it as admissible.",
+    "definition_origin": "Agent-authored",
+    "definition": "An area is a part of a place or of a surface.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "area",
+      "areas"
+    ]
+  },
+  "areas": {
+    "decision": "exclude",
+    "reason": "An inflected form of area, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "article": {
+    "decision": "defer",
+    "reason": "Its senses differ between the sources or it occurs mainly in a fixed phrase, so no single introductory sense is supported."
+  },
+  "atmosphere": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "average": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "axis": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "based": {
+    "decision": "defer",
+    "reason": "Its senses differ between the sources or it occurs mainly in a fixed phrase, so no single introductory sense is supported."
+  },
+  "beauty": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Beauty is what makes something good to look at or to hear.",
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "beauty"
+    ]
+  },
+  "berries": {
+    "decision": "exclude",
+    "reason": "An inflected form of berry, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "berry": {
+    "decision": "admit",
+    "reason": "Base of the pool forms berries. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A berry is a small, soft, round fruit with many seeds inside.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "berries",
+      "berry"
+    ]
+  },
+  "bit": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bit is a small piece or a small amount of something.",
+    "concept": "quantity",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "bit",
+      "bits"
+    ]
+  },
+  "brave": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Brave means ready to do something dangerous or scary.",
+    "concept": "feeling",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "brave",
+      "braver",
+      "bravest"
+    ]
+  },
+  "busy": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Busy means having a lot to do.",
+    "concept": "activity",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "busier",
+      "busiest",
+      "busy"
+    ]
+  },
+  "carbon": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "century": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A century is one hundred years.",
+    "concept": "duration",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "centuries",
+      "century"
+    ]
+  },
+  "chemical": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "chick": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A chick is a very young bird.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "chick",
+      "chicks"
+    ]
+  },
+  "circulation": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "climate": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "The climate of a place is the weather it usually has over many years.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "climate",
+      "climates"
+    ]
+  },
+  "coastal": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Coastal means on or near a coast.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "coastal"
+    ]
+  },
+  "communities": {
+    "decision": "exclude",
+    "reason": "An inflected form of community, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "community": {
+    "decision": "admit",
+    "reason": "Base of the pool forms communities. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A community is a group of people who live in the same place or share something.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "communities",
+      "community"
+    ]
+  },
+  "corn": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Corn is a tall grass plant with large heads of yellow seeds that people and animals eat.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "corn"
+    ]
+  },
+  "create": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To create something is to make something new.",
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "create",
+      "created",
+      "creates",
+      "creating"
+    ]
+  },
+  "cyclone": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "damage": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Damage is harm done to something, and to damage something is to harm it.",
+    "concept": "things_break",
+    "pos": "mass noun verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "damage",
+      "damaged",
+      "damages",
+      "damaging"
+    ]
+  },
+  "dare": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To dare is to be brave enough to do something, or to ask someone to do something to show that they are brave.",
+    "concept": "feeling",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "dare",
+      "dared",
+      "dares",
+      "daring"
+    ]
+  },
+  "data": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "deal": {
+    "decision": "defer",
+    "reason": "Its senses differ between the sources or it occurs mainly in a fixed phrase, so no single introductory sense is supported."
+  },
+  "dear": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Dear means loved very much, and it is also a kind word at the start of a letter.",
+    "concept": "feeling",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "dear",
+      "dearer",
+      "dearest"
+    ]
+  },
+  "debris": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "dee": {
+    "decision": "exclude",
+    "reason": "Not a candidate word. It occurs as a fragment and in names."
+  },
+  "degrees": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "depth": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "The depth of something is how deep it is.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "depth",
+      "depths"
+    ]
+  },
+  "difference": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A difference is a way in which two things are not the same.",
+    "concept": "same_and_different",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "difference",
+      "differences"
+    ]
+  },
+  "dinner": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Dinner is the main meal of the day, often eaten in the evening.",
+    "concept": "needing_supply",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "dinner",
+      "dinners"
+    ]
+  },
+  "dress": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A dress is something a girl or a woman wears that covers the body from the top down to the legs, and to dress is to put on what you wear.",
+    "concept": "household_object",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "dress",
+      "dressed",
+      "dresses",
+      "dressing"
+    ]
+  },
+  "due": {
+    "decision": "defer",
+    "reason": "Its senses differ between the sources or it occurs mainly in a fixed phrase, so no single introductory sense is supported."
+  },
+  "eagle": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "An eagle is a large bird with strong wings that catches small animals with its feet.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "eagle",
+      "eagles"
+    ]
+  },
+  "east": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "East is the direction where the sun comes up in the morning.",
+    "concept": "direction",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "east"
+    ]
+  },
+  "egg": {
+    "decision": "admit",
+    "reason": "Base of the pool forms eggs. Agent-authored introductory definition in the sense the sources use. First drafted through lay, which was drafted through egg. The closure check refused the whole batch, and egg was rewritten without lay.",
+    "definition_origin": "Agent-authored",
+    "definition": "An egg is a round thing with a shell that comes out of a mother bird, and a baby bird grows inside it, and people eat some eggs as food.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "egg",
+      "eggs"
+    ]
+  },
+  "eggs": {
+    "decision": "exclude",
+    "reason": "An inflected form of egg, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "electromagnetic": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "elephant": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "An elephant is a very large grey animal with big ears and a long nose that it can use like a hand.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "elephant",
+      "elephants"
+    ]
+  },
+  "energy": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "equator": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "event": {
+    "decision": "admit",
+    "reason": "Base of the pool forms events. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "An event is something that happens, often something important.",
+    "concept": "sequence",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "event",
+      "events"
+    ]
+  },
+  "events": {
+    "decision": "exclude",
+    "reason": "An inflected form of event, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "explore": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To explore a place is to travel through it to find out what it is like.",
+    "concept": "finding_out",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "explore",
+      "explored",
+      "explores",
+      "exploring"
+    ]
+  },
+  "fellow": {
+    "decision": "defer",
+    "reason": "Dated or archaic in the historical readers, and not needed by an early modern reader."
+  },
+  "fence": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A fence is a wall of wood or wire around a field or a yard.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "fence",
+      "fences"
+    ]
+  },
+  "forecast": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A forecast is what people expect to happen, such as what the weather will be like tomorrow.",
+    "concept": "guess",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "forecast",
+      "forecasts"
+    ]
+  },
+  "forth": {
+    "decision": "defer",
+    "reason": "Dated or archaic in the historical readers, and not needed by an early modern reader."
+  },
+  "frightened": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Frightened means afraid.",
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "frightened"
+    ]
+  },
+  "gas": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A gas is a material like air, which has no shape of its own and spreads out to fill a space.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "gas",
+      "gases"
+    ]
+  },
+  "gases": {
+    "decision": "exclude",
+    "reason": "An inflected form of gas, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "gate": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A gate is a door in a fence or a wall.",
+    "concept": "opening_and_shutting",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "gate",
+      "gates"
+    ]
+  },
+  "gravity": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "growth": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Growth is growing, or how much something has grown.",
+    "concept": "growing",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "growth"
+    ]
+  },
+  "hat": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hat is a thing you wear on your head.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "hat",
+      "hats"
+    ]
+  },
+  "heaven": {
+    "decision": "defer",
+    "reason": "The sources use it chiefly in a religious sense, and no concept in the graph names that sense."
+  },
+  "hope": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To hope is to want something to happen and to think that it might.",
+    "concept": "feeling",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "hope",
+      "hoped",
+      "hopes",
+      "hoping"
+    ]
+  },
+  "human": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A human is a person.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "human",
+      "humans"
+    ]
+  },
+  "hurricane": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hurricane is a very large and strong storm with a fast wind that turns in a circle.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "hurricane",
+      "hurricanes"
+    ]
+  },
+  "hurricanes": {
+    "decision": "exclude",
+    "reason": "An inflected form of hurricane, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "hymn": {
+    "decision": "defer",
+    "reason": "The sources use it chiefly in a religious sense, and no concept in the graph names that sense."
+  },
+  "important": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Something important is needed very much, or can change a lot.",
+    "concept": "need",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "important"
+    ]
+  },
+  "include": {
+    "decision": "admit",
+    "reason": "Base of the pool forms including. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To include something is to have it as one of the parts.",
+    "concept": "component_and_system",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "include",
+      "included",
+      "includes",
+      "including"
+    ]
+  },
+  "including": {
+    "decision": "exclude",
+    "reason": "An inflected form of include, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "indeed": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Indeed means in fact, and it makes what is said stronger.",
+    "concept": "real_and_pretend",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "indeed"
+    ]
+  },
+  "information": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Information is facts or knowledge about something.",
+    "concept": "knowing",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "information"
+    ]
+  },
+  "infrastructure": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "island": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "An island is a piece of land with water all around it.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "island",
+      "islands"
+    ]
+  },
+  "joy": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Joy is a feeling of being very happy.",
+    "concept": "feeling",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "joy"
+    ]
+  },
+  "kindly": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Kindly means in a kind way.",
+    "concept": "good_and_bad",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "kindly"
+    ]
+  },
+  "kindness": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Kindness is being kind to others.",
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "kindness"
+    ]
+  },
+  "kite": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A kite is a light toy on a long string that flies in the wind.",
+    "concept": "toy",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "kite",
+      "kites"
+    ]
+  },
+  "kitten": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A kitten is a young cat.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "kitten",
+      "kittens"
+    ]
+  },
+  "kitty": {
+    "decision": "defer",
+    "reason": "A nursery word for a cat. Cat and kitten cover the meaning."
+  },
+  "laid": {
+    "decision": "exclude",
+    "reason": "An inflected form of lay, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "latitude": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "lay": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use. Added to the irregular verb table with laid. The rule gave layed. The past of lie in its reclining sense is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To lay something is to put it down flat, and a bird lays an egg when the egg comes out of its body.",
+    "concept": "activity",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "laid",
+      "lay",
+      "laying",
+      "lays"
+    ]
+  },
+  "local": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Local means in or near the place where you are.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "local"
+    ]
+  },
+  "location": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use. Location is named in the vocabulary documentation as a word the teacher reached for in place of place. Admitted at level two only.",
+    "definition_origin": "Agent-authored",
+    "definition": "A location is a place where something is.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "location",
+      "locations"
+    ]
+  },
+  "longitude": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "mamma": {
+    "decision": "defer",
+    "reason": "Dated or archaic in the historical readers, and not needed by an early modern reader."
+  },
+  "management": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "marine": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "maximum": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "men": {
+    "decision": "defer",
+    "reason": "The plural of the admitted level-one headword man. Man declares no part of speech, so its plural is not admissible. Changing the closed level-one entry is recorded as a finding rather than made."
+  },
+  "merchant": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A merchant is a person who buys and sells things to make money.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "merchant",
+      "merchants"
+    ]
+  },
+  "meridian": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "merry": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Merry means happy and full of fun.",
+    "concept": "feeling",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "merrier",
+      "merriest",
+      "merry"
+    ]
+  },
+  "meters": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "mill": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A mill is a building where grain is broken into flour.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "mill",
+      "mills"
+    ]
+  },
+  "money": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Money is the coins and paper that people use to pay for things.",
+    "concept": "exchange",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "money"
+    ]
+  },
+  "monitor": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "neck": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Your neck is the part of your body between your head and your shoulders.",
+    "concept": "body_part",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "neck",
+      "necks"
+    ]
+  },
+  "nest": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A nest is a home that a bird makes, often of sticks and grass, where it lays its eggs.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "nest",
+      "nests"
+    ]
+  },
+  "north": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "North is the direction on your left when you face the sun as it comes up in the morning.",
+    "concept": "direction",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "north"
+    ]
+  },
+  "observation": {
+    "decision": "admit",
+    "reason": "Base of the pool forms observations. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "An observation is something you find out by looking or listening with care.",
+    "concept": "saying_what_you_saw",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "observation",
+      "observations"
+    ]
+  },
+  "observations": {
+    "decision": "exclude",
+    "reason": "An inflected form of observation, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "occur": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use. Added to the irregular verb table with occurred, since the final consonant doubles and the rule gave occured.",
+    "definition_origin": "Agent-authored",
+    "definition": "To occur is to happen.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "occur",
+      "occurred",
+      "occurring",
+      "occurs"
+    ]
+  },
+  "orbit": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "orbits": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "owl": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "An owl is a bird with big eyes that flies at night and catches small animals.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "owl",
+      "owls"
+    ]
+  },
+  "oxygen": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "papa": {
+    "decision": "defer",
+    "reason": "Dated or archaic in the historical readers, and not needed by an early modern reader."
+  },
+  "parallel": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "particles": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "peep": {
+    "decision": "defer",
+    "reason": "Dated or archaic in the historical readers, and not needed by an early modern reader."
+  },
+  "percentage": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "perfect": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Perfect means with nothing wrong, as good as it can be.",
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "perfect"
+    ]
+  },
+  "perhaps": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Perhaps means maybe.",
+    "concept": "how_sure",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "perhaps"
+    ]
+  },
+  "phase": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "plain": {
+    "decision": "defer",
+    "reason": "Its senses differ between the sources or it occurs mainly in a fixed phrase, so no single introductory sense is supported."
+  },
+  "planet": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "pleasant": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Pleasant means nice to see, to hear or to be with.",
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "pleasant"
+    ]
+  },
+  "pond": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pond is a very small lake.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "pond",
+      "ponds"
+    ]
+  },
+  "pool": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pool is a small area of water, such as one made for people to swim in.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "pool",
+      "pools"
+    ]
+  },
+  "pray": {
+    "decision": "defer",
+    "reason": "The sources use it chiefly in a religious sense, and no concept in the graph names that sense."
+  },
+  "pretty": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Pretty means nice to look at.",
+    "concept": "good_and_bad",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "prettier",
+      "prettiest",
+      "pretty"
+    ]
+  },
+  "process": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "produce": {
+    "decision": "defer",
+    "reason": "Admitted at level five under change. Lowering its level is an authored decision outside this batch, as recorded for produced in the era-overlap batch."
+  },
+  "property": {
+    "decision": "defer",
+    "reason": "Its senses differ between the sources or it occurs mainly in a fixed phrase, so no single introductory sense is supported."
+  },
+  "protect": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To protect something is to keep it safe from harm.",
+    "concept": "danger",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "protect",
+      "protected",
+      "protecting",
+      "protects"
+    ]
+  },
+  "provide": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To provide something is to give it to someone who needs it.",
+    "concept": "needing_supply",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "provide",
+      "provided",
+      "provides",
+      "providing"
+    ]
+  },
+  "rays": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "really": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Really means in fact, or very.",
+    "concept": "real_and_pretend",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "really"
+    ]
+  },
+  "release": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To release something is to let it go.",
+    "concept": "allowed_or_not",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "release",
+      "released",
+      "releases",
+      "releasing"
+    ]
+  },
+  "research": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "response": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A response is an answer to something that was said or done.",
+    "concept": "asking",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "response",
+      "responses"
+    ]
+  },
+  "ride": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use. Added to the irregular verb table with rode and ridden. The rule gave rided.",
+    "definition_origin": "Agent-authored",
+    "definition": "To ride is to sit on something that moves and be carried by it, such as a horse or a bicycle.",
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "ridden",
+      "ride",
+      "rides",
+      "riding",
+      "rode"
+    ]
+  },
+  "salty": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use. Grounded through the admitted salt and taste, unlike sweet, which has no such ground.",
+    "definition_origin": "Agent-authored",
+    "definition": "Salty means having salt in it, or having the taste of salt.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "saltier",
+      "saltiest",
+      "salty"
+    ]
+  },
+  "save": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To save someone is to keep them from harm, and to save something is to keep it to use later.",
+    "concept": "danger",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "save",
+      "saved",
+      "saves",
+      "saving"
+    ]
+  },
+  "scientist": {
+    "decision": "admit",
+    "reason": "Base of the pool forms scientists. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A scientist is a person who studies the world to find out how it works.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "scientist",
+      "scientists"
+    ]
+  },
+  "scientists": {
+    "decision": "exclude",
+    "reason": "An inflected form of scientist, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "send": {
+    "decision": "admit",
+    "reason": "Base of the pool forms sent. Agent-authored introductory definition in the sense the sources use. Added to the irregular verb table with sent. The rule gave sended.",
+    "definition_origin": "Agent-authored",
+    "definition": "To send something is to make it go to another place or to another person.",
+    "concept": "exchange",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "send",
+      "sending",
+      "sends",
+      "sent"
+    ]
+  },
+  "sent": {
+    "decision": "exclude",
+    "reason": "An inflected form of send, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "shall": {
+    "decision": "defer",
+    "reason": "Dated or archaic in the historical readers, and not needed by an early modern reader."
+  },
+  "sheep": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use. The plural is unchanged, as already recorded in the irregular plural table.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sheep is an animal kept by people for its thick, soft hair, which is used to make cloth.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "sheep"
+    ]
+  },
+  "shoreline": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "sight": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sight is being able to see, or something that you see.",
+    "concept": "saying_what_you_saw",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "sight",
+      "sights"
+    ]
+  },
+  "sir": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use. A form of address. Assigned to asking_politely beside the other courtesy words.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sir is a word you use with good manners when you speak to a man.",
+    "concept": "asking_politely",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "sir"
+    ]
+  },
+  "softly": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Softly means in a soft or quiet way.",
+    "concept": "physical_property",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "softly"
+    ]
+  },
+  "solar": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "soldier": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A soldier is a person whose job is to help a country in a war.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "soldier",
+      "soldiers"
+    ]
+  },
+  "spectrum": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "sport": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sport is a game in which people use their bodies and often play to win.",
+    "concept": "activity",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "sport",
+      "sports"
+    ]
+  },
+  "stations": {
+    "decision": "defer",
+    "reason": "Its senses differ between the sources or it occurs mainly in a fixed phrase, so no single introductory sense is supported."
+  },
+  "store": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A store is a place where people buy things, and to store something is to keep it to use later.",
+    "concept": "exchange",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "store",
+      "stored",
+      "stores",
+      "storing"
+    ]
+  },
+  "strange": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use. The comparative stranger is already admissible as the noun stranger, so it is not listed again among the forms.",
+    "definition_origin": "Agent-authored",
+    "definition": "Strange means different from what you know or expect.",
+    "concept": "same_and_different",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "strange",
+      "strangest"
+    ]
+  },
+  "supper": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Supper is a meal eaten in the evening.",
+    "concept": "needing_supply",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "supper",
+      "suppers"
+    ]
+  },
+  "surge": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "surprise": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A surprise is something you did not expect, and to surprise someone is to do something they did not expect.",
+    "concept": "feeling",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "surprise",
+      "surprised",
+      "surprises",
+      "surprising"
+    ]
+  },
+  "sustained": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "temperature": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "The temperature of something is how hot or cold it is.",
+    "concept": "heat",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "temperature",
+      "temperatures"
+    ]
+  },
+  "tent": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tent is a small house made of cloth held up by poles, which people can sleep in outside.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "tent",
+      "tents"
+    ]
+  },
+  "text": {
+    "decision": "defer",
+    "reason": "Its senses differ between the sources or it occurs mainly in a fixed phrase, so no single introductory sense is supported."
+  },
+  "thou": {
+    "decision": "defer",
+    "reason": "Dated or archaic in the historical readers, and not needed by an early modern reader."
+  },
+  "tick": {
+    "decision": "defer",
+    "reason": "Its senses differ between the sources or it occurs mainly in a fixed phrase, so no single introductory sense is supported."
+  },
+  "tidal": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use. Derived from the admitted tide.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tidal means having to do with the tide.",
+    "concept": "cycle",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "tidal"
+    ]
+  },
+  "till": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Till means until.",
+    "concept": "sequence",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "till"
+    ]
+  },
+  "tis": {
+    "decision": "defer",
+    "reason": "Dated or archaic in the historical readers, and not needed by an early modern reader."
+  },
+  "trouble": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Trouble is a time when things go wrong, or something that makes things hard.",
+    "concept": "danger",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "trouble"
+    ]
+  },
+  "ultraviolet": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "updated": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "upgrade": {
+    "decision": "defer",
+    "reason": "Technical vocabulary from the modern sources. Deferred by agent judgement until a level-two schedule unit needs it."
+  },
+  "vain": {
+    "decision": "defer",
+    "reason": "Dated or archaic in the historical readers, and not needed by an early modern reader."
+  },
+  "video": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A video is moving pictures, often with sound, that you can watch again and again.",
+    "concept": "standing_for",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "video",
+      "videos"
+    ]
+  },
+  "whistle": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "A whistle is a high sound made by blowing air through a small hole, or a small thing you blow to make that sound.",
+    "concept": "sound",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "whistle",
+      "whistled",
+      "whistles",
+      "whistling"
+    ]
+  },
+  "wild": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "Wild animals and plants live and grow on their own, not cared for by people.",
+    "concept": "living_and_not_living",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "wild",
+      "wilder",
+      "wildest"
+    ]
+  },
+  "wish": {
+    "decision": "admit",
+    "reason": "Pool word. Agent-authored introductory definition in the sense the sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To wish is to want something very much, often something that may not happen.",
+    "concept": "feeling",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+    "reviewed_forms": [
+      "wish",
+      "wished",
+      "wishes",
+      "wishing"
+    ]
+  },
+  "wished": {
+    "decision": "exclude",
+    "reason": "An inflected form of wish, which is reviewed as its own candidate. The form is among its reviewed forms."
+  }
+}

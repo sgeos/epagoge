@@ -126,6 +126,12 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     "set": ("set", "set", "setting"),
     "shut": ("shut", "shut", "shutting"),
     "sing": ("sang", "sung", "singing"),
+    # Admitted at level two on 2026-10-07. The rule gave `layed`, `rided`,
+    # `sended` and `occured`. Occur doubles, so it is classified here.
+    "lay": ("laid", "laid", "laying"),
+    "occur": ("occurred", "occurred", "occurring"),
+    "ride": ("rode", "ridden", "riding"),
+    "send": ("sent", "sent", "sending"),
     # Admitted at level two on 2026-10-07. The rule gave `striked`.
     "strike": ("struck", "struck", "striking"),
     # `lit` is the past and participle a kindergarten reader meets. The

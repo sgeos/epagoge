@@ -59,12 +59,24 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "accurate": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "act": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
     "action": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "activity": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "actually": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "add": {
@@ -99,6 +111,10 @@
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
     },
+    "affect": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "afraid": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -123,6 +139,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "ago": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "agree": {
@@ -237,6 +257,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "angle": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "angry": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -315,6 +339,10 @@
     },
     "approach": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "area": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "argue": {
@@ -614,6 +642,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "beauty": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "because": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -734,6 +766,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
+    "berry": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "beside": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -801,6 +837,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "bit": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "black": {
       "commit": "fe327c12ce59",
@@ -974,6 +1014,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "brave": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "bread": {
       "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json",
@@ -1199,6 +1243,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "busy": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "butter": {
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
@@ -1433,6 +1481,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
       "evidence": "recorded at admission"
     },
+    "century": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "certain": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -1538,6 +1590,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
+    "chick": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "child": {
@@ -1649,6 +1705,10 @@
       "admitted_because": "Admitted because the thesaurus named it as a synonym or antonym of an admitted word and the lexicon did not hold it.",
       "evidence": "reconstructed from history"
     },
+    "climate": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "climb": {
       "commit": "9a7cdc6bc84c",
       "date": "2026-09-25",
@@ -1723,6 +1783,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "coastal": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "coin": {
       "commit": "bf31d447ce79",
       "date": "2026-09-25",
@@ -1782,6 +1846,10 @@
     },
     "common": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "community": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "compare": {
@@ -1883,6 +1951,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "corn": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "corner": {
       "commit": "fe327c12ce59",
@@ -1996,6 +2068,10 @@
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "evidence": "recorded at admission"
     },
+    "create": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "creature": {
       "commit": "1346e83608e8",
       "date": "2026-09-28",
@@ -2087,6 +2163,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "damage": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "danger": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2097,6 +2177,10 @@
     },
     "dangerous": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "dare": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "dark": {
@@ -2139,6 +2223,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "dear": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "death": {
       "commit": "fe327c12ce59",
@@ -2209,6 +2297,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "depth": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "describe": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -2254,6 +2346,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "difference": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "different": {
       "commit": "e8630c78135a",
       "date": "2026-09-24",
@@ -2294,6 +2390,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "dinner": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "direction": {
       "commit": "ce2c954c366f",
@@ -2471,6 +2571,10 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "dress": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "drew": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2563,6 +2667,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "eagle": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "ear": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2597,6 +2705,10 @@
     },
     "easily": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "east": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "easy": {
@@ -2641,6 +2753,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "egg": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "eight": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2656,6 +2772,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "elephant": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "eleven": {
       "commit": "1a5ac29cc8b6",
@@ -2732,6 +2852,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "event": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "ever": {
       "commit": "019dea991be7",
@@ -2813,6 +2937,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "explore": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "extra": {
       "commit": "1a5ac29cc8b6",
@@ -3037,6 +3165,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "fence": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "few": {
       "commit": "fe327c12ce59",
@@ -3293,6 +3425,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "forecast": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "forest": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -3376,6 +3512,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "frightened": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "front": {
       "commit": "019dea991be7",
@@ -3467,6 +3607,14 @@
     },
     "garlic": {
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
+    "gas": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "gate": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "gentle": {
@@ -3691,6 +3839,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "growth": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "guess": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -3811,6 +3963,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "hat": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "hate": {
       "commit": "d1a98ab90049",
@@ -4076,6 +4232,10 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "hope": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "horse": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -4125,6 +4285,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "human": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "hundred": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -4148,6 +4312,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "hurricane": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "hurry": {
       "commit": "ce2c954c366f",
@@ -4205,6 +4373,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
+    "important": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "impossible": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -4213,8 +4385,16 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "include": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "increase": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "indeed": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "individual": {
@@ -4232,6 +4412,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "information": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "ingredient": {
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
@@ -4277,6 +4461,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "island": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "itself": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -4316,6 +4504,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "joy": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "judge": {
       "commit": "a0366a07b501",
@@ -4357,6 +4549,14 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "kindly": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "kindness": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "king": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -4372,6 +4572,14 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "kite": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "kitten": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "knew": {
       "commit": "fe327c12ce59",
@@ -4501,6 +4709,10 @@
       "criterion": "inflection",
       "admitted_because": "A form of an admitted word, added because a word admitted in one form is a trap for a generator constrained to the level.",
       "evidence": "reconstructed from history"
+    },
+    "lay": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "layer": {
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
@@ -4775,6 +4987,14 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted while the concept graph gained cross-domain prerequisites, to lexicalise a concept the change exposed.",
       "evidence": "reconstructed from history"
+    },
+    "local": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "location": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "lock": {
       "commit": "fe327c12ce59",
@@ -5064,6 +5284,14 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "merchant": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "merry": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "mess": {
       "commit": "bf31d447ce79",
       "date": "2026-09-25",
@@ -5128,6 +5356,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "mill": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "mind": {
       "commit": "1a5ac29cc8b6",
@@ -5224,6 +5456,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "money": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "month": {
       "commit": "fe327c12ce59",
@@ -5444,6 +5680,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "neck": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "nectar": {
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "evidence": "recorded at admission"
@@ -5455,6 +5695,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "nest": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "never": {
       "commit": "fe327c12ce59",
@@ -5548,6 +5792,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
+    "north": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "nose": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -5604,6 +5852,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
+    "observation": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "observe": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -5615,6 +5867,10 @@
     },
     "obtain": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "occur": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "ocean": {
@@ -5749,6 +6005,10 @@
       "criterion": "operator",
       "admitted_because": "Admitted on operator direction, being a word a reader at this level plainly knows that the lexicon had missed.",
       "evidence": "reconstructed from history"
+    },
+    "owl": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "own": {
       "commit": "1a5ac29cc8b6",
@@ -5954,6 +6214,14 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "perfect": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "perhaps": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "period": {
       "commit": "ce2c954c366f",
       "date": "2026-09-24",
@@ -6074,6 +6342,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "pleasant": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "please": {
       "commit": "b0017ddb1815",
       "date": "2026-09-26",
@@ -6113,6 +6385,14 @@
     },
     "pole": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "pond": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "pool": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "poor": {
@@ -6246,6 +6526,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "pretty": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "prevented": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -6294,6 +6578,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "protect": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "prove": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -6301,6 +6589,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "provide": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "public": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
@@ -6498,6 +6790,10 @@
       "admitted_because": "Admitted on operator direction, to give the level the vocabulary to discuss a subject it had been unable to name.",
       "evidence": "reconstructed from history"
     },
+    "really": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "rearrange": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -6565,6 +6861,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "release": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "remain": {
       "commit": "fe327c12ce59",
@@ -6662,6 +6962,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "response": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "rest": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -6685,6 +6989,10 @@
       "criterion": "inflection",
       "admitted_because": "A form of an admitted word, added because a word admitted in one form is a trap for a generator constrained to the level.",
       "evidence": "reconstructed from history"
+    },
+    "ride": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "right": {
       "commit": "fe327c12ce59",
@@ -6917,6 +7225,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "salty": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "sand": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -6924,6 +7236,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "save": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "scab": {
       "commit": "f83abb17f6d2",
@@ -6960,6 +7276,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "scientist": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "score": {
       "commit": "a0366a07b501",
@@ -7037,6 +7357,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "send": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "sentence": {
       "commit": "1a5ac29cc8b6",
@@ -7170,6 +7494,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "sheep": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "shelf": {
       "commit": "fe327c12ce59",
@@ -7316,6 +7644,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "sight": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "sign": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -7379,6 +7711,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "sir": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "sister": {
       "commit": "1a5ac29cc8b6",
@@ -7589,6 +7925,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "softly": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "sold": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -7596,6 +7936,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "soldier": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "solid": {
       "commit": "bf31d447ce79",
@@ -7822,6 +8166,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "sport": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "spot": {
       "commit": "9d6a146a566c",
       "date": "2026-09-25",
@@ -8018,6 +8366,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "store": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "storm": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -8049,6 +8401,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "strange": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "stranger": {
       "commit": "b69f8b3a990d",
@@ -8209,6 +8565,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "supper": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "supply": {
       "commit": "a0366a07b501",
       "date": "2026-09-25",
@@ -8257,6 +8617,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "surprise": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "swallow": {
       "commit": "d1a98ab90049",
@@ -8454,6 +8818,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "temperature": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "ten": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -8493,6 +8861,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "tent": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "term": {
       "commit": "1a5ac29cc8b6",
@@ -8647,6 +9019,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
+    "tidal": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "tide": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -8679,6 +9055,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "till": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "time": {
       "commit": "019dea991be7",
@@ -8911,6 +9291,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "trouble": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "true": {
       "commit": "fe327c12ce59",
@@ -9189,6 +9573,10 @@
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "evidence": "recorded at admission"
     },
+    "video": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "view": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -9442,6 +9830,10 @@
       "admitted_because": "An inflection correction, replacing a form the derivation rules had invented.",
       "evidence": "reconstructed from history"
     },
+    "whistle": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
     "white": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -9465,6 +9857,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "wild": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
     },
     "win": {
       "commit": "d1a98ab90049",
@@ -9525,6 +9921,10 @@
     },
     "wise": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "wish": {
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
     "within": {

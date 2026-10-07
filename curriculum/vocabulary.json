@@ -239,6 +239,13 @@
       "level": 6
     },
     {
+      "word": "accurate",
+      "concept": "checking",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "act",
       "concept": "activity",
       "level": 2,
@@ -259,6 +266,22 @@
       "forms": [
         "actions"
       ]
+    },
+    {
+      "word": "activity",
+      "concept": "activity",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "activities"
+      ]
+    },
+    {
+      "word": "actually",
+      "concept": "real_and_pretend",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "add",
@@ -288,6 +311,18 @@
       ]
     },
     {
+      "word": "affect",
+      "concept": "cause_and_effect",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "affected",
+        "affecting",
+        "affects"
+      ]
+    },
+    {
       "word": "afraid",
       "concept": "feeling",
       "level": 1
@@ -311,6 +346,12 @@
       "forms": [
         "ages"
       ]
+    },
+    {
+      "word": "ago",
+      "concept": "duration",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "agree",
@@ -402,6 +443,16 @@
       "pos": "noun"
     },
     {
+      "word": "angle",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "angles"
+      ]
+    },
+    {
       "word": "angry",
       "concept": "feeling",
       "level": 1
@@ -481,6 +532,16 @@
         "approached",
         "approaches",
         "approaching"
+      ]
+    },
+    {
+      "word": "area",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "areas"
       ]
     },
     {
@@ -758,6 +819,13 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
+      "word": "beauty",
+      "concept": "good_and_bad",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "because",
       "concept": "cause_and_effect",
       "level": 1
@@ -868,6 +936,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
+      "word": "berry",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "berries"
+      ]
+    },
+    {
       "word": "beside",
       "concept": "spatial_position",
       "level": 1,
@@ -926,6 +1004,16 @@
       "pos": "noun",
       "forms": [
         "birds"
+      ]
+    },
+    {
+      "word": "bit",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "bits"
       ]
     },
     {
@@ -1094,6 +1182,17 @@
       "pos": "noun",
       "forms": [
         "branches"
+      ]
+    },
+    {
+      "word": "brave",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "braver",
+        "bravest"
       ]
     },
     {
@@ -1328,6 +1427,17 @@
       ]
     },
     {
+      "word": "busy",
+      "concept": "activity",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "busier",
+        "busiest"
+      ]
+    },
+    {
       "word": "butter",
       "concept": "raw_and_made",
       "level": 2,
@@ -1548,6 +1658,16 @@
       ]
     },
     {
+      "word": "century",
+      "concept": "duration",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "centuries"
+      ]
+    },
+    {
       "word": "certain",
       "concept": "how_sure",
       "level": 2,
@@ -1660,6 +1780,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
       "forms": [
         "chestnuts"
+      ]
+    },
+    {
+      "word": "chick",
+      "concept": "animal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "chicks"
       ]
     },
     {
@@ -1782,6 +1912,16 @@
       "level": 1
     },
     {
+      "word": "climate",
+      "concept": "weather",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "climates"
+      ]
+    },
+    {
       "word": "climb",
       "concept": "moving_and_still",
       "level": 1,
@@ -1855,6 +1995,13 @@
       ]
     },
     {
+      "word": "coastal",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "coin",
       "concept": "exchange",
       "level": 1,
@@ -1908,6 +2055,16 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "community",
+      "concept": "people_together",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "communities"
+      ]
     },
     {
       "word": "compare",
@@ -2004,6 +2161,13 @@
       "forms": [
         "copies"
       ]
+    },
+    {
+      "word": "corn",
+      "concept": "plant",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "corner",
@@ -2117,6 +2281,18 @@
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
     },
     {
+      "word": "create",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "created",
+        "creates",
+        "creating"
+      ]
+    },
+    {
       "word": "creature",
       "concept": "living_and_not_living",
       "level": 2,
@@ -2221,6 +2397,18 @@
       ]
     },
     {
+      "word": "damage",
+      "concept": "things_break",
+      "level": 2,
+      "pos": "mass noun verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "damaged",
+        "damages",
+        "damaging"
+      ]
+    },
+    {
       "word": "danger",
       "concept": "danger",
       "level": 1
@@ -2231,6 +2419,18 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "dare",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "dared",
+        "dares",
+        "daring"
+      ]
     },
     {
       "word": "dark",
@@ -2275,6 +2475,17 @@
       "word": "dead",
       "concept": "dying",
       "level": 1
+    },
+    {
+      "word": "dear",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "dearer",
+        "dearest"
+      ]
     },
     {
       "word": "death",
@@ -2349,6 +2560,16 @@
       ]
     },
     {
+      "word": "depth",
+      "concept": "measuring",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "depths"
+      ]
+    },
+    {
       "word": "describe",
       "concept": "saying_what_you_saw",
       "level": 2,
@@ -2402,6 +2623,16 @@
       ]
     },
     {
+      "word": "difference",
+      "concept": "same_and_different",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "differences"
+      ]
+    },
+    {
       "word": "different",
       "concept": "same_and_different",
       "level": 1
@@ -2432,6 +2663,16 @@
         "digits"
       ],
       "pos": "noun"
+    },
+    {
+      "word": "dinner",
+      "concept": "needing_supply",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "dinners"
+      ]
     },
     {
       "word": "direction",
@@ -2627,6 +2868,18 @@
       ]
     },
     {
+      "word": "dress",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "dressed",
+        "dresses",
+        "dressing"
+      ]
+    },
+    {
       "word": "drift",
       "concept": "moving_and_still",
       "level": 1,
@@ -2705,6 +2958,16 @@
       "level": 1
     },
     {
+      "word": "eagle",
+      "concept": "animal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "eagles"
+      ]
+    },
+    {
       "word": "ear",
       "concept": "body_part",
       "level": 1,
@@ -2732,6 +2995,12 @@
       "concept": "physical_property",
       "level": 2,
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "east",
+      "concept": "direction",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "easy",
@@ -2785,6 +3054,16 @@
       ]
     },
     {
+      "word": "egg",
+      "concept": "animal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "eggs"
+      ]
+    },
+    {
       "word": "eight",
       "concept": "number_word_order",
       "level": 1
@@ -2793,6 +3072,16 @@
       "word": "either",
       "concept": "not_both",
       "level": 1
+    },
+    {
+      "word": "elephant",
+      "concept": "animal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "elephants"
+      ]
     },
     {
       "word": "eleven",
@@ -2873,6 +3162,16 @@
       "level": 1
     },
     {
+      "word": "event",
+      "concept": "sequence",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "events"
+      ]
+    },
+    {
       "word": "ever",
       "concept": "sequence",
       "level": 1
@@ -2951,6 +3250,18 @@
       "pos": "noun",
       "forms": [
         "explanations"
+      ]
+    },
+    {
+      "word": "explore",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "explored",
+        "explores",
+        "exploring"
       ]
     },
     {
@@ -3123,6 +3434,16 @@
         "feeling",
         "feels",
         "felt"
+      ]
+    },
+    {
+      "word": "fence",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "fences"
       ]
     },
     {
@@ -3402,6 +3723,16 @@
       "level": 1
     },
     {
+      "word": "forecast",
+      "concept": "guess",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "forecasts"
+      ]
+    },
+    {
       "word": "forest",
       "concept": "plant",
       "level": 1,
@@ -3511,6 +3842,13 @@
       ]
     },
     {
+      "word": "frightened",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "front",
       "concept": "spatial_position",
       "level": 1
@@ -3618,6 +3956,26 @@
       "level": 2,
       "pos": "mass noun",
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+    },
+    {
+      "word": "gas",
+      "concept": "material",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "gases"
+      ]
+    },
+    {
+      "word": "gate",
+      "concept": "opening_and_shutting",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "gates"
+      ]
     },
     {
       "word": "gentle",
@@ -3823,6 +4181,13 @@
       "level": 1
     },
     {
+      "word": "growth",
+      "concept": "growing",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "guess",
       "concept": "guess",
       "level": 1,
@@ -3936,6 +4301,16 @@
       "word": "harmless",
       "concept": "danger",
       "level": 5
+    },
+    {
+      "word": "hat",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "hats"
+      ]
     },
     {
       "word": "hate",
@@ -4207,6 +4582,18 @@
       ]
     },
     {
+      "word": "hope",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "hoped",
+        "hopes",
+        "hoping"
+      ]
+    },
+    {
       "word": "horse",
       "concept": "animal",
       "level": 1,
@@ -4250,6 +4637,16 @@
       "level": 1
     },
     {
+      "word": "human",
+      "concept": "person",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "humans"
+      ]
+    },
+    {
       "word": "hundred",
       "concept": "number_word_order",
       "level": 1,
@@ -4270,6 +4667,16 @@
       "word": "hungry",
       "concept": "need",
       "level": 1
+    },
+    {
+      "word": "hurricane",
+      "concept": "weather",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "hurricanes"
+      ]
     },
     {
       "word": "hurry",
@@ -4333,9 +4740,28 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
+      "word": "important",
+      "concept": "need",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "impossible",
       "concept": "can_and_cannot",
       "level": 1
+    },
+    {
+      "word": "include",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "included",
+        "includes",
+        "including"
+      ]
     },
     {
       "word": "increase",
@@ -4350,6 +4776,12 @@
       ]
     },
     {
+      "word": "indeed",
+      "concept": "real_and_pretend",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "individual",
       "concept": "person",
       "level": 6
@@ -4358,6 +4790,13 @@
       "word": "induces",
       "concept": "algebraic_structure",
       "level": 5
+    },
+    {
+      "word": "information",
+      "concept": "knowing",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "ingredient",
@@ -4399,6 +4838,16 @@
       "level": 1
     },
     {
+      "word": "island",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "islands"
+      ]
+    },
+    {
       "word": "itself",
       "concept": "self_and_other",
       "level": 1
@@ -4431,6 +4880,13 @@
         "joining",
         "joins"
       ]
+    },
+    {
+      "word": "joy",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "judge",
@@ -4486,6 +4942,19 @@
       "pos": "noun"
     },
     {
+      "word": "kindly",
+      "concept": "good_and_bad",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
+      "word": "kindness",
+      "concept": "good_and_bad",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "king",
       "concept": "someone_in_charge",
       "level": 1,
@@ -4501,6 +4970,26 @@
       "pos": "noun",
       "forms": [
         "kitchens"
+      ]
+    },
+    {
+      "word": "kite",
+      "concept": "toy",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "kites"
+      ]
+    },
+    {
+      "word": "kitten",
+      "concept": "animal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "kittens"
       ]
     },
     {
@@ -4623,6 +5112,18 @@
         "laughed",
         "laughing",
         "laughs"
+      ]
+    },
+    {
+      "word": "lay",
+      "concept": "activity",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "laid",
+        "laying",
+        "lays"
       ]
     },
     {
@@ -4898,6 +5399,23 @@
       "level": 1,
       "forms": [
         "lives"
+      ]
+    },
+    {
+      "word": "local",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
+      "word": "location",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "locations"
       ]
     },
     {
@@ -5186,6 +5704,27 @@
       ]
     },
     {
+      "word": "merchant",
+      "concept": "person",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "merchants"
+      ]
+    },
+    {
+      "word": "merry",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "merrier",
+        "merriest"
+      ]
+    },
+    {
       "word": "mess",
       "concept": "physical_property",
       "level": 1,
@@ -5232,6 +5771,16 @@
       "word": "milk",
       "concept": "liquid",
       "level": 1
+    },
+    {
+      "word": "mill",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "mills"
+      ]
     },
     {
       "word": "mind",
@@ -5330,6 +5879,13 @@
       "forms": [
         "moments"
       ]
+    },
+    {
+      "word": "money",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "month",
@@ -5534,6 +6090,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
+      "word": "neck",
+      "concept": "body_part",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "necks"
+      ]
+    },
+    {
       "word": "nectar",
       "concept": "liquid",
       "level": 2,
@@ -5549,6 +6115,16 @@
         "needed",
         "needing",
         "needs"
+      ]
+    },
+    {
+      "word": "nest",
+      "concept": "animal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "nests"
       ]
     },
     {
@@ -5633,6 +6209,12 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
+      "word": "north",
+      "concept": "direction",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "nose",
       "concept": "body_part",
       "level": 1,
@@ -5695,6 +6277,16 @@
       ]
     },
     {
+      "word": "observation",
+      "concept": "saying_what_you_saw",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "observations"
+      ]
+    },
+    {
       "word": "observe",
       "concept": "saying_what_you_saw",
       "level": 2,
@@ -5716,6 +6308,18 @@
         "obtained",
         "obtaining",
         "obtains"
+      ]
+    },
+    {
+      "word": "occur",
+      "concept": "change",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "occurred",
+        "occurring",
+        "occurs"
       ]
     },
     {
@@ -5849,6 +6453,16 @@
       ],
       "level": 1,
       "pos": "noun"
+    },
+    {
+      "word": "owl",
+      "concept": "animal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "owls"
+      ]
     },
     {
       "word": "own",
@@ -6047,6 +6661,19 @@
       "level": 6
     },
     {
+      "word": "perfect",
+      "concept": "good_and_bad",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
+      "word": "perhaps",
+      "concept": "how_sure",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "period",
       "concept": "duration",
       "level": 1,
@@ -6185,6 +6812,13 @@
       ]
     },
     {
+      "word": "pleasant",
+      "concept": "good_and_bad",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "please",
       "concept": "asking_politely",
       "level": 1,
@@ -6233,6 +6867,26 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "forms": [
         "poles"
+      ]
+    },
+    {
+      "word": "pond",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "ponds"
+      ]
+    },
+    {
+      "word": "pool",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "pools"
       ]
     },
     {
@@ -6371,6 +7025,17 @@
       ]
     },
     {
+      "word": "pretty",
+      "concept": "good_and_bad",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "prettier",
+        "prettiest"
+      ]
+    },
+    {
       "word": "prevented",
       "concept": "danger",
       "level": 5
@@ -6409,6 +7074,18 @@
       ]
     },
     {
+      "word": "protect",
+      "concept": "danger",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "protected",
+        "protecting",
+        "protects"
+      ]
+    },
+    {
       "word": "prove",
       "concept": "settling_it",
       "level": 1,
@@ -6417,6 +7094,18 @@
         "proved",
         "proves",
         "proving"
+      ]
+    },
+    {
+      "word": "provide",
+      "concept": "needing_supply",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "provided",
+        "provides",
+        "providing"
       ]
     },
     {
@@ -6618,6 +7307,12 @@
       "level": 1
     },
     {
+      "word": "really",
+      "concept": "real_and_pretend",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "rearrange",
       "concept": "conservation_of_number",
       "level": 2,
@@ -6676,6 +7371,18 @@
       "word": "refute",
       "concept": "claim_under_test",
       "level": 6
+    },
+    {
+      "word": "release",
+      "concept": "allowed_or_not",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "released",
+        "releases",
+        "releasing"
+      ]
     },
     {
       "word": "remain",
@@ -6771,6 +7478,16 @@
       ]
     },
     {
+      "word": "response",
+      "concept": "asking",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "responses"
+      ]
+    },
+    {
       "word": "rest",
       "concept": "moving_and_still",
       "level": 1,
@@ -6804,6 +7521,19 @@
       "forms": [
         "richer",
         "richest"
+      ]
+    },
+    {
+      "word": "ride",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "ridden",
+        "rides",
+        "riding",
+        "rode"
       ]
     },
     {
@@ -7077,9 +7807,32 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
+      "word": "salty",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "saltier",
+        "saltiest"
+      ]
+    },
+    {
       "word": "sand",
       "concept": "material",
       "level": 1
+    },
+    {
+      "word": "save",
+      "concept": "danger",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "saved",
+        "saves",
+        "saving"
+      ]
     },
     {
       "word": "scab",
@@ -7119,6 +7872,16 @@
       "pos": "noun",
       "forms": [
         "schools"
+      ]
+    },
+    {
+      "word": "scientist",
+      "concept": "person",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "scientists"
       ]
     },
     {
@@ -7201,6 +7964,18 @@
         "selling",
         "sells",
         "sold"
+      ]
+    },
+    {
+      "word": "send",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "sending",
+        "sends",
+        "sent"
       ]
     },
     {
@@ -7345,6 +8120,13 @@
         "sharpest"
       ],
       "pos": "adjective"
+    },
+    {
+      "word": "sheep",
+      "concept": "animal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "shelf",
@@ -7505,6 +8287,16 @@
       "pos": "noun"
     },
     {
+      "word": "sight",
+      "concept": "saying_what_you_saw",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "sights"
+      ]
+    },
+    {
       "word": "sign",
       "concept": "standing_for",
       "level": 1,
@@ -7570,6 +8362,12 @@
         "sinks",
         "sunk"
       ]
+    },
+    {
+      "word": "sir",
+      "concept": "asking_politely",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "sister",
@@ -7807,6 +8605,22 @@
       "pos": "adjective"
     },
     {
+      "word": "softly",
+      "concept": "physical_property",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
+      "word": "soldier",
+      "concept": "person",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "soldiers"
+      ]
+    },
+    {
       "word": "solid",
       "concept": "material",
       "level": 1
@@ -7985,6 +8799,16 @@
       "pos": "noun",
       "forms": [
         "spoons"
+      ]
+    },
+    {
+      "word": "sport",
+      "concept": "activity",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "sports"
       ]
     },
     {
@@ -8215,6 +9039,18 @@
       ]
     },
     {
+      "word": "store",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "stored",
+        "stores",
+        "storing"
+      ]
+    },
+    {
       "word": "storm",
       "concept": "weather",
       "level": 1,
@@ -8248,6 +9084,16 @@
       "forms": [
         "straighter",
         "straightest"
+      ]
+    },
+    {
+      "word": "strange",
+      "concept": "same_and_different",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "strangest"
       ]
     },
     {
@@ -8412,6 +9258,16 @@
       ]
     },
     {
+      "word": "supper",
+      "concept": "needing_supply",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "suppers"
+      ]
+    },
+    {
       "word": "supply",
       "concept": "needing_supply",
       "level": 1,
@@ -8467,6 +9323,18 @@
       "pos": "noun",
       "forms": [
         "surfaces"
+      ]
+    },
+    {
+      "word": "surprise",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "surprised",
+        "surprises",
+        "surprising"
       ]
     },
     {
@@ -8658,6 +9526,16 @@
       ]
     },
     {
+      "word": "temperature",
+      "concept": "heat",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "temperatures"
+      ]
+    },
+    {
       "word": "ten",
       "concept": "number_word_order",
       "level": 1,
@@ -8675,6 +9553,16 @@
         "tended",
         "tending",
         "tends"
+      ]
+    },
+    {
+      "word": "tent",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "tents"
       ]
     },
     {
@@ -8830,6 +9718,13 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
+      "word": "tidal",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
       "word": "tide",
       "concept": "cycle",
       "level": 2,
@@ -8859,6 +9754,12 @@
         "tightest"
       ],
       "pos": "adjective"
+    },
+    {
+      "word": "till",
+      "concept": "sequence",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "time",
@@ -9042,6 +9943,13 @@
       "word": "trigger",
       "concept": "cause_and_effect",
       "level": 5
+    },
+    {
+      "word": "trouble",
+      "concept": "danger",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
       "word": "true",
@@ -9323,6 +10231,16 @@
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "forms": [
         "vegetables"
+      ]
+    },
+    {
+      "word": "video",
+      "concept": "standing_for",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "videos"
       ]
     },
     {
@@ -9617,6 +10535,18 @@
       ]
     },
     {
+      "word": "whistle",
+      "concept": "sound",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "whistled",
+        "whistles",
+        "whistling"
+      ]
+    },
+    {
       "word": "white",
       "concept": "physical_property",
       "level": 1
@@ -9635,6 +10565,17 @@
         "widest"
       ],
       "pos": "adjective"
+    },
+    {
+      "word": "wild",
+      "concept": "living_and_not_living",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "wilder",
+        "wildest"
+      ]
     },
     {
       "word": "win",
@@ -9703,6 +10644,18 @@
       "forms": [
         "wiser",
         "wisest"
+      ]
+    },
+    {
+      "word": "wish",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "forms": [
+        "wished",
+        "wishes",
+        "wishing"
       ]
     },
     {

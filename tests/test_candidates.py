@@ -579,3 +579,103 @@ class TestBlockingWords(unittest.TestCase):
     def test_a_level_below_one_is_refused(self) -> None:
         with self.assertRaisesRegex(ValueError, "at least 1"):
             self.tool.rank([], self.vocabulary, 0)
+
+
+class TestCandidatePool(unittest.TestCase):
+    """Each rule removes what it says, and the term list names nothing."""
+
+    def setUp(self) -> None:
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from tools import candidate_pool as tool
+
+        self.tool = tool
+        self.vocabulary = Vocabulary(
+            core=frozenset({"a"}), terms=(Term("food", "food", 1),)
+        )
+        self.frequent = {
+            "food": ["x", "y"],
+            "foods": ["x", "y"],
+            "honey": ["x", "y"],
+            "lemon": ["x"],
+            "ox": ["x", "y"],
+            "boston": ["x", "y"],
+            "secretword": ["x", "y"],
+            "decided": ["x", "y"],
+        }
+        self.shares = self.tool.capital_share(["Boston is far. Boston. honey honey"])
+
+    def run_rules(
+        self, pattern: object = None
+    ) -> tuple[list[str], dict[str, list[str]], int]:
+        return self.tool.select(
+            self.frequent,
+            self.vocabulary,
+            2,
+            self.shares,
+            {"decided"},
+            pattern,  # type: ignore[arg-type]
+        )
+
+    def test_each_rule_removes_its_words(self) -> None:
+        pool, removed, withheld = self.run_rules()
+        self.assertEqual(pool, ["honey", "secretword"])
+        self.assertEqual(removed["admissible"], ["food", "foods"])
+        self.assertEqual(removed["prior_decision"], ["decided"])
+        self.assertEqual(removed["sources"], ["lemon"])
+        self.assertEqual(removed["short"], ["ox"])
+        self.assertEqual(removed["capitalised"], ["boston"])
+        self.assertEqual(withheld, 0)
+
+    def test_term_list_words_are_counted_and_never_named(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "terms.txt"
+            path.write_text("# comment\nsecret\\w*\nlemon\n")
+            pool, removed, withheld = self.run_rules(self.tool.term_pattern(path))
+        self.assertEqual(withheld, 2)
+        named = [w for words in removed.values() for w in words] + pool
+        self.assertNotIn("secretword", named)
+        self.assertNotIn("lemon", named)
+
+    def test_a_plural_of_a_term_is_withheld(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "terms.txt"
+            path.write_text("honey\n")
+            pattern = self.tool.term_pattern(path)
+        if pattern is None:
+            self.fail("a nonempty term file must give a pattern")
+        self.assertTrue(pattern.search("Honeys"))
+        self.assertFalse(pattern.search("honeycomb"))
+
+    def test_an_empty_term_file_applies_no_pattern(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "terms.txt"
+            path.write_text("# only a comment\n")
+            self.assertIsNone(self.tool.term_pattern(path))
+
+    def test_invalid_parameters_are_refused(self) -> None:
+        with self.assertRaisesRegex(ValueError, "positive"):
+            self.tool.select({}, self.vocabulary, 2, {}, set(), None, min_sources=0)
+        with self.assertRaisesRegex(ValueError, "share"):
+            self.tool.select(
+                {}, self.vocabulary, 2, {}, set(), None, max_capital_share=0
+            )
+
+    def test_missing_source_texts_are_refused(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            scan = Path(tmp) / "scan.json"
+            scan.write_text(json.dumps({"sources": ["absent.txt"], "frequent": {}}))
+            err = io.StringIO()
+            with contextlib.redirect_stderr(err):
+                status = self.tool.main(
+                    [
+                        "candidate_pool.py",
+                        str(scan),
+                        "--level",
+                        "2",
+                        "--out",
+                        str(Path(tmp) / "o.json"),
+                    ]
+                )
+            self.assertEqual(status, 1)
+            self.assertIn("missing source texts", err.getvalue())
+            self.assertFalse((Path(tmp) / "o.json").exists())
