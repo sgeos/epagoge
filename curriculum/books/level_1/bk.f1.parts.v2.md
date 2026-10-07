@@ -59,7 +59,7 @@ The bent wheel stops the whole car from going forward. The car is made of parts 
 The car cannot go because one bad part breaks the whole. The broken wheel cannot roll, so the car cannot go. The car is made of parts that must work together. Each part has a job, and all must stay strong. A bent wheel cannot roll, so the whole car stops.
 
 [f1.parts.v2.s06]
-The child sees the broken wheel and feels sad. She thinks about the car that cannot move. The wheel lies flat, bent, unable to roll. She touches it gently, afraid to hurt it more. The metal is cold, rough, and cracked. She wonders if it can be fixed. The sky above is grey, heavy with rain.
+The child sees the broken wheel and feels sad. She thinks about the car that cannot move. The wheel lies flat, bent, unable to roll. She touches it gently, afraid to hurt it more. The metal is cold, rough, and cracked. She wonders if it can be fixed. The sky above is gray, heavy with rain.
 
 [f1.parts.v2.s07]
 She waits for a new wheel to come and fix the whole. The wheel must fit just right to roll again. No part can be missing or bent. Each piece must work together to move. The car cannot go without the right part. She watches the sky, waiting for the moment.

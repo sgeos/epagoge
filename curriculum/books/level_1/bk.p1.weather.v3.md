@@ -56,10 +56,10 @@ The sky is the space above the ground where clouds and stars are seen.
 A star is a bright point of light in the night sky.
 
 [p1.weather.v3.s01]
-The sky was dry before. Rain falls today. The air feels thick and warm. Clouds hang low above the trees. Drops begin to fall, one by one. They hit the ground with soft taps. The grass turns wet, then dark. The sky is no longer blue. It is grey, heavy, and full.
+The sky was dry before. Rain falls today. The air feels thick and warm. Clouds hang low above the trees. Drops begin to fall, one by one. They hit the ground with soft taps. The grass turns wet, then dark. The sky is no longer blue. It is gray, heavy, and full.
 
 [p1.weather.v3.x08]
-The drops hit the ground with soft taps. Each tap makes a small spot darker on the grass. The air feels alive with the sound of rain. The sky stays grey above the trees. The puddles grow bigger, each one holding a small sky. The wind lifts a leaf, then drops it again.
+The drops hit the ground with soft taps. Each tap makes a small spot darker on the grass. The air feels alive with the sound of rain. The sky stays gray above the trees. The puddles grow bigger, each one holding a small sky. The wind lifts a leaf, then drops it again.
 
 [p1.weather.v3.x09]
 She watches the puddles grow bigger in the yard. The air feels thick, alive with rain. She bends to touch the mud, cool and soft. The grass is soaked, heavy with drops. The yard seems larger, filled with sound. The sky stays low, heavy with clouds. She stays still, watching the world drip.

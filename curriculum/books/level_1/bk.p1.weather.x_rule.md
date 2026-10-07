@@ -59,7 +59,7 @@ sky clears slowly, showing blue again after the storm. Sky clears slowly, showin
 rule is to stay inside when rain falls, not to play in the puddle.
 
 [p1.weather.x_rule.s08]
-Sky is cloudy and cold, not bright, not warm. The air feels heavy, as if it cannot breathe. Clouds grow above, thick and grey, like a blanket over the world. No one can see the sun, not even through the trees. A bird flies low, trying to stay dry. The sky does not promise better, only more clouds.
+Sky is cloudy and cold, not bright, not warm. The air feels heavy, as if it cannot breathe. Clouds grow above, thick and gray, like a blanket over the world. No one can see the sun, not even through the trees. A bird flies low, trying to stay dry. The sky does not promise better, only more clouds.
 
 [p1.weather.x_rule.s09]
 Clouds grow heavy above, and rain begins to fall. A small stream flows where no stream was before. The air feels thick, alive with the sound of drops. The sky does not stop, not even for a breath. A boy runs, his shoes slipping in the wet. Even the birds have stopped flying.

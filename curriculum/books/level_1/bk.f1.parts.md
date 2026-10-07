@@ -77,7 +77,7 @@ The boy looked at the broken block and thought hard about what to do next. He kn
 He went to the toy box and found a block that was just the right size and shape. He picked up the block and felt its shape. The block was a piece of something alive, not broken. He placed it above the others, making a new shape. He stepped back and saw how they worked together.
 
 [f1.parts.x14]
-The boy looked at the broken block and thought about how to fix it. He knew he had to find a way to make it whole again. He found a small block, same shape, same size, same colour. He placed it above the crack, careful not to press too hard.
+The boy looked at the broken block and thought about how to fix it. He knew he had to find a way to make it whole again. He found a small block, same shape, same size, same color. He placed it above the crack, careful not to press too hard.
 
 [f1.parts.x15]
 The car rolled again, smooth and fast, down the path. No part was missing, no piece was broken. The path was clear, the air was still, and the sun shone bright. The boy watched from the side, not afraid, just glad. He knew the car was alive, not just metal, but a thing made of parts.

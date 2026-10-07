@@ -62,7 +62,7 @@ The boy began to walk down the path toward the forest. The boy walked along the 
 He picked it up and placed it in his pocket. He wondered what it was made of, though he could not say. It looked like a small round piece of metal, but not copper. He felt it again, turning it over in his hand. He did not know why he kept it.
 
 [r1.when.v3.s04]
-He felt afraid, but he kept going, step by step. The path ahead was narrow and covered in leaves. The air was still, and the sky above was grey. Every sound seemed too loud, too close. His hands were cold, his breath quick and shallow. He thought of the small metal piece in his pocket.
+He felt afraid, but he kept going, step by step. The path ahead was narrow and covered in leaves. The air was still, and the sky above was gray. Every sound seemed too loud, too close. His hands were cold, his breath quick and shallow. He thought of the small metal piece in his pocket.
 
 [r1.when.v3.s05]
 He pushed it open and stepped inside. The air felt thick, like something alive. He saw a shape above, a light bright and round. It hung from a wire, swinging slow. He took a step, then another, across the floor. He reached, but did not touch. A toy bear sat beside it, one eye missing.

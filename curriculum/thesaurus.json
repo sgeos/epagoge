@@ -960,10 +960,6 @@
       "concept": "physical_property"
     },
     {
-      "word": "colour",
-      "concept": "physical_property"
-    },
-    {
       "word": "column",
       "concept": "place_value"
     },
@@ -2096,6 +2092,10 @@
       "concept": "plant"
     },
     {
+      "word": "gray",
+      "concept": "physical_property"
+    },
+    {
       "word": "great",
       "concept": "good_and_bad"
     },
@@ -2110,10 +2110,6 @@
     {
       "word": "greet",
       "concept": "greeting_and_parting"
-    },
-    {
-      "word": "grey",
-      "concept": "physical_property"
     },
     {
       "word": "ground",

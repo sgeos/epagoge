@@ -68,7 +68,7 @@ A child sat on the chair, swinging her feet. The wood felt warm from the sun abo
 She picked up a stick and drew shapes in the dirt. She held the stick and drew a line across the dirt. The stick felt alive in her hand, like a branch from a tree. The air above was warm and still, full of light. She looked at the shapes and wondered if they meant something.
 
 [p1.raw.v4.x11]
-A butterfly landed on her hand, its wings bright blue. She did not move, afraid to break the moment. The blue was deeper than sky, brighter than glass. It was a colour that meant something real. She thought of the tree that once stood in the clearing. The wood was a tree, and now it was a stick.
+A butterfly landed on her hand, its wings bright blue. She did not move, afraid to break the moment. The blue was deeper than sky, brighter than glass. It was a color that meant something real. She thought of the tree that once stood in the clearing. The wood was a tree, and now it was a stick.
 
 [p1.raw.v4.x12]
 She whispered, “Stay,” and the butterfly flew away. She looked at the stick, still warm from the sun. It was a piece of the tree that once stood above the clearing. The wood had been alive, tall and strong, with branches that reached the sky. Now it was broken, lying on the ground like a secret.

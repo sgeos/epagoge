@@ -47,10 +47,10 @@ Few means not many, a small number of things.
 The two apples are alike, both red and round. They sit on the same table, side by side. They feel the same when touched. They were picked from the same tree. They share the same shape, same size. They belong to the same basket. They are made of the same material.
 
 [m1.compare.v2.x04]
-One apple is bigger than the other, but both are round. They share the same colour, red and bright. Both were picked from the same tree, same branch. They sit on the same table, side by side. They belong to the same basket, same place. They look alike, same shape, same size.
+One apple is bigger than the other, but both are round. They share the same color, red and bright. Both were picked from the same tree, same branch. They sit on the same table, side by side. They belong to the same basket, same place. They look alike, same shape, same size.
 
 [m1.compare.v2.x05]
-The red apple rolls faster than the green one. It moves across the floor, past the chair, and under the table. The green one stays still, not able to move. Both were picked from the same branch, same tree, same place. They look alike, same shape, same size, same colour.
+The red apple rolls faster than the green one. It moves across the floor, past the chair, and under the table. The green one stays still, not able to move. Both were picked from the same branch, same tree, same place. They look alike, same shape, same size, same color.
 
 [m1.compare.v2.x06]
 A small ball fits inside the big basket. The ball is round, like the moon above. It rolls across the floor, just like the apple did. Both are alike in shape, same size, same place. The ball cannot move on its own, just like the apple. It stays still, waiting, no need to go.

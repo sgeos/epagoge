@@ -47,7 +47,7 @@ Broad means wide, or having a large size across.
 Clear means not cloudy and easy to see through.
 
 [p1.property.v4.s01]
-This one is red. Red is a colour that stands out above others. A red balloon floats high in the air. Red paint can cover a wall or make a picture bright. Red is not the same as black or blue. It feels warm, like a fire or the sun.
+This one is red. Red is a color that stands out above others. A red balloon floats high in the air. Red paint can cover a wall or make a picture bright. Red is not the same as black or blue. It feels warm, like a fire or the sun.
 
 [p1.property.v4.s02]
 This one is big. Big is not the same as red. It stands above others in size. A big balloon floats high in the air. Big feet walk fast across the ground. Big trees grow in the forest. Big hands can hold a heavy basket. Big animals move slowly through the grass.

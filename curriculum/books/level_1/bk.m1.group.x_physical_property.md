@@ -41,7 +41,7 @@ Put the ones that are alike together. Now you have a group.
 A bright blue ball, a bright blue book, and a bright blue block belong together in a clear set. The blue things are alike, so they are put in a pile. They are not alike in size, but all are made of a solid material. All are able to be held, moved, or placed on a surface.
 
 [m1.group.x_physical_property.s02]
-The blue things are alike, so they are put in a pile. The pile is placed on a clean table, where light shines clear and bright. The ball is round, the block is square, the book is flat. They are all alike in colour, but different in size and weight.
+The blue things are alike, so they are put in a pile. The pile is placed on a clean table, where light shines clear and bright. The ball is round, the block is square, the book is flat. They are all alike in color, but different in size and weight.
 
 [m1.group.x_physical_property.s03]
 The pile is set on a clean table, where light shines clear and bright. The blue things are alike, so they are put in a pile. The table holds the set, and the group stays together, side by side. The ball is round, the block is square, the book is flat.

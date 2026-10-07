@@ -1,54 +1,60 @@
 # Brief
 
-Opened 2026-10-07 as the third iteration of a self-directed session. The
-food-blocker brief and condition are retained in
-`evals/review/level_2_multi_source/`.
+Opened 2026-10-07 on the operator's answers to the six open items left by
+the self-directed loop. The previous brief and condition are retained in
+`evals/review/level_2_operator_decisions/`.
 
-## Present goals
+## Operator decisions
 
-Level two admits 1,085 distinct headwords against an approximate target of
-ten thousand. Both pools used earlier today are exhausted. The remaining
-candidates from the 2026-09-27 scan are its frequent group, about two
-thousand unadmitted words. Most were frequent in only one of seven sources.
-Operator decisions on sweet and sour, color, seven level-one substitution
-conflicts, the sky plural and publication remain open and are not this
-scope's to settle.
+1. All words should be shown and defined.
+2. Use US English.
+3. Reconcile the level-one substitution contradictions.
+4. Correct the oversight of level-one entries without a part of speech.
+5. The 44 technical deferrals probably belong at level two, which has about
+   ten thousand slots.
+6. Commit and push.
 
-## Recommended work
+## Interpretation and recommended work
 
-**One. Make pool selection a tool rather than a script.** The two batches so
-far selected their pools with ad-hoc code. Add a tool that applies stated
-rules to a scan report and reports how many words each rule removed. The rules
-are admissibility at the level, frequency in at least two sources, a minimum
-length, a capitalisation rule for proper nouns measured over the source texts,
-a prior decision in an earlier review, and the private disclosure term list
-when it is present. Words removed by the term list are counted and never
-named, since naming them in a tracked file would publish them. Missing source
-texts are refused, because the capitalisation rule cannot run without them.
+**One. Ostensive words are shown and also defined.** The closure validator
+excluded ostensive words from the coverage denominator on the ground that
+the dictionary would never define red. That is reversed. Ostensive words
+remain grounded by showing, so closure is unchanged, but coverage now
+requires a definition for each. Twenty lack one. Sweet and sour are admitted
+at level two as ostensive and defined, which unblocks sugar, lemon, cake and
+tart. Function words such as the and of cannot be shown and name no
+concept, so they are read as outside this decision. That reading is
+reported to the operator rather than assumed silently.
 
-**Two. Review the resulting pool.** Measured before work began, the rules
-leave about 194 words before prior decisions are removed. Admit ordinary words
-with grounded definitions. Defer archaic words, words too technical for an
-early reader, and words whose senses differ between the sources, each with a
-reason.
+**Two. US English in the curriculum.** Colour becomes color, grey becomes
+gray, and the British form towards is dropped. The level-two duplicate color
+merges into the level-one entry. The substitution table is reversed so that
+the teacher is told to write the US forms. Books, dictionaries, thesaurus
+and lexicon change together. Documentation prose is not converted in this
+scope, which is stated.
 
-**Three. Record and verify** as in the previous batches.
+**Three. Substitution contradictions.** Beside, cause, causing, great,
+greater, length, single and unknown are admitted at level one and used
+heavily in level-one books, cause 420 times. The admissions are real and the
+bans are stale, so the bans are removed.
 
-## Rationale
+**Four. Nouns without a part of speech.** Sky and man are two of many
+level-one nouns declaring no part of speech, so their plurals are not
+admissible. Every level-one or level-two term that is a noun in its admitted
+sense gets noun or mass noun and its reviewed plural. Adjectives and adverbs
+without a part of speech are a different question and are left alone.
 
-Frequency in two independent sources is weaker than the era overlap but much
-stronger than frequency in one. Each rule is a stated, reproducible criterion,
-so the pool can be regenerated and audited. Carrying prior decisions forward
-avoids relitigating deferrals that already have reasons.
+**Five. Technical words.** Admit the 44 deferred technical words with
+grounded introductory definitions, deferring any that cannot be grounded.
+
+**Six. Publish.** Pass the gate, commit, push, and check continuous
+integration on the pushed revision.
 
 ## Wrong turns to avoid
 
-Do not name a disclosure term in any tracked file, including review reasons,
-counts by word or the tool's saved output. Do not treat the capitalisation
-rule as exact. It removes some common words that often begin sentences and
-keeps some names, so the review must still catch names. Archaism is visible
-only to judgement, so do not admit a word merely because it passed the rules.
-Do not admit a technical word on the strength of one weather or ocean manual.
-
-Carry forward the earlier lessons. Forms are checked by the gate, counts come
-from tools, the gate runs alone before any commit, and nothing is pushed.
+Edited books must have their published dates restamped from history after
+the edit is committed, or the book-metadata check fails in a clean clone.
+Provenance is derived from history, so regenerate and check it after each
+lexicon commit. Do not weaken closure to reach coverage. Do not convert a
+spelling inside a quoted source or a tool identifier that names a different
+thing. Counts come from tools, and the gate runs alone before each commit.

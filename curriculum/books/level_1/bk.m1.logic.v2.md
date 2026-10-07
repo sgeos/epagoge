@@ -47,7 +47,7 @@ Not any, not one of a group.
 Not anything; no thing.
 
 [m1.logic.v2.s01]
-It rains so the ground is wet. The wet ground feels soft and cold. The sky stays grey, not bright. No one walks on the ground, not even a dog. The child sits by the window, watching. The wind pushes the branches. The leaves drip water onto the roof. The roof lets the drops through.
+It rains so the ground is wet. The wet ground feels soft and cold. The sky stays gray, not bright. No one walks on the ground, not even a dog. The child sits by the window, watching. The wind pushes the branches. The leaves drip water onto the roof. The roof lets the drops through.
 
 [m1.logic.v2.s02]
 All the ground is wet so nobody can walk on it. The sky stays dark, and the air feels thick and heavy. The child watches from the window, still and quiet. The roof lets the drops through, soaking the floor below. The child sees the puddle grow, round and wide.

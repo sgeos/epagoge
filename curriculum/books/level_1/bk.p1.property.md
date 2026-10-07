@@ -20,7 +20,7 @@
     "p1.property.d47": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:big"}, "defines": {"kind": "word", "target": "big"}},
     "p1.property.d48": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:black"}, "defines": {"kind": "word", "target": "black"}},
     "p1.property.d49": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bright"}, "defines": {"kind": "word", "target": "bright"}},
-    "p1.property.d50": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:colour"}, "defines": {"kind": "word", "target": "colour"}},
+    "p1.property.d50": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:color"}, "defines": {"kind": "word", "target": "color"}},
     "p1.property.s01": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "p1.property.s02": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
     "p1.property.s03": {"concepts": ["physical_property"], "claim_class": "empirical", "provenance": {"source_claim": "primitive:same-again"}},
@@ -38,7 +38,7 @@
 This one is red. This one is big. Red is not big.
 
 [p1.property.d01]
-Blue means the colour of the sky or water.
+Blue means the color of the sky or water.
 
 [p1.property.d02]
 Broad means wide or not narrow.
@@ -47,22 +47,22 @@ Broad means wide or not narrow.
 Big is the opposite of small.
 
 [p1.property.d48]
-Black is the colour of night.
+Black is the color of night.
 
 [p1.property.d49]
 Bright means giving off light.
 
 [p1.property.d50]
-Colour is what something looks like when seen.
+Color is what something looks like when seen.
 
 [p1.property.s01]
-This one is red. Red is a colour that stands out above others. It feels warm like the sun on the skin. A red apple sits on the table. The red ball rolls across the floor. It can mean danger, like a red light. It can mean love, like a red rose.
+This one is red. Red is a color that stands out above others. It feels warm like the sun on the skin. A red apple sits on the table. The red ball rolls across the floor. It can mean danger, like a red light. It can mean love, like a red rose.
 
 [p1.property.s02]
 This one is big. Big is a size that stands out above others. It feels strong like a tree in the wind. A big ball rolls across the floor. The big red apple sits on the table. It can mean fear, like a big storm. The big sky holds the sun and moon.
 
 [p1.property.s03]
-Red is not big. Red is bright like the sun at noon. Red is a colour that stands out above others. Red feels warm like a fire in the night. Red is not afraid to be seen. Red is not alone in the world. Red is not small, but not big either.
+Red is not big. Red is bright like the sun at noon. Red is a color that stands out above others. Red feels warm like a fire in the night. Red is not afraid to be seen. Red is not alone in the world. Red is not small, but not big either.
 
 [p1.property.s04]
 The red ball is bright and round. It does not fear the sun above. It feels warm like a fire in the night. It is not afraid to be seen. It is alive and moving. It is not alone in the world. It is able to roll on its own.

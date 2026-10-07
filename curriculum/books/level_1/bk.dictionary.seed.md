@@ -18,6 +18,7 @@
     "dict.1.admit": {"concepts": ["changing_your_mind"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:admit"}, "defines": {"kind": "word", "target": "admit"}},
     "dict.1.ahead": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ahead"}, "defines": {"kind": "word", "target": "ahead"}},
     "dict.1.aim": {"concepts": ["goal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:aim"}, "defines": {"kind": "word", "target": "aim"}},
+    "dict.1.air": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:air"}, "defines": {"kind": "word", "target": "air"}},
     "dict.1.alone": {"concepts": ["self_and_other"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:alone"}, "defines": {"kind": "word", "target": "alone"}},
     "dict.1.anyone": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:anyone"}, "defines": {"kind": "word", "target": "anyone"}},
     "dict.1.anything": {"concepts": ["standing_for"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:anything"}, "defines": {"kind": "word", "target": "anything"}},
@@ -32,6 +33,7 @@
     "dict.1.blanket": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blanket"}, "defines": {"kind": "word", "target": "blanket"}},
     "dict.1.blink": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:blink"}, "defines": {"kind": "word", "target": "blink"}},
     "dict.1.bottom": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bottom"}, "defines": {"kind": "word", "target": "bottom"}},
+    "dict.1.boy": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:boy"}, "defines": {"kind": "word", "target": "boy"}},
     "dict.1.breeze": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:breeze"}, "defines": {"kind": "word", "target": "breeze"}},
     "dict.1.bridge": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bridge"}, "defines": {"kind": "word", "target": "bridge"}},
     "dict.1.bring": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:bring"}, "defines": {"kind": "word", "target": "bring"}},
@@ -58,7 +60,7 @@
     "dict.1.cloud": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cloud"}, "defines": {"kind": "word", "target": "cloud"}},
     "dict.1.cloudy": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cloudy"}, "defines": {"kind": "word", "target": "cloudy"}},
     "dict.1.coin": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:coin"}, "defines": {"kind": "word", "target": "coin"}},
-    "dict.1.colour": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:colour"}, "defines": {"kind": "word", "target": "colour"}},
+    "dict.1.color": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:color"}, "defines": {"kind": "word", "target": "color"}},
     "dict.1.contact": {"concepts": ["touching"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:contact"}, "defines": {"kind": "word", "target": "contact"}},
     "dict.1.cooked": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cooked"}, "defines": {"kind": "word", "target": "cooked"}},
     "dict.1.cool": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cool"}, "defines": {"kind": "word", "target": "cool"}},
@@ -103,6 +105,7 @@
     "dict.1.drift": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drift"}, "defines": {"kind": "word", "target": "drift"}},
     "dict.1.drip": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drip"}, "defines": {"kind": "word", "target": "drip"}},
     "dict.1.drop": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:drop"}, "defines": {"kind": "word", "target": "drop"}},
+    "dict.1.dry": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dry"}, "defines": {"kind": "word", "target": "dry"}},
     "dict.1.dull": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dull"}, "defines": {"kind": "word", "target": "dull"}},
     "dict.1.dust": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:dust"}, "defines": {"kind": "word", "target": "dust"}},
     "dict.1.early": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:early"}, "defines": {"kind": "word", "target": "early"}},
@@ -143,6 +146,7 @@
     "dict.1.flower": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:flower"}, "defines": {"kind": "word", "target": "flower"}},
     "dict.1.follow": {"concepts": ["sequence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:follow"}, "defines": {"kind": "word", "target": "follow"}},
     "dict.1.following": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:following"}, "defines": {"kind": "word", "target": "following"}},
+    "dict.1.foot": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:foot"}, "defines": {"kind": "word", "target": "foot"}},
     "dict.1.forbidden": {"concepts": ["allowed_or_not"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forbidden"}, "defines": {"kind": "word", "target": "forbidden"}},
     "dict.1.forest": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forest"}, "defines": {"kind": "word", "target": "forest"}},
     "dict.1.forget": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:forget"}, "defines": {"kind": "word", "target": "forget"}},
@@ -156,6 +160,7 @@
     "dict.1.garden": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:garden"}, "defines": {"kind": "word", "target": "garden"}},
     "dict.1.gentle": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gentle"}, "defines": {"kind": "word", "target": "gentle"}},
     "dict.1.gift": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gift"}, "defines": {"kind": "word", "target": "gift"}},
+    "dict.1.girl": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:girl"}, "defines": {"kind": "word", "target": "girl"}},
     "dict.1.given": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:given"}, "defines": {"kind": "word", "target": "given"}},
     "dict.1.glad": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:glad"}, "defines": {"kind": "word", "target": "glad"}},
     "dict.1.glass": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:glass"}, "defines": {"kind": "word", "target": "glass"}},
@@ -166,8 +171,11 @@
     "dict.1.grandma": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grandma"}, "defines": {"kind": "word", "target": "grandma"}},
     "dict.1.grandpa": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grandpa"}, "defines": {"kind": "word", "target": "grandpa"}},
     "dict.1.grass": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grass"}, "defines": {"kind": "word", "target": "grass"}},
+    "dict.1.gray": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:gray"}, "defines": {"kind": "word", "target": "gray"}},
     "dict.1.great": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:great"}, "defines": {"kind": "word", "target": "great"}},
+    "dict.1.green": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:green"}, "defines": {"kind": "word", "target": "green"}},
     "dict.1.greet": {"concepts": ["greeting_and_parting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:greet"}, "defines": {"kind": "word", "target": "greet"}},
+    "dict.1.ground": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ground"}, "defines": {"kind": "word", "target": "ground"}},
     "dict.1.group": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:group"}, "defines": {"kind": "word", "target": "group"}},
     "dict.1.grown": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:grown"}, "defines": {"kind": "word", "target": "grown"}},
     "dict.1.guess": {"concepts": ["guess"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:guess"}, "defines": {"kind": "word", "target": "guess"}},
@@ -177,6 +185,7 @@
     "dict.1.hang": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hang"}, "defines": {"kind": "word", "target": "hang"}},
     "dict.1.harm": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:harm"}, "defines": {"kind": "word", "target": "harm"}},
     "dict.1.hate": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hate"}, "defines": {"kind": "word", "target": "hate"}},
+    "dict.1.head": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:head"}, "defines": {"kind": "word", "target": "head"}},
     "dict.1.heal": {"concepts": ["mending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:heal"}, "defines": {"kind": "word", "target": "heal"}},
     "dict.1.hear": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:hear"}, "defines": {"kind": "word", "target": "hear"}},
     "dict.1.heard": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:heard"}, "defines": {"kind": "word", "target": "heard"}},
@@ -236,6 +245,7 @@
     "dict.1.learn": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:learn"}, "defines": {"kind": "word", "target": "learn"}},
     "dict.1.learned": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:learned"}, "defines": {"kind": "word", "target": "learned"}},
     "dict.1.least": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:least"}, "defines": {"kind": "word", "target": "least"}},
+    "dict.1.leg": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:leg"}, "defines": {"kind": "word", "target": "leg"}},
     "dict.1.length": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:length"}, "defines": {"kind": "word", "target": "length"}},
     "dict.1.less": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:less"}, "defines": {"kind": "word", "target": "less"}},
     "dict.1.level": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:level"}, "defines": {"kind": "word", "target": "level"}},
@@ -260,6 +270,7 @@
     "dict.1.love": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:love"}, "defines": {"kind": "word", "target": "love"}},
     "dict.1.low": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:low"}, "defines": {"kind": "word", "target": "low"}},
     "dict.1.magic": {"concepts": ["real_and_pretend"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:magic"}, "defines": {"kind": "word", "target": "magic"}},
+    "dict.1.man": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:man"}, "defines": {"kind": "word", "target": "man"}},
     "dict.1.manage": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:manage"}, "defines": {"kind": "word", "target": "manage"}},
     "dict.1.manner": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:manner"}, "defines": {"kind": "word", "target": "manner"}},
     "dict.1.many": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:many"}, "defines": {"kind": "word", "target": "many"}},
@@ -309,6 +320,7 @@
     "dict.1.noisy": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:noisy"}, "defines": {"kind": "word", "target": "noisy"}},
     "dict.1.none": {"concepts": ["all_some_none"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:none"}, "defines": {"kind": "word", "target": "none"}},
     "dict.1.noon": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:noon"}, "defines": {"kind": "word", "target": "noon"}},
+    "dict.1.nose": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nose"}, "defines": {"kind": "word", "target": "nose"}},
     "dict.1.note": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:note"}, "defines": {"kind": "word", "target": "note"}},
     "dict.1.nurse": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:nurse"}, "defines": {"kind": "word", "target": "nurse"}},
     "dict.1.old": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:old"}, "defines": {"kind": "word", "target": "old"}},
@@ -369,6 +381,7 @@
     "dict.1.ready": {"concepts": ["way_of_doing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ready"}, "defines": {"kind": "word", "target": "ready"}},
     "dict.1.real": {"concepts": ["real_and_pretend"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:real"}, "defines": {"kind": "word", "target": "real"}},
     "dict.1.record": {"concepts": ["written_record"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:record"}, "defines": {"kind": "word", "target": "record"}},
+    "dict.1.red": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:red"}, "defines": {"kind": "word", "target": "red"}},
     "dict.1.remain": {"concepts": ["presence"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:remain"}, "defines": {"kind": "word", "target": "remain"}},
     "dict.1.remember": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:remember"}, "defines": {"kind": "word", "target": "remember"}},
     "dict.1.repeat": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:repeat"}, "defines": {"kind": "word", "target": "repeat"}},
@@ -452,6 +465,7 @@
     "dict.1.slip": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:slip"}, "defines": {"kind": "word", "target": "slip"}},
     "dict.1.slow": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:slow"}, "defines": {"kind": "word", "target": "slow"}},
     "dict.1.slowly": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:slowly"}, "defines": {"kind": "word", "target": "slowly"}},
+    "dict.1.small": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:small"}, "defines": {"kind": "word", "target": "small"}},
     "dict.1.smaller": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:smaller"}, "defines": {"kind": "word", "target": "smaller"}},
     "dict.1.smart": {"concepts": ["being_told"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:smart"}, "defines": {"kind": "word", "target": "smart"}},
     "dict.1.smash": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:smash"}, "defines": {"kind": "word", "target": "smash"}},
@@ -546,6 +560,7 @@
     "dict.1.thirsty": {"concepts": ["need"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thirsty"}, "defines": {"kind": "word", "target": "thirsty"}},
     "dict.1.thought": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thought"}, "defines": {"kind": "word", "target": "thought"}},
     "dict.1.thousand": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:thousand"}, "defines": {"kind": "word", "target": "thousand"}},
+    "dict.1.three": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:three"}, "defines": {"kind": "word", "target": "three"}},
     "dict.1.throw": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:throw"}, "defines": {"kind": "word", "target": "throw"}},
     "dict.1.tie": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tie"}, "defines": {"kind": "word", "target": "tie"}},
     "dict.1.tight": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tight"}, "defines": {"kind": "word", "target": "tight"}},
@@ -571,6 +586,7 @@
     "dict.1.try": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:try"}, "defines": {"kind": "word", "target": "try"}},
     "dict.1.tumble": {"concepts": ["falling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tumble"}, "defines": {"kind": "word", "target": "tumble"}},
     "dict.1.twice": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:twice"}, "defines": {"kind": "word", "target": "twice"}},
+    "dict.1.two": {"concepts": ["number_word_order"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:two"}, "defines": {"kind": "word", "target": "two"}},
     "dict.1.unable": {"concepts": ["can_and_cannot"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unable"}, "defines": {"kind": "word", "target": "unable"}},
     "dict.1.unchanged": {"concepts": ["conservation_of_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:unchanged"}, "defines": {"kind": "word", "target": "unchanged"}},
     "dict.1.uncle": {"concepts": ["family"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:uncle"}, "defines": {"kind": "word", "target": "uncle"}},
@@ -605,8 +621,10 @@
     "dict.1.weight": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:weight"}, "defines": {"kind": "word", "target": "weight"}},
     "dict.1.welcome": {"concepts": ["greeting_and_parting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:welcome"}, "defines": {"kind": "word", "target": "welcome"}},
     "dict.1.well": {"concepts": ["good_and_bad"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:well"}, "defines": {"kind": "word", "target": "well"}},
+    "dict.1.wet": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wet"}, "defines": {"kind": "word", "target": "wet"}},
     "dict.1.while": {"concepts": ["duration"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:while"}, "defines": {"kind": "word", "target": "while"}},
     "dict.1.whisper": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:whisper"}, "defines": {"kind": "word", "target": "whisper"}},
+    "dict.1.white": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:white"}, "defines": {"kind": "word", "target": "white"}},
     "dict.1.whole": {"concepts": ["component_and_system"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:whole"}, "defines": {"kind": "word", "target": "whole"}},
     "dict.1.wide": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wide"}, "defines": {"kind": "word", "target": "wide"}},
     "dict.1.win": {"concepts": ["toy"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:win"}, "defines": {"kind": "word", "target": "win"}},
@@ -615,6 +633,7 @@
     "dict.1.window": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:window"}, "defines": {"kind": "word", "target": "window"}},
     "dict.1.wing": {"concepts": ["body_part"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wing"}, "defines": {"kind": "word", "target": "wing"}},
     "dict.1.wire": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wire"}, "defines": {"kind": "word", "target": "wire"}},
+    "dict.1.woman": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:woman"}, "defines": {"kind": "word", "target": "woman"}},
     "dict.1.wonder": {"concepts": ["more_to_learn"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wonder"}, "defines": {"kind": "word", "target": "wonder"}},
     "dict.1.wood": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wood"}, "defines": {"kind": "word", "target": "wood"}},
     "dict.1.wooden": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:wooden"}, "defines": {"kind": "word", "target": "wooden"}},
@@ -628,6 +647,7 @@
     "dict.1.yard": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yard"}, "defines": {"kind": "word", "target": "yard"}},
     "dict.1.year": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:year"}, "defines": {"kind": "word", "target": "year"}},
     "dict.1.yell": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yell"}, "defines": {"kind": "word", "target": "yell"}},
+    "dict.1.yellow": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yellow"}, "defines": {"kind": "word", "target": "yellow"}},
     "dict.1.yesterday": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yesterday"}, "defines": {"kind": "word", "target": "yesterday"}},
     "dict.1.young": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:young"}, "defines": {"kind": "word", "target": "young"}},
     "dict.1.yours": {"concepts": ["having"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:yours"}, "defines": {"kind": "word", "target": "yours"}},
@@ -648,6 +668,9 @@ In front of you, along the way you are going.
 
 [dict.1.aim]
 To point your work at a goal.
+
+[dict.1.air]
+Air is what is all around us that we cannot see, and that we breathe in.
 
 [dict.1.alone]
 With nobody else.
@@ -690,6 +713,9 @@ To shut and open your eyes quickly.
 
 [dict.1.bottom]
 The bottom of a thing is the part that is most down.
+
+[dict.1.boy]
+A boy is a child who will grow up to be a man.
 
 [dict.1.breeze]
 A light wind.
@@ -769,8 +795,8 @@ Cloudy is when there are many clouds in the sky.
 [dict.1.coin]
 A small round piece of metal you pay with.
 
-[dict.1.colour]
-A colour is what makes red not the same as blue.
+[dict.1.color]
+A color is what makes red not the same as blue.
 
 [dict.1.contact]
 Contact is when two things touch.
@@ -782,7 +808,7 @@ Cooked is when food has been made hot so you can eat it.
 Cool is a little cold.
 
 [dict.1.copper]
-Copper is a metal that has a red brown colour.
+Copper is a metal that has a red brown color.
 
 [dict.1.copy]
 To copy is to make a thing that is the same as another thing.
@@ -904,6 +930,9 @@ To drip is when small parts of a liquid go down one after another.
 [dict.1.drop]
 To drop is to let a thing go down.
 
+[dict.1.dry]
+Dry means with no water or other liquid on it or in it.
+
 [dict.1.dull]
 Dull is not sharp.
 
@@ -1016,13 +1045,16 @@ To fit is to be the right size for a place.
 Flat is when a thing has no part that goes up or down.
 
 [dict.1.flower]
-A flower is the part of a plant that has colour.
+A flower is the part of a plant that has color.
 
 [dict.1.follow]
 To follow is to go after someone or something.
 
 [dict.1.following]
 Following is when someone goes after another.
+
+[dict.1.foot]
+Your foot is the part of your body at the end of your leg that you stand on.
 
 [dict.1.forbidden]
 Not allowed.
@@ -1063,6 +1095,9 @@ Gentle is when someone does a thing in a soft and careful way.
 [dict.1.gift]
 A gift is a thing you give to someone.
 
+[dict.1.girl]
+A girl is a child who will grow up to be a woman.
+
 [dict.1.given]
 Given is when someone has put a thing into the hands of another.
 
@@ -1079,7 +1114,7 @@ Glue is wet stuff you use to make two things hold together.
 The thing you want to reach.
 
 [dict.1.gold]
-Gold is a metal that has a yellow colour.
+Gold is a metal that has a yellow color.
 
 [dict.1.goodbye]
 Goodbye is the word you say when you go away from someone.
@@ -1093,11 +1128,20 @@ A grandpa is the father of your mother or father.
 [dict.1.grass]
 Grass is a small green plant that grows on the ground.
 
+[dict.1.gray]
+Gray is a color between black and white, like the color of a cloud before rain.
+
 [dict.1.great]
 Very good, or very big.
 
+[dict.1.green]
+Green is the color of grass and of most leaves.
+
 [dict.1.greet]
 To greet someone is to say hello to them.
+
+[dict.1.ground]
+The ground is the top of the land that you stand and walk on.
 
 [dict.1.group]
 Some things or people together.
@@ -1125,6 +1169,9 @@ To harm is to hurt a thing or a person.
 
 [dict.1.hate]
 To hate is to feel very bad about a thing.
+
+[dict.1.head]
+Your head is the top part of your body, where your eyes, ears, nose and mouth are.
 
 [dict.1.heal]
 To get well after being hurt.
@@ -1226,7 +1273,7 @@ Inside is in a thing.
 Instead means in place of another thing.
 
 [dict.1.iron]
-Iron is a hard grey metal.
+Iron is a hard gray metal.
 
 [dict.1.itself]
 Itself means the same thing and no other.
@@ -1303,6 +1350,9 @@ Learned is when someone has got to know a thing.
 [dict.1.least]
 Least is the most small of all.
 
+[dict.1.leg]
+A leg is one of the long parts of the body that people and animals use to stand and walk.
+
 [dict.1.length]
 How long a thing is.
 
@@ -1374,6 +1424,9 @@ Low is when a thing is near the ground.
 
 [dict.1.magic]
 Something that seems real but cannot happen.
+
+[dict.1.man]
+A man is a grown person, like a father or an uncle.
 
 [dict.1.manage]
 To manage is to do a thing that is hard.
@@ -1460,7 +1513,7 @@ A month is a time that has many weeks.
 A mood is the way someone feels.
 
 [dict.1.mouse]
-A mouse is a very small grey animal.
+A mouse is a very small gray animal.
 
 [dict.1.move]
 To move is to go from one place to another place.
@@ -1522,6 +1575,9 @@ None means not one.
 [dict.1.noon]
 Noon is the middle of the day.
 
+[dict.1.nose]
+Your nose is the part of your face that you smell and breathe with.
+
 [dict.1.note]
 A note is a few words you write to keep or to give.
 
@@ -1547,7 +1603,7 @@ To own is to have a thing that is yours.
 A pace is how fast a thing moves.
 
 [dict.1.paint]
-Paint is wet stuff of a colour that you put on a thing.
+Paint is wet stuff of a color that you put on a thing.
 
 [dict.1.pair]
 A pair is two things that go together.
@@ -1598,7 +1654,7 @@ A picture is a thing someone made that shows how a thing looks.
 Many things put one on top of another.
 
 [dict.1.pink]
-A colour like light red.
+A color like light red.
 
 [dict.1.place]
 A place is where a thing is.
@@ -1701,6 +1757,9 @@ Real is when a thing is here to see and take.
 
 [dict.1.record]
 A record is words you keep so you know what happened.
+
+[dict.1.red]
+Red is the color of many apples and of a stop sign.
 
 [dict.1.remain]
 To remain is to stay in a place.
@@ -1910,7 +1969,7 @@ A side of a thing is a part you see from one way.
 A sign is a mark that stands for a thing.
 
 [dict.1.silver]
-Silver is a bright grey metal.
+Silver is a bright gray metal.
 
 [dict.1.sing]
 To sing is to make a sound with your voice that goes up and down.
@@ -1950,6 +2009,9 @@ Slow is not fast.
 
 [dict.1.slowly]
 Slowly is in a long time.
+
+[dict.1.small]
+Small means not big, or less in size than most things like it.
 
 [dict.1.smaller]
 Smaller is more small than another thing.
@@ -2233,6 +2295,9 @@ Something you think.
 [dict.1.thousand]
 A thousand is a number that is much more than a hundred.
 
+[dict.1.three]
+Three is the number after two and before four.
+
 [dict.1.throw]
 To throw is to make a thing go through the air with your hand.
 
@@ -2307,6 +2372,9 @@ To tumble is to fall and turn over.
 
 [dict.1.twice]
 Twice means one time and then one more time.
+
+[dict.1.two]
+Two is the number after one and before three.
 
 [dict.1.unable]
 Unable is when someone cannot do a thing.
@@ -2410,11 +2478,17 @@ Welcome is the word you say when someone comes to you and you are glad.
 [dict.1.well]
 Well is in a good way.
 
+[dict.1.wet]
+Wet means covered with water or another liquid.
+
 [dict.1.while]
 A while is a time.
 
 [dict.1.whisper]
 To whisper is to say words with a very quiet voice.
+
+[dict.1.white]
+White is the color of snow and of milk.
 
 [dict.1.whole]
 The whole of a thing is all of it.
@@ -2439,6 +2513,9 @@ The part of an animal that it flies with.
 
 [dict.1.wire]
 A wire is a long thin piece of metal.
+
+[dict.1.woman]
+A woman is a grown person, like a mother or an aunt.
 
 [dict.1.wonder]
 To wonder is to think about a thing you do not know.
@@ -2478,6 +2555,9 @@ A year is a long time that has many months.
 
 [dict.1.yell]
 To yell is to shout.
+
+[dict.1.yellow]
+Yellow is a bright color, like the color of the sun.
 
 [dict.1.yesterday]
 Yesterday is the day before today.

@@ -2,7 +2,7 @@
 
 Authoritative stage specifications. This directory defines what each
 curriculum level teaches, at what complexity, and how a record at that
-level is recognised as belonging to it.
+level is recognized as belonging to it.
 
 **Status.** Empty. No stage has been specified.
 

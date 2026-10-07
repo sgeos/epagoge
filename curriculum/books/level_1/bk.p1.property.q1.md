@@ -81,4 +81,4 @@ Is this one brown? This one is brown. It is not red. Is this one red? This one i
 Is this one clean? This one is clean. It is not dirty. This one is red. It is not blue. It is not green. It is not black. It is not brown. It is bright like the sun. It is warm like a fire. It is strong like a tree.
 
 [p1.property.q1.a15]
-What tells you one thing is not the same as another? A thing you can see or feel about it tells you, like its colour or its size. This one is red. It stands out above all others. It feels warm like the sun. It is not blue, not green, not black, not brown.
+What tells you one thing is not the same as another? A thing you can see or feel about it tells you, like its color or its size. This one is red. It stands out above all others. It feels warm like the sun. It is not blue, not green, not black, not brown.

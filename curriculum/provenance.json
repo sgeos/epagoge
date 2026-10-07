@@ -3754,6 +3754,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "gray": {
+      "source": "Renamed from grey on 2026-10-07 by operator decision to use US English; admitted at level one as grey",
+      "evidence": "recorded at admission"
+    },
     "great": {
       "commit": "30e24e99276d",
       "date": "2026-09-25",

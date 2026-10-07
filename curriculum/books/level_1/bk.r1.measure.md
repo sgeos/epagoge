@@ -44,7 +44,7 @@ Compare means to look at two things to see how they are alike or different.
 Bigger means more in size than something else.
 
 [r1.measure.s01]
-The bamboo stick is longer than the stick next to it. They are alike in colour but different in length. The longer stick can reach higher, even above the branch. It holds the apple better than the shorter one. The longer stick helps carry the basket. It can also help lift the heavy stone.
+The bamboo stick is longer than the stick next to it. They are alike in color but different in length. The longer stick can reach higher, even above the branch. It holds the apple better than the shorter one. The longer stick helps carry the basket. It can also help lift the heavy stone.
 
 [r1.measure.s02]
 I want to compare the two sticks to see which is bigger. This one is longer than that one. The longer stick reaches higher, above the branch. It is able to lift the basket better. It can carry more because it is stronger. The shorter stick cannot reach as far.

@@ -50,10 +50,10 @@ The teacher, sharp and clear, says, “Believe in the plan, and we will find a w
 The child, small but true, says, “I can help, even if I am weak.” She stands tall, her hands steady, ready to carry the weight. She believes in the plan, though her breath is short and her steps are slow. She knows the path ahead, even when it bends and turns.
 
 [i1.people.x_taking_on_faith.s05]
-The animal, old and quiet, says, “Trust the path, even when it bends.” She believes in the path, even when the air is thick and the sky is grey. She will not turn back, even if fear tries to take her. She trusts the plan, though others doubt, and her hands stay open.
+The animal, old and quiet, says, “Trust the path, even when it bends.” She believes in the path, even when the air is thick and the sky is gray. She will not turn back, even if fear tries to take her. She trusts the plan, though others doubt, and her hands stay open.
 
 [i1.people.x_taking_on_faith.s06]
-The river, deep and strong, says, “Flow forward, and you will find your place.” It trusts the flow, even when the sky is grey and the air is thick. It does not look back, though others have turned. It keeps moving, forward, not against, not away. It carries the weight of the world, not by force, but by trust.
+The river, deep and strong, says, “Flow forward, and you will find your place.” It trusts the flow, even when the sky is gray and the air is thick. It does not look back, though others have turned. It keeps moving, forward, not against, not away. It carries the weight of the world, not by force, but by trust.
 
 [i1.people.x_taking_on_faith.s07]
 The sky, bright and wide, says, “You are safe when you believe.” It holds the light, even when clouds block the sun. It trusts the path, though no one walks ahead. It does not hide, though shadows move below. It stays open, not afraid to be seen. It believes the world is kind, even when it hurts.

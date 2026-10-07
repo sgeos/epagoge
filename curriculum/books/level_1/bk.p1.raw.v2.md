@@ -77,7 +77,7 @@ A child sat on the chair, laughing and swinging their feet. It remembered the sk
 One day, the child left the chair, and it waited alone. The wind blew through the room, soft and slow. The chair felt the air, cold and thin, above its wooden arms. It remembered the weight of a small body, moving up and down. The child had laughed, and the chair had felt alive.
 
 [p1.raw.v2.x14]
-The chair sat in the sun, warm and still. It grew tall, reaching above the sky. The tree felt alive, breathing with the air. Each year, it grew a little bigger, strong and wide. Its leaves changed colour, green to gold and red. Then they fell, drifting like soft, quiet snow.
+The chair sat in the sun, warm and still. It grew tall, reaching above the sky. The tree felt alive, breathing with the air. Each year, it grew a little bigger, strong and wide. Its leaves changed color, green to gold and red. Then they fell, drifting like soft, quiet snow.
 
 [p1.raw.v2.x15]
 The chair sat in the sun, warm and still, waiting for a new story to begin. The wood was a tree, alive and tall, standing above the ground. The tree felt the sky, felt the rain, felt the quiet world. It knew the sky, the moon, the stars above. It had grown from nothing, made of wood, shaped by time.

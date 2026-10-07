@@ -219,10 +219,10 @@
       "word": "accident",
       "concept": "accident",
       "level": 2,
+      "pos": "noun",
       "forms": [
         "accidents"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "account",
@@ -383,7 +383,8 @@
     {
       "word": "air",
       "concept": "air",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "alike",
@@ -437,10 +438,10 @@
       "word": "amount",
       "concept": "quantity",
       "level": 2,
+      "pos": "noun",
       "forms": [
         "amounts"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "angle",
@@ -559,6 +560,7 @@
       "word": "arm",
       "concept": "body_part",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "arms"
       ]
@@ -577,12 +579,12 @@
       "word": "ask",
       "concept": "asking",
       "level": 1,
+      "pos": "verb",
       "forms": [
         "asked",
         "asking",
         "asks"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "asleep",
@@ -646,7 +648,11 @@
     {
       "word": "baby",
       "concept": "person",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "babies"
+      ]
     },
     {
       "word": "background",
@@ -720,7 +726,8 @@
     {
       "word": "bamboo",
       "concept": "plant",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "bang",
@@ -869,13 +876,13 @@
       "word": "begin",
       "concept": "sequence",
       "level": 1,
+      "pos": "verb",
       "forms": [
         "began",
         "beginning",
         "begins",
         "begun"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "behind",
@@ -982,10 +989,10 @@
       "word": "big",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "biggest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "bigger",
@@ -1108,6 +1115,7 @@
       "word": "body",
       "concept": "body_part",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "bodies"
       ]
@@ -1136,7 +1144,11 @@
     {
       "word": "boss",
       "concept": "someone_in_charge",
-      "level": 2
+      "level": 2,
+      "pos": "noun",
+      "forms": [
+        "bosses"
+      ]
     },
     {
       "word": "bottle",
@@ -1150,7 +1162,11 @@
     {
       "word": "bottom",
       "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "bottoms"
+      ]
     },
     {
       "word": "bowl",
@@ -1173,7 +1189,11 @@
     {
       "word": "boy",
       "concept": "person",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "boys"
+      ]
     },
     {
       "word": "branch",
@@ -1227,7 +1247,11 @@
     {
       "word": "breath",
       "concept": "air",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "breaths"
+      ]
     },
     {
       "word": "breathe",
@@ -1262,11 +1286,11 @@
       "word": "bright",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "brighter",
         "brightest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "bring",
@@ -1494,11 +1518,11 @@
       "word": "call",
       "concept": "sound",
       "level": 1,
+      "pos": "noun verb",
       "forms": [
         "calling",
         "calls"
-      ],
-      "pos": "noun verb"
+      ]
     },
     {
       "word": "called",
@@ -1641,11 +1665,11 @@
       "word": "cause",
       "concept": "cause_and_effect",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "caused",
         "causes"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "cave",
@@ -1678,19 +1702,19 @@
       "word": "chain",
       "concept": "causal_chain",
       "level": 2,
+      "pos": "noun",
       "forms": [
         "chains"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "chair",
       "concept": "household_object",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "chairs"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "change",
@@ -1717,22 +1741,22 @@
     {
       "word": "cheat",
       "concept": "fair_and_unfair",
+      "level": 1,
+      "pos": "verb",
       "forms": [
         "cheats",
         "cheated",
         "cheating"
-      ],
-      "level": 1,
-      "pos": "verb"
+      ]
     },
     {
       "word": "cheater",
       "concept": "person",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "cheaters"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "check",
@@ -1796,10 +1820,10 @@
       "word": "child",
       "concept": "person",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "children"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "choose",
@@ -1866,7 +1890,8 @@
     {
       "word": "clay",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "clean",
@@ -1945,7 +1970,11 @@
     {
       "word": "clock",
       "concept": "cycle",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "clocks"
+      ]
     },
     {
       "word": "close",
@@ -1964,20 +1993,20 @@
       "word": "cloth",
       "concept": "material",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "clothes",
         "cloths"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "cloud",
       "concept": "weather",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "clouds"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "cloudy",
@@ -2014,35 +2043,29 @@
       "word": "cold",
       "concept": "heat",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "colder",
         "coldest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "color",
       "concept": "physical_property",
-      "level": 2,
+      "level": 1,
       "pos": "noun",
-      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "forms": [
         "colors"
       ]
     },
     {
-      "word": "colour",
-      "concept": "physical_property",
-      "level": 1
-    },
-    {
       "word": "column",
       "concept": "place_value",
       "level": 2,
+      "pos": "noun",
       "forms": [
         "columns"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "combine",
@@ -2080,10 +2103,10 @@
     {
       "word": "condition",
       "concept": "latent_condition",
+      "level": 5,
       "forms": [
         "conditions"
-      ],
-      "level": 5
+      ]
     },
     {
       "word": "consequences",
@@ -2109,7 +2132,11 @@
     {
       "word": "container",
       "concept": "inside_and_outside",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "containers"
+      ]
     },
     {
       "word": "cook",
@@ -2131,16 +2158,17 @@
       "word": "cool",
       "concept": "heat",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "cooler",
         "coolest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "copper",
       "concept": "metal",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "copy",
@@ -2173,10 +2201,10 @@
       "word": "corner",
       "concept": "shape",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "corners"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "correct",
@@ -2207,13 +2235,13 @@
     {
       "word": "count",
       "concept": "counting",
+      "level": 1,
+      "pos": "verb",
       "forms": [
         "counted",
         "counting",
         "counts"
-      ],
-      "level": 1,
-      "pos": "verb"
+      ]
     },
     {
       "word": "country",
@@ -2342,16 +2370,20 @@
     {
       "word": "cup",
       "concept": "household_object",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "cups"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "cup",
       "concept": "unit",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "cups"
+      ]
     },
     {
       "word": "current",
@@ -2411,7 +2443,11 @@
     {
       "word": "danger",
       "concept": "danger",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "dangers"
+      ]
     },
     {
       "word": "dangerous",
@@ -2436,12 +2472,12 @@
       "word": "dark",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "darkened",
         "darker",
         "darkest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "daughter",
@@ -2466,10 +2502,10 @@
       "word": "day",
       "concept": "duration",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "days"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "dead",
@@ -2490,7 +2526,11 @@
     {
       "word": "death",
       "concept": "dying",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "deaths"
+      ]
     },
     {
       "word": "decide",
@@ -2507,10 +2547,10 @@
       "word": "deep",
       "concept": "spatial_position",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "deepest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "deeper",
@@ -2659,10 +2699,10 @@
       "word": "digit",
       "concept": "place_value",
       "level": 2,
+      "pos": "noun",
       "forms": [
         "digits"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "dinner",
@@ -2678,25 +2718,26 @@
       "word": "direction",
       "concept": "direction",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "directions"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "dirt",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "dirty",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "dirtier",
         "dirtiest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "disagree",
@@ -2732,7 +2773,11 @@
     {
       "word": "distance",
       "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "distances"
+      ]
     },
     {
       "word": "distant",
@@ -2940,11 +2985,11 @@
       "word": "dull",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "duller",
         "dullest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "during",
@@ -2955,7 +3000,8 @@
     {
       "word": "dust",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "eagle",
@@ -2971,6 +3017,7 @@
       "word": "ear",
       "concept": "body_part",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "ears"
       ]
@@ -3006,23 +3053,23 @@
       "word": "easy",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "easier",
         "easiest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "eat",
       "concept": "living_and_not_living",
       "level": 1,
+      "pos": "verb",
       "forms": [
         "ate",
         "eaten",
         "eating",
         "eats"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "echo",
@@ -3097,22 +3144,22 @@
       "word": "empty",
       "concept": "emptiness",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "emptier",
         "emptiest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "end",
       "concept": "sequence",
       "level": 1,
+      "pos": "noun verb",
       "forms": [
         "ended",
         "ending",
         "ends"
-      ],
-      "pos": "noun verb"
+      ]
     },
     {
       "word": "enemy",
@@ -3159,7 +3206,11 @@
     {
       "word": "evening",
       "concept": "cycle",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "evenings"
+      ]
     },
     {
       "word": "event",
@@ -3273,6 +3324,7 @@
       "word": "eye",
       "concept": "body_part",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "eyes"
       ]
@@ -3300,13 +3352,13 @@
     {
       "word": "fail",
       "concept": "failing",
+      "level": 2,
+      "pos": "verb",
       "forms": [
         "failed",
         "failing",
         "fails"
-      ],
-      "level": 2,
-      "pos": "verb"
+      ]
     },
     {
       "word": "failure",
@@ -3359,21 +3411,21 @@
       "word": "far",
       "concept": "spatial_position",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "further",
         "furthest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "fast",
       "concept": "duration",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "faster",
         "fastest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "fat",
@@ -3518,7 +3570,11 @@
     {
       "word": "fire",
       "concept": "heat",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "fires"
+      ]
     },
     {
       "word": "firm",
@@ -3631,7 +3687,11 @@
     {
       "word": "floor",
       "concept": "household_object",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "floors"
+      ]
     },
     {
       "word": "flour",
@@ -3702,12 +3762,14 @@
     {
       "word": "food",
       "concept": "needing_supply",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "foot",
       "concept": "body_part",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "feet"
       ]
@@ -3720,7 +3782,11 @@
     {
       "word": "force",
       "concept": "force",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "forces"
+      ]
     },
     {
       "word": "forecast",
@@ -3910,7 +3976,8 @@
     {
       "word": "future",
       "concept": "duration",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "fuzzy",
@@ -3997,7 +4064,11 @@
     {
       "word": "girl",
       "concept": "person",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "girls"
+      ]
     },
     {
       "word": "given",
@@ -4012,7 +4083,8 @@
     {
       "word": "glass",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "glue",
@@ -4037,7 +4109,8 @@
     {
       "word": "gold",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "gone",
@@ -4096,7 +4169,14 @@
     {
       "word": "grass",
       "concept": "plant",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
+    },
+    {
+      "word": "gray",
+      "concept": "physical_property",
+      "level": 1,
+      "source": "Renamed from grey on 2026-10-07 by operator decision to use US English; admitted at level one as grey"
     },
     {
       "word": "great",
@@ -4132,17 +4212,12 @@
       ]
     },
     {
-      "word": "grey",
-      "concept": "physical_property",
-      "level": 1
-    },
-    {
       "word": "ground",
       "concept": "material",
+      "level": 1,
       "forms": [
         "grounds"
-      ],
-      "level": 1
+      ]
     },
     {
       "word": "group",
@@ -4217,18 +4292,22 @@
     {
       "word": "half",
       "concept": "emptiness",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "halves"
+      ]
     },
     {
       "word": "hand",
       "concept": "body_part",
       "level": 1,
+      "pos": "verb",
       "forms": [
         "handed",
         "handing",
         "hands"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "handle",
@@ -4265,21 +4344,21 @@
       "word": "happy",
       "concept": "feeling",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "happier",
         "happiest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "hard",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "harder",
         "hardest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "hard",
@@ -4332,6 +4411,7 @@
       "word": "head",
       "concept": "body_part",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "heads"
       ]
@@ -4386,11 +4466,11 @@
       "word": "heavy",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "heavier",
         "heaviest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "height",
@@ -4461,11 +4541,11 @@
       "word": "high",
       "concept": "spatial_position",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "higher",
         "highest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "hill",
@@ -4606,11 +4686,11 @@
       "word": "hot",
       "concept": "danger",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "hotter",
         "hottest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "hour",
@@ -4702,16 +4782,17 @@
     {
       "word": "ice",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "idea",
       "concept": "guess",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "ideas"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "identified",
@@ -4835,7 +4916,8 @@
     {
       "word": "iron",
       "concept": "metal",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "island",
@@ -4865,10 +4947,10 @@
       "word": "job",
       "concept": "way_of_doing",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "jobs"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "join",
@@ -4902,7 +4984,8 @@
     {
       "word": "juice",
       "concept": "liquid",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "jump",
@@ -5015,12 +5098,12 @@
       "word": "know",
       "concept": "being_told",
       "level": 1,
+      "pos": "verb",
       "forms": [
         "knowing",
         "known",
         "knows"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "knowledge",
@@ -5073,11 +5156,11 @@
       "word": "large",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "larger",
         "largest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "last",
@@ -5195,6 +5278,7 @@
       "word": "leg",
       "concept": "body_part",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "legs"
       ]
@@ -5227,10 +5311,10 @@
       "word": "letter",
       "concept": "letter",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "letters"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "lettuce",
@@ -5242,7 +5326,11 @@
     {
       "word": "level",
       "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "levels"
+      ]
     },
     {
       "word": "lever",
@@ -5257,11 +5345,11 @@
     {
       "word": "liar",
       "concept": "person",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "liars"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "lid",
@@ -5275,13 +5363,13 @@
     {
       "word": "lie",
       "concept": "being_told",
+      "level": 1,
+      "pos": "verb",
       "forms": [
         "lied",
         "lies",
         "lying"
-      ],
-      "level": 1,
-      "pos": "verb"
+      ]
     },
     {
       "word": "life",
@@ -5355,16 +5443,20 @@
     {
       "word": "list",
       "concept": "plan",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "lists"
+      ]
     },
     {
       "word": "list",
       "concept": "written_record",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "lists"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "listen",
@@ -5442,10 +5534,10 @@
       "word": "long",
       "concept": "shape",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "longest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "longer",
@@ -5485,11 +5577,11 @@
       "word": "loud",
       "concept": "sound",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "louder",
         "loudest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "love",
@@ -5506,11 +5598,11 @@
       "word": "low",
       "concept": "spatial_position",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "lower",
         "lowest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "magic",
@@ -5527,7 +5619,11 @@
     {
       "word": "man",
       "concept": "person",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "men"
+      ]
     },
     {
       "word": "manage",
@@ -5577,7 +5673,11 @@
     {
       "word": "mark",
       "concept": "who_said_it",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "marks"
+      ]
     },
     {
       "word": "mat",
@@ -5736,16 +5836,17 @@
     {
       "word": "metal",
       "concept": "metal",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "method",
       "concept": "plan",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "methods"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "middle",
@@ -5770,7 +5871,8 @@
     {
       "word": "milk",
       "concept": "liquid",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "mill",
@@ -5785,7 +5887,11 @@
     {
       "word": "mind",
       "concept": "changing_your_mind",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "minds"
+      ]
     },
     {
       "word": "mind",
@@ -5812,10 +5918,10 @@
       "word": "minute",
       "concept": "duration",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "minutes"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "mishap",
@@ -5891,10 +5997,10 @@
       "word": "month",
       "concept": "cycle",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "months"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "mood",
@@ -5908,12 +6014,20 @@
     {
       "word": "moon",
       "concept": "cycle",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "moons"
+      ]
     },
     {
       "word": "morning",
       "concept": "cycle",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "mornings"
+      ]
     },
     {
       "word": "mother",
@@ -5954,6 +6068,7 @@
       "word": "mouth",
       "concept": "body_part",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "mouths"
       ]
@@ -5977,7 +6092,8 @@
     {
       "word": "mud",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "mum",
@@ -5997,10 +6113,10 @@
       "word": "nail",
       "concept": "metal",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "nails"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "name",
@@ -6016,17 +6132,21 @@
     {
       "word": "name",
       "concept": "who_said_it",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "names"
+      ]
     },
     {
       "word": "narrow",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "narrower",
         "narrowest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "nasty",
@@ -6157,16 +6277,20 @@
       "word": "nice",
       "concept": "good_and_bad",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "nicer",
         "nicest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "night",
       "concept": "cycle",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "nights"
+      ]
     },
     {
       "word": "nine",
@@ -6218,6 +6342,7 @@
       "word": "nose",
       "concept": "body_part",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "noses"
       ]
@@ -6241,11 +6366,11 @@
     {
       "word": "number",
       "concept": "number_word_order",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "numbers"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "nurse",
@@ -6403,7 +6528,11 @@
     {
       "word": "opinion",
       "concept": "opinion",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "opinions"
+      ]
     },
     {
       "word": "opposite",
@@ -6448,11 +6577,11 @@
     {
       "word": "oven",
       "concept": "household_object",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "ovens"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "owl",
@@ -6488,15 +6617,19 @@
       "word": "page",
       "concept": "writing",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "pages"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "pain",
       "concept": "being_hurt",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "pains"
+      ]
     },
     {
       "word": "paint",
@@ -6539,7 +6672,8 @@
     {
       "word": "paper",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "parcel",
@@ -6555,19 +6689,19 @@
       "word": "parent",
       "concept": "family",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "parents"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "part",
       "concept": "component_and_system",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "parts"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "pass",
@@ -6589,10 +6723,10 @@
       "word": "path",
       "concept": "direction",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "paths"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "patted",
@@ -6686,10 +6820,10 @@
       "word": "person",
       "concept": "person",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "people"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "phrase",
@@ -6733,6 +6867,7 @@
       "word": "pile",
       "concept": "grouping",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "piles"
       ]
@@ -6789,7 +6924,8 @@
     {
       "word": "plastic",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "plate",
@@ -7174,20 +7310,20 @@
       "word": "question",
       "concept": "more_to_learn",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "questions"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "quick",
       "concept": "duration",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "quicker",
         "quickest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "quickly",
@@ -7198,12 +7334,12 @@
       "word": "quiet",
       "concept": "sound",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "quieter",
         "quietest",
         "quietly"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "quit",
@@ -7316,12 +7452,12 @@
       "word": "rearrange",
       "concept": "conservation_of_number",
       "level": 2,
+      "pos": "verb",
       "forms": [
         "rearranged",
         "rearranges",
         "rearranging"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "receive",
@@ -7410,12 +7546,12 @@
       "word": "remove",
       "concept": "subtraction",
       "level": 2,
+      "pos": "verb",
       "forms": [
         "removed",
         "removes",
         "removing"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "repeat",
@@ -7733,12 +7869,12 @@
       "word": "run",
       "concept": "moving_and_still",
       "level": 1,
+      "pos": "verb",
       "forms": [
         "ran",
         "running",
         "runs"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "rush",
@@ -7766,11 +7902,11 @@
       "word": "sad",
       "concept": "feeling",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "sadder",
         "saddest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "safe",
@@ -7820,7 +7956,8 @@
     {
       "word": "sand",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "save",
@@ -7925,11 +8062,11 @@
     {
       "word": "secret",
       "concept": "leaving_out",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "secrets"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "seed",
@@ -7953,7 +8090,11 @@
     {
       "word": "self",
       "concept": "self_and_other",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "selves"
+      ]
     },
     {
       "word": "sell",
@@ -7982,10 +8123,10 @@
       "word": "sentence",
       "concept": "sentence",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "sentences"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "separate",
@@ -8028,10 +8169,10 @@
       "word": "set",
       "concept": "grouping",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "sets"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "settle",
@@ -8115,11 +8256,11 @@
       "word": "sharp",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "sharper",
         "sharpest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "sheep",
@@ -8186,10 +8327,10 @@
       "word": "short",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "shortest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "shortage",
@@ -8218,10 +8359,11 @@
     {
       "word": "shoulder",
       "concept": "body_part",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "shoulders"
-      ],
-      "level": 1
+      ]
     },
     {
       "word": "shout",
@@ -8281,10 +8423,10 @@
       "word": "side",
       "concept": "shape",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "sides"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "sight",
@@ -8310,7 +8452,8 @@
     {
       "word": "silver",
       "concept": "metal",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "simple",
@@ -8401,7 +8544,11 @@
     {
       "word": "size",
       "concept": "physical_property",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "sizes"
+      ]
     },
     {
       "word": "skin",
@@ -8426,7 +8573,11 @@
     {
       "word": "sky",
       "concept": "weather",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "skies"
+      ]
     },
     {
       "word": "sleep",
@@ -8465,11 +8616,11 @@
       "word": "slow",
       "concept": "duration",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "slower",
         "slowest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "slowly",
@@ -8480,10 +8631,10 @@
       "word": "small",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "smallest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "smaller",
@@ -8539,11 +8690,11 @@
       "word": "smooth",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "smoother",
         "smoothest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "snap",
@@ -8592,17 +8743,18 @@
     {
       "word": "soap",
       "concept": "liquid",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "soft",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "softer",
         "softest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "softly",
@@ -8701,7 +8853,11 @@
     {
       "word": "space",
       "concept": "emptiness",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "spaces"
+      ]
     },
     {
       "word": "spare",
@@ -8735,7 +8891,11 @@
     {
       "word": "speed",
       "concept": "moving_and_still",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "speeds"
+      ]
     },
     {
       "word": "spell",
@@ -8814,13 +8974,13 @@
     {
       "word": "spot",
       "concept": "spatial_position",
+      "level": 1,
+      "pos": "noun verb",
       "forms": [
         "spots",
         "spotted",
         "spotting"
-      ],
-      "level": 1,
-      "pos": "noun verb"
+      ]
     },
     {
       "word": "spread",
@@ -8890,10 +9050,10 @@
       "word": "star",
       "concept": "weather",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "stars"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "stare",
@@ -8936,14 +9096,14 @@
     {
       "word": "steal",
       "concept": "having",
+      "level": 1,
+      "pos": "verb",
       "forms": [
         "stealing",
         "steals",
         "stole",
         "stolen"
-      ],
-      "level": 1,
-      "pos": "verb"
+      ]
     },
     {
       "word": "steam",
@@ -8959,7 +9119,8 @@
     {
       "word": "steel",
       "concept": "metal",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "stem",
@@ -8985,7 +9146,11 @@
     {
       "word": "step",
       "concept": "unit",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "steps"
+      ]
     },
     {
       "word": "stick",
@@ -9099,16 +9264,17 @@
     {
       "word": "stranger",
       "concept": "person",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "strangers"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "straw",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "stream",
@@ -9171,11 +9337,11 @@
       "word": "strong",
       "concept": "force",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "stronger",
         "strongest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "structure",
@@ -9196,18 +9362,19 @@
     {
       "word": "stuff",
       "concept": "material",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "subtract",
       "concept": "subtraction",
       "level": 2,
+      "pos": "verb",
       "forms": [
         "subtracted",
         "subtracting",
         "subtracts"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "successor",
@@ -9240,7 +9407,11 @@
     {
       "word": "sun",
       "concept": "cycle",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "suns"
+      ]
     },
     {
       "word": "sunny",
@@ -9340,13 +9511,13 @@
     {
       "word": "swallow",
       "concept": "living_and_not_living",
+      "level": 1,
+      "pos": "verb",
       "forms": [
         "swallows",
         "swallowed",
         "swallowing"
-      ],
-      "level": 1,
-      "pos": "verb"
+      ]
     },
     {
       "word": "swap",
@@ -9386,10 +9557,10 @@
       "word": "symbol",
       "concept": "standing_for",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "symbols"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "system",
@@ -9442,10 +9613,10 @@
       "word": "tall",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "tallest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "taller",
@@ -9478,10 +9649,10 @@
       "word": "task",
       "concept": "way_of_doing",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "tasks"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "taste",
@@ -9569,10 +9740,10 @@
       "word": "term",
       "concept": "word",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "terms"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "test",
@@ -9617,49 +9788,49 @@
       "word": "thick",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "thicker",
         "thickest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "thief",
       "concept": "person",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "thieves"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "thin",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "thinner",
         "thinnest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "thing",
       "concept": "things_break",
+      "level": 1,
+      "pos": "noun",
       "forms": [
         "things"
-      ],
-      "level": 1,
-      "pos": "noun"
+      ]
     },
     {
       "word": "think",
       "concept": "knowing",
       "level": 1,
+      "pos": "verb",
       "forms": [
         "thinking",
         "thinks"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "third",
@@ -9749,11 +9920,11 @@
       "word": "tight",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "tighter",
         "tightest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "till",
@@ -9765,6 +9936,7 @@
       "word": "time",
       "concept": "duration",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "times"
       ]
@@ -9772,7 +9944,8 @@
     {
       "word": "tin",
       "concept": "metal",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "tiny",
@@ -9829,15 +10002,19 @@
       "word": "tool",
       "concept": "way_of_doing",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "tools"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "top",
       "concept": "spatial_position",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "tops"
+      ]
     },
     {
       "word": "toss",
@@ -9864,10 +10041,7 @@
     {
       "word": "toward",
       "concept": "direction",
-      "level": 1,
-      "forms": [
-        "towards"
-      ]
+      "level": 1
     },
     {
       "word": "town",
@@ -9923,10 +10097,10 @@
       "word": "tree",
       "concept": "plant",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "trees"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "trick",
@@ -9959,13 +10133,13 @@
     {
       "word": "trust",
       "concept": "taking_on_faith",
+      "level": 1,
+      "pos": "verb",
       "forms": [
         "trusted",
         "trusting",
         "trusts"
-      ],
-      "level": 1,
-      "pos": "verb"
+      ]
     },
     {
       "word": "truth",
@@ -10187,12 +10361,12 @@
       "word": "use",
       "concept": "using_up",
       "level": 1,
+      "pos": "verb",
       "forms": [
         "used",
         "uses",
         "using"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "useful",
@@ -10247,6 +10421,7 @@
       "word": "view",
       "concept": "opinion",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "views"
       ]
@@ -10279,7 +10454,11 @@
     {
       "word": "voice",
       "concept": "sound",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "voices"
+      ]
     },
     {
       "word": "wait",
@@ -10328,12 +10507,12 @@
       "word": "want",
       "concept": "goal",
       "level": 1,
+      "pos": "verb",
       "forms": [
         "wanted",
         "wanting",
         "wants"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "war",
@@ -10349,14 +10528,14 @@
       "word": "warm",
       "concept": "heat",
       "level": 1,
+      "pos": "adjective verb",
       "forms": [
         "warmed",
         "warmer",
         "warmest",
         "warming",
         "warms"
-      ],
-      "pos": "adjective verb"
+      ]
     },
     {
       "word": "wash",
@@ -10384,15 +10563,16 @@
       "word": "watch",
       "concept": "measuring",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "watches"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "water",
       "concept": "liquid",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "wave",
@@ -10418,11 +10598,11 @@
       "word": "weak",
       "concept": "force",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "weaker",
         "weakest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "wear",
@@ -10444,16 +10624,17 @@
     {
       "word": "weather",
       "concept": "weather",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "week",
       "concept": "cycle",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "weeks"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "weigh",
@@ -10496,20 +10677,20 @@
       "word": "wet",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "wetter",
         "wettest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "wheel",
       "concept": "household_object",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "wheels"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "whether",
@@ -10560,11 +10741,11 @@
       "word": "wide",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "wider",
         "widest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "wild",
@@ -10591,7 +10772,11 @@
     {
       "word": "wind",
       "concept": "air",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "winds"
+      ]
     },
     {
       "word": "winding",
@@ -10667,7 +10852,11 @@
     {
       "word": "woman",
       "concept": "person",
-      "level": 1
+      "level": 1,
+      "pos": "noun",
+      "forms": [
+        "women"
+      ]
     },
     {
       "word": "wonder",
@@ -10683,7 +10872,8 @@
     {
       "word": "wood",
       "concept": "plant",
-      "level": 1
+      "level": 1,
+      "pos": "mass noun"
     },
     {
       "word": "wooden",
@@ -10694,21 +10884,21 @@
       "word": "word",
       "concept": "word",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "words"
-      ],
-      "pos": "noun"
+      ]
     },
     {
       "word": "work",
       "concept": "activity",
       "level": 1,
+      "pos": "verb",
       "forms": [
         "worked",
         "working",
         "works"
-      ],
-      "pos": "verb"
+      ]
     },
     {
       "word": "world",
@@ -10780,6 +10970,7 @@
       "word": "year",
       "concept": "duration",
       "level": 1,
+      "pos": "noun",
       "forms": [
         "years"
       ]
@@ -10816,11 +11007,11 @@
       "word": "young",
       "concept": "physical_property",
       "level": 1,
+      "pos": "adjective",
       "forms": [
         "younger",
         "youngest"
-      ],
-      "pos": "adjective"
+      ]
     },
     {
       "word": "yours",
@@ -10849,15 +11040,12 @@
     "attention": "looking",
     "available": "there to use",
     "beneath": "under",
-    "beside": "next to",
     "beyond": "past",
     "can't": "cannot",
     "carefully": "with care",
-    "cause": "makes",
-    "causing": "making",
     "center": "middle",
-    "color": "colour",
-    "colors": "colours",
+    "colour": "color",
+    "colours": "colors",
     "complete": "done",
     "condition": "the way a thing is",
     "connects": "joins",
@@ -10880,9 +11068,7 @@
     "focused": "looking at it",
     "form": "shape",
     "golden": "yellow",
-    "gray": "grey",
-    "great": "big",
-    "greater": "more",
+    "grey": "gray",
     "human": "person",
     "imagined": "pretend",
     "important": "means a lot",
@@ -10892,7 +11078,6 @@
     "item": "thing",
     "leading": "going first",
     "led": "took",
-    "length": "how long",
     "location": "place",
     "matter": "be important",
     "moonlight": "light from the moon",
@@ -10909,7 +11094,6 @@
     "sidewalk": "path",
     "silence": "no sound",
     "similar": "like",
-    "single": "one",
     "slightly": "a little",
     "smoothly": "in a smooth way",
     "specific": "that one",
@@ -10919,8 +11103,8 @@
     "there's": "there is",
     "they're": "they are",
     "thickness": "how thick",
+    "towards": "toward",
     "tremble": "shake",
-    "unknown": "not known",
     "unseen": "not seen",
     "unsure": "not sure",
     "usual": "what happens most times",
@@ -10946,8 +11130,8 @@
     "food",
     "foot",
     "girl",
+    "gray",
     "green",
-    "grey",
     "ground",
     "hand",
     "head",

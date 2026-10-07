@@ -53,13 +53,13 @@ Pair means two things that go together as one unit.
 A point is a single thing, a small part, or a moment in time.
 
 [m1.compare.v4.s01]
-The two red blocks are alike, but the blue one is different. They are the same size, same shape, and same colour. Each block fits in the same spot on the table. They are equal in every way. The red ones belong together, the blue stands alone. They were placed side by side by the same hand.
+The two red blocks are alike, but the blue one is different. They are the same size, same shape, and same color. Each block fits in the same spot on the table. They are equal in every way. The red ones belong together, the blue stands alone. They were placed side by side by the same hand.
 
 [m1.compare.v4.s02]
-The pair of shoes lies on the floor, one near the door. They are the same size, same shape, and same colour. They were placed side by side by the same hand. No one else could wear them. They belong together, not apart. They are alike in every way. They are equal, just as the blocks were.
+The pair of shoes lies on the floor, one near the door. They are the same size, same shape, and same color. They were placed side by side by the same hand. No one else could wear them. They belong together, not apart. They are alike in every way. They are equal, just as the blocks were.
 
 [m1.compare.v4.s03]
-She counts the blocks: one, two, three, four, five, six, seven, eight. Each block is a different colour but the same size and shape. They are alike in every way, just as the shoes were. No one block is better than another. The same hand placed them, just as before.
+She counts the blocks: one, two, three, four, five, six, seven, eight. Each block is a different color but the same size and shape. They are alike in every way, just as the shoes were. No one block is better than another. The same hand placed them, just as before.
 
 [m1.compare.v4.s04]
 The pile of apples is more than the few left in the basket. The apples in the pile are the same as those in the basket. Each apple is round, red, and shiny, just like the others. No apple is bigger or smaller than another. They are alike in every way, just as the blocks were.
@@ -80,4 +80,4 @@ The moon shines above the quiet house, bright and round. No two shadows are diff
 The book lies open, pages turned by the breeze. The same words appear again, clear and true. A shadow on the floor matches the one above. The same air flows through both sides of the room. The same moon shines down, round and bright. The same grass grows under both feet.
 
 [m1.compare.v4.x15]
-The red ball stops rolling in the grass, still and quiet. It lies exactly where it fell, same as before. The same shape, same size, same red colour. It matches the one above, though not seen. The same grass grows around it, thick and green. The same shadow lies across its round face.
+The red ball stops rolling in the grass, still and quiet. It lies exactly where it fell, same as before. The same shape, same size, same red color. It matches the one above, though not seen. The same grass grows around it, thick and green. The same shadow lies across its round face.

@@ -68,7 +68,7 @@ The sun climbs high, and the air grows hot. It watches the water, still full and
 The plant stays alive, its leaves still bright. No one comes near, not even a bug. The bird watches from a branch, afraid to move. It remembers the river, once full and bright. It knows the cost of drinking, of taking more. It wonders if the water is enough for one plant.
 
 [a1.enough.v2.x11]
-The garden stays quiet, waiting for rain. It is alive, though small and alone. It remembers the river, once full and bright. It knows the cost of drinking, of taking more. It wonders if the water is enough for one plant. The sky is grey, heavy with clouds that do not fall.
+The garden stays quiet, waiting for rain. It is alive, though small and alone. It remembers the river, once full and bright. It knows the cost of drinking, of taking more. It wonders if the water is enough for one plant. The sky is gray, heavy with clouds that do not fall.
 
 [a1.enough.v2.x12]
 There is enough water for one plant, so it grows tall and green. It feels the air, soft and warm, moving through its leaves. Each leaf is alive, green and strong, shaped like a small hand. It knows the cost of water, and the weight of each drop. No one sees it, but it stands, waiting, still.

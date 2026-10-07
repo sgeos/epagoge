@@ -80,4 +80,4 @@ They began by setting a plan with a clear point: every person must bring a pair 
 The class of children stood together, each holding a match to light the fire for the first stone. Each child held their match steady, afraid to let it go. The air was thick with breath and quiet, full of waiting. They had come together, not to argue, but to begin.
 
 [i1.people.x_correspondence.s15]
-The group worked together, each one helping the next, and no one was alone. No one was afraid, not even when the wind blew hard and the sky turned grey. They had come together to begin, not to end. The river carried them away, one by one, like stars in the night.
+The group worked together, each one helping the next, and no one was alone. No one was afraid, not even when the wind blew hard and the sky turned gray. They had come together to begin, not to end. The river carried them away, one by one, like stars in the night.

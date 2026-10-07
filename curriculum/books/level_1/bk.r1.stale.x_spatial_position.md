@@ -80,4 +80,4 @@ The mark says the cup was full. The milk was gone, but the shape remained. The s
 The mark looks above and sees only dust. The dust hangs in the air, thick and still. The space feels closed, like a box without a lid. The mark remembers the cup, once full, now empty. The milk had been warm, not cold, not gone. The cow had been alive, not a bottle.
 
 [r1.stale.x_spatial_position.s15]
-The mark feels alone. The air is still and thick with dust. The space feels closed, like a box without a lid. The cup is empty, the milk gone. The cow is dead, not alive. The bottle is cold, not warm. The sky is grey, not blue. The mark cannot see the door, only the wall.
+The mark feels alone. The air is still and thick with dust. The space feels closed, like a box without a lid. The cup is empty, the milk gone. The cow is dead, not alive. The bottle is cold, not warm. The sky is gray, not blue. The mark cannot see the door, only the wall.

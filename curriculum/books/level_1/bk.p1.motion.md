@@ -80,4 +80,4 @@ You push it and it moves across the grass. The wheels turn slowly at first, then
 The cart rolls faster on the smooth path. The handle stays cold, even in the bright sun. The air feels light, like a breath held too long. The path ahead is open, clear, and wide. The cart moves on, as if it knows where to go. The sky above is blue, without a cloud.
 
 [p1.motion.x15]
-The cart falls into the water and floats away. The air feels heavy, like a breath held too long. The water flows slowly, carrying the cart away. No one comes to call it back. The boat drifts, alone, across the wide lake. The sky above is blue, then grey, then dark.
+The cart falls into the water and floats away. The air feels heavy, like a breath held too long. The water flows slowly, carrying the cart away. No one comes to call it back. The boat drifts, alone, across the wide lake. The sky above is blue, then gray, then dark.

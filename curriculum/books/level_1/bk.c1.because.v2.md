@@ -44,13 +44,13 @@ Way means a path, method, or manner of doing something.
 A ball rolled down a hill and fell because you let go. The ball rolled on, moving faster, going ahead. You saw it, but did not move. You looked, but could not reach it. It stayed there, quiet, alone. No one came to help. The sun set, and the sky turned dark.
 
 [c1.because.v2.s02]
-It rolled across the grass and hit a rock, but you did not stop it. The rock stayed still, but the ball kept going, moving ahead. The gap was narrow, but the ball slipped through, going deeper. No one saw, no one came, no one cared. The sky above turned grey, and the wind blew cold.
+It rolled across the grass and hit a rock, but you did not stop it. The rock stayed still, but the ball kept going, moving ahead. The gap was narrow, but the ball slipped through, going deeper. No one saw, no one came, no one cared. The sky above turned gray, and the wind blew cold.
 
 [c1.because.v2.s03]
-It rolled into a gap and stopped, but you did not pick it up. It fell because you let go. The ball stayed still, alone and quiet. No one came to help, no one cared. The sky above stayed grey and cold. The wind blew soft, like a whisper. You could not move, not even a step.
+It rolled into a gap and stopped, but you did not pick it up. It fell because you let go. The ball stayed still, alone and quiet. No one came to help, no one cared. The sky above stayed gray and cold. The wind blew soft, like a whisper. You could not move, not even a step.
 
 [c1.because.v2.s04]
-You looked away, and it stayed there, alone and still. The wind blew soft, like a whisper, across the ground. No one came to help, no one cared. The sky above stayed grey and cold. The ball stayed still, alone and quiet. You could not move, not even a step.
+You looked away, and it stayed there, alone and still. The wind blew soft, like a whisper, across the ground. No one came to help, no one cared. The sky above stayed gray and cold. The ball stayed still, alone and quiet. You could not move, not even a step.
 
 [c1.because.v2.s05]
 You thought it was lost, but you remembered the way back. You remembered the way back because you knew it was still alive. The wind blew again, soft and warm, across the ground. You moved ahead, step by step, not afraid of the dark. The ball stayed still, but now it felt like a friend.

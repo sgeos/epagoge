@@ -41,7 +41,7 @@ A tree is living. It does not walk away.
 The tree grows tall, its leaf turning green each day, and the bamboo near it bends in the breeze. Each leaf is alive, showing green above the brown earth. A bird lands on a branch, its feather bright in the sun. The breeze carries a sound, soft and slow, like a whisper.
 
 [b1.plants.x_conservation_of_number.s02]
-The flower opens, bright and clear, showing its colour to the sky above. It moves from flower to flower, each one equal in the sun. The bamboo bends, not broken, still able to rise. A bird sings, its voice clear, rising above the noise. The sky stays wide, blue and open, no wall between.
+The flower opens, bright and clear, showing its color to the sky above. It moves from flower to flower, each one equal in the sun. The bamboo bends, not broken, still able to rise. A bird sings, its voice clear, rising above the noise. The sky stays wide, blue and open, no wall between.
 
 [b1.plants.x_conservation_of_number.s03]
 The grass stays soft and low, and the branch holds the leaf, both unchanged in the forest. The plant grows tall and straight, its leaves equal in number and size. The number of leaves does not change, even when the wind blows. The bamboo bends but stays able to rise again.
@@ -62,13 +62,13 @@ The tree is alive, and the garden is home, and nothing changes, not even when th
 The apple hangs heavy on a branch, bright and red, like a small sun in the morning light. The number of leaves stays equal, each one the same size and shape. The bird sings a song, high and bright, its voice rising above the quiet. The branch bends under the weight of the apple, but it does not break, for it is strong and unchanged.
 
 [b1.plants.x_conservation_of_number.s09]
-The branch bends under the weight of the apple, but it does not break, for it is strong and unchanged. The apple stays alive, bright and red, full of the same number as before. The leaves remain equal in size, each one alike in shape and colour. The air feels warm, the light bright, the day full of calm.
+The branch bends under the weight of the apple, but it does not break, for it is strong and unchanged. The apple stays alive, bright and red, full of the same number as before. The leaves remain equal in size, each one alike in shape and color. The air feels warm, the light bright, the day full of calm.
 
 [b1.plants.x_conservation_of_number.s10]
-The apple grows on a branch, bright and red, full of life. The apple stays on the branch, alive and bright, full of the same number as before. The leaf remains equal in size, each one alike in shape and colour. The air feels warm, the light bright, the day full of calm.
+The apple grows on a branch, bright and red, full of life. The apple stays on the branch, alive and bright, full of the same number as before. The leaf remains equal in size, each one alike in shape and color. The air feels warm, the light bright, the day full of calm.
 
 [b1.plants.x_conservation_of_number.s11]
-The leaf falls gently, landing on the grass, where it stays, unchanged. The leaf lies still, unchanged in shape and colour. The air feels calm, full of quiet and light. The number of leaves remains equal, no more, no less. The sun shines bright, warm on the ground below. The earth holds all, safe and steady, in place.
+The leaf falls gently, landing on the grass, where it stays, unchanged. The leaf lies still, unchanged in shape and color. The air feels calm, full of quiet and light. The number of leaves remains equal, no more, no less. The sun shines bright, warm on the ground below. The earth holds all, safe and steady, in place.
 
 [b1.plants.x_conservation_of_number.s12]
 The garden lies near the forest, full of plants and flowers, each one alive. The number of plants stays equal, no more, no less. The green leaves hold light, rising above the ground. The earth holds them all, steady and safe. The wind passes through, but does not break their order.

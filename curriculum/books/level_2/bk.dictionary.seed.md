@@ -80,7 +80,6 @@
     "dict.2.cloak": {"concepts": ["household_object"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cloak"}, "defines": {"kind": "word", "target": "cloak"}},
     "dict.2.coast": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:coast"}, "defines": {"kind": "word", "target": "coast"}},
     "dict.2.coastal": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:coastal"}, "defines": {"kind": "word", "target": "coastal"}},
-    "dict.2.color": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:color"}, "defines": {"kind": "word", "target": "color"}},
     "dict.2.column": {"concepts": ["place_value"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:column"}, "defines": {"kind": "word", "target": "column"}},
     "dict.2.common": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:common"}, "defines": {"kind": "word", "target": "common"}},
     "dict.2.community": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:community"}, "defines": {"kind": "word", "target": "community"}},
@@ -566,9 +565,6 @@ A coast is the land next to the sea.
 [dict.2.coastal]
 Coastal means on or near a coast.
 
-[dict.2.color]
-Color is what you see when light comes off a thing, like red or blue.
-
 [dict.2.column]
 A column is a line of things going up and down.
 
@@ -684,7 +680,7 @@ An effect is what happens because of something else.
 An egg is a round thing with a shell that comes out of a mother bird, and a baby bird grows inside it, and people eat some eggs as food.
 
 [dict.2.elephant]
-An elephant is a very large grey animal with big ears and a long nose that it can use like a hand.
+An elephant is a very large gray animal with big ears and a long nose that it can use like a hand.
 
 [dict.2.eleven]
 Eleven is one more than ten.
@@ -1002,7 +998,7 @@ To offer something is to hold it out to someone, or to say that you will give it
 An onion is a round vegetable that grows under the ground, made of many thin layers, with a strong smell that can make your eyes water.
 
 [dict.2.orange]
-Orange is the colour between red and yellow.
+Orange is the color between red and yellow.
 
 [dict.2.owl]
 An owl is a bird with big eyes that flies at night and catches small animals.
@@ -1074,7 +1070,7 @@ To provide something is to give it to someone who needs it.
 Public means for everyone to use or see, and not kept for just one person.
 
 [dict.2.purple]
-Purple is a colour made of red and blue together.
+Purple is a color made of red and blue together.
 
 [dict.2.quantity]
 A quantity is how many or how much of a thing there is.
@@ -1173,7 +1169,7 @@ Since means from a time in the past until now, or because.
 Sir is a word you use with good manners when you speak to a man.
 
 [dict.2.smoke]
-Smoke is the grey air that goes up from a fire.
+Smoke is the gray air that goes up from a fire.
 
 [dict.2.softly]
 Softly means in a soft or quiet way.
@@ -1329,7 +1325,7 @@ A video is moving pictures, often with sound, that you can watch again and again
 A vine is a plant with a long, thin stem that grows along the ground or climbs up walls and trees.
 
 [dict.2.violet]
-Violet is a colour between blue and red, nearer to blue.
+Violet is a color between blue and red, nearer to blue.
 
 [dict.2.war]
 A war is a time when countries or large groups of people use force to hurt each other and to win.

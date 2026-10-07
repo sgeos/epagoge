@@ -47,31 +47,31 @@ A boy sees a pile of blue blocks and a pile of red blocks; both piles are equal 
 He counts the blocks, one by one, to find they are the same. He counts the blocks again, one by one, to find they are equal. The blue blocks are alike in size and shape, just like the red ones. He sees a single green block, different from the rest, unlike the others.
 
 [m1.compare.x_counting.s04]
-Then he sees a single green block; it is different from the others, unlike the rest. It stands apart from the rest, not alike in colour or shape. The green block is alone, not part of the group. He knows it is special, not like the rest in kind or colour.
+Then he sees a single green block; it is different from the others, unlike the rest. It stands apart from the rest, not alike in color or shape. The green block is alone, not part of the group. He knows it is special, not like the rest in kind or color.
 
 [m1.compare.x_counting.s05]
-He knows this green block is special because it is not like the others in kind or colour. He counts the blocks, all alike in shape and size, but one is different, green and alone. He feels the green block, smooth and cool, unlike the others in touch and feel.
+He knows this green block is special because it is not like the others in kind or color. He counts the blocks, all alike in shape and size, but one is different, green and alone. He feels the green block, smooth and cool, unlike the others in touch and feel.
 
 [m1.compare.x_counting.s06]
-He decides to place it apart, not with the rest, because it is not the same. He places the green block apart, alone, not like the others. It is different in colour, shape, and feel. He counts the blocks again, one by one, to be sure. He touches it, then pulls his hand away.
+He decides to place it apart, not with the rest, because it is not the same. He places the green block apart, alone, not like the others. It is different in color, shape, and feel. He counts the blocks again, one by one, to be sure. He touches it, then pulls his hand away.
 
 [m1.compare.x_counting.s07]
-He counts again: zero green blocks were in the first pile, but now one is there. He counts the blocks again, one by one, to be sure. He sees the green block is different in colour, shape, and feel. He feels good, not bad, because he found the one that was different.
+He counts again: zero green blocks were in the first pile, but now one is there. He counts the blocks again, one by one, to be sure. He sees the green block is different in color, shape, and feel. He feels good, not bad, because he found the one that was different.
 
 [m1.compare.x_counting.s08]
-He feels good, not bad, because he found the one that was different. He counts the blocks again, one by one, to be sure. He sees the green block is different in colour, shape, and feel. He places the block above the others, not below. He knows it belongs in a special place, not among the rest.
+He feels good, not bad, because he found the one that was different. He counts the blocks again, one by one, to be sure. He sees the green block is different in color, shape, and feel. He places the block above the others, not below. He knows it belongs in a special place, not among the rest.
 
 [m1.compare.x_counting.s09]
-He says, “This one is not like the others; it is special, and it has its own place.” He counts the blocks again, one by one, to be sure. The green block is different in colour, shape, and feel. He places the block above the others, not below. He knows it belongs in a special place, not among the rest.
+He says, “This one is not like the others; it is special, and it has its own place.” He counts the blocks again, one by one, to be sure. The green block is different in color, shape, and feel. He places the block above the others, not below. He knows it belongs in a special place, not among the rest.
 
 [m1.compare.x_counting.s10]
-Count the apples, one by one, to see which pile has more, and find the single apple that is unlike the others. One apple is red, another is green, and one is yellow, but only one is smaller. It is different in size, shape, and colour, so it does not belong with the rest.
+Count the apples, one by one, to see which pile has more, and find the single apple that is unlike the others. One apple is red, another is green, and one is yellow, but only one is smaller. It is different in size, shape, and color, so it does not belong with the rest.
 
 [m1.compare.x_counting.s11]
-The pile has more than zero, so it must be counted to see how many. Each apple is alike in shape, but not in size or colour. One is smaller, so it stands apart from the rest. The red apple is bigger than the green one, but not the yellow.
+The pile has more than zero, so it must be counted to see how many. Each apple is alike in shape, but not in size or color. One is smaller, so it stands apart from the rest. The red apple is bigger than the green one, but not the yellow.
 
 [m1.compare.x_counting.s12]
-The single apple is unlike the others, so it does not belong with the group. The single apple stands apart from the group. It is different in size, colour, and shape. No other apple is like it. The group is alike, but this one is not. It does not belong with the others.
+The single apple is unlike the others, so it does not belong with the group. The single apple stands apart from the group. It is different in size, color, and shape. No other apple is like it. The group is alike, but this one is not. It does not belong with the others.
 
 [m1.compare.x_counting.s13]
 The kind friend helps count the apples, and they agree that one is different. The apples are alike, all bright red and round. They sit in a basket, close together, equal in size. One, two, three, four, five, six, seven, eight. Each apple is the same, no one different. They agree again, no doubt, no fear.

@@ -56,10 +56,10 @@ The bird cannot stay still because it needs to learn to fly. It feels the air ru
 It grows stronger each day because it keeps trying to climb. It climbs higher, each step a little more sure. The sun warms its back, making it feel safe. It wants to fly, to go ahead, to reach the sky. It knows it must keep going, even when tired. The path ahead is long, but it is its own.
 
 [b1.keeping_going.x_cause_and_effect.s07]
-It shrinks when it is cold and has no food to eat. It hides under a rock, trying to stay warm. Its breath is slow, its eyes half closed. It cannot move, cannot think, cannot grow. The sky is grey and heavy, full of rain. It dreams of sun, of green leaves, of warm air.
+It shrinks when it is cold and has no food to eat. It hides under a rock, trying to stay warm. Its breath is slow, its eyes half closed. It cannot move, cannot think, cannot grow. The sky is gray and heavy, full of rain. It dreams of sun, of green leaves, of warm air.
 
 [b1.keeping_going.x_cause_and_effect.s08]
-It grows again because the sun comes out and the sky is bright. The ground feels warm after the cold. Its breath comes faster, stronger. It moves an arm, then a leg, slowly. The sky is blue, not grey. It lifts its head, looks above. A bird sings, high in the tree.
+It grows again because the sun comes out and the sky is bright. The ground feels warm after the cold. Its breath comes faster, stronger. It moves an arm, then a leg, slowly. The sky is blue, not gray. It lifts its head, looks above. A bird sings, high in the tree.
 
 [b1.keeping_going.x_cause_and_effect.s09]
 It needs food and water to grow strong. The sun helps the seed grow into a plant. The plant needs air and light to stay alive. The leaves open to catch the bright light. Each day it becomes bigger and stronger. It does not need to be afraid. It can grow even when the wind blows hard.

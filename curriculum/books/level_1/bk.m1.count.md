@@ -62,7 +62,7 @@ The match is fair, and both sides follow the same rules. One is first, and all f
 The path goes straight, and each step follows the one before it. Each step is a number, and the numbers grow. One comes first, then two, then three. No step is lost, no number is left behind. The sky above is bright, and the air is clear. The boy walks slowly, one foot after another.
 
 [m1.count.s05]
-The boy counted each block, and the number grew from one to three. Each block was a different colour, red, blue, and green. He touched the red block, then the blue, then the green. He felt the smooth surface, the cool air above. He could not move the blocks, but he could count them again.
+The boy counted each block, and the number grew from one to three. Each block was a different color, red, blue, and green. He touched the red block, then the blue, then the green. He felt the smooth surface, the cool air above. He could not move the blocks, but he could count them again.
 
 [m1.count.s06]
 The door is closed, but the key can unlock it and let someone in. The key is cold, but it fits the lock. The boy sees a path ahead, long and clear. He walks slowly, step by step, with care. The air feels different, alive with sound. A bird flies above, wings bright and wide.

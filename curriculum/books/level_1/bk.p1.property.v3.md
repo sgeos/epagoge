@@ -44,7 +44,7 @@ Big means larger than small and takes up more space.
 Black means the opposite of white.
 
 [p1.property.v3.d03]
-Blue means the colour of the sky.
+Blue means the color of the sky.
 
 [p1.property.v3.d04]
 Bright means shining with strong light.
@@ -53,7 +53,7 @@ Bright means shining with strong light.
 Broad means wide and not narrow.
 
 [p1.property.v3.d06]
-Brown means the colour of earth.
+Brown means the color of earth.
 
 [p1.property.v3.d07]
 Clear means not cloudy and easy to see through.

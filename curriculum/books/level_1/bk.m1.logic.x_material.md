@@ -77,7 +77,7 @@ the child picks up the cloth, the glass, and the coin, and puts them in a basket
 the child knows the ground is wet from rain, and the ground cannot be dry and wet at once.
 
 [m1.logic.x_material.s14]
-rain falls from the sky and the ground grows wet. Rain falls from the sky and the ground grows wet. The ground cannot be dry and wet at once. The earth feels the rain, alive and changed. The sky above is grey, not blue, not bright. A child stands near the edge of the path, watching the puddle grow.
+rain falls from the sky and the ground grows wet. Rain falls from the sky and the ground grows wet. The ground cannot be dry and wet at once. The earth feels the rain, alive and changed. The sky above is gray, not blue, not bright. A child stands near the edge of the path, watching the puddle grow.
 
 [m1.logic.x_material.s15]
 clay, dirt, dust, earth, glass, gold, ground, cloth, and stone all feel the rain. Each material changes in its own way when touched by water. The ground grows soft and holds the rain like a cup. Cloth soaks through and becomes heavy, unable to float. The rain falls across the path, not missing a single stone.

@@ -59,7 +59,7 @@ The balloon began to float again, rising higher, past the trees. The balloon ros
 She saw a bridge made of wood and stone, with a small boy on it. The boy looked up, his eyes wide with fear. He was afraid the balloon would float away again. She felt her breath slow, her body calm, her mind clear. The wind carried a soft sound, like a voice just out of reach.
 
 [c1.story.s07]
-The balloon floated past a forest, where birds sang in green trees. The balloon drifted above the trees, its red colour bright against the green. She felt the air move, soft and warm, like a breath on her face. A bird flew past, its wings wide, its cry sharp and clear.
+The balloon floated past a forest, where birds sang in green trees. The balloon drifted above the trees, its red color bright against the green. She felt the air move, soft and warm, like a breath on her face. A bird flew past, its wings wide, its cry sharp and clear.
 
 [c1.story.s08]
 She heard a bird call, “Fly with me,” and she believed it. She believed the bird, and the air above the trees felt alive. The balloon floated higher, red against the blue sky. A breeze blew, soft and warm, like a breath on her face. She turned, and saw a path through the trees, narrow and clear.

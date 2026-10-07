@@ -53,7 +53,7 @@ Not anything, not a single thing.
 It rained, and the ground became wet. The wet ground stayed soft after the rain stopped. The ground was no longer dry, but alive with small signs. A bird landed near a tree, shaking its feathers. The wind blew gently, carrying the smell of wet earth. The ground stayed wet, not drying fast.
 
 [m1.logic.v3.x06]
-The ground stayed wet after the rain stopped. The wind blew gently, carrying the smell of wet earth. A bird landed nearby, shaking its feathers. The sky above was still grey, but not heavy. The wet ground stayed alive with tiny signs. A child walked slowly, careful not to slip.
+The ground stayed wet after the rain stopped. The wind blew gently, carrying the smell of wet earth. A bird landed nearby, shaking its feathers. The sky above was still gray, but not heavy. The wet ground stayed alive with tiny signs. A child walked slowly, careful not to slip.
 
 [m1.logic.v3.x07]
 The sky turned bright and blue above the wet ground. The sun warmed the air and dried the surface slowly. A bird called from a tall tree, its song clear and sharp. The child reached down, fingers brushing the wet earth. The sky stayed bright, no clouds to block the light.

@@ -47,13 +47,13 @@ Match means two things that are the same or go together.
 Pair means two things that belong together.
 
 [m1.compare.v3.s01]
-Two apples are alike, one is different. The red apple is the same as the other red apple. They are both round and smooth, like a ball. They belong in the same basket. No one can tell them apart. They are equal in size and colour. Both were picked from the same tree.
+Two apples are alike, one is different. The red apple is the same as the other red apple. They are both round and smooth, like a ball. They belong in the same basket. No one can tell them apart. They are equal in size and color. Both were picked from the same tree.
 
 [m1.compare.v3.s02]
-There are few apples in the small basket. The red apple is alike to the other red apple. They are both round and smooth, like a ball. They belong in the same basket. No one can tell them apart. They are equal in size and colour. Both were picked from the same tree.
+There are few apples in the small basket. The red apple is alike to the other red apple. They are both round and smooth, like a ball. They belong in the same basket. No one can tell them apart. They are equal in size and color. Both were picked from the same tree.
 
 [m1.compare.v3.s03]
-The child points at the red ball. The ball is alike in shape and colour to the apple in the basket. They belong in the same group of things that roll. They are equal in size and feel. But they look the same from a distance. The child knows they are not the same thing.
+The child points at the red ball. The ball is alike in shape and color to the apple in the basket. They belong in the same group of things that roll. They are equal in size and feel. But they look the same from a distance. The child knows they are not the same thing.
 
 [m1.compare.v3.s04]
 The number of toys in the box is more than the number outside. The toys inside are alike in shape and size. They belong in the same group of things that roll. Each one is equal in weight and feel. The child knows they are not the same thing. But from a distance, they look the same.

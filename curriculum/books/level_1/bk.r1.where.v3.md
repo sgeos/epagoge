@@ -80,4 +80,4 @@ The child bends down and picks up a small, smooth stone. It is not there, not in
 The ball rolls down the hill and lands in a basket beside the path. The ball is here, not there, not above the tree, not in the sky. It rolled down the hill and landed in the basket, beside the path. The basket is made of bamboo, strong and light, able to hold things.
 
 [r1.where.v3.x15]
-The child picks up the basket and walks ahead toward the garden. The child walks ahead toward the garden, basket in hand. The air is warm, full of life and smell. The child stops, looking around, eyes wide with wonder. The garden is full of colour, full of sound. A small bird sings from a branch, high above.
+The child picks up the basket and walks ahead toward the garden. The child walks ahead toward the garden, basket in hand. The air is warm, full of life and smell. The child stops, looking around, eyes wide with wonder. The garden is full of color, full of sound. A small bird sings from a branch, high above.

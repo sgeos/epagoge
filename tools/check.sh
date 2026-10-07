@@ -102,9 +102,10 @@ run "book metadata"      env PYTHONPATH=src "$PYTHON" tools/stamp_books.py --lev
 # wrong by hand was in these files.
 run "inflections"        env PYTHONPATH=src "$PYTHON" tools/check_inflections.py --level 1 --show 25
 
-# **Reported, never gated.** A substitution key that its level admits is
-# either a stale ban or a mistaken admission. Prompts drop it either way.
-run "substitutions L1"   env PYTHONPATH=src "$PYTHON" tools/check_substitutions.py --level 1
+# **Gated at level one, reported at level two.** The table is a level-one
+# triage, so a key level one admits is a defect, while level two is expected
+# to admit some of its words. Prompts drop admissible keys either way.
+run "substitutions L1"   env PYTHONPATH=src "$PYTHON" tools/check_substitutions.py --level 1 --strict
 run "substitutions L2"   env PYTHONPATH=src "$PYTHON" tools/check_substitutions.py --level 2
 
 # A document that names a file which no longer exists reads as evidence and

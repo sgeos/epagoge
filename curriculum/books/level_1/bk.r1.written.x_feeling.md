@@ -50,7 +50,7 @@ The note said: “I was angry and wanted to cry, but I stayed calm and did not g
 I copied the words from my list to remember them, even when I forgot the day. The paper held the shape of my breath, warm and alive. I wrote each word slowly, as if they could change if I spoke them right. Each letter felt real, like a mark on my skin.
 
 [r1.written.x_feeling.s05]
-I kept a log of each time I felt afraid, and each time I felt calm, I made a mark on the page. Each mark was a breath held, a moment remembered, a feeling made real. The paper became a map of my inside, alive with colour and shape. I wrote down when I felt alone, and when I felt close to someone else.
+I kept a log of each time I felt afraid, and each time I felt calm, I made a mark on the page. Each mark was a breath held, a moment remembered, a feeling made real. The paper became a map of my inside, alive with color and shape. I wrote down when I felt alone, and when I felt close to someone else.
 
 [r1.written.x_feeling.s06]
 Even when I was cross and wanted to shout, I remembered to breathe and stay calm. I kept the paper open, a place for every feeling to be known. Each mark was a breath held, a moment remembered, a feeling made real. I wrote about the fear that came after dark, when the world seemed too loud.

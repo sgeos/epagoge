@@ -440,38 +440,38 @@ class ConceptGraph:
         return out
 
     def _check_acyclic(self) -> list[Violation]:
-        colour: dict[str, int] = {}  # 0 unvisited, 1 on stack, 2 done
+        color: dict[str, int] = {}  # 0 unvisited, 1 on stack, 2 done
         out: list[Violation] = []
 
         def walk(start: str) -> None:
             stack: list[tuple[str, list[str]]] = [
                 (start, sorted(self.prerequisites_of(start)))
             ]
-            colour[start] = 1
+            color[start] = 1
             path: list[str] = [start]
             while stack:
                 node, pending = stack[-1]
                 if not pending:
-                    colour[node] = 2
+                    color[node] = 2
                     stack.pop()
                     path.pop()
                     continue
                 nxt = pending.pop()
                 if nxt not in self._nodes:
                     continue
-                state = colour.get(nxt, 0)
+                state = color.get(nxt, 0)
                 if state == 1:
                     cycle = " -> ".join([*path, nxt])
                     out.append(Violation("cycle", f"prerequisite cycle: {cycle}"))
                     continue
                 if state == 2:
                     continue
-                colour[nxt] = 1
+                color[nxt] = 1
                 path.append(nxt)
                 stack.append((nxt, sorted(self.prerequisites_of(nxt))))
 
         for node_id in sorted(self._nodes):
-            if colour.get(node_id, 0) == 0:
+            if color.get(node_id, 0) == 0:
                 walk(node_id)
         return out
 

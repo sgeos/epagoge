@@ -59,13 +59,13 @@ The stone cup rolled across the ground. The cup was round like a ball. It rolled
 The cup was round like a ball. The cup was made of stone. It felt cold and heavy to touch. The stone was smooth, like a river rock. It had no handle, no opening. It could not hold water or food. It was round and curved, like a ball. It stayed still, not moving again.
 
 [p1.stuff.v4.s03]
-The cup stayed still, not moving again. It sat on the ground, covered in dust. No one came near it, though the air felt thick. A small bird landed on the stone, then flew away. The sky above was grey, not bright. No one knew why it was there, or how it came.
+The cup stayed still, not moving again. It sat on the ground, covered in dust. No one came near it, though the air felt thick. A small bird landed on the stone, then flew away. The sky above was gray, not bright. No one knew why it was there, or how it came.
 
 [p1.stuff.v4.s04]
-A small dust cloud rose above it. The cup stayed still, made of stone. It sat on the ground, covered in dust. The sky above was grey, not bright. No one knew why it was there, or how it came. A small bird landed on the stone, then flew away.
+A small dust cloud rose above it. The cup stayed still, made of stone. It sat on the ground, covered in dust. The sky above was gray, not bright. No one knew why it was there, or how it came. A small bird landed on the stone, then flew away.
 
 [p1.stuff.v4.s05]
-The dust settled like a blanket. The cup stayed still, made of stone. No wind could move it, no hand could break it. The sky above stayed grey, not bright. No one knew why it was there, or how it came. A bird landed on the stone, then flew away.
+The dust settled like a blanket. The cup stayed still, made of stone. No wind could move it, no hand could break it. The sky above stayed gray, not bright. No one knew why it was there, or how it came. A bird landed on the stone, then flew away.
 
 [p1.stuff.v4.s06]
 The cup stayed in the dirt, safe and quiet. It was made of stone, cold and still. No light could shine through it, not even from above. Its surface was smooth, shaped by time and wind. No one had ever touched it, not even a child. It did not break, not even when the rain fell hard.

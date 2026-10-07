@@ -38,10 +38,10 @@
 The cup is mine. That one is hers. Now I have two.
 
 [ac1.having.x_falling.s01]
-I raise my cup, it slips, and falls to the floor where it lands with a crack. I try to pick one up, but it slips again. The room feels colder, darker, like the sky after rain. I remember the day I bought it, the bright blue colour, the smooth rim.
+I raise my cup, it slips, and falls to the floor where it lands with a crack. I try to pick one up, but it slips again. The room feels colder, darker, like the sky after rain. I remember the day I bought it, the bright blue color, the smooth rim.
 
 [ac1.having.x_falling.s02]
-I pick up the broken cup, the pieces fall again, tumbling into the corner, and I feel sad. The room feels colder, darker, like the sky after rain. I remember the day I bought it, the bright blue colour, the smooth rim. I try to pick one up, but it slips again.
+I pick up the broken cup, the pieces fall again, tumbling into the corner, and I feel sad. The room feels colder, darker, like the sky after rain. I remember the day I bought it, the bright blue color, the smooth rim. I try to pick one up, but it slips again.
 
 [ac1.having.x_falling.s03]
 I see another cup, bright and new, and I know it belongs to her. I am not afraid of it, but I am afraid of what it means. It is not mine, not yet, but I can dream it is. I think about how it was bought, how it was held, how it was used.

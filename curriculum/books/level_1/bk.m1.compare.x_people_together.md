@@ -47,10 +47,10 @@ They saw a boy with a basket full of apples, while another had only a few. The b
 They returned to school, where the teacher asked, “Who has the most?” and the child with the lot of apples raised his hand. They sat together on the grass, close to each other, sharing what they had. They compared the apples, counting one by one, and agreed that the basket held the most.
 
 [m1.compare.x_people_together.s04]
-The class sat in a circle, and the teacher said, “This is the same,” pointing to two red blocks, “but that one is different.” The blocks were alike in size but different in colour. Each child held one, feeling the smooth surface. They sat together, close, sharing space and breath.
+The class sat in a circle, and the teacher said, “This is the same,” pointing to two red blocks, “but that one is different.” The blocks were alike in size but different in color. Each child held one, feeling the smooth surface. They sat together, close, sharing space and breath.
 
 [m1.compare.x_people_together.s05]
-They all agreed, “We all belong to the same group,” and the teacher smiled, saying, “Yes, this is true, and we all learn together in school.” They all sat together, close, sharing space and breath. Each child held a block, feeling the smooth surface. The blocks were alike in size but different in colour.
+They all agreed, “We all belong to the same group,” and the teacher smiled, saying, “Yes, this is true, and we all learn together in school.” They all sat together, close, sharing space and breath. Each child held a block, feeling the smooth surface. The blocks were alike in size but different in color.
 
 [m1.compare.x_people_together.s06]
 A class meets in a town where a group of children play with a lot of toys, and one pile has more than the others. A pile of toys sits above the others, bigger and brighter. More toys are in that pile than in any other. The children look at it, their eyes wide with wonder.

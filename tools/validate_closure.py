@@ -50,13 +50,17 @@ def main(argv: list[str]) -> int:
         return found.word if found is not None else None
 
     closure = dictionary_closure(definitions, seed, tokenise, resolve)
-    # **Seed words need no definition, so they do not belong in the
-    # denominator.** Counting them made full coverage unreachable by
-    # construction, since the dictionary is never going to define `red`.
+    # **Every admitted term needs a definition, ostensive ones included.**
+    # Until 2026-10-07 seed words were left out of the denominator on the
+    # ground that the dictionary would never define `red`. The operator
+    # decided that words are both shown and defined, so an ostensive word
+    # stays in the seed for closure, since showing grounds it, and still
+    # counts here. Function words and exempt names are not terms and name no
+    # concept, so they remain outside.
     wanted = {
         term.word
         for term in vocabulary.terms
-        if term.level <= level and term.word not in seed
+        if term.level <= level and not vocabulary.is_free(term.word)
     }
     ungrounded = len(definitions) - len(closure.grounded)
 
@@ -70,9 +74,9 @@ def main(argv: list[str]) -> int:
         f"  {len(covered) / len(wanted) * 100:.1f}% coverage"
     )
     if extra:
-        print(f"  also         {extra} definition(s) of seed words, not counted")
+        print(f"  also         {extra} definition(s) of function words, not counted")
     print(f"  grounded     {len(closure.grounded)}  closure {closure.fraction:.1%}")
-    print(f"  seed         {len(seed)} words need no definition and are excluded")
+    print(f"  seed         {len(seed)} words ground by showing or need no definition")
     outstanding = sorted(wanted - set(definitions))
     if outstanding:
         print(f"  undefined    {len(outstanding)}: {' '.join(outstanding[:15])}")

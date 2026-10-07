@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 """Report substitution keys that their own level nonetheless admits.
 
-**Reported, never gated.** A substitution bans a word and an admission
-commits to teaching it, so a key admissible at a level is a contradiction.
-Prompts already drop such keys through ``substitutions_at``. Whether the ban
-is stale or the admission was a mistake is a judgement for a reader, so this
-lists them and exits zero unless the inputs cannot be read.
+A substitution bans a word and an admission commits to teaching it, so a key
+admissible at a level is a contradiction. Prompts already drop such keys
+through ``substitutions_at``. Above level one a contradiction is expected,
+because the table is a level-one triage and later levels admit some of its
+words. At level one it is a defect, so ``--strict`` exits non-zero.
+
+**Strict at level one since 2026-10-07**, when the operator reconciled the
+seven level-one contradictions in favor of the admissions, all of them in
+heavy use in level-one books.
 
     PYTHONPATH=src python3 tools/check_substitutions.py --level 2
 """
@@ -27,6 +31,7 @@ def main(argv: list[str]) -> int:
     parser.add_argument(
         "--vocabulary", type=Path, default=ROOT / "curriculum/vocabulary.json"
     )
+    parser.add_argument("--strict", action="store_true")
     args = parser.parse_args(argv[1:])
     if args.level < 1:
         parser.error("--level must be at least 1")
@@ -38,7 +43,7 @@ def main(argv: list[str]) -> int:
     )
     for word in found:
         print(f"  {word}  (substitution {vocabulary.substitutions[word]!r})")
-    return 0
+    return 1 if args.strict and found else 0
 
 
 if __name__ == "__main__":
