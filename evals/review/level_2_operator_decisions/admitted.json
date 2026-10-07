@@ -1,0 +1,290 @@
+{
+  "advisory": {
+    "concept": "being_told",
+    "pos": "noun",
+    "definition": "An advisory is a report that tells people about a danger, such as a coming storm, and what they should do.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "antenna": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "An antenna is a long, thin piece of metal that sends or receives sound and pictures through the air.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "atmosphere": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "The atmosphere is the air all around the earth.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "average": {
+    "concept": "same_amount",
+    "pos": "noun",
+    "definition": "The average of some numbers is the one number they would each be if the whole amount were shared out between them in equal parts.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "axis": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "An axis is a straight line that something turns around, like the line from the top to the bottom of the earth.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "cake": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A cake is a sweet, soft food made from flour, eggs and sugar and baked in an oven.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "carbon": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Carbon is a material found in all living things and in wood and smoke.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "chemical": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A chemical is a material, often made by people, that can change other materials when they are mixed.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "circulation": {
+    "concept": "cycle",
+    "pos": "mass noun",
+    "definition": "Circulation is the moving of something around and around, such as air around the earth or water through the sea.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "cyclone": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A cyclone is a large storm in which the wind turns in a circle.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "data": {
+    "concept": "written_record",
+    "pos": "mass noun",
+    "definition": "Data are facts and numbers that people write down to find out about something.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "debris": {
+    "concept": "things_break",
+    "pos": "mass noun",
+    "definition": "Debris is the broken pieces left after something has been broken, such as by a storm.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "degree": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A degree is a small unit for measuring how hot or cold something is, or how wide an angle is.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "energy": {
+    "concept": "force",
+    "pos": "mass noun",
+    "definition": "Energy is what is needed to make things move, heat up, light up or work.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "equator": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The equator is a line drawn around the middle of the earth on maps, an equal distance from the top and the bottom.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "gravity": {
+    "concept": "force",
+    "pos": "mass noun",
+    "definition": "Gravity is the force that pulls things down toward the ground and keeps the moon going around the earth.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "infrastructure": {
+    "concept": "component_and_system",
+    "pos": "mass noun",
+    "definition": "Infrastructure is the roads, bridges, wires and other things built so that a town or a country can work.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "latitude": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "Latitude is how far a place is north or south of the equator.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "lemon": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A lemon is a yellow fruit with a very sour juice.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "longitude": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "Longitude is how far a place is east or west of a line that runs from the top to the bottom of the earth.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "management": {
+    "concept": "someone_in_charge",
+    "pos": "mass noun",
+    "definition": "Management is the work of running something and deciding things for it, or the people who do this.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "marine": {
+    "concept": "liquid",
+    "pos": "adjective periphrastic",
+    "definition": "Marine means having to do with the sea.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "maximum": {
+    "concept": "more_and_fewer",
+    "pos": "noun",
+    "definition": "The maximum is the most there can be, or the biggest amount.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "meridian": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A meridian is a line drawn on a map of the earth from the top to the bottom.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "meter": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A meter is a unit of length about as long as a big step.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "monitor": {
+    "concept": "checking",
+    "pos": "verb",
+    "definition": "To monitor something is to watch it or check it over time.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "orbit": {
+    "concept": "cycle",
+    "pos": "noun",
+    "definition": "An orbit is the curved path that one thing takes as it goes around another, as the moon goes around the earth.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "oxygen": {
+    "concept": "air",
+    "pos": "mass noun",
+    "definition": "Oxygen is a gas in the air that people and animals need to breathe to stay alive.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "parallel": {
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "definition": "Parallel lines go the same way and are always the same distance apart, so they never meet.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "particle": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A particle is a very small piece of something.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "percentage": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A percentage is an amount told as a number out of one hundred.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "phase": {
+    "concept": "cycle",
+    "pos": "noun",
+    "definition": "A phase is one step in a series of changes, such as the shapes of the moon over a month.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "planet": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A planet is a very large round world that goes around a star, as the earth goes around the sun.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "process": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "A process is a set of steps or changes that happen one after another to make or do something.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "ray": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A ray is a thin line of light, such as from the sun.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "research": {
+    "concept": "finding_out",
+    "pos": "mass noun",
+    "definition": "Research is careful study to find out new facts.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "shoreline": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The shoreline is the line where the land meets the sea or a lake.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "solar": {
+    "concept": "heat",
+    "pos": "adjective periphrastic",
+    "definition": "Solar means having to do with the sun, or made by the sun.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "sour": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Sour is a sharp taste, like the taste of milk that has gone bad.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "spectrum": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A spectrum is the full set of colors that white light is made of, from red to violet.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "sugar": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Sugar is a sweet white or brown powder, made from some plants, that people add to food and drink.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "surge": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A surge is a sudden rise, such as a rise of the sea during a storm.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "sustain": {
+    "concept": "keeping_going",
+    "pos": "verb",
+    "definition": "To sustain something is to keep it going over time.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "sweet": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Sweet is the taste of honey and of most fruit.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "tart": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Tart means a little sour.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "ultraviolet": {
+    "concept": "physical_property",
+    "pos": "",
+    "definition": "Ultraviolet light is a kind of light from the sun that people cannot see and that can burn the skin.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "update": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To update something is to make it new by adding the latest facts.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  },
+  "upgrade": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To upgrade something is to make it better or newer.",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+  }
+}

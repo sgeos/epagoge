@@ -51,6 +51,14 @@ Versioning.
   removal, counting without naming words the private disclosure pattern
   withholds. Irregular inflections for lay, ride, send and occur.
 
+- Operator decisions. Ostensive words are defined as well as shown, and
+  coverage counts them. The curriculum uses US spelling. Stale level-one
+  substitution bans are removed and the level-one check gates. Eighty-three
+  nouns declare a part of speech. Sweet, sour, sugar, lemon, cake, tart and
+  42 technical words are admitted in
+  `evals/review/level_2_operator_decisions/`. Level two rose to 1,232
+  headwords, measured, leaving 8,768.
+
 ### Fixed
 
 - `tools/scrub_scan.sh` matched neither plurals of withheld terms nor, in its

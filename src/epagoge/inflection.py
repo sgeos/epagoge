@@ -34,6 +34,7 @@ NO_DOUBLE_MULTISYLLABIC: Final[frozenset[str]] = frozenset(
         "enter",
         "happen",
         "listen",
+        "monitor",
         "offer",
         "open",
         "order",
@@ -371,6 +372,7 @@ IRREGULAR_PLURAL: Final[dict[str, str]] = {
     "species": "species",
     # Admitted at level two on 2026-10-07. The rule gave `potatos`.
     "potato": "potatoes",
+    "axis": "axes",
 }
 """Plurals not derivable from spelling. A word mapping to itself has no
 distinct plural, which is a fact about the word and not a gap."""

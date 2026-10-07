@@ -311,6 +311,16 @@
       ]
     },
     {
+      "word": "advisory",
+      "concept": "being_told",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "advisories"
+      ]
+    },
+    {
       "word": "affect",
       "concept": "cause_and_effect",
       "level": 2,
@@ -479,6 +489,16 @@
       ]
     },
     {
+      "word": "antenna",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "antennas"
+      ]
+    },
+    {
       "word": "anyone",
       "concept": "person",
       "level": 1
@@ -602,6 +622,16 @@
       "level": 6
     },
     {
+      "word": "atmosphere",
+      "concept": "air",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "atmospheres"
+      ]
+    },
+    {
       "word": "attempting",
       "concept": "explanation",
       "level": 6
@@ -636,6 +666,16 @@
       ]
     },
     {
+      "word": "average",
+      "concept": "same_amount",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "averages"
+      ]
+    },
+    {
       "word": "avoid",
       "concept": "danger",
       "level": 6
@@ -644,6 +684,16 @@
       "word": "awake",
       "concept": "living_and_not_living",
       "level": 1
+    },
+    {
+      "word": "axis",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "axes"
+      ]
     },
     {
       "word": "baby",
@@ -1515,6 +1565,16 @@
       ]
     },
     {
+      "word": "cake",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "cakes"
+      ]
+    },
+    {
       "word": "call",
       "concept": "sound",
       "level": 1,
@@ -1578,6 +1638,13 @@
       "forms": [
         "cars"
       ]
+    },
+    {
+      "word": "carbon",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
     },
     {
       "word": "care",
@@ -1787,6 +1854,16 @@
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
     },
     {
+      "word": "chemical",
+      "concept": "material",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "chemicals"
+      ]
+    },
+    {
       "word": "cherry",
       "concept": "plant",
       "level": 2,
@@ -1845,6 +1922,13 @@
       "forms": [
         "circles"
       ]
+    },
+    {
+      "word": "circulation",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
     },
     {
       "word": "city",
@@ -2420,6 +2504,16 @@
       ]
     },
     {
+      "word": "cyclone",
+      "concept": "weather",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "cyclones"
+      ]
+    },
+    {
       "word": "dad",
       "concept": "family",
       "level": 1,
@@ -2480,6 +2574,13 @@
       ]
     },
     {
+      "word": "data",
+      "concept": "written_record",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
       "word": "daughter",
       "concept": "family",
       "level": 1,
@@ -2533,6 +2634,13 @@
       ]
     },
     {
+      "word": "debris",
+      "concept": "things_break",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
       "word": "decide",
       "concept": "settling_it",
       "level": 1,
@@ -2570,6 +2678,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "forms": [
         "definitions"
+      ]
+    },
+    {
+      "word": "degree",
+      "concept": "unit",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "degrees"
       ]
     },
     {
@@ -3171,6 +3289,13 @@
       ]
     },
     {
+      "word": "energy",
+      "concept": "force",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
       "word": "enough",
       "concept": "enough",
       "level": 1
@@ -3190,6 +3315,16 @@
       "word": "equal",
       "concept": "same_amount",
       "level": 1
+    },
+    {
+      "word": "equator",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "equators"
+      ]
     },
     {
       "word": "escape",
@@ -4173,6 +4308,13 @@
       "pos": "mass noun"
     },
     {
+      "word": "gravity",
+      "concept": "force",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
       "word": "gray",
       "concept": "physical_property",
       "level": 1,
@@ -4880,6 +5022,13 @@
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
+      "word": "infrastructure",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
       "word": "ingredient",
       "concept": "raw_and_made",
       "level": 2,
@@ -5187,6 +5336,16 @@
       ]
     },
     {
+      "word": "latitude",
+      "concept": "measuring",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "latitudes"
+      ]
+    },
+    {
       "word": "laugh",
       "concept": "feeling",
       "level": 1,
@@ -5281,6 +5440,16 @@
       "pos": "noun",
       "forms": [
         "legs"
+      ]
+    },
+    {
+      "word": "lemon",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "lemons"
       ]
     },
     {
@@ -5545,6 +5714,16 @@
       "level": 1
     },
     {
+      "word": "longitude",
+      "concept": "measuring",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "longitudes"
+      ]
+    },
+    {
       "word": "looking",
       "concept": "finding_out",
       "level": 1
@@ -5637,6 +5816,13 @@
       ]
     },
     {
+      "word": "management",
+      "concept": "someone_in_charge",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
       "word": "manner",
       "concept": "way_of_doing",
       "level": 1,
@@ -5658,6 +5844,13 @@
       "forms": [
         "maps"
       ]
+    },
+    {
+      "word": "marine",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
     },
     {
       "word": "mark",
@@ -5711,6 +5904,16 @@
       "pos": "noun",
       "forms": [
         "materials"
+      ]
+    },
+    {
+      "word": "maximum",
+      "concept": "more_and_fewer",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "maximums"
       ]
     },
     {
@@ -5814,6 +6017,16 @@
       ]
     },
     {
+      "word": "meridian",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "meridians"
+      ]
+    },
+    {
       "word": "merry",
       "concept": "feeling",
       "level": 2,
@@ -5838,6 +6051,16 @@
       "concept": "metal",
       "level": 1,
       "pos": "mass noun"
+    },
+    {
+      "word": "meter",
+      "concept": "unit",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "meters"
+      ]
     },
     {
       "word": "method",
@@ -5992,6 +6215,18 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
+      "word": "monitor",
+      "concept": "checking",
+      "level": 2,
+      "pos": "verb",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "monitored",
+        "monitoring",
+        "monitors"
+      ]
     },
     {
       "word": "month",
@@ -6549,6 +6784,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
+      "word": "orbit",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "orbits"
+      ]
+    },
+    {
       "word": "order",
       "concept": "doing_in_order",
       "level": 1,
@@ -6603,6 +6848,13 @@
         "owning",
         "owns"
       ]
+    },
+    {
+      "word": "oxygen",
+      "concept": "air",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
     },
     {
       "word": "pace",
@@ -6676,6 +6928,13 @@
       "pos": "mass noun"
     },
     {
+      "word": "parallel",
+      "concept": "shape",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
       "word": "parcel",
       "concept": "household_object",
       "level": 2,
@@ -6701,6 +6960,16 @@
       "pos": "noun",
       "forms": [
         "parts"
+      ]
+    },
+    {
+      "word": "particle",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "particles"
       ]
     },
     {
@@ -6795,6 +7064,16 @@
       "level": 6
     },
     {
+      "word": "percentage",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "percentages"
+      ]
+    },
+    {
       "word": "perfect",
       "concept": "good_and_bad",
       "level": 2,
@@ -6823,6 +7102,16 @@
       "pos": "noun",
       "forms": [
         "people"
+      ]
+    },
+    {
+      "word": "phase",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "phases"
       ]
     },
     {
@@ -6908,6 +7197,16 @@
         "planned",
         "planning",
         "plans"
+      ]
+    },
+    {
+      "word": "planet",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "planets"
       ]
     },
     {
@@ -7177,6 +7476,16 @@
       "level": 5
     },
     {
+      "word": "process",
+      "concept": "way_of_doing",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "processes"
+      ]
+    },
+    {
       "word": "produce",
       "concept": "change",
       "level": 5
@@ -7408,6 +7717,16 @@
       "level": 1
     },
     {
+      "word": "ray",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "rays"
+      ]
+    },
+    {
       "word": "reach",
       "concept": "can_and_cannot",
       "level": 1,
@@ -7612,6 +7931,13 @@
         "requesting",
         "requests"
       ]
+    },
+    {
+      "word": "research",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
     },
     {
       "word": "response",
@@ -8324,6 +8650,16 @@
       ]
     },
     {
+      "word": "shoreline",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "shorelines"
+      ]
+    },
+    {
       "word": "short",
       "concept": "physical_property",
       "level": 1,
@@ -8763,6 +9099,13 @@
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
     },
     {
+      "word": "solar",
+      "concept": "heat",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
       "word": "soldier",
       "concept": "person",
       "level": 2,
@@ -8845,6 +9188,17 @@
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
     },
     {
+      "word": "sour",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "sourer",
+        "sourest"
+      ]
+    },
+    {
       "word": "south",
       "concept": "direction",
       "level": 2,
@@ -8887,6 +9241,16 @@
       "level": 2,
       "pos": "noun",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "spectrum",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "spectrums"
+      ]
     },
     {
       "word": "speed",
@@ -9395,6 +9759,13 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
+      "word": "sugar",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
       "word": "summer",
       "concept": "cycle",
       "level": 2,
@@ -9497,6 +9868,16 @@
       ]
     },
     {
+      "word": "surge",
+      "concept": "weather",
+      "level": 2,
+      "pos": "noun",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "surges"
+      ]
+    },
+    {
       "word": "surprise",
       "concept": "feeling",
       "level": 2,
@@ -9506,6 +9887,18 @@
         "surprised",
         "surprises",
         "surprising"
+      ]
+    },
+    {
+      "word": "sustain",
+      "concept": "keeping_going",
+      "level": 2,
+      "pos": "verb",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "sustained",
+        "sustaining",
+        "sustains"
       ]
     },
     {
@@ -9528,6 +9921,17 @@
         "swapped",
         "swapping",
         "swaps"
+      ]
+    },
+    {
+      "word": "sweet",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "sweeter",
+        "sweetest"
       ]
     },
     {
@@ -9643,6 +10047,17 @@
         "tapped",
         "tapping",
         "taps"
+      ]
+    },
+    {
+      "word": "tart",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "tarter",
+        "tartest"
       ]
     },
     {
@@ -10209,6 +10624,12 @@
       "level": 1
     },
     {
+      "word": "ultraviolet",
+      "concept": "physical_property",
+      "level": 2,
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
       "word": "unable",
       "concept": "can_and_cannot",
       "level": 1
@@ -10333,6 +10754,30 @@
       "word": "until",
       "concept": "sequence",
       "level": 1
+    },
+    {
+      "word": "update",
+      "concept": "change",
+      "level": 2,
+      "pos": "verb",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "updated",
+        "updates",
+        "updating"
+      ]
+    },
+    {
+      "word": "upgrade",
+      "concept": "change",
+      "level": 2,
+      "pos": "verb",
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "forms": [
+        "upgraded",
+        "upgrades",
+        "upgrading"
+      ]
     },
     {
       "word": "upon",
@@ -11144,6 +11589,8 @@
     "one",
     "red",
     "small",
+    "sour",
+    "sweet",
     "three",
     "two",
     "water",

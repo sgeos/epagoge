@@ -56,6 +56,10 @@
       "concept": "changing_your_mind"
     },
     {
+      "word": "advisory",
+      "concept": "being_told"
+    },
+    {
       "word": "affect",
       "concept": "cause_and_effect"
     },
@@ -169,6 +173,10 @@
       ]
     },
     {
+      "word": "antenna",
+      "concept": "household_object"
+    },
+    {
       "word": "anyone",
       "concept": "person"
     },
@@ -227,6 +235,10 @@
       ]
     },
     {
+      "word": "atmosphere",
+      "concept": "air"
+    },
+    {
       "word": "aunt",
       "concept": "family",
       "antonyms": [
@@ -242,11 +254,19 @@
       "concept": "cycle"
     },
     {
+      "word": "average",
+      "concept": "same_amount"
+    },
+    {
       "word": "awake",
       "concept": "living_and_not_living",
       "antonyms": [
         "asleep"
       ]
+    },
+    {
+      "word": "axis",
+      "concept": "shape"
     },
     {
       "word": "baby",
@@ -710,6 +730,10 @@
       "concept": "household_object"
     },
     {
+      "word": "cake",
+      "concept": "raw_and_made"
+    },
+    {
       "word": "call",
       "concept": "sound"
     },
@@ -739,6 +763,10 @@
     {
       "word": "car",
       "concept": "household_object"
+    },
+    {
+      "word": "carbon",
+      "concept": "material"
     },
     {
       "word": "care",
@@ -825,6 +853,10 @@
       "concept": "raw_and_made"
     },
     {
+      "word": "chemical",
+      "concept": "material"
+    },
+    {
       "word": "cherry",
       "concept": "plant"
     },
@@ -850,6 +882,10 @@
     {
       "word": "circle",
       "concept": "shape"
+    },
+    {
+      "word": "circulation",
+      "concept": "cycle"
     },
     {
       "word": "city",
@@ -1128,6 +1164,10 @@
       ]
     },
     {
+      "word": "cyclone",
+      "concept": "weather"
+    },
+    {
       "word": "dad",
       "concept": "family",
       "synonyms": [
@@ -1156,6 +1196,10 @@
       "antonyms": [
         "bright"
       ]
+    },
+    {
+      "word": "data",
+      "concept": "written_record"
     },
     {
       "word": "daughter",
@@ -1191,6 +1235,10 @@
       "concept": "dying"
     },
     {
+      "word": "debris",
+      "concept": "things_break"
+    },
+    {
       "word": "decide",
       "concept": "settling_it"
     },
@@ -1208,6 +1256,10 @@
     {
       "word": "definition",
       "concept": "word"
+    },
+    {
+      "word": "degree",
+      "concept": "unit"
     },
     {
       "word": "dense",
@@ -1521,6 +1573,10 @@
       ]
     },
     {
+      "word": "energy",
+      "concept": "force"
+    },
+    {
       "word": "enough",
       "concept": "enough"
     },
@@ -1531,6 +1587,10 @@
     {
       "word": "equal",
       "concept": "same_amount"
+    },
+    {
+      "word": "equator",
+      "concept": "spatial_position"
     },
     {
       "word": "escape",
@@ -2092,6 +2152,10 @@
       "concept": "plant"
     },
     {
+      "word": "gravity",
+      "concept": "force"
+    },
+    {
       "word": "gray",
       "concept": "physical_property"
     },
@@ -2486,6 +2550,10 @@
       "concept": "knowing"
     },
     {
+      "word": "infrastructure",
+      "concept": "component_and_system"
+    },
+    {
       "word": "ingredient",
       "concept": "raw_and_made"
     },
@@ -2658,6 +2726,10 @@
       ]
     },
     {
+      "word": "latitude",
+      "concept": "measuring"
+    },
+    {
       "word": "laugh",
       "concept": "feeling",
       "antonyms": [
@@ -2713,6 +2785,10 @@
     {
       "word": "leg",
       "concept": "body_part"
+    },
+    {
+      "word": "lemon",
+      "concept": "plant"
     },
     {
       "word": "length",
@@ -2869,6 +2945,10 @@
       "concept": "measuring"
     },
     {
+      "word": "longitude",
+      "concept": "measuring"
+    },
+    {
       "word": "looking",
       "concept": "finding_out"
     },
@@ -2931,6 +3011,10 @@
       "concept": "can_and_cannot"
     },
     {
+      "word": "management",
+      "concept": "someone_in_charge"
+    },
+    {
       "word": "manner",
       "concept": "way_of_doing",
       "synonyms": [
@@ -2950,6 +3034,10 @@
     {
       "word": "map",
       "concept": "standing_for"
+    },
+    {
+      "word": "marine",
+      "concept": "liquid"
     },
     {
       "word": "mark",
@@ -2980,6 +3068,10 @@
     {
       "word": "material",
       "concept": "material"
+    },
+    {
+      "word": "maximum",
+      "concept": "more_and_fewer"
     },
     {
       "word": "maybe",
@@ -3033,6 +3125,10 @@
       "concept": "person"
     },
     {
+      "word": "meridian",
+      "concept": "spatial_position"
+    },
+    {
       "word": "merry",
       "concept": "feeling"
     },
@@ -3043,6 +3139,10 @@
     {
       "word": "metal",
       "concept": "metal"
+    },
+    {
+      "word": "meter",
+      "concept": "unit"
     },
     {
       "word": "method",
@@ -3122,6 +3222,10 @@
     {
       "word": "money",
       "concept": "exchange"
+    },
+    {
+      "word": "monitor",
+      "concept": "checking"
     },
     {
       "word": "month",
@@ -3483,6 +3587,10 @@
       "concept": "physical_property"
     },
     {
+      "word": "orbit",
+      "concept": "cycle"
+    },
+    {
       "word": "order",
       "concept": "doing_in_order"
     },
@@ -3521,6 +3629,10 @@
       "concept": "having"
     },
     {
+      "word": "oxygen",
+      "concept": "air"
+    },
+    {
       "word": "pace",
       "concept": "moving_and_still"
     },
@@ -3556,6 +3668,10 @@
       "concept": "material"
     },
     {
+      "word": "parallel",
+      "concept": "shape"
+    },
+    {
       "word": "parcel",
       "concept": "household_object"
     },
@@ -3566,6 +3682,10 @@
     {
       "word": "part",
       "concept": "component_and_system"
+    },
+    {
+      "word": "particle",
+      "concept": "quantity"
     },
     {
       "word": "pass",
@@ -3615,6 +3735,10 @@
       "concept": "unit"
     },
     {
+      "word": "percentage",
+      "concept": "quantity"
+    },
+    {
       "word": "perfect",
       "concept": "good_and_bad"
     },
@@ -3629,6 +3753,10 @@
     {
       "word": "person",
       "concept": "person"
+    },
+    {
+      "word": "phase",
+      "concept": "cycle"
     },
     {
       "word": "phrase",
@@ -3668,6 +3796,10 @@
     {
       "word": "plan",
       "concept": "plan"
+    },
+    {
+      "word": "planet",
+      "concept": "spatial_position"
     },
     {
       "word": "plant",
@@ -3792,6 +3924,10 @@
     {
       "word": "pretty",
       "concept": "good_and_bad"
+    },
+    {
+      "word": "process",
+      "concept": "way_of_doing"
     },
     {
       "word": "promise",
@@ -3921,6 +4057,10 @@
       ]
     },
     {
+      "word": "ray",
+      "concept": "physical_property"
+    },
+    {
       "word": "reach",
       "concept": "can_and_cannot"
     },
@@ -4014,6 +4154,10 @@
     {
       "word": "request",
       "concept": "asking"
+    },
+    {
+      "word": "research",
+      "concept": "finding_out"
     },
     {
       "word": "response",
@@ -4390,6 +4534,10 @@
       "concept": "spatial_position"
     },
     {
+      "word": "shoreline",
+      "concept": "spatial_position"
+    },
+    {
       "word": "short",
       "concept": "physical_property",
       "antonyms": [
@@ -4640,6 +4788,10 @@
       "concept": "physical_property"
     },
     {
+      "word": "solar",
+      "concept": "heat"
+    },
+    {
       "word": "soldier",
       "concept": "person"
     },
@@ -4695,6 +4847,10 @@
       "concept": "needing_supply"
     },
     {
+      "word": "sour",
+      "concept": "physical_property"
+    },
+    {
       "word": "south",
       "concept": "direction"
     },
@@ -4723,6 +4879,10 @@
     {
       "word": "species",
       "concept": "living_and_not_living"
+    },
+    {
+      "word": "spectrum",
+      "concept": "physical_property"
     },
     {
       "word": "speed",
@@ -4972,6 +5132,10 @@
       "concept": "duration"
     },
     {
+      "word": "sugar",
+      "concept": "material"
+    },
+    {
       "word": "summer",
       "concept": "cycle"
     },
@@ -5018,8 +5182,16 @@
       "concept": "shape"
     },
     {
+      "word": "surge",
+      "concept": "weather"
+    },
+    {
       "word": "surprise",
       "concept": "feeling"
+    },
+    {
+      "word": "sustain",
+      "concept": "keeping_going"
     },
     {
       "word": "swallow",
@@ -5031,6 +5203,10 @@
       "synonyms": [
         "trade"
       ]
+    },
+    {
+      "word": "sweet",
+      "concept": "physical_property"
     },
     {
       "word": "swim",
@@ -5098,6 +5274,10 @@
     {
       "word": "tap",
       "concept": "touching"
+    },
+    {
+      "word": "tart",
+      "concept": "physical_property"
     },
     {
       "word": "task",
@@ -5423,6 +5603,10 @@
       "concept": "number_word_order"
     },
     {
+      "word": "ultraviolet",
+      "concept": "physical_property"
+    },
+    {
       "word": "unable",
       "concept": "can_and_cannot",
       "antonyms": [
@@ -5533,6 +5717,14 @@
       "antonyms": [
         "down"
       ]
+    },
+    {
+      "word": "update",
+      "concept": "change"
+    },
+    {
+      "word": "upgrade",
+      "concept": "change"
     },
     {
       "word": "upon",

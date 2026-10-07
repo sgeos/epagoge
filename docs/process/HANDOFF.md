@@ -2,122 +2,110 @@
 
 ## Validity check and continuity stamp
 
-Stamped 2026-10-07 at 17:09 Coordinated Universal Time. The verified base is
-`336545b5e6cb0327d73614cde23bb5e6c608e6b0`, the multi-source commit.
-This is an ancestry anchor, not the revision containing this document. A later documentation commit does not invalidate
-it merely by changing the current revision.
-
-At the stamp the full local gate passed on the base with 625 tests and no
-skips, zero type errors or warnings, 96 percent core coverage, 92 percent
-reported training coverage and a clean disclosure scan. The base is not
-pushed, so no continuous integration result exists for it.
+Stamped 2026-10-07. The ancestry anchor is
+`d553c135ec9cbebc81461509d4aae83b183aa05a`, the commit that restamped the
+books edited for US spelling. It is not the revision containing this
+document. The operator authorized pushing this work. Verify the remote
+revision and the continuous integration result for it rather than inferring
+either from this stamp.
 
 Read `CLAUDE.md` and run these checks before relying on the state below.
 
     git status --short
-    git merge-base --is-ancestor 336545b5e6cb0327d73614cde23bb5e6c608e6b0 HEAD
-    git log --oneline 336545b5e6cb0327d73614cde23bb5e6c608e6b0..HEAD
+    git merge-base --is-ancestor d553c135ec9cbebc81461509d4aae83b183aa05a HEAD
+    git log --oneline d553c135ec9cbebc81461509d4aae83b183aa05a..HEAD
     .venv/bin/python tools/measure_lexicon_increment.py \
-      evals/review/level_2_multi_source \
-      --check evals/review/level_2_multi_source/measurement.json
+      evals/review/level_2_operator_decisions \
+      --check evals/review/level_2_operator_decisions/measurement.json
 
 A passing measurement check means the lexicon counts below match the tree.
 It fails by design once any later batch changes the vocabulary, and the
-measurements of every earlier batch, including the two earlier batches of
-this session, already fail for that reason. A failure then marks the counts
-below as stale rather than wrong. Missing host artifacts make the associated
-checks unverified rather than disproved.
+measurements of every earlier batch already fail for that reason. A failure
+then marks the counts below as stale rather than wrong. Missing host
+artifacts make the associated checks unverified rather than disproved.
 
 ## Current authority and task status
 
-A self-directed loop ran three scopes on 2026-10-07 and was **cancelled by
-the operator** during the third. The third scope was finished before
-stopping. No loop, wakeup or background job remains. **No further scope is
-open.** `CURRENT_BRIEF.md` and `COMPLETION_CONDITION.md` describe the third
-scope and are evidence of delivered work, not instructions to repeat it. The
-first two briefs and conditions are preserved as `previous_*.md` in
-`evals/review/level_2_food_blockers/` and
-`evals/review/level_2_multi_source/`. Earlier handoffs in
-`HANDOFF_HISTORY.md` are historical evidence. Durable failure analysis is in
+On 2026-10-07 a self-directed loop ran three lexical scopes and was
+cancelled by the operator. The operator then decided the six open items it
+left, and that scope is described by `CURRENT_BRIEF.md` and
+`COMPLETION_CONDITION.md`. **No further scope is open.** The brief and
+condition are evidence of delivered work, not instructions to repeat it.
+Earlier briefs and conditions are preserved as `previous_*.md` beside the
+review records that followed them. Earlier handoffs in `HANDOFF_HISTORY.md`
+are historical evidence. Durable failure analysis is in
 `PROCESS_STRATEGY.md`.
 
-The work was committed locally. **It was not pushed**, because no
-authorization to publish was given for these scopes and publication is asked
-for separately. Check `git status` and the remote before assuming either.
-Continuous integration has therefore not run on these commits.
+## Operator decisions of 2026-10-07
 
-## What these scopes delivered
+1. **All words are shown and defined.** Ostensive words stay grounded by
+   showing and now also need a definition. All have one. Sweet and sour are
+   admitted at level two as ostensive and defined. **Function words were read
+   as outside this decision**, because they cannot be shown and name no
+   concept. That reading is the agent's and is open for the operator.
+2. **US English.** The curriculum uses color, gray and toward. The
+   substitution table points British forms at US forms. Documentation prose
+   is still British and was not converted.
+3. **Substitution contradictions.** The level-one bans were stale and are
+   removed. A key admissible at level one now fails the gate.
+4. **Missing parts of speech.** Eighty-three nouns now declare noun or mass
+   noun, so skies, men and thirty-eight other plurals are admissible.
+   Adjectives, adverbs and inflections filed as headwords were not changed.
+5. **Technical words.** Forty-three of the 44 are admitted. Electromagnetic
+   waits on electricity and magnet.
+6. **Commit and push.** Authorized for this work.
 
-**Three agent-authored lexical batches.** No teacher ran in any of them,
-because host swap was nearly exhausted when the session began, and each
-batch's `authoring.json` records that.
+## What the session delivered
 
 | Batch | Pool | Entries | Admitted | Deferred | Excluded |
 | --- | --- | --- | --- | --- | --- |
 | `level_2_era_overlap` | Scan words frequent in both eras | 146 | 83 | 20 | 43 |
 | `level_2_food_blockers` | Blockers of retained rejections | 57 | 36 | 13 | 8 |
 | `level_2_multi_source` | Scan words frequent in two sources | 183 | 100 | 68 | 15 |
+| `level_2_operator_decisions` | Taste words and technical deferrals | 57 | 48 | 1 | 8 |
 
-Measured on the final tree, level two admits 1,185 distinct headwords, up
-from 966 at the start of the session, leaving 8,815 to the approximate
-ten-thousand-word target. Level one remains at 849. Required definition
-coverage is 812 of 812 at level one and 1,148 of 1,148 at level two, with
-complete closure at both. All level-one books, the reference checkpoint and
-every earlier review artifact match their recorded hashes.
+No teacher ran in any batch, because host swap was nearly exhausted when the
+session began, and each `authoring.json` records that. Measured on the final
+tree, level two admits 1,232 distinct headwords, up from 966 at the start of
+the session, leaving 8,768 to the approximate ten-thousand-word target. Level
+one remains at 849. Required definition coverage, now including ostensive
+words, is 849 of 849 at level one and 1,232 of 1,232 at level two, with
+complete closure at both.
 
-**Tools for lexical growth.** The measurement tool accounts for a batch that
-declares no teacher ran. `tools/blocking_words.py` ranks words outside a
-level by the retained rejected definitions they blocked.
-`tools/candidate_pool.py` selects a pool from a scan report by stated rules,
-records every removal, and counts without naming words withheld by the
-private disclosure pattern. Tests cover all three.
-
-**Prompts no longer ban admitted words.** `substitutions_at` drops a
-substitution key admissible at the prompted level, and every generator now
-uses it. `tools/check_substitutions.py` reports the remaining contradictions
-in the gate without failing.
+**Tools.** The measurement tool accounts for a batch that declares no teacher
+ran. `tools/blocking_words.py` ranks words by the retained rejected
+definitions they blocked. `tools/candidate_pool.py` selects a pool by stated
+rules and counts without naming words the private disclosure pattern
+withholds. `tools/check_substitutions.py` gates level one and reports level
+two. Prompts drop substitution keys admissible at the prompted level.
 
 **The disclosure scan had three holes, now closed.** It missed plurals of
-withheld terms, its second pass was case-sensitive, and it printed clean over
-no files when its temporary file could not be created. Each fix was shown
-failing on a probe. `PROCESS_STRATEGY.md` records the lesson.
+withheld terms, its line-break pass was case-sensitive, and it printed clean
+over no files when its temporary file could not be created.
 
 **Inflection tables.** Strike, lay, ride, send and occur are irregular. Offer,
-scatter and travel do not double. Species and potato have their plurals
-recorded. Each was found by the gate or by the rule producing a wrong form.
+scatter, travel and monitor do not double. Species, potato and axis have their
+plurals recorded.
 
 ## Open items for the operator
 
-These are recorded findings, not authorized work.
-
-1. **Sweet and sour.** These are sensory qualities like the ostensive
-   colours, and an ostensive admission would enlarge the seed. Measured:
-   sweet blocked 16 retained rejected definitions, but most of the words it
-   blocked were definable without it. What sweet and sour still block in the
-   record is lemon, cake, sugar and tart.
-2. **Color and colour.** Color is admitted at level two although the
-   substitution table maps it to colour. This resembles the spelling
-   decision that refused gray.
-3. **Seven level-one contradictions.** Beside, cause, great, greater,
-   length, single and unknown are admitted at level one and also listed as
-   substitutions. Either the ban or the admission is stale.
-4. **Level-one entries without a part of speech.** Sky and man declare none,
-   so skies and men are not admissible anywhere.
-5. **Technical deferrals.** The multi-source batch deferred 44 technical
-   words by agent judgement, pending a level-two schedule unit that needs
-   them. Whether any belong at level two is a curriculum decision.
-6. **Publication** of the local commits.
+1. **Function words.** Whether the and, of and the other function words should
+   also be defined. They have no concept to file a dictionary record under, so
+   doing so needs a decision about how such records are classified.
+2. **Documentation spelling.** Whether documentation prose should also move
+   to US English.
+3. **Archaic and other deferrals.** Words deferred as archaic, religious or
+   sense-ambiguous remain deferred, each with a reason in its review record.
 
 ## Recommended next work
 
-All three pools used in this session are exhausted. `tools/candidate_pool.py`
-can produce the next one by relaxing the source rule to one source, which
-leaves roughly 1,800 words that need much heavier archaism and technicality
-judgement. A different, unmeasured route is to draft level-two books, since no
-level-two book uses any word admitted in this session and the coverage rule
-is therefore unmet at level two. Drafting needs the teacher, so check host
-memory first. Neither throughput nor the semantic quality of agent-authored
-definitions has been measured.
+All pools used in this session are exhausted. `tools/candidate_pool.py` can
+produce the next by relaxing the source rule to one source, which leaves
+roughly 1,800 words needing heavier judgement. A different route is drafting
+level-two books, since no level-two book uses any word admitted in this
+session and the coverage rule is unmet at level two. Drafting needs the
+teacher, so check host memory first. Neither throughput nor the semantic
+quality of agent-authored definitions has been measured.
 
 ## Restart verification
 

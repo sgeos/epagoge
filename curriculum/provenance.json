@@ -111,6 +111,10 @@
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
     },
+    "advisory": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "affect": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
@@ -293,6 +297,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "antenna": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "anyone": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -413,6 +421,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "atmosphere": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "attempting": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -447,6 +459,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
       "evidence": "recorded at admission"
     },
+    "average": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "avoid": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -462,6 +478,10 @@
       "criterion": "inflection",
       "admitted_because": "A form of an admitted word, added because a word admitted in one form is a trap for a generator constrained to the level.",
       "evidence": "reconstructed from history"
+    },
+    "axis": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "baby": {
       "commit": "fe327c12ce59",
@@ -1290,6 +1310,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
       "evidence": "recorded at admission"
     },
+    "cake": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "call": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -1355,6 +1379,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "carbon": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "care": {
       "commit": "1a5ac29cc8b6",
@@ -1579,6 +1607,10 @@
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "evidence": "recorded at admission"
     },
+    "chemical": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "cherry": {
       "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
       "evidence": "recorded at admission"
@@ -1627,6 +1659,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "circulation": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "city": {
       "commit": "a2b7f4971801",
@@ -2155,6 +2191,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "cyclone": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "dad": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -2190,6 +2230,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "data": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "daughter": {
       "commit": "1a5ac29cc8b6",
@@ -2236,6 +2280,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "debris": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "decide": {
       "commit": "a0366a07b501",
       "date": "2026-09-25",
@@ -2270,6 +2318,10 @@
     },
     "definition": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "degree": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
       "evidence": "recorded at admission"
     },
     "dense": {
@@ -2817,6 +2869,10 @@
       "admitted_because": "A form of an admitted word, added because a word admitted in one form is a trap for a generator constrained to the level.",
       "evidence": "reconstructed from history"
     },
+    "energy": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "enough": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2840,6 +2896,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "equator": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "escape": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
@@ -3754,6 +3814,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "gravity": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "gray": {
       "source": "Renamed from grey on 2026-10-07 by operator decision to use US English; admitted at level one as grey",
       "evidence": "recorded at admission"
@@ -4421,6 +4485,10 @@
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
+    "infrastructure": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "ingredient": {
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "evidence": "recorded at admission"
@@ -4706,6 +4774,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "latitude": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "laugh": {
       "commit": "d1a98ab90049",
       "date": "2026-09-25",
@@ -4809,6 +4881,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "lemon": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "length": {
       "commit": "30e24e99276d",
@@ -5032,6 +5108,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "longitude": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "looking": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -5132,6 +5212,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "management": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "manner": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -5155,6 +5239,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "marine": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "mark": {
       "commit": "fe327c12ce59",
@@ -5187,6 +5275,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "maximum": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "maybe": {
       "commit": "a0366a07b501",
@@ -5292,6 +5384,10 @@
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
+    "meridian": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "merry": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
@@ -5311,6 +5407,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "meter": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "method": {
       "commit": "1a5ac29cc8b6",
@@ -5463,6 +5563,10 @@
     },
     "money": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "monitor": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
       "evidence": "recorded at admission"
     },
     "month": {
@@ -5970,6 +6074,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
+    "orbit": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "order": {
       "commit": "e8630c78135a",
       "date": "2026-09-24",
@@ -6037,6 +6145,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "oxygen": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "pace": {
       "commit": "ce2c954c366f",
@@ -6110,6 +6222,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "parallel": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "parcel": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
@@ -6129,6 +6245,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "particle": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "pass": {
       "commit": "9a7cdc6bc84c",
@@ -6218,6 +6338,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "percentage": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "perfect": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
@@ -6241,6 +6365,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "phase": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "phrase": {
       "commit": "1a5ac29cc8b6",
@@ -6313,6 +6441,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
+    },
+    "planet": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "plant": {
       "commit": "fe327c12ce59",
@@ -6542,6 +6674,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "process": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "produce": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -6745,6 +6881,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "ray": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "reach": {
       "commit": "1a5ac29cc8b6",
@@ -6965,6 +7105,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "research": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "response": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
@@ -7552,6 +7696,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "shoreline": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "short": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -7933,6 +8081,10 @@
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
+    "solar": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "sold": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -8030,6 +8182,10 @@
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "evidence": "recorded at admission"
     },
+    "sour": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "south": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
@@ -8076,6 +8232,10 @@
     },
     "species": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "spectrum": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
       "evidence": "recorded at admission"
     },
     "speed": {
@@ -8535,6 +8695,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
+    "sugar": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "summer": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -8622,8 +8786,16 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "surge": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "surprise": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "sustain": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
       "evidence": "recorded at admission"
     },
     "swallow": {
@@ -8649,6 +8821,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "sweet": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "swim": {
       "commit": "fe327c12ce59",
@@ -8777,6 +8953,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "tart": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "task": {
       "commit": "ce2c954c366f",
@@ -9380,6 +9560,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "ultraviolet": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
     "unable": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -9507,6 +9691,14 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "update": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
+    "upgrade": {
+      "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
     },
     "upon": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",

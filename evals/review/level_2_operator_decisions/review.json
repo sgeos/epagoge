@@ -1,0 +1,706 @@
+{
+  "advisories": {
+    "decision": "exclude",
+    "reason": "An inflected form of advisory, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "advisory": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "An advisory is a report that tells people about a danger, such as a coming storm, and what they should do.",
+    "concept": "being_told",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "advisories",
+      "advisory"
+    ],
+    "ostensive": false
+  },
+  "antenna": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "An antenna is a long, thin piece of metal that sends or receives sound and pictures through the air.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "antenna",
+      "antennas"
+    ],
+    "ostensive": false
+  },
+  "atmosphere": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "The atmosphere is the air all around the earth.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "atmosphere",
+      "atmospheres"
+    ],
+    "ostensive": false
+  },
+  "average": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition. The noun for the arithmetic mean, described without division, which is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "The average of some numbers is the one number they would each be if the whole amount were shared out between them in equal parts.",
+    "concept": "same_amount",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "average",
+      "averages"
+    ],
+    "ostensive": false
+  },
+  "axis": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition. The plural rule gave axises, so axis was added to the irregular plural table with axes.",
+    "definition_origin": "Agent-authored",
+    "definition": "An axis is a straight line that something turns around, like the line from the top to the bottom of the earth.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "axes",
+      "axis"
+    ],
+    "ostensive": false
+  },
+  "cake": {
+    "decision": "admit",
+    "reason": "Unblocked by operator decision one. Agent-authored introductory definition. Previously deferred because cake is distinguished from bread chiefly by sweetness.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cake is a sweet, soft food made from flour, eggs and sugar and baked in an oven.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "cake",
+      "cakes"
+    ],
+    "ostensive": false
+  },
+  "carbon": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Carbon is a material found in all living things and in wood and smoke.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "carbon"
+    ],
+    "ostensive": false
+  },
+  "chemical": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "A chemical is a material, often made by people, that can change other materials when they are mixed.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "chemical",
+      "chemicals"
+    ],
+    "ostensive": false
+  },
+  "circulation": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Circulation is the moving of something around and around, such as air around the earth or water through the sea.",
+    "concept": "cycle",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "circulation"
+    ],
+    "ostensive": false
+  },
+  "cyclone": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cyclone is a large storm in which the wind turns in a circle.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "cyclone",
+      "cyclones"
+    ],
+    "ostensive": false
+  },
+  "data": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition. Treated as a mass noun, as an early reader meets it.",
+    "definition_origin": "Agent-authored",
+    "definition": "Data are facts and numbers that people write down to find out about something.",
+    "concept": "written_record",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "data"
+    ],
+    "ostensive": false
+  },
+  "debris": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Debris is the broken pieces left after something has been broken, such as by a storm.",
+    "concept": "things_break",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "debris"
+    ],
+    "ostensive": false
+  },
+  "degree": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "A degree is a small unit for measuring how hot or cold something is, or how wide an angle is.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "degree",
+      "degrees"
+    ],
+    "ostensive": false
+  },
+  "degrees": {
+    "decision": "exclude",
+    "reason": "An inflected form of degree, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "electromagnetic": {
+    "decision": "defer",
+    "reason": "An introductory definition needs electricity and magnet, neither of which is admitted. Admitting them would widen this batch beyond the operator's decision."
+  },
+  "energy": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Energy is what is needed to make things move, heat up, light up or work.",
+    "concept": "force",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "energy"
+    ],
+    "ostensive": false
+  },
+  "equator": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "The equator is a line drawn around the middle of the earth on maps, an equal distance from the top and the bottom.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "equator",
+      "equators"
+    ],
+    "ostensive": false
+  },
+  "gravity": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Gravity is the force that pulls things down toward the ground and keeps the moon going around the earth.",
+    "concept": "force",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "gravity"
+    ],
+    "ostensive": false
+  },
+  "infrastructure": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Infrastructure is the roads, bridges, wires and other things built so that a town or a country can work.",
+    "concept": "component_and_system",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "infrastructure"
+    ],
+    "ostensive": false
+  },
+  "latitude": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Latitude is how far a place is north or south of the equator.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "latitude",
+      "latitudes"
+    ],
+    "ostensive": false
+  },
+  "lemon": {
+    "decision": "admit",
+    "reason": "Unblocked by operator decision one. Agent-authored introductory definition. Previously deferred because every distinguishing account needed sour.",
+    "definition_origin": "Agent-authored",
+    "definition": "A lemon is a yellow fruit with a very sour juice.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "lemon",
+      "lemons"
+    ],
+    "ostensive": false
+  },
+  "longitude": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Longitude is how far a place is east or west of a line that runs from the top to the bottom of the earth.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "longitude",
+      "longitudes"
+    ],
+    "ostensive": false
+  },
+  "management": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Management is the work of running something and deciding things for it, or the people who do this.",
+    "concept": "someone_in_charge",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "management"
+    ],
+    "ostensive": false
+  },
+  "marine": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Marine means having to do with the sea.",
+    "concept": "liquid",
+    "pos": "adjective periphrastic",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "marine"
+    ],
+    "ostensive": false
+  },
+  "maximum": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "The maximum is the most there can be, or the biggest amount.",
+    "concept": "more_and_fewer",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "maximum",
+      "maximums"
+    ],
+    "ostensive": false
+  },
+  "meridian": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "A meridian is a line drawn on a map of the earth from the top to the bottom.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "meridian",
+      "meridians"
+    ],
+    "ostensive": false
+  },
+  "meter": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition. US spelling, per operator decision two. The measuring-device sense is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A meter is a unit of length about as long as a big step.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "meter",
+      "meters"
+    ],
+    "ostensive": false
+  },
+  "meters": {
+    "decision": "exclude",
+    "reason": "An inflected form of meter, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "monitor": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition. Classified as not doubling, giving monitored.",
+    "definition_origin": "Agent-authored",
+    "definition": "To monitor something is to watch it or check it over time.",
+    "concept": "checking",
+    "pos": "verb",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "monitor",
+      "monitored",
+      "monitoring",
+      "monitors"
+    ],
+    "ostensive": false
+  },
+  "orbit": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition. Noun only. The verb is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An orbit is the curved path that one thing takes as it goes around another, as the moon goes around the earth.",
+    "concept": "cycle",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "orbit",
+      "orbits"
+    ],
+    "ostensive": false
+  },
+  "orbits": {
+    "decision": "exclude",
+    "reason": "An inflected form of orbit, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "oxygen": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Oxygen is a gas in the air that people and animals need to breathe to stay alive.",
+    "concept": "air",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "oxygen"
+    ],
+    "ostensive": false
+  },
+  "parallel": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Parallel lines go the same way and are always the same distance apart, so they never meet.",
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "parallel"
+    ],
+    "ostensive": false
+  },
+  "particle": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "A particle is a very small piece of something.",
+    "concept": "quantity",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "particle",
+      "particles"
+    ],
+    "ostensive": false
+  },
+  "particles": {
+    "decision": "exclude",
+    "reason": "An inflected form of particle, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "percentage": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "A percentage is an amount told as a number out of one hundred.",
+    "concept": "quantity",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "percentage",
+      "percentages"
+    ],
+    "ostensive": false
+  },
+  "phase": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "A phase is one step in a series of changes, such as the shapes of the moon over a month.",
+    "concept": "cycle",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "phase",
+      "phases"
+    ],
+    "ostensive": false
+  },
+  "planet": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition. Defined through the admitted star and earth.",
+    "definition_origin": "Agent-authored",
+    "definition": "A planet is a very large round world that goes around a star, as the earth goes around the sun.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "planet",
+      "planets"
+    ],
+    "ostensive": false
+  },
+  "process": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition. Noun only. The verb is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A process is a set of steps or changes that happen one after another to make or do something.",
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "process",
+      "processes"
+    ],
+    "ostensive": false
+  },
+  "ray": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "A ray is a thin line of light, such as from the sun.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "ray",
+      "rays"
+    ],
+    "ostensive": false
+  },
+  "rays": {
+    "decision": "exclude",
+    "reason": "An inflected form of ray, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "research": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Research is careful study to find out new facts.",
+    "concept": "finding_out",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "research"
+    ],
+    "ostensive": false
+  },
+  "shoreline": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "The shoreline is the line where the land meets the sea or a lake.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "shoreline",
+      "shorelines"
+    ],
+    "ostensive": false
+  },
+  "solar": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "Solar means having to do with the sun, or made by the sun.",
+    "concept": "heat",
+    "pos": "adjective periphrastic",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "solar"
+    ],
+    "ostensive": false
+  },
+  "sour": {
+    "decision": "admit",
+    "reason": "Unblocked by operator decision one. Agent-authored introductory definition. Operator decision one. Admitted as ostensive and also defined. The definition uses spoiled milk rather than lemon, so lemon can depend on sour.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sour is a sharp taste, like the taste of milk that has gone bad.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "sour",
+      "sourer",
+      "sourest"
+    ],
+    "ostensive": true
+  },
+  "spectrum": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "A spectrum is the full set of colors that white light is made of, from red to violet.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "spectrum",
+      "spectrums"
+    ],
+    "ostensive": false
+  },
+  "sugar": {
+    "decision": "admit",
+    "reason": "Unblocked by operator decision one. Agent-authored introductory definition. Previously deferred because its replies defined it through sweet. Sweet is now grounded by showing, so the dependency is not circular. Mass noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sugar is a sweet white or brown powder, made from some plants, that people add to food and drink.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "sugar"
+    ],
+    "ostensive": false
+  },
+  "surge": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "A surge is a sudden rise, such as a rise of the sea during a storm.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "surge",
+      "surges"
+    ],
+    "ostensive": false
+  },
+  "sustain": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "To sustain something is to keep it going over time.",
+    "concept": "keeping_going",
+    "pos": "verb",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "sustain",
+      "sustained",
+      "sustaining",
+      "sustains"
+    ],
+    "ostensive": false
+  },
+  "sustained": {
+    "decision": "exclude",
+    "reason": "An inflected form of sustain, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "sweet": {
+    "decision": "admit",
+    "reason": "Unblocked by operator decision one. Agent-authored introductory definition. Operator decision one. Admitted as ostensive, so it is grounded by showing, and also defined. Honey grounds the definition without sugar.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sweet is the taste of honey and of most fruit.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "sweet",
+      "sweeter",
+      "sweetest"
+    ],
+    "ostensive": true
+  },
+  "tart": {
+    "decision": "admit",
+    "reason": "Unblocked by operator decision one. Agent-authored introductory definition. Previously deferred as a synonym of sour. Admitted in the taste sense only. The pastry sense is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tart means a little sour.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "tart",
+      "tarter",
+      "tartest"
+    ],
+    "ostensive": false
+  },
+  "ultraviolet": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition. No part of speech is declared, since it is used before a noun and does not compare.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ultraviolet light is a kind of light from the sun that people cannot see and that can burn the skin.",
+    "concept": "physical_property",
+    "pos": "",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "ultraviolet"
+    ],
+    "ostensive": false
+  },
+  "update": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "To update something is to make it new by adding the latest facts.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "update",
+      "updated",
+      "updates",
+      "updating"
+    ],
+    "ostensive": false
+  },
+  "updated": {
+    "decision": "exclude",
+    "reason": "An inflected form of update, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "upgrade": {
+    "decision": "admit",
+    "reason": "Technical deferral of the multi-source batch, admitted under operator decision five. Agent-authored introductory definition.",
+    "definition_origin": "Agent-authored",
+    "definition": "To upgrade something is to make it better or newer.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+    "reviewed_forms": [
+      "upgrade",
+      "upgraded",
+      "upgrades",
+      "upgrading"
+    ],
+    "ostensive": false
+  }
+}
