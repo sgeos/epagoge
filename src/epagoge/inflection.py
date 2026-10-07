@@ -363,6 +363,8 @@ IRREGULAR_PLURAL: Final[dict[str, str]] = {
     "sheep": "sheep",
     "deer": "deer",
     "species": "species",
+    # Admitted at level two on 2026-10-07. The rule gave `potatos`.
+    "potato": "potatoes",
 }
 """Plurals not derivable from spelling. A word mapping to itself has no
 distinct plural, which is a fact about the word and not a gap."""

@@ -480,3 +480,102 @@ class TestAgentAuthoredMeasurement(unittest.TestCase):
         (self.batch / "review.json").write_text(json.dumps({"orange": {}}))
         with self.assertRaisesRegex(ValueError, "exactly one of"):
             self.tool.measure(self.batch)
+
+
+class TestBlockingWords(unittest.TestCase):
+    """The ranking is a record of evidence, so a bad report is refused."""
+
+    def setUp(self) -> None:
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from tools import blocking_words as tool
+
+        self.tool = tool
+        self._dir = tempfile.TemporaryDirectory()
+        self.addCleanup(self._dir.cleanup)
+        self.vocabulary = Vocabulary(
+            core=frozenset({"a", "is"}),
+            terms=(Term("food", "food", 1), Term("cook", "food", 3)),
+        )
+
+    def report(self, name: str, outcomes: object) -> Path:
+        path = Path(self._dir.name) / name
+        path.write_text(json.dumps({"requests": [{"outcomes": outcomes}]}))
+        return path
+
+    def test_blockers_rank_by_rejections_and_name_what_they_blocked(self) -> None:
+        first = self.report(
+            "one.json",
+            [
+                {"word": "soup", "status": "outside_vocabulary", "tokens": ["boil"]},
+                {"word": "jam", "status": "outside_vocabulary", "tokens": ["boil"]},
+                {"word": "bun", "status": "mechanically_accepted"},
+            ],
+        )
+        second = self.report(
+            "two.json",
+            [
+                {
+                    "word": "tea",
+                    "status": "outside_vocabulary",
+                    "tokens": ["boil", "leaf"],
+                }
+            ],
+        )
+        got = self.tool.rank([first, second], self.vocabulary, 2)
+        self.assertEqual((got.reports, got.rejected_definitions), (2, 3))
+        self.assertEqual(
+            [(b.word, b.rejections, b.blocked) for b in got.blockers],
+            [("boil", 3, ("jam", "soup", "tea")), ("leaf", 1, ("tea",))],
+        )
+
+    def test_a_token_repeated_in_one_reply_counts_once(self) -> None:
+        path = self.report(
+            "r.json",
+            [
+                {
+                    "word": "tea",
+                    "status": "outside_vocabulary",
+                    "tokens": ["leaf", "leaf"],
+                }
+            ],
+        )
+        [blocker] = self.tool.rank([path], self.vocabulary, 2).blockers
+        self.assertEqual(blocker.rejections, 1)
+
+    def test_admitted_blockers_are_dropped_only_at_their_level(self) -> None:
+        path = self.report(
+            "r.json",
+            [
+                {
+                    "word": "soup",
+                    "status": "outside_vocabulary",
+                    "tokens": ["cook", "food"],
+                }
+            ],
+        )
+        self.assertEqual(
+            [b.word for b in self.tool.rank([path], self.vocabulary, 2).blockers],
+            ["cook"],
+        )
+        self.assertEqual(self.tool.rank([path], self.vocabulary, 3).blockers, ())
+
+    def test_a_rejection_without_tokens_is_refused(self) -> None:
+        path = self.report("r.json", [{"word": "soup", "status": "outside_vocabulary"}])
+        with self.assertRaisesRegex(ValueError, "names no tokens"):
+            self.tool.rank([path], self.vocabulary, 2)
+
+    def test_a_report_without_requests_is_refused(self) -> None:
+        path = Path(self._dir.name) / "r.json"
+        path.write_text(json.dumps({"outcomes": []}))
+        with self.assertRaisesRegex(ValueError, "requests must be a list"):
+            self.tool.rank([path], self.vocabulary, 2)
+
+    def test_an_unreadable_report_is_refused(self) -> None:
+        path = Path(self._dir.name) / "r.json"
+        path.write_text("{not json")
+        with self.assertRaisesRegex(ValueError, "unreadable"):
+            self.tool.rank([path], self.vocabulary, 2)
+
+    def test_a_level_below_one_is_refused(self) -> None:
+        with self.assertRaisesRegex(ValueError, "at least 1"):
+            self.tool.rank([], self.vocabulary, 0)

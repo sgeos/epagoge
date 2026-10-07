@@ -638,6 +638,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "bee": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "began": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -894,6 +898,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "boil": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "book": {
       "commit": "fe327c12ce59",
@@ -1192,6 +1200,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "butter": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "butterfly": {
       "commit": "5a6d1c7a1f9e",
       "date": "2026-09-25",
@@ -1327,6 +1339,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "carrot": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "carry": {
       "commit": "fe327c12ce59",
@@ -1505,6 +1521,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
+    "cheese": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "evidence": "recorded at admission"
     },
     "cherry": {
@@ -1820,6 +1840,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "cook": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "cooked": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -1967,6 +1991,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "cream": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "creature": {
       "commit": "1346e83608e8",
@@ -3054,6 +3082,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "fine": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "finger": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -3077,6 +3109,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "firm": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "first": {
       "commit": "019dea991be7",
@@ -3401,6 +3437,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "fuzzy": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "game": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -3424,6 +3464,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "garlic": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "gentle": {
       "commit": "3ec0986f5da1",
@@ -4020,6 +4064,10 @@
       "admitted_because": "Admitted on operator direction, to give the level the vocabulary to discuss a subject it had been unable to name.",
       "evidence": "reconstructed from history"
     },
+    "honey": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "hook": {
       "commit": "b94eaf24d40f",
       "date": "2026-09-25",
@@ -4184,6 +4232,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "ingredient": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "insect": {
       "commit": "fe327c12ce59",
@@ -4450,6 +4502,10 @@
       "admitted_because": "A form of an admitted word, added because a word admitted in one form is a trap for a generator constrained to the level.",
       "evidence": "reconstructed from history"
     },
+    "layer": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "lead": {
       "commit": "53add92befaa",
       "date": "2026-09-25",
@@ -4570,6 +4626,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted while the concept graph gained cross-domain prerequisites, to lexicalise a concept the change exposed.",
       "evidence": "reconstructed from history"
+    },
+    "lettuce": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "level": {
       "commit": "ce2c954c366f",
@@ -4920,6 +4980,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "meal": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "mean": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -5136,6 +5200,14 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
+    },
+    "mix": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
+    "mixture": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "model": {
       "commit": "fe327c12ce59",
@@ -5372,6 +5444,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "nectar": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "need": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -5520,6 +5596,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "nut": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "object": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
@@ -5581,6 +5661,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "onion": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "open": {
       "commit": "019dea991be7",
@@ -5830,6 +5914,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "peach": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "pear": {
       "source": "Manual fruit-sense proposals retained from level_2_increment rejection review, 2026-09-28; teacher replies adapted by agent review in evals/review/level_2_fruit_retry/review.json",
       "evidence": "recorded at admission"
@@ -5849,6 +5937,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "pepper": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "per": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
@@ -5999,6 +6091,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "plum": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "pocket": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -6076,6 +6172,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "potato": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "pour": {
       "commit": "fe327c12ce59",
@@ -6221,6 +6321,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "purple": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "push": {
       "commit": "fe327c12ce59",
@@ -6668,7 +6772,8 @@
       "commit_subject": "Add per-level vocabulary, and correct my own claim about deriving it",
       "criterion": "mapping",
       "admitted_because": "Admitted when per-level vocabulary was introduced and terms were assigned the level at which they become admissible.",
-      "evidence": "reconstructed from history"
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "rope": {
       "commit": "fe327c12ce59",
@@ -6797,6 +6902,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "salad": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "evidence": "recorded at admission"
     },
     "salt": {
@@ -7569,6 +7678,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "soup": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "south": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
@@ -7656,6 +7769,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
+    },
+    "spicy": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "spill": {
       "commit": "fe327c12ce59",
@@ -7837,6 +7954,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "stem": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "step": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -7868,6 +7989,10 @@
       "criterion": "teacher",
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "sticky": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "stock": {
       "commit": "3990e10b5727",
@@ -8899,6 +9024,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "underground": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "understand": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -9056,6 +9185,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
+    "vegetable": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
     "view": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -9079,6 +9212,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "vine": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "violet": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
@@ -9557,6 +9694,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "yeast": {
+      "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
     },
     "yell": {
       "commit": "ec0c962714b8",

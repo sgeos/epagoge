@@ -1,0 +1,35 @@
+5 reports, 59 rejected definitions, 34 blockers still outside level 2
+   16  sweet            cherry fruit honey peach pear pepper plum sugar
+    8  cooking          butter cheese cream flour garlic soup
+    4  fine             flour powder
+    4  ingredients      dough soup
+    4  root             carrot potato
+    4  sour             fruit lemon
+    3  flesh            peach pear
+    3  fuzzy            peach
+    3  mixture          dough
+    3  purple           grape plum
+    3  underground      carrot potato
+    3  vegetable        carrot potato
+    3  vines            fruit grape
+    3  yeast            bread
+    2  bees             honey
+    2  layers           onion
+    2  leafy            lettuce
+    2  nectar           honey
+    2  salads           lettuce
+    2  shelled          nut
+    2  spicy            pepper
+    2  starchy          potato
+    1  boiling          soup
+    1  cakes            dough
+    1  cream            butter
+    1  creamy           butter
+    1  firm             cheese
+    1  flavor           garlic
+    1  grinding         powder
+    1  meals            cheese
+    1  stem             pear
+    1  sticky           dough
+    1  sugar            sweet
+    1  tart             plum

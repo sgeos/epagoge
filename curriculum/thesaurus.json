@@ -330,6 +330,10 @@
       "concept": "household_object"
     },
     {
+      "word": "bee",
+      "concept": "animal"
+    },
+    {
       "word": "before",
       "concept": "",
       "antonyms": [
@@ -465,6 +469,10 @@
     {
       "word": "body",
       "concept": "body_part"
+    },
+    {
+      "word": "boil",
+      "concept": "heat"
     },
     {
       "word": "book",
@@ -627,6 +635,10 @@
       "concept": "heat"
     },
     {
+      "word": "butter",
+      "concept": "raw_and_made"
+    },
+    {
       "word": "butterfly",
       "concept": "animal"
     },
@@ -687,6 +699,10 @@
     {
       "word": "careful",
       "concept": "danger"
+    },
+    {
+      "word": "carrot",
+      "concept": "plant"
     },
     {
       "word": "carry",
@@ -751,6 +767,10 @@
     {
       "word": "cheek",
       "concept": "body_part"
+    },
+    {
+      "word": "cheese",
+      "concept": "raw_and_made"
     },
     {
       "word": "cherry",
@@ -907,6 +927,10 @@
       "concept": "inside_and_outside"
     },
     {
+      "word": "cook",
+      "concept": "heat"
+    },
+    {
       "word": "cooked",
       "concept": "raw_and_made",
       "antonyms": [
@@ -977,6 +1001,10 @@
     {
       "word": "crash",
       "concept": "accident"
+    },
+    {
+      "word": "cream",
+      "concept": "liquid"
     },
     {
       "word": "creature",
@@ -1581,6 +1609,10 @@
       "concept": "enough"
     },
     {
+      "word": "fine",
+      "concept": "physical_property"
+    },
+    {
       "word": "finger",
       "concept": "body_part"
     },
@@ -1594,6 +1626,10 @@
     {
       "word": "fire",
       "concept": "heat"
+    },
+    {
+      "word": "firm",
+      "concept": "physical_property"
     },
     {
       "word": "first",
@@ -1789,6 +1825,10 @@
       "concept": "duration"
     },
     {
+      "word": "fuzzy",
+      "concept": "physical_property"
+    },
+    {
       "word": "game",
       "concept": "toy"
     },
@@ -1798,6 +1838,10 @@
     },
     {
       "word": "garden",
+      "concept": "plant"
+    },
+    {
+      "word": "garlic",
       "concept": "plant"
     },
     {
@@ -2167,6 +2211,10 @@
       "concept": "saying_what_you_saw"
     },
     {
+      "word": "honey",
+      "concept": "needing_supply"
+    },
+    {
       "word": "hook",
       "concept": "household_object"
     },
@@ -2256,6 +2304,10 @@
     {
       "word": "increase",
       "concept": "more_and_fewer"
+    },
+    {
+      "word": "ingredient",
+      "concept": "raw_and_made"
     },
     {
       "word": "insect",
@@ -2409,6 +2461,10 @@
       ]
     },
     {
+      "word": "layer",
+      "concept": "shape"
+    },
+    {
       "word": "lead",
       "concept": "causal_chain"
     },
@@ -2468,6 +2524,10 @@
     {
       "word": "letter",
       "concept": "letter"
+    },
+    {
+      "word": "lettuce",
+      "concept": "plant"
     },
     {
       "word": "level",
@@ -2714,6 +2774,10 @@
       "concept": "person"
     },
     {
+      "word": "meal",
+      "concept": "needing_supply"
+    },
+    {
       "word": "mean",
       "concept": "good_and_bad"
     },
@@ -2810,6 +2874,14 @@
     {
       "word": "mistake",
       "concept": "mistake"
+    },
+    {
+      "word": "mix",
+      "concept": "joining_and_separating"
+    },
+    {
+      "word": "mixture",
+      "concept": "joining_and_separating"
     },
     {
       "word": "model",
@@ -2969,6 +3041,10 @@
       "concept": "need"
     },
     {
+      "word": "nectar",
+      "concept": "liquid"
+    },
+    {
       "word": "need",
       "concept": "need"
     },
@@ -3085,6 +3161,10 @@
       "concept": "tending"
     },
     {
+      "word": "nut",
+      "concept": "plant"
+    },
+    {
       "word": "object",
       "concept": "standing_for"
     },
@@ -3123,6 +3203,10 @@
     {
       "word": "one",
       "concept": "number_word_order"
+    },
+    {
+      "word": "onion",
+      "concept": "plant"
     },
     {
       "word": "open",
@@ -3255,12 +3339,20 @@
       ]
     },
     {
+      "word": "peach",
+      "concept": "plant"
+    },
+    {
       "word": "pear",
       "concept": "plant"
     },
     {
       "word": "pen",
       "concept": "writing"
+    },
+    {
+      "word": "pepper",
+      "concept": "plant"
     },
     {
       "word": "per",
@@ -3342,6 +3434,10 @@
       ]
     },
     {
+      "word": "plum",
+      "concept": "plant"
+    },
+    {
       "word": "pocket",
       "concept": "inside_and_outside"
     },
@@ -3378,6 +3474,10 @@
     {
       "word": "pot",
       "concept": "household_object"
+    },
+    {
+      "word": "potato",
+      "concept": "plant"
     },
     {
       "word": "pour",
@@ -3446,6 +3546,10 @@
       "synonyms": [
         "drag"
       ]
+    },
+    {
+      "word": "purple",
+      "concept": "physical_property"
     },
     {
       "word": "push",
@@ -3702,6 +3806,10 @@
       "concept": "household_object"
     },
     {
+      "word": "root",
+      "concept": "plant"
+    },
+    {
       "word": "rope",
       "concept": "material",
       "synonyms": [
@@ -3774,6 +3882,10 @@
     {
       "word": "safety",
       "concept": "danger"
+    },
+    {
+      "word": "salad",
+      "concept": "raw_and_made"
     },
     {
       "word": "salt",
@@ -4239,6 +4351,10 @@
       ]
     },
     {
+      "word": "soup",
+      "concept": "needing_supply"
+    },
+    {
       "word": "south",
       "concept": "direction"
     },
@@ -4279,6 +4395,10 @@
     {
       "word": "spend",
       "concept": "using_up"
+    },
+    {
+      "word": "spicy",
+      "concept": "physical_property"
     },
     {
       "word": "spill",
@@ -4366,6 +4486,10 @@
       "concept": "metal"
     },
     {
+      "word": "stem",
+      "concept": "plant"
+    },
+    {
       "word": "step",
       "concept": "doing_in_order"
     },
@@ -4376,6 +4500,10 @@
     {
       "word": "stick",
       "concept": "material"
+    },
+    {
+      "word": "sticky",
+      "concept": "physical_property"
     },
     {
       "word": "stock",
@@ -4947,6 +5075,10 @@
       ]
     },
     {
+      "word": "underground",
+      "concept": "spatial_position"
+    },
+    {
       "word": "understand",
       "concept": "knowing"
     },
@@ -5059,12 +5191,20 @@
       "concept": "same_and_different"
     },
     {
+      "word": "vegetable",
+      "concept": "plant"
+    },
+    {
       "word": "view",
       "concept": "opinion"
     },
     {
       "word": "village",
       "concept": "people_together"
+    },
+    {
+      "word": "vine",
+      "concept": "plant"
     },
     {
       "word": "violet",
@@ -5350,6 +5490,10 @@
     {
       "word": "year",
       "concept": "duration"
+    },
+    {
+      "word": "yeast",
+      "concept": "living_and_not_living"
     },
     {
       "word": "yell",

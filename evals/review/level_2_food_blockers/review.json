@@ -1,0 +1,590 @@
+{
+  "bee": {
+    "decision": "admit",
+    "reason": "Blocker as bees in two rejected definitions of honey. Defined by visiting flowers for food rather than by honey, so honey can depend on bee.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bee is a small flying insect that goes from flower to flower to get food.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "bee",
+      "bees"
+    ],
+    "role": "blocker"
+  },
+  "bees": {
+    "decision": "exclude",
+    "reason": "An inflected form of bee, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "boil": {
+    "decision": "admit",
+    "reason": "Blocker as boiling in one rejected definition of soup.",
+    "definition_origin": "Agent-authored",
+    "definition": "To boil a liquid is to heat it until bubbles rise in it and it turns to steam.",
+    "concept": "heat",
+    "pos": "verb",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "boil",
+      "boiled",
+      "boiling",
+      "boils"
+    ],
+    "role": "blocker"
+  },
+  "boiling": {
+    "decision": "exclude",
+    "reason": "An inflected form of boil, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "butter": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. Made from cream. Mass noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "Butter is a soft, yellow food made from cream, which people spread on bread.",
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "butter"
+    ],
+    "role": "deferral"
+  },
+  "cakes": {
+    "decision": "defer",
+    "reason": "Plural of cake. A cake is distinguished from bread chiefly by sweetness, so cake waits on sweet."
+  },
+  "carrot": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. An orange root eaten as a vegetable.",
+    "definition_origin": "Agent-authored",
+    "definition": "A carrot is a long, orange root that people eat as a vegetable.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "carrot",
+      "carrots"
+    ],
+    "role": "deferral"
+  },
+  "cheese": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. Made from milk. Mass noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cheese is a firm or soft food made from milk.",
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "cheese"
+    ],
+    "role": "deferral"
+  },
+  "cook": {
+    "decision": "admit",
+    "reason": "Blocker as cooking in eight rejected definitions. Preparing food by heat, as verb, with the person as noun. The past cooked is not among its forms because it is already the level-one participial adjective under raw_and_made, which keeps it admissible.",
+    "definition_origin": "Agent-authored",
+    "definition": "To cook food is to make it ready to eat by heating it, and a cook is a person who does this.",
+    "concept": "heat",
+    "pos": "noun verb",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "cook",
+      "cooking",
+      "cooks"
+    ],
+    "role": "blocker"
+  },
+  "cooking": {
+    "decision": "exclude",
+    "reason": "An inflected form of cook, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "cream": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment and a blocker of butter. The part of milk that rises. Mass noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cream is the thick part of milk that rises to the top.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "cream"
+    ],
+    "role": "deferral"
+  },
+  "creamy": {
+    "decision": "defer",
+    "reason": "Not needed. Butter is defined through cream."
+  },
+  "fine": {
+    "decision": "admit",
+    "reason": "Blocker in four rejected definitions of flour and powder. The particle sense the rejected replies used. The era-overlap batch deferred fine because the scan's two eras use different senses, and this admission rests on corpus evidence instead.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fine means made of very small pieces, like powder or dust.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "fine",
+      "finer",
+      "finest"
+    ],
+    "role": "blocker"
+  },
+  "firm": {
+    "decision": "admit",
+    "reason": "Blocker in one rejected definition of cheese.",
+    "definition_origin": "Agent-authored",
+    "definition": "Firm means not soft, and hard enough to keep its shape when you press it.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "firm",
+      "firmer",
+      "firmest"
+    ],
+    "role": "blocker"
+  },
+  "flavor": {
+    "decision": "defer",
+    "reason": "Not needed. The lexicon uses British spelling, as in colour, so the spelling would also need a decision."
+  },
+  "flesh": {
+    "decision": "defer",
+    "reason": "Not needed by any revised definition. Its fruit sense is entangled with the unresolved fruit sense of skin."
+  },
+  "fuzzy": {
+    "decision": "admit",
+    "reason": "Blocker in three rejected definitions of peach. Covered with short soft hair. The sense of unclear is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fuzzy means covered with very short, soft hair.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "fuzzier",
+      "fuzziest",
+      "fuzzy"
+    ],
+    "role": "blocker"
+  },
+  "garlic": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. Defined by likeness to onion and strong smell and taste. Mass noun. The bulb is described as small pieces rather than cloves.",
+    "definition_origin": "Agent-authored",
+    "definition": "Garlic is a plant like a small onion, made of small pieces that have a very strong smell and taste and are used in cooking.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "garlic"
+    ],
+    "role": "deferral"
+  },
+  "grinding": {
+    "decision": "defer",
+    "reason": "Not needed, since powder and flour are admitted. The base grind would also collide with ground, which the vocabulary records as a past of grind."
+  },
+  "honey": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. Distinguished by its origin in bees and nectar rather than by sweetness. Mass noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "Honey is a thick, sticky food that bees make from the nectar of flowers.",
+    "concept": "needing_supply",
+    "pos": "mass noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "honey"
+    ],
+    "role": "deferral"
+  },
+  "ingredient": {
+    "decision": "admit",
+    "reason": "Blocker as ingredients in four rejected definitions. A component of a food.",
+    "definition_origin": "Agent-authored",
+    "definition": "An ingredient is one of the things that are put together to make a food.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "ingredient",
+      "ingredients"
+    ],
+    "role": "blocker"
+  },
+  "ingredients": {
+    "decision": "exclude",
+    "reason": "An inflected form of ingredient, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "layer": {
+    "decision": "admit",
+    "reason": "Blocker as layers in two rejected definitions of onion. Defined without onion.",
+    "definition_origin": "Agent-authored",
+    "definition": "A layer is a flat, thin part that covers something or lies on top of another part.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "layer",
+      "layers"
+    ],
+    "role": "blocker"
+  },
+  "layers": {
+    "decision": "exclude",
+    "reason": "An inflected form of layer, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "leafy": {
+    "decision": "defer",
+    "reason": "Not needed. Lettuce is defined through leaves."
+  },
+  "lemon": {
+    "decision": "defer",
+    "reason": "Retained deferral. Every distinguishing account found needs sour, and a phrase standing in for sour is refused by the brief. Blocked only by sour."
+  },
+  "lettuce": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. Mass noun, as in some lettuce. The count use, a lettuce, is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "Lettuce is a plant with big, soft, green leaves that people eat raw, often in a salad.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "lettuce"
+    ],
+    "role": "deferral"
+  },
+  "meal": {
+    "decision": "admit",
+    "reason": "Blocker as meals in one rejected definition of cheese. The sense of coarse flour is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A meal is the food that people eat at one time, such as in the morning or the evening.",
+    "concept": "needing_supply",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "meal",
+      "meals"
+    ],
+    "role": "blocker"
+  },
+  "meals": {
+    "decision": "exclude",
+    "reason": "An inflected form of meal, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "mix": {
+    "decision": "admit",
+    "reason": "Base of mixture. Defined by inseparability so that mixture can be defined through it without a cycle.",
+    "definition_origin": "Agent-authored",
+    "definition": "To mix things is to put them together so that you can no longer pick them apart, and a mix is what you get.",
+    "concept": "joining_and_separating",
+    "pos": "noun verb",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "mix",
+      "mixed",
+      "mixes",
+      "mixing"
+    ],
+    "role": "blocker"
+  },
+  "mixture": {
+    "decision": "admit",
+    "reason": "Blocker in three rejected definitions of dough. Defined through mix, which does not depend on mixture.",
+    "definition_origin": "Agent-authored",
+    "definition": "A mixture is what you get when you mix things.",
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "mixture",
+      "mixtures"
+    ],
+    "role": "blocker"
+  },
+  "nectar": {
+    "decision": "admit",
+    "reason": "Blocker in two rejected definitions of honey. Mass noun. Defined without honey.",
+    "definition_origin": "Agent-authored",
+    "definition": "Nectar is a liquid inside flowers that bees drink.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "nectar"
+    ],
+    "role": "blocker"
+  },
+  "nut": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. The hard shell matches the admitted shell sense of a hard outside part of a seed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A nut is a seed or dry fruit inside a hard shell, with a part inside that people can eat.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "nut",
+      "nuts"
+    ],
+    "role": "deferral"
+  },
+  "onion": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. Distinguished by layers and a smell that makes eyes water.",
+    "definition_origin": "Agent-authored",
+    "definition": "An onion is a round vegetable that grows under the ground, made of many thin layers, with a strong smell that can make your eyes water.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "onion",
+      "onions"
+    ],
+    "role": "deferral"
+  },
+  "peach": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_fruit_retry. Distinguished from cherry, plum and pear by its fuzzy outside. The definition avoids the unresolved fruit senses of skin and stone by using outside and a hard part that holds one seed, as the admitted cherry does.",
+    "definition_origin": "Agent-authored",
+    "definition": "A peach is a round, soft tree fruit with a fuzzy yellow and red outside and a hard part in the middle that holds one seed.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "peach",
+      "peaches"
+    ],
+    "role": "deferral"
+  },
+  "pepper": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. The vegetable sense the candidate's concept named. The ground spice sense is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pepper is a vegetable with a smooth, shiny outside and an empty inside, which may be green, red or yellow, and some kinds are spicy.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "pepper",
+      "peppers"
+    ],
+    "role": "deferral"
+  },
+  "plum": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_fruit_retry. Distinguished from cherry by size and from peach by its smooth outside. Avoids skin and stone in their fruit senses.",
+    "definition_origin": "Agent-authored",
+    "definition": "A plum is a round tree fruit, bigger than a cherry, with a smooth purple, red or yellow outside and a hard part in the middle that holds one seed.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "plum",
+      "plums"
+    ],
+    "role": "deferral"
+  },
+  "potato": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. The plural rule gave potatos, so potato was added to the irregular plural table with potatoes.",
+    "definition_origin": "Agent-authored",
+    "definition": "A potato is a round or long vegetable that grows under the ground, with a brown or red outside and a white inside, and is eaten cooked.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "potato",
+      "potatoes"
+    ],
+    "role": "deferral",
+    "inflection_table_edit": "potato added to the irregular plural table with potatoes."
+  },
+  "purple": {
+    "decision": "admit",
+    "reason": "Blocker in three rejected definitions of grape and plum. A colour grounded through the ostensive red and blue. Violet, admitted earlier, is distinguished as nearer to blue.",
+    "definition_origin": "Agent-authored",
+    "definition": "Purple is a colour made of red and blue together.",
+    "concept": "physical_property",
+    "pos": "",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "purple"
+    ],
+    "role": "blocker"
+  },
+  "root": {
+    "decision": "admit",
+    "reason": "Blocker in four rejected definitions of carrot and potato. The plant part. The mathematical and figurative senses are not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A root is the part of a plant that grows down into the ground and takes in water.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "root",
+      "roots"
+    ],
+    "role": "blocker"
+  },
+  "salad": {
+    "decision": "admit",
+    "reason": "Blocker as salads in two rejected definitions of lettuce. Defined without lettuce.",
+    "definition_origin": "Agent-authored",
+    "definition": "A salad is cold food made of raw vegetables, often with leaves, cut up and put together.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "salad",
+      "salads"
+    ],
+    "role": "blocker"
+  },
+  "salads": {
+    "decision": "exclude",
+    "reason": "An inflected form of salad, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "shelled": {
+    "decision": "defer",
+    "reason": "Not needed. Nut is defined through the admitted noun shell."
+  },
+  "soup": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. Mass noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "Soup is a hot, liquid food made by boiling vegetables or other food in water.",
+    "concept": "needing_supply",
+    "pos": "mass noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "soup"
+    ],
+    "role": "deferral"
+  },
+  "sour": {
+    "decision": "defer",
+    "reason": "Blocked four rejected definitions. Reserved with sweet for the operator's ostensive decision."
+  },
+  "spicy": {
+    "decision": "admit",
+    "reason": "Blocker in two rejected definitions of pepper. A strong taste felt like heat. Uses the admitted taste, not sweet or sour.",
+    "definition_origin": "Agent-authored",
+    "definition": "Spicy food has a strong taste that feels a little like heat in your mouth.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "spicier",
+      "spiciest",
+      "spicy"
+    ],
+    "role": "blocker"
+  },
+  "starchy": {
+    "decision": "defer",
+    "reason": "Not needed, and starch has no grounded account at this level."
+  },
+  "stem": {
+    "decision": "admit",
+    "reason": "Blocker in one rejected definition of pear, and needed by vine.",
+    "definition_origin": "Agent-authored",
+    "definition": "A stem is the long, thin part of a plant that holds up its leaves and flowers.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "stem",
+      "stems"
+    ],
+    "role": "blocker"
+  },
+  "sticky": {
+    "decision": "admit",
+    "reason": "Blocker in one rejected definition of dough, and needed by honey.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sticky means able to stick to things that touch it, like glue.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "stickier",
+      "stickiest",
+      "sticky"
+    ],
+    "role": "blocker"
+  },
+  "sugar": {
+    "decision": "defer",
+    "reason": "Reserved with sweet. The taste-sense review found its replies defined it through sweet."
+  },
+  "sweet": {
+    "decision": "defer",
+    "reason": "Blocked 16 rejected definitions. Reserved for the operator's decision on an ostensive admission, since sweetness is a sensory quality like the ostensive colours."
+  },
+  "tart": {
+    "decision": "defer",
+    "reason": "Used in a rejected definition of plum as a synonym of sour. Waits on sour."
+  },
+  "underground": {
+    "decision": "admit",
+    "reason": "Blocker in three rejected definitions of carrot and potato.",
+    "definition_origin": "Agent-authored",
+    "definition": "Underground means under the ground.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "underground"
+    ],
+    "role": "blocker"
+  },
+  "vegetable": {
+    "decision": "admit",
+    "reason": "Blocker in three rejected definitions. An edible plant or plant part that is not a fruit, which is the culinary rather than botanical distinction.",
+    "definition_origin": "Agent-authored",
+    "definition": "A vegetable is a plant, or a part of a plant such as a root or a leaf, that people eat and that is not a fruit.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "vegetable",
+      "vegetables"
+    ],
+    "role": "blocker"
+  },
+  "vine": {
+    "decision": "admit",
+    "reason": "Blocker as vines in three rejected definitions of fruit and grape. Defined through stem.",
+    "definition_origin": "Agent-authored",
+    "definition": "A vine is a plant with a long, thin stem that grows along the ground or climbs up walls and trees.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "vine",
+      "vines"
+    ],
+    "role": "blocker"
+  },
+  "vines": {
+    "decision": "exclude",
+    "reason": "An inflected form of vine, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "yeast": {
+    "decision": "admit",
+    "reason": "Retained deferral from level_2_increment. Distinguished by its effect on dough. An introductory simplification that does not say it is a fungus. Mass noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "Yeast is a tiny living thing put into dough to make it rise, so that bread comes out soft when it is baked.",
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+    "reviewed_forms": [
+      "yeast"
+    ],
+    "role": "deferral"
+  }
+}

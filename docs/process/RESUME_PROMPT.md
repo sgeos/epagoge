@@ -13,9 +13,9 @@ of delivered work, not instructions to repeat it. Historical handoffs and
 recommendations do not authorize new scope. If no unfinished task remains,
 report the verified state and readiness for the next task.
 
-The latest scope is the era-overlap lexical batch described in the handoff
-and in CURRENT_BRIEF.md. Its work was committed locally and was not pushed,
-because publication was not authorized for that scope. Do not push without
+The latest scopes are the era-overlap and food-blocker lexical batches
+described in the handoff and in CURRENT_BRIEF.md. Their work was committed
+locally and was not pushed, because publication was not authorized for them. Do not push without
 asking. Determine actual publication from git and the remote rather than
 assuming that a stamp proves it.
 

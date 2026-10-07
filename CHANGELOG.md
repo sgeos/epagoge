@@ -36,6 +36,14 @@ Versioning.
   Coverage is 1,012 of 1,012 and closure is complete. Twenty pool words
   were deferred and 43 strings excluded, each with a reason.
 - `tools/check_substitutions.py`, reported in the gate and never gating.
+- 36 level-two headwords from retained rejection evidence, reviewed in
+  `evals/review/level_2_food_blockers/`. Fifteen of sixteen retained food and
+  plant deferrals are admitted, and lemon remains, blocked only by sour.
+  Level two rose to 1,085 headwords, measured, leaving 8,915.
+- `tools/blocking_words.py` ranks words outside a level by the retained
+  rejected definitions they blocked, and refuses a malformed report.
+- Irregular inflections for strike, species and potato, and non-doubling
+  entries for offer, scatter and travel.
 
 ### Changed
 
@@ -48,8 +56,11 @@ Versioning.
 
 ### Notes
 
-- No general throughput is established. The pool is exhausted, and the
-  batch is agent review without independent expert validation.
+- No general throughput is established. Both pools are exhausted, and the
+  batches are agent review without independent expert validation.
+- Sweet blocked 16 retained rejected definitions, but most of the words it
+  blocked were definable without it. The ostensive question stays with the
+  operator.
 
 ## 2026-09-24
 

@@ -1,0 +1,218 @@
+{
+  "bee": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A bee is a small flying insect that goes from flower to flower to get food.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "boil": {
+    "concept": "heat",
+    "pos": "verb",
+    "definition": "To boil a liquid is to heat it until bubbles rise in it and it turns to steam.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "butter": {
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "definition": "Butter is a soft, yellow food made from cream, which people spread on bread.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "carrot": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A carrot is a long, orange root that people eat as a vegetable.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "cheese": {
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "definition": "Cheese is a firm or soft food made from milk.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "cook": {
+    "concept": "heat",
+    "pos": "noun verb",
+    "definition": "To cook food is to make it ready to eat by heating it, and a cook is a person who does this.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "cream": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Cream is the thick part of milk that rises to the top.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "fine": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Fine means made of very small pieces, like powder or dust.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "firm": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Firm means not soft, and hard enough to keep its shape when you press it.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "fuzzy": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Fuzzy means covered with very short, soft hair.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "garlic": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Garlic is a plant like a small onion, made of small pieces that have a very strong smell and taste and are used in cooking.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "honey": {
+    "concept": "needing_supply",
+    "pos": "mass noun",
+    "definition": "Honey is a thick, sticky food that bees make from the nectar of flowers.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "ingredient": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "An ingredient is one of the things that are put together to make a food.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "layer": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A layer is a flat, thin part that covers something or lies on top of another part.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "lettuce": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Lettuce is a plant with big, soft, green leaves that people eat raw, often in a salad.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "meal": {
+    "concept": "needing_supply",
+    "pos": "noun",
+    "definition": "A meal is the food that people eat at one time, such as in the morning or the evening.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "mix": {
+    "concept": "joining_and_separating",
+    "pos": "noun verb",
+    "definition": "To mix things is to put them together so that you can no longer pick them apart, and a mix is what you get.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "mixture": {
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "definition": "A mixture is what you get when you mix things.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "nectar": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Nectar is a liquid inside flowers that bees drink.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "nut": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A nut is a seed or dry fruit inside a hard shell, with a part inside that people can eat.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "onion": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "An onion is a round vegetable that grows under the ground, made of many thin layers, with a strong smell that can make your eyes water.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "peach": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A peach is a round, soft tree fruit with a fuzzy yellow and red outside and a hard part in the middle that holds one seed.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "pepper": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A pepper is a vegetable with a smooth, shiny outside and an empty inside, which may be green, red or yellow, and some kinds are spicy.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "plum": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A plum is a round tree fruit, bigger than a cherry, with a smooth purple, red or yellow outside and a hard part in the middle that holds one seed.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "potato": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A potato is a round or long vegetable that grows under the ground, with a brown or red outside and a white inside, and is eaten cooked.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "purple": {
+    "concept": "physical_property",
+    "pos": "",
+    "definition": "Purple is a colour made of red and blue together.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "root": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A root is the part of a plant that grows down into the ground and takes in water.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "salad": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A salad is cold food made of raw vegetables, often with leaves, cut up and put together.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "soup": {
+    "concept": "needing_supply",
+    "pos": "mass noun",
+    "definition": "Soup is a hot, liquid food made by boiling vegetables or other food in water.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "spicy": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Spicy food has a strong taste that feels a little like heat in your mouth.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "stem": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A stem is the long, thin part of a plant that holds up its leaves and flowers.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "sticky": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Sticky means able to stick to things that touch it, like glue.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "underground": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Underground means under the ground.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "vegetable": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A vegetable is a plant, or a part of a plant such as a root or a leaf, that people eat and that is not a fruit.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "vine": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A vine is a plant with a long, thin stem that grows along the ground or climbs up walls and trees.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  },
+  "yeast": {
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "definition": "Yeast is a tiny living thing put into dough to make it rise, so that bread comes out soft when it is baked.",
+    "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
+  }
+}

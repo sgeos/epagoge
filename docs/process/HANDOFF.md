@@ -12,76 +12,94 @@ Read `CLAUDE.md` and run these checks before relying on the state below.
     git merge-base --is-ancestor 8367a44d71073e051c32fe1ea607d5b305d6b348 HEAD
     git log --oneline 8367a44d71073e051c32fe1ea607d5b305d6b348..HEAD
     .venv/bin/python tools/measure_lexicon_increment.py \
-      evals/review/level_2_era_overlap \
-      --check evals/review/level_2_era_overlap/measurement.json
+      evals/review/level_2_food_blockers \
+      --check evals/review/level_2_food_blockers/measurement.json
 
 A passing measurement check means the lexicon counts below match the tree.
 It fails by design once any later batch changes the vocabulary, and earlier
-batch measurements already fail for that reason. A failure then marks the
-counts below as stale rather than wrong. Missing host artifacts make the
-associated checks unverified rather than disproved.
+batch measurements, including the era-overlap batch from the same session,
+already fail for that reason. A failure then marks the counts below as stale
+rather than wrong. Missing host artifacts make the associated checks
+unverified rather than disproved.
 
 ## Current authority and task status
 
-`CURRENT_BRIEF.md` and `COMPLETION_CONDITION.md` describe the era-overlap
-scope opened on 2026-10-07. Earlier handoffs in `HANDOFF_HISTORY.md` are
-historical evidence. Durable failure analysis is in `PROCESS_STRATEGY.md`.
+`CURRENT_BRIEF.md` and `COMPLETION_CONDITION.md` describe the food-blocker
+scope, the second of two scopes opened on 2026-10-07 by a self-directed loop.
+The first, the era-overlap batch, is preserved with its brief and condition
+in `evals/review/level_2_food_blockers/`. Earlier handoffs in
+`HANDOFF_HISTORY.md` are historical evidence. Durable failure analysis is in
+`PROCESS_STRATEGY.md`.
 
 The work was committed locally. **It was not pushed**, because no
-authorization to publish was given for this scope and publication is asked
+authorization to publish was given for these scopes and publication is asked
 for separately. Check `git status` and the remote before assuming either.
 Continuous integration has therefore not run on these commits.
 
-## What this scope delivered
+## What these scopes delivered
 
-**A lexical batch from a stated pool.** The scan of 2026-09-27 selected words
-frequent in both a historical reader and a modern federal source. Every one of
-the 139 remaining pool strings, plus seven bases of scanned inflections, has a
-decision and a reason in `evals/review/level_2_era_overlap/review.json`.
-Agent review admitted 83, deferred 20 and excluded 43. No teacher ran, because
-host swap was nearly exhausted, and `authoring.json` records that.
+**Two agent-authored lexical batches.** No teacher ran in either, because host
+swap was nearly exhausted, and each batch's `authoring.json` records that.
 
-Measured on the final tree, level two admits 1,049 distinct headwords, up
-from 966, leaving 8,951 to the approximate ten-thousand-word target. Level one
-remains at 849. Required definition coverage is 812 of 812 at level one and
-1,012 of 1,012 at level two, with complete closure at both. All level-one
-books, the reference checkpoint and 64 earlier review artifacts match their
-recorded hashes.
+The era-overlap batch reviewed every remaining word the 2026-09-27 scan found
+frequent in both a historical reader and a modern federal source, 146 entries
+in all, and admitted 83. Its record is `evals/review/level_2_era_overlap/`.
+
+The food-blocker batch reviewed every word that blocked a retained rejected
+teacher definition and the sixteen retained food and plant deferrals, 57
+entries in all, and admitted 36. Fifteen of the sixteen deferrals are now
+admitted. Lemon remains, blocked only by sour. Its record is
+`evals/review/level_2_food_blockers/`.
+
+Measured on the final tree, level two admits 1,085 distinct headwords, up
+from 966 at the start of the session, leaving 8,915 to the approximate
+ten-thousand-word target. Level one remains at 849. Required definition
+coverage is 812 of 812 at level one and 1,048 of 1,048 at level two, with
+complete closure at both. All level-one books, the reference checkpoint and
+every earlier review artifact match their recorded hashes.
 
 **Prompts no longer ban admitted words.** `substitutions_at` drops a
 substitution key admissible at the prompted level, and every generator now
 uses it. `tools/check_substitutions.py` reports the remaining contradictions
-in the gate without failing. Seven remain at level one and twenty at level
-two after this batch.
+in the gate without failing.
 
-**The measurement tool accounts for agent-authored batches.** A batch carries
-exactly one of a teacher report and an authoring declaration. Tests cover the
-declaration's failure modes. Earlier batches measure as before.
+**Two tools for lexical growth.** The measurement tool accounts for a batch
+that declares no teacher ran. `tools/blocking_words.py` ranks words outside a
+level by the rejected definitions they blocked and refuses malformed reports.
+Tests cover both.
+
+**Inflection tables.** Strike is irregular, offer, scatter and travel do not
+double, and species and potato have their plurals recorded. Each was found by
+the gate or by the plural rule producing a wrong form.
 
 ## Open items for the operator
 
 These are recorded findings, not authorized work.
 
-1. **Color and colour.** Color is admitted at level two although the
+1. **Sweet and sour.** These are sensory qualities like the ostensive
+   colours, and an ostensive admission would enlarge the seed. Measured:
+   sweet blocked 16 retained rejected definitions, but most of the words it
+   blocked were definable without it. What sweet and sour still block in the
+   record is lemon, cake, sugar and tart.
+2. **Color and colour.** Color is admitted at level two although the
    substitution table maps it to colour. This resembles the spelling
    decision that refused gray.
-2. **Seven level-one contradictions.** Beside, cause, great, greater,
+3. **Seven level-one contradictions.** Beside, cause, great, greater,
    length, single and unknown are admitted at level one and also listed as
    substitutions. Either the ban or the admission is stale.
-3. **Sky has no plural.** The level-one entry declares no part of speech.
-4. **Sweet and sour.** These are sensory qualities like the ostensive
-   colours. An ostensive admission would enlarge the seed.
+4. **Sky has no plural.** The level-one entry declares no part of speech.
 5. **Publication** of the local commits.
 
 ## Recommended next work
 
-The overlap pool is exhausted. The next principled pool is the remainder of
-the frequent group of the same scan, filtered for proper nouns and fragments
-by rule rather than by hand. A smaller, more valuable target is the set of
-words that blocked earlier teacher definitions, recorded in retained
-generation reports, because each admission there unblocks others. Neither
-throughput nor the semantic quality of agent-authored definitions has been
-measured. No level-two book uses any word from this batch yet.
+Both principled pools used in this session are exhausted. The next is the
+remainder of the scan's frequent group, about two thousand words, which needs
+a rule-based filter for proper nouns, fragments and archaisms before review.
+Its modern sources also contain terms that the disclosure scan refuses in
+tracked files, so any pool drawn from them must be filtered before anything
+is written. Neither throughput nor the semantic quality of agent-authored
+definitions has been measured, and no level-two book uses any word from
+either batch yet.
 
 ## Restart verification
 
