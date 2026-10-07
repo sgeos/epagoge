@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "This book explores how things move when pushed or pulled, showing simple actions like rolling a cart, catching falling objects, and feeling the force of a hit. It uses everyday experiences to demonstrate motion and the forces behind it.",
   "teaches": "Readers learn that motion starts with a push or pull, and that surfaces, gravity, and timing affect how things move. They see how forces act in real life, like when something falls or rolls across different ground types.",
   "records": {

@@ -11,7 +11,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "A child explores different objects by examining their properties like color, size, and texture, noticing how each one is unique.",
   "teaches": "Children learn to compare things by identifying specific qualities such as color, size, and cleanliness, and understand that differences in these properties show when things are not the same.",
   "records": {

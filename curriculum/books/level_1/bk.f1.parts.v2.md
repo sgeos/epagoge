@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "This book shows how everyday objects, like a toy car, are made of smaller parts that must all work together for the whole to function. It illustrates what happens when one part is broken and how fixing it restores the whole thing.",
   "teaches": "A single broken part can stop something from working, but when that part is repaired, the whole returns to normal. It helps children understand how things are built from pieces and why each piece matters.",
   "records": {

@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-10-07",
   "about": "This book uses a child's walk through a rainy garden to show how different materials react to water, and how things can be true or false at the same time in different ways.",
   "teaches": "It shows that some things are wet, others dry, and no object can be both at once, teaching the basic idea that contradictions can't happen in reality, and that truth depends on what something is made of.",
   "records": {

@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "This book helps young children understand the basic idea of counting by showing how numbers follow one another in a fixed order, using simple actions and everyday objects like blocks, balls, and steps.",
   "teaches": "Children learn that numbers represent quantity, come in a consistent sequence, and that each number comes after the one before it, with zero meaning nothing at all.",
   "records": {

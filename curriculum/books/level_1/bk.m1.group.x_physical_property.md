@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-27",
+  "published": "2026-10-07",
   "about": "This book shows children how to sort objects by shared physical properties like color, material, shape, and texture, using simple, repeated examples of everyday items. It demonstrates how grouping things that are alike helps organize and understand the world.",
   "teaches": "Children learn to identify and use physical properties, such as being round, hard, cold, or made of plastic, to sort objects into groups. They discover that things can be alike in one way (like color) but different in another (like size or weight), and that grouping helps keep things organized and meaningful.",
   "records": {

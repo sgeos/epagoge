@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "A small stone cup rolls and settles into the ground, becoming hidden and still, showing how ordinary objects can disappear into nature and remain unchanged.",
   "teaches": "Things can be made of different materials like stone or cloth, and their shape, size, and location affect how they're seen and used.",
   "records": {

@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "A girl recounts a journey through the sky and land, blending real memories with imagined adventures as she travels in a balloon and a bamboo boat.",
   "teaches": "Stories can include both true events and made-up parts, and telling them helps us understand our own experiences and feelings.",
   "records": {

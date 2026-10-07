@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "A little red ball moves through different settings, showing how objects can have multiple properties like color, size, shape, and condition. It demonstrates how these qualities stay the same even as the ball changes location or situation.",
   "teaches": "Children learn to identify and understand basic properties such as color, size, shape, and state, and how these can be described using simple, clear language. They see that an object keeps its properties even when it moves or interacts with its environment.",
   "records": {

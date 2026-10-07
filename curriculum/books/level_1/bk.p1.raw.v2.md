@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "A tree grows in the forest, is cut down, and becomes a chair that a child uses, then waits alone, showing how things change and continue to have meaning.",
   "teaches": "That objects made from nature carry stories of their origins and can still be part of new experiences, even after their purpose changes.",
   "records": {

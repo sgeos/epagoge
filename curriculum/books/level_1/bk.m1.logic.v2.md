@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "This book uses a simple rainy-day scenario to show how logical connections work in everyday life, illustrating ideas like \"if-then\" reasoning, the meanings of \"all,\" \"some,\" and \"none,\" and the idea that something cannot be both true and false at the same time.",
   "teaches": "Children learn to recognize basic logical patterns through real-world examples, understanding how one event can lead to another, how quantities like \"all,\" \"some,\" and \"none\" apply to groups, and how contradictions, like something being both wet and dry, cannot happen.",
   "records": {

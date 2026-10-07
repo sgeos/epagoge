@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-24",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "A child uses bamboo sticks of different lengths to solve everyday challenges, comparing them by placing them side by side and using a string to measure.",
   "teaches": "Length and measurement can be understood by comparing objects directly or using a tool like string, and longer objects can be more useful for reaching, lifting, or carrying.",
   "records": {

@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-10-07",
   "about": "This book shows how different people, leaders, teachers, children, animals, and even natural forces, each play a part in guiding a group through fear and uncertainty by trusting a shared plan. It portrays how faith, courage, and mutual support help people move forward even when the path is unclear.",
   "teaches": "Readers learn that being in charge doesn't mean having all the answers, but knowing how to trust, listen, and keep going together. It shows that everyone, no matter their size or strength, can contribute to a shared journey when they believe in each other and the path ahead.",
   "records": {

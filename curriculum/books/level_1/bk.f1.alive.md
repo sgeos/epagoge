@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "This book gently explores the natural cycle of life and death through the story of a child mourning a dead bird, showing what it means for a living thing to stop breathing, moving, and feeling.",
   "teaches": "A living thing can breathe, move, and feel, but when it dies, it stays still and never wakes up again, and death is final and irreversible.",
   "records": {

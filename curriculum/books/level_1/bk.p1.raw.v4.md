@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "A tree grows naturally in the forest, then becomes part of a chair, a stick, and a book, showing how wood changes from living matter into everyday things through human use.",
   "teaches": "Things made from wood start as part of a living tree, and even when shaped or used, they remain connected to nature through their origins.",
   "records": {

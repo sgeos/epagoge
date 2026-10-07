@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "A child's quiet observation of a rainy day, showing how rain changes the world outside and how one can find simple joy in it.",
   "teaches": "Rain is water falling from clouds, and weather like rain affects what we see and do outside, even when we stay inside.",
   "records": {

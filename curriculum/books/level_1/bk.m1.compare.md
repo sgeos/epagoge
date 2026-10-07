@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "This book helps children understand basic comparisons using everyday objects like balls, showing how things can be alike or different in number, size, color, or kind.",
   "teaches": "Children learn to identify similarities and differences in quantity, size, color, and type, and to use words like more, less, same, different, few, many, and alike to describe them.",
   "records": {

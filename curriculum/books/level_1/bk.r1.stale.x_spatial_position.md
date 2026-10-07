@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-27",
+  "published": "2026-10-07",
   "about": "A forgotten mark remembers a time when a cup was full of life, water with fish, milk from a real cow, now gone, leaving only emptiness, dust, and silence in a space that feels trapped and still.",
   "teaches": "Even when things are empty or broken, the memory of what once was can remain, heavy and real, shaping how we feel in quiet, forgotten places.",
   "records": {

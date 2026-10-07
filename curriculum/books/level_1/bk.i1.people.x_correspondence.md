@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-27",
+  "published": "2026-10-07",
   "about": "This book shows children how people work together to solve problems, make plans, and build things like a school, using kindness, listening, and shared ideas. It follows a group of kids and villagers who meet, share thoughts, and take turns contributing to a common goal.",
   "teaches": "People are stronger when they listen, take turns, and help each other, even when things feel uncertain. It shows that every person has something valuable to offer, and together, small actions can lead to big results.",
   "records": {

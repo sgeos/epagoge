@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "This book helps young children learn about simple properties of objects, like color, size, shape, and texture, by comparing and contrasting them through clear, repetitive sentences. It shows how things can have multiple qualities at once, like being red and round, but not black or blue.",
   "teaches": "Children learn to identify and distinguish basic attributes such as color, brightness, roundness, smoothness, and size, and understand that objects can have several properties simultaneously while also recognizing what they do not have.",
   "records": {

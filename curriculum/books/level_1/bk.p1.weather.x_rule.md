@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-10-07",
   "about": "This book shows how weather changes through a child's eyes, capturing rain, wind, clouds, and the stillness before and after a storm, all from the inside of a house. It uses repetition and rhythm to mirror the feeling of time passing during a long, heavy day.",
   "teaches": "Children learn that weather can feel intense and change quickly, and that staying inside during storms is a safety rule. They also see how nature responds to rain and wind through falling leaves, rushing water, and quiet stillness.",
   "records": {

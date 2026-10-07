@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-10-07",
   "about": "This book helps children notice what is the same and what is different by comparing groups of objects, like blocks or apples, and counting them to see which group has more. It shows how to identify one item that doesn't belong because of its color, size, shape, or feel, even when most items are alike.",
   "teaches": "Children learn to compare groups by counting and recognizing similarities and differences, understanding that being different doesn't mean being wrong or bad. They also learn that sorting items by what makes them alike or unlike helps us understand quantities and patterns.",
   "records": {

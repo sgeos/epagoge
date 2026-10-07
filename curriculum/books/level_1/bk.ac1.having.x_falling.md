@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-10-07",
   "about": "A child learns what it means to truly own something, not just possess it, but understand its value, its fragility, and how it can be shared without loss.",
   "teaches": "That having something real can bring strength and safety, even when it breaks, and that sharing what we own can make us feel rich, not poor.",
   "records": {

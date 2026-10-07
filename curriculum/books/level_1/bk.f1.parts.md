@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "A boy builds a red block car that stops working when one piece breaks, showing how a single faulty part can affect the whole.",
   "teaches": "Things are made of parts that must fit together properly to work; when one part fails, the whole thing can stop, but fixing it with the right piece can make it work again.",
   "records": {

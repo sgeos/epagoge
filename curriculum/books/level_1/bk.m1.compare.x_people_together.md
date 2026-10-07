@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-10-07",
   "about": "This book shows children how to compare quantities like more and fewer using everyday objects and situations they recognize, such as toys, apples, and blocks. It explores how groups can work together, share, and include everyone, even when someone or something seems different.",
   "teaches": "Children learn to notice differences in amounts and recognize when one thing has more or fewer than another through hands-on experiences. They also learn that being part of a group means sharing, helping, and making space for everyone, even if they seem different.",
   "records": {

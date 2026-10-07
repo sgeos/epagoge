@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-25",
-  "published": "2026-09-25",
+  "published": "2026-10-07",
   "about": "This book explores simple logical ideas through a child's experience with rain, wet ground, and a floating balloon, showing how one event leads to another and how things can be true or not true at the same time.",
   "teaches": "Readers learn about conditional thinking, like \"if it rains, then the ground gets wet\", and basic concepts such as \"all,\" \"some,\" \"none,\" and the idea that something cannot be both true and false at once.",
   "records": {

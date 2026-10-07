@@ -10,7 +10,7 @@
   "author": "Epagoge",
   "licence": "CC0-1.0",
   "first_published": "2026-09-26",
-  "published": "2026-09-26",
+  "published": "2026-10-07",
   "about": "A child uses writing to record feelings like fear, anger, and loneliness, turning fleeting emotions into lasting marks in a diary.",
   "teaches": "Writing helps us remember what we feel, even when we forget the moment, and gives us a way to hold onto ourselves when things feel hard.",
   "records": {
