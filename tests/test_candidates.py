@@ -409,3 +409,74 @@ class TestIncrementMeasurement(unittest.TestCase):
             path.write_text(json.dumps(report))
             with self.assertRaisesRegex(ValueError, "counts differ"):
                 measure(batch)
+
+
+class TestAgentAuthoredMeasurement(unittest.TestCase):
+    """A batch with no teacher still states where its input came from."""
+
+    def setUp(self) -> None:
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from tools import measure_lexicon_increment as tool
+
+        self.tool = tool
+        self._dir = tempfile.TemporaryDirectory()
+        self.addCleanup(self._dir.cleanup)
+        self.batch = Path(self._dir.name)
+        self.candidates = {"orange": "physical_property"}
+        (self.batch / "candidates.json").write_text(json.dumps(self.candidates))
+        self.before: dict[str, object] = {"vocabulary_hash": "v" * 64}
+        self.declaration: dict[str, object] = {
+            "level": 2,
+            "teacher": None,
+            "candidates": self.candidates,
+            "input_hash": tool.file_digest(self.batch / "candidates.json"),
+            "vocabulary_hash": "v" * 64,
+            "source": "scan overlap pool",
+            "pool_report_hash": "p" * 64,
+            "reason": "host memory",
+        }
+
+    def account(self) -> tuple[int, dict[str, object], tuple[str, ...]]:
+        (self.batch / "authoring.json").write_text(json.dumps(self.declaration))
+        return self.tool._agent_accounting(  # noqa: SLF001
+            self.batch, self.before, dict(self.candidates)
+        )
+
+    def test_a_consistent_declaration_is_accounted(self) -> None:
+        level, extra, names = self.account()
+        self.assertEqual(level, 2)
+        self.assertIsNone(extra["teacher"])
+        self.assertIn("authoring.json", names)
+        self.assertNotIn("generation.json", names)
+
+    def test_a_named_teacher_is_refused(self) -> None:
+        self.declaration["teacher"] = "some-model"
+        with self.assertRaisesRegex(ValueError, "no teacher ran"):
+            self.account()
+
+    def test_a_changed_candidate_file_is_refused(self) -> None:
+        self.declaration["input_hash"] = "0" * 64
+        with self.assertRaisesRegex(ValueError, "input hash"):
+            self.account()
+
+    def test_a_different_baseline_is_refused(self) -> None:
+        self.declaration["vocabulary_hash"] = "w" * 64
+        with self.assertRaisesRegex(ValueError, "baseline vocabulary"):
+            self.account()
+
+    def test_a_blank_pool_report_is_refused(self) -> None:
+        self.declaration["pool_report_hash"] = "  "
+        with self.assertRaisesRegex(ValueError, "pool_report_hash"):
+            self.account()
+
+    def test_a_teacher_report_beside_the_declaration_is_refused(self) -> None:
+        (self.batch / "generated.json").write_text("{}")
+        with self.assertRaisesRegex(ValueError, "both a teacher and no teacher"):
+            self.account()
+
+    def test_a_batch_with_neither_report_is_refused(self) -> None:
+        for name in ("before.json", "review.json", "admitted.json"):
+            (self.batch / name).write_text("{}")
+        (self.batch / "review.json").write_text(json.dumps({"orange": {}}))
+        with self.assertRaisesRegex(ValueError, "exactly one of"):
+            self.tool.measure(self.batch)

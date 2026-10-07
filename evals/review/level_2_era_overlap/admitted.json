@@ -1,0 +1,500 @@
+{
+  "act": {
+    "concept": "activity",
+    "pos": "noun verb",
+    "definition": "To act is to do something, and an act is one thing that someone does.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "action": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "An action is something that someone does.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "almost": {
+    "concept": "close_enough",
+    "pos": "",
+    "definition": "Almost means very close to all of something, but not all of it.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "although": {
+    "concept": "discourse_marker",
+    "pos": "",
+    "definition": "Although means even though, as in we went out although it was cold.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "appearance": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "The appearance of something is the way it looks.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "approach": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To approach something is to move nearer to it.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "arrow": {
+    "concept": "direction",
+    "pos": "noun",
+    "definition": "An arrow is a thin stick with a sharp point at its front end, or a mark shaped like one that points the way.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "background": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The background of a picture or a view is the part that is far behind the things at the front.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "beneath": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Beneath means under or below something.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "beyond": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Beyond means on the far side of something, or past it.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "clearly": {
+    "concept": "physical_property",
+    "pos": "",
+    "definition": "Clearly means in a way that is easy to see, hear or understand.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "common": {
+    "concept": "cycle",
+    "pos": "adjective periphrastic",
+    "definition": "Something common is found often or in many places, and is not special.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "country": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A country is a large part of the world that has its own leaders and its own rules.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "dangerous": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Something dangerous can hurt you or cause harm.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "definition": {
+    "concept": "word",
+    "pos": "noun",
+    "definition": "A definition is a sentence that says what a word means.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "determine": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To determine something is to find it out for certain, or to decide it.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "distant": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Distant means far away.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "dollar": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A dollar is a unit for counting how much things cost, used in some countries.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "downward": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Downward means toward a lower place.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "during": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "During means at some time while something is happening, or for all of that time.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "easily": {
+    "concept": "physical_property",
+    "pos": "",
+    "definition": "Easily means in an easy way, without much work.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "escape": {
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "definition": "To escape is to get away from a place where you are kept, or from a danger.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "everywhere": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Everywhere means in every place.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "excellent": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Excellent means very good, better than most.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "except": {
+    "concept": "leaving_out",
+    "pos": "",
+    "definition": "Except means but not, and it names what is left out.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "expect": {
+    "concept": "guess",
+    "pos": "verb",
+    "definition": "To expect something is to think that it will happen.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "field": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A field is a wide, open piece of land, often covered with grass or used to grow food.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "flight": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "Flight is moving through the air, as a bird does when it flies.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "form": {
+    "concept": "shape",
+    "pos": "noun verb",
+    "definition": "The form of something is its shape, and to form something is to make it or give it a shape.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "free": {
+    "concept": "allowed_or_not",
+    "pos": "adjective",
+    "definition": "Free means able to go where you want or do what you want, and not shut in or held.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "fresh": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Fresh food or water is new and clean, not old or gone bad.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "fully": {
+    "concept": "emptiness",
+    "pos": "",
+    "definition": "Fully means in a full way, with nothing left out.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "funny": {
+    "concept": "feeling",
+    "pos": "adjective",
+    "definition": "Something funny makes you laugh.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "greatly": {
+    "concept": "more_and_fewer",
+    "pos": "",
+    "definition": "Greatly means by a lot, or very much.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "illustration": {
+    "concept": "standing_for",
+    "pos": "noun",
+    "definition": "An illustration is a picture in a book that helps show what the words mean.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "immediately": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Immediately means at once, without waiting.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "increase": {
+    "concept": "more_and_fewer",
+    "pos": "noun verb",
+    "definition": "To increase is to become bigger or more, or to make something bigger or more.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "main": {
+    "concept": "component_and_system",
+    "pos": "",
+    "definition": "The main part of something is its biggest part, or the part you need most.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "nature": {
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "definition": "Nature is the plants, animals, land, water and sky of the world, and everything in it that people did not make.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "nearly": {
+    "concept": "close_enough",
+    "pos": "",
+    "definition": "Nearly means almost.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "nor": {
+    "concept": "not_both",
+    "pos": "",
+    "definition": "Nor means and not, and it adds another thing that is also not so.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "object": {
+    "concept": "standing_for",
+    "pos": "noun",
+    "definition": "An object is a thing that you can see or touch.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "obtain": {
+    "concept": "having",
+    "pos": "verb",
+    "definition": "To obtain something is to get it.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "offer": {
+    "concept": "exchange",
+    "pos": "noun verb",
+    "definition": "To offer something is to hold it out to someone, or to say that you will give it or do it if they want.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "orange": {
+    "concept": "physical_property",
+    "pos": "",
+    "definition": "Orange is the colour between red and yellow.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "parcel": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A parcel is a bundle or box with something in it, to be carried to someone.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "per": {
+    "concept": "unit",
+    "pos": "",
+    "definition": "Per means for each, as in ten miles per hour, which means ten miles for each hour.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "pole": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A pole is a long, thin, round piece of wood or metal.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "position": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The position of something is the place where it is.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "public": {
+    "concept": "people_together",
+    "pos": "adjective periphrastic",
+    "definition": "Public means for everyone to use or see, and not kept for just one person.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "quite": {
+    "concept": "more_and_fewer",
+    "pos": "",
+    "definition": "Quite means very much, or all the way.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "rapid": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Rapid means very fast.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "rapidly": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Rapidly means very fast.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "receive": {
+    "concept": "exchange",
+    "pos": "verb",
+    "definition": "To receive something is to get it when someone gives it to you or brings it to you.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "scatter": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To scatter things is to throw or spread them about in many directions.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "search": {
+    "concept": "finding_out",
+    "pos": "noun verb",
+    "definition": "To search is to look with care for something you want to find.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "several": {
+    "concept": "more_and_fewer",
+    "pos": "",
+    "definition": "Several means more than two, but not many.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "simple": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Simple means easy to understand or to do, without many parts.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "since": {
+    "concept": "sequence",
+    "pos": "",
+    "definition": "Since means from a time in the past until now, or because.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "south": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "South is the direction on your right when you face the sun as it comes up in the morning.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "species": {
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "definition": "A species is one kind of living thing, such as one kind of bird, tree or fish.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "spring": {
+    "concept": "cycle",
+    "pos": "noun",
+    "definition": "Spring is the part of the year after winter and before summer, when plants begin to grow again.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "strike": {
+    "concept": "force",
+    "pos": "verb",
+    "definition": "To strike something is to hit it hard.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "sudden": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Something sudden happens quickly when you do not expect it.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "suddenly": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Suddenly means quickly and when you did not expect it.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "support": {
+    "concept": "force",
+    "pos": "noun verb",
+    "definition": "To support something is to hold it up from below so that it does not fall.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "themselves": {
+    "concept": "self_and_other",
+    "pos": "",
+    "definition": "Themselves means the same people or things and no others.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "thus": {
+    "concept": "discourse_marker",
+    "pos": "",
+    "definition": "Thus means so, or in this way.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "travel": {
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "definition": "To travel is to go from one place to another, often far away.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "unless": {
+    "concept": "if_then",
+    "pos": "",
+    "definition": "Unless means if not, or except if.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "upon": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Upon means on, or on top of.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "upper": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Upper means higher up, or nearer the top.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "upward": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Upward means toward a higher place.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "usually": {
+    "concept": "cycle",
+    "pos": "",
+    "definition": "Usually means most of the time.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "value": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "The value of something is how much it is wanted, or how much it would cost.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "various": {
+    "concept": "same_and_different",
+    "pos": "",
+    "definition": "Various means of many different kinds.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "violet": {
+    "concept": "physical_property",
+    "pos": "",
+    "definition": "Violet is a colour between blue and red, nearer to blue.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "war": {
+    "concept": "disagreeing",
+    "pos": "noun",
+    "definition": "A war is a time when countries or large groups of people use force to hurt each other and to win.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "west": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "West is the direction where the sun goes down in the evening.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "whether": {
+    "concept": "choosing",
+    "pos": "",
+    "definition": "Whether means if, when there are two things to choose from, such as yes or no.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "wise": {
+    "concept": "knowing",
+    "pos": "adjective",
+    "definition": "Wise means knowing a lot and using it to choose well.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "within": {
+    "concept": "inside_and_outside",
+    "pos": "",
+    "definition": "Within means inside something, or not past it.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  },
+  "worth": {
+    "concept": "exchange",
+    "pos": "",
+    "definition": "If something is worth an amount, that is how much it is wanted or what it would cost.",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+  }
+}

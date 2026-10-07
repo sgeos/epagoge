@@ -16,18 +16,34 @@ from epagoge.vocabulary import load_vocabulary
 
 ROOT = Path(__file__).resolve().parents[1]
 
+LIMITS = (
+    "One manually themed batch. This does not measure general throughput "
+    "or complete level two. Semantic review is agent review, "
+    "not independent expert validation."
+)
+
 
 def read(path: Path) -> dict[str, object]:
     return cast(dict[str, object], json.loads(path.read_text(encoding="utf-8")))
 
 
-def measure(batch: Path) -> dict[str, object]:
-    before = read(batch / "before.json")
-    generation = read(batch / "generation.json")
-    candidates = read(batch / "candidates.json")
-    review = cast(dict[str, dict[str, object]], read(batch / "review.json"))
-    admitted = cast(dict[str, dict[str, str]], read(batch / "admitted.json"))
-    if set(candidates) != set(review) or generation["candidates"] != candidates:
+TEACHER_REPORT = "generation.json"
+AUTHORING_REPORT = "authoring.json"
+DECISIONS = frozenset({"admit", "defer", "exclude"})
+"""Review outcomes. ``exclude`` marks a string that is not a candidate word.
+
+**Added 2026-10-07 for a pool drawn from a frequency scan**, which proposes
+letters, fragments and proper nouns alongside words. Folding those into
+``defer`` would report them as words awaiting a definition.
+"""
+
+
+def _teacher_accounting(
+    batch: Path, before: dict[str, object], candidates: dict[str, object]
+) -> tuple[int, dict[str, object], tuple[str, ...]]:
+    """Check a teacher generation report against the batch it claims."""
+    generation = read(batch / TEACHER_REPORT)
+    if generation["candidates"] != candidates:
         raise ValueError("candidate accounting differs between artifacts")
     if generation["input_hash"] != file_digest(batch / "candidates.json"):
         raise ValueError("candidate input hash differs")
@@ -56,16 +72,79 @@ def measure(batch: Path) -> dict[str, object]:
     }
     if computed != generation["counts"]:
         raise ValueError("generator counts differ from candidate outcomes")
+    names = (
+        "before.json",
+        "candidates.json",
+        TEACHER_REPORT,
+        "generated.json",
+        "review.json",
+        "admitted.json",
+    )
+    return cast(int, generation["level"]), {"generator_counts": computed}, names
+
+
+def _agent_accounting(
+    batch: Path, before: dict[str, object], candidates: dict[str, object]
+) -> tuple[int, dict[str, object], tuple[str, ...]]:
+    """Check a declaration that no teacher produced the batch's definitions.
+
+    **A batch without a teacher still states where its input came from.** The
+    declaration names the batch's candidates, their file hash, the baseline
+    vocabulary and the scan report the pool was drawn from, so that an
+    agent-authored batch is as traceable as a generated one.
+    """
+    authoring = read(batch / AUTHORING_REPORT)
+    if authoring.get("teacher") is not None:
+        raise ValueError("an authoring declaration must record that no teacher ran")
+    if authoring.get("candidates") != candidates:
+        raise ValueError("candidate accounting differs between artifacts")
+    if authoring.get("input_hash") != file_digest(batch / "candidates.json"):
+        raise ValueError("candidate input hash differs")
+    if authoring.get("vocabulary_hash") != before["vocabulary_hash"]:
+        raise ValueError("authoring did not use the recorded baseline vocabulary")
+    for field in ("source", "pool_report_hash", "reason"):
+        value = authoring.get(field)
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError(f"authoring declaration lacks {field}")
+    if (batch / TEACHER_REPORT).exists() or (batch / "generated.json").exists():
+        raise ValueError("a batch cannot declare both a teacher and no teacher")
+    names = (
+        "before.json",
+        "candidates.json",
+        AUTHORING_REPORT,
+        "review.json",
+        "admitted.json",
+    )
+    extra: dict[str, object] = {
+        "teacher": None,
+        "pool_report_hash": authoring["pool_report_hash"],
+    }
+    return cast(int, authoring["level"]), extra, names
+
+
+def measure(batch: Path) -> dict[str, object]:
+    before = read(batch / "before.json")
+    candidates = read(batch / "candidates.json")
+    review = cast(dict[str, dict[str, object]], read(batch / "review.json"))
+    admitted = cast(dict[str, dict[str, str]], read(batch / "admitted.json"))
+    if set(candidates) != set(review):
+        raise ValueError("candidate accounting differs between artifacts")
+    has_teacher = (batch / TEACHER_REPORT).exists()
+    if has_teacher == (batch / AUTHORING_REPORT).exists():
+        raise ValueError(
+            f"a batch needs exactly one of {TEACHER_REPORT} and {AUTHORING_REPORT}"
+        )
+    accounting = _teacher_accounting if has_teacher else _agent_accounting
+    level, extra, names = accounting(batch, before, candidates)
     decisions = {word for word, row in review.items() if row["decision"] == "admit"}
     if decisions != set(admitted) or not decisions:
         raise ValueError("review and admission decisions differ or none were admitted")
     for row in review.values():
-        if row["decision"] not in {"admit", "defer"} or not row.get("reason"):
+        if row["decision"] not in DECISIONS or not row.get("reason"):
             raise ValueError(
                 "every candidate needs an explicit review decision and reason"
             )
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
-    level = cast(int, generation["level"])
     books, records = load_book_dir(ROOT / f"curriculum/books/level_{level}")
     definitions = word_definitions(books, [cast(dict[str, object], r) for r in records])
     for word, entry in admitted.items():
@@ -126,35 +205,25 @@ def measure(batch: Path) -> dict[str, object]:
     old = cast(dict[str, int], before["counts"])
     if counts["1"] != old["1"] or counts["2"] - old["2"] != len(admitted):
         raise ValueError("vocabulary change differs from reviewed admissions")
-    return {
+    decided = [str(row["decision"]) for row in review.values()]
+    measured: dict[str, object] = {
         "before": old,
         "after": counts,
         "candidates": len(candidates),
-        "generator_counts": generation["counts"],
+        **extra,
         "admitted": len(admitted),
-        "deferred": len(candidates) - len(admitted),
+        "deferred": decided.count("defer"),
         "approximate_target": before["approximate_target"],
         "remaining_gap": cast(int, before["approximate_target"]) - counts["2"],
         "closure": closure,
         "preserved_files": len(preserved),
         "preservation_passed": True,
-        "artifact_hashes": {
-            name: file_digest(batch / name)
-            for name in (
-                "before.json",
-                "candidates.json",
-                "generation.json",
-                "generated.json",
-                "review.json",
-                "admitted.json",
-            )
-        },
-        "limits": (
-            "One manually themed batch. This does not measure general throughput "
-            "or complete level two. Semantic review is agent review, "
-            "not independent expert validation."
-        ),
+        "artifact_hashes": {name: file_digest(batch / name) for name in names},
+        "limits": cast(str, before.get("limits", LIMITS)),
     }
+    if "exclude" in decided:
+        measured["excluded"] = decided.count("exclude")
+    return measured
 
 
 def main() -> int:

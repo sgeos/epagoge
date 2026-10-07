@@ -34,9 +34,13 @@ NO_DOUBLE_MULTISYLLABIC: Final[frozenset[str]] = frozenset(
         "enter",
         "happen",
         "listen",
+        "offer",
         "open",
         "order",
         "remember",
+        "scatter",
+        # The single-l spelling the modern sources use. British usage doubles.
+        "travel",
         "uncover",
         "whisper",
         "wonder",
@@ -122,6 +126,8 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     "set": ("set", "set", "setting"),
     "shut": ("shut", "shut", "shutting"),
     "sing": ("sang", "sung", "singing"),
+    # Admitted at level two on 2026-10-07. The rule gave `striked`.
+    "strike": ("struck", "struck", "striking"),
     # `lit` is the past and participle a kindergarten reader meets. The
     # regular `lighted` is correct English and archaic beside it, and the
     # operator's rule is that a verb's inflections are all admitted while
@@ -356,6 +362,7 @@ IRREGULAR_PLURAL: Final[dict[str, str]] = {
     "fish": "fish",
     "sheep": "sheep",
     "deer": "deer",
+    "species": "species",
 }
 """Plurals not derivable from spelling. A word mapping to itself has no
 distinct plural, which is a fact about the word and not a gap."""

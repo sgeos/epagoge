@@ -102,6 +102,11 @@ run "book metadata"      env PYTHONPATH=src "$PYTHON" tools/stamp_books.py --lev
 # wrong by hand was in these files.
 run "inflections"        env PYTHONPATH=src "$PYTHON" tools/check_inflections.py --level 1 --show 25
 
+# **Reported, never gated.** A substitution key that its level admits is
+# either a stale ban or a mistaken admission. Prompts drop it either way.
+run "substitutions L1"   env PYTHONPATH=src "$PYTHON" tools/check_substitutions.py --level 1
+run "substitutions L2"   env PYTHONPATH=src "$PYTHON" tools/check_substitutions.py --level 2
+
 # A document that names a file which no longer exists reads as evidence and
 # is not. Adapted from the keleusma repository's markdown link check, against
 # what this project's documents actually do, which is cite backticked paths.

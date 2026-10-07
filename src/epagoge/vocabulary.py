@@ -388,6 +388,37 @@ def unlicensed(
     return out
 
 
+def substitutions_at(vocabulary: Vocabulary, level: int) -> dict[str, str]:
+    """Substitutions still in force for text written at ``level``.
+
+    **A substitution bans a word, and an admission commits to teaching it.**
+    The table was written as a level-one triage, but the prompts printed it
+    whole at every level. On 2026-10-07 twelve of its keys were admissible
+    at level two, `amount` and `color` among them, so a level-two teacher
+    was told never to write words the level had admitted. A word nobody may
+    write is never taught, which breaks the coverage rule from the other
+    side. Keys admissible at ``level`` under the exact reading are dropped.
+    """
+    return {
+        banned: instead
+        for banned, instead in vocabulary.substitutions.items()
+        if unlicensed(vocabulary, banned, level)
+    }
+
+
+def contradicted_substitutions(vocabulary: Vocabulary, level: int) -> list[str]:
+    """Substitution keys that are nonetheless admissible at ``level``.
+
+    Reported and not refused. Each is either a stale ban or an admission
+    that should not have been made, and only a reader can tell which.
+    """
+    return sorted(
+        banned
+        for banned in vocabulary.substitutions
+        if not unlicensed(vocabulary, banned, level)
+    )
+
+
 def unlexicalised(
     vocabulary: Vocabulary, scheduled: Mapping[str, int]
 ) -> list[tuple[str, int]]:

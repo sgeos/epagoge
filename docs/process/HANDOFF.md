@@ -1,119 +1,87 @@
 # Handoff
 
-## Validity check and continuity stamp
+## Validity check
 
-Stamped 2026-09-30 at 20:35 Coordinated Universal Time. The verified base is
-`7011d61131dab25b84f0ae6b70cda0f41c66ea86`. This is an ancestry anchor,
-not the revision containing this document. A later documentation commit
-does not invalidate it merely by changing the current revision.
+Written 2026-10-07. The ancestry anchor is
+`8367a44d71073e051c32fe1ea607d5b305d6b348`, the revision this session started
+from. It is not the revision containing this document.
 
 Read `CLAUDE.md` and run these checks before relying on the state below.
 
     git status --short
-    git merge-base --is-ancestor 7011d61131dab25b84f0ae6b70cda0f41c66ea86 HEAD
-    git diff --stat 7011d61131dab25b84f0ae6b70cda0f41c66ea86
+    git merge-base --is-ancestor 8367a44d71073e051c32fe1ea607d5b305d6b348 HEAD
+    git log --oneline 8367a44d71073e051c32fe1ea607d5b305d6b348..HEAD
     .venv/bin/python tools/measure_lexicon_increment.py \
-      evals/review/level_2_taste_senses \
-      --check evals/review/level_2_taste_senses/measurement.json
+      evals/review/level_2_era_overlap \
+      --check evals/review/level_2_era_overlap/measurement.json
 
-Ancestry success and matching content support the recorded lexical state.
-Inspect later changes and local edits for changes to the task or its evidence.
-If ancestry fails or measurements disagree, report the affected claims as
-stale and reconcile them against the tree. Do not require equality with the
-anchor. Missing host artifacts make the associated checks unverified rather
-than disproved. Use the restart verification below for the full gate.
+A passing measurement check means the lexicon counts below match the tree.
+It fails by design once any later batch changes the vocabulary, and earlier
+batch measurements already fail for that reason. A failure then marks the
+counts below as stale rather than wrong. Missing host artifacts make the
+associated checks unverified rather than disproved.
 
 ## Current authority and task status
 
-Read this file with `CURRENT_BRIEF.md` and `COMPLETION_CONDITION.md`.
-The brief and condition describe the completed taste-sense increment, not
-an instruction to repeat it. Earlier handoffs in `HANDOFF_HISTORY.md` are
-historical evidence. Their commands and status statements are not current
-instructions. Durable failure analysis is in `PROCESS_STRATEGY.md`.
+`CURRENT_BRIEF.md` and `COMPLETION_CONDITION.md` describe the era-overlap
+scope opened on 2026-10-07. Earlier handoffs in `HANDOFF_HISTORY.md` are
+historical evidence. Durable failure analysis is in `PROCESS_STRATEGY.md`.
 
-The latest requested scope is this handoff refresh for post-compaction and
-new-session continuity. It adds no lexical or training task. A weekly usage
-limit interrupted the refresh before edits. The operator upgraded the plan
-and requested resumption. No generation or training job was started for this
-refresh, and no background job needs resuming from this session.
+The work was committed locally. **It was not pushed**, because no
+authorization to publish was given for this scope and publication is asked
+for separately. Check `git status` and the remote before assuming either.
+Continuous integration has therefore not run on these commits.
 
-After compaction, continue any unfinished explicit user task using the
-transcript and the tree. For this refresh, inspect whether documentation
-edits, verification or publication remain. The operator has authorized
-committing and pushing all non-ignored work in this scope. Preserve ignored
-host artifacts. Do not infer publication or cleanliness from this stamp.
-Verify the working tree, remote revision and continuous integration result.
-If the refresh is complete and no later task exists, report readiness for
-the next task. Recommendations below do not initiate another lexical batch.
+## What this scope delivered
 
-## Verified publication and evidence
+**A lexical batch from a stated pool.** The scan of 2026-09-27 selected words
+frequent in both a historical reader and a modern federal source. Every one of
+the 139 remaining pool strings, plus seven bases of scanned inflections, has a
+decision and a reason in `evals/review/level_2_era_overlap/review.json`.
+Agent review admitted 83, deferred 20 and excluded 43. No teacher ran, because
+host swap was nearly exhausted, and `authoring.json` records that.
 
-The taste-sense increment was committed and published at the verified base.
-Its [continuous integration run](https://github.com/sgeos/epagoge/actions/runs/36530723855)
-completed successfully, rechecked on 2026-09-30. This result covers the base,
-not future revisions. The last full local gate for that increment passed with
-601 tests and no skips, zero type errors or warnings, 96 percent core
-coverage and 92 percent reported training coverage. Its disclosure scan
-passed. The increment measurement was rechecked against the authoring tree
-on 2026-09-30 and matched, including the preservation hashes.
+Measured on the final tree, level two admits 1,049 distinct headwords, up
+from 966, leaving 8,951 to the approximate ten-thousand-word target. Level one
+remains at 849. Required definition coverage is 812 of 812 at level one and
+1,012 of 1,012 at level two, with complete closure at both. All level-one
+books, the reference checkpoint and 64 earlier review artifacts match their
+recorded hashes.
 
-The full local gate also passed on the continuity refresh on 2026-09-30,
-including the reference checks and the local disclosure scan. Test and
-coverage counts were unchanged. Publication of the refresh must be checked
-against its containing revision rather than the base run linked above.
+**Prompts no longer ban admitted words.** `substitutions_at` drops a
+substitution key admissible at the prompted level, and every generator now
+uses it. `tools/check_substitutions.py` reports the remaining contradictions
+in the gate without failing. Seven remain at level one and twenty at level
+two after this batch.
 
-Local and remote checks are separate evidence. Run the full local gate on
-changes and inspect its exit status before committing. Check continuous
-integration for the actual published revision, including a handoff-only
-revision. Continuous integration cannot discharge the local disclosure scan.
+**The measurement tool accounts for agent-authored batches.** A batch carries
+exactly one of a teacher report and an authoring declaration. Tests cover the
+declaration's failure modes. Earlier batches measure as before.
 
-## Completed work and next development target
+## Open items for the operator
 
-The latest review is `evals/review/level_2_taste_senses/README.md`. The candidate
-generator accepts optional explicit senses and parts of speech for exactly
-the candidate set. Malformed specifications fail before teacher access.
-Prompts and reports retain the specifications and their input hash.
+These are recorded findings, not authorized work.
 
-The four-word batch mechanically accepted taste. Agent adaptations admitted
-tongue and taste with reviewed noun plurals. Sugar and sweet remain deferred
-because their replies define each through the other and the sugar reply lacks
-independently distinguishing content. Explicit sense instructions do not
-replace semantic review or dictionary-grounding checks.
+1. **Color and colour.** Color is admitted at level two although the
+   substitution table maps it to colour. This resembles the spelling
+   decision that refused gray.
+2. **Seven level-one contradictions.** Beside, cause, great, greater,
+   length, single and unknown are admitted at level one and also listed as
+   substitutions. Either the ban or the admission is stale.
+3. **Sky has no plural.** The level-one entry declares no part of speech.
+4. **Sweet and sour.** These are sensory qualities like the ostensive
+   colours. An ostensive admission would enlarge the seed.
+5. **Publication** of the local commits.
 
-Level two now admits 966 distinct headwords, leaving 9,034 to the approximate
-ten-thousand-word target. Level one remains at 849. Required definition
-coverage is 812 of 812 at level one and 929 of 929 at level two. Both
-dictionaries remain fully grounded. Preservation hashes match level-one
-books, reference weights and all earlier review artifacts.
+## Recommended next work
 
-Earlier repairs remain in place. Fifteen part-of-speech declarations and
-fourteen new forms were reviewed in level_2_inflections. Optional defining
-words still occupy slots within the existing 700-word list, and the teacher
-context remains 4096 tokens. No general acceptance improvement is measured.
-
-The next recommended investigation is independently grounded defining
-language for sugar and sweet, with sour as a possible additional taste
-candidate. Fruit senses of skin and stone and the noun-and-verb treatment of
-crash remain separate unresolved reviews. No new sense is authorized by this
-recommendation alone. Independent expert semantic review is unavailable.
-Experimental, licensing and later-schedule decisions remain with the operator.
-
-## Starting the next Codex session
-
-The continuity prompt is `docs/process/RESUME_PROMPT.md`. Start a fresh session
-in this existing directory so the authoring-host artifacts remain available.
-The installed Codex command-line interface was version 0.158.0 when its help
-output was checked for these options in the earlier continuity repair. That
-version has not been rechecked for this refresh.
-
-    codex --cd /Users/bsechter/projects/python/epagoge \
-      --sandbox workspace-write --ask-for-approval on-request \
-      "Read docs/process/RESUME_PROMPT.md and carry out its instructions."
-
-This retains the configured model selection. Approval requests remain
-available for local teacher access and the package cache. The prompt file is
-an instruction for the new session, not a claim that a Stop hook has been
-installed. Hook installation was not part of this work.
+The overlap pool is exhausted. The next principled pool is the remainder of
+the frequent group of the same scan, filtered for proper nouns and fragments
+by rule rather than by hand. A smaller, more valuable target is the set of
+words that blocked earlier teacher definitions, recorded in retained
+generation reports, because each admission there unblocks others. Neither
+throughput nor the semantic quality of agent-authored definitions has been
+measured. No level-two book uses any word from this batch yet.
 
 ## Restart verification
 
@@ -129,14 +97,6 @@ scan still skips when its private inputs are absent.
 Before writing tracked prose, read the private code-name instructions named
 by `CLAUDE.md`. They are present on the authoring host. A fresh clone must
 obtain them or have the operator explicitly resolve that constraint.
-
-The 2026-09-28 audit verified 523 level-one books, 9,131 records and 330,710
-words. The audit measured 954 level-two words before the increment described
-above. Re-run the validators before using any count after corpus changes.
-
-The generator requires explicit source evidence, output and report paths.
-Its report retains prompts, replies, every candidate outcome and counts.
-Teacher responses are nondeterministic. Semantic review remains necessary.
 
 ## Training and artifacts
 
@@ -191,16 +151,15 @@ legacy reconstruction to a fixed historical revision. New words carry direct
 admission evidence and need no future commit hash. The check compares fields
 as well as membership. Retired direct admissions retain their evidence.
 
+
 ## Host and verification limits
 
-The 2026-09-28 audit found the teacher service, its model, local weights and
-scan sources present. Service availability has not been rechecked for this
-documentation refresh. Metal was visible outside the sandbox. Sandbox
-failures must not be reported as missing host capabilities. The teacher
-context remains 4,096.
-The earlier pre-generation check measured approximately 13.9 GB of swap in
-use. That is a historical measurement, not current memory state. Check
-current memory before sustained generation or concurrent training.
+On 2026-10-07 the teacher service answered on its loopback address with its
+model listed and no model loaded. Host swap was 7.9 of 9.2 gigabytes in use
+with about 140 megabytes of free pages, with browsers as the largest
+resident processes. Check memory before loading the teacher, which needs
+about eighteen gigabytes resident. The teacher context remains 4,096.
+Sandbox failures must not be reported as missing host capabilities.
 
 Run the local gate, inspect its exit status, and check continuous integration
 separately for the published revision. Local and remote checks are distinct.

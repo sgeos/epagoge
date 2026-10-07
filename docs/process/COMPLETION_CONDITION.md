@@ -1,24 +1,30 @@
 Ordering is not a completion criterion.
 
-The brief records current goals, the bounded sense-review scope, rationale,
-prior failures and reserved decisions.
+The brief records the present goals, the recommended scope, the rationale,
+prior failures and the wrong turns to avoid.
 
-The candidate generator supports optional explicit senses and parts of speech
-for exactly its candidate set. Malformed, duplicate, incomplete, excessive
-or unknown specification fields fail before teacher access. Tests cover those
-boundaries and unchanged default behavior. Prompts and reports retain the
-specified senses, and proposals use the specified parts of speech.
+A review record for the level-two overlap pool gives every remaining pool
+string from the recorded scan report a decision and a reason, and records
+the report's hash. Admitted words carry an agent-authored source, a concept
+already in the graph, a definition inside the level-two vocabulary, and
+explicitly reviewed surface forms. Deferred and excluded strings state why.
+No two newly admitted words are defined only through each other.
 
-New evidence accounts for tongue, taste, sugar and sweet with retained source
-information, replies, mechanical outcomes and reasoned admission or deferral.
-Admitted definitions and actual forms have explicit semantic review. Agent
-edits are identified. No circular or ungrounded definition is admitted.
+The increment measurement tool accepts a batch that declares no teacher was
+used, still rejects inconsistent or forged records, and has tests for both.
+The recorded measurement for the new batch matches the tree, reports counts
+and the remaining gap, and shows complete grounded dictionary coverage at
+levels one and two. Level-one books and earlier review evidence are
+unchanged.
 
-Measurements match the final tree and report counts, the remaining gap and
-complete grounded dictionary coverage. Earlier evidence, level-one books and
-reference weights match baseline hashes. Teacher context remains 4096 tokens.
-The handoff records remaining limits without claiming general throughput or
-curriculum benefit. Confirmatory training remains blocked.
+Prompts no longer present as banned a substitution whose key is admissible
+at the prompted level, tests cover this, and the remaining contradictions
+are reported rather than hidden.
 
-The full gate passes without skipped tests or weakened checks. All non-ignored
-work is committed and present on the remote, and the working tree is clean.
+The handoff and changelog describe the measured result and its limits
+without claiming general throughput, curriculum benefit or expert semantic
+validation. Confirmatory training remains blocked.
+
+The full gate passes without skipped tests, and all non-ignored work is
+committed. The working tree is clean apart from pre-existing untracked host
+configuration.

@@ -1,80 +1,87 @@
 # Brief
 
-Completed at `7011d61131dab25b84f0ae6b70cda0f41c66ea86` and published.
-Retained with `COMPLETION_CONDITION.md` as evidence of the completed scope.
-Use `HANDOFF.md` for current task status. This brief does not initiate new work.
+Opened 2026-10-07. The previous brief and condition are retained in
+`evals/review/level_2_era_overlap/` as evidence of the taste-sense scope.
 
 ## Present goals
 
-Complete the level-two lexicon before drafting its content. The verified
-baseline has 964 headwords through level two and a gap of 9,036 to the
-approximate target. Later goals include schedules, expanded evaluation and
-the experimental protocol. Confirmatory training remains blocked. Licensing,
-experimental and later-schedule decisions remain with the operator.
+The level-two lexicon is the active goal. The verified baseline admits 966
+distinct headwords through level two against an approximate target of ten
+thousand. Level one is closed at 849. Later goals are level-two drafting,
+schedules for later levels, expanded evaluation and the experimental
+protocol. Confirmatory training remains blocked. Licensing, experimental and
+later-schedule decisions remain with the operator.
+
+The last four increments admitted one, four, two, three and two headwords.
+Each reviewed a handful of hand-picked candidates through the local teacher.
+That rate cannot approach the target, and none of those increments measured
+why. The scan of 2026-09-27 had already produced a principled pool. Words
+frequent in both the historical readers and the modern federal sources are
+neither archaic nor narrowly technical. Of 194 such words, 47 were admitted
+then and 139 surface strings remain unadmitted at level two.
 
 ## Recommended work
 
-Review tongue, taste, sugar and sweet with explicit senses and parts of
-speech. Tongue is the movable mouth organ and belongs to body_part. Taste is
-the sensory quality of food or drink and belongs to physical_property. Sugar
-is ordinary table sugar and belongs to material. Sweet is the taste adjective
-and belongs to physical_property. These are proposed assignments to review,
-not permission to admit the words. Tongue supports a grounded taste account.
-Sugar and sweet require special scrutiny for circularity and distinguishing
-content. Food colour or general pleasantness alone is insufficient.
+**One. Account for the whole remaining overlap pool.** Every one of the 139
+strings receives a recorded decision with a reason. Admit a word when an
+introductory definition can be written inside the level-two vocabulary and
+grounds through the dictionary closure. Defer a word when its sense is
+unclear, when it is a letter, fragment or proper noun, when it is an
+inflection of another candidate, or when its only level-two sense would
+need an operator decision. Record a missing inflection of an admitted word
+as a form finding rather than a new headword.
 
-Add optional per-candidate sense specifications to the existing generator.
-A specification records a bounded nonblank sense description and recognized
-parts of speech for exactly the candidate set. Invalid structure, duplicate
-keys, missing or extra candidates, unknown fields, blank senses and invalid
-parts of speech fail before teacher access. With no specification, existing
-behavior remains unchanged. The teacher receives the intended senses as
-instructions, and the report retains the exact specifications and file hash.
-Per-candidate parts of speech reach the mechanical proposal. Sense notes do
-not license words or establish correctness.
+**Two. Author directly rather than through the teacher for this batch.**
+Host swap stood at 7.9 of 9.2 gigabytes with almost no free pages before
+work began. That is the exhaustion condition recorded beside the teacher
+context constant, and the teacher needs about eighteen gigabytes resident.
+Agent-authored definitions are untrusted input exactly as teacher replies
+are. They pass the same admission tool, the same vocabulary check and the
+same closure check. They are labelled as agent-authored in every record.
 
-Retain a bounded teacher run and an entry-by-entry review in
-evals/review/level_2_taste_senses. Admit only suitable sourced definitions
-that retain complete grounded coverage. Review actual forms, including
-comparatives if sweet is admitted and the mass qualifier for table sugar.
-Retain all mechanical outcomes, semantic decisions and agent edits. A
-candidate may be deferred rather than admitted through a weak definition.
-Measure final counts and the remaining gap, and preserve earlier records,
-level-one books and the reference checkpoint. Use the existing context limit
-of 4096 tokens and check host memory before sequential generation.
+**Three. Let the measurement tool account for an agent-authored batch.**
+`tools/measure_lexicon_increment.py` refuses any batch without a teacher
+generation report. It must accept a batch that declares it used no teacher,
+while still refusing forged or inconsistent records. Tests cover the new
+path and its failure modes.
+
+**Four. Stop prompts from banning words the level admits.** The prompt
+builder prints every substitution key as banned at every level. Twelve
+keys are already admissible at level two and seven at level one. This batch
+would add more, and a word the teacher is told never to write will not be
+taught, which breaks the coverage rule. Filter substitutions by the level
+being prompted, report keys that contradict their own level, and test both.
+
+**Five. Record the result.** Measure the increment, preserve earlier
+evidence and level-one books, update the handoff and changelog, run the full
+gate and commit locally.
 
 ## Rationale and prior failures
 
-The fruit batch repeatedly requested taste and sweet. Concept labels alone
-do not identify a word sense. Existing skin and stone definitions showed that
-surface licensing can pass while the intended meaning is unsupported.
-Explicit specifications make the intended meaning auditable but their effect
-on acceptance is unmeasured. Do not claim a throughput improvement from this
-batch or treat a compliant prompt as proof that the reply followed it.
+The prior increments read as progress and measured no throughput. Selection
+by hand produced candidates that defined each other, such as sugar and
+sweet. A pool chosen by a stated criterion avoids that and is reproducible
+from the scan report, whose hash is recorded.
 
-Do not define sugar through sweet and sweet through sugar without independent
-grounding. Do not accept a list of examples as a sufficient definition. Do not
-confuse taste with texture, temperature, preference or every sensation in the
-mouth. Do not declare a figurative sense merely because it is common.
+**Sweet and sour are not attempted here.** They are sensory qualities of the
+same kind as colours, which this lexicon grounds ostensively. The principled
+route is an ostensive admission, which enlarges the seed. Enlarging the seed
+changes what the dictionary claims about grounding, so it is recommended to
+the operator rather than done.
 
-Do not expand the seed, enlarge the teacher context, weaken validators or
-manufacture forms to force admissions. Do not alter prior evidence to make
-historical counts current. Separate mechanical acceptance, semantic review
-and final admission counts. Agent review has no independent expert audit.
+## Wrong turns to avoid
 
-## Verification and publication
+Do not write a definition that is merely a synonym list or a list of
+examples. Do not define two new words through each other. Do not choose a
+sense because it is easy to define if it is not the sense the sources use.
+Do not lower the level of a word already admitted higher, since that is an
+authored decision with its own history. A distinct sense at level two is
+permitted when it names a different concept.
 
-Regression tests exercise specification boundaries without a live teacher.
-The full gate must pass. Update the handoff with measured results and limits.
-The operator authorizes committing and pushing all non-ignored work. Preserve
-ignored artifacts and verify the published revision and clean working tree.
-Ordering is not a completion criterion.
-
-## Delivered outcome
-
-The generator now supports optional validated sense specifications and retains
-them in prompts and reports. The four-word batch mechanically accepted one
-reply. Agent review admitted tongue and taste after revisions, and deferred
-sugar and sweet because of circularity and inadequate distinguishing content.
-Level two now has 966 headwords and a remaining gap of 9,034. Both dictionaries
-retain complete grounded coverage. The new review retains every outcome.
+Do not trust generated inflections. Review every form, especially of
+irregular verbs, and mark mass nouns and periphrastic adjectives. Do not
+write a count from arithmetic. Read it from the tool. Do not chain the gate
+to the commit. Do not weaken a validator to admit a word. Do not alter prior
+review evidence. Do not claim that this batch establishes a general
+throughput, a curriculum benefit or semantic correctness beyond agent review.
+Do not push without operator authorization for this scope.

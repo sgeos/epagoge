@@ -56,6 +56,7 @@ from epagoge.vocabulary import (
     RECOGNISED_POS,
     Vocabulary,
     load_vocabulary,
+    substitutions_at,
     tokenise,
     unlicensed,
 )
@@ -273,7 +274,10 @@ def main(argv: list[str]) -> int:
             if not missing:
                 break
             question = prompts.definitions(
-                missing, args.level, admissible, vocabulary.substitutions
+                missing,
+                args.level,
+                admissible,
+                substitutions_at(vocabulary, args.level),
             )
             if senses:
                 question += (

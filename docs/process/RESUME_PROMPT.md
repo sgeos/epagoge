@@ -13,11 +13,11 @@ of delivered work, not instructions to repeat it. Historical handoffs and
 recommendations do not authorize new scope. If no unfinished task remains,
 report the verified state and readiness for the next task.
 
-The taste-sense increment is complete. The latest requested scope is the
-continuity refresh described in the handoff. Finish any outstanding edits,
-verification or publication for that scope. The operator authorized committing
-and pushing all non-ignored work in that scope. Determine actual publication
-from git and the remote rather than assuming that a stamp proves it.
+The latest scope is the era-overlap lexical batch described in the handoff
+and in CURRENT_BRIEF.md. Its work was committed locally and was not pushed,
+because publication was not authorized for that scope. Do not push without
+asking. Determine actual publication from git and the remote rather than
+assuming that a stamp proves it.
 
 If a subsequent task requests a new recommendation and implementation,
 establish a new brief and completion condition for that scope. Preserve the

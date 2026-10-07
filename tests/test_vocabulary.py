@@ -18,7 +18,9 @@ from epagoge.vocabulary import (
     Vocabulary,
     _check_comparison,
     _parse_pos,
+    contradicted_substitutions,
     load_vocabulary,
+    substitutions_at,
     term_levels,
     tokenise,
     unlexicalised,
@@ -848,3 +850,45 @@ class TestAdjectiveComparison(unittest.TestCase):
     def test_an_unrecognised_part_of_speech_is_refused(self) -> None:
         with self.assertRaises(ValueError):
             _parse_pos("adverb", "terms[0]")
+
+
+class TestSubstitutionsByLevel(unittest.TestCase):
+    """A ban must not cover a word the prompted level has admitted."""
+
+    def table(self) -> Vocabulary:
+        return Vocabulary(
+            core=frozenset({"a"}),
+            terms=(
+                Term("amount", "quantity", 2),
+                Term("beside", "spatial_position", 1),
+            ),
+            substitutions={
+                "amount": "how much",
+                "beside": "next to",
+                "can't": "cannot",
+            },
+        )
+
+    def test_a_key_admitted_at_a_later_level_is_banned_below_it(self) -> None:
+        self.assertEqual(
+            substitutions_at(self.table(), 1),
+            {"amount": "how much", "can't": "cannot"},
+        )
+
+    def test_a_key_admitted_at_the_level_is_not_banned(self) -> None:
+        self.assertEqual(substitutions_at(self.table(), 2), {"can't": "cannot"})
+
+    def test_contradictions_are_reported_per_level(self) -> None:
+        self.assertEqual(contradicted_substitutions(self.table(), 1), ["beside"])
+        self.assertEqual(
+            contradicted_substitutions(self.table(), 2), ["amount", "beside"]
+        )
+
+    def test_an_inflection_not_carried_is_still_banned(self) -> None:
+        """The exact reading, so a form the lexicon lacks stays banned."""
+        table = Vocabulary(
+            core=frozenset({"a"}),
+            terms=(Term("lead", "sequence", 1),),
+            substitutions={"leading": "first"},
+        )
+        self.assertEqual(substitutions_at(table, 1), {"leading": "first"})

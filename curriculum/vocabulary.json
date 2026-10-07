@@ -239,6 +239,28 @@
       "level": 6
     },
     {
+      "word": "act",
+      "concept": "activity",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "acted",
+        "acting",
+        "acts"
+      ]
+    },
+    {
+      "word": "action",
+      "concept": "activity",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "actions"
+      ]
+    },
+    {
       "word": "add",
       "concept": "addition",
       "level": 2,
@@ -344,6 +366,12 @@
       ]
     },
     {
+      "word": "almost",
+      "concept": "close_enough",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "alone",
       "concept": "self_and_other",
       "level": 1
@@ -352,6 +380,12 @@
       "word": "already",
       "concept": "sequence",
       "level": 2
+    },
+    {
+      "word": "although",
+      "concept": "discourse_marker",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "always",
@@ -419,12 +453,34 @@
       ]
     },
     {
+      "word": "appearance",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "appearances"
+      ]
+    },
+    {
       "word": "apple",
       "concept": "plant",
       "level": 1,
       "pos": "noun",
       "forms": [
         "apples"
+      ]
+    },
+    {
+      "word": "approach",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "approached",
+        "approaches",
+        "approaching"
       ]
     },
     {
@@ -444,6 +500,16 @@
       "level": 1,
       "forms": [
         "arms"
+      ]
+    },
+    {
+      "word": "arrow",
+      "concept": "direction",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "arrows"
       ]
     },
     {
@@ -520,6 +586,16 @@
       "word": "baby",
       "concept": "person",
       "level": 1
+    },
+    {
+      "word": "background",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "backgrounds"
+      ]
     },
     {
       "word": "backward",
@@ -776,6 +852,12 @@
       ]
     },
     {
+      "word": "beneath",
+      "concept": "spatial_position",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "beside",
       "concept": "spatial_position",
       "level": 1,
@@ -792,6 +874,12 @@
       "word": "better",
       "concept": "good_and_bad",
       "level": 1
+    },
+    {
+      "word": "beyond",
+      "concept": "spatial_position",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "bicycle",
@@ -1637,6 +1725,12 @@
       ]
     },
     {
+      "word": "clearly",
+      "concept": "physical_property",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "clever",
       "concept": "being_told",
       "level": 1
@@ -1761,6 +1855,13 @@
       "word": "combine",
       "concept": "change",
       "level": 5
+    },
+    {
+      "word": "common",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "compare",
@@ -1892,6 +1993,16 @@
       ],
       "level": 1,
       "pos": "verb"
+    },
+    {
+      "word": "country",
+      "concept": "people_together",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "countries"
+      ]
     },
     {
       "word": "cousin",
@@ -2051,6 +2162,13 @@
       "level": 1
     },
     {
+      "word": "dangerous",
+      "concept": "danger",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "dark",
       "concept": "physical_property",
       "level": 1,
@@ -2130,6 +2248,16 @@
       "level": 5
     },
     {
+      "word": "definition",
+      "concept": "word",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "definitions"
+      ]
+    },
+    {
       "word": "dense",
       "concept": "physical_property",
       "level": 2,
@@ -2175,6 +2303,18 @@
       "pos": "noun",
       "forms": [
         "desks"
+      ]
+    },
+    {
+      "word": "determine",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "determined",
+        "determines",
+        "determining"
       ]
     },
     {
@@ -2290,6 +2430,13 @@
       "level": 1
     },
     {
+      "word": "distant",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "dog",
       "concept": "animal",
       "level": 1,
@@ -2310,6 +2457,16 @@
       "pos": "noun",
       "forms": [
         "dolls"
+      ]
+    },
+    {
+      "word": "dollar",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "dollars"
       ]
     },
     {
@@ -2348,6 +2505,12 @@
       "level": 2,
       "pos": "mass noun",
       "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json"
+    },
+    {
+      "word": "downward",
+      "concept": "direction",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "drag",
@@ -2467,6 +2630,12 @@
       "pos": "adjective"
     },
     {
+      "word": "during",
+      "concept": "duration",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "dust",
       "concept": "material",
       "level": 1
@@ -2493,6 +2662,12 @@
       "concept": "material",
       "level": 1,
       "pos": "noun mass"
+    },
+    {
+      "word": "easily",
+      "concept": "physical_property",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "easy",
@@ -2617,6 +2792,18 @@
       "level": 1
     },
     {
+      "word": "escape",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "escaped",
+        "escapes",
+        "escaping"
+      ]
+    },
+    {
       "word": "evening",
       "concept": "cycle",
       "level": 1
@@ -2637,6 +2824,12 @@
       "level": 1
     },
     {
+      "word": "everywhere",
+      "concept": "spatial_position",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "exactly",
       "concept": "only_what_was_asked",
       "level": 1
@@ -2649,6 +2842,31 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "forms": [
         "examples"
+      ]
+    },
+    {
+      "word": "excellent",
+      "concept": "good_and_bad",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "except",
+      "concept": "leaving_out",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "expect",
+      "concept": "guess",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "expected",
+        "expecting",
+        "expects"
       ]
     },
     {
@@ -2852,6 +3070,16 @@
       ]
     },
     {
+      "word": "field",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "fields"
+      ]
+    },
+    {
       "word": "fifty",
       "concept": "natural_number",
       "level": 2
@@ -2951,6 +3179,16 @@
       "word": "fleet",
       "concept": "investigation_practice",
       "level": 6
+    },
+    {
+      "word": "flight",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "flights"
+      ]
     },
     {
       "word": "float",
@@ -3113,6 +3351,18 @@
       ]
     },
     {
+      "word": "form",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "formed",
+        "forming",
+        "forms"
+      ]
+    },
+    {
       "word": "forty",
       "concept": "natural_number",
       "level": 2
@@ -3132,6 +3382,17 @@
       ]
     },
     {
+      "word": "free",
+      "concept": "allowed_or_not",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "freer",
+        "freest"
+      ]
+    },
+    {
       "word": "freeze",
       "concept": "heat",
       "level": 1,
@@ -3141,6 +3402,17 @@
         "freezing",
         "froze",
         "frozen"
+      ]
+    },
+    {
+      "word": "fresh",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "fresher",
+        "freshest"
       ]
     },
     {
@@ -3178,6 +3450,12 @@
       ]
     },
     {
+      "word": "fully",
+      "concept": "emptiness",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "fun",
       "concept": "feeling",
       "level": 1,
@@ -3187,6 +3465,17 @@
       "word": "function",
       "concept": "algebraic_structure",
       "level": 5
+    },
+    {
+      "word": "funny",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "funnier",
+        "funniest"
+      ]
     },
     {
       "word": "fur",
@@ -3356,6 +3645,12 @@
         "greater",
         "greatest"
       ]
+    },
+    {
+      "word": "greatly",
+      "concept": "more_and_fewer",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "green",
@@ -3911,9 +4206,37 @@
       "level": 1
     },
     {
+      "word": "illustration",
+      "concept": "standing_for",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "illustrations"
+      ]
+    },
+    {
+      "word": "immediately",
+      "concept": "duration",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "impossible",
       "concept": "can_and_cannot",
       "level": 1
+    },
+    {
+      "word": "increase",
+      "concept": "more_and_fewer",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "increased",
+        "increases",
+        "increasing"
+      ]
     },
     {
       "word": "individual",
@@ -4540,6 +4863,12 @@
       "pos": "noun mass"
     },
     {
+      "word": "main",
+      "concept": "component_and_system",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "man",
       "concept": "person",
       "level": 1
@@ -4984,6 +5313,13 @@
       "level": 1
     },
     {
+      "word": "nature",
+      "concept": "living_and_not_living",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "near",
       "concept": "close_enough",
       "level": 1,
@@ -5003,6 +5339,12 @@
       "word": "nearby",
       "concept": "spatial_position",
       "level": 1
+    },
+    {
+      "word": "nearly",
+      "concept": "close_enough",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "neat",
@@ -5108,6 +5450,12 @@
       "level": 1
     },
     {
+      "word": "nor",
+      "concept": "not_both",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "nose",
       "concept": "body_part",
       "level": 1,
@@ -5150,6 +5498,16 @@
       ]
     },
     {
+      "word": "object",
+      "concept": "standing_for",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "objects"
+      ]
+    },
+    {
       "word": "observe",
       "concept": "saying_what_you_saw",
       "level": 2,
@@ -5162,6 +5520,18 @@
       ]
     },
     {
+      "word": "obtain",
+      "concept": "having",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "obtained",
+        "obtaining",
+        "obtains"
+      ]
+    },
+    {
       "word": "ocean",
       "concept": "liquid",
       "level": 2,
@@ -5169,6 +5539,18 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "forms": [
         "oceans"
+      ]
+    },
+    {
+      "word": "offer",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "offered",
+        "offering",
+        "offers"
       ]
     },
     {
@@ -5229,6 +5611,12 @@
       "forms": [
         "opposites"
       ]
+    },
+    {
+      "word": "orange",
+      "concept": "physical_property",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "order",
@@ -5343,6 +5731,16 @@
       "level": 1
     },
     {
+      "word": "parcel",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "parcels"
+      ]
+    },
+    {
       "word": "parent",
       "concept": "family",
       "level": 1,
@@ -5419,6 +5817,12 @@
       "forms": [
         "pens"
       ]
+    },
+    {
+      "word": "per",
+      "concept": "unit",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "percent",
@@ -5595,6 +5999,16 @@
       ]
     },
     {
+      "word": "pole",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "poles"
+      ]
+    },
+    {
       "word": "poor",
       "concept": "having",
       "level": 1,
@@ -5622,6 +6036,16 @@
       "word": "position",
       "concept": "claim_under_test",
       "level": 6
+    },
+    {
+      "word": "position",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "positions"
+      ]
     },
     {
       "word": "possible",
@@ -5759,6 +6183,13 @@
       ]
     },
     {
+      "word": "public",
+      "concept": "people_together",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "puddle",
       "concept": "liquid",
       "level": 1,
@@ -5853,6 +6284,12 @@
       ]
     },
     {
+      "word": "quite",
+      "concept": "more_and_fewer",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "rain",
       "concept": "weather",
       "level": 1,
@@ -5873,6 +6310,19 @@
         "raises",
         "raising"
       ]
+    },
+    {
+      "word": "rapid",
+      "concept": "duration",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "rapidly",
+      "concept": "duration",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "rate",
@@ -5934,6 +6384,18 @@
         "rearranging"
       ],
       "pos": "verb"
+    },
+    {
+      "word": "receive",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "received",
+        "receives",
+        "receiving"
+      ]
     },
     {
       "word": "reconcile",
@@ -6376,6 +6838,18 @@
       "level": 1
     },
     {
+      "word": "scatter",
+      "concept": "joining_and_separating",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "scattered",
+        "scattering",
+        "scatters"
+      ]
+    },
+    {
       "word": "school",
       "concept": "people_together",
       "level": 1,
@@ -6403,6 +6877,18 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "forms": [
         "seas"
+      ]
+    },
+    {
+      "word": "search",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "searched",
+        "searches",
+        "searching"
       ]
     },
     {
@@ -6524,6 +7010,12 @@
       "word": "seven",
       "concept": "number_word_order",
       "level": 1
+    },
+    {
+      "word": "several",
+      "concept": "more_and_fewer",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "shadow",
@@ -6766,9 +7258,26 @@
       "level": 1
     },
     {
+      "word": "simple",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "simpler",
+        "simplest"
+      ]
+    },
+    {
       "word": "simulated",
       "concept": "investigation_practice",
       "level": 6
+    },
+    {
+      "word": "since",
+      "concept": "sequence",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "sing",
@@ -7100,6 +7609,12 @@
       ]
     },
     {
+      "word": "south",
+      "concept": "direction",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "space",
       "concept": "emptiness",
       "level": 1
@@ -7125,6 +7640,13 @@
       "word": "special",
       "concept": "same_and_different",
       "level": 1
+    },
+    {
+      "word": "species",
+      "concept": "living_and_not_living",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "speed",
@@ -7203,6 +7725,16 @@
       "forms": [
         "spreading",
         "spreads"
+      ]
+    },
+    {
+      "word": "spring",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "springs"
       ]
     },
     {
@@ -7456,6 +7988,18 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
+      "word": "strike",
+      "concept": "force",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "strikes",
+        "striking",
+        "struck"
+      ]
+    },
+    {
       "word": "string",
       "concept": "material",
       "level": 1,
@@ -7523,6 +8067,19 @@
       "level": 5
     },
     {
+      "word": "sudden",
+      "concept": "duration",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "suddenly",
+      "concept": "duration",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "summer",
       "concept": "cycle",
       "level": 2,
@@ -7561,6 +8118,18 @@
         "supplied",
         "supplies",
         "supplying"
+      ]
+    },
+    {
+      "word": "support",
+      "concept": "force",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "supported",
+        "supporting",
+        "supports"
       ]
     },
     {
@@ -7844,6 +8413,12 @@
       "level": 1
     },
     {
+      "word": "themselves",
+      "concept": "self_and_other",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "therefore",
       "concept": "discourse_marker",
       "level": 6
@@ -7945,6 +8520,12 @@
         "thrown",
         "throws"
       ]
+    },
+    {
+      "word": "thus",
+      "concept": "discourse_marker",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "tide",
@@ -8112,6 +8693,18 @@
         "traded",
         "trades",
         "trading"
+      ]
+    },
+    {
+      "word": "travel",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "traveled",
+        "traveling",
+        "travels"
       ]
     },
     {
@@ -8309,6 +8902,12 @@
       "level": 1
     },
     {
+      "word": "unless",
+      "concept": "if_then",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "unlike",
       "concept": "same_and_different",
       "level": 1
@@ -8346,9 +8945,27 @@
       "level": 1
     },
     {
+      "word": "upon",
+      "concept": "spatial_position",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "upper",
+      "concept": "spatial_position",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "upset",
       "concept": "feeling",
       "level": 1
+    },
+    {
+      "word": "upward",
+      "concept": "direction",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "use",
@@ -8369,6 +8986,28 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
+      "word": "usually",
+      "concept": "cycle",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "value",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "values"
+      ]
+    },
+    {
+      "word": "various",
+      "concept": "same_and_different",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "view",
       "concept": "opinion",
       "level": 1,
@@ -8384,6 +9023,12 @@
       "forms": [
         "villages"
       ]
+    },
+    {
+      "word": "violet",
+      "concept": "physical_property",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "voice",
@@ -8443,6 +9088,16 @@
         "wants"
       ],
       "pos": "verb"
+    },
+    {
+      "word": "war",
+      "concept": "disagreeing",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "wars"
+      ]
     },
     {
       "word": "warm",
@@ -8586,6 +9241,12 @@
       "level": 1
     },
     {
+      "word": "west",
+      "concept": "direction",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "wet",
       "concept": "physical_property",
       "level": 1,
@@ -8603,6 +9264,12 @@
         "wheels"
       ],
       "pos": "noun"
+    },
+    {
+      "word": "whether",
+      "concept": "choosing",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "while",
@@ -8700,6 +9367,23 @@
       ]
     },
     {
+      "word": "wise",
+      "concept": "knowing",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "forms": [
+        "wiser",
+        "wisest"
+      ]
+    },
+    {
+      "word": "within",
+      "concept": "inside_and_outside",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
       "word": "woman",
       "concept": "person",
       "level": 1
@@ -8763,6 +9447,12 @@
       "word": "worst",
       "concept": "good_and_bad",
       "level": 1
+    },
+    {
+      "word": "worth",
+      "concept": "exchange",
+      "level": 2,
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
       "word": "wound",

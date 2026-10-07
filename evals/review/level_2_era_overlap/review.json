@@ -1,0 +1,1326 @@
+{
+  "act": {
+    "decision": "admit",
+    "reason": "Doing sense, as noun and verb. The theatrical and legal senses are not admitted. The level-one substitution of do for act remains in force at level one.",
+    "definition_origin": "Agent-authored",
+    "definition": "To act is to do something, and an act is one thing that someone does.",
+    "concept": "activity",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "act",
+      "acted",
+      "acting",
+      "acts"
+    ]
+  },
+  "action": {
+    "decision": "admit",
+    "reason": "Something done. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "An action is something that someone does.",
+    "concept": "activity",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "action",
+      "actions"
+    ]
+  },
+  "acts": {
+    "decision": "exclude",
+    "reason": "An inflected form of act, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "africa": {
+    "decision": "exclude",
+    "reason": "A proper noun or a word derived from one. Proper nouns sit in the exempt list rather than the level system, and none is needed by a current definition."
+  },
+  "almost": {
+    "decision": "admit",
+    "reason": "Degree adverb. Defined by approach to a whole without reaching it.",
+    "definition_origin": "Agent-authored",
+    "definition": "Almost means very close to all of something, but not all of it.",
+    "concept": "close_enough",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "almost"
+    ]
+  },
+  "although": {
+    "decision": "admit",
+    "reason": "Concessive conjunction. A plain example carries the contrast because the level lacks a word for unexpectedness.",
+    "definition_origin": "Agent-authored",
+    "definition": "Although means even though, as in we went out although it was cold.",
+    "concept": "discourse_marker",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "although"
+    ]
+  },
+  "america": {
+    "decision": "exclude",
+    "reason": "A proper noun or a word derived from one. Proper nouns sit in the exempt list rather than the level system, and none is needed by a current definition."
+  },
+  "american": {
+    "decision": "exclude",
+    "reason": "A proper noun or a word derived from one. Proper nouns sit in the exempt list rather than the level system, and none is needed by a current definition."
+  },
+  "appearance": {
+    "decision": "admit",
+    "reason": "How something looks. The sense of coming into view is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "The appearance of something is the way it looks.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "appearance",
+      "appearances"
+    ]
+  },
+  "approach": {
+    "decision": "admit",
+    "reason": "Verb for moving nearer. The noun for a way of doing something is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To approach something is to move nearer to it.",
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "approach",
+      "approached",
+      "approaches",
+      "approaching"
+    ]
+  },
+  "arrow": {
+    "decision": "admit",
+    "reason": "Both the projectile and the pointing mark, which the historical and modern sources respectively use. Bow is deferred, so the definition does not depend on it.",
+    "definition_origin": "Agent-authored",
+    "definition": "An arrow is a thin stick with a sharp point at its front end, or a mark shaped like one that points the way.",
+    "concept": "direction",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "arrow",
+      "arrows"
+    ]
+  },
+  "b": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "background": {
+    "decision": "admit",
+    "reason": "The part of a picture or view behind its subject.",
+    "definition_origin": "Agent-authored",
+    "definition": "The background of a picture or a view is the part that is far behind the things at the front.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "background",
+      "backgrounds"
+    ]
+  },
+  "band": {
+    "decision": "defer",
+    "reason": "The two eras use different senses. The historical readers use a group of musicians and the modern sources use a strip or range, so overlap frequency does not support either sense."
+  },
+  "beneath": {
+    "decision": "admit",
+    "reason": "Spatial preposition. The level-one substitution of under remains in force at level one.",
+    "definition_origin": "Agent-authored",
+    "definition": "Beneath means under or below something.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "beneath"
+    ]
+  },
+  "beyond": {
+    "decision": "admit",
+    "reason": "Spatial preposition. The level-one substitution of past remains in force at level one.",
+    "definition_origin": "Agent-authored",
+    "definition": "Beyond means on the far side of something, or past it.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "beyond"
+    ]
+  },
+  "bow": {
+    "decision": "defer",
+    "reason": "Several unrelated senses with two pronunciations occur, including the weapon, bending at the waist and the front of a ship. No single sense is supported by both eras."
+  },
+  "c": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "case": {
+    "decision": "defer",
+    "reason": "The historical readers use grammatical and circumstantial senses and the modern sources use an instance sense. The container sense is easiest to define and is not the sense the sources use."
+  },
+  "cell": {
+    "decision": "defer",
+    "reason": "The historical readers use a small room for a prisoner or animal and the modern sources use biological and storm cells. The senses differ between eras."
+  },
+  "clearly": {
+    "decision": "admit",
+    "reason": "Manner adverb related to clear. The sense of obviously is approximated by easy to understand.",
+    "definition_origin": "Agent-authored",
+    "definition": "Clearly means in a way that is easy to see, hear or understand.",
+    "concept": "physical_property",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "clearly"
+    ]
+  },
+  "common": {
+    "decision": "admit",
+    "reason": "Frequent or widespread. The sense of shared is not admitted. Assigned to cycle beside often after review moved it from tending, whose words concern caring for something.",
+    "definition_origin": "Agent-authored",
+    "definition": "Something common is found often or in many places, and is not special.",
+    "concept": "cycle",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "common"
+    ],
+    "agent_edit_after_admission": "Concept moved from tending to cycle."
+  },
+  "conduct": {
+    "decision": "defer",
+    "reason": "The historical readers use the noun for behaviour and the modern sources use the verb for carrying heat or electricity. The senses differ between eras and differ in stress."
+  },
+  "content": {
+    "decision": "defer",
+    "reason": "The historical readers use the adjective for satisfied and the modern sources use the noun for what something holds. The senses differ between eras and differ in stress."
+  },
+  "country": {
+    "decision": "admit",
+    "reason": "A nation with its own leaders and rules. The rural sense is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A country is a large part of the world that has its own leaders and its own rules.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "countries",
+      "country"
+    ]
+  },
+  "course": {
+    "decision": "defer",
+    "reason": "Frequency is dominated by the idiom of course, and the remaining senses of path, plan of lessons and flow of time are mixed. No single sense is supported."
+  },
+  "d": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "dangerous": {
+    "decision": "admit",
+    "reason": "Able to cause harm. Comparison is periphrastic.",
+    "definition_origin": "Agent-authored",
+    "definition": "Something dangerous can hurt you or cause harm.",
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "dangerous"
+    ]
+  },
+  "dashed": {
+    "decision": "defer",
+    "reason": "The historical readers use dashing against rocks and the modern sources use dashed lines. The base dash would need two unrelated senses."
+  },
+  "definition": {
+    "decision": "admit",
+    "reason": "Base of the scanned plural definitions. The statement of what a word means, which is what this dictionary contains.",
+    "definition_origin": "Agent-authored",
+    "definition": "A definition is a sentence that says what a word means.",
+    "concept": "word",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "definition",
+      "definitions"
+    ]
+  },
+  "definitions": {
+    "decision": "exclude",
+    "reason": "An inflected form of definition, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "determine": {
+    "decision": "admit",
+    "reason": "Base of the scanned determined. Covers finding out with certainty and deciding. The adjective sense of resolute is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To determine something is to find it out for certain, or to decide it.",
+    "concept": "finding_out",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "determine",
+      "determined",
+      "determines",
+      "determining"
+    ]
+  },
+  "determined": {
+    "decision": "exclude",
+    "reason": "An inflected form of determine, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "distant": {
+    "decision": "admit",
+    "reason": "Far away in space. Comparison is periphrastic.",
+    "definition_origin": "Agent-authored",
+    "definition": "Distant means far away.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "distant"
+    ]
+  },
+  "dollar": {
+    "decision": "admit",
+    "reason": "Base of the scanned plural dollars. A unit of price. Money is not admitted at level two, so the definition uses cost.",
+    "definition_origin": "Agent-authored",
+    "definition": "A dollar is a unit for counting how much things cost, used in some countries.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "dollar",
+      "dollars"
+    ]
+  },
+  "dollars": {
+    "decision": "exclude",
+    "reason": "An inflected form of dollar, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "downward": {
+    "decision": "admit",
+    "reason": "Directional adverb toward a lower place.",
+    "definition_origin": "Agent-authored",
+    "definition": "Downward means toward a lower place.",
+    "concept": "direction",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "downward"
+    ]
+  },
+  "dr": {
+    "decision": "exclude",
+    "reason": "Not a candidate word. It is an abbreviation."
+  },
+  "during": {
+    "decision": "admit",
+    "reason": "Temporal preposition covering both a point within and the whole of a period. The level-one substitution of when remains in force at level one.",
+    "definition_origin": "Agent-authored",
+    "definition": "During means at some time while something is happening, or for all of that time.",
+    "concept": "duration",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "during"
+    ]
+  },
+  "e": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "easily": {
+    "decision": "admit",
+    "reason": "Manner adverb related to easy.",
+    "definition_origin": "Agent-authored",
+    "definition": "Easily means in an easy way, without much work.",
+    "concept": "physical_property",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "easily"
+    ]
+  },
+  "england": {
+    "decision": "exclude",
+    "reason": "A proper noun or a word derived from one. Proper nouns sit in the exempt list rather than the level system, and none is needed by a current definition."
+  },
+  "escape": {
+    "decision": "admit",
+    "reason": "Getting away from confinement or danger, as noun and verb.",
+    "definition_origin": "Agent-authored",
+    "definition": "To escape is to get away from a place where you are kept, or from a danger.",
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "escape",
+      "escaped",
+      "escapes",
+      "escaping"
+    ]
+  },
+  "etc": {
+    "decision": "exclude",
+    "reason": "Not a candidate word. It is an abbreviation."
+  },
+  "everywhere": {
+    "decision": "admit",
+    "reason": "In every place.",
+    "definition_origin": "Agent-authored",
+    "definition": "Everywhere means in every place.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "everywhere"
+    ]
+  },
+  "excellent": {
+    "decision": "admit",
+    "reason": "Very good. Comparison is periphrastic.",
+    "definition_origin": "Agent-authored",
+    "definition": "Excellent means very good, better than most.",
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "excellent"
+    ]
+  },
+  "except": {
+    "decision": "admit",
+    "reason": "Preposition marking what is left out.",
+    "definition_origin": "Agent-authored",
+    "definition": "Except means but not, and it names what is left out.",
+    "concept": "leaving_out",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "except"
+    ]
+  },
+  "expect": {
+    "decision": "admit",
+    "reason": "Verb for thinking that something will happen. Assigned to guess because an expectation is a prediction.",
+    "definition_origin": "Agent-authored",
+    "definition": "To expect something is to think that it will happen.",
+    "concept": "guess",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "expect",
+      "expected",
+      "expecting",
+      "expects"
+    ]
+  },
+  "expected": {
+    "decision": "exclude",
+    "reason": "An inflected form of expect, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "f": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "field": {
+    "decision": "admit",
+    "reason": "An open piece of land. The modern physical sense of a field of force is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A field is a wide, open piece of land, often covered with grass or used to grow food.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "field",
+      "fields"
+    ]
+  },
+  "fine": {
+    "decision": "defer",
+    "reason": "The historical readers use fine for good or pleasant and the modern sources use fine for small particles. The senses differ between eras."
+  },
+  "flight": {
+    "decision": "admit",
+    "reason": "Moving through the air. The fleeing sense of taking flight is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "Flight is moving through the air, as a bird does when it flies.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "flight",
+      "flights"
+    ]
+  },
+  "form": {
+    "decision": "admit",
+    "reason": "Shape, and making or taking a shape. The document sense is not admitted. The level-one substitution of shape remains in force at level one.",
+    "definition_origin": "Agent-authored",
+    "definition": "The form of something is its shape, and to form something is to make it or give it a shape.",
+    "concept": "shape",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "form",
+      "formed",
+      "forming",
+      "forms"
+    ]
+  },
+  "formed": {
+    "decision": "exclude",
+    "reason": "An inflected form of form, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "fort": {
+    "decision": "defer",
+    "reason": "Modern frequency comes from the place name Fort Worth, so the overlap is an artifact of a proper noun."
+  },
+  "free": {
+    "decision": "admit",
+    "reason": "Not confined or held. The sense of costing nothing is not admitted. Reviewed comparatives freer and freest.",
+    "definition_origin": "Agent-authored",
+    "definition": "Free means able to go where you want or do what you want, and not shut in or held.",
+    "concept": "allowed_or_not",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "free",
+      "freer",
+      "freest"
+    ]
+  },
+  "fresh": {
+    "decision": "admit",
+    "reason": "Recently made or gathered and not spoiled. Reviewed comparatives fresher and freshest.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fresh food or water is new and clean, not old or gone bad.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "fresh",
+      "fresher",
+      "freshest"
+    ]
+  },
+  "fully": {
+    "decision": "admit",
+    "reason": "Manner adverb related to full.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fully means in a full way, with nothing left out.",
+    "concept": "emptiness",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "fully"
+    ]
+  },
+  "funny": {
+    "decision": "admit",
+    "reason": "Causing laughter. The sense of strange is not admitted. Reviewed comparatives funnier and funniest.",
+    "definition_origin": "Agent-authored",
+    "definition": "Something funny makes you laugh.",
+    "concept": "feeling",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "funnier",
+      "funniest",
+      "funny"
+    ]
+  },
+  "g": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "gray": {
+    "decision": "exclude",
+    "reason": "A spelling variant of the admitted level-one word grey. Two spellings of one word is a spelling decision, refused on the same ground on 2026-09-27."
+  },
+  "greatly": {
+    "decision": "admit",
+    "reason": "Degree adverb meaning by a lot.",
+    "definition_origin": "Agent-authored",
+    "definition": "Greatly means by a lot, or very much.",
+    "concept": "more_and_fewer",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "greatly"
+    ]
+  },
+  "h": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "illustration": {
+    "decision": "admit",
+    "reason": "A picture accompanying text. The sense of an example is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An illustration is a picture in a book that helps show what the words mean.",
+    "concept": "standing_for",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "illustration",
+      "illustrations"
+    ]
+  },
+  "immediately": {
+    "decision": "admit",
+    "reason": "At once.",
+    "definition_origin": "Agent-authored",
+    "definition": "Immediately means at once, without waiting.",
+    "concept": "duration",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "immediately"
+    ]
+  },
+  "increase": {
+    "decision": "admit",
+    "reason": "Becoming or making bigger or more, as noun and verb.",
+    "definition_origin": "Agent-authored",
+    "definition": "To increase is to become bigger or more, or to make something bigger or more.",
+    "concept": "more_and_fewer",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "increase",
+      "increased",
+      "increases",
+      "increasing"
+    ]
+  },
+  "increased": {
+    "decision": "exclude",
+    "reason": "An inflected form of increase, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "indian": {
+    "decision": "exclude",
+    "reason": "A proper noun or a word derived from one. Proper nouns sit in the exempt list rather than the level system, and none is needed by a current definition."
+  },
+  "k": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "l": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "m": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "main": {
+    "decision": "admit",
+    "reason": "Biggest or most needed. No comparison forms, since the word does not compare.",
+    "definition_origin": "Agent-authored",
+    "definition": "The main part of something is its biggest part, or the part you need most.",
+    "concept": "component_and_system",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "main"
+    ]
+  },
+  "march": {
+    "decision": "defer",
+    "reason": "Modern frequency comes from the month name. The verb sense occurs only in the historical readers."
+  },
+  "mass": {
+    "decision": "defer",
+    "reason": "Historical frequency comes from the abbreviation Mass. for a state name in author notes, so the overlap is an artifact. The remaining physical sense is technical."
+  },
+  "matter": {
+    "decision": "defer",
+    "reason": "The historical readers use what is the matter and printed matter, and the modern sources use physical matter. The senses differ between eras."
+  },
+  "n": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "nature": {
+    "decision": "admit",
+    "reason": "The natural world. Mass noun. The sense of a thing's character is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "Nature is the plants, animals, land, water and sky of the world, and everything in it that people did not make.",
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "nature"
+    ]
+  },
+  "nearly": {
+    "decision": "admit",
+    "reason": "Defined through almost, which is admitted in the same batch and grounds without nearly, so the dependency is not circular.",
+    "definition_origin": "Agent-authored",
+    "definition": "Nearly means almost.",
+    "concept": "close_enough",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "nearly"
+    ]
+  },
+  "nor": {
+    "decision": "admit",
+    "reason": "Negative coordinator.",
+    "definition_origin": "Agent-authored",
+    "definition": "Nor means and not, and it adds another thing that is also not so.",
+    "concept": "not_both",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "nor"
+    ]
+  },
+  "o": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "object": {
+    "decision": "admit",
+    "reason": "A thing that can be seen or touched. The verb and the grammatical sense are not admitted. Assigned to standing_for beside thing words such as something and everything. The level-one substitution of thing remains in force at level one.",
+    "definition_origin": "Agent-authored",
+    "definition": "An object is a thing that you can see or touch.",
+    "concept": "standing_for",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "object",
+      "objects"
+    ]
+  },
+  "obtain": {
+    "decision": "admit",
+    "reason": "To get.",
+    "definition_origin": "Agent-authored",
+    "definition": "To obtain something is to get it.",
+    "concept": "having",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "obtain",
+      "obtained",
+      "obtaining",
+      "obtains"
+    ]
+  },
+  "offer": {
+    "decision": "admit",
+    "reason": "Holding out or proposing to give or do, as noun and verb. Classified as not doubling, giving offered.",
+    "definition_origin": "Agent-authored",
+    "definition": "To offer something is to hold it out to someone, or to say that you will give it or do it if they want.",
+    "concept": "exchange",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "offer",
+      "offered",
+      "offering",
+      "offers"
+    ]
+  },
+  "orange": {
+    "decision": "admit",
+    "reason": "The colour, grounded through the ostensive red and yellow. The fruit sense is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "Orange is the colour between red and yellow.",
+    "concept": "physical_property",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "orange"
+    ]
+  },
+  "p": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "pa": {
+    "decision": "exclude",
+    "reason": "Not a candidate word. It is an abbreviation or a nursery word for father."
+  },
+  "parcel": {
+    "decision": "admit",
+    "reason": "A bundle or box for carrying to someone.",
+    "definition_origin": "Agent-authored",
+    "definition": "A parcel is a bundle or box with something in it, to be carried to someone.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "parcel",
+      "parcels"
+    ]
+  },
+  "per": {
+    "decision": "admit",
+    "reason": "For each, with an example in units the level admits.",
+    "definition_origin": "Agent-authored",
+    "definition": "Per means for each, as in ten miles per hour, which means ten miles for each hour.",
+    "concept": "unit",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "per"
+    ]
+  },
+  "pole": {
+    "decision": "admit",
+    "reason": "A long thin rod, as used in the historical readers. The geographic pole is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pole is a long, thin, round piece of wood or metal.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "pole",
+      "poles"
+    ]
+  },
+  "position": {
+    "decision": "admit",
+    "reason": "Spatial place. A distinct sense from the level-six admission under claim_under_test, which is unchanged. The level-one substitution of place remains in force at level one.",
+    "definition_origin": "Agent-authored",
+    "definition": "The position of something is the place where it is.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "position",
+      "positions"
+    ]
+  },
+  "pre": {
+    "decision": "exclude",
+    "reason": "Not a candidate word. It is a prefix split off by the tokeniser."
+  },
+  "present": {
+    "decision": "defer",
+    "reason": "Present is admitted at level five under presence. The scan does not separate the gift, here-and-now and verb senses, so no distinct level-two sense is supported."
+  },
+  "produced": {
+    "decision": "defer",
+    "reason": "The base produce is admitted at level five under change. Lowering its level is an authored scheduling decision outside this batch."
+  },
+  "public": {
+    "decision": "admit",
+    "reason": "For everyone and not private. Comparison is periphrastic.",
+    "definition_origin": "Agent-authored",
+    "definition": "Public means for everyone to use or see, and not kept for just one person.",
+    "concept": "people_together",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "public"
+    ]
+  },
+  "quite": {
+    "decision": "admit",
+    "reason": "Degree adverb covering both very and completely, because both occur in the sources.",
+    "definition_origin": "Agent-authored",
+    "definition": "Quite means very much, or all the way.",
+    "concept": "more_and_fewer",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "quite"
+    ]
+  },
+  "r": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "rapid": {
+    "decision": "admit",
+    "reason": "Very fast. Comparison is periphrastic.",
+    "definition_origin": "Agent-authored",
+    "definition": "Rapid means very fast.",
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "rapid"
+    ]
+  },
+  "rapidly": {
+    "decision": "admit",
+    "reason": "Manner adverb related to rapid.",
+    "definition_origin": "Agent-authored",
+    "definition": "Rapidly means very fast.",
+    "concept": "duration",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "rapidly"
+    ]
+  },
+  "rather": {
+    "decision": "defer",
+    "reason": "Rather is admitted at level six under discourse_marker. Admitting it at level two with the same concept would relevel an authored decision."
+  },
+  "receive": {
+    "decision": "admit",
+    "reason": "To get something given or brought.",
+    "definition_origin": "Agent-authored",
+    "definition": "To receive something is to get it when someone gives it to you or brings it to you.",
+    "concept": "exchange",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "receive",
+      "received",
+      "receives",
+      "receiving"
+    ]
+  },
+  "received": {
+    "decision": "exclude",
+    "reason": "An inflected form of receive, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "s": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "scatter": {
+    "decision": "admit",
+    "reason": "Base of the scanned scattered. To spread things in many directions. Classified as not doubling.",
+    "definition_origin": "Agent-authored",
+    "definition": "To scatter things is to throw or spread them about in many directions.",
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "scatter",
+      "scattered",
+      "scattering",
+      "scatters"
+    ]
+  },
+  "scattered": {
+    "decision": "exclude",
+    "reason": "An inflected form of scatter, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "search": {
+    "decision": "admit",
+    "reason": "To look carefully for something, as noun and verb. Carefully is a level-one substitution, so the definition uses with care.",
+    "definition_origin": "Agent-authored",
+    "definition": "To search is to look with care for something you want to find.",
+    "concept": "finding_out",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "search",
+      "searched",
+      "searches",
+      "searching"
+    ]
+  },
+  "several": {
+    "decision": "admit",
+    "reason": "More than two but not many.",
+    "definition_origin": "Agent-authored",
+    "definition": "Several means more than two, but not many.",
+    "concept": "more_and_fewer",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "several"
+    ]
+  },
+  "simple": {
+    "decision": "admit",
+    "reason": "Easy and without many parts. Reviewed comparatives simpler and simplest.",
+    "definition_origin": "Agent-authored",
+    "definition": "Simple means easy to understand or to do, without many parts.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "simple",
+      "simpler",
+      "simplest"
+    ]
+  },
+  "since": {
+    "decision": "admit",
+    "reason": "Both the temporal and the causal senses, because both occur in the sources.",
+    "definition_origin": "Agent-authored",
+    "definition": "Since means from a time in the past until now, or because.",
+    "concept": "sequence",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "since"
+    ]
+  },
+  "skies": {
+    "decision": "defer",
+    "reason": "The plural of the admitted level-one headword sky. Sky carries no part of speech and no plural form. Adding one changes a closed level-one entry, which is recorded as a finding rather than made here."
+  },
+  "south": {
+    "decision": "admit",
+    "reason": "Defined by facing the rising sun. This holds in either hemisphere to the extent that the sun rises roughly in the east, which varies with season and latitude.",
+    "definition_origin": "Agent-authored",
+    "definition": "South is the direction on your right when you face the sun as it comes up in the morning.",
+    "concept": "direction",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "south"
+    ]
+  },
+  "species": {
+    "decision": "admit",
+    "reason": "One kind of living thing. An introductory simplification that omits interbreeding. Count noun whose plural is unchanged, recorded in the irregular plural table so the rule does not generate specieses.",
+    "definition_origin": "Agent-authored",
+    "definition": "A species is one kind of living thing, such as one kind of bird, tree or fish.",
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "species"
+    ],
+    "agent_edit_after_admission": "Part of speech noun added after species was added to the irregular plural table."
+  },
+  "spring": {
+    "decision": "admit",
+    "reason": "The season, which both eras use. The water source, coil and leap senses are not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "Spring is the part of the year after winter and before summer, when plants begin to grow again.",
+    "concept": "cycle",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "spring",
+      "springs"
+    ]
+  },
+  "state": {
+    "decision": "defer",
+    "reason": "The historical readers use condition and the modern sources use political states and states of matter. The senses differ between eras."
+  },
+  "strike": {
+    "decision": "admit",
+    "reason": "Base of the scanned struck. To hit hard. The rule generated striked, so strike was added to the irregular verb table with struck as past and participle. The labour-stoppage sense is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To strike something is to hit it hard.",
+    "concept": "force",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "strike",
+      "strikes",
+      "striking",
+      "struck"
+    ],
+    "agent_edit_after_admission": "Generated past form striked replaced by struck, and strike added to the irregular verb table."
+  },
+  "struck": {
+    "decision": "exclude",
+    "reason": "An inflected form of strike, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "sub": {
+    "decision": "exclude",
+    "reason": "Not a candidate word. It is a prefix split off by the tokeniser."
+  },
+  "sudden": {
+    "decision": "admit",
+    "reason": "Happening quickly and unexpectedly. Comparison is periphrastic.",
+    "definition_origin": "Agent-authored",
+    "definition": "Something sudden happens quickly when you do not expect it.",
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "sudden"
+    ]
+  },
+  "suddenly": {
+    "decision": "admit",
+    "reason": "Manner adverb related to sudden.",
+    "definition_origin": "Agent-authored",
+    "definition": "Suddenly means quickly and when you did not expect it.",
+    "concept": "duration",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "suddenly"
+    ]
+  },
+  "support": {
+    "decision": "admit",
+    "reason": "Physical sense of holding up from below. A distinct sense from the level-six admission under reporting, which is unchanged.",
+    "definition_origin": "Agent-authored",
+    "definition": "To support something is to hold it up from below so that it does not fall.",
+    "concept": "force",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "support",
+      "supported",
+      "supporting",
+      "supports"
+    ]
+  },
+  "t": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "th": {
+    "decision": "exclude",
+    "reason": "Not a candidate word. It is an ordinal suffix split off by the tokeniser."
+  },
+  "themselves": {
+    "decision": "admit",
+    "reason": "Reflexive pronoun, in the form of the level-one definitions of himself and itself.",
+    "definition_origin": "Agent-authored",
+    "definition": "Themselves means the same people or things and no others.",
+    "concept": "self_and_other",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "themselves"
+    ]
+  },
+  "therefore": {
+    "decision": "defer",
+    "reason": "Therefore is admitted at level six under discourse_marker. Admitting it at level two with the same concept would relevel an authored decision."
+  },
+  "thus": {
+    "decision": "admit",
+    "reason": "So, or in this way.",
+    "definition_origin": "Agent-authored",
+    "definition": "Thus means so, or in this way.",
+    "concept": "discourse_marker",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "thus"
+    ]
+  },
+  "travel": {
+    "decision": "admit",
+    "reason": "Base of the scanned traveling. Going from place to place. Classified as not doubling, which follows the single-l spelling the modern sources use.",
+    "definition_origin": "Agent-authored",
+    "definition": "To travel is to go from one place to another, often far away.",
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "travel",
+      "traveled",
+      "traveling",
+      "travels"
+    ]
+  },
+  "traveling": {
+    "decision": "exclude",
+    "reason": "An inflected form of travel, which is reviewed as its own candidate. The form is among its reviewed forms."
+  },
+  "u": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "unless": {
+    "decision": "admit",
+    "reason": "If not. Defined through except, which is admitted in the same batch and does not depend on unless.",
+    "definition_origin": "Agent-authored",
+    "definition": "Unless means if not, or except if.",
+    "concept": "if_then",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "unless"
+    ]
+  },
+  "upon": {
+    "decision": "admit",
+    "reason": "On, or on top of.",
+    "definition_origin": "Agent-authored",
+    "definition": "Upon means on, or on top of.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "upon"
+    ]
+  },
+  "upper": {
+    "decision": "admit",
+    "reason": "Higher. No comparison forms, since the word is itself comparative.",
+    "definition_origin": "Agent-authored",
+    "definition": "Upper means higher up, or nearer the top.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "upper"
+    ]
+  },
+  "upward": {
+    "decision": "admit",
+    "reason": "Directional adverb toward a higher place.",
+    "definition_origin": "Agent-authored",
+    "definition": "Upward means toward a higher place.",
+    "concept": "direction",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "upward"
+    ]
+  },
+  "usually": {
+    "decision": "admit",
+    "reason": "Most of the time. Assigned to cycle beside often after review moved it from tending.",
+    "definition_origin": "Agent-authored",
+    "definition": "Usually means most of the time.",
+    "concept": "cycle",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "usually"
+    ],
+    "agent_edit_after_admission": "Concept moved from tending to cycle."
+  },
+  "value": {
+    "decision": "admit",
+    "reason": "Worth in the sense of how much something is wanted or would cost.",
+    "definition_origin": "Agent-authored",
+    "definition": "The value of something is how much it is wanted, or how much it would cost.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "value",
+      "values"
+    ]
+  },
+  "various": {
+    "decision": "admit",
+    "reason": "Of many different kinds.",
+    "definition_origin": "Agent-authored",
+    "definition": "Various means of many different kinds.",
+    "concept": "same_and_different",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "various"
+    ]
+  },
+  "vessels": {
+    "decision": "defer",
+    "reason": "The historical readers use a ship and the modern sources use a container and blood vessels. The senses differ between eras."
+  },
+  "violet": {
+    "decision": "admit",
+    "reason": "The colour, grounded through the ostensive blue and red. The flower sense is not admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "Violet is a colour between blue and red, nearer to blue.",
+    "concept": "physical_property",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "violet"
+    ]
+  },
+  "w": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "war": {
+    "decision": "admit",
+    "reason": "Organised fighting between countries or large groups. Fight is not admitted at level two, so the definition uses force, hurt and win.",
+    "definition_origin": "Agent-authored",
+    "definition": "A war is a time when countries or large groups of people use force to hurt each other and to win.",
+    "concept": "disagreeing",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "war",
+      "wars"
+    ]
+  },
+  "west": {
+    "decision": "admit",
+    "reason": "Defined by the setting sun.",
+    "definition_origin": "Agent-authored",
+    "definition": "West is the direction where the sun goes down in the evening.",
+    "concept": "direction",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "west"
+    ]
+  },
+  "whether": {
+    "decision": "admit",
+    "reason": "Introduces two alternatives.",
+    "definition_origin": "Agent-authored",
+    "definition": "Whether means if, when there are two things to choose from, such as yes or no.",
+    "concept": "choosing",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "whether"
+    ]
+  },
+  "wise": {
+    "decision": "admit",
+    "reason": "Knowing much and choosing well. Reviewed comparatives wiser and wisest.",
+    "definition_origin": "Agent-authored",
+    "definition": "Wise means knowing a lot and using it to choose well.",
+    "concept": "knowing",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "wise",
+      "wiser",
+      "wisest"
+    ]
+  },
+  "within": {
+    "decision": "admit",
+    "reason": "Inside, or not past a limit.",
+    "definition_origin": "Agent-authored",
+    "definition": "Within means inside something, or not past it.",
+    "concept": "inside_and_outside",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "within"
+    ]
+  },
+  "worth": {
+    "decision": "admit",
+    "reason": "How much something is wanted or would cost. No part of speech is declared, because it has no inflections in this sense.",
+    "definition_origin": "Agent-authored",
+    "definition": "If something is worth an amount, that is how much it is wanted or what it would cost.",
+    "concept": "exchange",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+    "reviewed_forms": [
+      "worth"
+    ]
+  },
+  "x": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  },
+  "z": {
+    "decision": "exclude",
+    "reason": "A single letter split off by the tokeniser, not a candidate word."
+  }
+}

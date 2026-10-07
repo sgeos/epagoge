@@ -36,7 +36,12 @@ from epagoge.book import (
     parse_book,
     render_book,
 )
-from epagoge.vocabulary import Vocabulary, load_vocabulary, unlicensed
+from epagoge.vocabulary import (
+    Vocabulary,
+    load_vocabulary,
+    substitutions_at,
+    unlicensed,
+)
 from generate import ask, well_formed
 from generate_books import Tally, admissible_words, words_for
 
@@ -142,7 +147,7 @@ def main(argv: list[str]) -> int:
                         args.level,
                         admissible,
                         wanted,
-                        vocabulary.substitutions,
+                        substitutions_at(vocabulary, args.level),
                     ),
                     timeout=args.timeout,
                 )

@@ -34,7 +34,12 @@ from epagoge.book import (
     render_book,
     word_definitions,
 )
-from epagoge.vocabulary import load_vocabulary, tokenise, unlicensed
+from epagoge.vocabulary import (
+    load_vocabulary,
+    substitutions_at,
+    tokenise,
+    unlicensed,
+)
 from generate import ask, well_formed
 from generate_books import admissible_words
 
@@ -141,7 +146,10 @@ def main(argv: list[str]) -> int:
             # defining them badly, which the rejection list cannot express.
             if attempt == 0 or not rejected:
                 question = prompts.definitions(
-                    batch_words, args.level, allowed, vocabulary.substitutions
+                    batch_words,
+                    args.level,
+                    allowed,
+                    substitutions_at(vocabulary, args.level),
                 )
             else:
                 question = prompts.definitions_retry(
@@ -150,7 +158,7 @@ def main(argv: list[str]) -> int:
                     allowed,
                     rejected,
                     offending,
-                    vocabulary.substitutions,
+                    substitutions_at(vocabulary, args.level),
                 )
             raw = ask(question, timeout=args.timeout)
             rejected, offending = [], []

@@ -41,7 +41,7 @@ from pathlib import Path
 from typing import cast
 
 from epagoge.book import book_head, parse_book, render_book
-from epagoge.vocabulary import load_vocabulary, unlicensed
+from epagoge.vocabulary import load_vocabulary, substitutions_at, unlicensed
 from generate import ask
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -186,7 +186,10 @@ def main(argv: list[str]) -> int:
         )
         new = ""
         for _ in range(args.attempts):
-            raw = ask(prompt_for(body, vocabulary.substitutions), timeout=args.timeout)
+            raw = ask(
+                prompt_for(body, substitutions_at(vocabulary, args.level)),
+                timeout=args.timeout,
+            )
             found = TITLE_RE.search(raw or "")
             if not found:
                 continue

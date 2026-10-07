@@ -25,6 +25,32 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+## 2026-10-07
+
+### Added
+
+- 83 level-two headwords from the era-overlap pool of the 2026-09-27 scan,
+  agent-authored without a teacher and reviewed entry by entry in
+  `evals/review/level_2_era_overlap/`. Level two rose from 966 to 1,049
+  distinct headwords, measured, leaving 8,951 to the approximate target.
+  Coverage is 1,012 of 1,012 and closure is complete. Twenty pool words
+  were deferred and 43 strings excluded, each with a reason.
+- `tools/check_substitutions.py`, reported in the gate and never gating.
+
+### Changed
+
+- Prompts drop substitution keys admissible at the prompted level, through
+  `substitutions_at`. Before this change every key was presented as banned
+  at every level, including twelve words admissible at level two.
+- `tools/measure_lexicon_increment.py` accepts a batch that declares no
+  teacher ran, and records an `exclude` decision for strings that are not
+  candidate words. Earlier batches measure as before.
+
+### Notes
+
+- No general throughput is established. The pool is exhausted, and the
+  batch is agent review without independent expert validation.
+
 ## 2026-09-24
 
 ### Measured. Generation crossed over at 40 percent coverage

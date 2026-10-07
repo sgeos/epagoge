@@ -59,6 +59,14 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "act": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "action": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "add": {
       "commit": "53add92befaa",
       "date": "2026-09-25",
@@ -181,6 +189,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "almost": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "alone": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -196,6 +208,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "although": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "always": {
       "commit": "fe327c12ce59",
@@ -285,6 +301,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "appearance": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "apple": {
       "commit": "f83abb17f6d2",
       "date": "2026-09-25",
@@ -292,6 +312,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "approach": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "argue": {
       "commit": "a0366a07b501",
@@ -308,6 +332,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "arrow": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "ask": {
       "commit": "fe327c12ce59",
@@ -414,6 +442,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "background": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "backward": {
       "commit": "fe327c12ce59",
@@ -694,6 +726,10 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "beneath": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "beside": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -717,6 +753,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "beyond": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "bicycle": {
       "commit": "019dea991be7",
@@ -1577,6 +1617,10 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "clearly": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "clever": {
       "commit": "ec0c962714b8",
       "date": "2026-09-25",
@@ -1715,6 +1759,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "common": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "compare": {
       "commit": "1a5ac29cc8b6",
@@ -1859,6 +1907,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "country": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "cousin": {
       "commit": "1a5ac29cc8b6",
@@ -2015,6 +2067,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "dangerous": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "dark": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2096,6 +2152,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "definition": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "dense": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -2137,6 +2197,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "determine": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "diary": {
       "commit": "1a5ac29cc8b6",
@@ -2267,6 +2331,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "distant": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "dog": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2290,6 +2358,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "dollar": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "done": {
       "commit": "fe327c12ce59",
@@ -2325,6 +2397,10 @@
     },
     "dough": {
       "source": "Manual bread and dough proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations_followup/review.json",
+      "evidence": "recorded at admission"
+    },
+    "downward": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
     "drag": {
@@ -2447,6 +2523,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "during": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "dust": {
       "commit": "ce2c954c366f",
       "date": "2026-09-24",
@@ -2486,6 +2566,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "easily": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "easy": {
       "commit": "d1a98ab90049",
@@ -2609,6 +2693,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "escape": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "evening": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2641,6 +2729,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "everywhere": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "exactly": {
       "commit": "a0366a07b501",
       "date": "2026-09-25",
@@ -2656,6 +2748,18 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "excellent": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "except": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "expect": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
     "explain": {
@@ -2922,6 +3026,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "field": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "fifty": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -3025,6 +3133,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "flight": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "float": {
       "commit": "fe327c12ce59",
@@ -3177,6 +3289,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "form": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "forty": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -3201,6 +3317,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "free": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "freeze": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -3208,6 +3328,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "fresh": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "friend": {
       "commit": "fe327c12ce59",
@@ -3237,6 +3361,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "fully": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "fun": {
       "commit": "fce98982136e",
       "date": "2026-09-25",
@@ -3252,6 +3380,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "funny": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "fur": {
       "commit": "fce98982136e",
@@ -3437,6 +3569,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "greatly": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "green": {
       "commit": "fe327c12ce59",
@@ -4013,6 +4149,14 @@
       "admitted_because": "Admitted because the thesaurus named it as a synonym or antonym of an admitted word and the lexicon did not hold it.",
       "evidence": "reconstructed from history"
     },
+    "illustration": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "immediately": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "impossible": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -4020,6 +4164,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "increase": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "individual": {
       "commit": "019dea991be7",
@@ -4672,6 +4820,10 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "main": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "man": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -5179,6 +5331,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "nature": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "near": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -5194,6 +5350,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "nearly": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "neat": {
       "commit": "f83abb17f6d2",
@@ -5308,6 +5468,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "nor": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "nose": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -5356,6 +5520,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "object": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "observe": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -5365,6 +5533,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "obtain": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "ocean": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -5372,6 +5544,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "offer": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
     "often": {
@@ -5445,6 +5621,10 @@
       "criterion": "teacher",
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "orange": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "order": {
       "commit": "e8630c78135a",
@@ -5582,6 +5762,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "parcel": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "parent": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -5665,6 +5849,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "per": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "percent": {
       "commit": "019dea991be7",
@@ -5827,6 +6015,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "pole": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "poor": {
       "commit": "d1a98ab90049",
       "date": "2026-09-25",
@@ -5858,7 +6050,8 @@
       "commit_subject": "Add communication, map all vocabulary, and correct term levels again",
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
-      "evidence": "reconstructed from history"
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "possible": {
       "commit": "1a5ac29cc8b6",
@@ -6009,6 +6202,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "public": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "puddle": {
       "commit": "9a7cdc6bc84c",
       "date": "2026-09-25",
@@ -6097,6 +6294,10 @@
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
     },
+    "quite": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "rain": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -6112,6 +6313,14 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "rapid": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "rapidly": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "rate": {
       "commit": "7eb598b27ebc",
@@ -6200,6 +6409,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "receive": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "reconcile": {
       "commit": "3990e10b5727",
@@ -6627,6 +6840,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "scatter": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "school": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -6650,6 +6867,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "search": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
     "second": {
@@ -6780,6 +7001,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "several": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "shadow": {
       "commit": "9a7cdc6bc84c",
@@ -7006,6 +7231,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "simple": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "simulated": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -7013,6 +7242,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "since": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "sing": {
       "commit": "fe327c12ce59",
@@ -7336,6 +7569,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "south": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "space": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -7375,6 +7612,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "species": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "speed": {
       "commit": "ce2c954c366f",
@@ -7479,6 +7720,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "spring": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "square": {
       "commit": "fe327c12ce59",
@@ -7721,6 +7966,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "strike": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "string": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -7793,6 +8042,14 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "sudden": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "suddenly": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "summer": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -7841,7 +8098,8 @@
       "commit_subject": "Add communication, map all vocabulary, and correct term levels again",
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
-      "evidence": "reconstructed from history"
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "suppose": {
       "commit": "1a5ac29cc8b6",
@@ -8152,6 +8410,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "themselves": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "therefore": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -8255,6 +8517,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "thus": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "tide": {
       "commit": "a2b7f4971801",
@@ -8469,6 +8735,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "travel": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "tray": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -8677,6 +8947,10 @@
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
     },
+    "unless": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "unlike": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -8717,6 +8991,14 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "upon": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "upper": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "upset": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -8724,6 +9006,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "upward": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "use": {
       "commit": "fe327c12ce59",
@@ -8758,6 +9044,18 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "usually": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "value": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "various": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "view": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -8781,6 +9079,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "violet": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "voice": {
       "commit": "fe327c12ce59",
@@ -8829,6 +9131,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "war": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "warm": {
       "commit": "fe327c12ce59",
@@ -8959,6 +9265,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "west": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "wet": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -8974,6 +9284,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "whether": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "while": {
       "commit": "fe327c12ce59",
@@ -9072,6 +9386,14 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "wise": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "within": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
     "woman": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -9167,6 +9489,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "worth": {
+      "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
     },
     "wound": {
       "commit": "f83abb17f6d2",
