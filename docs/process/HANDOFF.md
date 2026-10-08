@@ -2,24 +2,25 @@
 
 ## Validity check and continuity stamp
 
-Stamped 2026-10-07 at 23:43 Coordinated Universal Time. The verified base is
-`eae5ab68988078aecf8412e1b664662dbca560d2`, the operator-decision
-commit. This is an ancestry anchor, not the revision containing this
-document. A later documentation commit does not invalidate it merely by
-changing the current revision.
+Stamped 2026-10-08 at 17:45 Coordinated Universal Time. The verified base is
+`99a9d8ceb86fb27544da7179d4e92807b9fa935a`, the commit that made the gate pass inside agent sandboxes. This is an
+ancestry anchor, not the revision containing this document. A later
+documentation commit does not invalidate it merely by changing the current
+revision.
 
 The base was pushed to `origin/main` and its [continuous integration
-run](https://github.com/sgeos/epagoge/actions/runs/37686405718) succeeded.
-The full local gate passed on it with 625 tests and no skips, zero type
+run](https://github.com/sgeos/epagoge/actions/runs/37818789022) succeeded.
+The full local gate passed on it with 631 tests and no skips, zero type
 errors or warnings, 96 percent core coverage, 92 percent reported training
-coverage and a clean disclosure scan. That evidence covers the base, not
-later revisions.
+coverage and a clean disclosure scan. It also passed inside the Codex
+`workspace-write` and Grok Build `workspace` sandboxes. That evidence covers
+the base, not later revisions.
 
 Read `CLAUDE.md` and run these checks before relying on the state below.
 
     git status --short
-    git merge-base --is-ancestor eae5ab68988078aecf8412e1b664662dbca560d2 HEAD
-    git log --oneline eae5ab68988078aecf8412e1b664662dbca560d2..HEAD
+    git merge-base --is-ancestor 99a9d8ceb86fb27544da7179d4e92807b9fa935a HEAD
+    git log --oneline 99a9d8ceb86fb27544da7179d4e92807b9fa935a..HEAD
     .venv/bin/python tools/measure_lexicon_increment.py \
       evals/review/level_2_operator_decisions \
       --check evals/review/level_2_operator_decisions/measurement.json
