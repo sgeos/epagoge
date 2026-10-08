@@ -679,3 +679,63 @@ class TestCandidatePool(unittest.TestCase):
             self.assertEqual(status, 1)
             self.assertIn("missing source texts", err.getvalue())
             self.assertFalse((Path(tmp) / "o.json").exists())
+
+
+class TestEnvironmentCheck(unittest.TestCase):
+    """The sandbox fallback must still catch what uv sync --locked catches."""
+
+    PYPROJECT = (
+        '[project]\nname = "demo"\ndependencies = []\n'
+        '[project.optional-dependencies]\ntrain = ["numpy==2.0.0"]\n'
+        '[dependency-groups]\ndev = ["ruff==0.1.0"]\n'
+    )
+    LOCK = (
+        '[[package]]\nname = "demo"\nversion = "0.0.0"\n'
+        "[package.metadata]\n"
+        'requires-dist = [{ name = "numpy", specifier = "==2.0.0" }]\n'
+        "[package.metadata.requires-dev]\n"
+        'dev = [{ name = "ruff", specifier = "==0.1.0" }]\n'
+        '[[package]]\nname = "numpy"\nversion = "2.0.0"\n'
+        '[[package]]\nname = "ruff"\nversion = "0.1.0"\n'
+    )
+
+    def setUp(self) -> None:
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from tools import check_environment as tool
+
+        self.tool = tool
+        self.installed = {"demo": "0.0.0", "numpy": "2.0.0", "ruff": "0.1.0"}
+
+    def test_a_matching_environment_passes(self) -> None:
+        self.assertEqual(
+            self.tool.problems(self.PYPROJECT, self.LOCK, self.installed), []
+        )
+
+    def test_a_stale_lock_is_reported(self) -> None:
+        changed = self.PYPROJECT.replace("numpy==2.0.0", "numpy==2.1.0")
+        found = self.tool.problems(
+            changed, self.LOCK, {**self.installed, "numpy": "2.1.0"}
+        )
+        self.assertTrue(any("stale" in line for line in found))
+
+    def test_a_version_drift_is_reported(self) -> None:
+        found = self.tool.problems(
+            self.PYPROJECT, self.LOCK, {**self.installed, "ruff": "0.2.0"}
+        )
+        self.assertIn("ruff is 0.2.0, uv.lock has 0.1.0", found)
+
+    def test_an_unlocked_distribution_is_reported(self) -> None:
+        found = self.tool.problems(
+            self.PYPROJECT, self.LOCK, {**self.installed, "Extra_Pkg": "1"}
+        )
+        self.assertIn("Extra_Pkg 1 is installed and not in uv.lock", found)
+
+    def test_a_missing_requirement_is_reported(self) -> None:
+        installed = {k: v for k, v in self.installed.items() if k != "ruff"}
+        found = self.tool.problems(self.PYPROJECT, self.LOCK, installed)
+        self.assertIn("ruff==0.1.0 is required and None is installed", found)
+
+    def test_an_unpinned_requirement_is_refused(self) -> None:
+        loose = self.PYPROJECT.replace("ruff==0.1.0", "ruff>=0.1")
+        with self.assertRaisesRegex(ValueError, "not an exact pin"):
+            self.tool.problems(loose, self.LOCK, self.installed)

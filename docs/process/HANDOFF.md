@@ -45,8 +45,11 @@ are historical evidence. Durable failure analysis is in
 ## Starting the next session
 
 The repository is prepared for Codex and Grok Build. `AGENTS.md` gives the
-verified launch commands for both, the host needs that fall outside a
-workspace sandbox, and what a fresh clone lacks. Give a new session
+verified launch commands for both, what a sandboxed agent needs, and what a
+fresh clone lacks. Trial sessions of both tools on 2026-10-08 loaded the
+instructions, passed the handoff validity checks and passed the full gate
+inside their workspace sandboxes, Codex with the network off. Network access
+is needed only to publish, and the loopback teacher only to generate. Give a new session
 `docs/process/RESUME_PROMPT.md`. Start it in this existing directory, so the
 ignored host artifacts under `secret/`, `tmp/` and `evals/pilot/` remain
 available.

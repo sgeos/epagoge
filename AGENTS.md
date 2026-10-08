@@ -20,15 +20,38 @@ flags if either tool has been upgraded.
       --sandbox workspace-write --ask-for-approval on-request \
       "Read docs/process/RESUME_PROMPT.md and carry out its instructions."
 
-    grok --cwd /Users/bsechter/projects/python/epagoge \
+    grok --cwd /Users/bsechter/projects/python/epagoge --sandbox workspace \
       "Read docs/process/RESUME_PROMPT.md and carry out its instructions."
 
-**Three host needs fall outside a workspace sandbox**, and a failure on any
-of them is a sandbox restriction, not a project defect. `tools/check.sh` runs
-`uv sync`, which reads the uv cache in the home directory. The teacher is
-served on the loopback address. Pushing needs the network and the git
-credentials. In this project's 2026-10-07 session the gate failed inside a
-sandbox before any check ran, for the first reason, and passed outside it.
+### What a sandboxed agent needs
+
+**Network access is not needed for normal work.** Measured on 2026-10-08,
+the full gate passes inside Codex's `workspace-write` sandbox, whose network
+is off, and inside Grok Build's `workspace` sandbox. Use the most restrictive profile that allows writes to this
+directory: `workspace-write` in Codex and `workspace` in Grok Build.
+
+| Need | Used by | Grant it when |
+| --- | --- | --- |
+| Write the workspace | All work | Always |
+| Loopback `127.0.0.1:11434` | Teacher, every generator | Only for a session that generates |
+| Network and git credentials | `git push`, `gh` | Only to publish, or leave it to the operator |
+
+**The gate falls back to an offline environment check inside a sandbox.**
+uv 0.9.5 cannot run where writes are confined to the workspace. It fails to
+write its cache marker in the home directory, and with a cache inside the
+workspace it panics reading the macOS proxy configuration. `tools/check.sh`
+therefore falls back to `tools/check_environment.py`, which checks the
+installed environment against `uv.lock` by reading files, but only for those
+two failures. Any other uv failure, such as a stale lock, still stops the
+gate. The gate also keeps its scratch files under the ignored `tmp/`, since
+the default macOS temporary directory is outside the workspace. Continuous
+integration always runs the real `uv sync`.
+
+**Observed in trial sessions on 2026-10-08.** Codex loaded `AGENTS.md` at
+startup. Grok Build loaded `AGENTS.md` and `CLAUDE.md`. Neither loaded
+`HANDOFF.md` without being asked, which is why the resume prompt names it.
+Both ran the handoff validity checks and the full gate successfully and made
+no edits.
 
 `.codex/` holds host-specific Codex settings and is ignored rather than
 tracked.

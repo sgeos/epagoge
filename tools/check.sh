@@ -16,11 +16,39 @@
 set -uo pipefail
 cd "$(dirname "$0")/.." || exit 2
 
+# **Scratch inside the repository, under the ignored tmp/.** An agent sandbox
+# may allow writes only to the workspace, and on macOS the default TMPDIR is
+# under /var/folders, so mktemp and every test's temporary directory failed
+# there on 2026-10-07. Exported, so the disclosure scan and the tests inherit
+# it. Removed on exit.
+GATE_TMP="$PWD/tmp/gate.$$"
+mkdir -p "$GATE_TMP" || exit 2
+trap 'rm -rf "$GATE_TMP"' EXIT
+export TMPDIR="$GATE_TMP"
+
 PYTHON=".venv/bin/python"
 COVERAGE_FLOOR=95
 # Preserve the existing core floor. Training coverage is reported separately.
 COVERAGE_OMIT="src/epagoge/pilot.py"
-if ! uv sync --locked --extra train; then exit 1; fi
+# **uv sync, with an offline fallback for agent sandboxes.** Inside a sandbox
+# that confines writes to the workspace, uv 0.9.5 fails before doing anything:
+# it cannot write its cache marker in the home directory, and with a local
+# cache it panics reading the macOS proxy configuration. Only those two
+# failures fall back, to a file-only check of the installed environment
+# against uv.lock. Any other uv failure, a stale lock among them, still stops
+# the gate. Continuous integration always takes the uv path.
+UV_LOG="$GATE_TMP/uv-sync.log"
+if uv sync --locked --extra train 2>"$UV_LOG"; then
+  cat "$UV_LOG" >&2
+else
+  cat "$UV_LOG" >&2
+  if grep -qE "Operation not permitted|panicked" "$UV_LOG"; then
+    echo "uv could not run in this sandbox; checking the environment against uv.lock instead"
+    if ! "$PYTHON" tools/check_environment.py; then exit 1; fi
+  else
+    exit 1
+  fi
+fi
 
 fail=0
 run() {

@@ -59,6 +59,12 @@ Versioning.
   `evals/review/level_2_operator_decisions/`. Level two rose to 1,232
   headwords, measured, leaving 8,768.
 
+- Handoff to Codex and Grok Build. `AGENTS.md` gives launch commands and the
+  sandbox needs, measured in trial sessions of both tools. The gate keeps its
+  scratch files under `tmp/` and, when uv cannot run inside a sandbox, falls
+  back to `tools/check_environment.py`, an offline check of the installed
+  environment against `uv.lock`. The full gate passes inside both sandboxes.
+
 ### Fixed
 
 - `tools/scrub_scan.sh` matched neither plurals of withheld terms nor, in its
