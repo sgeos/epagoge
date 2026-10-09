@@ -20,15 +20,24 @@ flags if either tool has been upgraded.
       --sandbox workspace-write --ask-for-approval on-request \
       "Read docs/process/RESUME_PROMPT.md and carry out its instructions."
 
-    grok --cwd /Users/bsechter/projects/python/epagoge --sandbox workspace \
+    grok --cwd /Users/bsechter/projects/python/epagoge \
       "Read docs/process/RESUME_PROMPT.md and carry out its instructions."
+
+**Do not pass `--sandbox` to Grok Build on the authoring host.** Its global
+config selects a custom profile that extends `workspace` and also
+kernel-denies credential paths. A command-line `--sandbox` overrides the
+config and would drop that deny list. The denial covers the SSH keys, so a
+push from inside Grok fails there, which leaves publishing to the operator.
+On another host without that config, pass `--sandbox workspace`.
 
 ### What a sandboxed agent needs
 
 **Network access is not needed for normal work.** Measured on 2026-10-08,
 the full gate passes inside Codex's `workspace-write` sandbox, whose network
 is off, and inside Grok Build's `workspace` sandbox. Use the most restrictive profile that allows writes to this
-directory: `workspace-write` in Codex and `workspace` in Grok Build.
+directory: `workspace-write` in Codex, and in Grok Build `workspace` or a
+custom profile extending it. On macOS Grok's profiles do not restrict child
+network access, so the network stays reachable there whatever the profile.
 
 | Need | Used by | Grant it when |
 | --- | --- | --- |
