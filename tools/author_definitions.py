@@ -22,6 +22,8 @@ from pathlib import Path
 from typing import cast
 
 from epagoge.book import (
+    Book,
+    DefinitionKind,
     book_head,
     dictionary_closure,
     load_book_dir,
@@ -33,6 +35,49 @@ from epagoge.vocabulary import load_vocabulary, tokenise, unlicensed
 
 ROOT = Path(__file__).resolve().parent.parent
 
+_LEVEL_NAME: dict[int, str] = {
+    1: "one",
+    2: "two",
+    3: "three",
+    4: "four",
+    5: "five",
+    6: "six",
+    7: "seven",
+}
+
+
+def new_seed_text(level: int, subject: str) -> str:
+    """A dictionary book for a level that does not have one yet.
+
+    Levels three to seven had no book directory, so the first definition
+    at those levels could not be written. The subject is a word this file
+    is about to define. The licence is recorded because a book that does
+    not say cannot be reused.
+    """
+    if level not in _LEVEL_NAME:
+        raise ValueError(f"level {level} is outside 1 to 7")
+    if not subject.strip():
+        raise ValueError("a new dictionary needs a subject word")
+    book = Book(
+        id="bk.dictionary.seed",
+        level=level,
+        title=f"The first words at level {_LEVEL_NAME[level]}",
+        subject_kind=DefinitionKind.WORD,
+        subject=subject,
+        form="reference",
+        licence="CC0-1.0",
+    )
+    return render_book(book_head(book), [])
+
+
+def write_seed_if_missing(path: Path, level: int, subject: str) -> bool:
+    """Create the seed dictionary when the level has never had one."""
+    if path.exists():
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(new_seed_text(level, subject), encoding="utf-8")
+    return True
+
 
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -40,6 +85,8 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--level", type=int, default=1)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args(argv[1:])
+    if not 1 <= args.level <= 7:
+        parser.error("level must be from 1 to 7")
 
     raw = args.file.read_text(encoding="utf-8") if args.file else sys.stdin.read()
     drafts = cast(dict[str, str], json.loads(raw))
@@ -137,6 +184,7 @@ def main(argv: list[str]) -> int:
     fresh = {w: t for w, t in drafts.items() if w not in current}
     if fresh:
         seed_path = book_dir / "bk.dictionary.seed.md"
+        write_seed_if_missing(seed_path, args.level, min(fresh))
         book, records = parse_book(
             seed_path.read_text(encoding="utf-8"), seed_path.name
         )

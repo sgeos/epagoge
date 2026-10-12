@@ -1,0 +1,122 @@
+{
+  "according": {
+    "concept": "reporting",
+    "pos": "",
+    "definition": "According means as was said, or in a way that matches.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "administrative": {
+    "concept": "someone_in_charge",
+    "pos": "adjective periphrastic",
+    "definition": "Administrative means about the work of running a group.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "aviation": {
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "definition": "Aviation is the work of flying in the air.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "behold": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To behold a thing is to look at it with care.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "billion": {
+    "concept": "natural_number",
+    "pos": "noun",
+    "definition": "A billion is a thousand times a million.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bore": {
+    "concept": "activity",
+    "pos": "verb",
+    "definition": "To bore is to make a round hole by turning.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bough": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A bough is a large arm of a tree.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bound": {
+    "concept": "moving_and_still",
+    "pos": "adjective",
+    "definition": "Bound means going toward a place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "boundary": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A boundary is the line where one place ends and another begins.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bridle": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A bridle is what is put on a horse so a person can lead it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "cast": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To cast a thing is to throw it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "cite": {
+    "concept": "reporting",
+    "pos": "verb",
+    "definition": "To cite is to name where a fact came from.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "classic": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Classic means of a kind people have cared about for a long time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "collide": {
+    "concept": "force",
+    "pos": "verb",
+    "definition": "To collide is to hit something while moving.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "comprise": {
+    "concept": "component_and_system",
+    "pos": "verb",
+    "definition": "To comprise is to be made of the parts that are named.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "concerning": {
+    "concept": "reporting",
+    "pos": "",
+    "definition": "Concerning means about.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "condensation": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Condensation is water that forms when air becomes cold.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "condense": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To condense is to become liquid, or to say something in fewer words.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "consider": {
+    "concept": "knowing",
+    "pos": "verb",
+    "definition": "To consider a thing is to think about it with care.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "consist": {
+    "concept": "component_and_system",
+    "pos": "verb",
+    "definition": "To consist of things is to be made of those things.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  }
+}

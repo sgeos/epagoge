@@ -1,60 +1,58 @@
 # Brief
 
-Opened 2026-10-07 on the operator's answers to the six open items left by
-the self-directed loop. The previous brief and condition are retained in
-`evals/review/level_2_operator_decisions/`.
+Opened 2026-10-09. The operator directed that the remaining level-two
+candidates be admitted. The lexicon is far under its approximate target of
+about ten thousand words, and capacity is not a reason to hold a candidate
+back. The previous brief and condition are retained in
+`evals/review/level_2_one_source/`.
 
-## Operator decisions
+## Operator direction
 
-1. All words should be shown and defined.
-2. Use US English.
-3. Reconcile the level-one substitution contradictions.
-4. Correct the oversight of level-one entries without a part of speech.
-5. The 44 technical deferrals probably belong at level two, which has about
-   ten thousand slots.
-6. Commit and push.
+Admit the level-two candidates from the reference-source scan. Do not wait
+for a further word-by-word decision.
 
 ## Interpretation and recommended work
 
-**One. Ostensive words are shown and also defined.** The closure validator
-excluded ostensive words from the coverage denominator on the ground that
-the dictionary would never define red. That is reversed. Ostensive words
-remain grounded by showing, so closure is unchanged, but coverage now
-requires a definition for each. Twenty lack one. Sweet and sour are admitted
-at level two as ostensive and defined, which unblocks sugar, lemon, cake and
-tart. Function words such as the and of cannot be shown and name no
-concept, so they are read as outside this decision. That reading is
-reported to the operator rather than assumed silently.
+**The candidate set is the frequent group already scanned.** On 2026-09-27
+`tools/scan_lexicon.py` counted seven public-domain and CC0 sources, each
+source separately, at a threshold of five. Measured on 2026-10-09, after
+removing words already admissible, words already decided, strings shorter
+than three letters, and words capitalised in at least half of their
+occurrences, **1,300** candidates remained. The two-source pool is empty.
+The long tail below the threshold is not part of this brief. Dale-Chall and
+the New General Service List stay unused. That licensing question is still
+the operator's.
 
-**Two. US English in the curriculum.** Colour becomes color, grey becomes
-gray, and the British form towards is dropped. The level-two duplicate color
-merges into the level-one entry. The substitution table is reversed so that
-the teacher is told to write the US forms. Books, dictionaries, thesaurus
-and lexicon change together. Documentation prose is not converted in this
-scope, which is stated.
+**A candidate is admitted only with a grounded definition.** `tools/admit.py`
+refuses a word that would take the dictionary out of self-hosting, and this
+brief does not override that. A word that cannot yet be defined inside the
+level is deferred with a reason and can be admitted in a later batch, once
+the words its definition needs are in. An inflected form of a headword is
+excluded, as in the earlier batches. A prior decision stays decided.
 
-**Three. Substitution contradictions.** Beside, cause, causing, great,
-greater, length, single and unknown are admitted at level one and used
-heavily in level-one books, cause 420 times. The admissions are real and the
-bans are stale, so the bans are removed.
+**The teacher is not required for this path.** On 2026-10-09 about 175
+megabytes of pages were free and swap held 10,956 of 12,288 megabytes. The
+teacher needs about eighteen gigabytes resident, so it was not loaded.
+Definitions are agent-authored and pass the same admission and closure
+checks as teacher output. Semantic review is agent review.
 
-**Four. Nouns without a part of speech.** Sky and man are two of many
-level-one nouns declaring no part of speech, so their plurals are not
-admissible. Every level-one or level-two term that is a noun in its admitted
-sense gets noun or mass noun and its reviewed plural. Adjectives and adverbs
-without a part of speech are a different question and are left alone.
-
-**Five. Technical words.** Admit the 44 deferred technical words with
-grounded introductory definitions, deferring any that cannot be grounded.
-
-**Six. Publish.** Pass the gate, commit, push, and check continuous
-integration on the pushed revision.
+**The first batch is 24 words** from the McGuffey portion of that pool,
+recorded in `evals/review/level_2_one_source/`. A second batch, recorded in
+`evals/review/level_2_scan_02/`, admits 432 and excludes 7. A third batch,
+recorded in `evals/review/level_2_scan_03/`, admits 71 and excludes 3.
+Later batches through `level_2_scan_10/` continue the same work.
+`level_2_scan_07/` admits 72 and excludes 191. `level_2_scan_08/` admits
+72. `level_2_scan_09/` admits 72. `level_2_scan_10/` admits 72 and defers
+thee, thy, thine and unto, because function-word definitions are not
+decided in this brief. Measured after that batch, distinct headwords
+through level two are 2,159. A fresh selection from the same scan prints
+an empty pool. The approximate target is not met. That gap is 7,841, and
+it is not a claim that more words are frequent in the scanned sources.
 
 ## Wrong turns to avoid
 
-Edited books must have their published dates restamped from history after
-the edit is committed, or the book-metadata check fails in a clean clone.
-Provenance is derived from history, so regenerate and check it after each
-lexicon commit. Do not weaken closure to reach coverage. Do not convert a
-spelling inside a quoted source or a tool identifier that names a different
-thing. Counts come from tools, and the gate runs alone before each commit.
+Do not admit a word without a definition. Do not reopen a word that already
+has a review decision. Do not consult Dale-Chall or the New General Service
+List. Do not treat the long tail as if this brief had included it. Do not
+load the teacher while free memory cannot hold it. Counts come from the
+measurement tool.

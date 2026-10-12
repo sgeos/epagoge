@@ -1,0 +1,921 @@
+{
+  "hydrograph": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hydrograph is a record of how the flow of water changes with time.",
+    "concept": "written_record",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "hydrograph",
+      "hydrographs"
+    ]
+  },
+  "hydrology": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Hydrology is the study of water on and under the land.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "hydrology"
+    ]
+  },
+  "hydrometeorological": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Hydrometeorological means of water and weather together.",
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "hydrometeorological"
+    ]
+  },
+  "hypothermia": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Hypothermia is a dangerous fall in the heat of the body.",
+    "concept": "being_hurt",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "hypothermia"
+    ]
+  },
+  "iceberg": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An iceberg is a large piece of ice floating in the sea.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "iceberg",
+      "icebergs"
+    ]
+  },
+  "idleness": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Idleness is doing no work.",
+    "concept": "activity",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "idleness"
+    ]
+  },
+  "imagery": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Imagery is pictures of a place.",
+    "concept": "writing",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "imagery"
+    ]
+  },
+  "impact": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An impact is one thing hitting another.",
+    "concept": "force",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "impact",
+      "impacts"
+    ]
+  },
+  "improve": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To improve is to make a thing better.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "improve",
+      "improved",
+      "improves",
+      "improving"
+    ]
+  },
+  "inbound": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Inbound means coming in.",
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "inbound"
+    ]
+  },
+  "increasingly": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Increasingly means more and more as time goes on.",
+    "concept": "change",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "increasingly"
+    ]
+  },
+  "indication": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An indication is a sign of something.",
+    "concept": "finding_out",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "indication",
+      "indications"
+    ]
+  },
+  "indicative": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Indicative means acting as a sign of something.",
+    "concept": "finding_out",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "indicative"
+    ]
+  },
+  "indicator": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An indicator is a thing that shows what a measure is.",
+    "concept": "finding_out",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "indicator",
+      "indicators"
+    ]
+  },
+  "inflow": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Inflow is a flow coming in.",
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "inflow"
+    ]
+  },
+  "info": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Info means information.",
+    "concept": "written_record",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "info"
+    ]
+  },
+  "infrared": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Infrared is the kind of ray just past red, which the eye does not see.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "infrared"
+    ]
+  },
+  "inhibit": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To inhibit is to hold a thing back or to slow it.",
+    "concept": "can_and_cannot",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "inhibit",
+      "inhibited",
+      "inhibiting",
+      "inhibits"
+    ]
+  },
+  "input": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An input is what is put into a thing.",
+    "concept": "stock_and_flow",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "input",
+      "inputs"
+    ]
+  },
+  "insulator": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An insulator is a material that heat or electricity does not pass through easily.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "insulator",
+      "insulators"
+    ]
+  },
+  "inversion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An inversion is a layer of air that is warmer above than below.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "inversion",
+      "inversions"
+    ]
+  },
+  "isodop": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An isodop is a line that joins places where the wind has the same speed.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "isodop",
+      "isodops"
+    ]
+  },
+  "isolated": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Isolated means standing apart from others.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "isolated"
+    ]
+  },
+  "landfall": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A landfall is the coming of a storm onto the land.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "landfall",
+      "landfalls"
+    ]
+  },
+  "landslide": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A landslide is rock and soil sliding down a slope.",
+    "concept": "falling",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "landslide",
+      "landslides"
+    ]
+  },
+  "lend": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To lend is to let a person use a thing for a time and then take it back.",
+    "concept": "exchange",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "lend",
+      "lending",
+      "lends",
+      "lent"
+    ]
+  },
+  "lifeguard": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A lifeguard is a person who watches people in the water and helps those in danger.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "lifeguard",
+      "lifeguards"
+    ]
+  },
+  "livestock": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Livestock is the animals kept on a farm.",
+    "concept": "animal",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "livestock"
+    ]
+  },
+  "longwave": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Longwave means having a long wave.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "longwave"
+    ]
+  },
+  "magnitude": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Magnitude is how large or how strong a thing is.",
+    "concept": "quantity",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "magnitude"
+    ]
+  },
+  "maintain": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To maintain is to keep a thing as it is.",
+    "concept": "keeping_going",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "maintain",
+      "maintained",
+      "maintaining",
+      "maintains"
+    ]
+  },
+  "maintenance": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Maintenance is the work of keeping a thing in good order.",
+    "concept": "mending",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "maintenance"
+    ]
+  },
+  "mare": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A mare is a grown horse that can have a young horse.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "mare",
+      "mares"
+    ]
+  },
+  "marsh": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A marsh is soft wet land.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "marsh",
+      "marshes"
+    ]
+  },
+  "masonry": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Masonry is building work done in stone.",
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "masonry"
+    ]
+  },
+  "maximize": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To maximize is to make a thing as large as it can be.",
+    "concept": "quantity",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "maximize",
+      "maximized",
+      "maximizes",
+      "maximizing"
+    ]
+  },
+  "mesoscale": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Mesoscale means of middle size, between one storm and a large region.",
+    "concept": "measuring",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "mesoscale"
+    ]
+  },
+  "mesosphere": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The mesosphere is a high layer of air.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "mesosphere",
+      "mesospheres"
+    ]
+  },
+  "meteorological": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Meteorological means of the weather.",
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "meteorological"
+    ]
+  },
+  "meteorologist": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A meteorologist is a person who studies the weather.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "meteorologist",
+      "meteorologists"
+    ]
+  },
+  "microburst": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A microburst is a sudden strong wind that drops from a storm and then spreads.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "microburst",
+      "microbursts"
+    ]
+  },
+  "microscopic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Microscopic means too small to see without a tool that makes things look larger.",
+    "concept": "measuring",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "microscopic"
+    ]
+  },
+  "mid": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Mid means in the middle.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "mid"
+    ]
+  },
+  "midst": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The midst of a thing is its middle.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "midst",
+      "midsts"
+    ]
+  },
+  "millibar": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A millibar is a unit of air pressure.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "millibar",
+      "millibars"
+    ]
+  },
+  "minimize": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To minimize is to make a thing as small as it can be.",
+    "concept": "quantity",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "minimize",
+      "minimized",
+      "minimizes",
+      "minimizing"
+    ]
+  },
+  "minimum": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A minimum is the smallest amount.",
+    "concept": "quantity",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "minimum",
+      "minimums"
+    ]
+  },
+  "momentum": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Momentum is the quantity of motion a moving thing has.",
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "momentum"
+    ]
+  },
+  "morn": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Morn means the morning.",
+    "concept": "duration",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "morn",
+      "morns"
+    ]
+  },
+  "morrow": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The morrow is the next day.",
+    "concept": "duration",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "morrow",
+      "morrows"
+    ]
+  },
+  "mote": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A mote is a tiny bit of dust.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "mote",
+      "motes"
+    ]
+  },
+  "mousie": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A mousie is a small mouse.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "mousie",
+      "mousies"
+    ]
+  },
+  "multiple": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Multiple means more than one.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "multiple"
+    ]
+  },
+  "nautical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Nautical means of ships and the sea.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "nautical"
+    ]
+  },
+  "navigation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Navigation is the work of finding the way.",
+    "concept": "direction",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "navigation"
+    ]
+  },
+  "necessarily": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Necessarily means in a way that has to be so.",
+    "concept": "how_sure",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "necessarily"
+    ]
+  },
+  "negatively": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Negatively means as a no, or toward the worse.",
+    "concept": "good_and_bad",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "negatively"
+    ]
+  },
+  "nettle": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A nettle is a plant that hurts the skin when it is touched.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "nettle",
+      "nettles"
+    ]
+  },
+  "network": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A network is a set of things joined so that something can pass among them.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "network",
+      "networks"
+    ]
+  },
+  "nighttime": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Nighttime is the time when it is night.",
+    "concept": "duration",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "nighttime"
+    ]
+  },
+  "noble": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Noble means of high place among people, or fine in character.",
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "noble"
+    ]
+  },
+  "nucleus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A nucleus is the heavy middle of an atom.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "nucleus",
+      "nuclei"
+    ]
+  },
+  "numerical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Numerical means of numbers.",
+    "concept": "natural_number",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "numerical"
+    ]
+  },
+  "nutrient": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A nutrient is something a living thing must take in as food.",
+    "concept": "need",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "nutrient",
+      "nutrients"
+    ]
+  },
+  "oblige": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To oblige is to make a person have to do a thing, or to do a kindness.",
+    "concept": "should_and_should_not",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "oblige",
+      "obliged",
+      "obliges",
+      "obliging"
+    ]
+  },
+  "occasionally": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Occasionally means from time to time, and not often.",
+    "concept": "duration",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "occasionally"
+    ]
+  },
+  "occurrence": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An occurrence is something that happens.",
+    "concept": "change",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "occurrence",
+      "occurrences"
+    ]
+  },
+  "offsite": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Offsite means away from the main place.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "offsite"
+    ]
+  },
+  "onset": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The onset of a thing is its start.",
+    "concept": "sequence",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "onset",
+      "onsets"
+    ]
+  },
+  "operational": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Operational means working and ready for use.",
+    "concept": "can_and_cannot",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "operational"
+    ]
+  },
+  "organization": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An organization is a group of people working together for a purpose.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "organization",
+      "organizations"
+    ]
+  },
+  "originate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To originate is to begin, or to come from a place.",
+    "concept": "cause_and_effect",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "originate",
+      "originated",
+      "originates",
+      "originating"
+    ]
+  }
+}

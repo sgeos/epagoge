@@ -1,0 +1,18 @@
+{
+  "aquifer": "material",
+  "capillary": "liquid",
+  "cohesion": "joining_and_separating",
+  "cohesive": "joining_and_separating",
+  "compressibility": "physical_property",
+  "element": "material",
+  "habitability": "living_and_not_living",
+  "homogeneous": "same_and_different",
+  "hydrometer": "measuring",
+  "incompressible": "physical_property",
+  "meniscus": "liquid",
+  "particulate": "material",
+  "permafrost": "heat",
+  "pharmaceutical": "tending",
+  "streamflow": "liquid",
+  "tannin": "material"
+}

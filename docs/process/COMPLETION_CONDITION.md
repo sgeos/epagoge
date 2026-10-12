@@ -1,30 +1,26 @@
 Ordering is not a completion criterion.
 
-The brief records the six operator decisions, how each was interpreted, and
-the wrong turns to avoid.
+The candidate set is the frequent group of the scan recorded in
+`docs/decisions/LEXICON_SCAN.md`, at a threshold of five, restricted to
+words frequent in at least one of those seven sources. It excludes words
+already admissible at level two, words that already have a review decision,
+strings shorter than three letters, and words capitalised in at least half
+of their occurrences. Measured at the opening of this brief, that set held
+1,300 words.
 
-Every ostensive word admitted at levels one and two has a dictionary
-definition, the closure validator counts ostensive words as needing one, and
-coverage is complete and closure grounded at both levels. Sweet and sour are
-admitted at level two as ostensive and defined, and sugar, lemon, cake and
-tart are each admitted or deferred with a reason.
+Every word in that set is admitted at level two with one definition, or
+deferred or excluded with a reason in a review record. Each batch's
+increment measurement matches the tree. Required definition coverage is
+complete at levels one and two, and closure is grounded at both. No word
+with a review decision from before this brief changes its decision.
+Dale-Chall and the New General Service List are not inputs. The long tail
+below the frequency threshold is outside this condition.
 
-The curriculum lexicon, books, dictionaries and thesaurus use color, gray and
-toward rather than colour, grey and towards, with no duplicate color entry,
-and the substitution table points British forms to US forms. No substitution
-key is admissible at level one.
+Measured on 2026-10-09, after `evals/review/level_2_scan_10/`, a fresh
+selection from that scan prints an empty pool. Distinct headwords through
+level two are 2,159. Required definitions are 2,159 of 2,159 at level two
+and 849 of 849 at level one, and closure is complete at both. Thee, thy,
+thine and unto are deferred, not defined. This does not meet the
+approximate target of about ten thousand.
 
-Every level-one and level-two term that is a noun in its admitted sense
-declares noun or mass noun, and the gate accepts its forms, including skies
-and men.
-
-Each of the 44 technical words deferred by the multi-source batch is admitted
-or deferred with a reason in a review record whose measurement matches the
-tree.
-
-Edited books carry published dates that agree with history. The handoff and
-changelog record the decisions and the function-word interpretation. The full
-gate passes without skipped tests, all non-ignored work is committed and
-present on the remote, continuous integration passes on the pushed revision,
-and the working tree is clean apart from pre-existing untracked host
-configuration.
+Ordering is not a completion criterion.

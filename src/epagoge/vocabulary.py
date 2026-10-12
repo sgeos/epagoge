@@ -52,7 +52,11 @@ from pathlib import Path
 from typing import Final, cast
 
 from epagoge.concept_graph import Violation
-from epagoge.inflection import comparison, doubling_is_ambiguous, plural, verb_forms
+from epagoge.inflection import (
+    INFLECTION_SLOTS,
+    describe_inflections,
+    doubling_is_ambiguous,
+)
 from epagoge.record import Record
 
 WORD_RE: Final[re.Pattern[str]] = re.compile(r"[a-z]+(?:'[a-z]+)?")
@@ -80,7 +84,12 @@ class Term:
     forms: tuple[str, ...] = ()
 
     pos: str = ""
-    """Parts of speech, space separated. ``verb``, ``noun``, ``adjective``.
+    """Parts of speech, space separated.
+
+    The classes are ``verb``, ``noun``, ``adjective`` and ``adverb``.
+    Qualifiers say which alternates do not exist. ``mass`` and
+    ``plural-only`` qualify a noun. ``periphrastic`` and ``ungraded``
+    qualify an adjective or an adverb.
 
     **A word can be several.** `answer`, `lock` and `brush` are each a noun
     and a verb, and the enforcement differs, since a verb owes its
@@ -102,6 +111,14 @@ class Term:
     the origin is written down at admission. It also separates a word the
     teacher reached for, which is evidence about the corpus, from one a
     frequency scan proposed, which is evidence about a source.
+    """
+
+    inflection: tuple[tuple[str, str], ...] = ()
+    """Registered slots. An empty value means that alternate does not exist.
+
+    Absent slots are derived. A present slot replaces the derivation, which
+    is how an irregular plural or an irregular past is recorded without
+    editing the spelling tables. See ``describe_inflections``.
     """
 
     def surface_forms(self) -> tuple[str, ...]:
@@ -741,6 +758,55 @@ def load_vocabulary(path: Path) -> Vocabulary:
     )
 
 
+_NUMBER_SLOTS: Final[frozenset[str]] = frozenset({"singular", "plural"})
+_VERB_SLOTS: Final[frozenset[str]] = frozenset(
+    {"third", "past", "past_participle", "present_participle"}
+)
+_GRADE_SLOTS: Final[frozenset[str]] = frozenset({"comparative", "superlative"})
+
+
+def _missing_alternates(
+    vocabulary: Vocabulary, slots: frozenset[str]
+) -> list[Violation]:
+    """Every declared alternate must be admissible at the term's level.
+
+    The citation form is the headword and is not demanded again. An empty
+    slot is a declared absence, which is what ``mass``, ``plural-only``,
+    ``periphrastic`` and ``ungraded`` record, and what an explicit
+    registration records for one slot.
+    """
+    out: list[Violation] = []
+    for term in vocabulary.terms:
+        registered = dict(term.inflection)
+        for name, form, _origin in describe_inflections(
+            term.word, term.pos, registered
+        ):
+            if name not in slots or not form or form == term.word:
+                continue
+            if form in vocabulary.core:
+                continue
+            if any(sense.level <= term.level for sense in vocabulary.senses(form)):
+                continue
+            if name == "singular":
+                code, kind, label = "missing-singular", "noun", "singular"
+            elif name == "plural":
+                code, kind, label = "missing-plural", "noun", "plural"
+            elif name in _VERB_SLOTS:
+                code, kind, label = "missing-inflection", "verb", "form"
+            elif "adverb" in term.pos.split() and "adjective" not in term.pos.split():
+                code, kind, label = "missing-comparison", "adverb", "form"
+            else:
+                code, kind, label = "missing-comparison", "adjective", "form"
+            out.append(
+                Violation(
+                    code,
+                    f"{kind} {term.word!r} is admitted at level {term.level} and "
+                    f"its {label} {form!r} is not admissible there",
+                )
+            )
+    return out
+
+
 def _check_plurals(vocabulary: Vocabulary) -> list[Violation]:
     """Every count noun must have its plural admissible at its level.
 
@@ -749,35 +815,10 @@ def _check_plurals(vocabulary: Vocabulary) -> list[Violation]:
     form that is not there.
 
     **A noun marked `mass` is exempt**, because it has no plural and the
-    rule was manufacturing one.
+    rule was manufacturing one. A noun marked `plural-only` is the other
+    gap. Its citation form is already plural, and it has no singular.
     """
-    out: list[Violation] = []
-    for term in vocabulary.terms:
-        parts = term.pos.split()
-        if "noun" not in parts:
-            continue
-        # **A MASS NOUN HAS NO PLURAL, and the lexicon had no way to say
-        # so.** The rule below demanded one from every noun, so `fun`,
-        # `magic` and the noun sense of `full` each carried a form that is
-        # not English: `funs`, `magics`, `fulls`. Found on 2026-09-26 by
-        # judging the unused surface forms one at a time, which is the only
-        # thing that would have found it, since a form nobody writes is
-        # invisible to every other check.
-        if "mass" in parts:
-            continue
-        form = plural(term.word)
-        if form == term.word or form in vocabulary.core:
-            continue
-        if any(sense.level <= term.level for sense in vocabulary.senses(form)):
-            continue
-        out.append(
-            Violation(
-                "missing-plural",
-                f"noun {term.word!r} is admitted at level {term.level} and its "
-                f"plural {form!r} is not admissible there",
-            )
-        )
-    return out
+    return _missing_alternates(vocabulary, _NUMBER_SLOTS)
 
 
 def _check_ostensive(vocabulary: Vocabulary) -> list[Violation]:
@@ -804,24 +845,7 @@ def _check_inflections(vocabulary: Vocabulary) -> list[Violation]:
     core function word. What matters is that a generator constrained to
     the level can reach it.
     """
-    out: list[Violation] = []
-    for term in vocabulary.terms:
-        if "verb" not in term.pos.split():
-            continue
-        for form in verb_forms(term.word):
-            reachable = any(
-                sense.level <= term.level for sense in vocabulary.senses(form)
-            )
-            if form in vocabulary.core or reachable:
-                continue
-            out.append(
-                Violation(
-                    "missing-inflection",
-                    f"verb {term.word!r} is admitted at level {term.level} and "
-                    f"its form {form!r} is not admissible there",
-                )
-            )
-    return out
+    return _missing_alternates(vocabulary, _VERB_SLOTS)
 
 
 def _check_comparison(vocabulary: Vocabulary) -> list[Violation]:
@@ -836,33 +860,11 @@ def _check_comparison(vocabulary: Vocabulary) -> list[Violation]:
     with `more` and `most` rather than with a suffix and the rule was
     manufacturing forms that are not English.
     """
-    out: list[Violation] = []
-    for term in vocabulary.terms:
-        parts = term.pos.split()
-        if "adjective" not in parts:
-            continue
-        # **A PERIPHRASTIC ADJECTIVE HAS NO SUFFIXED FORMS**, and until
-        # 2026-09-27 the lexicon could not say so. `beautiful` compares with
-        # `more` and `most`, which are already words, and declaring it an
-        # adjective manufactured `beautifuler` and `beautifulest` the way the
-        # plural rule manufactured `funs` and `magics`. The safeguard had been
-        # to leave such a word undeclared, which loses the part of speech to
-        # protect the forms.
-        if "periphrastic" in parts:
-            continue
-        for form in comparison(term.word):
-            if form in vocabulary.core:
-                continue
-            if any(sense.level <= term.level for sense in vocabulary.senses(form)):
-                continue
-            out.append(
-                Violation(
-                    "missing-comparison",
-                    f"adjective {term.word!r} is admitted at level {term.level} "
-                    f"and its form {form!r} is not admissible there",
-                )
-            )
-    return out
+    # **A PERIPHRASTIC ADJECTIVE HAS NO SUFFIXED FORMS**, and until
+    # 2026-09-27 the lexicon could not say so. `beautiful` compares with
+    # `more` and `most`, which are already words. An adverb follows the same
+    # three ways. A suffix, more and most, or no comparison at all.
+    return _missing_alternates(vocabulary, _GRADE_SLOTS)
 
 
 def _check_doubling(vocabulary: Vocabulary) -> list[Violation]:
@@ -952,14 +954,16 @@ def _parse_terms(raw: object) -> list[Term]:
             raise ValueError(f"{where}: 'word' and 'concept' must be strings")
         if not isinstance(level, int) or isinstance(level, bool):
             raise ValueError(f"{where}: 'level' must be an integer")
+        pos = parse_pos(entry.get("pos"), where)
         out.append(
             Term(
                 word=word.lower(),
                 concept=concept,
                 level=level,
                 forms=tuple(_str_list(entry.get("forms"), f"{where}.forms")),
-                pos=_parse_pos(entry.get("pos"), where),
+                pos=pos,
                 source=_parse_source(entry.get("source"), where),
+                inflection=parse_inflection(entry.get("inflection"), pos, where),
             )
         )
     return out
@@ -977,8 +981,11 @@ RECOGNISED_POS: Final[tuple[str, ...]] = (
     "verb",
     "noun",
     "adjective",
+    "adverb",
     "mass",
+    "plural-only",
     "periphrastic",
+    "ungraded",
 )
 """What a term may claim to be.
 
@@ -986,23 +993,29 @@ RECOGNISED_POS: Final[tuple[str, ...]] = (
 because the lexicon had no way to say that a noun has no plural. Without it
 the plural rule demanded one from every noun and the lexicon carried
 `funs`, `magics` and `fulls`, none of which is English. Added 2026-09-26.
+The ordinary name is a mass noun, also called an uncountable noun. The
+citation form is singular.
 
-It is deliberately not a separate field. A reader asking what a word is
-should find the whole answer in one place, and the plural rule is the only
-thing that consults it.
+**`plural-only` is the other number gap**, added 2026-10-10. The ordinary
+grammatical name is pluralia tantum. The citation form is plural and there
+is no singular, so the rule must not manufacture one and must not add a
+further plural. `mass` and `plural-only` together are refused.
 
-**Widened 2026-09-27, and the name is now narrower than the meaning.** What
-the plural rule needs to know is whether the sense admits a plural, and a
-mass noun is the common reason but not the only one. `while` on `duration`
-is a count noun whose plural is archaic, and it carries `mass` because
-adding a second qualifier for one word would give the rule two things to
-consult. Should a third class of no-plural sense appear, rename this for
-what it does rather than widen it again. See
-`docs/decisions/UNUSED_FORMS.md`.
+**Widened 2026-09-27, and `mass` is narrower than every noun that lacks a
+plural.** `while` on `duration` is a count noun whose plural is archaic,
+and it carries `mass` for that reason. An invariable noun, one spelling
+for both numbers, is not either flag. Its plural table maps the word to
+itself. See `docs/decisions/WORD_FORMS.md`.
+
+**`adverb` is a class, added 2026-10-10.** An adjective or an adverb
+compares in one of three ways. A suffix, `periphrastic` more and most, or
+`ungraded`, which means there is no compared form. Words already in the
+lexicon with an empty part of speech stay unchecked. A new adverb has to
+say which of the three it is, or the suffix rule will invent one.
 """
 
 
-def _parse_pos(raw: object, where: str) -> str:
+def parse_pos(raw: object, where: str) -> str:
     if raw is None:
         return ""
     if not isinstance(raw, str):
@@ -1018,11 +1031,84 @@ def _parse_pos(raw: object, where: str) -> str:
         raise ValueError(
             f"{where}.pos: 'mass' qualifies 'noun' and {raw!r} has no noun"
         )
-    if "periphrastic" in parts and "adjective" not in parts:
+    if "plural-only" in parts and "noun" not in parts:
         raise ValueError(
-            f"{where}.pos: 'periphrastic' qualifies 'adjective' and {raw!r} "
-            f"has no adjective"
+            f"{where}.pos: 'plural-only' qualifies 'noun' and {raw!r} has no noun"
+        )
+    if "mass" in parts and "plural-only" in parts:
+        raise ValueError(f"{where}.pos: 'mass' and 'plural-only' contradict each other")
+    graded = "adjective" in parts or "adverb" in parts
+    if "periphrastic" in parts and not graded:
+        raise ValueError(
+            f"{where}.pos: 'periphrastic' qualifies 'adjective' or 'adverb' "
+            f"and {raw!r} has neither"
+        )
+    if "ungraded" in parts and not graded:
+        raise ValueError(
+            f"{where}.pos: 'ungraded' qualifies 'adjective' or 'adverb' "
+            f"and {raw!r} has neither"
+        )
+    if "periphrastic" in parts and "ungraded" in parts:
+        raise ValueError(
+            f"{where}.pos: 'periphrastic' and 'ungraded' contradict each other"
         )
     if len(set(parts)) != len(parts):
         raise ValueError(f"{where}.pos: repeated part of speech in {raw!r}")
     return " ".join(parts)
+
+
+def parse_inflection(raw: object, pos: str, where: str) -> tuple[tuple[str, str], ...]:
+    """Registered slots. ``None`` and ``""`` both mean the slot is absent."""
+    if raw is None:
+        return ()
+    if not isinstance(raw, dict):
+        raise ValueError(f"{where}.inflection: expected an object")
+    parts = set(pos.split())
+    allowed: set[str] = set()
+    if "noun" in parts:
+        allowed.update(("singular", "plural"))
+    if "verb" in parts:
+        allowed.update(("third", "past", "past_participle", "present_participle"))
+    if "adjective" in parts or "adverb" in parts:
+        allowed.update(("comparative", "superlative"))
+    body = cast(dict[object, object], raw)
+    found: dict[str, str] = {}
+    for key, value in body.items():
+        if not isinstance(key, str) or key not in INFLECTION_SLOTS:
+            raise ValueError(f"{where}.inflection: unknown slot {key!r}")
+        if key not in allowed:
+            raise ValueError(f"{where}.inflection: {key} does not apply to {pos!r}")
+        if value is None:
+            form = ""
+        elif isinstance(value, str):
+            form = value.strip().lower()
+        else:
+            raise ValueError(f"{where}.inflection.{key}: expected a string or null")
+        if key == "plural" and "mass" in parts and form:
+            raise ValueError(
+                f"{where}.inflection: a mass noun has no plural, got {form!r}"
+            )
+        if key == "singular" and "plural-only" in parts and form:
+            raise ValueError(
+                f"{where}.inflection: a plural-only noun has no singular, got {form!r}"
+            )
+        if key in ("comparative", "superlative") and "periphrastic" in parts and form:
+            raise ValueError(
+                f"{where}.inflection: periphrastic comparison has no suffixed "
+                f"{key}, got {form!r}"
+            )
+        if key in ("comparative", "superlative") and "ungraded" in parts and form:
+            raise ValueError(
+                f"{where}.inflection: an ungraded word has no {key}, got {form!r}"
+            )
+        found[key] = form
+    return tuple((slot, found[slot]) for slot in INFLECTION_SLOTS if slot in found)
+
+
+def declared_form_violations(vocabulary: Vocabulary) -> list[Violation]:
+    """Missing number, verb inflection, or comparison for a declared class."""
+    return (
+        _check_plurals(vocabulary)
+        + _check_inflections(vocabulary)
+        + _check_comparison(vocabulary)
+    )

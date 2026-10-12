@@ -11,15 +11,24 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from epagoge.inflection import verb_forms
+from epagoge.inflection import (
+    comparison,
+    describe_inflections,
+    owed_forms,
+    plural,
+    verb_forms,
+)
 from epagoge.record import ClaimClass, Provenance, Record
 from epagoge.vocabulary import (
     Term,
     Vocabulary,
     _check_comparison,
-    _parse_pos,
+    _check_plurals,
     contradicted_substitutions,
+    declared_form_violations,
     load_vocabulary,
+    parse_inflection,
+    parse_pos,
     substitutions_at,
     term_levels,
     tokenise,
@@ -494,6 +503,28 @@ class TestVerbInflection(unittest.TestCase):
     def test_a_past_equal_to_the_participle_is_not_repeated(self) -> None:
         self.assertEqual(verb_forms("buy"), ("buys", "bought", "buying"))
 
+    def test_level_two_scan_verbs_keep_their_listed_forms(self) -> None:
+        """These pasts are not the ones spelling alone would build."""
+        self.assertEqual(verb_forms("behold"), ("beholds", "beheld", "beholding"))
+        self.assertEqual(verb_forms("beat"), ("beats", "beaten", "beating"))
+        self.assertEqual(verb_forms("broadcast"), ("broadcasts", "broadcasting"))
+        self.assertEqual(verb_forms("burst"), ("bursts", "bursting"))
+        self.assertEqual(verb_forms("seek"), ("seeks", "sought", "seeking"))
+        self.assertEqual(verb_forms("shoot"), ("shoots", "shot", "shooting"))
+        self.assertEqual(verb_forms("split"), ("splits", "splitting"))
+        self.assertEqual(verb_forms("swear"), ("swears", "swore", "sworn", "swearing"))
+        self.assertEqual(verb_forms("visit"), ("visits", "visited", "visiting"))
+        self.assertEqual(verb_forms("develop"), ("develops", "developed", "developing"))
+        self.assertEqual(
+            verb_forms("consider"), ("considers", "considered", "considering")
+        )
+        self.assertEqual(verb_forms("refer"), ("refers", "referred", "referring"))
+        self.assertEqual(verb_forms("lend"), ("lends", "lent", "lending"))
+        self.assertEqual(verb_forms("utter"), ("utters", "uttered", "uttering"))
+        self.assertEqual(
+            verb_forms("maintain"), ("maintains", "maintained", "maintaining")
+        )
+
     def test_a_form_equal_to_the_base_is_dropped(self) -> None:
         """`cut` is its own past, so it must not appear as an inflection."""
         self.assertNotIn("cut", verb_forms("cut"))
@@ -523,7 +554,7 @@ class TestVerbInflection(unittest.TestCase):
                                 "word": "cup",
                                 "concept": "c",
                                 "level": 1,
-                                "pos": "adverb",
+                                "pos": "preposition",
                             }
                         ],
                     }
@@ -664,6 +695,14 @@ class TestNounPlurals(unittest.TestCase):
             if x.code == "missing-plural"
         ]
 
+    def test_level_two_scan_nouns_keep_their_listed_plurals(self) -> None:
+        self.assertEqual(plural("aircraft"), "aircraft")
+        self.assertEqual(plural("analysis"), "analyses")
+        self.assertEqual(plural("gentleman"), "gentlemen")
+        self.assertEqual(plural("wolf"), "wolves")
+        self.assertEqual(plural("nucleus"), "nuclei")
+        self.assertEqual(plural("phenomenon"), "phenomena")
+
     def test_a_noun_with_its_plural_passes(self) -> None:
         v = self.vocab(
             Term(word="cup", concept="c", level=1, forms=("cups",), pos="noun")
@@ -727,7 +766,7 @@ class TestNounPlurals(unittest.TestCase):
                                 "word": "cup",
                                 "concept": "c",
                                 "level": 1,
-                                "pos": "noun adverb",
+                                "pos": "noun preposition",
                             }
                         ],
                     }
@@ -833,11 +872,11 @@ class TestAdjectiveComparison(unittest.TestCase):
 
     def test_periphrastic_without_adjective_is_refused(self) -> None:
         with self.assertRaises(ValueError):
-            _parse_pos("periphrastic", "terms[0]")
+            parse_pos("periphrastic", "terms[0]")
 
     def test_periphrastic_is_recognised_beside_adjective(self) -> None:
         self.assertEqual(
-            _parse_pos("adjective periphrastic", "terms[0]"),
+            parse_pos("adjective periphrastic", "terms[0]"),
             "adjective periphrastic",
         )
 
@@ -845,11 +884,173 @@ class TestAdjectiveComparison(unittest.TestCase):
         """The sibling rule, which had no test until the second qualifier was
         added and the gap became visible."""
         with self.assertRaises(ValueError):
-            _parse_pos("mass", "terms[0]")
+            parse_pos("mass", "terms[0]")
 
     def test_an_unrecognised_part_of_speech_is_refused(self) -> None:
         with self.assertRaises(ValueError):
-            _parse_pos("adverb", "terms[0]")
+            parse_pos("preposition", "terms[0]")
+
+    def test_periphrastic_may_qualify_an_adverb(self) -> None:
+        self.assertEqual(
+            parse_pos("adverb periphrastic", "terms[0]"),
+            "adverb periphrastic",
+        )
+
+
+class TestAlternateForms(unittest.TestCase):
+    """Every class has alternates, and a missing number is a flag.
+
+    A mass noun has a singular citation form and no plural. A plural-only
+    noun, pluralia tantum, has a plural citation form and no singular. An
+    invariable noun uses one spelling for both numbers and needs no flag.
+    Adjectives and adverbs compare with a suffix, with more and most, or
+    not at all.
+    """
+
+    def test_a_plural_only_noun_owes_neither_extra_number(self) -> None:
+        described = describe_inflections("scissors", "noun plural-only")
+        rows = {name: (form, origin) for name, form, origin in described}
+        self.assertEqual(rows["singular"], ("", "absent"))
+        self.assertEqual(rows["plural"], ("scissors", "citation"))
+        self.assertEqual(owed_forms("scissors", "noun plural-only"), ())
+        vocabulary = Vocabulary(
+            terms=(Term(word="scissors", concept="c", level=1, pos="noun plural-only"),)
+        )
+        self.assertEqual(_check_plurals(vocabulary), [])
+
+    def test_plural_only_without_a_noun_is_refused(self) -> None:
+        with self.assertRaises(ValueError):
+            parse_pos("plural-only", "terms[0]")
+
+    def test_mass_and_plural_only_contradict(self) -> None:
+        with self.assertRaises(ValueError):
+            parse_pos("noun mass plural-only", "terms[0]")
+
+    def test_a_registered_plural_replaces_the_spelling_rule(self) -> None:
+        registered = {"plural": "oxen"}
+        self.assertEqual(owed_forms("ox", "noun", registered), ("oxen",))
+        vocabulary = Vocabulary(
+            terms=(
+                Term(
+                    word="ox",
+                    concept="c",
+                    level=1,
+                    pos="noun",
+                    forms=("oxen",),
+                    inflection=(("plural", "oxen"),),
+                ),
+            )
+        )
+        self.assertEqual(_check_plurals(vocabulary), [])
+
+    def test_a_registered_plural_must_still_be_admissible(self) -> None:
+        vocabulary = Vocabulary(
+            terms=(
+                Term(
+                    word="ox",
+                    concept="c",
+                    level=1,
+                    pos="noun",
+                    inflection=(("plural", "oxen"),),
+                ),
+            )
+        )
+        missing = _check_plurals(vocabulary)
+        self.assertEqual([item.code for item in missing], ["missing-plural"])
+        self.assertIn("oxen", missing[0].detail)
+
+    def test_an_invariable_noun_is_not_a_gap(self) -> None:
+        rows = describe_inflections("sheep", "noun")
+        plural_row = next(row for row in rows if row[0] == "plural")
+        self.assertEqual(plural_row, ("plural", "sheep", "derived"))
+        self.assertEqual(owed_forms("sheep", "noun"), ())
+
+    def test_a_periphrastic_adverb_owes_no_suffix(self) -> None:
+        vocabulary = Vocabulary(
+            terms=(
+                Term(
+                    word="quickly",
+                    concept="c",
+                    level=1,
+                    pos="adverb periphrastic",
+                ),
+            )
+        )
+        self.assertEqual(_check_comparison(vocabulary), [])
+        self.assertEqual(owed_forms("quickly", "adverb periphrastic"), ())
+
+    def test_a_suffixed_adverb_owes_its_comparison(self) -> None:
+        vocabulary = Vocabulary(
+            terms=(Term(word="soon", concept="c", level=1, pos="adverb"),)
+        )
+        missing = _check_comparison(vocabulary)
+        self.assertEqual({item.code for item in missing}, {"missing-comparison"})
+        self.assertTrue(any("sooner" in item.detail for item in missing))
+
+    def test_an_ungraded_adjective_owes_no_comparison(self) -> None:
+        self.assertEqual(owed_forms("wooden", "adjective ungraded"), ())
+        with self.assertRaises(ValueError):
+            parse_pos("adjective periphrastic ungraded", "terms[0]")
+        with self.assertRaises(ValueError):
+            parse_pos("ungraded", "terms[0]")
+
+    def test_well_uses_the_forms_already_admitted_for_good(self) -> None:
+        self.assertEqual(comparison("well"), ("better", "best"))
+        vocabulary = Vocabulary(
+            terms=(
+                Term(word="well", concept="c", level=1, pos="adverb"),
+                Term(word="better", concept="c", level=1),
+                Term(word="best", concept="c", level=1),
+            )
+        )
+        self.assertEqual(_check_comparison(vocabulary), [])
+
+    def test_a_registered_inflection_is_read_from_json(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "v.json"
+            path.write_text(
+                json.dumps(
+                    {
+                        "core": ["a"],
+                        "terms": [
+                            {
+                                "word": "ox",
+                                "concept": "c",
+                                "level": 1,
+                                "pos": "noun",
+                                "forms": ["oxen"],
+                                "inflection": {"plural": "oxen", "singular": None},
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            vocabulary = load_vocabulary(path)
+            self.assertEqual(
+                vocabulary.terms[0].inflection,
+                (("singular", ""), ("plural", "oxen")),
+            )
+            self.assertEqual(_check_plurals(vocabulary), [])
+
+    def test_a_mass_noun_cannot_register_a_plural(self) -> None:
+        with self.assertRaises(ValueError):
+            parse_inflection({"plural": "funs"}, "noun mass", "terms[0]")
+
+    def test_a_plural_only_noun_cannot_register_a_singular(self) -> None:
+        with self.assertRaises(ValueError):
+            parse_inflection({"singular": "scissor"}, "noun plural-only", "terms[0]")
+
+    def test_a_verb_registration_replaces_one_slot(self) -> None:
+        rows = describe_inflections("climb", "verb", {"past": "clomb"})
+        past = next(row for row in rows if row[0] == "past")
+        participle = next(row for row in rows if row[0] == "past_participle")
+        self.assertEqual(past, ("past", "clomb", "registered"))
+        self.assertEqual(participle[1], "climbed")
+
+    def test_the_shipped_lexicon_owes_no_missing_alternate(self) -> None:
+        vocabulary = load_vocabulary(Path("curriculum/vocabulary.json"))
+        self.assertEqual(declared_form_violations(vocabulary), [])
 
 
 class TestSubstitutionsByLevel(unittest.TestCase):

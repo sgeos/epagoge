@@ -35,13 +35,37 @@ artifacts make the associated checks unverified rather than disproved.
 
 On 2026-10-07 a self-directed loop ran three lexical scopes and was
 cancelled by the operator. The operator then decided the six open items it
-left, and that scope is described by `CURRENT_BRIEF.md` and
-`COMPLETION_CONDITION.md`. **No further scope is open.** The brief and
-condition are evidence of delivered work, not instructions to repeat it.
-Earlier briefs and conditions are preserved as `previous_*.md` beside the
-review records that followed them. Earlier handoffs in `HANDOFF_HISTORY.md`
-are historical evidence. Durable failure analysis is in
-`PROCESS_STRATEGY.md`.
+left. That scope is delivered. Its brief and condition are preserved as
+`previous_*.md` in `evals/review/level_2_one_source/`. Earlier handoffs in
+`HANDOFF_HISTORY.md` are historical evidence. Durable failure analysis is
+in `PROCESS_STRATEGY.md`.
+
+**Scope opened 2026-10-09.** The operator directed that the remaining
+level-two scan candidates be admitted, because the lexicon is far under
+its approximate target. The brief and the completion condition in this
+directory describe that work. The first batch, 24 McGuffey words, is
+recorded in `evals/review/level_2_one_source/`. A second
+batch in `evals/review/level_2_scan_02/` admits 432 and excludes 7. A third
+batch in `evals/review/level_2_scan_03/` admits 71 and excludes 3.
+`level_2_scan_04/` admits 67. `level_2_scan_05/` admits 20 and excludes
+10. `level_2_scan_06/` admits 25 and excludes 12. `level_2_scan_07/`
+admits 72 and excludes 191. `level_2_scan_08/` admits 72.
+`level_2_scan_09/` admits 72. `level_2_scan_10/` admits 72 and defers
+thee, thy, thine and unto. The scan batches and the agency batches named
+below are committed with the lexicon they changed. Measured
+after the tenth, distinct headwords through level two are 2,159, and a
+fresh selection from the same scan prints an empty pool. On 2026-10-10 a
+separate scan of three public-domain agency sources admitted 151 further
+level-two headwords, recorded in `evals/review/level_2_agency/`, and 16
+level-three headwords, recorded in `evals/review/level_3_agency/`.
+Distinct headwords through level two are 2,310, measured. The same tree
+registers noun, verb, adjective and adverb forms, and `epagoge.lexeme`
+counts observed spellings under one citation. The vocabulary check is
+unchanged. A grouping is a proposal and admits nothing. The counts in the delivery
+table below are the 2026-10-07 tree. Dale-Chall and the New General Service
+List are not inputs. The long tail below the scan threshold is outside the
+brief. The teacher was not loaded. About 175 megabytes of pages were free
+and swap held 10,956 of 12,288 megabytes.
 
 ## Starting the next session
 
@@ -119,13 +143,23 @@ plurals recorded.
 
 ## Recommended next work
 
-All pools used in this session are exhausted. `tools/candidate_pool.py` can
-produce the next by relaxing the source rule to one source, which leaves
-roughly 1,800 words needing heavier judgement. A different route is drafting
-level-two books, since no level-two book uses any word admitted in this
-session and the coverage rule is unmet at level two. Drafting needs the
-teacher, so check host memory first. Neither throughput nor the semantic
-quality of agent-authored definitions has been measured.
+The one-source frequent pool from the 2026-09-27 scan is decided. Measured
+after `evals/review/level_2_scan_10/`, distinct headwords through level two
+were 2,159, and a fresh selection from that scan prints an empty pool. On
+2026-10-10 three public-domain agency sources were scanned. The filtered
+pool held 243 words. 151 were admitted at level two and 16 at level three.
+Distinct headwords through level two are 2,310, measured, leaving 7,690 to
+the approximate target of about ten thousand. Strings from that pool that
+were not admitted were left without a review decision. The candidate list
+in `docs/decisions/AGENCY_SOURCES.md` is not exhausted. Forest Service
+readers, further NOAA pages, Energy Information Administration pages, Fish
+and Wildlife booklets, Ben's Guide, and National Park Service booklets were
+not fetched in this pass, and the StarChild level 1 fetch was a thin
+sample. Grade 8 remains level three. A word too advanced for level two is
+scheduled higher rather than dropped. Alternates for each class are in
+`docs/decisions/WORD_FORMS.md`. Check host memory before loading the
+teacher. Neither throughput nor the semantic quality of agent-authored
+definitions has been measured.
 
 ## Restart verification
 

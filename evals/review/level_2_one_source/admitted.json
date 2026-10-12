@@ -1,0 +1,146 @@
+{
+  "alarm": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "An alarm is a sound that says something bad is happening.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "attic": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "An attic is the room at the top of a house.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "bark": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Bark is the hard cover on the outside of a tree.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "barn": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A barn is a large house for animals and for the food they eat.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "beaver": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A beaver is an animal that lives by water and cuts down trees.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "blind": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Blind means not able to see.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "bold": {
+    "concept": "feeling",
+    "pos": "adjective",
+    "definition": "A bold person does a hard thing and does not stop.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "borrow": {
+    "concept": "exchange",
+    "pos": "verb",
+    "definition": "To borrow a thing is to take it and give it back later.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "breakfast": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "Breakfast is the meal a person eats in the morning.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "business": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A business is the work a person does to get money.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "captain": {
+    "concept": "someone_in_charge",
+    "pos": "noun",
+    "definition": "A captain is the person who is in charge of a boat.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "carpenter": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A carpenter is a person who makes things out of wood.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "castle": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A castle is a large strong house where people lived long ago.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "chase": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To chase a thing is to run after it.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "childhood": {
+    "concept": "duration",
+    "pos": "mass noun",
+    "definition": "Childhood is the time when a person is a child.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "coat": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A coat is cloth a person wears outside when it is cold.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "coffee": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Coffee is a hot brown drink.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "company": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A company is a group of people who are together.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "courage": {
+    "concept": "feeling",
+    "pos": "mass noun",
+    "definition": "Courage is doing a hard thing when you are afraid.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "crown": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A crown is a ring of metal that a king wears on the head.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "curious": {
+    "concept": "finding_out",
+    "pos": "adjective periphrastic",
+    "definition": "A curious person wants to find something out.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "darkness": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Darkness is where there is no light.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "deck": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A deck is the floor of a boat.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  },
+  "dime": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A dime is a small coin.",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
+  }
+}

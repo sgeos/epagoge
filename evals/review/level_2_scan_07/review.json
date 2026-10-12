@@ -1,0 +1,1665 @@
+{
+  "altocumulus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Altocumulus is cloud at middle height in small piles or rolls.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "altocumulus"
+    ]
+  },
+  "altostratus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Altostratus is a gray sheet of cloud at middle height.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "altostratus"
+    ]
+  },
+  "bathymetry": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Bathymetry is the measuring of how deep water is.",
+    "concept": "measuring",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "bathymetry"
+    ]
+  },
+  "bosom": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The bosom is the front of the upper body.",
+    "concept": "body_part",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "bosom",
+      "bosoms"
+    ]
+  },
+  "certainly": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Certainly means one can be sure.",
+    "concept": "how_sure",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "certainly"
+    ]
+  },
+  "churchyard": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A churchyard is the ground around a church.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "churchyard",
+      "churchyards"
+    ]
+  },
+  "cirrostratus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cirrostratus is a high thin sheet of cloud.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "cirrostratus"
+    ]
+  },
+  "cirrus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cirrus is a high thin cloud.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "cirrus"
+    ]
+  },
+  "climatic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Climatic means of climate.",
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "climatic"
+    ]
+  },
+  "climatology": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Climatology is the study of climate over long times.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "climatology"
+    ]
+  },
+  "composite": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A composite is a thing made of different parts.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "composite",
+      "composites"
+    ]
+  },
+  "considerable": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Considerable means fairly large.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "considerable"
+    ]
+  },
+  "considerably": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Considerably means by a fairly large amount.",
+    "concept": "quantity",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "considerably"
+    ]
+  },
+  "continental": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Continental means of a great body of land.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "continental"
+    ]
+  },
+  "convective": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Convective means moved by warm air or warm water rising.",
+    "concept": "heat",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "convective"
+    ]
+  },
+  "conveyor": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A conveyor is a moving path that carries things from one place to another.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "conveyor",
+      "conveyors"
+    ]
+  },
+  "coquina": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Coquina is soft rock made of broken shells.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "coquina"
+    ]
+  },
+  "countenance": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A countenance is the look on a face.",
+    "concept": "body_part",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "countenance",
+      "countenances"
+    ]
+  },
+  "cumulus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cumulus is a bright cloud that is flat on the bottom and piled high on top.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "cumulus"
+    ]
+  },
+  "cyclonic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cyclonic means turning as a large round storm turns.",
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "cyclonic"
+    ]
+  },
+  "darling": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A darling is a person who is loved very much.",
+    "concept": "feeling",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "darling",
+      "darlings"
+    ]
+  },
+  "destruction": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Destruction is the breaking of a thing so that it is gone.",
+    "concept": "things_break",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "destruction"
+    ]
+  },
+  "destructive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Destructive means able to break things past use.",
+    "concept": "things_break",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "destructive"
+    ]
+  },
+  "devastating": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Devastating means bringing very great harm.",
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "devastating"
+    ]
+  },
+  "differential": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Differential means coming from a difference.",
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "differential"
+    ]
+  },
+  "disposition": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A disposition is the way a person tends to act.",
+    "concept": "tending",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "disposition",
+      "dispositions"
+    ]
+  },
+  "distinctly": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Distinctly means in a clear and separate way.",
+    "concept": "same_and_different",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "distinctly"
+    ]
+  },
+  "dynamics": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Dynamics is the study of how things move and why.",
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "dynamics"
+    ]
+  },
+  "ecosystem": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An ecosystem is the living things in a place together with that place.",
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "ecosystem",
+      "ecosystems"
+    ]
+  },
+  "electronic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Electronic means working by a small electric current that is kept in hand.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "electronic"
+    ]
+  },
+  "elevation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The elevation of a place is its height above the sea.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "elevation",
+      "elevations"
+    ]
+  },
+  "email": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An email is a letter sent from one computer to another.",
+    "concept": "writing",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "email",
+      "emails"
+    ]
+  },
+  "emergency": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An emergency is a sudden danger that calls for action at once.",
+    "concept": "danger",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "emergency",
+      "emergencies"
+    ]
+  },
+  "emphasis": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Emphasis is special weight given to one part.",
+    "concept": "discourse_marker",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "emphasis"
+    ]
+  },
+  "engineering": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Engineering is the work of planning and building things that work.",
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "engineering"
+    ]
+  },
+  "ensure": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To ensure is to make certain that a thing will be so.",
+    "concept": "can_and_cannot",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "ensure",
+      "ensured",
+      "ensures",
+      "ensuring"
+    ]
+  },
+  "environment": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An environment is everything around a living thing.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "environment",
+      "environments"
+    ]
+  },
+  "equipment": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Equipment is the tools and other things needed for a job.",
+    "concept": "household_object",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "equipment"
+    ]
+  },
+  "estimation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An estimation is a careful guess of an amount.",
+    "concept": "guess",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "estimation",
+      "estimations"
+    ]
+  },
+  "estuary": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An estuary is the wide mouth of a river where it meets the sea.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "estuary",
+      "estuaries"
+    ]
+  },
+  "evacuation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An evacuation is the moving of people out of a place of danger.",
+    "concept": "danger",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "evacuation",
+      "evacuations"
+    ]
+  },
+  "evaporate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To evaporate is to turn from water into a gas.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "evaporate",
+      "evaporated",
+      "evaporates",
+      "evaporating"
+    ]
+  },
+  "evaporation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Evaporation is water turning into a gas.",
+    "concept": "change",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "evaporation"
+    ]
+  },
+  "expansion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Expansion is growing larger.",
+    "concept": "change",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "expansion"
+    ]
+  },
+  "exposure": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Exposure is being left open to the weather or to harm.",
+    "concept": "danger",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "exposure"
+    ]
+  },
+  "eyewall": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An eyewall is the ring of tall storm cloud around the calm middle of a round storm.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "eyewall",
+      "eyewalls"
+    ]
+  },
+  "farmer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A farmer is a person who keeps a farm.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "farmer",
+      "farmers"
+    ]
+  },
+  "federal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Federal means of the main government of a whole country.",
+    "concept": "someone_in_charge",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "federal"
+    ]
+  },
+  "fibrous": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fibrous means made of many long thin pieces.",
+    "concept": "material",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "fibrous"
+    ]
+  },
+  "fishhawk": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A fishhawk is a bird that catches fish.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "fishhawk",
+      "fishhawks"
+    ]
+  },
+  "flank": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A flank is the side of a body or of a group.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "flank",
+      "flanks"
+    ]
+  },
+  "forecaster": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A forecaster is a person who says what the weather is likely to be.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "forecaster",
+      "forecasters"
+    ]
+  },
+  "foreground": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The foreground is the part of a view that seems nearest.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "foreground",
+      "foregrounds"
+    ]
+  },
+  "frontal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Frontal means of the place where two bodies of air meet.",
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "frontal"
+    ]
+  },
+  "frostbite": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Frostbite is harm to the body from great cold.",
+    "concept": "being_hurt",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "frostbite"
+    ]
+  },
+  "fusion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fusion is a joining of things into one.",
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "fusion"
+    ]
+  },
+  "gage": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A gage is a tool that shows a measure.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "gage",
+      "gages"
+    ]
+  },
+  "gay": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Gay means glad and bright.",
+    "concept": "feeling",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "gay",
+      "gayer",
+      "gayest"
+    ]
+  },
+  "geodesy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Geodesy is the measuring of the size and shape of the earth.",
+    "concept": "measuring",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "geodesy"
+    ]
+  },
+  "geostationary": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Geostationary means staying above one place on the earth.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "geostationary"
+    ]
+  },
+  "gradient": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A gradient is how fast a measure changes from place to place.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "gradient",
+      "gradients"
+    ]
+  },
+  "graphic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Graphic means given as a picture or a drawing.",
+    "concept": "writing",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "graphic"
+    ]
+  },
+  "gravitational": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Gravitational means of the pull of the earth or of another large body.",
+    "concept": "force",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "gravitational"
+    ]
+  },
+  "hailstone": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hailstone is a ball of ice that falls from a storm.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "hailstone",
+      "hailstones"
+    ]
+  },
+  "harebell": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A harebell is a small blue flower in the shape of a bell.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "harebell",
+      "harebells"
+    ]
+  },
+  "harmful": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Harmful means able to cause harm.",
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "harmful"
+    ]
+  },
+  "hazardous": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Hazardous means full of danger.",
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "hazardous"
+    ]
+  },
+  "haze": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Haze is dust or smoke in the air that makes it hard to see far.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "haze"
+    ]
+  },
+  "hectopascal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hectopascal is a unit of air pressure.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "hectopascal",
+      "hectopascals"
+    ]
+  },
+  "helium": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Helium is a very light gas that does not burn.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "helium"
+    ]
+  },
+  "horizontally": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Horizontally means in a direction level with the ground.",
+    "concept": "direction",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "horizontally"
+    ]
+  },
+  "hound": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hound is a dog kept to chase other animals.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "hound",
+      "hounds"
+    ]
+  },
+  "accompanied": {
+    "decision": "exclude",
+    "reason": "past of accompany, which is not in the frequent pool"
+  },
+  "adiabats": {
+    "decision": "exclude",
+    "reason": "plural of adiabat, which is not in the frequent pool"
+  },
+  "apps": {
+    "decision": "exclude",
+    "reason": "plural of app, which is not in the frequent pool"
+  },
+  "arranged": {
+    "decision": "exclude",
+    "reason": "past of arrange, which is not in the frequent pool"
+  },
+  "aspects": {
+    "decision": "exclude",
+    "reason": "plural of aspect, which is not in the frequent pool"
+  },
+  "assigned": {
+    "decision": "exclude",
+    "reason": "past of assign, which is not in the frequent pool"
+  },
+  "associated": {
+    "decision": "exclude",
+    "reason": "past of associate, which is not in the frequent pool"
+  },
+  "automated": {
+    "decision": "exclude",
+    "reason": "past of automate, which is not in the frequent pool"
+  },
+  "bands": {
+    "decision": "exclude",
+    "reason": "plural of band, which is not in the frequent pool"
+  },
+  "bills": {
+    "decision": "exclude",
+    "reason": "plural of bill, which is not in the frequent pool"
+  },
+  "bowed": {
+    "decision": "exclude",
+    "reason": "past of bow, which is not in the frequent pool"
+  },
+  "bowing": {
+    "decision": "exclude",
+    "reason": "present participle of bow, which is not in the frequent pool"
+  },
+  "breakers": {
+    "decision": "exclude",
+    "reason": "plural of breaker, which is not in the frequent pool"
+  },
+  "buried": {
+    "decision": "exclude",
+    "reason": "past of bury, which is not in the frequent pool"
+  },
+  "cases": {
+    "decision": "exclude",
+    "reason": "plural of case, which is not in the frequent pool"
+  },
+  "categories": {
+    "decision": "exclude",
+    "reason": "plural of category, which is not in the frequent pool"
+  },
+  "celebrated": {
+    "decision": "exclude",
+    "reason": "past of celebrate, which is not in the frequent pool"
+  },
+  "cells": {
+    "decision": "exclude",
+    "reason": "plural of cell, which is not in the frequent pool"
+  },
+  "centimeters": {
+    "decision": "exclude",
+    "reason": "plural of centimeter, which is not in the frequent pool"
+  },
+  "centralized": {
+    "decision": "exclude",
+    "reason": "past of centralize, which is not in the frequent pool"
+  },
+  "characteristics": {
+    "decision": "exclude",
+    "reason": "plural of characteristic, which is not in the frequent pool"
+  },
+  "characterized": {
+    "decision": "exclude",
+    "reason": "past of characterize, which is not in the frequent pool"
+  },
+  "circumstances": {
+    "decision": "exclude",
+    "reason": "plural of circumstance, which is not in the frequent pool"
+  },
+  "classified": {
+    "decision": "exclude",
+    "reason": "past of classify, which is not in the frequent pool"
+  },
+  "closures": {
+    "decision": "exclude",
+    "reason": "plural of closure, which is not in the frequent pool"
+  },
+  "collisions": {
+    "decision": "exclude",
+    "reason": "plural of collision, which is not in the frequent pool"
+  },
+  "companions": {
+    "decision": "exclude",
+    "reason": "plural of companion, which is not in the frequent pool"
+  },
+  "compelled": {
+    "decision": "exclude",
+    "reason": "past of compel, which is not in the frequent pool"
+  },
+  "complicated": {
+    "decision": "exclude",
+    "reason": "past of complicate, which is not in the frequent pool"
+  },
+  "composed": {
+    "decision": "exclude",
+    "reason": "past of compose, which is not in the frequent pool"
+  },
+  "continents": {
+    "decision": "exclude",
+    "reason": "plural of continent, which is not in the frequent pool"
+  },
+  "contours": {
+    "decision": "exclude",
+    "reason": "plural of contour, which is not in the frequent pool"
+  },
+  "corded": {
+    "decision": "exclude",
+    "reason": "past of cord, which is not in the frequent pool"
+  },
+  "creeping": {
+    "decision": "exclude",
+    "reason": "present participle of creep, which is not in the frequent pool"
+  },
+  "deceived": {
+    "decision": "exclude",
+    "reason": "past of deceive, which is not in the frequent pool"
+  },
+  "defined": {
+    "decision": "exclude",
+    "reason": "past of define, and already a headword at level five"
+  },
+  "denotes": {
+    "decision": "exclude",
+    "reason": "third person of denote, which is not in the frequent pool"
+  },
+  "depicted": {
+    "decision": "exclude",
+    "reason": "past of depict, which is not in the frequent pool"
+  },
+  "derived": {
+    "decision": "exclude",
+    "reason": "past of derive, which is not in the frequent pool"
+  },
+  "descending": {
+    "decision": "exclude",
+    "reason": "present participle of descend, which is not in the frequent pool"
+  },
+  "descends": {
+    "decision": "exclude",
+    "reason": "third person of descend, which is not in the frequent pool"
+  },
+  "designated": {
+    "decision": "exclude",
+    "reason": "past of designate, which is not in the frequent pool"
+  },
+  "designed": {
+    "decision": "exclude",
+    "reason": "past of design, which is not in the frequent pool"
+  },
+  "destroyed": {
+    "decision": "exclude",
+    "reason": "past of destroy, which is not in the frequent pool"
+  },
+  "disappeared": {
+    "decision": "exclude",
+    "reason": "past of disappear, which is not in the frequent pool"
+  },
+  "dissipates": {
+    "decision": "exclude",
+    "reason": "third person of dissipate, which is not in the frequent pool"
+  },
+  "dissipating": {
+    "decision": "exclude",
+    "reason": "present participle of dissipate, which is not in the frequent pool"
+  },
+  "driven": {
+    "decision": "exclude",
+    "reason": "participle of drive, which is not in the frequent pool"
+  },
+  "driving": {
+    "decision": "exclude",
+    "reason": "present participle of drive, which is not in the frequent pool"
+  },
+  "elements": {
+    "decision": "exclude",
+    "reason": "plural of element, which is not in the frequent pool"
+  },
+  "embedded": {
+    "decision": "exclude",
+    "reason": "past of embed, which is not in the frequent pool"
+  },
+  "emitted": {
+    "decision": "exclude",
+    "reason": "past of emit, which is not in the frequent pool"
+  },
+  "employs": {
+    "decision": "exclude",
+    "reason": "third person of employ, which is not in the frequent pool"
+  },
+  "enclosed": {
+    "decision": "exclude",
+    "reason": "past of enclose, which is not in the frequent pool"
+  },
+  "equations": {
+    "decision": "exclude",
+    "reason": "plural of equation, which is not in the frequent pool"
+  },
+  "established": {
+    "decision": "exclude",
+    "reason": "past of establish, which is not in the frequent pool"
+  },
+  "exclaimed": {
+    "decision": "exclude",
+    "reason": "past of exclaim, which is not in the frequent pool"
+  },
+  "expands": {
+    "decision": "exclude",
+    "reason": "third person of expand, which is not in the frequent pool"
+  },
+  "exposed": {
+    "decision": "exclude",
+    "reason": "past of expose, which is not in the frequent pool"
+  },
+  "expressed": {
+    "decision": "exclude",
+    "reason": "past of express, which is not in the frequent pool"
+  },
+  "facilities": {
+    "decision": "exclude",
+    "reason": "plural of facility, which is not in the frequent pool"
+  },
+  "fatalities": {
+    "decision": "exclude",
+    "reason": "plural of fatality, which is not in the frequent pool"
+  },
+  "flashes": {
+    "decision": "exclude",
+    "reason": "plural of flash, which is not in the frequent pool"
+  },
+  "folding": {
+    "decision": "exclude",
+    "reason": "present participle of fold, which is not in the frequent pool"
+  },
+  "followers": {
+    "decision": "exclude",
+    "reason": "plural of follower, which is not in the frequent pool"
+  },
+  "gathered": {
+    "decision": "exclude",
+    "reason": "past of gather, which is not in the frequent pool"
+  },
+  "gathering": {
+    "decision": "exclude",
+    "reason": "present participle of gather, which is not in the frequent pool"
+  },
+  "gov": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "hast": {
+    "decision": "exclude",
+    "reason": "old form of have"
+  },
+  "hath": {
+    "decision": "exclude",
+    "reason": "old form of have"
+  },
+  "hemispheres": {
+    "decision": "exclude",
+    "reason": "plural of hemisphere, which is not in the frequent pool"
+  },
+  "horns": {
+    "decision": "exclude",
+    "reason": "plural of horn, which is not in the frequent pool"
+  },
+  "hpa": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "humming": {
+    "decision": "exclude",
+    "reason": "present participle of hum, which is not in the frequent pool"
+  },
+  "huts": {
+    "decision": "exclude",
+    "reason": "plural of hut, which is not in the frequent pool"
+  },
+  "hydrologists": {
+    "decision": "exclude",
+    "reason": "plural of hydrologist, which is not in the frequent pool"
+  },
+  "illuminated": {
+    "decision": "exclude",
+    "reason": "past of illuminate, which is not in the frequent pool"
+  },
+  "implies": {
+    "decision": "exclude",
+    "reason": "third person of imply, which is not in the frequent pool"
+  },
+  "ing": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "inhabitants": {
+    "decision": "exclude",
+    "reason": "plural of inhabitant, which is not in the frequent pool"
+  },
+  "injured": {
+    "decision": "exclude",
+    "reason": "past of injure, which is not in the frequent pool"
+  },
+  "inquired": {
+    "decision": "exclude",
+    "reason": "past of inquire, which is not in the frequent pool"
+  },
+  "intensifies": {
+    "decision": "exclude",
+    "reason": "third person of intensify, which is not in the frequent pool"
+  },
+  "intervals": {
+    "decision": "exclude",
+    "reason": "plural of interval, which is not in the frequent pool"
+  },
+  "involved": {
+    "decision": "exclude",
+    "reason": "past of involve, which is not in the frequent pool"
+  },
+  "isobars": {
+    "decision": "exclude",
+    "reason": "plural of isobar, which is not in the frequent pool"
+  },
+  "kilometers": {
+    "decision": "exclude",
+    "reason": "plural of kilometer, which is not in the frequent pool"
+  },
+  "knots": {
+    "decision": "exclude",
+    "reason": "plural of knot, which is not in the frequent pool"
+  },
+  "labeled": {
+    "decision": "exclude",
+    "reason": "past of label, which is not in the frequent pool"
+  },
+  "landfalling": {
+    "decision": "exclude",
+    "reason": "participial form of landfall, not a separate headword"
+  },
+  "lent": {
+    "decision": "exclude",
+    "reason": "past of lend, admitted as a form of that verb"
+  },
+  "limitations": {
+    "decision": "exclude",
+    "reason": "plural of limitation, which is not in the frequent pool"
+  },
+  "limited": {
+    "decision": "exclude",
+    "reason": "past of limit, which is not in the frequent pool"
+  },
+  "managers": {
+    "decision": "exclude",
+    "reason": "plural of manager, which is not in the frequent pool"
+  },
+  "masses": {
+    "decision": "exclude",
+    "reason": "plural of mass, which is not in the frequent pool"
+  },
+  "matters": {
+    "decision": "exclude",
+    "reason": "plural of matter, which is not in the frequent pool"
+  },
+  "ment": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "messages": {
+    "decision": "exclude",
+    "reason": "plural of message, which is not in the frequent pool"
+  },
+  "meteotsunamis": {
+    "decision": "exclude",
+    "reason": "plural of meteotsunami, which is not in the frequent pool"
+  },
+  "micrometers": {
+    "decision": "exclude",
+    "reason": "plural of micrometer, which is not in the frequent pool"
+  },
+  "mph": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "multi": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "myths": {
+    "decision": "exclude",
+    "reason": "plural of myth, which is not in the frequent pool"
+  },
+  "nations": {
+    "decision": "exclude",
+    "reason": "plural of nation, which is not in the frequent pool"
+  },
+  "neutrons": {
+    "decision": "exclude",
+    "reason": "plural of neutron, which is not in the frequent pool"
+  },
+  "non": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "observers": {
+    "decision": "exclude",
+    "reason": "plural of observer, which is not in the frequent pool"
+  },
+  "omitted": {
+    "decision": "exclude",
+    "reason": "past of omit, which is not in the frequent pool"
+  },
+  "operations": {
+    "decision": "exclude",
+    "reason": "plural of operation, already a headword at a higher level"
+  },
+  "opportunities": {
+    "decision": "exclude",
+    "reason": "plural of opportunity, which is not in the frequent pool"
+  },
+  "options": {
+    "decision": "exclude",
+    "reason": "plural of option, which is not in the frequent pool"
+  },
+  "organized": {
+    "decision": "exclude",
+    "reason": "past of organize, which is not in the frequent pool"
+  },
+  "organizers": {
+    "decision": "exclude",
+    "reason": "plural of organizer, which is not in the frequent pool"
+  },
+  "ous": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "outages": {
+    "decision": "exclude",
+    "reason": "plural of outage, which is not in the frequent pool"
+  },
+  "outlooks": {
+    "decision": "exclude",
+    "reason": "plural of outlook, which is not in the frequent pool"
+  },
+  "overpasses": {
+    "decision": "exclude",
+    "reason": "plural of overpass, which is not in the frequent pool"
+  },
+  "pdf": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "pellets": {
+    "decision": "exclude",
+    "reason": "plural of pellet, which is not in the frequent pool"
+  },
+  "percent": {
+    "decision": "exclude",
+    "reason": "already a headword at level six under quantity"
+  },
+  "perched": {
+    "decision": "exclude",
+    "reason": "past of perch, which is not in the frequent pool"
+  },
+  "photos": {
+    "decision": "exclude",
+    "reason": "plural of photo, which is not in the frequent pool"
+  },
+  "plotted": {
+    "decision": "exclude",
+    "reason": "past of plot, which is not in the frequent pool"
+  },
+  "ppt": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "preferred": {
+    "decision": "exclude",
+    "reason": "past of prefer, which is not in the frequent pool"
+  },
+  "pro": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "produces": {
+    "decision": "exclude",
+    "reason": "third person of produce, which is not in the frequent pool"
+  },
+  "producing": {
+    "decision": "exclude",
+    "reason": "present participle of produce, which is not in the frequent pool"
+  },
+  "programs": {
+    "decision": "exclude",
+    "reason": "plural of program, which is not in the frequent pool"
+  },
+  "projects": {
+    "decision": "exclude",
+    "reason": "plural of project, which is not in the frequent pool"
+  },
+  "pronounced": {
+    "decision": "exclude",
+    "reason": "past of pronounce, which is not in the frequent pool"
+  },
+  "propellants": {
+    "decision": "exclude",
+    "reason": "plural of propellant, which is not in the frequent pool"
+  },
+  "rabbits": {
+    "decision": "exclude",
+    "reason": "plural of rabbit, which is not in the frequent pool"
+  },
+  "radars": {
+    "decision": "exclude",
+    "reason": "plural of radar, which is not in the frequent pool"
+  },
+  "raindrops": {
+    "decision": "exclude",
+    "reason": "plural of raindrop, which is not in the frequent pool"
+  },
+  "referred": {
+    "decision": "exclude",
+    "reason": "past of refer, admitted as a form of that verb"
+  },
+  "reflected": {
+    "decision": "exclude",
+    "reason": "past of reflect, which is not in the frequent pool"
+  },
+  "refused": {
+    "decision": "exclude",
+    "reason": "past of refuse, which is not in the frequent pool"
+  },
+  "related": {
+    "decision": "exclude",
+    "reason": "past of relate, which is not in the frequent pool"
+  },
+  "resolved": {
+    "decision": "exclude",
+    "reason": "past of resolve, which is not in the frequent pool"
+  },
+  "retains": {
+    "decision": "exclude",
+    "reason": "third person of retain, which is not in the frequent pool"
+  },
+  "retired": {
+    "decision": "exclude",
+    "reason": "past of retire, which is not in the frequent pool"
+  },
+  "reveals": {
+    "decision": "exclude",
+    "reason": "third person of reveal, which is not in the frequent pool"
+  },
+  "rotates": {
+    "decision": "exclude",
+    "reason": "third person of rotate, which is not in the frequent pool"
+  },
+  "rotating": {
+    "decision": "exclude",
+    "reason": "present participle of rotate, which is not in the frequent pool"
+  },
+  "sailed": {
+    "decision": "exclude",
+    "reason": "past of sail, which is not in the frequent pool"
+  },
+  "sailors": {
+    "decision": "exclude",
+    "reason": "plural of sailor, which is not in the frequent pool"
+  },
+  "saturated": {
+    "decision": "exclude",
+    "reason": "past of saturate, which is not in the frequent pool"
+  },
+  "scales": {
+    "decision": "exclude",
+    "reason": "plural of scale, which is not in the frequent pool"
+  },
+  "scholars": {
+    "decision": "exclude",
+    "reason": "plural of scholar, which is not in the frequent pool"
+  },
+  "seabirds": {
+    "decision": "exclude",
+    "reason": "plural of seabird, which is not in the frequent pool"
+  },
+  "semi": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "served": {
+    "decision": "exclude",
+    "reason": "past of serve, which is not in the frequent pool"
+  },
+  "services": {
+    "decision": "exclude",
+    "reason": "plural of service, which is not in the frequent pool"
+  },
+  "shalt": {
+    "decision": "exclude",
+    "reason": "old form of shall"
+  },
+  "showers": {
+    "decision": "exclude",
+    "reason": "plural of shower, which is not in the frequent pool"
+  },
+  "sobbed": {
+    "decision": "exclude",
+    "reason": "past of sob, which is not in the frequent pool"
+  },
+  "solutions": {
+    "decision": "exclude",
+    "reason": "plural of solution, which is not in the frequent pool"
+  },
+  "sprang": {
+    "decision": "exclude",
+    "reason": "past of the verb spring, which is not a frequent candidate"
+  },
+  "stat": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "steered": {
+    "decision": "exclude",
+    "reason": "past of steer, which is not in the frequent pool"
+  },
+  "stretched": {
+    "decision": "exclude",
+    "reason": "past of stretch, which is not in the frequent pool"
+  },
+  "structures": {
+    "decision": "exclude",
+    "reason": "plural of structure, already a headword at a higher level"
+  },
+  "stung": {
+    "decision": "exclude",
+    "reason": "past of sting, which is not in the frequent pool"
+  },
+  "succeeded": {
+    "decision": "exclude",
+    "reason": "past of succeed, which is not in the frequent pool"
+  },
+  "surrounded": {
+    "decision": "exclude",
+    "reason": "past of surround, which is not in the frequent pool"
+  },
+  "surrounding": {
+    "decision": "exclude",
+    "reason": "present participle of surround, which is not in the frequent pool"
+  },
+  "suspended": {
+    "decision": "exclude",
+    "reason": "past of suspend, which is not in the frequent pool"
+  },
+  "sweeping": {
+    "decision": "exclude",
+    "reason": "present participle of sweep, which is not in the frequent pool"
+  },
+  "swept": {
+    "decision": "exclude",
+    "reason": "past of sweep, which is not in the frequent pool"
+  },
+  "teeth": {
+    "decision": "exclude",
+    "reason": "plural of tooth, which is not in the frequent pool"
+  },
+  "ter": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "threatening": {
+    "decision": "exclude",
+    "reason": "present participle of threaten, which is not in the frequent pool"
+  },
+  "threatens": {
+    "decision": "exclude",
+    "reason": "third person of threaten, which is not in the frequent pool"
+  },
+  "tion": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "transferred": {
+    "decision": "exclude",
+    "reason": "past of transfer, which is not in the frequent pool"
+  },
+  "translated": {
+    "decision": "exclude",
+    "reason": "past of translate, which is not in the frequent pool"
+  },
+  "transmits": {
+    "decision": "exclude",
+    "reason": "third person of transmit, which is not in the frequent pool"
+  },
+  "transmitted": {
+    "decision": "exclude",
+    "reason": "past of transmit, which is not in the frequent pool"
+  },
+  "trembling": {
+    "decision": "exclude",
+    "reason": "present participle of tremble, which is not in the frequent pool"
+  },
+  "troops": {
+    "decision": "exclude",
+    "reason": "plural of troop, which is not in the frequent pool"
+  },
+  "trucks": {
+    "decision": "exclude",
+    "reason": "plural of truck, which is not in the frequent pool"
+  },
+  "truncated": {
+    "decision": "exclude",
+    "reason": "past of truncate, which is not in the frequent pool"
+  },
+  "ture": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "undercuts": {
+    "decision": "exclude",
+    "reason": "third person of undercut, which is not in the frequent pool"
+  },
+  "uprooted": {
+    "decision": "exclude",
+    "reason": "past of uproot, which is not in the frequent pool"
+  },
+  "ver": {
+    "decision": "exclude",
+    "reason": "scanned fragment, not an English headword"
+  },
+  "wandering": {
+    "decision": "exclude",
+    "reason": "present participle of wander, which is not in the frequent pool"
+  },
+  "weakening": {
+    "decision": "exclude",
+    "reason": "present participle of weaken, which is not in the frequent pool"
+  },
+  "weapons": {
+    "decision": "exclude",
+    "reason": "plural of weapon, which is not in the frequent pool"
+  },
+  "wildfires": {
+    "decision": "exclude",
+    "reason": "plural of wildfire, which is not in the frequent pool"
+  }
+}

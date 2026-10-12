@@ -1,0 +1,362 @@
+{
+  "construction": {
+    "decision": "admit",
+    "reason": "The work of building.",
+    "definition_origin": "Agent-authored",
+    "definition": "Construction is the work of building a thing.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "construction",
+      "constructions"
+    ]
+  },
+  "contented": {
+    "decision": "admit",
+    "reason": "Happy with what one has.",
+    "definition_origin": "Agent-authored",
+    "definition": "Contented means happy with what one has.",
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "contented"
+    ]
+  },
+  "continually": {
+    "decision": "admit",
+    "reason": "Again and again.",
+    "definition_origin": "Agent-authored",
+    "definition": "Continually means again and again, without a long stop.",
+    "concept": "duration",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "continually"
+    ]
+  },
+  "convection": {
+    "decision": "admit",
+    "reason": "Movement from a rising hot part.",
+    "definition_origin": "Agent-authored",
+    "definition": "Convection is movement that happens because a hot part rises.",
+    "concept": "heat",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "convection"
+    ]
+  },
+  "coordination": {
+    "decision": "admit",
+    "reason": "Making parts work together.",
+    "definition_origin": "Agent-authored",
+    "definition": "Coordination is making parts work together.",
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "coordination",
+      "coordinations"
+    ]
+  },
+  "copse": {
+    "decision": "admit",
+    "reason": "A small group of trees.",
+    "definition_origin": "Agent-authored",
+    "definition": "A copse is a small group of trees.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "copse",
+      "copses"
+    ]
+  },
+  "coral": {
+    "decision": "admit",
+    "reason": "Hard material built by small sea animals.",
+    "definition_origin": "Agent-authored",
+    "definition": "Coral is the hard material built by very small sea animals.",
+    "concept": "animal",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "coral"
+    ]
+  },
+  "cumulonimbus": {
+    "decision": "admit",
+    "reason": "A tall storm cloud.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cumulonimbus is a very tall storm cloud.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "cumulonimbus",
+      "cumulonimbuses"
+    ]
+  },
+  "dancing": {
+    "decision": "admit",
+    "reason": "Moving to music.",
+    "definition_origin": "Agent-authored",
+    "definition": "Dancing is moving the body to music.",
+    "concept": "activity",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "dancing"
+    ]
+  },
+  "deadly": {
+    "decision": "admit",
+    "reason": "Able to kill.",
+    "definition_origin": "Agent-authored",
+    "definition": "Deadly means able to kill.",
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "deadly"
+    ]
+  },
+  "depression": {
+    "decision": "admit",
+    "reason": "A low feeling or a low place.",
+    "definition_origin": "Agent-authored",
+    "definition": "A depression is a long low feeling, or a low place in the land.",
+    "concept": "feeling",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "depression",
+      "depressions"
+    ]
+  },
+  "derecho": {
+    "decision": "admit",
+    "reason": "A long line of strong wind.",
+    "definition_origin": "Agent-authored",
+    "definition": "A derecho is a long line of very strong wind.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "derecho",
+      "derechos"
+    ]
+  },
+  "despite": {
+    "decision": "admit",
+    "reason": "Even with an opposing fact.",
+    "definition_origin": "Agent-authored",
+    "definition": "Despite means even with something that would seem to stop it.",
+    "concept": "cause_and_effect",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "despite"
+    ]
+  },
+  "dioxide": {
+    "decision": "admit",
+    "reason": "A material with two of one part.",
+    "definition_origin": "Agent-authored",
+    "definition": "A dioxide is a material that holds two parts of one kind for each part of another.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "dioxide"
+    ]
+  },
+  "dismal": {
+    "decision": "admit",
+    "reason": "Dark and sad.",
+    "definition_origin": "Agent-authored",
+    "definition": "Dismal means dark and sad.",
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "dismal"
+    ]
+  },
+  "disturbance": {
+    "decision": "admit",
+    "reason": "A break in the usual way.",
+    "definition_origin": "Agent-authored",
+    "definition": "A disturbance is something that breaks the quiet or the usual way.",
+    "concept": "change",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "disturbance",
+      "disturbances"
+    ]
+  },
+  "downburst": {
+    "decision": "admit",
+    "reason": "Wind that falls from a cloud.",
+    "definition_origin": "Agent-authored",
+    "definition": "A downburst is a strong wind that comes down from a cloud and then spreads.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "downburst",
+      "downbursts"
+    ]
+  },
+  "downdraft": {
+    "decision": "admit",
+    "reason": "Air moving down.",
+    "definition_origin": "Agent-authored",
+    "definition": "A downdraft is air moving down.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "downdraft",
+      "downdrafts"
+    ]
+  },
+  "downstream": {
+    "decision": "admit",
+    "reason": "The direction the water goes.",
+    "definition_origin": "Agent-authored",
+    "definition": "Downstream means toward where the water is going.",
+    "concept": "direction",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "downstream"
+    ]
+  },
+  "downwind": {
+    "decision": "admit",
+    "reason": "The direction the wind goes.",
+    "definition_origin": "Agent-authored",
+    "definition": "Downwind means in the direction the wind is going.",
+    "concept": "direction",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "downwind"
+    ]
+  },
+  "dreadful": {
+    "decision": "admit",
+    "reason": "Very bad.",
+    "definition_origin": "Agent-authored",
+    "definition": "Dreadful means very bad.",
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "dreadful"
+    ]
+  },
+  "drizzle": {
+    "decision": "admit",
+    "reason": "Light rain.",
+    "definition_origin": "Agent-authored",
+    "definition": "Drizzle is a very light rain.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "drizzle"
+    ]
+  },
+  "droplet": {
+    "decision": "admit",
+    "reason": "A very small drop.",
+    "definition_origin": "Agent-authored",
+    "definition": "A droplet is a very small drop.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "droplet",
+      "droplets"
+    ]
+  },
+  "drought": {
+    "decision": "admit",
+    "reason": "A long time without rain.",
+    "definition_origin": "Agent-authored",
+    "definition": "A drought is a long time with little or no rain.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "drought",
+      "droughts"
+    ]
+  },
+  "earthquake": {
+    "decision": "admit",
+    "reason": "A shaking of the ground.",
+    "definition_origin": "Agent-authored",
+    "definition": "An earthquake is a shaking of the ground.",
+    "concept": "force",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "earthquake",
+      "earthquakes"
+    ]
+  },
+  "dbz": {
+    "decision": "exclude",
+    "reason": "Not an English headword."
+  },
+  "confined": {
+    "decision": "exclude",
+    "reason": "Past form of confine, not a separate headword."
+  },
+  "connected": {
+    "decision": "exclude",
+    "reason": "Past form of connect, not a separate headword."
+  },
+  "constructed": {
+    "decision": "exclude",
+    "reason": "Past form of construct, not a separate headword."
+  },
+  "corals": {
+    "decision": "exclude",
+    "reason": "Plural of coral."
+  },
+  "craters": {
+    "decision": "exclude",
+    "reason": "Plural of crater. The singular is not in this frequent pool."
+  },
+  "credits": {
+    "decision": "exclude",
+    "reason": "Plural of credit. The singular is not in this frequent pool."
+  },
+  "crept": {
+    "decision": "exclude",
+    "reason": "Past form of creep, not a separate headword."
+  },
+  "diamonds": {
+    "decision": "exclude",
+    "reason": "Plural of diamond. The singular is not in this frequent pool."
+  },
+  "droplets": {
+    "decision": "exclude",
+    "reason": "Plural of droplet."
+  },
+  "downbursts": {
+    "decision": "exclude",
+    "reason": "Plural of downburst."
+  },
+  "downdrafts": {
+    "decision": "exclude",
+    "reason": "Plural of downdraft."
+  }
+}

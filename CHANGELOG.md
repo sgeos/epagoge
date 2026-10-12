@@ -25,6 +25,111 @@ Versioning.
   adopted as restraint rather than as a design programme, with
   comparability against published work outranking it.
 
+## 2026-10-10
+
+### Added
+
+- `docs/decisions/AGENCY_SOURCES.md`. United States federal children's texts
+  through grade six are level-two scan candidates. Entering eighth grade is
+  level three, confirmed by the operator on this date. The older band of a
+  work that continues past grade six is a level-three candidate. Foreign
+  agency texts whose licence is not public domain or CC0 are identified and
+  not scanned. Dale-Chall and the New General Service List stay unused.
+- `docs/decisions/WORD_FORMS.md`. A noun can be marked `plural-only` when
+  its citation form is plural and it has no singular. The ordinary name is
+  pluralia tantum. `mass` remains the flag for a singular citation form
+  with no plural. An adverb is a class and compares like an adjective, by
+  a suffix, with more and most, or not at all. `tools/register_forms.py`
+  shows those slots and can register one on an existing sense.
+  `tools/admit.py` accepts the same registration. A level from 3 to 7 can
+  receive a definition. The dictionary file is created on the first one.
+  The gate still does not require a schedule for those levels.
+- `epagoge.lexeme` and `tools/analyse_lexemes.py`. Observed spellings can
+  be counted under one citation form. A class stays inside its own number
+  or inflection unless `--across-classes` is set. `--propose-classes` adds
+  a sibling class the spelling rule allows. `schedule` lists the admitted
+  class and level of each citation. A spelling the rules send to two
+  citation forms is reported unresolved. The vocabulary check is unchanged.
+- 151 level-two headwords and 16 level-three headwords from a
+  public-domain scan on this date of NASA children's earth pages, a thin
+  StarChild level 1 sample, and USGS Water Science School pages.
+  Agent-authored, without a teacher, and reviewed in
+  `evals/review/level_2_agency/` and `evals/review/level_3_agency/`.
+  The scan found 469 words frequent in at least one source. The filtered
+  pool held 243. Level two rose from 2,159 to 2,310 distinct headwords,
+  measured, leaving 7,690 to the approximate target. Coverage at level
+  two is 2,310 of 2,310 and closure is complete. The level-three check
+  reported 2,326 of 2,326 and self-hosting yes for words admitted at
+  level three and below. It does not cover terms already filed at levels
+  four to six. The other pool strings were left undecided. Forest Service
+  readers, further NOAA pages, Energy Information Administration pages,
+  Fish and Wildlife booklets, Ben's Guide, and National Park Service
+  booklets were not fetched. Dale-Chall and the New General Service List
+  stay unused.
+
+## 2026-10-09
+
+### Added
+
+- 24 level-two headwords from the one-source frequent pool of the
+  2026-09-27 scan, agent-authored without a teacher and reviewed in
+  `evals/review/level_2_one_source/`. Level two rose from 1,232 to 1,256
+  distinct headwords, measured, leaving 8,744 to the approximate target.
+  Coverage is 1,256 of 1,256 and closure is complete. The remaining pool
+  holds 1,276.
+- 432 further level-two headwords from that same scan, agent-authored
+  without a teacher and reviewed in `evals/review/level_2_scan_02/`.
+  Seven candidates in that review were excluded because a higher level
+  already uses the sense or the form. Level two rose from 1,256 to 1,688
+  distinct headwords, measured, leaving 8,312 to the approximate target.
+  Coverage is 1,688 of 1,688 and closure is complete. A fresh selection
+  then left 761 words in the pool.
+- 71 further level-two headwords from that same scan, agent-authored
+  without a teacher and reviewed in `evals/review/level_2_scan_03/`.
+  Three plurals were excluded because the singular is not in the frequent
+  pool. Level two rose from 1,688 to 1,759 distinct headwords, measured,
+  leaving 8,241 to the approximate target. Coverage is 1,759 of 1,759 and
+  closure is complete. A fresh selection then left 663 words in the pool.
+- 67 further level-two headwords from that same scan, reviewed in
+  `evals/review/level_2_scan_04/`. Level two rose from 1,759 to 1,826
+  distinct headwords, measured, leaving 8,174 to the approximate target.
+  Coverage is 1,826 of 1,826 and closure is complete.
+- 20 further level-two headwords from that same scan, reviewed in
+  `evals/review/level_2_scan_05/`, with 10 exclusions for fragments and
+  inflections. Level two rose from 1,826 to 1,846 distinct headwords,
+  measured, leaving 8,154 to the approximate target. Coverage is 1,846 of
+  1,846 and closure is complete. A fresh selection then left 550 words in
+  the pool.
+- 25 further level-two headwords from that same scan, reviewed in
+  `evals/review/level_2_scan_06/`, with 12 exclusions for fragments and
+  inflections. Level two rose from 1,846 to 1,871 distinct headwords,
+  measured, leaving 8,129 to the approximate target. Coverage is 1,871 of
+  1,871 and closure is complete. A fresh selection then left 513 words in
+  the pool.
+- 288 further level-two headwords from that same scan, agent-authored
+  without a teacher. `level_2_scan_07/` admits 72 and excludes 191
+  fragments and inflections. `level_2_scan_08/` and `level_2_scan_09/`
+  admit 72 each. `level_2_scan_10/` admits 72 and defers thee, thy, thine
+  and unto, because function-word definitions are not decided in this
+  pass. Level two rose from 1,871 to 2,159 distinct headwords, measured,
+  leaving 7,841 to the approximate target. Coverage is 2,159 of 2,159 and
+  closure is complete. A fresh selection then left an empty pool.
+
+### Changed
+
+- `tools/measure_lexicon_increment.py` accepts a later admission when it
+  rechecks an earlier batch. The live headword count may exceed that
+  batch's own admissions. It must not fall short of them, and level one
+  must be unchanged. The scan batch records were regenerated against that
+  check.
+- `docs/decisions/OPEN_QUESTIONS.md` records a reading of SpaceXAI's
+  enterprise terms, acceptable-use policy, and consumer terms beside the
+  Anthropic and OpenAI exclusions. The local teacher does not call that
+  service. No Order Form permitting training on its Output is in hand.
+- `docs/process/CURRENT_BRIEF.md` opens the admission of the remaining
+  level-two scan candidates. Capacity is not a reason to hold a candidate
+  back. A grounded definition is still required.
+
 ## 2026-10-07
 
 ### Added

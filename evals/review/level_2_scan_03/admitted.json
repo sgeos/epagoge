@@ -1,0 +1,428 @@
+{
+  "aircraft": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "An aircraft is a thing that flies in the air.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "analysis": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "An analysis is a careful look at the parts of a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "atom": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "An atom is a very small part of a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "beat": {
+    "concept": "activity",
+    "pos": "verb",
+    "definition": "To beat a thing is to hit it again and again.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "belt": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A belt is a long piece a person can wear around the middle of the body.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bolt": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A bolt is a piece of metal that holds two parts together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "broadcast": {
+    "concept": "reporting",
+    "pos": "noun verb",
+    "definition": "To broadcast is to send a report out to many people at once.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "browser": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "A browser is a tool for reading pages that come from far away.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "burst": {
+    "concept": "things_break",
+    "pos": "verb",
+    "definition": "To burst is to break open all at once.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "buzz": {
+    "concept": "sound",
+    "pos": "noun verb",
+    "definition": "A buzz is a low sound, and to buzz is to make that sound.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "cancer": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "Cancer is a bad growth in the body.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "channel": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A channel is a long low place where water can run.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "church": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A church is a building where people meet.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "college": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "A college is a school for people who are not children.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "computer": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A computer is a tool that stores numbers and words and can change them.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "condition": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A condition is the way a thing is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "counter": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A counter is a long high table.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "county": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A county is one part of a country.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "courtesy": {
+    "concept": "asking_politely",
+    "pos": "noun",
+    "definition": "Courtesy is being kind to another person.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "density": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "Density is how much of a thing is in a space.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "detect": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To detect a thing is to find it when it is hard to see.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "develop": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To develop is to grow and become more complete.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "division": {
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "definition": "Division is breaking one thing into parts.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "editor": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "An editor is a person who gets a written thing ready for others to read.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "evil": {
+    "concept": "good_and_bad",
+    "pos": "adjective noun",
+    "definition": "Evil is what is very bad.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "exception": {
+    "concept": "rule",
+    "pos": "noun",
+    "definition": "An exception is a thing that does not follow the rule for the others.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "extensive": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Extensive means covering a large amount.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fawn": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A fawn is a very young animal.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "forgive": {
+    "concept": "apologising",
+    "pos": "verb",
+    "definition": "To forgive a person is to let go of being angry about what the person did.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fountain": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A fountain is water that goes up into the air and comes back down.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "frame": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A frame is the hard edge around a picture.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "friction": {
+    "concept": "force",
+    "pos": "noun",
+    "definition": "Friction is what makes a moving thing slow down when it rubs on another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "funnel": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A funnel is a tool that is wide at the top and narrow at the bottom, so a liquid can be poured through it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gentleman": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A gentleman is a man who is kind and careful with other people.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "glorious": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Glorious means very fine and bright.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "grand": {
+    "concept": "quantity",
+    "pos": "adjective",
+    "definition": "Grand means large and fine.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "grandfather": {
+    "concept": "family",
+    "pos": "noun",
+    "definition": "A grandfather is the father of a mother or of a father.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "grandmother": {
+    "concept": "family",
+    "pos": "noun",
+    "definition": "A grandmother is the mother of a mother or of a father.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gun": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A gun is a tool that sends a hard thing out very fast.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "harbor": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A harbor is a place where ships can stay safe from a rough sea.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hen": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A hen is a bird that lays eggs.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "honor": {
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "definition": "Honor is the good name a person has for doing what is right.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "issue": {
+    "concept": "settling_it",
+    "pos": "noun",
+    "definition": "An issue is a question that people need to settle.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "jet": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A jet is a fast stream of air or of water.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "kiss": {
+    "concept": "greeting_and_parting",
+    "pos": "noun verb",
+    "definition": "To kiss a person is to touch the person with the lips.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "likely": {
+    "concept": "how_sure",
+    "pos": "adjective",
+    "definition": "Likely means that a thing can be expected to happen.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "loaf": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A loaf is a whole piece of bread.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "molecule": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A molecule is a very small group made of more than one atom.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "operate": {
+    "concept": "activity",
+    "pos": "verb",
+    "definition": "To operate a thing is to make it work.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "party": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A party is a group of people who come together to enjoy something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "patient": {
+    "concept": "feeling",
+    "pos": "adjective noun periphrastic",
+    "definition": "A patient person can wait without getting angry.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pine": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A pine is a tree that keeps its long thin leaves all year.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pleasure": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "Pleasure is the good feeling of enjoying something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "probability": {
+    "concept": "how_sure",
+    "pos": "noun",
+    "definition": "Probability is how likely a thing is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "probably": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Probably means more likely than not.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pulse": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "The pulse is the beat of the blood that you can feel.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "route": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A route is the way from one place to another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "seek": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To seek a thing is to look for it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "seem": {
+    "concept": "real_and_pretend",
+    "pos": "verb",
+    "definition": "To seem is to look as if something is so.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shoe": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A shoe is what a person wears on a foot.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shoot": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To shoot is to send a thing flying fast.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sleigh": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A sleigh is a thing you ride over snow.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "specific": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Specific means named and not only general.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "split": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To split is to break into parts along a line.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "staff": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A staff is the group of people who work at one place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "threat": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "A threat is a warning that something bad may be done.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "timber": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Timber is wood prepared for building.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "treat": {
+    "concept": "way_of_doing",
+    "pos": "verb",
+    "definition": "To treat a person is to act toward that person in some way, and to treat a sick person is to try to make the person well.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "visit": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To visit a person is to go see that person.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "whatever": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Whatever means any thing of the kind that is spoken of.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wherever": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Wherever means in any place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  }
+}

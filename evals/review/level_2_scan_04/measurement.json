@@ -1,0 +1,41 @@
+{
+  "before": {
+    "1": 849,
+    "2": 1759
+  },
+  "after": {
+    "1": 849,
+    "2": 2310
+  },
+  "candidates": 67,
+  "teacher": null,
+  "pool_report_hash": "58097d22de639a6f54eff9d28e327bddfd429aaf8ed5678ab4c0463a18316bd5",
+  "admitted": 67,
+  "deferred": 0,
+  "approximate_target": 10000,
+  "remaining_gap": 7690,
+  "closure": {
+    "1": {
+      "defined": 849,
+      "required": 849,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_1: dictionary at level 1\n  defined      849 of 849 words needing one  100.0% coverage\n  also         4 definition(s) of function words, not counted\n  grounded     853  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  self-hosting  yes\n"
+    },
+    "2": {
+      "defined": 2310,
+      "required": 2310,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_2: dictionary at level 2\n  defined      2310 of 2310 words needing one  100.0% coverage\n  grounded     2310  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  self-hosting  yes\n"
+    }
+  },
+  "preserved_files": 523,
+  "preservation_passed": true,
+  "artifact_hashes": {
+    "before.json": "a9b20f309d9c8a9a8af47792750b6930ea32538bab86fc59aff7bf5dee2fbb7a",
+    "candidates.json": "f00e0994df870bcab624454b6d9f1b6077f3db6bf52af9baf6ff161d4a029975",
+    "authoring.json": "d6be05475813c5e0f7badefb821c7b57eb07612126ee1461275cd1bd9422fc55",
+    "review.json": "c055d8530bb25725b15458a513f8e73d3672632d822eba42e7babf3823e604b0",
+    "admitted.json": "fce6fd26c1549e2a68a31ad318e06b528fcde51cd02b4a6a56132a8e22dac682"
+  },
+  "limits": "One agent-authored batch from the 2026-09-27 reference-source scan. This does not measure general throughput or complete level two. Semantic review is agent review, not independent expert validation."
+}

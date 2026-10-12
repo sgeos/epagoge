@@ -1,0 +1,200 @@
+{
+  "aquifer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An aquifer is rock under the ground with water in it.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "aquifer",
+      "aquifers"
+    ]
+  },
+  "capillary": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A capillary is a very thin pipe that a liquid can move through.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "capillary",
+      "capillaries"
+    ]
+  },
+  "cohesion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cohesion is the parts of one thing staying together.",
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "cohesion"
+    ]
+  },
+  "cohesive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cohesive means staying together as one thing.",
+    "concept": "joining_and_separating",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "cohesive"
+    ]
+  },
+  "compressibility": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Compressibility is how much a thing can be pressed into a smaller space.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "compressibility"
+    ]
+  },
+  "element": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An element is a substance that you do not make from other substances.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "element",
+      "elements"
+    ]
+  },
+  "habitability": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Habitability is how well a living thing can live in a place.",
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "habitability"
+    ]
+  },
+  "homogeneous": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Homogeneous means the same in every part.",
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "homogeneous"
+    ]
+  },
+  "hydrometer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hydrometer is a tool that measures how heavy a liquid is for its size.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "hydrometer",
+      "hydrometers"
+    ]
+  },
+  "incompressible": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Incompressible means that pressing it does not make it smaller.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "incompressible"
+    ]
+  },
+  "meniscus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A meniscus is the curved top of a liquid in a thin pipe.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "meniscus",
+      "menisci"
+    ]
+  },
+  "particulate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Particulate is very small bits in the air or in water.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "particulate"
+    ]
+  },
+  "permafrost": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Permafrost is ground that stays frozen.",
+    "concept": "heat",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "permafrost"
+    ]
+  },
+  "pharmaceutical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pharmaceutical is a thing made for treatment of a sick person.",
+    "concept": "tending",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "pharmaceutical",
+      "pharmaceuticals"
+    ]
+  },
+  "streamflow": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Streamflow is how much water flows in a stream.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "streamflow"
+    ]
+  },
+  "tannin": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tannin is a substance from some plants that can put color in water.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "tannin"
+    ]
+  }
+}

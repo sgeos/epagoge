@@ -1,0 +1,915 @@
+{
+  "sensitive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sensitive means quick to feel or to respond.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "sensitive"
+    ]
+  },
+  "separation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A separation is a moving of things apart.",
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "separation",
+      "separations"
+    ]
+  },
+  "serial": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Serial means coming one after another.",
+    "concept": "sequence",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "serial"
+    ]
+  },
+  "shear": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Shear is a change in the speed or direction of the wind across a short distance.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "shear"
+    ]
+  },
+  "shortwave": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Shortwave means having a short wave.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "shortwave"
+    ]
+  },
+  "significant": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Significant means large enough to change the result.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "significant"
+    ]
+  },
+  "significantly": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Significantly means by a large amount.",
+    "concept": "quantity",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "significantly"
+    ]
+  },
+  "slough": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A slough is a soft wet place of mud and still water.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "slough",
+      "sloughs"
+    ]
+  },
+  "sprite": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sprite is a small make believe being.",
+    "concept": "real_and_pretend",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "sprite",
+      "sprites"
+    ]
+  },
+  "squall": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A squall is a sudden strong wind, often with rain.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "squall",
+      "squalls"
+    ]
+  },
+  "stationary": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Stationary means not moving.",
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "stationary"
+    ]
+  },
+  "stratosphere": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The stratosphere is a high layer of air, above the air where weather happens.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "stratosphere",
+      "stratospheres"
+    ]
+  },
+  "stratus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Stratus is a low flat gray cloud covering the sky.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "stratus"
+    ]
+  },
+  "subsequent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Subsequent means coming after.",
+    "concept": "sequence",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "subsequent"
+    ]
+  },
+  "substantial": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Substantial means large in amount.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "substantial"
+    ]
+  },
+  "subtropical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Subtropical means of the regions just outside the hot middle of the earth.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "subtropical"
+    ]
+  },
+  "summertime": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Summertime is the summer part of the year.",
+    "concept": "duration",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "summertime"
+    ]
+  },
+  "sunburn": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sunburn is a burn of the skin from too much sun.",
+    "concept": "being_hurt",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "sunburn",
+      "sunburns"
+    ]
+  },
+  "supercell": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A supercell is a large storm that turns as it moves.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "supercell",
+      "supercells"
+    ]
+  },
+  "supercooled": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Supercooled means made cold past the usual freezing point and still liquid.",
+    "concept": "heat",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "supercooled"
+    ]
+  },
+  "tabby": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tabby is a cat with dark lines in its coat.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tabby",
+      "tabbies"
+    ]
+  },
+  "technical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Technical means needing special knowledge of how a thing works.",
+    "concept": "way_of_doing",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "technical"
+    ]
+  },
+  "television": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A television is a box that shows moving pictures and plays sound sent from far away.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "television",
+      "televisions"
+    ]
+  },
+  "tempest": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tempest is a violent storm.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tempest",
+      "tempests"
+    ]
+  },
+  "temptation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A temptation is a pull toward a thing one should not do.",
+    "concept": "should_and_should_not",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "temptation",
+      "temptations"
+    ]
+  },
+  "tender": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tender means soft, or easy to hurt.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tender"
+    ]
+  },
+  "tennis": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tennis is a game of hitting a ball from one side to the other.",
+    "concept": "activity",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tennis"
+    ]
+  },
+  "terrain": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Terrain is the shape and cover of the land.",
+    "concept": "spatial_position",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "terrain"
+    ]
+  },
+  "testimony": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Testimony is what a person tells about what that person saw or did.",
+    "concept": "saying_what_you_saw",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "testimony"
+    ]
+  },
+  "thereby": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Thereby means by that.",
+    "concept": "cause_and_effect",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "thereby"
+    ]
+  },
+  "thermal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Thermal means of heat.",
+    "concept": "heat",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "thermal"
+    ]
+  },
+  "thermocline": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A thermocline is the layer in a body of water where temperature falls quickly as depth grows.",
+    "concept": "heat",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "thermocline",
+      "thermoclines"
+    ]
+  },
+  "throughout": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Throughout means in every part, or during all of a time.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "throughout"
+    ]
+  },
+  "thrush": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A thrush is a small bird that sings.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "thrush",
+      "thrushes"
+    ]
+  },
+  "tidings": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tidings are reports of what has happened.",
+    "concept": "reporting",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tidings"
+    ]
+  },
+  "timely": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Timely means done at a good time, and not too late.",
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "timely"
+    ]
+  },
+  "toad": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A toad is a small wide land animal that jumps and has a wet skin.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "toad",
+      "toads"
+    ]
+  },
+  "tock": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tock is a short hard sound, as from a clock.",
+    "concept": "sound",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tock",
+      "tocks"
+    ]
+  },
+  "toggle": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A toggle is a piece that can sit in either of two places and so open or close something.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "toggle",
+      "toggles"
+    ]
+  },
+  "topography": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Topography is the shape of the land.",
+    "concept": "spatial_position",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "topography"
+    ]
+  },
+  "towering": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Towering means very tall.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "towering"
+    ]
+  },
+  "transition": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A transition is a change from one condition to another.",
+    "concept": "change",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "transition",
+      "transitions"
+    ]
+  },
+  "transparent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Transparent means clear enough to see through.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "transparent"
+    ]
+  },
+  "transpiration": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Transpiration is the passing of water from a plant into the air.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "transpiration"
+    ]
+  },
+  "tropics": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The tropics are the hot parts of the earth on either side of its middle.",
+    "concept": "spatial_position",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tropics"
+    ]
+  },
+  "tropopause": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The tropopause is the top of the lowest layer of air.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tropopause",
+      "tropopauses"
+    ]
+  },
+  "troposphere": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The troposphere is the lowest layer of air, where weather happens.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "troposphere",
+      "tropospheres"
+    ]
+  },
+  "trough": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A trough is a long region of lower air pressure.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "trough",
+      "troughs"
+    ]
+  },
+  "turbulence": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Turbulence is rough motion of air or of water.",
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "turbulence"
+    ]
+  },
+  "twit": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To twit is to make fun of a person for a small thing.",
+    "concept": "discourse_marker",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "twit",
+      "twits",
+      "twitted",
+      "twitting"
+    ]
+  },
+  "unstable": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Unstable means likely to change, or likely to fall.",
+    "concept": "change",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "unstable"
+    ]
+  },
+  "updraft": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An updraft is air moving upward.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "updraft",
+      "updrafts"
+    ]
+  },
+  "upstream": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Upstream means toward where a stream begins, against the flow.",
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "upstream"
+    ]
+  },
+  "upwelling": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Upwelling is deep water rising toward the top of the sea.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "upwelling"
+    ]
+  },
+  "utter": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To utter is to speak, or to make a sound.",
+    "concept": "sound",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "utter",
+      "uttered",
+      "uttering",
+      "utters"
+    ]
+  },
+  "variation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A variation is a change from what is usual.",
+    "concept": "change",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "variation",
+      "variations"
+    ]
+  },
+  "veggie": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A veggie is a vegetable.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "veggie",
+      "veggies"
+    ]
+  },
+  "velocity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Velocity is speed in a direction.",
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "velocity"
+    ]
+  },
+  "via": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Via means by way of.",
+    "concept": "direction",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "via"
+    ]
+  },
+  "visibility": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Visibility is how far a person can see.",
+    "concept": "measuring",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "visibility"
+    ]
+  },
+  "volcanic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Volcanic means of a mountain that can throw out hot rock.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "volcanic"
+    ]
+  },
+  "vorticity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Vorticity is a measure of how much a flow is turning.",
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "vorticity"
+    ]
+  },
+  "wanderer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A wanderer is a person who goes from place to place.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "wanderer",
+      "wanderers"
+    ]
+  },
+  "ward": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A ward is a person under the care of another.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "ward",
+      "wards"
+    ]
+  },
+  "wavelength": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A wavelength is the distance from one wave top to the next.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "wavelength",
+      "wavelengths"
+    ]
+  },
+  "website": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A website is a set of pages on a computer that other people can read.",
+    "concept": "writing",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "website",
+      "websites"
+    ]
+  },
+  "whipcord": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Whipcord is thin hard rope.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "whipcord"
+    ]
+  },
+  "widely": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Widely means over a wide area, or by many people.",
+    "concept": "quantity",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "widely"
+    ]
+  },
+  "widespread": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Widespread means found over a wide area.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "widespread"
+    ]
+  },
+  "windborne": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Windborne means carried by the wind.",
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "windborne"
+    ]
+  },
+  "zonal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Zonal means lying along an east and west line.",
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "zonal"
+    ]
+  },
+  "zooplankton": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Zooplankton is the very small animals that float in the water.",
+    "concept": "animal",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "zooplankton"
+    ]
+  },
+  "thee": {
+    "decision": "defer",
+    "reason": "function word, and function-word definitions are not decided in this pass"
+  },
+  "thine": {
+    "decision": "defer",
+    "reason": "function word, and function-word definitions are not decided in this pass"
+  },
+  "thy": {
+    "decision": "defer",
+    "reason": "function word, and function-word definitions are not decided in this pass"
+  },
+  "unto": {
+    "decision": "defer",
+    "reason": "function word, and function-word definitions are not decided in this pass"
+  }
+}

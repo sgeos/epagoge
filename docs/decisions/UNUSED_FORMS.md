@@ -59,6 +59,11 @@ manufactures nonsense for the rest. `pos` now accepts `mass` as a qualifier
 on `noun`, the rule skips it, and `fun`, `magic` and the noun sense of
 `full` carry it. A `mass` without a `noun` is refused.
 
+**Added 2026-10-10.** The other number gap, a plural citation form with no
+singular, is `plural-only`. Adverbs and registration of a single slot are
+in `WORD_FORMS.md`. This file is the judgement of the unused forms, not the
+later model.
+
 ## `copied`, which was three mistakes in one entry
 
 The eighth inflected form found filed as a headword, and the first where

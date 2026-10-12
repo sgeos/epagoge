@@ -1,0 +1,152 @@
+{
+  "construction": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "Construction is the work of building a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "contented": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Contented means happy with what one has.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "continually": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Continually means again and again, without a long stop.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "convection": {
+    "concept": "heat",
+    "pos": "mass noun",
+    "definition": "Convection is movement that happens because a hot part rises.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "coordination": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "Coordination is making parts work together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "copse": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A copse is a small group of trees.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "coral": {
+    "concept": "animal",
+    "pos": "mass noun",
+    "definition": "Coral is the hard material built by very small sea animals.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "cumulonimbus": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A cumulonimbus is a very tall storm cloud.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "dancing": {
+    "concept": "activity",
+    "pos": "mass noun",
+    "definition": "Dancing is moving the body to music.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "deadly": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Deadly means able to kill.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "depression": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "A depression is a long low feeling, or a low place in the land.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "derecho": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A derecho is a long line of very strong wind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "despite": {
+    "concept": "cause_and_effect",
+    "pos": "",
+    "definition": "Despite means even with something that would seem to stop it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "dioxide": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "A dioxide is a material that holds two parts of one kind for each part of another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "dismal": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Dismal means dark and sad.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "disturbance": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "A disturbance is something that breaks the quiet or the usual way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "downburst": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A downburst is a strong wind that comes down from a cloud and then spreads.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "downdraft": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "A downdraft is air moving down.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "downstream": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Downstream means toward where the water is going.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "downwind": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Downwind means in the direction the wind is going.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "dreadful": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Dreadful means very bad.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "drizzle": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Drizzle is a very light rain.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "droplet": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A droplet is a very small drop.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "drought": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A drought is a long time with little or no rain.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "earthquake": {
+    "concept": "force",
+    "pos": "noun",
+    "definition": "An earthquake is a shaking of the ground.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  }
+}

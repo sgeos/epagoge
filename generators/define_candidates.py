@@ -53,9 +53,9 @@ from epagoge import prompt as prompts
 from epagoge.artifacts import check_outputs, digest, file_digest, write_json
 from epagoge.concept_graph import ConceptGraph
 from epagoge.vocabulary import (
-    RECOGNISED_POS,
     Vocabulary,
     load_vocabulary,
+    parse_pos,
     substitutions_at,
     tokenise,
     unlicensed,
@@ -166,17 +166,12 @@ def load_senses(path: Path, candidates: dict[str, str]) -> dict[str, SenseSpec]:
         sense, pos = row["sense"], row["pos"]
         if not isinstance(sense, str) or not sense.strip() or len(sense) > 240:
             raise ValueError(f"{word}: sense must contain 1 to 240 characters")
-        if not isinstance(pos, str):
+        if not isinstance(pos, str) or not pos.split():
             raise ValueError(f"{word}: pos must be text")
-        parts = pos.split()
-        if (
-            not parts
-            or len(set(parts)) != len(parts)
-            or set(parts) - set(RECOGNISED_POS)
-            or ("mass" in parts and "noun" not in parts)
-            or ("periphrastic" in parts and "adjective" not in parts)
-        ):
-            raise ValueError(f"{word}: invalid parts of speech")
+        try:
+            parse_pos(pos, word)
+        except ValueError as exc:
+            raise ValueError(f"{word}: invalid parts of speech") from exc
         specs[word] = {"sense": sense, "pos": pos}
     return specs
 
@@ -236,7 +231,11 @@ def main(argv: list[str]) -> int:
         )
     if not 1 <= args.level <= 7:
         parser.error("level must be between one and seven")
-    if not args.pos.split() or set(args.pos.split()) - set(RECOGNISED_POS):
+    try:
+        if not args.pos.split():
+            raise ValueError("empty")
+        parse_pos(args.pos, "--pos")
+    except ValueError:
         parser.error("unrecognised or empty parts of speech")
     try:
         candidates = load_candidates(args.file)

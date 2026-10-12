@@ -16,6 +16,7 @@ Standard library only, matching the rest of the package.
 
 from __future__ import annotations
 
+from collections.abc import Mapping
 from typing import Final
 
 VOWELS: Final[frozenset[str]] = frozenset("aeiou")
@@ -45,6 +46,15 @@ NO_DOUBLE_MULTISYLLABIC: Final[frozenset[str]] = frozenset(
         "uncover",
         "whisper",
         "wonder",
+        # Final syllable unstressed. The regular forms do not double.
+        "consider",
+        "develop",
+        "harbor",
+        "inhibit",
+        "maintain",
+        "quarrel",
+        "utter",
+        "visit",
     }
 )
 """Longer verbs ending consonant-vowel-consonant whose final syllable is
@@ -130,6 +140,7 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     # Admitted at level two on 2026-10-07. The rule gave `layed`, `rided`,
     # `sended` and `occured`. Occur doubles, so it is classified here.
     "lay": ("laid", "laid", "laying"),
+    "lend": ("lent", "lent", "lending"),
     "occur": ("occurred", "occurred", "occurring"),
     "ride": ("rode", "ridden", "riding"),
     "send": ("sent", "sent", "sending"),
@@ -168,7 +179,18 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     "permit": ("permitted", "permitted", "permitting"),
     "prefer": ("preferred", "preferred", "preferring"),
     "quit": ("quit", "quit", "quitting"),
+    "refer": ("referred", "referred", "referring"),
     "spend": ("spent", "spent", "spending"),
+    # The regular rule gave beated, broadcasted, bursted, seeked,
+    # shooted, splitted and sweared.
+    "behold": ("beheld", "beheld", "beholding"),
+    "beat": ("beat", "beaten", "beating"),
+    "broadcast": ("broadcast", "broadcast", "broadcasting"),
+    "burst": ("burst", "burst", "bursting"),
+    "seek": ("sought", "sought", "seeking"),
+    "shoot": ("shot", "shot", "shooting"),
+    "split": ("split", "split", "splitting"),
+    "swear": ("swore", "sworn", "swearing"),
 }
 """Verbs whose past forms are not derivable. The present participle is
 listed too so that one lookup answers the whole question."""
@@ -294,8 +316,12 @@ IRREGULAR_COMPARISON: Final[dict[str, tuple[str, str]]] = {
     "little": ("less", "least"),
     "many": ("more", "most"),
     "much": ("more", "most"),
+    # Adverbs. The compared forms are already headwords of the matching
+    # adjectives, so declaring the adverb does not take those surfaces over.
+    "well": ("better", "best"),
+    "badly": ("worse", "worst"),
 }
-"""Adjectives whose comparison is not derivable from the spelling."""
+"""Adjectives and adverbs whose comparison is not derivable from the spelling."""
 
 
 def comparative(word: str) -> str:
@@ -346,6 +372,99 @@ def comparison(word: str) -> tuple[str, ...]:
     return tuple(out)
 
 
+INFLECTION_SLOTS: Final[tuple[str, ...]] = (
+    "singular",
+    "plural",
+    "third",
+    "past",
+    "past_participle",
+    "present_participle",
+    "comparative",
+    "superlative",
+)
+"""Every slot a registration may name, in a stable order.
+
+A noun has number. A verb has person, tense and the two participles. An
+adjective or an adverb has comparison. A slot that does not exist for the
+sense is recorded as an empty string, not invented by the spelling rules.
+"""
+
+
+def describe_inflections(
+    word: str,
+    pos: str,
+    registered: Mapping[str, str] | None = None,
+) -> tuple[tuple[str, str, str], ...]:
+    """Each applicable slot as ``(name, form, origin)``.
+
+    ``form`` is empty when the sense has no such alternate. ``origin`` is
+    ``citation``, ``derived``, ``registered`` or ``absent``.
+
+    A registered slot replaces the derived one. An empty registered value
+    says the alternate does not exist. ``mass`` is a singular citation form
+    with no plural. ``plural-only`` is a plural citation form with no
+    singular. ``periphrastic`` compares with more and most. ``ungraded``
+    does not compare. A plural equal to the citation form is an invariable
+    noun, one spelling for both numbers, and it is not a separate flag.
+    """
+    recorded = dict(registered or {})
+    parts = set(pos.split())
+    rows: list[tuple[str, str, str]] = []
+
+    def slot(name: str, derived: str | None, *, citation: bool = False) -> None:
+        if name in recorded:
+            value = recorded[name]
+            if value == "":
+                rows.append((name, "", "absent"))
+            else:
+                rows.append((name, value, "registered"))
+            return
+        if derived is None:
+            rows.append((name, "", "absent"))
+            return
+        if citation and derived == word:
+            rows.append((name, word, "citation"))
+            return
+        rows.append((name, derived, "derived"))
+
+    if "noun" in parts:
+        if "plural-only" in parts:
+            slot("singular", None)
+            slot("plural", word, citation=True)
+        elif "mass" in parts:
+            slot("singular", word, citation=True)
+            slot("plural", None)
+        else:
+            slot("singular", word, citation=True)
+            slot("plural", plural(word))
+    if "verb" in parts:
+        slot("third", third_person(word))
+        slot("past", past(word))
+        slot("past_participle", past_participle(word))
+        slot("present_participle", present_participle(word))
+    if "adjective" in parts or "adverb" in parts:
+        if "periphrastic" in parts or "ungraded" in parts:
+            slot("comparative", None)
+            slot("superlative", None)
+        else:
+            slot("comparative", comparative(word))
+            slot("superlative", superlative(word))
+    return tuple(rows)
+
+
+def owed_forms(
+    word: str,
+    pos: str,
+    registered: Mapping[str, str] | None = None,
+) -> tuple[str, ...]:
+    """Distinct alternates that must be admissible, excluding the citation form."""
+    out: list[str] = []
+    for _name, form, _origin in describe_inflections(word, pos, registered):
+        if form and form != word and form not in out:
+            out.append(form)
+    return tuple(out)
+
+
 IRREGULAR_PLURAL: Final[dict[str, str]] = {
     "child": "children",
     "foot": "feet",
@@ -373,6 +492,14 @@ IRREGULAR_PLURAL: Final[dict[str, str]] = {
     # Admitted at level two on 2026-10-07. The rule gave `potatos`.
     "potato": "potatoes",
     "axis": "axes",
+    # The regular rule gave aircrafts, analysises and gentlemans.
+    "aircraft": "aircraft",
+    "analysis": "analyses",
+    "gentleman": "gentlemen",
+    "wolf": "wolves",
+    # The regular rule gave nucleuses and phenomenons.
+    "nucleus": "nuclei",
+    "phenomenon": "phenomena",
 }
 """Plurals not derivable from spelling. A word mapping to itself has no
 distinct plural, which is a fact about the word and not a gap."""

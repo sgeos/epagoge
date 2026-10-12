@@ -1,0 +1,434 @@
+{
+  "hydrograph": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A hydrograph is a record of how the flow of water changes with time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hydrology": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Hydrology is the study of water on and under the land.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hydrometeorological": {
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "definition": "Hydrometeorological means of water and weather together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hypothermia": {
+    "concept": "being_hurt",
+    "pos": "mass noun",
+    "definition": "Hypothermia is a dangerous fall in the heat of the body.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "iceberg": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "An iceberg is a large piece of ice floating in the sea.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "idleness": {
+    "concept": "activity",
+    "pos": "mass noun",
+    "definition": "Idleness is doing no work.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "imagery": {
+    "concept": "writing",
+    "pos": "mass noun",
+    "definition": "Imagery is pictures of a place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "impact": {
+    "concept": "force",
+    "pos": "noun",
+    "definition": "An impact is one thing hitting another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "improve": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To improve is to make a thing better.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "inbound": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Inbound means coming in.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "increasingly": {
+    "concept": "change",
+    "pos": "",
+    "definition": "Increasingly means more and more as time goes on.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "indication": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "An indication is a sign of something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "indicative": {
+    "concept": "finding_out",
+    "pos": "adjective periphrastic",
+    "definition": "Indicative means acting as a sign of something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "indicator": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "An indicator is a thing that shows what a measure is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "inflow": {
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "definition": "Inflow is a flow coming in.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "info": {
+    "concept": "written_record",
+    "pos": "",
+    "definition": "Info means information.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "infrared": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Infrared is the kind of ray just past red, which the eye does not see.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "inhibit": {
+    "concept": "can_and_cannot",
+    "pos": "verb",
+    "definition": "To inhibit is to hold a thing back or to slow it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "input": {
+    "concept": "stock_and_flow",
+    "pos": "noun",
+    "definition": "An input is what is put into a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "insulator": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "An insulator is a material that heat or electricity does not pass through easily.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "inversion": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "An inversion is a layer of air that is warmer above than below.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "isodop": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "An isodop is a line that joins places where the wind has the same speed.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "isolated": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Isolated means standing apart from others.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "landfall": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A landfall is the coming of a storm onto the land.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "landslide": {
+    "concept": "falling",
+    "pos": "noun",
+    "definition": "A landslide is rock and soil sliding down a slope.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "lend": {
+    "concept": "exchange",
+    "pos": "verb",
+    "definition": "To lend is to let a person use a thing for a time and then take it back.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "lifeguard": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A lifeguard is a person who watches people in the water and helps those in danger.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "livestock": {
+    "concept": "animal",
+    "pos": "mass noun",
+    "definition": "Livestock is the animals kept on a farm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "longwave": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Longwave means having a long wave.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "magnitude": {
+    "concept": "quantity",
+    "pos": "mass noun",
+    "definition": "Magnitude is how large or how strong a thing is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "maintain": {
+    "concept": "keeping_going",
+    "pos": "verb",
+    "definition": "To maintain is to keep a thing as it is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "maintenance": {
+    "concept": "mending",
+    "pos": "mass noun",
+    "definition": "Maintenance is the work of keeping a thing in good order.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mare": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A mare is a grown horse that can have a young horse.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "marsh": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A marsh is soft wet land.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "masonry": {
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "definition": "Masonry is building work done in stone.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "maximize": {
+    "concept": "quantity",
+    "pos": "verb",
+    "definition": "To maximize is to make a thing as large as it can be.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mesoscale": {
+    "concept": "measuring",
+    "pos": "adjective periphrastic",
+    "definition": "Mesoscale means of middle size, between one storm and a large region.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mesosphere": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "The mesosphere is a high layer of air.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "meteorological": {
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "definition": "Meteorological means of the weather.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "meteorologist": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A meteorologist is a person who studies the weather.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "microburst": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A microburst is a sudden strong wind that drops from a storm and then spreads.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "microscopic": {
+    "concept": "measuring",
+    "pos": "adjective periphrastic",
+    "definition": "Microscopic means too small to see without a tool that makes things look larger.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mid": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Mid means in the middle.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "midst": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The midst of a thing is its middle.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "millibar": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A millibar is a unit of air pressure.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "minimize": {
+    "concept": "quantity",
+    "pos": "verb",
+    "definition": "To minimize is to make a thing as small as it can be.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "minimum": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A minimum is the smallest amount.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "momentum": {
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "definition": "Momentum is the quantity of motion a moving thing has.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "morn": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "Morn means the morning.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "morrow": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "The morrow is the next day.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mote": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A mote is a tiny bit of dust.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mousie": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A mousie is a small mouse.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "multiple": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Multiple means more than one.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "nautical": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Nautical means of ships and the sea.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "navigation": {
+    "concept": "direction",
+    "pos": "mass noun",
+    "definition": "Navigation is the work of finding the way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "necessarily": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Necessarily means in a way that has to be so.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "negatively": {
+    "concept": "good_and_bad",
+    "pos": "",
+    "definition": "Negatively means as a no, or toward the worse.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "nettle": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A nettle is a plant that hurts the skin when it is touched.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "network": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A network is a set of things joined so that something can pass among them.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "nighttime": {
+    "concept": "duration",
+    "pos": "mass noun",
+    "definition": "Nighttime is the time when it is night.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "noble": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Noble means of high place among people, or fine in character.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "nucleus": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A nucleus is the heavy middle of an atom.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "numerical": {
+    "concept": "natural_number",
+    "pos": "adjective periphrastic",
+    "definition": "Numerical means of numbers.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "nutrient": {
+    "concept": "need",
+    "pos": "noun",
+    "definition": "A nutrient is something a living thing must take in as food.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "oblige": {
+    "concept": "should_and_should_not",
+    "pos": "verb",
+    "definition": "To oblige is to make a person have to do a thing, or to do a kindness.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "occasionally": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Occasionally means from time to time, and not often.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "occurrence": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "An occurrence is something that happens.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "offsite": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Offsite means away from the main place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "onset": {
+    "concept": "sequence",
+    "pos": "noun",
+    "definition": "The onset of a thing is its start.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "operational": {
+    "concept": "can_and_cannot",
+    "pos": "adjective periphrastic",
+    "definition": "Operational means working and ready for use.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "organization": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "An organization is a group of people working together for a purpose.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "originate": {
+    "concept": "cause_and_effect",
+    "pos": "verb",
+    "definition": "To originate is to begin, or to come from a place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  }
+}

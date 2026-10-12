@@ -1,0 +1,314 @@
+{
+  "alarm": {
+    "decision": "admit",
+    "reason": "A warning sound. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "An alarm is a sound that says something bad is happening.",
+    "concept": "danger",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "alarm",
+      "alarms"
+    ]
+  },
+  "attic": {
+    "decision": "admit",
+    "reason": "The room under the roof. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "An attic is the room at the top of a house.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "attic",
+      "attics"
+    ]
+  },
+  "bark": {
+    "decision": "admit",
+    "reason": "The cover of a tree. Mass noun. The sound a dog makes is not this entry.",
+    "definition_origin": "Agent-authored",
+    "definition": "Bark is the hard cover on the outside of a tree.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "bark"
+    ]
+  },
+  "barn": {
+    "decision": "admit",
+    "reason": "A house for animals and their food. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A barn is a large house for animals and for the food they eat.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "barn",
+      "barns"
+    ]
+  },
+  "beaver": {
+    "decision": "admit",
+    "reason": "The animal. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A beaver is an animal that lives by water and cuts down trees.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "beaver",
+      "beavers"
+    ]
+  },
+  "blind": {
+    "decision": "admit",
+    "reason": "Not able to see. Compared with the suffixed forms.",
+    "definition_origin": "Agent-authored",
+    "definition": "Blind means not able to see.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "blind",
+      "blinder",
+      "blindest"
+    ]
+  },
+  "bold": {
+    "decision": "admit",
+    "reason": "Willing to do a hard thing. Compared with the suffixed forms.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bold person does a hard thing and does not stop.",
+    "concept": "feeling",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "bold",
+      "bolder",
+      "boldest"
+    ]
+  },
+  "borrow": {
+    "decision": "admit",
+    "reason": "Take and give back. The final w does not double.",
+    "definition_origin": "Agent-authored",
+    "definition": "To borrow a thing is to take it and give it back later.",
+    "concept": "exchange",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "borrow",
+      "borrowed",
+      "borrowing",
+      "borrows"
+    ]
+  },
+  "breakfast": {
+    "decision": "admit",
+    "reason": "The morning meal. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "Breakfast is the meal a person eats in the morning.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "breakfast",
+      "breakfasts"
+    ]
+  },
+  "business": {
+    "decision": "admit",
+    "reason": "Work done to get money. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A business is the work a person does to get money.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "business",
+      "businesses"
+    ]
+  },
+  "captain": {
+    "decision": "admit",
+    "reason": "The person in charge of a boat. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A captain is the person who is in charge of a boat.",
+    "concept": "someone_in_charge",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "captain",
+      "captains"
+    ]
+  },
+  "carpenter": {
+    "decision": "admit",
+    "reason": "A person who makes things from wood. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A carpenter is a person who makes things out of wood.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "carpenter",
+      "carpenters"
+    ]
+  },
+  "castle": {
+    "decision": "admit",
+    "reason": "A large strong house. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A castle is a large strong house where people lived long ago.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "castle",
+      "castles"
+    ]
+  },
+  "chase": {
+    "decision": "admit",
+    "reason": "Run after something.",
+    "definition_origin": "Agent-authored",
+    "definition": "To chase a thing is to run after it.",
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "chase",
+      "chased",
+      "chases",
+      "chasing"
+    ]
+  },
+  "childhood": {
+    "decision": "admit",
+    "reason": "The time when a person is a child. Mass noun, so no plural is generated.",
+    "definition_origin": "Agent-authored",
+    "definition": "Childhood is the time when a person is a child.",
+    "concept": "duration",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "childhood"
+    ]
+  },
+  "coat": {
+    "decision": "admit",
+    "reason": "Cloth worn outside in the cold. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A coat is cloth a person wears outside when it is cold.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "coat",
+      "coats"
+    ]
+  },
+  "coffee": {
+    "decision": "admit",
+    "reason": "The drink. Mass noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "Coffee is a hot brown drink.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "coffee"
+    ]
+  },
+  "company": {
+    "decision": "admit",
+    "reason": "People together. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A company is a group of people who are together.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "companies",
+      "company"
+    ]
+  },
+  "courage": {
+    "decision": "admit",
+    "reason": "Doing a hard thing while afraid. Mass noun, so no plural is generated.",
+    "definition_origin": "Agent-authored",
+    "definition": "Courage is doing a hard thing when you are afraid.",
+    "concept": "feeling",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "courage"
+    ]
+  },
+  "crown": {
+    "decision": "admit",
+    "reason": "The metal ring a king wears. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A crown is a ring of metal that a king wears on the head.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "crown",
+      "crowns"
+    ]
+  },
+  "curious": {
+    "decision": "admit",
+    "reason": "Wanting to find something out. Compared with more and most, so no suffixed forms are generated.",
+    "definition_origin": "Agent-authored",
+    "definition": "A curious person wants to find something out.",
+    "concept": "finding_out",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "curious"
+    ]
+  },
+  "darkness": {
+    "decision": "admit",
+    "reason": "Where there is no light. Mass noun, so no plural is generated.",
+    "definition_origin": "Agent-authored",
+    "definition": "Darkness is where there is no light.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "darkness"
+    ]
+  },
+  "deck": {
+    "decision": "admit",
+    "reason": "The floor of a boat. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A deck is the floor of a boat.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "deck",
+      "decks"
+    ]
+  },
+  "dime": {
+    "decision": "admit",
+    "reason": "A small coin. Count noun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A dime is a small coin.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
+    "reviewed_forms": [
+      "dime",
+      "dimes"
+    ]
+  }
+}

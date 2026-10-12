@@ -131,3 +131,17 @@ the choice was arbitrary is worth more than pretending it was derived.
 **The order of work matters here.** This list is most useful after a
 level's corpus is drafted rather than during. Culling from a half-written
 corpus removes words the unwritten half would have used.
+
+## Agency candidates, 2026-10-10
+
+The count in the opening paragraph is the count on the day this pipeline
+was written. It is not the current size of the lexicon.
+
+The next scan set is `AGENCY_SOURCES.md`. Dale-Chall and the New General
+Service List remain unused. A word that is too advanced for the level
+being filled is scheduled at a higher open level. It is not dropped for
+being advanced. Alternates for each class of word are in `WORD_FORMS.md`.
+
+The first pass over that set is recorded there. It scanned three of the
+sources on 2026-10-10 and admitted the headwords it could ground. The
+candidate list is not exhausted.

@@ -1,0 +1,315 @@
+{
+  "according": {
+    "decision": "admit",
+    "reason": "In agreement with what was said.",
+    "definition_origin": "Agent-authored",
+    "definition": "According means as was said, or in a way that matches.",
+    "concept": "reporting",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "according"
+    ]
+  },
+  "administrative": {
+    "decision": "admit",
+    "reason": "About running a group.",
+    "definition_origin": "Agent-authored",
+    "definition": "Administrative means about the work of running a group.",
+    "concept": "someone_in_charge",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "administrative"
+    ]
+  },
+  "aviation": {
+    "decision": "admit",
+    "reason": "Flying.",
+    "definition_origin": "Agent-authored",
+    "definition": "Aviation is the work of flying in the air.",
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "aviation"
+    ]
+  },
+  "behold": {
+    "decision": "admit",
+    "reason": "To look with care. The past is beheld.",
+    "definition_origin": "Agent-authored",
+    "definition": "To behold a thing is to look at it with care.",
+    "concept": "finding_out",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "behold",
+      "beheld",
+      "beholding",
+      "beholds"
+    ]
+  },
+  "billion": {
+    "decision": "admit",
+    "reason": "A thousand million.",
+    "definition_origin": "Agent-authored",
+    "definition": "A billion is a thousand times a million.",
+    "concept": "natural_number",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "billion",
+      "billions"
+    ]
+  },
+  "bore": {
+    "decision": "admit",
+    "reason": "Make a hole by turning.",
+    "definition_origin": "Agent-authored",
+    "definition": "To bore is to make a round hole by turning.",
+    "concept": "activity",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "bore",
+      "bored",
+      "bores",
+      "boring"
+    ]
+  },
+  "bough": {
+    "decision": "admit",
+    "reason": "A large branch.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bough is a large arm of a tree.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "bough",
+      "boughs"
+    ]
+  },
+  "bound": {
+    "decision": "admit",
+    "reason": "Going toward.",
+    "definition_origin": "Agent-authored",
+    "definition": "Bound means going toward a place.",
+    "concept": "moving_and_still",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "bound",
+      "bounder",
+      "boundest"
+    ]
+  },
+  "boundary": {
+    "decision": "admit",
+    "reason": "The line between two places.",
+    "definition_origin": "Agent-authored",
+    "definition": "A boundary is the line where one place ends and another begins.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "boundary",
+      "boundaries"
+    ]
+  },
+  "bridle": {
+    "decision": "admit",
+    "reason": "What leads a horse.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bridle is what is put on a horse so a person can lead it.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "bridle",
+      "bridles"
+    ]
+  },
+  "cast": {
+    "decision": "admit",
+    "reason": "Throw. The past does not change.",
+    "definition_origin": "Agent-authored",
+    "definition": "To cast a thing is to throw it.",
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "cast",
+      "casted",
+      "casting",
+      "casts"
+    ]
+  },
+  "cite": {
+    "decision": "admit",
+    "reason": "Name a source.",
+    "definition_origin": "Agent-authored",
+    "definition": "To cite is to name where a fact came from.",
+    "concept": "reporting",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "cite",
+      "cited",
+      "cites",
+      "citing"
+    ]
+  },
+  "classic": {
+    "decision": "admit",
+    "reason": "Valued for a long time.",
+    "definition_origin": "Agent-authored",
+    "definition": "Classic means of a kind people have cared about for a long time.",
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "classic"
+    ]
+  },
+  "collide": {
+    "decision": "admit",
+    "reason": "Hit while moving.",
+    "definition_origin": "Agent-authored",
+    "definition": "To collide is to hit something while moving.",
+    "concept": "force",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "collide",
+      "collided",
+      "collides",
+      "colliding"
+    ]
+  },
+  "comprise": {
+    "decision": "admit",
+    "reason": "Be made of the named parts.",
+    "definition_origin": "Agent-authored",
+    "definition": "To comprise is to be made of the parts that are named.",
+    "concept": "component_and_system",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "comprise",
+      "comprised",
+      "comprises",
+      "comprising"
+    ]
+  },
+  "concerning": {
+    "decision": "admit",
+    "reason": "About. No suffixed forms.",
+    "definition_origin": "Agent-authored",
+    "definition": "Concerning means about.",
+    "concept": "reporting",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "concerning"
+    ]
+  },
+  "condensation": {
+    "decision": "admit",
+    "reason": "Water from cold air.",
+    "definition_origin": "Agent-authored",
+    "definition": "Condensation is water that forms when air becomes cold.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "condensation"
+    ]
+  },
+  "condense": {
+    "decision": "admit",
+    "reason": "Become liquid, or say it in fewer words.",
+    "definition_origin": "Agent-authored",
+    "definition": "To condense is to become liquid, or to say something in fewer words.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "condense",
+      "condensed",
+      "condenses",
+      "condensing"
+    ]
+  },
+  "consider": {
+    "decision": "admit",
+    "reason": "Think with care. The final consonant does not double.",
+    "definition_origin": "Agent-authored",
+    "definition": "To consider a thing is to think about it with care.",
+    "concept": "knowing",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "consider",
+      "considered",
+      "considering",
+      "considers"
+    ]
+  },
+  "consist": {
+    "decision": "admit",
+    "reason": "Be made of.",
+    "definition_origin": "Agent-authored",
+    "definition": "To consist of things is to be made of those things.",
+    "concept": "component_and_system",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "consist",
+      "consisted",
+      "consisting",
+      "consists"
+    ]
+  },
+  "ble": {
+    "decision": "exclude",
+    "reason": "Not an English headword."
+  },
+  "cher": {
+    "decision": "exclude",
+    "reason": "Not an English headword."
+  },
+  "choor": {
+    "decision": "exclude",
+    "reason": "Not an English headword."
+  },
+  "cirro": {
+    "decision": "exclude",
+    "reason": "Not an English headword. It is only part of a longer cloud name."
+  },
+  "bade": {
+    "decision": "exclude",
+    "reason": "Past form of bid, not a separate headword."
+  },
+  "borne": {
+    "decision": "exclude",
+    "reason": "Past participle of bear, not a separate headword."
+  },
+  "canst": {
+    "decision": "exclude",
+    "reason": "An old form of can, not a separate headword."
+  },
+  "benefits": {
+    "decision": "exclude",
+    "reason": "Plural of benefit. The singular is not in this frequent pool."
+  },
+  "billows": {
+    "decision": "exclude",
+    "reason": "Plural of billow. The singular is not in this frequent pool."
+  },
+  "chickens": {
+    "decision": "exclude",
+    "reason": "Plural of chicken. The singular is not in this frequent pool."
+  }
+}

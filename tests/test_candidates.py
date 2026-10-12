@@ -7,6 +7,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from typing import cast
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "generators"))
@@ -480,6 +481,74 @@ class TestAgentAuthoredMeasurement(unittest.TestCase):
         (self.batch / "review.json").write_text(json.dumps({"orange": {}}))
         with self.assertRaisesRegex(ValueError, "exactly one of"):
             self.tool.measure(self.batch)
+
+
+class TestStackedScanMeasurements(unittest.TestCase):
+    """An earlier scan batch still describes the lexicon after later batches."""
+
+    def test_each_scan_batch_matches_the_live_headword_count(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        sys.path.insert(0, str(root))
+        from tools.measure_lexicon_increment import measure
+
+        from epagoge.vocabulary import load_vocabulary
+
+        vocabulary = load_vocabulary(root / "curriculum/vocabulary.json")
+        fresh = {
+            str(level): len(
+                {term.word for term in vocabulary.terms if term.level <= level}
+            )
+            for level in (1, 2)
+        }
+        names = [
+            "level_2_one_source",
+            *[f"level_2_scan_{i:02d}" for i in range(2, 11)],
+            "level_2_agency",
+        ]
+        for name in names:
+            batch = root / "evals" / "review" / name
+            result = measure(batch)
+            recorded = json.loads(
+                (batch / "measurement.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(recorded, result, name)
+            after = result["after"]
+            before = result["before"]
+            admitted = result["admitted"]
+            self.assertIsInstance(after, dict)
+            self.assertIsInstance(before, dict)
+            self.assertIsInstance(admitted, int)
+            self.assertEqual(after, fresh, name)
+            self.assertGreaterEqual(fresh["2"] - int(before["2"]), admitted, name)
+            closure = result["closure"]
+            self.assertIsInstance(closure, dict)
+            for level in ("1", "2"):
+                level_closure = cast(dict[str, object], closure)[level]
+                self.assertIsInstance(level_closure, dict)
+                level_record = cast(dict[str, object], level_closure)
+                self.assertEqual(level_record["defined"], level_record["required"])
+                self.assertIn("closure 100.0%", str(level_record["validator_output"]))
+
+    def test_a_batch_that_overclaims_the_lexicon_is_rejected(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        sys.path.insert(0, str(root))
+        from tools.measure_lexicon_increment import measure
+
+        source = root / "evals" / "review" / "level_2_scan_10"
+        with tempfile.TemporaryDirectory() as tmp:
+            batch = Path(tmp)
+            for path in source.glob("*.json"):
+                if path.name == "measurement.json":
+                    continue
+                target = batch / path.name
+                target.write_bytes(path.read_bytes())
+            before = json.loads((batch / "before.json").read_text(encoding="utf-8"))
+            counts = before["counts"]
+            self.assertIsInstance(counts, dict)
+            cast(dict[str, object], counts)["2"] = 10**9
+            (batch / "before.json").write_text(json.dumps(before), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "vocabulary change differs"):
+                measure(batch)
 
 
 class TestBlockingWords(unittest.TestCase):

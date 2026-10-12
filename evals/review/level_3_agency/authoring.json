@@ -1,0 +1,30 @@
+{
+  "level": 3,
+  "teacher": null,
+  "candidates": {
+    "aquifer": "material",
+    "capillary": "liquid",
+    "cohesion": "joining_and_separating",
+    "cohesive": "joining_and_separating",
+    "compressibility": "physical_property",
+    "element": "material",
+    "habitability": "living_and_not_living",
+    "homogeneous": "same_and_different",
+    "hydrometer": "measuring",
+    "incompressible": "physical_property",
+    "meniscus": "liquid",
+    "particulate": "material",
+    "permafrost": "heat",
+    "pharmaceutical": "tending",
+    "streamflow": "liquid",
+    "tannin": "material"
+  },
+  "input_hash": "766ef78796d9d5f77212d983834955d68277c6da6df398dd23025865504cc5ac",
+  "vocabulary_hash": "a51a6b8340262d5d06f38618a6030eefa1f442c9ea601ee452c2ebb4b8a636a9",
+  "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+  "pool_report": "tmp/lexicon-sources/scan_agency.json",
+  "pool_report_hash": "9c3d5e744cfdb9cb92df47089c4d1cea7ca52d748edfd79db92aad5bc7fe0c61",
+  "pool_rule": "Frequent at threshold five in at least one of the three public-domain agency sources scanned on 2026-10-10.",
+  "pool_size": 243,
+  "reason": "The local teacher was not run. Definitions were written by the agent and pass the same admission and closure checks as teacher output."
+}

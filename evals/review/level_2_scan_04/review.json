@@ -1,0 +1,884 @@
+{
+  "feature": {
+    "decision": "admit",
+    "reason": "A noticeable part.",
+    "definition_origin": "Agent-authored",
+    "definition": "A feature is a part of a thing that people can see.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "feature",
+      "features"
+    ]
+  },
+  "file": {
+    "decision": "admit",
+    "reason": "Papers or records kept together.",
+    "definition_origin": "Agent-authored",
+    "definition": "A file is written pages kept together.",
+    "concept": "written_record",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "file",
+      "files"
+    ]
+  },
+  "generally": {
+    "decision": "admit",
+    "reason": "In most cases.",
+    "definition_origin": "Agent-authored",
+    "definition": "Generally means for most things, but not for all.",
+    "concept": "tending",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "generally"
+    ]
+  },
+  "grace": {
+    "decision": "admit",
+    "reason": "Pleasing ease.",
+    "definition_origin": "Agent-authored",
+    "definition": "Grace is a kind and easy way of moving or of treating a person.",
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "grace",
+      "graces"
+    ]
+  },
+  "ham": {
+    "decision": "admit",
+    "reason": "Salted cooked meat from a pig.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ham is a kind of food that comes from an animal.",
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "ham"
+    ]
+  },
+  "hawk": {
+    "decision": "admit",
+    "reason": "A hunting bird.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hawk is a bird that catches smaller animals.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "hawk",
+      "hawks"
+    ]
+  },
+  "journey": {
+    "decision": "admit",
+    "reason": "A trip.",
+    "definition_origin": "Agent-authored",
+    "definition": "A journey is going a long way from one place to another.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "journey",
+      "journeys"
+    ]
+  },
+  "knee": {
+    "decision": "admit",
+    "reason": "The middle joint of the leg.",
+    "definition_origin": "Agent-authored",
+    "definition": "The knee is the middle of the leg, where the leg can bend.",
+    "concept": "body_part",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "knee",
+      "knees"
+    ]
+  },
+  "lightning": {
+    "decision": "admit",
+    "reason": "A bright flash in a storm.",
+    "definition_origin": "Agent-authored",
+    "definition": "Lightning is a bright light in the sky during a storm.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "lightning",
+      "lightnings"
+    ]
+  },
+  "maid": {
+    "decision": "admit",
+    "reason": "A girl, or a woman paid to do housework.",
+    "definition_origin": "Agent-authored",
+    "definition": "A maid is a person who works in a house.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "maid",
+      "maids"
+    ]
+  },
+  "master": {
+    "decision": "admit",
+    "reason": "A person of great skill, or the person in charge.",
+    "definition_origin": "Agent-authored",
+    "definition": "A master is a person who has learned to do a thing very well.",
+    "concept": "someone_in_charge",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "master",
+      "masters"
+    ]
+  },
+  "mild": {
+    "decision": "admit",
+    "reason": "Not strong.",
+    "definition_origin": "Agent-authored",
+    "definition": "Mild means not strong and not hard.",
+    "concept": "quantity",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "mild",
+      "milder",
+      "mildest"
+    ]
+  },
+  "modern": {
+    "decision": "admit",
+    "reason": "Of the present time.",
+    "definition_origin": "Agent-authored",
+    "definition": "Modern means of this time.",
+    "concept": "duration",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "modern",
+      "moderner",
+      "modernest"
+    ]
+  },
+  "mold": {
+    "decision": "admit",
+    "reason": "A fungus on damp food.",
+    "definition_origin": "Agent-authored",
+    "definition": "Mold is a soft growth that forms on food or on a wet thing.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "mold",
+      "molds"
+    ]
+  },
+  "moss": {
+    "decision": "admit",
+    "reason": "A small soft green plant in mats.",
+    "definition_origin": "Agent-authored",
+    "definition": "Moss is a soft green plant that grows where it is wet.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "moss"
+    ]
+  },
+  "oath": {
+    "decision": "admit",
+    "reason": "A serious promise.",
+    "definition_origin": "Agent-authored",
+    "definition": "An oath is a strong promise.",
+    "concept": "promise",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "oath",
+      "oaths"
+    ]
+  },
+  "parachute": {
+    "decision": "admit",
+    "reason": "A cloth that slows a fall.",
+    "definition_origin": "Agent-authored",
+    "definition": "A parachute is a large cloth that makes a falling person fall more slowly.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "parachute",
+      "parachutes"
+    ]
+  },
+  "peace": {
+    "decision": "admit",
+    "reason": "A time without fighting.",
+    "definition_origin": "Agent-authored",
+    "definition": "Peace is a time when people are not hurting each other.",
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "peace",
+      "peaces"
+    ]
+  },
+  "pipe": {
+    "decision": "admit",
+    "reason": "A tube for liquid or gas.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pipe is a long round piece that is empty inside, so water can go through it.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pipe",
+      "pipes"
+    ]
+  },
+  "pitcher": {
+    "decision": "admit",
+    "reason": "A jug.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pitcher is a thing you pour a drink from.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pitcher",
+      "pitchers"
+    ]
+  },
+  "poem": {
+    "decision": "admit",
+    "reason": "Writing in which sound matters.",
+    "definition_origin": "Agent-authored",
+    "definition": "A poem is writing in which the sound of the words is important.",
+    "concept": "story",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "poem",
+      "poems"
+    ]
+  },
+  "poet": {
+    "decision": "admit",
+    "reason": "A person who writes poems.",
+    "definition_origin": "Agent-authored",
+    "definition": "A poet is a person who writes a poem.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "poet",
+      "poets"
+    ]
+  },
+  "poetry": {
+    "decision": "admit",
+    "reason": "Poems, as a kind of writing.",
+    "definition_origin": "Agent-authored",
+    "definition": "Poetry is writing that is a poem.",
+    "concept": "story",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "poetry"
+    ]
+  },
+  "pollution": {
+    "decision": "admit",
+    "reason": "Harm put into air, water, or land.",
+    "definition_origin": "Agent-authored",
+    "definition": "Pollution is something bad that people put into the air, the water, or the land.",
+    "concept": "danger",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pollution",
+      "pollutions"
+    ]
+  },
+  "post": {
+    "decision": "admit",
+    "reason": "An upright piece set in the ground.",
+    "definition_origin": "Agent-authored",
+    "definition": "A post is a long piece of wood or metal set straight up in the ground.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "post",
+      "posts"
+    ]
+  },
+  "prayer": {
+    "decision": "admit",
+    "reason": "Words of asking or thanks said seriously.",
+    "definition_origin": "Agent-authored",
+    "definition": "A prayer is words a person says when asking for help.",
+    "concept": "asking",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "prayer",
+      "prayers"
+    ]
+  },
+  "prime": {
+    "decision": "admit",
+    "reason": "First in importance.",
+    "definition_origin": "Agent-authored",
+    "definition": "Prime means first and most important.",
+    "concept": "sequence",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "prime",
+      "primer",
+      "primest"
+    ]
+  },
+  "quarrel": {
+    "decision": "admit",
+    "reason": "A fight with words.",
+    "definition_origin": "Agent-authored",
+    "definition": "To quarrel is to speak in an angry way.",
+    "concept": "disagreeing",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "quarrel",
+      "quarreled",
+      "quarreling",
+      "quarrels"
+    ]
+  },
+  "rainbow": {
+    "decision": "admit",
+    "reason": "The colored arc in sun and rain.",
+    "definition_origin": "Agent-authored",
+    "definition": "A rainbow is a bright curve of light in the sky.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "rainbow",
+      "rainbows"
+    ]
+  },
+  "range": {
+    "decision": "admit",
+    "reason": "The span from low to high.",
+    "definition_origin": "Agent-authored",
+    "definition": "A range is how far a set of things goes from the low one to the high one.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "range",
+      "ranges"
+    ]
+  },
+  "readily": {
+    "decision": "admit",
+    "reason": "Easily and without delay.",
+    "definition_origin": "Agent-authored",
+    "definition": "Readily means without waiting.",
+    "concept": "tending",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "readily"
+    ]
+  },
+  "recite": {
+    "decision": "admit",
+    "reason": "Say aloud what you learned.",
+    "definition_origin": "Agent-authored",
+    "definition": "To recite is to say words you have learned.",
+    "concept": "reporting",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "recite",
+      "recited",
+      "recites",
+      "reciting"
+    ]
+  },
+  "reef": {
+    "decision": "admit",
+    "reason": "Rock or coral near the surface of the sea.",
+    "definition_origin": "Agent-authored",
+    "definition": "A reef is a line of rock just under the water.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "reef",
+      "reefs"
+    ]
+  },
+  "respect": {
+    "decision": "admit",
+    "reason": "Holding someone in regard.",
+    "definition_origin": "Agent-authored",
+    "definition": "Respect is high care for a person.",
+    "concept": "good_and_bad",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "respect",
+      "respected",
+      "respecting",
+      "respects"
+    ]
+  },
+  "responsible": {
+    "decision": "admit",
+    "reason": "Having the duty.",
+    "definition_origin": "Agent-authored",
+    "definition": "A responsible person does what that person is supposed to do.",
+    "concept": "should_and_should_not",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "responsible"
+    ]
+  },
+  "rocket": {
+    "decision": "admit",
+    "reason": "A machine driven by gas pushed out behind.",
+    "definition_origin": "Agent-authored",
+    "definition": "A rocket is a thing that goes up into the air very fast.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "rocket",
+      "rockets"
+    ]
+  },
+  "rubber": {
+    "decision": "admit",
+    "reason": "A material that stretches and springs back.",
+    "definition_origin": "Agent-authored",
+    "definition": "Rubber is a material that can be pulled and then goes back.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "rubber"
+    ]
+  },
+  "rude": {
+    "decision": "admit",
+    "reason": "Not polite.",
+    "definition_origin": "Agent-authored",
+    "definition": "Rude means not kind.",
+    "concept": "asking_politely",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "rude",
+      "ruder",
+      "rudest"
+    ]
+  },
+  "secure": {
+    "decision": "admit",
+    "reason": "Safe, or firmly held.",
+    "definition_origin": "Agent-authored",
+    "definition": "Secure means safe and held still.",
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "secure"
+    ]
+  },
+  "shark": {
+    "decision": "admit",
+    "reason": "A large fish with sharp teeth.",
+    "definition_origin": "Agent-authored",
+    "definition": "A shark is a large fish that can hurt you.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "shark",
+      "sharks"
+    ]
+  },
+  "shift": {
+    "decision": "admit",
+    "reason": "A move from one place or state to another.",
+    "definition_origin": "Agent-authored",
+    "definition": "To shift is to move from one place to another.",
+    "concept": "change",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "shift",
+      "shifted",
+      "shifting",
+      "shifts"
+    ]
+  },
+  "silence": {
+    "decision": "admit",
+    "reason": "No sound.",
+    "definition_origin": "Agent-authored",
+    "definition": "Silence is when there is no sound.",
+    "concept": "sound",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "silence",
+      "silences"
+    ]
+  },
+  "soil": {
+    "decision": "admit",
+    "reason": "The earth plants grow in.",
+    "definition_origin": "Agent-authored",
+    "definition": "Soil is the soft earth that plants grow in.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "soil"
+    ]
+  },
+  "spiral": {
+    "decision": "admit",
+    "reason": "A curve winding out from a center.",
+    "definition_origin": "Agent-authored",
+    "definition": "A spiral is a curve that goes around and moves out.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "spiral",
+      "spirals"
+    ]
+  },
+  "squirrel": {
+    "decision": "admit",
+    "reason": "The small climbing animal with a bushy tail.",
+    "definition_origin": "Agent-authored",
+    "definition": "A squirrel is a small animal with a large tail that lives in trees.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "squirrel",
+      "squirrels"
+    ]
+  },
+  "stage": {
+    "decision": "admit",
+    "reason": "One part of a process.",
+    "definition_origin": "Agent-authored",
+    "definition": "A stage is a place where people stand so others can watch them.",
+    "concept": "sequence",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "stage",
+      "stages"
+    ]
+  },
+  "station": {
+    "decision": "admit",
+    "reason": "A stopping place or a place of work.",
+    "definition_origin": "Agent-authored",
+    "definition": "A station is a place where people get on or off a train.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "station",
+      "stations"
+    ]
+  },
+  "swear": {
+    "decision": "admit",
+    "reason": "Promise seriously.",
+    "definition_origin": "Agent-authored",
+    "definition": "To swear is to make a strong promise.",
+    "concept": "promise",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "swear",
+      "swearing",
+      "swears",
+      "swore",
+      "sworn"
+    ]
+  },
+  "tablet": {
+    "decision": "admit",
+    "reason": "A flat piece for writing, or a piece of medicine.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tablet is a small hard piece you take when you are sick.",
+    "concept": "written_record",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tablet",
+      "tablets"
+    ]
+  },
+  "tape": {
+    "decision": "admit",
+    "reason": "A long narrow strip.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tape is a long thin piece used to hold things.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tape",
+      "tapes"
+    ]
+  },
+  "thunder": {
+    "decision": "admit",
+    "reason": "The loud sound after lightning.",
+    "definition_origin": "Agent-authored",
+    "definition": "Thunder is the loud sound that follows lightning.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "thunder",
+      "thunders"
+    ]
+  },
+  "thunderstorm": {
+    "decision": "admit",
+    "reason": "A storm with thunder and lightning.",
+    "definition_origin": "Agent-authored",
+    "definition": "A thunderstorm is a storm with thunder and lightning.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "thunderstorm",
+      "thunderstorms"
+    ]
+  },
+  "tiger": {
+    "decision": "admit",
+    "reason": "A large striped wild cat.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tiger is a large cat with dark lines on its body.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tiger",
+      "tigers"
+    ]
+  },
+  "tilt": {
+    "decision": "admit",
+    "reason": "Lean to one side.",
+    "definition_origin": "Agent-authored",
+    "definition": "To tilt a thing is to move it so one side is lower than the other.",
+    "concept": "direction",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "tilt",
+      "tilted",
+      "tilting",
+      "tilts"
+    ]
+  },
+  "traffic": {
+    "decision": "admit",
+    "reason": "Vehicles on a road.",
+    "definition_origin": "Agent-authored",
+    "definition": "Traffic is things moving along a road.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "traffic",
+      "traffics"
+    ]
+  },
+  "ugly": {
+    "decision": "admit",
+    "reason": "Unpleasant to look at.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ugly means not good to look at.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "ugly",
+      "uglier",
+      "ugliest"
+    ]
+  },
+  "universe": {
+    "decision": "admit",
+    "reason": "Everything that exists.",
+    "definition_origin": "Agent-authored",
+    "definition": "The universe is all that there is.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "universe",
+      "universes"
+    ]
+  },
+  "vehicle": {
+    "decision": "admit",
+    "reason": "A thing that carries people or goods.",
+    "definition_origin": "Agent-authored",
+    "definition": "A vehicle is a thing that carries people from place to place.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "vehicle",
+      "vehicles"
+    ]
+  },
+  "verse": {
+    "decision": "admit",
+    "reason": "A line of a poem or a song.",
+    "definition_origin": "Agent-authored",
+    "definition": "A verse is a group of lines in a poem.",
+    "concept": "story",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "verse",
+      "verses"
+    ]
+  },
+  "wagon": {
+    "decision": "admit",
+    "reason": "A four-wheeled vehicle that is pulled.",
+    "definition_origin": "Agent-authored",
+    "definition": "A wagon is a thing with wheels that is pulled and carries things.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "wagon",
+      "wagons"
+    ]
+  },
+  "wealth": {
+    "decision": "admit",
+    "reason": "A great amount of valuable things.",
+    "definition_origin": "Agent-authored",
+    "definition": "Wealth is a large amount of what a person has.",
+    "concept": "having",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "wealth",
+      "wealths"
+    ]
+  },
+  "web": {
+    "decision": "admit",
+    "reason": "A net of threads.",
+    "definition_origin": "Agent-authored",
+    "definition": "A web is what a small animal makes to catch food.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "web",
+      "webs"
+    ]
+  },
+  "widow": {
+    "decision": "admit",
+    "reason": "A woman whose husband has died.",
+    "definition_origin": "Agent-authored",
+    "definition": "A widow is a woman whose man has died.",
+    "concept": "family",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "widow",
+      "widows"
+    ]
+  },
+  "wife": {
+    "decision": "admit",
+    "reason": "A married woman.",
+    "definition_origin": "Agent-authored",
+    "definition": "A wife is a woman a man has joined with.",
+    "concept": "family",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "wife",
+      "wives"
+    ]
+  },
+  "wisdom": {
+    "decision": "admit",
+    "reason": "Good judgment from knowing.",
+    "definition_origin": "Agent-authored",
+    "definition": "Wisdom is knowing what is good to do.",
+    "concept": "knowing",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "wisdom",
+      "wisdoms"
+    ]
+  },
+  "wolf": {
+    "decision": "admit",
+    "reason": "A wild animal of the dog kind.",
+    "definition_origin": "Agent-authored",
+    "definition": "A wolf is a wild animal that lives and catches food with others.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "wolf",
+      "wolves"
+    ]
+  },
+  "wreck": {
+    "decision": "admit",
+    "reason": "Ruin, and what is left.",
+    "definition_origin": "Agent-authored",
+    "definition": "A wreck is what is left when a thing is broken.",
+    "concept": "things_break",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "wreck",
+      "wrecked",
+      "wrecking",
+      "wrecks"
+    ]
+  }
+}

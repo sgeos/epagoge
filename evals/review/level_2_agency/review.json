@@ -1,0 +1,1949 @@
+{
+  "acid": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An acid is a substance that eats into some things it touches.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "acid",
+      "acids"
+    ]
+  },
+  "acidic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Acidic means of an acid or like an acid.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "acidic"
+    ]
+  },
+  "aerosol": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An aerosol is a very small bit of a thing in the air.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "aerosol",
+      "aerosols"
+    ]
+  },
+  "agricultural": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Agricultural means of farms and of growing food.",
+    "concept": "plant",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "agricultural"
+    ]
+  },
+  "aquatic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Aquatic means living in water.",
+    "concept": "living_and_not_living",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "aquatic"
+    ]
+  },
+  "atmospheric": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Atmospheric means of the air.",
+    "concept": "air",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "atmospheric"
+    ]
+  },
+  "attract": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To attract is to pull a thing toward you.",
+    "concept": "force",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "attract",
+      "attracted",
+      "attracting",
+      "attracts"
+    ]
+  },
+  "bacteria": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Bacteria are very small living things.",
+    "concept": "living_and_not_living",
+    "pos": "noun plural-only",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "bacteria"
+    ]
+  },
+  "basic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Basic means the other side from acidic for a liquid.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "basic"
+    ]
+  },
+  "bathtub": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bathtub is a large thing you sit in when you wash.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "bathtub",
+      "bathtubs"
+    ]
+  },
+  "behave": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To behave is to act in some way.",
+    "concept": "activity",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "behave",
+      "behaved",
+      "behaves",
+      "behaving"
+    ]
+  },
+  "biological": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Biological means of living things.",
+    "concept": "living_and_not_living",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "biological"
+    ]
+  },
+  "blank": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Blank means empty, with nothing on it.",
+    "concept": "emptiness",
+    "pos": "adjective",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "blank",
+      "blanker",
+      "blankest"
+    ]
+  },
+  "canopy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A canopy is the leaves at the top of many plants.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "canopy",
+      "canopies"
+    ]
+  },
+  "capacity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Capacity is how much a thing can have in it.",
+    "concept": "measuring",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "capacity"
+    ]
+  },
+  "capture": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To capture is to catch a thing and keep it.",
+    "concept": "force",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "capture",
+      "captured",
+      "captures",
+      "capturing"
+    ]
+  },
+  "celery": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Celery is a plant that people eat.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "celery"
+    ]
+  },
+  "chemistry": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Chemistry is work to learn what things are made of and how they change.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "chemistry"
+    ]
+  },
+  "clarity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Clarity is how clear a thing is.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "clarity"
+    ]
+  },
+  "coal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Coal is black rock that burns.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "coal"
+    ]
+  },
+  "collect": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To collect is to bring things together into one place.",
+    "concept": "grouping",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "collect",
+      "collected",
+      "collecting",
+      "collects"
+    ]
+  },
+  "colorless": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Colorless means with no color.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "colorless"
+    ]
+  },
+  "compress": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To compress is to press a thing into a smaller space.",
+    "concept": "force",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "compress",
+      "compressed",
+      "compresses",
+      "compressing"
+    ]
+  },
+  "concern": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A concern is a thing that people think may be bad.",
+    "concept": "feeling",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "concern",
+      "concerns"
+    ]
+  },
+  "contaminant": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A contaminant is a thing that makes water or air dirty.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "contaminant",
+      "contaminants"
+    ]
+  },
+  "contaminate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To contaminate is to make a thing dirty.",
+    "concept": "physical_property",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "contaminate",
+      "contaminated",
+      "contaminates",
+      "contaminating"
+    ]
+  },
+  "core": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A core is the middle of a thing.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "core",
+      "cores"
+    ]
+  },
+  "crop": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A crop is a plant that a farm grows for food.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "crop",
+      "crops"
+    ]
+  },
+  "cube": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cube is a shape with six square sides.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "cube",
+      "cubes"
+    ]
+  },
+  "cubic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cubic means with the shape of a cube.",
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "cubic"
+    ]
+  },
+  "cycle": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cycle is a set of changes that come back to the start.",
+    "concept": "cycle",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "cycle",
+      "cycles"
+    ]
+  },
+  "dairy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Dairy is food made from milk.",
+    "concept": "needing_supply",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "dairy"
+    ]
+  },
+  "dam": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A dam is a wall that water cannot go through.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "dam",
+      "dams"
+    ]
+  },
+  "device": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A device is a small tool made to do one job.",
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "device",
+      "devices"
+    ]
+  },
+  "disaster": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A disaster is a very bad thing that hurts many people.",
+    "concept": "danger",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "disaster",
+      "disasters"
+    ]
+  },
+  "discharge": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Discharge is water that flows out of a place.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "discharge"
+    ]
+  },
+  "dishwasher": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A dishwasher is a machine that washes dishes.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "dishwasher",
+      "dishwashers"
+    ]
+  },
+  "dissolve": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To dissolve is to mix into a liquid until you cannot see it any more.",
+    "concept": "liquid",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "dissolve",
+      "dissolved",
+      "dissolves",
+      "dissolving"
+    ]
+  },
+  "domestic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Domestic means of the home.",
+    "concept": "people_together",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "domestic"
+    ]
+  },
+  "downhill": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Downhill means down a hill.",
+    "concept": "direction",
+    "pos": "adverb ungraded",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "downhill"
+    ]
+  },
+  "drainage": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Drainage is water running off the land.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "drainage"
+    ]
+  },
+  "dryness": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Dryness is how dry a thing is.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "dryness"
+    ]
+  },
+  "emerge": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To emerge is to come out.",
+    "concept": "inside_and_outside",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "emerge",
+      "emerged",
+      "emerges",
+      "emerging"
+    ]
+  },
+  "everyday": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Everyday means ordinary.",
+    "concept": "tending",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "everyday"
+    ]
+  },
+  "exert": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To exert is to put force on a thing.",
+    "concept": "force",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "exert",
+      "exerted",
+      "exerting",
+      "exerts"
+    ]
+  },
+  "exist": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To exist is to be real.",
+    "concept": "real_and_pretend",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "exist",
+      "existed",
+      "existing",
+      "exists"
+    ]
+  },
+  "extraction": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Extraction is when you take a thing out of another thing.",
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "extraction"
+    ]
+  },
+  "facility": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A facility is a place where people do some work.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "facility",
+      "facilities"
+    ]
+  },
+  "factory": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A factory is a large place where people make things.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "factory",
+      "factories"
+    ]
+  },
+  "faucet": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A faucet is the part of a pipe you open to let water out.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "faucet",
+      "faucets"
+    ]
+  },
+  "fertilizer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A fertilizer is a thing put on plants to help them grow.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "fertilizer",
+      "fertilizers"
+    ]
+  },
+  "fiber": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A fiber is a long thin bit of material.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "fiber",
+      "fibers"
+    ]
+  },
+  "fourth": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fourth means the one after the third.",
+    "concept": "number_word_order",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "fourth"
+    ]
+  },
+  "freshwater": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Freshwater means of water that is not from the sea.",
+    "concept": "liquid",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "freshwater"
+    ]
+  },
+  "gallon": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A gallon is a unit of liquid.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "gallon",
+      "gallons"
+    ]
+  },
+  "glacier": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A glacier is a large amount of ice that moves slowly over the land.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "glacier",
+      "glaciers"
+    ]
+  },
+  "global": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Global means of the whole world.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "global"
+    ]
+  },
+  "govern": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To govern is to set the rules for people.",
+    "concept": "rule",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "govern",
+      "governed",
+      "governing",
+      "governs"
+    ]
+  },
+  "gram": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A gram is a small unit of weight.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "gram",
+      "grams"
+    ]
+  },
+  "greenhouse": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A greenhouse is a glass house where plants stay warm.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "greenhouse",
+      "greenhouses"
+    ]
+  },
+  "groundwater": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Groundwater is water under the ground.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "groundwater"
+    ]
+  },
+  "hardness": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Hardness is how hard a thing is.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "hardness"
+    ]
+  },
+  "health": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Health is how well a body is.",
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "health"
+    ]
+  },
+  "hue": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hue is a kind of color.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "hue",
+      "hues"
+    ]
+  },
+  "humanity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Humanity is all people.",
+    "concept": "people_together",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "humanity"
+    ]
+  },
+  "image": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An image is a picture of a thing.",
+    "concept": "toy",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "image",
+      "images"
+    ]
+  },
+  "industrial": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Industrial means of large places where people make things.",
+    "concept": "raw_and_made",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "industrial"
+    ]
+  },
+  "industry": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An industry is the work of making one kind of thing.",
+    "concept": "activity",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "industry",
+      "industries"
+    ]
+  },
+  "ink": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ink is a liquid with color, used for writing.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "ink"
+    ]
+  },
+  "investigate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To investigate is to look carefully to find something out.",
+    "concept": "finding_out",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "investigate",
+      "investigated",
+      "investigates",
+      "investigating"
+    ]
+  },
+  "irrigate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To irrigate is to bring water to plants.",
+    "concept": "plant",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "irrigate",
+      "irrigated",
+      "irrigates",
+      "irrigating"
+    ]
+  },
+  "irrigation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Irrigation is water brought to plants.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "irrigation"
+    ]
+  },
+  "item": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An item is one thing in a group.",
+    "concept": "grouping",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "item",
+      "items"
+    ]
+  },
+  "landscape": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A landscape is what you see when you look over the land.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "landscape",
+      "landscapes"
+    ]
+  },
+  "machine": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A machine is a thing with parts that people use to do work.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "machine",
+      "machines"
+    ]
+  },
+  "magnet": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A magnet is a thing that pulls iron to it.",
+    "concept": "force",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "magnet",
+      "magnets"
+    ]
+  },
+  "metallic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Metallic means made of metal or like metal.",
+    "concept": "metal",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "metallic"
+    ]
+  },
+  "milliliter": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A milliliter is a very small unit of liquid.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "milliliter",
+      "milliliters"
+    ]
+  },
+  "mineral": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A mineral is a hard part of rock that is not a plant or an animal.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "mineral",
+      "minerals"
+    ]
+  },
+  "naturally": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Naturally means in a natural way.",
+    "concept": "raw_and_made",
+    "pos": "adverb periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "naturally"
+    ]
+  },
+  "needle": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A needle is a thin sharp thing.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "needle",
+      "needles"
+    ]
+  },
+  "negative": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Negative means less than zero.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "negative"
+    ]
+  },
+  "neutral": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Neutral means not acidic and not basic.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "neutral"
+    ]
+  },
+  "nitrogen": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Nitrogen is a gas. Much of the air is nitrogen.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "nitrogen"
+    ]
+  },
+  "notice": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To notice is to see a thing and know it is there.",
+    "concept": "finding_out",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "notice",
+      "noticed",
+      "notices",
+      "noticing"
+    ]
+  },
+  "odorless": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Odorless means that you cannot smell it.",
+    "concept": "air",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "odorless"
+    ]
+  },
+  "organic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Organic means from a living thing.",
+    "concept": "living_and_not_living",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "organic"
+    ]
+  },
+  "organism": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An organism is a living thing.",
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "organism",
+      "organisms"
+    ]
+  },
+  "ozone": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ozone is a gas in the air.",
+    "concept": "air",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "ozone"
+    ]
+  },
+  "partner": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A partner is a person you do a thing with.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "partner",
+      "partners"
+    ]
+  },
+  "perform": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To perform is to do a thing.",
+    "concept": "activity",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "perform",
+      "performed",
+      "performing",
+      "performs"
+    ]
+  },
+  "pesticide": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pesticide is a thing used to kill a living thing that eats plants.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "pesticide",
+      "pesticides"
+    ]
+  },
+  "photo": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A photo is a picture made with light.",
+    "concept": "toy",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "photo",
+      "photos"
+    ]
+  },
+  "positive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Positive means more than zero.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "positive"
+    ]
+  },
+  "pound": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pound is a unit of weight.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "pound",
+      "pounds"
+    ]
+  },
+  "predict": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To predict is to say what will happen before it does.",
+    "concept": "guess",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "predict",
+      "predicted",
+      "predicting",
+      "predicts"
+    ]
+  },
+  "problem": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A problem is something that is hard to work out.",
+    "concept": "failing",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "problem",
+      "problems"
+    ]
+  },
+  "production": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Production is when people make things.",
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "production"
+    ]
+  },
+  "property": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A property is a way a thing is, such as hard or hot or wet.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "property",
+      "properties"
+    ]
+  },
+  "pure": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Pure means not mixed with any other thing.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "pure",
+      "purer",
+      "purest"
+    ]
+  },
+  "rainstorm": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A rainstorm is a storm with much rain.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "rainstorm",
+      "rainstorms"
+    ]
+  },
+  "realize": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To realize is to come to know a thing.",
+    "concept": "knowing",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "realize",
+      "realized",
+      "realizes",
+      "realizing"
+    ]
+  },
+  "recharge": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Recharge is water moving back down into the ground.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "recharge"
+    ]
+  },
+  "reclaim": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To reclaim is to make a used thing of use again.",
+    "concept": "having",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "reclaim",
+      "reclaimed",
+      "reclaiming",
+      "reclaims"
+    ]
+  },
+  "reflect": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To reflect is to send light back.",
+    "concept": "physical_property",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "reflect",
+      "reflected",
+      "reflecting",
+      "reflects"
+    ]
+  },
+  "regular": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Regular means the same way each time.",
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "regular"
+    ]
+  },
+  "relationship": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A relationship is the way two things are with one another.",
+    "concept": "same_and_different",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "relationship",
+      "relationships"
+    ]
+  },
+  "resource": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A resource is a thing that people can use.",
+    "concept": "having",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "resource",
+      "resources"
+    ]
+  },
+  "restriction": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A restriction is a rule that stops some act.",
+    "concept": "rule",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "restriction",
+      "restrictions"
+    ]
+  },
+  "retention": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Retention is when you keep a thing.",
+    "concept": "having",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "retention"
+    ]
+  },
+  "rural": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Rural means of farms and open land, and not of a city.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "rural"
+    ]
+  },
+  "saline": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Saline means with salt in it.",
+    "concept": "material",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "saline"
+    ]
+  },
+  "scale": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A scale is a tool for measuring how heavy a thing is.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "scale",
+      "scales"
+    ]
+  },
+  "scarce": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Scarce means there is little of it.",
+    "concept": "quantity",
+    "pos": "adjective",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "scarce",
+      "scarcer",
+      "scarcest"
+    ]
+  },
+  "scrap": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A scrap is a small bit from a larger thing.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "scrap",
+      "scraps"
+    ]
+  },
+  "sediment": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sediment is bits of rock that fall to the bottom of water.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "sediment"
+    ]
+  },
+  "sense": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sense is a way the body knows a thing, such as taste or smell.",
+    "concept": "feeling",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "sense",
+      "senses"
+    ]
+  },
+  "sewage": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sewage is dirty water from a house.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "sewage"
+    ]
+  },
+  "shirt": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A shirt is cloth you wear on the top of your body.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "shirt",
+      "shirts"
+    ]
+  },
+  "slight": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Slight means small in amount.",
+    "concept": "quantity",
+    "pos": "adjective",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "slight",
+      "slighter",
+      "slightest"
+    ]
+  },
+  "snowmelt": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Snowmelt is water from snow that has melted.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "snowmelt"
+    ]
+  },
+  "snowpack": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Snowpack is snow on the ground.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "snowpack"
+    ]
+  },
+  "solvent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A solvent is a liquid that other things can dissolve in.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "solvent",
+      "solvents"
+    ]
+  },
+  "sphere": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sphere is a round shape like a ball.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "sphere",
+      "spheres"
+    ]
+  },
+  "statement": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A statement is something a person says about a thing.",
+    "concept": "saying_what_you_saw",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "statement",
+      "statements"
+    ]
+  },
+  "substance": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A substance is a kind of material.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "substance",
+      "substances"
+    ]
+  },
+  "tasteless": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tasteless means with no taste.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "tasteless"
+    ]
+  },
+  "thaw": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To thaw is to make a frozen thing warm until it is soft.",
+    "concept": "heat",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "thaw",
+      "thawed",
+      "thawing",
+      "thaws"
+    ]
+  },
+  "thickness": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Thickness is how thick a thing is.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "thickness"
+    ]
+  },
+  "thrive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To thrive is to grow well.",
+    "concept": "growing",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "thrive",
+      "thrived",
+      "thrives",
+      "thriving"
+    ]
+  },
+  "tint": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tint is a light kind of a color.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "tint",
+      "tints"
+    ]
+  },
+  "toilet": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A toilet is a seat for dirty water to go down.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "toilet",
+      "toilets"
+    ]
+  },
+  "towel": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A towel is cloth you use to make a thing dry.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "towel",
+      "towels"
+    ]
+  },
+  "trap": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To trap is to catch a thing and not let it move.",
+    "concept": "force",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "trap",
+      "trapped",
+      "trapping",
+      "traps"
+    ]
+  },
+  "treatment": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Treatment is what people do to make a sick person or a dirty thing better.",
+    "concept": "mending",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "treatment",
+      "treatments"
+    ]
+  },
+  "tsunami": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tsunami is a very large wave in the sea.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "tsunami",
+      "tsunamis"
+    ]
+  },
+  "turbid": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Turbid means not clear, because small bits are in it.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "turbid"
+    ]
+  },
+  "turbine": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A turbine is a machine that turns when air or water pushes it.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "turbine",
+      "turbines"
+    ]
+  },
+  "unhealthy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Unhealthy means bad for the body.",
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "unhealthy"
+    ]
+  },
+  "universal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Universal means true of all things.",
+    "concept": "all_some_none",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "universal"
+    ]
+  },
+  "urban": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Urban means of a city.",
+    "concept": "people_together",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "urban"
+    ]
+  },
+  "urbanization": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Urbanization is the change of open land into city land.",
+    "concept": "change",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "urbanization"
+    ]
+  },
+  "valuable": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Valuable means that people want it very much.",
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "valuable"
+    ]
+  },
+  "visual": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Visual means of the eyes.",
+    "concept": "body_part",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "visual"
+    ]
+  },
+  "volume": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Volume is how much space a thing fills.",
+    "concept": "measuring",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "volume"
+    ]
+  },
+  "waste": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Waste is a thing that people throw away.",
+    "concept": "using_up",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "waste"
+    ]
+  },
+  "wastewater": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Wastewater is dirty water after people use water.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "wastewater"
+    ]
+  },
+  "watershed": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A watershed is land that sends water to one river.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "watershed",
+      "watersheds"
+    ]
+  },
+  "wetland": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A wetland is land that stays wet, like a marsh.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "wetland",
+      "wetlands"
+    ]
+  },
+  "wetness": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Wetness is how wet a thing is.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "wetness"
+    ]
+  },
+  "zone": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A zone is one part of a place and not the other parts.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "zone",
+      "zones"
+    ]
+  }
+}

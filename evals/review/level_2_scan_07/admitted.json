@@ -1,0 +1,434 @@
+{
+  "altocumulus": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Altocumulus is cloud at middle height in small piles or rolls.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "altostratus": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Altostratus is a gray sheet of cloud at middle height.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bathymetry": {
+    "concept": "measuring",
+    "pos": "mass noun",
+    "definition": "Bathymetry is the measuring of how deep water is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bosom": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "The bosom is the front of the upper body.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "certainly": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Certainly means one can be sure.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "churchyard": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A churchyard is the ground around a church.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "cirrostratus": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Cirrostratus is a high thin sheet of cloud.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "cirrus": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Cirrus is a high thin cloud.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "climatic": {
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "definition": "Climatic means of climate.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "climatology": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Climatology is the study of climate over long times.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "composite": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A composite is a thing made of different parts.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "considerable": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Considerable means fairly large.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "considerably": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Considerably means by a fairly large amount.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "continental": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Continental means of a great body of land.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "convective": {
+    "concept": "heat",
+    "pos": "adjective periphrastic",
+    "definition": "Convective means moved by warm air or warm water rising.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "conveyor": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A conveyor is a moving path that carries things from one place to another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "coquina": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Coquina is soft rock made of broken shells.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "countenance": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A countenance is the look on a face.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "cumulus": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Cumulus is a bright cloud that is flat on the bottom and piled high on top.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "cyclonic": {
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "definition": "Cyclonic means turning as a large round storm turns.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "darling": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "A darling is a person who is loved very much.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "destruction": {
+    "concept": "things_break",
+    "pos": "mass noun",
+    "definition": "Destruction is the breaking of a thing so that it is gone.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "destructive": {
+    "concept": "things_break",
+    "pos": "adjective periphrastic",
+    "definition": "Destructive means able to break things past use.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "devastating": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Devastating means bringing very great harm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "differential": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Differential means coming from a difference.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "disposition": {
+    "concept": "tending",
+    "pos": "noun",
+    "definition": "A disposition is the way a person tends to act.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "distinctly": {
+    "concept": "same_and_different",
+    "pos": "",
+    "definition": "Distinctly means in a clear and separate way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "dynamics": {
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "definition": "Dynamics is the study of how things move and why.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ecosystem": {
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "definition": "An ecosystem is the living things in a place together with that place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "electronic": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Electronic means working by a small electric current that is kept in hand.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "elevation": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "The elevation of a place is its height above the sea.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "email": {
+    "concept": "writing",
+    "pos": "noun",
+    "definition": "An email is a letter sent from one computer to another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "emergency": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "An emergency is a sudden danger that calls for action at once.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "emphasis": {
+    "concept": "discourse_marker",
+    "pos": "mass noun",
+    "definition": "Emphasis is special weight given to one part.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "engineering": {
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "definition": "Engineering is the work of planning and building things that work.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ensure": {
+    "concept": "can_and_cannot",
+    "pos": "verb",
+    "definition": "To ensure is to make certain that a thing will be so.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "environment": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "An environment is everything around a living thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "equipment": {
+    "concept": "household_object",
+    "pos": "mass noun",
+    "definition": "Equipment is the tools and other things needed for a job.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "estimation": {
+    "concept": "guess",
+    "pos": "noun",
+    "definition": "An estimation is a careful guess of an amount.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "estuary": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "An estuary is the wide mouth of a river where it meets the sea.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "evacuation": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "An evacuation is the moving of people out of a place of danger.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "evaporate": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To evaporate is to turn from water into a gas.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "evaporation": {
+    "concept": "change",
+    "pos": "mass noun",
+    "definition": "Evaporation is water turning into a gas.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "expansion": {
+    "concept": "change",
+    "pos": "mass noun",
+    "definition": "Expansion is growing larger.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "exposure": {
+    "concept": "danger",
+    "pos": "mass noun",
+    "definition": "Exposure is being left open to the weather or to harm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "eyewall": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "An eyewall is the ring of tall storm cloud around the calm middle of a round storm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "farmer": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A farmer is a person who keeps a farm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "federal": {
+    "concept": "someone_in_charge",
+    "pos": "adjective periphrastic",
+    "definition": "Federal means of the main government of a whole country.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fibrous": {
+    "concept": "material",
+    "pos": "adjective periphrastic",
+    "definition": "Fibrous means made of many long thin pieces.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fishhawk": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A fishhawk is a bird that catches fish.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "flank": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A flank is the side of a body or of a group.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "forecaster": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A forecaster is a person who says what the weather is likely to be.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "foreground": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The foreground is the part of a view that seems nearest.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "frontal": {
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "definition": "Frontal means of the place where two bodies of air meet.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "frostbite": {
+    "concept": "being_hurt",
+    "pos": "mass noun",
+    "definition": "Frostbite is harm to the body from great cold.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fusion": {
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "definition": "Fusion is a joining of things into one.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gage": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A gage is a tool that shows a measure.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gay": {
+    "concept": "feeling",
+    "pos": "adjective",
+    "definition": "Gay means glad and bright.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "geodesy": {
+    "concept": "measuring",
+    "pos": "mass noun",
+    "definition": "Geodesy is the measuring of the size and shape of the earth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "geostationary": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Geostationary means staying above one place on the earth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gradient": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A gradient is how fast a measure changes from place to place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "graphic": {
+    "concept": "writing",
+    "pos": "adjective periphrastic",
+    "definition": "Graphic means given as a picture or a drawing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gravitational": {
+    "concept": "force",
+    "pos": "adjective periphrastic",
+    "definition": "Gravitational means of the pull of the earth or of another large body.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hailstone": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A hailstone is a ball of ice that falls from a storm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "harebell": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A harebell is a small blue flower in the shape of a bell.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "harmful": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Harmful means able to cause harm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hazardous": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Hazardous means full of danger.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "haze": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Haze is dust or smoke in the air that makes it hard to see far.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hectopascal": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A hectopascal is a unit of air pressure.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "helium": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Helium is a very light gas that does not burn.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "horizontally": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Horizontally means in a direction level with the ground.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hound": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A hound is a dog kept to chase other animals.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  }
+}

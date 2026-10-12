@@ -1,0 +1,908 @@
+{
+  "acid": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "An acid is a substance that eats into some things it touches.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "acidic": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Acidic means of an acid or like an acid.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "aerosol": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "An aerosol is a very small bit of a thing in the air.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "agricultural": {
+    "concept": "plant",
+    "pos": "adjective periphrastic",
+    "definition": "Agricultural means of farms and of growing food.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "aquatic": {
+    "concept": "living_and_not_living",
+    "pos": "adjective periphrastic",
+    "definition": "Aquatic means living in water.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "atmospheric": {
+    "concept": "air",
+    "pos": "adjective periphrastic",
+    "definition": "Atmospheric means of the air.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "attract": {
+    "concept": "force",
+    "pos": "verb",
+    "definition": "To attract is to pull a thing toward you.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "bacteria": {
+    "concept": "living_and_not_living",
+    "pos": "noun plural-only",
+    "definition": "Bacteria are very small living things.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "basic": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Basic means the other side from acidic for a liquid.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "bathtub": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A bathtub is a large thing you sit in when you wash.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "behave": {
+    "concept": "activity",
+    "pos": "verb",
+    "definition": "To behave is to act in some way.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "biological": {
+    "concept": "living_and_not_living",
+    "pos": "adjective periphrastic",
+    "definition": "Biological means of living things.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "blank": {
+    "concept": "emptiness",
+    "pos": "adjective",
+    "definition": "Blank means empty, with nothing on it.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "canopy": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A canopy is the leaves at the top of many plants.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "capacity": {
+    "concept": "measuring",
+    "pos": "mass noun",
+    "definition": "Capacity is how much a thing can have in it.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "capture": {
+    "concept": "force",
+    "pos": "verb",
+    "definition": "To capture is to catch a thing and keep it.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "celery": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Celery is a plant that people eat.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "chemistry": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Chemistry is work to learn what things are made of and how they change.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "clarity": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Clarity is how clear a thing is.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "coal": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Coal is black rock that burns.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "collect": {
+    "concept": "grouping",
+    "pos": "verb",
+    "definition": "To collect is to bring things together into one place.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "colorless": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Colorless means with no color.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "compress": {
+    "concept": "force",
+    "pos": "verb",
+    "definition": "To compress is to press a thing into a smaller space.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "concern": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "A concern is a thing that people think may be bad.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "contaminant": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A contaminant is a thing that makes water or air dirty.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "contaminate": {
+    "concept": "physical_property",
+    "pos": "verb",
+    "definition": "To contaminate is to make a thing dirty.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "core": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A core is the middle of a thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "crop": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A crop is a plant that a farm grows for food.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "cube": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A cube is a shape with six square sides.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "cubic": {
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "definition": "Cubic means with the shape of a cube.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "cycle": {
+    "concept": "cycle",
+    "pos": "noun",
+    "definition": "A cycle is a set of changes that come back to the start.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "dairy": {
+    "concept": "needing_supply",
+    "pos": "mass noun",
+    "definition": "Dairy is food made from milk.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "dam": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A dam is a wall that water cannot go through.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "device": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "A device is a small tool made to do one job.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "disaster": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "A disaster is a very bad thing that hurts many people.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "discharge": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Discharge is water that flows out of a place.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "dishwasher": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A dishwasher is a machine that washes dishes.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "dissolve": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To dissolve is to mix into a liquid until you cannot see it any more.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "domestic": {
+    "concept": "people_together",
+    "pos": "adjective periphrastic",
+    "definition": "Domestic means of the home.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "downhill": {
+    "concept": "direction",
+    "pos": "adverb ungraded",
+    "definition": "Downhill means down a hill.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "drainage": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Drainage is water running off the land.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "dryness": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Dryness is how dry a thing is.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "emerge": {
+    "concept": "inside_and_outside",
+    "pos": "verb",
+    "definition": "To emerge is to come out.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "everyday": {
+    "concept": "tending",
+    "pos": "adjective ungraded",
+    "definition": "Everyday means ordinary.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "exert": {
+    "concept": "force",
+    "pos": "verb",
+    "definition": "To exert is to put force on a thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "exist": {
+    "concept": "real_and_pretend",
+    "pos": "verb",
+    "definition": "To exist is to be real.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "extraction": {
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "definition": "Extraction is when you take a thing out of another thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "facility": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A facility is a place where people do some work.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "factory": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A factory is a large place where people make things.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "faucet": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A faucet is the part of a pipe you open to let water out.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "fertilizer": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A fertilizer is a thing put on plants to help them grow.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "fiber": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A fiber is a long thin bit of material.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "fourth": {
+    "concept": "number_word_order",
+    "pos": "adjective ungraded",
+    "definition": "Fourth means the one after the third.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "freshwater": {
+    "concept": "liquid",
+    "pos": "adjective ungraded",
+    "definition": "Freshwater means of water that is not from the sea.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "gallon": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A gallon is a unit of liquid.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "glacier": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A glacier is a large amount of ice that moves slowly over the land.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "global": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Global means of the whole world.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "govern": {
+    "concept": "rule",
+    "pos": "verb",
+    "definition": "To govern is to set the rules for people.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "gram": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A gram is a small unit of weight.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "greenhouse": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A greenhouse is a glass house where plants stay warm.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "groundwater": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Groundwater is water under the ground.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "hardness": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Hardness is how hard a thing is.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "health": {
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "definition": "Health is how well a body is.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "hue": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A hue is a kind of color.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "humanity": {
+    "concept": "people_together",
+    "pos": "mass noun",
+    "definition": "Humanity is all people.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "image": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "An image is a picture of a thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "industrial": {
+    "concept": "raw_and_made",
+    "pos": "adjective periphrastic",
+    "definition": "Industrial means of large places where people make things.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "industry": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "An industry is the work of making one kind of thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "ink": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Ink is a liquid with color, used for writing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "investigate": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To investigate is to look carefully to find something out.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "irrigate": {
+    "concept": "plant",
+    "pos": "verb",
+    "definition": "To irrigate is to bring water to plants.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "irrigation": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Irrigation is water brought to plants.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "item": {
+    "concept": "grouping",
+    "pos": "noun",
+    "definition": "An item is one thing in a group.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "landscape": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A landscape is what you see when you look over the land.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "machine": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A machine is a thing with parts that people use to do work.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "magnet": {
+    "concept": "force",
+    "pos": "noun",
+    "definition": "A magnet is a thing that pulls iron to it.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "metallic": {
+    "concept": "metal",
+    "pos": "adjective periphrastic",
+    "definition": "Metallic means made of metal or like metal.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "milliliter": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A milliliter is a very small unit of liquid.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "mineral": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A mineral is a hard part of rock that is not a plant or an animal.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "naturally": {
+    "concept": "raw_and_made",
+    "pos": "adverb periphrastic",
+    "definition": "Naturally means in a natural way.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "needle": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A needle is a thin sharp thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "negative": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Negative means less than zero.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "neutral": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Neutral means not acidic and not basic.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "nitrogen": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Nitrogen is a gas. Much of the air is nitrogen.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "notice": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To notice is to see a thing and know it is there.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "odorless": {
+    "concept": "air",
+    "pos": "adjective periphrastic",
+    "definition": "Odorless means that you cannot smell it.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "organic": {
+    "concept": "living_and_not_living",
+    "pos": "adjective periphrastic",
+    "definition": "Organic means from a living thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "organism": {
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "definition": "An organism is a living thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "ozone": {
+    "concept": "air",
+    "pos": "mass noun",
+    "definition": "Ozone is a gas in the air.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "partner": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A partner is a person you do a thing with.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "perform": {
+    "concept": "activity",
+    "pos": "verb",
+    "definition": "To perform is to do a thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "pesticide": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A pesticide is a thing used to kill a living thing that eats plants.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "photo": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "A photo is a picture made with light.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "positive": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Positive means more than zero.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "pound": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A pound is a unit of weight.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "predict": {
+    "concept": "guess",
+    "pos": "verb",
+    "definition": "To predict is to say what will happen before it does.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "problem": {
+    "concept": "failing",
+    "pos": "noun",
+    "definition": "A problem is something that is hard to work out.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "production": {
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "definition": "Production is when people make things.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "property": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A property is a way a thing is, such as hard or hot or wet.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "pure": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Pure means not mixed with any other thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "rainstorm": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A rainstorm is a storm with much rain.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "realize": {
+    "concept": "knowing",
+    "pos": "verb",
+    "definition": "To realize is to come to know a thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "recharge": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Recharge is water moving back down into the ground.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "reclaim": {
+    "concept": "having",
+    "pos": "verb",
+    "definition": "To reclaim is to make a used thing of use again.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "reflect": {
+    "concept": "physical_property",
+    "pos": "verb",
+    "definition": "To reflect is to send light back.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "regular": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Regular means the same way each time.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "relationship": {
+    "concept": "same_and_different",
+    "pos": "noun",
+    "definition": "A relationship is the way two things are with one another.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "resource": {
+    "concept": "having",
+    "pos": "noun",
+    "definition": "A resource is a thing that people can use.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "restriction": {
+    "concept": "rule",
+    "pos": "noun",
+    "definition": "A restriction is a rule that stops some act.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "retention": {
+    "concept": "having",
+    "pos": "mass noun",
+    "definition": "Retention is when you keep a thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "rural": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Rural means of farms and open land, and not of a city.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "saline": {
+    "concept": "material",
+    "pos": "adjective periphrastic",
+    "definition": "Saline means with salt in it.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "scale": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A scale is a tool for measuring how heavy a thing is.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "scarce": {
+    "concept": "quantity",
+    "pos": "adjective",
+    "definition": "Scarce means there is little of it.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "scrap": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A scrap is a small bit from a larger thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "sediment": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Sediment is bits of rock that fall to the bottom of water.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "sense": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "A sense is a way the body knows a thing, such as taste or smell.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "sewage": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Sewage is dirty water from a house.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "shirt": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A shirt is cloth you wear on the top of your body.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "slight": {
+    "concept": "quantity",
+    "pos": "adjective",
+    "definition": "Slight means small in amount.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "snowmelt": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Snowmelt is water from snow that has melted.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "snowpack": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Snowpack is snow on the ground.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "solvent": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A solvent is a liquid that other things can dissolve in.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "sphere": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A sphere is a round shape like a ball.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "statement": {
+    "concept": "saying_what_you_saw",
+    "pos": "noun",
+    "definition": "A statement is something a person says about a thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "substance": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A substance is a kind of material.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "tasteless": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Tasteless means with no taste.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "thaw": {
+    "concept": "heat",
+    "pos": "verb",
+    "definition": "To thaw is to make a frozen thing warm until it is soft.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "thickness": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Thickness is how thick a thing is.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "thrive": {
+    "concept": "growing",
+    "pos": "verb",
+    "definition": "To thrive is to grow well.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "tint": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A tint is a light kind of a color.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "toilet": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A toilet is a seat for dirty water to go down.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "towel": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A towel is cloth you use to make a thing dry.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "trap": {
+    "concept": "force",
+    "pos": "verb",
+    "definition": "To trap is to catch a thing and not let it move.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "treatment": {
+    "concept": "mending",
+    "pos": "noun",
+    "definition": "Treatment is what people do to make a sick person or a dirty thing better.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "tsunami": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A tsunami is a very large wave in the sea.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "turbid": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Turbid means not clear, because small bits are in it.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "turbine": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A turbine is a machine that turns when air or water pushes it.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "unhealthy": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Unhealthy means bad for the body.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "universal": {
+    "concept": "all_some_none",
+    "pos": "adjective periphrastic",
+    "definition": "Universal means true of all things.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "urban": {
+    "concept": "people_together",
+    "pos": "adjective periphrastic",
+    "definition": "Urban means of a city.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "urbanization": {
+    "concept": "change",
+    "pos": "mass noun",
+    "definition": "Urbanization is the change of open land into city land.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "valuable": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Valuable means that people want it very much.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "visual": {
+    "concept": "body_part",
+    "pos": "adjective periphrastic",
+    "definition": "Visual means of the eyes.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "volume": {
+    "concept": "measuring",
+    "pos": "mass noun",
+    "definition": "Volume is how much space a thing fills.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "waste": {
+    "concept": "using_up",
+    "pos": "mass noun",
+    "definition": "Waste is a thing that people throw away.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "wastewater": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Wastewater is dirty water after people use water.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "watershed": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A watershed is land that sends water to one river.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "wetland": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A wetland is land that stays wet, like a marsh.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "wetness": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Wetness is how wet a thing is.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "zone": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A zone is one part of a place and not the other parts.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  }
+}

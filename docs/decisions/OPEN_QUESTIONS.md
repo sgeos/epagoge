@@ -98,20 +98,47 @@ published rather than asserted. Galactica asserted curation quality.
 ### Teacher model. ANSWERED 2026-09-23, by verification
 
 **Frontier application programming interfaces are excluded.** Verified
-2026-09-23.
+2026-09-23 for Anthropic and OpenAI, and 2026-10-09 for SpaceXAI.
 
 - Anthropic's commercial terms prohibit using the service to build a
   competing product or service, "including to train competing AI models."
   Outputs may train models that do not compete with Anthropic's own.
 - OpenAI's policy explicitly prohibits using its interface to develop
   competing language models.
+- SpaceXAI's Enterprise Terms, last updated 14 August 2026, forbid the
+  customer, and any third party the customer permits, to use Output to
+  train any foundation model, large language model, or other artificial
+  intelligence system, except as an Order Form entered into by both parties
+  expressly permits. An order form, an online purchase confirmation, or
+  another ordering document counts only when both parties enter into it and
+  it refers to those terms. Section 13.10 says a purchase order or similar
+  document issued by the customer has no legal effect. The Acceptable Use
+  Policy effective the same day applies to consumers, developers, and
+  businesses. It forbids using the Service or any Output to develop a
+  machine learning model, or a product or service, that competes with
+  SpaceXAI, directly or indirectly, and it forbids scraping, harvesting,
+  reselling, or distilling Input or Output. The Consumer Terms, last
+  updated 11 September 2026, state that the user retains ownership of
+  Output, excluding Grokipedia output and system metadata and logs, and
+  they incorporate that policy. The consumer frequently asked questions say
+  outputs may be used commercially, with attribution under the brand
+  guidelines. That statement does not lift the policy. No Order Form
+  granting the exception is in hand.
 - Enforcement is active rather than theoretical. Anthropic revoked
   OpenAI's access over exactly this, and the major laboratories share
   detection signals through the Frontier Model Forum for what they term
-  adversarial distillation.
+  adversarial distillation. That enforcement note is about Anthropic and
+  OpenAI. It is not a report of a SpaceXAI action.
 
-A language model trained on those outputs is not defensibly non-competing,
-whatever its deployment niche.
+A language model trained on Anthropic or OpenAI outputs is not defensibly
+non-competing, whatever its deployment niche. SpaceXAI's enterprise
+prohibition does not turn on whether the trained model competes. The local
+teacher named below does not call the SpaceXAI service and does not train
+on its Output, so that workflow does not use the Order Form exception.
+Output from that service placed into a training corpus would. This reading
+does not audit committed prose for text composed through the service.
+`BOOK_ATTRIBUTION.md` records that some definitions were written by hand
+and that the route is not recoverable from history.
 
 **Open weights under permissive licences are the path**, and the licence
 matters more than the openness. Verified 2026-09-23, DeepSeek's current
@@ -160,13 +187,21 @@ cents per million output tokens, which would have put the entire level-one
 corpus between fifty cents and five dollars. The objection is disclosure,
 not price.
 
-**Not legal advice, and terms change.** The verification above is dated.
-Re-check the specific checkpoint's licence before committing money to
+**Not legal advice, and terms change.** The verification above is dated,
+including the SpaceXAI reading of 2026-10-09. Re-check the specific
+checkpoint's licence, and the endpoint terms, before committing money to
 generation.
 
 **Sources consulted 2026-09-23.**
 https://support.claude.com/en/articles/12326764-can-i-use-my-outputs-to-train-an-ai-model
 and https://www.terms.law/2025/04/09/navigating-ai-platform-policies-who-owns-ai-generated-content/
+
+**Sources consulted 2026-10-09, for SpaceXAI.**
+https://x.ai/legal/terms-of-service-enterprise
+and https://x.ai/legal/acceptable-use-policy
+and https://x.ai/legal/terms-of-service
+and https://x.ai/legal/faq
+and https://x.ai/legal/faq-enterprise
 
 ## 3. Scope boundary on applications
 

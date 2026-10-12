@@ -1,0 +1,434 @@
+{
+  "sensitive": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Sensitive means quick to feel or to respond.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "separation": {
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "definition": "A separation is a moving of things apart.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "serial": {
+    "concept": "sequence",
+    "pos": "adjective periphrastic",
+    "definition": "Serial means coming one after another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shear": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Shear is a change in the speed or direction of the wind across a short distance.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shortwave": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Shortwave means having a short wave.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "significant": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Significant means large enough to change the result.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "significantly": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Significantly means by a large amount.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "slough": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A slough is a soft wet place of mud and still water.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sprite": {
+    "concept": "real_and_pretend",
+    "pos": "noun",
+    "definition": "A sprite is a small make believe being.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "squall": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A squall is a sudden strong wind, often with rain.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "stationary": {
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "definition": "Stationary means not moving.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "stratosphere": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "The stratosphere is a high layer of air, above the air where weather happens.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "stratus": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Stratus is a low flat gray cloud covering the sky.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "subsequent": {
+    "concept": "sequence",
+    "pos": "adjective periphrastic",
+    "definition": "Subsequent means coming after.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "substantial": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Substantial means large in amount.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "subtropical": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Subtropical means of the regions just outside the hot middle of the earth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "summertime": {
+    "concept": "duration",
+    "pos": "mass noun",
+    "definition": "Summertime is the summer part of the year.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sunburn": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A sunburn is a burn of the skin from too much sun.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "supercell": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A supercell is a large storm that turns as it moves.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "supercooled": {
+    "concept": "heat",
+    "pos": "adjective periphrastic",
+    "definition": "Supercooled means made cold past the usual freezing point and still liquid.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tabby": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A tabby is a cat with dark lines in its coat.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "technical": {
+    "concept": "way_of_doing",
+    "pos": "adjective periphrastic",
+    "definition": "Technical means needing special knowledge of how a thing works.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "television": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A television is a box that shows moving pictures and plays sound sent from far away.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tempest": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A tempest is a violent storm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "temptation": {
+    "concept": "should_and_should_not",
+    "pos": "noun",
+    "definition": "A temptation is a pull toward a thing one should not do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tender": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Tender means soft, or easy to hurt.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tennis": {
+    "concept": "activity",
+    "pos": "mass noun",
+    "definition": "Tennis is a game of hitting a ball from one side to the other.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "terrain": {
+    "concept": "spatial_position",
+    "pos": "mass noun",
+    "definition": "Terrain is the shape and cover of the land.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "testimony": {
+    "concept": "saying_what_you_saw",
+    "pos": "mass noun",
+    "definition": "Testimony is what a person tells about what that person saw or did.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "thereby": {
+    "concept": "cause_and_effect",
+    "pos": "",
+    "definition": "Thereby means by that.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "thermal": {
+    "concept": "heat",
+    "pos": "adjective periphrastic",
+    "definition": "Thermal means of heat.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "thermocline": {
+    "concept": "heat",
+    "pos": "noun",
+    "definition": "A thermocline is the layer in a body of water where temperature falls quickly as depth grows.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "throughout": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Throughout means in every part, or during all of a time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "thrush": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A thrush is a small bird that sings.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tidings": {
+    "concept": "reporting",
+    "pos": "mass noun",
+    "definition": "Tidings are reports of what has happened.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "timely": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Timely means done at a good time, and not too late.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "toad": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A toad is a small wide land animal that jumps and has a wet skin.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tock": {
+    "concept": "sound",
+    "pos": "noun",
+    "definition": "A tock is a short hard sound, as from a clock.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "toggle": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A toggle is a piece that can sit in either of two places and so open or close something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "topography": {
+    "concept": "spatial_position",
+    "pos": "mass noun",
+    "definition": "Topography is the shape of the land.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "towering": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Towering means very tall.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "transition": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "A transition is a change from one condition to another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "transparent": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Transparent means clear enough to see through.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "transpiration": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Transpiration is the passing of water from a plant into the air.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tropics": {
+    "concept": "spatial_position",
+    "pos": "mass noun",
+    "definition": "The tropics are the hot parts of the earth on either side of its middle.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tropopause": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "The tropopause is the top of the lowest layer of air.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "troposphere": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "The troposphere is the lowest layer of air, where weather happens.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "trough": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A trough is a long region of lower air pressure.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "turbulence": {
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "definition": "Turbulence is rough motion of air or of water.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "twit": {
+    "concept": "discourse_marker",
+    "pos": "verb",
+    "definition": "To twit is to make fun of a person for a small thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "unstable": {
+    "concept": "change",
+    "pos": "adjective periphrastic",
+    "definition": "Unstable means likely to change, or likely to fall.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "updraft": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "An updraft is air moving upward.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "upstream": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Upstream means toward where a stream begins, against the flow.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "upwelling": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Upwelling is deep water rising toward the top of the sea.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "utter": {
+    "concept": "sound",
+    "pos": "verb",
+    "definition": "To utter is to speak, or to make a sound.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "variation": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "A variation is a change from what is usual.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "veggie": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A veggie is a vegetable.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "velocity": {
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "definition": "Velocity is speed in a direction.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "via": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Via means by way of.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "visibility": {
+    "concept": "measuring",
+    "pos": "mass noun",
+    "definition": "Visibility is how far a person can see.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "volcanic": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Volcanic means of a mountain that can throw out hot rock.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vorticity": {
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "definition": "Vorticity is a measure of how much a flow is turning.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wanderer": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A wanderer is a person who goes from place to place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ward": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A ward is a person under the care of another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wavelength": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A wavelength is the distance from one wave top to the next.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "website": {
+    "concept": "writing",
+    "pos": "noun",
+    "definition": "A website is a set of pages on a computer that other people can read.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "whipcord": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Whipcord is thin hard rope.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "widely": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Widely means over a wide area, or by many people.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "widespread": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Widespread means found over a wide area.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "windborne": {
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "definition": "Windborne means carried by the wind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "zonal": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Zonal means lying along an east and west line.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "zooplankton": {
+    "concept": "animal",
+    "pos": "mass noun",
+    "definition": "Zooplankton is the very small animals that float in the water.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  }
+}

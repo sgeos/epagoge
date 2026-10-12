@@ -1,0 +1,2594 @@
+{
+  "ability": {
+    "concept": "can_and_cannot",
+    "pos": "noun",
+    "definition": "Ability is being able to do a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "absolute": {
+    "concept": "all_some_none",
+    "pos": "adjective periphrastic",
+    "definition": "Absolute means all of a thing and not only part of it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "absolutely": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Absolutely means with nothing left out.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "absorb": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To absorb a thing is to take it in.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "academy": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "An academy is a school.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "accuracy": {
+    "concept": "close_enough",
+    "pos": "noun",
+    "definition": "Accuracy is being right and not off by much.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "active": {
+    "concept": "activity",
+    "pos": "adjective periphrastic",
+    "definition": "Active means doing something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "actual": {
+    "concept": "real_and_pretend",
+    "pos": "adjective periphrastic",
+    "definition": "Actual means real.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "adjacent": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Adjacent means next to something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "adult": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "An adult is a person who is not a child.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "advantage": {
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "definition": "An advantage is something that helps you do better.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "affection": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "Affection is a warm feeling for a person.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "afterward": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Afterward means at a later time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "agency": {
+    "concept": "someone_in_charge",
+    "pos": "noun",
+    "definition": "An agency is a group that does a kind of work for people.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "airflow": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "Airflow is air moving from one place to another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "alert": {
+    "concept": "finding_out",
+    "pos": "adjective periphrastic",
+    "definition": "Alert means ready and watching.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "algae": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Algae are very small plants that live in water.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "algal": {
+    "concept": "plant",
+    "pos": "adjective periphrastic",
+    "definition": "Algal means of algae.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "algorithm": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "An algorithm is a list of steps for doing a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "aloft": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Aloft means up in the air.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "altitude": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "Altitude is how high something is above the ground.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "altogether": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Altogether means all of them counted as one.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "annual": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Annual means once in a year.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "anvil": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "An anvil is a heavy metal block that a person hits hot metal on.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "anywhere": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Anywhere means in any place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "apartment": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "An apartment is a home that is part of a larger building.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "apparent": {
+    "concept": "real_and_pretend",
+    "pos": "adjective periphrastic",
+    "definition": "Apparent means looking real, whether it is or not.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "apply": {
+    "concept": "activity",
+    "pos": "verb",
+    "definition": "To apply a thing is to put it on something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "appropriate": {
+    "concept": "should_and_should_not",
+    "pos": "adjective periphrastic",
+    "definition": "Appropriate means right for the time and the place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "approximate": {
+    "concept": "close_enough",
+    "pos": "adjective periphrastic",
+    "definition": "Approximate means close but not exact.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "approximately": {
+    "concept": "close_enough",
+    "pos": "",
+    "definition": "Approximately means close to, but not exactly.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "arrive": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To arrive is to get to a place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "art": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "Art is a picture or other made thing that a person makes to be looked at.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "artwork": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "An artwork is one piece of art.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ash": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Ash is the gray dust left after a fire.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ashamed": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Ashamed means feeling bad about something you did.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "assume": {
+    "concept": "guess",
+    "pos": "verb",
+    "definition": "To assume a thing is to take it as true without checking.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "attack": {
+    "concept": "danger",
+    "pos": "noun verb",
+    "definition": "To attack is to try to hurt, and an attack is that try.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "attention": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "Attention is looking at one thing and not at the others.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "automobile": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "An automobile is a car.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "available": {
+    "concept": "having",
+    "pos": "adjective periphrastic",
+    "definition": "Available means here and able to be used.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "awareness": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "Awareness is knowing what is around you.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bar": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A bar is a long hard piece of metal or wood.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "barb": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A barb is a sharp point that sticks back on a hook.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bare": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Bare means with nothing covering it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "barometer": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A barometer is a tool that measures how hard the air presses.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "barrier": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A barrier is something that stops you going through.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "base": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A base is the bottom part that a thing stands on.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "basketball": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "Basketball is a game in which you throw a ball through a high ring.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bat": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A bat is a small animal that flies at night.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "beg": {
+    "concept": "asking",
+    "pos": "verb",
+    "definition": "To beg is to ask hard for something you need.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "birdie": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A birdie is a small bird.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bless": {
+    "concept": "good_and_bad",
+    "pos": "verb",
+    "definition": "To bless a person is to wish the person good.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "blood": {
+    "concept": "body_part",
+    "pos": "mass noun",
+    "definition": "Blood is the red liquid that moves inside the body.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bloom": {
+    "concept": "plant",
+    "pos": "noun verb",
+    "definition": "A bloom is a flower, and to bloom is to open into a flower.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "born": {
+    "concept": "living_and_not_living",
+    "pos": "adjective",
+    "definition": "Born means having come into life.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "brain": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "The brain is the part of the head with which a person thinks.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "breadth": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "Breadth is how wide a thing is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "brief": {
+    "concept": "duration",
+    "pos": "adjective",
+    "definition": "Brief means lasting only a short time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "bulge": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A bulge is a part that sticks out in a round way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "calculate": {
+    "concept": "measuring",
+    "pos": "verb",
+    "definition": "To calculate is to work out a number.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "capital": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A capital is the city from which a country is led.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "carefully": {
+    "concept": "way_of_doing",
+    "pos": "",
+    "definition": "Carefully means with care.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "chamber": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A chamber is a room.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "chance": {
+    "concept": "how_sure",
+    "pos": "noun",
+    "definition": "A chance is a possibility that something will happen.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "character": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A character is a person in a story.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "cheer": {
+    "concept": "feeling",
+    "pos": "noun verb",
+    "definition": "To cheer is to shout with joy, and cheer is that feeling.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "clink": {
+    "concept": "sound",
+    "pos": "noun verb",
+    "definition": "A clink is a short hard sound, and to clink is to make it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "clockwise": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Clockwise means turning the way the hands of a clock turn.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "cluster": {
+    "concept": "grouping",
+    "pos": "noun",
+    "definition": "A cluster is a small group of things close together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "collapse": {
+    "concept": "things_break",
+    "pos": "verb",
+    "definition": "To collapse is to fall in.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "collection": {
+    "concept": "grouping",
+    "pos": "noun",
+    "definition": "A collection is a group of things kept together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "combination": {
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "definition": "A combination is things put together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "combine": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To combine things is to put them together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "commercial": {
+    "concept": "exchange",
+    "pos": "adjective periphrastic",
+    "definition": "Commercial means about buying and selling.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "commonly": {
+    "concept": "tending",
+    "pos": "",
+    "definition": "Commonly means often, as most people do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "comparison": {
+    "concept": "same_and_different",
+    "pos": "noun",
+    "definition": "A comparison is looking at how two things are the same or different.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "complete": {
+    "concept": "finished_or_not",
+    "pos": "adjective periphrastic",
+    "definition": "Complete means having all its parts, with nothing left to do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "completely": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Completely means all the way, with nothing left.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "complex": {
+    "concept": "component_and_system",
+    "pos": "adjective periphrastic",
+    "definition": "Complex means having many parts that fit together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "component": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A component is one part of a larger thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "composition": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A composition is something a person has put together, such as a piece of writing or music.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "constant": {
+    "concept": "change",
+    "pos": "adjective periphrastic",
+    "definition": "Constant means staying the same and not stopping.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "constantly": {
+    "concept": "change",
+    "pos": "",
+    "definition": "Constantly means all the time, without stopping.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "contain": {
+    "concept": "inside_and_outside",
+    "pos": "verb",
+    "definition": "To contain a thing is to have it inside.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "continue": {
+    "concept": "keeping_going",
+    "pos": "verb",
+    "definition": "To continue is to keep going.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "continuous": {
+    "concept": "keeping_going",
+    "pos": "adjective periphrastic",
+    "definition": "Continuous means going on without a stop.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "contrast": {
+    "concept": "same_and_different",
+    "pos": "noun",
+    "definition": "A contrast is a clear difference between two things.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "contribute": {
+    "concept": "giving_a_reason",
+    "pos": "verb",
+    "definition": "To contribute is to give a part toward a larger thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "convention": {
+    "concept": "rule",
+    "pos": "noun",
+    "definition": "A convention is a way of doing something that people have agreed on.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "coward": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "A coward is a person who runs from danger when staying would be right.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "crest": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A crest is the top of a wave or a hill.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "critical": {
+    "concept": "checking",
+    "pos": "adjective periphrastic",
+    "definition": "Critical means judging carefully, or so important that it must not fail.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "crystal": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A crystal is a hard clear solid with flat faces.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "curve": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A curve is a line that bends and is not straight.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "daily": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Daily means every day.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "daylight": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "Daylight is the light of day.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "daytime": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "Daytime is the part of the day when the sun is up.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "decrease": {
+    "concept": "more_and_fewer",
+    "pos": "verb",
+    "definition": "To decrease is to become less.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "defense": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "A defense is what you do to stop an attack.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "delight": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "Delight is a strong happy feeling.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "desert": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A desert is a dry place with very little rain.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "development": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "Development is the process of becoming more complete.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "dew": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Dew is small drops of water that form on cold things at night.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "diagram": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A diagram is a drawing that shows how parts of a thing fit.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "diameter": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A diameter is the distance straight across a circle through its middle.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "diligent": {
+    "concept": "activity",
+    "pos": "adjective periphrastic",
+    "definition": "Diligent means working with care and not stopping.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "dim": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Dim means not bright.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "direct": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Direct means straight, with nothing in between.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "directly": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Directly means in a straight way, with nothing in between.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "distinct": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Distinct means clearly different, so you can tell it from another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "distinguish": {
+    "concept": "same_and_different",
+    "pos": "verb",
+    "definition": "To distinguish things is to tell them apart.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "divide": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To divide is to break one thing into parts.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "double": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Double means twice as much.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "dozen": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A dozen is twelve.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "duck": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A duck is a bird that swims.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "duration": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "Duration is how long something lasts.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "dwarf": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A dwarf is a person or a thing much smaller than others of its kind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "eager": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Eager means wanting very much to do a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "earn": {
+    "concept": "exchange",
+    "pos": "verb",
+    "definition": "To earn money is to get it by work.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "eastward": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Eastward means toward the east.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "effective": {
+    "concept": "cause_and_effect",
+    "pos": "adjective periphrastic",
+    "definition": "Effective means working, so that it does what it is for.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "eighteen": {
+    "concept": "natural_number",
+    "pos": "noun",
+    "definition": "Eighteen is the number 18.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "electric": {
+    "concept": "force",
+    "pos": "adjective periphrastic",
+    "definition": "Electric means of electricity.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "electrical": {
+    "concept": "force",
+    "pos": "adjective periphrastic",
+    "definition": "Electrical means worked by electricity.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "electricity": {
+    "concept": "force",
+    "pos": "mass noun",
+    "definition": "Electricity is the power that makes light and that moves along a wire.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "enjoy": {
+    "concept": "feeling",
+    "pos": "verb",
+    "definition": "To enjoy a thing is to feel happy doing it or having it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "entire": {
+    "concept": "all_some_none",
+    "pos": "adjective periphrastic",
+    "definition": "Entire means all of it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "entirely": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Entirely means all the way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "especially": {
+    "concept": "more_and_fewer",
+    "pos": "",
+    "definition": "Especially means more than the others.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "essential": {
+    "concept": "need",
+    "pos": "adjective periphrastic",
+    "definition": "Essential means needed, so that the thing cannot do without it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "estimate": {
+    "concept": "close_enough",
+    "pos": "noun verb",
+    "definition": "To estimate is to give a number that is close but not exact, and an estimate is that number.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "eventually": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Eventually means at a later time, after other things.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "exact": {
+    "concept": "close_enough",
+    "pos": "adjective periphrastic",
+    "definition": "Exact means right, with nothing more and nothing less.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "examine": {
+    "concept": "checking",
+    "pos": "verb",
+    "definition": "To examine a thing is to look at it carefully.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "exceed": {
+    "concept": "more_and_fewer",
+    "pos": "verb",
+    "definition": "To exceed a number is to go beyond it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "excess": {
+    "concept": "more_and_fewer",
+    "pos": "noun",
+    "definition": "An excess is more than is needed.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "experience": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "Experience is what you come to know by doing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "extend": {
+    "concept": "spatial_position",
+    "pos": "verb",
+    "definition": "To extend is to reach farther.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "extent": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "The extent of a thing is how far it reaches.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "extreme": {
+    "concept": "all_some_none",
+    "pos": "adjective periphrastic",
+    "definition": "Extreme means as far as it goes.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "extremely": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Extremely means to a very great degree.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fable": {
+    "concept": "story",
+    "pos": "noun",
+    "definition": "A fable is a short story that teaches a lesson, often with animals that talk.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "factor": {
+    "concept": "cause_and_effect",
+    "pos": "noun",
+    "definition": "A factor is one of the things that helps make a result.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fairly": {
+    "concept": "close_enough",
+    "pos": "",
+    "definition": "Fairly means to a moderate degree.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fairy": {
+    "concept": "real_and_pretend",
+    "pos": "noun",
+    "definition": "A fairy is a small pretend person in a story, often with wings.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "familiar": {
+    "concept": "knowing",
+    "pos": "adjective periphrastic",
+    "definition": "Familiar means already known.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "farm": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A farm is a piece of land where people grow food and keep animals.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "farther": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Farther means at a greater distance.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fault": {
+    "concept": "mistake",
+    "pos": "noun",
+    "definition": "A fault is something wrong in a thing or in what a person did.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "feast": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A feast is a large special meal.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fifteen": {
+    "concept": "natural_number",
+    "pos": "noun",
+    "definition": "Fifteen is the number 15.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "figure": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A figure is a number, or a drawn shape.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "flag": {
+    "concept": "standing_for",
+    "pos": "noun",
+    "definition": "A flag is a piece of cloth on a pole that stands for a country or a group.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fond": {
+    "concept": "feeling",
+    "pos": "adjective",
+    "definition": "Fond means liking a person or a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "formation": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "A formation is something that has taken a shape, or the shaping itself.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "fox": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A fox is a wild animal with a pointed face and a thick tail.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "frequency": {
+    "concept": "cycle",
+    "pos": "noun",
+    "definition": "Frequency is how often something happens in a given time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "frequent": {
+    "concept": "tending",
+    "pos": "adjective periphrastic",
+    "definition": "Frequent means happening often.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "frost": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Frost is ice that forms on cold things when the air is cold.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gain": {
+    "concept": "more_and_fewer",
+    "pos": "verb",
+    "definition": "To gain is to get more.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "galaxy": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A galaxy is a vast group of stars.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gale": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A gale is a very strong wind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gardener": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A gardener is a person who grows plants.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gauge": {
+    "concept": "measuring",
+    "pos": "noun verb",
+    "definition": "A gauge is a tool that measures, and to gauge is to measure or to judge.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "general": {
+    "concept": "all_some_none",
+    "pos": "adjective periphrastic",
+    "definition": "General means about all of a kind, not only one.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "generate": {
+    "concept": "cause_and_effect",
+    "pos": "verb",
+    "definition": "To generate a thing is to make it come about.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ghost": {
+    "concept": "real_and_pretend",
+    "pos": "noun",
+    "definition": "A ghost is the supposed spirit of a dead person.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "giraffe": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A giraffe is a very tall animal with a long neck.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "glee": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "Glee is a bright happy feeling.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "globe": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A globe is a ball, or a ball-shaped map of the earth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "glow": {
+    "concept": "physical_property",
+    "pos": "noun verb",
+    "definition": "To glow is to give off a soft light, and a glow is that light.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "golden": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Golden means of the color of gold, or made of gold.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "government": {
+    "concept": "someone_in_charge",
+    "pos": "noun",
+    "definition": "A government is the group that leads a country and makes its rules.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "grave": {
+    "concept": "dying",
+    "pos": "noun",
+    "definition": "A grave is the place in the ground where a dead person is put.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "grid": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A grid is a set of lines that cross to make squares.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "guard": {
+    "concept": "danger",
+    "pos": "noun verb",
+    "definition": "To guard a thing is to watch it so that it is not hurt, and a guard is a person who does that.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "guidance": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "Guidance is help in choosing what to do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "guide": {
+    "concept": "way_of_doing",
+    "pos": "noun verb",
+    "definition": "To guide a person is to show the way, and a guide is a person or a book that does that.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "gust": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A gust is a sudden short rush of wind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "habit": {
+    "concept": "tending",
+    "pos": "noun",
+    "definition": "A habit is something you do often, without having to decide each time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "habitat": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A habitat is the kind of place where an animal or a plant lives.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "handful": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A handful is as much as a hand can hold, or only a few.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "happiness": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "Happiness is the feeling of being happy.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hardly": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Hardly means almost not.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hay": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Hay is dried grass used to feed animals.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "helpful": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Helpful means giving help.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "herd": {
+    "concept": "grouping",
+    "pos": "noun",
+    "definition": "A herd is a group of animals that stay together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hive": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A hive is a house for bees.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "honesty": {
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "definition": "Honesty is telling the truth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "horizontal": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Horizontal means level with the ground, not up and down.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hourglass": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "An hourglass is a glass that measures time by letting sand run from one part into another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "huge": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Huge means very large.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "humidity": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "Humidity is water held in the air.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hunter": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A hunter is a person who chases animals.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hydrogen": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Hydrogen is the lightest gas.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "idle": {
+    "concept": "activity",
+    "pos": "adjective periphrastic",
+    "definition": "Idle means not working.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "inch": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "An inch is a small unit of length.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "indicate": {
+    "concept": "reporting",
+    "pos": "verb",
+    "definition": "To indicate a thing is to point it out.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "indigo": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "Indigo is a deep blue color.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "indoors": {
+    "concept": "inside_and_outside",
+    "pos": "",
+    "definition": "Indoors means inside a building.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "influence": {
+    "concept": "cause_and_effect",
+    "pos": "noun verb",
+    "definition": "To influence a person is to change what the person does, and influence is that power.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "initial": {
+    "concept": "sequence",
+    "pos": "adjective periphrastic",
+    "definition": "Initial means first.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "injury": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "An injury is a hurt to the body.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "inland": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Inland means away from the sea, toward the inside of the land.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "inner": {
+    "concept": "inside_and_outside",
+    "pos": "adjective periphrastic",
+    "definition": "Inner means on the inside.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "instant": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "An instant is a very short time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "instantly": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Instantly means at once.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "instrument": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "An instrument is a tool, especially one used to measure or to make music.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "intense": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Intense means very strong.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "intensity": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "Intensity is how strong something is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "interesting": {
+    "concept": "finding_out",
+    "pos": "adjective periphrastic",
+    "definition": "Interesting means holding your attention.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "invisible": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Invisible means not able to be seen.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "keeper": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A keeper is a person who looks after something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "kill": {
+    "concept": "dying",
+    "pos": "verb",
+    "definition": "To kill is to cause to die.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "labor": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "Labor is hard work.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "lad": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A lad is a boy.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "lane": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A lane is a narrow road.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "language": {
+    "concept": "word",
+    "pos": "noun",
+    "definition": "A language is the words and rules a people uses to speak.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "largely": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Largely means mostly.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "launch": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To launch a thing is to send it off.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "link": {
+    "concept": "joining_and_separating",
+    "pos": "noun verb",
+    "definition": "A link is something that joins two things, and to link is to join them.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "lion": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A lion is a large wild cat.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "lip": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A lip is one of the two soft edges of the mouth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "locate": {
+    "concept": "spatial_position",
+    "pos": "verb",
+    "definition": "To locate a thing is to find where it is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "loop": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A loop is a line or a rope that bends back to meet itself.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "loss": {
+    "concept": "more_and_fewer",
+    "pos": "noun",
+    "definition": "A loss is no longer having something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "luck": {
+    "concept": "how_sure",
+    "pos": "noun",
+    "definition": "Luck is what happens by chance, good or bad.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mainly": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Mainly means mostly.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "major": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Major means large or more important.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "majority": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A majority is more than half.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mature": {
+    "concept": "change",
+    "pos": "adjective periphrastic",
+    "definition": "Mature means fully grown.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "meadow": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A meadow is a field of grass.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "measurement": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A measurement is a number you get by measuring.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "memory": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "A memory is something you still know from the past.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mercury": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Mercury is a heavy silver metal that is liquid at ordinary temperatures.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mercy": {
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "definition": "Mercy is kindness to a person you could hurt.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "million": {
+    "concept": "natural_number",
+    "pos": "noun",
+    "definition": "A million is a thousand thousands.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "miserable": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Miserable means very unhappy.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mission": {
+    "concept": "goal",
+    "pos": "noun",
+    "definition": "A mission is a task a person or a group is sent to do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mobile": {
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "definition": "Mobile means able to be moved.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mode": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "A mode is a way of doing or of being.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "moderate": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Moderate means neither large nor small, neither strong nor weak.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "moist": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Moist means slightly wet.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "moisture": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Moisture is a small amount of water in something or in the air.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "monkey": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A monkey is an animal that climbs and has hands.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mostly": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Mostly means for the most part.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "movement": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "Movement is the act of moving.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "music": {
+    "concept": "sound",
+    "pos": "noun",
+    "definition": "Music is sound put in order so that people like to hear it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "native": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Native means belonging to the place where a thing is from.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "neighbor": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A neighbor is a person who lives near you.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "neither": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Neither means not one and not the other.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "normal": {
+    "concept": "tending",
+    "pos": "adjective periphrastic",
+    "definition": "Normal means usual.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "normally": {
+    "concept": "tending",
+    "pos": "",
+    "definition": "Normally means in the usual way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "northeast": {
+    "concept": "direction",
+    "pos": "noun",
+    "definition": "Northeast is the direction between north and east.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "northwest": {
+    "concept": "direction",
+    "pos": "noun",
+    "definition": "Northwest is the direction between north and west.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "numerous": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Numerous means many.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "oats": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Oats are a grain used as food.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "obscure": {
+    "concept": "knowing",
+    "pos": "adjective periphrastic",
+    "definition": "Obscure means hard to see or not well known.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "office": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "An office is a room where people do their work.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "official": {
+    "concept": "someone_in_charge",
+    "pos": "adjective noun periphrastic",
+    "definition": "Official means of the office in charge, and an official is a person who holds such an office.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "oil": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Oil is a thick liquid that does not mix with water and that burns.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ordinary": {
+    "concept": "tending",
+    "pos": "adjective periphrastic",
+    "definition": "Ordinary means usual, not special.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "original": {
+    "concept": "sequence",
+    "pos": "adjective periphrastic",
+    "definition": "Original means first, or not copied.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "otherwise": {
+    "concept": "same_and_different",
+    "pos": "",
+    "definition": "Otherwise means in a different way, or if not.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ought": {
+    "concept": "should_and_should_not",
+    "pos": "",
+    "definition": "Ought means should.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "outdoor": {
+    "concept": "inside_and_outside",
+    "pos": "adjective periphrastic",
+    "definition": "Outdoor means outside, in the open air.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "outer": {
+    "concept": "inside_and_outside",
+    "pos": "adjective periphrastic",
+    "definition": "Outer means on the outside.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "outward": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Outward means toward the outside.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "overall": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Overall means taking everything together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "overhead": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Overhead means above your head.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "owner": {
+    "concept": "having",
+    "pos": "noun",
+    "definition": "An owner is a person who has a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pale": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Pale means light in color, with little of the strong color.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "paragraph": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A paragraph is a group of sentences about one point.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "particular": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Particular means this one and not another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "particularly": {
+    "concept": "more_and_fewer",
+    "pos": "",
+    "definition": "Particularly means especially.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "partly": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Partly means in part, not all.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pasture": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A pasture is a field where animals eat grass.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pattern": {
+    "concept": "sequence",
+    "pos": "noun",
+    "definition": "A pattern is a shape or an order that repeats.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "peak": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A peak is the pointed top of a mountain, or the highest point.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "peculiar": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Peculiar means strange and not like the usual.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "plainly": {
+    "concept": "reporting",
+    "pos": "",
+    "definition": "Plainly means in a clear way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "plane": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A plane is a flat surface.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "polar": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Polar means of the far north or the far south of the earth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "poorly": {
+    "concept": "good_and_bad",
+    "pos": "",
+    "definition": "Poorly means not well.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "possibility": {
+    "concept": "how_sure",
+    "pos": "noun",
+    "definition": "A possibility is something that may happen.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "possibly": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Possibly means maybe.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "powerful": {
+    "concept": "force",
+    "pos": "adjective periphrastic",
+    "definition": "Powerful means having great power.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "practice": {
+    "concept": "way_of_doing",
+    "pos": "noun verb",
+    "definition": "To practice is to do a thing again and again in order to do it well, and practice is that work.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "prepare": {
+    "concept": "plan",
+    "pos": "verb",
+    "definition": "To prepare is to get ready.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pressure": {
+    "concept": "force",
+    "pos": "noun",
+    "definition": "Pressure is how hard something pushes on a surface.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "previous": {
+    "concept": "sequence",
+    "pos": "adjective periphrastic",
+    "definition": "Previous means coming before.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "price": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A price is how much money a thing costs.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "primary": {
+    "concept": "sequence",
+    "pos": "adjective periphrastic",
+    "definition": "Primary means first, or most important.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "prize": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A prize is something given to a person who wins.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "product": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A product is something that has been made.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "profile": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A profile is a side view, or a short account of a person or a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "protection": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "Protection is keeping something from harm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "proud": {
+    "concept": "feeling",
+    "pos": "adjective",
+    "definition": "Proud means feeling that something you are or did is good.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pupil": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A pupil is a student.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "purpose": {
+    "concept": "goal",
+    "pos": "noun",
+    "definition": "A purpose is what something is for.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "quality": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A quality is a way a thing is, such as hard or soft.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "quarter": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A quarter is one of four equal parts.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rainfall": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "Rainfall is the rain that falls, or how much of it falls.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rainy": {
+    "concept": "weather",
+    "pos": "adjective",
+    "definition": "Rainy means having rain.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rare": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Rare means not often found.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rarely": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Rarely means not often.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rat": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A rat is a small animal with a long tail that often lives near people.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rate": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A rate is how much something changes in a given time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "recent": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Recent means from a time not long ago.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "recess": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "A recess is a short stop in work or in school.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "recognize": {
+    "concept": "knowing",
+    "pos": "verb",
+    "definition": "To recognize a thing is to know it when you see it again.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "reduce": {
+    "concept": "more_and_fewer",
+    "pos": "verb",
+    "definition": "To reduce a thing is to make it less.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "region": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A region is a part of a country or of the earth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "remote": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Remote means far away.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "require": {
+    "concept": "need",
+    "pos": "verb",
+    "definition": "To require a thing is to need it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "respond": {
+    "concept": "reporting",
+    "pos": "verb",
+    "definition": "To respond is to answer.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "responsibility": {
+    "concept": "should_and_should_not",
+    "pos": "noun",
+    "definition": "A responsibility is something you ought to do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "result": {
+    "concept": "cause_and_effect",
+    "pos": "noun",
+    "definition": "A result is what comes from a cause.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "retreat": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To retreat is to go back from danger.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "revenge": {
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "definition": "Revenge is hurting someone because that person hurt you.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "reverse": {
+    "concept": "direction",
+    "pos": "verb",
+    "definition": "To reverse is to turn the other way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "reward": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A reward is something given for a good act.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rider": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A rider is a person who rides.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ridge": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A ridge is a long narrow top of a hill.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ripe": {
+    "concept": "change",
+    "pos": "adjective periphrastic",
+    "definition": "Ripe means fully grown and ready to eat, of fruit.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "risk": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "A risk is a chance of harm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "roar": {
+    "concept": "sound",
+    "pos": "noun verb",
+    "definition": "A roar is a loud deep sound, and to roar is to make it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "role": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "A role is the part a person has to do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "roughly": {
+    "concept": "close_enough",
+    "pos": "",
+    "definition": "Roughly means about, not exactly.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "saddle": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A saddle is a seat put on a horse.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "safely": {
+    "concept": "danger",
+    "pos": "",
+    "definition": "Safely means without harm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sake": {
+    "concept": "goal",
+    "pos": "noun",
+    "definition": "The sake of a thing is the reason for which you do something else.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sample": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A sample is a small part that shows what the whole is like.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "scene": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A scene is a place as you see it, or a part of a story.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "seat": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A seat is a place to sit.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "section": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A section is a part cut or thought of as separate.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "severe": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Severe means very hard or very bad.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shade": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "Shade is a place out of the direct light of the sun.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shaft": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A shaft is a long straight bar, or a long straight hole down into the ground.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shawl": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A shawl is a piece of cloth worn over the shoulders.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sheet": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A sheet is a large thin piece of cloth or of paper.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shelter": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "A shelter is a place that protects you from weather or from harm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shepherd": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A shepherd is a person who looks after sheep.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ship": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A ship is a large boat.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shock": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "A shock is a sudden upset.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shrill": {
+    "concept": "sound",
+    "pos": "adjective",
+    "definition": "Shrill means high and sharp in sound.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "signal": {
+    "concept": "reporting",
+    "pos": "noun",
+    "definition": "A signal is a sign sent to tell something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "silently": {
+    "concept": "sound",
+    "pos": "",
+    "definition": "Silently means without a sound.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "similar": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Similar means alike, but not the same.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "simply": {
+    "concept": "way_of_doing",
+    "pos": "",
+    "definition": "Simply means in a simple way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "site": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A site is a place where something is or was.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "situation": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A situation is the way things are at a time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sleet": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Sleet is frozen or partly frozen rain.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "slightly": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Slightly means by a small amount.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "slope": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A slope is ground that is higher at one end than at the other.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "snowball": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A snowball is a ball of pressed snow.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "somewhat": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Somewhat means to some degree, but not much.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sooner": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Sooner means at an earlier time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "soul": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "The soul is what some people say is the inner life of a person, apart from the body.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "source": {
+    "concept": "cause_and_effect",
+    "pos": "noun",
+    "definition": "A source is where something comes from.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "southeast": {
+    "concept": "direction",
+    "pos": "noun",
+    "definition": "Southeast is the direction between south and east.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "southwest": {
+    "concept": "direction",
+    "pos": "noun",
+    "definition": "Southwest is the direction between south and west.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "spirit": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "Spirit is the feeling with which a person acts, or a supposed being without a body.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "spite": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "Spite is a wish to hurt someone.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sponge": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A sponge is a soft thing full of holes that takes up water.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "stable": {
+    "concept": "change",
+    "pos": "adjective periphrastic",
+    "definition": "Stable means not easily moved or changed.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "standard": {
+    "concept": "rule",
+    "pos": "noun",
+    "definition": "A standard is a rule for how something should be.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "stir": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To stir is to move something around in a liquid.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "student": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A student is a person who studies.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sturdy": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Sturdy means strong and not easily broken.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "subject": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "A subject is what a book or a talk is about.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "submarine": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A submarine is a boat that travels under the water.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "success": {
+    "concept": "goal",
+    "pos": "noun",
+    "definition": "Success is doing what you set out to do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "successful": {
+    "concept": "goal",
+    "pos": "adjective periphrastic",
+    "definition": "Successful means having done what was set out.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sunlight": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "Sunlight is the light of the sun.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sunrise": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "Sunrise is the time when the sun comes up.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sunshine": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "Sunshine is bright light from the sun.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "super": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Super means above, or of the highest kind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "surf": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "Surf is the waves breaking on a shore.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sweat": {
+    "concept": "body_part",
+    "pos": "noun verb",
+    "definition": "Sweat is the salty water the skin gives off when you are hot, and to sweat is to give it off.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tan": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Tan means of a light brown color.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "target": {
+    "concept": "goal",
+    "pos": "noun",
+    "definition": "A target is what you aim at.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "terrible": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Terrible means very bad.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "terror": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "Terror is very great fear.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "theater": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A theater is a building where people go to see a play.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tone": {
+    "concept": "sound",
+    "pos": "noun",
+    "definition": "A tone is the quality of a sound or of a voice.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tornado": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A tornado is a violent turning wind that reaches from a cloud to the ground.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "total": {
+    "concept": "quantity",
+    "pos": "adjective noun periphrastic",
+    "definition": "A total is the whole amount, and total means including all of it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "track": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A track is a path, or the marks left by something that moved.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "traditional": {
+    "concept": "tending",
+    "pos": "adjective periphrastic",
+    "definition": "Traditional means done in the way people have long done it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "train": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A train is a line of cars pulled along a track.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tremendous": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Tremendous means very great.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "trial": {
+    "concept": "checking",
+    "pos": "noun",
+    "definition": "A trial is a test, or a hearing to decide whether a person did a wrong.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "triumph": {
+    "concept": "goal",
+    "pos": "noun",
+    "definition": "A triumph is a great success.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "truly": {
+    "concept": "real_and_pretend",
+    "pos": "",
+    "definition": "Truly means in truth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "trunk": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A trunk is the main stem of a tree, or a large box for carrying things.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tub": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A tub is a large open container, often for washing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "twinkle": {
+    "concept": "physical_property",
+    "pos": "verb",
+    "definition": "To twinkle is to shine with a light that keeps changing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "type": {
+    "concept": "same_and_different",
+    "pos": "noun",
+    "definition": "A type is a kind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "typical": {
+    "concept": "tending",
+    "pos": "adjective periphrastic",
+    "definition": "Typical means of the usual kind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "typically": {
+    "concept": "tending",
+    "pos": "",
+    "definition": "Typically means in the usual way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "unhappy": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Unhappy means not happy.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "uniform": {
+    "concept": "same_and_different",
+    "pos": "adjective noun periphrastic",
+    "definition": "Uniform means the same all through, and a uniform is the same clothes worn by a group.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "unique": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Unique means the only one of its kind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "usual": {
+    "concept": "tending",
+    "pos": "adjective periphrastic",
+    "definition": "Usual means happening most of the time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "valley": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A valley is the low land between hills.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vapor": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Vapor is a gas that came from a liquid, such as water in the air.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "variety": {
+    "concept": "same_and_different",
+    "pos": "noun",
+    "definition": "A variety is a set of different things of one kind, or one such kind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vary": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To vary is to change, or to be different.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vast": {
+    "concept": "quantity",
+    "pos": "adjective",
+    "definition": "Vast means very great in size.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vegetation": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Vegetation is plants growing in a place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vertical": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Vertical means straight up and down.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vertically": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Vertically means straight up and down.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vessel": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A vessel is a ship, or a container for liquid.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "victory": {
+    "concept": "goal",
+    "pos": "noun",
+    "definition": "A victory is a win.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "violent": {
+    "concept": "force",
+    "pos": "adjective periphrastic",
+    "definition": "Violent means using great force to hurt.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "visible": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Visible means able to be seen.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vital": {
+    "concept": "need",
+    "pos": "adjective periphrastic",
+    "definition": "Vital means necessary for life, or very important.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vocal": {
+    "concept": "sound",
+    "pos": "adjective periphrastic",
+    "definition": "Vocal means of the voice.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "volunteer": {
+    "concept": "activity",
+    "pos": "noun verb",
+    "definition": "A volunteer is a person who offers to do a thing without being made to, and to volunteer is to offer.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "warmth": {
+    "concept": "heat",
+    "pos": "noun",
+    "definition": "Warmth is the quality of being warm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "warn": {
+    "concept": "danger",
+    "pos": "verb",
+    "definition": "To warn a person is to tell the person of a danger.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "western": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Western means of the west.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "westward": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Westward means toward the west.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wicked": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Wicked means very bad on purpose.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "width": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "Width is how wide a thing is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "willing": {
+    "concept": "choosing",
+    "pos": "adjective periphrastic",
+    "definition": "Willing means ready to do a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "witness": {
+    "concept": "saying_what_you_saw",
+    "pos": "noun verb",
+    "definition": "A witness is a person who saw something, and to witness is to see it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wonderful": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Wonderful means so good that it causes wonder.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wool": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Wool is the soft hair of a sheep, used to make cloth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "worldwide": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Worldwide means over the whole world.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  }
+}

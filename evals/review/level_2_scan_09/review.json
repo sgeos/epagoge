@@ -1,0 +1,901 @@
+{
+  "outbound": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Outbound means going out.",
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "outbound"
+    ]
+  },
+  "outdated": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Outdated means no longer of this time.",
+    "concept": "out_of_date",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "outdated"
+    ]
+  },
+  "outflow": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Outflow is a flow going out.",
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "outflow"
+    ]
+  },
+  "outreach": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Outreach is work that goes out to people beyond a group.",
+    "concept": "people_together",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "outreach"
+    ]
+  },
+  "packing": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Packing is material put around a thing to keep it safe.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "packing"
+    ]
+  },
+  "padlock": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A padlock is a lock that hangs closed on a loop.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "padlock",
+      "padlocks"
+    ]
+  },
+  "pat": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pat is a light touch with the open hand.",
+    "concept": "touching",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pat",
+      "pats"
+    ]
+  },
+  "peninsula": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A peninsula is a piece of land with water on most sides.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "peninsula",
+      "peninsulas"
+    ]
+  },
+  "perfectly": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Perfectly means in a way that has no fault.",
+    "concept": "good_and_bad",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "perfectly"
+    ]
+  },
+  "permanent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Permanent means lasting, and not for a short time only.",
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "permanent"
+    ]
+  },
+  "permission": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Permission is being allowed to do a thing.",
+    "concept": "allowed_or_not",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "permission"
+    ]
+  },
+  "perpendicular": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Perpendicular means meeting a line or a surface at a square corner.",
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "perpendicular"
+    ]
+  },
+  "persistent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Persistent means going on and not stopping.",
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "persistent"
+    ]
+  },
+  "personal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Personal means of one person.",
+    "concept": "self_and_other",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "personal"
+    ]
+  },
+  "personnel": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Personnel are the people who work at a place.",
+    "concept": "person",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "personnel"
+    ]
+  },
+  "pet": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pet is an animal a person keeps and cares for.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pet",
+      "pets"
+    ]
+  },
+  "phenomenon": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A phenomenon is a thing that happens and can be observed.",
+    "concept": "finding_out",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "phenomenon",
+      "phenomena"
+    ]
+  },
+  "physical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Physical means of the body, or of things that can be touched or measured.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "physical"
+    ]
+  },
+  "phytoplankton": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Phytoplankton is the very small living things in water that grow as plants do.",
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "phytoplankton"
+    ]
+  },
+  "plankton": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Plankton is the very small living things that float in the water.",
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "plankton"
+    ]
+  },
+  "plumbing": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Plumbing is the pipes that carry water in a building.",
+    "concept": "household_object",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "plumbing"
+    ]
+  },
+  "poleward": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Poleward means toward the cold ends of the earth.",
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "poleward"
+    ]
+  },
+  "pose": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To pose is to hold the body in a set way.",
+    "concept": "activity",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pose",
+      "posed",
+      "poses",
+      "posing"
+    ]
+  },
+  "positively": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Positively means as a yes, or toward the better.",
+    "concept": "good_and_bad",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "positively"
+    ]
+  },
+  "potentially": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Potentially means in a way that could come to be.",
+    "concept": "how_sure",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "potentially"
+    ]
+  },
+  "precipitation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Precipitation is water that falls from clouds, as rain or snow.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "precipitation"
+    ]
+  },
+  "presently": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Presently means soon.",
+    "concept": "duration",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "presently"
+    ]
+  },
+  "prevailing": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Prevailing means most common in a place at a time.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "prevailing"
+    ]
+  },
+  "previously": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Previously means at an earlier time.",
+    "concept": "sequence",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "previously"
+    ]
+  },
+  "primarily": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Primarily means for the most part.",
+    "concept": "quantity",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "primarily"
+    ]
+  },
+  "prior": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Prior means coming before.",
+    "concept": "sequence",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "prior"
+    ]
+  },
+  "prism": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A prism is a clear block of glass that spreads a sun beam into colors.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "prism",
+      "prisms"
+    ]
+  },
+  "progressive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Progressive means moving forward a step at a time.",
+    "concept": "change",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "progressive"
+    ]
+  },
+  "prose": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Prose is ordinary writing, and not a poem.",
+    "concept": "writing",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "prose"
+    ]
+  },
+  "pursuit": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pursuit is the going after something.",
+    "concept": "activity",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pursuit",
+      "pursuits"
+    ]
+  },
+  "pussy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pussy is a cat.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pussy",
+      "pussies"
+    ]
+  },
+  "radial": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Radial means spreading out from a middle point.",
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "radial"
+    ]
+  },
+  "radiosonde": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A radiosonde is an instrument sent up through the air to measure it.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "radiosonde",
+      "radiosondes"
+    ]
+  },
+  "ratio": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A ratio is a comparison of two amounts by how many times one contains the other.",
+    "concept": "quantity",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "ratio",
+      "ratios"
+    ]
+  },
+  "receiver": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A receiver is a thing that takes in what is sent.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "receiver",
+      "receivers"
+    ]
+  },
+  "refer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To refer is to point to a source, or to send a person to someone else.",
+    "concept": "reporting",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "refer",
+      "referred",
+      "referring",
+      "refers"
+    ]
+  },
+  "refraction": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Refraction is the bending of a ray as it passes into a new material.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "refraction"
+    ]
+  },
+  "regard": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Regard is care for a person or a thing.",
+    "concept": "feeling",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "regard"
+    ]
+  },
+  "regardless": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Regardless means without being changed by a thing.",
+    "concept": "all_some_none",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "regardless"
+    ]
+  },
+  "regularly": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Regularly means again and again, at even times.",
+    "concept": "duration",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "regularly"
+    ]
+  },
+  "relative": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Relative means considered against something else.",
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "relative"
+    ]
+  },
+  "relatively": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Relatively means when set against something else.",
+    "concept": "same_and_different",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "relatively"
+    ]
+  },
+  "removal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Removal is the taking of a thing away.",
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "removal"
+    ]
+  },
+  "reside": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To reside is to live in a place.",
+    "concept": "spatial_position",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "reside",
+      "resided",
+      "resides",
+      "residing"
+    ]
+  },
+  "resolution": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Resolution is how small a difference a picture or a measure can show.",
+    "concept": "measuring",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "resolution"
+    ]
+  },
+  "respectively": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Respectively means each one in turn with its own match.",
+    "concept": "sequence",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "respectively"
+    ]
+  },
+  "rotation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A rotation is one full turn.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "rotation",
+      "rotations"
+    ]
+  },
+  "rotational": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Rotational means of turning.",
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "rotational"
+    ]
+  },
+  "runoff": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Runoff is water that flows off the land.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "runoff"
+    ]
+  },
+  "salinity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Salinity is how much salt is in water.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "salinity"
+    ]
+  },
+  "sanctuary": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sanctuary is a safe place, or a place set apart for wild animals.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "sanctuary",
+      "sanctuaries"
+    ]
+  },
+  "sandpiper": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sandpiper is a small bird of the shore.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "sandpiper",
+      "sandpipers"
+    ]
+  },
+  "saturation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Saturation is holding as much as can be held.",
+    "concept": "quantity",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "saturation"
+    ]
+  },
+  "scan": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To scan is to look over a thing with care.",
+    "concept": "finding_out",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "scan",
+      "scanned",
+      "scanning",
+      "scans"
+    ]
+  },
+  "scarcely": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Scarcely means almost not.",
+    "concept": "quantity",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "scarcely"
+    ]
+  },
+  "schoolhouse": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A schoolhouse is a building where children are taught.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "schoolhouse",
+      "schoolhouses"
+    ]
+  },
+  "schoolmaster": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A schoolmaster is a man who teaches children in a school.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "schoolmaster",
+      "schoolmasters"
+    ]
+  },
+  "schoolroom": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A schoolroom is a room where children are taught.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "schoolroom",
+      "schoolrooms"
+    ]
+  },
+  "scientific": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Scientific means done by careful test of a claim.",
+    "concept": "finding_out",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "scientific"
+    ]
+  },
+  "season": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A season is one part of the year, such as summer or winter.",
+    "concept": "cycle",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "season",
+      "seasons"
+    ]
+  },
+  "seasonal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Seasonal means happening in one part of the year.",
+    "concept": "cycle",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "seasonal"
+    ]
+  },
+  "seemingly": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Seemingly means in a way that appears so, though it may not be.",
+    "concept": "how_sure",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "seemingly"
+    ]
+  },
+  "seep": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To seep is to pass slowly through a small opening.",
+    "concept": "liquid",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "seep",
+      "seeped",
+      "seeping",
+      "seeps"
+    ]
+  },
+  "seismic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Seismic means of a shaking of the earth.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "seismic"
+    ]
+  },
+  "selection": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A selection is the set of things that were chosen.",
+    "concept": "choosing",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "selection",
+      "selections"
+    ]
+  },
+  "semester": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A semester is one of the two main parts of a school year.",
+    "concept": "duration",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "semester",
+      "semesters"
+    ]
+  },
+  "sensing": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-09-27 scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sensing is the taking in of signs from the world around.",
+    "concept": "finding_out",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "sensing"
+    ]
+  }
+}

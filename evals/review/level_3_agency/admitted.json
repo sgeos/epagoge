@@ -1,0 +1,98 @@
+{
+  "aquifer": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "An aquifer is rock under the ground with water in it.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "capillary": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A capillary is a very thin pipe that a liquid can move through.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "cohesion": {
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "definition": "Cohesion is the parts of one thing staying together.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "cohesive": {
+    "concept": "joining_and_separating",
+    "pos": "adjective periphrastic",
+    "definition": "Cohesive means staying together as one thing.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "compressibility": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Compressibility is how much a thing can be pressed into a smaller space.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "element": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "An element is a substance that you do not make from other substances.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "habitability": {
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "definition": "Habitability is how well a living thing can live in a place.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "homogeneous": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Homogeneous means the same in every part.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "hydrometer": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A hydrometer is a tool that measures how heavy a liquid is for its size.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "incompressible": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Incompressible means that pressing it does not make it smaller.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "meniscus": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A meniscus is the curved top of a liquid in a thin pipe.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "particulate": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Particulate is very small bits in the air or in water.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "permafrost": {
+    "concept": "heat",
+    "pos": "mass noun",
+    "definition": "Permafrost is ground that stays frozen.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "pharmaceutical": {
+    "concept": "tending",
+    "pos": "noun",
+    "definition": "A pharmaceutical is a thing made for treatment of a sick person.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "streamflow": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Streamflow is how much water flows in a stream.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  },
+  "tannin": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Tannin is a substance from some plants that can put color in water.",
+    "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+  }
+}

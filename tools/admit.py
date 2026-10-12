@@ -18,10 +18,13 @@ and some candidate word lists are not, so knowing where a word was
 proposed matters more than the word does.
 
 Forms are generated from the parts of speech, so a noun gets its plural
-and a verb its inflections without being asked. **Nothing is written
-unless every word passes**, including the closure check, because a word
-admitted without a grounded definition takes the dictionary out of
-self-hosting.
+and a verb its inflections without being asked. An optional ``inflection``
+object replaces a derived slot, and an optional ``forms`` list adds any
+further surface. **Nothing is written unless every word passes**, including
+the closure check, because a word admitted without a grounded definition
+takes the dictionary out of self-hosting. ``--level`` is 1 to 7. A level
+above the concept's level is allowed. A level below it is not, and that
+check belongs to the vocabulary validator rather than to this writer.
 
     PYTHONPATH=src python3 tools/admit.py words.json [--level N]
 """
@@ -35,10 +38,24 @@ import sys
 from pathlib import Path
 from typing import cast
 
-from epagoge.inflection import comparison, plural, verb_forms
-from epagoge.vocabulary import RECOGNISED_POS
+from epagoge.inflection import owed_forms
+from epagoge.vocabulary import parse_inflection, parse_pos
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def _string_list(raw: object) -> list[str] | None:
+    """A list of strings, or None when the value is not one."""
+    if raw is None:
+        return []
+    if not isinstance(raw, list):
+        return None
+    out: list[str] = []
+    for item in cast(list[object], raw):
+        if not isinstance(item, str):
+            return None
+        out.append(item)
+    return out
 
 
 def main(argv: list[str]) -> int:
@@ -46,9 +63,12 @@ def main(argv: list[str]) -> int:
     parser.add_argument("file", type=Path)
     parser.add_argument("--level", type=int, default=1)
     args = parser.parse_args(argv[1:])
+    if not 1 <= args.level <= 7:
+        parser.error("level must be from 1 to 7")
 
     wanted = cast(
-        dict[str, dict[str, str]], json.loads(args.file.read_text(encoding="utf-8"))
+        dict[str, dict[str, object]],
+        json.loads(args.file.read_text(encoding="utf-8")),
     )
     path = ROOT / "curriculum/vocabulary.json"
     raw = cast(dict[str, object], json.loads(path.read_text(encoding="utf-8")))
@@ -72,6 +92,7 @@ def main(argv: list[str]) -> int:
     concepts = {str(node["id"]) for node in nodes}
 
     problems: list[str] = []
+    parsed: dict[str, tuple[str, tuple[tuple[str, str], ...], tuple[str, ...]]] = {}
     for word, spec in wanted.items():
         if word in taken:
             problems.append(f"{word}: already admitted")
@@ -79,9 +100,11 @@ def main(argv: list[str]) -> int:
             problems.append(
                 f"{word}: concept {spec.get('concept')!r} is not in the graph"
             )
-        if not spec.get("source", "").strip():
+        source = spec.get("source", "")
+        if not isinstance(source, str) or not source.strip():
             problems.append(f"{word}: no admission source")
-        if not spec.get("definition"):
+        definition = spec.get("definition", "")
+        if not isinstance(definition, str) or not definition:
             problems.append(f"{word}: no definition")
         # **THE LIST USED TO BE SPELLED OUT HERE AND IT DRIFTED.** `mass`
         # was added to the lexicon on 2026-09-26 and `periphrastic` on
@@ -90,9 +113,17 @@ def main(argv: list[str]) -> int:
         # admits words. That is the field-enumeration defect recorded in
         # `docs/decisions/FIELD_ENUMERATION.md`, a second copy of a list that
         # has one authority. It now reads the authority.
-        for part in spec.get("pos", "").split():
-            if part not in RECOGNISED_POS:
-                problems.append(f"{word}: unknown part of speech {part!r}")
+        try:
+            pos = parse_pos(spec.get("pos") or "", word)
+            inflection = parse_inflection(spec.get("inflection"), pos, word)
+        except ValueError as exc:
+            problems.append(f"{word}: {exc}")
+            continue
+        extra = _string_list(spec.get("forms", []))
+        if extra is None:
+            problems.append(f"{word}: forms must be a list of strings")
+            continue
+        parsed[word] = (pos, inflection, tuple(extra))
     if problems:
         print(f"{len(problems)} problem(s), nothing written:", file=sys.stderr)
         for line in problems:
@@ -101,21 +132,14 @@ def main(argv: list[str]) -> int:
 
     added: list[str] = []
     for word, spec in sorted(wanted.items()):
-        parts = spec.get("pos", "").split()
-        forms: set[str] = set()
-        # **A mass noun has no plural and a periphrastic adjective has no
-        # suffixed forms.** Both qualifiers were added because the rules that
-        # demand a form manufacture one where the word has none. This tool
-        # generates the forms those rules then demand, so it has to honour the
-        # same exemptions or it writes exactly what they exist to prevent. The
-        # mass gap was live from 2026-09-26 to 2026-09-27: the validator
-        # skipped mass nouns and this tool would still have generated `funs`.
-        if "noun" in parts and "mass" not in parts and plural(word) != word:
-            forms.add(plural(word))
-        if "verb" in parts:
-            forms.update(verb_forms(word))
-        if "adjective" in parts and "periphrastic" not in parts:
-            forms.update(comparison(word))
+        pos, inflection, extra = parsed[word]
+        parts = pos.split()
+        # **The same function the validator uses.** A second copy of the
+        # spelling rules drifted once, and a mass noun would have been
+        # admitted with the plural the validator then refused to require.
+        forms = set(owed_forms(word, pos, dict(inflection)))
+        forms.update(item.strip().lower() for item in extra if item.strip())
+        forms.discard(word)
         forms -= taken
         entry: dict[str, object] = {
             "word": word,
@@ -124,12 +148,14 @@ def main(argv: list[str]) -> int:
         }
         if parts:
             entry["pos"] = " ".join(sorted(set(parts)))
+        if inflection:
+            entry["inflection"] = {key: value or None for key, value in inflection}
         # **Where a word came from, recorded at admission.** This corpus is
         # CC0 and some candidate lists are not, so the audit trail for a
         # word is worth more than the word. It also separates a word the
         # teacher reached for from one a scan proposed, which are different
         # kinds of evidence.
-        source = spec.get("source", "").strip()
+        source = str(spec.get("source", "")).strip()
         if source:
             entry["source"] = source
         if forms:
@@ -147,7 +173,7 @@ def main(argv: list[str]) -> int:
         json.dumps(raw, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
 
-    definitions = {w: spec["definition"] for w, spec in wanted.items()}
+    definitions = {w: str(spec["definition"]) for w, spec in wanted.items()}
     payload = json.dumps(definitions)
     result = subprocess.run(  # noqa: S603
         [

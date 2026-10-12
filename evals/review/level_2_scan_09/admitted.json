@@ -1,0 +1,434 @@
+{
+  "outbound": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Outbound means going out.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "outdated": {
+    "concept": "out_of_date",
+    "pos": "adjective periphrastic",
+    "definition": "Outdated means no longer of this time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "outflow": {
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "definition": "Outflow is a flow going out.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "outreach": {
+    "concept": "people_together",
+    "pos": "mass noun",
+    "definition": "Outreach is work that goes out to people beyond a group.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "packing": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Packing is material put around a thing to keep it safe.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "padlock": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A padlock is a lock that hangs closed on a loop.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pat": {
+    "concept": "touching",
+    "pos": "noun",
+    "definition": "A pat is a light touch with the open hand.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "peninsula": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A peninsula is a piece of land with water on most sides.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "perfectly": {
+    "concept": "good_and_bad",
+    "pos": "",
+    "definition": "Perfectly means in a way that has no fault.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "permanent": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Permanent means lasting, and not for a short time only.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "permission": {
+    "concept": "allowed_or_not",
+    "pos": "mass noun",
+    "definition": "Permission is being allowed to do a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "perpendicular": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Perpendicular means meeting a line or a surface at a square corner.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "persistent": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Persistent means going on and not stopping.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "personal": {
+    "concept": "self_and_other",
+    "pos": "adjective periphrastic",
+    "definition": "Personal means of one person.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "personnel": {
+    "concept": "person",
+    "pos": "mass noun",
+    "definition": "Personnel are the people who work at a place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pet": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A pet is an animal a person keeps and cares for.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "phenomenon": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "A phenomenon is a thing that happens and can be observed.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "physical": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Physical means of the body, or of things that can be touched or measured.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "phytoplankton": {
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "definition": "Phytoplankton is the very small living things in water that grow as plants do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "plankton": {
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "definition": "Plankton is the very small living things that float in the water.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "plumbing": {
+    "concept": "household_object",
+    "pos": "mass noun",
+    "definition": "Plumbing is the pipes that carry water in a building.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "poleward": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Poleward means toward the cold ends of the earth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pose": {
+    "concept": "activity",
+    "pos": "verb",
+    "definition": "To pose is to hold the body in a set way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "positively": {
+    "concept": "good_and_bad",
+    "pos": "",
+    "definition": "Positively means as a yes, or toward the better.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "potentially": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Potentially means in a way that could come to be.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "precipitation": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Precipitation is water that falls from clouds, as rain or snow.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "presently": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Presently means soon.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "prevailing": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Prevailing means most common in a place at a time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "previously": {
+    "concept": "sequence",
+    "pos": "",
+    "definition": "Previously means at an earlier time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "primarily": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Primarily means for the most part.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "prior": {
+    "concept": "sequence",
+    "pos": "adjective periphrastic",
+    "definition": "Prior means coming before.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "prism": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A prism is a clear block of glass that spreads a sun beam into colors.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "progressive": {
+    "concept": "change",
+    "pos": "adjective periphrastic",
+    "definition": "Progressive means moving forward a step at a time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "prose": {
+    "concept": "writing",
+    "pos": "mass noun",
+    "definition": "Prose is ordinary writing, and not a poem.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pursuit": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "A pursuit is the going after something.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pussy": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A pussy is a cat.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "radial": {
+    "concept": "direction",
+    "pos": "adjective periphrastic",
+    "definition": "Radial means spreading out from a middle point.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "radiosonde": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A radiosonde is an instrument sent up through the air to measure it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ratio": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A ratio is a comparison of two amounts by how many times one contains the other.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "receiver": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A receiver is a thing that takes in what is sent.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "refer": {
+    "concept": "reporting",
+    "pos": "verb",
+    "definition": "To refer is to point to a source, or to send a person to someone else.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "refraction": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Refraction is the bending of a ray as it passes into a new material.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "regard": {
+    "concept": "feeling",
+    "pos": "mass noun",
+    "definition": "Regard is care for a person or a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "regardless": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Regardless means without being changed by a thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "regularly": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Regularly means again and again, at even times.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "relative": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Relative means considered against something else.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "relatively": {
+    "concept": "same_and_different",
+    "pos": "",
+    "definition": "Relatively means when set against something else.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "removal": {
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "definition": "Removal is the taking of a thing away.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "reside": {
+    "concept": "spatial_position",
+    "pos": "verb",
+    "definition": "To reside is to live in a place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "resolution": {
+    "concept": "measuring",
+    "pos": "mass noun",
+    "definition": "Resolution is how small a difference a picture or a measure can show.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "respectively": {
+    "concept": "sequence",
+    "pos": "",
+    "definition": "Respectively means each one in turn with its own match.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rotation": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A rotation is one full turn.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rotational": {
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "definition": "Rotational means of turning.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "runoff": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Runoff is water that flows off the land.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "salinity": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Salinity is how much salt is in water.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sanctuary": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A sanctuary is a safe place, or a place set apart for wild animals.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sandpiper": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A sandpiper is a small bird of the shore.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "saturation": {
+    "concept": "quantity",
+    "pos": "mass noun",
+    "definition": "Saturation is holding as much as can be held.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "scan": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To scan is to look over a thing with care.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "scarcely": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Scarcely means almost not.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "schoolhouse": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A schoolhouse is a building where children are taught.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "schoolmaster": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A schoolmaster is a man who teaches children in a school.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "schoolroom": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A schoolroom is a room where children are taught.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "scientific": {
+    "concept": "finding_out",
+    "pos": "adjective periphrastic",
+    "definition": "Scientific means done by careful test of a claim.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "season": {
+    "concept": "cycle",
+    "pos": "noun",
+    "definition": "A season is one part of the year, such as summer or winter.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "seasonal": {
+    "concept": "cycle",
+    "pos": "adjective periphrastic",
+    "definition": "Seasonal means happening in one part of the year.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "seemingly": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Seemingly means in a way that appears so, though it may not be.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "seep": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To seep is to pass slowly through a small opening.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "seismic": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Seismic means of a shaking of the earth.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "selection": {
+    "concept": "choosing",
+    "pos": "noun",
+    "definition": "A selection is the set of things that were chosen.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "semester": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "A semester is one of the two main parts of a school year.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "sensing": {
+    "concept": "finding_out",
+    "pos": "mass noun",
+    "definition": "Sensing is the taking in of signs from the world around.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  }
+}

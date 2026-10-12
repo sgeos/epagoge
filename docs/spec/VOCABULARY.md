@@ -71,6 +71,20 @@ and a vocabulary check that quietly accepts the wrong word is worse than one
 that reports a form it does not recognise. An entry may list explicit
 `forms`, which override the suffix rules entirely.
 
+**Declared 2026-10-10.** A noun, verb, adjective or adverb that carries a
+class owes the alternates of that class. `mass` and `plural-only` say which
+number is missing. `periphrastic` and `ungraded` say how an adjective or an
+adverb compares. A registered inflection slot replaces the derived form of
+that slot. The detail is `../decisions/WORD_FORMS.md`. A word with an empty
+class is not checked, so older entries stay as they were.
+
+**Counting, the same day.** `epagoge.lexeme` and `tools/analyse_lexemes.py`
+add those alternates back together for analysis and for scheduling across
+levels. One mode stays inside a class. The other counts every declared
+class of the same citation once. The check above is unchanged. A group is
+a proposal, and a spelling that the rules send to two citation forms is
+left unresolved.
+
 ## Exemptions
 
 Numerals are always admissible. Proper nouns, units, and source identifiers

@@ -203,7 +203,13 @@ def measure(batch: Path) -> dict[str, object]:
         str(n): len({t.word for t in vocabulary.terms if t.level <= n}) for n in (1, 2)
     }
     old = cast(dict[str, int], before["counts"])
-    if counts["1"] != old["1"] or counts["2"] - old["2"] != len(admitted):
+    # **Later batches share this vocabulary file.** The live count is the
+    # lexicon now, not the lexicon on the day this batch was written. This
+    # batch's admissions must still be inside that growth, and level one
+    # must be unchanged. Requiring equality rejected every earlier batch
+    # once a later one had been admitted.
+    growth = counts["2"] - old["2"]
+    if counts["1"] != old["1"] or growth < len(admitted):
         raise ValueError("vocabulary change differs from reviewed admissions")
     decided = [str(row["decision"]) for row in review.values()]
     measured: dict[str, object] = {

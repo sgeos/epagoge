@@ -56,6 +56,12 @@ token budget in the scheme, so the corpus grows least where the reader
 grows fastest. That is the first thing to revisit if level two proves
 unreachable from level one.
 
+**Confirmed 2026-10-10.** The operator stated that grade 8 is level three.
+That is the ladder above, not a new row. Source material through grade six
+is candidate text for level two. Material at the grade-eight band, and the
+older part of a work that continues past grade six, is candidate text for
+level three. The list is `AGENCY_SOURCES.md`.
+
 ## Three axes, and what is measured
 
 ### Word count

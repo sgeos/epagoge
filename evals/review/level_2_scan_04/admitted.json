@@ -1,0 +1,404 @@
+{
+  "feature": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A feature is a part of a thing that people can see.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "file": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A file is written pages kept together.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "generally": {
+    "concept": "tending",
+    "pos": "",
+    "definition": "Generally means for most things, but not for all.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "grace": {
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "definition": "Grace is a kind and easy way of moving or of treating a person.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ham": {
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "definition": "Ham is a kind of food that comes from an animal.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "hawk": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A hawk is a bird that catches smaller animals.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "journey": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A journey is going a long way from one place to another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "knee": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "The knee is the middle of the leg, where the leg can bend.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "lightning": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "Lightning is a bright light in the sky during a storm.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "maid": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A maid is a person who works in a house.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "master": {
+    "concept": "someone_in_charge",
+    "pos": "noun",
+    "definition": "A master is a person who has learned to do a thing very well.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mild": {
+    "concept": "quantity",
+    "pos": "adjective",
+    "definition": "Mild means not strong and not hard.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "modern": {
+    "concept": "duration",
+    "pos": "adjective",
+    "definition": "Modern means of this time.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "mold": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "Mold is a soft growth that forms on food or on a wet thing.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "moss": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Moss is a soft green plant that grows where it is wet.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "oath": {
+    "concept": "promise",
+    "pos": "noun",
+    "definition": "An oath is a strong promise.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "parachute": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A parachute is a large cloth that makes a falling person fall more slowly.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "peace": {
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "definition": "Peace is a time when people are not hurting each other.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pipe": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A pipe is a long round piece that is empty inside, so water can go through it.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pitcher": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A pitcher is a thing you pour a drink from.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "poem": {
+    "concept": "story",
+    "pos": "noun",
+    "definition": "A poem is writing in which the sound of the words is important.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "poet": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A poet is a person who writes a poem.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "poetry": {
+    "concept": "story",
+    "pos": "mass noun",
+    "definition": "Poetry is writing that is a poem.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "pollution": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "Pollution is something bad that people put into the air, the water, or the land.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "post": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A post is a long piece of wood or metal set straight up in the ground.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "prayer": {
+    "concept": "asking",
+    "pos": "noun",
+    "definition": "A prayer is words a person says when asking for help.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "prime": {
+    "concept": "sequence",
+    "pos": "adjective",
+    "definition": "Prime means first and most important.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "quarrel": {
+    "concept": "disagreeing",
+    "pos": "noun verb",
+    "definition": "To quarrel is to speak in an angry way.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rainbow": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A rainbow is a bright curve of light in the sky.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "range": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A range is how far a set of things goes from the low one to the high one.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "readily": {
+    "concept": "tending",
+    "pos": "",
+    "definition": "Readily means without waiting.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "recite": {
+    "concept": "reporting",
+    "pos": "verb",
+    "definition": "To recite is to say words you have learned.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "reef": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A reef is a line of rock just under the water.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "respect": {
+    "concept": "good_and_bad",
+    "pos": "noun verb",
+    "definition": "Respect is high care for a person.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "responsible": {
+    "concept": "should_and_should_not",
+    "pos": "adjective periphrastic",
+    "definition": "A responsible person does what that person is supposed to do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rocket": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A rocket is a thing that goes up into the air very fast.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rubber": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Rubber is a material that can be pulled and then goes back.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "rude": {
+    "concept": "asking_politely",
+    "pos": "adjective",
+    "definition": "Rude means not kind.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "secure": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Secure means safe and held still.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shark": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A shark is a large fish that can hurt you.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "shift": {
+    "concept": "change",
+    "pos": "noun verb",
+    "definition": "To shift is to move from one place to another.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "silence": {
+    "concept": "sound",
+    "pos": "noun",
+    "definition": "Silence is when there is no sound.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "soil": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Soil is the soft earth that plants grow in.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "spiral": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A spiral is a curve that goes around and moves out.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "squirrel": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A squirrel is a small animal with a large tail that lives in trees.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "stage": {
+    "concept": "sequence",
+    "pos": "noun",
+    "definition": "A stage is a place where people stand so others can watch them.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "station": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A station is a place where people get on or off a train.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "swear": {
+    "concept": "promise",
+    "pos": "verb",
+    "definition": "To swear is to make a strong promise.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tablet": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A tablet is a small hard piece you take when you are sick.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tape": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "Tape is a long thin piece used to hold things.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "thunder": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "Thunder is the loud sound that follows lightning.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "thunderstorm": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A thunderstorm is a storm with thunder and lightning.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tiger": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A tiger is a large cat with dark lines on its body.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "tilt": {
+    "concept": "direction",
+    "pos": "verb",
+    "definition": "To tilt a thing is to move it so one side is lower than the other.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "traffic": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "Traffic is things moving along a road.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "ugly": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Ugly means not good to look at.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "universe": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The universe is all that there is.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "vehicle": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A vehicle is a thing that carries people from place to place.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "verse": {
+    "concept": "story",
+    "pos": "noun",
+    "definition": "A verse is a group of lines in a poem.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wagon": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A wagon is a thing with wheels that is pulled and carries things.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wealth": {
+    "concept": "having",
+    "pos": "noun",
+    "definition": "Wealth is a large amount of what a person has.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "web": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A web is what a small animal makes to catch food.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "widow": {
+    "concept": "family",
+    "pos": "noun",
+    "definition": "A widow is a woman whose man has died.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wife": {
+    "concept": "family",
+    "pos": "noun",
+    "definition": "A wife is a woman a man has joined with.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wisdom": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "Wisdom is knowing what is good to do.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wolf": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A wolf is a wild animal that lives and catches food with others.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  },
+  "wreck": {
+    "concept": "things_break",
+    "pos": "noun verb",
+    "definition": "A wreck is what is left when a thing is broken.",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+  }
+}

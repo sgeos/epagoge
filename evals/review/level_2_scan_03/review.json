@@ -1,0 +1,957 @@
+{
+  "aircraft": {
+    "decision": "admit",
+    "reason": "A thing that flies.",
+    "definition_origin": "Agent-authored",
+    "definition": "An aircraft is a thing that flies in the air.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "aircraft"
+    ]
+  },
+  "analysis": {
+    "decision": "admit",
+    "reason": "A careful look at parts.",
+    "definition_origin": "Agent-authored",
+    "definition": "An analysis is a careful look at the parts of a thing.",
+    "concept": "finding_out",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "analysis",
+      "analyses"
+    ]
+  },
+  "atom": {
+    "decision": "admit",
+    "reason": "A very small part of matter.",
+    "definition_origin": "Agent-authored",
+    "definition": "An atom is a very small part of a thing.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "atom",
+      "atoms"
+    ]
+  },
+  "beat": {
+    "decision": "admit",
+    "reason": "Hit again and again.",
+    "definition_origin": "Agent-authored",
+    "definition": "To beat a thing is to hit it again and again.",
+    "concept": "activity",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "beat",
+      "beaten",
+      "beating",
+      "beats"
+    ]
+  },
+  "belt": {
+    "decision": "admit",
+    "reason": "A band worn around the middle.",
+    "definition_origin": "Agent-authored",
+    "definition": "A belt is a long piece a person can wear around the middle of the body.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "belt",
+      "belts"
+    ]
+  },
+  "bolt": {
+    "decision": "admit",
+    "reason": "A metal pin that holds parts.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bolt is a piece of metal that holds two parts together.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "bolt",
+      "bolts"
+    ]
+  },
+  "broadcast": {
+    "decision": "admit",
+    "reason": "Send a report to many people.",
+    "definition_origin": "Agent-authored",
+    "definition": "To broadcast is to send a report out to many people at once.",
+    "concept": "reporting",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "broadcast",
+      "broadcasting",
+      "broadcasts"
+    ]
+  },
+  "browser": {
+    "decision": "admit",
+    "reason": "A program for reading network pages.",
+    "definition_origin": "Agent-authored",
+    "definition": "A browser is a tool for reading pages that come from far away.",
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "browser",
+      "browsers"
+    ]
+  },
+  "burst": {
+    "decision": "admit",
+    "reason": "Break open suddenly.",
+    "definition_origin": "Agent-authored",
+    "definition": "To burst is to break open all at once.",
+    "concept": "things_break",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "burst",
+      "bursting",
+      "bursts"
+    ]
+  },
+  "buzz": {
+    "decision": "admit",
+    "reason": "A low humming sound.",
+    "definition_origin": "Agent-authored",
+    "definition": "A buzz is a low sound, and to buzz is to make that sound.",
+    "concept": "sound",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "buzz",
+      "buzzed",
+      "buzzes",
+      "buzzing"
+    ]
+  },
+  "cancer": {
+    "decision": "admit",
+    "reason": "A sickness of cells that grow out of turn.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cancer is a bad growth in the body.",
+    "concept": "being_hurt",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "cancer",
+      "cancers"
+    ]
+  },
+  "channel": {
+    "decision": "admit",
+    "reason": "A narrow way for water or a message.",
+    "definition_origin": "Agent-authored",
+    "definition": "A channel is a long low place where water can run.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "channel",
+      "channels"
+    ]
+  },
+  "church": {
+    "decision": "admit",
+    "reason": "A building where people meet to pray.",
+    "definition_origin": "Agent-authored",
+    "definition": "A church is a building where people meet.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "church",
+      "churches"
+    ]
+  },
+  "college": {
+    "decision": "admit",
+    "reason": "A school for older students.",
+    "definition_origin": "Agent-authored",
+    "definition": "A college is a school for people who are not children.",
+    "concept": "knowing",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "college",
+      "colleges"
+    ]
+  },
+  "computer": {
+    "decision": "admit",
+    "reason": "A machine that follows a program.",
+    "definition_origin": "Agent-authored",
+    "definition": "A computer is a tool that stores numbers and words and can change them.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "computer",
+      "computers"
+    ]
+  },
+  "condition": {
+    "decision": "admit",
+    "reason": "The state something is in.",
+    "definition_origin": "Agent-authored",
+    "definition": "A condition is the way a thing is.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "condition",
+      "conditions"
+    ]
+  },
+  "counter": {
+    "decision": "admit",
+    "reason": "A long flat work top.",
+    "definition_origin": "Agent-authored",
+    "definition": "A counter is a long high table.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "counter",
+      "counters"
+    ]
+  },
+  "county": {
+    "decision": "admit",
+    "reason": "A part of a country.",
+    "definition_origin": "Agent-authored",
+    "definition": "A county is one part of a country.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "county",
+      "counties"
+    ]
+  },
+  "courtesy": {
+    "decision": "admit",
+    "reason": "Being polite.",
+    "definition_origin": "Agent-authored",
+    "definition": "Courtesy is being kind to another person.",
+    "concept": "asking_politely",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "courtesy",
+      "courtesies"
+    ]
+  },
+  "density": {
+    "decision": "admit",
+    "reason": "How much matter is in a space.",
+    "definition_origin": "Agent-authored",
+    "definition": "Density is how much of a thing is in a space.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "density",
+      "densities"
+    ]
+  },
+  "detect": {
+    "decision": "admit",
+    "reason": "Notice.",
+    "definition_origin": "Agent-authored",
+    "definition": "To detect a thing is to find it when it is hard to see.",
+    "concept": "finding_out",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "detect",
+      "detected",
+      "detecting",
+      "detects"
+    ]
+  },
+  "develop": {
+    "decision": "admit",
+    "reason": "Grow into a fuller form.",
+    "definition_origin": "Agent-authored",
+    "definition": "To develop is to grow and become more complete.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "develop",
+      "developed",
+      "developing",
+      "develops"
+    ]
+  },
+  "division": {
+    "decision": "admit",
+    "reason": "Splitting into parts.",
+    "definition_origin": "Agent-authored",
+    "definition": "Division is breaking one thing into parts.",
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "division",
+      "divisions"
+    ]
+  },
+  "editor": {
+    "decision": "admit",
+    "reason": "A person who prepares writing.",
+    "definition_origin": "Agent-authored",
+    "definition": "An editor is a person who gets a written thing ready for others to read.",
+    "concept": "written_record",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "editor",
+      "editors"
+    ]
+  },
+  "evil": {
+    "decision": "admit",
+    "reason": "Very bad.",
+    "definition_origin": "Agent-authored",
+    "definition": "Evil is what is very bad.",
+    "concept": "good_and_bad",
+    "pos": "adjective noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "evil",
+      "eviler",
+      "evilest",
+      "evils"
+    ]
+  },
+  "exception": {
+    "decision": "admit",
+    "reason": "A case outside the rule.",
+    "definition_origin": "Agent-authored",
+    "definition": "An exception is a thing that does not follow the rule for the others.",
+    "concept": "rule",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "exception",
+      "exceptions"
+    ]
+  },
+  "extensive": {
+    "decision": "admit",
+    "reason": "Covering a lot.",
+    "definition_origin": "Agent-authored",
+    "definition": "Extensive means covering a large amount.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "extensive"
+    ]
+  },
+  "fawn": {
+    "decision": "admit",
+    "reason": "A young deer.",
+    "definition_origin": "Agent-authored",
+    "definition": "A fawn is a very young animal.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "fawn",
+      "fawns"
+    ]
+  },
+  "forgive": {
+    "decision": "admit",
+    "reason": "Let go of anger about a wrong.",
+    "definition_origin": "Agent-authored",
+    "definition": "To forgive a person is to let go of being angry about what the person did.",
+    "concept": "apologising",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "forgive",
+      "forgived",
+      "forgives",
+      "forgiving"
+    ]
+  },
+  "fountain": {
+    "decision": "admit",
+    "reason": "Water that shoots up.",
+    "definition_origin": "Agent-authored",
+    "definition": "A fountain is water that goes up into the air and comes back down.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "fountain",
+      "fountains"
+    ]
+  },
+  "frame": {
+    "decision": "admit",
+    "reason": "A hard border.",
+    "definition_origin": "Agent-authored",
+    "definition": "A frame is the hard edge around a picture.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "frame",
+      "frames"
+    ]
+  },
+  "friction": {
+    "decision": "admit",
+    "reason": "The force from rubbing.",
+    "definition_origin": "Agent-authored",
+    "definition": "Friction is what makes a moving thing slow down when it rubs on another.",
+    "concept": "force",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "friction",
+      "frictions"
+    ]
+  },
+  "funnel": {
+    "decision": "admit",
+    "reason": "A cone you pour through.",
+    "definition_origin": "Agent-authored",
+    "definition": "A funnel is a tool that is wide at the top and narrow at the bottom, so a liquid can be poured through it.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "funnel",
+      "funnels"
+    ]
+  },
+  "gentleman": {
+    "decision": "admit",
+    "reason": "A polite man.",
+    "definition_origin": "Agent-authored",
+    "definition": "A gentleman is a man who is kind and careful with other people.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "gentleman",
+      "gentlemen"
+    ]
+  },
+  "glorious": {
+    "decision": "admit",
+    "reason": "Greatly beautiful or admired.",
+    "definition_origin": "Agent-authored",
+    "definition": "Glorious means very fine and bright.",
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "glorious"
+    ]
+  },
+  "grand": {
+    "decision": "admit",
+    "reason": "Large and impressive.",
+    "definition_origin": "Agent-authored",
+    "definition": "Grand means large and fine.",
+    "concept": "quantity",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "grand",
+      "grander",
+      "grandest"
+    ]
+  },
+  "grandfather": {
+    "decision": "admit",
+    "reason": "A parent's father.",
+    "definition_origin": "Agent-authored",
+    "definition": "A grandfather is the father of a mother or of a father.",
+    "concept": "family",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "grandfather",
+      "grandfathers"
+    ]
+  },
+  "grandmother": {
+    "decision": "admit",
+    "reason": "A parent's mother.",
+    "definition_origin": "Agent-authored",
+    "definition": "A grandmother is the mother of a mother or of a father.",
+    "concept": "family",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "grandmother",
+      "grandmothers"
+    ]
+  },
+  "gun": {
+    "decision": "admit",
+    "reason": "A tool that shoots.",
+    "definition_origin": "Agent-authored",
+    "definition": "A gun is a tool that sends a hard thing out very fast.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "gun",
+      "guns"
+    ]
+  },
+  "harbor": {
+    "decision": "admit",
+    "reason": "A sheltered place for boats.",
+    "definition_origin": "Agent-authored",
+    "definition": "A harbor is a place where ships can stay safe from a rough sea.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "harbor",
+      "harbors"
+    ]
+  },
+  "hen": {
+    "decision": "admit",
+    "reason": "A female bird kept for eggs.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hen is a bird that lays eggs.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "hen",
+      "hens"
+    ]
+  },
+  "honor": {
+    "decision": "admit",
+    "reason": "Respect for doing right.",
+    "definition_origin": "Agent-authored",
+    "definition": "Honor is the good name a person has for doing what is right.",
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "honor",
+      "honors"
+    ]
+  },
+  "issue": {
+    "decision": "admit",
+    "reason": "A matter to settle.",
+    "definition_origin": "Agent-authored",
+    "definition": "An issue is a question that people need to settle.",
+    "concept": "settling_it",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "issue",
+      "issues"
+    ]
+  },
+  "jet": {
+    "decision": "admit",
+    "reason": "A fast stream, or the aircraft.",
+    "definition_origin": "Agent-authored",
+    "definition": "A jet is a fast stream of air or of water.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "jet",
+      "jets"
+    ]
+  },
+  "kiss": {
+    "decision": "admit",
+    "reason": "A touch with the lips.",
+    "definition_origin": "Agent-authored",
+    "definition": "To kiss a person is to touch the person with the lips.",
+    "concept": "greeting_and_parting",
+    "pos": "noun verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "kiss",
+      "kissed",
+      "kisses",
+      "kissing"
+    ]
+  },
+  "likely": {
+    "decision": "admit",
+    "reason": "Probably going to happen.",
+    "definition_origin": "Agent-authored",
+    "definition": "Likely means that a thing can be expected to happen.",
+    "concept": "how_sure",
+    "pos": "adjective",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "likely",
+      "likelier",
+      "likeliest"
+    ]
+  },
+  "loaf": {
+    "decision": "admit",
+    "reason": "A shaped mass of bread.",
+    "definition_origin": "Agent-authored",
+    "definition": "A loaf is a whole piece of bread.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "loaf",
+      "loaves"
+    ]
+  },
+  "molecule": {
+    "decision": "admit",
+    "reason": "A small group of atoms.",
+    "definition_origin": "Agent-authored",
+    "definition": "A molecule is a very small group made of more than one atom.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "molecule",
+      "molecules"
+    ]
+  },
+  "operate": {
+    "decision": "admit",
+    "reason": "Make a machine work.",
+    "definition_origin": "Agent-authored",
+    "definition": "To operate a thing is to make it work.",
+    "concept": "activity",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "operate",
+      "operated",
+      "operates",
+      "operating"
+    ]
+  },
+  "party": {
+    "decision": "admit",
+    "reason": "A group, or a gathering for fun.",
+    "definition_origin": "Agent-authored",
+    "definition": "A party is a group of people who come together to enjoy something.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "party",
+      "parties"
+    ]
+  },
+  "patient": {
+    "decision": "admit",
+    "reason": "Able to wait. Also a person under care.",
+    "definition_origin": "Agent-authored",
+    "definition": "A patient person can wait without getting angry.",
+    "concept": "feeling",
+    "pos": "adjective noun periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "patient",
+      "patients"
+    ]
+  },
+  "pine": {
+    "decision": "admit",
+    "reason": "A tree with needles.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pine is a tree that keeps its long thin leaves all year.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pine",
+      "pines"
+    ]
+  },
+  "pleasure": {
+    "decision": "admit",
+    "reason": "Enjoyment.",
+    "definition_origin": "Agent-authored",
+    "definition": "Pleasure is the good feeling of enjoying something.",
+    "concept": "feeling",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pleasure",
+      "pleasures"
+    ]
+  },
+  "probability": {
+    "decision": "admit",
+    "reason": "How likely.",
+    "definition_origin": "Agent-authored",
+    "definition": "Probability is how likely a thing is.",
+    "concept": "how_sure",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "probability",
+      "probabilities"
+    ]
+  },
+  "probably": {
+    "decision": "admit",
+    "reason": "More likely than not.",
+    "definition_origin": "Agent-authored",
+    "definition": "Probably means more likely than not.",
+    "concept": "how_sure",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "probably"
+    ]
+  },
+  "pulse": {
+    "decision": "admit",
+    "reason": "The beat of the blood.",
+    "definition_origin": "Agent-authored",
+    "definition": "The pulse is the beat of the blood that you can feel.",
+    "concept": "body_part",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "pulse",
+      "pulses"
+    ]
+  },
+  "route": {
+    "decision": "admit",
+    "reason": "The way to a place.",
+    "definition_origin": "Agent-authored",
+    "definition": "A route is the way from one place to another.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "route",
+      "routes"
+    ]
+  },
+  "seek": {
+    "decision": "admit",
+    "reason": "Look for.",
+    "definition_origin": "Agent-authored",
+    "definition": "To seek a thing is to look for it.",
+    "concept": "finding_out",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "seek",
+      "seeking",
+      "seeks",
+      "sought"
+    ]
+  },
+  "seem": {
+    "decision": "admit",
+    "reason": "Look as if.",
+    "definition_origin": "Agent-authored",
+    "definition": "To seem is to look as if something is so.",
+    "concept": "real_and_pretend",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "seem",
+      "seeming"
+    ]
+  },
+  "shoe": {
+    "decision": "admit",
+    "reason": "A covering for the foot.",
+    "definition_origin": "Agent-authored",
+    "definition": "A shoe is what a person wears on a foot.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "shoe"
+    ]
+  },
+  "shoot": {
+    "decision": "admit",
+    "reason": "Send flying.",
+    "definition_origin": "Agent-authored",
+    "definition": "To shoot is to send a thing flying fast.",
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "shoot",
+      "shooting",
+      "shoots",
+      "shot"
+    ]
+  },
+  "sleigh": {
+    "decision": "admit",
+    "reason": "A vehicle that slides on snow.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sleigh is a thing you ride over snow.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "sleigh",
+      "sleighs"
+    ]
+  },
+  "specific": {
+    "decision": "admit",
+    "reason": "Stated exactly.",
+    "definition_origin": "Agent-authored",
+    "definition": "Specific means named and not only general.",
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "specific"
+    ]
+  },
+  "split": {
+    "decision": "admit",
+    "reason": "Break into parts.",
+    "definition_origin": "Agent-authored",
+    "definition": "To split is to break into parts along a line.",
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "split",
+      "splits",
+      "splitting"
+    ]
+  },
+  "staff": {
+    "decision": "admit",
+    "reason": "The people who work somewhere. The stick sense is not this entry.",
+    "definition_origin": "Agent-authored",
+    "definition": "A staff is the group of people who work at one place.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "staff",
+      "staffs"
+    ]
+  },
+  "threat": {
+    "decision": "admit",
+    "reason": "A warning of harm.",
+    "definition_origin": "Agent-authored",
+    "definition": "A threat is a warning that something bad may be done.",
+    "concept": "danger",
+    "pos": "noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "threat",
+      "threats"
+    ]
+  },
+  "timber": {
+    "decision": "admit",
+    "reason": "Wood for building.",
+    "definition_origin": "Agent-authored",
+    "definition": "Timber is wood prepared for building.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "timber"
+    ]
+  },
+  "treat": {
+    "decision": "admit",
+    "reason": "Act toward, or give care.",
+    "definition_origin": "Agent-authored",
+    "definition": "To treat a person is to act toward that person in some way, and to treat a sick person is to try to make the person well.",
+    "concept": "way_of_doing",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "treat",
+      "treated",
+      "treating",
+      "treats"
+    ]
+  },
+  "visit": {
+    "decision": "admit",
+    "reason": "Go and stay for a time.",
+    "definition_origin": "Agent-authored",
+    "definition": "To visit a person is to go see that person.",
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "visit",
+      "visited",
+      "visiting",
+      "visits"
+    ]
+  },
+  "whatever": {
+    "decision": "admit",
+    "reason": "Any thing, no matter which.",
+    "definition_origin": "Agent-authored",
+    "definition": "Whatever means any thing of the kind that is spoken of.",
+    "concept": "all_some_none",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "whatever"
+    ]
+  },
+  "wherever": {
+    "decision": "admit",
+    "reason": "In any place.",
+    "definition_origin": "Agent-authored",
+    "definition": "Wherever means in any place.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+    "reviewed_forms": [
+      "wherever"
+    ]
+  },
+  "decades": {
+    "decision": "exclude",
+    "reason": "Plural of decade. The singular is not in this frequent pool."
+  },
+  "details": {
+    "decision": "exclude",
+    "reason": "Plural of detail. The singular is not in this frequent pool."
+  },
+  "flames": {
+    "decision": "exclude",
+    "reason": "Plural of flame. The singular is not in this frequent pool."
+  }
+}

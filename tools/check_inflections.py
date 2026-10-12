@@ -30,9 +30,10 @@ from __future__ import annotations
 import argparse
 import sys
 from collections import defaultdict
+from collections.abc import Mapping
 from pathlib import Path
 
-from epagoge.inflection import comparison, plural, verb_forms
+from epagoge.inflection import owed_forms
 from epagoge.vocabulary import load_vocabulary
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -69,17 +70,11 @@ def wordnet_exceptions(directory: Path) -> dict[tuple[str, str], set[str]]:
     return out
 
 
-def generated(word: str, pos: str) -> set[str]:
-    """Every form this project's rules produce for a word."""
-    parts = pos.split()
-    forms: set[str] = set()
-    if "verb" in parts:
-        forms |= set(verb_forms(word))
-    if "noun" in parts and "mass" not in parts:
-        forms.add(plural(word))
-    if "adjective" in parts:
-        forms |= {f for f in comparison(word) if f}
-    return {f for f in forms if f and f != word}
+def generated(
+    word: str, pos: str, registered: Mapping[str, str] | None = None
+) -> set[str]:
+    """Every alternate this project's rules owe for a word."""
+    return set(owed_forms(word, pos, registered))
 
 
 def main(argv: list[str]) -> int:
@@ -126,7 +121,7 @@ def main(argv: list[str]) -> int:
             irregular |= exceptions.get((term.word, pos), set())
         if not irregular:
             continue
-        ours = generated(term.word, term.pos)
+        ours = generated(term.word, term.pos, dict(term.inflection))
         for form in sorted(irregular):
             if form not in admitted:
                 missing.append((term.word, form))
