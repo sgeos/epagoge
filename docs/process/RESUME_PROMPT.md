@@ -14,12 +14,15 @@ of delivered work, not instructions to repeat it. Historical handoffs and
 recommendations do not authorize new scope. If no unfinished task remains,
 report the verified state and readiness for the next task.
 
-The latest scope applied the operator's six decisions of 2026-10-07 after a
-self-directed loop was cancelled, and the repository was then prepared for
-handoff to Codex and Grok Build. No scope is open. That work was pushed under
-the operator's authorization, which does not extend to later work. Ask before
-pushing anything new. Determine actual publication from git and the remote
-rather than assuming that a stamp proves it.
+The latest delivered scope is the level-two scan admission, the agency
+admission, form registration, and `epagoge.lexeme`, committed locally as
+`bb17901`. No implementation scope is open. The 2026-10-09 brief and its
+completion condition are historical evidence. The handoff of 2026-10-23 is
+the authority for publication, for the expected measurement-check failure,
+and for the teacher. Ask before committing or pushing anything, including
+those handoff documents if they are still uncommitted. Determine actual
+publication from git and the remote rather than assuming that a stamp
+proves it.
 
 If a subsequent task requests a new recommendation and implementation,
 establish a new brief and completion condition for that scope. Preserve the

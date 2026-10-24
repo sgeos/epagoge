@@ -1,5 +1,9 @@
 Ordering is not a completion criterion.
 
+Met for the seven-source pool on 2026-10-09. This file is historical
+evidence. Do not treat it as an open task. The later agency admissions are
+outside this condition and are recorded in `HANDOFF.md`.
+
 The candidate set is the frequent group of the scan recorded in
 `docs/decisions/LEXICON_SCAN.md`, at a threshold of five, restricted to
 words frequent in at least one of those seven sources. It excludes words

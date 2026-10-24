@@ -1,5 +1,9 @@
 # Brief
 
+Closed 2026-10-23. The seven-source condition was met, and the later agency
+pass is recorded in `HANDOFF.md`. This file is historical evidence. Do not
+repeat it.
+
 Opened 2026-10-09. The operator directed that the remaining level-two
 candidates be admitted. The lexicon is far under its approximate target of
 about ten thousand words, and capacity is not a reason to hold a candidate

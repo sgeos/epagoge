@@ -31,6 +31,54 @@ measurements of every earlier batch already fail for that reason. A failure
 then marks the counts below as stale rather than wrong. Missing host
 artifacts make the associated checks unverified rather than disproved.
 
+## Resume state, 2026-10-23
+
+No implementation scope is open. Do not repeat the admission brief of
+2026-10-09, and do not admit further words from the seven-source pool, the
+agency pool, or the long tail.
+
+Local `HEAD` is `bb1790162b98ca9dfa3354bef3bc260a71432526`, message
+"Admit the scanned level-two pool and count forms under one citation".
+Before this handoff edit the working tree was clean. The only expected
+uncommitted files are this handoff, `RESUME_PROMPT.md`, `CURRENT_BRIEF.md`,
+and `COMPLETION_CONDITION.md`. Leave them in place. Do not commit or push
+them unless the operator asks.
+
+The remote-tracking ref `origin/main` is
+`50de0749fab5da632352cc029f91e7359d4db117`. A push of the local commit was
+attempted on 2026-10-11 and failed because host key verification could not
+read the SSH known-hosts file. The GitHub CLI token was invalid the same
+day. Publication of `bb17901` was not confirmed, and the remote was not
+fetched again on 2026-10-23. Determine publication from git and the remote.
+Ask before pushing.
+
+The full local gate passed on the tree that became `bb17901`, before the
+commit, with 678 tests, no skips, 96 percent core coverage, and a clean
+disclosure scan. Continuous integration has not run for that commit. On
+2026-10-23 `tools/validate_closure.py` reported level two at 2,310 of
+2,310, self-hosting yes, with a 267-word seed. The measurement check named
+above exits with "recorded measurement differs from the current tree".
+That failure means the 2026-10-07 counts are stale. It is not a defect to
+repair.
+
+`epagoge.lexeme` and `tools/analyse_lexemes.py` are in the committed tree.
+The vocabulary check is unchanged. A grouping is a proposal and admits
+nothing.
+
+On 2026-10-14 the operator asked how Space Bunny Alpha compares with the
+teacher and whether its terms allow that use. The reading given that day
+was that they do not, that the OpenRouter listing was absent, and that the
+local Apache checkpoint remains the teacher. The reading was not added to
+`OPEN_QUESTIONS.md`. Do not switch the teacher on the strength of it.
+
+Ollama was not listening on `127.0.0.1:11434` on 2026-10-11. That was not
+rechecked on 2026-10-23. Do not load the teacher for this handoff.
+Confirmatory training remains blocked.
+
+Grok Build on this host is still 1.0.46. The launch command in `AGENTS.md`
+was rechecked against its help output on 2026-10-23. Do not pass
+`--sandbox` on this host.
+
 ## Current authority and task status
 
 On 2026-10-07 a self-directed loop ran three lexical scopes and was
@@ -40,7 +88,8 @@ left. That scope is delivered. Its brief and condition are preserved as
 `HANDOFF_HISTORY.md` are historical evidence. Durable failure analysis is
 in `PROCESS_STRATEGY.md`.
 
-**Scope opened 2026-10-09.** The operator directed that the remaining
+**Scope opened 2026-10-09 and closed by the resume state above.** The
+operator directed that the remaining
 level-two scan candidates be admitted, because the lexicon is far under
 its approximate target. The brief and the completion condition in this
 directory describe that work. The first batch, 24 McGuffey words, is
