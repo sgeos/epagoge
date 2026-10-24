@@ -26,9 +26,10 @@ flags if either tool has been upgraded.
 **Do not pass `--sandbox` to Grok Build on the authoring host.** Its global
 config selects a custom profile that extends `workspace` and also
 kernel-denies credential paths. A command-line `--sandbox` overrides the
-config and would drop that deny list. The denial covers the SSH keys, so a
-push from inside Grok fails there, which leaves publishing to the operator.
-On another host without that config, pass `--sandbox workspace`.
+config and would drop that deny list. The SSH denial stays in place. This
+session pushes its own work to `sgeos/epagoge` over HTTPS with the
+operator's `gh` login, and it never force-pushes. On another host without
+that config, pass `--sandbox workspace`.
 
 ### What a sandboxed agent needs
 
@@ -43,7 +44,7 @@ network access, so the network stays reachable there whatever the profile.
 | --- | --- | --- |
 | Write the workspace | All work | Always |
 | Loopback `127.0.0.1:11434` | Teacher, every generator | Only for a session that generates |
-| Network and git credentials | `git push`, `gh` | Only to publish, or leave it to the operator |
+| Network and git credentials | `git push` over HTTPS with the operator's `gh` login | When this session publishes its own work to `sgeos/epagoge`. Never force-push. The SSH denial stays |
 
 **The gate falls back to an offline environment check inside a sandbox.**
 uv 0.9.5 cannot run where writes are confined to the workspace. It fails to
