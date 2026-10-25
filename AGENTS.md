@@ -5,16 +5,18 @@ Guidance for automated agents working in this repository.
 The authoritative instructions live in [`CLAUDE.md`](CLAUDE.md). Read that
 file first. It is agent-agnostic in content despite its name.
 
-## Starting a session in Codex or Grok Build
+## Starting a session in Codex, Grok Build or Claude Code
 
 **Current state is in [`docs/process/HANDOFF.md`](docs/process/HANDOFF.md)**,
 and [`docs/process/RESUME_PROMPT.md`](docs/process/RESUME_PROMPT.md) is the
 prompt a new session should be given. Both are written for any agent.
 
 Checked on 2026-10-07 against the help output of the installed tools, Codex
-CLI 0.160.1 and Grok Build 1.0.46. Codex reads this file. Grok Build's
-bundled documentation says it reads this file and `CLAUDE.md`. Recheck the
-flags if either tool has been upgraded.
+CLI 0.160.1 and Grok Build 1.0.46. Claude Code 2.1.310 was checked on
+2026-10-25. Codex reads this file. Grok Build's bundled documentation says
+it reads this file and `CLAUDE.md`. Claude Code reads `CLAUDE.md` unless
+`--bare` is passed. Recheck the flags if any of these tools have been
+upgraded.
 
     codex --cd /Users/bsechter/projects/python/epagoge \
       --sandbox workspace-write --ask-for-approval on-request \
@@ -23,13 +25,25 @@ flags if either tool has been upgraded.
     grok --cwd /Users/bsechter/projects/python/epagoge \
       "Read docs/process/RESUME_PROMPT.md and carry out its instructions."
 
+    cd /Users/bsechter/projects/python/epagoge
+    claude \
+      "Read docs/process/RESUME_PROMPT.md and carry out its instructions."
+
+**Do not pass `--bare` or `--dangerously-skip-permissions` to Claude Code.**
+`--bare` skips `CLAUDE.md` discovery. The permission bypass is not required
+to read this repository or to run its gate. Claude Code starts in the
+current directory. It has no separate sandbox flag in the help output
+checked on 2026-10-25.
+
 **Do not pass `--sandbox` to Grok Build on the authoring host.** Its global
 config selects a custom profile that extends `workspace` and also
 kernel-denies credential paths. A command-line `--sandbox` overrides the
-config and would drop that deny list. The SSH denial stays in place. This
-session pushes its own work to `sgeos/epagoge` over HTTPS with the
-operator's `gh` login, and it never force-pushes. On another host without
-that config, pass `--sandbox workspace`.
+config and would drop that deny list. The SSH denial stays in place. When
+the operator asks a session to publish, that session pushes `sgeos/epagoge`
+over HTTPS with the operator's `gh` login, and it never force-pushes. The
+Grok session could not authenticate on 2026-10-25, so the operator pushes
+the commits that are ahead of `origin/main`. On another host without that
+config, pass `--sandbox workspace`.
 
 ### What a sandboxed agent needs
 
@@ -44,7 +58,7 @@ network access, so the network stays reachable there whatever the profile.
 | --- | --- | --- |
 | Write the workspace | All work | Always |
 | Loopback `127.0.0.1:11434` | Teacher, every generator | Only for a session that generates |
-| Network and git credentials | `git push` over HTTPS with the operator's `gh` login | When this session publishes its own work to `sgeos/epagoge`. Never force-push. The SSH denial stays |
+| Network and git credentials | `git push` over HTTPS with the operator's `gh` login | When the operator asks a session to publish `sgeos/epagoge`. Never force-push. The SSH denial stays |
 
 **The gate falls back to an offline environment check inside a sandbox.**
 uv 0.9.5 cannot run where writes are confined to the workspace. It fails to

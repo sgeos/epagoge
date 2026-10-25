@@ -1,5 +1,5 @@
 Resume continuity in this existing working directory. This prompt is written
-for any agent, including Codex and Grok Build.
+for any agent, including Codex, Grok Build and Claude Code.
 
 Read AGENTS.md, CLAUDE.md and docs/process/HANDOFF.md. Run the handoff validity
 check and distinguish verified state from stale claims or unavailable host
@@ -17,12 +17,14 @@ report the verified state and readiness for the next task.
 The latest delivered scope is the level-two scan admission, the agency
 admission, form registration, and `epagoge.lexeme`, committed locally as
 `bb17901`. No implementation scope is open. The 2026-10-09 brief and its
-completion condition are historical evidence. The handoff of 2026-10-23 is
-the authority for publication, for the expected measurement-check failure,
-and for the teacher. Ask before committing or pushing anything, including
-those handoff documents if they are still uncommitted. Determine actual
-publication from git and the remote rather than assuming that a stamp
-proves it.
+completion condition are historical evidence. The handoff of 2026-10-25 is
+the authority for publication, for the Claude Code launch, for the expected
+measurement-check failure, and for the teacher. The resume state of
+2026-10-23 is historical for the revision and for publication. Before the
+2026-10-25 edit, local `HEAD` was `eb2fb3c` and `origin/main` was `50de074`.
+Ask before committing or pushing anything, including this handoff if it is
+still uncommitted. Determine actual publication from git and the remote
+rather than assuming that a stamp proves it.
 
 If a subsequent task requests a new recommendation and implementation,
 establish a new brief and completion condition for that scope. Preserve the

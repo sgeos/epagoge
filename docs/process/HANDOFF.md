@@ -31,11 +31,56 @@ measurements of every earlier batch already fail for that reason. A failure
 then marks the counts below as stale rather than wrong. Missing host
 artifacts make the associated checks unverified rather than disproved.
 
-## Resume state, 2026-10-23
+## Resume state, 2026-10-25
 
 No implementation scope is open. Do not repeat the admission brief of
 2026-10-09, and do not admit further words from the seven-source pool, the
-agency pool, or the long tail.
+agency pool, or the long tail. The resume state of 2026-10-23 is historical
+for the revision and for publication. Its lexicon findings remain, and the
+measurement check below is still expected to fail.
+
+Before this edit, local `HEAD` was
+`eb2fb3cda63cf9e22a4ecbe1ef87ff30b4f5b5c0`, message "Record the 2026-10-23
+handoff and close the admission brief". The working tree was clean. The
+commits not on `origin/main` were `bb17901`, `583548d` and `eb2fb3c`. This
+edit leaves `AGENTS.md`, `docs/process/HANDOFF.md` and
+`docs/process/RESUME_PROMPT.md` uncommitted until the operator commits them.
+
+The stored `origin/main` is
+`50de0749fab5da632352cc029f91e7359d4db117`. On 2026-10-25 `git fetch origin`
+over HTTPS exited 0 and printed nothing. `git push origin main` from the
+Grok session on 2026-10-24 and again on 2026-10-25 exited 128 with
+"fatal: could not read Username for 'https://github.com': terminal prompts
+disabled". `gh auth status` in that session reported the stored token for
+account `sgeos` as invalid. No `GH_TOKEN` or `GITHUB_TOKEN` variable was
+set. A read-only keychain lookup for service `gh:github.com` and account
+`sgeos` exited 44 and said the item could not be found. The SSH denial
+stays in place. The remote URL is HTTPS. Do not force-push. Publication
+from the Grok session was not completed. Determine publication from git
+and the remote.
+
+The full local gate passed on 2026-10-24, before `eb2fb3c`, with 678 tests,
+no skips, 96 percent core coverage, and a clean disclosure scan. The same
+gate passed on this edit on 2026-10-25, again with 678 tests, no skips, 96
+percent core coverage, and a clean disclosure scan. uv fell back to the
+lockfile check because it could not create its cache temporary file.
+Continuous integration has not run for the unpublished commits. The measurement check
+named above still exits with "recorded measurement differs from the current
+tree". That failure is expected. It is not a defect to repair.
+
+Claude Code 2.1.310 is installed at `~/.local/bin/claude`. Its help output
+was checked on 2026-10-25. It starts in the current directory and reads
+`CLAUDE.md` unless `--bare` is passed. Do not pass `--bare` or
+`--dangerously-skip-permissions`. The launch command is in `AGENTS.md`.
+Confirmatory training remains blocked. Do not load the teacher for this
+handoff.
+
+## Resume state, 2026-10-23
+
+Superseded for the revision and for publication by the resume state of
+2026-10-25. No implementation scope is open. Do not repeat the admission
+brief of 2026-10-09, and do not admit further words from the seven-source
+pool, the agency pool, or the long tail.
 
 Local `HEAD` is `bb1790162b98ca9dfa3354bef3bc260a71432526`, message
 "Admit the scanned level-two pool and count forms under one citation".
@@ -118,15 +163,17 @@ and swap held 10,956 of 12,288 megabytes.
 
 ## Starting the next session
 
-The repository is prepared for Codex and Grok Build. `AGENTS.md` gives the
-verified launch commands for both, what a sandboxed agent needs, and what a
-fresh clone lacks. Trial sessions of both tools on 2026-10-08 loaded the
-instructions, passed the handoff validity checks and passed the full gate
-inside their workspace sandboxes, Codex with the network off. Network access
-is needed only to publish, and the loopback teacher only to generate. Give a new session
-`docs/process/RESUME_PROMPT.md`. Start it in this existing directory, so the
-ignored host artifacts under `secret/`, `tmp/` and `evals/pilot/` remain
-available.
+The repository is prepared for Codex, Grok Build and Claude Code.
+`AGENTS.md` gives the verified launch commands, what a sandboxed agent
+needs, and what a fresh clone lacks. Trial sessions of Codex and Grok Build
+on 2026-10-08 loaded the instructions, passed the handoff validity checks
+and passed the full gate inside their workspace sandboxes, Codex with the
+network off. Claude Code was not part of that trial. Its launch command was
+checked against help output on 2026-10-25 and has not been run as a trial
+session. Network access is needed only to publish, and the loopback teacher
+only to generate. Give a new session `docs/process/RESUME_PROMPT.md`. Start
+it in this existing directory, so the ignored host artifacts under
+`secret/`, `tmp/` and `evals/pilot/` remain available.
 
 ## Operator decisions of 2026-10-07
 
