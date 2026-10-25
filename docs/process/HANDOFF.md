@@ -67,6 +67,38 @@ run](https://github.com/sgeos/epagoge/actions/runs/40219585326) succeeded.
 That evidence covers `abca3af`, not the later commit that records it.
 Commit and push only when the operator asks.
 
+## Dromon dogfooding review, 2026-10-25
+
+On the operator's request this session reviewed the Python prototype of
+the Dromon harness, `~/projects/python/pydromon`, for dogfooding on this
+project. No implementation scope was opened, and no tracked file of either
+repository changed for the review.
+
+Dromon keeps its project file at `.dromon/dromon.toml`, which is local to
+this host and excluded through `.git/info/exclude`, so the disclosure scan
+does not read it. `dromon config` reported it valid. It declares the
+teacher named in `generators/TEACHER.md` at a context of 4096, with
+autostart off, and Claude Code lines that read `CLAUDE.md` and the
+operator's global rules, run their shell in the sandbox, and are refused
+`git commit` and `git push`. `dromon teacher status` reported the model
+pulled and not loaded. About one gigabyte of pages was free and about
+twelve gigabytes inactive.
+
+Pydromon `HEAD` was `f1543c1`, and its continuous integration run
+succeeded. A clean archive of that commit passed 805 tests outside the
+socket and live markers, with ruff and pyright strict clean. The socket and
+live tests were not run. Its working tree held uncommitted changes from its
+own session, and two tests failed on that tree. Its editable install runs
+the working tree, so the review supports dogfooding `f1543c1` and not that
+tree.
+
+These points are unverified. Whether this project's gate passes inside a
+Dromon line's sandbox has not been measured. The commit and push refusal is
+a pair of command patterns and may not match forms such as
+`git -C . commit`, and the sandbox does not itself prevent a commit. A
+Codex line runs read-only and cannot run the gate. Notes for the pydromon
+session were left in its ignored `tmp/epagoge-dogfooding-notes.md`.
+
 ## Resume state, 2026-10-25
 
 Superseded for the revision and for publication by the sandbox-fix resume
