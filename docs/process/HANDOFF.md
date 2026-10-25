@@ -59,8 +59,13 @@ through `GIT_DIR` and `GIT_WORK_TREE`. With those changes the gate exited 0
 both inside the sandbox and outside it on 2026-10-25, with 678 tests, no
 skips, 96 percent core coverage, 92 percent training coverage and a clean
 disclosure scan over 957 files. uv ran normally inside the sandbox.
-Continuous integration has not run for these changes until they are
-published. Commit and push only when the operator asks.
+On the operator's request these changes were committed as
+`abca3af79f348e24b0b99dd679270dd3d7782242` and pushed to `origin/main`
+over HTTPS without force. `git ls-remote origin main` then named that
+commit, and its [continuous integration
+run](https://github.com/sgeos/epagoge/actions/runs/40219585326) succeeded.
+That evidence covers `abca3af`, not the later commit that records it.
+Commit and push only when the operator asks.
 
 ## Resume state, 2026-10-25
 
