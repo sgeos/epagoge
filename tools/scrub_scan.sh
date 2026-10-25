@@ -50,8 +50,9 @@ fi
 # excluded because it is the pattern's own home.
 # **A scan over no files is not clean.** On 2026-10-07 mktemp failed inside a
 # sandbox, every later step read an empty path, and the script printed clean
-# over a blank file count. Failing to enumerate is now a failure.
-if ! FILES=$(mktemp); then
+# over a blank file count. Failing to enumerate is now a failure. The
+# template is explicit because a bare mktemp ignored TMPDIR on 2026-10-25.
+if ! FILES=$(mktemp "${TMPDIR:-/tmp}/scrub_scan.XXXXXX"); then
   echo "DISCLOSURE SCAN FAILED. Could not create the file list."
   exit 1
 fi

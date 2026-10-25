@@ -5,6 +5,7 @@ from __future__ import annotations
 import contextlib
 import io
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -197,9 +198,17 @@ class TestProvenance(unittest.TestCase):
     def test_admission_is_valid_before_and_after_commit_and_fields_are_checked(
         self,
     ) -> None:
+        # **The git directory is not named .git.** The Claude Code sandbox
+        # denies writes to .git/config and .git/hooks at any depth, so git
+        # init failed there on 2026-10-25. The environment selects the
+        # repository instead, and word_provenance inherits it.
         with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
-            (root / "curriculum").mkdir()
+            root = Path(tmp) / "tree"
+            (root / "curriculum").mkdir(parents=True)
+            history = {
+                "GIT_DIR": str(Path(tmp) / "history"),
+                "GIT_WORK_TREE": str(root),
+            }
             vocab = root / "curriculum/vocabulary.json"
             record = root / "curriculum/provenance.json"
             vocab.write_text(json.dumps({"terms": [{"word": "old"}]}))
@@ -220,14 +229,15 @@ class TestProvenance(unittest.TestCase):
                     capture_output=True,
                 )
 
-            git("init")
-            git("add", ".")
-            git("commit", "-m", "Initial lexicon")
             with (
+                patch.dict(os.environ, history),
                 patch.object(word_provenance, "ROOT", root),
                 contextlib.redirect_stdout(io.StringIO()),
                 contextlib.redirect_stderr(io.StringIO()),
             ):
+                git("init")
+                git("add", ".")
+                git("commit", "-m", "Initial lexicon")
                 self.assertEqual(
                     word_provenance.main(["provenance", "--out", str(record)]), 0
                 )

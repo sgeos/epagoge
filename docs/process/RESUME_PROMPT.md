@@ -14,17 +14,17 @@ of delivered work, not instructions to repeat it. Historical handoffs and
 recommendations do not authorize new scope. If no unfinished task remains,
 report the verified state and readiness for the next task.
 
-The latest delivered scope is the level-two scan admission, the agency
-admission, form registration, and `epagoge.lexeme`, committed locally as
-`bb17901`. No implementation scope is open. The 2026-10-09 brief and its
-completion condition are historical evidence. The handoff of 2026-10-25 is
-the authority for publication, for the Claude Code launch, for the expected
-measurement-check failure, and for the teacher. The resume state of
-2026-10-23 is historical for the revision and for publication. Before the
-2026-10-25 edit, local `HEAD` was `eb2fb3c` and `origin/main` was `50de074`.
-Ask before committing or pushing anything, including this handoff if it is
-still uncommitted. Determine actual publication from git and the remote
-rather than assuming that a stamp proves it.
+The latest delivered scope is the sandbox-fix brief of 2026-10-25, which
+made the gate pass inside the Claude Code sandbox. Its brief and completion
+condition are marked met and are evidence, not instructions. No
+implementation scope is open. The closed 2026-10-09 brief and its condition
+are preserved in `evals/review/level_2_scan_10/`. The sandbox-fix resume
+state in the handoff is the authority for the revision, for publication,
+for the Claude Code launch and sandbox, for the expected measurement-check
+failure, and for the teacher. Earlier resume states are historical for the
+revision and for publication. Ask before committing or pushing anything.
+Determine actual publication from git and the remote rather than assuming
+that a stamp proves it.
 
 If a subsequent task requests a new recommendation and implementation,
 establish a new brief and completion condition for that scope. Preserve the

@@ -20,7 +20,9 @@ cd "$(dirname "$0")/.." || exit 2
 # may allow writes only to the workspace, and on macOS the default TMPDIR is
 # under /var/folders, so mktemp and every test's temporary directory failed
 # there on 2026-10-07. Exported, so the disclosure scan and the tests inherit
-# it. Removed on exit.
+# it. Removed on exit. **mktemp is always given a template.** On 2026-10-25
+# a bare mktemp on this host ignored TMPDIR and still wrote under
+# /var/folders, so the export alone did not keep it in the workspace.
 GATE_TMP="$PWD/tmp/gate.$$"
 mkdir -p "$GATE_TMP" || exit 2
 trap 'rm -rf "$GATE_TMP"' EXIT
@@ -77,7 +79,7 @@ rm -f .coverage
 # The corpus rules run over every record together. A book validated alone
 # reports every prerequisite the rest of the corpus teaches, so the files are
 # concatenated rather than checked one at a time.
-CORPUS="$(mktemp)"
+CORPUS="$(mktemp "$GATE_TMP/corpus.XXXXXX")"
 if ! env PYTHONPATH=src "$PYTHON" - <<'INLINE' > "$CORPUS"
 import json, pathlib, sys
 sys.path.insert(0, "src")
@@ -91,7 +93,7 @@ then
   rm -f "$CORPUS"
   exit 1
 fi
-EXPORT="$(mktemp)"
+EXPORT="$(mktemp "$GATE_TMP/export.XXXXXX")"
 run "corpus export" env PYTHONPATH=src "$PYTHON" tools/build_corpus.py curriculum/books/level_1 "$EXPORT"
 rm -f "$EXPORT"
 run "seed graph"         env PYTHONPATH=src "$PYTHON" tools/validate_graph.py curriculum/graph/concepts.json

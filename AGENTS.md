@@ -49,7 +49,9 @@ config, pass `--sandbox workspace`.
 
 **Network access is not needed for normal work.** Measured on 2026-10-08,
 the full gate passes inside Codex's `workspace-write` sandbox, whose network
-is off, and inside Grok Build's `workspace` sandbox. Use the most restrictive profile that allows writes to this
+is off, and inside Grok Build's `workspace` sandbox. Measured on 2026-10-25,
+it also passes inside the Claude Code 2.1.310 sandbox on the authoring host,
+after the two fixes described below. Use the most restrictive profile that allows writes to this
 directory: `workspace-write` in Codex, and in Grok Build `workspace` or a
 custom profile extending it. On macOS Grok's profiles do not restrict child
 network access, so the network stays reachable there whatever the profile.
@@ -69,7 +71,16 @@ installed environment against `uv.lock` by reading files, but only for those
 two failures. Any other uv failure, such as a stale lock, still stops the
 gate. The gate also keeps its scratch files under the ignored `tmp/`, since
 the default macOS temporary directory is outside the workspace. Continuous
-integration always runs the real `uv sync`.
+integration always runs the real `uv sync`. Inside the Claude Code sandbox
+on 2026-10-25, uv ran normally and the fallback was not taken.
+
+**Two further sandbox failures were fixed on 2026-10-25.** On this host a
+bare `mktemp` ignored `TMPDIR` and wrote under `/var/folders`, so every
+`mktemp` in the gate scripts now names an explicit template. The Claude Code
+sandbox denies writes to `.git/config` and `.git/hooks` at any depth, so the
+provenance test selects a git directory with another name through `GIT_DIR`
+and `GIT_WORK_TREE` rather than creating `.git`. Before these fixes the gate
+exited 1 inside that sandbox and 0 outside it.
 
 **Observed in trial sessions on 2026-10-08.** Codex loaded `AGENTS.md` at
 startup. Grok Build loaded `AGENTS.md` and `CLAUDE.md`. Neither loaded

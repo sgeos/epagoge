@@ -31,7 +31,41 @@ measurements of every earlier batch already fail for that reason. A failure
 then marks the counts below as stale rather than wrong. Missing host
 artifacts make the associated checks unverified rather than disproved.
 
+## Resume state, 2026-10-25, sandbox fixes
+
+The brief opened on 2026-10-25 in `CURRENT_BRIEF.md` applies two sandbox
+fixes found when Claude Code first resumed this tree. Its condition is in
+`COMPLETION_CONDITION.md`. The closed brief of 2026-10-09 and its condition
+are preserved in `evals/review/level_2_scan_10/`. The earlier resume state
+of 2026-10-25 below is historical for the revision and for publication. Its
+other findings remain.
+
+The session began on `7cd961fe14c0d84267b3efe1632e5a058ba85aab`, message
+"Prepare the handoff for Claude Code". Local `HEAD`, the stored
+`origin/main` and `git ls-remote origin main` all named that commit, so
+the three commits earlier recorded as unpublished and the handoff commit
+were on the remote. Its [continuous integration
+run](https://github.com/sgeos/epagoge/actions/runs/40216991736) succeeded.
+`gh auth status` reported a valid keyring login for `sgeos` in this
+session. The measurement check named above still fails as expected.
+
+On that commit the full gate exited 1 inside the Claude Code 2.1.310
+sandbox and 0 outside it. A bare `mktemp` ignored `TMPDIR` and wrote under
+`/var/folders`, and the sandbox denies writes to `.git/config` and
+`.git/hooks` at any depth, which broke `git init` in the provenance test.
+Each `mktemp` in `tools/check.sh` and `tools/scrub_scan.sh` now names an
+explicit template, and the test selects a git directory named `history`
+through `GIT_DIR` and `GIT_WORK_TREE`. With those changes the gate exited 0
+both inside the sandbox and outside it on 2026-10-25, with 678 tests, no
+skips, 96 percent core coverage, 92 percent training coverage and a clean
+disclosure scan over 957 files. uv ran normally inside the sandbox.
+Continuous integration has not run for these changes until they are
+published. Commit and push only when the operator asks.
+
 ## Resume state, 2026-10-25
+
+Superseded for the revision and for publication by the sandbox-fix resume
+state above.
 
 No implementation scope is open. Do not repeat the admission brief of
 2026-10-09, and do not admit further words from the seven-source pool, the
@@ -168,9 +202,10 @@ The repository is prepared for Codex, Grok Build and Claude Code.
 needs, and what a fresh clone lacks. Trial sessions of Codex and Grok Build
 on 2026-10-08 loaded the instructions, passed the handoff validity checks
 and passed the full gate inside their workspace sandboxes, Codex with the
-network off. Claude Code was not part of that trial. Its launch command was
-checked against help output on 2026-10-25 and has not been run as a trial
-session. Network access is needed only to publish, and the loopback teacher
+network off. Claude Code was not part of that trial. On 2026-10-25 a
+Claude Code session launched with the command in `AGENTS.md` loaded the
+instructions, ran the handoff validity checks, and passed the full gate
+inside its sandbox after the fixes recorded above. Network access is needed only to publish, and the loopback teacher
 only to generate. Give a new session `docs/process/RESUME_PROMPT.md`. Start
 it in this existing directory, so the ignored host artifacts under
 `secret/`, `tmp/` and `evals/pilot/` remain available.
