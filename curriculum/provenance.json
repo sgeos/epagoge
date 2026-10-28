@@ -47,6 +47,10 @@
       "admitted_because": "Admitted alongside a newly authored concept, so that the concept had a word at its level.",
       "evidence": "reconstructed from history"
     },
+    "access": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "accident": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -273,6 +277,10 @@
       "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
       "evidence": "recorded at admission"
     },
+    "alcohol": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "alert": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -345,6 +353,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "alternative": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "although": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
@@ -389,6 +401,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "anaerobic": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "analysis": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -415,6 +431,10 @@
     },
     "annual": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "annually": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "answer": {
@@ -497,6 +517,14 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "appliance": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "application": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "apply": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -544,6 +572,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "array": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "arrive": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -685,6 +717,10 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
+      "evidence": "recorded at admission"
+    },
+    "availability": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "available": {
@@ -860,6 +896,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "barrel": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "barrier": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -903,6 +943,10 @@
     },
     "bathymetry": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "battery": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "bay": {
@@ -1174,8 +1218,24 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "biodiesel": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "biofuel": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "biogas": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "biological": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "biomass": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "bird": {
@@ -1201,6 +1261,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "blade": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "blame": {
       "commit": "a0366a07b501",
@@ -1229,6 +1293,10 @@
       "criterion": "teacher",
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "blend": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "bless": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -1655,6 +1723,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "bulb": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "bulge": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -1686,6 +1758,10 @@
     },
     "burst": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "bus": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "business": {
@@ -1888,6 +1964,10 @@
       "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
       "evidence": "recorded at admission"
     },
+    "carrier": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "carrot": {
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "evidence": "recorded at admission"
@@ -1989,8 +2069,24 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
       "evidence": "recorded at admission"
     },
+    "cavern": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "celery": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "cellulosic": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "cent": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "central": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "century": {
@@ -2419,6 +2515,10 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "coke": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "cold": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -2439,12 +2539,20 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "collector": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "college": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
     "collide": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "colony": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "color": {
@@ -2497,8 +2605,20 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "combustible": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "combustion": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "commercial": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "commercially": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "common": {
@@ -2561,6 +2681,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "compound": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "compress": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
@@ -2575,6 +2699,10 @@
     },
     "computer": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "concentrate": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "concern": {
@@ -2610,6 +2738,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "conservation": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "consider": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -2641,6 +2773,18 @@
     },
     "construction": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "consume": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "consumer": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "consumption": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "contact": {
@@ -2699,6 +2843,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "control": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "convection": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -2709,6 +2857,18 @@
     },
     "convention": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "conventional": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "conversion": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "convert": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "conveyor": {
@@ -2965,6 +3125,10 @@
       "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
       "evidence": "recorded at admission"
     },
+    "crude": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "cry": {
       "commit": "d1a98ab90049",
       "date": "2026-09-25",
@@ -2972,6 +3136,10 @@
       "criterion": "inflection",
       "admitted_because": "A form of an admitted word, added because a word admitted in one form is a trap for a generator constrained to the level.",
       "evidence": "reconstructed from history"
+    },
+    "cryogenic": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "crystal": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -3041,6 +3209,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "customer": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "cut": {
       "commit": "fe327c12ce59",
@@ -3199,6 +3371,14 @@
       "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source",
       "evidence": "recorded at admission"
     },
+    "decline": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "decomposition": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "decrease": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -3243,6 +3423,14 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "demand": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "demonstration": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "dense": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -3271,6 +3459,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "deposit": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "depression": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -3377,6 +3569,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "diesel": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "difference": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
@@ -3409,6 +3605,10 @@
       "criterion": "teacher",
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "digester": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "digit": {
       "commit": "1a5ac29cc8b6",
@@ -3546,6 +3746,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
+    "distillate": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "distinct": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -3556,6 +3760,14 @@
     },
     "distinguish": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "distribution": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "district": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "disturbance": {
@@ -3738,6 +3950,10 @@
       "admitted_because": "An inflection correction, replacing a form the derivation rules had invented.",
       "evidence": "reconstructed from history"
     },
+    "drill": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "drink": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -3838,6 +4054,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "duty": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "dwarf": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -3931,6 +4151,14 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "economic": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "economy": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "ecosystem": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -3958,6 +4186,14 @@
     },
     "effective": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "efficiency": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "efficient": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "egg": {
@@ -3994,6 +4230,10 @@
     },
     "electricity": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "electron": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "electronic": {
@@ -4040,6 +4280,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "emission": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "emphasis": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -4070,6 +4314,10 @@
     },
     "energy": {
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
+    "engine": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "engineering": {
@@ -4112,6 +4360,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "environmental": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "equal": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -4128,6 +4380,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "equivalent": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "escape": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
@@ -4138,6 +4394,10 @@
     },
     "essential": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "essentially": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "estimate": {
@@ -4152,6 +4412,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "ethanol": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "evacuation": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -4162,6 +4426,10 @@
     },
     "evaporation": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "evaporative": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "evening": {
@@ -4261,6 +4529,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "exclude": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "exert": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
@@ -4275,6 +4547,10 @@
     },
     "expect": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
+      "evidence": "recorded at admission"
+    },
+    "expensive": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "experience": {
@@ -4307,6 +4583,10 @@
     },
     "explore": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "export": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "exposure": {
@@ -4586,6 +4866,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "feedstock": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "feel": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -4628,6 +4912,10 @@
     },
     "fence": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "fermentation": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "fertilizer": {
@@ -4697,6 +4985,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "financial": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "fine": {
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
@@ -4856,6 +5148,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "fluid": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "fly": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -4997,6 +5293,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "fossil": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "fountain": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -5015,6 +5315,14 @@
     },
     "fox": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "fracking": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "fracture": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "frame": {
@@ -5089,6 +5397,10 @@
       "source": "Manual defining-word proposals from level_2_increment rejection review, 2026-09-28; local teacher replies adapted by agent semantic review in evals/review/level_2_foundations/review.json",
       "evidence": "recorded at admission"
     },
+    "fuel": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "full": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -5132,6 +5444,10 @@
       "criterion": "teacher",
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "furnace": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "fusion": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -5185,6 +5501,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "garbage": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "garden": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -5203,6 +5523,18 @@
     },
     "gas": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "gaseous": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "gasification": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "gasoline": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "gate": {
@@ -5229,6 +5561,14 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "generation": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "generator": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "gentle": {
       "commit": "3ec0986f5da1",
       "date": "2026-09-25",
@@ -5251,6 +5591,10 @@
     },
     "ghost": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "giant": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "gift": {
@@ -6100,6 +6444,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "hospital": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "hot": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -6107,6 +6455,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "hotel": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "hound": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -6140,6 +6492,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "household": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "however": {
       "commit": "fe327c12ce59",
@@ -6216,6 +6572,22 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "hydraulic": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "hydrocarbon": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "hydroelectric": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "hydroelectricity": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "hydrogen": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -6305,6 +6677,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "import": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "important": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
@@ -6323,6 +6699,14 @@
     },
     "inbound": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "incandescent": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "incentive": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "inch": {
@@ -6347,6 +6731,10 @@
     },
     "indeed": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "independent": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "indicate": {
@@ -6433,6 +6821,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "inject": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "injury": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -6469,6 +6861,14 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "insolation": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "install": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "instant": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -6501,6 +6901,14 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "intensive": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "interest": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "interesting": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -6523,6 +6931,10 @@
     },
     "invisible": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "involve": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "iron": {
@@ -6653,6 +7065,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "kilowatt": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "kind": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -6667,6 +7083,10 @@
     },
     "kindness": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "kinetic": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "king": {
@@ -6794,6 +7214,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "landfill": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "landscape": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
@@ -6917,6 +7341,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "leak": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "learn": {
       "commit": "019dea991be7",
@@ -7112,6 +7540,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "linear": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "link": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -7122,6 +7554,14 @@
     },
     "lip": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "lipid": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "liquefy": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "liquid": {
@@ -7328,6 +7768,10 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "magma": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "magnet": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
@@ -7362,6 +7806,10 @@
     },
     "majority": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "mall": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "man": {
@@ -7399,6 +7847,18 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "manufacture": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "manufacturer": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "manure": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "many": {
       "commit": "019dea991be7",
@@ -7564,6 +8024,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "mechanical": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "meet": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -7571,6 +8035,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "megawatt": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "melt": {
       "commit": "fe327c12ce59",
@@ -7656,6 +8124,10 @@
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
       "evidence": "recorded at admission"
     },
+    "methane": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "method": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -7671,6 +8143,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "metric": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "microburst": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -7765,6 +8241,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "miner": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "mineral": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
@@ -7800,6 +8280,10 @@
       "criterion": "teacher",
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
+    },
+    "mirror": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "miserable": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -7905,6 +8389,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "monoxide": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "month": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -7972,6 +8460,14 @@
       "criterion": "corpus",
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
+      "evidence": "recorded at admission"
+    },
+    "motor": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "motorcycle": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "mountain": {
@@ -8392,6 +8888,10 @@
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
+    "nuclear": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "nucleus": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -8500,6 +9000,14 @@
     },
     "official": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "offset": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "offshore": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "offsite": {
@@ -8616,6 +9124,10 @@
     },
     "ordinary": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "ore": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "organic": {
@@ -8830,6 +9342,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "panel": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "paper": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -8938,6 +9454,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "pathway": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "patient": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -9034,6 +9554,10 @@
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
+    "performance": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "perhaps": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
@@ -9090,6 +9614,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "petroleum": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "pharmaceutical": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
@@ -9104,6 +9632,10 @@
     },
     "photo": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "photon": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "phrase": {
@@ -9176,6 +9708,10 @@
     },
     "pipe": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "pipeline": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "pitcher": {
@@ -9319,6 +9855,14 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "policy": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "pollutant": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "pollution": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -9419,6 +9963,10 @@
     },
     "potato": {
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
+      "evidence": "recorded at admission"
+    },
+    "potential": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "potentially": {
@@ -9606,6 +10154,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "producer": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "product": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -9710,6 +10262,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "pump": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "pupil": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -9740,6 +10296,14 @@
     },
     "pussy": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "quadrillion": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "qualify": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "quality": {
@@ -9943,6 +10507,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "react": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "read": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -10059,6 +10627,10 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "recycle": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "red": {
       "commit": "019dea991be7",
       "date": "2026-09-24",
@@ -10079,12 +10651,28 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "refine": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "refinery": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "reflect": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
+    "reflector": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "refraction": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "refrigerator": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "refute": {
@@ -10171,6 +10759,10 @@
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
     },
+    "renewable": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "repeat": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -10239,12 +10831,36 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "requirement": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "research": {
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
       "evidence": "recorded at admission"
     },
+    "reserve": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "reservoir": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "reside": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "residential": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "residual": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "residue": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "resolution": {
@@ -10293,6 +10909,10 @@
     },
     "result": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "retail": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "retention": {
@@ -10629,6 +11249,10 @@
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers",
       "evidence": "recorded at admission"
     },
+    "sale": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "saline": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
@@ -10676,6 +11300,10 @@
     },
     "save": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "sawdust": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "scab": {
@@ -10766,6 +11394,10 @@
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
+    "scrubber": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "sea": {
       "commit": "a2b7f4971801",
       "date": "2026-09-27",
@@ -10811,12 +11443,20 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "sector": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "secure": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
     "sediment": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "sedimentary": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "seed": {
@@ -10944,6 +11584,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "evidence": "recorded at admission"
     },
+    "service": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "set": {
       "commit": "fe327c12ce59",
       "date": "2026-09-24",
@@ -11019,6 +11663,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "shale": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "shallow": {
       "commit": "ce2c954c366f",
@@ -12035,6 +12683,10 @@
       "admitted_because": "Admitted from generation evidence: a word the teacher reached for and was blocked on, judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "starch": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "stare": {
       "commit": "a0366a07b501",
       "date": "2026-09-25",
@@ -12178,6 +12830,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "storage": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "store": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
@@ -12352,6 +13008,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "substantially": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "subtract": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -12398,6 +13058,14 @@
     },
     "sugar": {
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
+      "evidence": "recorded at admission"
+    },
+    "sulfide": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "sulfur": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "summer": {
@@ -12470,6 +13138,10 @@
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
+    "supplemental": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "supply": {
       "commit": "a0366a07b501",
       "date": "2026-09-25",
@@ -12531,6 +13203,10 @@
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
     },
+    "survey": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "sustain": {
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
       "evidence": "recorded at admission"
@@ -12587,6 +13263,10 @@
       "admitted_because": "Admitted during a book-writing round, from a word the teacher was blocked on and that triage judged suitable for the level.",
       "evidence": "reconstructed from history"
     },
+    "switchgrass": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "symbol": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -12602,6 +13282,14 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "syngas": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "synthetic": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "system": {
       "commit": "019dea991be7",
@@ -12703,6 +13391,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "tank": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "tannin": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
@@ -12751,6 +13443,10 @@
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
+    "tax": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "teach": {
       "commit": "ec0c962714b8",
       "date": "2026-09-25",
@@ -12777,6 +13473,10 @@
     },
     "technical": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "technology": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "television": {
@@ -13209,6 +13909,10 @@
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
     },
+    "ton": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "tone": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -13313,6 +14017,10 @@
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
+    "tower": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "towering": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -13365,8 +14073,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "transfer": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "transition": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "transmission": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "transparent": {
@@ -13375,6 +14091,10 @@
     },
     "transpiration": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "transport": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "trap": {
@@ -13448,6 +14168,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "trillion": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "triumph": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -13854,6 +14578,10 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",
       "evidence": "recorded at admission"
     },
+    "utility": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "utter": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -14026,6 +14754,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "vote": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "wagon": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -14080,6 +14812,10 @@
     },
     "ward": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "warehouse": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "warm": {
@@ -14246,6 +14982,10 @@
       "criterion": "lexicalisation",
       "admitted_because": "Admitted so that a concept the schedule teaches has a word naming it, which the lexicalisation check requires.",
       "evidence": "reconstructed from history"
+    },
+    "wellhead": {
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "west": {
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap",

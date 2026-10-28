@@ -1,0 +1,2414 @@
+{
+  "access": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Access is a way to get to a thing or into a place.",
+    "concept": "spatial_position",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "access",
+      "accessed",
+      "accesses",
+      "accessing"
+    ]
+  },
+  "alcohol": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Alcohol is the name of a group of clear liquids that burn, and one kind of it is in some drinks.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "alcohol",
+      "alcohols"
+    ]
+  },
+  "alternative": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An alternative is another thing that you can choose in place of the first one.",
+    "concept": "choosing",
+    "pos": "adjective noun periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "alternative",
+      "alternatives"
+    ]
+  },
+  "annually": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Annually means once each year.",
+    "concept": "duration",
+    "pos": "adverb ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "annually"
+    ]
+  },
+  "appliance": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only appliances, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An appliance is a machine that does a job in the home.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "appliance",
+      "appliances"
+    ]
+  },
+  "appliances": {
+    "decision": "exclude",
+    "reason": "An inflected form of appliance, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "application": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only applications, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An application is a way of using a thing to do a job.",
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "application",
+      "applications"
+    ]
+  },
+  "applications": {
+    "decision": "exclude",
+    "reason": "An inflected form of application, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "array": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An array is a set of things put together in lines.",
+    "concept": "grouping",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "array",
+      "arrays"
+    ]
+  },
+  "arrays": {
+    "decision": "exclude",
+    "reason": "An inflected form of array, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "availability": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Availability is how easy a thing is to get or to use.",
+    "concept": "having",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "availability"
+    ]
+  },
+  "barrel": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only barrels, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A barrel is a big round container that holds a liquid such as oil.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "barrel",
+      "barrels"
+    ]
+  },
+  "barrels": {
+    "decision": "exclude",
+    "reason": "An inflected form of barrel, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "battery": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A battery is a thing that keeps electricity in it to use later.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "batteries",
+      "battery"
+    ]
+  },
+  "biodiesel": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Biodiesel is diesel made from plant oil or animal fat.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "biodiesel"
+    ]
+  },
+  "biofuel": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A biofuel is a fuel made from plants or from animal waste.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "biofuel",
+      "biofuels"
+    ]
+  },
+  "biofuels": {
+    "decision": "exclude",
+    "reason": "An inflected form of biofuel, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "biogas": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Biogas is a gas that bacteria make from waste, and it can be burned as a fuel.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "biogas"
+    ]
+  },
+  "biomass": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Biomass is plant and animal material that people burn or use to make fuel.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "biomass"
+    ]
+  },
+  "blade": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only blades, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A blade is a flat or sharp part of a tool or a machine.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "blade",
+      "blades"
+    ]
+  },
+  "blades": {
+    "decision": "exclude",
+    "reason": "An inflected form of blade, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "blend": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To blend is to mix things well together.",
+    "concept": "joining_and_separating",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "blend",
+      "blended",
+      "blending",
+      "blends"
+    ]
+  },
+  "blended": {
+    "decision": "exclude",
+    "reason": "An inflected form of blend, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "blending": {
+    "decision": "exclude",
+    "reason": "An inflected form of blend, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "blends": {
+    "decision": "exclude",
+    "reason": "An inflected form of blend, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "bulb": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bulb is the glass part of a lamp that gives light.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "bulb",
+      "bulbs"
+    ]
+  },
+  "bulbs": {
+    "decision": "exclude",
+    "reason": "An inflected form of bulb, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "bus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only buses, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bus is a big vehicle that carries many people.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "bus",
+      "buses"
+    ]
+  },
+  "buses": {
+    "decision": "exclude",
+    "reason": "An inflected form of bus, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "capita": {
+    "decision": "exclude",
+    "reason": "Occurs only in the Latin phrase per capita. Not an English headword on its own."
+  },
+  "carrier": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A carrier is a person or a thing that carries something.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "carrier",
+      "carriers"
+    ]
+  },
+  "cavern": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only caverns, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cavern is a large cave.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "cavern",
+      "caverns"
+    ]
+  },
+  "caverns": {
+    "decision": "exclude",
+    "reason": "An inflected form of cavern, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "cent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only cents, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cent is a small unit of money, and one hundred cents make a dollar.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "cent",
+      "cents"
+    ]
+  },
+  "central": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Central means in the middle.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "central"
+    ]
+  },
+  "cents": {
+    "decision": "exclude",
+    "reason": "An inflected form of cent, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "coalbed": {
+    "decision": "defer",
+    "reason": "A technical compound used in the source only in the name coalbed methane. It is left until coal bed is needed as a phrase."
+  },
+  "collector": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A collector is a person or a thing that collects something.",
+    "concept": "grouping",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "collector",
+      "collectors"
+    ]
+  },
+  "collectors": {
+    "decision": "exclude",
+    "reason": "An inflected form of collector, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "colonies": {
+    "decision": "exclude",
+    "reason": "An inflected form of colony, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "colony": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only colonies, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A colony is a place where people from another country live and that country rules.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "colonies",
+      "colony"
+    ]
+  },
+  "commercially": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Commercially means in a way that is done to make money.",
+    "concept": "exchange",
+    "pos": "adverb ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "commercially"
+    ]
+  },
+  "compound": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only compounds, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A compound is a material made of two or more kinds of atom joined together.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "compound",
+      "compounds"
+    ]
+  },
+  "compounds": {
+    "decision": "exclude",
+    "reason": "An inflected form of compound, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "concentrate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To concentrate is to bring a lot of a thing together into one small place.",
+    "concept": "quantity",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "concentrate",
+      "concentrated",
+      "concentrates",
+      "concentrating"
+    ]
+  },
+  "concentrated": {
+    "decision": "exclude",
+    "reason": "An inflected form of concentrate, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "concentrating": {
+    "decision": "exclude",
+    "reason": "An inflected form of concentrate, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "conservation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Conservation is keeping a thing safe or using less of it so that it is not used up.",
+    "concept": "using_up",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "conservation"
+    ]
+  },
+  "consume": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To consume is to use a thing up.",
+    "concept": "using_up",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "consume",
+      "consumed",
+      "consumes",
+      "consuming"
+    ]
+  },
+  "consumed": {
+    "decision": "exclude",
+    "reason": "An inflected form of consume, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "consumer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A consumer is a person who buys or uses things.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "consumer",
+      "consumers"
+    ]
+  },
+  "consumers": {
+    "decision": "exclude",
+    "reason": "An inflected form of consumer, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "consuming": {
+    "decision": "exclude",
+    "reason": "An inflected form of consume, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "consumption": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Consumption is how much of a thing is used up.",
+    "concept": "using_up",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "consumption"
+    ]
+  },
+  "control": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To control a thing is to make it do what you want.",
+    "concept": "someone_in_charge",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "control",
+      "controlled",
+      "controlling",
+      "controls"
+    ]
+  },
+  "conventional": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Conventional means of the usual kind.",
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "conventional"
+    ]
+  },
+  "conversion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A conversion is a change of a thing into another form.",
+    "concept": "change",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "conversion",
+      "conversions"
+    ]
+  },
+  "convert": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To convert is to change a thing into another kind of thing.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "convert",
+      "converted",
+      "converting",
+      "converts"
+    ]
+  },
+  "converted": {
+    "decision": "exclude",
+    "reason": "An inflected form of convert, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "converting": {
+    "decision": "exclude",
+    "reason": "An inflected form of convert, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "crude": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Crude means still as it was found in nature, before people change it.",
+    "concept": "raw_and_made",
+    "pos": "adjective",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "crude",
+      "cruder",
+      "crudest"
+    ]
+  },
+  "customer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only customers, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A customer is a person who buys things from a store.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "customer",
+      "customers"
+    ]
+  },
+  "customers": {
+    "decision": "exclude",
+    "reason": "An inflected form of customer, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "decline": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only declined, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To decline is to go down or to become less.",
+    "concept": "more_and_fewer",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "decline",
+      "declined",
+      "declines",
+      "declining"
+    ]
+  },
+  "declined": {
+    "decision": "exclude",
+    "reason": "An inflected form of decline, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "decomposition": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Decomposition is the slow breaking down of dead plants and animals into small bits.",
+    "concept": "dying",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "decomposition"
+    ]
+  },
+  "demand": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Demand is how much of a thing people want or need.",
+    "concept": "need",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "demand",
+      "demands"
+    ]
+  },
+  "demonstration": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A demonstration is a showing of how a thing works.",
+    "concept": "explanation",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "demonstration",
+      "demonstrations"
+    ]
+  },
+  "deposit": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only deposits, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A deposit is a layer of a material that has built up in the ground.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "deposit",
+      "deposits"
+    ]
+  },
+  "deposits": {
+    "decision": "exclude",
+    "reason": "An inflected form of deposit, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "diesel": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Diesel is an oil that some engines burn as fuel.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "diesel"
+    ]
+  },
+  "digesters": {
+    "decision": "exclude",
+    "reason": "An inflected form of digester, which is admitted in evals/review/level_3_agency_02 at level three. The form is among its reviewed forms."
+  },
+  "distribution": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Distribution is the sending of things out to many places or people.",
+    "concept": "exchange",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "distribution"
+    ]
+  },
+  "district": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A district is a part of a town, a city or a country.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "district",
+      "districts"
+    ]
+  },
+  "drill": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only drilling, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A drill is a tool that turns to make a hole.",
+    "concept": "activity",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "drill",
+      "drilled",
+      "drilling",
+      "drills"
+    ]
+  },
+  "drilling": {
+    "decision": "exclude",
+    "reason": "An inflected form of drill, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "duty": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A duty is a thing that you should do.",
+    "concept": "should_and_should_not",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "duties",
+      "duty"
+    ]
+  },
+  "economic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Economic means of money, work and trade.",
+    "concept": "exchange",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "economic"
+    ]
+  },
+  "economy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An economy is the way a country makes, buys and sells things.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "economies",
+      "economy"
+    ]
+  },
+  "efficiency": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Efficiency is how well a thing does a job without waste.",
+    "concept": "using_up",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "efficiency"
+    ]
+  },
+  "efficient": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Efficient means doing a job well without waste.",
+    "concept": "using_up",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "efficient"
+    ]
+  },
+  "electron": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only electrons, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An electron is a very small part of an atom.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "electron",
+      "electrons"
+    ]
+  },
+  "electrons": {
+    "decision": "exclude",
+    "reason": "An inflected form of electron, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "emission": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only emissions, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An emission is gas or smoke that a thing lets out into the air.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "emission",
+      "emissions"
+    ]
+  },
+  "emissions": {
+    "decision": "exclude",
+    "reason": "An inflected form of emission, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "engine": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An engine is a machine that changes energy into movement.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "engine",
+      "engines"
+    ]
+  },
+  "engines": {
+    "decision": "exclude",
+    "reason": "An inflected form of engine, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "enlarge": {
+    "decision": "defer",
+    "reason": "Frequent only in the image link text Click to enlarge, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "environmental": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Environmental means about the natural world around us.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "environmental"
+    ]
+  },
+  "equivalent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Equivalent means equal in amount, worth or use.",
+    "concept": "same_amount",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "equivalent"
+    ]
+  },
+  "essentially": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Essentially means in the most important way.",
+    "concept": "same_and_different",
+    "pos": "adverb ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "essentially"
+    ]
+  },
+  "ethanol": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ethanol is an alcohol made from plants such as corn, and people use it as a fuel.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "ethanol"
+    ]
+  },
+  "exclude": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only excluding, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To exclude is to leave a thing out.",
+    "concept": "leaving_out",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "exclude",
+      "excluded",
+      "excludes",
+      "excluding"
+    ]
+  },
+  "excluding": {
+    "decision": "exclude",
+    "reason": "An inflected form of exclude, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "expensive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Expensive means costing a lot of money.",
+    "concept": "exchange",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "expensive"
+    ]
+  },
+  "export": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only exports, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To export is to send things to another country to sell them.",
+    "concept": "exchange",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "export",
+      "exported",
+      "exporting",
+      "exports"
+    ]
+  },
+  "exports": {
+    "decision": "exclude",
+    "reason": "An inflected form of export, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "feedstocks": {
+    "decision": "exclude",
+    "reason": "An inflected form of feedstock, which is admitted in evals/review/level_3_agency_02 at level three. The form is among its reviewed forms."
+  },
+  "financial": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Financial means of money.",
+    "concept": "exchange",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "financial"
+    ]
+  },
+  "fleets": {
+    "decision": "exclude",
+    "reason": "Plural of fleet, which is already filed at level six. Changing that filing is outside this batch."
+  },
+  "fluid": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A fluid is a liquid or a gas, a thing that can flow.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "fluid",
+      "fluids"
+    ]
+  },
+  "fossil": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A fossil is what is left in rock of a plant or an animal from long ago.",
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "fossil",
+      "fossils"
+    ]
+  },
+  "fracture": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only fracturing, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A fracture is a break or a crack.",
+    "concept": "things_break",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "fracture",
+      "fractured",
+      "fractures",
+      "fracturing"
+    ]
+  },
+  "fracturing": {
+    "decision": "exclude",
+    "reason": "An inflected form of fracture, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "fuel": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fuel is a material that people burn to make heat or power.",
+    "concept": "heat",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "fuel",
+      "fueled",
+      "fueling",
+      "fuels"
+    ]
+  },
+  "fueled": {
+    "decision": "exclude",
+    "reason": "An inflected form of fuel, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "fueling": {
+    "decision": "exclude",
+    "reason": "An inflected form of fuel, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "fuels": {
+    "decision": "exclude",
+    "reason": "An inflected form of fuel, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "furnace": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A furnace is a very hot box where fuel burns to heat a house or to melt metal.",
+    "concept": "heat",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "furnace",
+      "furnaces"
+    ]
+  },
+  "garbage": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Garbage is waste that people throw away.",
+    "concept": "using_up",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "garbage"
+    ]
+  },
+  "gaseous": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Gaseous means in the form of a gas.",
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "gaseous"
+    ]
+  },
+  "gasoline": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Gasoline is a liquid fuel made from oil, and most cars burn it.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "gasoline"
+    ]
+  },
+  "generation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Generation is the making of a thing such as electricity.",
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "generation"
+    ]
+  },
+  "generator": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A generator is a machine that makes electricity.",
+    "concept": "force",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "generator",
+      "generators"
+    ]
+  },
+  "generators": {
+    "decision": "exclude",
+    "reason": "An inflected form of generator, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "giant": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Giant means very, very big.",
+    "concept": "physical_property",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "giant"
+    ]
+  },
+  "hospital": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only hospitals, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hospital is a place where nurses and other people care for people who are sick or hurt.",
+    "concept": "being_hurt",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "hospital",
+      "hospitals"
+    ]
+  },
+  "hospitals": {
+    "decision": "exclude",
+    "reason": "An inflected form of hospital, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "hotel": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only hotels, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hotel is a building where people pay to sleep for a night or more.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "hotel",
+      "hotels"
+    ]
+  },
+  "hotels": {
+    "decision": "exclude",
+    "reason": "An inflected form of hotel, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "household": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A household is all the people who live in one home.",
+    "concept": "family",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "household",
+      "households"
+    ]
+  },
+  "households": {
+    "decision": "exclude",
+    "reason": "An inflected form of household, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "hydro": {
+    "decision": "exclude",
+    "reason": "A clipped form and a combining part meaning water, glossed in brackets in the source. Not a headword in the sense the source uses."
+  },
+  "hydrocarbons": {
+    "decision": "exclude",
+    "reason": "An inflected form of hydrocarbon, which is admitted in evals/review/level_3_agency_02 at level three. The form is among its reviewed forms."
+  },
+  "hydroelectric": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Hydroelectric means making electricity from moving water.",
+    "concept": "force",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "hydroelectric"
+    ]
+  },
+  "hydroelectricity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Hydroelectricity is electricity made from moving water.",
+    "concept": "force",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "hydroelectricity"
+    ]
+  },
+  "import": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To import is to bring things in from another country to sell them.",
+    "concept": "exchange",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "import",
+      "imported",
+      "importing",
+      "imports"
+    ]
+  },
+  "imported": {
+    "decision": "exclude",
+    "reason": "An inflected form of import, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "imports": {
+    "decision": "exclude",
+    "reason": "An inflected form of import, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "incentive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only incentives, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An incentive is a thing, such as money, that makes a person want to do something.",
+    "concept": "goal",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "incentive",
+      "incentives"
+    ]
+  },
+  "incentives": {
+    "decision": "exclude",
+    "reason": "An inflected form of incentive, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "independent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Independent means free, and not ruled by others.",
+    "concept": "allowed_or_not",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "independent"
+    ]
+  },
+  "individual": {
+    "decision": "defer",
+    "reason": "Already filed at level six. Moving an existing filing to level two is a separate decision, not part of this batch."
+  },
+  "inject": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only injected, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To inject is to push a liquid or a gas into a thing.",
+    "concept": "force",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "inject",
+      "injected",
+      "injecting",
+      "injects"
+    ]
+  },
+  "injected": {
+    "decision": "exclude",
+    "reason": "An inflected form of inject, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "install": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only installed, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To install is to put a machine or a part in place so that it can be used.",
+    "concept": "component_and_system",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "install",
+      "installed",
+      "installing",
+      "installs"
+    ]
+  },
+  "installed": {
+    "decision": "exclude",
+    "reason": "An inflected form of install, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "interest": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Interest is wanting to know more about a thing.",
+    "concept": "finding_out",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "interest",
+      "interests"
+    ]
+  },
+  "involve": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only involves, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To involve is to have a thing as a part.",
+    "concept": "component_and_system",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "involve",
+      "involved",
+      "involves",
+      "involving"
+    ]
+  },
+  "involves": {
+    "decision": "exclude",
+    "reason": "An inflected form of involve, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "kilowatthours": {
+    "decision": "defer",
+    "reason": "Plural of kilowatthour, which this source spells as one word where other sources join it with a hyphen. Left until the spelling is decided."
+  },
+  "kilowatts": {
+    "decision": "exclude",
+    "reason": "An inflected form of kilowatt, which is admitted in evals/review/level_3_agency_02 at level three. The form is among its reviewed forms."
+  },
+  "kwh": {
+    "decision": "exclude",
+    "reason": "An abbreviation of a unit name. Not a headword."
+  },
+  "landfill": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A landfill is a place where garbage is put under the ground.",
+    "concept": "using_up",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "landfill",
+      "landfills"
+    ]
+  },
+  "landfills": {
+    "decision": "exclude",
+    "reason": "An inflected form of landfill, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "leak": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only leaks, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A leak is a hole or a crack that lets a liquid or a gas get out.",
+    "concept": "things_break",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "leak",
+      "leaked",
+      "leaking",
+      "leaks"
+    ]
+  },
+  "leaks": {
+    "decision": "exclude",
+    "reason": "An inflected form of leak, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "liquefied": {
+    "decision": "exclude",
+    "reason": "An inflected form of liquefy, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "liquefy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only liquefied, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To liquefy is to make a thing into a liquid.",
+    "concept": "liquid",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "liquefied",
+      "liquefies",
+      "liquefy",
+      "liquefying"
+    ]
+  },
+  "magma": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Magma is hot melted rock under the ground.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "magma"
+    ]
+  },
+  "mall": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only malls, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A mall is a big building with many stores in it.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "mall",
+      "malls"
+    ]
+  },
+  "malls": {
+    "decision": "exclude",
+    "reason": "An inflected form of mall, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "manufacture": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only manufacturing, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To manufacture is to make things in a factory, often with machines.",
+    "concept": "raw_and_made",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "manufacture",
+      "manufactured",
+      "manufactures",
+      "manufacturing"
+    ]
+  },
+  "manufacturer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only manufacturers, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A manufacturer is a company that manufactures things.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "manufacturer",
+      "manufacturers"
+    ]
+  },
+  "manufacturers": {
+    "decision": "exclude",
+    "reason": "An inflected form of manufacturer, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "manufacturing": {
+    "decision": "exclude",
+    "reason": "An inflected form of manufacture, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "manure": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Manure is animal waste that people put on fields to help plants grow.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "manure"
+    ]
+  },
+  "mechanical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Mechanical means of machines, or done by a machine.",
+    "concept": "component_and_system",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "mechanical"
+    ]
+  },
+  "megawatts": {
+    "decision": "exclude",
+    "reason": "An inflected form of megawatt, which is admitted in evals/review/level_3_agency_02 at level three. The form is among its reviewed forms."
+  },
+  "methane": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Methane is a gas made of carbon and hydrogen, and it burns.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "methane"
+    ]
+  },
+  "metric": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Metric means of the way of measuring that uses meters and grams.",
+    "concept": "measuring",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "metric"
+    ]
+  },
+  "miner": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only miners, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A miner is a person who works in a mine.",
+    "concept": "activity",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "miner",
+      "miners"
+    ]
+  },
+  "miners": {
+    "decision": "exclude",
+    "reason": "An inflected form of miner, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "mirror": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only mirrors, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A mirror is a flat piece of glass that shows you what is in front of it.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "mirror",
+      "mirrors"
+    ]
+  },
+  "mirrors": {
+    "decision": "exclude",
+    "reason": "An inflected form of mirror, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "monoxide": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A monoxide is a chemical with one atom of oxygen in it.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "monoxide",
+      "monoxides"
+    ]
+  },
+  "motor": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A motor is a machine that makes a thing move or turn.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "motor",
+      "motors"
+    ]
+  },
+  "motorcycle": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only motorcycles, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A motorcycle is a vehicle with two wheels and an engine.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "motorcycle",
+      "motorcycles"
+    ]
+  },
+  "motorcycles": {
+    "decision": "exclude",
+    "reason": "An inflected form of motorcycle, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "net": {
+    "decision": "defer",
+    "reason": "The source uses the accounting sense, and the common sense of a mesh is more basic. Which sense to file first is a separate decision."
+  },
+  "nonfuel": {
+    "decision": "exclude",
+    "reason": "A category label formed with a prefix and used by one source. Not a general headword."
+  },
+  "nuclear": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Nuclear means of the middle part of an atom, or of power made from it.",
+    "concept": "force",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "nuclear"
+    ]
+  },
+  "offshore": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Offshore means out in the sea, away from the land.",
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "offshore"
+    ]
+  },
+  "operation": {
+    "decision": "defer",
+    "reason": "Already filed at level five in a mathematical sense. A second sense at level two is a separate decision, not part of this batch."
+  },
+  "ore": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ore is rock that has metal in it.",
+    "concept": "metal",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "ore",
+      "ores"
+    ]
+  },
+  "panel": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only panels, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A panel is a flat piece that is part of a larger thing.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "panel",
+      "panels"
+    ]
+  },
+  "panels": {
+    "decision": "exclude",
+    "reason": "An inflected form of panel, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "pathway": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only pathways, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pathway is a path, or a way to get to a place or to do a thing.",
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "pathway",
+      "pathways"
+    ]
+  },
+  "pathways": {
+    "decision": "exclude",
+    "reason": "An inflected form of pathway, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "performance": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Performance is how well a person or a machine performs.",
+    "concept": "activity",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "performance",
+      "performances"
+    ]
+  },
+  "petroleum": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Petroleum is oil that comes from deep under the ground.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "petroleum"
+    ]
+  },
+  "photons": {
+    "decision": "exclude",
+    "reason": "An inflected form of photon, which is admitted in evals/review/level_3_agency_02 at level three. The form is among its reviewed forms."
+  },
+  "pipeline": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pipeline is a long line of pipes that carries oil, gas or water far away.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "pipeline",
+      "pipelines"
+    ]
+  },
+  "pipelines": {
+    "decision": "exclude",
+    "reason": "An inflected form of pipeline, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "policies": {
+    "decision": "exclude",
+    "reason": "An inflected form of policy, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "policy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only policies, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A policy is a plan or a rule that a group or a government follows.",
+    "concept": "rule",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "policies",
+      "policy"
+    ]
+  },
+  "pollutant": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only pollutants, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pollutant is a thing that makes air, water or land dirty and harmful.",
+    "concept": "danger",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "pollutant",
+      "pollutants"
+    ]
+  },
+  "pollutants": {
+    "decision": "exclude",
+    "reason": "An inflected form of pollutant, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "potential": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Potential means possible but not yet real.",
+    "concept": "can_and_cannot",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "potential"
+    ]
+  },
+  "producer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A producer is a person or a group that makes or grows things.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "producer",
+      "producers"
+    ]
+  },
+  "producers": {
+    "decision": "exclude",
+    "reason": "An inflected form of producer, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "pump": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pump is a machine that pushes a liquid or a gas through a pipe.",
+    "concept": "force",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "pump",
+      "pumped",
+      "pumping",
+      "pumps"
+    ]
+  },
+  "pumped": {
+    "decision": "exclude",
+    "reason": "An inflected form of pump, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "pumps": {
+    "decision": "exclude",
+    "reason": "An inflected form of pump, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "pyrolysis": {
+    "decision": "defer",
+    "reason": "A chemical process term whose source sense is past level three. It is left for a later level."
+  },
+  "quadrillion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A quadrillion is a thousand trillion.",
+    "concept": "natural_number",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "quadrillion",
+      "quadrillions"
+    ]
+  },
+  "qualify": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To qualify is to meet the rules needed to be or to do a thing.",
+    "concept": "allowed_or_not",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "qualified",
+      "qualifies",
+      "qualify",
+      "qualifying"
+    ]
+  },
+  "react": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only reacts, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To react is to change or to act because of another thing.",
+    "concept": "cause_and_effect",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "react",
+      "reacted",
+      "reacting",
+      "reacts"
+    ]
+  },
+  "reacts": {
+    "decision": "exclude",
+    "reason": "An inflected form of react, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "recycle": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only recycled, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To recycle is to make used things into new things.",
+    "concept": "using_up",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "recycle",
+      "recycled",
+      "recycles",
+      "recycling"
+    ]
+  },
+  "recycled": {
+    "decision": "exclude",
+    "reason": "An inflected form of recycle, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "refine": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only refining, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To refine is to make a material pure by taking out what is not wanted.",
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "refine",
+      "refined",
+      "refines",
+      "refining"
+    ]
+  },
+  "refineries": {
+    "decision": "exclude",
+    "reason": "An inflected form of refinery, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "refinery": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only refineries, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A refinery is a factory that refines oil or another material.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "refineries",
+      "refinery"
+    ]
+  },
+  "refining": {
+    "decision": "exclude",
+    "reason": "An inflected form of refine, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "reflector": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only reflectors, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A reflector is a thing that reflects light.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "reflector",
+      "reflectors"
+    ]
+  },
+  "reflectors": {
+    "decision": "exclude",
+    "reason": "An inflected form of reflector, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "reforming": {
+    "decision": "exclude",
+    "reason": "Present participle of reform, which is not in the pool. The source uses it only as the name of a chemical process."
+  },
+  "refrigerator": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A refrigerator is a cold box in the kitchen that keeps food fresh.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "refrigerator",
+      "refrigerators"
+    ]
+  },
+  "refrigerators": {
+    "decision": "exclude",
+    "reason": "An inflected form of refrigerator, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "renewable": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Renewable means able to come back again, so that it is not used up.",
+    "concept": "using_up",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "renewable"
+    ]
+  },
+  "requirement": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only requirements, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A requirement is a thing that you need or that a rule says you must have.",
+    "concept": "need",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "requirement",
+      "requirements"
+    ]
+  },
+  "requirements": {
+    "decision": "exclude",
+    "reason": "An inflected form of requirement, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "reserve": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only reserves, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A reserve is an amount of a thing that is kept to use later.",
+    "concept": "stock_and_flow",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "reserve",
+      "reserves"
+    ]
+  },
+  "reserves": {
+    "decision": "exclude",
+    "reason": "An inflected form of reserve, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "reservoir": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A reservoir is a place where a lot of water or another fluid is kept.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "reservoir",
+      "reservoirs"
+    ]
+  },
+  "reservoirs": {
+    "decision": "exclude",
+    "reason": "An inflected form of reservoir, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "residential": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Residential means of the places where people live.",
+    "concept": "people_together",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "residential"
+    ]
+  },
+  "residue": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only residues, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A residue is what is left after a thing is used or taken away.",
+    "concept": "using_up",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "residue",
+      "residues"
+    ]
+  },
+  "residues": {
+    "decision": "exclude",
+    "reason": "An inflected form of residue, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "retail": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Retail is the selling of things to people in stores.",
+    "concept": "exchange",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "retail"
+    ]
+  },
+  "sale": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sale is the selling of a thing.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "sale",
+      "sales"
+    ]
+  },
+  "sales": {
+    "decision": "exclude",
+    "reason": "An inflected form of sale, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "sawdust": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sawdust is the tiny bits of wood that fall off when people cut wood.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "sawdust"
+    ]
+  },
+  "scrubbers": {
+    "decision": "exclude",
+    "reason": "An inflected form of scrubber, which is admitted in evals/review/level_3_agency_02 at level three. The form is among its reviewed forms."
+  },
+  "sectors": {
+    "decision": "exclude",
+    "reason": "An inflected form of sector, which is admitted in evals/review/level_3_agency_02 at level three. The form is among its reviewed forms."
+  },
+  "sedimentary": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sedimentary means made of layers of sediment that have pressed together into rock.",
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "sedimentary"
+    ]
+  },
+  "service": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A service is work that a person or a group does for other people.",
+    "concept": "activity",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "service",
+      "services"
+    ]
+  },
+  "shale": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Shale is a soft rock made of mud pressed in thin layers.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "shale"
+    ]
+  },
+  "starch": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Starch is a white material in some food, such as corn and potatoes.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "starch"
+    ]
+  },
+  "storage": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Storage is the keeping of things in a place until they are needed.",
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "storage"
+    ]
+  },
+  "substantially": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Substantially means by a large amount.",
+    "concept": "quantity",
+    "pos": "adverb ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "substantially"
+    ]
+  },
+  "sulfur": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sulfur is a yellow material that smells bad when it burns.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "sulfur"
+    ]
+  },
+  "survey": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only surveys, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A survey is a careful study made to find out about a place or a group.",
+    "concept": "finding_out",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "survey",
+      "surveyed",
+      "surveying",
+      "surveys"
+    ]
+  },
+  "surveys": {
+    "decision": "exclude",
+    "reason": "An inflected form of survey, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "switchgrass": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Switchgrass is a tall grass that people grow to make fuel.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "switchgrass"
+    ]
+  },
+  "synthetic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Synthetic means made by people and not found in nature.",
+    "concept": "raw_and_made",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "synthetic"
+    ]
+  },
+  "tank": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only tanks, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tank is a large container that holds a liquid or a gas.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "tank",
+      "tanks"
+    ]
+  },
+  "tanks": {
+    "decision": "exclude",
+    "reason": "An inflected form of tank, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "tax": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tax is money that people must pay to the government.",
+    "concept": "exchange",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "tax",
+      "taxed",
+      "taxes",
+      "taxing"
+    ]
+  },
+  "technologies": {
+    "decision": "exclude",
+    "reason": "An inflected form of technology, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "technology": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Technology is the tools and machines that people make to help them do things.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "technologies",
+      "technology"
+    ]
+  },
+  "ton": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only tons, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A ton is a unit of weight equal to two thousand pounds.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "ton",
+      "tons"
+    ]
+  },
+  "tons": {
+    "decision": "exclude",
+    "reason": "An inflected form of ton, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "tower": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tower is a tall, narrow building or part of a building.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "tower",
+      "towers"
+    ]
+  },
+  "towers": {
+    "decision": "exclude",
+    "reason": "An inflected form of tower, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "transfer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To transfer is to move a thing from one place or person to another.",
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "transfer",
+      "transferred",
+      "transferring",
+      "transfers"
+    ]
+  },
+  "transmission": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Transmission is the sending of a thing such as electricity from one place to another.",
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "transmission"
+    ]
+  },
+  "transport": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To transport is to carry people or things from one place to another.",
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "transport",
+      "transported",
+      "transporting",
+      "transports"
+    ]
+  },
+  "transported": {
+    "decision": "exclude",
+    "reason": "An inflected form of transport, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "transporting": {
+    "decision": "exclude",
+    "reason": "An inflected form of transport, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "trillion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A trillion is a thousand billion.",
+    "concept": "natural_number",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "trillion",
+      "trillions"
+    ]
+  },
+  "utility": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A utility is a company that sells power, water or gas to homes.",
+    "concept": "exchange",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "utilities",
+      "utility"
+    ]
+  },
+  "vote": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To vote is to show what you choose so that a group can decide.",
+    "concept": "choosing",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "vote",
+      "voted",
+      "votes",
+      "voting"
+    ]
+  },
+  "warehouse": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan and definable at level two. The pool held only warehouses, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A warehouse is a large building where things are kept.",
+    "concept": "stock_and_flow",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "warehouse",
+      "warehouses"
+    ]
+  },
+  "warehouses": {
+    "decision": "exclude",
+    "reason": "An inflected form of warehouse, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "worship": {
+    "decision": "defer",
+    "reason": "A grounded definition needs words for religious practice such as pray or holy, which are not admitted at level two. The source uses it only in the phrase places of worship."
+  }
+}

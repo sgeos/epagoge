@@ -261,6 +261,18 @@
       ]
     },
     {
+      "word": "access",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "accessed",
+        "accesses",
+        "accessing"
+      ]
+    },
+    {
       "word": "accident",
       "concept": "accident",
       "level": 2,
@@ -593,6 +605,16 @@
       ]
     },
     {
+      "word": "alcohol",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "alcohols"
+      ]
+    },
+    {
       "word": "alert",
       "concept": "finding_out",
       "level": 2,
@@ -667,6 +689,16 @@
       "level": 2
     },
     {
+      "word": "alternative",
+      "concept": "choosing",
+      "level": 2,
+      "pos": "adjective noun periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "alternatives"
+      ]
+    },
+    {
       "word": "although",
       "concept": "discourse_marker",
       "level": 2,
@@ -717,6 +749,13 @@
       ]
     },
     {
+      "word": "anaerobic",
+      "concept": "air",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "analysis",
       "concept": "finding_out",
       "level": 2,
@@ -756,6 +795,13 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "annually",
+      "concept": "duration",
+      "level": 2,
+      "pos": "adverb ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "answer",
@@ -857,6 +903,26 @@
       ]
     },
     {
+      "word": "appliance",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "appliances"
+      ]
+    },
+    {
+      "word": "application",
+      "concept": "way_of_doing",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "applications"
+      ]
+    },
+    {
       "word": "apply",
       "concept": "activity",
       "level": 2,
@@ -945,6 +1011,16 @@
       "pos": "noun",
       "forms": [
         "arms"
+      ]
+    },
+    {
+      "word": "array",
+      "concept": "grouping",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "arrays"
       ]
     },
     {
@@ -1155,6 +1231,13 @@
       "forms": [
         "autumns"
       ]
+    },
+    {
+      "word": "availability",
+      "concept": "having",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "available",
@@ -1377,6 +1460,16 @@
       ]
     },
     {
+      "word": "barrel",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "barrels"
+      ]
+    },
+    {
       "word": "barrier",
       "concept": "spatial_position",
       "level": 2,
@@ -1458,6 +1551,16 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "battery",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "batteries"
+      ]
     },
     {
       "word": "bay",
@@ -1773,11 +1876,42 @@
       "level": 5
     },
     {
+      "word": "biodiesel",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "biofuel",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "biofuels"
+      ]
+    },
+    {
+      "word": "biogas",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "biological",
       "concept": "living_and_not_living",
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "biomass",
+      "concept": "plant",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "bird",
@@ -1814,6 +1948,16 @@
       "level": 1
     },
     {
+      "word": "blade",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "blades"
+      ]
+    },
+    {
       "word": "blame",
       "concept": "saying_what_you_did",
       "level": 1,
@@ -1847,6 +1991,18 @@
       "pos": "noun",
       "forms": [
         "blankets"
+      ]
+    },
+    {
+      "word": "blend",
+      "concept": "joining_and_separating",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "blended",
+        "blending",
+        "blends"
       ]
     },
     {
@@ -2428,6 +2584,16 @@
       "level": 1
     },
     {
+      "word": "bulb",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "bulbs"
+      ]
+    },
+    {
       "word": "bulge",
       "concept": "shape",
       "level": 2,
@@ -2476,6 +2642,16 @@
       "forms": [
         "bursting",
         "bursts"
+      ]
+    },
+    {
+      "word": "bus",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "buses"
       ]
     },
     {
@@ -2760,6 +2936,16 @@
       ]
     },
     {
+      "word": "carrier",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "carriers"
+      ]
+    },
+    {
       "word": "carrot",
       "concept": "plant",
       "level": 2,
@@ -2868,11 +3054,45 @@
       ]
     },
     {
+      "word": "cavern",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "caverns"
+      ]
+    },
+    {
       "word": "celery",
       "concept": "plant",
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "cellulosic",
+      "concept": "plant",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "cent",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "cents"
+      ]
+    },
+    {
+      "word": "central",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "century",
@@ -3474,6 +3694,13 @@
       ]
     },
     {
+      "word": "coke",
+      "concept": "material",
+      "level": 3,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "cold",
       "concept": "heat",
       "level": 1,
@@ -3518,6 +3745,16 @@
       ]
     },
     {
+      "word": "collector",
+      "concept": "grouping",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "collectors"
+      ]
+    },
+    {
       "word": "college",
       "concept": "knowing",
       "level": 2,
@@ -3537,6 +3774,16 @@
         "collided",
         "collides",
         "colliding"
+      ]
+    },
+    {
+      "word": "colony",
+      "concept": "people_together",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "colonies"
       ]
     },
     {
@@ -3592,11 +3839,32 @@
       ]
     },
     {
+      "word": "combustible",
+      "concept": "heat",
+      "level": 3,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "combustion",
+      "concept": "heat",
+      "level": 3,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "commercial",
       "concept": "exchange",
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "commercially",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "adverb ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "common",
@@ -3703,6 +3971,16 @@
       ]
     },
     {
+      "word": "compound",
+      "concept": "material",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "compounds"
+      ]
+    },
+    {
       "word": "compress",
       "concept": "force",
       "level": 2,
@@ -3741,6 +4019,18 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "computers"
+      ]
+    },
+    {
+      "word": "concentrate",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "concentrated",
+        "concentrates",
+        "concentrating"
       ]
     },
     {
@@ -3800,6 +4090,13 @@
       "word": "consequences",
       "concept": "cause_and_effect",
       "level": 4
+    },
+    {
+      "word": "conservation",
+      "concept": "using_up",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "consider",
@@ -3865,6 +4162,35 @@
       "forms": [
         "constructions"
       ]
+    },
+    {
+      "word": "consume",
+      "concept": "using_up",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "consumed",
+        "consumes",
+        "consuming"
+      ]
+    },
+    {
+      "word": "consumer",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "consumers"
+      ]
+    },
+    {
+      "word": "consumption",
+      "concept": "using_up",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "contact",
@@ -3982,6 +4308,18 @@
       ]
     },
     {
+      "word": "control",
+      "concept": "someone_in_charge",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "controlled",
+        "controlling",
+        "controls"
+      ]
+    },
+    {
       "word": "convection",
       "concept": "heat",
       "level": 2,
@@ -4003,6 +4341,35 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "conventions"
+      ]
+    },
+    {
+      "word": "conventional",
+      "concept": "same_and_different",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "conversion",
+      "concept": "change",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "conversions"
+      ]
+    },
+    {
+      "word": "convert",
+      "concept": "change",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "converted",
+        "converting",
+        "converts"
       ]
     },
     {
@@ -4367,6 +4734,17 @@
       ]
     },
     {
+      "word": "crude",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "cruder",
+        "crudest"
+      ]
+    },
+    {
       "word": "cry",
       "concept": "feeling",
       "level": 1,
@@ -4376,6 +4754,13 @@
         "cries",
         "crying"
       ]
+    },
+    {
+      "word": "cryogenic",
+      "concept": "heat",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "crystal",
@@ -4484,6 +4869,16 @@
       "word": "curved",
       "concept": "shape",
       "level": 1
+    },
+    {
+      "word": "customer",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "customers"
+      ]
     },
     {
       "word": "cut",
@@ -4746,6 +5141,25 @@
       ]
     },
     {
+      "word": "decline",
+      "concept": "more_and_fewer",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "declined",
+        "declines",
+        "declining"
+      ]
+    },
+    {
+      "word": "decomposition",
+      "concept": "dying",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "decrease",
       "concept": "more_and_fewer",
       "level": 2,
@@ -4817,6 +5231,26 @@
       ]
     },
     {
+      "word": "demand",
+      "concept": "need",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "demands"
+      ]
+    },
+    {
+      "word": "demonstration",
+      "concept": "explanation",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "demonstrations"
+      ]
+    },
+    {
       "word": "dense",
       "concept": "physical_property",
       "level": 2,
@@ -4851,6 +5285,16 @@
         "depended",
         "depending",
         "depends"
+      ]
+    },
+    {
+      "word": "deposit",
+      "concept": "material",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "deposits"
       ]
     },
     {
@@ -5045,6 +5489,13 @@
       ]
     },
     {
+      "word": "diesel",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "difference",
       "concept": "same_and_different",
       "level": 2,
@@ -5082,6 +5533,16 @@
         "digging",
         "digs",
         "dug"
+      ]
+    },
+    {
+      "word": "digester",
+      "concept": "raw_and_made",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "digesters"
       ]
     },
     {
@@ -5280,6 +5741,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
+      "word": "distillate",
+      "concept": "liquid",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "distillates"
+      ]
+    },
+    {
       "word": "distinct",
       "concept": "same_and_different",
       "level": 2,
@@ -5302,6 +5773,23 @@
         "distinguished",
         "distinguishes",
         "distinguishing"
+      ]
+    },
+    {
+      "word": "distribution",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "district",
+      "concept": "people_together",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "districts"
       ]
     },
     {
@@ -5563,6 +6051,18 @@
       ]
     },
     {
+      "word": "drill",
+      "concept": "activity",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "drilled",
+        "drilling",
+        "drills"
+      ]
+    },
+    {
       "word": "drink",
       "concept": "living_and_not_living",
       "level": 1,
@@ -5683,6 +6183,16 @@
       "concept": "material",
       "level": 1,
       "pos": "mass noun"
+    },
+    {
+      "word": "duty",
+      "concept": "should_and_should_not",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "duties"
+      ]
     },
     {
       "word": "dwarf",
@@ -5815,6 +6325,23 @@
       ]
     },
     {
+      "word": "economic",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "economy",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "economies"
+      ]
+    },
+    {
       "word": "ecosystem",
       "concept": "living_and_not_living",
       "level": 2,
@@ -5859,6 +6386,20 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "efficiency",
+      "concept": "using_up",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "efficient",
+      "concept": "using_up",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "egg",
@@ -5910,6 +6451,16 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "electron",
+      "concept": "material",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "electrons"
+      ]
     },
     {
       "word": "electronic",
@@ -5991,6 +6542,16 @@
       ]
     },
     {
+      "word": "emission",
+      "concept": "air",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "emissions"
+      ]
+    },
+    {
       "word": "emphasis",
       "concept": "discourse_marker",
       "level": 2,
@@ -6033,6 +6594,16 @@
       "level": 2,
       "pos": "mass noun",
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
+      "word": "engine",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "engines"
+      ]
     },
     {
       "word": "engineering",
@@ -6105,6 +6676,13 @@
       ]
     },
     {
+      "word": "environmental",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "equal",
       "concept": "same_amount",
       "level": 1
@@ -6125,6 +6703,13 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "equivalent",
+      "concept": "same_amount",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "escape",
@@ -6150,6 +6735,13 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "essentially",
+      "concept": "same_and_different",
+      "level": 2,
+      "pos": "adverb ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "estimate",
@@ -6184,6 +6776,13 @@
       ]
     },
     {
+      "word": "ethanol",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "evacuation",
       "concept": "danger",
       "level": 2,
@@ -6211,6 +6810,13 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "evaporative",
+      "concept": "liquid",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "evening",
@@ -6357,6 +6963,18 @@
       ]
     },
     {
+      "word": "exclude",
+      "concept": "leaving_out",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "excluded",
+        "excludes",
+        "excluding"
+      ]
+    },
+    {
       "word": "exert",
       "concept": "force",
       "level": 2,
@@ -6400,6 +7018,13 @@
       ]
     },
     {
+      "word": "expensive",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "experience",
       "concept": "knowing",
       "level": 2,
@@ -6439,6 +7064,18 @@
         "explored",
         "explores",
         "exploring"
+      ]
+    },
+    {
+      "word": "export",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "exported",
+        "exporting",
+        "exports"
       ]
     },
     {
@@ -6816,6 +7453,16 @@
       ]
     },
     {
+      "word": "feedstock",
+      "concept": "raw_and_made",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "feedstocks"
+      ]
+    },
+    {
       "word": "feel",
       "concept": "feeling",
       "level": 1,
@@ -6835,6 +7482,13 @@
       "forms": [
         "fences"
       ]
+    },
+    {
+      "word": "fermentation",
+      "concept": "change",
+      "level": 3,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "fertilizer",
@@ -6930,6 +7584,13 @@
       "word": "filled",
       "concept": "enough",
       "level": 1
+    },
+    {
+      "word": "financial",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "fine",
@@ -7146,6 +7807,16 @@
       ]
     },
     {
+      "word": "fluid",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "fluids"
+      ]
+    },
+    {
       "word": "fly",
       "concept": "moving_and_still",
       "level": 1,
@@ -7334,6 +8005,16 @@
       "level": 1
     },
     {
+      "word": "fossil",
+      "concept": "living_and_not_living",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "fossils"
+      ]
+    },
+    {
       "word": "fountain",
       "concept": "liquid",
       "level": 2,
@@ -7367,6 +8048,25 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "foxes"
+      ]
+    },
+    {
+      "word": "fracking",
+      "concept": "force",
+      "level": 3,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "fracture",
+      "concept": "things_break",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "fractured",
+        "fractures",
+        "fracturing"
       ]
     },
     {
@@ -7500,6 +8200,18 @@
       ]
     },
     {
+      "word": "fuel",
+      "concept": "heat",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "fueled",
+        "fueling",
+        "fuels"
+      ]
+    },
+    {
       "word": "full",
       "concept": "emptiness",
       "level": 1,
@@ -7552,6 +8264,16 @@
       "concept": "body_part",
       "level": 1,
       "pos": "noun mass"
+    },
+    {
+      "word": "furnace",
+      "concept": "heat",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "furnaces"
+      ]
     },
     {
       "word": "fusion",
@@ -7648,6 +8370,13 @@
       ]
     },
     {
+      "word": "garbage",
+      "concept": "using_up",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "garden",
       "concept": "plant",
       "level": 1,
@@ -7682,6 +8411,27 @@
       "forms": [
         "gases"
       ]
+    },
+    {
+      "word": "gaseous",
+      "concept": "material",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "gasification",
+      "concept": "change",
+      "level": 3,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "gasoline",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "gate",
@@ -7742,6 +8492,23 @@
       ]
     },
     {
+      "word": "generation",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "generator",
+      "concept": "force",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "generators"
+      ]
+    },
+    {
       "word": "gentle",
       "concept": "way_of_doing",
       "level": 1,
@@ -7782,6 +8549,13 @@
       "forms": [
         "ghosts"
       ]
+    },
+    {
+      "word": "giant",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "gift",
@@ -8918,6 +9692,16 @@
       ]
     },
     {
+      "word": "hospital",
+      "concept": "being_hurt",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "hospitals"
+      ]
+    },
+    {
       "word": "hot",
       "concept": "danger",
       "level": 1,
@@ -8925,6 +9709,16 @@
       "forms": [
         "hotter",
         "hottest"
+      ]
+    },
+    {
+      "word": "hotel",
+      "concept": "people_together",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "hotels"
       ]
     },
     {
@@ -8964,6 +9758,16 @@
       "pos": "noun",
       "forms": [
         "houses"
+      ]
+    },
+    {
+      "word": "household",
+      "concept": "family",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "households"
       ]
     },
     {
@@ -9077,6 +9881,37 @@
         "hurting",
         "hurts"
       ]
+    },
+    {
+      "word": "hydraulic",
+      "concept": "force",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "hydrocarbon",
+      "concept": "material",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "hydrocarbons"
+      ]
+    },
+    {
+      "word": "hydroelectric",
+      "concept": "force",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "hydroelectricity",
+      "concept": "force",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "hydrogen",
@@ -9219,6 +10054,18 @@
       ]
     },
     {
+      "word": "import",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "imported",
+        "importing",
+        "imports"
+      ]
+    },
+    {
       "word": "important",
       "concept": "need",
       "level": 2,
@@ -9248,6 +10095,23 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "incandescent",
+      "concept": "heat",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "incentive",
+      "concept": "goal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "incentives"
+      ]
     },
     {
       "word": "inch",
@@ -9301,6 +10165,13 @@
       "concept": "real_and_pretend",
       "level": 2,
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
+      "word": "independent",
+      "concept": "allowed_or_not",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "indicate",
@@ -9460,6 +10331,18 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "inject",
+      "concept": "force",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "injected",
+        "injecting",
+        "injects"
+      ]
+    },
+    {
       "word": "injury",
       "concept": "being_hurt",
       "level": 2,
@@ -9512,6 +10395,25 @@
       "word": "inside",
       "concept": "inside_and_outside",
       "level": 1
+    },
+    {
+      "word": "insolation",
+      "concept": "weather",
+      "level": 3,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "install",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "installed",
+        "installing",
+        "installs"
+      ]
     },
     {
       "word": "instant",
@@ -9572,6 +10474,23 @@
       ]
     },
     {
+      "word": "intensive",
+      "concept": "quantity",
+      "level": 3,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "interest",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "interests"
+      ]
+    },
+    {
       "word": "interesting",
       "concept": "finding_out",
       "level": 2,
@@ -9611,6 +10530,18 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "involve",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "involved",
+        "involves",
+        "involving"
+      ]
     },
     {
       "word": "iron",
@@ -9805,6 +10736,16 @@
       ]
     },
     {
+      "word": "kilowatt",
+      "concept": "unit",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "kilowatts"
+      ]
+    },
+    {
       "word": "kind",
       "concept": "good_and_bad",
       "level": 1,
@@ -9833,6 +10774,13 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source"
+    },
+    {
+      "word": "kinetic",
+      "concept": "moving_and_still",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "king",
@@ -10002,6 +10950,16 @@
       ]
     },
     {
+      "word": "landfill",
+      "concept": "using_up",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "landfills"
+      ]
+    },
+    {
       "word": "landscape",
       "concept": "spatial_position",
       "level": 2,
@@ -10161,6 +11119,18 @@
       "concept": "plant",
       "level": 1,
       "pos": "noun"
+    },
+    {
+      "word": "leak",
+      "concept": "things_break",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "leaked",
+        "leaking",
+        "leaks"
+      ]
     },
     {
       "word": "learn",
@@ -10402,6 +11372,13 @@
       ]
     },
     {
+      "word": "linear",
+      "concept": "spatial_position",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "link",
       "concept": "joining_and_separating",
       "level": 2,
@@ -10431,6 +11408,28 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "lips"
+      ]
+    },
+    {
+      "word": "lipid",
+      "concept": "material",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "lipids"
+      ]
+    },
+    {
+      "word": "liquefy",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "liquefied",
+        "liquefies",
+        "liquefying"
       ]
     },
     {
@@ -10699,6 +11698,13 @@
       "pos": "noun mass"
     },
     {
+      "word": "magma",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "magnet",
       "concept": "force",
       "level": 2,
@@ -10774,6 +11780,16 @@
       ]
     },
     {
+      "word": "mall",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "malls"
+      ]
+    },
+    {
       "word": "man",
       "concept": "person",
       "level": 1,
@@ -10808,6 +11824,35 @@
       "forms": [
         "manners"
       ]
+    },
+    {
+      "word": "manufacture",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "manufactured",
+        "manufactures",
+        "manufacturing"
+      ]
+    },
+    {
+      "word": "manufacturer",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "manufacturers"
+      ]
+    },
+    {
+      "word": "manure",
+      "concept": "plant",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "many",
@@ -11028,6 +12073,13 @@
       ]
     },
     {
+      "word": "mechanical",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "meet",
       "concept": "people_together",
       "level": 1,
@@ -11036,6 +12088,16 @@
         "meeting",
         "meets",
         "met"
+      ]
+    },
+    {
+      "word": "megawatt",
+      "concept": "unit",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "megawatts"
       ]
     },
     {
@@ -11198,6 +12260,13 @@
       ]
     },
     {
+      "word": "methane",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "method",
       "concept": "plan",
       "level": 1,
@@ -11205,6 +12274,13 @@
       "forms": [
         "methods"
       ]
+    },
+    {
+      "word": "metric",
+      "concept": "measuring",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "microburst",
@@ -11343,6 +12419,16 @@
       "level": 1
     },
     {
+      "word": "miner",
+      "concept": "activity",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "miners"
+      ]
+    },
+    {
       "word": "mineral",
       "concept": "material",
       "level": 2,
@@ -11386,6 +12472,16 @@
       "pos": "noun",
       "forms": [
         "minutes"
+      ]
+    },
+    {
+      "word": "mirror",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "mirrors"
       ]
     },
     {
@@ -11578,6 +12674,16 @@
       ]
     },
     {
+      "word": "monoxide",
+      "concept": "material",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "monoxides"
+      ]
+    },
+    {
       "word": "month",
       "concept": "cycle",
       "level": 1,
@@ -11671,6 +12777,26 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
+      "word": "motor",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "motors"
+      ]
+    },
+    {
+      "word": "motorcycle",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "motorcycles"
+      ]
     },
     {
       "word": "mountain",
@@ -12194,6 +13320,13 @@
       ]
     },
     {
+      "word": "nuclear",
+      "concept": "force",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "nucleus",
       "concept": "component_and_system",
       "level": 2,
@@ -12413,6 +13546,24 @@
       ]
     },
     {
+      "word": "offset",
+      "concept": "balance",
+      "level": 3,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "offsets",
+        "offsetting"
+      ]
+    },
+    {
+      "word": "offshore",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "offsite",
       "concept": "spatial_position",
       "level": 2,
@@ -12561,6 +13712,16 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "ore",
+      "concept": "metal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "ores"
+      ]
     },
     {
       "word": "organic",
@@ -12839,6 +14000,16 @@
       ]
     },
     {
+      "word": "panel",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "panels"
+      ]
+    },
+    {
       "word": "paper",
       "concept": "material",
       "level": 1,
@@ -13001,6 +14172,16 @@
       ]
     },
     {
+      "word": "pathway",
+      "concept": "way_of_doing",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "pathways"
+      ]
+    },
+    {
       "word": "patient",
       "concept": "feeling",
       "level": 2,
@@ -13159,6 +14340,16 @@
       ]
     },
     {
+      "word": "performance",
+      "concept": "activity",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "performances"
+      ]
+    },
+    {
       "word": "perhaps",
       "concept": "how_sure",
       "level": 2,
@@ -13252,6 +14443,13 @@
       ]
     },
     {
+      "word": "petroleum",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "pharmaceutical",
       "concept": "tending",
       "level": 3,
@@ -13289,6 +14487,16 @@
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "forms": [
         "photos"
+      ]
+    },
+    {
+      "word": "photon",
+      "concept": "physical_property",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "photons"
       ]
     },
     {
@@ -13386,6 +14594,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "pipes"
+      ]
+    },
+    {
+      "word": "pipeline",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "pipelines"
       ]
     },
     {
@@ -13607,6 +14825,26 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "policy",
+      "concept": "rule",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "policies"
+      ]
+    },
+    {
+      "word": "pollutant",
+      "concept": "danger",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "pollutants"
+      ]
+    },
+    {
       "word": "pollution",
       "concept": "danger",
       "level": 2,
@@ -13760,6 +14998,13 @@
       "forms": [
         "potatoes"
       ]
+    },
+    {
+      "word": "potential",
+      "concept": "can_and_cannot",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "potentially",
@@ -14059,6 +15304,16 @@
       "level": 5
     },
     {
+      "word": "producer",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "producers"
+      ]
+    },
+    {
       "word": "product",
       "concept": "raw_and_made",
       "level": 2,
@@ -14231,6 +15486,18 @@
       ]
     },
     {
+      "word": "pump",
+      "concept": "force",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "pumped",
+        "pumping",
+        "pumps"
+      ]
+    },
+    {
       "word": "pupil",
       "concept": "person",
       "level": 2,
@@ -14296,6 +15563,28 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "pussies"
+      ]
+    },
+    {
+      "word": "quadrillion",
+      "concept": "natural_number",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "quadrillions"
+      ]
+    },
+    {
+      "word": "qualify",
+      "concept": "allowed_or_not",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "qualified",
+        "qualifies",
+        "qualifying"
       ]
     },
     {
@@ -14586,6 +15875,18 @@
       "level": 1
     },
     {
+      "word": "react",
+      "concept": "cause_and_effect",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "reacted",
+        "reacting",
+        "reacts"
+      ]
+    },
+    {
       "word": "read",
       "concept": "writing",
       "level": 1,
@@ -14750,6 +16051,18 @@
       "level": 5
     },
     {
+      "word": "recycle",
+      "concept": "using_up",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "recycled",
+        "recycles",
+        "recycling"
+      ]
+    },
+    {
       "word": "red",
       "concept": "physical_property",
       "level": 1
@@ -14789,6 +16102,28 @@
       ]
     },
     {
+      "word": "refine",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "refined",
+        "refines",
+        "refining"
+      ]
+    },
+    {
+      "word": "refinery",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "refineries"
+      ]
+    },
+    {
       "word": "reflect",
       "concept": "physical_property",
       "level": 2,
@@ -14801,11 +16136,31 @@
       ]
     },
     {
+      "word": "reflector",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "reflectors"
+      ]
+    },
+    {
       "word": "refraction",
       "concept": "physical_property",
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "refrigerator",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "refrigerators"
+      ]
     },
     {
       "word": "refute",
@@ -14931,6 +16286,13 @@
       ]
     },
     {
+      "word": "renewable",
+      "concept": "using_up",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "repeat",
       "concept": "cycle",
       "level": 1,
@@ -15003,11 +16365,41 @@
       ]
     },
     {
+      "word": "requirement",
+      "concept": "need",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "requirements"
+      ]
+    },
+    {
       "word": "research",
       "concept": "finding_out",
       "level": 2,
       "pos": "mass noun",
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
+      "word": "reserve",
+      "concept": "stock_and_flow",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "reserves"
+      ]
+    },
+    {
+      "word": "reservoir",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "reservoirs"
+      ]
     },
     {
       "word": "reside",
@@ -15019,6 +16411,30 @@
         "resided",
         "resides",
         "residing"
+      ]
+    },
+    {
+      "word": "residential",
+      "concept": "people_together",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "residual",
+      "concept": "using_up",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "residue",
+      "concept": "using_up",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "residues"
       ]
     },
     {
@@ -15130,6 +16546,13 @@
       "forms": [
         "results"
       ]
+    },
+    {
+      "word": "retail",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "retention",
@@ -15639,6 +17062,16 @@
       ]
     },
     {
+      "word": "sale",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "sales"
+      ]
+    },
+    {
       "word": "saline",
       "concept": "material",
       "level": 2,
@@ -15724,6 +17157,13 @@
         "saves",
         "saving"
       ]
+    },
+    {
+      "word": "sawdust",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "scab",
@@ -15883,6 +17323,16 @@
       ]
     },
     {
+      "word": "scrubber",
+      "concept": "air",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "scrubbers"
+      ]
+    },
+    {
       "word": "sea",
       "concept": "liquid",
       "level": 2,
@@ -15956,6 +17406,16 @@
       ]
     },
     {
+      "word": "sector",
+      "concept": "component_and_system",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "sectors"
+      ]
+    },
+    {
       "word": "secure",
       "concept": "danger",
       "level": 2,
@@ -15968,6 +17428,13 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "sedimentary",
+      "concept": "material",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "seed",
@@ -16159,6 +17626,16 @@
       ]
     },
     {
+      "word": "service",
+      "concept": "activity",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "services"
+      ]
+    },
+    {
       "word": "set",
       "concept": "activity",
       "level": 1,
@@ -16259,6 +17736,13 @@
         "shaking",
         "shook"
       ]
+    },
+    {
+      "word": "shale",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "shallow",
@@ -17627,6 +19111,13 @@
       ]
     },
     {
+      "word": "starch",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "stare",
       "concept": "checking",
       "level": 1,
@@ -17812,6 +19303,13 @@
         "stopping",
         "stops"
       ]
+    },
+    {
+      "word": "storage",
+      "concept": "stock_and_flow",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "store",
@@ -18065,6 +19563,13 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "substantially",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "adverb ungraded",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "subtract",
       "concept": "subtraction",
       "level": 2,
@@ -18123,6 +19628,23 @@
       "level": 2,
       "pos": "mass noun",
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
+      "word": "sulfide",
+      "concept": "material",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "sulfides"
+      ]
+    },
+    {
+      "word": "sulfur",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "summer",
@@ -18240,6 +19762,13 @@
       ]
     },
     {
+      "word": "supplemental",
+      "concept": "enough",
+      "level": 3,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "supply",
       "concept": "needing_supply",
       "level": 1,
@@ -18327,6 +19856,18 @@
         "surprised",
         "surprises",
         "surprising"
+      ]
+    },
+    {
+      "word": "survey",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "surveyed",
+        "surveying",
+        "surveys"
       ]
     },
     {
@@ -18423,6 +19964,13 @@
       ]
     },
     {
+      "word": "switchgrass",
+      "concept": "plant",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
       "word": "symbol",
       "concept": "standing_for",
       "level": 1,
@@ -18430,6 +19978,20 @@
       "forms": [
         "symbols"
       ]
+    },
+    {
+      "word": "syngas",
+      "concept": "material",
+      "level": 3,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "synthetic",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "system",
@@ -18535,6 +20097,16 @@
       ]
     },
     {
+      "word": "tank",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "tanks"
+      ]
+    },
+    {
       "word": "tannin",
       "concept": "material",
       "level": 3,
@@ -18610,6 +20182,18 @@
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
     },
     {
+      "word": "tax",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "taxed",
+        "taxes",
+        "taxing"
+      ]
+    },
+    {
       "word": "teach",
       "concept": "being_told",
       "level": 1,
@@ -18647,6 +20231,16 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "technology",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "technologies"
+      ]
     },
     {
       "word": "television",
@@ -19219,6 +20813,16 @@
       "level": 1
     },
     {
+      "word": "ton",
+      "concept": "unit",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "tons"
+      ]
+    },
+    {
       "word": "tone",
       "concept": "sound",
       "level": 2,
@@ -19321,6 +20925,16 @@
       ]
     },
     {
+      "word": "tower",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "towers"
+      ]
+    },
+    {
       "word": "towering",
       "concept": "physical_property",
       "level": 2,
@@ -19394,6 +21008,18 @@
       ]
     },
     {
+      "word": "transfer",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "transferred",
+        "transferring",
+        "transfers"
+      ]
+    },
+    {
       "word": "transition",
       "concept": "change",
       "level": 2,
@@ -19402,6 +21028,13 @@
       "forms": [
         "transitions"
       ]
+    },
+    {
+      "word": "transmission",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
     },
     {
       "word": "transparent",
@@ -19416,6 +21049,18 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "transport",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "transported",
+        "transporting",
+        "transports"
+      ]
     },
     {
       "word": "trap",
@@ -19513,6 +21158,16 @@
       "word": "trigger",
       "concept": "cause_and_effect",
       "level": 5
+    },
+    {
+      "word": "trillion",
+      "concept": "natural_number",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "trillions"
+      ]
     },
     {
       "word": "triumph",
@@ -20073,6 +21728,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
+      "word": "utility",
+      "concept": "exchange",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "utilities"
+      ]
+    },
+    {
       "word": "utter",
       "concept": "sound",
       "level": 2,
@@ -20401,6 +22066,18 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "vote",
+      "concept": "choosing",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "voted",
+        "votes",
+        "voting"
+      ]
+    },
+    {
       "word": "wagon",
       "concept": "moving_and_still",
       "level": 2,
@@ -20492,6 +22169,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "wards"
+      ]
+    },
+    {
+      "word": "warehouse",
+      "concept": "stock_and_flow",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "warehouses"
       ]
     },
     {
@@ -20722,6 +22409,16 @@
       "word": "well",
       "concept": "good_and_bad",
       "level": 1
+    },
+    {
+      "word": "wellhead",
+      "concept": "liquid",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "forms": [
+        "wellheads"
+      ]
     },
     {
       "word": "west",

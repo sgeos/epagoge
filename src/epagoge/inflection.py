@@ -181,6 +181,11 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     "quit": ("quit", "quit", "quitting"),
     "refer": ("referred", "referred", "referring"),
     "spend": ("spent", "spent", "spending"),
+    # Admitted on 2026-10-28. The rule gave controled, transfered and
+    # offseted. Offset also keeps its past unchanged.
+    "control": ("controlled", "controlled", "controlling"),
+    "offset": ("offset", "offset", "offsetting"),
+    "transfer": ("transferred", "transferred", "transferring"),
     # The regular rule gave beated, broadcasted, bursted, seeked,
     # shooted, splitted and sweared.
     "behold": ("beheld", "beheld", "beholding"),

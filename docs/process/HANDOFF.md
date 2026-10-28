@@ -31,6 +31,72 @@ measurements of every earlier batch already fail for that reason. A failure
 then marks the counts below as stale rather than wrong. Missing host
 artifacts make the associated checks unverified rather than disproved.
 
+## Resume state, 2026-10-28, Dromon trial
+
+The brief opened on 2026-10-28 in `CURRENT_BRIEF.md` ran a multi-agent
+trial of the Dromon harness on the level-two lexicon and corpus. Its
+condition is met on the working tree and is uncommitted until the operator
+asks. The sandbox-fix brief and its condition are preserved in
+`evals/review/level_2_agency_02/`. Earlier resume states are historical for
+the revision and for publication.
+
+**Harness.** pydromon `main` was `d8673c7`, clean, with its continuous
+integration green, and 2,977 of its tests passed outside the socket and
+live markers. The daemon ran from that editable install, outside the
+sandbox, from the local `.dromon/` project file, and was stopped afterwards.
+Three lines took part. `worker` ran Claude Opus 5.5 and wrote tracked
+files. `reviewer` ran Claude Haiku 5.5 and wrote only under the ignored
+`tmp/dromon-trial/`. `luna` ran GPT-6-Luna under Codex and wrote only there.
+Dromon's cost estimates were about 5.24 dollars for `worker` and 0.06
+dollars for `reviewer`. The second looks low for the work done and may be
+incomplete. Dromon records no cost for Codex lines.
+
+**Lexicon.** The operator's session fetched 39 Energy Information
+Administration elementary pages and 4 Ben's Guide pages for ages 4 to 8,
+two candidates from `docs/decisions/AGENCY_SOURCES.md`, into
+`tmp/lexicon-sources/agency2/`. The worker's batch in
+`evals/review/level_2_agency_02/` and `evals/review/level_3_agency_02/`
+decided all 237 pool strings, drawn with one source sufficient as in the
+first agency pass. It admitted 153 headwords at level two and 32 at level
+three, excluded 96 and deferred 8. Level two rose from 2,310 to 2,463
+distinct headwords, measured, with coverage and closure complete at levels
+one to three. It also made control, offset and transfer irregular in
+`src/epagoge/inflection.py`, added the batch to the stacked measurement
+test, and re-recorded the eleven earlier level-two measurements, as
+`bb17901` did. The sandbox refused its `git checkout`, and it restored five
+files through `git show` and a copy, which it disclosed.
+
+**Review.** The reviewer confirmed the condition clause by clause and read
+43 definitions. It proposed changes to ten, among them a circular
+definition of environmental and overconfident definitions of engine,
+battery and fracking. On the operator's direction the worker applied all
+ten through `tools/author_definitions.py`, with two concept changes, for
+battery and biofuel, synced into the thesaurus. For intensive it gave the
+general sense of much work or care beside the energy-use sense, not the
+physical-property sense the reviewer named, and it wrote its own wording
+for cryogenic and alcohol, where the reviewer gave none. The counts and
+closure were unchanged.
+Its one term-list hit was a substring inside a longer word, and the
+project's scan is clean.
+
+**Corpus.** Luna reviewed `bk.ac2.ledger` in
+`tmp/dromon-trial/review-ac2-ledger.md`. It measured three spreads of 617
+words against a module of 64 spreads and at least 12,800 words, found
+repeated sentences and claims that a record cannot be wrong, and separated
+findings for the book from findings for the generator. No book other than
+the two dictionary seed books changed, and no teacher was loaded.
+
+**Reports.** Each line wrote a harness experience report under
+`tmp/dromon-trial/`. They name a missed report after a background gate, a
+turn the engine began by itself and Dromon interrupted, mail that reaches a
+line only between turns, denials given without a reason, late visibility of
+cost and turn limits, and the lack of a pass or fail check against the
+private term list.
+
+**Gate.** After the definition changes, `tools/check.sh` exited 0 inside
+the sandbox with 678 tests, no skips, 96 percent core coverage and a clean
+disclosure scan.
+
 ## Resume state, 2026-10-25, sandbox fixes
 
 The brief opened on 2026-10-25 in `CURRENT_BRIEF.md` applies two sandbox

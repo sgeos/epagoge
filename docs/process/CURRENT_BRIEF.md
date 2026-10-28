@@ -1,46 +1,57 @@
 # Brief
 
-Met 2026-10-25. The condition holds on the working tree. This file is
+Met 2026-10-28. The condition holds on the working tree. This file is
 historical evidence. Do not repeat it.
 
-Opened 2026-10-25. The operator directed that the two sandbox fixes found
-when Claude Code first resumed this tree be applied. The previous brief and
-condition are retained in `evals/review/level_2_scan_10/`.
+Opened 2026-10-28. The operator directed a multi-agent trial of the Dromon
+harness on this project, working on the level-two lexicon and corpus, with
+every Dromon line writing a report on its experience of the harness. The
+previous brief and condition, met on 2026-10-25, are retained in
+`evals/review/level_2_agency_02/`.
 
 ## Operator direction
 
-Apply the sandbox fixes.
+Spin up a multi-agent trial session on this project. Work on the level-two
+lexicon and corpus. Have every Dromon line write a harness experience
+report. On 2026-10-28 the operator chose a lexicon batch and a corpus review
+that needs no teacher, with an estimated cost limit of 40 dollars for the
+Opus line and 10 dollars for each other line.
 
-## Findings that define the scope
+## Interpretation and recommended work
 
-On 2026-10-25 `tools/check.sh` exited 1 inside the Claude Code sandbox on
-`7cd961f` and exited 0 outside it, with 678 tests and no skips. Each cause
-was reproduced in isolation.
+**The lexicon is the binding constraint on level-two modules**, as
+`docs/decisions/LEVEL_CALIBRATION.md` records. The pools already in the
+tree are decided or closed, so the batch draws on two candidates from
+`docs/decisions/AGENCY_SOURCES.md` that were not fetched before. On
+2026-10-28 the operator's session fetched 39 Energy Information
+Administration elementary pages and 4 pages of Ben's Guide for ages 4 to 8
+into the ignored `tmp/lexicon-sources/agency2/`, with the URLs read beside
+each text. Lines crediting images and data, some marked copyrighted, were
+removed before any scan, because they are not page prose. The teacher
+and game sections of the first site were not fetched.
 
-**`mktemp` without a template ignores `TMPDIR` on this host.** Run with
-`TMPDIR` set inside the workspace, it still created its file under
-`/var/folders`, which the sandbox denies. An explicit template inside the
-workspace succeeded. The gate exports `TMPDIR` for this purpose, so the
-calls at its corpus and export steps, and the file list in
-`tools/scrub_scan.sh`, defeated that export.
+**The worker line runs the batch** in `evals/review/level_2_agency_02/` by
+the admission workflow in `docs/process/HANDOFF.md`. A word is admitted with
+one grounded definition, or deferred or excluded with a reason. A prior
+decision stays decided. Inflected forms are excluded. No teacher runs.
+Admission writes each definition to the dictionary seed book of its level,
+so those two books change and no other book does. The worker line found
+that the first wording of the condition forbade this, and the operator's
+session corrected it on 2026-10-28.
 
-**The sandbox denies writes to `.git/config` and `.git/hooks` at any
-depth.** A test that runs `git init` in a temporary directory therefore
-failed. A repository whose git directory has another name, selected through
-`GIT_DIR` and `GIT_WORK_TREE`, initialised and committed inside the
-sandbox.
+**The reviewer line reviews that batch** and edits nothing tracked.
 
-## Recommended work
+**The luna line reviews `curriculum/books/level_2/bk.ac2.ledger.md`**
+against `docs/spec/BOOK_DRAFTING.md` and the level-two schedule, and writes
+its findings to the ignored `tmp/dromon-trial/`. It changes no book, since
+replacing spreads needs the teacher.
 
-Give every `mktemp` call in the gate scripts an explicit template under the
-gate's scratch directory or under `TMPDIR`. Point the provenance test at a
-git directory that is not named `.git` through the environment, which
-`tools/word_provenance.py` inherits. Record Claude Code alongside Codex and
-Grok Build in the sandbox notes once the gate has been measured inside its
-sandbox.
+**Every line writes a harness experience report** to
+`tmp/dromon-trial/harness-report-LINE.md`, with LINE its line name.
 
 ## Wrong turns to avoid
 
-Do not skip the test inside a sandbox, because the gate refuses skipped
-tests and a skip would hide the check. Do not widen the sandbox to make the
-gate pass. Do not change what the provenance test asserts.
+Do not load the teacher. Free memory was about 0.35 gigabytes on
+2026-10-28. Do not reopen a decided word. Do not consult Dale-Chall or the
+New General Service List. Lines do not commit or push. The operator's
+session does both after the gate passes and the operator approves.

@@ -1,0 +1,920 @@
+{
+  "access": {
+    "concept": "spatial_position",
+    "pos": "noun verb",
+    "definition": "Access is a way to get to a thing or into a place.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "alcohol": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "Alcohol is the name of a group of clear liquids that burn, and one kind of it is in some drinks.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "alternative": {
+    "concept": "choosing",
+    "pos": "adjective noun periphrastic",
+    "definition": "An alternative is another thing that you can choose in place of the first one.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "annually": {
+    "concept": "duration",
+    "pos": "adverb ungraded",
+    "definition": "Annually means once each year.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "appliance": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "An appliance is a machine that does a job in the home.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "application": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "An application is a way of using a thing to do a job.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "array": {
+    "concept": "grouping",
+    "pos": "noun",
+    "definition": "An array is a set of things put together in lines.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "availability": {
+    "concept": "having",
+    "pos": "mass noun",
+    "definition": "Availability is how easy a thing is to get or to use.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "barrel": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A barrel is a big round container that holds a liquid such as oil.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "battery": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A battery is a thing that keeps electricity in it to use later.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "biodiesel": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Biodiesel is diesel made from plant oil or animal fat.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "biofuel": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A biofuel is a fuel made from plants or from animal waste.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "biogas": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Biogas is a gas that bacteria make from waste, and it can be burned as a fuel.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "biomass": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Biomass is plant and animal material that people burn or use to make fuel.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "blade": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A blade is a flat or sharp part of a tool or a machine.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "blend": {
+    "concept": "joining_and_separating",
+    "pos": "noun verb",
+    "definition": "To blend is to mix things well together.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "bulb": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A bulb is the glass part of a lamp that gives light.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "bus": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A bus is a big vehicle that carries many people.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "carrier": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A carrier is a person or a thing that carries something.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "cavern": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A cavern is a large cave.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "cent": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A cent is a small unit of money, and one hundred cents make a dollar.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "central": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Central means in the middle.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "collector": {
+    "concept": "grouping",
+    "pos": "noun",
+    "definition": "A collector is a person or a thing that collects something.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "colony": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A colony is a place where people from another country live and that country rules.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "commercially": {
+    "concept": "exchange",
+    "pos": "adverb ungraded",
+    "definition": "Commercially means in a way that is done to make money.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "compound": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A compound is a material made of two or more kinds of atom joined together.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "concentrate": {
+    "concept": "quantity",
+    "pos": "verb",
+    "definition": "To concentrate is to bring a lot of a thing together into one small place.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "conservation": {
+    "concept": "using_up",
+    "pos": "mass noun",
+    "definition": "Conservation is keeping a thing safe or using less of it so that it is not used up.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "consume": {
+    "concept": "using_up",
+    "pos": "verb",
+    "definition": "To consume is to use a thing up.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "consumer": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A consumer is a person who buys or uses things.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "consumption": {
+    "concept": "using_up",
+    "pos": "mass noun",
+    "definition": "Consumption is how much of a thing is used up.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "control": {
+    "concept": "someone_in_charge",
+    "pos": "noun verb",
+    "definition": "To control a thing is to make it do what you want.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "conventional": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Conventional means of the usual kind.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "conversion": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "A conversion is a change of a thing into another form.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "convert": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To convert is to change a thing into another kind of thing.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "crude": {
+    "concept": "raw_and_made",
+    "pos": "adjective",
+    "definition": "Crude means still as it was found in nature, before people change it.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "customer": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A customer is a person who buys things from a store.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "decline": {
+    "concept": "more_and_fewer",
+    "pos": "verb",
+    "definition": "To decline is to go down or to become less.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "decomposition": {
+    "concept": "dying",
+    "pos": "mass noun",
+    "definition": "Decomposition is the slow breaking down of dead plants and animals into small bits.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "demand": {
+    "concept": "need",
+    "pos": "noun",
+    "definition": "Demand is how much of a thing people want or need.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "demonstration": {
+    "concept": "explanation",
+    "pos": "noun",
+    "definition": "A demonstration is a showing of how a thing works.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "deposit": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A deposit is a layer of a material that has built up in the ground.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "diesel": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Diesel is an oil that some engines burn as fuel.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "distribution": {
+    "concept": "exchange",
+    "pos": "mass noun",
+    "definition": "Distribution is the sending of things out to many places or people.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "district": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A district is a part of a town, a city or a country.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "drill": {
+    "concept": "activity",
+    "pos": "noun verb",
+    "definition": "A drill is a tool that turns to make a hole.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "duty": {
+    "concept": "should_and_should_not",
+    "pos": "noun",
+    "definition": "A duty is a thing that you should do.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "economic": {
+    "concept": "exchange",
+    "pos": "adjective periphrastic",
+    "definition": "Economic means of money, work and trade.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "economy": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "An economy is the way a country makes, buys and sells things.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "efficiency": {
+    "concept": "using_up",
+    "pos": "mass noun",
+    "definition": "Efficiency is how well a thing does a job without waste.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "efficient": {
+    "concept": "using_up",
+    "pos": "adjective periphrastic",
+    "definition": "Efficient means doing a job well without waste.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "electron": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "An electron is a very small part of an atom.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "emission": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "An emission is gas or smoke that a thing lets out into the air.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "engine": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "An engine is a machine that changes energy into movement.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "environmental": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Environmental means about the natural world around us.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "equivalent": {
+    "concept": "same_amount",
+    "pos": "adjective periphrastic",
+    "definition": "Equivalent means equal in amount, worth or use.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "essentially": {
+    "concept": "same_and_different",
+    "pos": "adverb ungraded",
+    "definition": "Essentially means in the most important way.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "ethanol": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Ethanol is an alcohol made from plants such as corn, and people use it as a fuel.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "exclude": {
+    "concept": "leaving_out",
+    "pos": "verb",
+    "definition": "To exclude is to leave a thing out.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "expensive": {
+    "concept": "exchange",
+    "pos": "adjective periphrastic",
+    "definition": "Expensive means costing a lot of money.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "export": {
+    "concept": "exchange",
+    "pos": "noun verb",
+    "definition": "To export is to send things to another country to sell them.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "financial": {
+    "concept": "exchange",
+    "pos": "adjective periphrastic",
+    "definition": "Financial means of money.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "fluid": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A fluid is a liquid or a gas, a thing that can flow.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "fossil": {
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "definition": "A fossil is what is left in rock of a plant or an animal from long ago.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "fracture": {
+    "concept": "things_break",
+    "pos": "noun verb",
+    "definition": "A fracture is a break or a crack.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "fuel": {
+    "concept": "heat",
+    "pos": "noun verb",
+    "definition": "Fuel is a material that people burn to make heat or power.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "furnace": {
+    "concept": "heat",
+    "pos": "noun",
+    "definition": "A furnace is a very hot box where fuel burns to heat a house or to melt metal.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "garbage": {
+    "concept": "using_up",
+    "pos": "mass noun",
+    "definition": "Garbage is waste that people throw away.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "gaseous": {
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "definition": "Gaseous means in the form of a gas.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "gasoline": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Gasoline is a liquid fuel made from oil, and most cars burn it.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "generation": {
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "definition": "Generation is the making of a thing such as electricity.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "generator": {
+    "concept": "force",
+    "pos": "noun",
+    "definition": "A generator is a machine that makes electricity.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "giant": {
+    "concept": "physical_property",
+    "pos": "adjective ungraded",
+    "definition": "Giant means very, very big.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "hospital": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A hospital is a place where nurses and other people care for people who are sick or hurt.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "hotel": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A hotel is a building where people pay to sleep for a night or more.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "household": {
+    "concept": "family",
+    "pos": "noun",
+    "definition": "A household is all the people who live in one home.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "hydroelectric": {
+    "concept": "force",
+    "pos": "adjective ungraded",
+    "definition": "Hydroelectric means making electricity from moving water.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "hydroelectricity": {
+    "concept": "force",
+    "pos": "mass noun",
+    "definition": "Hydroelectricity is electricity made from moving water.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "import": {
+    "concept": "exchange",
+    "pos": "noun verb",
+    "definition": "To import is to bring things in from another country to sell them.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "incentive": {
+    "concept": "goal",
+    "pos": "noun",
+    "definition": "An incentive is a thing, such as money, that makes a person want to do something.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "independent": {
+    "concept": "allowed_or_not",
+    "pos": "adjective periphrastic",
+    "definition": "Independent means free, and not ruled by others.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "inject": {
+    "concept": "force",
+    "pos": "verb",
+    "definition": "To inject is to push a liquid or a gas into a thing.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "install": {
+    "concept": "component_and_system",
+    "pos": "verb",
+    "definition": "To install is to put a machine or a part in place so that it can be used.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "interest": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "Interest is wanting to know more about a thing.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "involve": {
+    "concept": "component_and_system",
+    "pos": "verb",
+    "definition": "To involve is to have a thing as a part.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "landfill": {
+    "concept": "using_up",
+    "pos": "noun",
+    "definition": "A landfill is a place where garbage is put under the ground.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "leak": {
+    "concept": "things_break",
+    "pos": "noun verb",
+    "definition": "A leak is a hole or a crack that lets a liquid or a gas get out.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "liquefy": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To liquefy is to make a thing into a liquid.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "magma": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Magma is hot melted rock under the ground.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "mall": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A mall is a big building with many stores in it.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "manufacture": {
+    "concept": "raw_and_made",
+    "pos": "noun verb",
+    "definition": "To manufacture is to make things in a factory, often with machines.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "manufacturer": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A manufacturer is a company that manufactures things.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "manure": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Manure is animal waste that people put on fields to help plants grow.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "mechanical": {
+    "concept": "component_and_system",
+    "pos": "adjective periphrastic",
+    "definition": "Mechanical means of machines, or done by a machine.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "methane": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Methane is a gas made of carbon and hydrogen, and it burns.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "metric": {
+    "concept": "measuring",
+    "pos": "adjective ungraded",
+    "definition": "Metric means of the way of measuring that uses meters and grams.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "miner": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "A miner is a person who works in a mine.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "mirror": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A mirror is a flat piece of glass that shows you what is in front of it.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "monoxide": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A monoxide is a chemical with one atom of oxygen in it.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "motor": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A motor is a machine that makes a thing move or turn.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "motorcycle": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A motorcycle is a vehicle with two wheels and an engine.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "nuclear": {
+    "concept": "force",
+    "pos": "adjective ungraded",
+    "definition": "Nuclear means of the middle part of an atom, or of power made from it.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "offshore": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Offshore means out in the sea, away from the land.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "ore": {
+    "concept": "metal",
+    "pos": "noun",
+    "definition": "Ore is rock that has metal in it.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "panel": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A panel is a flat piece that is part of a larger thing.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "pathway": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "A pathway is a path, or a way to get to a place or to do a thing.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "performance": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "Performance is how well a person or a machine performs.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "petroleum": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Petroleum is oil that comes from deep under the ground.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "pipeline": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A pipeline is a long line of pipes that carries oil, gas or water far away.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "policy": {
+    "concept": "rule",
+    "pos": "noun",
+    "definition": "A policy is a plan or a rule that a group or a government follows.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "pollutant": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "A pollutant is a thing that makes air, water or land dirty and harmful.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "potential": {
+    "concept": "can_and_cannot",
+    "pos": "adjective periphrastic",
+    "definition": "Potential means possible but not yet real.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "producer": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A producer is a person or a group that makes or grows things.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "pump": {
+    "concept": "force",
+    "pos": "noun verb",
+    "definition": "A pump is a machine that pushes a liquid or a gas through a pipe.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "quadrillion": {
+    "concept": "natural_number",
+    "pos": "noun",
+    "definition": "A quadrillion is a thousand trillion.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "qualify": {
+    "concept": "allowed_or_not",
+    "pos": "verb",
+    "definition": "To qualify is to meet the rules needed to be or to do a thing.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "react": {
+    "concept": "cause_and_effect",
+    "pos": "verb",
+    "definition": "To react is to change or to act because of another thing.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "recycle": {
+    "concept": "using_up",
+    "pos": "verb",
+    "definition": "To recycle is to make used things into new things.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "refine": {
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "definition": "To refine is to make a material pure by taking out what is not wanted.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "refinery": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A refinery is a factory that refines oil or another material.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "reflector": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A reflector is a thing that reflects light.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "refrigerator": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A refrigerator is a cold box in the kitchen that keeps food fresh.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "renewable": {
+    "concept": "using_up",
+    "pos": "adjective periphrastic",
+    "definition": "Renewable means able to come back again, so that it is not used up.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "requirement": {
+    "concept": "need",
+    "pos": "noun",
+    "definition": "A requirement is a thing that you need or that a rule says you must have.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "reserve": {
+    "concept": "stock_and_flow",
+    "pos": "noun",
+    "definition": "A reserve is an amount of a thing that is kept to use later.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "reservoir": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A reservoir is a place where a lot of water or another fluid is kept.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "residential": {
+    "concept": "people_together",
+    "pos": "adjective periphrastic",
+    "definition": "Residential means of the places where people live.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "residue": {
+    "concept": "using_up",
+    "pos": "noun",
+    "definition": "A residue is what is left after a thing is used or taken away.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "retail": {
+    "concept": "exchange",
+    "pos": "mass noun",
+    "definition": "Retail is the selling of things to people in stores.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "sale": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A sale is the selling of a thing.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "sawdust": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Sawdust is the tiny bits of wood that fall off when people cut wood.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "sedimentary": {
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "definition": "Sedimentary means made of layers of sediment that have pressed together into rock.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "service": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "A service is work that a person or a group does for other people.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "shale": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Shale is a soft rock made of mud pressed in thin layers.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "starch": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Starch is a white material in some food, such as corn and potatoes.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "storage": {
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "definition": "Storage is the keeping of things in a place until they are needed.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "substantially": {
+    "concept": "quantity",
+    "pos": "adverb ungraded",
+    "definition": "Substantially means by a large amount.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "sulfur": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Sulfur is a yellow material that smells bad when it burns.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "survey": {
+    "concept": "finding_out",
+    "pos": "noun verb",
+    "definition": "A survey is a careful study made to find out about a place or a group.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "switchgrass": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Switchgrass is a tall grass that people grow to make fuel.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "synthetic": {
+    "concept": "raw_and_made",
+    "pos": "adjective periphrastic",
+    "definition": "Synthetic means made by people and not found in nature.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "tank": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A tank is a large container that holds a liquid or a gas.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "tax": {
+    "concept": "exchange",
+    "pos": "noun verb",
+    "definition": "A tax is money that people must pay to the government.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "technology": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "Technology is the tools and machines that people make to help them do things.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "ton": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A ton is a unit of weight equal to two thousand pounds.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "tower": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A tower is a tall, narrow building or part of a building.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "transfer": {
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "definition": "To transfer is to move a thing from one place or person to another.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "transmission": {
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "definition": "Transmission is the sending of a thing such as electricity from one place to another.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "transport": {
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "definition": "To transport is to carry people or things from one place to another.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "trillion": {
+    "concept": "natural_number",
+    "pos": "noun",
+    "definition": "A trillion is a thousand billion.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "utility": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A utility is a company that sells power, water or gas to homes.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "vote": {
+    "concept": "choosing",
+    "pos": "noun verb",
+    "definition": "To vote is to show what you choose so that a group can decide.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "warehouse": {
+    "concept": "stock_and_flow",
+    "pos": "noun",
+    "definition": "A warehouse is a large building where things are kept.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  }
+}

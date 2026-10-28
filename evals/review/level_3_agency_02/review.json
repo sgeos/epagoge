@@ -1,0 +1,400 @@
+{
+  "anaerobic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Anaerobic means living or happening without oxygen.",
+    "concept": "air",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "anaerobic"
+    ]
+  },
+  "cellulosic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cellulosic means made from the hard parts of plants, such as stems and wood.",
+    "concept": "plant",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "cellulosic"
+    ]
+  },
+  "coke": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Coke is a fuel made by heating coal without air.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "coke"
+    ]
+  },
+  "combustible": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Combustible means able to burn.",
+    "concept": "heat",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "combustible"
+    ]
+  },
+  "combustion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Combustion is burning.",
+    "concept": "heat",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "combustion"
+    ]
+  },
+  "cryogenic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cryogenic means having to do with things made far colder than ice.",
+    "concept": "heat",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "cryogenic"
+    ]
+  },
+  "digester": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only digesters, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A digester is a closed tank where bacteria break down waste to make gas.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "digester",
+      "digesters"
+    ]
+  },
+  "distillate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A distillate is a liquid that was boiled into a gas and then made into a liquid again.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "distillate",
+      "distillates"
+    ]
+  },
+  "evaporative": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Evaporative means of a liquid turning into a gas.",
+    "concept": "liquid",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "evaporative"
+    ]
+  },
+  "feedstock": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A feedstock is a raw material that a factory uses to make a product.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "feedstock",
+      "feedstocks"
+    ]
+  },
+  "fermentation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fermentation is a change in which yeast or bacteria turn sugar into alcohol or gas.",
+    "concept": "change",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "fermentation"
+    ]
+  },
+  "fracking": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fracking is pushing a fluid into rock with great force to break it and get oil or gas out.",
+    "concept": "force",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "fracking"
+    ]
+  },
+  "gasification": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Gasification is the changing of a solid fuel into a gas by heat.",
+    "concept": "change",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "gasification"
+    ]
+  },
+  "hydraulic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Hydraulic means moved or worked by the force of a liquid.",
+    "concept": "force",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "hydraulic"
+    ]
+  },
+  "hydrocarbon": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hydrocarbon is a chemical made of only hydrogen and carbon.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "hydrocarbon",
+      "hydrocarbons"
+    ]
+  },
+  "incandescent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Incandescent means giving off light because it is very hot.",
+    "concept": "heat",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "incandescent"
+    ]
+  },
+  "insolation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Insolation is the amount of sunlight that reaches a place.",
+    "concept": "weather",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "insolation"
+    ]
+  },
+  "intensive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Intensive means done with a lot of work or care, or using a lot of some thing.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "intensive"
+    ]
+  },
+  "kilowatt": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only kilowatts, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A kilowatt is a unit for how fast electricity or other power is made or used.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "kilowatt",
+      "kilowatts"
+    ]
+  },
+  "kinetic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Kinetic means having to do with movement.",
+    "concept": "moving_and_still",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "kinetic"
+    ]
+  },
+  "linear": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Linear means in a straight line.",
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "linear"
+    ]
+  },
+  "lipid": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A lipid is a fat or an oil in a living thing.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "lipid",
+      "lipids"
+    ]
+  },
+  "megawatt": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A megawatt is a unit of power equal to one thousand kilowatts.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "megawatt",
+      "megawatts"
+    ]
+  },
+  "offset": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "To offset is to balance one thing with another thing that works the other way.",
+    "concept": "balance",
+    "pos": "verb",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "offset",
+      "offsets",
+      "offsetting"
+    ]
+  },
+  "photon": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only photons, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A photon is a very small bit of light.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "photon",
+      "photons"
+    ]
+  },
+  "residual": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Residual means left over.",
+    "concept": "using_up",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "residual"
+    ]
+  },
+  "scrubber": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only scrubbers, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A scrubber is a machine that cleans smoke before it goes into the air.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "scrubber",
+      "scrubbers"
+    ]
+  },
+  "sector": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sector is one part of a larger whole, such as one part of the work of a country.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "sector",
+      "sectors"
+    ]
+  },
+  "sulfide": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sulfide is a chemical made of sulfur joined with another element.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "sulfide",
+      "sulfides"
+    ]
+  },
+  "supplemental": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Supplemental means added to a thing to make it more complete.",
+    "concept": "enough",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "supplemental"
+    ]
+  },
+  "syngas": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Syngas is a gas made from coal or plant material, mostly of hydrogen and carbon monoxide.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "syngas"
+    ]
+  },
+  "wellhead": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A wellhead is the top of a well, where oil or gas comes out of the ground.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "wellhead",
+      "wellheads"
+    ]
+  }
+}

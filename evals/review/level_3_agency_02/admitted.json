@@ -1,0 +1,194 @@
+{
+  "anaerobic": {
+    "concept": "air",
+    "pos": "adjective ungraded",
+    "definition": "Anaerobic means living or happening without oxygen.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "cellulosic": {
+    "concept": "plant",
+    "pos": "adjective ungraded",
+    "definition": "Cellulosic means made from the hard parts of plants, such as stems and wood.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "coke": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Coke is a fuel made by heating coal without air.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "combustible": {
+    "concept": "heat",
+    "pos": "adjective periphrastic",
+    "definition": "Combustible means able to burn.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "combustion": {
+    "concept": "heat",
+    "pos": "mass noun",
+    "definition": "Combustion is burning.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "cryogenic": {
+    "concept": "heat",
+    "pos": "adjective ungraded",
+    "definition": "Cryogenic means having to do with things made far colder than ice.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "digester": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A digester is a closed tank where bacteria break down waste to make gas.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "distillate": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A distillate is a liquid that was boiled into a gas and then made into a liquid again.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "evaporative": {
+    "concept": "liquid",
+    "pos": "adjective ungraded",
+    "definition": "Evaporative means of a liquid turning into a gas.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "feedstock": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A feedstock is a raw material that a factory uses to make a product.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "fermentation": {
+    "concept": "change",
+    "pos": "mass noun",
+    "definition": "Fermentation is a change in which yeast or bacteria turn sugar into alcohol or gas.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "fracking": {
+    "concept": "force",
+    "pos": "mass noun",
+    "definition": "Fracking is pushing a fluid into rock with great force to break it and get oil or gas out.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "gasification": {
+    "concept": "change",
+    "pos": "mass noun",
+    "definition": "Gasification is the changing of a solid fuel into a gas by heat.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "hydraulic": {
+    "concept": "force",
+    "pos": "adjective ungraded",
+    "definition": "Hydraulic means moved or worked by the force of a liquid.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "hydrocarbon": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A hydrocarbon is a chemical made of only hydrogen and carbon.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "incandescent": {
+    "concept": "heat",
+    "pos": "adjective ungraded",
+    "definition": "Incandescent means giving off light because it is very hot.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "insolation": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Insolation is the amount of sunlight that reaches a place.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "intensive": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Intensive means done with a lot of work or care, or using a lot of some thing.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "kilowatt": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A kilowatt is a unit for how fast electricity or other power is made or used.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "kinetic": {
+    "concept": "moving_and_still",
+    "pos": "adjective ungraded",
+    "definition": "Kinetic means having to do with movement.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "linear": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Linear means in a straight line.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "lipid": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A lipid is a fat or an oil in a living thing.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "megawatt": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A megawatt is a unit of power equal to one thousand kilowatts.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "offset": {
+    "concept": "balance",
+    "pos": "verb",
+    "definition": "To offset is to balance one thing with another thing that works the other way.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "photon": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A photon is a very small bit of light.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "residual": {
+    "concept": "using_up",
+    "pos": "adjective ungraded",
+    "definition": "Residual means left over.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "scrubber": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "A scrubber is a machine that cleans smoke before it goes into the air.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "sector": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A sector is one part of a larger whole, such as one part of the work of a country.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "sulfide": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A sulfide is a chemical made of sulfur joined with another element.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "supplemental": {
+    "concept": "enough",
+    "pos": "adjective periphrastic",
+    "definition": "Supplemental means added to a thing to make it more complete.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "syngas": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Syngas is a gas made from coal or plant material, mostly of hydrogen and carbon monoxide.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  },
+  "wellhead": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A wellhead is the top of a well, where oil or gas comes out of the ground.",
+    "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+  }
+}

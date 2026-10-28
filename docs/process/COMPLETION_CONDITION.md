@@ -1,22 +1,26 @@
 Ordering is not a completion criterion.
 
-Met on 2026-10-25 and measured on the working tree. This file is
+Met on 2026-10-28 and measured on the working tree. This file is
 historical evidence. Do not treat it as an open task.
 
-Every `mktemp` call in `tools/check.sh` and `tools/scrub_scan.sh` names an
-explicit template inside the gate's scratch directory or inside `TMPDIR`.
+`evals/review/level_2_agency_02/` holds a candidate pool selected by
+`tools/candidate_pool.py` from a scan of the two sources fetched on
+2026-10-28, with the private term list applied. Every word in that pool is
+admitted at level two or three with one definition, or deferred or excluded
+with a reason in its review record. Its increment measurement matches the
+tree. No word with a review decision from before this brief changes its
+decision.
 
-`test_admission_is_valid_before_and_after_commit_and_fields_are_checked` in
-`tests/test_handoff.py` creates no directory named `.git`, and it makes the
-same assertions as before.
+Required definition coverage is complete at levels one and two, and closure
+is grounded at both. `tools/check.sh` exits 0 with no skipped tests.
 
-`tools/check.sh` exits 0 with no skipped tests both inside the Claude Code
-sandbox on the authoring host and outside it, with core coverage at or above
-the floor and a clean disclosure scan. Continuous integration is reported
-separately for any published revision.
+`tmp/dromon-trial/` holds a review of `bk.ac2.ledger` against
+`docs/spec/BOOK_DRAFTING.md`, and one harness experience report from each
+Dromon line that took part, or the operator is told which line did not
+write one and why.
 
-`AGENTS.md` and `docs/process/HANDOFF.md` state the Claude Code sandbox
-result as measured, with its date, and no longer describe exporting
-`TMPDIR` as sufficient for `mktemp` on this host.
+No book under `curriculum/books/` changed except the dictionary seed books
+at levels two and three, which record admitted definitions. No teacher was
+loaded.
 
 Ordering is not a completion criterion.
