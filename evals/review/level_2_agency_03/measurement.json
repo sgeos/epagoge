@@ -34,8 +34,8 @@
     "before.json": "bd799e3613d093556cda6789999c8241e83607e7208cbec393b104368e3a528a",
     "candidates.json": "6220588732fe52514e6acce15cd8f8733935c0bb66991c11b08e2b4a8376d8ce",
     "authoring.json": "e590395dbb512f6aea5a55c7583ce26866280a5ceb870350374d34177ea989b7",
-    "review.json": "80a8dbab78fc73c8f0b13bb2fcf2bbfc91d9a799ac0049339fc09643ae323e2a",
-    "admitted.json": "2157a71166d11c413ad72b1b011d33d462743d1be42ef09680e2a693a0c8a791"
+    "review.json": "f249dd5a9a8ce3dc6d77ba91f52c453ac06eef61ad7f12c6c5f1b4385f42d8a1",
+    "admitted.json": "707b755ab2f8c72b9073f34b3b72a4bcdce9675c030b805cd1571923b7d8e20b"
   },
   "limits": "One agent-authored batch from the 2026-10-28 scan of StarChild and Ben's Guide. This does not measure general throughput or complete level two. Semantic review is agent review, not independent expert validation.",
   "excluded": 10

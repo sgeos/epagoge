@@ -189,7 +189,7 @@ A pharmaceutical is a thing made for treatment of a sick person.
 A photon is a very small bit of light.
 
 [dict.3.quasar]
-A quasar is a very bright thing very far away in space. Its light comes from hot gas falling into a huge black hole in the middle of a galaxy.
+A quasar is a very bright thing very far away in space. Scientists think its light comes from hot gas falling into a huge black hole in the middle of a galaxy.
 
 [dict.3.residual]
 Residual means left over.

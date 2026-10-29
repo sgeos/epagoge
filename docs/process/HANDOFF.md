@@ -31,12 +31,50 @@ measurements of every earlier batch already fail for that reason. A failure
 then marks the counts below as stale rather than wrong. Missing host
 artifacts make the associated checks unverified rather than disproved.
 
+## Resume state, 2026-10-29, second trial follow-up
+
+The brief opened on 2026-10-29 in `CURRENT_BRIEF.md` applied the
+reviewer's findings on the third agency batch and had the luna line fix
+its generator draft. Its condition is met on the tree. The second trial's
+brief and condition are preserved in
+`evals/review/level_2_agency_03_followup/`. The second trial's resume state
+below is historical for the revision and for publication.
+
+**Lexicon.** The worker line changed four definitions, meteor, volcano and
+tribe at level two and quasar at level three, and moved volcano from shape
+to spatial position. Radio keeps reporting. The reviewer's wording for
+meteor used streak, which is not admitted at level two, so the applied
+wording says a bright line of light. A test in `tests/test_vocabulary.py`
+asserts spun and volcanoes. The changes and reasons are recorded in
+`evals/review/level_2_agency_03_followup/README.md`. No word changed its
+decision and the headword counts did not change. The reviewer line
+confirmed each change, the increment measurement and closure at levels one
+to three. The new wording has had no review outside the Dromon lines.
+
+**Generator draft.** Luna's revised draft is in the ignored
+`tmp/dromon-trial-3/generator-draft.diff` and is not applied, as the
+operator chose. Its repeat check now splits the preceding spread with the
+acceptance code's own splitter and compares sentences without their final
+punctuation, which the reviewer confirmed with sentences ending in a period
+and a question mark. The record rule reaches only units covering ledger,
+keeping_count or written_record. The offline phrase check was removed after
+the reviewer found that it flagged none of seven phrasings from
+`bk.ac2.ledger`, so the record limit rests on the prompt rule alone, and
+whether a teacher follows it is unverified. In a scratch copy the full
+suite passed with 682 tests, and the operator's session confirmed that the
+draft applies to the current tree with its 50 generator and prompt tests
+passing. The reviewer did not review the second round.
+
+No teacher was loaded, and the Dromon daemon was stopped afterwards.
+
 ## Resume state, 2026-10-28, second Dromon trial
 
 The brief opened later on 2026-10-28 in `CURRENT_BRIEF.md` ran a second
 multi-agent trial of the Dromon harness on the level-two lexicon and
-corpus. Its condition is met on the working tree and is uncommitted until
-the operator asks. The first trial's brief and condition are preserved in
+corpus. Its condition was met, and the work was committed as `91fff84`,
+whose [continuous integration
+run](https://github.com/sgeos/epagoge/actions/runs/40963904306) succeeded.
+The first trial's brief and condition are preserved in
 `evals/review/level_2_agency_03/`. The first trial's resume state below is
 historical for the revision and for publication.
 

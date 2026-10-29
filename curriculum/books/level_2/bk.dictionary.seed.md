@@ -1587,7 +1587,7 @@
     "dict.2.vital": {"concepts": ["need"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:vital"}, "defines": {"kind": "word", "target": "vital"}},
     "dict.2.vocal": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:vocal"}, "defines": {"kind": "word", "target": "vocal"}},
     "dict.2.volcanic": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:volcanic"}, "defines": {"kind": "word", "target": "volcanic"}},
-    "dict.2.volcano": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:volcano"}, "defines": {"kind": "word", "target": "volcano"}},
+    "dict.2.volcano": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:volcano"}, "defines": {"kind": "word", "target": "volcano"}},
     "dict.2.volume": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:volume"}, "defines": {"kind": "word", "target": "volume"}},
     "dict.2.volunteer": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:volunteer"}, "defines": {"kind": "word", "target": "volunteer"}},
     "dict.2.vorticity": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:vorticity"}, "defines": {"kind": "word", "target": "vorticity"}},
@@ -4247,7 +4247,7 @@ The mesosphere is a high layer of air.
 Metallic means made of metal or like metal.
 
 [dict.2.meteor]
-A meteor is a rock from space that gets so hot it shines as it falls through the air.
+A meteor is a bright line of light in the sky made by a rock from space that burns as it falls through the air.
 
 [dict.2.meteorite]
 A meteorite is a piece of rock or metal from space that has fallen to the ground.
@@ -6143,7 +6143,7 @@ Tremendous means very great.
 A trial is a test, or a hearing to decide whether a person did a wrong.
 
 [dict.2.tribe]
-A tribe is a group of people and families who share the same old ways, language and leaders.
+A tribe is a group of people and families who share a language and a way of life, often with their own leaders.
 
 [dict.2.trillion]
 A trillion is a thousand billion.
@@ -6383,7 +6383,7 @@ Vocal means of the voice.
 Volcanic means of a mountain that can throw out hot rock.
 
 [dict.2.volcano]
-A volcano is a mountain or an opening in the ground where hot melted rock comes up from deep inside the earth.
+A volcano is an opening in the ground, often on a mountain, where hot melted rock comes up from deep inside the earth.
 
 [dict.2.volume]
 Volume is how much space a thing fills.

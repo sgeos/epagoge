@@ -50,7 +50,7 @@
   "meteor": {
     "concept": "spatial_position",
     "pos": "noun",
-    "definition": "A meteor is a rock from space that gets so hot it shines as it falls through the air.",
+    "definition": "A meteor is a bright line of light in the sky made by a rock from space that burns as it falls through the air.",
     "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
   },
   "meteorite": {
@@ -92,13 +92,13 @@
   "tribe": {
     "concept": "people_together",
     "pos": "noun",
-    "definition": "A tribe is a group of people and families who share the same old ways, language and leaders.",
+    "definition": "A tribe is a group of people and families who share a language and a way of life, often with their own leaders.",
     "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
   },
   "volcano": {
-    "concept": "shape",
+    "concept": "spatial_position",
     "pos": "noun",
-    "definition": "A volcano is a mountain or an opening in the ground where hot melted rock comes up from deep inside the earth.",
+    "definition": "A volcano is an opening in the ground, often on a mountain, where hot melted rock comes up from deep inside the earth.",
     "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
   }
 }

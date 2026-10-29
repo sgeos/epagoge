@@ -525,6 +525,11 @@ class TestVerbInflection(unittest.TestCase):
             verb_forms("maintain"), ("maintains", "maintained", "maintaining")
         )
 
+    def test_third_agency_scan_forms_are_listed(self) -> None:
+        """The rule gave spinned and volcanos, and the batch caught both."""
+        self.assertEqual(verb_forms("spin"), ("spins", "spun", "spinning"))
+        self.assertEqual(plural("volcano"), "volcanoes")
+
     def test_a_form_equal_to_the_base_is_dropped(self) -> None:
         """`cut` is its own past, so it must not appear as an inflection."""
         self.assertNotIn("cut", verb_forms("cut"))
