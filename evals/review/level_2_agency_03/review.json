@@ -1,0 +1,294 @@
+{
+  "asteroid": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An asteroid is a rock in space that goes around the sun.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "asteroid",
+      "asteroids"
+    ]
+  },
+  "asteroids": {
+    "decision": "exclude",
+    "reason": "An inflected form of asteroid, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "astronaut": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An astronaut is a person who travels in space.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "astronaut",
+      "astronauts"
+    ]
+  },
+  "astronauts": {
+    "decision": "exclude",
+    "reason": "An inflected form of astronaut, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "astronomer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An astronomer is a scientist who studies the stars, the planets and other things in space.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "astronomer",
+      "astronomers"
+    ]
+  },
+  "audio": {
+    "decision": "defer",
+    "reason": "Frequent only in the page control text Listen to an audio version of this page and the browser notice beside it, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "bill": {
+    "decision": "defer",
+    "reason": "The source uses the sense of a written plan for a new law, and the common senses of money owed and of a bird's beak are more basic. Which sense to file first is a separate decision."
+  },
+  "collision": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A collision is when two things crash into each other.",
+    "concept": "force",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "collision",
+      "collisions"
+    ]
+  },
+  "comet": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A comet is a ball of ice and dust in space. When it comes near the sun, it has a long, bright tail.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "comet",
+      "comets"
+    ]
+  },
+  "comets": {
+    "decision": "exclude",
+    "reason": "An inflected form of comet, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "cosmologists": {
+    "decision": "exclude",
+    "reason": "An inflected form of cosmologist, which is admitted in evals/review/level_3_agency_03 at level three. The form is among its reviewed forms."
+  },
+  "date": {
+    "decision": "defer",
+    "reason": "Frequent only in a site notice repeated on every StarChild page, about a scheduled outage and a government shutdown, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "experiment": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two. The pool held only experiments, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An experiment is a careful test that you do to check an idea against what really happens.",
+    "concept": "checking",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "experiment",
+      "experiments"
+    ]
+  },
+  "experiments": {
+    "decision": "exclude",
+    "reason": "An inflected form of experiment, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "explosion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An explosion is a very fast, loud burst that pushes things out with great force.",
+    "concept": "things_break",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "explosion",
+      "explosions"
+    ]
+  },
+  "law": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A law is a rule that a government makes, and that the people of a country must follow.",
+    "concept": "rule",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "law",
+      "laws"
+    ]
+  },
+  "meteor": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A meteor is a rock from space that gets so hot it shines as it falls through the air.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "meteor",
+      "meteors"
+    ]
+  },
+  "meteorite": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A meteorite is a piece of rock or metal from space that has fallen to the ground.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "meteorite",
+      "meteorites"
+    ]
+  },
+  "meteorites": {
+    "decision": "exclude",
+    "reason": "An inflected form of meteorite, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "meteoroid": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A meteoroid is a small piece of rock or metal that moves through space.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "meteoroid",
+      "meteoroids"
+    ]
+  },
+  "outage": {
+    "decision": "defer",
+    "reason": "Frequent only in a site notice repeated on every StarChild page, about a scheduled outage and a government shutdown, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "radio": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Radio is a way to send sounds and signals through the air without wires.",
+    "concept": "reporting",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "radio",
+      "radios"
+    ]
+  },
+  "rocky": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Rocky means made of rock or full of rocks.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "rockier",
+      "rockiest",
+      "rocky"
+    ]
+  },
+  "rover": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two. The pool held only rovers, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A rover is a machine on wheels that moves over the ground of another world to find out about it.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "rover",
+      "rovers"
+    ]
+  },
+  "rovers": {
+    "decision": "exclude",
+    "reason": "An inflected form of rover, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "scheduled": {
+    "decision": "defer",
+    "reason": "Frequent only in a site notice repeated on every StarChild page, about a scheduled outage and a government shutdown, which is page interface rather than prose. The scan gives no prose evidence for it. The citation form schedule is not in the pool."
+  },
+  "shutdown": {
+    "decision": "defer",
+    "reason": "Frequent only in a site notice repeated on every StarChild page, about a scheduled outage and a government shutdown, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "spin": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To spin is to turn around and around in place.",
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "spin",
+      "spinning",
+      "spins",
+      "spun"
+    ]
+  },
+  "spins": {
+    "decision": "exclude",
+    "reason": "An inflected form of spin, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "tribe": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two. The pool held only tribes, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tribe is a group of people and families who share the same old ways, language and leaders.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "tribe",
+      "tribes"
+    ]
+  },
+  "tribes": {
+    "decision": "exclude",
+    "reason": "An inflected form of tribe, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "version": {
+    "decision": "defer",
+    "reason": "Frequent only in page control text such as Text only version and Level 2 version, which is page interface rather than prose. Ben's Guide uses it once in prose, below the threshold."
+  },
+  "volcano": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan and definable at level two. The pool held only volcanoes, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A volcano is a mountain or an opening in the ground where hot melted rock comes up from deep inside the earth.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "volcano",
+      "volcanoes"
+    ]
+  },
+  "volcanoes": {
+    "decision": "exclude",
+    "reason": "An inflected form of volcano, which is admitted in this batch. The form is among its reviewed forms."
+  }
+}

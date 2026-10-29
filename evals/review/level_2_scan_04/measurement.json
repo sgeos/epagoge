@@ -5,7 +5,7 @@
   },
   "after": {
     "1": 849,
-    "2": 2463
+    "2": 2480
   },
   "candidates": 67,
   "teacher": null,
@@ -13,7 +13,7 @@
   "admitted": 67,
   "deferred": 0,
   "approximate_target": 10000,
-  "remaining_gap": 7537,
+  "remaining_gap": 7520,
   "closure": {
     "1": {
       "defined": 849,
@@ -22,10 +22,10 @@
       "validator_output": "curriculum/books/level_1: dictionary at level 1\n  defined      849 of 849 words needing one  100.0% coverage\n  also         4 definition(s) of function words, not counted\n  grounded     853  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  self-hosting  yes\n"
     },
     "2": {
-      "defined": 2463,
-      "required": 2463,
+      "defined": 2480,
+      "required": 2480,
       "grounded": true,
-      "validator_output": "curriculum/books/level_2: dictionary at level 2\n  defined      2463 of 2463 words needing one  100.0% coverage\n  grounded     2463  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  self-hosting  yes\n"
+      "validator_output": "curriculum/books/level_2: dictionary at level 2\n  defined      2480 of 2480 words needing one  100.0% coverage\n  grounded     2480  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  self-hosting  yes\n"
     }
   },
   "preserved_files": 523,

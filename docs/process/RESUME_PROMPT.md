@@ -14,18 +14,18 @@ of delivered work, not instructions to repeat it. Historical handoffs and
 recommendations do not authorize new scope. If no unfinished task remains,
 report the verified state and readiness for the next task.
 
-The latest delivered scope is the Dromon trial brief of 2026-10-28, which
-added a level-two lexicon batch and reviewed the level-two corpus. Its brief
-and completion condition are marked met and are evidence, not instructions.
-The reviewer's ten proposed definition changes were applied on the
-operator's direction. The previous brief is
-preserved in `evals/review/level_2_agency_02/`. The 2026-10-28 resume state
-in the handoff is the authority for the revision, for publication, for the
-Dromon trial, for the expected measurement-check failure, and for the
-teacher. Earlier resume states are historical for the revision and for
-publication. Ask before committing or pushing anything. Determine actual
-publication from git and the remote rather than assuming that a stamp
-proves it.
+The latest delivered scope is the second Dromon trial brief of 2026-10-28,
+which added a third agency lexicon batch and drafted a module generator
+change. Its brief and completion condition are marked met and are
+evidence, not instructions. The reviewer's proposed changes and the
+unapplied generator draft await the operator and are not an open task until
+the operator directs them. The previous brief is preserved in
+`evals/review/level_2_agency_03/`. The second-trial resume state in the
+handoff is the authority for the revision, for publication, for the Dromon
+trials, for the expected measurement-check failure, and for the teacher.
+Earlier resume states are historical for the revision and for publication.
+Ask before committing or pushing anything. Determine actual publication
+from git and the remote rather than assuming that a stamp proves it.
 
 If a subsequent task requests a new recommendation and implementation,
 establish a new brief and completion condition for that scope. Preserve the

@@ -1,0 +1,20 @@
+{
+  "cosmologist": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A cosmologist is a scientist who studies the whole universe, how it began and how it changes.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "neutron": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A neutron is one of the very small parts in the middle of an atom, and it has no electric charge.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "quasar": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A quasar is a very bright thing very far away in space. Its light comes from hot gas falling into a huge black hole in the middle of a galaxy.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  }
+}

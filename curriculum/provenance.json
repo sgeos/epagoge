@@ -653,6 +653,18 @@
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
     },
+    "asteroid": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "astronaut": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "astronomer": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "atmosphere": {
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions",
       "evidence": "recorded at admission"
@@ -2551,6 +2563,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "collision": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "colony": {
       "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
@@ -2611,6 +2627,10 @@
     },
     "combustion": {
       "source": "scan 2026-10-28, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "comet": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "commercial": {
@@ -2966,6 +2986,10 @@
       "criterion": "mapping",
       "admitted_because": "Mapped from vocabulary the corpus already used, when every term was given a concept and a level.",
       "evidence": "reconstructed from history"
+    },
+    "cosmologist": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "cost": {
       "commit": "1a5ac29cc8b6",
@@ -4557,6 +4581,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "experiment": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "explain": {
       "commit": "a0366a07b501",
       "date": "2026-09-25",
@@ -4583,6 +4611,10 @@
     },
     "explore": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
+      "evidence": "recorded at admission"
+    },
+    "explosion": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "export": {
@@ -7294,6 +7326,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "law": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "lay": {
       "source": "scan 2026-09-27, frequent in at least two sources and selected by tools/candidate_pool.py; agent-authored 2026-10-07 in evals/review/level_2_multi_source",
       "evidence": "recorded at admission"
@@ -8112,6 +8148,18 @@
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
+    "meteor": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "meteorite": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "meteoroid": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "meteorological": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -8726,6 +8774,10 @@
     },
     "neutral": {
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
+    "neutron": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "never": {
@@ -10326,6 +10378,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "quasar": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "queen": {
       "commit": "d1a98ab90049",
       "date": "2026-09-25",
@@ -10388,6 +10444,10 @@
     },
     "radial": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "radio": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "radiosonde": {
@@ -11035,6 +11095,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "rocky": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "role": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
@@ -11110,6 +11174,10 @@
     },
     "route": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "rover": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "rub": {
@@ -12530,6 +12598,10 @@
       "criterion": "prescriptive",
       "admitted_because": "Authored as a level-one foundational lexicon before any corpus existed, chosen for what a child entering kindergarten is expected to know and for what closing the dictionary required.",
       "evidence": "reconstructed from history"
+    },
+    "spin": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
     },
     "spiral": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
@@ -14145,6 +14217,10 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "evidence": "recorded at admission"
     },
+    "tribe": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "evidence": "recorded at admission"
+    },
     "trick": {
       "commit": "1a5ac29cc8b6",
       "date": "2026-09-24",
@@ -14740,6 +14816,10 @@
     },
     "volcanic": {
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
+      "evidence": "recorded at admission"
+    },
+    "volcano": {
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
       "evidence": "recorded at admission"
     },
     "volume": {

@@ -20,6 +20,7 @@
     "dict.3.combustible": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:combustible"}, "defines": {"kind": "word", "target": "combustible"}},
     "dict.3.combustion": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:combustion"}, "defines": {"kind": "word", "target": "combustion"}},
     "dict.3.compressibility": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:compressibility"}, "defines": {"kind": "word", "target": "compressibility"}},
+    "dict.3.cosmologist": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cosmologist"}, "defines": {"kind": "word", "target": "cosmologist"}},
     "dict.3.cryogenic": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:cryogenic"}, "defines": {"kind": "word", "target": "cryogenic"}},
     "dict.3.digester": {"concepts": ["raw_and_made"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:digester"}, "defines": {"kind": "word", "target": "digester"}},
     "dict.3.distillate": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:distillate"}, "defines": {"kind": "word", "target": "distillate"}},
@@ -44,11 +45,13 @@
     "dict.3.lipid": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lipid"}, "defines": {"kind": "word", "target": "lipid"}},
     "dict.3.megawatt": {"concepts": ["unit"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:megawatt"}, "defines": {"kind": "word", "target": "megawatt"}},
     "dict.3.meniscus": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meniscus"}, "defines": {"kind": "word", "target": "meniscus"}},
+    "dict.3.neutron": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:neutron"}, "defines": {"kind": "word", "target": "neutron"}},
     "dict.3.offset": {"concepts": ["balance"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:offset"}, "defines": {"kind": "word", "target": "offset"}},
     "dict.3.particulate": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:particulate"}, "defines": {"kind": "word", "target": "particulate"}},
     "dict.3.permafrost": {"concepts": ["heat"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:permafrost"}, "defines": {"kind": "word", "target": "permafrost"}},
     "dict.3.pharmaceutical": {"concepts": ["tending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:pharmaceutical"}, "defines": {"kind": "word", "target": "pharmaceutical"}},
     "dict.3.photon": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:photon"}, "defines": {"kind": "word", "target": "photon"}},
+    "dict.3.quasar": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:quasar"}, "defines": {"kind": "word", "target": "quasar"}},
     "dict.3.residual": {"concepts": ["using_up"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:residual"}, "defines": {"kind": "word", "target": "residual"}},
     "dict.3.scrubber": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:scrubber"}, "defines": {"kind": "word", "target": "scrubber"}},
     "dict.3.sector": {"concepts": ["component_and_system"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sector"}, "defines": {"kind": "word", "target": "sector"}},
@@ -91,6 +94,9 @@ Combustion is burning.
 
 [dict.3.compressibility]
 Compressibility is how much a thing can be pressed into a smaller space.
+
+[dict.3.cosmologist]
+A cosmologist is a scientist who studies the whole universe, how it began and how it changes.
 
 [dict.3.cryogenic]
 Cryogenic means having to do with things made far colder than ice.
@@ -164,6 +170,9 @@ A megawatt is a unit of power equal to one thousand kilowatts.
 [dict.3.meniscus]
 A meniscus is the curved top of a liquid in a thin pipe.
 
+[dict.3.neutron]
+A neutron is one of the very small parts in the middle of an atom, and it has no electric charge.
+
 [dict.3.offset]
 To offset is to balance one thing with another thing that works the other way.
 
@@ -178,6 +187,9 @@ A pharmaceutical is a thing made for treatment of a sick person.
 
 [dict.3.photon]
 A photon is a very small bit of light.
+
+[dict.3.quasar]
+A quasar is a very bright thing very far away in space. Its light comes from hot gas falling into a huge black hole in the middle of a galaxy.
 
 [dict.3.residual]
 Residual means left over.

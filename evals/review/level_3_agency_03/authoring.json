@@ -1,0 +1,19 @@
+{
+  "level": 3,
+  "teacher": null,
+  "input_hash": "29778252b9dfbb14a71a0f7b46a8baceb1a45e9a566d621abe43b409908e4a3b",
+  "vocabulary_hash": "ba70a66eb9d7a74f3c44cf53a0546128c29c8de98bb52c94f2899b54c8f5f9ca",
+  "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+  "pool_report": "tmp/lexicon-sources/agency3/pool.json",
+  "pool_report_hash": "3f4e3c91f97e95d8c933a874d7045248b6e097ac94e6734fd1aed7b3839572e5",
+  "scan_report": "tmp/lexicon-sources/agency3/scan_f5.json",
+  "scan_report_hash": "71903183543c4c562a94e1c159c6dd8b7dc50f755bd8c23e00103789595ccc24",
+  "pool_rule": "tools/candidate_pool.py --level 2 --min-sources 1 with the private term list, over a threshold-five scan of 153 StarChild level 1 pages and the two remaining Ben's Guide pages for ages 4 to 8, fetched on 2026-10-28.",
+  "pool_size": 32,
+  "reason": "The local teacher was not run. Definitions were written by the agent and pass the same admission and closure checks as teacher output.",
+  "candidates": {
+    "cosmologist": "person",
+    "neutron": "material",
+    "quasar": "spatial_position"
+  }
+}

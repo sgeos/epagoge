@@ -186,6 +186,8 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     "control": ("controlled", "controlled", "controlling"),
     "offset": ("offset", "offset", "offsetting"),
     "transfer": ("transferred", "transferred", "transferring"),
+    # Admitted on 2026-10-28. The rule gave spinned.
+    "spin": ("spun", "spun", "spinning"),
     # The regular rule gave beated, broadcasted, bursted, seeked,
     # shooted, splitted and sweared.
     "behold": ("beheld", "beheld", "beholding"),
@@ -505,6 +507,8 @@ IRREGULAR_PLURAL: Final[dict[str, str]] = {
     # The regular rule gave nucleuses and phenomenons.
     "nucleus": "nuclei",
     "phenomenon": "phenomena",
+    # Admitted at level two on 2026-10-28. The rule gave `volcanos`.
+    "volcano": "volcanoes",
 }
 """Plurals not derivable from spelling. A word mapping to itself has no
 distinct plural, which is a fact about the word and not a gap."""

@@ -1,0 +1,41 @@
+{
+  "cosmologist": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only cosmologists, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cosmologist is a scientist who studies the whole universe, how it began and how it changes.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "cosmologist",
+      "cosmologists"
+    ]
+  },
+  "neutron": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A neutron is one of the very small parts in the middle of an atom, and it has no electric charge.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "neutron",
+      "neutrons"
+    ]
+  },
+  "quasar": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-28 StarChild and Ben's Guide scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A quasar is a very bright thing very far away in space. Its light comes from hot gas falling into a huge black hole in the middle of a galaxy.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+    "reviewed_forms": [
+      "quasar",
+      "quasars"
+    ]
+  }
+}

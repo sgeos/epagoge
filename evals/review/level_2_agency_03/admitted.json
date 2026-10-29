@@ -1,0 +1,104 @@
+{
+  "asteroid": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "An asteroid is a rock in space that goes around the sun.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "astronaut": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "An astronaut is a person who travels in space.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "astronomer": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "An astronomer is a scientist who studies the stars, the planets and other things in space.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "collision": {
+    "concept": "force",
+    "pos": "noun",
+    "definition": "A collision is when two things crash into each other.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "comet": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A comet is a ball of ice and dust in space. When it comes near the sun, it has a long, bright tail.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "experiment": {
+    "concept": "checking",
+    "pos": "noun",
+    "definition": "An experiment is a careful test that you do to check an idea against what really happens.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "explosion": {
+    "concept": "things_break",
+    "pos": "noun",
+    "definition": "An explosion is a very fast, loud burst that pushes things out with great force.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "law": {
+    "concept": "rule",
+    "pos": "noun",
+    "definition": "A law is a rule that a government makes, and that the people of a country must follow.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "meteor": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A meteor is a rock from space that gets so hot it shines as it falls through the air.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "meteorite": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A meteorite is a piece of rock or metal from space that has fallen to the ground.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "meteoroid": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A meteoroid is a small piece of rock or metal that moves through space.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "radio": {
+    "concept": "reporting",
+    "pos": "noun",
+    "definition": "Radio is a way to send sounds and signals through the air without wires.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "rocky": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Rocky means made of rock or full of rocks.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "rover": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A rover is a machine on wheels that moves over the ground of another world to find out about it.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "spin": {
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "definition": "To spin is to turn around and around in place.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "tribe": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A tribe is a group of people and families who share the same old ways, language and leaders.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  },
+  "volcano": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A volcano is a mountain or an opening in the ground where hot melted rock comes up from deep inside the earth.",
+    "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source"
+  }
+}

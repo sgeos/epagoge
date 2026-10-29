@@ -1,0 +1,42 @@
+{
+  "before": {
+    "1": 849,
+    "2": 2463
+  },
+  "after": {
+    "1": 849,
+    "2": 2480
+  },
+  "candidates": 34,
+  "teacher": null,
+  "pool_report_hash": "3f4e3c91f97e95d8c933a874d7045248b6e097ac94e6734fd1aed7b3839572e5",
+  "admitted": 17,
+  "deferred": 7,
+  "approximate_target": 10000,
+  "remaining_gap": 7520,
+  "closure": {
+    "1": {
+      "defined": 849,
+      "required": 849,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_1: dictionary at level 1\n  defined      849 of 849 words needing one  100.0% coverage\n  also         4 definition(s) of function words, not counted\n  grounded     853  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  self-hosting  yes\n"
+    },
+    "2": {
+      "defined": 2480,
+      "required": 2480,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_2: dictionary at level 2\n  defined      2480 of 2480 words needing one  100.0% coverage\n  grounded     2480  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  self-hosting  yes\n"
+    }
+  },
+  "preserved_files": 523,
+  "preservation_passed": true,
+  "artifact_hashes": {
+    "before.json": "bd799e3613d093556cda6789999c8241e83607e7208cbec393b104368e3a528a",
+    "candidates.json": "6220588732fe52514e6acce15cd8f8733935c0bb66991c11b08e2b4a8376d8ce",
+    "authoring.json": "e590395dbb512f6aea5a55c7583ce26866280a5ceb870350374d34177ea989b7",
+    "review.json": "80a8dbab78fc73c8f0b13bb2fcf2bbfc91d9a799ac0049339fc09643ae323e2a",
+    "admitted.json": "2157a71166d11c413ad72b1b011d33d462743d1be42ef09680e2a693a0c8a791"
+  },
+  "limits": "One agent-authored batch from the 2026-10-28 scan of StarChild and Ben's Guide. This does not measure general throughput or complete level two. Semantic review is agent review, not independent expert validation.",
+  "excluded": 10
+}

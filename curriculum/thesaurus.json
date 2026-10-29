@@ -467,6 +467,18 @@
       "concept": "guess"
     },
     {
+      "word": "asteroid",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "astronaut",
+      "concept": "person"
+    },
+    {
+      "word": "astronomer",
+      "concept": "person"
+    },
+    {
       "word": "atmosphere",
       "concept": "air"
     },
@@ -1704,6 +1716,10 @@
       "concept": "force"
     },
     {
+      "word": "collision",
+      "concept": "force"
+    },
+    {
       "word": "colony",
       "concept": "people_together"
     },
@@ -1741,6 +1757,10 @@
       "antonyms": [
         "go"
       ]
+    },
+    {
+      "word": "comet",
+      "concept": "spatial_position"
     },
     {
       "word": "commercial",
@@ -2027,6 +2047,10 @@
     {
       "word": "correct",
       "concept": "mistake"
+    },
+    {
+      "word": "cosmologist",
+      "concept": "person"
     },
     {
       "word": "cost",
@@ -3242,6 +3266,10 @@
       "concept": "knowing"
     },
     {
+      "word": "experiment",
+      "concept": "checking"
+    },
+    {
       "word": "explain",
       "concept": "giving_a_reason"
     },
@@ -3252,6 +3280,10 @@
     {
       "word": "explore",
       "concept": "finding_out"
+    },
+    {
+      "word": "explosion",
+      "concept": "things_break"
     },
     {
       "word": "export",
@@ -5257,6 +5289,10 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "law",
+      "concept": "rule"
+    },
+    {
       "word": "lay",
       "concept": "activity"
     },
@@ -5857,6 +5893,18 @@
       "concept": "metal"
     },
     {
+      "word": "meteor",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "meteorite",
+      "concept": "material"
+    },
+    {
+      "word": "meteoroid",
+      "concept": "spatial_position"
+    },
+    {
       "word": "meteorological",
       "concept": "weather"
     },
@@ -6323,6 +6371,10 @@
     {
       "word": "neutral",
       "concept": "physical_property"
+    },
+    {
+      "word": "neutron",
+      "concept": "material"
     },
     {
       "word": "never",
@@ -7554,6 +7606,10 @@
       "concept": "quantity"
     },
     {
+      "word": "quasar",
+      "concept": "spatial_position"
+    },
+    {
       "word": "queen",
       "concept": "someone_in_charge",
       "antonyms": [
@@ -7597,6 +7653,10 @@
     {
       "word": "radial",
       "concept": "direction"
+    },
+    {
+      "word": "radio",
+      "concept": "reporting"
     },
     {
       "word": "radiosonde",
@@ -8094,6 +8154,10 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "rocky",
+      "concept": "physical_property"
+    },
+    {
       "word": "role",
       "concept": "activity"
     },
@@ -8150,6 +8214,10 @@
     {
       "word": "route",
       "concept": "spatial_position"
+    },
+    {
+      "word": "rover",
+      "concept": "moving_and_still"
     },
     {
       "word": "rub",
@@ -9151,6 +9219,10 @@
     {
       "word": "spill",
       "concept": "liquid"
+    },
+    {
+      "word": "spin",
+      "concept": "moving_and_still"
     },
     {
       "word": "spiral",
@@ -10253,6 +10325,10 @@
       "concept": "checking"
     },
     {
+      "word": "tribe",
+      "concept": "people_together"
+    },
+    {
       "word": "trick",
       "concept": "way_of_doing",
       "synonyms": [
@@ -10736,6 +10812,10 @@
     {
       "word": "volcanic",
       "concept": "physical_property"
+    },
+    {
+      "word": "volcano",
+      "concept": "shape"
     },
     {
       "word": "volume",

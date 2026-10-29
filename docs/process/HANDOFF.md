@@ -31,6 +31,62 @@ measurements of every earlier batch already fail for that reason. A failure
 then marks the counts below as stale rather than wrong. Missing host
 artifacts make the associated checks unverified rather than disproved.
 
+## Resume state, 2026-10-28, second Dromon trial
+
+The brief opened later on 2026-10-28 in `CURRENT_BRIEF.md` ran a second
+multi-agent trial of the Dromon harness on the level-two lexicon and
+corpus. Its condition is met on the working tree and is uncommitted until
+the operator asks. The first trial's brief and condition are preserved in
+`evals/review/level_2_agency_03/`. The first trial's resume state below is
+historical for the revision and for publication.
+
+**Harness.** pydromon `main` was `36e156a`, clean, with its continuous
+integration green, and 3,123 of its tests passed outside the socket and
+live markers. The same three lines ran from the same local project file,
+and the daemon was stopped afterwards. The briefs carried the report
+criteria, the cost and turn limits, the pool rule, the measurement
+re-recording and the instruction to finish the gate inside the turn from
+the start, as the first trial's reports asked.
+
+**Lexicon.** The operator's session fetched 153 StarChild level 1 pages and
+two Ben's Guide pages into `tmp/lexicon-sources/agency3/`. The NASA
+children's earth pages were not fetched again, because the first agency
+pass scanned them. The worker's batch in `evals/review/level_2_agency_03/`
+and `evals/review/level_3_agency_03/` decided a pool of 32 strings, after
+two were withdrawn by the operator's session before decision. It admitted
+17 headwords at level two and 3 at level three, excluded 10 and deferred 7.
+Level two rose from 2,463 to 2,480 distinct headwords, measured, with
+coverage and closure complete at levels one to three. Spin and the plural
+of volcano were added to `src/epagoge/inflection.py`.
+
+**Corpus.** Luna found that 1 of the 26 level-two schedule units has a
+book. It drafted a change to the module prompts and acceptance checks in
+`tmp/dromon-trial-2/generator-draft.diff`, tested in a scratch copy at 682
+tests against a baseline of 678. The draft is not applied. Its first
+attempt was an untested outline, and it finished after an ordered recipe.
+
+**Review.** The reviewer confirmed the condition and read every admitted
+definition. It proposed new wording for meteor, volcano, quasar and tribe,
+a concept check for volcano and radio, tests for the two new inflections,
+and a later decision on deferring date. It found by measurement that the
+draft's repeat check misses sentences repeated across spreads, because it
+splits the previous spread differently from the acceptance code, and that
+its phrase list catches one of seven phrasings tested from
+`bk.ac2.ledger`. None of these is applied. They await the operator.
+
+**Reports.** Each line wrote a second harness report under
+`tmp/dromon-trial-2/`. The worker finished in one turn with no missed
+report. Its new risk is that a scratch copy linked to the shared `.venv`
+could repoint the real editable install if uv succeeded in the copy, which
+did not happen. The lines ask for a wait on a named background task, a
+pass or fail term-list check, a record of what a gate run covered, known
+negatives for pattern scans, and visible model load state.
+
+Dromon's estimates are running totals over each line's kept session. The
+worker stood at about 10.62 dollars and the reviewer at about 0.21 dollars
+after both trials. No cost is recorded for the Codex line. No teacher was
+loaded.
+
 ## Resume state, 2026-10-28, Dromon trial
 
 The brief opened on 2026-10-28 in `CURRENT_BRIEF.md` ran a multi-agent

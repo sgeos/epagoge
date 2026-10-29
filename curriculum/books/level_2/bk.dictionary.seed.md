@@ -87,6 +87,9 @@
     "dict.2.ash": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ash"}, "defines": {"kind": "word", "target": "ash"}},
     "dict.2.ashamed": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:ashamed"}, "defines": {"kind": "word", "target": "ashamed"}},
     "dict.2.assume": {"concepts": ["guess"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:assume"}, "defines": {"kind": "word", "target": "assume"}},
+    "dict.2.asteroid": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:asteroid"}, "defines": {"kind": "word", "target": "asteroid"}},
+    "dict.2.astronaut": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:astronaut"}, "defines": {"kind": "word", "target": "astronaut"}},
+    "dict.2.astronomer": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:astronomer"}, "defines": {"kind": "word", "target": "astronomer"}},
     "dict.2.atmosphere": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:atmosphere"}, "defines": {"kind": "word", "target": "atmosphere"}},
     "dict.2.atmospheric": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:atmospheric"}, "defines": {"kind": "word", "target": "atmospheric"}},
     "dict.2.atom": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:atom"}, "defines": {"kind": "word", "target": "atom"}},
@@ -260,11 +263,13 @@
     "dict.2.collector": {"concepts": ["grouping"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:collector"}, "defines": {"kind": "word", "target": "collector"}},
     "dict.2.college": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:college"}, "defines": {"kind": "word", "target": "college"}},
     "dict.2.collide": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:collide"}, "defines": {"kind": "word", "target": "collide"}},
+    "dict.2.collision": {"concepts": ["force"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:collision"}, "defines": {"kind": "word", "target": "collision"}},
     "dict.2.colony": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:colony"}, "defines": {"kind": "word", "target": "colony"}},
     "dict.2.colorless": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:colorless"}, "defines": {"kind": "word", "target": "colorless"}},
     "dict.2.column": {"concepts": ["place_value"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:column"}, "defines": {"kind": "word", "target": "column"}},
     "dict.2.combination": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:combination"}, "defines": {"kind": "word", "target": "combination"}},
     "dict.2.combine": {"concepts": ["joining_and_separating"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:combine"}, "defines": {"kind": "word", "target": "combine"}},
+    "dict.2.comet": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:comet"}, "defines": {"kind": "word", "target": "comet"}},
     "dict.2.commercial": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:commercial"}, "defines": {"kind": "word", "target": "commercial"}},
     "dict.2.commercially": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:commercially"}, "defines": {"kind": "word", "target": "commercially"}},
     "dict.2.common": {"concepts": ["cycle"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:common"}, "defines": {"kind": "word", "target": "common"}},
@@ -525,8 +530,10 @@
     "dict.2.expect": {"concepts": ["guess"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:expect"}, "defines": {"kind": "word", "target": "expect"}},
     "dict.2.expensive": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:expensive"}, "defines": {"kind": "word", "target": "expensive"}},
     "dict.2.experience": {"concepts": ["knowing"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:experience"}, "defines": {"kind": "word", "target": "experience"}},
+    "dict.2.experiment": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:experiment"}, "defines": {"kind": "word", "target": "experiment"}},
     "dict.2.explanation": {"concepts": ["explanation"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:explanation"}, "defines": {"kind": "word", "target": "explanation"}},
     "dict.2.explore": {"concepts": ["finding_out"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:explore"}, "defines": {"kind": "word", "target": "explore"}},
+    "dict.2.explosion": {"concepts": ["things_break"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:explosion"}, "defines": {"kind": "word", "target": "explosion"}},
     "dict.2.export": {"concepts": ["exchange"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:export"}, "defines": {"kind": "word", "target": "export"}},
     "dict.2.exposure": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:exposure"}, "defines": {"kind": "word", "target": "exposure"}},
     "dict.2.extend": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:extend"}, "defines": {"kind": "word", "target": "extend"}},
@@ -803,6 +810,7 @@
     "dict.2.largely": {"concepts": ["quantity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:largely"}, "defines": {"kind": "word", "target": "largely"}},
     "dict.2.latitude": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:latitude"}, "defines": {"kind": "word", "target": "latitude"}},
     "dict.2.launch": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:launch"}, "defines": {"kind": "word", "target": "launch"}},
+    "dict.2.law": {"concepts": ["rule"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:law"}, "defines": {"kind": "word", "target": "law"}},
     "dict.2.lay": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lay"}, "defines": {"kind": "word", "target": "lay"}},
     "dict.2.layer": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:layer"}, "defines": {"kind": "word", "target": "layer"}},
     "dict.2.lead": {"concepts": ["causal_chain"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:lead"}, "defines": {"kind": "word", "target": "lead"}},
@@ -867,6 +875,9 @@
     "dict.2.mesoscale": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mesoscale"}, "defines": {"kind": "word", "target": "mesoscale"}},
     "dict.2.mesosphere": {"concepts": ["air"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:mesosphere"}, "defines": {"kind": "word", "target": "mesosphere"}},
     "dict.2.metallic": {"concepts": ["metal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:metallic"}, "defines": {"kind": "word", "target": "metallic"}},
+    "dict.2.meteor": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meteor"}, "defines": {"kind": "word", "target": "meteor"}},
+    "dict.2.meteorite": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meteorite"}, "defines": {"kind": "word", "target": "meteorite"}},
+    "dict.2.meteoroid": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meteoroid"}, "defines": {"kind": "word", "target": "meteoroid"}},
     "dict.2.meteorological": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meteorological"}, "defines": {"kind": "word", "target": "meteorological"}},
     "dict.2.meteorologist": {"concepts": ["person"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meteorologist"}, "defines": {"kind": "word", "target": "meteorologist"}},
     "dict.2.meter": {"concepts": ["unit"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:meter"}, "defines": {"kind": "word", "target": "meter"}},
@@ -1138,6 +1149,7 @@
     "dict.2.quarter": {"concepts": ["quantity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:quarter"}, "defines": {"kind": "word", "target": "quarter"}},
     "dict.2.quite": {"concepts": ["more_and_fewer"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:quite"}, "defines": {"kind": "word", "target": "quite"}},
     "dict.2.radial": {"concepts": ["direction"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:radial"}, "defines": {"kind": "word", "target": "radial"}},
+    "dict.2.radio": {"concepts": ["reporting"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:radio"}, "defines": {"kind": "word", "target": "radio"}},
     "dict.2.radiosonde": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:radiosonde"}, "defines": {"kind": "word", "target": "radiosonde"}},
     "dict.2.rainbow": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rainbow"}, "defines": {"kind": "word", "target": "rainbow"}},
     "dict.2.rainfall": {"concepts": ["weather"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rainfall"}, "defines": {"kind": "word", "target": "rainfall"}},
@@ -1220,12 +1232,14 @@
     "dict.2.risk": {"concepts": ["danger"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:risk"}, "defines": {"kind": "word", "target": "risk"}},
     "dict.2.roar": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:roar"}, "defines": {"kind": "word", "target": "roar"}},
     "dict.2.rocket": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rocket"}, "defines": {"kind": "word", "target": "rocket"}},
+    "dict.2.rocky": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rocky"}, "defines": {"kind": "word", "target": "rocky"}},
     "dict.2.role": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:role"}, "defines": {"kind": "word", "target": "role"}},
     "dict.2.root": {"concepts": ["plant"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:root"}, "defines": {"kind": "word", "target": "root"}},
     "dict.2.rotation": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rotation"}, "defines": {"kind": "word", "target": "rotation"}},
     "dict.2.rotational": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rotational"}, "defines": {"kind": "word", "target": "rotational"}},
     "dict.2.roughly": {"concepts": ["close_enough"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:roughly"}, "defines": {"kind": "word", "target": "roughly"}},
     "dict.2.route": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:route"}, "defines": {"kind": "word", "target": "route"}},
+    "dict.2.rover": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rover"}, "defines": {"kind": "word", "target": "rover"}},
     "dict.2.rubber": {"concepts": ["material"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rubber"}, "defines": {"kind": "word", "target": "rubber"}},
     "dict.2.rude": {"concepts": ["asking_politely"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:rude"}, "defines": {"kind": "word", "target": "rude"}},
     "dict.2.runoff": {"concepts": ["liquid"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:runoff"}, "defines": {"kind": "word", "target": "runoff"}},
@@ -1348,6 +1362,7 @@
     "dict.2.spectrum": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spectrum"}, "defines": {"kind": "word", "target": "spectrum"}},
     "dict.2.sphere": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:sphere"}, "defines": {"kind": "word", "target": "sphere"}},
     "dict.2.spicy": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spicy"}, "defines": {"kind": "word", "target": "spicy"}},
+    "dict.2.spin": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spin"}, "defines": {"kind": "word", "target": "spin"}},
     "dict.2.spiral": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spiral"}, "defines": {"kind": "word", "target": "spiral"}},
     "dict.2.spirit": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spirit"}, "defines": {"kind": "word", "target": "spirit"}},
     "dict.2.spite": {"concepts": ["feeling"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:spite"}, "defines": {"kind": "word", "target": "spite"}},
@@ -1492,6 +1507,7 @@
     "dict.2.treatment": {"concepts": ["mending"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:treatment"}, "defines": {"kind": "word", "target": "treatment"}},
     "dict.2.tremendous": {"concepts": ["quantity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tremendous"}, "defines": {"kind": "word", "target": "tremendous"}},
     "dict.2.trial": {"concepts": ["checking"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:trial"}, "defines": {"kind": "word", "target": "trial"}},
+    "dict.2.tribe": {"concepts": ["people_together"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tribe"}, "defines": {"kind": "word", "target": "tribe"}},
     "dict.2.trillion": {"concepts": ["natural_number"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:trillion"}, "defines": {"kind": "word", "target": "trillion"}},
     "dict.2.triumph": {"concepts": ["goal"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:triumph"}, "defines": {"kind": "word", "target": "triumph"}},
     "dict.2.tropics": {"concepts": ["spatial_position"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:tropics"}, "defines": {"kind": "word", "target": "tropics"}},
@@ -1571,6 +1587,7 @@
     "dict.2.vital": {"concepts": ["need"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:vital"}, "defines": {"kind": "word", "target": "vital"}},
     "dict.2.vocal": {"concepts": ["sound"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:vocal"}, "defines": {"kind": "word", "target": "vocal"}},
     "dict.2.volcanic": {"concepts": ["physical_property"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:volcanic"}, "defines": {"kind": "word", "target": "volcanic"}},
+    "dict.2.volcano": {"concepts": ["shape"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:volcano"}, "defines": {"kind": "word", "target": "volcano"}},
     "dict.2.volume": {"concepts": ["measuring"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:volume"}, "defines": {"kind": "word", "target": "volume"}},
     "dict.2.volunteer": {"concepts": ["activity"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:volunteer"}, "defines": {"kind": "word", "target": "volunteer"}},
     "dict.2.vorticity": {"concepts": ["moving_and_still"], "claim_class": "formal", "provenance": {"source_claim": "lexicon:vorticity"}, "defines": {"kind": "word", "target": "vorticity"}},
@@ -1864,6 +1881,15 @@ Ashamed means feeling bad about something you did.
 
 [dict.2.assume]
 To assume a thing is to take it as true without checking.
+
+[dict.2.asteroid]
+An asteroid is a rock in space that goes around the sun.
+
+[dict.2.astronaut]
+An astronaut is a person who travels in space.
+
+[dict.2.astronomer]
+An astronomer is a scientist who studies the stars, the planets and other things in space.
 
 [dict.2.atmosphere]
 The atmosphere is the air all around the earth.
@@ -2384,6 +2410,9 @@ A college is a school for people who are not children.
 [dict.2.collide]
 To collide is to hit something while moving.
 
+[dict.2.collision]
+A collision is when two things crash into each other.
+
 [dict.2.colony]
 A colony is a place where people from another country live and that country rules.
 
@@ -2398,6 +2427,9 @@ A combination is things put together.
 
 [dict.2.combine]
 To combine things is to put them together.
+
+[dict.2.comet]
+A comet is a ball of ice and dust in space. When it comes near the sun, it has a long, bright tail.
 
 [dict.2.commercial]
 Commercial means about buying and selling.
@@ -3179,11 +3211,17 @@ Expensive means costing a lot of money.
 [dict.2.experience]
 Experience is what you come to know by doing.
 
+[dict.2.experiment]
+An experiment is a careful test that you do to check an idea against what really happens.
+
 [dict.2.explanation]
 What makes a thing clear, by saying why it is so.
 
 [dict.2.explore]
 To explore a place is to travel through it to find out what it is like.
+
+[dict.2.explosion]
+An explosion is a very fast, loud burst that pushes things out with great force.
 
 [dict.2.export]
 To export is to send things to another country to sell them.
@@ -4013,6 +4051,9 @@ Latitude is how far a place is north or south of the equator.
 [dict.2.launch]
 To launch a thing is to send it off.
 
+[dict.2.law]
+A law is a rule that a government makes, and that the people of a country must follow.
+
 [dict.2.lay]
 To lay something is to put it down flat, and a bird lays an egg when the egg comes out of its body.
 
@@ -4204,6 +4245,15 @@ The mesosphere is a high layer of air.
 
 [dict.2.metallic]
 Metallic means made of metal or like metal.
+
+[dict.2.meteor]
+A meteor is a rock from space that gets so hot it shines as it falls through the air.
+
+[dict.2.meteorite]
+A meteorite is a piece of rock or metal from space that has fallen to the ground.
+
+[dict.2.meteoroid]
+A meteoroid is a small piece of rock or metal that moves through space.
 
 [dict.2.meteorological]
 Meteorological means of the weather.
@@ -5018,6 +5068,9 @@ Quite means very much, or all the way.
 [dict.2.radial]
 Radial means spreading out from a middle point.
 
+[dict.2.radio]
+Radio is a way to send sounds and signals through the air without wires.
+
 [dict.2.radiosonde]
 A radiosonde is an instrument sent up through the air to measure it.
 
@@ -5264,6 +5317,9 @@ A roar is a loud deep sound, and to roar is to make it.
 [dict.2.rocket]
 A rocket is a thing that goes up into the air very fast.
 
+[dict.2.rocky]
+Rocky means made of rock or full of rocks.
+
 [dict.2.role]
 A role is the part a person has to do.
 
@@ -5281,6 +5337,9 @@ Roughly means about, not exactly.
 
 [dict.2.route]
 A route is the way from one place to another.
+
+[dict.2.rover]
+A rover is a machine on wheels that moves over the ground of another world to find out about it.
 
 [dict.2.rubber]
 Rubber is a material that can be pulled and then goes back.
@@ -5647,6 +5706,9 @@ A sphere is a round shape like a ball.
 
 [dict.2.spicy]
 Spicy food has a strong taste that feels a little like heat in your mouth.
+
+[dict.2.spin]
+To spin is to turn around and around in place.
 
 [dict.2.spiral]
 A spiral is a curve that goes around and moves out.
@@ -6080,6 +6142,9 @@ Tremendous means very great.
 [dict.2.trial]
 A trial is a test, or a hearing to decide whether a person did a wrong.
 
+[dict.2.tribe]
+A tribe is a group of people and families who share the same old ways, language and leaders.
+
 [dict.2.trillion]
 A trillion is a thousand billion.
 
@@ -6316,6 +6381,9 @@ Vocal means of the voice.
 
 [dict.2.volcanic]
 Volcanic means of a mountain that can throw out hot rock.
+
+[dict.2.volcano]
+A volcano is a mountain or an opening in the ground where hot melted rock comes up from deep inside the earth.
 
 [dict.2.volume]
 Volume is how much space a thing fills.

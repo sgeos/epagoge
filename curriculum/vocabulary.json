@@ -1118,6 +1118,36 @@
       "level": 6
     },
     {
+      "word": "asteroid",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "asteroids"
+      ]
+    },
+    {
+      "word": "astronaut",
+      "concept": "person",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "astronauts"
+      ]
+    },
+    {
+      "word": "astronomer",
+      "concept": "person",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "astronomers"
+      ]
+    },
+    {
       "word": "atmosphere",
       "concept": "air",
       "level": 2,
@@ -3777,6 +3807,16 @@
       ]
     },
     {
+      "word": "collision",
+      "concept": "force",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "collisions"
+      ]
+    },
+    {
       "word": "colony",
       "concept": "people_together",
       "level": 2,
@@ -3851,6 +3891,16 @@
       "level": 3,
       "pos": "mass noun",
       "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "comet",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "comets"
+      ]
     },
     {
       "word": "commercial",
@@ -4509,6 +4559,16 @@
       "word": "correction",
       "concept": "investigation_practice",
       "level": 5
+    },
+    {
+      "word": "cosmologist",
+      "concept": "person",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "cosmologists"
+      ]
     },
     {
       "word": "cost",
@@ -7035,6 +7095,16 @@
       ]
     },
     {
+      "word": "experiment",
+      "concept": "checking",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "experiments"
+      ]
+    },
+    {
       "word": "explain",
       "concept": "giving_a_reason",
       "level": 1,
@@ -7064,6 +7134,16 @@
         "explored",
         "explores",
         "exploring"
+      ]
+    },
+    {
+      "word": "explosion",
+      "concept": "things_break",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "explosions"
       ]
     },
     {
@@ -11073,6 +11153,16 @@
       ]
     },
     {
+      "word": "law",
+      "concept": "rule",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "laws"
+      ]
+    },
+    {
       "word": "lay",
       "concept": "activity",
       "level": 2,
@@ -12233,6 +12323,36 @@
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
     },
     {
+      "word": "meteor",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "meteors"
+      ]
+    },
+    {
+      "word": "meteorite",
+      "concept": "material",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "meteorites"
+      ]
+    },
+    {
+      "word": "meteoroid",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "meteoroids"
+      ]
+    },
+    {
       "word": "meteorological",
       "concept": "weather",
       "level": 2,
@@ -13136,6 +13256,16 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "neutron",
+      "concept": "material",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "neutrons"
+      ]
     },
     {
       "word": "never",
@@ -15629,6 +15759,16 @@
       ]
     },
     {
+      "word": "quasar",
+      "concept": "spatial_position",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "quasars"
+      ]
+    },
+    {
       "word": "queen",
       "concept": "someone_in_charge",
       "level": 1,
@@ -15694,6 +15834,16 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "radio",
+      "concept": "reporting",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "radios"
+      ]
     },
     {
       "word": "radiosonde",
@@ -16773,6 +16923,17 @@
       ]
     },
     {
+      "word": "rocky",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "rockier",
+        "rockiest"
+      ]
+    },
+    {
       "word": "role",
       "concept": "activity",
       "level": 2,
@@ -16891,6 +17052,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "routes"
+      ]
+    },
+    {
+      "word": "rover",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "rovers"
       ]
     },
     {
@@ -18876,6 +19047,18 @@
         "spilled",
         "spilling",
         "spills"
+      ]
+    },
+    {
+      "word": "spin",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "spinning",
+        "spins",
+        "spun"
       ]
     },
     {
@@ -21144,6 +21327,16 @@
       ]
     },
     {
+      "word": "tribe",
+      "concept": "people_together",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "tribes"
+      ]
+    },
+    {
       "word": "trick",
       "concept": "way_of_doing",
       "level": 1,
@@ -22038,6 +22231,16 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "volcano",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-28 of StarChild and Ben's Guide, frequent in at least one public-domain agency source",
+      "forms": [
+        "volcanoes"
+      ]
     },
     {
       "word": "volume",
