@@ -55,6 +55,11 @@ NO_DOUBLE_MULTISYLLABIC: Final[frozenset[str]] = frozenset(
         "quarrel",
         "utter",
         "visit",
+        # Admitted on 2026-10-29, final syllable unstressed.
+        "flatten",
+        "focus",
+        "gather",
+        "transit",
     }
 )
 """Longer verbs ending consonant-vowel-consonant whose final syllable is
@@ -188,6 +193,8 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     "transfer": ("transferred", "transferred", "transferring"),
     # Admitted on 2026-10-28. The rule gave spinned.
     "spin": ("spun", "spun", "spinning"),
+    # Admitted on 2026-10-29. The rule gave drived.
+    "drive": ("drove", "driven", "driving"),
     # The regular rule gave beated, broadcasted, bursted, seeked,
     # shooted, splitted and sweared.
     "behold": ("beheld", "beheld", "beholding"),
@@ -509,6 +516,8 @@ IRREGULAR_PLURAL: Final[dict[str, str]] = {
     "phenomenon": "phenomena",
     # Admitted at level two on 2026-10-28. The rule gave `volcanos`.
     "volcano": "volcanoes",
+    # Admitted at level two on 2026-10-29. The rule gave `hypothesises`.
+    "hypothesis": "hypotheses",
 }
 """Plurals not derivable from spelling. A word mapping to itself has no
 distinct plural, which is a fact about the word and not a gap."""

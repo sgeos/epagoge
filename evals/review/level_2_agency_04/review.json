@@ -1,0 +1,2226 @@
+{
+  "advanced": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Advanced means more developed or more modern than others of its kind.",
+    "concept": "growing",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "advanced"
+    ]
+  },
+  "airplane": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An airplane is a machine with wings that flies through the air and carries people or things.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "airplane",
+      "airplanes"
+    ]
+  },
+  "amazing": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Amazing means so surprising or so good that it fills you with wonder.",
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "amazing"
+    ]
+  },
+  "ancient": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ancient means very old, or from a time long ago.",
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "ancient"
+    ]
+  },
+  "anyway": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Anyway is a word you use to go back to the main point, or to say that something is true all the same.",
+    "concept": "discourse_marker",
+    "pos": "",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "anyway"
+    ]
+  },
+  "articles": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's description of itself and in its catalogue of downloadable files, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "astrology": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Astrology is the idea that the places of the sun, the moon and the planets in the sky can tell about the lives of people. Most scientists do not accept it, because its claims have not been shown by evidence.",
+    "concept": "taking_on_faith",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "astrology"
+    ]
+  },
+  "astronomy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Astronomy is the science that studies the stars, the planets and everything else in space.",
+    "concept": "finding_out",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "astronomy"
+    ]
+  },
+  "attach": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only attached, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To attach one thing to another is to join or fix them together.",
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "attach",
+      "attached",
+      "attaches",
+      "attaching"
+    ]
+  },
+  "attached": {
+    "decision": "exclude",
+    "reason": "An inflected form of attach, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "aurora": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only auroras, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An aurora is a show of bright light in many colors that glows in the night sky near the north and south poles.",
+    "concept": "weather",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "aurora",
+      "auroras"
+    ]
+  },
+  "auroras": {
+    "decision": "exclude",
+    "reason": "An inflected form of aurora, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "bead": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bead is a small ball of glass, wood or plastic with a hole through it, so that it can go on a string.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "bead",
+      "beads"
+    ]
+  },
+  "beads": {
+    "decision": "exclude",
+    "reason": "An inflected form of bead, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "bingo": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Bingo is a game in which each player has a sheet of numbers or words and marks them as they are called. The first player to fill a line wins.",
+    "concept": "toy",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "bingo"
+    ]
+  },
+  "birthday": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Your birthday is the day of the year on which you were born, which comes back every year.",
+    "concept": "duration",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "birthday",
+      "birthdays"
+    ]
+  },
+  "blast": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A blast is a sudden, strong explosion or rush of air.",
+    "concept": "force",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "blast",
+      "blasted",
+      "blasting",
+      "blasts"
+    ]
+  },
+  "blob": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only blobs, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A blob is a small, soft bit of something with no clear shape.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "blob",
+      "blobs"
+    ]
+  },
+  "blobs": {
+    "decision": "exclude",
+    "reason": "An inflected form of blob, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "bookmarks": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's description of itself and in its catalogue of downloadable files, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "borax": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Borax is a white powder made from a mineral. People use it for cleaning and to make slime.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "borax"
+    ]
+  },
+  "border": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A border is the edge of something, or the line where one place ends and another begins.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "border",
+      "borders"
+    ]
+  },
+  "brochure": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's description of itself and in its catalogue of downloadable files, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "button": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A button is a small, round thing that you push through a hole to close your clothes.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "button",
+      "buttons"
+    ]
+  },
+  "calendar": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A calendar is a chart that shows the days, weeks and months of a year.",
+    "concept": "duration",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "calendar",
+      "calendars"
+    ]
+  },
+  "camera": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A camera is a machine for taking photos.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "camera",
+      "cameras"
+    ]
+  },
+  "cameras": {
+    "decision": "exclude",
+    "reason": "An inflected form of camera, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "canister": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A canister is a small, round box with a lid, used to keep things in.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "canister",
+      "canisters"
+    ]
+  },
+  "cardboard": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Cardboard is thick, strong paper used to make boxes.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "cardboard"
+    ]
+  },
+  "center": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The center of something is the point or part that is in the middle of it.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "center",
+      "centers"
+    ]
+  },
+  "centers": {
+    "decision": "exclude",
+    "reason": "An inflected form of center, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "chart": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only charts, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A chart is a drawing, a table or a map that shows facts in a way that is easy to see.",
+    "concept": "written_record",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "chart",
+      "charts"
+    ]
+  },
+  "charts": {
+    "decision": "exclude",
+    "reason": "An inflected form of chart, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "choice": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A choice is the act of choosing, or the thing that you choose.",
+    "concept": "choosing",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "choice",
+      "choices"
+    ]
+  },
+  "circular": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Circular means shaped like a circle.",
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "circular"
+    ]
+  },
+  "classroom": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A classroom is a room in a school where a class is taught.",
+    "concept": "people_together",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "classroom",
+      "classrooms"
+    ]
+  },
+  "cliff": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cliff is a high wall of rock that goes almost straight down.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "cliff",
+      "cliffs"
+    ]
+  },
+  "clue": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only clues, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A clue is a fact or a sign that helps you find out something.",
+    "concept": "finding_out",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "clue",
+      "clues"
+    ]
+  },
+  "clues": {
+    "decision": "exclude",
+    "reason": "An inflected form of clue, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "colorful": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Colorful means having many bright colors.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "colorful"
+    ]
+  },
+  "coma": {
+    "decision": "defer",
+    "reason": "The source uses only a specialised sense, and a more common sense of the word differs from it. Which sense to file first is a separate decision, as for net and bill."
+  },
+  "communication": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only communications, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "Communication is the passing of sounds, signals, words and information from one person or place to another.",
+    "concept": "reporting",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "communication",
+      "communications"
+    ]
+  },
+  "communications": {
+    "decision": "exclude",
+    "reason": "An inflected form of communication, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "cone": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cone is a shape with a round, flat bottom and sides that come to a point at the top.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "cone",
+      "cones"
+    ]
+  },
+  "confetti": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Confetti is small pieces of bright paper that people throw at parties.",
+    "concept": "toy",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "confetti"
+    ]
+  },
+  "constellation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A constellation is a group of stars that people have named and see as making a picture in the night sky.",
+    "concept": "grouping",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "constellation",
+      "constellations"
+    ]
+  },
+  "constellations": {
+    "decision": "exclude",
+    "reason": "An inflected form of constellation, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "continent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A continent is one of the very largest areas of land on the earth.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "continent",
+      "continents"
+    ]
+  },
+  "cookie": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cookie is a small, flat, sweet cake that is baked.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "cookie",
+      "cookies"
+    ]
+  },
+  "couple": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A couple is two people or things that go together. A couple of things can also mean a few of them.",
+    "concept": "quantity",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "couple",
+      "couples"
+    ]
+  },
+  "crater": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A crater is a round hole in the ground made by a rock from space that hit it, or by a volcano.",
+    "concept": "emptiness",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "crater",
+      "craters"
+    ]
+  },
+  "crayon": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A crayon is a stick of wax with color in it that you draw with.",
+    "concept": "writing",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "crayon",
+      "crayons"
+    ]
+  },
+  "crust": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A crust is the hard outer layer of something, such as the rocky outer layer of the earth.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "crust",
+      "crusts"
+    ]
+  },
+  "decal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A decal is a picture on thin paper or plastic that you can stick onto something.",
+    "concept": "toy",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "decal",
+      "decals"
+    ]
+  },
+  "decimal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Decimal means using the ten digits from 0 to 9 to write numbers, so that each place in a number is worth ten times the place to its right.",
+    "concept": "place_value",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "decimal"
+    ]
+  },
+  "decorate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To decorate something is to add things to it to make it look nicer.",
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "decorate",
+      "decorated",
+      "decorates",
+      "decorating"
+    ]
+  },
+  "design": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To design something is to plan how it will look and work before it is made.",
+    "concept": "raw_and_made",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "design",
+      "designed",
+      "designing",
+      "designs"
+    ]
+  },
+  "detail": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only detailed, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A detail is one small part or fact of a bigger thing.",
+    "concept": "component_and_system",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "detail",
+      "detailed",
+      "detailing",
+      "details"
+    ]
+  },
+  "detailed": {
+    "decision": "exclude",
+    "reason": "An inflected form of detail, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "dimension": {
+    "decision": "defer",
+    "reason": "Frequent only in the phrase full-dimension in the site's catalogue of downloadable files, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "discoveries": {
+    "decision": "exclude",
+    "reason": "An inflected form of discovery, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "discovery": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A discovery is the finding of something that was not known before, or the thing that is found.",
+    "concept": "finding_out",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "discoveries",
+      "discovery"
+    ]
+  },
+  "dot": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A dot is a very small, round mark or spot.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "dot",
+      "dots"
+    ]
+  },
+  "dots": {
+    "decision": "exclude",
+    "reason": "An inflected form of dot, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "drive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To drive is to make a car or another machine on wheels move and to control where it goes.",
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "drive",
+      "driven",
+      "drives",
+      "driving",
+      "drove"
+    ]
+  },
+  "eclipse": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An eclipse is a time when the moon hides the sun from us, or when the shadow of the earth falls on the moon.",
+    "concept": "cycle",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "eclipse",
+      "eclipses"
+    ]
+  },
+  "elsewhere": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Elsewhere means in another place or to another place.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "elsewhere"
+    ]
+  },
+  "engineer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only engineers, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An engineer is a person whose job is to plan and build machines, roads, bridges and other things.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "engineer",
+      "engineers"
+    ]
+  },
+  "engineers": {
+    "decision": "exclude",
+    "reason": "An inflected form of engineer, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "enormous": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Enormous means very, very big.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "enormous"
+    ]
+  },
+  "eruption": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only eruptions, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An eruption is a sudden burst of hot rock, gas or light out of something, such as a volcano or the sun.",
+    "concept": "things_break",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "eruption",
+      "eruptions"
+    ]
+  },
+  "eruptions": {
+    "decision": "exclude",
+    "reason": "An inflected form of eruption, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "evidence": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Evidence is what has been seen or measured that helps show whether a claim is true or false.",
+    "concept": "settling_it",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "evidence"
+    ]
+  },
+  "exciting": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Exciting means making you feel eager and full of interest.",
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "exciting"
+    ]
+  },
+  "exoplanets": {
+    "decision": "exclude",
+    "reason": "An inflected form of exoplanet, which is admitted in evals/review/level_3_agency_04 at level three. The form is among its reviewed forms."
+  },
+  "exosphere": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The exosphere is the outermost layer of the air around the earth, where the air gets thinner and thinner until space begins.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "exosphere",
+      "exospheres"
+    ]
+  },
+  "expand": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only expanding, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To expand is to grow bigger or to spread out.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "expand",
+      "expanded",
+      "expanding",
+      "expands"
+    ]
+  },
+  "expanding": {
+    "decision": "exclude",
+    "reason": "An inflected form of expand, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "famous": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Famous means known about by very many people.",
+    "concept": "knowing",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "famous"
+    ]
+  },
+  "fan": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A fan is a thing that moves air, such as a machine with turning blades.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "fan",
+      "fans"
+    ]
+  },
+  "faraway": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Faraway means a long way off.",
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "faraway"
+    ]
+  },
+  "farthest": {
+    "decision": "defer",
+    "reason": "The superlative of far, which is admitted at level one with further and furthest as its listed forms. Adding farther and farthest changes an entry decided before this batch, which is left to a separate decision."
+  },
+  "film": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A film is a thin layer or sheet of something.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "film",
+      "films"
+    ]
+  },
+  "filter": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A filter is a thing that lets some things pass through it and stops others, such as glass of one color that lets only light of that color through.",
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "filter",
+      "filters"
+    ]
+  },
+  "filters": {
+    "decision": "exclude",
+    "reason": "An inflected form of filter, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "finally": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Finally means at the end, or after a long time.",
+    "concept": "sequence",
+    "pos": "",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "finally"
+    ]
+  },
+  "flare": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only flares, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A flare is a sudden, bright burst of light or fire.",
+    "concept": "heat",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "flare",
+      "flares"
+    ]
+  },
+  "flares": {
+    "decision": "exclude",
+    "reason": "An inflected form of flare, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "flatten": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To flatten something is to make it flat.",
+    "concept": "shape",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "flatten",
+      "flattened",
+      "flattening",
+      "flattens"
+    ]
+  },
+  "focus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only focused, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To focus light is to bend it so that it meets at one point and makes a sharp, clear picture.",
+    "concept": "physical_property",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "focus",
+      "focused",
+      "focuses",
+      "focusing"
+    ]
+  },
+  "focused": {
+    "decision": "exclude",
+    "reason": "An inflected form of focus, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "foil": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Foil is metal made into a very thin sheet that bends easily, used to cover food.",
+    "concept": "metal",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "foil"
+    ]
+  },
+  "fold": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To fold something is to bend one part of it over another part.",
+    "concept": "shape",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "fold",
+      "folded",
+      "folding",
+      "folds"
+    ]
+  },
+  "gather": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To gather things is to bring them together into one place.",
+    "concept": "grouping",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "gather",
+      "gathered",
+      "gathering",
+      "gathers"
+    ]
+  },
+  "glitter": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Glitter is tiny, shiny pieces of material in many colors used to decorate things.",
+    "concept": "toy",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "glitter"
+    ]
+  },
+  "graph": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A graph is a drawing that uses lines, bars or dots to show how numbers compare or change.",
+    "concept": "written_record",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "graph",
+      "graphs"
+    ]
+  },
+  "guideline": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A guideline is a rule or a line that shows you how to do something.",
+    "concept": "rule",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "guideline",
+      "guidelines"
+    ]
+  },
+  "gummy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Gummy means soft and sticky, so that it stretches when you pull it.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "gummy"
+    ]
+  },
+  "harsh": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Harsh means very hard to bear, such as a place that is too cold or too dry for most life.",
+    "concept": "danger",
+    "pos": "adjective",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "harsh",
+      "harsher",
+      "harshest"
+    ]
+  },
+  "harvest": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To harvest is to pick and gather crops when they are ready.",
+    "concept": "plant",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "harvest",
+      "harvested",
+      "harvesting",
+      "harvests"
+    ]
+  },
+  "helicopter": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A helicopter is a flying machine with long blades on top that turn fast and lift it straight up.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "helicopter",
+      "helicopters"
+    ]
+  },
+  "hex": {
+    "decision": "defer",
+    "reason": "A clipped form, used in the source only beside or in place of the full word. Whether a clipped form is a headword is a separate decision. Its more common sense, a spell, differs from the source's sense."
+  },
+  "hypothesis": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hypothesis is an idea that tries to explain something and makes a prediction that can be tested.",
+    "concept": "claim_under_test",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "hypotheses",
+      "hypothesis"
+    ]
+  },
+  "icy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Icy means covered with ice, made of ice or very cold.",
+    "concept": "physical_property",
+    "pos": "adjective",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "icier",
+      "iciest",
+      "icy"
+    ]
+  },
+  "informative": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's description of itself and in its catalogue of downloadable files, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "ions": {
+    "decision": "exclude",
+    "reason": "An inflected form of ion, which is admitted in evals/review/level_3_agency_04 at level three. The form is among its reviewed forms."
+  },
+  "irregular": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Irregular means not regular, not even, or not following the usual pattern.",
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "irregular"
+    ]
+  },
+  "jacket": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A jacket is a short coat.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "jacket",
+      "jackets"
+    ]
+  },
+  "knob": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only knobs, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A knob is a round handle that you turn or pull.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "knob",
+      "knobs"
+    ]
+  },
+  "knobs": {
+    "decision": "exclude",
+    "reason": "An inflected form of knob, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "knot": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A knot is a place where a piece of string, rope or thread is tied around itself.",
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "knot",
+      "knots"
+    ]
+  },
+  "leap": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To leap is to jump high or far.",
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "leap",
+      "leaped",
+      "leaping",
+      "leaps"
+    ]
+  },
+  "leftover": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only leftovers, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A leftover is something that remains after the rest has been used or eaten.",
+    "concept": "quantity",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "leftover",
+      "leftovers"
+    ]
+  },
+  "leftovers": {
+    "decision": "exclude",
+    "reason": "An inflected form of leftover, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "lens": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A lens is a curved piece of glass or plastic that bends light, as in cameras and telescopes.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "lens",
+      "lenses"
+    ]
+  },
+  "lenses": {
+    "decision": "exclude",
+    "reason": "An inflected form of lens, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "library": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A library is a place where books are kept for people to read or borrow.",
+    "concept": "writing",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "libraries",
+      "library"
+    ]
+  },
+  "litho": {
+    "decision": "defer",
+    "reason": "A clipped form, used in the source only beside or in place of the full word. Whether a clipped form is a headword is a separate decision. It also occurs only in the site's catalogue of downloadable files."
+  },
+  "lunar": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Lunar means having to do with the moon.",
+    "concept": "cycle",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "lunar"
+    ]
+  },
+  "magnetic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Magnetic means having the power of a magnet to pull iron toward it, or having to do with that power.",
+    "concept": "force",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "magnetic"
+    ]
+  },
+  "mantle": {
+    "decision": "defer",
+    "reason": "The source uses only a specialised sense, and a more common sense of the word differs from it. Which sense to file first is a separate decision, as for net and bill."
+  },
+  "marker": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A marker is a pen with a thick, soft tip and bright ink.",
+    "concept": "writing",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "marker",
+      "markers"
+    ]
+  },
+  "markers": {
+    "decision": "exclude",
+    "reason": "An inflected form of marker, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "mash": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only mashed, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To mash food is to press it hard until it is soft and smooth.",
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "mash",
+      "mashed",
+      "mashes",
+      "mashing"
+    ]
+  },
+  "mashed": {
+    "decision": "exclude",
+    "reason": "An inflected form of mash, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "massive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Massive means very big and heavy.",
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "massive"
+    ]
+  },
+  "math": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Math is the study of numbers, amounts and shapes.",
+    "concept": "counting",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "math"
+    ]
+  },
+  "migration": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Migration is the moving of animals, such as birds, from one place to another at certain times of the year.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "migration",
+      "migrations"
+    ]
+  },
+  "mini": {
+    "decision": "defer",
+    "reason": "Used in the source only as the first part of a joined word, as in a small car or a small cookie cutter. Whether such a combining form is a headword is a separate decision."
+  },
+  "montage": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A montage is a picture made by putting many smaller pictures together.",
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "montage",
+      "montages"
+    ]
+  },
+  "mysterious": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Mysterious means strange and hard to explain or understand.",
+    "concept": "not_always_known",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "mysterious"
+    ]
+  },
+  "mystery": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A mystery is something that is not known or not yet explained.",
+    "concept": "not_always_known",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "mysteries",
+      "mystery"
+    ]
+  },
+  "nowhere": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Nowhere means not in any place or to no place.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "nowhere"
+    ]
+  },
+  "officially": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Officially means in a way that has been decided or agreed by the people in charge.",
+    "concept": "someone_in_charge",
+    "pos": "",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "officially"
+    ]
+  },
+  "outermost": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Outermost means the most outside, or the furthest from the middle.",
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "outermost"
+    ]
+  },
+  "paintbrush": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A paintbrush is a brush used to put paint on something.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "paintbrush",
+      "paintbrushes"
+    ]
+  },
+  "pencil": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pencil is a thin stick of wood with a dark center that you write or draw with.",
+    "concept": "writing",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "pencil",
+      "pencils"
+    ]
+  },
+  "phone": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A phone is a machine that lets you talk with someone who is far away.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "phone",
+      "phones"
+    ]
+  },
+  "pigeon": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pigeon is a bird with a small head that is often gray and lives in many towns and cities. Some pigeons can find their way home from far away.",
+    "concept": "animal",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "pigeon",
+      "pigeons"
+    ]
+  },
+  "pigeons": {
+    "decision": "exclude",
+    "reason": "An inflected form of pigeon, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "planetary": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Planetary means having to do with planets.",
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "planetary"
+    ]
+  },
+  "player": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A player is a person who plays a game or a sport.",
+    "concept": "toy",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "player",
+      "players"
+    ]
+  },
+  "plus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Plus means added to. Two plus three is five.",
+    "concept": "addition",
+    "pos": "",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "plus"
+    ]
+  },
+  "poke": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To poke is to push something with a finger or with a thin, pointed thing.",
+    "concept": "touching",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "poke",
+      "poked",
+      "pokes",
+      "poking"
+    ]
+  },
+  "popsicle": {
+    "decision": "defer",
+    "reason": "A trade name used in the source as a generic word for a craft material. Whether the dictionary files trade names is a separate decision."
+  },
+  "postcards": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's description of itself and in its catalogue of downloadable files, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "poster": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's description of itself and in its catalogue of downloadable files, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "prediction": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A prediction is a statement of what you think will happen.",
+    "concept": "guess",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "prediction",
+      "predictions"
+    ]
+  },
+  "print": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To print is to put words or pictures on paper with a machine.",
+    "concept": "writing",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "print",
+      "printed",
+      "printing",
+      "prints"
+    ]
+  },
+  "printable": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's description of itself and in its catalogue of downloadable files, which is page interface rather than prose. The scan gives no prose evidence for it."
+  },
+  "printer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A printer is a machine that prints words and pictures on paper from a computer.",
+    "concept": "writing",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "printer",
+      "printers"
+    ]
+  },
+  "project": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A project is a piece of work that you plan and carry out, often over many days.",
+    "concept": "plan",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "project",
+      "projects"
+    ]
+  },
+  "pumpkin": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pumpkin is a large, round, orange fruit that grows on a vine.",
+    "concept": "plant",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "pumpkin",
+      "pumpkins"
+    ]
+  },
+  "puzzle": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A puzzle is a game or a question that you have to think hard to work out, such as a picture cut into pieces that you fit together.",
+    "concept": "toy",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "puzzle",
+      "puzzles"
+    ]
+  },
+  "reason": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only reasons, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A reason is why something happens, or what explains why someone does something.",
+    "concept": "giving_a_reason",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "reason",
+      "reasons"
+    ]
+  },
+  "reasons": {
+    "decision": "exclude",
+    "reason": "An inflected form of reason, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "recipe": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A recipe is a list of what you need to make a food and the steps for making it.",
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "recipe",
+      "recipes"
+    ]
+  },
+  "reveal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only revealed, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To reveal something is to show it or let it be known when it was hidden or not known before.",
+    "concept": "finding_out",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "reveal",
+      "revealed",
+      "revealing",
+      "reveals"
+    ]
+  },
+  "revealed": {
+    "decision": "exclude",
+    "reason": "An inflected form of reveal, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "ribbon": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A ribbon is a long, thin piece of cloth used to tie things or decorate them.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "ribbon",
+      "ribbons"
+    ]
+  },
+  "ripple": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only ripples, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A ripple is a small wave on the top of water, or anything that spreads out in rings like one.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "ripple",
+      "ripples"
+    ]
+  },
+  "ripples": {
+    "decision": "exclude",
+    "reason": "An inflected form of ripple, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "robot": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A robot is a machine that can do work by itself, often controlled by a computer.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "robot",
+      "robots"
+    ]
+  },
+  "robotic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Robotic means done by a robot or working like a robot.",
+    "concept": "component_and_system",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "robotic"
+    ]
+  },
+  "robots": {
+    "decision": "exclude",
+    "reason": "An inflected form of robot, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "rotate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To rotate is to turn around a center or around an axis.",
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "rotate",
+      "rotated",
+      "rotates",
+      "rotating"
+    ]
+  },
+  "science": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Science is a way of learning about the world by watching, measuring and testing ideas against what really happens.",
+    "concept": "finding_out",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "science",
+      "sciences"
+    ]
+  },
+  "screen": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A screen is a flat surface where pictures are shown, such as the front of a computer or a phone.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "screen",
+      "screens"
+    ]
+  },
+  "screw": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A screw is a small, pointed piece of metal with a ridge that winds around it. You turn it to fix it into wood.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "screw",
+      "screws"
+    ]
+  },
+  "sequin": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sequin is a tiny, flat, shiny round piece that is stuck onto cloth to decorate it.",
+    "concept": "toy",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "sequin",
+      "sequins"
+    ]
+  },
+  "shave": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only shaving, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To shave is to cut hair off close to the skin with a sharp blade.",
+    "concept": "body_part",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "shave",
+      "shaved",
+      "shaves",
+      "shaving"
+    ]
+  },
+  "shaving": {
+    "decision": "exclude",
+    "reason": "An inflected form of shave, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "skewer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A skewer is a long, thin, pointed stick used to hold pieces of food while they cook.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "skewer",
+      "skewers"
+    ]
+  },
+  "slice": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A slice is a thin, flat piece cut from something larger.",
+    "concept": "raw_and_made",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "slice",
+      "sliced",
+      "slices",
+      "slicing"
+    ]
+  },
+  "slime": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Slime is soft, wet and sticky stuff.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "slime"
+    ]
+  },
+  "sort": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sort is a kind of thing. To sort things is to put them into groups by kind.",
+    "concept": "grouping",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "sort",
+      "sorted",
+      "sorting",
+      "sorts"
+    ]
+  },
+  "stretch": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To stretch something is to pull it so that it gets longer or wider.",
+    "concept": "change",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "stretch",
+      "stretched",
+      "stretches",
+      "stretching"
+    ]
+  },
+  "stretches": {
+    "decision": "exclude",
+    "reason": "An inflected form of stretch, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "stretching": {
+    "decision": "exclude",
+    "reason": "An inflected form of stretch, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "strut": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only struts, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A strut is a bar that holds parts of a frame apart or holds them up.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "strut",
+      "struts"
+    ]
+  },
+  "struts": {
+    "decision": "exclude",
+    "reason": "An inflected form of strut, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "styrofoam": {
+    "decision": "defer",
+    "reason": "A trade name used in the source as a generic word for a craft material. Whether the dictionary files trade names is a separate decision."
+  },
+  "sunspot": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only sunspots, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A sunspot is a dark spot on the sun that is cooler than the area around it.",
+    "concept": "cycle",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "sunspot",
+      "sunspots"
+    ]
+  },
+  "sunspots": {
+    "decision": "exclude",
+    "reason": "An inflected form of sunspot, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "supernovas": {
+    "decision": "exclude",
+    "reason": "An inflected form of supernova, which is admitted in evals/review/level_3_agency_04 at level three. The form is among its reviewed forms."
+  },
+  "surroundings": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Your surroundings are the things and places all around you.",
+    "concept": "spatial_position",
+    "pos": "noun plural-only",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "surroundings"
+    ]
+  },
+  "survive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To survive is to stay alive, or to keep going through something hard.",
+    "concept": "living_and_not_living",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "survive",
+      "survived",
+      "survives",
+      "surviving"
+    ]
+  },
+  "telescope": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A telescope is a tool that makes things that are far away look bigger and closer. People use it to look at the stars and planets.",
+    "concept": "finding_out",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "telescope",
+      "telescopes"
+    ]
+  },
+  "telescopes": {
+    "decision": "exclude",
+    "reason": "An inflected form of telescope, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "texture": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Texture is how the surface of something feels, such as rough or smooth.",
+    "concept": "touching",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "texture",
+      "textures"
+    ]
+  },
+  "textured": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Textured means having a surface that is not smooth, so that you can feel its shape with your fingers.",
+    "concept": "touching",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "textured"
+    ]
+  },
+  "textures": {
+    "decision": "exclude",
+    "reason": "An inflected form of texture, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "thermosphere": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The thermosphere is a layer of very thin air high above the earth, above the mesosphere.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "thermosphere",
+      "thermospheres"
+    ]
+  },
+  "thread": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Thread is a long, very thin string used with a needle to join pieces of cloth.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "thread",
+      "threads"
+    ]
+  },
+  "tissue": {
+    "decision": "defer",
+    "reason": "The source uses only a specialised sense, and a more common sense of the word differs from it. Which sense to file first is a separate decision, as for net and bill."
+  },
+  "toothpick": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A toothpick is a small, thin, pointed stick of wood that people use to hold bits of food together or to clean their mouth.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "toothpick",
+      "toothpicks"
+    ]
+  },
+  "toothpicks": {
+    "decision": "exclude",
+    "reason": "An inflected form of toothpick, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "topic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two. The pool held only topics, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A topic is the subject that something talks or writes about.",
+    "concept": "more_to_learn",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "topic",
+      "topics"
+    ]
+  },
+  "topics": {
+    "decision": "exclude",
+    "reason": "An inflected form of topic, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "topo": {
+    "decision": "defer",
+    "reason": "A clipped form, used in the source only beside or in place of the full word. Whether a clipped form is a headword is a separate decision."
+  },
+  "trace": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To trace a shape is to draw along its lines or edges, often through thin paper laid over it.",
+    "concept": "writing",
+    "pos": "verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "trace",
+      "traced",
+      "traces",
+      "tracing"
+    ]
+  },
+  "tracing": {
+    "decision": "exclude",
+    "reason": "An inflected form of trace, which is admitted in this batch. The form is among its reviewed forms."
+  },
+  "tracker": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A tracker is a person or a thing that follows or keeps track of where something is.",
+    "concept": "finding_out",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "tracker",
+      "trackers"
+    ]
+  },
+  "transiting": {
+    "decision": "exclude",
+    "reason": "An inflected form of transit, which is admitted in evals/review/level_3_agency_04 at level three. The form is among its reviewed forms."
+  },
+  "transits": {
+    "decision": "exclude",
+    "reason": "An inflected form of transit, which is admitted in evals/review/level_3_agency_04 at level three. The form is among its reviewed forms."
+  },
+  "tread": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "The tread is the part of a wheel or a shoe that touches the ground, often with ridges cut into it.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "tread",
+      "treads"
+    ]
+  },
+  "trip": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A trip is a journey from one place to another and often back again.",
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "trip",
+      "trips"
+    ]
+  },
+  "tropical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tropical means having to do with the hot, wet parts of the earth near the equator.",
+    "concept": "weather",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "tropical"
+    ]
+  },
+  "tug": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To tug is to pull hard on something.",
+    "concept": "force",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "tug",
+      "tugged",
+      "tugging",
+      "tugs"
+    ]
+  },
+  "underneath": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Underneath means under or below something.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "underneath"
+    ]
+  },
+  "unusual": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Unusual means not usual, or different from what is common.",
+    "concept": "tending",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "unusual"
+    ]
+  },
+  "wax": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Wax is a soft, smooth stuff that melts when it is warm and goes hard again when it is cold.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "wax"
+    ]
+  },
+  "worry": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To worry is to feel afraid that something bad might happen.",
+    "concept": "feeling",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "worried",
+      "worries",
+      "worry",
+      "worrying"
+    ]
+  }
+}

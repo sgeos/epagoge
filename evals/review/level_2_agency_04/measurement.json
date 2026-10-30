@@ -1,0 +1,42 @@
+{
+  "before": {
+    "1": 849,
+    "2": 2480
+  },
+  "after": {
+    "1": 849,
+    "2": 2631
+  },
+  "candidates": 213,
+  "teacher": null,
+  "pool_report_hash": "a6d843a727105ae09c4cf138416b81cdbf0d767211a2eeffb376f7c80326cc83",
+  "admitted": 151,
+  "deferred": 18,
+  "approximate_target": 10000,
+  "remaining_gap": 7369,
+  "closure": {
+    "1": {
+      "defined": 849,
+      "required": 849,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_1: dictionary at level 1\n  defined      849 of 849 words needing one  100.0% coverage\n  also         4 definition(s) of function words, not counted\n  grounded     853  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  self-hosting  yes\n"
+    },
+    "2": {
+      "defined": 2630,
+      "required": 2630,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_2: dictionary at level 2\n  defined      2630 of 2630 words needing one  100.0% coverage\n  also         1 definition(s) of function words, not counted\n  grounded     2631  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  self-hosting  yes\n"
+    }
+  },
+  "preserved_files": 523,
+  "preservation_passed": true,
+  "artifact_hashes": {
+    "before.json": "7c2fac6f0ea323b8a739a2b9a1269dbf9ac825e408041499fcd7b185d29ed3e3",
+    "candidates.json": "f6ec32b38ef80c93a2c82ff80e6bacee2340449d887aba7a8144783e599246c1",
+    "authoring.json": "23c2bf38c45c2c6620ef4aa36727a2753abce43b4e532c1aa79ee518325af8ac",
+    "review.json": "3254a56310fab96658816a9db1c1b4ca1ecd07dce153f18c093ce1aca345c474",
+    "admitted.json": "4eac464354475af5a222774bbae385c178666e03c66fac860ab49e7b5ce2aa78"
+  },
+  "limits": "One agent-authored batch from the 2026-10-29 scan of NASA Space Place. This does not measure general throughput or complete level two. Semantic review is agent review, not independent expert validation.",
+  "excluded": 44
+}

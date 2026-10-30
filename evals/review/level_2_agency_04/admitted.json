@@ -1,0 +1,908 @@
+{
+  "advanced": {
+    "concept": "growing",
+    "pos": "adjective periphrastic",
+    "definition": "Advanced means more developed or more modern than others of its kind.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "airplane": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "An airplane is a machine with wings that flies through the air and carries people or things.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "amazing": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Amazing means so surprising or so good that it fills you with wonder.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "ancient": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Ancient means very old, or from a time long ago.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "anyway": {
+    "concept": "discourse_marker",
+    "pos": "",
+    "definition": "Anyway is a word you use to go back to the main point, or to say that something is true all the same.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "astrology": {
+    "concept": "taking_on_faith",
+    "pos": "mass noun",
+    "definition": "Astrology is the idea that the places of the sun, the moon and the planets in the sky can tell about the lives of people. Most scientists do not accept it, because its claims have not been shown by evidence.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "astronomy": {
+    "concept": "finding_out",
+    "pos": "mass noun",
+    "definition": "Astronomy is the science that studies the stars, the planets and everything else in space.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "attach": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To attach one thing to another is to join or fix them together.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "aurora": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "An aurora is a show of bright light in many colors that glows in the night sky near the north and south poles.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "bead": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A bead is a small ball of glass, wood or plastic with a hole through it, so that it can go on a string.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "bingo": {
+    "concept": "toy",
+    "pos": "mass noun",
+    "definition": "Bingo is a game in which each player has a sheet of numbers or words and marks them as they are called. The first player to fill a line wins.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "birthday": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "Your birthday is the day of the year on which you were born, which comes back every year.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "blast": {
+    "concept": "force",
+    "pos": "noun verb",
+    "definition": "A blast is a sudden, strong explosion or rush of air.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "blob": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A blob is a small, soft bit of something with no clear shape.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "borax": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Borax is a white powder made from a mineral. People use it for cleaning and to make slime.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "border": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A border is the edge of something, or the line where one place ends and another begins.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "button": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A button is a small, round thing that you push through a hole to close your clothes.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "calendar": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "A calendar is a chart that shows the days, weeks and months of a year.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "camera": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A camera is a machine for taking photos.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "canister": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A canister is a small, round box with a lid, used to keep things in.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "cardboard": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Cardboard is thick, strong paper used to make boxes.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "center": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The center of something is the point or part that is in the middle of it.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "chart": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A chart is a drawing, a table or a map that shows facts in a way that is easy to see.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "choice": {
+    "concept": "choosing",
+    "pos": "noun",
+    "definition": "A choice is the act of choosing, or the thing that you choose.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "circular": {
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "definition": "Circular means shaped like a circle.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "classroom": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A classroom is a room in a school where a class is taught.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "cliff": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A cliff is a high wall of rock that goes almost straight down.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "clue": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "A clue is a fact or a sign that helps you find out something.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "colorful": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Colorful means having many bright colors.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "communication": {
+    "concept": "reporting",
+    "pos": "noun",
+    "definition": "Communication is the passing of sounds, signals, words and information from one person or place to another.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "cone": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A cone is a shape with a round, flat bottom and sides that come to a point at the top.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "confetti": {
+    "concept": "toy",
+    "pos": "mass noun",
+    "definition": "Confetti is small pieces of bright paper that people throw at parties.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "constellation": {
+    "concept": "grouping",
+    "pos": "noun",
+    "definition": "A constellation is a group of stars that people have named and see as making a picture in the night sky.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "continent": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A continent is one of the very largest areas of land on the earth.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "cookie": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A cookie is a small, flat, sweet cake that is baked.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "couple": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A couple is two people or things that go together. A couple of things can also mean a few of them.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "crater": {
+    "concept": "emptiness",
+    "pos": "noun",
+    "definition": "A crater is a round hole in the ground made by a rock from space that hit it, or by a volcano.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "crayon": {
+    "concept": "writing",
+    "pos": "noun",
+    "definition": "A crayon is a stick of wax with color in it that you draw with.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "crust": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A crust is the hard outer layer of something, such as the rocky outer layer of the earth.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "decal": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "A decal is a picture on thin paper or plastic that you can stick onto something.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "decimal": {
+    "concept": "place_value",
+    "pos": "adjective ungraded",
+    "definition": "Decimal means using the ten digits from 0 to 9 to write numbers, so that each place in a number is worth ten times the place to its right.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "decorate": {
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "definition": "To decorate something is to add things to it to make it look nicer.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "design": {
+    "concept": "raw_and_made",
+    "pos": "noun verb",
+    "definition": "To design something is to plan how it will look and work before it is made.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "detail": {
+    "concept": "component_and_system",
+    "pos": "noun verb",
+    "definition": "A detail is one small part or fact of a bigger thing.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "discovery": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "A discovery is the finding of something that was not known before, or the thing that is found.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "dot": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A dot is a very small, round mark or spot.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "drive": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To drive is to make a car or another machine on wheels move and to control where it goes.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "eclipse": {
+    "concept": "cycle",
+    "pos": "noun",
+    "definition": "An eclipse is a time when the moon hides the sun from us, or when the shadow of the earth falls on the moon.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "elsewhere": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Elsewhere means in another place or to another place.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "engineer": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "An engineer is a person whose job is to plan and build machines, roads, bridges and other things.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "enormous": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Enormous means very, very big.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "eruption": {
+    "concept": "things_break",
+    "pos": "noun",
+    "definition": "An eruption is a sudden burst of hot rock, gas or light out of something, such as a volcano or the sun.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "evidence": {
+    "concept": "settling_it",
+    "pos": "mass noun",
+    "definition": "Evidence is what has been seen or measured that helps show whether a claim is true or false.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "exciting": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Exciting means making you feel eager and full of interest.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "exosphere": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "The exosphere is the outermost layer of the air around the earth, where the air gets thinner and thinner until space begins.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "expand": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To expand is to grow bigger or to spread out.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "famous": {
+    "concept": "knowing",
+    "pos": "adjective periphrastic",
+    "definition": "Famous means known about by very many people.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "fan": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "A fan is a thing that moves air, such as a machine with turning blades.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "faraway": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Faraway means a long way off.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "film": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A film is a thin layer or sheet of something.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "filter": {
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "definition": "A filter is a thing that lets some things pass through it and stops others, such as glass of one color that lets only light of that color through.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "finally": {
+    "concept": "sequence",
+    "pos": "",
+    "definition": "Finally means at the end, or after a long time.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "flare": {
+    "concept": "heat",
+    "pos": "noun",
+    "definition": "A flare is a sudden, bright burst of light or fire.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "flatten": {
+    "concept": "shape",
+    "pos": "verb",
+    "definition": "To flatten something is to make it flat.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "focus": {
+    "concept": "physical_property",
+    "pos": "noun verb",
+    "definition": "To focus light is to bend it so that it meets at one point and makes a sharp, clear picture.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "foil": {
+    "concept": "metal",
+    "pos": "mass noun",
+    "definition": "Foil is metal made into a very thin sheet that bends easily, used to cover food.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "fold": {
+    "concept": "shape",
+    "pos": "noun verb",
+    "definition": "To fold something is to bend one part of it over another part.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "gather": {
+    "concept": "grouping",
+    "pos": "verb",
+    "definition": "To gather things is to bring them together into one place.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "glitter": {
+    "concept": "toy",
+    "pos": "mass noun",
+    "definition": "Glitter is tiny, shiny pieces of material in many colors used to decorate things.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "graph": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A graph is a drawing that uses lines, bars or dots to show how numbers compare or change.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "guideline": {
+    "concept": "rule",
+    "pos": "noun",
+    "definition": "A guideline is a rule or a line that shows you how to do something.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "gummy": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Gummy means soft and sticky, so that it stretches when you pull it.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "harsh": {
+    "concept": "danger",
+    "pos": "adjective",
+    "definition": "Harsh means very hard to bear, such as a place that is too cold or too dry for most life.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "harvest": {
+    "concept": "plant",
+    "pos": "noun verb",
+    "definition": "To harvest is to pick and gather crops when they are ready.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "helicopter": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A helicopter is a flying machine with long blades on top that turn fast and lift it straight up.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "hypothesis": {
+    "concept": "claim_under_test",
+    "pos": "noun",
+    "definition": "A hypothesis is an idea that tries to explain something and makes a prediction that can be tested.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "icy": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Icy means covered with ice, made of ice or very cold.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "irregular": {
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "definition": "Irregular means not regular, not even, or not following the usual pattern.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "jacket": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A jacket is a short coat.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "knob": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A knob is a round handle that you turn or pull.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "knot": {
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "definition": "A knot is a place where a piece of string, rope or thread is tied around itself.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "leap": {
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "definition": "To leap is to jump high or far.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "leftover": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A leftover is something that remains after the rest has been used or eaten.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "lens": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A lens is a curved piece of glass or plastic that bends light, as in cameras and telescopes.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "library": {
+    "concept": "writing",
+    "pos": "noun",
+    "definition": "A library is a place where books are kept for people to read or borrow.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "lunar": {
+    "concept": "cycle",
+    "pos": "adjective ungraded",
+    "definition": "Lunar means having to do with the moon.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "magnetic": {
+    "concept": "force",
+    "pos": "adjective periphrastic",
+    "definition": "Magnetic means having the power of a magnet to pull iron toward it, or having to do with that power.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "marker": {
+    "concept": "writing",
+    "pos": "noun",
+    "definition": "A marker is a pen with a thick, soft tip and bright ink.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "mash": {
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "definition": "To mash food is to press it hard until it is soft and smooth.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "massive": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Massive means very big and heavy.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "math": {
+    "concept": "counting",
+    "pos": "mass noun",
+    "definition": "Math is the study of numbers, amounts and shapes.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "migration": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "Migration is the moving of animals, such as birds, from one place to another at certain times of the year.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "montage": {
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "definition": "A montage is a picture made by putting many smaller pictures together.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "mysterious": {
+    "concept": "not_always_known",
+    "pos": "adjective periphrastic",
+    "definition": "Mysterious means strange and hard to explain or understand.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "mystery": {
+    "concept": "not_always_known",
+    "pos": "noun",
+    "definition": "A mystery is something that is not known or not yet explained.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "nowhere": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Nowhere means not in any place or to no place.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "officially": {
+    "concept": "someone_in_charge",
+    "pos": "",
+    "definition": "Officially means in a way that has been decided or agreed by the people in charge.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "outermost": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Outermost means the most outside, or the furthest from the middle.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "paintbrush": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A paintbrush is a brush used to put paint on something.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "pencil": {
+    "concept": "writing",
+    "pos": "noun",
+    "definition": "A pencil is a thin stick of wood with a dark center that you write or draw with.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "phone": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A phone is a machine that lets you talk with someone who is far away.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "pigeon": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A pigeon is a bird with a small head that is often gray and lives in many towns and cities. Some pigeons can find their way home from far away.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "planetary": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Planetary means having to do with planets.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "player": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "A player is a person who plays a game or a sport.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "plus": {
+    "concept": "addition",
+    "pos": "",
+    "definition": "Plus means added to. Two plus three is five.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "poke": {
+    "concept": "touching",
+    "pos": "verb",
+    "definition": "To poke is to push something with a finger or with a thin, pointed thing.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "prediction": {
+    "concept": "guess",
+    "pos": "noun",
+    "definition": "A prediction is a statement of what you think will happen.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "print": {
+    "concept": "writing",
+    "pos": "noun verb",
+    "definition": "To print is to put words or pictures on paper with a machine.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "printer": {
+    "concept": "writing",
+    "pos": "noun",
+    "definition": "A printer is a machine that prints words and pictures on paper from a computer.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "project": {
+    "concept": "plan",
+    "pos": "noun",
+    "definition": "A project is a piece of work that you plan and carry out, often over many days.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "pumpkin": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A pumpkin is a large, round, orange fruit that grows on a vine.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "puzzle": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "A puzzle is a game or a question that you have to think hard to work out, such as a picture cut into pieces that you fit together.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "reason": {
+    "concept": "giving_a_reason",
+    "pos": "noun",
+    "definition": "A reason is why something happens, or what explains why someone does something.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "recipe": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A recipe is a list of what you need to make a food and the steps for making it.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "reveal": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To reveal something is to show it or let it be known when it was hidden or not known before.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "ribbon": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A ribbon is a long, thin piece of cloth used to tie things or decorate them.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "ripple": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A ripple is a small wave on the top of water, or anything that spreads out in rings like one.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "robot": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A robot is a machine that can do work by itself, often controlled by a computer.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "robotic": {
+    "concept": "component_and_system",
+    "pos": "adjective ungraded",
+    "definition": "Robotic means done by a robot or working like a robot.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "rotate": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To rotate is to turn around a center or around an axis.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "science": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "Science is a way of learning about the world by watching, measuring and testing ideas against what really happens.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "screen": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A screen is a flat surface where pictures are shown, such as the front of a computer or a phone.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "screw": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A screw is a small, pointed piece of metal with a ridge that winds around it. You turn it to fix it into wood.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "sequin": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "A sequin is a tiny, flat, shiny round piece that is stuck onto cloth to decorate it.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "shave": {
+    "concept": "body_part",
+    "pos": "verb",
+    "definition": "To shave is to cut hair off close to the skin with a sharp blade.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "skewer": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A skewer is a long, thin, pointed stick used to hold pieces of food while they cook.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "slice": {
+    "concept": "raw_and_made",
+    "pos": "noun verb",
+    "definition": "A slice is a thin, flat piece cut from something larger.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "slime": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Slime is soft, wet and sticky stuff.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "sort": {
+    "concept": "grouping",
+    "pos": "noun verb",
+    "definition": "A sort is a kind of thing. To sort things is to put them into groups by kind.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "stretch": {
+    "concept": "change",
+    "pos": "noun verb",
+    "definition": "To stretch something is to pull it so that it gets longer or wider.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "strut": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A strut is a bar that holds parts of a frame apart or holds them up.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "sunspot": {
+    "concept": "cycle",
+    "pos": "noun",
+    "definition": "A sunspot is a dark spot on the sun that is cooler than the area around it.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "surroundings": {
+    "concept": "spatial_position",
+    "pos": "noun plural-only",
+    "definition": "Your surroundings are the things and places all around you.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "survive": {
+    "concept": "living_and_not_living",
+    "pos": "verb",
+    "definition": "To survive is to stay alive, or to keep going through something hard.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "telescope": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "A telescope is a tool that makes things that are far away look bigger and closer. People use it to look at the stars and planets.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "texture": {
+    "concept": "touching",
+    "pos": "noun",
+    "definition": "Texture is how the surface of something feels, such as rough or smooth.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "textured": {
+    "concept": "touching",
+    "pos": "adjective periphrastic",
+    "definition": "Textured means having a surface that is not smooth, so that you can feel its shape with your fingers.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "thermosphere": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "The thermosphere is a layer of very thin air high above the earth, above the mesosphere.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "thread": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "Thread is a long, very thin string used with a needle to join pieces of cloth.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "toothpick": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A toothpick is a small, thin, pointed stick of wood that people use to hold bits of food together or to clean their mouth.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "topic": {
+    "concept": "more_to_learn",
+    "pos": "noun",
+    "definition": "A topic is the subject that something talks or writes about.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "trace": {
+    "concept": "writing",
+    "pos": "verb",
+    "definition": "To trace a shape is to draw along its lines or edges, often through thin paper laid over it.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "tracker": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "A tracker is a person or a thing that follows or keeps track of where something is.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "tread": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "The tread is the part of a wheel or a shoe that touches the ground, often with ridges cut into it.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "trip": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A trip is a journey from one place to another and often back again.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "tropical": {
+    "concept": "weather",
+    "pos": "adjective ungraded",
+    "definition": "Tropical means having to do with the hot, wet parts of the earth near the equator.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "tug": {
+    "concept": "force",
+    "pos": "noun verb",
+    "definition": "To tug is to pull hard on something.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "underneath": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Underneath means under or below something.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "unusual": {
+    "concept": "tending",
+    "pos": "adjective periphrastic",
+    "definition": "Unusual means not usual, or different from what is common.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "wax": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Wax is a soft, smooth stuff that melts when it is warm and goes hard again when it is cold.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "worry": {
+    "concept": "feeling",
+    "pos": "noun verb",
+    "definition": "To worry is to feel afraid that something bad might happen.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  }
+}

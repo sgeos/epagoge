@@ -1,0 +1,20 @@
+{
+  "ammonia": "material",
+  "binary": "place_value",
+  "corona": "air",
+  "coronal": "air",
+  "elliptical": "shape",
+  "exoplanet": "spatial_position",
+  "ion": "material",
+  "ionosphere": "air",
+  "laser": "physical_property",
+  "notation": "writing",
+  "pixel": "standing_for",
+  "radar": "measuring",
+  "supernova": "things_break",
+  "tectonic": "force",
+  "terrestrial": "spatial_position",
+  "theory": "claim_under_test",
+  "topographic": "standing_for",
+  "transit": "spatial_position"
+}

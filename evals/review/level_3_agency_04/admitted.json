@@ -1,0 +1,110 @@
+{
+  "ammonia": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Ammonia is a gas with a strong, sharp smell. It is made of nitrogen and hydrogen.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "binary": {
+    "concept": "place_value",
+    "pos": "adjective ungraded",
+    "definition": "Binary means using only two digits, 0 and 1, to write numbers.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "corona": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "The corona is the outermost part of the atmosphere of the sun. It is very hot and is easiest to see when the moon hides the sun.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "coronal": {
+    "concept": "air",
+    "pos": "adjective ungraded",
+    "definition": "Coronal means having to do with the corona of the sun.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "elliptical": {
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "definition": "Elliptical means shaped like a circle that has been stretched to be longer one way.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "exoplanet": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "An exoplanet is a planet that goes around a star other than our sun.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "ion": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "An ion is an atom or group of atoms that has an electric charge.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "ionosphere": {
+    "concept": "air",
+    "pos": "noun",
+    "definition": "The ionosphere is a part of the air high above the earth where the light of the sun turns some of the gas into ions.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "laser": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A laser is a machine that makes a narrow, very bright beam of light that is almost one color.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "notation": {
+    "concept": "writing",
+    "pos": "noun",
+    "definition": "Notation is a set of signs or marks used to write things such as numbers or music.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "pixel": {
+    "concept": "standing_for",
+    "pos": "noun",
+    "definition": "A pixel is one of the tiny dots or squares that together make up a picture on a computer screen.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "radar": {
+    "concept": "measuring",
+    "pos": "mass noun",
+    "definition": "Radar is a way of finding where things are by sending out waves and measuring how long they take to come back after they hit something.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "supernova": {
+    "concept": "things_break",
+    "pos": "noun",
+    "definition": "A supernova is the huge, very bright explosion of a star.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "tectonic": {
+    "concept": "force",
+    "pos": "adjective ungraded",
+    "definition": "Tectonic means having to do with the large plates of rock that make up the crust of the earth and move very slowly.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "terrestrial": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Terrestrial means having to do with the earth or with land. A terrestrial planet is a small planet made mostly of rock.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "theory": {
+    "concept": "claim_under_test",
+    "pos": "noun",
+    "definition": "A theory is an explanation of many facts that has been tested many times and fits the evidence so far. New evidence can still show that it is wrong or needs to change.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "topographic": {
+    "concept": "standing_for",
+    "pos": "adjective ungraded",
+    "definition": "A topographic map uses lines to show the shape of the land, such as how high the hills are and how deep the valleys are.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  },
+  "transit": {
+    "concept": "spatial_position",
+    "pos": "noun verb",
+    "definition": "A transit is the passing of one thing across or through another, such as a planet passing in front of its star.",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+  }
+}

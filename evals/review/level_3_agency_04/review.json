@@ -1,0 +1,230 @@
+{
+  "ammonia": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ammonia is a gas with a strong, sharp smell. It is made of nitrogen and hydrogen.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "ammonia"
+    ]
+  },
+  "binary": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Binary means using only two digits, 0 and 1, to write numbers.",
+    "concept": "place_value",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "binary"
+    ]
+  },
+  "corona": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "The corona is the outermost part of the atmosphere of the sun. It is very hot and is easiest to see when the moon hides the sun.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "corona",
+      "coronas"
+    ]
+  },
+  "coronal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Coronal means having to do with the corona of the sun.",
+    "concept": "air",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "coronal"
+    ]
+  },
+  "elliptical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Elliptical means shaped like a circle that has been stretched to be longer one way.",
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "elliptical"
+    ]
+  },
+  "exoplanet": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only exoplanets, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An exoplanet is a planet that goes around a star other than our sun.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "exoplanet",
+      "exoplanets"
+    ]
+  },
+  "ion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An ion is an atom or group of atoms that has an electric charge.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "ion",
+      "ions"
+    ]
+  },
+  "ionosphere": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "The ionosphere is a part of the air high above the earth where the light of the sun turns some of the gas into ions.",
+    "concept": "air",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "ionosphere",
+      "ionospheres"
+    ]
+  },
+  "laser": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A laser is a machine that makes a narrow, very bright beam of light that is almost one color.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "laser",
+      "lasers"
+    ]
+  },
+  "notation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Notation is a set of signs or marks used to write things such as numbers or music.",
+    "concept": "writing",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "notation",
+      "notations"
+    ]
+  },
+  "pixel": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pixel is one of the tiny dots or squares that together make up a picture on a computer screen.",
+    "concept": "standing_for",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "pixel",
+      "pixels"
+    ]
+  },
+  "radar": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Radar is a way of finding where things are by sending out waves and measuring how long they take to come back after they hit something.",
+    "concept": "measuring",
+    "pos": "mass noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "radar"
+    ]
+  },
+  "supernova": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A supernova is the huge, very bright explosion of a star.",
+    "concept": "things_break",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "supernova",
+      "supernovas"
+    ]
+  },
+  "tectonic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tectonic means having to do with the large plates of rock that make up the crust of the earth and move very slowly.",
+    "concept": "force",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "tectonic"
+    ]
+  },
+  "terrestrial": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Terrestrial means having to do with the earth or with land. A terrestrial planet is a small planet made mostly of rock.",
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "terrestrial"
+    ]
+  },
+  "theory": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A theory is an explanation of many facts that has been tested many times and fits the evidence so far. New evidence can still show that it is wrong or needs to change.",
+    "concept": "claim_under_test",
+    "pos": "noun",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "theories",
+      "theory"
+    ]
+  },
+  "topographic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A topographic map uses lines to show the shape of the land, such as how high the hills are and how deep the valleys are.",
+    "concept": "standing_for",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "topographic"
+    ]
+  },
+  "transit": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-29 Space Place scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A transit is the passing of one thing across or through another, such as a planet passing in front of its star.",
+    "concept": "spatial_position",
+    "pos": "noun verb",
+    "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+    "reviewed_forms": [
+      "transit",
+      "transited",
+      "transiting",
+      "transits"
+    ]
+  }
+}

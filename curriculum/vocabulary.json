@@ -439,6 +439,13 @@
       ]
     },
     {
+      "word": "advanced",
+      "concept": "growing",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "advantage",
       "concept": "good_and_bad",
       "level": 2,
@@ -595,6 +602,16 @@
       ]
     },
     {
+      "word": "airplane",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "airplanes"
+      ]
+    },
+    {
       "word": "alarm",
       "concept": "danger",
       "level": 2,
@@ -740,6 +757,20 @@
       "level": 1
     },
     {
+      "word": "amazing",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
+      "word": "ammonia",
+      "concept": "material",
+      "level": 3,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "amount",
       "concept": "quantity",
       "level": 2,
@@ -764,6 +795,13 @@
       "forms": [
         "analyses"
       ]
+    },
+    {
+      "word": "ancient",
+      "concept": "duration",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "angle",
@@ -843,6 +881,12 @@
       "word": "anything",
       "concept": "standing_for",
       "level": 1
+    },
+    {
+      "word": "anyway",
+      "concept": "discourse_marker",
+      "level": 2,
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "anywhere",
@@ -1128,6 +1172,13 @@
       ]
     },
     {
+      "word": "astrology",
+      "concept": "taking_on_faith",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "astronaut",
       "concept": "person",
       "level": 2,
@@ -1146,6 +1197,13 @@
       "forms": [
         "astronomers"
       ]
+    },
+    {
+      "word": "astronomy",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "atmosphere",
@@ -1172,6 +1230,18 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "atoms"
+      ]
+    },
+    {
+      "word": "attach",
+      "concept": "joining_and_separating",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "attached",
+        "attaches",
+        "attaching"
       ]
     },
     {
@@ -1230,6 +1300,16 @@
       "pos": "noun",
       "forms": [
         "aunts"
+      ]
+    },
+    {
+      "word": "aurora",
+      "concept": "weather",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "auroras"
       ]
     },
     {
@@ -1613,6 +1693,16 @@
       ]
     },
     {
+      "word": "bead",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "beads"
+      ]
+    },
+    {
       "word": "beam",
       "concept": "physical_property",
       "level": 2,
@@ -1906,6 +1996,20 @@
       "level": 5
     },
     {
+      "word": "binary",
+      "concept": "place_value",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
+      "word": "bingo",
+      "concept": "toy",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "biodiesel",
       "concept": "liquid",
       "level": 2,
@@ -1960,6 +2064,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "birdies"
+      ]
+    },
+    {
+      "word": "birthday",
+      "concept": "duration",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "birthdays"
       ]
     },
     {
@@ -2024,6 +2138,18 @@
       ]
     },
     {
+      "word": "blast",
+      "concept": "force",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "blasted",
+        "blasting",
+        "blasts"
+      ]
+    },
+    {
       "word": "blend",
       "concept": "joining_and_separating",
       "level": 2,
@@ -2067,6 +2193,16 @@
         "blinked",
         "blinking",
         "blinks"
+      ]
+    },
+    {
+      "word": "blob",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "blobs"
       ]
     },
     {
@@ -2184,6 +2320,23 @@
       "pos": "noun",
       "forms": [
         "books"
+      ]
+    },
+    {
+      "word": "borax",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
+      "word": "border",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "borders"
       ]
     },
     {
@@ -2722,6 +2875,16 @@
       ]
     },
     {
+      "word": "button",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "buttons"
+      ]
+    },
+    {
       "word": "buy",
       "concept": "exchange",
       "level": 1,
@@ -2793,6 +2956,16 @@
       ]
     },
     {
+      "word": "calendar",
+      "concept": "duration",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "calendars"
+      ]
+    },
+    {
       "word": "call",
       "concept": "sound",
       "level": 1,
@@ -2819,6 +2992,16 @@
       ]
     },
     {
+      "word": "camera",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "cameras"
+      ]
+    },
+    {
       "word": "cancer",
       "concept": "being_hurt",
       "level": 2,
@@ -2841,6 +3024,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader; teacher-defined 2026-09-28",
       "forms": [
         "canes"
+      ]
+    },
+    {
+      "word": "canister",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "canisters"
       ]
     },
     {
@@ -2932,6 +3125,13 @@
       "level": 2,
       "pos": "mass noun",
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
+    },
+    {
+      "word": "cardboard",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "care",
@@ -3118,6 +3318,16 @@
       ]
     },
     {
+      "word": "center",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "centers"
+      ]
+    },
+    {
       "word": "central",
       "concept": "spatial_position",
       "level": 2,
@@ -3225,6 +3435,16 @@
         "charged",
         "charges",
         "charging"
+      ]
+    },
+    {
+      "word": "chart",
+      "concept": "written_record",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "charts"
       ]
     },
     {
@@ -3363,6 +3583,16 @@
       "source": "scan 2026-09-27, frequent in one McGuffey reader; agent-authored 2026-10-09 in evals/review/level_2_one_source"
     },
     {
+      "word": "choice",
+      "concept": "choosing",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "choices"
+      ]
+    },
+    {
       "word": "choose",
       "concept": "choosing",
       "level": 1,
@@ -3402,6 +3632,13 @@
       "forms": [
         "circles"
       ]
+    },
+    {
+      "word": "circular",
+      "concept": "shape",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "circulation",
@@ -3492,6 +3729,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "classroom",
+      "concept": "people_together",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "classrooms"
+      ]
+    },
+    {
       "word": "clay",
       "concept": "material",
       "level": 1,
@@ -3539,6 +3786,16 @@
       "word": "clever",
       "concept": "being_told",
       "level": 1
+    },
+    {
+      "word": "cliff",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "cliffs"
+      ]
     },
     {
       "word": "climate",
@@ -3648,6 +3905,16 @@
       "word": "cloudy",
       "concept": "weather",
       "level": 1
+    },
+    {
+      "word": "clue",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "clues"
+      ]
     },
     {
       "word": "cluster",
@@ -3836,6 +4103,13 @@
       ]
     },
     {
+      "word": "colorful",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "colorless",
       "concept": "physical_property",
       "level": 2,
@@ -3928,6 +4202,16 @@
       "concept": "tending",
       "level": 2,
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "communication",
+      "concept": "reporting",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "communications"
+      ]
     },
     {
       "word": "community",
@@ -4137,6 +4421,23 @@
       ]
     },
     {
+      "word": "cone",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "cones"
+      ]
+    },
+    {
+      "word": "confetti",
+      "concept": "toy",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "consequences",
       "concept": "cause_and_effect",
       "level": 4
@@ -4202,6 +4503,16 @@
       "concept": "change",
       "level": 2,
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "constellation",
+      "concept": "grouping",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "constellations"
+      ]
     },
     {
       "word": "construction",
@@ -4302,6 +4613,16 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "continent",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "continents"
+      ]
     },
     {
       "word": "continental",
@@ -4449,6 +4770,16 @@
       "level": 1
     },
     {
+      "word": "cookie",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "cookies"
+      ]
+    },
+    {
       "word": "cool",
       "concept": "heat",
       "level": 1,
@@ -4545,6 +4876,23 @@
       ]
     },
     {
+      "word": "corona",
+      "concept": "air",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "coronas"
+      ]
+    },
+    {
+      "word": "coronal",
+      "concept": "air",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "correct",
       "concept": "mistake",
       "level": 1,
@@ -4632,6 +4980,16 @@
       ]
     },
     {
+      "word": "couple",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "couples"
+      ]
+    },
+    {
       "word": "courage",
       "concept": "feeling",
       "level": 2,
@@ -4704,6 +5062,26 @@
       "level": 2,
       "forms": [
         "crashed"
+      ]
+    },
+    {
+      "word": "crater",
+      "concept": "emptiness",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "craters"
+      ]
+    },
+    {
+      "word": "crayon",
+      "concept": "writing",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "crayons"
       ]
     },
     {
@@ -4802,6 +5180,16 @@
       "forms": [
         "cruder",
         "crudest"
+      ]
+    },
+    {
+      "word": "crust",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "crusts"
       ]
     },
     {
@@ -5180,6 +5568,16 @@
       "source": "operator decisions of 2026-10-07 on ostensive words and technical deferrals; agent-authored in evals/review/level_2_operator_decisions"
     },
     {
+      "word": "decal",
+      "concept": "toy",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "decals"
+      ]
+    },
+    {
       "word": "decide",
       "concept": "settling_it",
       "level": 1,
@@ -5189,6 +5587,13 @@
         "decides",
         "deciding"
       ]
+    },
+    {
+      "word": "decimal",
+      "concept": "place_value",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "deck",
@@ -5218,6 +5623,18 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "decorate",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "decorated",
+        "decorates",
+        "decorating"
+      ]
     },
     {
       "word": "decrease",
@@ -5410,6 +5827,18 @@
       ]
     },
     {
+      "word": "design",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "designed",
+        "designing",
+        "designs"
+      ]
+    },
+    {
       "word": "desk",
       "concept": "household_object",
       "level": 1,
@@ -5437,6 +5866,18 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "detail",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "detailed",
+        "detailing",
+        "details"
+      ]
     },
     {
       "word": "detect",
@@ -5737,6 +6178,16 @@
       ]
     },
     {
+      "word": "discovery",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "discoveries"
+      ]
+    },
+    {
       "word": "dish",
       "concept": "household_object",
       "level": 1,
@@ -5944,6 +6395,16 @@
       "level": 5
     },
     {
+      "word": "dot",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "dots"
+      ]
+    },
+    {
       "word": "double",
       "concept": "quantity",
       "level": 2,
@@ -6142,6 +6603,19 @@
         "dripped",
         "dripping",
         "drips"
+      ]
+    },
+    {
+      "word": "drive",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "driven",
+        "drives",
+        "driving",
+        "drove"
       ]
     },
     {
@@ -6385,6 +6859,16 @@
       ]
     },
     {
+      "word": "eclipse",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "eclipses"
+      ]
+    },
+    {
       "word": "economic",
       "concept": "exchange",
       "level": 2,
@@ -6565,9 +7049,22 @@
       "level": 2
     },
     {
+      "word": "elliptical",
+      "concept": "shape",
+      "level": 3,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "else",
       "concept": "self_and_other",
       "level": 1
+    },
+    {
+      "word": "elsewhere",
+      "concept": "spatial_position",
+      "level": 2,
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "email",
@@ -6666,6 +7163,16 @@
       ]
     },
     {
+      "word": "engineer",
+      "concept": "person",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "engineers"
+      ]
+    },
+    {
       "word": "engineering",
       "concept": "raw_and_made",
       "level": 2,
@@ -6683,6 +7190,13 @@
         "enjoying",
         "enjoys"
       ]
+    },
+    {
+      "word": "enormous",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "enough",
@@ -6770,6 +7284,16 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-10-28, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "eruption",
+      "concept": "things_break",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "eruptions"
+      ]
     },
     {
       "word": "escape",
@@ -6932,6 +7456,13 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
+      "word": "evidence",
+      "concept": "settling_it",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "evil",
       "concept": "good_and_bad",
       "level": 2,
@@ -7023,6 +7554,13 @@
       ]
     },
     {
+      "word": "exciting",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "exclude",
       "concept": "leaving_out",
       "level": 2,
@@ -7056,6 +7594,38 @@
         "existed",
         "existing",
         "exists"
+      ]
+    },
+    {
+      "word": "exoplanet",
+      "concept": "spatial_position",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "exoplanets"
+      ]
+    },
+    {
+      "word": "exosphere",
+      "concept": "air",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "exospheres"
+      ]
+    },
+    {
+      "word": "expand",
+      "concept": "change",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "expanded",
+        "expanding",
+        "expands"
       ]
     },
     {
@@ -7380,6 +7950,23 @@
       ]
     },
     {
+      "word": "famous",
+      "concept": "knowing",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
+      "word": "fan",
+      "concept": "air",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "fans"
+      ]
+    },
+    {
       "word": "far",
       "concept": "spatial_position",
       "level": 1,
@@ -7388,6 +7975,13 @@
         "further",
         "furthest"
       ]
+    },
+    {
+      "word": "faraway",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "farm",
@@ -7666,6 +8260,32 @@
       "level": 1
     },
     {
+      "word": "film",
+      "concept": "material",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "films"
+      ]
+    },
+    {
+      "word": "filter",
+      "concept": "joining_and_separating",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "filters"
+      ]
+    },
+    {
+      "word": "finally",
+      "concept": "sequence",
+      "level": 2,
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "financial",
       "concept": "exchange",
       "level": 2,
@@ -7796,12 +8416,34 @@
       ]
     },
     {
+      "word": "flare",
+      "concept": "heat",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "flares"
+      ]
+    },
+    {
       "word": "flat",
       "concept": "shape",
       "level": 1,
       "forms": [
         "flatter",
         "flattest"
+      ]
+    },
+    {
+      "word": "flatten",
+      "concept": "shape",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "flattened",
+        "flattening",
+        "flattens"
       ]
     },
     {
@@ -7909,11 +8551,42 @@
       ]
     },
     {
+      "word": "focus",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "focused",
+        "focuses",
+        "focusing"
+      ]
+    },
+    {
       "word": "fog",
       "concept": "weather",
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
+    },
+    {
+      "word": "foil",
+      "concept": "metal",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
+      "word": "fold",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "folded",
+        "folding",
+        "folds"
+      ]
     },
     {
       "word": "follow",
@@ -8524,6 +9197,18 @@
       ]
     },
     {
+      "word": "gather",
+      "concept": "grouping",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "gathered",
+        "gathering",
+        "gathers"
+      ]
+    },
+    {
       "word": "gauge",
       "concept": "measuring",
       "level": 2,
@@ -8700,6 +9385,13 @@
       "forms": [
         "glees"
       ]
+    },
+    {
+      "word": "glitter",
+      "concept": "toy",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "global",
@@ -8908,6 +9600,16 @@
       ]
     },
     {
+      "word": "graph",
+      "concept": "written_record",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "graphs"
+      ]
+    },
+    {
       "word": "graphic",
       "concept": "writing",
       "level": 2,
@@ -9105,6 +9807,23 @@
         "guides",
         "guiding"
       ]
+    },
+    {
+      "word": "guideline",
+      "concept": "rule",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "guidelines"
+      ]
+    },
+    {
+      "word": "gummy",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "gun",
@@ -9339,6 +10058,29 @@
       "level": 5
     },
     {
+      "word": "harsh",
+      "concept": "danger",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "harsher",
+        "harshest"
+      ]
+    },
+    {
+      "word": "harvest",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "harvested",
+        "harvesting",
+        "harvests"
+      ]
+    },
+    {
       "word": "hat",
       "concept": "household_object",
       "level": 2,
@@ -9485,6 +10227,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material",
       "forms": [
         "heights"
+      ]
+    },
+    {
+      "word": "helicopter",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "helicopters"
       ]
     },
     {
@@ -10042,6 +10794,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "hypothesis",
+      "concept": "claim_under_test",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "hypotheses"
+      ]
+    },
+    {
       "word": "ice",
       "concept": "material",
       "level": 1,
@@ -10055,6 +10817,17 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "icebergs"
+      ]
+    },
+    {
+      "word": "icy",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "adjective",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "icier",
+        "iciest"
       ]
     },
     {
@@ -10624,10 +11397,37 @@
       ]
     },
     {
+      "word": "ion",
+      "concept": "material",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "ions"
+      ]
+    },
+    {
+      "word": "ionosphere",
+      "concept": "air",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "ionospheres"
+      ]
+    },
+    {
       "word": "iron",
       "concept": "metal",
       "level": 1,
       "pos": "mass noun"
+    },
+    {
+      "word": "irregular",
+      "concept": "shape",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "irrigate",
@@ -10699,6 +11499,16 @@
       "word": "itself",
       "concept": "self_and_other",
       "level": 1
+    },
+    {
+      "word": "jacket",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "jackets"
+      ]
     },
     {
       "word": "jar",
@@ -10937,9 +11747,29 @@
       ]
     },
     {
+      "word": "knob",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "knobs"
+      ]
+    },
+    {
       "word": "knock",
       "concept": "causal_chain",
       "level": 1
+    },
+    {
+      "word": "knot",
+      "concept": "joining_and_separating",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "knots"
+      ]
     },
     {
       "word": "know",
@@ -11096,6 +11926,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "laser",
+      "concept": "physical_property",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "lasers"
+      ]
+    },
+    {
       "word": "last",
       "concept": "sequence",
       "level": 1,
@@ -11223,6 +12063,18 @@
       ]
     },
     {
+      "word": "leap",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "leaped",
+        "leaping",
+        "leaps"
+      ]
+    },
+    {
       "word": "learn",
       "concept": "being_told",
       "level": 1,
@@ -11249,6 +12101,16 @@
       "pos": "noun",
       "forms": [
         "ledgers"
+      ]
+    },
+    {
+      "word": "leftover",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "leftovers"
       ]
     },
     {
@@ -11289,6 +12151,16 @@
       "pos": "noun",
       "forms": [
         "lengths"
+      ]
+    },
+    {
+      "word": "lens",
+      "concept": "physical_property",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "lenses"
       ]
     },
     {
@@ -11348,6 +12220,16 @@
       "pos": "noun",
       "forms": [
         "liars"
+      ]
+    },
+    {
+      "word": "library",
+      "concept": "writing",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "libraries"
       ]
     },
     {
@@ -11772,6 +12654,13 @@
       ]
     },
     {
+      "word": "lunar",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "machine",
       "concept": "component_and_system",
       "level": 2,
@@ -11803,6 +12692,13 @@
       "forms": [
         "magnets"
       ]
+    },
+    {
+      "word": "magnetic",
+      "concept": "force",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "magnitude",
@@ -11996,6 +12892,16 @@
       ]
     },
     {
+      "word": "marker",
+      "concept": "writing",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "markers"
+      ]
+    },
+    {
       "word": "marsh",
       "concept": "spatial_position",
       "level": 2,
@@ -12006,11 +12912,30 @@
       ]
     },
     {
+      "word": "mash",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "mashed",
+        "mashes",
+        "mashing"
+      ]
+    },
+    {
       "word": "masonry",
       "concept": "raw_and_made",
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "massive",
+      "concept": "quantity",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "master",
@@ -12055,6 +12980,13 @@
       "forms": [
         "materials"
       ]
+    },
+    {
+      "word": "math",
+      "concept": "counting",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "mature",
@@ -12447,6 +13379,16 @@
       ]
     },
     {
+      "word": "migration",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "migrations"
+      ]
+    },
+    {
       "word": "mild",
       "concept": "quantity",
       "level": 2,
@@ -12804,6 +13746,16 @@
       ]
     },
     {
+      "word": "montage",
+      "concept": "joining_and_separating",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "montages"
+      ]
+    },
+    {
       "word": "month",
       "concept": "cycle",
       "level": 1,
@@ -13018,6 +13970,23 @@
       "word": "myself",
       "concept": "self_and_other",
       "level": 1
+    },
+    {
+      "word": "mysterious",
+      "concept": "not_always_known",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
+      "word": "mystery",
+      "concept": "not_always_known",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "mysteries"
+      ]
     },
     {
       "word": "nail",
@@ -13422,6 +14391,16 @@
       ]
     },
     {
+      "word": "notation",
+      "concept": "writing",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "notations"
+      ]
+    },
+    {
       "word": "note",
       "concept": "written_record",
       "level": 1,
@@ -13448,6 +14427,12 @@
         "notices",
         "noticing"
       ]
+    },
+    {
+      "word": "nowhere",
+      "concept": "spatial_position",
+      "level": 2,
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "nuclear",
@@ -13674,6 +14659,12 @@
       "forms": [
         "officials"
       ]
+    },
+    {
+      "word": "officially",
+      "concept": "someone_in_charge",
+      "level": 2,
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "offset",
@@ -13950,6 +14941,13 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "outermost",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "outflow",
       "concept": "stock_and_flow",
       "level": 2,
@@ -14093,6 +15091,16 @@
         "painted",
         "painting",
         "paints"
+      ]
+    },
+    {
+      "word": "paintbrush",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "paintbrushes"
       ]
     },
     {
@@ -14404,6 +15412,16 @@
       ]
     },
     {
+      "word": "pencil",
+      "concept": "writing",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "pencils"
+      ]
+    },
+    {
       "word": "peninsula",
       "concept": "spatial_position",
       "level": 2,
@@ -14610,6 +15628,16 @@
       ]
     },
     {
+      "word": "phone",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "phones"
+      ]
+    },
+    {
       "word": "photo",
       "concept": "toy",
       "level": 2,
@@ -14682,6 +15710,16 @@
       ]
     },
     {
+      "word": "pigeon",
+      "concept": "animal",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "pigeons"
+      ]
+    },
+    {
       "word": "pile",
       "concept": "grouping",
       "level": 1,
@@ -14747,6 +15785,16 @@
       ]
     },
     {
+      "word": "pixel",
+      "concept": "standing_for",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "pixels"
+      ]
+    },
+    {
       "word": "place",
       "concept": "spatial_position",
       "level": 1,
@@ -14795,6 +15843,13 @@
       ]
     },
     {
+      "word": "planetary",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "plankton",
       "concept": "living_and_not_living",
       "level": 2,
@@ -14836,6 +15891,16 @@
         "played",
         "playing",
         "plays"
+      ]
+    },
+    {
+      "word": "player",
+      "concept": "toy",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "players"
       ]
     },
     {
@@ -14884,6 +15949,12 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "plus",
+      "concept": "addition",
+      "level": 2,
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "pocket",
       "concept": "inside_and_outside",
       "level": 1,
@@ -14928,6 +15999,18 @@
         "pointed",
         "pointing",
         "points"
+      ]
+    },
+    {
+      "word": "poke",
+      "concept": "touching",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "poked",
+        "pokes",
+        "poking"
       ]
     },
     {
@@ -15237,6 +16320,16 @@
       ]
     },
     {
+      "word": "prediction",
+      "concept": "guess",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "predictions"
+      ]
+    },
+    {
       "word": "prepare",
       "concept": "plan",
       "level": 2,
@@ -15366,6 +16459,28 @@
       ]
     },
     {
+      "word": "print",
+      "concept": "writing",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "printed",
+        "printing",
+        "prints"
+      ]
+    },
+    {
+      "word": "printer",
+      "concept": "writing",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "printers"
+      ]
+    },
+    {
       "word": "prior",
       "concept": "sequence",
       "level": 2,
@@ -15476,6 +16591,16 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "project",
+      "concept": "plan",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "projects"
+      ]
     },
     {
       "word": "promise",
@@ -15628,6 +16753,16 @@
       ]
     },
     {
+      "word": "pumpkin",
+      "concept": "plant",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "pumpkins"
+      ]
+    },
+    {
       "word": "pupil",
       "concept": "person",
       "level": 2,
@@ -15693,6 +16828,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "pussies"
+      ]
+    },
+    {
+      "word": "puzzle",
+      "concept": "toy",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "puzzles"
       ]
     },
     {
@@ -15827,6 +16972,13 @@
       "concept": "more_and_fewer",
       "level": 2,
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
+    },
+    {
+      "word": "radar",
+      "concept": "measuring",
+      "level": 3,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "radial",
@@ -16092,6 +17244,16 @@
       ]
     },
     {
+      "word": "reason",
+      "concept": "giving_a_reason",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "reasons"
+      ]
+    },
+    {
       "word": "receive",
       "concept": "exchange",
       "level": 2,
@@ -16136,6 +17298,16 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source"
+    },
+    {
+      "word": "recipe",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "recipes"
+      ]
     },
     {
       "word": "recite",
@@ -16735,6 +17907,18 @@
       ]
     },
     {
+      "word": "reveal",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "revealed",
+        "revealing",
+        "reveals"
+      ]
+    },
+    {
       "word": "revenge",
       "concept": "good_and_bad",
       "level": 2,
@@ -16764,6 +17948,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "rewards"
+      ]
+    },
+    {
+      "word": "ribbon",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "ribbons"
       ]
     },
     {
@@ -16852,6 +18046,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "ripple",
+      "concept": "liquid",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "ripples"
+      ]
+    },
+    {
       "word": "rise",
       "concept": "falling",
       "level": 1,
@@ -16902,6 +18106,23 @@
         "roaring",
         "roars"
       ]
+    },
+    {
+      "word": "robot",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "robots"
+      ]
+    },
+    {
+      "word": "robotic",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "rock",
@@ -16994,6 +18215,18 @@
       "pos": "noun",
       "forms": [
         "ropes"
+      ]
+    },
+    {
+      "word": "rotate",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "rotated",
+        "rotates",
+        "rotating"
       ]
     },
     {
@@ -17456,6 +18689,16 @@
       ]
     },
     {
+      "word": "science",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "sciences"
+      ]
+    },
+    {
       "word": "scientific",
       "concept": "finding_out",
       "level": 2,
@@ -17491,6 +18734,26 @@
       "source": "scan 2026-10-10, frequent in at least one public-domain agency source",
       "forms": [
         "scraps"
+      ]
+    },
+    {
+      "word": "screen",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "screens"
+      ]
+    },
+    {
+      "word": "screw",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "screws"
       ]
     },
     {
@@ -17780,6 +19043,16 @@
       ]
     },
     {
+      "word": "sequin",
+      "concept": "toy",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "sequins"
+      ]
+    },
+    {
       "word": "serial",
       "concept": "sequence",
       "level": 2,
@@ -17968,6 +19241,18 @@
       "forms": [
         "sharper",
         "sharpest"
+      ]
+    },
+    {
+      "word": "shave",
+      "concept": "body_part",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "shaved",
+        "shaves",
+        "shaving"
       ]
     },
     {
@@ -18467,6 +19752,16 @@
       ]
     },
     {
+      "word": "skewer",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "skewers"
+      ]
+    },
+    {
       "word": "skin",
       "concept": "body_part",
       "level": 1,
@@ -18524,6 +19819,18 @@
       ]
     },
     {
+      "word": "slice",
+      "concept": "raw_and_made",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "sliced",
+        "slices",
+        "slicing"
+      ]
+    },
+    {
       "word": "slide",
       "concept": "moving_and_still",
       "level": 1,
@@ -18550,6 +19857,13 @@
       "concept": "quantity",
       "level": 2,
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "slime",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "slip",
@@ -18855,6 +20169,18 @@
       "concept": "apologising",
       "level": 1,
       "source": "operator direction, 2026-09-27, kindergarten etiquette"
+    },
+    {
+      "word": "sort",
+      "concept": "grouping",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "sorted",
+        "sorting",
+        "sorts"
+      ]
     },
     {
       "word": "soul",
@@ -19617,6 +20943,18 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material"
     },
     {
+      "word": "stretch",
+      "concept": "change",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "stretched",
+        "stretches",
+        "stretching"
+      ]
+    },
+    {
       "word": "strike",
       "concept": "force",
       "level": 2,
@@ -19662,6 +21000,16 @@
       "word": "structure",
       "concept": "algebraic_structure",
       "level": 5
+    },
+    {
+      "word": "strut",
+      "concept": "component_and_system",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "struts"
+      ]
     },
     {
       "word": "student",
@@ -19911,6 +21259,16 @@
       ]
     },
     {
+      "word": "sunspot",
+      "concept": "cycle",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "sunspots"
+      ]
+    },
+    {
       "word": "super",
       "concept": "quantity",
       "level": 2,
@@ -19933,6 +21291,16 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "supernova",
+      "concept": "things_break",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "supernovas"
+      ]
     },
     {
       "word": "supper",
@@ -20042,6 +21410,13 @@
       ]
     },
     {
+      "word": "surroundings",
+      "concept": "spatial_position",
+      "level": 2,
+      "pos": "noun plural-only",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "survey",
       "concept": "finding_out",
       "level": 2,
@@ -20051,6 +21426,18 @@
         "surveyed",
         "surveying",
         "surveys"
+      ]
+    },
+    {
+      "word": "survive",
+      "concept": "living_and_not_living",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "survived",
+        "survives",
+        "surviving"
       ]
     },
     {
@@ -20426,6 +21813,23 @@
       ]
     },
     {
+      "word": "tectonic",
+      "concept": "force",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
+      "word": "telescope",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "telescopes"
+      ]
+    },
+    {
       "word": "television",
       "concept": "household_object",
       "level": 2,
@@ -20526,6 +21930,13 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
     },
     {
+      "word": "terrestrial",
+      "concept": "spatial_position",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "terrible",
       "concept": "good_and_bad",
       "level": 2,
@@ -20559,6 +21970,23 @@
       "level": 2,
       "pos": "mass noun",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "texture",
+      "concept": "touching",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "textures"
+      ]
+    },
+    {
+      "word": "textured",
+      "concept": "touching",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "thank",
@@ -20606,6 +22034,16 @@
       "source": "scan 2026-09-27, frequent in a McGuffey reader and in modern federal material; agent-authored 2026-10-07 in evals/review/level_2_era_overlap"
     },
     {
+      "word": "theory",
+      "concept": "claim_under_test",
+      "level": 3,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "theories"
+      ]
+    },
+    {
       "word": "thereby",
       "concept": "cause_and_effect",
       "level": 2,
@@ -20631,6 +22069,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "thermoclines"
+      ]
+    },
+    {
+      "word": "thermosphere",
+      "concept": "air",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "thermospheres"
       ]
     },
     {
@@ -20719,6 +22167,16 @@
       "pos": "noun",
       "forms": [
         "thousands"
+      ]
+    },
+    {
+      "word": "thread",
+      "concept": "material",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "threads"
       ]
     },
     {
@@ -21035,6 +22493,16 @@
       ]
     },
     {
+      "word": "toothpick",
+      "concept": "household_object",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "toothpicks"
+      ]
+    },
+    {
       "word": "top",
       "concept": "spatial_position",
       "level": 1,
@@ -21042,6 +22510,23 @@
       "forms": [
         "tops"
       ]
+    },
+    {
+      "word": "topic",
+      "concept": "more_to_learn",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "topics"
+      ]
+    },
+    {
+      "word": "topographic",
+      "concept": "standing_for",
+      "level": 3,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "topography",
@@ -21143,6 +22628,18 @@
       ]
     },
     {
+      "word": "trace",
+      "concept": "writing",
+      "level": 2,
+      "pos": "verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "traced",
+        "traces",
+        "tracing"
+      ]
+    },
+    {
       "word": "track",
       "concept": "spatial_position",
       "level": 2,
@@ -21150,6 +22647,16 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "tracks"
+      ]
+    },
+    {
+      "word": "tracker",
+      "concept": "finding_out",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "trackers"
       ]
     },
     {
@@ -21200,6 +22707,18 @@
         "transferred",
         "transferring",
         "transfers"
+      ]
+    },
+    {
+      "word": "transit",
+      "concept": "spatial_position",
+      "level": 3,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "transited",
+        "transiting",
+        "transits"
       ]
     },
     {
@@ -21276,6 +22795,16 @@
       "pos": "noun",
       "forms": [
         "trays"
+      ]
+    },
+    {
+      "word": "tread",
+      "concept": "shape",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "treads"
       ]
     },
     {
@@ -21363,6 +22892,16 @@
       ]
     },
     {
+      "word": "trip",
+      "concept": "moving_and_still",
+      "level": 2,
+      "pos": "noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "trips"
+      ]
+    },
+    {
       "word": "triumph",
       "concept": "goal",
       "level": 2,
@@ -21371,6 +22910,13 @@
       "forms": [
         "triumphs"
       ]
+    },
+    {
+      "word": "tropical",
+      "concept": "weather",
+      "level": 2,
+      "pos": "adjective ungraded",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "tropics",
@@ -21491,6 +23037,18 @@
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources",
       "forms": [
         "tubs"
+      ]
+    },
+    {
+      "word": "tug",
+      "concept": "force",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "tugged",
+        "tugging",
+        "tugs"
       ]
     },
     {
@@ -21660,6 +23218,12 @@
       "source": "retained rejection evidence in evals/review generation reports; agent-authored 2026-10-07 in evals/review/level_2_food_blockers"
     },
     {
+      "word": "underneath",
+      "concept": "spatial_position",
+      "level": 2,
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "understand",
       "concept": "knowing",
       "level": 1,
@@ -21803,6 +23367,13 @@
       "word": "until",
       "concept": "sequence",
       "level": 1
+    },
+    {
+      "word": "unusual",
+      "concept": "tending",
+      "level": 2,
+      "pos": "adjective periphrastic",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
     },
     {
       "word": "update",
@@ -22502,6 +24073,13 @@
       ]
     },
     {
+      "word": "wax",
+      "concept": "material",
+      "level": 2,
+      "pos": "mass noun",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source"
+    },
+    {
       "word": "way",
       "concept": "discourse_marker",
       "level": 1,
@@ -23030,6 +24608,18 @@
       "level": 2,
       "pos": "adjective periphrastic",
       "source": "scan 2026-09-27, frequent in at least one of the seven reference sources"
+    },
+    {
+      "word": "worry",
+      "concept": "feeling",
+      "level": 2,
+      "pos": "noun verb",
+      "source": "scan 2026-10-29 of NASA Space Place, frequent in at least one agency source",
+      "forms": [
+        "worried",
+        "worries",
+        "worrying"
+      ]
     },
     {
       "word": "worse",

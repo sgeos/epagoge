@@ -31,11 +31,59 @@ measurements of every earlier batch already fail for that reason. A failure
 then marks the counts below as stale rather than wrong. Missing host
 artifacts make the associated checks unverified rather than disproved.
 
+## Resume state, 2026-10-29, third Dromon trial
+
+The brief opened later on 2026-10-29 in `CURRENT_BRIEF.md` ran a third
+multi-agent trial of the Dromon harness on the level-two lexicon and
+corpus. The follow-up's brief and condition are preserved in
+`evals/review/level_2_agency_04/`. The follow-up resume state below is
+historical for the revision and for publication.
+
+**Lexicon.** The operator's session fetched 147 NASA Space Place pages
+beyond the eight scanned on 2026-09-27, keeping each article body and
+removing credit captions and repeated interface lines, into
+`tmp/lexicon-sources/agency4/`. Whether each page is a federal employee
+work was not checked page by page. The worker line stopped after drawing a
+pool of 213 strings, and the operator's session withdrew 5 before any
+decision. The batch in `evals/review/level_2_agency_04/` and
+`evals/review/level_3_agency_04/` admitted 151 headwords at level two and
+18 at level three, excluded 44 inflected forms and deferred 18. Level two
+rose from 2,480 to 2,631 distinct headwords, measured, with coverage and
+closure complete at levels one to three. Drive and the plural of
+hypothesis were added to `src/epagoge/inflection.py`. The reviewer line
+read all 169 definitions, and its eight proposed wordings, led by
+astrology, were applied through `tools/author_definitions.py` without
+change.
+
+**Corpus.** The luna line measured, for the 25 level-two units with no
+book, how many admitted headwords are filed under each concept they teach
+or revisit. Its first round was read while the worker was still admitting,
+and its ranking did not follow from its stated rule. The second round reads
+a recorded seed book blob and prints its ranking from a stated rule. A
+headword count measures vocabulary on file, not whether a module can be
+written. The report, the review and the three harness reports are tracked
+in `docs/process/trials/dromon_trial_3/`.
+
+**Reports.** Stopping the worker at the pool made the withdrawal one filter
+of the pool file rather than a rebuild. Dromon's new disclosure check
+answers that this project has no disclosure list, so the worker scanned its
+records against the banned vocabulary by its own script. The lines ask for
+that check to read the project's list, a wait on a named background task,
+a dry-run mode for the definition tool, and a commit stamp on each review.
+
+Dromon's running estimates after all three trials and the follow-up stood
+at about 19.01 dollars for the worker and 1.00 dollar for the reviewer. No
+cost is recorded for the Codex line. No teacher was loaded, and the daemon
+was stopped afterwards.
+
 ## Resume state, 2026-10-29, second trial follow-up
 
 The brief opened on 2026-10-29 in `CURRENT_BRIEF.md` applied the
 reviewer's findings on the third agency batch and had the luna line fix
-its generator draft. Its condition is met on the tree. The second trial's
+its generator draft. Its condition was met, and the work was committed as
+`80ff5cd`, whose [continuous integration
+run](https://github.com/sgeos/epagoge/actions/runs/40968241645) succeeded.
+The second trial's
 brief and condition are preserved in
 `evals/review/level_2_agency_03_followup/`. The second trial's resume state
 below is historical for the revision and for publication.

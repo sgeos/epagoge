@@ -506,6 +506,7 @@ class TestStackedScanMeasurements(unittest.TestCase):
             "level_2_agency",
             "level_2_agency_02",
             "level_2_agency_03",
+            "level_2_agency_04",
         ]
         for name in names:
             batch = root / "evals" / "review" / name
