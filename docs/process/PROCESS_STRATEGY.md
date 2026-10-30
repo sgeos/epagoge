@@ -390,6 +390,19 @@ no-fast-forward merges. This project has one operator, commits directly to
 gate or continuous integration red, which is what happened for the
 workflow refresh, and that is the whole of the model here.
 
+**The merge settings follow from that, and depart from the project
+template.** Decided by the operator on 2026-10-30. A pull request,
+including one Dependabot opens, is merged by rebase only, and its branch is
+deleted after merging. Merge commits and squash merges are not allowed.
+The ruleset on `main` keeps its rules against deletion and non-fast-forward
+pushes and its requirement of linear history. Allowing merge commits beside
+that requirement was inconsistent, because GitHub refuses a merge commit
+while linear history is required. The template allows merge commits only
+and requires its continuous integration check. Here the ruleset requires
+no status check, so that a commit can still be pushed directly to `main`.
+The `check` workflow still runs on every push, and the resume protocol
+still requires reading its result.
+
 **Three communication channels.** A task log, a forward prompt, and a
 reverse prompt serve a project with sprints and milestones. Here
 `HANDOFF.md` and `CURRENT_BRIEF.md` carry the same load at a fraction of
