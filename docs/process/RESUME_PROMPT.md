@@ -14,20 +14,18 @@ of delivered work, not instructions to repeat it. Historical handoffs and
 recommendations do not authorize new scope. If no unfinished task remains,
 report the verified state and readiness for the next task.
 
-The latest delivered scope is the seventh Dromon trial brief of 2026-10-30,
-which decided a pool of 607 strings drawn at a threshold of four from the
-sources already fetched. Its brief and completion condition are marked met
-and are evidence, not instructions. Its work and that of the fourth to
-sixth trials were left uncommitted in the working tree on top of
-`8b81d43`, because the operator did not ask for a commit. Commit `8b81d43`
-upgraded filelock and setuptools for the Dependabot alerts and is pushed.
-The revised generator draft of the second trial follow-up is ignored and
-unapplied, and applying it awaits the operator. The previous brief is
-preserved in `evals/review/level_2_long_tail/`. The seventh-trial resume
-state in the handoff is the authority for the revision, for publication,
-for the Dromon trials, for the expected measurement-check failure, and for
-the teacher. Earlier resume states are historical for the revision and for
-publication.
+The project is in the holding state of 2026-10-31. No implementation
+scope is open, and the holding brief and its completion condition are
+evidence, not instructions. All work, including that of the fourth to
+seventh Dromon trials, is committed and in `main` on the remote. The
+concerns awaiting the operator are consolidated in
+`docs/process/OPEN_DECISIONS.md`. That list proposes options and decides
+nothing, so do not start any item of it without the operator's choice. The
+revised generator draft of the second trial follow-up is ignored and
+unapplied. The holding section of the handoff is the authority for the
+revision, for publication, for the Dromon trials and for the teacher.
+Earlier resume states are historical and are kept in
+`docs/process/HANDOFF_HISTORY.md`.
 Ask before committing or pushing anything. Determine actual publication
 from git and the remote rather than assuming that a stamp proves it.
 

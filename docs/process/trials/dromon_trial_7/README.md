@@ -46,3 +46,7 @@ uncommitted it cannot separate one batch from another.
 `harness-report-worker.md`, `harness-report-luna.md` and
 `harness-report-reviewer.md` are each line's report on its experience of
 the harness.
+
+`previous_CURRENT_BRIEF.md` and `previous_COMPLETION_CONDITION.md` are the
+seventh trial's brief and condition, met on 2026-10-30 and preserved here
+when the holding brief of 2026-10-31 replaced them.
