@@ -10,6 +10,8 @@ Working practice for this repository.
 | `PROCESS_STRATEGY.md` | Durable practice. Verification posture, failure classes, autonomy boundaries |
 | `CURRENT_BRIEF.md` | The bounded brief, marked completed when its condition is met |
 | `COMPLETION_CONDITION.md` | Observable end state for the associated brief |
+| `OPEN_DECISIONS.md` | Concerns awaiting the operator, each with its obvious choices |
+| `trials/` | Outputs and harness reports of the Dromon trials |
 
 **The split between the last two and `PROCESS_STRATEGY.md` is the point.**
 Completed briefs and conditions may remain until a new scope replaces them.
