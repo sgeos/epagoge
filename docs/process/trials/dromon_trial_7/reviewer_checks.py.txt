@@ -1,0 +1,304 @@
+"""Mechanical checks of the long-tail batch for the seventh-trial reviewer.
+
+Run from the repository root:
+
+    PYTHONPATH=src .venv/bin/python -I tmp/dromon-trial-8/reviewer_checks.py
+
+Reads only. Checks, in order: the pool list against the pool report, one
+decision per pool string across the two review files, every reviewed form
+against the vocabulary, every admitted record against its vocabulary term,
+its seed-book text and the licensing check at its level, provenance and
+thesaurus entries for every admission, prior decisions in earlier batches,
+and the hashes recorded in authoring.json. Prints FAIL lines for each
+problem, NOTE lines for exclusions whose reason says the form is not
+carried, and a summary. Exit 1 if any FAIL.
+
+Second version. The first compared part-of-speech strings by order, which
+the admit tool sorts, matched the past-tense decision names in reasons
+against the present-tense decision field, and did not parse the reason
+wording for a form of a second sense.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import re
+import sys
+from collections import Counter, defaultdict
+from pathlib import Path
+
+ROOT = Path.cwd()
+sys.path.insert(0, str(ROOT / "src"))
+
+from epagoge.book import sense_record_id  # noqa: E402
+from epagoge.vocabulary import load_vocabulary, unlicensed  # noqa: E402
+
+L2 = ROOT / "evals/review/level_2_long_tail"
+L3 = ROOT / "evals/review/level_3_long_tail"
+POOL_TXT = ROOT / "tmp/dromon-trial-8/pool.txt"
+POOL_JSON = ROOT / "tmp/lexicon-sources/longtail/pool.json"
+SCAN_JSON = ROOT / "tmp/lexicon-sources/longtail/scan_f4.json"
+DECISION_NAME = {"deferred": "defer", "excluded": "exclude", "admitted": "admit"}
+
+fails: list[str] = []
+notes: list[str] = []
+
+
+def fail(msg: str) -> None:
+    fails.append(msg)
+    print("FAIL", msg)
+
+
+def note(msg: str) -> None:
+    notes.append(msg)
+    print("NOTE", msg)
+
+
+def load(path: Path) -> object:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def sha(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def main() -> int:
+    pool = [line.strip() for line in POOL_TXT.read_text().splitlines() if line.strip()]
+    pool_report = load(POOL_JSON)
+    assert isinstance(pool_report, dict)
+    report_pool = list(pool_report["pool"])
+    print(f"pool.txt {len(pool)} strings, pool.json {len(report_pool)} strings")
+    if len(set(pool)) != len(pool):
+        fail("pool.txt has duplicate lines")
+    missing = set(pool) - set(report_pool)
+    if missing:
+        fail(f"pool.txt strings not in pool.json: {sorted(missing)}")
+    withdrawn = len(set(report_pool) - set(pool))
+    print(f"strings in pool.json but not pool.txt (withdrawn): {withdrawn}")
+    if withdrawn != 6:
+        fail(f"withdrawn count {withdrawn} is not 6")
+
+    r2 = load(L2 / "review.json")
+    r3 = load(L3 / "review.json")
+    assert isinstance(r2, dict) and isinstance(r3, dict)
+    reviews: dict[str, list[tuple[int, dict[str, object]]]] = defaultdict(list)
+    for level, rev in ((2, r2), (3, r3)):
+        for key, rec in rev.items():
+            reviews[key].append((level, rec))
+    print(f"review records: level two {len(r2)}, level three {len(r3)}")
+
+    for s in pool:
+        n = len(reviews.get(s, []))
+        if n != 1:
+            fail(f"pool string {s!r} has {n} decisions")
+    extra = sorted(set(reviews) - set(pool))
+    print(f"review keys not in the pool (citation forms): {len(extra)}")
+    extra_by_level = Counter(level for k in extra for level, _ in reviews[k])
+    print(f"  by level: {dict(extra_by_level)}")
+    for k in extra:
+        for level, rec in reviews[k]:
+            if rec.get("decision") != "admit":
+                fail(f"non-pool key {k!r} at level {level} is {rec.get('decision')}")
+
+    decisions = Counter()
+    for level, rev in ((2, r2), (3, r3)):
+        for key, rec in rev.items():
+            decisions[(level, str(rec.get("decision")))] += 1
+    print("decisions:", dict(decisions))
+    pool_decisions = Counter()
+    for s in pool:
+        for level, rec in reviews[s]:
+            pool_decisions[(level, str(rec.get("decision")))] += 1
+    print("pool decisions:", dict(pool_decisions))
+
+    vocab_doc = load(ROOT / "curriculum/vocabulary.json")
+    assert isinstance(vocab_doc, dict)
+    terms = list(vocab_doc["terms"])
+    by_word: dict[str, list[dict[str, object]]] = defaultdict(list)
+    form_owner: dict[str, list[tuple[str, int, str]]] = defaultdict(list)
+    for t in terms:
+        by_word[str(t["word"])].append(t)
+        for f in t.get("forms", []):
+            form_owner[str(f)].append((str(t["word"]), int(t["level"]), str(t["concept"])))
+
+    vocab = load_vocabulary(ROOT / "curriculum/vocabulary.json")
+    seed_text = {
+        2: (ROOT / "curriculum/books/level_2/bk.dictionary.seed.md").read_text(encoding="utf-8"),
+        3: (ROOT / "curriculum/books/level_3/bk.dictionary.seed.md").read_text(encoding="utf-8"),
+    }
+    seed_defs: dict[int, dict[str, str]] = {}
+    for level, text in seed_text.items():
+        seed_defs[level] = dict(re.findall(r"^\[([^\]]+)\]\n(.+)$", text, flags=re.M))
+    prov = load(ROOT / "curriculum/provenance.json")
+    assert isinstance(prov, dict)
+    thes = load(ROOT / "curriculum/thesaurus.json")
+    assert isinstance(thes, dict)
+    thes_keys = {(str(s["word"]), str(s["concept"])) for s in thes["senses"]}
+    batch_source_prefix = "scan 2026-10-30 of sixteen earlier source texts"
+
+    admitted_checked = 0
+    unlicensed_fail = 0
+    for level, rev, batch in ((2, r2, L2), (3, r3, L3)):
+        admitted_json = load(batch / "admitted.json")
+        assert isinstance(admitted_json, dict)
+        for word, rec in rev.items():
+            if rec.get("decision") != "admit":
+                continue
+            admitted_checked += 1
+            concept = str(rec.get("concept"))
+            matches = [t for t in by_word.get(word, []) if str(t["concept"]) == concept]
+            if len(matches) != 1:
+                fail(f"{word}@{level}: {len(matches)} vocabulary terms for concept {concept}")
+                continue
+            t = matches[0]
+            if int(t["level"]) != level:
+                fail(f"{word}@{level}: vocabulary level is {t['level']}")
+            if set(str(t.get("pos", "")).split()) != set(str(rec.get("pos", "")).split()):
+                fail(f"{word}@{level}: pos {rec.get('pos')!r} vs vocabulary {t.get('pos')!r}")
+            if str(t.get("source", "")) != str(rec.get("source", "")):
+                fail(f"{word}@{level}: source differs from vocabulary")
+            rf = set(map(str, rec.get("reviewed_forms", [])))
+            vf = {word} | set(map(str, t.get("forms", [])))
+            if rf != vf:
+                fail(f"{word}@{level}: reviewed_forms {sorted(rf)} vs vocabulary {sorted(vf)}")
+            second = bool(rec.get("second_sense", False))
+            if not second and len(by_word[word]) != 1:
+                fail(f"{word}@{level}: not a second sense but word has {len(by_word[word])} senses")
+            if second and len(by_word[word]) < 2:
+                fail(f"{word}@{level}: second sense but word has one sense")
+            definition = str(rec.get("definition", ""))
+            bad = unlicensed(vocab, definition, level)
+            if bad:
+                unlicensed_fail += 1
+                fail(f"{word}@{level}: unlicensed tokens {bad} in {definition!r}")
+            rid = sense_record_id(level, word, concept) if second else f"dict.{level}.{word}"
+            seed = seed_defs[level].get(rid)
+            if seed is None:
+                fail(f"{word}@{level}: no seed-book record {rid}")
+            elif seed.strip() != definition.strip():
+                fail(f"{word}@{level}: seed text differs: {seed!r}")
+            a = admitted_json.get(word)
+            if not isinstance(a, dict):
+                fail(f"{word}@{level}: missing from admitted.json")
+            else:
+                for k in ("concept", "definition", "source"):
+                    if str(a.get(k, "")) != str(rec.get(k, "")):
+                        fail(f"{word}@{level}: admitted.json {k} differs")
+                if set(str(a.get("pos", "")).split()) != set(str(rec.get("pos", "")).split()):
+                    fail(f"{word}@{level}: admitted.json pos differs")
+            if second:
+                sense_key = f"{word}.{concept}"
+                p = prov["senses"].get(sense_key)
+                if not isinstance(p, dict) or not str(p.get("source", "")).startswith(batch_source_prefix):
+                    fail(f"{word}@{level}: provenance senses entry {sense_key} missing or wrong source")
+                elif p.get("batch") != str(batch.relative_to(ROOT)):
+                    fail(f"{word}@{level}: provenance batch {p.get('batch')}")
+            else:
+                p = prov["words"].get(word)
+                if not isinstance(p, dict) or not str(p.get("source", "")).startswith(batch_source_prefix):
+                    fail(f"{word}@{level}: provenance words entry missing or wrong source")
+            if (word, concept) not in thes_keys:
+                fail(f"{word}@{level}: no thesaurus sense entry")
+    print(f"admitted records checked: {admitted_checked}, unlicensed failures: {unlicensed_fail}")
+
+    form_re = re.compile(
+        r"\b(?:form|plural|comparative|past) of (?:a second sense of |the (?:\w+ )?)?(\w+)"
+    )
+    all_reviews: dict[str, dict[str, dict[str, object]]] = {}
+    for path in sorted((ROOT / "evals/review").glob("*/review.json")):
+        doc = load(path)
+        if isinstance(doc, dict):
+            all_reviews[path.parent.name] = doc
+    forms_checked = 0
+    forms_unresolved: list[str] = []
+    for level, rev in ((2, r2), (3, r3)):
+        for s, rec in rev.items():
+            dec = rec.get("decision")
+            if dec == "admit":
+                continue
+            reason = str(rec.get("reason", ""))
+            m = form_re.search(reason)
+            if not m:
+                continue
+            head = m.group(1).lower()
+            if dec == "exclude":
+                forms_checked += 1
+                if head not in by_word:
+                    fail(f"{s}: excluded as form of {head!r}, which is not a headword")
+                    continue
+                owners = [o for o in form_owner.get(s, []) if o[0] == head]
+                if not owners:
+                    if "not added to its forms" in reason:
+                        note(f"{s}: excluded as plural of {head!r}, whose entry does not carry it, by stated choice")
+                    else:
+                        fail(f"{s}: excluded as form of {head!r}, but no sense of {head} lists it")
+                    continue
+                if "this batch" in reason and head not in rev:
+                    fail(f"{s}: says {head} admitted in this batch, but {head} not in this review file")
+                if "level_3_long_tail" in reason and head not in r3:
+                    fail(f"{s}: says {head} admitted in level_3_long_tail, but it is not there")
+                if "earlier batch" in reason:
+                    if head in r2 or head in r3:
+                        fail(f"{s}: says earlier batch, but {head} is in this batch")
+                    if not any(o[1] == 3 for o in owners):
+                        fail(f"{s}: says level three, owners are {owners}")
+            else:
+                m2 = re.search(r"which (level_\w+) (deferred|excluded)", reason)
+                if m2:
+                    forms_checked += 1
+                    batch_name, earlier_dec = m2.group(1), DECISION_NAME[m2.group(2)]
+                    earlier = all_reviews.get(batch_name, {}).get(head)
+                    if not isinstance(earlier, dict):
+                        fail(f"{s}: {head} has no record in {batch_name}")
+                    elif earlier.get("decision") != earlier_dec:
+                        fail(f"{s}: {head} in {batch_name} is {earlier.get('decision')}, not {earlier_dec}")
+                else:
+                    forms_unresolved.append(f"{s}: {reason[:120]}")
+    print(f"form reasons checked: {forms_checked}")
+    if forms_unresolved:
+        print("form-like deferral reasons without an earlier-batch citation (read by hand):")
+        for line in forms_unresolved:
+            print("  ", line)
+
+    reopened = []
+    for level, rev in ((2, r2), (3, r3)):
+        for key, rec in rev.items():
+            for name, doc in all_reviews.items():
+                if name in ("level_2_long_tail", "level_3_long_tail"):
+                    continue
+                if key in doc:
+                    reopened.append((key, level, rec.get("decision"), name, doc[key].get("decision"), bool(rec.get("second_sense"))))
+    print(f"keys with a record in an earlier batch: {len(reopened)}")
+    for item in reopened:
+        print("  ", item)
+        if not item[5]:
+            fail(f"{item[0]} has an earlier decision in {item[3]} and is not a second sense")
+
+    auth = load(L2 / "authoring.json")
+    assert isinstance(auth, dict)
+    for key, path in (("pool_list_hash", POOL_TXT), ("pool_report_hash", POOL_JSON), ("scan_report_hash", SCAN_JSON)):
+        if auth.get(key) != sha(path):
+            fail(f"authoring.json {key} does not match {path}")
+    if auth.get("pool_size") != len(pool) or auth.get("operator_withdrawn") != withdrawn:
+        fail("authoring.json pool_size or operator_withdrawn disagree with the files")
+    meas = load(L2 / "measurement.json")
+    assert isinstance(meas, dict)
+    for name in ("before.json", "candidates.json", "authoring.json", "review.json", "admitted.json"):
+        if meas["artifact_hashes"].get(name) != sha(L2 / name):
+            fail(f"measurement.json artifact hash for {name} is stale")
+    n_admit = decisions[(2, "admit")]
+    if meas.get("admitted") != n_admit or meas.get("deferred") != decisions[(2, "defer")] or meas.get("excluded") != decisions[(2, "exclude")]:
+        fail("measurement.json counts disagree with review.json")
+    growth = int(meas["after"]["2"]) - int(meas["before"]["2"])
+    print(f"measured growth at level two: {growth}; admitted {n_admit}, second senses {meas.get('second_senses')}")
+    if growth != n_admit - int(meas.get("second_senses", 0)):
+        fail("growth does not equal admitted minus second senses")
+
+    print(f"\nNOTE count: {len(notes)}")
+    print(f"FAIL count: {len(fails)}")
+    return 1 if fails else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

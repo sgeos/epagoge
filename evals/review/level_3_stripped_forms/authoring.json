@@ -1,0 +1,17 @@
+{
+  "level": 3,
+  "teacher": null,
+  "input_hash": "bd472d3b1effa3ca6b92fdfc4ead20c91e9847a74c88e19d09b92f7a1c4c3a22",
+  "vocabulary_hash": "dfa51c62673825885405962e6d0620d410915413eeb117b3d3c3e53179d883e9",
+  "source": "scan 2026-10-10, frequent in at least one agency source",
+  "pool_report": "tmp/dromon-trial-7/strings.txt",
+  "pool_report_hash": "58a3f6c015a050fa0ca23cc388ad0f4e746dca8d23835f529667c17bae14a8f9",
+  "scan_report": "tmp/lexicon-sources/scan_agency.json",
+  "scan_report_hash": "9c3d5e744cfdb9cb92df47089c4d1cea7ca52d748edfd79db92aad5bc7fe0c61",
+  "pool_rule": "Fixed by the operator on 2026-10-30 as the 17 strings that the fifth trial's review, docs/process/trials/dromon_trial_5/review-part-a.md, found frequent in the first agency scan of 2026-10-10, admissible only by suffix stripping and listed in no reviewed-forms list. No pool tool drew it, and the operator screened the strings.",
+  "pool_size": 17,
+  "reason": "The local teacher was not run. Definitions were written by the agent and pass the same admission and closure checks as teacher output.",
+  "candidates": {
+    "organics": "living_and_not_living"
+  }
+}

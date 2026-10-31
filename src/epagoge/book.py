@@ -445,6 +445,37 @@ class Closure:
         return len(self.grounded) / total if total else 1.0
 
 
+def sense_record_id(level: int, word: str, concept: str) -> str:
+    """The dictionary record id of a second sense of ``word``.
+
+    A word's first record at a level is ``dict.LEVEL.WORD``. A further sense
+    admitted by word and concept gets its own record, named by its concept
+    so it is distinct from the first and from any other sense. Shared by the
+    authoring tool that writes it and the measurement that checks it.
+    """
+    return f"dict.{level}.{word}.{concept}"
+
+
+def sense_definition(
+    records: Sequence[Mapping[str, object]],
+    canonical: Mapping[str, str],
+    level: int,
+    word: str,
+    concept: str,
+) -> str | None:
+    """The definition of one sense, from its own record if it has one.
+
+    ``canonical`` is :func:`word_definitions`, which holds one definition
+    per word. A second sense's record would be invisible there whenever the
+    word's first record is at the same level, so it is looked up by id.
+    """
+    wanted = sense_record_id(level, word, concept)
+    for record in records:
+        if record.get("id") == wanted:
+            return str(record["content"])
+    return canonical.get(word)
+
+
 def word_definitions(
     books: Sequence[Book], records: Sequence[Mapping[str, object]]
 ) -> dict[str, str]:
@@ -480,6 +511,75 @@ def word_definitions(
             if word not in target:
                 target[word] = str(record["content"])
     return {**ordinary, **canonical}
+
+
+@dataclass(frozen=True, slots=True)
+class DictionaryEntry:
+    """One word definition held by one dictionary record."""
+
+    record: str
+    word: str
+    text: str
+
+
+def dictionary_entries(
+    books: Sequence[Book], records: Sequence[Mapping[str, object]]
+) -> list[DictionaryEntry]:
+    """Every word definition a dictionary book holds, one per record.
+
+    **Not one per word.** :func:`word_definitions` keeps the first record
+    of each word, which is right for the training stream and for counting
+    coverage. A second sense filed at the level of the word's first record
+    is invisible there, so a check that reads only that map never sees its
+    text. Found by review on 2026-10-30 for three second senses at level
+    two. A check of what the dictionary says reads this list instead.
+    """
+    out: list[DictionaryEntry] = []
+    for book in books:
+        if not book.id.startswith("bk.dictionary."):
+            continue
+        wanted = set(book.records)
+        for record in records:
+            if str(record["id"]) not in wanted:
+                continue
+            defines = record.get("defines")
+            if not isinstance(defines, Mapping):
+                continue
+            entry = cast(Mapping[str, object], defines)
+            if entry.get("kind") != "word":
+                continue
+            out.append(
+                DictionaryEntry(
+                    record=str(record["id"]),
+                    word=str(entry["target"]),
+                    text=str(record["content"]),
+                )
+            )
+    return out
+
+
+def ungrounded_tokens(
+    text: str,
+    word: str,
+    grounded: Collection[str],
+    seed: Collection[str],
+    tokenise: Callable[[str], list[str]],
+    resolve: Callable[[str], str | None],
+) -> list[str]:
+    """The headwords in ``text`` that do not ground, sorted.
+
+    The rule :func:`dictionary_closure` applies to one definition. A token
+    grounds when it or its headword is in the seed, when its headword is
+    grounded, or when its headword is the word being defined. Empty means
+    the text reduces to the seed.
+    """
+    needs: set[str] = set()
+    for token in tokenise(text):
+        head = resolve(token) or token
+        if token in seed or head in seed or head in grounded or head == word:
+            continue
+        needs.add(head)
+    return sorted(needs)
 
 
 def dictionary_closure(

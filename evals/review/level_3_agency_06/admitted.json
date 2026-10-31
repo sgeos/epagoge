@@ -1,0 +1,26 @@
+{
+  "comprehensive": {
+    "concept": "all_some_none",
+    "pos": "adjective periphrastic",
+    "definition": "Comprehensive means covering all or almost all of something.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "dedicate": {
+    "concept": "goal",
+    "pos": "verb",
+    "definition": "To dedicate something to a purpose is to keep it for that purpose only.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "flux": {
+    "concept": "stock_and_flow",
+    "pos": "noun",
+    "definition": "A flux is a flow of something, such as water, from one place to another.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "incompressibility": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Incompressibility is how much a substance pushes back when it is squeezed into a smaller space.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  }
+}

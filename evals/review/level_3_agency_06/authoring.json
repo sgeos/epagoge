@@ -1,0 +1,20 @@
+{
+  "level": 3,
+  "teacher": null,
+  "input_hash": "f41760c7ad4affc6a32b30e465bce2d9e0779426ab10923adcc56e8a603767cf",
+  "vocabulary_hash": "7d41a7576b6af6565c2369b640e42d9f8e40d42909d12a70ced9e2eb6bd69353",
+  "source": "scan 2026-10-10, frequent in at least one agency source",
+  "pool_report": "tmp/lexicon-sources/pool_agency_06.json",
+  "pool_report_hash": "cfed83b92f674297c0cfa2746bfcb48f4ab1595662c101208f98b865d1ac4324",
+  "scan_report": "tmp/lexicon-sources/scan_agency.json",
+  "scan_report_hash": "9c3d5e744cfdb9cb92df47089c4d1cea7ca52d748edfd79db92aad5bc7fe0c61",
+  "pool_rule": "tools/candidate_pool.py --level 2 --min-sources 1 with the private term list, applied again on 2026-10-30 to the first agency scan of 2026-10-10. The operator withdrew no string from the pool.",
+  "pool_size": 28,
+  "reason": "The local teacher was not run. Definitions were written by the agent and pass the same admission and closure checks as teacher output.",
+  "candidates": {
+    "comprehensive": "all_some_none",
+    "dedicate": "goal",
+    "flux": "stock_and_flow",
+    "incompressibility": "physical_property"
+  }
+}

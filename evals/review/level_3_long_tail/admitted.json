@@ -1,0 +1,627 @@
+{
+  "absorber": {
+    "concept": "heat",
+    "pos": "noun",
+    "definition": "An absorber is a part made to take in heat, light or a push instead of letting it pass, such as the dark plate of a solar heater.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "academic": {
+    "concept": "knowing",
+    "pos": "adjective ungraded",
+    "definition": "Academic means about study at a school or college.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "acidification": {
+    "concept": "change",
+    "pos": "mass noun",
+    "definition": "Acidification is the change of water or soil toward being more acidic.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "advent": {
+    "concept": "sequence",
+    "pos": "noun",
+    "definition": "The advent of something is the time when it first comes or starts.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "agent": {
+    "concept": "cause_and_effect",
+    "pos": "noun",
+    "definition": "An agent is something that causes a change, such as a chemical that makes people sick.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "antibiotic": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "An antibiotic is a medicine that kills bacteria that make people sick.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "artery": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "An artery is a tube that carries blood from the heart to the rest of the body.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "aspect": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "An aspect is one part or side of something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "assessment": {
+    "concept": "checking",
+    "pos": "noun",
+    "definition": "An assessment is a careful look at something to decide how good, bad or likely it is.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "baseline": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A baseline is a starting amount or level that other amounts are compared with.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "bond": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To bond is to join closely together, as atoms do.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "second_sense": true
+  },
+  "calibrate": {
+    "concept": "measuring",
+    "pos": "verb",
+    "definition": "To calibrate a tool is to set it so that what it measures is right.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "catalyst": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "A catalyst is something that makes a chemical change happen faster without being changed itself.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "certify": {
+    "concept": "checking",
+    "pos": "verb",
+    "definition": "To certify something is to say officially that it is true or meets a standard.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "characteristic": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A characteristic is a feature that helps to tell what something is.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "circumference": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "The circumference of a circle is the distance around it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "compatibility": {
+    "concept": "same_and_different",
+    "pos": "mass noun",
+    "definition": "Compatibility is how well things can work or be used together.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "compelling": {
+    "concept": "giving_a_reason",
+    "pos": "adjective periphrastic",
+    "definition": "Compelling means so strong or interesting that you have to pay attention.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "compressor": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A compressor is a machine that squeezes air or gas into a smaller space.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "conductor": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "A conductor is a material that lets heat or electricity pass through it easily.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "contour": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A contour is the line around the edge of a shape, or a line on a map joining places of the same height.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "converge": {
+    "concept": "direction",
+    "pos": "verb",
+    "definition": "To converge is to come together from different directions.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "depict": {
+    "concept": "standing_for",
+    "pos": "verb",
+    "definition": "To depict something is to show it in a picture or in words.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "deplete": {
+    "concept": "using_up",
+    "pos": "verb",
+    "definition": "To deplete something is to use up a large part of it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "deterioration": {
+    "concept": "wearing_out",
+    "pos": "mass noun",
+    "definition": "Deterioration is the process of becoming worse over time.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "directional": {
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "definition": "Directional means having to do with direction.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "disinfectant": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A disinfectant is a chemical that kills bacteria on things.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "distillation": {
+    "concept": "change",
+    "pos": "mass noun",
+    "definition": "Distillation is making a liquid pure by heating it into a gas and then cooling the gas back into a liquid.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "dredge": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To dredge a river or harbor is to dig mud and sand from the bottom of it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "duct": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A duct is a tube that carries liquid or air.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "facilitate": {
+    "concept": "can_and_cannot",
+    "pos": "verb",
+    "definition": "To facilitate something is to make it easier.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "feasible": {
+    "concept": "can_and_cannot",
+    "pos": "adjective periphrastic",
+    "definition": "Feasible means possible to do.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "feces": {
+    "concept": "body_part",
+    "pos": "noun plural-only",
+    "definition": "Feces are the solid waste that a body passes out.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "feedlot": {
+    "concept": "needing_supply",
+    "pos": "noun",
+    "definition": "A feedlot is a place where farm animals are kept close together and fed before they are sold.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "filtration": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Filtration is cleaning a liquid or gas by passing it through a filter.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "governmental": {
+    "concept": "someone_in_charge",
+    "pos": "adjective ungraded",
+    "definition": "Governmental means about or done by a government.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "graduate": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "A graduate is a person who has finished school or college, and graduate study is study done after college.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "halo": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A halo is a ring of light around the sun, the moon or a head.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "hybrid": {
+    "concept": "same_and_different",
+    "pos": "noun",
+    "definition": "A hybrid is something made by mixing two different kinds of things.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "idealize": {
+    "concept": "real_and_pretend",
+    "pos": "verb",
+    "definition": "To idealize something is to show it in a simpler and more perfect way than it really is.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "impurity": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "An impurity is something unwanted mixed into a material.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "increment": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "An increment is a small amount by which something grows, or one of a series of equal steps.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "incubate": {
+    "concept": "heat",
+    "pos": "verb",
+    "definition": "To incubate something is to keep it warm so that it can grow, or so that a young animal can come out of an egg.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "injection": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "An injection is the act of pushing a liquid into something, such as into the ground or into the body.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "insolent": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Insolent means rude and without respect.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "interconnected": {
+    "concept": "joining_and_separating",
+    "pos": "adjective ungraded",
+    "definition": "Interconnected means joined to each other.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "interstate": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Interstate means between or across the large parts that make up some countries.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "invest": {
+    "concept": "exchange",
+    "pos": "verb",
+    "definition": "To invest money is to put it into something so that it may earn more money later.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "latex": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Latex is a soft material that stretches, used to make gloves and balloons.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "lattice": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A lattice is a pattern of crossing lines with spaces between them.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "manipulation": {
+    "concept": "change",
+    "pos": "mass noun",
+    "definition": "Manipulation is changing or moving something with your hands or with tools.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "micron": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A micron is a very small unit for measuring length. A thousand of them make one millimeter.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "milligram": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A milligram is a very small unit for measuring how heavy something is. A thousand of them make one gram.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "onshore": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Onshore means on land, or moving toward land from the sea.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "optics": {
+    "concept": "knowing",
+    "pos": "mass noun",
+    "definition": "Optics is the study of light and how it moves.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "orifice": {
+    "concept": "opening_and_shutting",
+    "pos": "noun",
+    "definition": "An orifice is an opening, such as the open end of a pipe.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "overabundance": {
+    "concept": "quantity",
+    "pos": "mass noun",
+    "definition": "Overabundance is having far too much of something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "overgrowth": {
+    "concept": "growing",
+    "pos": "mass noun",
+    "definition": "Overgrowth is too much growth of plants or other living things.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "penetration": {
+    "concept": "inside_and_outside",
+    "pos": "mass noun",
+    "definition": "Penetration is going into or through something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "percolate": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To percolate is for a liquid to pass slowly through small holes or spaces.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "perforated": {
+    "concept": "shape",
+    "pos": "adjective ungraded",
+    "definition": "Perforated means having many small holes.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "pilgrimage": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "A pilgrimage is a long trip to a place that means a lot to someone, often because of what they believe.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "pinpoint": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To pinpoint something is to find or show exactly where it is.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "plight": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "A plight is a bad or difficult situation.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "plunger": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A plunger is a rod that is pushed down inside a tube or bucket.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "predominantly": {
+    "concept": "more_and_fewer",
+    "pos": "",
+    "definition": "Predominantly means mostly, or more than anything else.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "protein": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A protein is one of the substances in food that living things need to build their bodies.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "proton": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A proton is one of the tiny parts in the center of an atom.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "radiate": {
+    "concept": "direction",
+    "pos": "verb",
+    "definition": "To radiate is to spread out in all directions from a center.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "refuel": {
+    "concept": "needing_supply",
+    "pos": "verb",
+    "definition": "To refuel is to fill something with fuel again.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "representation": {
+    "concept": "standing_for",
+    "pos": "noun",
+    "definition": "A representation is a picture, model or sign that stands for something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "resilience": {
+    "concept": "mending",
+    "pos": "mass noun",
+    "definition": "Resilience is the power to recover quickly after harm or change.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "respiratory": {
+    "concept": "body_part",
+    "pos": "adjective ungraded",
+    "definition": "Respiratory means about breathing, or the parts of the body used to breathe.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "responder": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A responder is a person who comes to help when there is an emergency.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "restoration": {
+    "concept": "mending",
+    "pos": "mass noun",
+    "definition": "Restoration is bringing something back to the way it was before.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "revolution": {
+    "concept": "cycle",
+    "pos": "noun",
+    "definition": "A revolution is one full turn of something around a center.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "rotor": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A rotor is a part of a machine that turns around a center.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "rupture": {
+    "concept": "things_break",
+    "pos": "noun",
+    "definition": "A rupture is a sudden break or crack in something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "sanitation": {
+    "concept": "danger",
+    "pos": "mass noun",
+    "definition": "Sanitation is keeping places clean and safe from disease, such as by taking away waste.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "seam": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A seam is a thin layer of coal or another rock inside the ground.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "seismometer": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A seismometer is a tool that measures how the ground shakes during an earthquake.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "semiconductor": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A semiconductor is a material that lets electricity pass through it only partly, used in computers and in panels that turn sunlight into electricity.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "sensitivity": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Sensitivity is how easily something notices or reacts to small changes.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "significance": {
+    "concept": "need",
+    "pos": "mass noun",
+    "definition": "The significance of something is how important it is, or what it means.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "solubility": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Solubility is how much of something can dissolve in a liquid.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "spawn": {
+    "concept": "growing",
+    "pos": "verb",
+    "definition": "To spawn is for fish to lay their eggs in water.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "stanza": {
+    "concept": "writing",
+    "pos": "noun",
+    "definition": "A stanza is a group of lines in a poem.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "suburban": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Suburban means about the areas of homes at the edge of a city.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "succession": {
+    "concept": "sequence",
+    "pos": "noun",
+    "definition": "A succession is a number of things that come one after another.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "suction": {
+    "concept": "force",
+    "pos": "mass noun",
+    "definition": "Suction is the pull made when air is taken out of a space.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "sustainably": {
+    "concept": "using_up",
+    "pos": "",
+    "definition": "Sustainably means in a way that can go on for a long time without using up what it needs.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "symptom": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A symptom is a sign that someone is sick, such as a high temperature or pain.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "template": {
+    "concept": "plan",
+    "pos": "noun",
+    "definition": "A template is a shape or pattern used as a guide to make other things.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "terrace": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A terrace is a flat step of land on a slope, made by people or by the sea, or a flat area beside a building.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "toxin": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A toxin is a poison, often one made by a living thing.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "transmitter": {
+    "concept": "reporting",
+    "pos": "noun",
+    "definition": "A transmitter is a machine that sends out radio signals.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "turbulent": {
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "definition": "Turbulent means moving in a wild, rough way.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "turntable": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A turntable is a flat, round plate that spins around its center.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "underlie": {
+    "concept": "spatial_position",
+    "pos": "verb",
+    "definition": "To underlie something is to lie under it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "utilize": {
+    "concept": "using_up",
+    "pos": "verb",
+    "definition": "To utilize something is to use it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "visualization": {
+    "concept": "standing_for",
+    "pos": "noun",
+    "definition": "A visualization is a picture or chart that helps people see and understand facts.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "voltage": {
+    "concept": "force",
+    "pos": "mass noun",
+    "definition": "Voltage is the push that makes electricity flow through a wire.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "waders": {
+    "concept": "household_object",
+    "pos": "noun plural-only",
+    "definition": "Waders are high boots that reach up the legs, worn to walk in water.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "westerly": {
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "definition": "Westerly means coming from the west, or moving toward the west.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  }
+}

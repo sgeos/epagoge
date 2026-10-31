@@ -1,0 +1,1354 @@
+{
+  "absorber": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An absorber is a part made to take in heat, light or a push instead of letting it pass, such as the dark plate of a solar heater.",
+    "concept": "heat",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "absorber",
+      "absorbers"
+    ]
+  },
+  "academic": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Academic means about study at a school or college.",
+    "concept": "knowing",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "academic"
+    ]
+  },
+  "acidification": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Acidification is the change of water or soil toward being more acidic.",
+    "concept": "change",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "acidification"
+    ]
+  },
+  "advent": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "The advent of something is the time when it first comes or starts.",
+    "concept": "sequence",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "advent",
+      "advents"
+    ]
+  },
+  "agent": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only agents, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "An agent is something that causes a change, such as a chemical that makes people sick.",
+    "concept": "cause_and_effect",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "agent",
+      "agents"
+    ]
+  },
+  "antibiotic": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only antibiotics, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "An antibiotic is a medicine that kills bacteria that make people sick.",
+    "concept": "being_hurt",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "antibiotic",
+      "antibiotics"
+    ]
+  },
+  "artery": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only arteries, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "An artery is a tube that carries blood from the heart to the rest of the body.",
+    "concept": "body_part",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "arteries",
+      "artery"
+    ]
+  },
+  "aspect": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An aspect is one part or side of something.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "aspect",
+      "aspects"
+    ]
+  },
+  "assessment": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only assessments, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "An assessment is a careful look at something to decide how good, bad or likely it is.",
+    "concept": "checking",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "assessment",
+      "assessments"
+    ]
+  },
+  "baseline": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A baseline is a starting amount or level that other amounts are compared with.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "baseline",
+      "baselines"
+    ]
+  },
+  "bond": {
+    "decision": "admit",
+    "reason": "A second sense, filed by word and concept. The source uses the word in this sense, and its admitted sense is a different one. The pool held only bonded, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To bond is to join closely together, as atoms do.",
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "bond",
+      "bonded",
+      "bonding",
+      "bonds"
+    ],
+    "second_sense": true
+  },
+  "calibrate": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "To calibrate a tool is to set it so that what it measures is right.",
+    "concept": "measuring",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "calibrate",
+      "calibrated",
+      "calibrates",
+      "calibrating"
+    ]
+  },
+  "catalyst": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A catalyst is something that makes a chemical change happen faster without being changed itself.",
+    "concept": "change",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "catalyst",
+      "catalysts"
+    ]
+  },
+  "certify": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only certified, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To certify something is to say officially that it is true or meets a standard.",
+    "concept": "checking",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "certified",
+      "certifies",
+      "certify",
+      "certifying"
+    ]
+  },
+  "characteristic": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A characteristic is a feature that helps to tell what something is.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "characteristic",
+      "characteristics"
+    ]
+  },
+  "circumference": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "The circumference of a circle is the distance around it.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "circumference",
+      "circumferences"
+    ]
+  },
+  "compatibility": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Compatibility is how well things can work or be used together.",
+    "concept": "same_and_different",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "compatibility"
+    ]
+  },
+  "compelling": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Compelling means so strong or interesting that you have to pay attention.",
+    "concept": "giving_a_reason",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "compelling"
+    ]
+  },
+  "compressor": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only compressors, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A compressor is a machine that squeezes air or gas into a smaller space.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "compressor",
+      "compressors"
+    ]
+  },
+  "conductor": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A conductor is a material that lets heat or electricity pass through it easily.",
+    "concept": "physical_property",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "conductor",
+      "conductors"
+    ]
+  },
+  "contour": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A contour is the line around the edge of a shape, or a line on a map joining places of the same height.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "contour",
+      "contours"
+    ]
+  },
+  "converge": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "To converge is to come together from different directions.",
+    "concept": "direction",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "converge",
+      "converged",
+      "converges",
+      "converging"
+    ]
+  },
+  "depict": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only depicts, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To depict something is to show it in a picture or in words.",
+    "concept": "standing_for",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "depict",
+      "depicted",
+      "depicting",
+      "depicts"
+    ]
+  },
+  "deplete": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only depleted, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To deplete something is to use up a large part of it.",
+    "concept": "using_up",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "deplete",
+      "depleted",
+      "depletes",
+      "depleting"
+    ]
+  },
+  "deterioration": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Deterioration is the process of becoming worse over time.",
+    "concept": "wearing_out",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "deterioration"
+    ]
+  },
+  "directional": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Directional means having to do with direction.",
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "directional"
+    ]
+  },
+  "disinfectant": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only disinfectants, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A disinfectant is a chemical that kills bacteria on things.",
+    "concept": "being_hurt",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "disinfectant",
+      "disinfectants"
+    ]
+  },
+  "distillation": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Distillation is making a liquid pure by heating it into a gas and then cooling the gas back into a liquid.",
+    "concept": "change",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "distillation"
+    ]
+  },
+  "dredge": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only dredging, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To dredge a river or harbor is to dig mud and sand from the bottom of it.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "dredge",
+      "dredged",
+      "dredges",
+      "dredging"
+    ]
+  },
+  "duct": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only ducts, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A duct is a tube that carries liquid or air.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "duct",
+      "ducts"
+    ]
+  },
+  "facilitate": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "To facilitate something is to make it easier.",
+    "concept": "can_and_cannot",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "facilitate",
+      "facilitated",
+      "facilitates",
+      "facilitating"
+    ]
+  },
+  "feasible": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Feasible means possible to do.",
+    "concept": "can_and_cannot",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "feasible"
+    ]
+  },
+  "feces": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Feces are the solid waste that a body passes out.",
+    "concept": "body_part",
+    "pos": "noun plural-only",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "feces"
+    ]
+  },
+  "feedlot": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only feedlots, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A feedlot is a place where farm animals are kept close together and fed before they are sold.",
+    "concept": "needing_supply",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "feedlot",
+      "feedlots"
+    ]
+  },
+  "filtration": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Filtration is cleaning a liquid or gas by passing it through a filter.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "filtration"
+    ]
+  },
+  "governmental": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Governmental means about or done by a government.",
+    "concept": "someone_in_charge",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "governmental"
+    ]
+  },
+  "graduate": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A graduate is a person who has finished school or college, and graduate study is study done after college.",
+    "concept": "knowing",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "graduate",
+      "graduates"
+    ]
+  },
+  "halo": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A halo is a ring of light around the sun, the moon or a head.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "halo",
+      "halos"
+    ]
+  },
+  "hybrid": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A hybrid is something made by mixing two different kinds of things.",
+    "concept": "same_and_different",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "hybrid",
+      "hybrids"
+    ]
+  },
+  "idealize": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only idealized, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To idealize something is to show it in a simpler and more perfect way than it really is.",
+    "concept": "real_and_pretend",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "idealize",
+      "idealized",
+      "idealizes",
+      "idealizing"
+    ]
+  },
+  "impurity": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only impurities, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "An impurity is something unwanted mixed into a material.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "impurities",
+      "impurity"
+    ]
+  },
+  "increment": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An increment is a small amount by which something grows, or one of a series of equal steps.",
+    "concept": "quantity",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "increment",
+      "increments"
+    ]
+  },
+  "incubate": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only incubated, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To incubate something is to keep it warm so that it can grow, or so that a young animal can come out of an egg.",
+    "concept": "heat",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "incubate",
+      "incubated",
+      "incubates",
+      "incubating"
+    ]
+  },
+  "injection": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An injection is the act of pushing a liquid into something, such as into the ground or into the body.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "injection",
+      "injections"
+    ]
+  },
+  "insolent": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Insolent means rude and without respect.",
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "insolent"
+    ]
+  },
+  "interconnected": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Interconnected means joined to each other.",
+    "concept": "joining_and_separating",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "interconnected"
+    ]
+  },
+  "interstate": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Interstate means between or across the large parts that make up some countries.",
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "interstate"
+    ]
+  },
+  "invest": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only invested, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To invest money is to put it into something so that it may earn more money later.",
+    "concept": "exchange",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "invest",
+      "invested",
+      "investing",
+      "invests"
+    ]
+  },
+  "latex": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Latex is a soft material that stretches, used to make gloves and balloons.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "latex"
+    ]
+  },
+  "lattice": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A lattice is a pattern of crossing lines with spaces between them.",
+    "concept": "shape",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "lattice",
+      "lattices"
+    ]
+  },
+  "manipulation": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Manipulation is changing or moving something with your hands or with tools.",
+    "concept": "change",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "manipulation"
+    ]
+  },
+  "micron": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A micron is a very small unit for measuring length. A thousand of them make one millimeter.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "micron",
+      "microns"
+    ]
+  },
+  "milligram": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only milligrams, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A milligram is a very small unit for measuring how heavy something is. A thousand of them make one gram.",
+    "concept": "unit",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "milligram",
+      "milligrams"
+    ]
+  },
+  "onshore": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Onshore means on land, or moving toward land from the sea.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "onshore"
+    ]
+  },
+  "optics": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Optics is the study of light and how it moves.",
+    "concept": "knowing",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "optics"
+    ]
+  },
+  "orifice": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An orifice is an opening, such as the open end of a pipe.",
+    "concept": "opening_and_shutting",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "orifice",
+      "orifices"
+    ]
+  },
+  "overabundance": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Overabundance is having far too much of something.",
+    "concept": "quantity",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "overabundance"
+    ]
+  },
+  "overgrowth": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Overgrowth is too much growth of plants or other living things.",
+    "concept": "growing",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "overgrowth"
+    ]
+  },
+  "penetration": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Penetration is going into or through something.",
+    "concept": "inside_and_outside",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "penetration"
+    ]
+  },
+  "percolate": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "To percolate is for a liquid to pass slowly through small holes or spaces.",
+    "concept": "liquid",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "percolate",
+      "percolated",
+      "percolates",
+      "percolating"
+    ]
+  },
+  "perforated": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Perforated means having many small holes.",
+    "concept": "shape",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "perforated"
+    ]
+  },
+  "pilgrimage": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pilgrimage is a long trip to a place that means a lot to someone, often because of what they believe.",
+    "concept": "activity",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "pilgrimage",
+      "pilgrimages"
+    ]
+  },
+  "pinpoint": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "To pinpoint something is to find or show exactly where it is.",
+    "concept": "finding_out",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "pinpoint",
+      "pinpointed",
+      "pinpointing",
+      "pinpoints"
+    ]
+  },
+  "plight": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A plight is a bad or difficult situation.",
+    "concept": "danger",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "plight",
+      "plights"
+    ]
+  },
+  "plunger": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A plunger is a rod that is pushed down inside a tube or bucket.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "plunger",
+      "plungers"
+    ]
+  },
+  "predominantly": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Predominantly means mostly, or more than anything else.",
+    "concept": "more_and_fewer",
+    "pos": "",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "predominantly"
+    ]
+  },
+  "protein": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only proteins, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A protein is one of the substances in food that living things need to build their bodies.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "protein",
+      "proteins"
+    ]
+  },
+  "proton": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only protons, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A proton is one of the tiny parts in the center of an atom.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "proton",
+      "protons"
+    ]
+  },
+  "radiate": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "To radiate is to spread out in all directions from a center.",
+    "concept": "direction",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "radiate",
+      "radiated",
+      "radiates",
+      "radiating"
+    ]
+  },
+  "refuel": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only refueling, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To refuel is to fill something with fuel again.",
+    "concept": "needing_supply",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "refuel",
+      "refueled",
+      "refueling",
+      "refuels"
+    ]
+  },
+  "representation": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A representation is a picture, model or sign that stands for something.",
+    "concept": "standing_for",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "representation",
+      "representations"
+    ]
+  },
+  "resilience": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Resilience is the power to recover quickly after harm or change.",
+    "concept": "mending",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "resilience"
+    ]
+  },
+  "respiratory": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Respiratory means about breathing, or the parts of the body used to breathe.",
+    "concept": "body_part",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "respiratory"
+    ]
+  },
+  "responder": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only responders, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A responder is a person who comes to help when there is an emergency.",
+    "concept": "person",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "responder",
+      "responders"
+    ]
+  },
+  "restoration": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Restoration is bringing something back to the way it was before.",
+    "concept": "mending",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "restoration"
+    ]
+  },
+  "revolution": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only revolutions, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A revolution is one full turn of something around a center.",
+    "concept": "cycle",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "revolution",
+      "revolutions"
+    ]
+  },
+  "rotor": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A rotor is a part of a machine that turns around a center.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "rotor",
+      "rotors"
+    ]
+  },
+  "rupture": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A rupture is a sudden break or crack in something.",
+    "concept": "things_break",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "rupture",
+      "ruptures"
+    ]
+  },
+  "sanitation": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sanitation is keeping places clean and safe from disease, such as by taking away waste.",
+    "concept": "danger",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "sanitation"
+    ]
+  },
+  "seam": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only seams, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A seam is a thin layer of coal or another rock inside the ground.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "seam",
+      "seams"
+    ]
+  },
+  "seismometer": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A seismometer is a tool that measures how the ground shakes during an earthquake.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "seismometer",
+      "seismometers"
+    ]
+  },
+  "semiconductor": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A semiconductor is a material that lets electricity pass through it only partly, used in computers and in panels that turn sunlight into electricity.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "semiconductor",
+      "semiconductors"
+    ]
+  },
+  "sensitivity": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sensitivity is how easily something notices or reacts to small changes.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "sensitivity"
+    ]
+  },
+  "significance": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "The significance of something is how important it is, or what it means.",
+    "concept": "need",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "significance"
+    ]
+  },
+  "solubility": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Solubility is how much of something can dissolve in a liquid.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "solubility"
+    ]
+  },
+  "spawn": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only spawning, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To spawn is for fish to lay their eggs in water.",
+    "concept": "growing",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "spawn",
+      "spawned",
+      "spawning",
+      "spawns"
+    ]
+  },
+  "stanza": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A stanza is a group of lines in a poem.",
+    "concept": "writing",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "stanza",
+      "stanzas"
+    ]
+  },
+  "suburban": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Suburban means about the areas of homes at the edge of a city.",
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "suburban"
+    ]
+  },
+  "succession": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A succession is a number of things that come one after another.",
+    "concept": "sequence",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "succession",
+      "successions"
+    ]
+  },
+  "suction": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Suction is the pull made when air is taken out of a space.",
+    "concept": "force",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "suction"
+    ]
+  },
+  "sustainably": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sustainably means in a way that can go on for a long time without using up what it needs.",
+    "concept": "using_up",
+    "pos": "",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "sustainably"
+    ]
+  },
+  "symptom": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only symptoms, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A symptom is a sign that someone is sick, such as a high temperature or pain.",
+    "concept": "being_hurt",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "symptom",
+      "symptoms"
+    ]
+  },
+  "template": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A template is a shape or pattern used as a guide to make other things.",
+    "concept": "plan",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "template",
+      "templates"
+    ]
+  },
+  "terrace": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A terrace is a flat step of land on a slope, made by people or by the sea, or a flat area beside a building.",
+    "concept": "spatial_position",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "terrace",
+      "terraces"
+    ]
+  },
+  "toxin": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only toxins, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A toxin is a poison, often one made by a living thing.",
+    "concept": "being_hurt",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "toxin",
+      "toxins"
+    ]
+  },
+  "transmitter": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A transmitter is a machine that sends out radio signals.",
+    "concept": "reporting",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "transmitter",
+      "transmitters"
+    ]
+  },
+  "turbulent": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Turbulent means moving in a wild, rough way.",
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "turbulent"
+    ]
+  },
+  "turntable": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A turntable is a flat, round plate that spins around its center.",
+    "concept": "household_object",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "turntable",
+      "turntables"
+    ]
+  },
+  "underlie": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only underlies, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To underlie something is to lie under it.",
+    "concept": "spatial_position",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "underlain",
+      "underlay",
+      "underlie",
+      "underlies"
+    ]
+  },
+  "utilize": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only utilizes, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "To utilize something is to use it.",
+    "concept": "using_up",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "utilize",
+      "utilized",
+      "utilizes",
+      "utilizing"
+    ]
+  },
+  "visualization": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only visualizations, so the citation form is reviewed.",
+    "definition_origin": "Agent-authored",
+    "definition": "A visualization is a picture or chart that helps people see and understand facts.",
+    "concept": "standing_for",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "visualization",
+      "visualizations"
+    ]
+  },
+  "voltage": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Voltage is the push that makes electricity flow through a wire.",
+    "concept": "force",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "voltage"
+    ]
+  },
+  "waders": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Waders are high boots that reach up the legs, worn to walk in water.",
+    "concept": "household_object",
+    "pos": "noun plural-only",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "waders"
+    ]
+  },
+  "westerly": {
+    "decision": "admit",
+    "reason": "Frequent in the threshold-four scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Westerly means coming from the west, or moving toward the west.",
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "reviewed_forms": [
+      "westerly"
+    ]
+  }
+}

@@ -31,6 +31,216 @@ measurements of every earlier batch already fail for that reason. A failure
 then marks the counts below as stale rather than wrong. Missing host
 artifacts make the associated checks unverified rather than disproved.
 
+## Resume state, 2026-10-30, seventh Dromon trial
+
+The operator directed the session to find a high-value iteration and
+complete it through the Dromon harness. The brief in `CURRENT_BRIEF.md`
+chose a lexicon batch from the long tail of sources already fetched. The
+operator did not ask for a commit, so the work of the fourth to seventh
+trials is left in the working tree on top of `8b81d43`. The sixth trial's
+brief and condition are preserved in `evals/review/level_2_long_tail/`.
+The sixth-trial resume state below is historical.
+
+**Dependencies.** On the same day the operator asked that the Dependabot
+alerts be addressed. Fifteen were open, fourteen in filelock and one in
+setuptools, both reached only through torch under the training extra.
+Commit `8b81d43` upgrades them in `uv.lock` to 4.2.5 and 84.2.1. It was
+merged by rebase from a pull request whose continuous integration passed,
+and continuous integration on `main` passed. The Dependabot pull request
+for filelock alone was closed as superseded. GitHub's dependency graph
+lists the new versions. Whether Dependabot has marked the alerts fixed is
+recorded below as last observed.
+
+**Lexicon.** The sixteen source texts already scanned leave 20 undecided
+strings at a threshold of five and 613 at a threshold of four. The
+operator's session withdrew 6, recorded as a count only. The batch in
+`evals/review/level_2_long_tail/` and `evals/review/level_3_long_tail/`
+decided the other 607. 296 pool strings were admitted at level two and 74
+at level three, 129 were excluded as forms of citation forms admitted in
+their place, 95 were deferred and 13 excluded for other reasons. With
+those citation forms, 376 words were admitted at level two and 104 at
+level three, including second senses of empty and bond. Level two rose
+from 2,997 to 3,372 distinct headwords, measured. No existing record in
+`curriculum/provenance.json` or `curriculum/vocabulary.json` changed
+against `aae4abe`, measured by key.
+
+**Review.** The reviewer line ran on the Fable model, because the
+harness does not offer the Sonnet model. Its findings were decided by the
+operator's session and applied. An instruction of that session to defer
+translates rested on the false premise that an earlier batch decided
+translate. The worker found that it did not and asked, and translate was
+widened instead. The reviewer found that the term entry for tornado lists
+tornados and not tornadoes, which an earlier batch admitted. That is left
+open.
+
+**Corpus.** The luna line listed 160 strings of the threshold-four scan
+admissible only by suffix stripping and named in no reviewed-forms list,
+six of them already deferred. The readiness top five changed only at fifth
+place. The reports, the review and the three harness reports are in
+`docs/process/trials/dromon_trial_7/`.
+
+**Harness.** The lines ask for a lookup of every review decision on a
+word across batches, a saved base for the by-key diff so that one batch
+can be isolated while others are uncommitted, process visibility, an
+in-place edit tool for read-only lines, and visible truncation. A model
+change of a line must go through `dromon rebind`, and the project file
+must then name the new model, or the daemon refuses to start.
+
+Dromon's running estimates after this trial stood at about 50.99 dollars
+for the worker and 10.62 dollars for the reviewer, so this trial used
+about 10.74 and 8.67 dollars. No cost is recorded for the Codex line. No
+teacher was loaded and no text was fetched.
+
+## Resume state, 2026-10-30, sixth Dromon trial
+
+The brief opened later on 2026-10-30 in `CURRENT_BRIEF.md` ran a sixth
+multi-agent trial of the Dromon harness on the level-two lexicon and
+corpus. The operator did not ask for a commit, so the work of the fourth,
+fifth and sixth trials is left in the working tree on top of `aae4abe`.
+The fifth trial's brief and condition are preserved in
+`evals/review/level_2_stripped_forms/`. The fifth-trial resume state below
+is historical.
+
+**Lexicon.** Every earlier pool was fully decided, and the operator chose
+to decide the 17 strings admissible only by suffix stripping. The batch in
+`evals/review/level_2_stripped_forms/` and
+`evals/review/level_3_stripped_forms/` admitted mining at level two and
+organics at level three, filed second senses of color, cool, experience,
+sample and well at level two, recorded the matching strings as their forms,
+and deferred buildings, flooding, graphics, powered and united. Level two
+rose from 2,996 to 2,997 distinct headwords, measured, because a second
+sense adds no headword.
+
+**Second senses.** `docs/decisions/LEXICON.md` allows a word several
+senses, but the tools could not file one. The operator chose that the
+worker extend them. `tools/admit.py`, `tools/author_definitions.py` and
+`tools/measure_lexicon_increment.py` now admit a second sense keyed by word
+and concept. `tools/word_provenance.py` records a second sense's origin
+under a separate `senses` map, so it no longer overwrites the first
+sense's record, which it had done for color, cool and well before the
+review. `tools/validate_closure.py` now checks every dictionary record at a
+level, not only the first per word. A verb sense of flood was removed
+because the sources never use one. The suite holds 727 tests.
+
+**Corpus.** The readiness reports of the third to fifth trials counted the
+seed books and missed `curriculum/books/level_1/bk.dictionary.1.md`. The
+luna line counted the term entries of `curriculum/vocabulary.json` at
+levels one and two instead. No concept in the 26 level-two units without a
+book is empty. The thinnest, with one word each, are balance, letter,
+reconciliation, right_reason and two_shoulds_at_once. The top five became
+r2.measure, p2.matter, p2.force, b2.mending and ac2.flow. A count measures
+vocabulary on file, not whether a module can be written. The reports, the
+script, the review and the three harness reports are in
+`docs/process/trials/dromon_trial_6/`.
+
+**Harness.** One `dromon mail` call timed out while the daemon was busy.
+The lines ask for a blocking wait on a named task, a view of how generated
+files differ from the last commit by key, which would have shown the
+provenance overwrite, a check_disclosure that takes several paths, visible
+truncation of command output, and counting rules stated in the brief.
+
+Dromon's running estimates after this trial stood at about 40.25 dollars
+for the worker and 1.95 dollars for the reviewer. This trial used about
+10.23 dollars of the worker's. No cost is recorded for the Codex line. No
+teacher was loaded.
+
+## Resume state, 2026-10-30, fifth Dromon trial
+
+The brief opened later on 2026-10-30 in `CURRENT_BRIEF.md` ran a fifth
+multi-agent trial of the Dromon harness on the level-two lexicon and
+corpus. The operator did not ask for a commit, so this work and the fourth
+trial's are both left in the working tree on top of `aae4abe`. The fourth
+trial's brief and condition are preserved in
+`evals/review/level_2_agency_06/`. The fourth-trial resume state below is
+historical.
+
+**Lexicon.** No text was fetched. The worker line drew the pool again from
+the first agency scan of 2026-10-10, whose hash matches the recorded one,
+and it held 28 strings that still lacked a decision. The operator's session
+withdrew none. The batch in `evals/review/level_2_agency_06/` and
+`evals/review/level_3_agency_06/` admitted 9 headwords at level two and 4
+at level three, excluded 11, mostly Spanish page titles, and deferred 6
+page interface words. Level two rose from 2,987 to 2,996 distinct
+headwords, measured, with coverage and closure complete at levels one to
+three. Of the 243 strings in the first pool, only organics now lacks any
+decision. It passes the pool rule because the lookup strips its final
+letter to the adjective organic, while the source uses it as a noun.
+
+**Open finding.** A string the pool rule removes as admissible may be
+admissible only because the lookup strips a suffix to another headword, so
+its own sense may never have been decided. The reviewer line found 17 such
+strings frequent in the first scan, among them wells, united and mining.
+Whether such strings need their own decision is for the operator.
+
+**Corpus.** The luna line counted headwords at levels one and two together
+for the 26 level-two units with no book, because a level-two book may use
+level-one words. Only keeping_your_claim, letter, right_reason and
+two_shoulds_at_once are empty at both levels. The top five under the third
+trial's rule became r2.measure, ac2.flow, p2.matter, b2.mending and
+p2.force. A headword count measures vocabulary on file, not whether a
+module can be written. The reports, the script, the review and the three
+harness reports are in `docs/process/trials/dromon_trial_5/`.
+
+**Harness.** Creating every path the brief names before the lines started
+removed the gate failure of the fourth trial. The lines ask for a record of
+whether each removed string's sense is decided, kept snapshots of any
+report used as a comparison baseline, visible truncation of command output,
+and a stated path for project tools such as ruff.
+
+Dromon's running estimates after this trial stood at about 30.02 dollars
+for the worker and 1.55 dollars for the reviewer. No cost is recorded for
+the Codex line. No teacher was loaded.
+
+## Resume state, 2026-10-30, fourth Dromon trial
+
+The brief opened on 2026-10-29 and restated on 2026-10-30 in
+`CURRENT_BRIEF.md` ran a fourth multi-agent trial of the Dromon harness on
+the level-two lexicon and corpus. The operator's restated direction did not
+ask for a commit, so this work was left in the working tree on top of
+`aae4abe`. That commit recorded the operator's merge settings for the
+repository in `PROCESS_STRATEGY.md`, and its continuous integration run
+succeeded. The third trial's brief and condition are preserved in
+`evals/review/level_2_agency_05/`. The resume state below is historical.
+
+**Lexicon.** The operator's session fetched 214 USGS Water Science School
+pages beyond the 19 read on 2026-10-10, about 164,900 words, into
+`tmp/lexicon-sources/agency5/`. The first crawl was throttled and stopped.
+The second waited three seconds between requests and kept each page as it
+arrived. Lines repeated from an earlier page were dropped, because the
+question and answer pages repeat the same lists of related questions. The
+worker line stopped after drawing a pool of 572 strings, and the operator's
+session withdrew 1 before any decision and limited probe to one sense. The
+batch in `evals/review/level_2_agency_05/` and
+`evals/review/level_3_agency_05/` admitted 356 headwords at level two and
+124 at level three, excluded 122 forms and deferred 43. Level two rose from
+2,631 to 2,987 distinct headwords, measured, with coverage and closure
+complete at levels one to three. The reviewer line proposed eight wordings,
+and all eight were applied through `tools/author_definitions.py` without
+change.
+
+**Corpus.** The luna line reran the third trial's readiness script after
+the batch. The 26 level-two units with no book all gained headwords, and 13
+of their concepts still have none, among them agreeing, being_wrong and
+opinion. It also listed the headwords on file for each concept of
+`r2.measure`. A list of headwords shows vocabulary on file, not that a
+module can be written. The reports, the sheet, the review and the three
+harness reports are in `docs/process/trials/dromon_trial_4/`.
+
+**Harness.** The local Dromon project file now names the private term list
+as its disclosure list. The worker reports that this let it clear its
+records and messages without reading the list, at the cost of one false
+positive, because Dromon matches a term as a substring. The gate first
+failed because the brief named the trial directory before it existed, and
+the worker asked rather than editing `docs/process/`. The lines ask for an
+allow list of ruled false positives, a wait on a named background task, a
+check that every path a brief names exists before a line starts, visible
+truncation of command output, and a recorded baseline snapshot for any
+comparison.
+
+Dromon's running estimates after this trial stood at about 27.00 dollars
+for the worker and 1.25 dollars for the reviewer. No cost is recorded for
+the Codex line. No teacher was loaded.
+
 ## Resume state, 2026-10-29, third Dromon trial
 
 The brief opened later on 2026-10-29 in `CURRENT_BRIEF.md` ran a third

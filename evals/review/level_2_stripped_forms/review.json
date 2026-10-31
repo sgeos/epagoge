@@ -1,0 +1,152 @@
+{
+  "buildings": {
+    "decision": "defer",
+    "reason": "The source uses the noun building, a structure. Building is already a form of the level-one verb build, and a form shared by two different words is refused, so filing the noun needs a change to the level-one entry for build. That is a separate decision."
+  },
+  "color": {
+    "decision": "admit",
+    "reason": "A second sense, filed by word and concept on the operator's choice of 2026-10-30. The pool held only colored, which the lookup resolved by suffix stripping to an admitted sense that is not the one the source uses. Definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To color something is to give it a color.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "color",
+      "colored",
+      "coloring",
+      "colors"
+    ],
+    "second_sense": true
+  },
+  "colored": {
+    "decision": "exclude",
+    "reason": "A form of the verb color, whose sense the source uses and which is admitted in this batch as a second sense. The form is among its reviewed forms."
+  },
+  "cool": {
+    "decision": "admit",
+    "reason": "A second sense, filed by word and concept on the operator's choice of 2026-10-30. The pool held only cooling, cools, which the lookup resolved by suffix stripping to an admitted sense that is not the one the source uses. Definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To cool is to become cooler, or to make something cooler.",
+    "concept": "change",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "cool",
+      "cooled",
+      "cooling",
+      "cools"
+    ],
+    "second_sense": true
+  },
+  "cooling": {
+    "decision": "exclude",
+    "reason": "A form of the verb cool, whose sense the source uses and which is admitted in this batch as a second sense. The form is among its reviewed forms."
+  },
+  "cools": {
+    "decision": "exclude",
+    "reason": "A form of the verb cool, whose sense the source uses and which is admitted in this batch as a second sense. The form is among its reviewed forms."
+  },
+  "experience": {
+    "decision": "admit",
+    "reason": "A second sense, filed by word and concept on the operator's choice of 2026-10-30. The pool held only experiencing, which the lookup resolved by suffix stripping to an admitted sense that is not the one the source uses. Definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To experience something is to feel it, or to have it happen to you.",
+    "concept": "feeling",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "experience",
+      "experienced",
+      "experiences",
+      "experiencing"
+    ],
+    "second_sense": true
+  },
+  "experiencing": {
+    "decision": "exclude",
+    "reason": "A form of the verb experience, whose sense the source uses and which is admitted in this batch as a second sense. The form is among its reviewed forms."
+  },
+  "flooding": {
+    "decision": "defer",
+    "reason": "The source uses flooding only as the noun for the event, which is the sense of the noun flood already admitted at level two. The sources never use flood as a verb. Filing flooding as a form of that noun would change an entry from before this brief, which is a separate decision."
+  },
+  "graphics": {
+    "decision": "defer",
+    "reason": "Frequent only in a credit heading and in the name of an award, rather than in prose. The scan gives no prose evidence for it."
+  },
+  "mining": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and admissible before only by suffix stripping to an unrelated or different-sense headword. Definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Mining is digging rock, metal or coal out of the ground.",
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "mining"
+    ]
+  },
+  "oils": {
+    "decision": "exclude",
+    "reason": "A plural of oil naming kinds of oil, in the sense oil already carries at level two. Oil is a mass noun, so the plural is not added to its forms and the string is not a separate headword."
+  },
+  "peoples": {
+    "decision": "exclude",
+    "reason": "Used in the source only before uses and needs, where it is a misspelt possessive of the plural people. People is admitted as a form of person at level one. The plural meaning nations does not occur in the sources."
+  },
+  "powered": {
+    "decision": "defer",
+    "reason": "Frequent only because one news headline repeats in the site's page interface. The scan gives no prose evidence for it."
+  },
+  "sample": {
+    "decision": "admit",
+    "reason": "A second sense, filed by word and concept on the operator's choice of 2026-10-30. The pool held only sampling, which the lookup resolved by suffix stripping to an admitted sense that is not the one the source uses. Definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To sample something is to take a small part of it to test or measure.",
+    "concept": "checking",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "sample",
+      "sampled",
+      "samples",
+      "sampling"
+    ],
+    "second_sense": true
+  },
+  "sampling": {
+    "decision": "exclude",
+    "reason": "A form of the verb sample, whose sense the source uses and which is admitted in this batch as a second sense. The form is among its reviewed forms."
+  },
+  "soaps": {
+    "decision": "exclude",
+    "reason": "A plural of soap naming kinds of soap, in the sense soap already carries at level one. Soap is a mass noun, so the plural is not added to its forms and the string is not a separate headword."
+  },
+  "united": {
+    "decision": "defer",
+    "reason": "Used in the agency sources only in the name United States. Whether the verb unite is a headword is a separate decision."
+  },
+  "waters": {
+    "decision": "exclude",
+    "reason": "A plural of water naming the water of particular places, such as local or ocean waters, in the sense water already carries at level one. Water is a mass noun, so the plural is not added to its forms and the string is not a separate headword."
+  },
+  "well": {
+    "decision": "admit",
+    "reason": "A second sense, filed by word and concept on the operator's choice of 2026-10-30. The pool held only wells, which the lookup resolved by suffix stripping to an admitted sense that is not the one the source uses. Definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A well is a deep hole dug in the ground to get water.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "well",
+      "wells"
+    ],
+    "second_sense": true
+  },
+  "wells": {
+    "decision": "exclude",
+    "reason": "A form of the noun well, whose sense the source uses and which is admitted in this batch as a second sense. The form is among its reviewed forms."
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "abstract": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's page interface, such as link text, titles of linked material or addresses, rather than in prose. The scan gives no prose evidence for it."
+  },
+  "ade": {
+    "decision": "exclude",
+    "reason": "Not an English headword. It is a fragment of a Spanish word in a linked page title, split by the scan at an accented letter."
+  },
+  "anuncia": {
+    "decision": "exclude",
+    "reason": "Not an English headword. It occurs only in Spanish page titles linked from the source."
+  },
+  "arquitectura": {
+    "decision": "exclude",
+    "reason": "Not an English headword. It occurs only in Spanish page titles linked from the source."
+  },
+  "atomic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Atomic means about atoms, or as small as atoms.",
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "atomic"
+    ]
+  },
+  "clip": {
+    "decision": "defer",
+    "reason": "Used in the source only as part of a joined name. Whether the joined name is a headword is a separate decision."
+  },
+  "cobertura": {
+    "decision": "exclude",
+    "reason": "Not an English headword. It occurs only in Spanish page titles linked from the source."
+  },
+  "dedicated": {
+    "decision": "exclude",
+    "reason": "An inflected form of dedicate, which is admitted in evals/review/level_3_agency_06 at level three. The form is among its reviewed forms."
+  },
+  "definitely": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Definitely means for sure, with no doubt.",
+    "concept": "how_sure",
+    "pos": "",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "definitely"
+    ]
+  },
+  "diaria": {
+    "decision": "exclude",
+    "reason": "Not an English headword. It occurs only in Spanish page titles linked from the source."
+  },
+  "docs": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's page interface, such as link text, titles of linked material or addresses, rather than in prose. The scan gives no prose evidence for it."
+  },
+  "download": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To download something is to copy it from another computer onto your own.",
+    "concept": "written_record",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "download",
+      "downloaded",
+      "downloading",
+      "downloads"
+    ]
+  },
+  "fluxes": {
+    "decision": "exclude",
+    "reason": "An inflected form of flux, which is admitted in evals/review/level_3_agency_06 at level three. The form is among its reviewed forms."
+  },
+  "fortunate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fortunate means having something good happen by chance.",
+    "concept": "how_sure",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "fortunate"
+    ]
+  },
+  "html": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's page interface, such as link text, titles of linked material or addresses, rather than in prose. The scan gives no prose evidence for it."
+  },
+  "illusion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "An illusion is something that seems real but is not.",
+    "concept": "real_and_pretend",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "illusion",
+      "illusions"
+    ]
+  },
+  "misi": {
+    "decision": "exclude",
+    "reason": "Not an English headword. It is a fragment of a Spanish word in a linked page title, split by the scan at an accented letter."
+  },
+  "multimedia": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's page interface, such as link text, titles of linked material or addresses, rather than in prose. The scan gives no prose evidence for it."
+  },
+  "perfecciona": {
+    "decision": "exclude",
+    "reason": "Not an English headword. It occurs only in Spanish page titles linked from the source."
+  },
+  "publications": {
+    "decision": "defer",
+    "reason": "Frequent only in the site's page interface, such as link text, titles of linked material or addresses, rather than in prose. The scan gives no prose evidence for it."
+  },
+  "pun": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pun is a funny use of a word that can mean two things.",
+    "concept": "standing_for",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "pun",
+      "puns"
+    ]
+  },
+  "refuerza": {
+    "decision": "exclude",
+    "reason": "Not an English headword. It occurs only in Spanish page titles linked from the source."
+  },
+  "replica": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "A replica is a very close copy of something.",
+    "concept": "same_and_different",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "replica",
+      "replicas"
+    ]
+  },
+  "struggle": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "To struggle is to try very hard when something is difficult.",
+    "concept": "keep_trying_or_stop",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "struggle",
+      "struggled",
+      "struggles",
+      "struggling"
+    ]
+  },
+  "una": {
+    "decision": "exclude",
+    "reason": "Not an English headword. It occurs only in Spanish page titles linked from the source."
+  },
+  "universally": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan and definable at level two.",
+    "definition_origin": "Agent-authored",
+    "definition": "Universally means everywhere and for everyone.",
+    "concept": "all_some_none",
+    "pos": "",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "universally"
+    ]
+  }
+}

@@ -2,6 +2,14 @@
   "_comment": "One entry per lexicon sense. Antonymy belongs to a sense, not to a word: right opposes left as a direction and wrong as a judgement. A core function word may appear with an empty concept, since it names nothing but up against down is still a pair a level-one reader wants. An uncovered sense is a violation; an entry with no antonym is not, because most nouns oppose nothing. This is an analysis tool during authoring and level-one reference material afterwards. See docs/decisions/LEXICON.md.",
   "senses": [
     {
+      "word": "abandon",
+      "concept": "keep_trying_or_stop"
+    },
+    {
+      "word": "abbreviate",
+      "concept": "writing"
+    },
+    {
       "word": "ability",
       "concept": "can_and_cannot"
     },
@@ -32,6 +40,18 @@
       "concept": "change"
     },
     {
+      "word": "absorber",
+      "concept": "heat"
+    },
+    {
+      "word": "abundant",
+      "concept": "quantity"
+    },
+    {
+      "word": "academic",
+      "concept": "knowing"
+    },
+    {
       "word": "academy",
       "concept": "knowing"
     },
@@ -42,6 +62,10 @@
     {
       "word": "access",
       "concept": "spatial_position"
+    },
+    {
+      "word": "accessible",
+      "concept": "can_and_cannot"
     },
     {
       "word": "accident",
@@ -56,6 +80,10 @@
       "concept": "reporting"
     },
     {
+      "word": "accumulation",
+      "concept": "quantity"
+    },
+    {
       "word": "accuracy",
       "concept": "close_enough"
     },
@@ -64,12 +92,32 @@
       "concept": "checking"
     },
     {
+      "word": "accurately",
+      "concept": "measuring"
+    },
+    {
+      "word": "accustomed",
+      "concept": "knowing"
+    },
+    {
       "word": "acid",
       "concept": "material"
     },
     {
       "word": "acidic",
       "concept": "physical_property"
+    },
+    {
+      "word": "acidification",
+      "concept": "change"
+    },
+    {
+      "word": "acidity",
+      "concept": "physical_property"
+    },
+    {
+      "word": "acre",
+      "concept": "unit"
     },
     {
       "word": "act",
@@ -96,8 +144,24 @@
       "concept": "real_and_pretend"
     },
     {
+      "word": "acute",
+      "concept": "being_hurt"
+    },
+    {
       "word": "add",
       "concept": "addition"
+    },
+    {
+      "word": "additional",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "adequate",
+      "concept": "enough"
+    },
+    {
+      "word": "adhesion",
+      "concept": "force"
     },
     {
       "word": "adjacent",
@@ -124,12 +188,40 @@
       "concept": "good_and_bad"
     },
     {
+      "word": "advent",
+      "concept": "sequence"
+    },
+    {
+      "word": "adverse",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "advise",
+      "concept": "should_and_should_not"
+    },
+    {
       "word": "advisory",
       "concept": "being_told"
     },
     {
+      "word": "aeration",
+      "concept": "air"
+    },
+    {
+      "word": "aerial",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "aerobic",
+      "concept": "living_and_not_living"
+    },
+    {
       "word": "aerosol",
       "concept": "air"
+    },
+    {
+      "word": "aesthetic",
+      "concept": "feeling"
     },
     {
       "word": "affect",
@@ -170,6 +262,10 @@
       "concept": "someone_in_charge"
     },
     {
+      "word": "agent",
+      "concept": "cause_and_effect"
+    },
+    {
       "word": "ago",
       "concept": "duration"
     },
@@ -182,6 +278,10 @@
     },
     {
       "word": "agricultural",
+      "concept": "plant"
+    },
+    {
+      "word": "agriculture",
       "concept": "plant"
     },
     {
@@ -209,6 +309,10 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "airport",
+      "concept": "spatial_position"
+    },
+    {
       "word": "alarm",
       "concept": "danger"
     },
@@ -233,6 +337,10 @@
       "concept": "way_of_doing"
     },
     {
+      "word": "align",
+      "concept": "spatial_position"
+    },
+    {
       "word": "alike",
       "concept": "same_and_different"
     },
@@ -242,6 +350,18 @@
       "antonyms": [
         "dead"
       ]
+    },
+    {
+      "word": "alkaline",
+      "concept": "physical_property"
+    },
+    {
+      "word": "alkalinity",
+      "concept": "physical_property"
+    },
+    {
+      "word": "alleviate",
+      "concept": "good_and_bad"
     },
     {
       "word": "allow",
@@ -260,8 +380,24 @@
       "concept": "self_and_other"
     },
     {
+      "word": "alongside",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "aloud",
+      "concept": "sound"
+    },
+    {
       "word": "already",
       "concept": "sequence"
+    },
+    {
+      "word": "alter",
+      "concept": "change"
+    },
+    {
+      "word": "alteration",
+      "concept": "change"
     },
     {
       "word": "alternative",
@@ -288,6 +424,10 @@
       "concept": "weather"
     },
     {
+      "word": "aluminum",
+      "concept": "metal"
+    },
+    {
       "word": "always",
       "concept": "cycle",
       "antonyms": [
@@ -307,16 +447,32 @@
       "concept": "quantity"
     },
     {
+      "word": "ample",
+      "concept": "enough"
+    },
+    {
       "word": "anaerobic",
       "concept": "air"
+    },
+    {
+      "word": "analogy",
+      "concept": "explanation"
     },
     {
       "word": "analysis",
       "concept": "finding_out"
     },
     {
+      "word": "analyze",
+      "concept": "finding_out"
+    },
+    {
       "word": "ancient",
       "concept": "duration"
+    },
+    {
+      "word": "angel",
+      "concept": "taking_on_faith"
     },
     {
       "word": "angle",
@@ -329,6 +485,10 @@
     {
       "word": "animal",
       "concept": "animal"
+    },
+    {
+      "word": "announce",
+      "concept": "reporting"
     },
     {
       "word": "annual",
@@ -353,8 +513,20 @@
       "concept": "household_object"
     },
     {
+      "word": "antibiotic",
+      "concept": "being_hurt"
+    },
+    {
       "word": "anvil",
       "concept": "household_object"
+    },
+    {
+      "word": "anxious",
+      "concept": "feeling"
+    },
+    {
+      "word": "anybody",
+      "concept": "person"
     },
     {
       "word": "anyone",
@@ -383,6 +555,10 @@
     {
       "word": "apparent",
       "concept": "real_and_pretend"
+    },
+    {
+      "word": "apparently",
+      "concept": "how_sure"
     },
     {
       "word": "appear",
@@ -425,12 +601,24 @@
       "concept": "close_enough"
     },
     {
+      "word": "aquaculture",
+      "concept": "raw_and_made"
+    },
+    {
       "word": "aquatic",
       "concept": "living_and_not_living"
     },
     {
+      "word": "aqueduct",
+      "concept": "component_and_system"
+    },
+    {
       "word": "aquifer",
       "concept": "material"
+    },
+    {
+      "word": "arbitrary",
+      "concept": "choosing"
     },
     {
       "word": "area",
@@ -439,6 +627,10 @@
     {
       "word": "argue",
       "concept": "disagreeing"
+    },
+    {
+      "word": "arid",
+      "concept": "weather"
     },
     {
       "word": "arm",
@@ -457,12 +649,40 @@
       "concept": "direction"
     },
     {
+      "word": "arsenic",
+      "concept": "danger"
+    },
+    {
       "word": "art",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "artery",
+      "concept": "body_part"
+    },
+    {
+      "word": "artesian",
+      "concept": "stock_and_flow"
+    },
+    {
+      "word": "artichoke",
+      "concept": "plant"
+    },
+    {
+      "word": "artificial",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "artificially",
       "concept": "raw_and_made"
     },
     {
       "word": "artwork",
       "concept": "raw_and_made"
+    },
+    {
+      "word": "ascend",
+      "concept": "moving_and_still"
     },
     {
       "word": "ash",
@@ -471,6 +691,14 @@
     {
       "word": "ashamed",
       "concept": "feeling"
+    },
+    {
+      "word": "ashore",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "aside",
+      "concept": "spatial_position"
     },
     {
       "word": "ask",
@@ -487,12 +715,48 @@
       ]
     },
     {
+      "word": "aspect",
+      "concept": "component_and_system"
+    },
+    {
+      "word": "asphalt",
+      "concept": "material"
+    },
+    {
+      "word": "assemble",
+      "concept": "people_together"
+    },
+    {
+      "word": "assess",
+      "concept": "checking"
+    },
+    {
+      "word": "assessment",
+      "concept": "checking"
+    },
+    {
+      "word": "assist",
+      "concept": "doing_in_order"
+    },
+    {
+      "word": "assistance",
+      "concept": "need"
+    },
+    {
       "word": "assume",
       "concept": "guess"
     },
     {
+      "word": "assure",
+      "concept": "how_sure"
+    },
+    {
       "word": "asteroid",
       "concept": "spatial_position"
+    },
+    {
+      "word": "astonish",
+      "concept": "feeling"
     },
     {
       "word": "astrology",
@@ -523,6 +787,10 @@
       "concept": "material"
     },
     {
+      "word": "atomic",
+      "concept": "material"
+    },
+    {
       "word": "attach",
       "concept": "joining_and_separating"
     },
@@ -543,11 +811,19 @@
       "concept": "force"
     },
     {
+      "word": "attractive",
+      "concept": "force"
+    },
+    {
       "word": "aunt",
       "concept": "family",
       "antonyms": [
         "uncle"
       ]
+    },
+    {
+      "word": "auntie",
+      "concept": "family"
     },
     {
       "word": "aurora",
@@ -556,6 +832,10 @@
     {
       "word": "author",
       "concept": "who_said_it"
+    },
+    {
+      "word": "automatically",
+      "concept": "way_of_doing"
     },
     {
       "word": "automobile",
@@ -587,6 +867,10 @@
       "antonyms": [
         "asleep"
       ]
+    },
+    {
+      "word": "aware",
+      "concept": "knowing"
     },
     {
       "word": "awareness",
@@ -674,6 +958,14 @@
       "concept": "physical_property"
     },
     {
+      "word": "bargain",
+      "concept": "exchange"
+    },
+    {
+      "word": "barge",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "bark",
       "concept": "plant"
     },
@@ -684,6 +976,10 @@
     {
       "word": "barometer",
       "concept": "measuring"
+    },
+    {
+      "word": "barometric",
+      "concept": "air"
     },
     {
       "word": "barrel",
@@ -698,12 +994,24 @@
       "concept": "spatial_position"
     },
     {
+      "word": "baseflow",
+      "concept": "stock_and_flow"
+    },
+    {
+      "word": "baseline",
+      "concept": "measuring"
+    },
+    {
       "word": "basic",
       "concept": "physical_property"
     },
     {
       "word": "basin",
       "concept": "shape"
+    },
+    {
+      "word": "basis",
+      "concept": "giving_a_reason"
     },
     {
       "word": "basket",
@@ -716,6 +1024,14 @@
     {
       "word": "bat",
       "concept": "animal"
+    },
+    {
+      "word": "bath",
+      "concept": "household_object"
+    },
+    {
+      "word": "bathroom",
+      "concept": "household_object"
     },
     {
       "word": "bathtub",
@@ -742,12 +1058,20 @@
       "concept": "household_object"
     },
     {
+      "word": "beaker",
+      "concept": "household_object"
+    },
+    {
       "word": "beam",
       "concept": "physical_property"
     },
     {
       "word": "bear",
       "concept": "toy"
+    },
+    {
+      "word": "beard",
+      "concept": "body_part"
     },
     {
       "word": "beast",
@@ -786,6 +1110,10 @@
       "concept": "household_object"
     },
     {
+      "word": "bedrock",
+      "concept": "material"
+    },
+    {
       "word": "bee",
       "concept": "animal"
     },
@@ -816,12 +1144,20 @@
       "concept": "activity"
     },
     {
+      "word": "behavior",
+      "concept": "activity"
+    },
+    {
       "word": "behind",
       "concept": "spatial_position"
     },
     {
       "word": "behold",
       "concept": "finding_out"
+    },
+    {
+      "word": "belief",
+      "concept": "taking_on_faith"
     },
     {
       "word": "believe",
@@ -834,6 +1170,10 @@
     {
       "word": "belong",
       "concept": "having"
+    },
+    {
+      "word": "beloved",
+      "concept": "feeling"
     },
     {
       "word": "below",
@@ -853,6 +1193,14 @@
     {
       "word": "beneath",
       "concept": "spatial_position"
+    },
+    {
+      "word": "beneficial",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "benefit",
+      "concept": "good_and_bad"
     },
     {
       "word": "berry",
@@ -907,6 +1255,10 @@
       "concept": "place_value"
     },
     {
+      "word": "bind",
+      "concept": "joining_and_separating"
+    },
+    {
       "word": "bingo",
       "concept": "toy"
     },
@@ -921,6 +1273,10 @@
     {
       "word": "biogas",
       "concept": "material"
+    },
+    {
+      "word": "biography",
+      "concept": "written_record"
     },
     {
       "word": "biological",
@@ -971,6 +1327,10 @@
       "concept": "force"
     },
     {
+      "word": "bleach",
+      "concept": "change"
+    },
+    {
       "word": "blend",
       "concept": "joining_and_separating"
     },
@@ -1007,12 +1367,32 @@
       "concept": "plant"
     },
     {
+      "word": "blossom",
+      "concept": "plant"
+    },
+    {
       "word": "blow",
       "concept": "air"
     },
     {
       "word": "blue",
       "concept": "physical_property"
+    },
+    {
+      "word": "bluebird",
+      "concept": "animal"
+    },
+    {
+      "word": "blueness",
+      "concept": "physical_property"
+    },
+    {
+      "word": "bluish",
+      "concept": "physical_property"
+    },
+    {
+      "word": "blunder",
+      "concept": "mistake"
     },
     {
       "word": "board",
@@ -1031,6 +1411,10 @@
       "concept": "heat"
     },
     {
+      "word": "boiler",
+      "concept": "heat"
+    },
+    {
       "word": "bold",
       "concept": "feeling"
     },
@@ -1039,8 +1423,24 @@
       "concept": "household_object"
     },
     {
+      "word": "bond",
+      "concept": "force"
+    },
+    {
+      "word": "bond",
+      "concept": "joining_and_separating"
+    },
+    {
+      "word": "bone",
+      "concept": "body_part"
+    },
+    {
       "word": "book",
       "concept": "writing"
+    },
+    {
+      "word": "boot",
+      "concept": "household_object"
     },
     {
       "word": "borax",
@@ -1139,6 +1539,10 @@
       ]
     },
     {
+      "word": "breakdown",
+      "concept": "change"
+    },
+    {
       "word": "breakfast",
       "concept": "raw_and_made"
     },
@@ -1176,6 +1580,18 @@
       "antonyms": [
         "dark"
       ]
+    },
+    {
+      "word": "brightly",
+      "concept": "physical_property"
+    },
+    {
+      "word": "brightness",
+      "concept": "physical_property"
+    },
+    {
+      "word": "brilliant",
+      "concept": "physical_property"
     },
     {
       "word": "bring",
@@ -1251,6 +1667,10 @@
       "concept": "raw_and_made"
     },
     {
+      "word": "buildup",
+      "concept": "quantity"
+    },
+    {
       "word": "built",
       "concept": "raw_and_made"
     },
@@ -1263,12 +1683,24 @@
       "concept": "shape"
     },
     {
+      "word": "bump",
+      "concept": "touching"
+    },
+    {
+      "word": "bun",
+      "concept": "raw_and_made"
+    },
+    {
       "word": "bunch",
       "concept": "grouping"
     },
     {
       "word": "bundle",
       "concept": "grouping"
+    },
+    {
+      "word": "burden",
+      "concept": "feeling"
     },
     {
       "word": "burn",
@@ -1322,6 +1754,14 @@
       "concept": "plant"
     },
     {
+      "word": "cable",
+      "concept": "material"
+    },
+    {
+      "word": "cableway",
+      "concept": "measuring"
+    },
+    {
       "word": "cage",
       "concept": "household_object"
     },
@@ -1330,12 +1770,32 @@
       "concept": "raw_and_made"
     },
     {
+      "word": "calcite",
+      "concept": "material"
+    },
+    {
+      "word": "calcium",
+      "concept": "metal"
+    },
+    {
       "word": "calculate",
       "concept": "measuring"
     },
     {
+      "word": "calculation",
+      "concept": "counting"
+    },
+    {
+      "word": "calculator",
+      "concept": "counting"
+    },
+    {
       "word": "calendar",
       "concept": "duration"
+    },
+    {
+      "word": "calibrate",
+      "concept": "measuring"
     },
     {
       "word": "call",
@@ -1353,12 +1813,24 @@
       ]
     },
     {
+      "word": "calorie",
+      "concept": "unit"
+    },
+    {
       "word": "camera",
       "concept": "household_object"
     },
     {
+      "word": "camp",
+      "concept": "activity"
+    },
+    {
       "word": "cancer",
       "concept": "being_hurt"
+    },
+    {
+      "word": "candy",
+      "concept": "raw_and_made"
     },
     {
       "word": "cane",
@@ -1379,6 +1851,10 @@
     {
       "word": "cap",
       "concept": "household_object"
+    },
+    {
+      "word": "capable",
+      "concept": "can_and_cannot"
     },
     {
       "word": "capacity",
@@ -1409,6 +1885,14 @@
       "concept": "material"
     },
     {
+      "word": "carbonate",
+      "concept": "material"
+    },
+    {
+      "word": "carcinogen",
+      "concept": "danger"
+    },
+    {
       "word": "cardboard",
       "concept": "material"
     },
@@ -1427,6 +1911,10 @@
     {
       "word": "carpenter",
       "concept": "person"
+    },
+    {
+      "word": "carriage",
+      "concept": "moving_and_still"
     },
     {
       "word": "carrier",
@@ -1449,6 +1937,10 @@
       "concept": "raw_and_made"
     },
     {
+      "word": "casing",
+      "concept": "household_object"
+    },
+    {
       "word": "cast",
       "concept": "moving_and_still"
     },
@@ -1461,8 +1953,28 @@
       "concept": "animal"
     },
     {
+      "word": "catalyst",
+      "concept": "change"
+    },
+    {
+      "word": "catastrophic",
+      "concept": "things_break"
+    },
+    {
       "word": "catch",
       "concept": "force"
+    },
+    {
+      "word": "category",
+      "concept": "grouping"
+    },
+    {
+      "word": "catfish",
+      "concept": "animal"
+    },
+    {
+      "word": "cattle",
+      "concept": "animal"
     },
     {
       "word": "cause",
@@ -1477,12 +1989,32 @@
       "concept": "spatial_position"
     },
     {
+      "word": "cavity",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "cease",
+      "concept": "keep_trying_or_stop"
+    },
+    {
+      "word": "cedar",
+      "concept": "plant"
+    },
+    {
       "word": "celery",
       "concept": "plant"
     },
     {
+      "word": "cellar",
+      "concept": "household_object"
+    },
+    {
       "word": "cellulosic",
       "concept": "plant"
+    },
+    {
+      "word": "cement",
+      "concept": "material"
     },
     {
       "word": "cent",
@@ -1491,6 +2023,10 @@
     {
       "word": "center",
       "concept": "spatial_position"
+    },
+    {
+      "word": "centimeter",
+      "concept": "unit"
     },
     {
       "word": "central",
@@ -1509,12 +2045,20 @@
       "concept": "how_sure"
     },
     {
+      "word": "certify",
+      "concept": "checking"
+    },
+    {
       "word": "chain",
       "concept": "causal_chain"
     },
     {
       "word": "chair",
       "concept": "household_object"
+    },
+    {
+      "word": "challenge",
+      "concept": "can_and_cannot"
     },
     {
       "word": "chamber",
@@ -1533,8 +2077,16 @@
       "concept": "spatial_position"
     },
     {
+      "word": "chapter",
+      "concept": "written_record"
+    },
+    {
       "word": "character",
       "concept": "person"
+    },
+    {
+      "word": "characteristic",
+      "concept": "physical_property"
     },
     {
       "word": "charge",
@@ -1569,11 +2121,19 @@
       "concept": "feeling"
     },
     {
+      "word": "cheerful",
+      "concept": "feeling"
+    },
+    {
       "word": "cheese",
       "concept": "raw_and_made"
     },
     {
       "word": "chemical",
+      "concept": "material"
+    },
+    {
+      "word": "chemically",
       "concept": "material"
     },
     {
@@ -1593,12 +2153,32 @@
       "concept": "animal"
     },
     {
+      "word": "chicken",
+      "concept": "animal"
+    },
+    {
+      "word": "chiefly",
+      "concept": "more_and_fewer"
+    },
+    {
       "word": "child",
       "concept": "person"
     },
     {
       "word": "childhood",
       "concept": "duration"
+    },
+    {
+      "word": "chip",
+      "concept": "things_break"
+    },
+    {
+      "word": "chloride",
+      "concept": "material"
+    },
+    {
+      "word": "chlorine",
+      "concept": "material"
     },
     {
       "word": "choice",
@@ -1610,6 +2190,14 @@
       "synonyms": [
         "pick"
       ]
+    },
+    {
+      "word": "chronic",
+      "concept": "being_hurt"
+    },
+    {
+      "word": "chunk",
+      "concept": "quantity"
     },
     {
       "word": "church",
@@ -1628,8 +2216,16 @@
       "concept": "shape"
     },
     {
+      "word": "circulate",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "circulation",
       "concept": "cycle"
+    },
+    {
+      "word": "circumference",
+      "concept": "shape"
     },
     {
       "word": "cirrostratus",
@@ -1640,8 +2236,16 @@
       "concept": "weather"
     },
     {
+      "word": "cistern",
+      "concept": "liquid"
+    },
+    {
       "word": "cite",
       "concept": "reporting"
+    },
+    {
+      "word": "citizen",
+      "concept": "people_together"
     },
     {
       "word": "city",
@@ -1672,6 +2276,10 @@
       "concept": "people_together"
     },
     {
+      "word": "claw",
+      "concept": "body_part"
+    },
+    {
       "word": "clay",
       "concept": "material"
     },
@@ -1696,6 +2304,10 @@
     {
       "word": "clearly",
       "concept": "physical_property"
+    },
+    {
+      "word": "clerk",
+      "concept": "person"
     },
     {
       "word": "clever",
@@ -1725,6 +2337,10 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "cling",
+      "concept": "touching"
+    },
+    {
       "word": "clink",
       "concept": "sound"
     },
@@ -1741,12 +2357,20 @@
       "concept": "direction"
     },
     {
+      "word": "clog",
+      "concept": "opening_and_shutting"
+    },
+    {
       "word": "close",
       "concept": "opening_and_shutting",
       "synonyms": [
         "end",
         "shut"
       ]
+    },
+    {
+      "word": "closely",
+      "concept": "checking"
     },
     {
       "word": "cloth",
@@ -1757,12 +2381,20 @@
       "concept": "weather"
     },
     {
+      "word": "cloudiness",
+      "concept": "physical_property"
+    },
+    {
       "word": "cloudy",
       "concept": "weather"
     },
     {
       "word": "clue",
       "concept": "finding_out"
+    },
+    {
+      "word": "clump",
+      "concept": "grouping"
     },
     {
       "word": "cluster",
@@ -1773,6 +2405,10 @@
       "concept": "material"
     },
     {
+      "word": "coalescence",
+      "concept": "joining_and_separating"
+    },
+    {
       "word": "coast",
       "concept": "spatial_position"
     },
@@ -1781,8 +2417,16 @@
       "concept": "spatial_position"
     },
     {
+      "word": "coastline",
+      "concept": "spatial_position"
+    },
+    {
       "word": "coat",
       "concept": "household_object"
+    },
+    {
+      "word": "code",
+      "concept": "standing_for"
     },
     {
       "word": "coffee",
@@ -1810,6 +2454,10 @@
       "antonyms": [
         "hot"
       ]
+    },
+    {
+      "word": "coliform",
+      "concept": "living_and_not_living"
     },
     {
       "word": "collapse",
@@ -1842,6 +2490,10 @@
     {
       "word": "colony",
       "concept": "people_together"
+    },
+    {
+      "word": "color",
+      "concept": "change"
     },
     {
       "word": "color",
@@ -1903,12 +2555,24 @@
       "concept": "tending"
     },
     {
+      "word": "communicate",
+      "concept": "being_told"
+    },
+    {
       "word": "communication",
       "concept": "reporting"
     },
     {
       "word": "community",
       "concept": "people_together"
+    },
+    {
+      "word": "compact",
+      "concept": "joining_and_separating"
+    },
+    {
+      "word": "compaction",
+      "concept": "joining_and_separating"
     },
     {
       "word": "company",
@@ -1921,6 +2585,22 @@
     {
       "word": "comparison",
       "concept": "same_and_different"
+    },
+    {
+      "word": "compatibility",
+      "concept": "same_and_different"
+    },
+    {
+      "word": "compelling",
+      "concept": "giving_a_reason"
+    },
+    {
+      "word": "compilation",
+      "concept": "written_record"
+    },
+    {
+      "word": "compile",
+      "concept": "written_record"
     },
     {
       "word": "complete",
@@ -1951,6 +2631,10 @@
       "concept": "material"
     },
     {
+      "word": "comprehensive",
+      "concept": "all_some_none"
+    },
+    {
       "word": "compress",
       "concept": "force"
     },
@@ -1959,8 +2643,16 @@
       "concept": "physical_property"
     },
     {
+      "word": "compressor",
+      "concept": "component_and_system"
+    },
+    {
       "word": "comprise",
       "concept": "component_and_system"
+    },
+    {
+      "word": "compute",
+      "concept": "counting"
     },
     {
       "word": "computer",
@@ -1971,12 +2663,24 @@
       "concept": "quantity"
     },
     {
+      "word": "concentration",
+      "concept": "quantity"
+    },
+    {
+      "word": "concept",
+      "concept": "knowing"
+    },
+    {
       "word": "concern",
       "concept": "feeling"
     },
     {
       "word": "concerning",
       "concept": "reporting"
+    },
+    {
+      "word": "concrete",
+      "concept": "material"
     },
     {
       "word": "condensation",
@@ -1991,6 +2695,18 @@
       "concept": "physical_property"
     },
     {
+      "word": "conductance",
+      "concept": "physical_property"
+    },
+    {
+      "word": "conductivity",
+      "concept": "physical_property"
+    },
+    {
+      "word": "conductor",
+      "concept": "physical_property"
+    },
+    {
       "word": "cone",
       "concept": "shape"
     },
@@ -1999,7 +2715,23 @@
       "concept": "toy"
     },
     {
+      "word": "confine",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "confusion",
+      "concept": "knowing"
+    },
+    {
+      "word": "consequently",
+      "concept": "cause_and_effect"
+    },
+    {
       "word": "conservation",
+      "concept": "using_up"
+    },
+    {
+      "word": "conserve",
       "concept": "using_up"
     },
     {
@@ -2019,6 +2751,10 @@
       "concept": "component_and_system"
     },
     {
+      "word": "consistent",
+      "concept": "same_and_different"
+    },
+    {
       "word": "constant",
       "concept": "change"
     },
@@ -2029,6 +2765,14 @@
     {
       "word": "constellation",
       "concept": "grouping"
+    },
+    {
+      "word": "constituent",
+      "concept": "component_and_system"
+    },
+    {
+      "word": "construct",
+      "concept": "raw_and_made"
     },
     {
       "word": "construction",
@@ -2044,6 +2788,10 @@
     },
     {
       "word": "consumption",
+      "concept": "using_up"
+    },
+    {
+      "word": "consumptive",
       "concept": "using_up"
     },
     {
@@ -2065,6 +2813,10 @@
     {
       "word": "contaminate",
       "concept": "physical_property"
+    },
+    {
+      "word": "contamination",
+      "concept": "good_and_bad"
     },
     {
       "word": "contented",
@@ -2091,12 +2843,24 @@
       "concept": "keeping_going"
     },
     {
+      "word": "continuously",
+      "concept": "keeping_going"
+    },
+    {
+      "word": "contour",
+      "concept": "shape"
+    },
+    {
       "word": "contrast",
       "concept": "same_and_different"
     },
     {
       "word": "contribute",
       "concept": "giving_a_reason"
+    },
+    {
+      "word": "contribution",
+      "concept": "addition"
     },
     {
       "word": "control",
@@ -2111,12 +2875,20 @@
       "concept": "heat"
     },
     {
+      "word": "convenient",
+      "concept": "good_and_bad"
+    },
+    {
       "word": "convention",
       "concept": "rule"
     },
     {
       "word": "conventional",
       "concept": "same_and_different"
+    },
+    {
+      "word": "converge",
+      "concept": "direction"
     },
     {
       "word": "conversion",
@@ -2142,8 +2914,16 @@
       ]
     },
     {
+      "word": "cooker",
+      "concept": "household_object"
+    },
+    {
       "word": "cookie",
       "concept": "raw_and_made"
+    },
+    {
+      "word": "cool",
+      "concept": "change"
     },
     {
       "word": "cool",
@@ -2181,8 +2961,16 @@
       "concept": "animal"
     },
     {
+      "word": "cord",
+      "concept": "household_object"
+    },
+    {
       "word": "core",
       "concept": "component_and_system"
+    },
+    {
+      "word": "cork",
+      "concept": "material"
     },
     {
       "word": "corn",
@@ -2205,6 +2993,10 @@
       "concept": "mistake"
     },
     {
+      "word": "correspond",
+      "concept": "correspondence"
+    },
+    {
       "word": "cosmologist",
       "concept": "person"
     },
@@ -2214,6 +3006,14 @@
       "synonyms": [
         "pay"
       ]
+    },
+    {
+      "word": "costly",
+      "concept": "exchange"
+    },
+    {
+      "word": "cottage",
+      "concept": "household_object"
     },
     {
       "word": "count",
@@ -2252,6 +3052,10 @@
       "concept": "family"
     },
     {
+      "word": "covalent",
+      "concept": "force"
+    },
+    {
       "word": "cover",
       "concept": "opening_and_shutting",
       "antonyms": [
@@ -2269,6 +3073,10 @@
     {
       "word": "crack",
       "concept": "things_break"
+    },
+    {
+      "word": "crank",
+      "concept": "household_object"
     },
     {
       "word": "crash",
@@ -2315,12 +3123,24 @@
       "concept": "feeling"
     },
     {
+      "word": "crossword",
+      "concept": "toy"
+    },
+    {
       "word": "crown",
       "concept": "household_object"
     },
     {
+      "word": "crucial",
+      "concept": "need"
+    },
+    {
       "word": "crude",
       "concept": "raw_and_made"
+    },
+    {
+      "word": "crumb",
+      "concept": "quantity"
     },
     {
       "word": "crust",
@@ -2340,6 +3160,10 @@
     {
       "word": "crystal",
       "concept": "material"
+    },
+    {
+      "word": "crystalline",
+      "concept": "shape"
     },
     {
       "word": "cube",
@@ -2366,12 +3190,24 @@
       "concept": "unit"
     },
     {
+      "word": "curb",
+      "concept": "spatial_position"
+    },
+    {
       "word": "curious",
       "concept": "finding_out"
     },
     {
+      "word": "curl",
+      "concept": "shape"
+    },
+    {
       "word": "current",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "currently",
+      "concept": "duration"
     },
     {
       "word": "curtain",
@@ -2412,6 +3248,10 @@
       "concept": "weather"
     },
     {
+      "word": "cylinder",
+      "concept": "shape"
+    },
+    {
       "word": "dad",
       "concept": "family",
       "synonyms": [
@@ -2433,6 +3273,10 @@
     {
       "word": "damage",
       "concept": "things_break"
+    },
+    {
+      "word": "dance",
+      "concept": "activity"
     },
     {
       "word": "dancing",
@@ -2467,6 +3311,10 @@
     },
     {
       "word": "data",
+      "concept": "written_record"
+    },
+    {
+      "word": "database",
       "concept": "written_record"
     },
     {
@@ -2523,12 +3371,20 @@
       "concept": "toy"
     },
     {
+      "word": "decay",
+      "concept": "change"
+    },
+    {
       "word": "decide",
       "concept": "settling_it"
     },
     {
       "word": "decimal",
       "concept": "place_value"
+    },
+    {
+      "word": "decision",
+      "concept": "choosing"
     },
     {
       "word": "deck",
@@ -2551,6 +3407,10 @@
       "concept": "more_and_fewer"
     },
     {
+      "word": "dedicate",
+      "concept": "goal"
+    },
+    {
       "word": "deep",
       "concept": "spatial_position",
       "antonyms": [
@@ -2566,6 +3426,10 @@
       "concept": "danger"
     },
     {
+      "word": "definitely",
+      "concept": "how_sure"
+    },
+    {
       "word": "definition",
       "concept": "word"
     },
@@ -2574,8 +3438,24 @@
       "concept": "unit"
     },
     {
+      "word": "delicate",
+      "concept": "physical_property"
+    },
+    {
+      "word": "delicious",
+      "concept": "feeling"
+    },
+    {
       "word": "delight",
       "concept": "feeling"
+    },
+    {
+      "word": "deliver",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "delivery",
+      "concept": "exchange"
     },
     {
       "word": "demand",
@@ -2594,12 +3474,44 @@
       "concept": "physical_property"
     },
     {
+      "word": "department",
+      "concept": "people_together"
+    },
+    {
       "word": "depend",
       "concept": "resting_on_a_guess"
     },
     {
+      "word": "dependent",
+      "concept": "need"
+    },
+    {
+      "word": "depict",
+      "concept": "standing_for"
+    },
+    {
+      "word": "deplete",
+      "concept": "using_up"
+    },
+    {
+      "word": "depletion",
+      "concept": "using_up"
+    },
+    {
+      "word": "deploy",
+      "concept": "doing_in_order"
+    },
+    {
+      "word": "deployment",
+      "concept": "doing_in_order"
+    },
+    {
       "word": "deposit",
       "concept": "material"
+    },
+    {
+      "word": "deposition",
+      "concept": "stock_and_flow"
     },
     {
       "word": "depression",
@@ -2614,8 +3526,24 @@
       "concept": "weather"
     },
     {
+      "word": "desalinate",
+      "concept": "liquid"
+    },
+    {
+      "word": "desalination",
+      "concept": "liquid"
+    },
+    {
+      "word": "descend",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "describe",
       "concept": "saying_what_you_saw"
+    },
+    {
+      "word": "description",
+      "concept": "reporting"
     },
     {
       "word": "desert",
@@ -2626,8 +3554,20 @@
       "concept": "raw_and_made"
     },
     {
+      "word": "desirable",
+      "concept": "good_and_bad"
+    },
+    {
       "word": "desk",
       "concept": "household_object"
+    },
+    {
+      "word": "despair",
+      "concept": "feeling"
+    },
+    {
+      "word": "desperately",
+      "concept": "keep_trying_or_stop"
     },
     {
       "word": "despite",
@@ -2650,8 +3590,20 @@
       "concept": "finding_out"
     },
     {
+      "word": "detergent",
+      "concept": "household_object"
+    },
+    {
+      "word": "deterioration",
+      "concept": "wearing_out"
+    },
+    {
       "word": "determine",
       "concept": "finding_out"
+    },
+    {
+      "word": "detrimental",
+      "concept": "good_and_bad"
     },
     {
       "word": "devastating",
@@ -2686,6 +3638,10 @@
       "concept": "written_record"
     },
     {
+      "word": "dictionary",
+      "concept": "written_record"
+    },
+    {
       "word": "die",
       "concept": "dying",
       "antonyms": [
@@ -2695,6 +3651,14 @@
     {
       "word": "diesel",
       "concept": "liquid"
+    },
+    {
+      "word": "diet",
+      "concept": "needing_supply"
+    },
+    {
+      "word": "differ",
+      "concept": "same_and_different"
     },
     {
       "word": "difference",
@@ -2712,12 +3676,24 @@
       "concept": "same_and_different"
     },
     {
+      "word": "differently",
+      "concept": "same_and_different"
+    },
+    {
       "word": "difficult",
+      "concept": "can_and_cannot"
+    },
+    {
+      "word": "difficulty",
       "concept": "can_and_cannot"
     },
     {
       "word": "dig",
       "concept": "activity"
+    },
+    {
+      "word": "digest",
+      "concept": "change"
     },
     {
       "word": "digester",
@@ -2728,8 +3704,16 @@
       "concept": "place_value"
     },
     {
+      "word": "digital",
+      "concept": "standing_for"
+    },
+    {
       "word": "diligent",
       "concept": "activity"
+    },
+    {
+      "word": "diligently",
+      "concept": "keeping_going"
     },
     {
       "word": "dim",
@@ -2740,6 +3724,10 @@
       "concept": "exchange"
     },
     {
+      "word": "diminish",
+      "concept": "more_and_fewer"
+    },
+    {
       "word": "dinner",
       "concept": "needing_supply"
     },
@@ -2748,11 +3736,19 @@
       "concept": "material"
     },
     {
+      "word": "dip",
+      "concept": "shape"
+    },
+    {
       "word": "direct",
       "concept": "direction"
     },
     {
       "word": "direction",
+      "concept": "direction"
+    },
+    {
+      "word": "directional",
       "concept": "direction"
     },
     {
@@ -2778,12 +3774,28 @@
       ]
     },
     {
+      "word": "disagreeable",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "disappear",
+      "concept": "presence"
+    },
+    {
       "word": "disaster",
       "concept": "danger"
     },
     {
+      "word": "disc",
+      "concept": "shape"
+    },
+    {
       "word": "discharge",
       "concept": "liquid"
+    },
+    {
+      "word": "discourage",
+      "concept": "feeling"
     },
     {
       "word": "discover",
@@ -2794,6 +3806,22 @@
       "concept": "finding_out"
     },
     {
+      "word": "discuss",
+      "concept": "asking"
+    },
+    {
+      "word": "discussion",
+      "concept": "asking"
+    },
+    {
+      "word": "disease",
+      "concept": "being_hurt"
+    },
+    {
+      "word": "disgrace",
+      "concept": "judged_by_another"
+    },
+    {
       "word": "dish",
       "concept": "household_object"
     },
@@ -2802,12 +3830,40 @@
       "concept": "household_object"
     },
     {
+      "word": "disinfectant",
+      "concept": "being_hurt"
+    },
+    {
+      "word": "disinfection",
+      "concept": "danger"
+    },
+    {
       "word": "dismal",
       "concept": "feeling"
     },
     {
+      "word": "display",
+      "concept": "saying_what_you_saw"
+    },
+    {
+      "word": "disposal",
+      "concept": "using_up"
+    },
+    {
+      "word": "dispose",
+      "concept": "using_up"
+    },
+    {
       "word": "disposition",
       "concept": "tending"
+    },
+    {
+      "word": "disrupt",
+      "concept": "change"
+    },
+    {
+      "word": "dissolution",
+      "concept": "liquid"
     },
     {
       "word": "dissolve",
@@ -2826,6 +3882,10 @@
       "concept": "liquid"
     },
     {
+      "word": "distillation",
+      "concept": "change"
+    },
+    {
       "word": "distinct",
       "concept": "same_and_different"
     },
@@ -2836,6 +3896,14 @@
     {
       "word": "distinguish",
       "concept": "same_and_different"
+    },
+    {
+      "word": "distress",
+      "concept": "feeling"
+    },
+    {
+      "word": "distribute",
+      "concept": "grouping"
     },
     {
       "word": "distribution",
@@ -2850,12 +3918,28 @@
       "concept": "change"
     },
     {
+      "word": "ditch",
+      "concept": "shape"
+    },
+    {
+      "word": "diversion",
+      "concept": "direction"
+    },
+    {
+      "word": "divert",
+      "concept": "direction"
+    },
+    {
       "word": "divide",
       "concept": "joining_and_separating"
     },
     {
       "word": "division",
       "concept": "joining_and_separating"
+    },
+    {
+      "word": "document",
+      "concept": "written_record"
     },
     {
       "word": "dog",
@@ -2884,6 +3968,14 @@
     {
       "word": "door",
       "concept": "household_object"
+    },
+    {
+      "word": "doorstep",
+      "concept": "household_object"
+    },
+    {
+      "word": "dose",
+      "concept": "quantity"
     },
     {
       "word": "dot",
@@ -2921,8 +4013,16 @@
       "concept": "direction"
     },
     {
+      "word": "download",
+      "concept": "written_record"
+    },
+    {
       "word": "downstream",
       "concept": "direction"
+    },
+    {
+      "word": "downtown",
+      "concept": "spatial_position"
     },
     {
       "word": "downward",
@@ -2931,6 +4031,14 @@
     {
       "word": "downwind",
       "concept": "direction"
+    },
+    {
+      "word": "dowser",
+      "concept": "taking_on_faith"
+    },
+    {
+      "word": "dowsing",
+      "concept": "taking_on_faith"
     },
     {
       "word": "dozen",
@@ -2952,6 +4060,10 @@
       "concept": "liquid"
     },
     {
+      "word": "dramatic",
+      "concept": "change"
+    },
+    {
       "word": "drank",
       "concept": "liquid"
     },
@@ -2966,6 +4078,14 @@
     {
       "word": "dream",
       "concept": "real_and_pretend"
+    },
+    {
+      "word": "dreary",
+      "concept": "feeling"
+    },
+    {
+      "word": "dredge",
+      "concept": "change"
     },
     {
       "word": "dress",
@@ -2992,8 +4112,16 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "driveway",
+      "concept": "spatial_position"
+    },
+    {
       "word": "drizzle",
       "concept": "weather"
+    },
+    {
+      "word": "drone",
+      "concept": "animal"
     },
     {
       "word": "drop",
@@ -3008,11 +4136,23 @@
       "concept": "weather"
     },
     {
+      "word": "drown",
+      "concept": "dying"
+    },
+    {
+      "word": "drug",
+      "concept": "being_hurt"
+    },
+    {
       "word": "dry",
       "concept": "physical_property",
       "antonyms": [
         "wet"
       ]
+    },
+    {
+      "word": "dryer",
+      "concept": "household_object"
     },
     {
       "word": "dryness",
@@ -3023,11 +4163,19 @@
       "concept": "animal"
     },
     {
+      "word": "duct",
+      "concept": "shape"
+    },
+    {
       "word": "dull",
       "concept": "physical_property",
       "antonyms": [
         "sharp"
       ]
+    },
+    {
+      "word": "dump",
+      "concept": "using_up"
     },
     {
       "word": "duration",
@@ -3040,6 +4188,10 @@
     {
       "word": "dust",
       "concept": "material"
+    },
+    {
+      "word": "dusty",
+      "concept": "physical_property"
     },
     {
       "word": "duty",
@@ -3077,6 +4229,10 @@
       "concept": "exchange"
     },
     {
+      "word": "earnest",
+      "concept": "feeling"
+    },
+    {
       "word": "earth",
       "concept": "material"
     },
@@ -3085,11 +4241,19 @@
       "concept": "force"
     },
     {
+      "word": "earthy",
+      "concept": "physical_property"
+    },
+    {
       "word": "easily",
       "concept": "physical_property"
     },
     {
       "word": "east",
+      "concept": "direction"
+    },
+    {
+      "word": "eastern",
       "concept": "direction"
     },
     {
@@ -3116,6 +4280,14 @@
       "concept": "cycle"
     },
     {
+      "word": "ecological",
+      "concept": "living_and_not_living"
+    },
+    {
+      "word": "ecology",
+      "concept": "living_and_not_living"
+    },
+    {
       "word": "economic",
       "concept": "exchange"
     },
@@ -3136,6 +4308,10 @@
       "concept": "written_record"
     },
     {
+      "word": "educator",
+      "concept": "person"
+    },
+    {
       "word": "effect",
       "concept": "cause_and_effect"
     },
@@ -3150,6 +4326,14 @@
     {
       "word": "efficient",
       "concept": "using_up"
+    },
+    {
+      "word": "effluent",
+      "concept": "liquid"
+    },
+    {
+      "word": "effort",
+      "concept": "keep_trying_or_stop"
     },
     {
       "word": "egg",
@@ -3168,11 +4352,23 @@
       "concept": "not_both"
     },
     {
+      "word": "elder",
+      "concept": "person"
+    },
+    {
+      "word": "election",
+      "concept": "choosing"
+    },
+    {
       "word": "electric",
       "concept": "force"
     },
     {
       "word": "electrical",
+      "concept": "force"
+    },
+    {
+      "word": "electrically",
       "concept": "force"
     },
     {
@@ -3194,6 +4390,10 @@
     {
       "word": "elephant",
       "concept": "animal"
+    },
+    {
+      "word": "elevate",
+      "concept": "spatial_position"
     },
     {
       "word": "elevation",
@@ -3236,12 +4436,24 @@
       "concept": "discourse_marker"
     },
     {
+      "word": "employ",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "employment",
+      "concept": "activity"
+    },
+    {
       "word": "empty",
       "concept": "emptiness",
       "antonyms": [
         "fill",
         "full"
       ]
+    },
+    {
+      "word": "empty",
+      "concept": "liquid"
     },
     {
       "word": "end",
@@ -3253,6 +4465,10 @@
         "close",
         "finish"
       ]
+    },
+    {
+      "word": "endangered",
+      "concept": "danger"
     },
     {
       "word": "enemy",
@@ -3309,12 +4525,20 @@
       "concept": "all_some_none"
     },
     {
+      "word": "entryway",
+      "concept": "spatial_position"
+    },
+    {
       "word": "environment",
       "concept": "spatial_position"
     },
     {
       "word": "environmental",
       "concept": "spatial_position"
+    },
+    {
+      "word": "envy",
+      "concept": "feeling"
     },
     {
       "word": "equal",
@@ -3325,12 +4549,20 @@
       "concept": "spatial_position"
     },
     {
+      "word": "equilibrium",
+      "concept": "balance"
+    },
+    {
       "word": "equipment",
       "concept": "household_object"
     },
     {
       "word": "equivalent",
       "concept": "same_amount"
+    },
+    {
+      "word": "erosion",
+      "concept": "wearing_out"
     },
     {
       "word": "eruption",
@@ -3353,6 +4585,10 @@
       "concept": "same_and_different"
     },
     {
+      "word": "establish",
+      "concept": "raw_and_made"
+    },
+    {
       "word": "estimate",
       "concept": "close_enough"
     },
@@ -3367,6 +4603,14 @@
     {
       "word": "ethanol",
       "concept": "liquid"
+    },
+    {
+      "word": "eutrophication",
+      "concept": "cause_and_effect"
+    },
+    {
+      "word": "evacuate",
+      "concept": "danger"
     },
     {
       "word": "evacuation",
@@ -3385,11 +4629,19 @@
       "concept": "liquid"
     },
     {
+      "word": "evapotranspiration",
+      "concept": "stock_and_flow"
+    },
+    {
       "word": "evening",
       "concept": "cycle",
       "antonyms": [
         "morning"
       ]
+    },
+    {
+      "word": "evenly",
+      "concept": "same_amount"
     },
     {
       "word": "event",
@@ -3402,6 +4654,10 @@
     {
       "word": "ever",
       "concept": "sequence"
+    },
+    {
+      "word": "everybody",
+      "concept": "person"
     },
     {
       "word": "everyday",
@@ -3430,8 +4686,20 @@
       "concept": "settling_it"
     },
     {
+      "word": "evident",
+      "concept": "how_sure"
+    },
+    {
+      "word": "evidently",
+      "concept": "how_sure"
+    },
+    {
       "word": "evil",
       "concept": "good_and_bad"
+    },
+    {
+      "word": "evolve",
+      "concept": "change"
     },
     {
       "word": "exact",
@@ -3470,6 +4738,14 @@
       "concept": "more_and_fewer"
     },
     {
+      "word": "excessive",
+      "concept": "enough"
+    },
+    {
+      "word": "excite",
+      "concept": "feeling"
+    },
+    {
       "word": "exciting",
       "concept": "feeling"
     },
@@ -3482,8 +4758,16 @@
       "concept": "force"
     },
     {
+      "word": "exhaust",
+      "concept": "air"
+    },
+    {
       "word": "exist",
       "concept": "real_and_pretend"
+    },
+    {
+      "word": "existence",
+      "concept": "presence"
     },
     {
       "word": "exoplanet",
@@ -3511,11 +4795,19 @@
     },
     {
       "word": "experience",
+      "concept": "feeling"
+    },
+    {
+      "word": "experience",
       "concept": "knowing"
     },
     {
       "word": "experiment",
       "concept": "checking"
+    },
+    {
+      "word": "expert",
+      "concept": "knowing"
     },
     {
       "word": "explain",
@@ -3526,6 +4818,10 @@
       "concept": "explanation"
     },
     {
+      "word": "explode",
+      "concept": "things_break"
+    },
+    {
       "word": "explore",
       "concept": "finding_out"
     },
@@ -3534,8 +4830,20 @@
       "concept": "things_break"
     },
     {
+      "word": "explosive",
+      "concept": "things_break"
+    },
+    {
       "word": "export",
       "concept": "exchange"
+    },
+    {
+      "word": "exporter",
+      "concept": "exchange"
+    },
+    {
+      "word": "expose",
+      "concept": "inside_and_outside"
     },
     {
       "word": "exposure",
@@ -3554,11 +4862,19 @@
       "concept": "measuring"
     },
     {
+      "word": "external",
+      "concept": "inside_and_outside"
+    },
+    {
       "word": "extra",
       "concept": "only_what_was_asked",
       "synonyms": [
         "spare"
       ]
+    },
+    {
+      "word": "extract",
+      "concept": "joining_and_separating"
     },
     {
       "word": "extraction",
@@ -3589,6 +4905,10 @@
       "concept": "body_part"
     },
     {
+      "word": "facilitate",
+      "concept": "can_and_cannot"
+    },
+    {
       "word": "facility",
       "concept": "spatial_position"
     },
@@ -3607,6 +4927,10 @@
     {
       "word": "fail",
       "concept": "failing"
+    },
+    {
+      "word": "faint",
+      "concept": "physical_property"
     },
     {
       "word": "fair",
@@ -3677,8 +5001,16 @@
       "concept": "person"
     },
     {
+      "word": "farmland",
+      "concept": "plant"
+    },
+    {
       "word": "farther",
       "concept": "spatial_position"
+    },
+    {
+      "word": "fascinate",
+      "concept": "feeling"
     },
     {
       "word": "fast",
@@ -3691,11 +5023,23 @@
       ]
     },
     {
+      "word": "fasten",
+      "concept": "joining_and_separating"
+    },
+    {
       "word": "fat",
       "concept": "physical_property",
       "antonyms": [
         "thin"
       ]
+    },
+    {
+      "word": "fatal",
+      "concept": "dying"
+    },
+    {
+      "word": "fate",
+      "concept": "not_always_known"
     },
     {
       "word": "father",
@@ -3716,12 +5060,24 @@
       "concept": "mistake"
     },
     {
+      "word": "favorable",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "favorite",
+      "concept": "choosing"
+    },
+    {
       "word": "fawn",
       "concept": "animal"
     },
     {
       "word": "fear",
       "concept": "feeling"
+    },
+    {
+      "word": "feasible",
+      "concept": "can_and_cannot"
     },
     {
       "word": "feast",
@@ -3736,11 +5092,23 @@
       "concept": "component_and_system"
     },
     {
+      "word": "fecal",
+      "concept": "body_part"
+    },
+    {
+      "word": "feces",
+      "concept": "body_part"
+    },
+    {
       "word": "federal",
       "concept": "someone_in_charge"
     },
     {
       "word": "feed",
+      "concept": "needing_supply"
+    },
+    {
+      "word": "feedlot",
       "concept": "needing_supply"
     },
     {
@@ -3782,8 +5150,16 @@
       "concept": "material"
     },
     {
+      "word": "fiddler",
+      "concept": "person"
+    },
+    {
       "word": "field",
       "concept": "spatial_position"
+    },
+    {
+      "word": "fierce",
+      "concept": "danger"
     },
     {
       "word": "fifteen",
@@ -3792,6 +5168,14 @@
     {
       "word": "fifty",
       "concept": "natural_number"
+    },
+    {
+      "word": "fig",
+      "concept": "plant"
+    },
+    {
+      "word": "fight",
+      "concept": "disagreeing"
     },
     {
       "word": "figure",
@@ -3821,12 +5205,24 @@
       "concept": "joining_and_separating"
     },
     {
+      "word": "filtration",
+      "concept": "liquid"
+    },
+    {
+      "word": "final",
+      "concept": "sequence"
+    },
+    {
       "word": "finally",
       "concept": "sequence"
     },
     {
       "word": "financial",
       "concept": "exchange"
+    },
+    {
+      "word": "findings",
+      "concept": "finding_out"
     },
     {
       "word": "fine",
@@ -3849,6 +5245,10 @@
     },
     {
       "word": "firm",
+      "concept": "physical_property"
+    },
+    {
+      "word": "firmly",
       "concept": "physical_property"
     },
     {
@@ -3882,6 +5282,10 @@
       ]
     },
     {
+      "word": "fixture",
+      "concept": "household_object"
+    },
+    {
       "word": "flag",
       "concept": "standing_for"
     },
@@ -3900,6 +5304,10 @@
     {
       "word": "flatten",
       "concept": "shape"
+    },
+    {
+      "word": "flee",
+      "concept": "moving_and_still"
     },
     {
       "word": "flight",
@@ -3921,7 +5329,15 @@
       "concept": "weather"
     },
     {
+      "word": "floodplain",
+      "concept": "spatial_position"
+    },
+    {
       "word": "floor",
+      "concept": "household_object"
+    },
+    {
+      "word": "floss",
       "concept": "household_object"
     },
     {
@@ -3939,6 +5355,14 @@
     {
       "word": "fluid",
       "concept": "liquid"
+    },
+    {
+      "word": "flush",
+      "concept": "liquid"
+    },
+    {
+      "word": "flux",
+      "concept": "stock_and_flow"
     },
     {
       "word": "fly",
@@ -3959,6 +5383,10 @@
     {
       "word": "fold",
       "concept": "shape"
+    },
+    {
+      "word": "folks",
+      "concept": "person"
     },
     {
       "word": "follow",
@@ -4036,6 +5464,14 @@
       "concept": "change"
     },
     {
+      "word": "former",
+      "concept": "duration"
+    },
+    {
+      "word": "fortunate",
+      "concept": "how_sure"
+    },
+    {
       "word": "forty",
       "concept": "natural_number"
     },
@@ -4046,6 +5482,10 @@
     {
       "word": "fossil",
       "concept": "living_and_not_living"
+    },
+    {
+      "word": "foundation",
+      "concept": "component_and_system"
     },
     {
       "word": "fountain",
@@ -4068,6 +5508,10 @@
       "concept": "force"
     },
     {
+      "word": "fraction",
+      "concept": "quantity"
+    },
+    {
       "word": "fracture",
       "concept": "things_break"
     },
@@ -4077,6 +5521,10 @@
     },
     {
       "word": "free",
+      "concept": "allowed_or_not"
+    },
+    {
+      "word": "freely",
       "concept": "allowed_or_not"
     },
     {
@@ -4090,6 +5538,10 @@
     {
       "word": "frequent",
       "concept": "tending"
+    },
+    {
+      "word": "frequently",
+      "concept": "cycle"
     },
     {
       "word": "fresh",
@@ -4109,6 +5561,18 @@
       "antonyms": [
         "enemy"
       ]
+    },
+    {
+      "word": "friendly",
+      "concept": "people_together"
+    },
+    {
+      "word": "friendship",
+      "concept": "people_together"
+    },
+    {
+      "word": "fright",
+      "concept": "feeling"
     },
     {
       "word": "frightened",
@@ -4157,6 +5621,10 @@
       "concept": "feeling"
     },
     {
+      "word": "fundamental",
+      "concept": "component_and_system"
+    },
+    {
       "word": "funnel",
       "concept": "shape"
     },
@@ -4167,6 +5635,10 @@
     {
       "word": "fur",
       "concept": "body_part"
+    },
+    {
+      "word": "furiously",
+      "concept": "feeling"
     },
     {
       "word": "furnace",
@@ -4245,6 +5717,10 @@
       "concept": "liquid"
     },
     {
+      "word": "gastrointestinal",
+      "concept": "body_part"
+    },
+    {
       "word": "gate",
       "concept": "opening_and_shutting"
     },
@@ -4281,6 +5757,10 @@
       "concept": "force"
     },
     {
+      "word": "generous",
+      "concept": "exchange"
+    },
+    {
       "word": "gentle",
       "concept": "way_of_doing"
     },
@@ -4291,6 +5771,34 @@
     {
       "word": "geodesy",
       "concept": "measuring"
+    },
+    {
+      "word": "geographic",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "geographically",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "geography",
+      "concept": "knowing"
+    },
+    {
+      "word": "geologic",
+      "concept": "finding_out"
+    },
+    {
+      "word": "geologist",
+      "concept": "finding_out"
+    },
+    {
+      "word": "geology",
+      "concept": "finding_out"
+    },
+    {
+      "word": "geophysical",
+      "concept": "finding_out"
     },
     {
       "word": "geostationary",
@@ -4331,6 +5839,10 @@
       "concept": "exchange"
     },
     {
+      "word": "glacial",
+      "concept": "weather"
+    },
+    {
       "word": "glacier",
       "concept": "material"
     },
@@ -4344,6 +5856,10 @@
     {
       "word": "glass",
       "concept": "material"
+    },
+    {
+      "word": "gleam",
+      "concept": "physical_property"
     },
     {
       "word": "glee",
@@ -4364,6 +5880,10 @@
     {
       "word": "glorious",
       "concept": "good_and_bad"
+    },
+    {
+      "word": "glove",
+      "concept": "household_object"
     },
     {
       "word": "glow",
@@ -4396,6 +5916,10 @@
       "concept": "physical_property"
     },
     {
+      "word": "golf",
+      "concept": "toy"
+    },
+    {
       "word": "gone",
       "concept": "presence"
     },
@@ -4422,12 +5946,28 @@
       "concept": "someone_in_charge"
     },
     {
+      "word": "governmental",
+      "concept": "someone_in_charge"
+    },
+    {
       "word": "grace",
       "concept": "good_and_bad"
     },
     {
       "word": "gradient",
       "concept": "measuring"
+    },
+    {
+      "word": "gradual",
+      "concept": "change"
+    },
+    {
+      "word": "gradually",
+      "concept": "change"
+    },
+    {
+      "word": "graduate",
+      "concept": "knowing"
     },
     {
       "word": "grain",
@@ -4464,6 +6004,10 @@
       ]
     },
     {
+      "word": "granite",
+      "concept": "material"
+    },
+    {
       "word": "grape",
       "concept": "plant"
     },
@@ -4480,8 +6024,16 @@
       "concept": "plant"
     },
     {
+      "word": "grateful",
+      "concept": "thanking"
+    },
+    {
       "word": "grave",
       "concept": "dying"
+    },
+    {
+      "word": "gravel",
+      "concept": "material"
     },
     {
       "word": "gravitational",
@@ -4520,6 +6072,10 @@
       "concept": "shape"
     },
     {
+      "word": "grime",
+      "concept": "material"
+    },
+    {
       "word": "ground",
       "concept": "material"
     },
@@ -4534,6 +6090,10 @@
     {
       "word": "group",
       "concept": "people_together"
+    },
+    {
+      "word": "grove",
+      "concept": "plant"
     },
     {
       "word": "grow",
@@ -4575,6 +6135,18 @@
       "concept": "rule"
     },
     {
+      "word": "guilty",
+      "concept": "fair_and_unfair"
+    },
+    {
+      "word": "gum",
+      "concept": "material"
+    },
+    {
+      "word": "gumdrop",
+      "concept": "raw_and_made"
+    },
+    {
       "word": "gummy",
       "concept": "physical_property"
     },
@@ -4585,6 +6157,10 @@
     {
       "word": "gust",
       "concept": "weather"
+    },
+    {
+      "word": "gypsum",
+      "concept": "material"
     },
     {
       "word": "habit",
@@ -4615,7 +6191,15 @@
       "concept": "emptiness"
     },
     {
+      "word": "halo",
+      "concept": "shape"
+    },
+    {
       "word": "ham",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "hamburger",
       "concept": "raw_and_made"
     },
     {
@@ -4629,6 +6213,10 @@
     {
       "word": "handle",
       "concept": "household_object"
+    },
+    {
+      "word": "handy",
+      "concept": "good_and_bad"
     },
     {
       "word": "hang",
@@ -4706,6 +6294,10 @@
       "concept": "plant"
     },
     {
+      "word": "haste",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "hat",
       "concept": "household_object"
     },
@@ -4745,6 +6337,10 @@
       "concept": "good_and_bad"
     },
     {
+      "word": "healthy",
+      "concept": "being_hurt"
+    },
+    {
       "word": "hear",
       "concept": "body_part",
       "synonyms": [
@@ -4761,6 +6357,10 @@
     },
     {
       "word": "heat",
+      "concept": "heat"
+    },
+    {
+      "word": "heater",
       "concept": "heat"
     },
     {
@@ -4848,7 +6448,23 @@
       ]
     },
     {
+      "word": "highlight",
+      "concept": "saying_what_you_saw"
+    },
+    {
+      "word": "highly",
+      "concept": "quantity"
+    },
+    {
+      "word": "highway",
+      "concept": "spatial_position"
+    },
+    {
       "word": "hill",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "hillside",
       "concept": "spatial_position"
     },
     {
@@ -4866,6 +6482,14 @@
     {
       "word": "hiss",
       "concept": "sound"
+    },
+    {
+      "word": "historic",
+      "concept": "duration"
+    },
+    {
+      "word": "historical",
+      "concept": "duration"
     },
     {
       "word": "history",
@@ -4903,6 +6527,10 @@
       ]
     },
     {
+      "word": "homeowner",
+      "concept": "having"
+    },
+    {
       "word": "homogeneous",
       "concept": "same_and_different"
     },
@@ -4923,12 +6551,24 @@
       "concept": "good_and_bad"
     },
     {
+      "word": "hood",
+      "concept": "household_object"
+    },
+    {
       "word": "hook",
       "concept": "household_object"
     },
     {
       "word": "hope",
       "concept": "feeling"
+    },
+    {
+      "word": "hopefully",
+      "concept": "how_sure"
+    },
+    {
+      "word": "horizon",
+      "concept": "spatial_position"
     },
     {
       "word": "horizontal",
@@ -4941,6 +6581,10 @@
     {
       "word": "horse",
       "concept": "animal"
+    },
+    {
+      "word": "hose",
+      "concept": "household_object"
     },
     {
       "word": "hospital",
@@ -4968,6 +6612,10 @@
     {
       "word": "hourglass",
       "concept": "measuring"
+    },
+    {
+      "word": "hourly",
+      "concept": "duration"
     },
     {
       "word": "house",
@@ -5001,6 +6649,10 @@
       "concept": "people_together"
     },
     {
+      "word": "humid",
+      "concept": "weather"
+    },
+    {
       "word": "humidity",
       "concept": "weather"
     },
@@ -5015,6 +6667,10 @@
     {
       "word": "hungry",
       "concept": "need"
+    },
+    {
+      "word": "hunt",
+      "concept": "activity"
     },
     {
       "word": "hunter",
@@ -5038,6 +6694,10 @@
         "harm",
         "pain"
       ]
+    },
+    {
+      "word": "hybrid",
+      "concept": "same_and_different"
     },
     {
       "word": "hydraulic",
@@ -5064,6 +6724,14 @@
       "concept": "written_record"
     },
     {
+      "word": "hydrologic",
+      "concept": "stock_and_flow"
+    },
+    {
+      "word": "hydrologist",
+      "concept": "finding_out"
+    },
+    {
       "word": "hydrology",
       "concept": "liquid"
     },
@@ -5084,6 +6752,10 @@
       "concept": "claim_under_test"
     },
     {
+      "word": "hypoxic",
+      "concept": "air"
+    },
+    {
       "word": "ice",
       "concept": "material"
     },
@@ -5092,12 +6764,20 @@
       "concept": "liquid"
     },
     {
+      "word": "icecap",
+      "concept": "weather"
+    },
+    {
       "word": "icy",
       "concept": "physical_property"
     },
     {
       "word": "idea",
       "concept": "guess"
+    },
+    {
+      "word": "idealize",
+      "concept": "real_and_pretend"
     },
     {
       "word": "idle",
@@ -5115,6 +6795,18 @@
       ]
     },
     {
+      "word": "illness",
+      "concept": "being_hurt"
+    },
+    {
+      "word": "illusion",
+      "concept": "real_and_pretend"
+    },
+    {
+      "word": "illustrate",
+      "concept": "explanation"
+    },
+    {
       "word": "illustration",
       "concept": "standing_for"
     },
@@ -5127,16 +6819,48 @@
       "concept": "writing"
     },
     {
+      "word": "imagination",
+      "concept": "real_and_pretend"
+    },
+    {
+      "word": "imagine",
+      "concept": "real_and_pretend"
+    },
+    {
+      "word": "immediate",
+      "concept": "duration"
+    },
+    {
       "word": "immediately",
       "concept": "duration"
+    },
+    {
+      "word": "immense",
+      "concept": "quantity"
     },
     {
       "word": "impact",
       "concept": "force"
     },
     {
+      "word": "impeller",
+      "concept": "component_and_system"
+    },
+    {
+      "word": "impermeable",
+      "concept": "physical_property"
+    },
+    {
+      "word": "impervious",
+      "concept": "physical_property"
+    },
+    {
       "word": "import",
       "concept": "exchange"
+    },
+    {
+      "word": "importance",
+      "concept": "good_and_bad"
     },
     {
       "word": "important",
@@ -5150,8 +6874,32 @@
       ]
     },
     {
+      "word": "impoundment",
+      "concept": "liquid"
+    },
+    {
+      "word": "improper",
+      "concept": "should_and_should_not"
+    },
+    {
       "word": "improve",
       "concept": "change"
+    },
+    {
+      "word": "improvement",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "impurity",
+      "concept": "material"
+    },
+    {
+      "word": "inaccurate",
+      "concept": "being_wrong"
+    },
+    {
+      "word": "inactive",
+      "concept": "moving_and_still"
     },
     {
       "word": "inbound",
@@ -5174,6 +6922,14 @@
       "concept": "component_and_system"
     },
     {
+      "word": "incoming",
+      "concept": "direction"
+    },
+    {
+      "word": "incompressibility",
+      "concept": "physical_property"
+    },
+    {
       "word": "incompressible",
       "concept": "physical_property"
     },
@@ -5184,6 +6940,14 @@
     {
       "word": "increasingly",
       "concept": "change"
+    },
+    {
+      "word": "increment",
+      "concept": "quantity"
+    },
+    {
+      "word": "incubate",
+      "concept": "heat"
     },
     {
       "word": "indeed",
@@ -5214,6 +6978,14 @@
       "concept": "physical_property"
     },
     {
+      "word": "indirectly",
+      "concept": "cause_and_effect"
+    },
+    {
+      "word": "indoor",
+      "concept": "inside_and_outside"
+    },
+    {
       "word": "indoors",
       "concept": "inside_and_outside"
     },
@@ -5222,8 +6994,24 @@
       "concept": "raw_and_made"
     },
     {
+      "word": "industrious",
+      "concept": "keeping_going"
+    },
+    {
       "word": "industry",
       "concept": "activity"
+    },
+    {
+      "word": "infection",
+      "concept": "being_hurt"
+    },
+    {
+      "word": "infiltrate",
+      "concept": "liquid"
+    },
+    {
+      "word": "infiltration",
+      "concept": "liquid"
     },
     {
       "word": "inflow",
@@ -5236,6 +7024,10 @@
     {
       "word": "info",
       "concept": "written_record"
+    },
+    {
+      "word": "inform",
+      "concept": "reporting"
     },
     {
       "word": "information",
@@ -5254,6 +7046,10 @@
       "concept": "raw_and_made"
     },
     {
+      "word": "inhabit",
+      "concept": "living_and_not_living"
+    },
+    {
       "word": "inhibit",
       "concept": "can_and_cannot"
     },
@@ -5264,6 +7060,10 @@
     {
       "word": "inject",
       "concept": "force"
+    },
+    {
+      "word": "injection",
+      "concept": "liquid"
     },
     {
       "word": "injury",
@@ -5280,6 +7080,10 @@
     {
       "word": "inner",
       "concept": "inside_and_outside"
+    },
+    {
+      "word": "inorganic",
+      "concept": "living_and_not_living"
     },
     {
       "word": "input",
@@ -5301,11 +7105,23 @@
       "concept": "weather"
     },
     {
+      "word": "insolent",
+      "concept": "good_and_bad"
+    },
+    {
       "word": "install",
       "concept": "component_and_system"
     },
     {
+      "word": "instance",
+      "concept": "same_and_different"
+    },
+    {
       "word": "instant",
+      "concept": "duration"
+    },
+    {
+      "word": "instantaneous",
       "concept": "duration"
     },
     {
@@ -5317,12 +7133,36 @@
       "concept": "discourse_marker"
     },
     {
+      "word": "instruction",
+      "concept": "being_told"
+    },
+    {
       "word": "instrument",
       "concept": "measuring"
     },
     {
+      "word": "insulation",
+      "concept": "heat"
+    },
+    {
       "word": "insulator",
       "concept": "material"
+    },
+    {
+      "word": "insurance",
+      "concept": "exchange"
+    },
+    {
+      "word": "intact",
+      "concept": "things_break"
+    },
+    {
+      "word": "intake",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "intend",
+      "concept": "plan"
     },
     {
       "word": "intense",
@@ -5337,6 +7177,18 @@
       "concept": "quantity"
     },
     {
+      "word": "interact",
+      "concept": "cause_and_effect"
+    },
+    {
+      "word": "interaction",
+      "concept": "cause_and_effect"
+    },
+    {
+      "word": "interconnected",
+      "concept": "joining_and_separating"
+    },
+    {
       "word": "interest",
       "concept": "finding_out"
     },
@@ -5345,8 +7197,64 @@
       "concept": "finding_out"
     },
     {
+      "word": "interglacial",
+      "concept": "weather"
+    },
+    {
+      "word": "intermediate",
+      "concept": "sequence"
+    },
+    {
+      "word": "internal",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "interpret",
+      "concept": "explanation"
+    },
+    {
+      "word": "interstate",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "interval",
+      "concept": "duration"
+    },
+    {
+      "word": "intestinal",
+      "concept": "body_part"
+    },
+    {
+      "word": "intestine",
+      "concept": "body_part"
+    },
+    {
+      "word": "introduce",
+      "concept": "change"
+    },
+    {
+      "word": "intrusion",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "inundation",
+      "concept": "liquid"
+    },
+    {
+      "word": "invaluable",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "invention",
+      "concept": "raw_and_made"
+    },
+    {
       "word": "inversion",
       "concept": "weather"
+    },
+    {
+      "word": "invest",
+      "concept": "exchange"
     },
     {
       "word": "investigate",
@@ -5362,6 +7270,10 @@
     },
     {
       "word": "ion",
+      "concept": "material"
+    },
+    {
+      "word": "ionic",
       "concept": "material"
     },
     {
@@ -5409,8 +7321,16 @@
       "concept": "self_and_other"
     },
     {
+      "word": "ivy",
+      "concept": "plant"
+    },
+    {
       "word": "jacket",
       "concept": "household_object"
+    },
+    {
+      "word": "jam",
+      "concept": "moving_and_still"
     },
     {
       "word": "jar",
@@ -5419,6 +7339,10 @@
     {
       "word": "jet",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "jewelry",
+      "concept": "household_object"
     },
     {
       "word": "job",
@@ -5435,11 +7359,19 @@
       ]
     },
     {
+      "word": "joint",
+      "concept": "body_part"
+    },
+    {
       "word": "journey",
       "concept": "moving_and_still"
     },
     {
       "word": "joy",
+      "concept": "feeling"
+    },
+    {
+      "word": "joyful",
       "concept": "feeling"
     },
     {
@@ -5462,12 +7394,32 @@
       "concept": "person"
     },
     {
+      "word": "kerosene",
+      "concept": "material"
+    },
+    {
       "word": "key",
       "concept": "household_object"
     },
     {
+      "word": "kid",
+      "concept": "person"
+    },
+    {
+      "word": "kidney",
+      "concept": "body_part"
+    },
+    {
       "word": "kill",
       "concept": "dying"
+    },
+    {
+      "word": "kilogram",
+      "concept": "unit"
+    },
+    {
+      "word": "kilometer",
+      "concept": "unit"
     },
     {
       "word": "kilowatt",
@@ -5524,6 +7476,10 @@
       "concept": "body_part"
     },
     {
+      "word": "kneel",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "knew",
       "concept": "knowing"
     },
@@ -5556,11 +7512,23 @@
       "concept": "activity"
     },
     {
+      "word": "laboratory",
+      "concept": "finding_out"
+    },
+    {
       "word": "lack",
       "concept": "enough"
     },
     {
       "word": "lad",
+      "concept": "person"
+    },
+    {
+      "word": "laden",
+      "concept": "quantity"
+    },
+    {
+      "word": "lady",
       "concept": "person"
     },
     {
@@ -5634,8 +7602,20 @@
       ]
     },
     {
+      "word": "latex",
+      "concept": "material"
+    },
+    {
+      "word": "lather",
+      "concept": "household_object"
+    },
+    {
       "word": "latitude",
       "concept": "measuring"
+    },
+    {
+      "word": "lattice",
+      "concept": "shape"
     },
     {
       "word": "laugh",
@@ -5645,12 +7625,28 @@
       ]
     },
     {
+      "word": "laughter",
+      "concept": "sound"
+    },
+    {
       "word": "launch",
       "concept": "moving_and_still"
     },
     {
+      "word": "laundry",
+      "concept": "household_object"
+    },
+    {
+      "word": "lava",
+      "concept": "material"
+    },
+    {
       "word": "law",
       "concept": "rule"
+    },
+    {
+      "word": "lawn",
+      "concept": "plant"
     },
     {
       "word": "lay",
@@ -5659,6 +7655,18 @@
     {
       "word": "layer",
       "concept": "shape"
+    },
+    {
+      "word": "lazy",
+      "concept": "activity"
+    },
+    {
+      "word": "leach",
+      "concept": "liquid"
+    },
+    {
+      "word": "leachate",
+      "concept": "liquid"
     },
     {
       "word": "lead",
@@ -5675,6 +7683,10 @@
     {
       "word": "leak",
       "concept": "things_break"
+    },
+    {
+      "word": "leaky",
+      "concept": "liquid"
     },
     {
       "word": "leap",
@@ -5738,6 +7750,14 @@
       ]
     },
     {
+      "word": "lessen",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "lesser",
+      "concept": "more_and_fewer"
+    },
+    {
       "word": "lesson",
       "concept": "more_to_learn"
     },
@@ -5767,6 +7787,10 @@
     {
       "word": "library",
       "concept": "writing"
+    },
+    {
+      "word": "licorice",
+      "concept": "raw_and_made"
     },
     {
       "word": "lid",
@@ -5806,6 +7830,10 @@
       ]
     },
     {
+      "word": "lighthouse",
+      "concept": "spatial_position"
+    },
+    {
       "word": "lightning",
       "concept": "weather"
     },
@@ -5823,6 +7851,14 @@
     {
       "word": "likely",
       "concept": "how_sure"
+    },
+    {
+      "word": "limb",
+      "concept": "body_part"
+    },
+    {
+      "word": "limestone",
+      "concept": "material"
     },
     {
       "word": "line",
@@ -5872,6 +7908,14 @@
       ]
     },
     {
+      "word": "liter",
+      "concept": "unit"
+    },
+    {
+      "word": "literally",
+      "concept": "word"
+    },
+    {
       "word": "little",
       "concept": "physical_property",
       "synonyms": [
@@ -5887,6 +7931,10 @@
       ]
     },
     {
+      "word": "liver",
+      "concept": "body_part"
+    },
+    {
       "word": "livestock",
       "concept": "animal"
     },
@@ -5895,11 +7943,19 @@
       "concept": "living_and_not_living"
     },
     {
+      "word": "load",
+      "concept": "quantity"
+    },
+    {
       "word": "loaf",
       "concept": "raw_and_made"
     },
     {
       "word": "local",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "localized",
       "concept": "spatial_position"
     },
     {
@@ -5920,6 +7976,10 @@
     {
       "word": "log",
       "concept": "written_record"
+    },
+    {
+      "word": "lonely",
+      "concept": "feeling"
     },
     {
       "word": "long",
@@ -5947,6 +8007,10 @@
     {
       "word": "loop",
       "concept": "shape"
+    },
+    {
+      "word": "loose",
+      "concept": "physical_property"
     },
     {
       "word": "lose",
@@ -5978,11 +8042,19 @@
       ]
     },
     {
+      "word": "loudly",
+      "concept": "sound"
+    },
+    {
       "word": "love",
       "concept": "feeling",
       "antonyms": [
         "hate"
       ]
+    },
+    {
+      "word": "lovely",
+      "concept": "good_and_bad"
     },
     {
       "word": "low",
@@ -5994,6 +8066,10 @@
     {
       "word": "luck",
       "concept": "how_sure"
+    },
+    {
+      "word": "lumber",
+      "concept": "material"
     },
     {
       "word": "lunar",
@@ -6010,6 +8086,10 @@
     {
       "word": "magma",
       "concept": "material"
+    },
+    {
+      "word": "magnesium",
+      "concept": "metal"
     },
     {
       "word": "magnet",
@@ -6071,6 +8151,18 @@
       "concept": "someone_in_charge"
     },
     {
+      "word": "manganese",
+      "concept": "metal"
+    },
+    {
+      "word": "manipulation",
+      "concept": "change"
+    },
+    {
+      "word": "manmade",
+      "concept": "raw_and_made"
+    },
+    {
       "word": "manner",
       "concept": "way_of_doing",
       "synonyms": [
@@ -6104,12 +8196,20 @@
       "concept": "standing_for"
     },
     {
+      "word": "marble",
+      "concept": "material"
+    },
+    {
       "word": "mare",
       "concept": "animal"
     },
     {
       "word": "marine",
       "concept": "liquid"
+    },
+    {
+      "word": "mariner",
+      "concept": "person"
     },
     {
       "word": "mark",
@@ -6127,6 +8227,10 @@
       "concept": "writing"
     },
     {
+      "word": "market",
+      "concept": "exchange"
+    },
+    {
       "word": "marsh",
       "concept": "spatial_position"
     },
@@ -6141,6 +8245,10 @@
     {
       "word": "massive",
       "concept": "quantity"
+    },
+    {
+      "word": "mast",
+      "concept": "moving_and_still"
     },
     {
       "word": "master",
@@ -6170,6 +8278,14 @@
       "concept": "counting"
     },
     {
+      "word": "mathematical",
+      "concept": "counting"
+    },
+    {
+      "word": "mathematics",
+      "concept": "knowing"
+    },
+    {
       "word": "mature",
       "concept": "change"
     },
@@ -6184,6 +8300,14 @@
     {
       "word": "maybe",
       "concept": "how_sure"
+    },
+    {
+      "word": "mayor",
+      "concept": "someone_in_charge"
+    },
+    {
+      "word": "maze",
+      "concept": "toy"
     },
     {
       "word": "me",
@@ -6226,6 +8350,14 @@
       "concept": "component_and_system"
     },
     {
+      "word": "mechanism",
+      "concept": "component_and_system"
+    },
+    {
+      "word": "medicine",
+      "concept": "being_hurt"
+    },
+    {
       "word": "meet",
       "concept": "people_together"
     },
@@ -6236,6 +8368,14 @@
     {
       "word": "melt",
       "concept": "heat"
+    },
+    {
+      "word": "member",
+      "concept": "people_together"
+    },
+    {
+      "word": "membrane",
+      "concept": "component_and_system"
     },
     {
       "word": "memory",
@@ -6253,6 +8393,10 @@
       "concept": "liquid"
     },
     {
+      "word": "mention",
+      "concept": "saying_what_you_saw"
+    },
+    {
       "word": "merchant",
       "concept": "person"
     },
@@ -6263,6 +8407,18 @@
     {
       "word": "mercy",
       "concept": "good_and_bad"
+    },
+    {
+      "word": "mere",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "merely",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "merge",
+      "concept": "joining_and_separating"
     },
     {
       "word": "meridian",
@@ -6328,12 +8484,32 @@
       ]
     },
     {
+      "word": "methodology",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "methylmercury",
+      "concept": "danger"
+    },
+    {
       "word": "metric",
       "concept": "measuring"
     },
     {
       "word": "microburst",
       "concept": "weather"
+    },
+    {
+      "word": "microirrigation",
+      "concept": "plant"
+    },
+    {
+      "word": "micron",
+      "concept": "unit"
+    },
+    {
+      "word": "microorganism",
+      "concept": "living_and_not_living"
     },
     {
       "word": "microscopic",
@@ -6354,6 +8530,14 @@
     {
       "word": "midst",
       "concept": "spatial_position"
+    },
+    {
+      "word": "mighty",
+      "concept": "force"
+    },
+    {
+      "word": "migrate",
+      "concept": "moving_and_still"
     },
     {
       "word": "migration",
@@ -6380,7 +8564,15 @@
       "concept": "unit"
     },
     {
+      "word": "milligram",
+      "concept": "unit"
+    },
+    {
       "word": "milliliter",
+      "concept": "unit"
+    },
+    {
+      "word": "millimeter",
       "concept": "unit"
     },
     {
@@ -6408,12 +8600,24 @@
       "concept": "material"
     },
     {
+      "word": "minimal",
+      "concept": "more_and_fewer"
+    },
+    {
       "word": "minimize",
       "concept": "quantity"
     },
     {
       "word": "minimum",
       "concept": "quantity"
+    },
+    {
+      "word": "mining",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "minor",
+      "concept": "good_and_bad"
     },
     {
       "word": "minus",
@@ -6424,8 +8628,16 @@
       "concept": "duration"
     },
     {
+      "word": "miraculously",
+      "concept": "not_always_known"
+    },
+    {
       "word": "mirror",
       "concept": "household_object"
+    },
+    {
+      "word": "mischief",
+      "concept": "good_and_bad"
     },
     {
       "word": "miserable",
@@ -6436,12 +8648,20 @@
       "concept": "accident"
     },
     {
+      "word": "miss",
+      "concept": "failing"
+    },
+    {
       "word": "missing",
       "concept": "presence"
     },
     {
       "word": "mission",
       "concept": "goal"
+    },
+    {
+      "word": "mist",
+      "concept": "weather"
     },
     {
       "word": "mistake",
@@ -6476,6 +8696,14 @@
       "concept": "duration"
     },
     {
+      "word": "modest",
+      "concept": "feeling"
+    },
+    {
+      "word": "modify",
+      "concept": "change"
+    },
+    {
       "word": "moist",
       "concept": "physical_property"
     },
@@ -6488,8 +8716,16 @@
       "concept": "plant"
     },
     {
+      "word": "molecular",
+      "concept": "material"
+    },
+    {
       "word": "molecule",
       "concept": "material"
+    },
+    {
+      "word": "mom",
+      "concept": "family"
     },
     {
       "word": "moment",
@@ -6524,6 +8760,14 @@
       "concept": "cycle"
     },
     {
+      "word": "monthly",
+      "concept": "cycle"
+    },
+    {
+      "word": "monument",
+      "concept": "raw_and_made"
+    },
+    {
       "word": "mood",
       "concept": "feeling"
     },
@@ -6533,6 +8777,10 @@
       "antonyms": [
         "sun"
       ]
+    },
+    {
+      "word": "moonlight",
+      "concept": "physical_property"
     },
     {
       "word": "more",
@@ -6591,8 +8839,16 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "mount",
+      "concept": "joining_and_separating"
+    },
+    {
       "word": "mountain",
       "concept": "shape"
+    },
+    {
+      "word": "mountainous",
+      "concept": "spatial_position"
     },
     {
       "word": "mouse",
@@ -6629,8 +8885,16 @@
       "concept": "material"
     },
     {
+      "word": "muddy",
+      "concept": "material"
+    },
+    {
       "word": "multiple",
       "concept": "quantity"
+    },
+    {
+      "word": "multiply",
+      "concept": "multiplication"
     },
     {
       "word": "mum",
@@ -6640,8 +8904,16 @@
       ]
     },
     {
+      "word": "municipal",
+      "concept": "someone_in_charge"
+    },
+    {
       "word": "music",
       "concept": "sound"
+    },
+    {
+      "word": "musty",
+      "concept": "physical_property"
     },
     {
       "word": "myself",
@@ -6686,6 +8958,10 @@
       ]
     },
     {
+      "word": "nationwide",
+      "concept": "spatial_position"
+    },
+    {
       "word": "native",
       "concept": "spatial_position"
     },
@@ -6704,6 +8980,10 @@
     {
       "word": "nautical",
       "concept": "spatial_position"
+    },
+    {
+      "word": "navigate",
+      "concept": "direction"
     },
     {
       "word": "navigation",
@@ -6789,6 +9069,10 @@
       "concept": "physical_property"
     },
     {
+      "word": "neutralize",
+      "concept": "balance"
+    },
+    {
       "word": "neutron",
       "concept": "material"
     },
@@ -6811,6 +9095,10 @@
       ]
     },
     {
+      "word": "newly",
+      "concept": "duration"
+    },
+    {
       "word": "next",
       "concept": "sequence"
     },
@@ -6820,6 +9108,10 @@
       "synonyms": [
         "good"
       ]
+    },
+    {
+      "word": "nicely",
+      "concept": "good_and_bad"
     },
     {
       "word": "night",
@@ -6835,6 +9127,14 @@
     {
       "word": "nine",
       "concept": "number_word_order"
+    },
+    {
+      "word": "nitrate",
+      "concept": "material"
+    },
+    {
+      "word": "nitrite",
+      "concept": "material"
     },
     {
       "word": "nitrogen",
@@ -6904,6 +9204,14 @@
       "concept": "direction"
     },
     {
+      "word": "northeastern",
+      "concept": "direction"
+    },
+    {
+      "word": "northern",
+      "concept": "direction"
+    },
+    {
       "word": "northwest",
       "concept": "direction"
     },
@@ -6937,8 +9245,28 @@
       "concept": "finding_out"
     },
     {
+      "word": "noticeable",
+      "concept": "saying_what_you_saw"
+    },
+    {
+      "word": "notion",
+      "concept": "knowing"
+    },
+    {
+      "word": "nourishment",
+      "concept": "needing_supply"
+    },
+    {
+      "word": "nowadays",
+      "concept": "duration"
+    },
+    {
       "word": "nowhere",
       "concept": "spatial_position"
+    },
+    {
+      "word": "nozzle",
+      "concept": "household_object"
     },
     {
       "word": "nuclear",
@@ -6947,6 +9275,10 @@
     {
       "word": "nucleus",
       "concept": "component_and_system"
+    },
+    {
+      "word": "nuisance",
+      "concept": "good_and_bad"
     },
     {
       "word": "number",
@@ -6973,6 +9305,10 @@
       "concept": "need"
     },
     {
+      "word": "oak",
+      "concept": "plant"
+    },
+    {
       "word": "oath",
       "concept": "promise"
     },
@@ -6981,8 +9317,16 @@
       "concept": "plant"
     },
     {
+      "word": "obey",
+      "concept": "being_told"
+    },
+    {
       "word": "object",
       "concept": "standing_for"
+    },
+    {
+      "word": "objectionable",
+      "concept": "good_and_bad"
     },
     {
       "word": "oblige",
@@ -7005,8 +9349,20 @@
       "concept": "having"
     },
     {
+      "word": "obvious",
+      "concept": "knowing"
+    },
+    {
+      "word": "obviously",
+      "concept": "knowing"
+    },
+    {
       "word": "occasionally",
       "concept": "duration"
+    },
+    {
+      "word": "occupy",
+      "concept": "spatial_position"
     },
     {
       "word": "occur",
@@ -7019,6 +9375,10 @@
     {
       "word": "ocean",
       "concept": "liquid"
+    },
+    {
+      "word": "odor",
+      "concept": "physical_property"
     },
     {
       "word": "odorless",
@@ -7073,6 +9433,10 @@
       ]
     },
     {
+      "word": "onboard",
+      "concept": "inside_and_outside"
+    },
+    {
       "word": "one",
       "concept": "number_word_order"
     },
@@ -7081,8 +9445,16 @@
       "concept": "plant"
     },
     {
+      "word": "online",
+      "concept": "written_record"
+    },
+    {
       "word": "onset",
       "concept": "sequence"
+    },
+    {
+      "word": "onshore",
+      "concept": "spatial_position"
     },
     {
       "word": "open",
@@ -7107,8 +9479,20 @@
       "concept": "opinion"
     },
     {
+      "word": "oppose",
+      "concept": "disagreeing"
+    },
+    {
       "word": "opposite",
       "concept": "standing_for"
+    },
+    {
+      "word": "optics",
+      "concept": "knowing"
+    },
+    {
+      "word": "optional",
+      "concept": "choosing"
     },
     {
       "word": "orange",
@@ -7135,6 +9519,10 @@
       "concept": "living_and_not_living"
     },
     {
+      "word": "organics",
+      "concept": "living_and_not_living"
+    },
+    {
       "word": "organism",
       "concept": "living_and_not_living"
     },
@@ -7143,12 +9531,20 @@
       "concept": "people_together"
     },
     {
+      "word": "orifice",
+      "concept": "opening_and_shutting"
+    },
+    {
       "word": "original",
       "concept": "sequence"
     },
     {
       "word": "originate",
       "concept": "cause_and_effect"
+    },
+    {
+      "word": "osmosis",
+      "concept": "liquid"
     },
     {
       "word": "others",
@@ -7191,6 +9587,14 @@
       "concept": "stock_and_flow"
     },
     {
+      "word": "outgoing",
+      "concept": "direction"
+    },
+    {
+      "word": "outlet",
+      "concept": "inside_and_outside"
+    },
+    {
       "word": "outreach",
       "concept": "people_together"
     },
@@ -7206,6 +9610,10 @@
       "concept": "direction"
     },
     {
+      "word": "oval",
+      "concept": "shape"
+    },
+    {
       "word": "oven",
       "concept": "household_object"
     },
@@ -7217,12 +9625,40 @@
       ]
     },
     {
+      "word": "overabundance",
+      "concept": "quantity"
+    },
+    {
       "word": "overall",
       "concept": "all_some_none"
     },
     {
+      "word": "overcome",
+      "concept": "can_and_cannot"
+    },
+    {
+      "word": "overflow",
+      "concept": "liquid"
+    },
+    {
+      "word": "overgrowth",
+      "concept": "growing"
+    },
+    {
       "word": "overhead",
       "concept": "spatial_position"
+    },
+    {
+      "word": "overland",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "overly",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "overnight",
+      "concept": "duration"
     },
     {
       "word": "owl",
@@ -7251,6 +9687,10 @@
     {
       "word": "packing",
       "concept": "material"
+    },
+    {
+      "word": "pad",
+      "concept": "household_object"
     },
     {
       "word": "padlock",
@@ -7312,6 +9752,10 @@
       "concept": "shape"
     },
     {
+      "word": "parameter",
+      "concept": "measuring"
+    },
+    {
       "word": "parcel",
       "concept": "household_object"
     },
@@ -7320,8 +9764,20 @@
       "concept": "family"
     },
     {
+      "word": "park",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "parking",
+      "concept": "spatial_position"
+    },
+    {
       "word": "part",
       "concept": "component_and_system"
+    },
+    {
+      "word": "partial",
+      "concept": "all_some_none"
     },
     {
       "word": "particle",
@@ -7356,8 +9812,16 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "passage",
+      "concept": "spatial_position"
+    },
+    {
       "word": "past",
       "concept": "direction"
+    },
+    {
+      "word": "pastel",
+      "concept": "writing"
     },
     {
       "word": "pasture",
@@ -7376,6 +9840,10 @@
       ]
     },
     {
+      "word": "pathogen",
+      "concept": "being_hurt"
+    },
+    {
       "word": "pathway",
       "concept": "way_of_doing"
     },
@@ -7390,6 +9858,18 @@
     {
       "word": "pattern",
       "concept": "sequence"
+    },
+    {
+      "word": "pave",
+      "concept": "raw_and_made"
+    },
+    {
+      "word": "pavement",
+      "concept": "material"
+    },
+    {
+      "word": "paw",
+      "concept": "body_part"
     },
     {
       "word": "pay",
@@ -7415,8 +9895,16 @@
       "concept": "plant"
     },
     {
+      "word": "pebble",
+      "concept": "material"
+    },
+    {
       "word": "peculiar",
       "concept": "same_and_different"
+    },
+    {
+      "word": "peer",
+      "concept": "saying_what_you_saw"
     },
     {
       "word": "pen",
@@ -7425,6 +9913,14 @@
     {
       "word": "pencil",
       "concept": "writing"
+    },
+    {
+      "word": "penetrate",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "penetration",
+      "concept": "inside_and_outside"
     },
     {
       "word": "peninsula",
@@ -7443,12 +9939,24 @@
       "concept": "quantity"
     },
     {
+      "word": "percolate",
+      "concept": "liquid"
+    },
+    {
+      "word": "perennial",
+      "concept": "duration"
+    },
+    {
       "word": "perfect",
       "concept": "good_and_bad"
     },
     {
       "word": "perfectly",
       "concept": "good_and_bad"
+    },
+    {
+      "word": "perforated",
+      "concept": "shape"
     },
     {
       "word": "perform",
@@ -7467,12 +9975,28 @@
       "concept": "duration"
     },
     {
+      "word": "periodically",
+      "concept": "cycle"
+    },
+    {
       "word": "permafrost",
       "concept": "heat"
     },
     {
       "word": "permanent",
       "concept": "duration"
+    },
+    {
+      "word": "permanently",
+      "concept": "duration"
+    },
+    {
+      "word": "permeability",
+      "concept": "physical_property"
+    },
+    {
+      "word": "permeable",
+      "concept": "physical_property"
     },
     {
       "word": "permission",
@@ -7527,12 +10051,24 @@
       "concept": "household_object"
     },
     {
+      "word": "phosphorus",
+      "concept": "material"
+    },
+    {
       "word": "photo",
       "concept": "toy"
     },
     {
+      "word": "photograph",
+      "concept": "written_record"
+    },
+    {
       "word": "photon",
       "concept": "physical_property"
+    },
+    {
+      "word": "photosynthesis",
+      "concept": "plant"
     },
     {
       "word": "phrase",
@@ -7541,6 +10077,14 @@
     {
       "word": "physical",
       "concept": "physical_property"
+    },
+    {
+      "word": "physically",
+      "concept": "body_part"
+    },
+    {
+      "word": "physics",
+      "concept": "finding_out"
     },
     {
       "word": "phytoplankton",
@@ -7562,6 +10106,10 @@
       "concept": "things_break"
     },
     {
+      "word": "pier",
+      "concept": "spatial_position"
+    },
+    {
       "word": "pigeon",
       "concept": "animal"
     },
@@ -7574,12 +10122,24 @@
       "concept": "more_and_fewer"
     },
     {
+      "word": "pilgrimage",
+      "concept": "activity"
+    },
+    {
+      "word": "pin",
+      "concept": "household_object"
+    },
+    {
       "word": "pine",
       "concept": "plant"
     },
     {
       "word": "pink",
       "concept": "physical_property"
+    },
+    {
+      "word": "pinpoint",
+      "concept": "finding_out"
     },
     {
       "word": "pipe",
@@ -7590,8 +10150,16 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "pit",
+      "concept": "shape"
+    },
+    {
       "word": "pitcher",
       "concept": "household_object"
+    },
+    {
+      "word": "pivot",
+      "concept": "moving_and_still"
     },
     {
       "word": "pixel",
@@ -7638,6 +10206,10 @@
       "concept": "household_object"
     },
     {
+      "word": "platform",
+      "concept": "spatial_position"
+    },
+    {
       "word": "play",
       "concept": "toy"
     },
@@ -7658,12 +10230,28 @@
       "concept": "feeling"
     },
     {
+      "word": "plentiful",
+      "concept": "enough"
+    },
+    {
       "word": "plenty",
       "concept": "enough",
       "synonyms": [
         "lot",
         "rich"
       ]
+    },
+    {
+      "word": "plight",
+      "concept": "danger"
+    },
+    {
+      "word": "plot",
+      "concept": "written_record"
+    },
+    {
+      "word": "plug",
+      "concept": "opening_and_shutting"
     },
     {
       "word": "plum",
@@ -7674,8 +10262,16 @@
       "concept": "household_object"
     },
     {
+      "word": "plunger",
+      "concept": "household_object"
+    },
+    {
       "word": "plus",
       "concept": "addition"
+    },
+    {
+      "word": "plywood",
+      "concept": "material"
     },
     {
       "word": "pocket",
@@ -7698,6 +10294,10 @@
       "concept": "correspondence"
     },
     {
+      "word": "poison",
+      "concept": "danger"
+    },
+    {
       "word": "poke",
       "concept": "touching"
     },
@@ -7718,8 +10318,16 @@
       "concept": "rule"
     },
     {
+      "word": "political",
+      "concept": "someone_in_charge"
+    },
+    {
       "word": "pollutant",
       "concept": "danger"
+    },
+    {
+      "word": "polluted",
+      "concept": "good_and_bad"
     },
     {
       "word": "pollution",
@@ -7745,6 +10353,42 @@
       "concept": "good_and_bad"
     },
     {
+      "word": "pop",
+      "concept": "sound"
+    },
+    {
+      "word": "popular",
+      "concept": "judged_by_another"
+    },
+    {
+      "word": "population",
+      "concept": "counting"
+    },
+    {
+      "word": "porcelain",
+      "concept": "material"
+    },
+    {
+      "word": "porch",
+      "concept": "household_object"
+    },
+    {
+      "word": "pore",
+      "concept": "shape"
+    },
+    {
+      "word": "porosity",
+      "concept": "physical_property"
+    },
+    {
+      "word": "porous",
+      "concept": "physical_property"
+    },
+    {
+      "word": "portable",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "portion",
       "concept": "quantity"
     },
@@ -7763,6 +10407,10 @@
     {
       "word": "positively",
       "concept": "good_and_bad"
+    },
+    {
+      "word": "possess",
+      "concept": "having"
     },
     {
       "word": "possibility",
@@ -7788,6 +10436,14 @@
       "concept": "household_object"
     },
     {
+      "word": "potable",
+      "concept": "liquid"
+    },
+    {
+      "word": "potassium",
+      "concept": "metal"
+    },
+    {
       "word": "potato",
       "concept": "plant"
     },
@@ -7798,6 +10454,10 @@
     {
       "word": "potentially",
       "concept": "how_sure"
+    },
+    {
+      "word": "pothole",
+      "concept": "shape"
     },
     {
       "word": "pound",
@@ -7820,6 +10480,10 @@
       "concept": "force"
     },
     {
+      "word": "practically",
+      "concept": "close_enough"
+    },
+    {
       "word": "practice",
       "concept": "way_of_doing"
     },
@@ -7830,6 +10494,10 @@
     {
       "word": "prayer",
       "concept": "asking"
+    },
+    {
+      "word": "precious",
+      "concept": "good_and_bad"
     },
     {
       "word": "precipitation",
@@ -7844,8 +10512,20 @@
       "concept": "guess"
     },
     {
+      "word": "predominantly",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "prefer",
+      "concept": "choosing"
+    },
+    {
       "word": "prepare",
       "concept": "plan"
+    },
+    {
+      "word": "presence",
+      "concept": "presence"
     },
     {
       "word": "presently",
@@ -7867,6 +10547,10 @@
       "concept": "force"
     },
     {
+      "word": "pressurize",
+      "concept": "force"
+    },
+    {
       "word": "pretend",
       "concept": "real_and_pretend",
       "antonyms": [
@@ -7882,12 +10566,20 @@
       "concept": "quantity"
     },
     {
+      "word": "prevalent",
+      "concept": "cycle"
+    },
+    {
       "word": "previous",
       "concept": "sequence"
     },
     {
       "word": "previously",
       "concept": "sequence"
+    },
+    {
+      "word": "prey",
+      "concept": "animal"
     },
     {
       "word": "price",
@@ -7906,6 +10598,14 @@
       "concept": "sequence"
     },
     {
+      "word": "principal",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "principle",
+      "concept": "rule"
+    },
+    {
       "word": "print",
       "concept": "writing"
     },
@@ -7922,6 +10622,10 @@
       "concept": "shape"
     },
     {
+      "word": "private",
+      "concept": "having"
+    },
+    {
       "word": "prize",
       "concept": "exchange"
     },
@@ -7934,8 +10638,16 @@
       "concept": "how_sure"
     },
     {
+      "word": "probe",
+      "concept": "measuring"
+    },
+    {
       "word": "problem",
       "concept": "failing"
+    },
+    {
+      "word": "procedure",
+      "concept": "doing_in_order"
     },
     {
       "word": "process",
@@ -7954,6 +10666,10 @@
       "concept": "raw_and_made"
     },
     {
+      "word": "professional",
+      "concept": "activity"
+    },
+    {
       "word": "profile",
       "concept": "shape"
     },
@@ -7970,8 +10686,20 @@
       "concept": "promise"
     },
     {
+      "word": "promote",
+      "concept": "growing"
+    },
+    {
+      "word": "prone",
+      "concept": "not_always_known"
+    },
+    {
       "word": "proof",
       "concept": "settling_it"
+    },
+    {
+      "word": "propeller",
+      "concept": "component_and_system"
     },
     {
       "word": "proper",
@@ -7980,6 +10708,10 @@
     {
       "word": "property",
       "concept": "physical_property"
+    },
+    {
+      "word": "propose",
+      "concept": "plan"
     },
     {
       "word": "prose",
@@ -7992,6 +10724,18 @@
     {
       "word": "protection",
       "concept": "danger"
+    },
+    {
+      "word": "protective",
+      "concept": "danger"
+    },
+    {
+      "word": "protein",
+      "concept": "material"
+    },
+    {
+      "word": "proton",
+      "concept": "material"
     },
     {
       "word": "proud",
@@ -8008,6 +10752,10 @@
     {
       "word": "public",
       "concept": "people_together"
+    },
+    {
+      "word": "publish",
+      "concept": "written_record"
     },
     {
       "word": "puddle",
@@ -8036,12 +10784,28 @@
       "concept": "plant"
     },
     {
+      "word": "pun",
+      "concept": "standing_for"
+    },
+    {
       "word": "pupil",
       "concept": "person"
     },
     {
+      "word": "purchase",
+      "concept": "exchange"
+    },
+    {
       "word": "pure",
       "concept": "physical_property"
+    },
+    {
+      "word": "purely",
+      "concept": "all_some_none"
+    },
+    {
+      "word": "purify",
+      "concept": "change"
     },
     {
       "word": "purple",
@@ -8143,11 +10907,19 @@
       "concept": "more_and_fewer"
     },
     {
+      "word": "race",
+      "concept": "activity"
+    },
+    {
       "word": "radar",
       "concept": "measuring"
     },
     {
       "word": "radial",
+      "concept": "direction"
+    },
+    {
+      "word": "radiate",
       "concept": "direction"
     },
     {
@@ -8159,6 +10931,10 @@
       "concept": "measuring"
     },
     {
+      "word": "radius",
+      "concept": "shape"
+    },
+    {
       "word": "rain",
       "concept": "weather"
     },
@@ -8167,11 +10943,19 @@
       "concept": "weather"
     },
     {
+      "word": "raindrop",
+      "concept": "weather"
+    },
+    {
       "word": "rainfall",
       "concept": "weather"
     },
     {
       "word": "rainstorm",
+      "concept": "weather"
+    },
+    {
+      "word": "rainwater",
       "concept": "weather"
     },
     {
@@ -8188,6 +10972,10 @@
     {
       "word": "range",
       "concept": "measuring"
+    },
+    {
+      "word": "rank",
+      "concept": "sequence"
     },
     {
       "word": "rapid",
@@ -8218,6 +11006,10 @@
       "concept": "quantity"
     },
     {
+      "word": "ravine",
+      "concept": "spatial_position"
+    },
+    {
       "word": "raw",
       "concept": "raw_and_made",
       "antonyms": [
@@ -8238,6 +11030,10 @@
     },
     {
       "word": "react",
+      "concept": "cause_and_effect"
+    },
+    {
+      "word": "reaction",
       "concept": "cause_and_effect"
     },
     {
@@ -8268,12 +11064,24 @@
       "concept": "real_and_pretend"
     },
     {
+      "word": "rear",
+      "concept": "spatial_position"
+    },
+    {
       "word": "rearrange",
       "concept": "conservation_of_number"
     },
     {
       "word": "reason",
       "concept": "giving_a_reason"
+    },
+    {
+      "word": "reasonable",
+      "concept": "good_and_bad"
+    },
+    {
+      "word": "recede",
+      "concept": "moving_and_still"
     },
     {
       "word": "receive",
@@ -8285,6 +11093,10 @@
     },
     {
       "word": "recent",
+      "concept": "duration"
+    },
+    {
+      "word": "recently",
       "concept": "duration"
     },
     {
@@ -8323,6 +11135,30 @@
       ]
     },
     {
+      "word": "recorder",
+      "concept": "written_record"
+    },
+    {
+      "word": "recover",
+      "concept": "mending"
+    },
+    {
+      "word": "recovery",
+      "concept": "mending"
+    },
+    {
+      "word": "recreation",
+      "concept": "activity"
+    },
+    {
+      "word": "recreational",
+      "concept": "activity"
+    },
+    {
+      "word": "recurrence",
+      "concept": "cycle"
+    },
+    {
       "word": "recycle",
       "concept": "using_up"
     },
@@ -8331,7 +11167,15 @@
       "concept": "physical_property"
     },
     {
+      "word": "reddish",
+      "concept": "physical_property"
+    },
+    {
       "word": "reduce",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "reduction",
       "concept": "more_and_fewer"
     },
     {
@@ -8341,6 +11185,10 @@
     {
       "word": "refer",
       "concept": "reporting"
+    },
+    {
+      "word": "reference",
+      "concept": "checking"
     },
     {
       "word": "refine",
@@ -8363,8 +11211,16 @@
       "concept": "physical_property"
     },
     {
+      "word": "refreshing",
+      "concept": "feeling"
+    },
+    {
       "word": "refrigerator",
       "concept": "household_object"
+    },
+    {
+      "word": "refuel",
+      "concept": "needing_supply"
     },
     {
       "word": "regard",
@@ -8379,12 +11235,32 @@
       "concept": "spatial_position"
     },
     {
+      "word": "regional",
+      "concept": "spatial_position"
+    },
+    {
       "word": "regular",
       "concept": "same_and_different"
     },
     {
       "word": "regularly",
       "concept": "duration"
+    },
+    {
+      "word": "regulate",
+      "concept": "rule"
+    },
+    {
+      "word": "regulation",
+      "concept": "rule"
+    },
+    {
+      "word": "relate",
+      "concept": "joining_and_separating"
+    },
+    {
+      "word": "relation",
+      "concept": "joining_and_separating"
     },
     {
       "word": "relationship",
@@ -8401,6 +11277,22 @@
     {
       "word": "release",
       "concept": "allowed_or_not"
+    },
+    {
+      "word": "reliable",
+      "concept": "how_sure"
+    },
+    {
+      "word": "reliably",
+      "concept": "how_sure"
+    },
+    {
+      "word": "relief",
+      "concept": "feeling"
+    },
+    {
+      "word": "rely",
+      "concept": "need"
     },
     {
       "word": "remain",
@@ -8437,6 +11329,18 @@
       "concept": "cycle"
     },
     {
+      "word": "replace",
+      "concept": "change"
+    },
+    {
+      "word": "replenish",
+      "concept": "needing_supply"
+    },
+    {
+      "word": "replica",
+      "concept": "same_and_different"
+    },
+    {
       "word": "reply",
       "concept": "asking",
       "synonyms": [
@@ -8449,6 +11353,10 @@
     },
     {
       "word": "represent",
+      "concept": "standing_for"
+    },
+    {
+      "word": "representation",
       "concept": "standing_for"
     },
     {
@@ -8480,6 +11388,10 @@
       "concept": "spatial_position"
     },
     {
+      "word": "resident",
+      "concept": "people_together"
+    },
+    {
       "word": "residential",
       "concept": "people_together"
     },
@@ -8490,6 +11402,14 @@
     {
       "word": "residue",
       "concept": "using_up"
+    },
+    {
+      "word": "resilience",
+      "concept": "mending"
+    },
+    {
+      "word": "resistant",
+      "concept": "physical_property"
     },
     {
       "word": "resolution",
@@ -8508,8 +11428,16 @@
       "concept": "sequence"
     },
     {
+      "word": "respiratory",
+      "concept": "body_part"
+    },
+    {
       "word": "respond",
       "concept": "reporting"
+    },
+    {
+      "word": "responder",
+      "concept": "person"
     },
     {
       "word": "response",
@@ -8530,6 +11458,10 @@
     {
       "word": "rest",
       "concept": "resting_on_a_guess"
+    },
+    {
+      "word": "restoration",
+      "concept": "mending"
     },
     {
       "word": "restriction",
@@ -8556,6 +11488,10 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "reuse",
+      "concept": "using_up"
+    },
+    {
       "word": "reveal",
       "concept": "finding_out"
     },
@@ -8568,12 +11504,24 @@
       "concept": "direction"
     },
     {
+      "word": "revise",
+      "concept": "mending"
+    },
+    {
+      "word": "revolution",
+      "concept": "cycle"
+    },
+    {
       "word": "reward",
       "concept": "exchange"
     },
     {
       "word": "ribbon",
       "concept": "household_object"
+    },
+    {
+      "word": "rice",
+      "concept": "plant"
     },
     {
       "word": "rich",
@@ -8584,6 +11532,10 @@
       "synonyms": [
         "plenty"
       ]
+    },
+    {
+      "word": "rid",
+      "concept": "using_up"
     },
     {
       "word": "ride",
@@ -8622,6 +11574,14 @@
     {
       "word": "ring",
       "concept": "sound"
+    },
+    {
+      "word": "rinse",
+      "concept": "liquid"
+    },
+    {
+      "word": "riparian",
+      "concept": "spatial_position"
     },
     {
       "word": "ripe",
@@ -8682,6 +11642,10 @@
       "concept": "physical_property"
     },
     {
+      "word": "rod",
+      "concept": "shape"
+    },
+    {
       "word": "role",
       "concept": "activity"
     },
@@ -8691,6 +11655,10 @@
     },
     {
       "word": "roof",
+      "concept": "household_object"
+    },
+    {
+      "word": "rooftop",
       "concept": "household_object"
     },
     {
@@ -8709,6 +11677,10 @@
       ]
     },
     {
+      "word": "rosy",
+      "concept": "physical_property"
+    },
+    {
       "word": "rotate",
       "concept": "moving_and_still"
     },
@@ -8719,6 +11691,14 @@
     {
       "word": "rotational",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "rotor",
+      "concept": "component_and_system"
+    },
+    {
+      "word": "rotten",
+      "concept": "wearing_out"
     },
     {
       "word": "rough",
@@ -8744,8 +11724,16 @@
       "concept": "spatial_position"
     },
     {
+      "word": "routinely",
+      "concept": "cycle"
+    },
+    {
       "word": "rover",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "row",
+      "concept": "sequence"
     },
     {
       "word": "rub",
@@ -8781,6 +11769,14 @@
     {
       "word": "runoff",
       "concept": "liquid"
+    },
+    {
+      "word": "runup",
+      "concept": "liquid"
+    },
+    {
+      "word": "rupture",
+      "concept": "things_break"
     },
     {
       "word": "rural",
@@ -8824,6 +11820,10 @@
       "concept": "danger"
     },
     {
+      "word": "sail",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "sake",
       "concept": "goal"
     },
@@ -8844,8 +11844,16 @@
       "concept": "physical_property"
     },
     {
+      "word": "salmon",
+      "concept": "animal"
+    },
+    {
       "word": "salt",
       "concept": "material"
+    },
+    {
+      "word": "saltwater",
+      "concept": "liquid"
     },
     {
       "word": "salty",
@@ -8860,7 +11868,15 @@
     },
     {
       "word": "sample",
+      "concept": "checking"
+    },
+    {
+      "word": "sample",
       "concept": "quantity"
+    },
+    {
+      "word": "sampler",
+      "concept": "measuring"
     },
     {
       "word": "sanctuary",
@@ -8873,6 +11889,26 @@
     {
       "word": "sandpiper",
       "concept": "animal"
+    },
+    {
+      "word": "sandstone",
+      "concept": "material"
+    },
+    {
+      "word": "sandy",
+      "concept": "material"
+    },
+    {
+      "word": "sanitary",
+      "concept": "danger"
+    },
+    {
+      "word": "sanitation",
+      "concept": "danger"
+    },
+    {
+      "word": "satisfy",
+      "concept": "need"
     },
     {
       "word": "saturation",
@@ -8912,6 +11948,10 @@
       "synonyms": [
         "afraid"
       ]
+    },
+    {
+      "word": "scarlet",
+      "concept": "physical_property"
     },
     {
       "word": "scary",
@@ -8974,8 +12014,16 @@
       "concept": "air"
     },
     {
+      "word": "scum",
+      "concept": "liquid"
+    },
+    {
       "word": "sea",
       "concept": "liquid"
+    },
+    {
+      "word": "seam",
+      "concept": "material"
     },
     {
       "word": "search",
@@ -8994,8 +12042,16 @@
       "concept": "household_object"
     },
     {
+      "word": "seawater",
+      "concept": "liquid"
+    },
+    {
       "word": "second",
       "concept": "number_word_order"
+    },
+    {
+      "word": "secondary",
+      "concept": "sequence"
     },
     {
       "word": "secret",
@@ -9020,6 +12076,10 @@
     {
       "word": "sedimentary",
       "concept": "material"
+    },
+    {
+      "word": "sedimentation",
+      "concept": "stock_and_flow"
     },
     {
       "word": "seed",
@@ -9050,8 +12110,28 @@
       "concept": "liquid"
     },
     {
+      "word": "seepage",
+      "concept": "liquid"
+    },
+    {
+      "word": "segment",
+      "concept": "component_and_system"
+    },
+    {
       "word": "seismic",
       "concept": "physical_property"
+    },
+    {
+      "word": "seismometer",
+      "concept": "measuring"
+    },
+    {
+      "word": "seize",
+      "concept": "having"
+    },
+    {
+      "word": "select",
+      "concept": "choosing"
     },
     {
       "word": "selection",
@@ -9060,6 +12140,10 @@
     {
       "word": "self",
       "concept": "self_and_other"
+    },
+    {
+      "word": "selfish",
+      "concept": "good_and_bad"
     },
     {
       "word": "sell",
@@ -9071,6 +12155,10 @@
     {
       "word": "semester",
       "concept": "duration"
+    },
+    {
+      "word": "semiconductor",
+      "concept": "material"
     },
     {
       "word": "send",
@@ -9089,6 +12177,14 @@
       "concept": "physical_property"
     },
     {
+      "word": "sensitivity",
+      "concept": "physical_property"
+    },
+    {
+      "word": "sensor",
+      "concept": "measuring"
+    },
+    {
       "word": "sentence",
       "concept": "sentence"
     },
@@ -9100,8 +12196,16 @@
       ]
     },
     {
+      "word": "separately",
+      "concept": "joining_and_separating"
+    },
+    {
       "word": "separation",
       "concept": "joining_and_separating"
+    },
+    {
+      "word": "septic",
+      "concept": "component_and_system"
     },
     {
       "word": "sequin",
@@ -9116,8 +12220,24 @@
       "concept": "sequence"
     },
     {
+      "word": "serious",
+      "concept": "danger"
+    },
+    {
+      "word": "seriously",
+      "concept": "danger"
+    },
+    {
+      "word": "serve",
+      "concept": "doing_in_order"
+    },
+    {
       "word": "service",
       "concept": "activity"
+    },
+    {
+      "word": "session",
+      "concept": "duration"
     },
     {
       "word": "set",
@@ -9140,6 +12260,10 @@
       "concept": "number_word_order"
     },
     {
+      "word": "seventh",
+      "concept": "number_word_order"
+    },
+    {
       "word": "several",
       "concept": "more_and_fewer"
     },
@@ -9148,8 +12272,16 @@
       "concept": "quantity"
     },
     {
+      "word": "severity",
+      "concept": "danger"
+    },
+    {
       "word": "sewage",
       "concept": "liquid"
+    },
+    {
+      "word": "sewer",
+      "concept": "component_and_system"
     },
     {
       "word": "shade",
@@ -9230,6 +12362,10 @@
       "concept": "animal"
     },
     {
+      "word": "shellfish",
+      "concept": "animal"
+    },
+    {
       "word": "shelter",
       "concept": "danger"
     },
@@ -9274,6 +12410,10 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "shop",
+      "concept": "exchange"
+    },
+    {
       "word": "shore",
       "concept": "spatial_position"
     },
@@ -9292,6 +12432,10 @@
     {
       "word": "shortage",
       "concept": "enough"
+    },
+    {
+      "word": "shorten",
+      "concept": "more_and_fewer"
     },
     {
       "word": "shorter",
@@ -9324,12 +12468,20 @@
       ]
     },
     {
+      "word": "shower",
+      "concept": "household_object"
+    },
+    {
       "word": "shown",
       "concept": "standing_for"
     },
     {
       "word": "shrill",
       "concept": "sound"
+    },
+    {
+      "word": "shrimp",
+      "concept": "animal"
     },
     {
       "word": "shrink",
@@ -9356,8 +12508,16 @@
       ]
     },
     {
+      "word": "sickness",
+      "concept": "being_hurt"
+    },
+    {
       "word": "side",
       "concept": "shape"
+    },
+    {
+      "word": "sideways",
+      "concept": "direction"
     },
     {
       "word": "sight",
@@ -9375,6 +12535,10 @@
       "concept": "reporting"
     },
     {
+      "word": "significance",
+      "concept": "need"
+    },
+    {
       "word": "significant",
       "concept": "quantity"
     },
@@ -9387,8 +12551,16 @@
       "concept": "sound"
     },
     {
+      "word": "silent",
+      "concept": "sound"
+    },
+    {
       "word": "silently",
       "concept": "sound"
+    },
+    {
+      "word": "silt",
+      "concept": "material"
     },
     {
       "word": "silver",
@@ -9405,6 +12577,10 @@
     {
       "word": "simply",
       "concept": "way_of_doing"
+    },
+    {
+      "word": "sin",
+      "concept": "taking_on_faith"
     },
     {
       "word": "since",
@@ -9424,6 +12600,10 @@
       "antonyms": [
         "float"
       ]
+    },
+    {
+      "word": "sinkhole",
+      "concept": "shape"
     },
     {
       "word": "sir",
@@ -9450,6 +12630,10 @@
     },
     {
       "word": "six",
+      "concept": "number_word_order"
+    },
+    {
+      "word": "sixth",
       "concept": "number_word_order"
     },
     {
@@ -9511,6 +12695,10 @@
       "concept": "material"
     },
     {
+      "word": "slimy",
+      "concept": "physical_property"
+    },
+    {
       "word": "slip",
       "concept": "falling"
     },
@@ -9532,6 +12720,10 @@
     {
       "word": "slowly",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "sludge",
+      "concept": "material"
     },
     {
       "word": "small",
@@ -9570,6 +12762,10 @@
       "concept": "feeling"
     },
     {
+      "word": "smog",
+      "concept": "air"
+    },
+    {
       "word": "smoke",
       "concept": "material"
     },
@@ -9579,6 +12775,10 @@
       "antonyms": [
         "rough"
       ]
+    },
+    {
+      "word": "snake",
+      "concept": "animal"
     },
     {
       "word": "snap",
@@ -9597,6 +12797,14 @@
       "concept": "weather"
     },
     {
+      "word": "snowfall",
+      "concept": "weather"
+    },
+    {
+      "word": "snowman",
+      "concept": "toy"
+    },
+    {
       "word": "snowmelt",
       "concept": "weather"
     },
@@ -9611,6 +12819,14 @@
     {
       "word": "soap",
       "concept": "liquid"
+    },
+    {
+      "word": "society",
+      "concept": "people_together"
+    },
+    {
+      "word": "sodium",
+      "concept": "metal"
     },
     {
       "word": "soft",
@@ -9636,12 +12852,36 @@
       "concept": "person"
     },
     {
+      "word": "solely",
+      "concept": "all_some_none"
+    },
+    {
       "word": "solid",
       "concept": "material"
     },
     {
+      "word": "solubility",
+      "concept": "liquid"
+    },
+    {
+      "word": "soluble",
+      "concept": "liquid"
+    },
+    {
+      "word": "solution",
+      "concept": "liquid"
+    },
+    {
+      "word": "solve",
+      "concept": "finding_out"
+    },
+    {
       "word": "solvent",
       "concept": "liquid"
+    },
+    {
+      "word": "someday",
+      "concept": "duration"
     },
     {
       "word": "someone",
@@ -9658,6 +12898,10 @@
     {
       "word": "somewhat",
       "concept": "quantity"
+    },
+    {
+      "word": "somewhere",
+      "concept": "spatial_position"
     },
     {
       "word": "son",
@@ -9723,6 +12967,14 @@
       "concept": "direction"
     },
     {
+      "word": "southeastern",
+      "concept": "direction"
+    },
+    {
+      "word": "southern",
+      "concept": "direction"
+    },
+    {
       "word": "southwest",
       "concept": "direction"
     },
@@ -9731,11 +12983,19 @@
       "concept": "emptiness"
     },
     {
+      "word": "spacesuit",
+      "concept": "household_object"
+    },
+    {
       "word": "spare",
       "concept": "enough",
       "synonyms": [
         "extra"
       ]
+    },
+    {
+      "word": "spawn",
+      "concept": "growing"
     },
     {
       "word": "speak",
@@ -9757,8 +13017,16 @@
       "concept": "same_and_different"
     },
     {
+      "word": "speck",
+      "concept": "quantity"
+    },
+    {
       "word": "spectrum",
       "concept": "physical_property"
+    },
+    {
+      "word": "speech",
+      "concept": "sound"
     },
     {
       "word": "speed",
@@ -9774,6 +13042,10 @@
     },
     {
       "word": "sphere",
+      "concept": "shape"
+    },
+    {
+      "word": "spherical",
       "concept": "shape"
     },
     {
@@ -9825,6 +13097,10 @@
       "concept": "spatial_position"
     },
     {
+      "word": "spray",
+      "concept": "liquid"
+    },
+    {
       "word": "spread",
       "concept": "change"
     },
@@ -9833,8 +13109,20 @@
       "concept": "cycle"
     },
     {
+      "word": "springtime",
+      "concept": "cycle"
+    },
+    {
+      "word": "sprinkler",
+      "concept": "household_object"
+    },
+    {
       "word": "sprite",
       "concept": "real_and_pretend"
+    },
+    {
+      "word": "spy",
+      "concept": "saying_what_you_saw"
     },
     {
       "word": "squall",
@@ -9853,6 +13141,10 @@
       "concept": "animal"
     },
     {
+      "word": "squirt",
+      "concept": "liquid"
+    },
+    {
       "word": "stable",
       "concept": "change"
     },
@@ -9865,8 +13157,24 @@
       "concept": "sequence"
     },
     {
+      "word": "stagnant",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "stain",
+      "concept": "change"
+    },
+    {
+      "word": "stainless",
+      "concept": "material"
+    },
+    {
       "word": "stair",
       "concept": "household_object"
+    },
+    {
+      "word": "stalk",
+      "concept": "plant"
     },
     {
       "word": "stand",
@@ -9879,6 +13187,10 @@
     {
       "word": "stands",
       "concept": "standing_for"
+    },
+    {
+      "word": "stanza",
+      "concept": "writing"
     },
     {
       "word": "star",
@@ -9915,6 +13227,14 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "statistical",
+      "concept": "counting"
+    },
+    {
+      "word": "statistically",
+      "concept": "counting"
+    },
+    {
       "word": "stay",
       "concept": "keeping_going",
       "synonyms": [
@@ -9938,6 +13258,10 @@
       "concept": "metal"
     },
     {
+      "word": "steep",
+      "concept": "shape"
+    },
+    {
       "word": "stem",
       "concept": "plant"
     },
@@ -9952,6 +13276,10 @@
     {
       "word": "stick",
       "concept": "material"
+    },
+    {
+      "word": "stickiness",
+      "concept": "physical_property"
     },
     {
       "word": "sticky",
@@ -9988,7 +13316,15 @@
       "concept": "exchange"
     },
     {
+      "word": "storehouse",
+      "concept": "household_object"
+    },
+    {
       "word": "storm",
+      "concept": "weather"
+    },
+    {
+      "word": "stormwater",
       "concept": "weather"
     },
     {
@@ -10033,12 +13369,28 @@
       "concept": "material"
     },
     {
+      "word": "strawberry",
+      "concept": "plant"
+    },
+    {
+      "word": "streak",
+      "concept": "shape"
+    },
+    {
       "word": "stream",
       "concept": "liquid"
     },
     {
+      "word": "streambed",
+      "concept": "spatial_position"
+    },
+    {
       "word": "streamflow",
       "concept": "liquid"
+    },
+    {
+      "word": "streamgage",
+      "concept": "measuring"
     },
     {
       "word": "street",
@@ -10052,8 +13404,16 @@
       "concept": "force"
     },
     {
+      "word": "strengthen",
+      "concept": "force"
+    },
+    {
       "word": "stretch",
       "concept": "change"
+    },
+    {
+      "word": "strict",
+      "concept": "rule"
     },
     {
       "word": "strike",
@@ -10079,6 +13439,10 @@
       "synonyms": [
         "hard"
       ]
+    },
+    {
+      "word": "struggle",
+      "concept": "keep_trying_or_stop"
     },
     {
       "word": "strut",
@@ -10108,12 +13472,32 @@
       "concept": "knowing"
     },
     {
+      "word": "sublimation",
+      "concept": "change"
+    },
+    {
       "word": "submarine",
       "concept": "moving_and_still"
     },
     {
+      "word": "submerge",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "submit",
+      "concept": "giving_a_reason"
+    },
+    {
+      "word": "subsection",
+      "concept": "component_and_system"
+    },
+    {
       "word": "subsequent",
       "concept": "sequence"
+    },
+    {
+      "word": "subsidence",
+      "concept": "falling"
     },
     {
       "word": "substance",
@@ -10128,11 +13512,19 @@
       "concept": "quantity"
     },
     {
+      "word": "subsurface",
+      "concept": "spatial_position"
+    },
+    {
       "word": "subtract",
       "concept": "subtraction"
     },
     {
       "word": "subtropical",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "suburban",
       "concept": "spatial_position"
     },
     {
@@ -10144,6 +13536,14 @@
       "concept": "goal"
     },
     {
+      "word": "succession",
+      "concept": "sequence"
+    },
+    {
+      "word": "suction",
+      "concept": "force"
+    },
+    {
       "word": "sudden",
       "concept": "duration"
     },
@@ -10152,8 +13552,16 @@
       "concept": "duration"
     },
     {
+      "word": "sufficient",
+      "concept": "enough"
+    },
+    {
       "word": "sugar",
       "concept": "material"
+    },
+    {
+      "word": "suitability",
+      "concept": "good_and_bad"
     },
     {
       "word": "sulfide",
@@ -10162,6 +13570,14 @@
     {
       "word": "sulfur",
       "concept": "material"
+    },
+    {
+      "word": "sum",
+      "concept": "addition"
+    },
+    {
+      "word": "summary",
+      "concept": "reporting"
     },
     {
       "word": "summer",
@@ -10181,6 +13597,10 @@
     {
       "word": "sunburn",
       "concept": "being_hurt"
+    },
+    {
+      "word": "sundial",
+      "concept": "measuring"
     },
     {
       "word": "sunlight",
@@ -10219,6 +13639,10 @@
       "concept": "heat"
     },
     {
+      "word": "superhighway",
+      "concept": "spatial_position"
+    },
+    {
       "word": "supernova",
       "concept": "things_break"
     },
@@ -10229,6 +13653,10 @@
     {
       "word": "supplemental",
       "concept": "enough"
+    },
+    {
+      "word": "supplier",
+      "concept": "needing_supply"
     },
     {
       "word": "supply",
@@ -10247,6 +13675,10 @@
     },
     {
       "word": "sure",
+      "concept": "how_sure"
+    },
+    {
+      "word": "surely",
       "concept": "how_sure"
     },
     {
@@ -10278,12 +13710,24 @@
       "concept": "living_and_not_living"
     },
     {
+      "word": "susceptible",
+      "concept": "danger"
+    },
+    {
       "word": "sustain",
       "concept": "keeping_going"
     },
     {
+      "word": "sustainably",
+      "concept": "using_up"
+    },
+    {
       "word": "swallow",
       "concept": "living_and_not_living"
+    },
+    {
+      "word": "swamp",
+      "concept": "spatial_position"
     },
     {
       "word": "swap",
@@ -10305,11 +13749,27 @@
       "concept": "physical_property"
     },
     {
+      "word": "swell",
+      "concept": "growing"
+    },
+    {
+      "word": "swiftly",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "swim",
       "concept": "moving_and_still"
     },
     {
+      "word": "swimmer",
+      "concept": "person"
+    },
+    {
       "word": "swing",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "swirl",
       "concept": "moving_and_still"
     },
     {
@@ -10317,8 +13777,16 @@
       "concept": "plant"
     },
     {
+      "word": "syllable",
+      "concept": "word"
+    },
+    {
       "word": "symbol",
       "concept": "standing_for"
+    },
+    {
+      "word": "symptom",
+      "concept": "being_hurt"
     },
     {
       "word": "syngas",
@@ -10347,6 +13815,10 @@
     {
       "word": "tail",
       "concept": "body_part"
+    },
+    {
+      "word": "tailings",
+      "concept": "using_up"
     },
     {
       "word": "take",
@@ -10457,12 +13929,24 @@
       "concept": "way_of_doing"
     },
     {
+      "word": "technician",
+      "concept": "way_of_doing"
+    },
+    {
+      "word": "technique",
+      "concept": "way_of_doing"
+    },
+    {
       "word": "technology",
       "concept": "component_and_system"
     },
     {
       "word": "tectonic",
       "concept": "force"
+    },
+    {
+      "word": "telephone",
+      "concept": "household_object"
     },
     {
       "word": "telescope",
@@ -10481,6 +13965,22 @@
       "concept": "weather"
     },
     {
+      "word": "template",
+      "concept": "plan"
+    },
+    {
+      "word": "temple",
+      "concept": "taking_on_faith"
+    },
+    {
+      "word": "temporarily",
+      "concept": "duration"
+    },
+    {
+      "word": "temporary",
+      "concept": "duration"
+    },
+    {
       "word": "temptation",
       "concept": "should_and_should_not"
     },
@@ -10493,12 +13993,20 @@
       "concept": "tending"
     },
     {
+      "word": "tendency",
+      "concept": "how_sure"
+    },
+    {
       "word": "tender",
       "concept": "physical_property"
     },
     {
       "word": "tennis",
       "concept": "activity"
+    },
+    {
+      "word": "tension",
+      "concept": "force"
     },
     {
       "word": "tent",
@@ -10512,6 +14020,14 @@
       ]
     },
     {
+      "word": "terminology",
+      "concept": "word"
+    },
+    {
+      "word": "terrace",
+      "concept": "spatial_position"
+    },
+    {
       "word": "terrain",
       "concept": "spatial_position"
     },
@@ -10522,6 +14038,10 @@
     {
       "word": "terrible",
       "concept": "good_and_bad"
+    },
+    {
+      "word": "territory",
+      "concept": "spatial_position"
     },
     {
       "word": "terror",
@@ -10584,6 +14104,10 @@
     },
     {
       "word": "thermocline",
+      "concept": "heat"
+    },
+    {
+      "word": "thermoelectric",
       "concept": "heat"
     },
     {
@@ -10656,12 +14180,20 @@
       "concept": "danger"
     },
     {
+      "word": "threaten",
+      "concept": "danger"
+    },
+    {
       "word": "three",
       "concept": "number_word_order"
     },
     {
       "word": "thrive",
       "concept": "growing"
+    },
+    {
+      "word": "throat",
+      "concept": "body_part"
     },
     {
       "word": "throughout",
@@ -10680,6 +14212,10 @@
     },
     {
       "word": "thunder",
+      "concept": "weather"
+    },
+    {
+      "word": "thundershower",
       "concept": "weather"
     },
     {
@@ -10716,6 +14252,10 @@
     {
       "word": "tight",
       "concept": "physical_property"
+    },
+    {
+      "word": "tightly",
+      "concept": "touching"
     },
     {
       "word": "till",
@@ -10761,6 +14301,10 @@
       ]
     },
     {
+      "word": "title",
+      "concept": "written_record"
+    },
+    {
       "word": "toad",
       "concept": "animal"
     },
@@ -10789,6 +14333,10 @@
       "concept": "household_object"
     },
     {
+      "word": "tomato",
+      "concept": "plant"
+    },
+    {
       "word": "tomorrow",
       "concept": "weather",
       "antonyms": [
@@ -10810,6 +14358,10 @@
     {
       "word": "tool",
       "concept": "way_of_doing"
+    },
+    {
+      "word": "tooth",
+      "concept": "body_part"
     },
     {
       "word": "toothpick",
@@ -10850,6 +14402,10 @@
       "concept": "quantity"
     },
     {
+      "word": "totally",
+      "concept": "all_some_none"
+    },
+    {
       "word": "touch",
       "concept": "touching"
     },
@@ -10872,6 +14428,18 @@
     {
       "word": "town",
       "concept": "people_together"
+    },
+    {
+      "word": "toxic",
+      "concept": "danger"
+    },
+    {
+      "word": "toxicity",
+      "concept": "danger"
+    },
+    {
+      "word": "toxin",
+      "concept": "being_hurt"
     },
     {
       "word": "toy",
@@ -10909,8 +14477,20 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "trample",
+      "concept": "touching"
+    },
+    {
+      "word": "transducer",
+      "concept": "measuring"
+    },
+    {
       "word": "transfer",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "transform",
+      "concept": "change"
     },
     {
       "word": "transit",
@@ -10921,8 +14501,20 @@
       "concept": "change"
     },
     {
+      "word": "translate",
+      "concept": "word"
+    },
+    {
       "word": "transmission",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "transmit",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "transmitter",
+      "concept": "reporting"
     },
     {
       "word": "transparent",
@@ -10933,6 +14525,10 @@
       "concept": "liquid"
     },
     {
+      "word": "transpire",
+      "concept": "plant"
+    },
+    {
       "word": "transport",
       "concept": "moving_and_still"
     },
@@ -10941,8 +14537,16 @@
       "concept": "force"
     },
     {
+      "word": "trash",
+      "concept": "using_up"
+    },
+    {
       "word": "travel",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "traveler",
+      "concept": "person"
     },
     {
       "word": "tray",
@@ -10969,6 +14573,14 @@
       "concept": "quantity"
     },
     {
+      "word": "tremendously",
+      "concept": "quantity"
+    },
+    {
+      "word": "trend",
+      "concept": "change"
+    },
+    {
       "word": "trial",
       "concept": "checking"
     },
@@ -10977,11 +14589,19 @@
       "concept": "people_together"
     },
     {
+      "word": "tributary",
+      "concept": "liquid"
+    },
+    {
       "word": "trick",
       "concept": "way_of_doing",
       "synonyms": [
         "lie"
       ]
+    },
+    {
+      "word": "trickle",
+      "concept": "liquid"
     },
     {
       "word": "trillion",
@@ -11012,12 +14632,20 @@
       "concept": "air"
     },
     {
+      "word": "trot",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "trouble",
       "concept": "danger"
     },
     {
       "word": "trough",
       "concept": "weather"
+    },
+    {
+      "word": "truck",
+      "concept": "moving_and_still"
     },
     {
       "word": "true",
@@ -11059,6 +14687,10 @@
       "concept": "household_object"
     },
     {
+      "word": "tube",
+      "concept": "shape"
+    },
+    {
       "word": "tug",
       "concept": "force"
     },
@@ -11071,6 +14703,10 @@
       "concept": "physical_property"
     },
     {
+      "word": "turbidity",
+      "concept": "physical_property"
+    },
+    {
       "word": "turbine",
       "concept": "component_and_system"
     },
@@ -11079,8 +14715,20 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "turbulent",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "turn",
       "concept": "moving_and_still"
+    },
+    {
+      "word": "turnip",
+      "concept": "plant"
+    },
+    {
+      "word": "turntable",
+      "concept": "household_object"
     },
     {
       "word": "twelve",
@@ -11123,8 +14771,16 @@
       "concept": "physical_property"
     },
     {
+      "word": "ultimately",
+      "concept": "finished_or_not"
+    },
+    {
       "word": "ultraviolet",
       "concept": "physical_property"
+    },
+    {
+      "word": "umbrella",
+      "concept": "household_object"
     },
     {
       "word": "unable",
@@ -11132,6 +14788,10 @@
       "antonyms": [
         "able"
       ]
+    },
+    {
+      "word": "uncertainty",
+      "concept": "how_sure"
     },
     {
       "word": "unchanged",
@@ -11143,6 +14803,14 @@
       "antonyms": [
         "aunt"
       ]
+    },
+    {
+      "word": "uncommon",
+      "concept": "cycle"
+    },
+    {
+      "word": "unconfined",
+      "concept": "inside_and_outside"
     },
     {
       "word": "uncover",
@@ -11163,6 +14831,14 @@
       "concept": "spatial_position"
     },
     {
+      "word": "underlie",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "underlying",
+      "concept": "spatial_position"
+    },
+    {
       "word": "underneath",
       "concept": "spatial_position"
     },
@@ -11171,8 +14847,20 @@
       "concept": "knowing"
     },
     {
+      "word": "underwater",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "undesirable",
+      "concept": "good_and_bad"
+    },
+    {
       "word": "undo",
       "concept": "joining_and_separating"
+    },
+    {
+      "word": "uneven",
+      "concept": "shape"
     },
     {
       "word": "unfair",
@@ -11206,8 +14894,16 @@
       "concept": "all_some_none"
     },
     {
+      "word": "universally",
+      "concept": "all_some_none"
+    },
+    {
       "word": "universe",
       "concept": "spatial_position"
+    },
+    {
+      "word": "university",
+      "concept": "knowing"
     },
     {
       "word": "unkind",
@@ -11242,11 +14938,27 @@
       ]
     },
     {
+      "word": "unnamed",
+      "concept": "name"
+    },
+    {
+      "word": "unpredictable",
+      "concept": "not_always_known"
+    },
+    {
       "word": "unsafe",
       "concept": "danger",
       "antonyms": [
         "safe"
       ]
+    },
+    {
+      "word": "unsaturated",
+      "concept": "liquid"
+    },
+    {
+      "word": "unsightly",
+      "concept": "good_and_bad"
     },
     {
       "word": "unstable",
@@ -11268,6 +14980,14 @@
       "concept": "tending"
     },
     {
+      "word": "unusually",
+      "concept": "more_and_fewer"
+    },
+    {
+      "word": "unwanted",
+      "concept": "good_and_bad"
+    },
+    {
       "word": "up",
       "concept": "",
       "antonyms": [
@@ -11287,6 +15007,10 @@
       "concept": "change"
     },
     {
+      "word": "uphill",
+      "concept": "direction"
+    },
+    {
       "word": "upon",
       "concept": "spatial_position"
     },
@@ -11297,6 +15021,10 @@
     {
       "word": "upset",
       "concept": "feeling"
+    },
+    {
+      "word": "upside",
+      "concept": "spatial_position"
     },
     {
       "word": "upstream",
@@ -11319,12 +15047,28 @@
       "concept": "change"
     },
     {
+      "word": "urine",
+      "concept": "body_part"
+    },
+    {
+      "word": "usable",
+      "concept": "using_up"
+    },
+    {
+      "word": "usage",
+      "concept": "using_up"
+    },
+    {
       "word": "use",
       "concept": "using_up"
     },
     {
       "word": "useful",
       "concept": "good_and_bad"
+    },
+    {
+      "word": "user",
+      "concept": "using_up"
     },
     {
       "word": "usual",
@@ -11337,6 +15081,10 @@
     {
       "word": "utility",
       "concept": "exchange"
+    },
+    {
+      "word": "utilize",
+      "concept": "using_up"
     },
     {
       "word": "utter",
@@ -11355,8 +15103,16 @@
       "concept": "exchange"
     },
     {
+      "word": "van",
+      "concept": "moving_and_still"
+    },
+    {
       "word": "vapor",
       "concept": "material"
+    },
+    {
+      "word": "variability",
+      "concept": "change"
     },
     {
       "word": "variation",
@@ -11395,12 +15151,28 @@
       "concept": "moving_and_still"
     },
     {
+      "word": "veil",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "vein",
+      "concept": "body_part"
+    },
+    {
       "word": "velocity",
       "concept": "moving_and_still"
     },
     {
+      "word": "vent",
+      "concept": "opening_and_shutting"
+    },
+    {
       "word": "verse",
       "concept": "story"
+    },
+    {
+      "word": "versus",
+      "concept": "same_and_different"
     },
     {
       "word": "vertical",
@@ -11417,6 +15189,14 @@
     {
       "word": "via",
       "concept": "direction"
+    },
+    {
+      "word": "vicinity",
+      "concept": "spatial_position"
+    },
+    {
+      "word": "victim",
+      "concept": "being_hurt"
     },
     {
       "word": "victory",
@@ -11447,6 +15227,14 @@
       "concept": "physical_property"
     },
     {
+      "word": "virtually",
+      "concept": "close_enough"
+    },
+    {
+      "word": "virus",
+      "concept": "being_hurt"
+    },
+    {
       "word": "visibility",
       "concept": "measuring"
     },
@@ -11463,8 +15251,20 @@
       "concept": "body_part"
     },
     {
+      "word": "visualization",
+      "concept": "standing_for"
+    },
+    {
+      "word": "visualize",
+      "concept": "real_and_pretend"
+    },
+    {
       "word": "vital",
       "concept": "need"
+    },
+    {
+      "word": "vitally",
+      "concept": "good_and_bad"
     },
     {
       "word": "vocal",
@@ -11478,12 +15278,24 @@
       ]
     },
     {
+      "word": "void",
+      "concept": "emptiness"
+    },
+    {
+      "word": "volatile",
+      "concept": "physical_property"
+    },
+    {
       "word": "volcanic",
       "concept": "physical_property"
     },
     {
       "word": "volcano",
       "concept": "spatial_position"
+    },
+    {
+      "word": "voltage",
+      "concept": "force"
     },
     {
       "word": "volume",
@@ -11500,6 +15312,18 @@
     {
       "word": "vote",
       "concept": "choosing"
+    },
+    {
+      "word": "vulnerable",
+      "concept": "danger"
+    },
+    {
+      "word": "wade",
+      "concept": "moving_and_still"
+    },
+    {
+      "word": "waders",
+      "concept": "household_object"
     },
     {
       "word": "wagon",
@@ -11591,6 +15415,10 @@
       "concept": "spatial_position"
     },
     {
+      "word": "watery",
+      "concept": "liquid"
+    },
+    {
       "word": "wave",
       "concept": "liquid"
     },
@@ -11646,6 +15474,14 @@
       "concept": "writing"
     },
     {
+      "word": "wedding",
+      "concept": "people_together"
+    },
+    {
+      "word": "weed",
+      "concept": "plant"
+    },
+    {
       "word": "week",
       "concept": "cycle"
     },
@@ -11666,11 +15502,19 @@
       "concept": "good_and_bad"
     },
     {
+      "word": "well",
+      "concept": "liquid"
+    },
+    {
       "word": "wellhead",
       "concept": "liquid"
     },
     {
       "word": "west",
+      "concept": "direction"
+    },
+    {
+      "word": "westerly",
       "concept": "direction"
     },
     {
@@ -11697,12 +15541,28 @@
       "concept": "physical_property"
     },
     {
+      "word": "whale",
+      "concept": "animal"
+    },
+    {
       "word": "whatever",
       "concept": "all_some_none"
     },
     {
+      "word": "wheat",
+      "concept": "plant"
+    },
+    {
       "word": "wheel",
       "concept": "household_object"
+    },
+    {
+      "word": "whenever",
+      "concept": "duration"
+    },
+    {
+      "word": "whereas",
+      "concept": "same_and_different"
     },
     {
       "word": "wherever",
@@ -11717,8 +15577,16 @@
       "concept": "duration"
     },
     {
+      "word": "whip",
+      "concept": "household_object"
+    },
+    {
       "word": "whipcord",
       "concept": "material"
+    },
+    {
+      "word": "whisker",
+      "concept": "body_part"
     },
     {
       "word": "whisper",
@@ -11775,6 +15643,10 @@
       "concept": "living_and_not_living"
     },
     {
+      "word": "wildlife",
+      "concept": "animal"
+    },
+    {
       "word": "willing",
       "concept": "choosing"
     },
@@ -11796,6 +15668,10 @@
     {
       "word": "winding",
       "concept": "shape"
+    },
+    {
+      "word": "windmill",
+      "concept": "force"
     },
     {
       "word": "window",
@@ -11824,6 +15700,14 @@
     {
       "word": "wish",
       "concept": "feeling"
+    },
+    {
+      "word": "withdraw",
+      "concept": "inside_and_outside"
+    },
+    {
+      "word": "withdrawal",
+      "concept": "inside_and_outside"
     },
     {
       "word": "within",
@@ -11879,6 +15763,10 @@
       "concept": "activity"
     },
     {
+      "word": "workman",
+      "concept": "person"
+    },
+    {
       "word": "world",
       "concept": "spatial_position"
     },
@@ -11909,16 +15797,32 @@
       "concept": "exchange"
     },
     {
+      "word": "worthy",
+      "concept": "good_and_bad"
+    },
+    {
       "word": "wound",
       "concept": "being_hurt"
+    },
+    {
+      "word": "wrap",
+      "concept": "inside_and_outside"
     },
     {
       "word": "wreck",
       "concept": "things_break"
     },
     {
+      "word": "wrench",
+      "concept": "household_object"
+    },
+    {
       "word": "write",
       "concept": "writing"
+    },
+    {
+      "word": "writer",
+      "concept": "person"
     },
     {
       "word": "wrong",
@@ -11938,6 +15842,10 @@
     {
       "word": "year",
       "concept": "duration"
+    },
+    {
+      "word": "yearly",
+      "concept": "cycle"
     },
     {
       "word": "yeast",
@@ -11969,6 +15877,10 @@
       ]
     },
     {
+      "word": "yield",
+      "concept": "raw_and_made"
+    },
+    {
       "word": "young",
       "concept": "physical_property",
       "antonyms": [
@@ -11984,8 +15896,16 @@
       "concept": "self_and_other"
     },
     {
+      "word": "youth",
+      "concept": "growing"
+    },
+    {
       "word": "zero",
       "concept": "counting"
+    },
+    {
+      "word": "zinc",
+      "concept": "metal"
     },
     {
       "word": "zonal",

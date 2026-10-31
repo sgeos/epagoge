@@ -1,0 +1,2259 @@
+{
+  "accessible": {
+    "concept": "can_and_cannot",
+    "pos": "adjective periphrastic",
+    "definition": "Accessible means easy to reach, get or use.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "accustomed": {
+    "concept": "knowing",
+    "pos": "adjective periphrastic",
+    "definition": "To be accustomed to something is to be used to it because it has happened often.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "advise": {
+    "concept": "should_and_should_not",
+    "pos": "verb",
+    "definition": "To advise someone is to tell them what you think they should do.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "aerial": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Aerial means taken from or done in the air, such as a photograph taken from an airplane.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "airport": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "An airport is a place where airplanes take off and land.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "align": {
+    "concept": "spatial_position",
+    "pos": "verb",
+    "definition": "To align things is to put them in a straight line or facing the same way.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "aloud": {
+    "concept": "sound",
+    "pos": "",
+    "definition": "Aloud means in a voice that others can hear.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "angel": {
+    "concept": "taking_on_faith",
+    "pos": "noun",
+    "definition": "An angel is a spirit that some people believe in, often shown as a person with wings.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "announce": {
+    "concept": "reporting",
+    "pos": "verb",
+    "definition": "To announce something is to tell many people about it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "anxious": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Anxious means worried and afraid about what may happen.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "anybody": {
+    "concept": "person",
+    "pos": "",
+    "definition": "Anybody means any person at all.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "apparently": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Apparently means as it seems, from what can be seen or heard.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "artichoke": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "An artichoke is a green vegetable made of thick leaves that grow in a tight ball.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "ascend": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To ascend is to go up.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "ashore": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Ashore means onto or on the land from the water.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "aside": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Aside means to one side, or out of the way.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "asphalt": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Asphalt is a black, sticky material used to make roads.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "assemble": {
+    "concept": "people_together",
+    "pos": "verb",
+    "definition": "To assemble is to come together in one place, or to put parts together.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "assistance": {
+    "concept": "need",
+    "pos": "mass noun",
+    "definition": "Assistance is help.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "assure": {
+    "concept": "how_sure",
+    "pos": "verb",
+    "definition": "To assure someone is to tell them something in a strong way so that they stop worrying.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "astonish": {
+    "concept": "feeling",
+    "pos": "verb",
+    "definition": "To astonish someone is to surprise them very much.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "attractive": {
+    "concept": "force",
+    "pos": "adjective periphrastic",
+    "definition": "Attractive means pulling things toward each other, as a magnet pulls iron.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "auntie": {
+    "concept": "family",
+    "pos": "noun",
+    "definition": "Auntie is a name a child uses for an aunt.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "automatically": {
+    "concept": "way_of_doing",
+    "pos": "",
+    "definition": "Automatically means by itself, without a person having to do it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "bargain": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A bargain is something bought for a low price.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "barge": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A barge is a long boat with a flat bottom, used to carry heavy loads on rivers.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "beaker": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A beaker is a glass cup with straight sides used to measure liquids in science.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "beard": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A beard is hair that grows on the face of a man, below the mouth.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "belief": {
+    "concept": "taking_on_faith",
+    "pos": "noun",
+    "definition": "A belief is something a person thinks is true.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "beloved": {
+    "concept": "feeling",
+    "pos": "adjective ungraded",
+    "definition": "Beloved means loved very much.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "biography": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A biography is a true story of the life of a person, written by someone else.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "bleach": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To bleach something is to make it white or take away its color.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "blossom": {
+    "concept": "plant",
+    "pos": "noun verb",
+    "definition": "A blossom is a flower on a tree or plant, and to blossom is to make flowers.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "bluebird": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A bluebird is a small bird with blue feathers.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "blueness": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Blueness is the quality of being blue.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "bluish": {
+    "concept": "physical_property",
+    "pos": "adjective ungraded",
+    "definition": "Bluish means a little blue.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "blunder": {
+    "concept": "mistake",
+    "pos": "noun",
+    "definition": "A blunder is a big mistake made because someone was not careful.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "bone": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A bone is one of the hard white parts inside the body of a person or animal.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "boot": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A boot is a strong shoe that covers the foot and part of the leg.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "brightly": {
+    "concept": "physical_property",
+    "pos": "",
+    "definition": "Brightly means in a bright way, with a lot of light or color.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "brightness": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Brightness is how bright something is.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "brilliant": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Brilliant means very bright.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "bump": {
+    "concept": "touching",
+    "pos": "verb",
+    "definition": "To bump into something is to hit it while moving, but not hard.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "burden": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "A burden is a heavy load to carry, or a worry that is hard to carry.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "calculation": {
+    "concept": "counting",
+    "pos": "noun",
+    "definition": "A calculation is the work of finding an answer with numbers.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "camp": {
+    "concept": "activity",
+    "pos": "noun verb",
+    "definition": "A camp is a place where people stay in tents for a short time, and to camp is to stay in one.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "candy": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "Candy is a sweet food made with sugar.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "capable": {
+    "concept": "can_and_cannot",
+    "pos": "adjective periphrastic",
+    "definition": "Capable means able to do something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "carriage": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A carriage is a vehicle with wheels pulled by horses.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "catastrophic": {
+    "concept": "things_break",
+    "pos": "adjective periphrastic",
+    "definition": "Catastrophic means bringing very great damage or harm.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "cavity": {
+    "concept": "inside_and_outside",
+    "pos": "noun",
+    "definition": "A cavity is an empty space inside something solid.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "cease": {
+    "concept": "keep_trying_or_stop",
+    "pos": "verb",
+    "definition": "To cease is to stop.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "cedar": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A cedar is a tall tree with needles and sweet-smelling wood.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "cellar": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A cellar is a room under a house, often used for storing things.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "challenge": {
+    "concept": "can_and_cannot",
+    "pos": "noun verb",
+    "definition": "A challenge is a hard task that tests what you can do, and to challenge is to test in this way.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "chapter": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A chapter is one of the parts that a book is divided into.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "cheerful": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Cheerful means happy and bright.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "chicken": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A chicken is a bird kept on farms for its eggs, and also eaten as food.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "chiefly": {
+    "concept": "more_and_fewer",
+    "pos": "",
+    "definition": "Chiefly means mainly, or more than anything else.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "chip": {
+    "concept": "things_break",
+    "pos": "noun",
+    "definition": "A chip is a small thin piece broken or cut off something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "chunk": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A chunk is a thick, solid piece of something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "circulate": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To circulate is to move around and come back to where it started, as blood does in the body.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "cistern": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A cistern is a tank for storing water.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "claw": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A claw is a sharp, curved nail on the foot of an animal or bird.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "clerk": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A clerk is a person whose job is to keep records or to serve people in a store, office or bank.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "clog": {
+    "concept": "opening_and_shutting",
+    "pos": "verb",
+    "definition": "To clog something is to block it so that things cannot pass through.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "clump": {
+    "concept": "grouping",
+    "pos": "verb",
+    "definition": "To clump is to stick together into a small group.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "coastline": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A coastline is the edge of the land where it meets the sea.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "code": {
+    "concept": "standing_for",
+    "pos": "noun",
+    "definition": "A code is a set of signs or rules used to stand for something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "communicate": {
+    "concept": "being_told",
+    "pos": "verb",
+    "definition": "To communicate is to share ideas with others by speaking, writing or signs.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "confusion": {
+    "concept": "knowing",
+    "pos": "mass noun",
+    "definition": "Confusion is not understanding something, or things being mixed up.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "consequently": {
+    "concept": "cause_and_effect",
+    "pos": "",
+    "definition": "Consequently means as a result.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "conserve": {
+    "concept": "using_up",
+    "pos": "verb",
+    "definition": "To conserve something is to use it carefully so that you do not use too much.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "convenient": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Convenient means easy and useful, or fitting well with your plans.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "cooker": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A cooker is a pot or machine used for cooking food.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "cord": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A cord is a thick string.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "cottage": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A cottage is a small house, often in the country.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "crossword": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "A crossword is a puzzle in which you write words into rows of squares.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "crucial": {
+    "concept": "need",
+    "pos": "adjective periphrastic",
+    "definition": "Crucial means very important, so that a lot depends on it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "crumb": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A crumb is a very small piece of bread or cake.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "curb": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A curb is the raised edge of a street, where the street meets the path for walking.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "curl": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A curl is a piece of hair or something else that is bent round in a ring.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "currently": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Currently means now, at this time.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "dance": {
+    "concept": "activity",
+    "pos": "verb noun",
+    "definition": "To dance is to move your body to music.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "delicate": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Delicate means easily broken or hurt.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "delivery": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A delivery is the act of bringing something to a person or place.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "descend": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To descend is to go down.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "description": {
+    "concept": "reporting",
+    "pos": "noun",
+    "definition": "A description is words that tell what something or someone is like.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "despair": {
+    "concept": "feeling",
+    "pos": "mass noun",
+    "definition": "Despair is the feeling that there is no hope.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "desperately": {
+    "concept": "keep_trying_or_stop",
+    "pos": "",
+    "definition": "Desperately means with great effort because things are very bad.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "dictionary": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A dictionary is a book that lists words in order and tells what they mean.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "differ": {
+    "concept": "same_and_different",
+    "pos": "verb",
+    "definition": "To differ is to be not the same.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "difficulty": {
+    "concept": "can_and_cannot",
+    "pos": "noun",
+    "definition": "A difficulty is something that makes a thing hard to do.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "digest": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To digest food is to break it down inside the body so that it can be used.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "diligently": {
+    "concept": "keeping_going",
+    "pos": "",
+    "definition": "Diligently means with steady, careful effort.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "diminish": {
+    "concept": "more_and_fewer",
+    "pos": "verb",
+    "definition": "To diminish is to become smaller or less.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "dip": {
+    "concept": "shape",
+    "pos": "noun verb",
+    "definition": "A dip is a place where something goes down a little and then up again, and to dip something is to put it into a liquid for a short time.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "disagreeable": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Disagreeable means not pleasant.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "disc": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A disc is a flat, round thing.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "discourage": {
+    "concept": "feeling",
+    "pos": "verb",
+    "definition": "To discourage someone is to make them feel less sure or less willing to try.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "disgrace": {
+    "concept": "judged_by_another",
+    "pos": "mass noun",
+    "definition": "Disgrace is the loss of the good opinion of others because of something bad you did.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "display": {
+    "concept": "saying_what_you_saw",
+    "pos": "noun verb",
+    "definition": "A display is a showing of things for people to see, and to display something is to show it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "dispose": {
+    "concept": "using_up",
+    "pos": "verb",
+    "definition": "To dispose of something is to get rid of it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "distress": {
+    "concept": "feeling",
+    "pos": "mass noun",
+    "definition": "Distress is great worry, pain or trouble.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "document": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A document is a written or printed paper that gives information or proof.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "doorstep": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A doorstep is the step or space just outside the door of a house.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "dreary": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Dreary means dull and sad.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "drone": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A drone is a bee in a hive that does not gather food.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "drown": {
+    "concept": "dying",
+    "pos": "verb",
+    "definition": "To drown is to die under water because you cannot breathe.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "dryer": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A dryer is a machine that dries clothes.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "dusty": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Dusty means covered with dust.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "earnest": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Earnest means serious and meaning what you say.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "educator": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "An educator is a person whose job is to teach.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "elder": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "An elder is an older person, often one who is respected and helps lead a group.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "election": {
+    "concept": "choosing",
+    "pos": "noun",
+    "definition": "An election is a time when people vote to choose leaders.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "electrically": {
+    "concept": "force",
+    "pos": "",
+    "definition": "Electrically means by or with electricity.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "elevate": {
+    "concept": "spatial_position",
+    "pos": "verb",
+    "definition": "To elevate something is to raise it up.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "employ": {
+    "concept": "way_of_doing",
+    "pos": "verb",
+    "definition": "To employ someone is to pay them to do work, and to employ a thing is to use it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "employment": {
+    "concept": "activity",
+    "pos": "mass noun",
+    "definition": "Employment is having paid work.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "empty": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To empty something is to take everything out of it, and a river empties when it flows out into the sea or a lake.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source",
+    "second_sense": true
+  },
+  "endangered": {
+    "concept": "danger",
+    "pos": "adjective ungraded",
+    "definition": "Endangered means in danger of dying out, so that soon none may be left.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "envy": {
+    "concept": "feeling",
+    "pos": "mass noun verb",
+    "definition": "Envy is the feeling of wanting what someone else has, and to envy someone is to feel this.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "evacuate": {
+    "concept": "danger",
+    "pos": "verb",
+    "definition": "To evacuate is to leave a place because it is not safe.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "evenly": {
+    "concept": "same_amount",
+    "pos": "",
+    "definition": "Evenly means in a smooth or equal way, with the same amount in each part.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "everybody": {
+    "concept": "person",
+    "pos": "",
+    "definition": "Everybody means every person.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "evident": {
+    "concept": "how_sure",
+    "pos": "adjective periphrastic",
+    "definition": "Evident means easy to see or understand.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "evidently": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Evidently means as can be plainly seen.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "excite": {
+    "concept": "feeling",
+    "pos": "verb",
+    "definition": "To excite someone is to make them feel eager and happy.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "exhaust": {
+    "concept": "air",
+    "pos": "mass noun",
+    "definition": "Exhaust is the gas and smoke that come out of an engine.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "existence": {
+    "concept": "presence",
+    "pos": "mass noun",
+    "definition": "Existence is being real or being alive.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "explode": {
+    "concept": "things_break",
+    "pos": "verb",
+    "definition": "To explode is to burst with a loud noise and great force.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "explosive": {
+    "concept": "things_break",
+    "pos": "adjective periphrastic",
+    "definition": "Explosive means able to explode.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "exporter": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "An exporter is a person, company or country that sells things to other countries.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "extract": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To extract something is to take or pull it out.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "faint": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Faint means weak and hard to see, hear or feel.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "fascinate": {
+    "concept": "feeling",
+    "pos": "verb",
+    "definition": "To fascinate someone is to hold all their attention because it is so interesting.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "fasten": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To fasten something is to tie or fix it so that it holds in place.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "fatal": {
+    "concept": "dying",
+    "pos": "adjective ungraded",
+    "definition": "Fatal means bringing death.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "fate": {
+    "concept": "not_always_known",
+    "pos": "noun",
+    "definition": "Fate is what happens to someone in the end.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "favorable": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Favorable means good for something, or helpful.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "fiddler": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A fiddler is a person who plays music on a small wooden instrument with strings.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "fierce": {
+    "concept": "danger",
+    "pos": "adjective",
+    "definition": "Fierce means wild, angry and ready to attack.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "fig": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A fig is a soft, sweet fruit full of small seeds.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "fight": {
+    "concept": "disagreeing",
+    "pos": "verb noun",
+    "definition": "To fight is to try to hurt or beat someone, or to argue hard.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "final": {
+    "concept": "sequence",
+    "pos": "adjective ungraded",
+    "definition": "Final means last, at the end.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "firmly": {
+    "concept": "physical_property",
+    "pos": "",
+    "definition": "Firmly means in a firm way, so that it holds and does not move.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "flee": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To flee is to run away from danger.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "floss": {
+    "concept": "household_object",
+    "pos": "mass noun",
+    "definition": "Floss is a thin thread used for cleaning in the mouth.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "folks": {
+    "concept": "person",
+    "pos": "noun plural-only",
+    "definition": "Folks means people, or the people of your family.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "friendly": {
+    "concept": "people_together",
+    "pos": "adjective",
+    "definition": "Friendly means kind and pleasant to others.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "friendship": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "Friendship is being friends.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "fright": {
+    "concept": "feeling",
+    "pos": "noun",
+    "definition": "Fright is a sudden feeling of fear.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "furiously": {
+    "concept": "feeling",
+    "pos": "",
+    "definition": "Furiously means in a wild, angry or very strong way.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "generous": {
+    "concept": "exchange",
+    "pos": "adjective periphrastic",
+    "definition": "Generous means glad to give or share.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "geographic": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Geographic means about the places, land and features of the earth.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "geography": {
+    "concept": "knowing",
+    "pos": "mass noun",
+    "definition": "Geography is the study of the earth, its lands, seas and people.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "gleam": {
+    "concept": "physical_property",
+    "pos": "verb",
+    "definition": "To gleam is to shine softly.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "grateful": {
+    "concept": "thanking",
+    "pos": "adjective periphrastic",
+    "definition": "Grateful means wanting to thank someone for what they did.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "grime": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Grime is dirt that sticks to things.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "grove": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A grove is a small group of trees.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "guilty": {
+    "concept": "fair_and_unfair",
+    "pos": "adjective periphrastic",
+    "definition": "Guilty means having done something wrong, or feeling bad about it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "gum": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Gum is a sticky substance that comes from some trees.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "gumdrop": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A gumdrop is a small, soft candy.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "haste": {
+    "concept": "moving_and_still",
+    "pos": "mass noun",
+    "definition": "Haste is great speed, or hurrying.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "highlight": {
+    "concept": "saying_what_you_saw",
+    "pos": "verb",
+    "definition": "To highlight something is to make it stand out so that people notice it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "highway": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A highway is a main road between towns or cities.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "hillside": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A hillside is the side of a hill.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "hood": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A hood is a cover for the head and neck, often joined to a coat.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "hopefully": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Hopefully means it is hoped that.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "horizon": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The horizon is the line where the land or sea seems to meet the sky.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "hose": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A hose is a long tube that bends, used to carry water.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "hourly": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Hourly means every hour.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "hunt": {
+    "concept": "activity",
+    "pos": "verb",
+    "definition": "To hunt is to chase and catch or kill wild animals.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "imagination": {
+    "concept": "real_and_pretend",
+    "pos": "mass noun",
+    "definition": "Imagination is the power to make pictures and ideas in your mind.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "immediate": {
+    "concept": "duration",
+    "pos": "adjective ungraded",
+    "definition": "Immediate means happening now, with no waiting.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "immense": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Immense means very large.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "improvement": {
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "definition": "An improvement is a change that makes something better.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "inaccurate": {
+    "concept": "being_wrong",
+    "pos": "adjective periphrastic",
+    "definition": "Inaccurate means not correct or not exact.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "inactive": {
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "definition": "Inactive means not active, not working or not moving.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "incoming": {
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "definition": "Incoming means coming in or arriving.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "indirectly": {
+    "concept": "cause_and_effect",
+    "pos": "",
+    "definition": "Indirectly means not in a straight way, but through something else.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "indoor": {
+    "concept": "inside_and_outside",
+    "pos": "adjective ungraded",
+    "definition": "Indoor means inside a building.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "industrious": {
+    "concept": "keeping_going",
+    "pos": "adjective periphrastic",
+    "definition": "Industrious means working hard.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "infection": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "An infection is an illness caused by bacteria or a virus getting into the body.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "instruction": {
+    "concept": "being_told",
+    "pos": "noun",
+    "definition": "An instruction is something that tells you what to do or how to do it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "insulation": {
+    "concept": "heat",
+    "pos": "mass noun",
+    "definition": "Insulation is material that keeps heat, cold or sound from passing through.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "interact": {
+    "concept": "cause_and_effect",
+    "pos": "verb",
+    "definition": "To interact is to act on each other.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "interpret": {
+    "concept": "explanation",
+    "pos": "verb",
+    "definition": "To interpret something is to explain or understand what it means.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "invention": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "An invention is a new thing or way of doing something that someone has made up.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "ivy": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "Ivy is a plant that climbs up walls and trees.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "jam": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A jam is a long line of cars or other things stuck so close that they cannot move.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "joint": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A joint is a place where two bones or parts meet and can bend.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "joyful": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Joyful means full of joy.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "kerosene": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Kerosene is an oil burned in lamps and some engines.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "kilometer": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A kilometer is a unit for measuring distance, equal to one thousand meters.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "kneel": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To kneel is to go down and rest on your knees.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "lady": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A lady is a woman. People use the word to be kind or to show respect.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "laughter": {
+    "concept": "sound",
+    "pos": "mass noun",
+    "definition": "Laughter is the sound or act of laughing.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "lava": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Lava is hot, melted rock that flows out of a volcano.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "lazy": {
+    "concept": "activity",
+    "pos": "adjective",
+    "definition": "Lazy means not wanting to work or do anything.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "leaky": {
+    "concept": "liquid",
+    "pos": "adjective",
+    "definition": "Leaky means having a hole or crack that lets liquid or air out.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "lessen": {
+    "concept": "more_and_fewer",
+    "pos": "verb",
+    "definition": "To lessen something is to make it less.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "licorice": {
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "definition": "Licorice is a soft, black candy made from the root of a plant.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "lighthouse": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A lighthouse is a tall tower with a bright light that warns ships of danger.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "limb": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A limb is an arm or a leg, or a large branch of a tree.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "lonely": {
+    "concept": "feeling",
+    "pos": "adjective",
+    "definition": "Lonely means sad because you are alone.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "loose": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Loose means not tight, or not firmly held.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "loudly": {
+    "concept": "sound",
+    "pos": "",
+    "definition": "Loudly means in a loud way.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "lovely": {
+    "concept": "good_and_bad",
+    "pos": "adjective",
+    "definition": "Lovely means very pretty or very pleasant.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "lumber": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Lumber is wood cut into boards for building.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "manmade": {
+    "concept": "raw_and_made",
+    "pos": "adjective ungraded",
+    "definition": "Manmade means made by people, not by nature.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "mariner": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A mariner is a person who works on a ship at sea.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "market": {
+    "concept": "exchange",
+    "pos": "noun",
+    "definition": "A market is a place where people buy and sell things.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "mast": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A mast is a tall pole on a ship that holds up the cloth that catches the wind.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "mathematics": {
+    "concept": "knowing",
+    "pos": "mass noun",
+    "definition": "Mathematics is the study of numbers, shapes and amounts.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "maze": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "A maze is a set of paths that cross each other, made as a puzzle to find the way through.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "member": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A member is one of the people or things that belong to a group.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "mere": {
+    "concept": "more_and_fewer",
+    "pos": "adjective ungraded",
+    "definition": "Mere means only, and no more than.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "merely": {
+    "concept": "more_and_fewer",
+    "pos": "",
+    "definition": "Merely means only.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "miraculously": {
+    "concept": "not_always_known",
+    "pos": "",
+    "definition": "Miraculously means in a way so surprising that it seems impossible.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "mischief": {
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "definition": "Mischief is behavior that causes small trouble, often for fun.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "miss": {
+    "concept": "failing",
+    "pos": "verb",
+    "definition": "To miss something is to fail to hit, catch, see or have it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "mist": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Mist is a thin cloud of tiny drops of water in the air near the ground.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "modest": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Modest means not proud, and not showing off.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "moonlight": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Moonlight is the light of the moon.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "mountainous": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Mountainous means having many mountains.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "musty": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Musty means smelling old and wet.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "navigate": {
+    "concept": "direction",
+    "pos": "verb",
+    "definition": "To navigate is to find your way from one place to another.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "newly": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Newly means only a short time ago.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "nicely": {
+    "concept": "good_and_bad",
+    "pos": "",
+    "definition": "Nicely means in a nice or good way.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "northeastern": {
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "definition": "Northeastern means in or from the northeast.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "noticeable": {
+    "concept": "saying_what_you_saw",
+    "pos": "adjective periphrastic",
+    "definition": "Noticeable means easy to notice.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "notion": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "A notion is an idea or belief.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "nourishment": {
+    "concept": "needing_supply",
+    "pos": "mass noun",
+    "definition": "Nourishment is the food that living things need to grow and stay healthy.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "nozzle": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A nozzle is a narrow end on a hose or pipe that controls how a liquid comes out.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "nuisance": {
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "definition": "A nuisance is something that causes small trouble again and again.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "oak": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "An oak is a large tree with very hard wood.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "obey": {
+    "concept": "being_told",
+    "pos": "verb",
+    "definition": "To obey is to do what you are told to do.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "onboard": {
+    "concept": "inside_and_outside",
+    "pos": "",
+    "definition": "Onboard means on or inside a ship, airplane or other vehicle.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "optional": {
+    "concept": "choosing",
+    "pos": "adjective ungraded",
+    "definition": "Optional means that you may choose to have or do it, but you do not have to.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "outgoing": {
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "definition": "Outgoing means going out or leaving.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "oval": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "An oval is a shape like a long circle, or like an egg.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "overcome": {
+    "concept": "can_and_cannot",
+    "pos": "verb",
+    "definition": "To overcome something is to fight against it and win.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "overly": {
+    "concept": "more_and_fewer",
+    "pos": "",
+    "definition": "Overly means too much.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "overnight": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Overnight means during the night, or by the next morning.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "pad": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A pad is a soft or flat piece of material used to protect, fill or press something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "partial": {
+    "concept": "all_some_none",
+    "pos": "adjective ungraded",
+    "definition": "Partial means only in part, not whole.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "passage": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A passage is a way through something, or the act of going through.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "pastel": {
+    "concept": "writing",
+    "pos": "noun",
+    "definition": "A pastel is a soft stick of color used for drawing.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "pave": {
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "definition": "To pave a road or path is to cover it with a hard, flat surface.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "pavement": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Pavement is the hard surface of a road or path.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "paw": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A paw is the foot of an animal that has claws, such as a cat or dog.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "pebble": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A pebble is a small, smooth stone.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "peer": {
+    "concept": "saying_what_you_saw",
+    "pos": "verb",
+    "definition": "To peer is to look closely or with effort.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "penetrate": {
+    "concept": "inside_and_outside",
+    "pos": "verb",
+    "definition": "To penetrate something is to go into or through it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "pier": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A pier is a long platform built from the shore out over the water.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "pin": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A pin is a short, thin, sharp piece of metal used to hold things together.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "plentiful": {
+    "concept": "enough",
+    "pos": "adjective periphrastic",
+    "definition": "Plentiful means found in large amounts.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "plot": {
+    "concept": "written_record",
+    "pos": "verb",
+    "definition": "To plot points or a line is to mark them on a map or graph.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "plug": {
+    "concept": "opening_and_shutting",
+    "pos": "noun",
+    "definition": "A plug is something that fits into a hole to close it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "plywood": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Plywood is a board made of thin layers of wood glued together.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "political": {
+    "concept": "someone_in_charge",
+    "pos": "adjective periphrastic",
+    "definition": "Political means about government and the people who run it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "pop": {
+    "concept": "sound",
+    "pos": "verb",
+    "definition": "To pop is to burst with a short, sharp sound.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "porcelain": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Porcelain is a hard, white, shiny material used to make cups, plates and sinks.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "porch": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A porch is a covered space outside the door of a house.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "portable": {
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "definition": "Portable means easy to carry or move.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "possess": {
+    "concept": "having",
+    "pos": "verb",
+    "definition": "To possess something is to have or own it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "precious": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Precious means of great value, or much loved.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "prefer": {
+    "concept": "choosing",
+    "pos": "verb",
+    "definition": "To prefer something is to like it better than something else.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "prey": {
+    "concept": "animal",
+    "pos": "mass noun",
+    "definition": "Prey is an animal that is hunted and eaten by another animal.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "professional": {
+    "concept": "activity",
+    "pos": "adjective periphrastic",
+    "definition": "Professional means having to do with a job that needs special learning and practice.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "promote": {
+    "concept": "growing",
+    "pos": "verb",
+    "definition": "To promote something is to help it grow or become better known.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "propeller": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A propeller is a set of turning blades that pushes a boat or airplane through water or air.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "propose": {
+    "concept": "plan",
+    "pos": "verb",
+    "definition": "To propose something is to put it forward as an idea or plan.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "protective": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Protective means keeping something safe from harm.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "purchase": {
+    "concept": "exchange",
+    "pos": "verb",
+    "definition": "To purchase something is to buy it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "purely": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Purely means only and completely.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "purify": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To purify something is to make it clean or pure.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "race": {
+    "concept": "activity",
+    "pos": "noun",
+    "definition": "A race is a time when people or animals try to see who is fastest.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "rank": {
+    "concept": "sequence",
+    "pos": "verb",
+    "definition": "To rank things is to put them in order from best to worst, or from most to least.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "ravine": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A ravine is a deep, narrow valley with steep sides.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "reaction": {
+    "concept": "cause_and_effect",
+    "pos": "noun",
+    "definition": "A reaction is something done or happening because of something else, such as a chemical change.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "rear": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The rear of something is its back part.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "reasonable": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Reasonable means making sense, or fair and not too much.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "recede": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To recede is to move back or away.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "recover": {
+    "concept": "mending",
+    "pos": "verb",
+    "definition": "To recover is to get better after being sick or hurt, or to get back something lost.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "recovery": {
+    "concept": "mending",
+    "pos": "mass noun",
+    "definition": "Recovery is getting better, or getting back something lost.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "refreshing": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Refreshing means making you feel fresh, cool and less tired.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "regulation": {
+    "concept": "rule",
+    "pos": "noun",
+    "definition": "A regulation is a rule made by a government or other group in charge.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "reliably": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Reliably means in a way that you can trust.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "reuse": {
+    "concept": "using_up",
+    "pos": "verb",
+    "definition": "To reuse something is to use it again.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "rice": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Rice is a grain that grows in wet fields and is cooked as food.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "rooftop": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A rooftop is the top of the roof of a building.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "rosy": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Rosy means pink like a rose.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "sail": {
+    "concept": "moving_and_still",
+    "pos": "noun verb",
+    "definition": "To sail is to travel on water in a boat or ship, and a sail is the cloth that catches the wind to move it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "salmon": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A salmon is a large fish that swims up rivers from the sea to lay its eggs.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "scarlet": {
+    "concept": "physical_property",
+    "pos": "adjective ungraded",
+    "definition": "Scarlet means bright red.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "segment": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A segment is one of the parts that something is divided into.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "seize": {
+    "concept": "having",
+    "pos": "verb",
+    "definition": "To seize something is to take hold of it suddenly and firmly.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "selfish": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Selfish means caring only about yourself and not about others.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "separately": {
+    "concept": "joining_and_separating",
+    "pos": "",
+    "definition": "Separately means apart, or one at a time.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "seriously": {
+    "concept": "danger",
+    "pos": "",
+    "definition": "Seriously means in a serious way.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "session": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "A session is a period of time spent doing one thing.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "seventh": {
+    "concept": "number_word_order",
+    "pos": "adjective ungraded",
+    "definition": "Seventh means number seven in a row.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "shop": {
+    "concept": "exchange",
+    "pos": "noun verb",
+    "definition": "A shop is a place where things are sold, and to shop is to go there to buy things.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "shorten": {
+    "concept": "more_and_fewer",
+    "pos": "verb",
+    "definition": "To shorten something is to make it shorter.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "shrimp": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A shrimp is a small sea animal with a shell and many legs.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "silent": {
+    "concept": "sound",
+    "pos": "adjective periphrastic",
+    "definition": "Silent means making no sound.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "sin": {
+    "concept": "taking_on_faith",
+    "pos": "noun",
+    "definition": "A sin is an act that a faith teaches is wrong.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "sixth": {
+    "concept": "number_word_order",
+    "pos": "adjective ungraded",
+    "definition": "Sixth means number six in a row.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "slimy": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Slimy means wet, smooth and sticky.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "smog": {
+    "concept": "air",
+    "pos": "mass noun",
+    "definition": "Smog is dirty air, like fog mixed with smoke, that hangs over cities.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "snowman": {
+    "concept": "toy",
+    "pos": "noun",
+    "definition": "A snowman is a figure of a person made of snow.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "someday": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Someday means at some time in the future.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "southeastern": {
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "definition": "Southeastern means in or from the southeast.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "spacesuit": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A spacesuit is something special that people wear to stay alive outside the air of the earth.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "speck": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A speck is a tiny spot or bit of something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "speech": {
+    "concept": "sound",
+    "pos": "noun",
+    "definition": "Speech is the power or act of speaking, or a talk given to a group.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "spy": {
+    "concept": "saying_what_you_saw",
+    "pos": "verb",
+    "definition": "To spy is to watch in secret, or to catch sight of something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "squirt": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To squirt is for a liquid to shoot out in a thin stream.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "stain": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To stain something is to leave a mark of color on it that is hard to remove.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "stainless": {
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "definition": "Stainless means not easily marked by rust or stains, as stainless steel is.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "stalk": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A stalk is the main stem of a plant, or the stem that holds a leaf or flower.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "stickiness": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Stickiness is being sticky.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "strawberry": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A strawberry is a soft, sweet, red fruit with tiny seeds on its skin.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "streak": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A streak is a long, thin line or mark.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "strengthen": {
+    "concept": "force",
+    "pos": "verb",
+    "definition": "To strengthen something is to make it stronger.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "strict": {
+    "concept": "rule",
+    "pos": "adjective",
+    "definition": "Strict means following rules closely and not letting them be broken.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "submit": {
+    "concept": "giving_a_reason",
+    "pos": "verb",
+    "definition": "To submit something is to hand it in to be looked at or judged.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "sundial": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A sundial is a tool that shows the time by the shadow the sun makes.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "superhighway": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A superhighway is a large, fast road with many lanes.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "surely": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Surely means without doubt.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "swell": {
+    "concept": "growing",
+    "pos": "verb noun",
+    "definition": "To swell is to grow bigger, and a swell is a long wave on the sea.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "swiftly": {
+    "concept": "moving_and_still",
+    "pos": "",
+    "definition": "Swiftly means quickly.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "swimmer": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A swimmer is a person who swims.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "swirl": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To swirl is to move round and round in circles.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "syllable": {
+    "concept": "word",
+    "pos": "noun",
+    "definition": "A syllable is a part of a word that is said as one sound, such as each part of window.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "telephone": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A telephone is a machine used to talk to someone far away.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "temple": {
+    "concept": "taking_on_faith",
+    "pos": "noun",
+    "definition": "A temple is a building where people meet to practice their faith.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "tendency": {
+    "concept": "how_sure",
+    "pos": "noun",
+    "definition": "A tendency is a way something usually happens or acts.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "threaten": {
+    "concept": "danger",
+    "pos": "verb",
+    "definition": "To threaten is to say you will cause harm, or to be a sign of coming danger.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "throat": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "The throat is the front of the neck, and the tube inside it that food and air go down.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "thundershower": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A thundershower is a short rain with thunder and lightning.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "title": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A title is the name of a book, song, picture or other work.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "tomato": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A tomato is a soft, round, red fruit eaten as a vegetable.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "tooth": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A tooth is one of the hard white parts in the mouth used to cut and break up food.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "trample": {
+    "concept": "touching",
+    "pos": "verb",
+    "definition": "To trample something is to step on it hard and break or hurt it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "transform": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To transform something is to change it completely.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "translate": {
+    "concept": "word",
+    "pos": "verb",
+    "definition": "To translate is to change words from one language into another, or to change one thing into another form.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "traveler": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A traveler is a person who is going from one place to another.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "tremendously": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Tremendously means very greatly.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "trickle": {
+    "concept": "liquid",
+    "pos": "verb noun",
+    "definition": "To trickle is for a liquid to flow slowly in a thin line, and a trickle is such a flow.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "trot": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To trot is to move faster than walking but slower than running, as a horse does.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "underwater": {
+    "concept": "inside_and_outside",
+    "pos": "",
+    "definition": "Underwater means below the top of the water.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "university": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "A university is a large school where people study after high school.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "unpredictable": {
+    "concept": "not_always_known",
+    "pos": "adjective periphrastic",
+    "definition": "Unpredictable means hard or impossible to know ahead of time.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "unusually": {
+    "concept": "more_and_fewer",
+    "pos": "",
+    "definition": "Unusually means more than is usual.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "upside": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The upside is the upper side of something, and upside down means with the top at the bottom.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "veil": {
+    "concept": "inside_and_outside",
+    "pos": "noun",
+    "definition": "A veil is a thin cloth worn over the face, or anything thin that hides something.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "vent": {
+    "concept": "opening_and_shutting",
+    "pos": "noun",
+    "definition": "A vent is an opening that lets air, gas or smoke in or out.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "versus": {
+    "concept": "same_and_different",
+    "pos": "",
+    "definition": "Versus means against, or compared with.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "victim": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A victim is a person or animal hurt or killed by something bad.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "watery": {
+    "concept": "liquid",
+    "pos": "adjective",
+    "definition": "Watery means full of water, or like water.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "wedding": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A wedding is the time when two people join together as a family, with their friends around them.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "whale": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A whale is a very large animal that lives in the sea and breathes air.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "wheat": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Wheat is a grain used to make flour and bread.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "whenever": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Whenever means at any time that, or every time that.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "whip": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A whip is a long rope on a handle, used to hit animals to make them move.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "whisker": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A whisker is one of the long, thick hairs near the mouth of a cat or other animal.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "windmill": {
+    "concept": "force",
+    "pos": "noun",
+    "definition": "A windmill is a machine with blades that the wind turns to make power or pump water.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "workman": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A workman is a man who does work with his hands.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "worthy": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Worthy means good enough to be given respect, praise or attention.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "wrap": {
+    "concept": "inside_and_outside",
+    "pos": "verb",
+    "definition": "To wrap something is to cover it by folding cloth or paper around it.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "wrench": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A wrench is a tool used to hold and turn nuts and pipes.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "writer": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A writer is a person who writes books, stories or other words.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  },
+  "youth": {
+    "concept": "growing",
+    "pos": "mass noun",
+    "definition": "Youth is the time of being young.",
+    "source": "scan 2026-10-30 of sixteen earlier source texts at a threshold of four, frequent in at least one source"
+  }
+}

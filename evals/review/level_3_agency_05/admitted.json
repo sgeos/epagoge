@@ -1,0 +1,746 @@
+{
+  "acute": {
+    "concept": "being_hurt",
+    "pos": "adjective periphrastic",
+    "definition": "Acute describes a harm or an illness that comes on quickly and is strong.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "adhesion": {
+    "concept": "force",
+    "pos": "mass noun",
+    "definition": "Adhesion is the pull that makes one kind of thing stick to another, such as water to glass.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "aeration": {
+    "concept": "air",
+    "pos": "mass noun",
+    "definition": "Aeration is the mixing of air into water or soil.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "aerobic": {
+    "concept": "living_and_not_living",
+    "pos": "adjective ungraded",
+    "definition": "Aerobic describes living things or processes that need oxygen.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "aesthetic": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Aesthetic has to do with how something looks, smells or tastes, and whether it is pleasant.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "alkaline": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Alkaline describes a substance that can take away the effect of an acid. Soap is alkaline.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "alkalinity": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Alkalinity is how well water can take away the effect of an acid that is added to it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "analogy": {
+    "concept": "explanation",
+    "pos": "noun",
+    "definition": "An analogy is a comparison that explains one thing by showing how it is like another.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "aquaculture": {
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "definition": "Aquaculture is the raising of fish, shellfish or water plants for food.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "arbitrary": {
+    "concept": "choosing",
+    "pos": "adjective periphrastic",
+    "definition": "Arbitrary means chosen without a reason or a rule.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "arsenic": {
+    "concept": "danger",
+    "pos": "mass noun",
+    "definition": "Arsenic is a chemical element found in some rocks and water. It is a poison.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "artesian": {
+    "concept": "stock_and_flow",
+    "pos": "adjective ungraded",
+    "definition": "Artesian describes water under the ground that is under enough pressure to rise up a well without a pump.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "barometric": {
+    "concept": "air",
+    "pos": "adjective ungraded",
+    "definition": "Barometric has to do with the pressure of the air.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "baseflow": {
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "definition": "Baseflow is the part of the water in a stream that comes from groundwater, not from recent rain.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "bond": {
+    "concept": "force",
+    "pos": "noun",
+    "definition": "A bond is a force that holds atoms together in a molecule.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "cableway": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A cableway is a cable stretched across a river, from which people or tools hang to measure the water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "calcite": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Calcite is a common white or clear mineral. Limestone and marble are made mostly of it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "calcium": {
+    "concept": "metal",
+    "pos": "mass noun",
+    "definition": "Calcium is a soft, silver-white metal element. It is found in many rocks, in milk and in the body.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "carbonate": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A carbonate is a chemical that has carbon and oxygen joined in it, such as the mineral in limestone.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "carcinogen": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "A carcinogen is something that can cause cancer.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "chloride": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A chloride is a chemical made of chlorine joined with another element, such as the salt in seawater.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "chlorine": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Chlorine is a chemical element. It is a yellow-green gas, and it is used to make water safe to drink.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "chronic": {
+    "concept": "being_hurt",
+    "pos": "adjective periphrastic",
+    "definition": "Chronic describes an illness or a harm that lasts a long time or keeps coming back.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "coalescence": {
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "definition": "Coalescence is the joining of small drops into larger ones.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "coliform": {
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "definition": "A coliform is one of a group of bacteria, some of which live in the intestines of animals. Water is tested for them to check whether it is clean.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "compaction": {
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "definition": "Compaction is the pressing of soil or sediment together so that it takes up less space.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "conductance": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Conductance is how easily electricity can pass through something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "conductivity": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Conductivity is how well a material lets heat or electricity pass through it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "constituent": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A constituent is one of the parts that something is made of.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "consumptive": {
+    "concept": "using_up",
+    "pos": "adjective ungraded",
+    "definition": "Consumptive describes a use of water that takes it away, so that it does not go back to the stream or the ground.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "covalent": {
+    "concept": "force",
+    "pos": "adjective ungraded",
+    "definition": "Covalent describes a bond in which two atoms share some of their electrons.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "crystalline": {
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "definition": "Crystalline means made of crystals, or like a crystal.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "depletion": {
+    "concept": "using_up",
+    "pos": "mass noun",
+    "definition": "Depletion is the using up of a supply so that less of it is left.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "deploy": {
+    "concept": "doing_in_order",
+    "pos": "verb",
+    "definition": "To deploy a tool is to put it in place so that it can be used.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "deployment": {
+    "concept": "doing_in_order",
+    "pos": "noun",
+    "definition": "Deployment is the putting of tools or people in place so that they can be used.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "deposition": {
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "definition": "Deposition is the laying down of material, such as sediment or acid from the air, on land or in water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "desalinate": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To desalinate water is to take the salt out of it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "desalination": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Desalination is the taking of salt out of seawater or other salty water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "detrimental": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Detrimental means harmful.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "disinfection": {
+    "concept": "danger",
+    "pos": "mass noun",
+    "definition": "Disinfection is the killing of the very small living things that cause disease, such as those in drinking water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "dissolution": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Dissolution is the dissolving of a solid in a liquid.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "ecological": {
+    "concept": "living_and_not_living",
+    "pos": "adjective ungraded",
+    "definition": "Ecological has to do with how living things relate to each other and to the place where they live.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "ecology": {
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "definition": "Ecology is the science of how living things relate to each other and to the place where they live.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "effluent": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Effluent is dirty water that flows out from a factory or from a place where waste water is cleaned.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "equilibrium": {
+    "concept": "balance",
+    "pos": "mass noun",
+    "definition": "Equilibrium is a balance between forces or changes, so that nothing changes overall.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "eutrophication": {
+    "concept": "cause_and_effect",
+    "pos": "mass noun",
+    "definition": "Eutrophication is the change in a lake or a river when too many nutrients make plants grow so much that the water loses oxygen.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "evapotranspiration": {
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "definition": "Evapotranspiration is the movement of water into the air from land, water and plants together, by evaporation and transpiration.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "fecal": {
+    "concept": "body_part",
+    "pos": "adjective ungraded",
+    "definition": "Fecal has to do with the solid waste that animals and people pass from their bodies.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "gastrointestinal": {
+    "concept": "body_part",
+    "pos": "adjective ungraded",
+    "definition": "Gastrointestinal has to do with the parts of the body that food passes through.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "geographically": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Geographically means in a way that has to do with places on the earth and where they are.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "geophysical": {
+    "concept": "finding_out",
+    "pos": "adjective ungraded",
+    "definition": "Geophysical has to do with the use of physics to study the earth.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "hydrologic": {
+    "concept": "stock_and_flow",
+    "pos": "adjective ungraded",
+    "definition": "Hydrologic has to do with water and how it moves on and under the earth.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "hypoxic": {
+    "concept": "air",
+    "pos": "adjective ungraded",
+    "definition": "Hypoxic describes water or air that has too little oxygen for most living things.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "impeller": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "An impeller is the part of a pump with blades that spin to push water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "impermeable": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Impermeable means not letting water or gas pass through.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "impervious": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Impervious means not letting water soak in, as a road or a roof does.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "impoundment": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "An impoundment is a body of water held back by a dam.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "infiltrate": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To infiltrate is to soak slowly into something, as water soaks into the ground.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "infiltration": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Infiltration is the soaking of water from the surface into the ground.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "inorganic": {
+    "concept": "living_and_not_living",
+    "pos": "adjective ungraded",
+    "definition": "Inorganic describes chemicals that do not come from living things, such as those in rocks.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "instantaneous": {
+    "concept": "duration",
+    "pos": "adjective ungraded",
+    "definition": "Instantaneous means happening or measured at one moment, with no time between.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "interglacial": {
+    "concept": "weather",
+    "pos": "adjective ungraded",
+    "definition": "Interglacial describes a warmer time between two long times when ice covered much of the earth.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "intestinal": {
+    "concept": "body_part",
+    "pos": "adjective ungraded",
+    "definition": "Intestinal has to do with the intestines.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "intrusion": {
+    "concept": "inside_and_outside",
+    "pos": "noun",
+    "definition": "An intrusion is the moving of something into a place where it does not belong, such as salt water into fresh groundwater.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "inundation": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Inundation is the covering of land with water, as in a flood.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "ionic": {
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "definition": "Ionic has to do with ions, or is made of ions.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "leach": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To leach is to wash out of soil or rock with water that drains through it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "leachate": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Leachate is the liquid that drains out of a pile of waste and carries chemicals from it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "localized": {
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "definition": "Localized means found only in one small area.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "magnesium": {
+    "concept": "metal",
+    "pos": "mass noun",
+    "definition": "Magnesium is a light, silver-white metal element found in many rocks and in seawater.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "manganese": {
+    "concept": "metal",
+    "pos": "mass noun",
+    "definition": "Manganese is a gray metal element found in rocks. In water it can leave dark marks on sinks and laundry.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "membrane": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A membrane is a thin sheet or layer that lets some things pass through it and not others.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "methodology": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "A methodology is a set of methods used to study or to do something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "methylmercury": {
+    "concept": "danger",
+    "pos": "mass noun",
+    "definition": "Methylmercury is a poison made from mercury. It builds up in fish.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "microirrigation": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Microirrigation is a way of giving crops small amounts of water through small pipes near the plants.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "microorganism": {
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "definition": "A microorganism is a living thing so small that it cannot be seen with the eye alone.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "molecular": {
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "definition": "Molecular has to do with molecules.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "multiply": {
+    "concept": "multiplication",
+    "pos": "verb",
+    "definition": "To multiply a number by another is to add the first to itself as many times as the second says.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "municipal": {
+    "concept": "someone_in_charge",
+    "pos": "adjective ungraded",
+    "definition": "Municipal has to do with a town or a city and its government.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "neutralize": {
+    "concept": "balance",
+    "pos": "verb",
+    "definition": "To neutralize something is to stop it from having its effect, such as to take away the effect of an acid.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "nitrate": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A nitrate is a chemical made of nitrogen and oxygen. Plants use it to grow, but too much of it in water can be harmful.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "nitrite": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A nitrite is a chemical made of nitrogen and oxygen, with less oxygen than a nitrate.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "objectionable": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Objectionable means not pleasant and not welcome.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "osmosis": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Osmosis is the movement of water through a membrane from a weaker solution into a stronger one.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "parameter": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A parameter is a property that is measured or set to describe something, such as the temperature of water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "pathogen": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A pathogen is a very small thing, such as a virus, that causes disease.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "perennial": {
+    "concept": "duration",
+    "pos": "adjective ungraded",
+    "definition": "Perennial means lasting through the whole year, or for many years.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "permeability": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Permeability is how easily water or gas can pass through a material.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "permeable": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Permeable means letting water or gas pass through.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "phosphorus": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Phosphorus is a chemical element that plants need to grow. Too much of it in water makes plants in the water grow fast.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "photosynthesis": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Photosynthesis is the way green plants use the energy of light from the sun to make food from water and a gas in the air.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "porosity": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Porosity is how much of a rock or soil is made of small empty spaces.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "porous": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Porous means full of small holes that water or air can pass through.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "potable": {
+    "concept": "liquid",
+    "pos": "adjective ungraded",
+    "definition": "Potable means safe to drink.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "potassium": {
+    "concept": "metal",
+    "pos": "mass noun",
+    "definition": "Potassium is a soft, silver-white metal element. Plants and animals need small amounts of it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "pressurize": {
+    "concept": "force",
+    "pos": "verb",
+    "definition": "To pressurize something is to put a gas or a liquid in it under pressure.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "prevalent": {
+    "concept": "cycle",
+    "pos": "adjective periphrastic",
+    "definition": "Prevalent means common in a place or at a time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "recurrence": {
+    "concept": "cycle",
+    "pos": "mass noun",
+    "definition": "Recurrence is the happening of something again.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "riparian": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Riparian has to do with the land along the banks of a river or a stream.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "runup": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Runup is how far up the shore the water of a wave reaches.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sanitary": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Sanitary has to do with keeping things clean so that people stay healthy.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sedimentation": {
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "definition": "Sedimentation is the settling of sediment to the bottom of water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "seepage": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Seepage is the slow flow of water through soil or rock, or out of the ground.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "septic": {
+    "concept": "component_and_system",
+    "pos": "adjective ungraded",
+    "definition": "Septic describes a tank under the ground that holds the waste water from a house and lets it break down.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sodium": {
+    "concept": "metal",
+    "pos": "mass noun",
+    "definition": "Sodium is a soft, silver-white metal element. Common salt is made of sodium and chlorine.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "soluble": {
+    "concept": "liquid",
+    "pos": "adjective periphrastic",
+    "definition": "Soluble means able to dissolve in a liquid.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "statistical": {
+    "concept": "counting",
+    "pos": "adjective ungraded",
+    "definition": "Statistical has to do with the study of numbers gathered from many examples.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "statistically": {
+    "concept": "counting",
+    "pos": "",
+    "definition": "Statistically means in a way that uses statistical methods.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "streamgage": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A streamgage is a place on a stream with tools that measure how high the water is and how fast it flows.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sublimation": {
+    "concept": "change",
+    "pos": "mass noun",
+    "definition": "Sublimation is the change of a solid, such as ice, straight into a gas, without first melting.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "subsidence": {
+    "concept": "falling",
+    "pos": "mass noun",
+    "definition": "Subsidence is the slow sinking of the ground, such as when water is pumped out from under it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "suitability": {
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "definition": "Suitability is how right something is for a use.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "susceptible": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Susceptible means easily harmed or changed by something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "tailings": {
+    "concept": "using_up",
+    "pos": "noun plural-only",
+    "definition": "Tailings are the waste rock and mud left over after a mine has taken out what it wants.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "terminology": {
+    "concept": "word",
+    "pos": "mass noun",
+    "definition": "Terminology is the set of special words used in one subject.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "thermoelectric": {
+    "concept": "heat",
+    "pos": "adjective ungraded",
+    "definition": "Thermoelectric describes a power plant that makes electricity by using heat to turn water into steam.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "toxicity": {
+    "concept": "danger",
+    "pos": "mass noun",
+    "definition": "Toxicity is how much harm a poison or another substance can do to a living thing.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "transducer": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A transducer is a tool that changes one kind of signal, such as pressure, into another, such as electricity.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "transpire": {
+    "concept": "plant",
+    "pos": "verb",
+    "definition": "For a plant to transpire is for it to give off water vapor through its leaves.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "turbidity": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Turbidity is how cloudy water is, because of small bits floating in it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "unconfined": {
+    "concept": "inside_and_outside",
+    "pos": "adjective ungraded",
+    "definition": "Unconfined means not held in or closed off. An unconfined aquifer has no layer of hard rock or clay above it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "unsaturated": {
+    "concept": "liquid",
+    "pos": "adjective ungraded",
+    "definition": "Unsaturated describes soil or rock whose spaces hold some air as well as water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "variability": {
+    "concept": "change",
+    "pos": "mass noun",
+    "definition": "Variability is how much something changes from one time or place to another.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "volatile": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Volatile describes a liquid that turns into a gas easily.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  }
+}

@@ -22,7 +22,14 @@ and a verb its inflections without being asked. An optional ``inflection``
 object replaces a derived slot, and an optional ``forms`` list adds any
 further surface. **Nothing is written unless every word passes**, including
 the closure check, because a word admitted without a grounded definition
-takes the dictionary out of self-hosting. ``--level`` is 1 to 7. A level
+takes the dictionary out of self-hosting.
+
+**A second sense of a word already admitted** is requested with
+``"second_sense": true`` and is keyed by word and concept. It gets its own
+level, part of speech, forms and dictionary record. Without the flag an
+admitted word is refused, as it always was. Added 2026-10-30 on operator
+direction, for words such as `well` whose admitted sense is not the one a
+source uses. ``--level`` is 1 to 7. A level
 above the concept's level is allowed. A level below it is not, and that
 check belongs to the vocabulary validator rather than to this writer.
 
@@ -58,43 +65,58 @@ def _string_list(raw: object) -> list[str] | None:
     return out
 
 
-def main(argv: list[str]) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("file", type=Path)
-    parser.add_argument("--level", type=int, default=1)
-    args = parser.parse_args(argv[1:])
-    if not 1 <= args.level <= 7:
-        parser.error("level must be from 1 to 7")
+def plan_admission(
+    wanted: dict[str, dict[str, object]],
+    terms: list[dict[str, object]],
+    core: list[str],
+    concepts: set[str],
+    level: int,
+) -> tuple[list[str], list[dict[str, object]]]:
+    """The problems with a request, or the term entries it would add.
 
-    wanted = cast(
-        dict[str, dict[str, object]],
-        json.loads(args.file.read_text(encoding="utf-8")),
-    )
-    path = ROOT / "curriculum/vocabulary.json"
-    raw = cast(dict[str, object], json.loads(path.read_text(encoding="utf-8")))
-    terms = cast(list[dict[str, object]], raw["terms"])
-    core = cast(list[str], raw["core"])
+    Pure, so the refusals can be tested without a lexicon on disk. Nothing
+    is added unless the problem list is empty.
+
+    **A second sense is admitted only when asked for by name.** A spec with
+    ``"second_sense": true`` files a new sense of a word that is already a
+    headword at or below ``level``, keyed by word and concept, with its own
+    level, part of speech and forms. Without the flag, a word already
+    admitted is refused exactly as before, so a batch cannot add a sense
+    to an existing word by accident. The flag does not relax anything
+    else. The same word and concept are refused at any level, because the
+    validator refuses a duplicate sense. A string that is only a form of a
+    different headword is refused, because a form shared by two words is
+    the duplicate the validator rejects.
+    """
     # **Admissible here, not merely present somewhere.** Keyed on presence,
     # `depend` lost `depends` because a level-six term already spelled it,
     # and the verb was admitted at level one without a form it needs there.
     taken = set(core) | {
         f
         for t in terms
-        if int(cast(int, t["level"])) <= args.level
+        if int(cast(int, t["level"])) <= level
         for f in [str(t["word"]), *cast(list[str], t.get("forms", []))]
     }
-    # **Checked against the graph, not against the terms already filed.**
-    # Keyed on the terms, the first word of a newly authored concept could
-    # never be admitted, which is exactly when admitting one matters.
-    graph_path = ROOT / "curriculum/graph/concepts.json"
-    graph = cast(dict[str, object], json.loads(graph_path.read_text(encoding="utf-8")))
-    nodes = cast(list[dict[str, object]], graph["nodes"])
-    concepts = {str(node["id"]) for node in nodes}
+
+    def own_forms(word: str) -> set[str]:
+        """Every surface form the word's existing senses already carry."""
+        return {
+            f
+            for t in terms
+            if str(t["word"]) == word
+            for f in [word, *cast(list[str], t.get("forms", []))]
+        }
 
     problems: list[str] = []
     parsed: dict[str, tuple[str, tuple[tuple[str, str], ...], tuple[str, ...]]] = {}
     for word, spec in wanted.items():
-        if word in taken:
+        second = spec.get("second_sense", False)
+        if not isinstance(second, bool):
+            problems.append(f"{word}: second_sense must be true or false")
+            continue
+        if second:
+            problems.extend(_second_sense_problems(word, spec, terms, core, level))
+        elif word in taken:
             problems.append(f"{word}: already admitted")
         if spec.get("concept") not in concepts:
             problems.append(
@@ -125,12 +147,9 @@ def main(argv: list[str]) -> int:
             continue
         parsed[word] = (pos, inflection, tuple(extra))
     if problems:
-        print(f"{len(problems)} problem(s), nothing written:", file=sys.stderr)
-        for line in problems:
-            print(f"  {line}", file=sys.stderr)
-        return 1
+        return problems, []
 
-    added: list[str] = []
+    entries: list[dict[str, object]] = []
     for word, spec in sorted(wanted.items()):
         pos, inflection, extra = parsed[word]
         parts = pos.split()
@@ -140,11 +159,15 @@ def main(argv: list[str]) -> int:
         forms = set(owed_forms(word, pos, dict(inflection)))
         forms.update(item.strip().lower() for item in extra if item.strip())
         forms.discard(word)
-        forms -= taken
+        # **A form shared by two senses of one word is ordinary**, so a
+        # second sense keeps the forms its own word already carries, as
+        # `samples` serves the noun and the verb. A form of any other word
+        # is still dropped.
+        forms -= taken - own_forms(word)
         entry: dict[str, object] = {
             "word": word,
             "concept": spec["concept"],
-            "level": args.level,
+            "level": level,
         }
         if parts:
             entry["pos"] = " ".join(sorted(set(parts)))
@@ -160,10 +183,74 @@ def main(argv: list[str]) -> int:
             entry["source"] = source
         if forms:
             entry["forms"] = sorted(forms)
-        terms.append(entry)
+        entries.append(entry)
         taken.add(word)
         taken.update(forms)
-        added.append(word)
+    return problems, entries
+
+
+def _second_sense_problems(
+    word: str,
+    spec: dict[str, object],
+    terms: list[dict[str, object]],
+    core: list[str],
+    level: int,
+) -> list[str]:
+    """Why a requested second sense cannot be filed, or nothing."""
+    if word in core:
+        return [f"{word}: a core word takes no sense"]
+    same = [t for t in terms if str(t["word"]) == word]
+    if not any(int(cast(int, t["level"])) <= level for t in same):
+        return [
+            f"{word}: second_sense needs a sense already admitted at or below "
+            f"level {level}"
+        ]
+    out: list[str] = []
+    concept = spec.get("concept")
+    for t in same:
+        if t["concept"] == concept:
+            out.append(
+                f"{word}: already admitted under {concept!r} at level {t['level']}"
+            )
+    for t in terms:
+        if str(t["word"]) != word and word in cast(list[str], t.get("forms", [])):
+            out.append(f"{word}: already a form of {t['word']!r}")
+    return out
+
+
+def main(argv: list[str]) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("file", type=Path)
+    parser.add_argument("--level", type=int, default=1)
+    args = parser.parse_args(argv[1:])
+    if not 1 <= args.level <= 7:
+        parser.error("level must be from 1 to 7")
+
+    wanted = cast(
+        dict[str, dict[str, object]],
+        json.loads(args.file.read_text(encoding="utf-8")),
+    )
+    path = ROOT / "curriculum/vocabulary.json"
+    raw = cast(dict[str, object], json.loads(path.read_text(encoding="utf-8")))
+    terms = cast(list[dict[str, object]], raw["terms"])
+    core = cast(list[str], raw["core"])
+    # **Checked against the graph, not against the terms already filed.**
+    # Keyed on the terms, the first word of a newly authored concept could
+    # never be admitted, which is exactly when admitting one matters.
+    graph_path = ROOT / "curriculum/graph/concepts.json"
+    graph = cast(dict[str, object], json.loads(graph_path.read_text(encoding="utf-8")))
+    nodes = cast(list[dict[str, object]], graph["nodes"])
+    concepts = {str(node["id"]) for node in nodes}
+
+    problems, entries = plan_admission(wanted, terms, core, concepts, args.level)
+    if problems:
+        print(f"{len(problems)} problem(s), nothing written:", file=sys.stderr)
+        for line in problems:
+            print(f"  {line}", file=sys.stderr)
+        return 1
+
+    terms.extend(entries)
+    added = [str(entry["word"]) for entry in entries]
     raw["terms"] = sorted(terms, key=lambda t: (str(t["word"]), str(t["concept"])))
     # **All or nothing.** A first version wrote the lexicon and then found
     # the definitions bad, leaving words admitted with nothing defining
@@ -173,7 +260,14 @@ def main(argv: list[str]) -> int:
         json.dumps(raw, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
 
-    definitions = {w: str(spec["definition"]) for w, spec in wanted.items()}
+    definitions: dict[str, object] = {
+        w: (
+            {"concept": spec["concept"], "definition": str(spec["definition"])}
+            if spec.get("second_sense") is True
+            else str(spec["definition"])
+        )
+        for w, spec in wanted.items()
+    }
     payload = json.dumps(definitions)
     result = subprocess.run(  # noqa: S603
         [

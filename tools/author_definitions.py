@@ -10,6 +10,15 @@ Three checks, in order of cheapness. The word must be a headword, the text
 must stay inside the level's vocabulary, and the whole dictionary must
 still reduce to the seed with the entry added.
 
+**A value may name a second sense** as an object with ``concept`` and
+``definition``. Its record is ``dict.LEVEL.WORD.CONCEPT``, carries that
+concept, and is written or replaced on its own, so the word's other
+records are never touched by it. A plain string never touches a
+second-sense record. The sense must be filed at this level, and it must not
+be the word's only sense at or below it. The closure check is keyed by
+word and sees one definition per word, so a second sense's text is checked
+here, token by token, against what the closure grounds.
+
     PYTHONPATH=src python3 tools/author_definitions.py [file] [--level N]
 """
 
@@ -29,6 +38,8 @@ from epagoge.book import (
     load_book_dir,
     parse_book,
     render_book,
+    sense_record_id,
+    ungrounded_tokens,
     word_definitions,
 )
 from epagoge.vocabulary import load_vocabulary, tokenise, unlicensed
@@ -79,6 +90,49 @@ def write_seed_if_missing(path: Path, level: int, subject: str) -> bool:
     return True
 
 
+def is_sense_record(entry: dict[str, object], level: int, word: str) -> bool:
+    """Whether a record is a second-sense record of ``word`` at ``level``."""
+    concepts = cast(list[object], entry.get("concepts") or [])
+    return any(
+        entry.get("id") == sense_record_id(level, word, str(concept))
+        for concept in concepts
+    )
+
+
+def split_drafts(
+    raw: object,
+) -> tuple[dict[str, str], dict[str, tuple[str, str]], list[str]]:
+    """Plain drafts, second-sense drafts as concept and text, and problems."""
+    if not isinstance(raw, dict):
+        return {}, {}, ["input must be a JSON object"]
+    plain: dict[str, str] = {}
+    senses: dict[str, tuple[str, str]] = {}
+    problems: list[str] = []
+    for key, value in cast(dict[object, object], raw).items():
+        word = str(key)
+        if isinstance(value, str):
+            plain[word] = value
+            continue
+        if isinstance(value, dict):
+            spec = cast(dict[object, object], value)
+            concept = spec.get("concept")
+            text = spec.get("definition")
+            if (
+                set(spec) == {"concept", "definition"}
+                and isinstance(concept, str)
+                and isinstance(text, str)
+                and concept
+                and text
+            ):
+                senses[word] = (concept, text)
+                continue
+        problems.append(
+            f"{word}: a definition is a string, or an object with exactly "
+            "a concept and a definition"
+        )
+    return plain, senses, problems
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("file", nargs="?", type=Path)
@@ -89,7 +143,7 @@ def main(argv: list[str]) -> int:
         parser.error("level must be from 1 to 7")
 
     raw = args.file.read_text(encoding="utf-8") if args.file else sys.stdin.read()
-    drafts = cast(dict[str, str], json.loads(raw))
+    drafts, sense_drafts, problems = split_drafts(json.loads(raw))
 
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
     seed = set(vocabulary.seed_words())
@@ -127,10 +181,27 @@ def main(argv: list[str]) -> int:
             word_definitions(books, [cast(dict[str, object], r) for r in records])
         )
 
-    problems: list[str] = []
     for word, text in drafts.items():
         if word not in headwords:
             problems.append(f"{word}: not a headword")
+        outside = unlicensed(vocabulary, text, args.level)
+        if outside:
+            problems.append(f"{word}: outside level {args.level}: {' '.join(outside)}")
+    for word, (concept, text) in sense_drafts.items():
+        same = [t for t in vocabulary.terms if t.word == word]
+        filed = [t for t in same if t.concept == concept]
+        if not filed:
+            problems.append(f"{word}: no sense under {concept!r}")
+        elif filed[0].level != args.level:
+            problems.append(
+                f"{word}: the sense under {concept!r} is filed at level "
+                f"{filed[0].level}, not {args.level}"
+            )
+        elif not any(t.concept != concept and t.level <= args.level for t in same):
+            problems.append(
+                f"{word}: {concept!r} is its only sense at or below level "
+                f"{args.level}, so it takes a plain definition"
+            )
         outside = unlicensed(vocabulary, text, args.level)
         if outside:
             problems.append(f"{word}: outside level {args.level}: {' '.join(outside)}")
@@ -151,6 +222,12 @@ def main(argv: list[str]) -> int:
                 }
             )
             problems.append(f"{word}: ungrounded, needs {' '.join(needs[:6])}")
+    # **The same rule the gate applies to every record**, shared so the
+    # authoring check and tools/validate_closure.py cannot drift apart.
+    for word, (_concept, text) in sense_drafts.items():
+        needs = ungrounded_tokens(text, word, closure.grounded, seed, tokenise, resolve)
+        if needs:
+            problems.append(f"{word}: ungrounded, needs {' '.join(needs[:6])}")
 
     if problems:
         print(f"{len(problems)} problem(s), nothing written:", file=sys.stderr)
@@ -158,19 +235,33 @@ def main(argv: list[str]) -> int:
             print(f"  {line}", file=sys.stderr)
         return 1
     if args.dry_run:
-        print(f"{len(drafts)} would apply cleanly")
+        print(f"{len(drafts) + len(sense_drafts)} would apply cleanly")
         return 0
 
     patched = 0
+    sense_ids = {
+        sense_record_id(args.level, w, c): w for w, (c, _t) in sense_drafts.items()
+    }
+    existing_sense_ids: set[str] = set()
     for path, (book, records) in parsed.items():
         kept: list[dict[str, object]] = []
         changed = False
         for record in records:
             entry = cast(dict[str, object], record)
             defines = cast(dict[str, object], entry.get("defines") or {})
-            if defines.get("kind") == "word":
+            record_id = str(entry.get("id", ""))
+            if record_id in sense_ids:
+                entry["content"] = sense_drafts[sense_ids[record_id]][1]
+                existing_sense_ids.add(record_id)
+                changed = True
+                patched += 1
+            elif defines.get("kind") == "word":
                 target = str(defines["target"])
-                if target in drafts and target in current:
+                if (
+                    target in drafts
+                    and target in current
+                    and not is_sense_record(entry, args.level, target)
+                ):
                     entry["content"] = drafts[target]
                     changed = True
                     patched += 1
@@ -182,9 +273,14 @@ def main(argv: list[str]) -> int:
             )
 
     fresh = {w: t for w, t in drafts.items() if w not in current}
-    if fresh:
+    fresh_senses = {
+        w: spec
+        for w, spec in sense_drafts.items()
+        if sense_record_id(args.level, w, spec[0]) not in existing_sense_ids
+    }
+    if fresh or fresh_senses:
         seed_path = book_dir / "bk.dictionary.seed.md"
-        write_seed_if_missing(seed_path, args.level, min(fresh))
+        write_seed_if_missing(seed_path, args.level, min({*fresh, *fresh_senses}))
         book, records = parse_book(
             seed_path.read_text(encoding="utf-8"), seed_path.name
         )
@@ -196,6 +292,18 @@ def main(argv: list[str]) -> int:
                     "id": f"dict.{args.level}.{word}",
                     "level": args.level,
                     "concepts": [senses[0].concept],
+                    "claim_class": "formal",
+                    "content": text,
+                    "provenance": {"source_claim": f"lexicon:{word}"},
+                    "defines": {"kind": "word", "target": word},
+                }
+            )
+        for word, (concept, text) in fresh_senses.items():
+            out.append(
+                {
+                    "id": sense_record_id(args.level, word, concept),
+                    "level": args.level,
+                    "concepts": [concept],
                     "claim_class": "formal",
                     "content": text,
                     "provenance": {"source_claim": f"lexicon:{word}"},
@@ -220,7 +328,10 @@ def main(argv: list[str]) -> int:
             render_book(book_head(book), out),
             encoding="utf-8",
         )
-    print(f"patched {patched}, appended {len(fresh)}, total defined {len(trial)}")
+    print(
+        f"patched {patched}, appended {len(fresh) + len(fresh_senses)}, "
+        f"total defined {len(trial)}"
+    )
     return 0
 
 

@@ -10,6 +10,12 @@ Exits non-zero when anything fails to ground. Coverage is reported and is
 deliberately NOT enforced, since a level whose dictionary is incomplete is
 unfinished rather than broken.
 
+**Every dictionary record at the level is checked, not one per word.**
+Each record's text must sit inside the level's vocabulary ceiling and must
+ground. Coverage stays counted per word. Added 2026-10-30 on operator
+direction, after review found that a second sense filed at the level of its
+word's first record was never read by this check.
+
     PYTHONPATH=src python3 tools/validate_closure.py \
         <vocabulary.json> <book-dir> [level]
 """
@@ -20,8 +26,14 @@ import sys
 from pathlib import Path
 from typing import cast
 
-from epagoge.book import dictionary_closure, load_book_dir, word_definitions
-from epagoge.vocabulary import load_vocabulary, tokenise
+from epagoge.book import (
+    dictionary_closure,
+    dictionary_entries,
+    load_book_dir,
+    ungrounded_tokens,
+    word_definitions,
+)
+from epagoge.vocabulary import load_vocabulary, tokenise, unlicensed
 
 
 def main(argv: list[str]) -> int:
@@ -81,10 +93,35 @@ def main(argv: list[str]) -> int:
     if outstanding:
         print(f"  undefined    {len(outstanding)}: {' '.join(outstanding[:15])}")
 
-    if not (closure.undefined or closure.blocked or closure.cycles):
+    # **Each record against its own level.** The books in this directory
+    # are this level's, so their dictionary records are checked here and a
+    # lower level's records are checked by that level's run.
+    entries = dictionary_entries(books, [cast(dict[str, object], r) for r in records])
+    faults: list[str] = []
+    for entry in entries:
+        outside = unlicensed(vocabulary, entry.text, level)
+        if outside:
+            faults.append(f"{entry.record}: outside level {level}: {' '.join(outside)}")
+        needs = ungrounded_tokens(
+            entry.text, entry.word, closure.grounded, seed, tokenise, resolve
+        )
+        if needs:
+            faults.append(f"{entry.record}: ungrounded, needs {' '.join(needs[:6])}")
+    print(f"  records      {len(entries)} dictionary record(s) checked at the level")
+
+    if not (closure.undefined or closure.blocked or closure.cycles or faults):
         print("  self-hosting  yes")
         return 0
 
+    if faults:
+        print(
+            f"\n{len(faults)} dictionary record fault(s):",
+            file=sys.stderr,
+        )
+        for fault in faults[:30]:
+            print(f"  {fault}", file=sys.stderr)
+    if not (closure.undefined or closure.blocked or closure.cycles):
+        return 1
     print(
         f"\nNOT self-hosting: {ungrounded} definition(s) do not reduce", file=sys.stderr
     )

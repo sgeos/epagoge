@@ -1,0 +1,14 @@
+{
+  "organics": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Organics are tiny bits in water or soil that come from living things or were once part of them.",
+    "concept": "living_and_not_living",
+    "pos": "noun plural-only",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "organics"
+    ]
+  }
+}

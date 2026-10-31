@@ -1,0 +1,43 @@
+{
+  "color": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To color something is to give it a color.",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "second_sense": true
+  },
+  "cool": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To cool is to become cooler, or to make something cooler.",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "second_sense": true
+  },
+  "experience": {
+    "concept": "feeling",
+    "pos": "verb",
+    "definition": "To experience something is to feel it, or to have it happen to you.",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "second_sense": true
+  },
+  "mining": {
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "definition": "Mining is digging rock, metal or coal out of the ground.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "sample": {
+    "concept": "checking",
+    "pos": "verb",
+    "definition": "To sample something is to take a small part of it to test or measure.",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "second_sense": true
+  },
+  "well": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A well is a deep hole dug in the ground to get water.",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "second_sense": true
+  }
+}

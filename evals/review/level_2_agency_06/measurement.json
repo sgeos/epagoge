@@ -1,0 +1,42 @@
+{
+  "before": {
+    "1": 849,
+    "2": 2987
+  },
+  "after": {
+    "1": 849,
+    "2": 3372
+  },
+  "candidates": 26,
+  "teacher": null,
+  "pool_report_hash": "cfed83b92f674297c0cfa2746bfcb48f4ab1595662c101208f98b865d1ac4324",
+  "admitted": 9,
+  "deferred": 6,
+  "approximate_target": 10000,
+  "remaining_gap": 6628,
+  "closure": {
+    "1": {
+      "defined": 849,
+      "required": 849,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_1: dictionary at level 1\n  defined      849 of 849 words needing one  100.0% coverage\n  also         4 definition(s) of function words, not counted\n  grounded     853  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  records      815 dictionary record(s) checked at the level\n  self-hosting  yes\n"
+    },
+    "2": {
+      "defined": 3371,
+      "required": 3371,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_2: dictionary at level 2\n  defined      3371 of 3371 words needing one  100.0% coverage\n  also         1 definition(s) of function words, not counted\n  grounded     3372  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  records      2531 dictionary record(s) checked at the level\n  self-hosting  yes\n"
+    }
+  },
+  "preserved_files": 523,
+  "preservation_passed": true,
+  "artifact_hashes": {
+    "before.json": "86f67b64bcfc50176c6e83206407a0155b04fb565eac9632ddd391b26d7fe801",
+    "candidates.json": "56c7960a87fae24aab0412742269174a0f7c4ac5bf0c7b4c233a02e7ad98708b",
+    "authoring.json": "61809c0de047613545ab914d605bbc66b01842c8128c9e17ffb6c29704604ef7",
+    "review.json": "231d223662422c846ca69d8f2f2cbcbe0283b228ce47b1416ac5f71f9d890ce6",
+    "admitted.json": "76bd8ee9564b0cb5087266f31c0488ea291722265af85c5e7d91c1e27563d00a"
+  },
+  "limits": "One agent-authored batch drawn again from the 2026-10-10 agency scan. This does not measure general throughput or complete level two. Semantic review is agent review, not independent expert validation.",
+  "excluded": 11
+}

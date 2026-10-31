@@ -18,6 +18,14 @@ was written when the decision was made rather than reconstructed from it.
 is what the commit was about, which is usually but not always why a
 particular word was in it.
 
+**A second sense never rewrites its word's record.** A word's record is
+the origin of the word, which is the origin of its first sense. A sense a
+batch admitted with ``"second_sense": true`` in its ``admitted.json`` is
+recorded apart, under ``senses`` keyed ``WORD.CONCEPT`` with its own
+source and the batch that admitted it. Added 2026-10-30, after review found
+that the second senses of three level-one words had replaced their first
+senses' origin.
+
     PYTHONPATH=src python3 tools/word_provenance.py --out curriculum/provenance.json
 """
 
@@ -165,6 +173,77 @@ def words_at(revision: str) -> set[str]:
     return {str(t["word"]) for t in terms if "word" in t}
 
 
+def second_senses(root: Path) -> dict[tuple[str, str], str]:
+    """Each second sense a batch admitted, keyed by word and concept.
+
+    The value is the batch directory relative to ``root``. Read from the
+    batch records rather than inferred from the lexicon, because a term
+    carries no mark of whether it was its word's first sense. A malformed
+    record, or one sense claimed by two batches, raises ``ValueError``.
+    """
+    found: dict[tuple[str, str], str] = {}
+    for path in sorted((root / "evals/review").glob("*/admitted.json")):
+        batch = path.parent.relative_to(root).as_posix()
+        raw = cast(object, json.loads(path.read_text(encoding="utf-8")))
+        if not isinstance(raw, dict):
+            raise ValueError(f"{batch}: admitted.json is not an object")
+        for word, spec in cast(dict[str, object], raw).items():
+            if not isinstance(spec, dict):
+                raise ValueError(f"{batch}: {word} is not an object")
+            fields = cast(dict[str, object], spec)
+            flag = fields.get("second_sense", False)
+            if not isinstance(flag, bool):
+                raise ValueError(f"{batch}: {word} second_sense must be true or false")
+            if not flag:
+                continue
+            concept = fields.get("concept")
+            if not isinstance(concept, str) or not concept:
+                raise ValueError(f"{batch}: second sense {word} names no concept")
+            if (word, concept) in found:
+                raise ValueError(
+                    f"{batch}: {word}.{concept} is already a second sense in "
+                    f"{found[(word, concept)]}"
+                )
+            found[(word, concept)] = batch
+    return found
+
+
+def sense_records(
+    terms: list[dict[str, object]],
+    seconds: dict[tuple[str, str], str],
+    held: dict[str, object],
+) -> dict[str, dict[str, str]]:
+    """The record of each second sense, keyed ``WORD.CONCEPT``.
+
+    A second sense no longer in the lexicon keeps the record already held,
+    as a retired word does. One with neither a term nor a held record, or a
+    term with no source, raises ``ValueError``.
+    """
+    out: dict[str, dict[str, str]] = {}
+    for (word, concept), batch in sorted(seconds.items()):
+        key = f"{word}.{concept}"
+        match = [
+            t
+            for t in terms
+            if str(t.get("word")) == word and str(t.get("concept")) == concept
+        ]
+        if not match:
+            kept = held.get(key)
+            if not isinstance(kept, dict):
+                raise ValueError(f"second sense {key} is in no term and no record")
+            out[key] = cast(dict[str, str], kept)
+            continue
+        source = str(match[0].get("source", "")).strip()
+        if not source:
+            raise ValueError(f"second sense {key} needs a source recorded at admission")
+        out[key] = {
+            "source": source,
+            "evidence": "recorded at admission",
+            "batch": batch,
+        }
+    return out
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, default=None)
@@ -205,9 +284,22 @@ def main(argv: list[str]) -> int:
         return 2
     current = cast(dict[str, object], json.loads((ROOT / TRACKED).read_text()))
     baseline = cast(dict[str, object], json.loads(git("show", f"{anchor}:{TRACKED}")))
+    try:
+        seconds = second_senses(ROOT)
+        senses = sense_records(
+            cast(list[dict[str, object]], current["terms"]),
+            seconds,
+            cast(dict[str, object], held.get("senses", {})),
+        )
+    except ValueError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
     sources: dict[str, str] = {}
     for payload in (baseline, current):
         for term in cast(list[dict[str, object]], payload.get("terms", [])):
+            # A second sense's source is its own, never its word's.
+            if (str(term["word"]), str(term.get("concept"))) in seconds:
+                continue
             source = str(term.get("source", "")).strip()
             if source:
                 sources[str(term["word"])] = source
@@ -265,6 +357,7 @@ def main(argv: list[str]) -> int:
     print(f"words with provenance         {len(first)}")
     print(f"  source recorded at admission  {recorded}")
     print(f"  reconstructed from history    {len(first) - recorded}")
+    print(f"second senses recorded apart  {len(senses)}")
     print()
     by_date: dict[str, int] = {}
     for entry in first.values():
@@ -287,6 +380,12 @@ def main(argv: list[str]) -> int:
             word
             for word in first.keys() | recorded_words.keys()
             if first.get(word) != recorded_words.get(word)
+        )
+        held_senses = cast(dict[str, object], held.get("senses", {}))
+        changed += sorted(
+            key
+            for key in senses.keys() | held_senses.keys()
+            if senses.get(key) != held_senses.get(key)
         )
         if (
             "history_through" not in held
@@ -322,11 +421,15 @@ def main(argv: list[str]) -> int:
                         "the pass and not necessarily about each word. Low to "
                         "moderate fidelity, and lowest for the 444-word "
                         "prescriptive pass, because bootstrapping a closed "
-                        "lexicon does not decompose into per-word reasons."
+                        "lexicon does not decompose into per-word reasons. "
+                        "'senses' records each second sense a batch admitted, "
+                        "keyed WORD.CONCEPT, so that it never rewrites the "
+                        "record of its word's first sense."
                     ),
                     "history_through": anchor,
                     "revisions": len(history),
                     "words": dict(sorted(first.items())),
+                    **({"senses": senses} if senses else {}),
                 },
                 indent=2,
             )

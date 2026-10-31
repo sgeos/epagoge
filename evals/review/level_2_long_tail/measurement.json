@@ -1,0 +1,43 @@
+{
+  "before": {
+    "1": 849,
+    "2": 2997
+  },
+  "after": {
+    "1": 849,
+    "2": 3372
+  },
+  "candidates": 613,
+  "teacher": null,
+  "pool_report_hash": "ffb246a6d195bd5c0a608acdc3cf98af6db4d38342ec047cc90504eb5ccf8cd7",
+  "admitted": 376,
+  "deferred": 95,
+  "approximate_target": 10000,
+  "remaining_gap": 6628,
+  "closure": {
+    "1": {
+      "defined": 849,
+      "required": 849,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_1: dictionary at level 1\n  defined      849 of 849 words needing one  100.0% coverage\n  also         4 definition(s) of function words, not counted\n  grounded     853  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  records      815 dictionary record(s) checked at the level\n  self-hosting  yes\n"
+    },
+    "2": {
+      "defined": 3371,
+      "required": 3371,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_2: dictionary at level 2\n  defined      3371 of 3371 words needing one  100.0% coverage\n  also         1 definition(s) of function words, not counted\n  grounded     3372  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  records      2531 dictionary record(s) checked at the level\n  self-hosting  yes\n"
+    }
+  },
+  "preserved_files": 523,
+  "preservation_passed": true,
+  "artifact_hashes": {
+    "before.json": "e8a7e147debac6d3493490f0f2652a75f138774bea641e761bf4b8ef199bbfde",
+    "candidates.json": "d9cb35023256dff3fac16047b57ecb80ff351f550f5c69702fcfdfb9b4edc499",
+    "authoring.json": "850943528465327eaa671e55005daed2be90b2f21f5eb4ea24a5a2e95295f50b",
+    "review.json": "7e4963bf1f0f2570779046f43f29e0897f014b67ffc54a414fd64ef08720b4f4",
+    "admitted.json": "42e0d03b8f5f7b30e2c48161347c122f3f954b12130d32b13bc8dd99d12a1c67"
+  },
+  "limits": "One agent-authored batch from a threshold-four scan of sixteen source texts already fetched. This does not measure general throughput or complete level two. Semantic review is agent review, not independent expert validation.",
+  "excluded": 142,
+  "second_senses": 1
+}

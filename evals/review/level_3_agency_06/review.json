@@ -1,0 +1,54 @@
+{
+  "comprehensive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Comprehensive means covering all or almost all of something.",
+    "concept": "all_some_none",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "comprehensive"
+    ]
+  },
+  "dedicate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only dedicated, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To dedicate something to a purpose is to keep it for that purpose only.",
+    "concept": "goal",
+    "pos": "verb",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "dedicate",
+      "dedicated",
+      "dedicates",
+      "dedicating"
+    ]
+  },
+  "flux": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only fluxes, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A flux is a flow of something, such as water, from one place to another.",
+    "concept": "stock_and_flow",
+    "pos": "noun",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "flux",
+      "fluxes"
+    ]
+  },
+  "incompressibility": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-10 agency scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Incompressibility is how much a substance pushes back when it is squeezed into a smaller space.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-10, frequent in at least one agency source",
+    "reviewed_forms": [
+      "incompressibility"
+    ]
+  }
+}

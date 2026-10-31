@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import cast
 
 from epagoge.artifacts import digest, file_digest, write_json
-from epagoge.book import load_book_dir, word_definitions
+from epagoge.book import load_book_dir, sense_definition, word_definitions
 from epagoge.vocabulary import load_vocabulary
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -146,17 +146,35 @@ def measure(batch: Path) -> dict[str, object]:
             )
     vocabulary = load_vocabulary(ROOT / "curriculum/vocabulary.json")
     books, records = load_book_dir(ROOT / f"curriculum/books/level_{level}")
-    definitions = word_definitions(books, [cast(dict[str, object], r) for r in records])
+    entries = [cast(dict[str, object], r) for r in records]
+    definitions = word_definitions(books, entries)
+    second_senses = 0
     for word, entry in admitted.items():
-        terms = [t for t in vocabulary.senses(word) if t.level == level]
+        # **Keyed by word and concept.** A word can carry a second sense at
+        # the same level, as `sample` does from 2026-10-30, and keyed by
+        # word alone the batch that admitted its first sense stops
+        # measuring the moment a later batch admits the second.
+        terms = [
+            t
+            for t in vocabulary.senses(word)
+            if t.word == word and t.level == level and t.concept == entry["concept"]
+        ]
         if len(terms) != 1:
             raise ValueError(
                 f"{word} does not have exactly one admitted sense at the level"
             )
         term = terms[0]
-        if term.concept != entry["concept"] or term.source != entry["source"]:
+        if term.source != entry["source"]:
             raise ValueError(f"{word} admission provenance or concept differs")
-        if definitions.get(word) != entry["definition"]:
+        if review[word].get("second_sense") is True:
+            second_senses += 1
+            if not any(
+                t.word == word and t.concept != term.concept and t.level <= level
+                for t in vocabulary.terms
+            ):
+                raise ValueError(f"{word} is a second sense with no first sense")
+        defined = sense_definition(entries, definitions, level, word, term.concept)
+        if defined != entry["definition"]:
             raise ValueError(f"{word} admitted definition differs")
         if set(term.surface_forms()) != set(
             cast(list[str], review[word]["reviewed_forms"])
@@ -209,7 +227,8 @@ def measure(batch: Path) -> dict[str, object]:
     # must be unchanged. Requiring equality rejected every earlier batch
     # once a later one had been admitted.
     growth = counts["2"] - old["2"]
-    if counts["1"] != old["1"] or growth < len(admitted):
+    # A second sense adds no headword, so it is not owed any growth.
+    if counts["1"] != old["1"] or growth < len(admitted) - second_senses:
         raise ValueError("vocabulary change differs from reviewed admissions")
     decided = [str(row["decision"]) for row in review.values()]
     measured: dict[str, object] = {
@@ -229,6 +248,8 @@ def measure(batch: Path) -> dict[str, object]:
     }
     if "exclude" in decided:
         measured["excluded"] = decided.count("exclude")
+    if second_senses:
+        measured["second_senses"] = second_senses
     return measured
 
 

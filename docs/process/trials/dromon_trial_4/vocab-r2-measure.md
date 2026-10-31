@@ -1,0 +1,327 @@
+# Vocabulary on file for r2.measure
+
+**Fact.** The schedule lists six revisited concepts: cycle, how_sure, measuring, sequence, spatial_position, and unit. The script reads the level-one and level-two dictionary seed book records and their recorded definition blocks. It lists every headword whose record assigns it to each concept.
+
+**Fact.** Current level-two counts are cycle 27, how_sure 15, measuring 37, sequence 22, spatial_position 138, and unit 18. A list of headwords shows vocabulary on file, not that a module can be written.
+
+**Judgement.** Among these six concepts, how_sure and unit have the fewest level-two headwords, followed by sequence and cycle. Those counts make them comparatively thin on file. Spatial_position has many headwords, but its count alone does not establish that the entries serve a measurement module.
+
+**Judgement.** Other level-two headwords that a module on measuring and the purpose of a unit could plausibly need include quantity-concept words such as amount, total, fraction, ratio, and sample; same_amount words average and equivalent; number_word_order words hundred and fourth; and direction or duration words such as horizontal, vertical, hour, interval, and duration. These are filed under other concepts, and their relevance to this unit is an editorial judgement, not a schedule assignment.
+
+## cycle
+### Level 1
+- **month**: A month is a time that has many weeks.
+- **repeat**: To repeat is to do or say a thing again.
+- **sometimes**: Sometimes means at some times and not at other times.
+- **sun**: The sun is the big hot thing over us in the sky.
+- **twice**: Twice means one time and then one more time.
+- **week**: A week is seven days.
+- **year**: A year is a long time that has many months.
+### Level 2
+- **autumn**: The time of year when leaves fall from trees and the air gets cool.
+- **circulation**: Circulation is the moving of something around and around, such as air around the earth or water through the sea.
+- **common**: Something common is found often or in many places, and is not special.
+- **cycle**: A cycle is a set of changes that come back to the start.
+- **dawn**: The time when the sun starts to rise in the morning.
+- **eclipse**: An eclipse is a time when the moon hides the sun from us, or when the shadow of the earth falls on the moon.
+- **frequency**: Frequency is how often something happens in a given time.
+- **frequently**: Frequently means often.
+- **lunar**: Lunar means having to do with the moon.
+- **monthly**: Monthly means happening once a month or every month.
+- **orbit**: An orbit is the curved path that one thing takes as it goes around another, as the moon goes around the earth.
+- **periodically**: Periodically means from time to time, again and again.
+- **phase**: A phase is one step in a series of changes, such as the shapes of the moon over a month.
+- **routinely**: Routinely means as a usual part of the way something is done.
+- **season**: A season is one part of the year, such as summer or winter.
+- **seasonal**: Seasonal means happening in one part of the year.
+- **spring**: Spring is the part of the year after winter and before summer, when plants begin to grow again.
+- **springtime**: Springtime is the season of spring.
+- **summer**: Summer is the hot part of the year.
+- **sunset**: Sunset is the time when the sun goes down.
+- **sunspot**: A sunspot is a dark spot on the sun that is cooler than the area around it.
+- **tidal**: Tidal means having to do with the tide.
+- **tide**: A tide is the way the sea goes up and then down every day.
+- **uncommon**: Uncommon means not happening or found often.
+- **usually**: Usually means most of the time.
+- **winter**: Winter is the cold part of the year.
+- **yearly**: Yearly means happening once a year or every year.
+## how_sure
+### Level 1
+- **doubt**: Not being sure.
+- **maybe**: It could happen and it could not.
+- **sure**: Sure is when you know a thing is true.
+### Level 2
+- **certain**: Certain is when you are sure a thing is true.
+- **certainly**: Certainly means one can be sure.
+- **chance**: A chance is a possibility that something will happen.
+- **likely**: Likely means that a thing can be expected to happen.
+- **luck**: Luck is what happens by chance, good or bad.
+- **necessarily**: Necessarily means in a way that has to be so.
+- **perhaps**: Perhaps means maybe.
+- **possibility**: A possibility is something that may happen.
+- **possibly**: Possibly means maybe.
+- **potentially**: Potentially means in a way that could come to be.
+- **probability**: Probability is how likely a thing is.
+- **probably**: Probably means more likely than not.
+- **reliable**: Reliable means able to be trusted to work well or to be right.
+- **seemingly**: Seemingly means in a way that appears so, though it may not be.
+- **uncertainty**: Uncertainty is not being sure about something.
+## measuring
+### Level 1
+- **deeper**: Deeper is more deep than another thing.
+- **length**: How long a thing is.
+- **measure**: To measure is to find how big or how many a thing is.
+- **ruler**: A ruler is a straight tool you use to measure.
+- **shorter**: Shorter is more short than another thing.
+- **smaller**: Smaller is more small than another thing.
+- **taller**: Taller is more tall than another.
+- **weigh**: To weigh is to find how heavy a thing is.
+- **weight**: How heavy a thing is.
+### Level 2
+- **accurately**: Accurately means in a way that is correct and exact.
+- **altitude**: Altitude is how high something is above the ground.
+- **barometer**: A barometer is a tool that measures how hard the air presses.
+- **bathymetry**: Bathymetry is the measuring of how deep water is.
+- **breadth**: Breadth is how wide a thing is.
+- **calculate**: To calculate is to work out a number.
+- **capacity**: Capacity is how much a thing can have in it.
+- **depth**: The depth of something is how deep it is.
+- **diameter**: A diameter is the distance straight across a circle through its middle.
+- **elevation**: The elevation of a place is its height above the sea.
+- **extent**: The extent of a thing is how far it reaches.
+- **gage**: A gage is a tool that shows a measure.
+- **gauge**: A gauge is a tool that measures, and to gauge is to measure or to judge.
+- **geodesy**: Geodesy is the measuring of the size and shape of the earth.
+- **gradient**: A gradient is how fast a measure changes from place to place.
+- **height**: Height is how high a thing is.
+- **hourglass**: An hourglass is a glass that measures time by letting sand run from one part into another.
+- **instrument**: An instrument is a tool, especially one used to measure or to make music.
+- **isodop**: An isodop is a line that joins places where the wind has the same speed.
+- **latitude**: Latitude is how far a place is north or south of the equator.
+- **longitude**: Longitude is how far a place is east or west of a line that runs from the top to the bottom of the earth.
+- **measurement**: A measurement is a number you get by measuring.
+- **mesoscale**: Mesoscale means of middle size, between one storm and a large region.
+- **metric**: Metric means of the way of measuring that uses meters and grams.
+- **microscopic**: Microscopic means too small to see without a tool that makes things look larger.
+- **probe**: A probe is a long, thin tool that is put into something to measure it.
+- **radiosonde**: A radiosonde is an instrument sent up through the air to measure it.
+- **range**: A range is how far a set of things goes from the low one to the high one.
+- **rate**: A rate is how much something changes in a given time.
+- **resolution**: Resolution is how small a difference a picture or a measure can show.
+- **sampler**: A sampler is a tool used to take samples, such as of water or soil.
+- **scale**: A scale is a tool for measuring how heavy a thing is.
+- **sensor**: A sensor is a tool that notices a change, such as in heat or light, and measures it.
+- **visibility**: Visibility is how far a person can see.
+- **volume**: Volume is how much space a thing fills.
+- **wavelength**: A wavelength is the distance from one wave top to the next.
+- **width**: Width is how wide a thing is.
+## sequence
+### Level 1
+- **end**: The end of a thing is where there is no more of it.
+- **first**: First is before every other one.
+- **follow**: To follow is to go after someone or something.
+- **last**: Last is after every other one.
+### Level 2
+- **already**: Already means before now.
+- **event**: An event is something that happens, often something important.
+- **finally**: Finally means at the end, or after a long time.
+- **initial**: Initial means first.
+- **intermediate**: Intermediate means between two other things, levels or stages.
+- **onset**: The onset of a thing is its start.
+- **original**: Original means first, or not copied.
+- **pattern**: A pattern is a shape or an order that repeats.
+- **previous**: Previous means coming before.
+- **previously**: Previously means at an earlier time.
+- **primary**: Primary means first, or most important.
+- **prime**: Prime means first and most important.
+- **prior**: Prior means coming before.
+- **respectively**: Respectively means each one in turn with its own match.
+- **row**: A row is a line of things side by side. In a row means one after another.
+- **secondary**: Secondary means second in order, or less important than the main thing.
+- **serial**: Serial means coming one after another.
+- **series**: A series is a set of things that come one after another.
+- **since**: Since means from a time in the past until now, or because.
+- **stage**: A stage is a place where people stand so others can watch them.
+- **subsequent**: Subsequent means coming after.
+- **till**: Till means until.
+## spatial_position
+### Level 1
+- **bottom**: The bottom of a thing is the part that is most down.
+- **deep**: Deep is when a thing goes a long way down.
+- **distance**: Distance is how far one thing is from another thing.
+- **far**: Far is not here.
+- **hang**: To be held up from above.
+- **high**: High is when a thing is a long way up.
+- **hill**: A hill is ground that goes up high.
+- **level**: Level is when a thing is flat and no side is higher.
+- **low**: Low is when a thing is near the ground.
+- **middle**: The middle is the part that is not near any side.
+- **near**: Near is not far.
+- **nearby**: Close to here.
+- **place**: A place is where a thing is.
+- **shallow**: Shallow is not deep.
+- **spot**: A spot is a small round mark.
+- **top**: The top of a thing is the part that is most up.
+- **world**: The whole place where we live.
+- **yard**: A yard is the open ground near a house.
+### Level 2
+- **access**: Access is a way to get to a thing or into a place.
+- **adjacent**: Adjacent means next to something.
+- **aloft**: Aloft means up in the air.
+- **alongside**: Alongside means next to, or along the side of.
+- **anywhere**: Anywhere means in any place.
+- **area**: An area is a part of a place or of a surface.
+- **asteroid**: An asteroid is a rock in space that goes around the sun.
+- **background**: The background of a picture or a view is the part that is far behind the things at the front.
+- **bank**: A raised place of earth by a river or lake.
+- **barrier**: A barrier is something that stops you going through.
+- **base**: A base is the bottom part that a thing stands on.
+- **bay**: A bay is a part of the sea with land around much of it.
+- **beach**: A beach is the flat land at the shore where you can walk.
+- **beneath**: Beneath means under or below something.
+- **beyond**: Beyond means on the far side of something, or past it.
+- **border**: A border is the edge of something, or the line where one place ends and another begins.
+- **boundary**: A boundary is the line where one place ends and another begins.
+- **capital**: A capital is the city from which a country is led.
+- **cave**: A large hole in the ground or rock.
+- **cavern**: A cavern is a large cave.
+- **center**: The center of something is the point or part that is in the middle of it.
+- **central**: Central means in the middle.
+- **channel**: A channel is a long low place where water can run.
+- **churchyard**: A churchyard is the ground around a church.
+- **cliff**: A cliff is a high wall of rock that goes almost straight down.
+- **coast**: A coast is the land next to the sea.
+- **coastal**: Coastal means on or near a coast.
+- **comet**: A comet is a ball of ice and dust in space. When it comes near the sun, it has a long, bright tail.
+- **continent**: A continent is one of the very largest areas of land on the earth.
+- **continental**: Continental means of a great body of land.
+- **county**: A county is one part of a country.
+- **crest**: A crest is the top of a wave or a hill.
+- **deck**: A deck is the floor of a boat.
+- **desert**: A desert is a dry place with very little rain.
+- **distant**: Distant means far away.
+- **downtown**: Downtown is the main part of a town or a city, where many stores and offices are.
+- **driveway**: A driveway is a short road from a street to a house.
+- **elsewhere**: Elsewhere means in another place or to another place.
+- **entryway**: An entryway is a way into a building, such as a door.
+- **environment**: An environment is everything around a living thing.
+- **environmental**: Environmental means about the natural world around us.
+- **equator**: The equator is a line drawn around the middle of the earth on maps, an equal distance from the top and the bottom.
+- **everywhere**: Everywhere means in every place.
+- **extend**: To extend is to reach farther.
+- **facility**: A facility is a place where people do some work.
+- **faraway**: Faraway means a long way off.
+- **farm**: A farm is a piece of land where people grow food and keep animals.
+- **farther**: Farther means at a greater distance.
+- **field**: A field is a wide, open piece of land, often covered with grass or used to grow food.
+- **flank**: A flank is the side of a body or of a group.
+- **floodplain**: A floodplain is the flat land beside a river that is covered with water when the river floods.
+- **foreground**: The foreground is the part of a view that seems nearest.
+- **galaxy**: A galaxy is a vast group of stars.
+- **geostationary**: Geostationary means staying above one place on the earth.
+- **global**: Global means of the whole world.
+- **habitat**: A habitat is the kind of place where an animal or a plant lives.
+- **harbor**: A harbor is a place where ships can stay safe from a rough sea.
+- **inland**: Inland means away from the sea, toward the inside of the land.
+- **island**: An island is a piece of land with water all around it.
+- **isolated**: Isolated means standing apart from others.
+- **landscape**: A landscape is what you see when you look over the land.
+- **lane**: A lane is a narrow road.
+- **local**: Local means in or near the place where you are.
+- **locate**: To locate a thing is to find where it is.
+- **location**: A location is a place where something is.
+- **marsh**: A marsh is soft wet land.
+- **meadow**: A meadow is a field of grass.
+- **meridian**: A meridian is a line drawn on a map of the earth from the top to the bottom.
+- **meteor**: A meteor is a bright line of light in the sky made by a rock from space that burns as it falls through the air.
+- **meteoroid**: A meteoroid is a small piece of rock or metal that moves through space.
+- **mid**: Mid means in the middle.
+- **midst**: The midst of a thing is its middle.
+- **nationwide**: Nationwide means across a whole country.
+- **native**: Native means belonging to the place where a thing is from.
+- **nautical**: Nautical means of ships and the sea.
+- **nowhere**: Nowhere means not in any place or to no place.
+- **occupy**: To occupy a place is to fill it or to be in it.
+- **office**: An office is a room where people do their work.
+- **offshore**: Offshore means out in the sea, away from the land.
+- **offsite**: Offsite means away from the main place.
+- **outermost**: Outermost means the most outside, or the furthest from the middle.
+- **overhead**: Overhead means above your head.
+- **overland**: Overland means across land.
+- **park**: A park is a public area of land with grass and trees, where people can walk and play.
+- **parking**: Parking is the leaving of cars in a place for a time.
+- **pasture**: A pasture is a field where animals eat grass.
+- **peak**: A peak is the pointed top of a mountain, or the highest point.
+- **peninsula**: A peninsula is a piece of land with water on most sides.
+- **planet**: A planet is a very large round world that goes around a star, as the earth goes around the sun.
+- **planetary**: Planetary means having to do with planets.
+- **platform**: A platform is a flat, raised surface where people can stand or things can be put.
+- **polar**: Polar means of the far north or the far south of the earth.
+- **position**: The position of something is the place where it is.
+- **post**: A post is a long piece of wood or metal set straight up in the ground.
+- **reef**: A reef is a line of rock just under the water.
+- **region**: A region is a part of a country or of the earth.
+- **regional**: Regional has to do with a region, a large area of land.
+- **remote**: Remote means far away.
+- **reside**: To reside is to live in a place.
+- **route**: A route is the way from one place to another.
+- **rural**: Rural means of farms and open land, and not of a city.
+- **sanctuary**: A sanctuary is a safe place, or a place set apart for wild animals.
+- **scene**: A scene is a place as you see it, or a part of a story.
+- **schoolhouse**: A schoolhouse is a building where children are taught.
+- **schoolroom**: A schoolroom is a room where children are taught.
+- **shore**: A shore is where the land meets the water.
+- **shoreline**: The shoreline is the line where the land meets the sea or a lake.
+- **site**: A site is a place where something is or was.
+- **slough**: A slough is a soft wet place of mud and still water.
+- **somewhere**: Somewhere means in some place or to some place.
+- **station**: A station is a place where people get on or off a train.
+- **streambed**: A streambed is the ground at the bottom of a stream.
+- **subsurface**: Subsurface means under the surface of the ground or of water.
+- **subtropical**: Subtropical means of the regions just outside the hot middle of the earth.
+- **surroundings**: Your surroundings are the things and places all around you.
+- **swamp**: A swamp is an area of wet, soft land, often with trees and plants growing in water.
+- **terrain**: Terrain is the shape and cover of the land.
+- **territory**: A territory is an area of land that belongs to a country or a group, or is ruled by it.
+- **theater**: A theater is a building where people go to see a play.
+- **throughout**: Throughout means in every part, or during all of a time.
+- **topography**: Topography is the shape of the land.
+- **tower**: A tower is a tall, narrow building or part of a building.
+- **track**: A track is a path, or the marks left by something that moved.
+- **tropics**: The tropics are the hot parts of the earth on either side of its middle.
+- **underground**: Underground means under the ground.
+- **underlying**: Underlying means lying under something else.
+- **underneath**: Underneath means under or below something.
+- **universe**: The universe is all that there is.
+- **upon**: Upon means on, or on top of.
+- **upper**: Upper means higher up, or nearer the top.
+- **valley**: A valley is the low land between hills.
+- **vicinity**: The vicinity of a place is the area near it.
+- **volcano**: A volcano is an opening in the ground, often on a mountain, where hot melted rock comes up from deep inside the earth.
+- **watershed**: A watershed is land that sends water to one river.
+- **wetland**: A wetland is land that stays wet, like a marsh.
+- **wherever**: Wherever means in any place.
+- **worldwide**: Worldwide means over the whole world.
+- **zone**: A zone is one part of a place and not the other parts.
+## unit
+### Level 1
+- **unit**: A size you count with when you measure.
+### Level 2
+- **acre**: An acre is a unit for measuring how much land there is.
+- **calorie**: A calorie is a unit for measuring the energy in food.
+- **centimeter**: A centimeter is a unit of length. There are one hundred centimeters in a meter.
+- **degree**: A degree is a small unit for measuring how hot or cold something is, or how wide an angle is.
+- **gallon**: A gallon is a unit of liquid.
+- **gram**: A gram is a small unit of weight.
+- **hectopascal**: A hectopascal is a unit of air pressure.
+- **inch**: An inch is a small unit of length.
+- **kilogram**: A kilogram is a unit for measuring weight. It is one thousand grams.
+- **liter**: A liter is a unit for measuring how much liquid there is.
+- **meter**: A meter is a unit of length about as long as a big step.
+- **mile**: A mile is a long way people use to say how far a thing is.
+- **millibar**: A millibar is a unit of air pressure.
+- **milliliter**: A milliliter is a very small unit of liquid.
+- **millimeter**: A millimeter is a unit of length. There are ten millimeters in a centimeter.
+- **per**: Per means for each, as in ten miles per hour, which means ten miles for each hour.
+- **pound**: A pound is a unit of weight.
+- **ton**: A ton is a unit of weight equal to two thousand pounds.

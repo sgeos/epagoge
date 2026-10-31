@@ -1,0 +1,2138 @@
+{
+  "abandon": {
+    "concept": "keep_trying_or_stop",
+    "pos": "verb",
+    "definition": "To abandon something is to leave it and not come back to it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "abbreviate": {
+    "concept": "writing",
+    "pos": "verb",
+    "definition": "To abbreviate a word is to make it shorter, such as by writing only some of its letters.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "abundant": {
+    "concept": "quantity",
+    "pos": "adjective periphrastic",
+    "definition": "Abundant means found in large amounts.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "accumulation": {
+    "concept": "quantity",
+    "pos": "mass noun",
+    "definition": "Accumulation is the slow building up of something over time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "accurately": {
+    "concept": "measuring",
+    "pos": "",
+    "definition": "Accurately means in a way that is correct and exact.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "acidity": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Acidity is how much acid something has in it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "acre": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "An acre is a unit for measuring how much land there is.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "additional": {
+    "concept": "more_and_fewer",
+    "pos": "adjective ungraded",
+    "definition": "Additional means added, or more than there was before.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "adequate": {
+    "concept": "enough",
+    "pos": "adjective periphrastic",
+    "definition": "Adequate means enough for what is needed.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "adverse": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Adverse means harmful, or working against you.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "agriculture": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Agriculture is the work of growing crops and raising animals for food.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "alleviate": {
+    "concept": "good_and_bad",
+    "pos": "verb",
+    "definition": "To alleviate something bad is to make it less bad.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "alongside": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Alongside means next to, or along the side of.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "alter": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To alter something is to change it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "alteration": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "An alteration is a change made to something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "aluminum": {
+    "concept": "metal",
+    "pos": "mass noun",
+    "definition": "Aluminum is a light, silver-white metal used to make foil and airplanes.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "ample": {
+    "concept": "enough",
+    "pos": "adjective periphrastic",
+    "definition": "Ample means more than enough.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "analyze": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To analyze something is to study its parts closely to find out what it is made of or how it works.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "aqueduct": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "An aqueduct is a channel or a bridge built to carry water over a long distance.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "arid": {
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "definition": "Arid means very dry, with very little rain.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "artificial": {
+    "concept": "raw_and_made",
+    "pos": "adjective periphrastic",
+    "definition": "Artificial means made by people, not by nature.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "artificially": {
+    "concept": "raw_and_made",
+    "pos": "",
+    "definition": "Artificially means in a way that is made or caused by people, not by nature.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "assess": {
+    "concept": "checking",
+    "pos": "verb",
+    "definition": "To assess something is to judge how good, how large or how important it is.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "assist": {
+    "concept": "doing_in_order",
+    "pos": "verb",
+    "definition": "To assist someone is to help them.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "aware": {
+    "concept": "knowing",
+    "pos": "adjective periphrastic",
+    "definition": "If you are aware of something, you know about it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "basis": {
+    "concept": "giving_a_reason",
+    "pos": "noun",
+    "definition": "The basis of something is the main idea or fact that it rests on.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "bath": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A bath is a wash of your whole body in a tub of water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "bathroom": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A bathroom is a room with a toilet, a sink and often a bath or a shower.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "bedrock": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Bedrock is the solid rock that lies under the soil.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "behavior": {
+    "concept": "activity",
+    "pos": "mass noun",
+    "definition": "Behavior is the way that a person, an animal or a thing acts.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "beneficial": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Beneficial means helpful, or good for someone or something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "benefit": {
+    "concept": "good_and_bad",
+    "pos": "noun",
+    "definition": "A benefit is something that helps you or is good for you.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "bind": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To bind things is to tie or hold them together.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "boiler": {
+    "concept": "heat",
+    "pos": "noun",
+    "definition": "A boiler is a large tank in which water is heated to make hot water or steam.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "breakdown": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "A breakdown is the breaking up of something into smaller or simpler parts.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "buildup": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A buildup is an amount of something that slowly collects in one place.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "bun": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A bun is a small, round bread.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "cable": {
+    "concept": "material",
+    "pos": "noun",
+    "definition": "A cable is a thick, strong rope made of wire.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "calculator": {
+    "concept": "counting",
+    "pos": "noun",
+    "definition": "A calculator is a small machine that does sums.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "calorie": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A calorie is a unit for measuring the energy in food.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "casing": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A casing is a tube or a cover that fits around something to protect it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "category": {
+    "concept": "grouping",
+    "pos": "noun",
+    "definition": "A category is a group of things that are alike in some way.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "catfish": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A catfish is a fish with long, thin parts near its mouth that look like hairs.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "cattle": {
+    "concept": "animal",
+    "pos": "noun plural-only",
+    "definition": "Cattle are cows and other animals of their kind kept on a farm.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "cement": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Cement is a gray powder that becomes as hard as stone when mixed with water and left to set.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "centimeter": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A centimeter is a unit of length. There are one hundred centimeters in a meter.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "chemically": {
+    "concept": "material",
+    "pos": "",
+    "definition": "Chemically means in a way that has to do with chemicals or chemistry.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "citizen": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A citizen is a person who belongs to a country or a town.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "cling": {
+    "concept": "touching",
+    "pos": "verb",
+    "definition": "To cling is to hold on tightly or to stick to something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "closely": {
+    "concept": "checking",
+    "pos": "",
+    "definition": "Closely means carefully, or near in space or time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "cloudiness": {
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "definition": "Cloudiness is how cloudy something is, such as the sky or water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "compact": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To compact something is to press it together so that it takes up less space.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "compilation": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A compilation is a set of facts or works gathered together in one place.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "compile": {
+    "concept": "written_record",
+    "pos": "verb",
+    "definition": "To compile facts is to gather them together in one place.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "compute": {
+    "concept": "counting",
+    "pos": "verb",
+    "definition": "To compute something is to work it out with numbers.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "concentration": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "The concentration of something in a liquid or a gas is how much of it there is in a given amount.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "concept": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "A concept is an idea of what something is or how it works.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "concrete": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Concrete is a hard building material made by mixing cement, sand, stones and water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "confine": {
+    "concept": "inside_and_outside",
+    "pos": "verb",
+    "definition": "To confine something is to keep it inside a space and not let it out.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "consistent": {
+    "concept": "same_and_different",
+    "pos": "adjective periphrastic",
+    "definition": "Consistent means staying the same each time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "construct": {
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "definition": "To construct something is to build it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "contamination": {
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "definition": "Contamination is the making of something dirty or harmful by adding something that should not be in it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "continuously": {
+    "concept": "keeping_going",
+    "pos": "",
+    "definition": "Continuously means without stopping.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "contribution": {
+    "concept": "addition",
+    "pos": "noun",
+    "definition": "A contribution is something given or added to help make something larger or better.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "cork": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Cork is a light material made from the bark of a tree. It floats on water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "correspond": {
+    "concept": "correspondence",
+    "pos": "verb",
+    "definition": "To correspond is to match, or to be like something else in some way.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "costly": {
+    "concept": "exchange",
+    "pos": "adjective periphrastic",
+    "definition": "Costly means costing a lot of money.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "crank": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A crank is a handle that you turn round and round to make something move.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "cylinder": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A cylinder is a shape like a tube or a can, with flat, round ends and straight sides.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "database": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A database is a large set of facts kept in a computer in an ordered way.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "decay": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To decay is to go bad or to break down slowly.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "decision": {
+    "concept": "choosing",
+    "pos": "noun",
+    "definition": "A decision is a choice that you make after thinking.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "delicious": {
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "definition": "Delicious means very good to taste.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "deliver": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To deliver something is to take it to the place or the person it is meant for.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "department": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A department is one part of a large group, such as a government or a school, that does one kind of work.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "dependent": {
+    "concept": "need",
+    "pos": "adjective periphrastic",
+    "definition": "If one thing is dependent on another, it needs that other thing or is changed by it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "desirable": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Desirable means worth having or wanting.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "detergent": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A detergent is a liquid or a powder like soap, used for cleaning.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "diet": {
+    "concept": "needing_supply",
+    "pos": "noun",
+    "definition": "Your diet is the food that you usually eat.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "differently": {
+    "concept": "same_and_different",
+    "pos": "",
+    "definition": "Differently means in a way that is not the same.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "digital": {
+    "concept": "standing_for",
+    "pos": "adjective ungraded",
+    "definition": "Digital describes something that stores or shows information as numbers, as a computer does.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "disappear": {
+    "concept": "presence",
+    "pos": "verb",
+    "definition": "To disappear is to go out of sight, or to stop being there.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "discuss": {
+    "concept": "asking",
+    "pos": "verb",
+    "definition": "To discuss something is to talk about it with others.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "discussion": {
+    "concept": "asking",
+    "pos": "noun",
+    "definition": "A discussion is a talk in which people share ideas about something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "disease": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A disease is an illness of a person, an animal or a plant.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "disposal": {
+    "concept": "using_up",
+    "pos": "mass noun",
+    "definition": "Disposal is the act of getting rid of something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "disrupt": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To disrupt something is to stop it from going on in its usual way.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "distribute": {
+    "concept": "grouping",
+    "pos": "verb",
+    "definition": "To distribute things is to give them out, or to spread them over an area.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "ditch": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A ditch is a long, narrow channel dug in the ground to carry water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "diversion": {
+    "concept": "direction",
+    "pos": "noun",
+    "definition": "A diversion is the turning of something, such as water, from its usual path.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "divert": {
+    "concept": "direction",
+    "pos": "verb",
+    "definition": "To divert something is to make it go a different way.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "dose": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A dose is an amount of a medicine or of another substance taken at one time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "downtown": {
+    "concept": "spatial_position",
+    "pos": "mass noun",
+    "definition": "Downtown is the main part of a town or a city, where many stores and offices are.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "dowser": {
+    "concept": "taking_on_faith",
+    "pos": "noun",
+    "definition": "A dowser is a person who looks for water by dowsing.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "dowsing": {
+    "concept": "taking_on_faith",
+    "pos": "mass noun",
+    "definition": "Dowsing is the practice of looking for water under the ground by walking with a stick or two rods held in the hands. Scientists have not found evidence that it works.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "dramatic": {
+    "concept": "change",
+    "pos": "adjective periphrastic",
+    "definition": "Dramatic means very great and sudden.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "driveway": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A driveway is a short road from a street to a house.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "drug": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A drug is a substance that changes how the body or the mind works. Some drugs are used to treat illness.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "dump": {
+    "concept": "using_up",
+    "pos": "verb",
+    "definition": "To dump something is to drop it or throw it somewhere without care.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "earthy": {
+    "concept": "physical_property",
+    "pos": "adjective",
+    "definition": "Earthy means with a smell or a taste like soil.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "eastern": {
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "definition": "Eastern means in or from the east.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "effort": {
+    "concept": "keep_trying_or_stop",
+    "pos": "noun",
+    "definition": "An effort is a hard try to do something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "entryway": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "An entryway is a way into a building, such as a door.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "erosion": {
+    "concept": "wearing_out",
+    "pos": "mass noun",
+    "definition": "Erosion is the slow wearing away of rock or soil by water, wind or ice.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "establish": {
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "definition": "To establish something is to set it up so that it lasts.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "evolve": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To evolve is to change slowly over a long time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "excessive": {
+    "concept": "enough",
+    "pos": "adjective periphrastic",
+    "definition": "Excessive means more than is needed or right.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "expert": {
+    "concept": "knowing",
+    "pos": "noun",
+    "definition": "An expert is a person who knows a lot about something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "expose": {
+    "concept": "inside_and_outside",
+    "pos": "verb",
+    "definition": "To expose something is to leave it open to something else, such as air, light or harm.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "external": {
+    "concept": "inside_and_outside",
+    "pos": "adjective ungraded",
+    "definition": "External means on or from the outside.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "farmland": {
+    "concept": "plant",
+    "pos": "mass noun",
+    "definition": "Farmland is land used for growing crops or raising animals.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "favorite": {
+    "concept": "choosing",
+    "pos": "adjective ungraded",
+    "definition": "Your favorite thing is the one that you like best.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "findings": {
+    "concept": "finding_out",
+    "pos": "noun plural-only",
+    "definition": "Findings are the facts that are found out by a study.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "fixture": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A fixture is something fixed in place in a building, such as a sink or a tap.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "floodplain": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A floodplain is the flat land beside a river that is covered with water when the river floods.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "flush": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To flush something is to clean it out with a rush of water, as when you flush a toilet.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "former": {
+    "concept": "duration",
+    "pos": "adjective ungraded",
+    "definition": "Former means from an earlier time, or having been something before.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "foundation": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A foundation is the base that something rests on, such as the base of a building.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "fraction": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A fraction is a part of a whole, such as a half or a third.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "freely": {
+    "concept": "allowed_or_not",
+    "pos": "",
+    "definition": "Freely means without being held back or stopped.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "frequently": {
+    "concept": "cycle",
+    "pos": "",
+    "definition": "Frequently means often.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "fundamental": {
+    "concept": "component_and_system",
+    "pos": "adjective periphrastic",
+    "definition": "Fundamental means basic and very important.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "geologic": {
+    "concept": "finding_out",
+    "pos": "adjective ungraded",
+    "definition": "Geologic has to do with rocks and with how the earth formed and changes.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "geologist": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "A geologist is a scientist who studies geology.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "geology": {
+    "concept": "finding_out",
+    "pos": "mass noun",
+    "definition": "Geology is the science of the earth, its rocks, and how they formed and change.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "glacial": {
+    "concept": "weather",
+    "pos": "adjective ungraded",
+    "definition": "Glacial has to do with glaciers or with ice.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "glove": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A glove is a covering for your hand, with a part for each finger.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "golf": {
+    "concept": "toy",
+    "pos": "mass noun",
+    "definition": "Golf is a game in which players hit a small ball into a set of holes, using as few hits as they can.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "gradual": {
+    "concept": "change",
+    "pos": "adjective periphrastic",
+    "definition": "Gradual means happening slowly, a little at a time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "gradually": {
+    "concept": "change",
+    "pos": "",
+    "definition": "Gradually means slowly, a little at a time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "granite": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Granite is a very hard rock, often gray or pink, with small crystals in it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "gravel": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Gravel is a mix of small stones.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "gypsum": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Gypsum is a soft, white mineral used to make walls.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "hamburger": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A hamburger is a round, flat food made from very small bits of cow, cooked and often eaten in a bun.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "handy": {
+    "concept": "good_and_bad",
+    "pos": "adjective",
+    "definition": "Handy means useful and easy to use.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "healthy": {
+    "concept": "being_hurt",
+    "pos": "adjective",
+    "definition": "Healthy means well and not sick, or good for your body.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "heater": {
+    "concept": "heat",
+    "pos": "noun",
+    "definition": "A heater is a machine that makes heat to warm a room or water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "highly": {
+    "concept": "quantity",
+    "pos": "",
+    "definition": "Highly means very, or to a great amount.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "historic": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Historic means important in history, or from the past.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "historical": {
+    "concept": "duration",
+    "pos": "adjective ungraded",
+    "definition": "Historical has to do with history or the past.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "homeowner": {
+    "concept": "having",
+    "pos": "noun",
+    "definition": "A homeowner is a person who owns the house that they live in.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "humid": {
+    "concept": "weather",
+    "pos": "adjective periphrastic",
+    "definition": "Humid means having a lot of water vapor in the air.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "hydrologist": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "A hydrologist is a scientist who studies hydrology.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "icecap": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "An icecap is a thick, wide sheet of ice that covers a large area of land.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "illness": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "An illness is a time of being sick.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "illustrate": {
+    "concept": "explanation",
+    "pos": "verb",
+    "definition": "To illustrate something is to make it clear with an example or a picture.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "imagine": {
+    "concept": "real_and_pretend",
+    "pos": "verb",
+    "definition": "To imagine something is to make a picture of it in your mind.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "importance": {
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "definition": "Importance is how important something is.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "improper": {
+    "concept": "should_and_should_not",
+    "pos": "adjective periphrastic",
+    "definition": "Improper means not right, or not correct for the situation.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "inform": {
+    "concept": "reporting",
+    "pos": "verb",
+    "definition": "To inform someone is to tell them facts about something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "inhabit": {
+    "concept": "living_and_not_living",
+    "pos": "verb",
+    "definition": "To inhabit a place is to live in it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "instance": {
+    "concept": "same_and_different",
+    "pos": "noun",
+    "definition": "An instance is one example of something. For instance means for example.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "insurance": {
+    "concept": "exchange",
+    "pos": "mass noun",
+    "definition": "Insurance is a plan in which you pay a company a small amount often, and it pays you if something bad happens, such as a flood.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "intact": {
+    "concept": "things_break",
+    "pos": "adjective ungraded",
+    "definition": "Intact means whole and not broken.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "intake": {
+    "concept": "inside_and_outside",
+    "pos": "noun",
+    "definition": "An intake is a place or an opening where water is taken in, such as from a river.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "intend": {
+    "concept": "plan",
+    "pos": "verb",
+    "definition": "To intend to do something is to plan to do it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "interaction": {
+    "concept": "cause_and_effect",
+    "pos": "noun",
+    "definition": "An interaction is a way in which two or more things act on each other.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "intermediate": {
+    "concept": "sequence",
+    "pos": "adjective ungraded",
+    "definition": "Intermediate means between two other things, levels or stages.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "internal": {
+    "concept": "inside_and_outside",
+    "pos": "adjective ungraded",
+    "definition": "Internal means on or from the inside.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "interval": {
+    "concept": "duration",
+    "pos": "noun",
+    "definition": "An interval is the time or the space between two things.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "intestine": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "An intestine is a long tube in the body that food passes through after it is eaten.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "introduce": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To introduce something is to bring it in or add it for the first time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "invaluable": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Invaluable means so useful that its value cannot be measured.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "jewelry": {
+    "concept": "household_object",
+    "pos": "mass noun",
+    "definition": "Jewelry is rings and other small, pretty things that people wear.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "kid": {
+    "concept": "person",
+    "pos": "noun",
+    "definition": "A kid is a child.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "kidney": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A kidney is one of two parts inside the body that clean the blood and make urine.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "kilogram": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A kilogram is a unit for measuring how heavy something is. It is one thousand grams.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "laboratory": {
+    "concept": "finding_out",
+    "pos": "noun",
+    "definition": "A laboratory is a room or a building where scientists do experiments and tests.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "laden": {
+    "concept": "quantity",
+    "pos": "adjective ungraded",
+    "definition": "Laden means carrying a large amount of something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "lather": {
+    "concept": "household_object",
+    "pos": "mass noun",
+    "definition": "Lather is the white bubbles made when soap is rubbed with water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "laundry": {
+    "concept": "household_object",
+    "pos": "mass noun",
+    "definition": "Laundry is clothes and sheets that need washing or have just been washed.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "lawn": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A lawn is an area of short grass around a house or in a park.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "lesser": {
+    "concept": "more_and_fewer",
+    "pos": "adjective ungraded",
+    "definition": "Lesser means smaller or less important.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "limestone": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Limestone is a white or gray rock, often formed from the shells of sea animals.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "liter": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A liter is a unit for measuring how much liquid there is.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "literally": {
+    "concept": "word",
+    "pos": "",
+    "definition": "Literally means in the exact meaning of the words.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "liver": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "The liver is a large part inside the body that cleans the blood and helps to break down food.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "load": {
+    "concept": "quantity",
+    "pos": "noun",
+    "definition": "A load is an amount of something that is carried at one time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "marble": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Marble is a hard rock, often white with lines of color. It is cut and made smooth for walls and floors.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "mathematical": {
+    "concept": "counting",
+    "pos": "adjective ungraded",
+    "definition": "Mathematical has to do with numbers, shapes and the study of them.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "mayor": {
+    "concept": "someone_in_charge",
+    "pos": "noun",
+    "definition": "A mayor is the person chosen to lead a town or a city.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "mechanism": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A mechanism is a set of parts that work together, or the way that something works.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "medicine": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A medicine is a drug or another substance that you take to treat an illness.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "mention": {
+    "concept": "saying_what_you_saw",
+    "pos": "verb",
+    "definition": "To mention something is to say or write it in a few words.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "merge": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To merge is to join together to make one.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "mighty": {
+    "concept": "force",
+    "pos": "adjective",
+    "definition": "Mighty means very strong or great.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "migrate": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To migrate is to move from one place to another, often at the same time each year.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "millimeter": {
+    "concept": "unit",
+    "pos": "noun",
+    "definition": "A millimeter is a unit of length. There are ten millimeters in a centimeter.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "minimal": {
+    "concept": "more_and_fewer",
+    "pos": "adjective periphrastic",
+    "definition": "Minimal means very small, or as small as possible.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "minor": {
+    "concept": "good_and_bad",
+    "pos": "adjective ungraded",
+    "definition": "Minor means small or not very important.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "modify": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To modify something is to change it a little.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "mom": {
+    "concept": "family",
+    "pos": "noun",
+    "definition": "Mom is a word for mother.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "monthly": {
+    "concept": "cycle",
+    "pos": "adjective ungraded",
+    "definition": "Monthly means happening once a month or every month.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "monument": {
+    "concept": "raw_and_made",
+    "pos": "noun",
+    "definition": "A monument is a building or a stone set up to remember a person or an event.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "mount": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To mount something is to fix it in place on something else so that it holds.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "muddy": {
+    "concept": "material",
+    "pos": "adjective",
+    "definition": "Muddy means full of mud or covered with mud.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "nationwide": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Nationwide means across a whole country.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "northern": {
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "definition": "Northern means in or from the north.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "nowadays": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Nowadays means at this time, not in the past.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "obvious": {
+    "concept": "knowing",
+    "pos": "adjective periphrastic",
+    "definition": "Obvious means easy to see or to understand.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "obviously": {
+    "concept": "knowing",
+    "pos": "",
+    "definition": "Obviously means in a way that is easy to see or to understand.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "occupy": {
+    "concept": "spatial_position",
+    "pos": "verb",
+    "definition": "To occupy a place is to fill it or to be in it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "odor": {
+    "concept": "physical_property",
+    "pos": "noun",
+    "definition": "An odor is a smell.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "online": {
+    "concept": "written_record",
+    "pos": "adjective ungraded",
+    "definition": "Online means kept on or reached through computers joined together across the world.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "oppose": {
+    "concept": "disagreeing",
+    "pos": "verb",
+    "definition": "To oppose something is to be against it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "outlet": {
+    "concept": "inside_and_outside",
+    "pos": "noun",
+    "definition": "An outlet is an opening through which something, such as water, flows out.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "overflow": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To overflow is to flow over the edge of something because it is too full.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "overland": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Overland means across land.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "park": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A park is a public area of land with grass and trees, where people can walk and play.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "parking": {
+    "concept": "spatial_position",
+    "pos": "mass noun",
+    "definition": "Parking is the leaving of cars in a place for a time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "periodically": {
+    "concept": "cycle",
+    "pos": "",
+    "definition": "Periodically means from time to time, again and again.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "permanently": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Permanently means for all time, without coming to an end.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "photograph": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A photograph is a picture taken with a camera.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "physically": {
+    "concept": "body_part",
+    "pos": "",
+    "definition": "Physically means in a way that has to do with the body, or with things that you can touch.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "physics": {
+    "concept": "finding_out",
+    "pos": "mass noun",
+    "definition": "Physics is the science of energy, forces and how things move.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "pit": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A pit is a deep hole in the ground.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "pivot": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A pivot is a fixed point that something turns around.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "platform": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A platform is a flat, raised surface where people can stand or things can be put.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "poison": {
+    "concept": "danger",
+    "pos": "noun",
+    "definition": "A poison is a substance that can harm or kill a living thing if it gets into its body.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "polluted": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Polluted means made dirty or harmful by waste or chemicals.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "popular": {
+    "concept": "judged_by_another",
+    "pos": "adjective periphrastic",
+    "definition": "Popular means liked by many people.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "population": {
+    "concept": "counting",
+    "pos": "noun",
+    "definition": "The population of a place is the number of people or animals that live there.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "pore": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A pore is a very small hole, such as one in the skin or in a rock.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "pothole": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A pothole is a hole in the surface of a road.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "practically": {
+    "concept": "close_enough",
+    "pos": "",
+    "definition": "Practically means almost, or nearly.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "presence": {
+    "concept": "presence",
+    "pos": "mass noun",
+    "definition": "The presence of something is the fact that it is there.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "principal": {
+    "concept": "good_and_bad",
+    "pos": "adjective ungraded",
+    "definition": "Principal means most important.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "principle": {
+    "concept": "rule",
+    "pos": "noun",
+    "definition": "A principle is a basic rule that explains how something works or how to act.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "private": {
+    "concept": "having",
+    "pos": "adjective periphrastic",
+    "definition": "Private means belonging to one person or group, and not to the public.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "probe": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A probe is a long, thin tool that is put into something to measure it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "procedure": {
+    "concept": "doing_in_order",
+    "pos": "noun",
+    "definition": "A procedure is a set of steps for doing something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "prone": {
+    "concept": "not_always_known",
+    "pos": "adjective periphrastic",
+    "definition": "If something is prone to a thing, that thing is likely to happen to it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "publish": {
+    "concept": "written_record",
+    "pos": "verb",
+    "definition": "To publish a book or a report is to print it, or to make it public, so that people can read it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "radius": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "The radius of a circle is the distance from its center to its edge.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "raindrop": {
+    "concept": "weather",
+    "pos": "noun",
+    "definition": "A raindrop is a single drop of rain.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "rainwater": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Rainwater is water that has fallen as rain.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "recently": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Recently means not long ago.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "recorder": {
+    "concept": "written_record",
+    "pos": "noun",
+    "definition": "A recorder is a machine that records sound, pictures or measurements.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "recreation": {
+    "concept": "activity",
+    "pos": "mass noun",
+    "definition": "Recreation is the things that people do for fun when they are not working.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "recreational": {
+    "concept": "activity",
+    "pos": "adjective ungraded",
+    "definition": "Recreational has to do with the things that people do for fun.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "reddish": {
+    "concept": "physical_property",
+    "pos": "adjective ungraded",
+    "definition": "Reddish means a little red.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "reduction": {
+    "concept": "more_and_fewer",
+    "pos": "noun",
+    "definition": "A reduction is the making of something smaller or less.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "reference": {
+    "concept": "checking",
+    "pos": "noun",
+    "definition": "A reference is something that you use to check or compare other things against.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "regional": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Regional has to do with a region, a large area of land.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "regulate": {
+    "concept": "rule",
+    "pos": "verb",
+    "definition": "To regulate something is to control it by rules, or to keep it at a steady level.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "relate": {
+    "concept": "joining_and_separating",
+    "pos": "verb",
+    "definition": "To relate one thing to another is to show or find a link between them.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "relation": {
+    "concept": "joining_and_separating",
+    "pos": "noun",
+    "definition": "A relation is a way that two things are linked to each other.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "reliable": {
+    "concept": "how_sure",
+    "pos": "adjective periphrastic",
+    "definition": "Reliable means able to be trusted to work well or to be right.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "relief": {
+    "concept": "feeling",
+    "pos": "mass noun",
+    "definition": "Relief is something that makes a pain or a hard time less bad.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "rely": {
+    "concept": "need",
+    "pos": "verb",
+    "definition": "To rely on someone or something is to need them and trust them.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "replace": {
+    "concept": "change",
+    "pos": "verb",
+    "definition": "To replace something is to put a new thing in its place.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "replenish": {
+    "concept": "needing_supply",
+    "pos": "verb",
+    "definition": "To replenish something is to fill it up again.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "resident": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A resident is a person who lives in a place.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "resistant": {
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "definition": "Resistant means not easily harmed or changed by something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "revise": {
+    "concept": "mending",
+    "pos": "verb",
+    "definition": "To revise something is to change it to make it better or more correct.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "rid": {
+    "concept": "using_up",
+    "pos": "verb",
+    "definition": "To rid a place of something is to take that unwanted thing away from it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "rinse": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To rinse something is to wash it quickly in clean water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "rod": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A rod is a long, thin, straight stick or bar.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "rotten": {
+    "concept": "wearing_out",
+    "pos": "adjective periphrastic",
+    "definition": "Rotten describes food or wood that has decayed.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "routinely": {
+    "concept": "cycle",
+    "pos": "",
+    "definition": "Routinely means as a usual part of the way something is done.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "row": {
+    "concept": "sequence",
+    "pos": "noun",
+    "definition": "A row is a line of things side by side. In a row means one after another.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "saltwater": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Saltwater is water that has salt in it, such as the water of the sea.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sampler": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A sampler is a tool used to take samples, such as of water or soil.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sandstone": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Sandstone is a rock made of grains of sand pressed and stuck together.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sandy": {
+    "concept": "material",
+    "pos": "adjective",
+    "definition": "Sandy means full of sand or covered with sand.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "satisfy": {
+    "concept": "need",
+    "pos": "verb",
+    "definition": "To satisfy someone is to give them what they need or want.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "scum": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Scum is a thin, dirty layer that forms on top of a liquid or on a surface.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "seawater": {
+    "concept": "liquid",
+    "pos": "mass noun",
+    "definition": "Seawater is the salty water of the sea.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "secondary": {
+    "concept": "sequence",
+    "pos": "adjective ungraded",
+    "definition": "Secondary means second in order, or less important than the main thing.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "select": {
+    "concept": "choosing",
+    "pos": "verb",
+    "definition": "To select something is to choose it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sensor": {
+    "concept": "measuring",
+    "pos": "noun",
+    "definition": "A sensor is a tool that notices a change, such as in heat or light, and measures it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "serious": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Serious means bad or important enough to worry about.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "serve": {
+    "concept": "doing_in_order",
+    "pos": "verb",
+    "definition": "To serve someone is to do work for them, or to give them what they need.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "severity": {
+    "concept": "danger",
+    "pos": "mass noun",
+    "definition": "Severity is how serious or bad something is.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sewer": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A sewer is a large pipe under the ground that carries waste water away.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "shellfish": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A shellfish is an animal with a shell that lives in water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "shower": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A shower is a spray of water that you stand under to wash your body.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sickness": {
+    "concept": "being_hurt",
+    "pos": "mass noun",
+    "definition": "Sickness is being sick.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sideways": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Sideways means to or from the side.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "silt": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Silt is fine sand and soil carried by water and left at the bottom of rivers and lakes.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sinkhole": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A sinkhole is a hole that forms when the rock or soil under the ground is washed away and the surface falls in.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sludge": {
+    "concept": "material",
+    "pos": "mass noun",
+    "definition": "Sludge is thick, soft mud or waste.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "snake": {
+    "concept": "animal",
+    "pos": "noun",
+    "definition": "A snake is a long animal with no legs that moves by sliding along the ground.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "snowfall": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Snowfall is the amount of snow that falls in a place at one time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "society": {
+    "concept": "people_together",
+    "pos": "noun",
+    "definition": "A society is all the people who live together in one country or area.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "solely": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Solely means only.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "solution": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A solution is a liquid with something dissolved in it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "solve": {
+    "concept": "finding_out",
+    "pos": "verb",
+    "definition": "To solve a problem is to find the answer to it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "somewhere": {
+    "concept": "spatial_position",
+    "pos": "",
+    "definition": "Somewhere means in some place or to some place.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "southern": {
+    "concept": "direction",
+    "pos": "adjective ungraded",
+    "definition": "Southern means in or from the south.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "spherical": {
+    "concept": "shape",
+    "pos": "adjective ungraded",
+    "definition": "Spherical means shaped like a ball.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "spray": {
+    "concept": "liquid",
+    "pos": "verb",
+    "definition": "To spray a liquid is to send it out in many small drops.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "springtime": {
+    "concept": "cycle",
+    "pos": "mass noun",
+    "definition": "Springtime is the season of spring.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sprinkler": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A sprinkler is a tool that sprays water over grass or crops.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "stagnant": {
+    "concept": "moving_and_still",
+    "pos": "adjective periphrastic",
+    "definition": "Stagnant describes water that does not flow or move.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "steep": {
+    "concept": "shape",
+    "pos": "adjective",
+    "definition": "Steep describes a slope that goes up or down a lot in a short distance, like a hill that is hard to climb.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "storehouse": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "A storehouse is a building or a place where things are kept for later use.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "stormwater": {
+    "concept": "weather",
+    "pos": "mass noun",
+    "definition": "Stormwater is water from rain or melting snow that runs off the ground and the roads.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "streambed": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A streambed is the ground at the bottom of a stream.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "submerge": {
+    "concept": "inside_and_outside",
+    "pos": "verb",
+    "definition": "To submerge something is to put it under water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "subsection": {
+    "concept": "component_and_system",
+    "pos": "noun",
+    "definition": "A subsection is one of the smaller parts that a section is divided into.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "subsurface": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Subsurface means under the surface of the ground or of water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sufficient": {
+    "concept": "enough",
+    "pos": "adjective periphrastic",
+    "definition": "Sufficient means enough.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "sum": {
+    "concept": "addition",
+    "pos": "noun",
+    "definition": "A sum is the number you get when you add numbers together.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "summary": {
+    "concept": "reporting",
+    "pos": "noun",
+    "definition": "A summary is a short account that gives the main points of something longer.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "supplier": {
+    "concept": "needing_supply",
+    "pos": "noun",
+    "definition": "A supplier is a person or a company that provides something that others need, such as water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "swamp": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A swamp is an area of wet, soft land, often with trees and plants growing in water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "technician": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "A technician is a person whose job is to work with tools, machines or tests and keep them working well.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "technique": {
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "definition": "A technique is a way of doing something that has to be learned.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "temporarily": {
+    "concept": "duration",
+    "pos": "",
+    "definition": "Temporarily means for a short time only.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "temporary": {
+    "concept": "duration",
+    "pos": "adjective periphrastic",
+    "definition": "Temporary means lasting only for a short time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "tension": {
+    "concept": "force",
+    "pos": "mass noun",
+    "definition": "Tension is the pull in a rope or a surface that is stretched tight.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "territory": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "A territory is an area of land that belongs to a country or a group, or is ruled by it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "tightly": {
+    "concept": "touching",
+    "pos": "",
+    "definition": "Tightly means in a firm, close way, with no space left.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "totally": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Totally means completely.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "toxic": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Toxic means like a poison, able to harm or kill a living thing.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "transmit": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To transmit something is to send it from one place or person to another.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "trash": {
+    "concept": "using_up",
+    "pos": "mass noun",
+    "definition": "Trash is things that are thrown away because they are not wanted.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "trend": {
+    "concept": "change",
+    "pos": "noun",
+    "definition": "A trend is a general way in which something is changing over time.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "tributary": {
+    "concept": "liquid",
+    "pos": "noun",
+    "definition": "A tributary is a stream or a river that flows into a larger river.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "truck": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A truck is a large motor car for carrying heavy things.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "tube": {
+    "concept": "shape",
+    "pos": "noun",
+    "definition": "A tube is a long, round pipe that liquid or gas can pass through.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "turnip": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A turnip is a round, white root that is cooked and eaten as a vegetable.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "ultimately": {
+    "concept": "finished_or_not",
+    "pos": "",
+    "definition": "Ultimately means in the end, after everything else.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "umbrella": {
+    "concept": "household_object",
+    "pos": "noun",
+    "definition": "An umbrella is a folding cover on a stick that you hold over your head to keep off the rain.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "uncertainty": {
+    "concept": "how_sure",
+    "pos": "mass noun",
+    "definition": "Uncertainty is not being sure about something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "uncommon": {
+    "concept": "cycle",
+    "pos": "adjective periphrastic",
+    "definition": "Uncommon means not happening or found often.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "underlying": {
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "definition": "Underlying means lying under something else.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "undesirable": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Undesirable means not wanted.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "uneven": {
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "definition": "Uneven means not flat, smooth or equal.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "unnamed": {
+    "concept": "name",
+    "pos": "adjective ungraded",
+    "definition": "Unnamed means having no name.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "unsightly": {
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "definition": "Unsightly means ugly to look at.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "unwanted": {
+    "concept": "good_and_bad",
+    "pos": "adjective ungraded",
+    "definition": "Unwanted means not wanted.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "uphill": {
+    "concept": "direction",
+    "pos": "",
+    "definition": "Uphill means up a slope.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "urine": {
+    "concept": "body_part",
+    "pos": "mass noun",
+    "definition": "Urine is the liquid waste that people and animals pass from their bodies.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "usable": {
+    "concept": "using_up",
+    "pos": "adjective periphrastic",
+    "definition": "Usable means able to be used.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "usage": {
+    "concept": "using_up",
+    "pos": "mass noun",
+    "definition": "Usage is the way something is used, or how much of it is used.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "user": {
+    "concept": "using_up",
+    "pos": "noun",
+    "definition": "A user is a person or a thing that uses something.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "van": {
+    "concept": "moving_and_still",
+    "pos": "noun",
+    "definition": "A van is a covered motor car, larger than a car, for carrying people or things.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "vein": {
+    "concept": "body_part",
+    "pos": "noun",
+    "definition": "A vein is a tube in the body that carries blood back to the heart.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "vicinity": {
+    "concept": "spatial_position",
+    "pos": "noun",
+    "definition": "The vicinity of a place is the area near it.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "virtually": {
+    "concept": "close_enough",
+    "pos": "",
+    "definition": "Virtually means almost completely.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "virus": {
+    "concept": "being_hurt",
+    "pos": "noun",
+    "definition": "A virus is a very small thing that can get into a living thing and make it sick.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "visualize": {
+    "concept": "real_and_pretend",
+    "pos": "verb",
+    "definition": "To visualize something is to form a picture of it in your mind.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "vitally": {
+    "concept": "good_and_bad",
+    "pos": "",
+    "definition": "Vitally means in a very important way.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "void": {
+    "concept": "emptiness",
+    "pos": "noun",
+    "definition": "A void is an empty space.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "vulnerable": {
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "definition": "Vulnerable means easily hurt or harmed.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "wade": {
+    "concept": "moving_and_still",
+    "pos": "verb",
+    "definition": "To wade is to walk through water.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "weed": {
+    "concept": "plant",
+    "pos": "noun",
+    "definition": "A weed is a wild plant that grows where it is not wanted.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "whereas": {
+    "concept": "same_and_different",
+    "pos": "",
+    "definition": "Whereas is a word used to show how two things are different.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "wildlife": {
+    "concept": "animal",
+    "pos": "mass noun",
+    "definition": "Wildlife is wild animals and plants.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "withdraw": {
+    "concept": "inside_and_outside",
+    "pos": "verb",
+    "definition": "To withdraw something is to take it out or away, such as water from a river.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "withdrawal": {
+    "concept": "inside_and_outside",
+    "pos": "noun",
+    "definition": "A withdrawal is the taking out of something, such as water from a river or a well.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "yearly": {
+    "concept": "cycle",
+    "pos": "adjective ungraded",
+    "definition": "Yearly means happening once a year or every year.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "yield": {
+    "concept": "raw_and_made",
+    "pos": "verb",
+    "definition": "To yield something is to give it or make it, such as water or crops.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  },
+  "zinc": {
+    "concept": "metal",
+    "pos": "mass noun",
+    "definition": "Zinc is a gray metal used to cover steel so that it does not rust.",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source"
+  }
+}

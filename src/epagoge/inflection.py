@@ -29,6 +29,16 @@ NO_DOUBLE: Final[frozenset[str]] = frozenset("wxy")
 
 NO_DOUBLE_MULTISYLLABIC: Final[frozenset[str]] = frozenset(
     {
+        # Admitted 2026-10-30 in evals/review/level_2_long_tail/.
+        "blossom",
+        "differ",
+        "fasten",
+        "interpret",
+        "lessen",
+        "recover",
+        "shorten",
+        "strengthen",
+        "threaten",
         "answer",
         "cover",
         "discover",
@@ -60,6 +70,14 @@ NO_DOUBLE_MULTISYLLABIC: Final[frozenset[str]] = frozenset(
         "focus",
         "gather",
         "transit",
+        # Admitted on 2026-10-30, final syllable unstressed.
+        "abandon",
+        "alter",
+        "deliver",
+        "inhabit",
+        # Admitted on 2026-10-30 as a second sense, final syllable
+        # unstressed. American spelling, as the noun is.
+        "color",
     }
 )
 """Longer verbs ending consonant-vowel-consonant whose final syllable is
@@ -195,6 +213,19 @@ IRREGULAR: Final[dict[str, tuple[str, str, str]]] = {
     "spin": ("spun", "spun", "spinning"),
     # Admitted on 2026-10-29. The rule gave drived.
     "drive": ("drove", "driven", "driving"),
+    # Admitted on 2026-10-30. The rule gave binded, clinged, ridded,
+    # transmited and withdrawed.
+    "bind": ("bound", "bound", "binding"),
+    # Admitted 2026-10-30 in evals/review/level_2_long_tail/.
+    "fight": ("fought", "fought", "fighting"),
+    "flee": ("fled", "fled", "fleeing"),
+    "overcome": ("overcame", "overcome", "overcoming"),
+    "submit": ("submitted", "submitted", "submitting"),
+    "underlie": ("underlay", "underlain", "underlying"),
+    "cling": ("clung", "clung", "clinging"),
+    "rid": ("rid", "rid", "ridding"),
+    "transmit": ("transmitted", "transmitted", "transmitting"),
+    "withdraw": ("withdrew", "withdrawn", "withdrawing"),
     # The regular rule gave beated, broadcasted, bursted, seeked,
     # shooted, splitted and sweared.
     "behold": ("beheld", "beheld", "beholding"),
@@ -483,6 +514,11 @@ IRREGULAR_PLURAL: Final[dict[str, str]] = {
     "child": "children",
     "foot": "feet",
     "tooth": "teeth",
+    # Admitted 2026-10-30 in evals/review/level_2_long_tail/.
+    "salmon": "salmon",
+    "snowman": "snowmen",
+    "tomato": "tomatoes",
+    "workman": "workmen",
     "man": "men",
     "woman": "women",
     "mouse": "mice",
@@ -518,6 +554,11 @@ IRREGULAR_PLURAL: Final[dict[str, str]] = {
     "volcano": "volcanoes",
     # Admitted at level two on 2026-10-29. The rule gave `hypothesises`.
     "hypothesis": "hypotheses",
+    # Admitted at level two on 2026-10-30. The rule gave `basises`,
+    # `catfishes` and `shellfishes`.
+    "basis": "bases",
+    "catfish": "catfish",
+    "shellfish": "shellfish",
 }
 """Plurals not derivable from spelling. A word mapping to itself has no
 distinct plural, which is a fact about the word and not a gap."""

@@ -1,0 +1,43 @@
+{
+  "before": {
+    "1": 849,
+    "2": 2996
+  },
+  "after": {
+    "1": 849,
+    "2": 3372
+  },
+  "candidates": 21,
+  "teacher": null,
+  "pool_report_hash": "58a3f6c015a050fa0ca23cc388ad0f4e746dca8d23835f529667c17bae14a8f9",
+  "admitted": 6,
+  "deferred": 5,
+  "approximate_target": 10000,
+  "remaining_gap": 6628,
+  "closure": {
+    "1": {
+      "defined": 849,
+      "required": 849,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_1: dictionary at level 1\n  defined      849 of 849 words needing one  100.0% coverage\n  also         4 definition(s) of function words, not counted\n  grounded     853  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  records      815 dictionary record(s) checked at the level\n  self-hosting  yes\n"
+    },
+    "2": {
+      "defined": 3371,
+      "required": 3371,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_2: dictionary at level 2\n  defined      3371 of 3371 words needing one  100.0% coverage\n  also         1 definition(s) of function words, not counted\n  grounded     3372  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  records      2531 dictionary record(s) checked at the level\n  self-hosting  yes\n"
+    }
+  },
+  "preserved_files": 523,
+  "preservation_passed": true,
+  "artifact_hashes": {
+    "before.json": "6a107125e4cc22b544c5520dda91e864983921e08791049f414df46f838dabdf",
+    "candidates.json": "3b94421f699172930649b1e31acb4379a149c40db41e562924d902671d528877",
+    "authoring.json": "b7a35bf9862016a46eb23474ca07ec5c022e1f6245b08f69c739fe21ed2fb748",
+    "review.json": "a775da0453a83fef6a73c9b7f48739f9811f6bba722d902468aeec4b03119785",
+    "admitted.json": "ecad9981eaa329d4a386e72131305335762fb7a6b6c4f5dd670d184b95c11599"
+  },
+  "limits": "One agent-authored batch of 17 strings from the 2026-10-10 agency scan, fixed by the operator. This does not measure general throughput or complete level two. Semantic review is agent review, not independent expert validation.",
+  "excluded": 10,
+  "second_senses": 5
+}

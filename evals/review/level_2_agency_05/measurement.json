@@ -1,0 +1,42 @@
+{
+  "before": {
+    "1": 849,
+    "2": 2631
+  },
+  "after": {
+    "1": 849,
+    "2": 3372
+  },
+  "candidates": 521,
+  "teacher": null,
+  "pool_report_hash": "5c01146b2e697d06b53985b0ae3bc1a6cf37c08eaa415c5f4022cd38c0a45bf4",
+  "admitted": 356,
+  "deferred": 43,
+  "approximate_target": 10000,
+  "remaining_gap": 6628,
+  "closure": {
+    "1": {
+      "defined": 849,
+      "required": 849,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_1: dictionary at level 1\n  defined      849 of 849 words needing one  100.0% coverage\n  also         4 definition(s) of function words, not counted\n  grounded     853  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  records      815 dictionary record(s) checked at the level\n  self-hosting  yes\n"
+    },
+    "2": {
+      "defined": 3371,
+      "required": 3371,
+      "grounded": true,
+      "validator_output": "curriculum/books/level_2: dictionary at level 2\n  defined      3371 of 3371 words needing one  100.0% coverage\n  also         1 definition(s) of function words, not counted\n  grounded     3372  closure 100.0%\n  seed         267 words ground by showing or need no definition\n  records      2531 dictionary record(s) checked at the level\n  self-hosting  yes\n"
+    }
+  },
+  "preserved_files": 523,
+  "preservation_passed": true,
+  "artifact_hashes": {
+    "before.json": "6c145e0b64cd92f47c0c2de29c8cde2d4350d800420047190b27b89e79162c22",
+    "candidates.json": "f81b6385a66aa740a0e616bc25d46080c7644ca4630fe38f3a2a5699e95b138e",
+    "authoring.json": "15f4058854fafa8510d0758feff05f99181291792bdd1907e5a31b32895e4b8b",
+    "review.json": "3661af30b57c549edbabe193e2babfee5e41cb4288fc45f21416bfc73e79a937",
+    "admitted.json": "c8070929dc6a745b187f10cedaf8242590f8f86a767eea6fc9f456c2cc06c49c"
+  },
+  "limits": "One agent-authored batch from the 2026-10-30 scan of the USGS Water Science School. This does not measure general throughput or complete level two. Semantic review is agent review, not independent expert validation.",
+  "excluded": 122
+}

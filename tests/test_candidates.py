@@ -507,6 +507,10 @@ class TestStackedScanMeasurements(unittest.TestCase):
             "level_2_agency_02",
             "level_2_agency_03",
             "level_2_agency_04",
+            "level_2_agency_05",
+            "level_2_agency_06",
+            "level_2_stripped_forms",
+            "level_2_long_tail",
         ]
         for name in names:
             batch = root / "evals" / "review" / name
@@ -522,7 +526,12 @@ class TestStackedScanMeasurements(unittest.TestCase):
             self.assertIsInstance(before, dict)
             self.assertIsInstance(admitted, int)
             self.assertEqual(after, fresh, name)
-            self.assertGreaterEqual(fresh["2"] - int(before["2"]), admitted, name)
+            # A second sense adds no headword, so it is owed no growth.
+            senses = result.get("second_senses", 0)
+            self.assertIsInstance(senses, int)
+            self.assertGreaterEqual(
+                fresh["2"] - int(before["2"]), admitted - int(senses), name
+            )
             closure = result["closure"]
             self.assertIsInstance(closure, dict)
             for level in ("1", "2"):

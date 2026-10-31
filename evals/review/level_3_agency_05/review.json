@@ -1,0 +1,1535 @@
+{
+  "acute": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Acute describes a harm or an illness that comes on quickly and is strong.",
+    "concept": "being_hurt",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "acute"
+    ]
+  },
+  "adhesion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Adhesion is the pull that makes one kind of thing stick to another, such as water to glass.",
+    "concept": "force",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "adhesion"
+    ]
+  },
+  "aeration": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Aeration is the mixing of air into water or soil.",
+    "concept": "air",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "aeration"
+    ]
+  },
+  "aerobic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Aerobic describes living things or processes that need oxygen.",
+    "concept": "living_and_not_living",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "aerobic"
+    ]
+  },
+  "aesthetic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Aesthetic has to do with how something looks, smells or tastes, and whether it is pleasant.",
+    "concept": "feeling",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "aesthetic"
+    ]
+  },
+  "alkaline": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Alkaline describes a substance that can take away the effect of an acid. Soap is alkaline.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "alkaline"
+    ]
+  },
+  "alkalinity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Alkalinity is how well water can take away the effect of an acid that is added to it.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "alkalinity"
+    ]
+  },
+  "analogy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An analogy is a comparison that explains one thing by showing how it is like another.",
+    "concept": "explanation",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "analogies",
+      "analogy"
+    ]
+  },
+  "aquaculture": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Aquaculture is the raising of fish, shellfish or water plants for food.",
+    "concept": "raw_and_made",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "aquaculture"
+    ]
+  },
+  "arbitrary": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Arbitrary means chosen without a reason or a rule.",
+    "concept": "choosing",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "arbitrary"
+    ]
+  },
+  "arsenic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Arsenic is a chemical element found in some rocks and water. It is a poison.",
+    "concept": "danger",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "arsenic"
+    ]
+  },
+  "artesian": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Artesian describes water under the ground that is under enough pressure to rise up a well without a pump.",
+    "concept": "stock_and_flow",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "artesian"
+    ]
+  },
+  "barometric": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Barometric has to do with the pressure of the air.",
+    "concept": "air",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "barometric"
+    ]
+  },
+  "baseflow": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Baseflow is the part of the water in a stream that comes from groundwater, not from recent rain.",
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "baseflow"
+    ]
+  },
+  "bond": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A bond is a force that holds atoms together in a molecule.",
+    "concept": "force",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "bond",
+      "bonds"
+    ]
+  },
+  "cableway": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A cableway is a cable stretched across a river, from which people or tools hang to measure the water.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "cableway",
+      "cableways"
+    ]
+  },
+  "calcite": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Calcite is a common white or clear mineral. Limestone and marble are made mostly of it.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "calcite"
+    ]
+  },
+  "calcium": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Calcium is a soft, silver-white metal element. It is found in many rocks, in milk and in the body.",
+    "concept": "metal",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "calcium"
+    ]
+  },
+  "carbonate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A carbonate is a chemical that has carbon and oxygen joined in it, such as the mineral in limestone.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "carbonate",
+      "carbonates"
+    ]
+  },
+  "carcinogen": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A carcinogen is something that can cause cancer.",
+    "concept": "danger",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "carcinogen",
+      "carcinogens"
+    ]
+  },
+  "chloride": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A chloride is a chemical made of chlorine joined with another element, such as the salt in seawater.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "chloride",
+      "chlorides"
+    ]
+  },
+  "chlorine": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Chlorine is a chemical element. It is a yellow-green gas, and it is used to make water safe to drink.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "chlorine"
+    ]
+  },
+  "chronic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Chronic describes an illness or a harm that lasts a long time or keeps coming back.",
+    "concept": "being_hurt",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "chronic"
+    ]
+  },
+  "coalescence": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Coalescence is the joining of small drops into larger ones.",
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "coalescence"
+    ]
+  },
+  "coliform": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A coliform is one of a group of bacteria, some of which live in the intestines of animals. Water is tested for them to check whether it is clean.",
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "coliform",
+      "coliforms"
+    ]
+  },
+  "compaction": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Compaction is the pressing of soil or sediment together so that it takes up less space.",
+    "concept": "joining_and_separating",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "compaction"
+    ]
+  },
+  "conductance": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Conductance is how easily electricity can pass through something.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "conductance"
+    ]
+  },
+  "conductivity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Conductivity is how well a material lets heat or electricity pass through it.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "conductivity"
+    ]
+  },
+  "constituent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only constituents, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A constituent is one of the parts that something is made of.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "constituent",
+      "constituents"
+    ]
+  },
+  "consumptive": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Consumptive describes a use of water that takes it away, so that it does not go back to the stream or the ground.",
+    "concept": "using_up",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "consumptive"
+    ]
+  },
+  "covalent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Covalent describes a bond in which two atoms share some of their electrons.",
+    "concept": "force",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "covalent"
+    ]
+  },
+  "crystalline": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Crystalline means made of crystals, or like a crystal.",
+    "concept": "shape",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "crystalline"
+    ]
+  },
+  "depletion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Depletion is the using up of a supply so that less of it is left.",
+    "concept": "using_up",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "depletion"
+    ]
+  },
+  "deploy": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only deployed, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To deploy a tool is to put it in place so that it can be used.",
+    "concept": "doing_in_order",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "deploy",
+      "deployed",
+      "deploying",
+      "deploys"
+    ]
+  },
+  "deployment": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Deployment is the putting of tools or people in place so that they can be used.",
+    "concept": "doing_in_order",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "deployment",
+      "deployments"
+    ]
+  },
+  "deposition": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Deposition is the laying down of material, such as sediment or acid from the air, on land or in water.",
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "deposition"
+    ]
+  },
+  "desalinate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "To desalinate water is to take the salt out of it.",
+    "concept": "liquid",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "desalinate",
+      "desalinated",
+      "desalinates",
+      "desalinating"
+    ]
+  },
+  "desalination": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Desalination is the taking of salt out of seawater or other salty water.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "desalination"
+    ]
+  },
+  "detrimental": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Detrimental means harmful.",
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "detrimental"
+    ]
+  },
+  "disinfection": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Disinfection is the killing of the very small living things that cause disease, such as those in drinking water.",
+    "concept": "danger",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "disinfection"
+    ]
+  },
+  "dissolution": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Dissolution is the dissolving of a solid in a liquid.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "dissolution"
+    ]
+  },
+  "ecological": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ecological has to do with how living things relate to each other and to the place where they live.",
+    "concept": "living_and_not_living",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "ecological"
+    ]
+  },
+  "ecology": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ecology is the science of how living things relate to each other and to the place where they live.",
+    "concept": "living_and_not_living",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "ecology"
+    ]
+  },
+  "effluent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Effluent is dirty water that flows out from a factory or from a place where waste water is cleaned.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "effluent"
+    ]
+  },
+  "equilibrium": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Equilibrium is a balance between forces or changes, so that nothing changes overall.",
+    "concept": "balance",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "equilibrium"
+    ]
+  },
+  "eutrophication": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Eutrophication is the change in a lake or a river when too many nutrients make plants grow so much that the water loses oxygen.",
+    "concept": "cause_and_effect",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "eutrophication"
+    ]
+  },
+  "evapotranspiration": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Evapotranspiration is the movement of water into the air from land, water and plants together, by evaporation and transpiration.",
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "evapotranspiration"
+    ]
+  },
+  "fecal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Fecal has to do with the solid waste that animals and people pass from their bodies.",
+    "concept": "body_part",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "fecal"
+    ]
+  },
+  "gastrointestinal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Gastrointestinal has to do with the parts of the body that food passes through.",
+    "concept": "body_part",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "gastrointestinal"
+    ]
+  },
+  "geographically": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Geographically means in a way that has to do with places on the earth and where they are.",
+    "concept": "spatial_position",
+    "pos": "",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "geographically"
+    ]
+  },
+  "geophysical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Geophysical has to do with the use of physics to study the earth.",
+    "concept": "finding_out",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "geophysical"
+    ]
+  },
+  "hydrologic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Hydrologic has to do with water and how it moves on and under the earth.",
+    "concept": "stock_and_flow",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "hydrologic"
+    ]
+  },
+  "hypoxic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Hypoxic describes water or air that has too little oxygen for most living things.",
+    "concept": "air",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "hypoxic"
+    ]
+  },
+  "impeller": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An impeller is the part of a pump with blades that spin to push water.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "impeller",
+      "impellers"
+    ]
+  },
+  "impermeable": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Impermeable means not letting water or gas pass through.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "impermeable"
+    ]
+  },
+  "impervious": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Impervious means not letting water soak in, as a road or a roof does.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "impervious"
+    ]
+  },
+  "impoundment": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only impoundments, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "An impoundment is a body of water held back by a dam.",
+    "concept": "liquid",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "impoundment",
+      "impoundments"
+    ]
+  },
+  "infiltrate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "To infiltrate is to soak slowly into something, as water soaks into the ground.",
+    "concept": "liquid",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "infiltrate",
+      "infiltrated",
+      "infiltrates",
+      "infiltrating"
+    ]
+  },
+  "infiltration": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Infiltration is the soaking of water from the surface into the ground.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "infiltration"
+    ]
+  },
+  "inorganic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Inorganic describes chemicals that do not come from living things, such as those in rocks.",
+    "concept": "living_and_not_living",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "inorganic"
+    ]
+  },
+  "instantaneous": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Instantaneous means happening or measured at one moment, with no time between.",
+    "concept": "duration",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "instantaneous"
+    ]
+  },
+  "interglacial": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Interglacial describes a warmer time between two long times when ice covered much of the earth.",
+    "concept": "weather",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "interglacial"
+    ]
+  },
+  "intestinal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Intestinal has to do with the intestines.",
+    "concept": "body_part",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "intestinal"
+    ]
+  },
+  "intrusion": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "An intrusion is the moving of something into a place where it does not belong, such as salt water into fresh groundwater.",
+    "concept": "inside_and_outside",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "intrusion",
+      "intrusions"
+    ]
+  },
+  "inundation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Inundation is the covering of land with water, as in a flood.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "inundation"
+    ]
+  },
+  "ionic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Ionic has to do with ions, or is made of ions.",
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "ionic"
+    ]
+  },
+  "leach": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only leaching, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To leach is to wash out of soil or rock with water that drains through it.",
+    "concept": "liquid",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "leach",
+      "leached",
+      "leaches",
+      "leaching"
+    ]
+  },
+  "leachate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Leachate is the liquid that drains out of a pile of waste and carries chemicals from it.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "leachate"
+    ]
+  },
+  "localized": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Localized means found only in one small area.",
+    "concept": "spatial_position",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "localized"
+    ]
+  },
+  "magnesium": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Magnesium is a light, silver-white metal element found in many rocks and in seawater.",
+    "concept": "metal",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "magnesium"
+    ]
+  },
+  "manganese": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Manganese is a gray metal element found in rocks. In water it can leave dark marks on sinks and laundry.",
+    "concept": "metal",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "manganese"
+    ]
+  },
+  "membrane": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A membrane is a thin sheet or layer that lets some things pass through it and not others.",
+    "concept": "component_and_system",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "membrane",
+      "membranes"
+    ]
+  },
+  "methodology": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A methodology is a set of methods used to study or to do something.",
+    "concept": "way_of_doing",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "methodologies",
+      "methodology"
+    ]
+  },
+  "methylmercury": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Methylmercury is a poison made from mercury. It builds up in fish.",
+    "concept": "danger",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "methylmercury"
+    ]
+  },
+  "microirrigation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Microirrigation is a way of giving crops small amounts of water through small pipes near the plants.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "microirrigation"
+    ]
+  },
+  "microorganism": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only microorganisms, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A microorganism is a living thing so small that it cannot be seen with the eye alone.",
+    "concept": "living_and_not_living",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "microorganism",
+      "microorganisms"
+    ]
+  },
+  "molecular": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Molecular has to do with molecules.",
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "molecular"
+    ]
+  },
+  "multiply": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only multiplying, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To multiply a number by another is to add the first to itself as many times as the second says.",
+    "concept": "multiplication",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "multiplied",
+      "multiplies",
+      "multiply",
+      "multiplying"
+    ]
+  },
+  "municipal": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Municipal has to do with a town or a city and its government.",
+    "concept": "someone_in_charge",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "municipal"
+    ]
+  },
+  "neutralize": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only neutralized, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To neutralize something is to stop it from having its effect, such as to take away the effect of an acid.",
+    "concept": "balance",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "neutralize",
+      "neutralized",
+      "neutralizes",
+      "neutralizing"
+    ]
+  },
+  "nitrate": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A nitrate is a chemical made of nitrogen and oxygen. Plants use it to grow, but too much of it in water can be harmful.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "nitrate",
+      "nitrates"
+    ]
+  },
+  "nitrite": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A nitrite is a chemical made of nitrogen and oxygen, with less oxygen than a nitrate.",
+    "concept": "material",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "nitrite",
+      "nitrites"
+    ]
+  },
+  "objectionable": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Objectionable means not pleasant and not welcome.",
+    "concept": "good_and_bad",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "objectionable"
+    ]
+  },
+  "osmosis": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Osmosis is the movement of water through a membrane from a weaker solution into a stronger one.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "osmosis"
+    ]
+  },
+  "parameter": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only parameters, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A parameter is a property that is measured or set to describe something, such as the temperature of water.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "parameter",
+      "parameters"
+    ]
+  },
+  "pathogen": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only pathogens, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "A pathogen is a very small thing, such as a virus, that causes disease.",
+    "concept": "being_hurt",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "pathogen",
+      "pathogens"
+    ]
+  },
+  "perennial": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Perennial means lasting through the whole year, or for many years.",
+    "concept": "duration",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "perennial"
+    ]
+  },
+  "permeability": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Permeability is how easily water or gas can pass through a material.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "permeability"
+    ]
+  },
+  "permeable": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Permeable means letting water or gas pass through.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "permeable"
+    ]
+  },
+  "phosphorus": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Phosphorus is a chemical element that plants need to grow. Too much of it in water makes plants in the water grow fast.",
+    "concept": "material",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "phosphorus"
+    ]
+  },
+  "photosynthesis": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Photosynthesis is the way green plants use the energy of light from the sun to make food from water and a gas in the air.",
+    "concept": "plant",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "photosynthesis"
+    ]
+  },
+  "porosity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Porosity is how much of a rock or soil is made of small empty spaces.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "porosity"
+    ]
+  },
+  "porous": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Porous means full of small holes that water or air can pass through.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "porous"
+    ]
+  },
+  "potable": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Potable means safe to drink.",
+    "concept": "liquid",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "potable"
+    ]
+  },
+  "potassium": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Potassium is a soft, silver-white metal element. Plants and animals need small amounts of it.",
+    "concept": "metal",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "potassium"
+    ]
+  },
+  "pressurize": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three. The pool held only pressurized, so the citation form is admitted.",
+    "definition_origin": "Agent-authored",
+    "definition": "To pressurize something is to put a gas or a liquid in it under pressure.",
+    "concept": "force",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "pressurize",
+      "pressurized",
+      "pressurizes",
+      "pressurizing"
+    ]
+  },
+  "prevalent": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Prevalent means common in a place or at a time.",
+    "concept": "cycle",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "prevalent"
+    ]
+  },
+  "recurrence": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Recurrence is the happening of something again.",
+    "concept": "cycle",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "recurrence"
+    ]
+  },
+  "riparian": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Riparian has to do with the land along the banks of a river or a stream.",
+    "concept": "spatial_position",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "riparian"
+    ]
+  },
+  "runup": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Runup is how far up the shore the water of a wave reaches.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "runup"
+    ]
+  },
+  "sanitary": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sanitary has to do with keeping things clean so that people stay healthy.",
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "sanitary"
+    ]
+  },
+  "sedimentation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sedimentation is the settling of sediment to the bottom of water.",
+    "concept": "stock_and_flow",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "sedimentation"
+    ]
+  },
+  "seepage": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Seepage is the slow flow of water through soil or rock, or out of the ground.",
+    "concept": "liquid",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "seepage"
+    ]
+  },
+  "septic": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Septic describes a tank under the ground that holds the waste water from a house and lets it break down.",
+    "concept": "component_and_system",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "septic"
+    ]
+  },
+  "sodium": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sodium is a soft, silver-white metal element. Common salt is made of sodium and chlorine.",
+    "concept": "metal",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "sodium"
+    ]
+  },
+  "soluble": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Soluble means able to dissolve in a liquid.",
+    "concept": "liquid",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "soluble"
+    ]
+  },
+  "statistical": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Statistical has to do with the study of numbers gathered from many examples.",
+    "concept": "counting",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "statistical"
+    ]
+  },
+  "statistically": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Statistically means in a way that uses statistical methods.",
+    "concept": "counting",
+    "pos": "",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "statistically"
+    ]
+  },
+  "streamgage": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A streamgage is a place on a stream with tools that measure how high the water is and how fast it flows.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "streamgage",
+      "streamgages"
+    ]
+  },
+  "sublimation": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Sublimation is the change of a solid, such as ice, straight into a gas, without first melting.",
+    "concept": "change",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "sublimation"
+    ]
+  },
+  "subsidence": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Subsidence is the slow sinking of the ground, such as when water is pumped out from under it.",
+    "concept": "falling",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "subsidence"
+    ]
+  },
+  "suitability": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Suitability is how right something is for a use.",
+    "concept": "good_and_bad",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "suitability"
+    ]
+  },
+  "susceptible": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Susceptible means easily harmed or changed by something.",
+    "concept": "danger",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "susceptible"
+    ]
+  },
+  "tailings": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Tailings are the waste rock and mud left over after a mine has taken out what it wants.",
+    "concept": "using_up",
+    "pos": "noun plural-only",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "tailings"
+    ]
+  },
+  "terminology": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Terminology is the set of special words used in one subject.",
+    "concept": "word",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "terminology"
+    ]
+  },
+  "thermoelectric": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Thermoelectric describes a power plant that makes electricity by using heat to turn water into steam.",
+    "concept": "heat",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "thermoelectric"
+    ]
+  },
+  "toxicity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Toxicity is how much harm a poison or another substance can do to a living thing.",
+    "concept": "danger",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "toxicity"
+    ]
+  },
+  "transducer": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "A transducer is a tool that changes one kind of signal, such as pressure, into another, such as electricity.",
+    "concept": "measuring",
+    "pos": "noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "transducer",
+      "transducers"
+    ]
+  },
+  "transpire": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "For a plant to transpire is for it to give off water vapor through its leaves.",
+    "concept": "plant",
+    "pos": "verb",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "transpire",
+      "transpired",
+      "transpires",
+      "transpiring"
+    ]
+  },
+  "turbidity": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Turbidity is how cloudy water is, because of small bits floating in it.",
+    "concept": "physical_property",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "turbidity"
+    ]
+  },
+  "unconfined": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Unconfined means not held in or closed off. An unconfined aquifer has no layer of hard rock or clay above it.",
+    "concept": "inside_and_outside",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "unconfined"
+    ]
+  },
+  "unsaturated": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Unsaturated describes soil or rock whose spaces hold some air as well as water.",
+    "concept": "liquid",
+    "pos": "adjective ungraded",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "unsaturated"
+    ]
+  },
+  "variability": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Variability is how much something changes from one time or place to another.",
+    "concept": "change",
+    "pos": "mass noun",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "variability"
+    ]
+  },
+  "volatile": {
+    "decision": "admit",
+    "reason": "Frequent in the 2026-10-30 Water Science School scan. The sense is past level two, and the concept is already taught, so the word is scheduled at level three.",
+    "definition_origin": "Agent-authored",
+    "definition": "Volatile describes a liquid that turns into a gas easily.",
+    "concept": "physical_property",
+    "pos": "adjective periphrastic",
+    "source": "scan 2026-10-30 of the USGS Water Science School, frequent in at least one agency source",
+    "reviewed_forms": [
+      "volatile"
+    ]
+  }
+}

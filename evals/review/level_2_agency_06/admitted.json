@@ -1,0 +1,56 @@
+{
+  "atomic": {
+    "concept": "material",
+    "pos": "adjective ungraded",
+    "definition": "Atomic means about atoms, or as small as atoms.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "definitely": {
+    "concept": "how_sure",
+    "pos": "",
+    "definition": "Definitely means for sure, with no doubt.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "download": {
+    "concept": "written_record",
+    "pos": "verb",
+    "definition": "To download something is to copy it from another computer onto your own.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "fortunate": {
+    "concept": "how_sure",
+    "pos": "adjective periphrastic",
+    "definition": "Fortunate means having something good happen by chance.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "illusion": {
+    "concept": "real_and_pretend",
+    "pos": "noun",
+    "definition": "An illusion is something that seems real but is not.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "pun": {
+    "concept": "standing_for",
+    "pos": "noun",
+    "definition": "A pun is a funny use of a word that can mean two things.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "replica": {
+    "concept": "same_and_different",
+    "pos": "noun",
+    "definition": "A replica is a very close copy of something.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "struggle": {
+    "concept": "keep_trying_or_stop",
+    "pos": "verb",
+    "definition": "To struggle is to try very hard when something is difficult.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  },
+  "universally": {
+    "concept": "all_some_none",
+    "pos": "",
+    "definition": "Universally means everywhere and for everyone.",
+    "source": "scan 2026-10-10, frequent in at least one agency source"
+  }
+}
