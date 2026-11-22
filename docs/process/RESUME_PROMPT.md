@@ -26,6 +26,13 @@ unapplied. The holding section of the handoff is the authority for the
 revision, for publication, for the Dromon trials and for the teacher.
 Earlier resume states are historical and are kept in
 `docs/process/HANDOFF_HISTORY.md`.
+
+The handoff to Codex of 2026-11-21 records the Codex version and the gate
+result inside its sandbox. It also records a decision brief and its review,
+which are ignored files on the authoring host. No patch from that brief is
+approved. Do not apply one without the operator's explicit approval. Run
+`machine-status` before heavy work and follow its level.
+
 Ask before committing or pushing anything. Determine actual publication
 from git and the remote rather than assuming that a stamp proves it.
 

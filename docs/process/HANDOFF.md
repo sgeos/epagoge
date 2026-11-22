@@ -34,6 +34,50 @@ than wrong. No level-three batch records a measurement, so level-three
 counts have no such check. Missing host artifacts make the associated
 checks unverified rather than disproved.
 
+## Handoff to Codex, 2026-11-21
+
+**The project is still in the holding state below.** On 2026-11-21 the
+operator asked that the repository be prepared for Codex to continue the
+work. No implementation scope is open, so Codex starts by waiting for the
+operator's next task. `HEAD` and `origin/main` were both `a0fc16c`, the
+holding commit, and no tracked file changed between 2026-10-31 and this
+edit. The Claude Code session that wrote this section stops writing to the
+checkout once this edit is complete, so Codex is the only writer.
+
+**Codex was checked against this tree.** Codex CLI 0.171.0 is installed.
+Its help output still accepts every flag of the launch command in
+`AGENTS.md`. On 2026-11-21 the full gate ran inside the Codex sandbox, as
+`codex sandbox --permission-profile :workspace`, with writes confined to
+the workspace and the network refused, as measured by a probe in the same
+profile. It exited 0 with 727 tests run twice and no skips, zero type
+errors, 96 percent core coverage, 92 percent training coverage and a clean
+disclosure scan over 1,113 files. uv could not write its cache there, and
+the gate fell back to `tools/check_environment.py`, as `AGENTS.md`
+describes. An interactive Codex session launched with `--sandbox
+workspace-write` was not run, so whether it takes the same profile is
+inferred and not measured.
+
+**A decision brief awaits the operator.** A Grok session wrote a brief on
+all 30 items of `OPEN_DECISIONS.md` under the ignored `tmp/decision-brief/`,
+with six patches in `tmp/decision-brief/patches/`. The Claude Code session
+reviewed it on 2026-11-18 in the ignored
+`tmp/decision-brief/review/DECISION_SHEET.md`. That review found two
+patches ready, ITEM_17 and ITEM_19, the second after a one-line wording
+change. It found that ITEM_14, ITEM_16, ITEM_03 and ITEM_21 each need a
+change first. All six applied cleanly with `git apply --check` at
+`a0fc16c`. **No patch is approved or applied.** Applying one needs the
+operator's explicit approval and a new brief and completion condition.
+These files exist only on the authoring host.
+
+**The host is shared.** Run `machine-status` before work whose memory, disk
+or processor use is large or unknown, such as the gate, a Dromon trial or a
+teacher load, and act on its level. It exits 0 for ok, 1 for elevated, 2 for
+critical and 3 for stale. At elevated, start nothing heavy that is new. At
+critical, wind down only the processes the session started and report to
+the operator. Its playbook is the file PLAYBOOK.md under
+`~/.local/share/machine-status/` on the authoring host. On 2026-11-21 the
+level was ok.
+
 ## Holding state, 2026-10-31
 
 **No implementation scope is open.** On 2026-10-31 the operator asked that
