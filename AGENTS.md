@@ -13,7 +13,10 @@ prompt a new session should be given. Both are written for any agent.
 
 Checked on 2026-10-07 against the help output of the installed tools, Codex
 CLI 0.160.1 and Grok Build 1.0.46. Claude Code 2.1.310 was checked on
-2026-10-25. Codex reads this file. Grok Build's bundled documentation says
+2026-10-25. Codex CLI 0.171.0 was rechecked on 2026-11-21, and the flags
+below are unchanged. To run one command in its sandbox, as when measuring
+the gate, `codex sandbox` now requires `--permission-profile :workspace`.
+Codex reads this file. Grok Build's bundled documentation says
 it reads this file and `CLAUDE.md`. Claude Code reads `CLAUDE.md` unless
 `--bare` is passed. Recheck the flags if any of these tools have been
 upgraded.
